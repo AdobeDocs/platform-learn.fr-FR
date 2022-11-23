@@ -3,10 +3,10 @@ title: Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du
 description: Découvrez comment implémenter des applications Experience Cloud à l’aide du SDK web d’Adobe Experience Platform.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6488faee86a53585bdbf03e069c4d6cf7e81d096
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 27%
+source-wordcount: '417'
+ht-degree: 25%
 
 ---
 
@@ -49,7 +49,9 @@ Après avoir terminé le tutoriel, vous pourrez :
 
 ## Conditions préalables
 
-Dans ces leçons, on suppose que vous disposez d’une Adobe ID et d’une [autorisations requises](configure-permissions.md) pour terminer les leçons. Dans le cas contraire, vous devez contacter votre administrateur Experience Cloud pour demander l’accès.
+Tous les clients Experience Cloud peuvent utiliser le SDK Web de Platform. Il n’est pas nécessaire d’acquérir sous licence une application basée sur Platform comme Real-time Customer Data Platform ou Journey Optimizer pour utiliser le SDK Web.
+
+Dans ces leçons, il est supposé que vous disposez d’un compte d’Adobe et de la variable [autorisations requises](configure-permissions.md) pour terminer les leçons. Dans le cas contraire, vous devez contacter votre administrateur Experience Cloud pour demander l’accès.
 
 En outre, vous êtes censé connaitre les langages de développement d’interfaces tels que HTML et JavaScript. Vous n’avez pas besoin d’être un expert dans ces langues, mais ce tutoriel vous permet de mieux comprendre et lire le code.
 

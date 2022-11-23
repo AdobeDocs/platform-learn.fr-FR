@@ -3,9 +3,9 @@ title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1080'
 ht-degree: 6%
 
 ---
@@ -78,6 +78,7 @@ Une fois les groupes de champs sélectionnés, vous êtes prêt à nommer votre 
 
 1. Dans le **[!UICONTROL Composition**] , sélectionnez `Untitled schema name`
 1. Dans le **[!UICONTROL Propriétés du schéma]** , accédez au panneau **[!UICONTROL Nom d’affichage]** `Luma Web Event Data`
+1. Sélectionnez tout ce qui se trouve en dehors de la fonction **[!UICONTROL Nom d’affichage]** pour activer le champ **[!UICONTROL Enregistrer]** option
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
 ![Données d’événement web Luma](assets/schema-luma-web-event-data.png)
