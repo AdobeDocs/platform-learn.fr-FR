@@ -3,9 +3,9 @@ title: Configuration des autorisations pour le tutoriel
 description: Découvrez comment demander l’accès au SDK Web Experience Platform et configurer l’autorisation requise pour terminer le tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 7%
 
 ---
@@ -16,14 +16,14 @@ Découvrez comment demander l’accès au SDK Web Experience Platform et configu
 
 ## Collecte de données
 
-* Ont la permission de **[!UICONTROL Développer]**, **[!UICONTROL Modifier]**, **[!UICONTROL Approuver]**, **[!UICONTROL Publier]**, **[!UICONTROL Gestion des extensions]**, et **[!UICONTROL Gestion des environnements]** propriétés de balise. Pour plus d’informations sur les autorisations de balises, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr).
+* Ont la permission de **[!UICONTROL Développer]**, **[!UICONTROL Modifier]**, **[!UICONTROL Approuver]**, **[!UICONTROL Publier]**, **[!UICONTROL Gestion des extensions]**, **[!UICONTROL Gestion des environnements]**, et **[!UICONTROL Gestion des propriétés]**. Pour plus d’informations sur les autorisations de balises, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr).
 * Si vous suivez la leçon facultative sur le transfert d’événement, disposez d’une licence de produit qui inclut le transfert de périphérie et l’élément d’autorisation. **[!UICONTROL Plateformes]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 Ces fonctionnalités doivent être disponibles pour tous les clients Experience Cloud, même si vous n’êtes pas client d’une application basée sur Platform telle que la plateforme de données clients en temps réel.
 
-* L’accès au **production par défaut** sandbox.
+* L’accès au **production par défaut**, **&quot;Prod&quot;** sandbox (.
 * Accès à **[!UICONTROL Gestion des schémas]** et **[!UICONTROL Affichage des schémas]** under **[!UICONTROL Modélisation des données]**
 * Accès à **[!UICONTROL Gestion des espaces de noms d’identité]** et **[!UICONTROL Affichage des espaces de noms d’identité]** under **[!UICONTROL Identity Management]**
 * Accès à **[!UICONTROL Gestion des flux de données]** et **[!UICONTROL Affichage des flux de données]** under **[!UICONTROL Collecte de données]**

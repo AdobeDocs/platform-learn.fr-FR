@@ -3,9 +3,9 @@ title: Configuration d’un espace de noms d’identité
 description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '695'
 ht-degree: 7%
 
 ---
@@ -52,6 +52,11 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
 
 1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target=&quot;_blank&quot;}
 1. Sélectionnez l’environnement de test que vous utilisez pour le tutoriel.
+
+   >[!NOTE]
+   >
+   >Si vous êtes client d’une application basée sur Platform telle que la plateforme de données clients en temps réel, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
+
 1. Sélectionner **[!UICONTROL Identités]** dans le volet de navigation de gauche
 1. Sélectionnez **[!UICONTROL Parcourir]**
 

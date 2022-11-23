@@ -3,9 +3,9 @@ title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,7 @@ Au cours de cet exercice, vous allez créer un schéma XDM à l’aide des group
 
    >[!NOTE]
    >
-   >Si vous êtes client d’une application basée sur Platform telle que la plateforme de données clients en temps réel, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel.
+   >Si vous êtes client d’une application basée sur Platform telle que la plateforme de données clients en temps réel, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
 
 1. Accédez à **[!UICONTROL Schémas]** dans le volet de navigation de gauche
 1. Sélectionnez la **[!UICONTROL Création d’un schéma]** en haut à droite
@@ -63,10 +63,10 @@ Dans la mesure du possible, il est recommandé d’utiliser des groupes de champ
 
 >[!TIP]
 > 
->Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL Mixin ExperienceEvent du SDK Web AEP]**_, et _**[!UICONTROL Événement d’expérience client]**_.
+>Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL ExperienceEvent du SDK Web AEP]**_, et _**[!UICONTROL Événement d’expérience client]**_.
 
-1. Conserver **[!UICONTROL Utiliser un groupe de champs existant]** Bouton radio sélectionné
-1. Recherchez [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`].
+1. Dans le **[!UICONTROL Groupes de champs]** , sélectionnez **[!UICONTROL Ajouter]**
+1. Recherchez [!UICONTROL `AEP Web SDK ExperienceEvent`].
 1. Cochez la case
 1. Recherchez [!UICONTROL `Consumer Experience Event`].
 1. Cochez la case
@@ -83,7 +83,7 @@ Une fois les groupes de champs sélectionnés, vous êtes prêt à nommer votre 
 
 ![Données d’événement web Luma](assets/schema-luma-web-event-data.png)
 
-Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous pouvez voir à quels groupes appartiennent. **[!UICONTROL Événement d’expérience client]**.
+Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. Le [!UICONTROL nom d&#39;affichage] de chaque champ s’affiche pour les spécialistes du marketing dans l’interface du créateur de segments des applications basées sur Platform. Vous pouvez modifier le nom d’affichage des champs standard en fonction de vos besoins. Vous pouvez également supprimer les champs que vous ne souhaitez pas. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous pouvez voir à quels groupes appartiennent. **[!UICONTROL Événement d’expérience client]**.
 
 ![Groupes de champs de schéma](assets/schema-consumer-experience-event.jpg)
 
