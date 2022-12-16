@@ -3,9 +3,9 @@ title: Configuration d’Adobe Analytics à l’aide du SDK Web Experience Platf
 description: Découvrez comment configurer Adobe Analytics à l’aide du SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ Ensuite, capturez les données supplémentaires de la couche de données Luma et
 
 ### Créer des éléments de données de commerce électronique
 
-Lors de la leçon Créer des éléments de données, vous [éléments de données JavaScript créés](create-data-elements.md#create-data-elements-to-capture-the-data-layer) qui a capturé le contenu et les détails de l’identité. Vous allez maintenant créer des éléments de données supplémentaires pour capturer des données de commerce électronique. Parce que la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utilise différentes structures de couche de données pour les pages Détails du produit et les produits du panier. Vous devez créer des éléments de données pour chaque scénario. Utilisez les fragments de code fournis ci-dessous :
+Lors de la leçon Créer des éléments de données, vous [éléments de données JavaScript créés](create-data-elements.md#create-data-elements-to-capture-the-data-layer) qui a capturé le contenu et les détails de l’identité. Vous allez maintenant créer des éléments de données supplémentaires pour capturer des données de commerce électronique. Parce que la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utilise différentes structures de couche de données pour les pages Détails du produit et les produits du panier. Vous devez créer des éléments de données pour chaque scénario. Vous devrez créer des éléments de données de code personnalisé pour obtenir ce dont vous avez besoin de la couche de données Luma, ce qui peut être nécessaire ou non lors de l’implémentation sur votre propre site. Dans ce cas, vous devez passer en revue un tableau d’articles du panier pour obtenir des détails spécifiques sur chaque produit. Utilisez les fragments de code fournis ci-dessous :
 
 1. Ouvrez la propriété de balise que vous utilisez pour le tutoriel.
 1. Accédez à **[!UICONTROL Éléments de données]**
