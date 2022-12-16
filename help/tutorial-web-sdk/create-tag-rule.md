@@ -3,9 +3,9 @@ title: Création d’une règle de balise
 description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 5%
 
 ---
@@ -54,6 +54,8 @@ où;
 
 ## Créer une règle de balise
 
+Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. Vous utiliserez cette première règle pour envoyer l’objet XDM au réseau Edge à l’aide du SDK Web. [!UICONTROL Envoyer un événement] action. Plus loin dans ce tutoriel, vous enverrez différentes versions de l’objet XDM en fonction du type de page sur laquelle se trouve le visiteur. C’est pourquoi vous utiliserez des conditions de règle pour exclure ces autres types de pages.
+
 Pour créer une règle de balise :
 
 1. Ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
@@ -84,7 +86,7 @@ Pour créer une règle de balise :
 1. Ajouter trois autres exceptions pour les chemins d’URL suivants
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** pour `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** pour `/products/` l’interrupteur Regex étant activé
 
    ![Ajouter des conditions](assets/rule-condition-exception-all.png)
