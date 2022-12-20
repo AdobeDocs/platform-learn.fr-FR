@@ -7,7 +7,7 @@ role: Data Architect
 kt: 9258
 thumbnail: 338241.jpg
 exl-id: bbb47887-f982-4831-8002-6d1fa539a39b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 5%
@@ -22,6 +22,6 @@ Découvrez comment créer des schémas pour vos données d’entreprise avec Rea
 
 >[!INFO]
 >
-> Cette vidéo fait partie d&#39;un cours, [Prise en main de la plateforme CDP en temps réel, édition B2B pour les marketeurs](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), disponible gratuitement sur Experience League !
+> Cette vidéo fait partie d&#39;un cours, [Prise en main de Real-Time CDP, Édition B2B pour les spécialistes du marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), disponible gratuitement sur Experience League !
 
 Pour plus d’informations, consultez la [documentation sur les schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).

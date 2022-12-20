@@ -2,7 +2,7 @@
 title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 14%
@@ -53,7 +53,7 @@ Dans cette leçon, vous allez :
 
    >[!NOTE]
    >
-   > Les clients d’applications basées sur Platform telles que la plateforme de données clients en temps réel doivent utiliser un environnement de test de développement pour ce tutoriel. Les autres clients utiliseront l’environnement de test de production par défaut.
+   > Les clients d’applications basées sur Platform telles que Real-Time CDP doivent utiliser un environnement de test de développement pour ce tutoriel. Les autres clients utiliseront l’environnement de test de production par défaut.
 
 
 1. Sélectionner **[!UICONTROL Schémas]** under **[!UICONTROL Data Management]**.
@@ -66,7 +66,7 @@ Vous vous trouvez maintenant sur la page des schémas principaux et une liste de
 * **Classes** définir les aspects comportementaux des données que le schéma contient ; Par exemple : `XDM ExperienceEvent` capture les séries temporelles, les données d’événement et `XDM Individual Profile` capture les données d’attribut d’un individu.
 * **Types de données** sont utilisés comme types de champs de référence dans des classes ou des groupes de champs de la même manière que les champs littéraux de base.
 
-Les descriptions ci-dessus constituent un aperçu général. Pour plus d’informations, voir [Blocs de création de schéma](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=fr) vidéo ou lecture [Principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) dans la documentation du produit.
+Les descriptions ci-dessus constituent un aperçu général. Pour plus d’informations, voir [Blocs de création de schéma](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=fr) vidéo ou lecture [Principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) dans la documentation du produit.
 
 Dans ce tutoriel, vous utilisez le groupe de champs Événement d’expérience client et créez un groupe personnalisé pour démontrer le processus.
 

@@ -1,12 +1,12 @@
 ---
 title: Ingestion de données à l’aide d’un connecteur source de base de données
-description: Cette vidéo explique comment ingérer par lots des données d’une source de base de données dans Adobe Experience Platform Real-time Customer Profile et Experience Data Lake, de manière transparente et évolutive.
+description: Cette vidéo explique comment ingérer par lots des données d’une source de base de données dans Adobe Experience Platform Real-Time Customer Profile et Experience Data Lake, de manière transparente et évolutive.
 role: Data Engineer
 feature: Sources
 kt: 6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Ingestion de données à l’aide du connecteur source de base de données
 
-Cette vidéo explique comment ingérer par lots des données d’une source de base de données dans Adobe Experience Platform Real-time Customer Profile et Experience Data Lake, de manière transparente et évolutive. Pour obtenir une documentation du produit plus détaillée, voir [base](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) sur la page d’aperçu des connecteurs source .
+Cette vidéo explique comment ingérer par lots des données d’une source de base de données dans Adobe Experience Platform Real-Time Customer Profile et Experience Data Lake, de manière transparente et évolutive. Pour obtenir une documentation du produit plus détaillée, voir [base](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) sur la page d’aperçu des connecteurs source .
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?quality=12&learn=on)
 

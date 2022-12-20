@@ -3,7 +3,7 @@ title: Configuration des autorisations pour le tutoriel
 description: Découvrez comment demander l’accès au SDK Web Experience Platform et configurer l’autorisation requise pour terminer le tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 7%
@@ -21,7 +21,7 @@ Découvrez comment demander l’accès au SDK Web Experience Platform et configu
 
 ## Experience Platform
 
-Ces fonctionnalités doivent être disponibles pour tous les clients Experience Cloud, même si vous n’êtes pas client d’une application basée sur Platform telle que la plateforme de données clients en temps réel.
+Ces fonctionnalités doivent être disponibles pour tous les clients Experience Cloud, même si vous n’êtes pas client d’une application basée sur Platform comme Real-Time CDP.
 
 * L’accès au **production par défaut**, **&quot;Prod&quot;** sandbox (.
 * Accès à **[!UICONTROL Gestion des schémas]** et **[!UICONTROL Affichage des schémas]** under **[!UICONTROL Modélisation des données]**

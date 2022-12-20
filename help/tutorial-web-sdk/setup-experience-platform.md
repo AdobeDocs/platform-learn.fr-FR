@@ -2,7 +2,7 @@
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 10%
@@ -24,7 +24,7 @@ Experience Platform utilise le même schéma XDM que celui que vous avez créé 
 * Création d’un jeu de données dans Adobe Experience Platform
 * Configuration du flux de données pour envoyer des données du SDK Web à Adobe Experience Platform
 * Activation de la diffusion en continu de données web pour Real-time Customer Profile
-* Validez les données qui ont été envoyées à la fois dans le jeu de données Platform et dans Real-time Customer Profile.
+* Validez les données renvoyées à la fois dans le jeu de données Platform et dans Real-Time Customer Profile.
 
 ## Conditions préalables
 
@@ -156,7 +156,7 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 ## Activation du jeu de données et du schéma pour Real-time Customer Profile
 
-L’étape suivante consiste à activer le jeu de données et le schéma pour Real-time Customer Profile. La diffusion en continu de données à partir du SDK Web est l’une des nombreuses sources de données qui transitent par Platform et vous souhaitez joindre vos données web à d’autres sources de données pour créer des profils clients à 360 degrés. Pour en savoir plus sur Real-time Customer Profile, regardez cette courte vidéo :
+L’étape suivante consiste à activer le jeu de données et le schéma pour Real-Time Customer Profile. La diffusion en continu de données à partir du SDK Web est l’une des nombreuses sources de données qui transitent par Platform et vous souhaitez joindre vos données web à d’autres sources de données pour créer des profils clients à 360 degrés. Pour en savoir plus sur Real-time Customer Profile, regardez cette courte vidéo :
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
 
@@ -189,7 +189,7 @@ L’étape suivante consiste à activer le jeu de données et le schéma pour Re
 
    >[!IMPORTANT]
    >
-   >    Des identités Principal sont requises dans chaque enregistrement envoyé à Real-time Customer Profile. En règle générale, les champs d’identité sont étiquetés dans le schéma. Toutefois, lors de l’utilisation des mappages d’identité, les champs d’identité ne sont pas visibles dans le schéma. Cette boîte de dialogue vous permet de confirmer que vous pensez à une identité Principale et que vous la spécifiez dans une carte d’identité lors de l’envoi de vos données. Comme vous le savez, le SDK Web utilise une carte d’identité et l’identifiant Experience Cloud (ECID) est l’identité Principale par défaut.
+   >    Des identités Principal sont requises dans chaque enregistrement envoyé à Real-Time Customer Profile. En règle générale, les champs d’identité sont étiquetés dans le schéma. Toutefois, lors de l’utilisation des mappages d’identité, les champs d’identité ne sont pas visibles dans le schéma. Cette boîte de dialogue vous permet de confirmer que vous pensez à une identité Principale et que vous la spécifiez dans une carte d’identité lors de l’envoi de vos données. Comme vous le savez, le SDK Web utilise une carte d’identité et l’identifiant Experience Cloud (ECID) est l’identité Principale par défaut.
 
 
 1. Sélectionner **[!UICONTROL Activer]**
@@ -229,13 +229,13 @@ Vous devez tout d’abord générer davantage de données d’exemple. Répétez
 
 1. S’il existe une valeur valide dans le profil pour `lumaCRMId`, un identifiant de profil est renseigné dans la console :
 
-   ![Profil](assets/experience-platform-validate-dataset-profile-set.png)
+   ![Profile](assets/experience-platform-validate-dataset-profile-set.png)
 
 1. Cliquez dans le [!UICONTROL Identifiant de profil] et un [!UICONTROL Profil client] la console renseigne. Vous pouvez y voir toutes les identités liées à la variable `lumaCRMId`, par exemple : `ECID`:
 
    ![Profil client](assets/experience-platform-validate-dataset-custProfile.png)
 
-Vous avez maintenant activé le SDK Web Platform pour la plateforme Experience Platform (et la plateforme de données clients en temps réel). Et Customer Journey Analytics ! Et Journey Optimizer !) !
+Vous avez maintenant activé le SDK Web Platform pour Experience Platform (et Real-Time CDP). Et Customer Journey Analytics ! Et Journey Optimizer !) !
 
 
 [Suivant : ](setup-analytics.md)

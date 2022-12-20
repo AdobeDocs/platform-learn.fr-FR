@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -176,10 +176,10 @@ En parcourant les données de la variable **[!UICONTROL Attributs]** et **[!UICO
 Si vous souhaitez en savoir plus sur les stratégies de fusion, la gouvernance des données, le service de requête et le créateur de segments, passez à [leçon 11 du tutoriel Prise en main des architectes de données et des ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Les leçons précédentes de cet autre tutoriel vous ont permis de créer manuellement tous les éléments qui venaient d’être renseignés par ces collections Postman.
 
 Si vous souhaitez créer un exemple de mise en oeuvre du SDK Web pour créer un lien vers cet environnement de test, accédez à la section
-[Tutoriel sur la mise en oeuvre de Adobe Experience Cloud avec le SDK Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Après avoir configuré les leçons &quot;Configuration initiale&quot;, &quot;Configuration des balises&quot; et &quot;Configuration Experience Platform&quot; du tutoriel du SDK Web, connectez-vous au site web Luma à l’aide des dix premières adresses électroniques du `luma-crm.json` fichier utilisant le mot de passe `test` pour voir la fusion des fragments de profil avec les données chargées dans ce tutoriel.
+[Tutoriel sur la mise en oeuvre de Adobe Experience Cloud avec le SDK Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr). Après avoir configuré les leçons &quot;Configuration initiale&quot;, &quot;Configuration des balises&quot; et &quot;Configuration Experience Platform&quot; du tutoriel du SDK Web, connectez-vous au site web Luma à l’aide des dix premières adresses électroniques du `luma-crm.json` fichier utilisant le mot de passe `test` pour voir la fusion des fragments de profil avec les données chargées dans ce tutoriel.
 
 Si vous souhaitez créer un exemple de mise en oeuvre du SDK Mobile pour créer un lien vers cet environnement de test, accédez à la section
-[Tutoriel sur la mise en oeuvre de Adobe Experience Cloud dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Après avoir configuré les leçons &quot;Configuration initiale&quot;, &quot;Mise en oeuvre de l’application&quot; et &quot;Experience Platform&quot; du tutoriel du SDK Web, connectez-vous au site web Luma à l’aide des premières adresses électroniques dans la `luma-crm.json` pour voir une fusion de fragments de profil avec des données chargées dans ce tutoriel.
+[Tutoriel sur la mise en oeuvre de Adobe Experience Cloud dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr). Après avoir configuré les leçons &quot;Configuration initiale&quot;, &quot;Mise en oeuvre de l’application&quot; et &quot;Experience Platform&quot; du tutoriel du SDK Web, connectez-vous au site web Luma à l’aide des premières adresses électroniques dans la `luma-crm.json` pour voir une fusion de fragments de profil avec des données chargées dans ce tutoriel.
 
 ## Réinitialisation de l’environnement Sandbox {#reset-sandbox}
 

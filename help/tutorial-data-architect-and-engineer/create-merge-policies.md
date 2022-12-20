@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -141,6 +141,6 @@ La gouvernance des données est un cas d’utilisation clé des stratégies de f
 ## Ressources supplémentaires
 
 * [Documentation sur les stratégies de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [Référence de l’API Stratégies de fusion (partie intégrante de l’API Real-time Customer Profile)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [Référence de l’API Stratégies de fusion (partie intégrante de l’API Real-Time Customer Profile)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passons maintenant au [cadre de gouvernance des données](apply-data-governance-framework.md).

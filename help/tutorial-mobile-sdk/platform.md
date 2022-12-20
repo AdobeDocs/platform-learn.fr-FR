@@ -2,7 +2,7 @@
 title: Envoi de données à Adobe Experience Platform
 description: Découvrez comment envoyer des données à Adobe Experience Platform.
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 Découvrez comment envoyer des données à Adobe Experience Platform.
 
-Cette leçon facultative s’applique à tous les clients de Real-time Customer Data Platform (plateforme de données clients en temps réel), Journey Optimizer et Customer Journey Analytics. Experience Platform, la base des produits Experience Cloud, est un système ouvert qui transforme toutes vos données — Adobe et non-Adobe — en profils clients robustes qui se mettent à jour en temps réel et utilisent des insights pilotés par l’IA pour vous aider à fournir les expériences adéquates sur chaque canal.
+Cette leçon facultative s’applique à tous les clients de Real-time Customer Data Platform (Real-Time CDP), Journey Optimizer et Customer Journey Analytics. Experience Platform, la base des produits Experience Cloud, est un système ouvert qui transforme toutes vos données — Adobe et non-Adobe — en profils clients robustes qui se mettent à jour en temps réel et utilisent des insights pilotés par l’IA pour vous aider à fournir les expériences adéquates sur chaque canal.
 
 Le [event](events.md), [cycle de vie](lifecycle-data.md), et [identité](identity.md) les données que vous avez collectées et envoyées à Platform Edge Network dans les leçons précédentes sont transférées aux services configurés dans votre flux de données, y compris Adobe Experience Platform.
 
@@ -79,7 +79,7 @@ Platform constitue un outil plus robuste pour valider les données. [query servi
 
 ## Activation de Real-time Customer Profile
 
-Real-time Customer Profile de l’Experience Platform vous permet de créer une vue d’ensemble de chaque client qui combine des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces. Le profil vous permet de consolider vos diverses données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
+Le profil client en temps réel de l’Experience Platform vous permet de créer une vue d’ensemble de chaque client qui combine des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces. Le profil vous permet de consolider vos diverses données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
 
 ### Activation du schéma
 

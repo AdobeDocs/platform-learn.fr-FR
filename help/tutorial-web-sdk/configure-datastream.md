@@ -3,7 +3,7 @@ title: Configurer un flux de données
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 8%
@@ -43,7 +43,7 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 
    >[!NOTE]
    >
-   >Si vous êtes client d’une application basée sur Platform telle que la plateforme de données clients en temps réel, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
+   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
 
 1. Accédez à **[!UICONTROL Datastreams]** dans le volet de navigation de gauche
 1. Sélectionner **[!UICONTROL Nouvelle structure de données]** sur le côté droit de l’écran.

@@ -1,6 +1,6 @@
 ---
 title: Activation des profils client en temps réel
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Activation des profils client en temps réel
 description: Dans cette leçon, vous allez activer vos schémas et jeux de données pour Real-time Customer Profile.
 role: Data Architect
@@ -8,7 +8,7 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Dans cette leçon, vous allez activer vos schémas et jeux de données pour Real
 
 Bon, j&#39;ai menti en disant que la leçon sur les jeux de données était la plus courte de ce tutoriel - celle-ci devrait prendre encore moins de temps ! Littéralement tout ce que vous allez faire c&#39;est retourner un tas de baskets. Mais ce qui se passe quand vous retournez ces bascules c&#39;est que _vraiment_ important donc je voulais lui dédier une page entière.
 
-Real-time Customer Profile offre une vue d’ensemble de chaque client qui combine des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces. Le profil vous permet de consolider vos diverses données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
+Real-Time Customer Profile offre une vue d’ensemble de chaque client qui combine des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces. Le profil vous permet de consolider vos diverses données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
 
 Aussi incroyable que cela paraisse, vous n&#39;avez pas besoin d&#39;activer *toutes vos données* pour profile. En fait, vous ne devez activer que les données dont vous avez besoin pour les cas d’utilisation de l’activation. Activez les données que vous souhaitez utiliser pour les cas d’utilisation marketing, les intégrations du centre d’appels, etc., où vous avez besoin d’un accès rapide à un profil client robuste. Si vous chargez des données uniquement à des fins d’analyse, elles ne doivent probablement pas être activées pour le profil.
 
@@ -187,8 +187,8 @@ Vous pouvez également confirmer que l’interface utilisateur affiche le jeu de
 
 ## Ressources supplémentaires
 
-* [Documentation sur le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
-* [Référence de l’API Real-time Customer Profile](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [Documentation sur Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
+* [Référence de l’API Real-Time Customer Profile](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
 **Ingénieurs de données** doit continuer à [Abonnement aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md) leçon.

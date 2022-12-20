@@ -6,7 +6,7 @@ role: User
 kt: 9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -21,6 +21,6 @@ Découvrez comment orchestrer des campagnes B2B avec Marketo Engage et Real-time
 
 >[!INFO]
 >
-> Cette vidéo fait partie d&#39;un cours, [Prise en main de la plateforme CDP en temps réel, édition B2B pour les marketeurs](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), disponible gratuitement sur Experience League !
+> Cette vidéo fait partie d&#39;un cours, [Prise en main de Real-Time CDP, Édition B2B pour les spécialistes du marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), disponible gratuitement sur Experience League !
 
-Pour plus d’informations, consultez la [Documentation sur l’édition B2B de la plateforme CDP en temps réel](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).
+Pour plus d’informations, consultez la [Documentation de Real-Time CDP B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html).

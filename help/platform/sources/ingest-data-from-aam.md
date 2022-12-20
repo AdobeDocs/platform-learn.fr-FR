@@ -1,12 +1,12 @@
 ---
 title: Ingestion de données à l’aide du connecteur de données Adobe Audience Manager
-description: Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-time Customer Data Platform, vous pouvez utiliser le connecteur de données d’Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données riches (y compris les informations d’identification personnelles) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration d’AAM Data Connector for Real-time CDP.
+description: Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-time Customer Data Platform, vous pouvez utiliser le connecteur de données d’Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données riches (y compris les informations d’identification personnelles) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration d’AAM Data Connector for Real-Time CDP.
 role: Data Engineer, Data Architect
 feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Ingestion de données à l’aide du connecteur de données Adobe Audience Manager
 
-Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-time Customer Data Platform (plateforme de données clients en temps réel), vous pouvez utiliser le connecteur de données d’Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données riches (y compris les informations d’identification personnelles) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration du connecteur de données AAM pour la plateforme de données clients en temps réel.
+Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-time Customer Data Platform (Real-Time CDP), vous pouvez utiliser le connecteur de données d’Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données riches (y compris les PII) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration du connecteur de données AAM pour Real-Time CDP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
 

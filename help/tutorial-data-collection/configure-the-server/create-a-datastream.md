@@ -2,7 +2,7 @@
 title: Création dʼun flux de données
 description: Création dʼun flux de données
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -34,7 +34,7 @@ L’écran suivant vous permet d’ajouter quels produits et services Adobe doiv
 
 Les entreprises disposent généralement d’un chemin de promotion pour toutes les mises à jour de site web. Une personne de l’entreprise (un spécialiste du marketing ou un ingénieur, selon les modifications) teste généralement ses modifications dans un environnement de développement que seule cette personne utilise. Une fois que les modifications leur conviennent, elles sont promues dans un environnement d’évaluation où elles font l’objet d’autres tests. Enfin, les modifications sont publiées sur le site web de production que les utilisateurs voient. Les flux de données prennent en charge ce modèle de promotion.
 
-Si vous prenez en charge des applications basées sur Platform telles que la plateforme de données clients en temps réel, Journey Optimizer ou Customer Journey Analytics, des flux de données supplémentaires doivent être créés dans des environnements de test Platform distincts qui correspondent à ces environnements.
+Si vous prenez en charge des applications basées sur Platform comme Real-Time CDP, Journey Optimizer ou Customer Journey Analytics, des flux de données supplémentaires doivent être créés dans des environnements de test Platform distincts qui correspondent à ces environnements.
 
 Si vous n’êtes pas client Platform, vous pouvez créer plusieurs flux de données dans un seul environnement de test et utiliser la fonction de copie de flux de données pour dupliquer les paramètres.
 

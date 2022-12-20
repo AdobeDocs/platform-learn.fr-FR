@@ -1,12 +1,12 @@
 ---
 title: Ingestion de données à l’aide des connecteurs source de stockage dans le cloud
-description: Cette vidéo montre comment ingérer facilement par lots des données à partir des services de stockage dans le cloud vers Adobe Experience Platform Real-time Customer Profile et le lac de données, de manière transparente et évolutive.
+description: Cette vidéo montre comment ingérer facilement par lots des données à partir des services de stockage dans le cloud vers Adobe Experience Platform Real-Time Customer Profile et le lac de données, de manière transparente et évolutive.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3827
 thumbnail: 29695.jpg
 exl-id: 406b4545-8977-43fa-85b2-2069bba9f15a
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 # Ingestion de données à l’aide des connecteurs source de Cloud Storage
 
-Cette vidéo montre comment ingérer facilement par lots des données à partir des services de stockage dans le cloud vers Adobe Experience Platform Real-time Customer Profile et le lac de données, de manière transparente et évolutive. Pour obtenir une documentation du produit plus détaillée, voir [espace de stockage](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) sur la page d’aperçu des connecteurs source .
+Cette vidéo montre comment ingérer facilement par lots des données à partir des services de stockage dans le cloud vers Adobe Experience Platform Real-Time Customer Profile et le lac de données, de manière transparente et évolutive. Pour obtenir une documentation du produit plus détaillée, voir [espace de stockage](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) sur la page d’aperçu des connecteurs source .
 
 >[!VIDEO](https://video.tv.adobe.com/v/29695?quality=12&learn=on)
 

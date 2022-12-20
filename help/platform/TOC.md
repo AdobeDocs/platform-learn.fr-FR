@@ -4,7 +4,7 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 35%
@@ -56,14 +56,14 @@ ht-degree: 35%
    + [Création et remplissage d’un jeu de données](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=fr){target=&quot;_blank&quot;}
    + [Présentation des sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Ingestion de données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [Ingestion de données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
    + [Ingestion de données à partir d’une Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [Ingestion de données à partir de l’espace de stockage dans le cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [Ingestion de données à partir de CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [Ingestion de données à partir de l’espace de stockage dans le cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=fr)
+   + [Ingestion de données à partir de CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=fr)
    + [Ingérer des données à partir de bases de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [Présentation de l’ingestion par flux](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [Diffusion de données en continu avec l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-   + [Diffusion de données à l’aide des connecteurs sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [Diffusion de données en continu avec l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=fr)
+   + [Diffusion de données à l’aide des connecteurs sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=fr)
    + [Tutoriels du SDK Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
    + [Tutoriels du SDK Mobile](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
 + Data Science Workspace {#data-science-workspace}
@@ -184,7 +184,7 @@ ht-degree: 35%
    + [Tutoriels sur Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Tutoriels sur Journey Orchestration](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Tutoriels sur l’Offer decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=fr){target=&quot;_blank&quot;}
-   + Tutoriels de la plateforme CDP en temps réel{#rtcdp}
+   + Tutoriels Real-Time CDP{#rtcdp}
       + [Présentation](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [Présentation de l’édition B2B](/help/platform/rtcdp/b2b-overview.md)
       + [Démo de bout en bout](/help/platform/rtcdp/demo.md)

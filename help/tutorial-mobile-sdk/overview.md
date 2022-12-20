@@ -3,7 +3,7 @@ title: Présentation du tutoriel Mise en oeuvre de Adobe Experience Cloud dans l
 description: Découvrez comment mettre en oeuvre les applications mobiles Adobe Experience Cloud. Ce tutoriel vous guide tout au long d’une mise en oeuvre d’applications Experience Cloud dans un exemple d’application Swift.
 recommendation: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 10%
@@ -61,7 +61,7 @@ Dans ces leçons, nous supposons que vous disposez d’un Adobe ID et des autor
    * **[!UICONTROL Identity Management]**: éléments d’autorisation pour gérer et afficher les espaces de noms d’identité.
    * **[!UICONTROL Collecte de données]**: éléments d’autorisation pour gérer et afficher les flux de données.
 
-   * Si vous êtes client d’une application basée sur Platform comme la plateforme de données clients en temps réel, Journey Optimizer ou Customer Journey Analytics, vous devez également disposer des éléments suivants :
+   * Si vous êtes le client d’une application basée sur Platform telle que Real-Time CDP, Journey Optimizer ou Customer Journey Analytics, vous devez également disposer des éléments suivants :
       * **[!UICONTROL Data Management]**: éléments d’autorisation pour gérer et afficher les jeux de données pour terminer les _exercices Platform facultatifs_ (nécessite une licence pour une application basée sur Platform ).
       * Un développement **sandbox** que vous pouvez utiliser pour ce tutoriel.
 * Pour Adobe Analytics, vous devez savoir lequel **suites de rapports** vous pouvez utiliser pour terminer ce tutoriel.

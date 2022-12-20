@@ -8,10 +8,10 @@ feature: Queries
 kt: 4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 14%
 <!-- 15 min-->
 Dans cette leçon, vous apprendrez à configurer, écrire et exécuter des requêtes pour valider les données que vous avez ingérées.
 
-Adobe Experience Platform Query Service vous aide à comprendre vos données en vous permettant d’utiliser le langage SQL standard pour interroger des données dans Platform. Grâce à Query Service, vous pouvez joindre n’importe quel jeu de données dans le lac de données et capturer les résultats de la requête sous forme d’un nouveau jeu de données à utiliser dans un compte rendu des performances, dans le cadre de l’apprentissage automatique ou pour être ingéré dans Real-time Customer Profile.
+Adobe Experience Platform Query Service vous aide à comprendre vos données en vous permettant d’utiliser le langage SQL standard pour interroger des données dans Platform. Grâce à Query Service, vous pouvez joindre n’importe quel jeu de données dans le lac de données et capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, l’apprentissage automatique ou pour ingestion dans Real-Time Customer Profile.
 
 **Architectes de données** et **Ingénieurs de données** Vous devrez utiliser query service en dehors de ce tutoriel.
 
