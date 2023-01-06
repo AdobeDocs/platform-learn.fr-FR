@@ -1,9 +1,9 @@
 ---
 title: Comparaison d’at.js 2.x avec le SDK Web | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez les différences entre at.js 2.x et le SDK Web Platform, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2164'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ Si vous découvrez le SDK Web Platform, ne vous inquiétez pas : les éléments 
 | Offres de redirection | Pris en charge | Pris en charge. Cependant, une redirection d’une page avec le SDK Web Platform vers une page avec at.js (et dans la direction opposée) n’est pas prise en charge. |
 | Prise de décision sur appareil | Pris en charge | Non pris en charge actuellement |
 | Prérécupération des mbox | Pris en charge | Partiellement pris en charge. Contactez l’assistance clientèle pour activer cette fonctionnalité, car elle modifie le comportement de prérécupération de l’activité. |
-| Événements personnalisés | Pris en charge | Partiellement pris en charge via [hooks de surveillance](https://github.com/adobe/alloy/wiki/Monitoring-Hooks) |
+| Événements personnalisés | Pris en charge | Non pris en charge. Voir [feuille de route publique](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) pour l’état actuel. |
 | Jetons de réponse | Pris en charge | Pris en charge. Reportez-vous à la section [documentation sur les jetons de réponse dédiés](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) pour obtenir des exemples de code et des différences entre at.js et le SDK Web Platform |
 | Fournisseurs de données  | Pris en charge | Non pris en charge. Le code personnalisé peut être utilisé pour déclencher un SDK Web Platform. `sendEvent` une fois les données récupérées auprès d’un autre fournisseur. |
 
@@ -79,7 +79,7 @@ De nombreuses fonctions at.js ont une approche équivalente à l’aide du SDK W
 | `trackEvent()` et `sendNotifications()` | Utilisez la variable `sendEvent` avec une commande [spécifique `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) set :<br><br>`decisioning.propositionDisplay` signale le rendu d’une activité ;<br><br>`decisioning.propositionInteract` signale une interaction utilisateur avec une activité, comme un clic de souris. |
 | `targetGlobalSettings()` | Pas d&#39;équivalent direct. Reportez-vous à la section [Comparaison des paramètres de Target](detailed-comparison.md) pour plus d’informations. |
 | `targetPageParams()` et `targetPageParamsAll()` | Toutes les données transmises dans la variable `xdm` de l’option `sendEvent` est mappée aux paramètres de mbox Target. Puisque les paramètres de mbox sont nommés à l’aide de la notation par points sérialisés, la migration vers le SDK Web Platform peut nécessiter la mise à jour des audiences et des activités existantes pour utiliser les nouveaux noms de paramètres de mbox. <br><br>Données transmises dans le cadre de `data.__adobe.target` de `sendEvent` est mappée sur [Profil Target et paramètres spécifiques à Recommendations](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| événements personnalisés at.js | Non pris en charge. Cependant, [jetons de réponse](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) sont exposées dans le cadre de la fonction `propositions` dans la réponse de la variable `sendEvent` appelez . |
+| événements personnalisés at.js | Non pris en charge. Voir [feuille de route publique](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) pour l’état actuel. [Jetons de réponse](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) sont exposées dans le cadre de la fonction `propositions` dans la réponse de la variable `sendEvent` appelez . |
 
 ## Paramètres d’at.js et équivalents du SDK Web Platform
 
