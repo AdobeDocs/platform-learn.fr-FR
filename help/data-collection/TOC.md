@@ -30,7 +30,7 @@ ht-degree: 38%
 + SDK Web{#web-sdk}
    + [Présentation](web-sdk/overview.md)
    + [Démonstration](web-sdk/demo.md)
-   + [Tutoriel de mise en oeuvre (avec balises)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Tutoriel de mise en oeuvre (avec balises)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr){target=&quot;_blank&quot;}
    + Consentement{#consent}
       + [Présentation](web-sdk/consent/overview.md)
       + [Définition des valeurs de consentement à l’aide de la norme Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 38%
    + [Présentation](mobile-sdk/overview.md)
    + [Création de propriétés mobiles](mobile-sdk/create-mobile-properties.md)
    + [Utilisation des gestionnaires de dépendances](mobile-sdk/use-dependency-managers.md)
-   + [Mise en oeuvre dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Mise en oeuvre dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr){target=&quot;_blank&quot;}
 + API du serveur{#server-api}
    + [Présentation](server-api/overview.md)
    + [Principes de base des API](server-api/introduction.md)
