@@ -3,9 +3,9 @@ title: Experience Makers Bootcamp
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -28,41 +28,45 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 10.00 - 10.30 : Lancement et introduction
 
-10.30 - 11.15 : Session Whiteboard : &quot;Personnalisation 1-1, chasse à la friction, silos, Adobe POV&quot;
+10.30 - 11.00 : &quot;Démonstration du Parcours client - Art du possible&quot;
 
-11.15 - 11.30 : Rompre
+11.00 - 11.45 : Session Whiteboard : &quot;Personnalisation 1-1, chasse à la friction, silos, Adobe POV&quot;
 
-11.30 - 12.00 : &quot;Démonstration du Parcours client - Art du possible&quot;
+11.45 - 12.00 : Rompre
 
-12.00 - 12.45 : Session Whiteboard : &quot;Ventilation de l’architecture des solutions&quot;
+12.00 - 13.00 : Session Whiteboard : &quot;Ventilation de l’architecture des solutions&quot;
 
-12.45 - 13.45 : Rompre
+13.00 - 14.00 : Déjeuner
 
-13.45 - 15.00 : Flux d’utilisateur 1 : Exercice pratique &quot;Acquisition&quot;
+14.00 - 15.30 : Flux d’utilisateur 1 : Exercice pratique &quot;Acquisition&quot;
 
 15.00 - 15.15 : Rompre
 
 15.15 - 17.00 : Flux d’utilisateur 2 : Exercice pratique &quot;Inscription et intégration&quot;
 
+18 h - 19 h 00 : Expérience &quot;Concurrence de cocktails&quot;
+
+19 h - 22 h 00 : Bon dîner
+
 ### Jour 2
 
-08.00 - 09.30 : Session de petit-déjeuner : &quot;Présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion&quot;
+09.00 - 09.30 : &quot;Présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion&quot;
 
 09.30 - 09.45 : Rompre
 
-09.45 - 11.15 : Flux d’utilisateur 3 : Exercice pratique &quot;mélange physique et numérique&quot;
+09.45 - 11.15 : Flux d’utilisateur 4 : Exercice pratique &quot;Analyse client&quot;
 
 11.15 - 11.30 : Rompre
 
-11.30 - 12.30 : Flux d’utilisateur 3 continué
+11.30 - 12.30 : &quot;Présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion&quot;
 
 12.30 - 13.30 : Déjeuner
 
-13.30 - 14.30 : Flux d’utilisateur 4 : Exercice pratique &quot;Analyse client&quot;
+13.30 - 14.30 : Personnalisation à grande échelle - Comment y parvenir
 
 14.30 - 15.00 : Conclusion, récapitulation et étapes suivantes
 
-15:30: Départ
+15.00 : Adjourn
 
 ## Conditions préalables
 
