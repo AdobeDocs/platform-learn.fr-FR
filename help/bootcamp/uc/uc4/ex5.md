@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 2%
 
 ---
@@ -31,7 +30,7 @@ Utilisons le projet que vous avez créé dans [4.4 Préparation des données dan
 
 Ouvrez votre projet `yourLastName - Omnichannel Analysis`.
 
-Une fois le projet ouvert et la vue des données `yourLastName - Omnichannel Analysis` sélectionné, vous êtes prêt à commencer à créer vos premières visualisations.
+Une fois le projet ouvert et la vue des données `CJA Bootcamp - Omnichannel Data View` sélectionné, vous êtes prêt à commencer à créer vos premières visualisations.
 
 ![demo](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ Tout d&#39;abord, nous devons sélectionner les dates appropriées pour analyser
 
 >[!IMPORTANT]
 >
->Sélectionnez une période comme **Cette semaine** ou **Ce mois-ci**. Les données les plus récentes ont été ingérées le 19 septembre 2022.
+>Les données les plus récemment disponibles ont été ingérées le 19/09/2022. Sélectionnez une période incluant cette date.
 
 ![demo](./images/pro1.png)
 
@@ -77,9 +76,9 @@ Cliquez ensuite sur **Verrouiller la sélection** et sélectionnez **Éléments 
 
 ![demo](./images/pro7b.png)
 
-## Les 5 produits les plus consultés
+## Les 4 produits les plus consultés
 
-Quels sont les 5 premiers produits consultés ?
+Quels sont les 4 produits les plus consultés ?
 
 N’oubliez pas d’enregistrer le projet de temps à autre.
 
@@ -88,7 +87,7 @@ N’oubliez pas d’enregistrer le projet de temps à autre.
 | Windows | Ctrl + S |
 | Mac | Commande + S |
 
-Commençons à trouver les 5 premiers produits consultés. Dans le menu de gauche, recherchez le **Nom du produit** - Dimension.
+Commençons à trouver les 4 premiers produits consultés. Dans le menu de gauche, recherchez le **Nom du produit** - Dimension.
 
 ![demo](./images/pro8.png)
 
@@ -102,7 +101,7 @@ Essayez ensuite de ventiler l’un des produits par nom de marque. Rechercher **
 
 ![demo](./images/pro13.png)
 
-Effectuez ensuite une ventilation à l’aide de l’agent utilisateur. Rechercher **Agent utilisateur** et faites-le glisser sous le nom de la marque.
+Effectuez ensuite une ventilation à l’aide du niveau de fidélité. Rechercher **Niveau de fidélité** et faites-le glisser sous le nom de la marque.
 
 ![demo](./images/pro15.png)
 
@@ -114,7 +113,7 @@ Enfin, vous pouvez ajouter d’autres visualisations. Sur le côté gauche, sous
 
 ![demo](./images/pro18.png)
 
-Ensuite, dans le tableau, sélectionnez les 5 premières **Agent utilisateur**  lignes de la ventilation que nous avons réalisée sous **Smartphone noir Google Pixel XL 32 Go** > **Signal Citi**. Lorsque vous sélectionnez les 5 lignes, conservez la propriété **CTRL** (sous Windows) ou le bouton **Commande** (sur Mac).
+Ensuite, dans le tableau, sélectionnez le **Niveau de fidélité**  lignes de la ventilation que nous avons réalisée sous **Smartphone noir Google Pixel XL 32 Go** > **Signal Citi**. Lorsque vous sélectionnez les 3 lignes, conservez la propriété **CTRL** (sous Windows) ou le bouton **Commande** (sur Mac).
 
 ![demo](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Clic sur la visualisation **Abandon**.
 
 Sélectionnez la même période que dans l’exercice précédent.
 
-![demo](./images/prodatef.png)
+![demo](./images/pro1.png)
 
 Vous verrez alors ceci.
 
@@ -216,7 +215,7 @@ Vous verrez alors :
 
 Sélectionnez la même période que dans l’exercice précédent.
 
-![demo](./images/pro0b.png)
+![demo](./images/pro1.png)
 
 Recherche de la dimension **Nom de la page** sous les composants sur le côté gauche :
 
@@ -297,7 +296,7 @@ Ajoutez maintenant un nouveau panneau vierge en cliquant sur **+ Ajouter un pann
 
 Sélectionnez la même période que dans l’exercice précédent.
 
-![demo](./images/pro24d.png)
+![demo](./images/pro1.png)
 
 Cliquez sur **Tableau à structure libre**.
 
