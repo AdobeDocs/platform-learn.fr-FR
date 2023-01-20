@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1615'
 ht-degree: 2%
 
 ---
@@ -175,6 +174,8 @@ Vous devrez ensuite configurer de nombreuses Dimensions et mesures, comme indiqu
 | Identifiant de transaction | Identifiant de transaction |  |
 | URL (web.webPageDetails.URL) | URL |  |
 | Agent utilisateur | Agent utilisateur | Session la plus récente |
+| level | Niveau de fidélité |  |
+| points | Valeur de durée de vie du client |  |
 
 ### MESURES
 
@@ -278,7 +279,7 @@ Vous devez être redirigé vers cet écran :
 
 ![demo](./images/8-v2.png)
 
-Dans cet onglet, vous pouvez modifier certains paramètres importants afin de modifier le mode de traitement des données. Commençons par définir la variable **Délai d’expiration de la session** à 30 min. Grâce à l’horodatage de chaque événement d’expérience, vous pouvez étendre le concept de session sur tous les canaux. Par exemple, que se passe-t-il si un client appelle le centre d’appel après avoir visité le site web ? L’utilisation de délais d’expiration de session personnalisés offre beaucoup de flexibilité pour décider ce qu’est une session et comment cette session fusionnera les données.
+Dans cet onglet, vous pouvez modifier certains paramètres importants afin de modifier le mode de traitement des données. Commençons par définir la variable **Délai d’expiration de la session** à 30 min. Grâce à l’horodatage de chaque événement d’expérience, vous pouvez étendre le concept de session sur tous les canaux. Par exemple, que se passe-t-il si un client appelle le centre d’appel après avoir visité le site web ? L’utilisation de délais d’expiration de session personnalisés offre une grande flexibilité pour décider ce qu’est une session et comment cette session fusionnera les données.
 
 ![demo](./images/ext8.png)
 
