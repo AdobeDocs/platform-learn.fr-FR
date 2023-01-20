@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ Recherche du jeu de données `Demo System - Event Dataset for Website (Global v1
 
 ![demo](./images/cja7.png)
 
-Désormais, recherchez et cochez les cases correspondant à `Demo System - Event Dataset for Voice Assistants (Global v1.1)` et `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Désormais, recherchez et cochez les cases correspondant à `Demo System - Profile Dataset for Loyalty (Global v1.1)` et `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 Vous aurez alors ceci. Cliquez sur **Suivant**.
 
@@ -84,7 +83,7 @@ Cependant, vous pouvez toujours influencer l’identifiant qui sera utilisé pou
 
 Comme mentionné, vous pouvez définir différents ID de personne pour chaque jeu de données. Cela vous permet de rassembler différents jeux de données provenant de plusieurs origines dans CJA. Imaginez que vous introduisiez des NPS ou des données d&#39;enquête qui seraient très intéressantes et utiles pour comprendre le contexte et pourquoi quelque chose s&#39;est passé.
 
-Le nom du champ ID de personne n’est pas important tant que la valeur des champs ID de personne correspond. Disons que nous `email` dans un jeu de données et `emailAddress` dans un autre jeu de données défini comme ID de personne. If `delaigle@adobe.com` est la même valeur pour le champ ID de personne des deux jeux de données. CJA sera en mesure de regrouper les données.
+Le nom du champ ID de personne n’est pas important tant que la valeur des champs ID de personne correspond. Par exemple, si l’ID de personne est `email` dans un jeu de données et `emailAddress` dans un autre, et `dnb-bootcamp@adobe.com` est la même valeur pour le champ ID de personne dans les deux jeux de données, CJA sera en mesure de regrouper les données.
 
 Il existe actuellement d&#39;autres limitations telles que l&#39;assemblage du comportement anonyme à connu. Consultez les questions fréquentes ici : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
 
@@ -107,7 +106,7 @@ Une fois que vous avez assemblé les trois jeux de données, nous sommes prêts 
 | jeu de données | ID de personne |
 | ----------------- |-------------| 
 | Système de démonstration - Jeu de données d’événement pour le site web (Global v1.1) | adresse e-mail |
-| Système de démonstration - Jeu de données d’événement pour les assistants vocaux (Global v1.1) | adresse e-mail |
+| Système de démonstration - Jeu de données de profil pour la fidélité (Global v1.1) | adresse e-mail |
 | Système de démonstration - Jeu de données d’événement pour le centre d’appels (Global v1.1) | adresse e-mail |
 
 Vous devez également vous assurer que pour chaque jeu de données, ces options sont activées :
