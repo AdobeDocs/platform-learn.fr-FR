@@ -3,7 +3,7 @@ title: Experience Makers Bootcamp
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -40,9 +40,9 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 14.00 - 15.30 : Flux d’utilisateur 1 : Exercice pratique &quot;Acquisition&quot;
 
-15.00 - 15.15 : Rompre
+15.30 - 15.45 : Rompre
 
-15.15 - 17.00 : Flux d’utilisateur 2 : Exercice pratique &quot;Inscription et intégration&quot;
+15.45 - 17.00 : Flux d’utilisateur 2 : Exercice pratique &quot;Inscription et intégration&quot;
 
 18 h - 19 h 00 : Expérience &quot;Concurrence de cocktails&quot;
 
