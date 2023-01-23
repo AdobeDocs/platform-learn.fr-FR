@@ -3,9 +3,9 @@ title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Découvrez comment diffuser des expériences et comment transmettre des paramètres supplémentaires à Target.
 
-[Adobe Target](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
 
 ## Objectifs d&#39;apprentissage
 
@@ -117,7 +117,7 @@ Target doit être activé dans la configuration du flux de données pour que les
 
 Pour configurer Target dans le flux de données :
 
-1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection)Interface de {target=&quot;blank&quot;}
+1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
 1. Sélectionnez la `Luma Web SDK` datastream
 
@@ -161,7 +161,7 @@ Pour configurer ou rechercher des ID d’environnement, accédez à **Adobe Targ
 
 ### Espace de noms d’ID tiers de Target
 
-Ce paramètre facultatif vous permet de spécifier le symbole d’identité à utiliser pour l’identifiant tiers Target. Target prend uniquement en charge la synchronisation des profils sur un seul symbole d’identité ou espace de noms. Pour plus d’informations, reportez-vous à la section [Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) de Target.
+Ce paramètre facultatif vous permet de spécifier le symbole d’identité à utiliser pour l’identifiant tiers Target. Target prend uniquement en charge la synchronisation des profils sur un seul symbole d’identité ou espace de noms. Pour plus d’informations, reportez-vous à la section [Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=fr) de Target.
 
 Les symboles d’identité se trouvent dans la liste des identités sous **Collecte de données** > **[!UICONTROL Client]** > **[!UICONTROL Identités]**.
 
@@ -184,7 +184,7 @@ Tout d’abord, vous devez comprendre la terminologie utilisée dans les interfa
 
 Les décisions de personnalisation visuelle issues de Target sont diffusées par le SDK Web de Platform, si Target est activé dans le flux de données. Cependant, _ils ne sont pas rendus automatiquement_. Vous devez modifier la règle de chargement de page globale pour activer le rendu automatique.
 
-1. Dans le [Collecte de données](https://experience.adobe.com/#/data-collection)Interface {target=&quot;blank&quot;}, ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
+1. Dans le [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} , ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
 1. Ouvrez le `all pages - library load - AA & AT` règle
 1. Sélectionnez la `Adobe Experience Platform Web SDK - Send event` action
 1. Activer **[!UICONTROL Rendu des décisions de personnalisation visuelle]** avec la case à cocher
@@ -334,7 +334,7 @@ Maintenant que vous avez configuré le SDK Web de Platform pour demander du cont
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
