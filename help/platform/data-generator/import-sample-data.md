@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 4%
+source-wordcount: '1650'
+ht-degree: 7%
 
 ---
 
@@ -50,6 +50,7 @@ Avant de suivre les étapes, assurez-vous d’avoir téléchargé la [Postman](h
 
 1. Dans votre dossier de téléchargements, déplacez le `platform-utils-main.zip` vers l’emplacement souhaité sur votre ordinateur, puis décompressez-le.
 1. Dans le `luma-data` , ouvrez tous les `json` dans un éditeur de texte et remplacez toutes les instances de `_techmarketingdemos` avec votre propre identifiant de client, précédé d’un trait de soulignement.
+1. Ouvrir `luma-offline-purchases.json` dans un éditeur de texte et mettez à jour tous les horodatages afin que les événements se produisent le dernier mois (par exemple, recherchez `"timestamp":"2022-06` et remplacer l’année et le mois)
 1. Notez l’emplacement du dossier décompressé, car vous en aurez besoin ultérieurement lors de la configuration de la variable `FILE_PATH` Variable d’environnement Postman :
 
    >[!NOTE]
@@ -183,6 +184,6 @@ Si vous souhaitez créer un exemple de mise en oeuvre du SDK Mobile pour créer 
 
 ## Réinitialisation de l’environnement Sandbox {#reset-sandbox}
 
-La réinitialisation d’un environnement de test hors production supprime toutes les ressources associées à cet environnement de test (schémas, jeux de données, etc.), tout en conservant le nom de l’environnement de test et les autorisations associées. Cet environnement de test &quot;propre&quot; reste disponible sous le même nom pour les utilisateurs qui y ont accès.
+La réinitialisation d’un environnement de test hors production supprime toutes les ressources associées à cet environnement de test (schémas, jeux de données, etc.) tout en conservant le nom et les autorisations associés de l’environnement de test. Cet environnement de test « propre » reste disponible avec le même nom auprès des utilisateurs qui y ont accès.
 
 Suivez les étapes [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) pour réinitialiser un environnement de test.
