@@ -1,9 +1,9 @@
 ---
 title: Mise à jour des audiences et des scripts de profil | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment mettre à jour les audiences Adobe Target et les scripts de profil pour des raisons de compatibilité avec le SDK Web Experience Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ Tous les paramètres de mbox Target doivent être transmis au format XDM avec un
 * Mise à jour des audiences qui utilisent des paramètres de mbox
 * Mise à jour des scripts de profil utilisant des paramètres de mbox
 * Mettez à jour les offres et activités à l’aide du remplacement des jetons de paramètre de mbox (par exemple, `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> Les mises en oeuvre du SDK Web Platform commencées après le 1er octobre 2022 peuvent nécessiter l’utilisation de la variable [méthode de prérécupération](prefetch-workaround.md) pour utiliser correctement certaines des fonctionnalités décrites sur cette page.
 
 ## Ajustement des audiences
 
