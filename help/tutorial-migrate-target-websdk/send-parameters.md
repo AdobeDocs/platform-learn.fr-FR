@@ -1,9 +1,9 @@
 ---
 title: Envoyer les paramètres | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment envoyer des paramètres de mbox, de profil et d’entité à Adobe Target à l’aide du SDK Web Experience Platform.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,6 @@ ht-degree: 0%
 # Envoyer des paramètres à Target à l’aide du SDK Web Platform
 
 Les mises en oeuvre de Target diffèrent d’un site web à l’autre en raison de l’architecture du site, des exigences de l’entreprise et des fonctionnalités utilisées. La plupart des implémentations de Target incluent la transmission de divers paramètres pour les informations contextuelles, les audiences et les recommandations de contenu.
-
->[!WARNING]
->
-> Les mises en oeuvre du SDK Web Platform commencées après le 1er octobre 2022 peuvent nécessiter l’utilisation de la variable [méthode de prérécupération](prefetch-workaround.md) afin de transmettre correctement les paramètres décrits sur cette page.
 
 Utilisons une page de détails de produit simple et une page de confirmation de commande pour démontrer les différences entre les bibliothèques lors de la transmission de paramètres à Target.
 

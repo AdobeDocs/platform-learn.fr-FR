@@ -1,9 +1,9 @@
 ---
 title: Suivi des événements | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment effectuer le suivi des événements de conversion Adobe Target à l’aide du SDK Web Experience Platform.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
@@ -16,10 +16,6 @@ Il est possible d’effectuer le suivi des événements de conversion pour Targe
 * Suivi automatique des événements qui ne nécessitent aucune configuration
 * Événements de conversion d’achat qui doivent être ajustés en fonction d’une mise en oeuvre recommandée du SDK Web Platform
 * Événements de conversion hors achat nécessitant des mises à jour du code
-
->[!WARNING]
->
-> Les mises en oeuvre du SDK Web Platform commencées après le 1er octobre 2022 peuvent nécessiter l’utilisation de la variable [méthode de prérécupération](prefetch-workaround.md) afin de suivre correctement certains des événements décrits sur cette page.
 
 ## Comparaison des objectifs
 
