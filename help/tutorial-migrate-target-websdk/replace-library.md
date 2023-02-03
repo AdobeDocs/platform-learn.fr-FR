@@ -1,9 +1,9 @@
 ---
 title: Remplacement de la bibliothèque | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 4%
 
 ---
@@ -207,6 +207,12 @@ Pour en savoir plus sur la façon dont le SDK Web Platform peut gérer le scinti
 
 Le SDK Web Platform doit être configuré à chaque chargement de page. Le `configure` doit toujours être la première commande du SDK appelée. L’exemple suivant suppose que l’ensemble du site est mis à niveau vers le SDK Web Platform dans le cadre d’un seul déploiement :
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+Le `edgeConfigId` est la valeur [!UICONTROL Identifiant du flux de données]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB tags]
+
+Dans les implémentations de balises, de nombreux champs sont automatiquement renseignés ou peuvent être sélectionnés dans les menus déroulants. Notez que différentes plateformes [!UICONTROL sandbox] et [!UICONTROL datastreams] peut être sélectionné pour chaque environnement. Le flux de données change en fonction de l’état de la bibliothèque de balises dans le processus de publication.
+
+![configuration de l’extension de balise SDK Web](assets/tags-config.png)
+>[!ENDTABS]
+
 Si vous prévoyez de migrer page par page d’at.js vers le SDK Web Platform, les options de configuration suivantes sont requises :
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB tags]
+
+![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 Les options de configuration dignes d’intérêt liées à Target sont décrites ci-dessous :
 
