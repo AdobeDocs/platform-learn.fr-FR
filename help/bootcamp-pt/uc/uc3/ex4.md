@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
-# 3.4 Test de votre parcours
+# 3.4 Teste sua jornada
 
-Pour tester votre parcours, vous devez utiliser l’identifiant d’événement que vous avez créé dans l’exercice 3.2, qui ressemble à ceci.
+Para testar sua jornada, você deve usar o eventID criado no exercice 3.2, que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-L’identifiant d’événement est ce qui doit être envoyé à Adobe Experience Platform pour déclencher le parcours. Dans cet exemple, eventID est :
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. exemplaire de Neste, o eventID é :
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Ouvrez l’application mobile et accédez à la page d’accueil. Cliquez sur l’icône **Paramètres**.
+Abra o aplicativo móvel e vá para a página . Clique no ícone de **Configuration**.
 
 ![DSN](./images/appsett.png)
 
-Collez votre eventID dans le champ . **Identifiant d’événement de balise** et cliquez sur **Enregistrer**.
+Cole seu eventID sur campo **Identifiant d’événement de balise** e-groupe **Enregistrer**.
 
 ![DSN](./images/beacon1.png)
 
-Avant de poursuivre, ouvrez cette page web sur votre ordinateur : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Vous verrez alors :
+Em seguida, será exibida a tela :
 
 ![DSN](./images/screen1.png)
 
-Ensuite, revenez à la page d’accueil. Cliquez sur le bouton **beacon** icône .
+Retorne para a página officialisé. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Vous verrez alors ceci. Tout d’abord, sélectionnez **Balise d’écran Bootcamp** puis cliquez sur le bouton **entrée** bouton . Vous pourrez ainsi simuler une entrée de balise.
+Primeiro, select **Balise d’écran Bootcamp** La clique pas botão de **entrada** bouton . Isso permitirá que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 
-Maintenant, regardez l&#39;écran du magasin. Le dernier produit que vous avez consulté s’affiche dans les 5 secondes qui suivent.
+Agora confirme une tela da loja. Você verá o último producto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-Vous avez également reçu votre notification push.
+Você também terá recbido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-Vous avez maintenant terminé cet exercice.
+Você terminou este exercice.
 
-[Retour au flux utilisateur 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

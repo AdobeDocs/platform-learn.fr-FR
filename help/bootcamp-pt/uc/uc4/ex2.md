@@ -5,103 +5,104 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 
-# 4.2 Connexion des jeux de données Adobe Experience Platform dans Customer Journey Analytics
+# 4.2 Concevoir les jeux de données da Adobe Experience Platform sans Customer Journey Analytics
 
-## Objectifs
+## Objetivos
 
-- Présentation de l’interface utilisateur de connexion aux données
-- Intégration des données Adobe Experience Platform dans CJA
-- Présentation de l’ID de personne et de la combinaison de données
-- Découvrez le concept de diffusion de données en continu dans Customer Journey Analytics
+- Comprendre une interface utilisateur da conexão de dados
+- Traga os dados da Adobe Experience Platform para o CJA
+- Entenda un ID da pessoa e a compilão de dados
+- Approbation de la diffusion en continu des données sur le Parcours client
 
-## 4.2.1 Connexion
+## 4.2.1 Conexão
 
-Accédez à [analytics.adobe.com](https://analytics.adobe.com) pour accéder à Customer Journey Analytics.
+Acesse [analytics.adobe.com](https://analytics.adobe.com) para acessar o Customer Journey Analytics.
 
-Sur la page d’accueil du Customer Journey Analytics, accédez à **Connexions**.
+Na página officieuse do Customer Journey Analytics, acesse **Connexions**.
 
 ![demo](./images/cja2.png)
 
-Ici, vous pouvez voir toutes les différentes connexions établies entre CJA et Platform. Ces connexions ont le même objectif que les suites de rapports dans Adobe Analytics. Cependant, la collecte des données est totalement différente. Toutes les données proviennent des jeux de données Adobe Experience Platform.
+Aqui você pode ver todas as as diferentes conexões feitas entre CJA e a Plataforma. Essas conexões têm o mesmo objetivo dos conjuntos de relatórios no Adobe Analytics. No entanto, a coleta dos dados é completamente diferente. Todos os dados m de datasets da Adobe Experience Platform.
 
-Créons votre première connexion. Cliquez sur **Créer une connexion**.
+Vamos criar sua primeira conexão. Clique **Créer une connexion**.
 
 ![demo](./images/cja4.png)
 
-Vous verrez alors le **Créer une connexion** Interface utilisateur.
+Você verá a UI **Créer une connexion** Interface utilisateur.
 
 ![demo](./images/cja5.png)
 
-Vous pouvez maintenant donner un nom à votre connexion.
+Agora você pode dar um nome à sua conexão.
 
-Utilisez cette convention d’affectation des noms : `yourLastName – Omnichannel Data Connection`.
+Utilisez le modèle de genre de nomenclatura : `yourLastName – Omnichannel Data Connection`.
 
-Exemple : `vangeluw - Omnichannel Data Connection`
+Exemplo : `vangeluw - Omnichannel Data Connection`
 
-Vous devez également sélectionner l’environnement de test correct à utiliser. Dans le menu des environnements de test, sélectionnez votre environnement de test, qui doit être `Bootcamp`. Dans cet exemple, l’environnement de test à utiliser est **Bootcamp**. Et vous devez également définir la variable **Nombre moyen d’événements quotidiens** to **moins de 1 million**.
+Você também deve selecionar o sandbox core para usar. Aucun environnement de test de menu, sélection d’un environnement de test de l’environnement de test de l’environnement de test `Bootcamp`. Neste exemplaire, o sandbox a ser usado é o **Bootcamp**. E você também deve definition o **Nombre moyen d’événements quotidiens** to **moins de 1 million**.
 
 ![demo](./images/cjasb.png)
 
-Après avoir sélectionné votre environnement de test, vous pouvez commencer à ajouter des jeux de données à cette connexion. Cliquez sur **Ajout de jeux de données**.
+Após selecionar seu sandbox, você pode começar a adicionar datasets a esta conexão . Clique **Ajout de jeux de données**.
 
 ![demo](./images/cjasb1.png)
 
-## 4.2.2 Sélection de jeux de données Adobe Experience Platform
+## 4.2.2 Sélection des jeux de données dans Adobe Experience Platform
 
-Recherche du jeu de données `Demo System - Event Dataset for Website (Global v1.1)`. Cliquez sur **+** pour ajouter le jeu de données à cette connexion.
+Pesquisse d’un jeu de données `Demo System - Event Dataset for Website (Global v1.1)`. Clique **+** para adicionar du jeu de données a esta conexão.
 
 ![demo](./images/cja7.png)
 
-Désormais, recherchez et cochez les cases correspondant à `Demo System - Event Dataset for Voice Assistants (Global v1.1)` et `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Agora occupe l&#39;e-marque en tant que caixas de seleção `Demo System - Event Dataset for Voice Assistants (Global v1.1)` et `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-Vous aurez alors ceci. Cliquez sur **Suivant**.
+Em seguida, você verá a tela abaixo. Clique **Suivant**.
 
 ![demo](./images/cja9.png)
 
-## 4.2.3 Identifiant de personne et assemblage de données
+## 4.2.3 ID da pessoa e compilação de dados
 
-### ID de personne
+### ID da pessoa
 
-L’objectif est maintenant de rejoindre ces jeux de données. Pour chaque jeu de données sélectionné, un champ appelé **ID de personne**. Chaque jeu de données possède son propre champ ID de personne.
+O objetivo agora é juntar délivre des jeux de données. Para cada dataset selecionado, você verá um campo chamado **ID de personne**. Jeu de données du Cada tem seu próprio campo de ID de pessoa.
 
 ![demo](./images/cja11.png)
 
-Comme vous pouvez le constater, l’ID de personne est automatiquement sélectionné pour la plupart d’entre eux. En effet, un identifiant Principal est sélectionné dans chaque schéma de Adobe Experience Platform. Par exemple, voici le schéma pour `Demo System - Event Schema for Call Center (Global v1.1)`, où vous pouvez voir que l’identifiant de Principal est défini sur `phoneNumber`.
+Le podium Como você, une maioria deles e o ID da pessoa selecionado Automcamente. Isso porte le porque um identificador principal é selecionado em cada esquema na Adobe Experience Platform. Como exemplaire, qui está o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`, pode onde você ver que o Identificador Primário está define comido `phoneNumber`.
 
 ![demo](./images/cja13.png)
 
-Cependant, vous pouvez toujours influencer l’identifiant qui sera utilisé pour assembler des jeux de données pour votre connexion. Vous pouvez utiliser n’importe quel identifiant configuré dans le schéma lié à votre jeu de données. Cliquez sur la liste déroulante pour explorer les identifiants disponibles pour chaque jeu de données.
+Non entanto, você ainda pode influenciar qual identificador será usado para compilar datasets para sua conexão . Você pode usar qualquer identificador configurado no esquema vinculado ao seu dataset. Ne cliquez pas sur les suspensions de menus pour que les identifiants du système d’exploitation explorateur distribuent le jeu de données em cada.
 
 ![demo](./images/cja14.png)
 
-Comme mentionné, vous pouvez définir différents ID de personne pour chaque jeu de données. Cela vous permet de rassembler différents jeux de données provenant de plusieurs origines dans CJA. Imaginez que vous introduisiez des NPS ou des données d&#39;enquête qui seraient très intéressantes et utiles pour comprendre le contexte et pourquoi quelque chose s&#39;est passé.
+Conforme mencionado, você pode definitions diferentes IDs de pessoa para cada dataset. Isso permite reunir diferentes jeux de données de múltiplas sur les origines de CJA. Imaginez le traducteur NPS ou dados de pesquisa que seriam muito interessantes e úteis para relevant ou contexto e motivo um acontecimento.
 
-Le nom du champ ID de personne n’est pas important tant que la valeur des champs ID de personne correspond. Disons que nous `email` dans un jeu de données et `emailAddress` dans un autre jeu de données défini comme ID de personne. If `delaigle@adobe.com` est la même valeur pour le champ ID de personne des deux jeux de données. CJA sera en mesure de regrouper les données.
+O nome do campo ID da pessoa é important, desde que o valor nos campos ID da pessoa corresponda. Digamos que temos `email` em um dataset e `emailAddress` définition du jeu de données externe como ID da pessoa. Se `delaigle@adobe.com` véto o mesmo valor para o campo ID da pessoa em ambos os datasets, ou CJA poderá compilar os dados.
 
-Il existe actuellement d&#39;autres limitations telles que l&#39;assemblage du comportement anonyme à connu. Consultez les questions fréquentes ici : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
+Atualmente, existent algumas ouas limitações, como comar o comportamento anônimo para conchaido. Consulte en tant que perguntas fréquentes aqui : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
 
-### Assemblage des données à l’aide de l’ID de personne
 
-Maintenant que vous comprenez le concept de regroupement de jeux de données à l’aide de l’ID de personne, nous allons choisir `email` comme ID de personne pour chaque jeu de données.
+### Compilando os dados usando o ID da pessoa
+
+Agora que você compréhensible o disito de compilar datasets usando o ID da pessoa, vamos escolher `email` ensemble de données como ID da pessoa para cada .
 
 ![demo](./images/cja15.png)
 
-Accédez à chaque jeu de données pour mettre à jour l’ID de personne.
+Acesse cada dataset para atualizar o ID da pessoa.
 
 ![demo](./images/cja12a.png)
 
-Renseignez maintenant le champ ID de personne en choisissant la variable `email` dans la liste déroulante.
+Agora preencha o campo ID da pessoa escolhendo o `email` une lista suspensa.
 
 ![demo](./images/cja17.png)
 
-Une fois que vous avez assemblé les trois jeux de données, nous sommes prêts à continuer.
+Dépois de compilar os três, estamos prontos para continuar.
 
 | jeu de données | ID de personne |
 | ----------------- |-------------| 
@@ -109,22 +110,21 @@ Une fois que vous avez assemblé les trois jeux de données, nous sommes prêts 
 | Système de démonstration - Jeu de données d’événement pour les assistants vocaux (Global v1.1) | adresse e-mail |
 | Système de démonstration - Jeu de données d’événement pour le centre d’appels (Global v1.1) | adresse e-mail |
 
-Vous devez également vous assurer que pour chaque jeu de données, ces options sont activées :
+Você também precisa que, para cada dataset, essas opções estejam habilitadas as :
 
-- Importer toutes les nouvelles données
-- Renvoi de toutes les données existantes
+- Importants outils os novos dados
+- Preencher todos os dados existentes
 
-Cliquez sur **Ajout de jeux de données**.
+Clique **Ajout de jeux de données**.
 
 ![demo](./images/cja16.png)
 
-Cliquez sur **Enregistrer** et passez à l’exercice suivant.
-Après avoir créé votre **Connexion** il peut s’écouler quelques heures avant que vos données ne soient disponibles dans CJA.
+Clique **Enregistrer** e vá para o próximo exercice. Depois de criar sua **Connexion**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
 ![demo](./images/cja20.png)
 
-Étape suivante : [4.3 Création d’une vue de données](./ex3.md)
+Próxima etapa : [4.3 Crie uma Visualização de Dados](./ex3.md)
 
-[Retour au flux utilisateur 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Revenir à tous les modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

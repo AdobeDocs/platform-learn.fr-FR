@@ -5,31 +5,30 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 1%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
-# 4.6 D’insights à l’action
+# 4.6 Dos insights à ação
 
-## Objectifs
+## Objetivos
 
-- Comprendre comment créer une audience à partir d’un insight collecté dans Customer Journey Analytics
-- Utilisation de cette audience dans Real-Time CDP et Adobe Journey Optimizer
+- Entenda comar um público com base em uma visão coletada no Customer Journey Analytics
+- Utilisez esse público no CDP em tempo real e no Adobe Journey Optimizer
 
-## 4.6.1 Création d’une audience et publication de celle-ci
+## 4.6.1 Crie uma audiência e publique-a
 
-Dans votre projet, vous avez créé un filtre nommé
+Em seu projeto, chê criou um filtro.
 
-## 4.6.2 Utilisation de l’audience dans le cadre d’un segment
+## 4.6.2 Utilisation de sua audiência como parte de um segmento
 
+## 4.6.2 Utiliser seu segmento a Real-Time CDP em tempo real
 
-## 4.6.2 Utilisation de votre segment dans Real-Time CDP
-
-## 4.6.3 Utilisation de votre segment dans Adobe Journey Optimizer
+## 4.6.3 Utiliser des segments de mémoire sur Adobe Journey Optimizer
 
 [Retour au flux utilisateur 4](./uc4.md)
 
-[Revenir à tous les modules](./../../overview.md)
+[Voltar para todos os módulos](./../../overview.md)

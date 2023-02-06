@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1 Utilisation de l’application mobile et déclenchement d’une entrée de balise
+# 3.1 Utilisation de la balise aplicativo móvel e acione
 
-## Installation de l’application mobile
+## Installer sur aplicativo móvel
 
 Avant d’installer l’application, vous devez activer **Tracking** sur votre appareil iOS. Pour ce faire, accédez à **Paramètres** > **Confidentialité et sécurité** > **Tracking** et assurez-vous que l’option **Autoriser les applications à demander pour effectuer le suivi**.
 
+Antes de installar o aplicativo, é rendues nécessaires **Rastreamento** pas de dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-Accédez à Apple App Store et recherchez `aepmobile-bootcamp`. Cliquez sur **Installer** ou **Télécharger**.
+Accès à une ressource App Store da Apple `aepmobile-bootcamp`. Clique **Instalar** Vous **Télécharger**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Une fois l’application installée, cliquez sur **Ouvrir**.
+Installation de Depois que o aplicativo, groupe em **Ouvrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Cliquez sur **OK**.
+Clique **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Cliquez sur **Autoriser**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ Cliquez sur **Je suis d&#39;accord.**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Cliquez sur **Autoriser lors de l’utilisation de l’application**.
+Clique **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Cliquez sur **Autoriser**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Vous êtes maintenant dans l’application, sur la page d’accueil, prêt à passer par le parcours client.
+Agora você está no aplicativo, a página inegal, pronto(a) para verificar day a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Flux de parcours client
+## Fluxo da jornada do cliente
 
-Tout d&#39;abord, vous devez vous connecter. Cliquez sur **Ouverture de session**.
+Primeiramente, é rendário fazer pour se connecter. Clique **Connexion**.
 
 ![DSN](./images/app13.png)
 
-Après avoir créé votre compte dans les exercices précédents, vous l’avez vu sur le site web. Vous devez maintenant réutiliser l’adresse électronique du compte que vous avez créé dans l’application pour vous connecter.
+Depois de criar sua nos exerícios anteriores, isso é exibido no site. Agora é obligário reutility o endereço de e-mail da conta que você crou no aplicativo para fazer de connexion.
 
 ![Démonstration](./images/pv1.png)
 
-Saisissez ici l&#39;adresse email que vous avez utilisée sur le site web et cliquez sur **Connexion**.
+Digite o endereço de e-mail que você usou no site e clique em **Connexion**.
 
 ![DSN](./images/app14.png)
 
-Vous obtiendrez alors une confirmation de connexion et vous recevrez une notification push.
+Você recerá uma confirmação de que está conectado e receberá uma notificação
 
 ![DSN](./images/app15.png)
 
-Revenez à la page d’accueil de l’application et d’autres fonctionnalités s’affichent.
+L&#39;appareillage Retorne para a página inegal do aplicativo e os recursos adicionais irão .
 
 ![DSN](./images/app17.png)
 
-Tout d’abord, accédez à **Produits**. Cliquez sur n’importe quel produit, dans cet exemple **Café à emporter**.
+Primeiro, accès **Produits**. Clique em qualquer producto, neste exemplaire : **Café à emporter**.
 
 ![DSN](./images/app19.png)
 
-Vous verrez le **Café à emporter** page produit dans l’application.
+Você verá a página do producto **Café à emporter** pas d&#39;aplicativo.
 
 ![DSN](./images/app20.png)
 
-Vous allez maintenant simuler un événement d’entrée de balise dans un emplacement de magasin hors ligne. L’objectif de la simulation est de personnaliser l’expérience client sur les écrans du magasin. Pour visualiser l’expérience en magasin, une page a été créée afin d’afficher dynamiquement les informations pertinentes pour le client qui vient d’entrer dans le magasin.
+Agora você irá simular um evento de entrada de sinalização (balise) em um local de armazenamento hors ligne. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevant para o cliente ao entrar na loja.
 
-Avant de poursuivre, ouvrez cette page web sur votre ordinateur : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Vous verrez alors :
+Em seguida, une tela abaixo será exibida :
 
 ![DSN](./images/screen1.png)
 
-Ensuite, revenez à la page d’accueil. Cliquez sur le bouton **beacon** icône .
+Em seguida, retorne para a página officier. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
 Vous verrez alors ceci. Tout d’abord, sélectionnez **Balise d’écran Bootcamp** puis cliquez sur le bouton **entrée** bouton . Vous pourrez ainsi simuler une entrée de balise.
+Após essa etapa, ou seguinte será exibido. Primeiro, select **Balise d’écran Bootcamp** La clique pas botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-Maintenant, regardez l&#39;écran du magasin. Le dernier produit que vous avez consulté s’affiche dans les 5 secondes qui suivent.
+Agora confirme une tela da loja. Você verá o último producto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Ensuite, revenez à **Produits**. Cliquez sur n’importe quel produit, dans cet exemple **Plage Tan**.
+Em seguida, retorne para **Produits**. Clique em qualquer producto, neste exemplaire : **Plage Tan**.
 
 ![DSN](./images/app22.png)
 
-Ensuite, revenez à la page d’accueil. Cliquez sur le bouton **beacon** icône .
+Em seguida, retorne para a página officier. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Vous verrez alors ceci. Tout d’abord, sélectionnez **Balise d’écran Bootcamp** puis cliquez sur le bouton **entrée** à nouveau. Vous pourrez ainsi simuler une entrée de balise.
+Em seguida, selecione **Balise d’écran Bootcamp** La clique pas botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (balise).
 
 ![DSN](./images/app21.png)
 
-Maintenant, regardez de nouveau l&#39;écran en magasin. Le dernier produit que vous avez consulté s’affiche dans les 5 secondes qui suivent.
+Agora, confira a tela da loja novamente. Você verá o último producto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Jetons également un coup d’oeil à votre Visionneuse de profils sur le site web. De nombreux événements y ont été ajoutés, simplement pour montrer que toute interaction avec un client est collectée et stockée dans Adobe Experience Platform.
+Agora, vamos vérificar também o seu Visualizador de Perfil sur aucun site. Você verá muitos eventos que foram adicionados, para mostrar que qualquer interação com um cliente é coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-Dans les exercices suivants, vous allez configurer et tester votre propre parcours d’entrée de balise.
+Nos próximos exerícios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-Étape suivante : [3.2 Création de votre événement](./ex2.md)
+Próxima etapa : [3.2 Événement de la seu de crie](./ex2.md)
 
-[Retour au flux utilisateur 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

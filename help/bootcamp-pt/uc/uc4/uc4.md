@@ -5,67 +5,67 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 1%
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
 # 4. Analyse des Parcours client
 
-Dans ce flux d’utilisateurs, vous bénéficiez d’une expérience pratique avec le service d’application de Customer Journey Analytics.
+Neste fluxo de usuário, você terá experiência prática com o serviço de aplicativo Customer Journey Analytics.
 
-Customer Journey Analytics fournit une boîte à outils aux équipes d’intelligence d’entreprise et de science des données pour l’assemblage et l’analyse de données cross-canal (en ligne et hors ligne). Les fonctionnalités de Customer Journey Analytics offrent un contexte et une clarté aux parcours clients multicanaux complexes. Le contexte fourni génère des informations exploitables sur la manière de supprimer les problèmes du processus de conversion des clients et de fournir des expériences positives dans les moments qui comptent le plus.
+O Customer Journey Analytics fornece uma interface em que os times de de Analytics, Negócios e Tecnologia conservguem unir todos os dados da company e analisar a jornada cross-channel (en ligne et hors ligne) do cliente de ponta a ponta . O Customer Journey Analytics é capaz de fornecer contexto e clareza para as a jornadas de cliente multicanal complexas. O contexto fornecido gera uma visão acionável em cima das dificuldades no processo de conversão e possibilité bilita experiências relevant e personalizadas nos pontos mais relevant.
 
-Regardez cette vidéo pour comprendre la valeur, le parcours client et le processus de configuration :
+Assista a este video para saisor, a jornada do cliente e o processo de configuração :
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Plus d’informations sur Customer Journey Analytics sont disponibles [here](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Mais informações sobre o Customer Journey Analytics podem ser encontradas [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
-## Objectifs d’apprentissage
+## Objetivos de aprendiado
 
-- Familiarisez-vous avec l’interface utilisateur de Customer Journey Analytics
-- Importation de jeux de données Adobe Experience Platform dans Customer Journey Analytics
-- Présentation de l’ID de personne et de la combinaison de données dans Customer Journey Analytics
-- Comprendre les concepts d’une connexion aux données et d’une vue de données
-- Utilisation d’Analysis Workspace avec des jeux de données Adobe Experience Platform
+- Familiarize-se com a UI do Customer Journey Analytics
+- Traga os des jeux de données de Adobe Experience Platform para o Customer Journey Analytics
+- Entenda à l&#39;ID da pessoa e a junção de dados no Customer Journey Analytics
+- Entenda os concitos de uma conexão de dados e uma visualização de dados
+- Utilisation des jeux de données com Analysis Workspace dans Adobe Experience Platform
 
-## Conditions préalables
+## Requêtes préalables
 
-- Une certaine familiarité avec Analysis Workspace est préférable, mais elle n’est pas requise.
-- Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accès au service d’application Customer Journey Analytics
+- É préférível que haja certa familiaridade com o Analysis Workspace, mas não é obrigatório
+- Acesso à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso ao serviço de aplicativo de Customer Journey Analytics
 
 >[!IMPORTANT]
 >
->Ce tutoriel a été créé pour faciliter un format bootcamp particulier. Il utilise des systèmes et des comptes spécifiques auxquels vous n’avez peut-être pas accès. Même sans accès, nous pensons que vous pouvez encore apprendre beaucoup en lisant à travers ce contenu très détaillé. Si vous participez à l’un des camps de bootcamp et que vous avez besoin de vos informations d’identification d’accès, veuillez contacter votre représentant d’Adobe qui vous fournira les informations requises.
+>Tutoriel Este foi criado para facilitar um formato específico de Bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um Bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para Receber as informações rendárias .
 
-## Exercices
+## Exercícios
 
 [4.1 Customer Journey Analytics 101](./ex1.md)
 
-Découvrez tous les concepts du Customer Journey Analytics.
+Saiba tudo sobre os disitos do Customer Journey Analytics.
 
-[4.2 Connexion des jeux de données Adobe Experience Platform dans Customer Journey Analytics](./ex2.md)
+[4.2 Concevoir les jeux de données da Adobe Experience Platform sans Customer Journey Analytics](./ex2.md)
 
-Découvrez comment utiliser plusieurs jeux de données de Adobe Experience Platform dans Customer Journey Analytics.
+Saiba como consomir des jeux de données múltiplos da Adobe Experience Platform no Customer Journey Analytics.
 
-[4.3 Création d’une vue de données](./ex3.md)
+[4.3 Crie uma Visualização de Dados](./ex3.md)
 
-Découvrez comment configurer une vue de données dans Customer Journey Analytics.
+Saiba como configurar uma visualização de dados no Customer Journey Analytics.
 
-[4.4 Préparation des données dans Customer Journey Analytics](./ex4.md)
+[4.4 Préparation des dados em Customer Journey Analytics](./ex4.md)
 
-Découvrez comment préparer des données avant de poursuivre l’analyse.
+Aprenda como fazer alguma preparação de dados antes de continuar com a análise.
 
-[4.5 Visualisation avec Customer Journey Analytics](./ex5.md)
+[4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
-Découvrez comment visualiser les données Adobe Experience Platform à l’aide de Customer Journey Analytics.
+Le como de Saiba visualisar os dados da Adobe Experience Platform usando o Customer Journey Analytics.
 
-[4.6 D’insights à l’action](./ex6.md)
+[4.6 De insights a ação](./ex6.md)
 
-Découvrez comment mettre en oeuvre vos insights sous la forme d’une audience à l’aide de la plateforme CPD en temps réel et de Adobe Journey Optimizer.
+Aprenda como usar s&#39;informe sur la politique à suivre pour la paix, la liberté et la liberté, le développement social, la démocratie, la démocratie, la démocratie et le Adobe Journey Optimizer.
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

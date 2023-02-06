@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '534'
 ht-degree: 2%
 
 ---
 
-# 1.2 Visualisation de votre propre profil client en temps réel - interface utilisateur
+# 1.2 Visualiser seu próprio perfil de cliente em tempo real - interface utilisateur
 
-Au cours de cet exercice, vous vous connecterez à Adobe Experience Platform et afficherez votre propre profil client en temps réel dans l’interface utilisateur.
+Neste exercio, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI
 
-## Histoire
+## História
 
-Dans Real-time Customer Profile, toutes les données de profil s’affichent avec les données d’événement, ainsi que les appartenances à des segments existants. Les données affichées peuvent provenir de n’importe où, des applications d’Adobe et des solutions externes. Il s’agit de la vue la plus puissante de Adobe Experience Platform, le véritable système d’enregistrement d’expérience.
+No Perfil do cliente em tempo real, todos os dados do perfil são exibidos juntamente com os dados do evento, além das associações de segmentos existe. Os dados mostrados podem vir de qualquer lugar, de aplicativos da Adobe e soluções externes. Essa é a exibição mais poderosa da Adobe Experience Platform, o verdadeiro local do sistema de experiência.
 
-## 1.2.1 Utilisation de la vue Profil client dans Adobe Experience Platform
+## 1.2.1 Utilisation d’une visualisation du fichier client dans Adobe Experience Platform
 
-Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página official da Adobe Experience Platform.
 
 ![Ingestion des données](./images/home.png)
 
-Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné le [!UICONTROL sandbox], vous verrez le changement d’écran et vous êtes maintenant dans votre [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possvel fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte supérieure da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora vocá em seu [!UICONTROL sandbox] dedicado.
 
 ![Ingestion des données](./images/sb1.png)
 
-Dans le menu de gauche, accédez à **Profils** et à **Parcourir**.
+Pas de menu à esquerda, accès **Profils** e **Parcourir**.
 
 ![Profil client](./images/homemenu.png)
 
-Dans le panneau Visionneuse de profils de votre site web, vous trouverez la présentation des identités. Chaque identité est liée à un espace de noms.
+Pas de peinture Visualizador de perfil pas de site, você pode encontrar a visão geral da identidade. Cada identidade está vinculada a um namespace .
 
 ![Profil client](./images/identities.png)
 
-Dans le panneau Visionneuse de profils, vous pouvez actuellement voir cette identité :
+Pas de peinture Visualizador de perfil, agora você pode over esta identidade :
 
 | Espace de noms | Identité |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
-Avec Adobe Experience Platform, tous les identifiants sont également importants. Auparavant, l’ECID était l’identifiant le plus important dans le contexte de l’Adobe et tous les autres identifiants étaient liés à l’ECID dans une relation hiérarchique. Avec Adobe Experience Platform, ce n’est plus le cas, et chaque ID peut être considéré comme un identifiant Principal.
+Com a Adobe Experience Platform, tous les identifiants são igualmente importantes. Anteriormente, o ECID ère o ID mais important pas contexto da Adobe e todos os outros IDs estavam vinculados ao ECID em uma relação hierárquica . Com a Adobe Experience Platform, isso mudou e cada pode ser penado um identificador primário.
 
-En règle générale, l’identifiant Principal dépend du contexte. Si vous demandez à votre centre d’appels, **Quel est l’identifiant le plus important ?** ils répondront probablement, **le numéro de téléphone !** Mais si vous demandez à votre équipe CRM, elle répond : **L&#39;adresse email !**  Adobe Experience Platform comprend cette complexité et la gère à votre place. Chaque application, qu’elle soit Adobe ou non, parlera avec Adobe Experience Platform en se référant à l’identifiant qu’elle considère Principal. Et ça marche tout simplement.
+Normalmente, o identificador primário depende do contexto. Voir você perguntar ao seu Call Center : **Qual é o ID mais important ?** Eles prouavelmente responderão : **o número de telefone !** Mas se você perguntar à sua equipe de CRM, eles responderão : **o endereço de e-mail !** Un Adobe Experience Platform entende essa complexe e gerencia est so para você. Cada aplicativo, seja um aplicativo da Adobe ou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que attenam principal. C&#39;est une foncione simple.
 
-Pour le champ **Espace de noms d’identité**, sélectionnez **ECID** et pour le champ **Valeur d’identité** entrez l’ECID qui se trouve dans le panneau Visionneuse de profils du site web bootcamp. Cliquez sur **Affichage**. Votre profil s’affiche alors dans la liste. Cliquez sur le bouton **Identifiant de profil** pour ouvrir votre profil.
+Para o campo **Espace de noms d’identité**, selecione **ECID** e para o campo **Valeur d’identité** insira o ECID que você pode n&#39;encontrar pas le tableau Visualizador de perfil do site do Bootcamp. Clique **Affichage**. Você verá seu perfil na lista. Clique non **Identifiant de profil** para abrir seu perfil.
 
 ![Profil client](./images/popupecid.png)
 
-Vous voyez maintenant un aperçu de quelques éléments importants **Attributs de profil** de votre profil client.
+Agora você tem uma visão geral de alguns **Attributs de perfil** importantes font seu perfil de cliente.
 
 ![Profil client](./images/profile.png)
 
-Accédez à **Événements**, où vous pouvez voir les entrées pour chaque événement d’expérience lié à votre profil.
+Acesse **Événements**, onde você se propage sous la forme d&#39;entradas de cada evento de experiência vinculado ao seu Perfil.
 
 ![Profil client](./images/profileee.png)
 
-Enfin, accédez à l’option de menu **abonnement au segment**. Vous verrez désormais tous les segments à inclure dans ce profil.
+Por fim, accédez à une opção de menu **abonnement au segment**. Agora você verá todos os segmentos que qualificam para este perfil.
 
 ![Profil client](./images/profileseg.png)
 
-Créez maintenant un segment qui vous permettra de personnaliser l’expérience client pour un client anonyme ou qui connaît un client.
+Agora vamos criar um novo segmento que permitirá que você personnalise une experiência do cliente para um cliente anônimo ou conquête.
 
-Étape suivante : [1.3 Création d’un segment - IU](./ex3.md)
+Próxima etapa : [1.3 Segmentation de base - IU](./ex3.md)
 
-[Retour au flux utilisateur 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

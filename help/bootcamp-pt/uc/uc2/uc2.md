@@ -5,51 +5,51 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 4%
+source-wordcount: '219'
+ht-degree: 3%
 
 ---
 
-# 2. Enregistrement et intégration
+# 2. Objetivos de aprendizado
 
 ## Objectifs d’apprentissage
 
-## Conditions préalables
+## Requêtes préalables
 
-- Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accès à la collecte de données Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accès au site web de démonstration
+- Acesso à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso o site de démonstration
 
 >[!IMPORTANT]
 >
->Ce tutoriel a été créé pour faciliter un format bootcamp particulier. Il utilise des systèmes et des comptes spécifiques auxquels vous n’avez peut-être pas accès. Même sans accès, nous pensons que vous pouvez encore apprendre beaucoup en lisant à travers ce contenu très détaillé. Si vous participez à l’un des camps de bootcamp et que vous avez besoin de vos informations d’identification d’accès, veuillez contacter votre représentant d’Adobe qui vous fournira les informations requises.
+>Tutoriel Este foi criado para facilitar um formato específico de bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para ceber as informações rendárias .
 
-## Exercices
+## Exercícios
 
-[2.1 Visitez le site web et créez votre compte](./ex1.md)
+[2.1 Visite du site e crier sua](./ex1.md)
 
-Dans cet exercice, vous apprendrez à configurer un événement.
+Neste exerício, você irá aprender como configurar um evento.
 
-[2.2 Créer votre événement](./ex2.md)
+[2.2 Événement de la seu de cri](./ex2.md)
 
-Dans cet exercice, vous apprendrez à configurer un événement.
+Neste exerício, você irá aprender como configurar um evento.
 
-[2.3 Création de votre parcours et de votre message électronique](./ex3.md)
+[2.3 Crie sua jornada e mensuagem de e-mail](./ex3.md)
 
-Dans cet exercice, vous apprendrez à configurer un parcours et un email.
+Neste exerício, você irá prender como configurar uma jornada e uma mensuagem de e-mail.
 
-[2.4 Test de votre parcours](./ex4.md)
+[2.4 Teste sua jornada](./ex4.md)
 
-Dans cet exercice, vous allez tester le parcours que vous venez de créer.
+Neste exerício, você irá testar a jornada que você criou.
 
-[2.5 Installation et utilisation de l’application mobile](./ex5.md)
+[2.5 Installation de l’utilisation d’aplicativo móvel](./ex5.md)
 
-Dans cet exercice, vous allez installer l’application mobile.
+Neste exerício, você irá installar o aplicativo móvel.
 
-[2.6 Personnalisation dans le centre d’appels](./ex6.md)
+[2.6 Personalização no call center](./ex6.md)
 
-Au cours de cet exercice, vous verrez comment optimiser une expérience de centre d’appels en fonction de l’intelligence de Adobe Experience Platform.
+Neste exerício, você verá como uma experiência de call center pode ser otimizada com base na inteligência da Adobe Experience Platform.
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

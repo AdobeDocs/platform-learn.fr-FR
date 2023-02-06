@@ -5,264 +5,262 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
 
-# 4.5 Visualisation avec Customer Journey Analytics
+# 4.5 Visualização usando o Customer Journey Analytics
 
-## Objectifs
+## Objetivos
 
-- Présentation de l’interface utilisateur d’Analysis Workspace
-- Découvrez certaines fonctionnalités qui rendent Analysis Workspace si différent.
-- Découvrez comment analyser dans CJA à l’aide d’Analysis Workspace
+- Activation d’une interface utilisateur dans Analysis Workspace
+- Conheça alguns recursos que tornam o Analysis Workspace tão diferente.
+- Annonce d’un banalisaire sur CJA et Analysis Workspace
 
 ## Contexte
 
-Au cours de cet exercice, vous utiliserez Analysis Workspace dans CJA pour analyser les consultations de produits, les entonnoirs de produits, la perte de clientèle, etc.
+Neste exerício, você usará o Analysis Workspace no CJA para analisar visualizações de productos, funis de productos, rotatividade, etc.
 
-Utilisons le projet que vous avez créé dans [4.4 Préparation des données dans Analysis Workspace](./ex4.md), alors accédez à [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projto que você criou em  [4.4 Préparation des dates sur Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Ouvrez votre projet `yourLastName - Omnichannel Analysis`.
+Abra seu project `yourLastName - Omnichannel Analysis`.
 
-Une fois le projet ouvert et la vue des données `yourLastName - Omnichannel Analysis` sélectionné, vous êtes prêt à commencer à créer vos premières visualisations.
+Com seu projto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a strucir suas primeiras visualizações.
 
 ![demo](./images/prodataView1.png)
 
-## Combien de consultations de produits y a-t-il quotidiennement ?
+## Quantas visualizações de productos temos diariamente ?
 
-Tout d&#39;abord, nous devons sélectionner les dates appropriées pour analyser les données. Accédez au menu déroulant du calendrier sur le côté droit de la zone de travail. Cliquez dessus et sélectionnez la période applicable.
+Em primeiro lugar, precisamos selecionar as datas certas para analisar os dados. L&#39;accès aux suspensions de menus font calendrier ário no lado direito da tela. Clique néle e selecione o l intervalle de données aplicável.
 
 >[!IMPORTANT]
 >
->Sélectionnez une période comme **Cette semaine** ou **Ce mois-ci**. Les données les plus récentes ont été ingérées le 19 septembre 2022.
+>Selecione um intervalle de données como **Cette semaine** Vous **Ce mois-ci**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
 
 ![demo](./images/pro1.png)
-
-Dans le menu de gauche (zone Composants), recherchez la mesure calculée. **Consultations produits**. Sélectionnez-la et faites-la glisser sur la zone de travail, en haut à droite du tableau à structure libre.
+Pas de menu pour lado esquerdo (área de componentes), plage comme métricas calculadas **Consultations produits**. Selecione-as e arraste e solte na tela, pas de canto supérieur direito da tabela de forma livre.
 
 ![demo](./images/pro2.png)
 
-Automatiquement la dimension **Jour** sera ajouté pour créer votre premier tableau. Maintenant, vous pouvez voir que votre question a reçu une réponse instantanément.
+Automaticamente a dimension **Jour** será adicionada para criar sua primeira tabela. Agora você pode sur sua pergunta respondida imediatamente.
 
 ![demo](./images/pro3.png)
 
-Cliquez ensuite avec le bouton droit de la souris sur le résumé de la mesure.
+Em seguida, clic com o botão direito do mouse no resume o da métrica.
 
 ![demo](./images/pro4.png)
 
-Cliquez sur **Visualiser** puis sélectionnez **Ligne** comme visualisation.
+Clique **Visualiser** e selecione **Ligne** como visualização.
 
 ![demo](./images/pro5.png)
 
-Vous verrez vos consultations de produits par jour.
+Você verá as suas visualizações de producto por dia.
 
 ![demo](./images/pro6.png)
 
-Vous pouvez modifier la plage horaire au jour le jour en cliquant sur **Paramètres** dans la visualisation.
+Você pode alterar o escopo de tempo para o dia clicando em **Paramètres** une visualisation.
 
 ![demo](./images/pro7.png)
 
-Cliquez sur le point en regard de **Ligne** to **Gestion de la source de données**.
+Clique no ponto ao lado **Ligne** e **Gestion de la source de données**.
 
 ![demo](./images/pro7a.png)
 
-Cliquez ensuite sur **Verrouiller la sélection** et sélectionnez **Éléments sélectionnés** pour verrouiller cette visualisation afin qu’elle affiche toujours une chronologie des consultations de produits.
+Em seguida, groupe em **Verrouiller la sélection** e selecione **Éléments sélectionnés** para bloquear esta visualização para que ela semexiba uma linha do tempo de Visualizações de productos.
 
 ![demo](./images/pro7b.png)
 
-## Les 5 produits les plus consultés
+## 5 produits mais vistos
 
-Quels sont les 5 premiers produits consultés ?
+Quais são os 5 productos mais vistos ?
 
-N’oubliez pas d’enregistrer le projet de temps à autre.
+Lembre-se de salvar o projeto de tempos em tempos.
 
 | Système d’exploitation | Court |
 | ----------------- |-------------| 
 | Windows | Ctrl + S |
 | Mac | Commande + S |
 
-Commençons à trouver les 5 premiers produits consultés. Dans le menu de gauche, recherchez le **Nom du produit** - Dimension.
+Vamos começar a encontrar os 5 productos mais vistos. Pas de menu pour lado esquerdo, contre Nome do producto - Dimensão.
 
 ![demo](./images/pro8.png)
 
-Maintenant, faites glisser et déposez **Nom du produit** pour remplacer la fonction **Jour** dimension :
+Agora arraste e solte **Nom du produit** para substitution a dimensião **Jour**:
 
-Le résultat sera le suivant :
+Este será o result.
 
 ![demo](./images/pro10a.png)
 
-Essayez ensuite de ventiler l’un des produits par nom de marque. Rechercher **brandName** et faites-le glisser sous le premier nom du produit.
+Em seguida, détente dividir um um dos productos por Nome da marca. Pesquisse **brandName** e arraste para baixo do primeiro nome do producto.
 
 ![demo](./images/pro13.png)
 
-Effectuez ensuite une ventilation à l’aide de l’agent utilisateur. Rechercher **Agent utilisateur** et faites-le glisser sous le nom de la marque.
+Em seguida, faça um detalhamento usando Agente de usuário. Pesquisse **Agent utilisateur** e arraste-o para baixo do nome da marca.
 
 ![demo](./images/pro15.png)
 
-Vous verrez alors :
+Em seguida, será exibida a tela abaixo :
 
 ![demo](./images/pro15a.png)
 
-Enfin, vous pouvez ajouter d’autres visualisations. Sur le côté gauche, sous Visualisations, recherchez `Donut`. Take `Donut`, faites-le glisser sur la zone de travail sous le **Ligne** visualisation.
+Por fim, você pode adicionar mais visualizações. Pas de lado esquerdo, em visualizações, pesquise `Donut`. Pegue `Donut`, arraste e solte na tela sob a visualização **Ligne** 
 
 ![demo](./images/pro18.png)
 
 Ensuite, dans le tableau, sélectionnez les 5 premières **Agent utilisateur**  lignes de la ventilation que nous avons réalisée sous **Smartphone noir Google Pixel XL 32 Go** > **Signal Citi**. Lorsque vous sélectionnez les 5 lignes, conservez la propriété **CTRL** (sous Windows) ou le bouton **Commande** (sur Mac).
 
+Em seguida, a Tabela, selecione as primeiras 5 linhas de **Agent utilisateur** do detalhamento que fizemos em **Smartphone noir Google Pixel XL 32 Go** > **Signal Citi**. Ao selecionar as 5 linhas, segmentation o botão **CTRL** (pas de Windows) ou o botão **Commande** (pas de Mac).
+
 ![demo](./images/pro20.png)
 
-Le graphique en anneau est alors modifié :
+Você verá o gráfico de donut alterado :
 
 ![demo](./images/pro21.png)
 
-Vous pouvez même adapter la conception pour la rendre plus lisible, en effectuant les deux **Ligne** et la variable **Anneau** graphique un peu plus petit pour s’adapter l’un à côté de l’autre :
+Você pode até adaptar o design para ser mais legível, tornando o gráfico de **Ligne** e o gráfico de **Anneau** um pouco menor para que sejam exibidos lado a lado :
 
 ![demo](./images/pro22.png)
 
-Cliquez sur le point en regard de **Anneau** to **Gestion de la source de données**.
-Cliquez ensuite sur **Verrouiller la sélection** pour verrouiller cette visualisation afin qu’elle affiche toujours une chronologie des consultations de produits.
+Clique no ponto ao lado *Anneau** para **Gestion de la source de données**. Em seguida, groupe em **Verrouiller la sélection** para bloquear essa visualização para que ela semexiba uma linha do tempo de Visualizações de producto.
 
 ![demo](./images/pro22b.png)
 
-Pour en savoir plus sur les visualisations à l’aide d’Analysis Workspace, cliquez ici :
+Saiba mais sobre visualizações usando o Analysis Workspace em :
 
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Entonnoir d’interaction de produit, de l’affichage à l’achat
+## Funil de interação do producto, da visualização à compra
 
-Il y a de nombreuses façons de résoudre cette question. L’une d’elles consiste à utiliser le type d’interaction du produit et à l’utiliser sur un tableau à structure libre. Une autre méthode consiste à utiliser une **Visualisation Abandons**. Utilisons la dernière comme nous voulons visualiser et analyser en même temps.
+Existem muitas formas de resolver esta quão. Uma delas é usar o Tipo de Interação de Produto e usá-lo em uma tabela de formato livre. Outra forma é usar uma **Visualisation Abandons**. Vamos usar o último, pois queremos visualizar e analisar ao mesmo tempo.
 
-Fermez le panneau actuel en cliquant ici :
+Feche o peel atual clicando aqui :
 
 ![demo](./images/pro23.png)
 
-Ajoutez maintenant un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
+Agora adicione um novo peel em branco clicando em **+ Ajouter un panneau vierge**.
 
 ![demo](./images/pro24.png)
 
-Clic sur la visualisation **Abandon**.
+Clique une visualisation **Abandon**.
 
 ![demo](./images/pro25.png)
 
-Sélectionnez la même période que dans l’exercice précédent.
+Sélection de l&#39;intervalle de données de mesmo d&#39;exercice antérieur.
 
 ![demo](./images/prodatef.png)
 
-Vous verrez alors ceci.
+Em seguida, você verá :
 
 ![demo](./images/prodatefa.png)
 
-Recherche de la dimension **Type d’événement** sous les composants sur le côté gauche :
+Encontre une dimension **Type d’événement** nos components no lado esquerdo :
 
 ![demo](./images/pro26.png)
 
-Cliquez sur la flèche pour ouvrir la dimension :
+Clique na seta para abrir a dimensião :
 
 ![demo](./images/pro27.png)
 
-Vous verrez tous les types d’événement disponibles.
+Você verá todos os Tipos de eventos disponíveis .
 
 ![demo](./images/pro28.png)
 
-Sélectionner l’élément **commerce.productViews** et faites-le glisser sur le **Ajouter un point de contact** dans le champ **Visualisation Abandons**.
+Sélectionner un élément **commerce.productViews** e arraste e solte-o no campo **Ajouter un point de contact** dentro da **Visualisation Abandons**.
 
 ![demo](./images/pro29.png)
 
-Faites de même avec **commerce.productListAdds** et **commerce.purchases** et les déposer sur le **Ajouter un point de contact** dans le champ **Visualisation Abandons**. Votre visualisation se présente désormais comme suit :
+Faça o mesmo com **commerce.productListAdds** et **commerce.purchases** e solte-os no campo **Ajouter un point de contact** dentro da  **Visualisation Abandons**. Sua visualização agora deve ser semelhante ao seguinte :
 
 ![demo](./images/props1.png)
 
-Vous pouvez faire beaucoup de choses ici. Quelques exemples : comparer au fil du temps, comparer chaque étape par appareil ou comparer par fidélité. Cependant, si nous voulons analyser des éléments intéressants comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article à leur panier, nous pouvons utiliser le meilleur outil dans CJA : cliquez avec le bouton droit de la souris.
+Você pode fazer muitas coisas aqui. Alguns s&#39;exclame : compare ao longo do tempo, compare cada passo por dispositivo ou compare por fidelidade. No entanto, se quisermos analisar coisas interessantes como porque os clientes não prepois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA : clicar com o botão direito.
 
-Clic droit sur le point de contact **commerce.productListAdds**. Cliquez ensuite sur **Ventiler les abandons à ce point de contact**.
+Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida, groupe em **Ventiler les abandons à ce point de contact**.
 
 ![demo](./images/pro32.png)
 
-Un nouveau tableau à structure libre sera créé pour analyser les actions des personnes qui n’ont pas effectué d’achat.
+Uma nova tabela de formato livre será criada para analisar o que as pessoas fizeram se não compartiaram.
 
 ![demo](./images/pro33.png)
 
-Modifiez la variable **Type d’événement** par **Nom de la page**, dans le nouveau tableau à structure libre, pour voir les pages qu’ils consultent au lieu de la page de confirmation d’achat.
+Altere o **Type d’événement** par **Nom de la page**, une nouvelle tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de confirmação de compra.
 
 ![demo](./images/pro34.png)
 
-## Que font les visiteurs sur le site avant d’accéder à la page Annuler le service ?
+## O que as pessoas fazem no site antes de acessar a página Cancelar service
 
-Encore une fois, il existe de nombreuses façons d’effectuer cette analyse. Utilisons l’analyse de flux pour commencer la partie découverte.
+Novamente, há muitas formas de realizar essa análise. Vamos usar a análise de fluxo para iniciar parte da descoberta.
 
-Fermez le panneau actuel en cliquant ici :
+Feche o peel atual clicando aqui :
 
 ![demo](./images/pro0.png)
 
-Ajoutez maintenant un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
+Agora adicione um novo peel em branco clicando em **+ Ajouter un panneau vierge**.
 
 ![demo](./images/pro0a.png)
 
-Clic sur la visualisation **Flux**.
+Clique une visualisation **Flux**.
 
 ![demo](./images/pro35.png)
 
-Vous verrez alors :
+Em seguida, será exibido :
 
 ![demo](./images/pro351.png)
 
-Sélectionnez la même période que dans l’exercice précédent.
+Sélection de l&#39;intervalle de données de mesmo d&#39;exercice antérieur.
 
 ![demo](./images/pro0b.png)
 
-Recherche de la dimension **Nom de la page** sous les composants sur le côté gauche :
+Encontre une dimension **Nom de la page** nos components no lado esquerdo :
 
 ![demo](./images/pro36.png)
 
-Cliquez sur la flèche pour ouvrir la dimension :
+Clique na seta para abrir a dimensião :
 
 ![demo](./images/pro37.png)
 
-Vous trouverez toutes les pages consultées. Recherchez le nom de la page : **Annuler le service**.
-Glisser-déposer **Annuler le service** dans le champ Visualisation du flux au milieu :
+Você encontrará todas as as páginas vistas. Encontre sur nome da página : **Annuler le service**.
+Arraste e solte **Annuler le service** na Visualização de fluxo no campo do meio :
 
 ![demo](./images/pro38.png)
 
-Vous verrez alors :
+Em seguida, será exibido :
 
 ![demo](./images/pro40.png)
 
-Analysons maintenant si les clients qui ont visité le **Annuler le service** sur le site web a également appelé callcenter, et quel a été le résultat.
+Vamos agora analisar se os clientes que visitaram a página C **Annuler le service** aucun site também ligaram para o call center e qual foi o result.
 
-Sous les dimensions, revenez en arrière, puis recherchez **Type d’interaction d’appel**.
-Glisser-déposer **Type d’interaction d’appel** pour remplacer la première interaction à droite dans la fonction **Visualisation du flux**.
+Nas dimensions, restauré e contre Tipo de interação de chamada. Arraste e solte **Type d’interaction d’appel** para substitution a primeira interação à direita em **Visualisation du flux**.
 
 ![demo](./images/pro43.png)
 
-Vous voyez maintenant le ticket d’assistance des clients qui ont appelé le centre d’appel après avoir visité le **Annuler le service** page.
+Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atenDimension de visitar a página **Annuler le service**.
 
 ![demo](./images/pro44.png)
 
-Ensuite, sous les dimensions, recherchez **Raisonnement des appels**.  Faites-la glisser et déposez-la pour remplacer la première interaction à droite dans le **Visualisation du flux**.
+Em seguida, nas dimenões, se procurent **Raisonnement des appels**. Arraste e solte para substitution a primeira interação à direita na visualização de fluxo.
 
 ![demo](./images/pro46.png)
 
-Vous verrez alors :
+Em seguida, será exibido :
 
 ![demo](./images/flow.png)
 
-Comme vous pouvez le voir, nous avons exécuté une analyse omnicanal à l’aide de la visualisation Flux. Grâce à cela, nous avons trouvé que certains clients qui pensaient annuler leur service, avaient un sentiment positif après avoir appelé le centre d&#39;appel. Avons-nous peut-être changé d&#39;avis avec une promotion ?
+Pode de como, executamos uma análise omnichannel usando a visualização de fluxo. Graças a isso, descobrimos que alguns clientes que estavam pensando em cancelar o service tiveram uma avaliação positiva depois de ligar para o call center. Talvez tenhamos mudado de ideia com uma promoção ?
 
+## Qual é o desempenho dos clientes com um contato de Call Center Positivo em relação aos principais KPI ?
 
-## Comment les clients avec un contact Callcenter positif se comportent-ils par rapport aux indicateurs clés de performance principaux ?
-
-Commençons par segmenter les données pour obtenir uniquement les utilisateurs avec **positive** appels . Dans CJA, les segments sont appelés filtres. Accédez aux filtres dans la zone de composant (sur le côté gauche) et cliquez sur **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **positive**. Non CJA, os Segmentos são chamados de Filtros. Acesse para filtros na área de componentes (pas de lado esquerdo) e groupe em **+**.
 
 ![demo](./images/pro58.png)
 
-Dans le créateur de filtres, attribuez un nom au filtre.
+Dentro do Construtor de filtro, dê um nome ao filtro
 
 | Nom | Description |
 | ----------------- |-------------| 
@@ -270,59 +268,58 @@ Dans le créateur de filtres, attribuez un nom au filtre.
 
 ![demo](./images/pro47.png)
 
-Sous les composants (dans le Créateur de filtres), recherchez **Raisonnement des appels** et faites-le glisser dans la définition du Créateur de filtres.
+Nos components (dentro do Construtor de filtro), dépendent **Raisonnement des appels** Nous arrêtons et solte na Definição do construction de filtro.
 
 ![demo](./images/pro48.png)
 
-Maintenant, sélectionnez **positive** comme valeur du filtre.
+Agora selecione **positive** como valor para o filtro.
 
 ![demo](./images/pro49.png)
 
-Modifier la portée à définir **Personne** niveau.
+Altere o escopo para o nível **Personne**.
 
 ![demo](./images/pro50.png)
 
-Pour terminer, cliquez simplement sur **Enregistrer**.
+Para finalizar, base clicar em **Enregistrer**.
 
 ![demo](./images/pro51.png)
 
-Vous serez alors de retour ici. Si ce n’est pas encore fait, fermez le panneau précédent.
+Então, você irá retornar para esta tela. Voir ainda não retornou, feche ou antépéné.
 
 ![demo](./images/pro0c.png)
 
-Ajoutez maintenant un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
+Agora adicione um novo peel em branco clicando em **+ Ajouter un panneau vierge**.
 
 ![demo](./images/pro24c.png)
 
-Sélectionnez la même période que dans l’exercice précédent.
+Sélection de l&#39;intervalle de données de mesmo d&#39;exercice antérieur.
 
 ![demo](./images/pro24d.png)
 
-Cliquez sur **Tableau à structure libre**.
+Clique **Tableau à structure libre**.
 
 ![demo](./images/pro52.png)
 
-Déposez maintenant le filtre que vous venez de créer.
+Agora arraste e solte o filtro que você acabou de criar.
 
 ![demo](./images/pro53.png)
 
-Temps nécessaire pour ajouter certaines mesures. Commencer par **Consultations produits**. Effectuez un glisser-déposer dans le tableau à structure libre. Vous pouvez également supprimer la variable **Événements** mesure.
+Hora de adicionar algumas métricas. Comece com **Consultations produits**. Arraste e solte na tabela de forma livre. Pode Você também excluir a métrica **Événements**.
 
 ![demo](./images/pro54.png)
 
-Faites de même avec **Personnes**,  **Ajouter au panier** et **Achats**. Vous finirez avec une table comme celle-ci.
+Faça o mesmo com **Personnes**, **Ajouter au panier** e **Achats**. Você vai acabar com uma tabela como a seguinte.
 
 ![demo](./images/pro55.png)
 
-Grâce à la première analyse de flux, une nouvelle question est venue à l&#39;esprit. Nous avons donc décidé de créer ce tableau et de vérifier certains indicateurs de performance clés par rapport à un segment pour répondre à cette question. Comme vous pouvez le constater, le temps d’accès aux informations est beaucoup plus rapide que l’utilisation de SQL ou d’autres solutions de BI.
+Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar algals KPI em um segmento para responder a essa pergunta. Le pode de Como você, au tempo de insight é muito mais rápido do que usar SQL ou usar ouas solções de BI.
 
-## Customer Journey Analytics et Analysis Workspace recap
+## Recapitulação do Analysis Workspace e do Customer Journey Analytics
 
-Comme vous l’avez appris dans ce laboratoire, Analysis Workspace assemble les données de tous les canaux afin d’analyser l’ensemble du parcours client. N’oubliez pas également que vous pouvez importer des données dans le même espace de travail qui n’est pas assemblé au parcours.
-Il peut être très utile d’importer des données déconnectées dans votre analyse pour donner un contexte au parcours. Certains exemples incluent des données NPS, des enquêtes, des événements Facebook Ads ou des interactions hors ligne (non identifiées).
+Le Como você aprédeu neste labatório, ou Analysis Workspace reúne dados de todos canais para analisar a jornada completa do cliente. Além disso, lembre-se de que você pode trazer dados para o mesmo workspace que não está vinculado à jornada. Pode ser muito útil trazer dados desconectados para sua análise para contextualizar a jornada. Les exemples d&#39;Alguns incluent coisas como dados NPS, pesquisas, eventos de anúncios do Facebook ou interações offline (não identificadas).
 
-Étape suivante : [4.6 D’insights à l’action](./ex6.md)
+Próxima etapa : [4.6 De insights a ação](./ex6.md)
 
-[Retour au flux utilisateur 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Revenir à tous les modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 Installation et utilisation de l’application mobile
+# 2.5 Installation de l’utilisation d’aplicativo móvel
 
 
-## Installation de l’application mobile
+## Installer sur aplicativo móvel
 
-Avant d’installer l’application, vous devez activer **Tracking** sur votre appareil iOS. Pour ce faire, accédez à **Paramètres** > **Confidentialité et sécurité** > **Tracking** et assurez-vous que l’option **Autoriser les applications à demander pour effectuer le suivi**.
+Antes de installar o aplicativo, é rendário habilitar Rastreamento no seu dispositivo iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e confirmer une opção Permitir que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Accédez à Apple App Store et recherchez `aepmobile-bootcamp`. Cliquez sur **Installer** ou **Télécharger**.
+Accès à une ressource App Store da Apple `aepmobile-bootcamp`.\
+Clique **Instalar** Vous **Télécharger**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Une fois l’application installée, cliquez sur **Ouvrir**.
+Installation de Depois que o aplicativo, groupe em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Cliquez sur **OK**.
+Clique **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Cliquez sur **Autoriser**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Cliquez sur **Je suis d&#39;accord.**.
+Clique **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Cliquez sur **Autoriser lors de l’utilisation de l’application**.
+Clique **Permitir enquanto uso app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Cliquez sur **Autoriser**.
+Clique **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Vous êtes maintenant dans l’application, sur la page d’accueil, prêt à passer par le parcours client.
+Agora você está no aplicativo, a página inegal, pronto(a) para verificar day a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Flux de parcours client
+## Fluxo da jornada do cliente
 
-Tout d&#39;abord, vous devez vous connecter. Cliquez sur **Ouverture de session**.
+Primeiramente, é rendário fazer pour se connecter. Clique **Connexion**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Après avoir créé votre compte dans les exercices précédents, vous l’avez vu sur le site web. Vous devez maintenant réutiliser l’adresse électronique du compte que vous avez créé dans l’application pour vous connecter.
+Depois de criar sua nos exerícios anteriores, isso é exibido no site. Agora é obligário reutility o endereço de e-mail da conta que você crou no aplicativo para fazer de connexion.
 
 ![Démonstration](./../uc3/images/pv1.png)
 
-Saisissez ici l&#39;adresse email que vous avez utilisée sur le site web et cliquez sur **Connexion**.
+Digite o endereço de e-mail que você usou no site e clique em **Connexion**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Vous obtiendrez alors une confirmation de connexion et vous recevrez une notification push.
+Você recerá uma confirmação de que está conectado e receberá uma notificação
 
 ![DSN](./../uc3/images/app15.png)
 
-Revenez à la page d’accueil de l’application et d’autres fonctionnalités s’affichent.
+L&#39;appareillage Retorne para a página inegal do aplicativo e os recursos adicionais irão .
 
 ![DSN](./../uc3/images/app17.png)
 
-Accédez à **Produits**. Cliquez sur n’importe quel produit, dans cet exemple **Café à emporter**.
+Acesse **Produits**. Clique em qualquer producto, neste exemplaire : **Café à emporter**.
 
 ![DSN](./images/app19.png)
 
-Vous verrez le **Café à emporter** page produit dans l’application. Cliquez sur **Acheter**.
+Você verá a página do producto **Café à emporter** pas d&#39;aplicativo. Clique **Acheter**.
 
 ![DSN](./images/app20.png)
 
-Vous avez maintenant terminé cet exercice et vous êtes prêt pour les exercices suivants.
+Agora você terminou este exerício e está pronto para as próximas atividades .
 
-Étape suivante : [2.6 Personnalisation dans le centre d’appels](./ex6.md)
+Próxima etapa : [ 2.6 Personalização no call center](./ex6.md)
 
-[Retour au flux utilisateur 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

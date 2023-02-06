@@ -5,47 +5,47 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 4%
+source-wordcount: '224'
+ht-degree: 2%
 
 ---
 
-# 1. Acquisition
+# 1. Aquisição
 
-## Objectifs d’apprentissage
+## Objetivos de aprendiado
 
-## Conditions préalables
+## Requêtes préalables
 
-- Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accès à la collecte de données Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accès au site web de démonstration
+- Acesso à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso o site de démonstration
 
 >[!IMPORTANT]
 >
->Ce tutoriel a été créé pour faciliter un format bootcamp particulier. Il utilise des systèmes et des comptes spécifiques auxquels vous n’avez peut-être pas accès. Même sans accès, nous pensons que vous pouvez encore apprendre beaucoup en lisant à travers ce contenu très détaillé. Si vous participez à l’un des camps de bootcamp et que vous avez besoin de vos informations d’identification d’accès, veuillez contacter votre représentant d’Adobe qui vous fournira les informations requises.
+>Tutoriel Este foi criado para facilitar um formato específico de Bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um Bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para Receber as informações rendárias .
 
-## Exercices
+## Exercícios
 
-[1.1 Visite du site web](./ex1.md)
+[1.1 Visite sur site](./ex1.md)
 
-Dans cet exercice, vous allez suivre un script et parcourir le site web.
+Neste exerício, você irá seguir um roteiro e percorrer sur le site.
 
-[1.2 Visualiser votre propre profil client en temps réel - interface utilisateur](./ex2.md)
+[1.2 Visualiser seu próprio perfil de cliente em tempo real - interface utilisateur](./ex2.md)
 
-Au cours de cet exercice, vous vous connecterez à Adobe Experience Platform et vous verrez votre propre profil client en temps réel dans l’interface utilisateur.
+Neste exercio, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI
 
-[1.3 Création d’un segment - IU](./ex3.md)
+[1.3 Segmentation de base - IU](./ex3.md)
 
-Dans cet exercice, vous allez créer un segment à l’aide du créateur de segments de Adobe Experience Platform.
+Neste exercio, você irá criar um segmento usando Contrutor de Segmentos da Adobe Experience Platform.
 
-[1.4 Agir : envoyer votre segment à Adobe Target ;](./ex4.md)
+[1.4 Ação : J’ai envie segmento para o Adobe Target](./ex4.md)
 
-Utilisez le segment que vous avez créé dans l’exercice 1.1 pour configurer une activité de ciblage d’expérience dans Adobe Target.
+Utilisez o segmento strucído no exercice 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
 
-[1.5 Agir : envoyer votre segment à Facebook ;](./ex5.md)
+[1.5 Ação : j&#39;ai envie segmento para o Facebook](./ex5.md)
 
-Connectez le segment que vous avez créé dans l’exercice 1.1 au Facebook de destination.
+Conecte o segmento que você criou no Exercício 1.1 ao destinée Facebook.
 
-[Revenir à tous les modules](../../overview.md)
+[Retornar para Todos os módulos](../../overview.md)
