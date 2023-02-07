@@ -5,16 +5,16 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
 # 2.6 Personalização no call center
 
-Comme nous l’avons déjà mentionné plusieurs fois au cours du bootcamp, personnaliser l’expérience client est quelque chose qui devrait se produire de manière omnicanale. Un centre d’appel est souvent très déconnecté du reste du parcours client, ce qui entraîne souvent des expériences client frustrantes, mais cela n’a pas besoin d’être le cas. Voici un exemple de la manière dont le centre d’appel peut facilement être connecté à Adobe Experience Platform, en temps réel.
+Conforme discutido várias vezes durante o bootcamp, personalizar a experiência do cliente é algo que deve acontecer de maneira omnichannel. Oum call center geralmente é basontado do restante da jornada do cliente e isso pode, com fréquência, levar a experiências frustrantes do cliente, mas não precisa ser assim. Vamos mostrar um exemplaire de como pode du centre d&#39;appel ser facile conectado à Adobe Experience Platform, em tempo real.
 
 ## Fluxo da jornada do cliente
 
@@ -38,7 +38,7 @@ Será solicitado que você insira seu ID de fidelidade, seguido de **#**. Digite
 
 ![DSN](./images/cc3.png)
 
-Você ouvirá **Bonjour, seu nome**, nome. Esse nome é retirado do Perfil do Cliente em tempo real an Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **État de la commande**.
+Você ouvirá **Bonjour, seu nome**. Esse nome é retirado do Perfil do Cliente em tempo real an Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **État de la commande**.
 
 ![DSN](./images/cc4.png)
 
@@ -72,7 +72,7 @@ Você verá seu perfil de cliente novamente. Acesse **Événements**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o result da sua resposta à pergunta Avalie o seu n **Évaluer la satisfaction de vos appels**.
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o result da sua resposta à pergunta **Évaluer la satisfaction de vos appels** (avalie seu chamada).
 
 ![DSN](./images/cc9.png)
 

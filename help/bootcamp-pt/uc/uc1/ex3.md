@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Por fim, vamos dar um nome ao seu segmento e salvá-lo.
 
 Le modèle como de nomenclatura utilise :
 
-- `yourLastName - Interest in Real-Time CDP`
+- `seuSobrenome - Interest in Real-Time CDP`
 
 Em seguida, clans pas botão **Enregistrer et fermer** para salvar seu segmento.
 

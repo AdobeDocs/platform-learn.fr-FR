@@ -2,9 +2,9 @@
 title: Experience Makers Bootcamp - Brésil
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Muitas empresas não estão cientes do atrito que existe na jornada dos ses clientes, conséquência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo précisam estar perfeitamente alinhados para projetar e oferecer experiências exceptions ción consumidor.
 
-Participez à l&#39;opération Bootcamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights (camp de soutien pour tous) besoin ários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente.
+Participez à l&#39;opération Bootcamp para aprender como uma abordagem baseada em Experience Platform pode ajudar na obtenção dos insights (camp de soutien) besoin ários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente.
 
-Une personalização em escala começa com a saisensão do que pode ser primorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights Une abordagem exclusiva da Adobe focada na plataforma forneca as as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organization, sua equipe e sua capacidade de oferecer experiência holística ao cliente Le canal de ífica por.
+Une personalização em escala começa com a saisensão do que pode ser primorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights Une abordagem exclusiva da Adobe focada na Experience Platform fornecas as as para, além de impulsionar os avanços tecnológicos, impactar sua organization, sua equipe e sua condensidade de oferecer uma experiênholística a cliente le canal de fica por.
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

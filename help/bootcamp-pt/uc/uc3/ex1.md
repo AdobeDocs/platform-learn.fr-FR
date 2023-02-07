@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## Installer sur aplicativo móvel
 
-Avant d’installer l’application, vous devez activer **Tracking** sur votre appareil iOS. Pour ce faire, accédez à **Paramètres** > **Confidentialité et sécurité** > **Tracking** et assurez-vous que l’option **Autoriser les applications à demander pour effectuer le suivi**.
-
-Antes de installar o aplicativo, é rendues nécessaires **Rastreamento** pas de dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de installar o aplicativo, é rendário o **Rastreamento** pas de dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ Accès à une ressource App Store da Apple `aepmobile-bootcamp`. Clique **In
 
 ![DSN](./../uc3/images/app1.png)
 
-Installation de Depois que o aplicativo, groupe em **Ouvrir**.
+Installation de Depois que o aplicativo, groupe em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Você verá a página do producto **Café à emporter** pas d&#39;aplicativo
 
 ![DSN](./images/app20.png)
 
-Agora você irá simular um evento de entrada de sinalização (balise) em um local de armazenamento hors ligne. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevant para o cliente ao entrar na loja.
+Agora você irá simular um evento de entrada de sinalização (balise) em uma loja off line. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevant para o cliente ao entrar na loja.
 
 Antes de continuar, abra esta página da Web em seu computador : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em seguida, retorne para a página officier. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Vous verrez alors ceci. Tout d’abord, sélectionnez **Balise d’écran Bootcamp** puis cliquez sur le bouton **entrée** bouton . Vous pourrez ainsi simuler une entrée de balise.
 Após essa etapa, ou seguinte será exibido. Primeiro, select **Balise d’écran Bootcamp** La clique pas botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
