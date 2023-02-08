@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,8 @@ Vérification : envoie des schémas et des jeux de données dans Adobe Experienc
 
 Certifique-se de ter verificado ao menos :
 
-- Identités : CRMID, phoneNumber, ECID, email. Quelles identités sont les identifiants Principaux, lesquels sont les identifiants secondaires ?
-Vous pouvez trouver les identifiants en ouvrant un schéma et en regardant l’objet `_experienceplatform.identification.core`. Consultez le schéma [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
-
 - Identidades : CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários ?
+
 Você pode encontrar os identificadores abrindo um schema e observando objecto `_experienceplatform.identification.core`. Vérification du schéma o [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/identity.png)
@@ -107,7 +105,7 @@ Você pode encontrar os identificadores abrindo um schema e observando objecto�
 
 Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-Próxima etapa : [Concevoir des jeux de données avec Adobe Experience Platform sans Customer Journey Analytics](./ex2.md)
+Próxima etapa : [4.2 Concevoir les jeux de données da Adobe Experience Platform sans Customer Journey Analytics](./ex2.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - Conheça alguns recursos que tornam o Analysis Workspace tão diferente.
 - Annonce d’un banalisaire sur CJA et Analysis Workspace
 
-## Contexte
+## Contexto
 
 Neste exerício, você usará o Analysis Workspace no CJA para analisar visualizações de productos, funis de productos, rotatividade, etc.
 
@@ -316,7 +316,7 @@ Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimo
 
 ## Recapitulação do Analysis Workspace e do Customer Journey Analytics
 
-Le Como você aprédeu neste labatório, ou Analysis Workspace reúne dados de todos canais para analisar a jornada completa do cliente. Além disso, lembre-se de que você pode trazer dados para o mesmo workspace que não está vinculado à jornada. Pode ser muito útil trazer dados desconectados para sua análise para contextualizar a jornada. Les exemples d&#39;Alguns incluent coisas como dados NPS, pesquisas, eventos de anúncios do Facebook ou interações offline (não identificadas).
+O Analysis Workspace supprimez todas comme limitações típicas de um relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e components (dimensues, métricas, segmentos e granularidades de tempo) para project. Você pode criar de forma instantânea filtros e analises, gráficos de corte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em eu negócio.
 
 Próxima etapa : [4.6 De insights a ação](./ex6.md)
 
