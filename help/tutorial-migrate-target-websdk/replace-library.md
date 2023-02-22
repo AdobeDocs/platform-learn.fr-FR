@@ -1,9 +1,9 @@
 ---
 title: Remplacement de la bibliothèque | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 4%
 
 ---
@@ -63,6 +63,8 @@ Prenons l’exemple d’une mise en oeuvre simple de Target avec at.js :
 * Une ou plusieurs bibliothèques d’assistance tierces dont les fonctionnalités peuvent être utilisées dans des activités Target (jQuery, par exemple)
 * Fragment de prémasquage pour atténuer le scintillement
 * La bibliothèque at.js de Target se charge de manière asynchrone avec les paramètres par défaut pour demander et générer automatiquement les activités :
+
++++Voir l’exemple de code de HTML d’un at.js
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Prenons l’exemple d’une mise en oeuvre simple de Target avec at.js :
 </body>
 </html>
 ```
+
++++
 
 Pour mettre à niveau Target afin d’utiliser le SDK Web Platform, commencez par supprimer at.js :
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags]
+>[!TAB Balises]
 
 Dans les implémentations de balises, de nombreux champs sont automatiquement renseignés ou peuvent être sélectionnés dans les menus déroulants. Notez que différentes plateformes [!UICONTROL sandbox] et [!UICONTROL datastreams] peut être sélectionné pour chaque environnement. Le flux de données change en fonction de l’état de la bibliothèque de balises dans le processus de publication.
 
@@ -243,7 +247,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags]
+>[!TAB balises]
 
 ![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png)
 >[!ENDTABS]
