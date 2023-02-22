@@ -1,9 +1,9 @@
 ---
 title: Déboguer | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment déboguer une mise en oeuvre Adobe Target à l’aide du SDK Web de Adobe Experience Platform. Les rubriques incluent les options de débogage, les extensions de navigateur et les différences entre at.js et le SDK Web Platform.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1534'
 ht-degree: 4%
 
 ---
@@ -120,7 +120,7 @@ Pour afficher les traces du SDK Web Platform avec le débogueur Adobe Experience
 1. Rechargez la page et le journal doit renseigner des informations détaillées sur les interactions réseau périphériques.
 1. Concentrez-vous sur les entrées de journal commençant par &quot;Target Traces&quot; dans la description et sélectionnez **[!UICONTROL Affichage]** pour afficher les détails de la trace Target
 
-![Comment afficher les traces de Target avec Adobe Experience Platform Debugger](assets/target-trace-debugger.png)
+![Comment afficher les traces de Target avec Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 Après avoir sélectionné **[!UICONTROL Affichage]**, une superposition s’affiche, vous permettant d’afficher les informations suivantes relatives à la requête :
 
@@ -142,7 +142,7 @@ Les informations de suivi de Target sont visibles dans l’extension de navigate
 1. Sélectionner une entrée de journal de type `com.adobe.target.trace`
 1. Développez les détails de la payload et affichez les informations sous `context > targetTrace`
 
-![Comment afficher les traces de Target avec Assurance](assets/target-trace-assurance.png)
+![Comment afficher les traces de Target avec Assurance](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## Examiner la requête et la réponse réseau
 
@@ -150,7 +150,7 @@ Charge utile de requête et réponse du SDK Web de Platform `sendEvent` Les appe
 
 ### Charge utile de requête de contenu
 
-![Éléments spécifiques à Target de la payload du SDK Web de Platform](assets/target-payload.png)
+![Éléments spécifiques à Target de la payload du SDK Web de Platform](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - Les paramètres de profil, d’entité et autres non-mbox sont transmis dans le tableau d’événements sous `data.__adobe.target`
 - Les portées de décision se trouvent dans le tableau d’événements sous `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Charge utile de requête et réponse du SDK Web de Platform `sendEvent` Les appe
 
 ### Corps de réponse au contenu
 
-![Éléments spécifiques à Target du corps de réponse du SDK Web Platform](assets/target-response.png)
+![Éléments spécifiques à Target du corps de réponse du SDK Web Platform](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - Le SDK Web de Platform renvoie des actions pour toutes les applications d’Adobe sous le `handle` objet
 - Le `personalization:decisions` action signifie une réponse de Target ou d’un offer decisioning
@@ -169,7 +169,7 @@ Charge utile de requête et réponse du SDK Web de Platform `sendEvent` Les appe
 
 ### Charge utile des événements de proposition
 
-![Exemple d’événement de proposition cible](assets/target-proposition-event.png)
+![Exemple d’événement de proposition cible](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Les événements de SDK spécifiques à Target sont : `decisioning.propositionDisplay` pour une impression ou `decisioning.propositionInteract` pour une interaction, par exemple un clic
 - Les détails de l’événement de proposition se trouvent dans le tableau d’événements sous `xdm._experience.decisioning`

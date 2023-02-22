@@ -1,9 +1,9 @@
 ---
 title: Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ Certaines mises en oeuvre de Target peuvent utiliser des mbox régionales (déso
 
 Les activités créées à l’aide du compositeur basé sur les formulaires de Target et diffusées aux mbox régionales ne peuvent pas être rendues automatiquement par le SDK Web Platform. Tout comme at.js, les offres diffusées à des emplacements cibles spécifiques doivent être rendues à la demande.
 
-Exemple d’at.js avec `getOffer()` et `applyOffer()`:
+
++++Exemple d’at.js avec `getOffer()` et `applyOffer()`:
 
 1. Exécuter `getOffer()` pour demander un emplacement
 1. Exécuter `applyOffer()` pour rendre l’offre à un sélecteur spécifié
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-SDK Web Platform équivalent à l’aide de `applyPropositions` command :
++++
+
++++SDK Web Platform équivalent à l’aide de la variable `applyPropositions` command :
 
 1. Exécuter `sendEvent` pour demander des offres (propositions) pour un ou plusieurs emplacements (portées)
 1. Exécuter `applyPropositions` avec un objet de métadonnées qui fournit des instructions sur la manière d’appliquer du contenu à la page pour chaque portée
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 Le SDK Web Platform offre un meilleur contrôle pour appliquer des activités d’après les formulaires à la page à l’aide de la variable `applyPropositions` avec une commande `actionType` specified :
 
 | `actionType` | Description | at.js `applyOffer()` | SDK Web de Platform `applyPropositions` |
@@ -99,6 +104,8 @@ Reportez-vous à la section [documentation dédiée](https://experienceleague.ad
 ## Exemple de mise en œuvre
 
 La page d’exemple ci-dessous s’appuie sur l’implémentation décrite dans la section précédente. Elle ajoute uniquement des portées supplémentaires à la variable `sendEvent` .
+
+Exemple de SDK Web +++Platform avec plusieurs portées
 
 ```HTML
 <!doctype html>

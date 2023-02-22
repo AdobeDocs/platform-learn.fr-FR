@@ -1,9 +1,9 @@
 ---
 title: Mise à jour des audiences et des scripts de profil | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment mettre à jour les audiences Adobe Target et les scripts de profil pour des raisons de compatibilité avec le SDK Web Experience Platform.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Toutes les audiences qui utilisent des paramètres de mbox personnalisés doiven
 
 Pour garantir la compatibilité avec at.js et le SDK Web Platform, une méthode consiste à mettre à jour les audiences pertinentes afin que `OR` sont utilisées, comme illustré ci-dessous :
 
-![Affichage de la mise à jour d’une audience Target pour la compatibilité du SDK Web Platform](assets/target-audience-update.png)
+![Affichage de la mise à jour d’une audience Target pour la compatibilité du SDK Web Platform](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## Modifier les scripts de profil
 

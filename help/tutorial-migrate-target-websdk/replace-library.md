@@ -1,9 +1,9 @@
 ---
 title: Remplacement de la bibliothèque | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,7 @@ Prenons l’exemple d’une mise en oeuvre simple de Target avec at.js :
 * Fragment de prémasquage pour atténuer le scintillement
 * La bibliothèque at.js de Target se charge de manière asynchrone avec les paramètres par défaut pour demander et générer automatiquement les activités :
 
-+++Voir l’exemple de code de HTML d’un at.js
++++Exemple d’implémentation d’at.js sur une page de HTML
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe recommande de mettre en oeuvre le SDK Web de Platform de manière asynchro
 
 Le style de prémasquage des implémentations synchrones peut être configuré à l’aide de la propriété [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) . La configuration du SDK Web Platform est traitée dans la section suivante.
 
->[!TIP]
->
-> Lors de l’utilisation de la fonctionnalité de balises (anciennement Launch) pour mettre en oeuvre le SDK Web, le style de masquage préalable peut être modifié dans la configuration de l’extension du SDK Web Adobe Experience Platform.
-
 Pour en savoir plus sur la façon dont le SDK Web Platform peut gérer le scintillement, consultez la section du guide :  [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Configuration du SDK Web de Platform
 
-Le SDK Web Platform doit être configuré à chaque chargement de page. Le `configure` doit toujours être la première commande du SDK appelée. L’exemple suivant suppose que l’ensemble du site est mis à niveau vers le SDK Web Platform dans le cadre d’un seul déploiement :
+Le SDK Web Platform doit être configuré à chaque chargement de page. L’exemple suivant suppose que l’ensemble du site est mis à niveau vers le SDK Web Platform dans le cadre d’un seul déploiement :
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-Le `edgeConfigId` est la valeur [!UICONTROL Identifiant du flux de données]
+Le `configure` doit toujours être la première commande du SDK appelée. Le `edgeConfigId` est la valeur [!UICONTROL Identifiant du flux de données]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 Dans les implémentations de balises, de nombreux champs sont automatiquement renseignés ou peuvent être sélectionnés dans les menus déroulants. Notez que différentes plateformes [!UICONTROL sandbox] et [!UICONTROL datastreams] peut être sélectionné pour chaque environnement. Le flux de données change en fonction de l’état de la bibliothèque de balises dans le processus de publication.
 
-![configuration de l’extension de balise SDK Web](assets/tags-config.png)
+![configuration de l’extension de balise SDK Web](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Si vous prévoyez de migrer page par page d’at.js vers le SDK Web Platform, les options de configuration suivantes sont requises :
@@ -247,9 +243,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB balises]
+>[!TAB Balises]
 
-![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png)
+![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Les options de configuration dignes d’intérêt liées à Target sont décrites ci-dessous :
@@ -263,19 +259,15 @@ Les options de configuration dignes d’intérêt liées à Target sont décrite
 | `thirdPartyCookiesEnabled` | Active le paramètre des cookies tiers Adobe. Le SDK peut conserver l’identifiant visiteur dans un contexte tiers afin de permettre l’utilisation du même identifiant visiteur sur plusieurs sites. Utilisez cette option si vous avez plusieurs sites ; cependant, cette option n’est parfois pas souhaitée pour des raisons de confidentialité. | `true` |
 | `prehidingStyle` | Permet de créer une définition de style CSS qui masque les zones de contenu de votre page web pendant le chargement du contenu personnalisé à partir du serveur. Il est uniquement utilisé avec les déploiements synchrones du SDK. | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` peut être défini sur `true` afin de maintenir un profil du visiteur Target cohérent sur plusieurs domaines. Cette option doit être définie sur `false` ou omis, sauf si la persistance du profil du visiteur multi-domaine est requise.
-
->[!TIP]
->
-> Lorsque vous utilisez la fonctionnalité de balises (anciennement Launch) pour implémenter le SDK Web, ces configurations peuvent être gérées dans la configuration de l’extension SDK Web Adobe Experience Platform.
-
 Pour obtenir la liste complète des options, reportez-vous à la section [configuration du SDK Web de Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr) guide.
 
 ## Exemple de mise en œuvre
 
 Une fois que le SDK Web Platform est correctement en place, la page d’exemple ressemble à ceci.
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ Une fois que le SDK Web Platform est correctement en place, la page d’exemple 
 </html>
 ```
 
->[!TIP]
->
-> Lors de l’utilisation de la fonctionnalité de balises (anciennement Launch) pour implémenter le SDK Web, le code incorporé des balises remplace le &quot;code de base du SDK Web Platform&quot;, les sections &quot;SDK Web Platform chargé de manière asynchrone&quot; et &quot;Configurer le SDK Web Platform&quot; ci-dessus.
+>[!TAB Balises]
+
+Code de page :
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+Dans les balises, ajoutez l’extension SDK Web Adobe Experience Platform :
+
+![Ajout de l’extension Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Ajoutez ensuite les configurations souhaitées :
+![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 Il est important de noter que l’inclusion et la configuration simples de la bibliothèque SDK Web Platform comme illustré ci-dessus n’exécutent aucun appel réseau au réseau Adobe Edge.
 
