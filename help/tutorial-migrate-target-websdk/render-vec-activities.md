@@ -2,9 +2,9 @@
 title: Rendu des activités du VEC | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment récupérer et appliquer des activités de compositeur d’expérience visuelle avec une implémentation de SDK Web d’Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 Dans les balises , utilisez la variable [!UICONTROL Envoyer un événement] type d’action avec la propriété [!UICONTROL Rendu des décisions de personnalisation visuelle] option sélectionnée :
 
-![Envoyer un événement avec les personnalisations du rendu définies sur true dans les balises](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![Envoyer un événement avec les décisions de personnalisation visuelle du rendu sélectionnées dans les balises](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ Le SDK Web Platform offre aux développeurs une grande flexibilité pour demande
 
 La mise en oeuvre de base du SDK Web Platform est maintenant terminée.
 
-+++Exemple de page SDK Web avec rendu automatique du contenu Target :
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+Exemple JavaScript avec rendu automatique du contenu Target :
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ La mise en oeuvre de base du SDK Web Platform est maintenant terminée.
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> Lors de l’utilisation de la fonctionnalité de balises (anciennement Launch) pour implémenter le SDK Web, le code incorporé des balises remplace le &quot;code de base du SDK Web Platform&quot;, les sections &quot;SDK Web Platform chargé de manière asynchrone&quot; et &quot;Configurer le SDK Web Platform&quot; ci-dessus. La commande &#39;sendEvent&#39; est effectuée dans une règle à l’aide de la fonction [!UICONTROL Envoyer un événement] type d’action avec la propriété [!UICONTROL Rendu des décisions de personnalisation visuelle] option sélectionnée.
+>[!TAB Balises]
+
+Exemple de page de balises avec rendu automatique du contenu Target :
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+Dans les balises, ajoutez l’extension SDK Web Adobe Experience Platform :
+
+![Ajout de l’extension Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Ajoutez les configurations souhaitées :
+![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+Créez une règle avec une [!UICONTROL Envoyer un événement] action et [!UICONTROL Rendu des décisions de personnalisation visuelle] selected :
+![Envoyer un événement avec les personnalisations du rendu sélectionnées dans les balises](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 Apprenez ensuite à demander et [rendu des activités Target basées sur des formulaires ;](render-form-based-activities.md).
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

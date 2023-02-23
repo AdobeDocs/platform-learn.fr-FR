@@ -2,9 +2,9 @@
 title: Introduction | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent le chargement de la bibliothèque JavaScript, l’envoi de paramètres, les activités de rendu et d’autres légendes à noter.
 recommendations: catalog,noDisplay
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '617'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ Voici quelques-uns des avantages du SDK Web Platform par rapport à la biblioth�
 * Une intégration plus étroite avec Adobe Analytics qui ne repose pas sur l’assemblage d’informations à partir d’appels réseau distincts
 * Plus de flexibilité pour la mise en oeuvre pour les développeurs
 
-La migration présente sans doute le plus grand avantage pour les clients de Real-time Customer Data Platform. Real-Time CDP offre d’immenses fonctionnalités de création d’audiences en fonction de l’ensemble des données ingérées dans Experience Platform et de ses fonctionnalités de profil client en temps réel. Un cadre de gouvernance des données intégré automatise l’utilisation responsable de ces données. Customer AI vous permet d’utiliser facilement des modèles d’apprentissage automatique pour construire des modèles de propension et d’attrition dont la sortie peut être partagée à nouveau vers Adobe Target. Enfin, les clients des ajouts facultatifs Health care, Privacy &amp; Security Shield peuvent utiliser la fonctionnalité d’application du consentement pour appliquer facilement les préférences de consentement des clients individuels. Le SDK Web Platform est une exigence pour utiliser ces fonctionnalités RTCDP dans votre canal web.
+La migration présente sans doute le plus grand avantage pour les clients Target : son intégration à Real-time Customer Data Platform. Real-Time CDP offre d’immenses fonctionnalités de création d’audiences en fonction de l’ensemble des données ingérées dans Experience Platform et de ses fonctionnalités de profil client en temps réel. Un cadre de gouvernance des données intégré automatise l’utilisation responsable de ces données. Customer AI vous permet d’utiliser facilement des modèles d’apprentissage automatique pour construire des modèles de propension et d’attrition dont la sortie peut être partagée à nouveau vers Adobe Target. Enfin, les clients des ajouts facultatifs Health care, Privacy &amp; Security Shield peuvent utiliser la fonctionnalité d’application du consentement pour appliquer facilement les préférences de consentement des clients individuels. Le SDK Web Platform est une exigence pour utiliser ces fonctionnalités RTCDP dans votre canal web.
 
 ## Objectifs d&#39;apprentissage
 
@@ -51,7 +51,6 @@ Pour terminer ce tutoriel, vous devez d’abord :
 
 * avoir une compréhension technique de votre implémentation actuelle d’at.js Target ;
 * Vérifiez que vous disposez d’une [Rôle Éditeur ou Éditeur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) pour votre instance Target afin que vous puissiez essayer des exemples vous-même.
-* Installez le [Extension d’assistance pour la modification visuelle de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) pour Google Chrome
 * Découvrez comment configurer des activités dans Adobe Target. Si vous avez besoin d’une actualisation, les tutoriels et guides suivants sont utiles pour cette leçon :
    * [Utilisation du Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
    * [Utilisation du compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
@@ -61,4 +60,4 @@ Une fois que vous êtes prêt, la première étape d’une migration réussie co
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

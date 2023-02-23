@@ -1,9 +1,9 @@
 ---
 title: Remplacement de la bibliothèque | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ Découvrez comment remplacer votre implémentation Adobe Target sur la page pour
 * Vérifiez vos paramètres d’administration Target et notez votre identifiant de l’organisation IMS.
 * Remplacez la bibliothèque at.js par le SDK Web Platform.
 * Mise à jour du fragment de code de masquage préalable pour les implémentations de bibliothèques synchrones
-* Configuration du SDK Web Platform sur la page
+* Configuration du SDK Web de Platform
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Prenons l’exemple d’une mise en oeuvre simple de Target avec at.js :
 * Fragment de prémasquage pour atténuer le scintillement
 * La bibliothèque at.js de Target se charge de manière asynchrone avec les paramètres par défaut pour demander et générer automatiquement les activités :
 
-+++Exemple d’implémentation d’at.js sur une page de HTML
+Exemple d’implémentation d’+++at.js sur une page de HTML
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Pour mettre à niveau Target afin d’utiliser le SDK Web Platform, commencez pa
 <script src="/libraries/at.js" async></script>
 ```
 
-Et remplacez par la version actuelle prise en charge du SDK Web Platform (alloy.js) :
+Et remplacez par la bibliothèque JavaScript alliée ou votre code incorporé de balises et l’extension SDK Web Adobe Experience Platform :
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ Et remplacez par la version actuelle prise en charge du SDK Web Platform (alloy.
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB Balises]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+Dans la propriété tag, ajoutez l’extension SDK Web Adobe Experience Platform :
+
+![Ajout de l’extension Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 La version autonome prédéfinie nécessite un &quot;code de base&quot; ajouté directement à la page, qui crée une fonction globale nommée alloy. Utilisez cette fonction pour interagir avec le SDK. Si vous souhaitez appeler autrement la fonction globale, modifiez la variable `alloy` nom.
-
->[!TIP]
->
-> Lors de l’utilisation de la fonctionnalité de balises (anciennement Launch) pour mettre en oeuvre le SDK Web, la bibliothèque alloy.js est ajoutée à la bibliothèque de balises en ajoutant l’extension du SDK Web Adobe Experience Platform.
-
 
 Reportez-vous à la section [Installation du SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=fr) documentation pour plus de détails et d’options de déploiement.
 
@@ -168,9 +181,9 @@ L’implémentation du SDK Web Platform peut nécessiter un fragment de code de 
 
 ### Mise en oeuvre asynchrone
 
-Tout comme avec at.js, si la bibliothèque SDK Web Platform se charge de manière asynchrone, le rendu de la page peut se terminer avant que Target n’effectue un échange de contenu. Ce comportement peut entraîner un &quot;scintillement&quot;, dans lequel le contenu par défaut s’affiche brièvement avant d’être remplacé par le contenu personnalisé spécifié par Target. Si vous souhaitez éviter ce scintillement, Adobe recommande d’ajouter un fragment de code de masquage préalable spécial juste avant la référence de script SDK Web de Platform asynchrone.
+Tout comme avec at.js, si la bibliothèque SDK Web Platform se charge de manière asynchrone, le rendu de la page peut se terminer avant que Target n’effectue un échange de contenu. Ce comportement peut entraîner un &quot;scintillement&quot;, dans lequel le contenu par défaut s’affiche brièvement avant d’être remplacé par le contenu personnalisé spécifié par Target. Si vous souhaitez éviter ce scintillement, Adobe recommande d’ajouter un fragment de code de masquage préalable spécial juste avant la référence de script SDK Web de Platform asynchrone ou le code intégré des balises.
 
-Si votre mise en oeuvre est asynchrone comme dans l’exemple ci-dessus, remplacez le fragment de code de masquage préalable d’at.js par la version ci-dessous compatible avec le SDK Web Platform :
+Si votre mise en oeuvre est asynchrone comme dans les exemples ci-dessus, remplacez le fragment de code de masquage préalable d’at.js par la version ci-dessous compatible avec le SDK Web Platform :
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -191,13 +204,13 @@ Le comportement de masquage préalable est contrôlé par deux configurations à
 
 * `3000` spécifie le délai d’expiration en millisecondes pour le masquage préalable. Si aucune réponse de Target n’est reçue avant le délai d’expiration, la balise de style de masquage préalable est supprimée. Il devrait être rare d’atteindre ce délai.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Veillez à utiliser le fragment de code correct pour le SDK Web de Platform, car il utilise un ID de style différent de `alloy-prehiding`. Si le fragment de code de masquage préalable pour at.js est utilisé, il se peut qu’il ne fonctionne pas correctement.
 
 ### Mise en oeuvre synchrone
 
-Adobe recommande de mettre en oeuvre le SDK Web de Platform de manière asynchrone pour optimiser les performances globales de la page. Cependant, si la bibliothèque est chargée de manière synchrone, le fragment de code de masquage préalable n’est pas requis. Le style de masquage préalable est spécifié dans la configuration du SDK Web Platform.
+Adobe recommande de mettre en oeuvre le SDK Web de Platform de manière asynchrone pour optimiser les performances globales de la page. Cependant, si la bibliothèque alloy.js ou le code incorporé des balises est chargé de manière synchrone, le fragment de code de masquage préalable n’est pas requis. Le style de masquage préalable est spécifié dans la configuration du SDK Web Platform.
 
 Le style de prémasquage des implémentations synchrones peut être configuré à l’aide de la propriété [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) . La configuration du SDK Web Platform est traitée dans la section suivante.
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB Balises]
 
 ![configuration des options de migration de l’extension de balise SDK Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 Les options de configuration dignes d’intérêt liées à Target sont décrites ci-dessous :
@@ -352,9 +366,8 @@ Code de page :
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ Ensuite, apprenez à [demander et appliquer des activités basées sur VEC](rend
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
