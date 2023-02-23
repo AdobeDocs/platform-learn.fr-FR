@@ -3,9 +3,9 @@ title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 2%
 Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Découvrez comment diffuser des expériences et comment transmettre des paramètres supplémentaires à Target.
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
+
 
 ## Objectifs d&#39;apprentissage
 
@@ -26,6 +27,10 @@ Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform
 * Transmission de données XDM à Target et compréhension du mappage aux paramètres Target
 * Transmission de données personnalisées à Target, telles que des paramètres de profil et d’entité
 * Validation d’une mise en oeuvre Target avec le SDK Web de Platform
+
+>[!TIP]
+>
+>Voir notre [Migration de Target depuis at.js 2.x vers le SDK Web Platform](/help/tutorial-migrate-target-websdk/introduction.md) tutoriel pour un guide détaillé sur la migration de votre implémentation at.js existante.
 
 
 ## Conditions préalables
