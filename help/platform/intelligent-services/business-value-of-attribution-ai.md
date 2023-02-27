@@ -1,13 +1,12 @@
 ---
 title: Valeur commerciale d’Attribution AI
 description: Cette vidéo montre comment les marketeurs peuvent mesurer et optimiser les dépenses publicitaires et marketing en comprenant l’impact de chaque interaction client sur chaque phase du parcours des clients avec Attribution AI.
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 6248
 thumbnail: 40375.jpg
 exl-id: 12aa5c9a-ac48-4506-bbe7-14106fc17675
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 8%
