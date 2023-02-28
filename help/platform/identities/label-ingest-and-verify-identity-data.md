@@ -22,4 +22,4 @@ Découvrez comment étiqueter les champs de données en tant qu’identités, in
 
 >[!INFO]
 >
-> Cette vidéo fait partie d&#39;un cours, [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), disponible gratuitement sur Experience League !
+> Cette vidéo fait partie d&#39;un cours, [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr), disponible gratuitement sur Experience League !

@@ -1,6 +1,6 @@
 ---
 title: Démonstration de Real-time Customer Data Platform (RTCDP) de l’Adobe
-description: Consultez une démonstration de l’utilisation de Real-Time CDP pour collecter des données provenant de plusieurs sources, puis fusionnez ces données en un seul profil client en temps réel, puis activez ces données pour créer des expériences client personnalisées.
+description: Regardez une démonstration montrant comment Real-Time CDP est utilisée pour collecter des données provenant de sources multiples, puis pour les fusionner en temps réel en un profil client unique et activer ces données afin de créer des expériences client personnalisées.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
@@ -10,7 +10,7 @@ exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
 source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 6%
+ht-degree: 40%
 
 ---
 

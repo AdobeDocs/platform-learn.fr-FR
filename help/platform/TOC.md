@@ -77,7 +77,7 @@ ht-degree: 41%
    + [Création et publication d’un modèle formé (interface utilisateur)](data-science-workspace/create-model-ui.md)
    + [Planification de la formation et de la notation automatisées d’un service](data-science-workspace/schedule-training-scoring.md)
    + [Enrichissement des profils client en temps réel avec des insights d’apprentissage automatique](data-science-workspace/dsw-profile-segmentation.md)
-   + [Regroupement des fichiers source dans une recette](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [Regroupement des fichiers sources dans une recette](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
    + [Importation d’une recette empaquetée (interface utilisateur)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
    + [Importation d’une recette empaquetée (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinations {#destinations}
@@ -147,7 +147,7 @@ ht-degree: 41%
    + [Création de types de données](/help/platform/schemas/create-data-types.md)
    + [Configuration des relations entre les schémas](/help/platform/schemas/configure-relationships-between-schemas.md)
    + [Utiliser des champs énumérés et des valeurs suggérées](/help/platform/schemas/use-enumerated-fields.md)
-   + [Copie de schémas entre des environnements de test](/help/platform/schemas/copy-schemas-between-sandboxes.md)
+   + [Copie de schémas entre des sandbox](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [mettre à jour les schémas,](/help/platform/schemas/update-schemas.md)
    + [Création d’un schéma ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Segments {#segments}

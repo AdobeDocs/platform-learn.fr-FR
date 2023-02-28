@@ -8,7 +8,7 @@ exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 54%
+ht-degree: 59%
 
 ---
 
@@ -23,4 +23,4 @@ Découvrez comment Adobe Experience Platform Debugger [Extension Chrome](https:/
 * [Téléchargement du module complémentaire Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
 * [Téléchargement de l’extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Documentation du débogueur Experience Platform](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=fr)
-* [Débogage d’une implémentation de balises](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [Débogage d’une implémentation de balises](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=fr)
