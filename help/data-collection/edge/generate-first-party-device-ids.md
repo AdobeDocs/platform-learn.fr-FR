@@ -5,9 +5,9 @@ feature: Web SDK
 kt: 9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0c3edbeaa5cb46f159a3efe72c108dfd2235f04b
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '687'
 ht-degree: 2%
 
 ---
@@ -32,8 +32,13 @@ Voici un exemple rapide du fonctionnement de cette fonctionnalité :
 1. L’implémentation du SDK Web Adobe Experience Platform du client émet une requête à Platform Edge Network, y compris le FPID dans la carte d’identité.
 1. Experience Platform Edge Network reçoit le FPID et l’utilise pour générer un identifiant Experience Cloud (ECID).
 1. La réponse du SDK Web Platform renvoie l’ECID au navigateur de l’utilisateur final.
-1. Le SDK Web Platform utilise JavaScript pour stocker l’ECID en tant que `AMCV_` dans le navigateur de l’utilisateur final.
+1. Si la variable `idMigrationEnabled=true`, le SDK Web Platform utilise JavaScript pour stocker l’ECID en tant que `AMCV_` dans le navigateur de l’utilisateur final.
 1. Dans l’événement , la variable `AMCV_` expire, le processus se répète. Tant que le même identifiant d’appareil propriétaire est disponible, une nouvelle `AMCV_` est créé avec la même valeur ECID qu’auparavant.
+
+>[!NOTE]
+>
+>Le `idMigrationEnabled` n’a pas besoin d’être défini sur `true` pour utiliser FPID. Avec `idMigrationEnabled=false` vous pouvez ne pas voir de `AMCV_` Toutefois, et doivent rechercher la valeur ECID dans la réponse réseau.
+
 
 Dans ce tutoriel, un exemple spécifique utilisant le langage de script PHP est utilisé pour montrer comment :
 

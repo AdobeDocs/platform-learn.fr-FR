@@ -4,7 +4,7 @@ breadcrumb-title: Tutoriels sur la collecte de données
 user-guide-description: Vidéos pratiques et tutoriels pour vous aider à utiliser efficacement la collecte de données dans Experience Platform.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 43%
@@ -28,26 +28,26 @@ ht-degree: 43%
    + [Implémentation dans des sites web avec des SDK de solution](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=fr){target="_blank"}
    + [Mise en oeuvre dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr){target="_blank"}
 + SDK Web{#web-sdk}
-   + [Présentation](web-sdk/overview.md)
+   + [Aperçu](web-sdk/overview.md)
    + [Démonstration](web-sdk/demo.md)
    + [Tutoriel de mise en oeuvre (avec balises)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr){target="_blank"}
-   + [Tutoriel sur la migration vers Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr){target="_blank"}
+   + [Tutoriel sur la migration vers Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr){target="_blank"}
    + Consentement{#consent}
-      + [Présentation](web-sdk/consent/overview.md)
+      + [Aperçu](web-sdk/consent/overview.md)
       + [Définition des valeurs de consentement à l’aide de la norme Adobe](web-sdk/consent/set-consent-adobe.md)
       + [Définition des valeurs de consentement à l’aide du standard IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
       + [Inspect et validation des données de consentement](web-sdk/consent/inspect.md)
       + [Tutoriel sur le traitement du consentement de bout en bout](web-sdk/consent/tutorial.md)
 + SDK Mobile{#mobile-sdk}
-   + [Présentation](mobile-sdk/overview.md)
+   + [Aperçu](mobile-sdk/overview.md)
    + [Création de propriétés mobiles](mobile-sdk/create-mobile-properties.md)
    + [Utilisation des gestionnaires de dépendances](mobile-sdk/use-dependency-managers.md)
    + [Mise en oeuvre dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr){target="_blank"}
 + API du serveur{#server-api}
-   + [Présentation](server-api/overview.md)
+   + [Aperçu](server-api/overview.md)
    + [Principes de base des API](server-api/introduction.md)
 + Transfert dʼévénement{#event-forwarding}
-   + [Présentation](event-forwarding/overview.md)
+   + [Aperçu](event-forwarding/overview.md)
    + [Création d’une propriété](event-forwarding/create-a-property.md)
    + [Configurer un flux de données](event-forwarding/set-up-a-datastream.md)
    + [Ajouter une extension](event-forwarding/add-an-extension.md)
@@ -62,7 +62,7 @@ ht-degree: 43%
    + [Gestion des données sensibles](edge/manage-sensitive-data-in-datastreams.md)
    + [Identifiants d’appareils propriétaires](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
-   + [Présentation](debugger/overview.md)
+   + [Aperçu](debugger/overview.md)
    + Experience Cloud Debugger{#experience-cloud}
       + [Installation du débogueur](debugger/experience-cloud/add-the-extension.md)
       + [Utilisation du débogueur](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
