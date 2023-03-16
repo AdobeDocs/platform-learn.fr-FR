@@ -2,13 +2,14 @@
 title: SDK web Adobe Experience Platform et présentation du réseau Edge
 description: Découvrez comment le SDK web Adobe Experience Platform et le réseau Edge permettent aux clients d’utiliser une seule bibliothèque JavaScript et une seule balise pour envoyer des données aux applications Adobe et aux destinations tierces.
 landing-page-description: Obtenez une présentation du SDK web et du réseau Edge.
+short-description: Get an overview of Web SDK and Edge Network.
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -26,7 +27,7 @@ Découvrez comment le SDK web Adobe Experience Platform et le réseau Edge per
 
 ## Ressources supplémentaires
 
-* [Documentation du SDK Web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr)
+* [Documentation sur le SDK web d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr)
 * [Simplification des processus client avec l’article de blog du SDK Web Adobe Experience Platform](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [Rationalisation des intégrations client-serveur avec Adobe Experience Platform Experience Edge](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [Publication de blog Unifier vos services Adobe Experience Platform avec le SDK Web Adobe Experience Platform](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
