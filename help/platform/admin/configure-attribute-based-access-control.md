@@ -7,10 +7,10 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 20%
+source-wordcount: '127'
+ht-degree: 29%
 
 ---
 
@@ -20,6 +20,10 @@ Découvrez comment configurer le contrôle d’accès basé sur les attributs po
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
 
+>[!NOTE]
+>
+> La fonction de création de stratégies affichée dans cette vidéo n’est pas entièrement disponible, mais la stratégie par défaut dans les comptes clients est configurée de la même manière que celle affichée.
+
 >[!IMPORTANT]
 >
-> Le contrôle d’accès basé sur les attributs est actuellement disponible pour un nombre restreint d’utilisateurs, qui sont actifs dans le secteur de la santé et basés aux États-Unis. Cette fonctionnalité sera disponible pour tous les clients Real-time Customer Data Platform une fois qu’elle sera entièrement publiée. En outre, l’étiquette Données de santé réglementées utilisée dans cette vidéo est autorisée uniquement pour les clients de Healthcare Shield.
+> Le contrôle d’accès basé sur les attributs est actuellement disponible pour un nombre restreint d’utilisateurs, qui sont actifs dans le secteur de la santé et basés aux États-Unis. Cette fonctionnalité sera disponible pour tous les clients Real-time Customer Data Platform dès son déploiement à grande échelle. En outre, l’étiquette Données de santé réglementées utilisée dans cette vidéo est autorisée uniquement pour les clients de Healthcare Shield.
