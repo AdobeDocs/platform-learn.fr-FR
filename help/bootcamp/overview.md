@@ -3,16 +3,16 @@ title: Experience Makers Bootcamp
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 # Experience Makers Bootcamp
 
-## Présentation
+## Aperçu
 
 De nombreuses entreprises ne sont pas conscientes des frictions qui existent dans le parcours de leurs clients, qui sont la conséquence d’une approche cloisonnée et fragmentée dans l’orchestration de la communication client. Les données, les profils et le contenu doivent être parfaitement alignés pour concevoir et offrir des expériences client exceptionnelles.
 
@@ -26,47 +26,12 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 ### Jour 1
 
-10.00 - 10.30 : Lancement et introduction
 
-10.30 - 11.00 : &quot;Démonstration du Parcours client - Art du possible&quot;
-
-11.00 - 11.45 : Session Whiteboard : &quot;Personnalisation 1-1, chasse à la friction, silos, Adobe POV&quot;
-
-11.45 - 12.00 : Rompre
-
-12.00 - 13.00 : Session Whiteboard : &quot;Ventilation de l’architecture des solutions&quot;
-
-13.00 - 14.00 : Déjeuner
-
-14.00 - 15.30 : Flux d’utilisateur 1 : Exercice pratique &quot;Acquisition&quot;
-
-15.30 - 15.45 : Rompre
-
-15.45 - 17.00 : Flux d’utilisateur 2 : Exercice pratique &quot;Inscription et intégration&quot;
-
-18 h - 19 h 00 : Expérience &quot;Concurrence de cocktails&quot;
-
-19 h - 22 h 00 : Bon dîner
+10:00: Lancement 10:30: Démonstration du Parcours client : Art du possible 11:00: 1-1 personnalisation, chasse à la friction, silos, Adobe POV (tableau blanc) 11:45: Saut 12:00: Ventilation de l’architecture des solutions (tableau blanc) 13:00: Déjeuner 14:00: Userflow 1 - Inscription et intégration - présentation (pourquoi-quoi-faire) 15:30: Saut 16:00: Userflow 2 Combinaison physique et numérique - présentation pratique et pratique / plongée profonde 18:00: Saut 18:30: Marchez jusqu&#39;au restaurant 19:00: Dîner
 
 ### Jour 2
 
-09.00 - 09.30 : &quot;Présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion&quot;
-
-09.30 - 09.45 : Rompre
-
-09.45 - 11.15 : Flux d’utilisateur 4 : Exercice pratique &quot;Analyse client&quot;
-
-11.15 - 11.30 : Rompre
-
-11.30 - 12.30 : &quot;Présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion&quot;
-
-12.30 - 13.30 : Déjeuner
-
-13.30 - 14.30 : Personnalisation à grande échelle - Comment y parvenir
-
-14.30 - 15.00 : Conclusion, récapitulation et étapes suivantes
-
-15.00 : Adjourn
+08:00: Petit déjeuner 08:30: Présentation de la diffusion basée sur les Parcours utilisateur, de la structure d’équipe, du log de diffusion 09.45 : Userflow 3 Blending physique et numérique - Présentation avec exercice pratique 11.15 : Break 11.30 : Fin des flux d’utilisateurs - (où-où-quand) 12:00: Group Presentations 12.30 : Déjeuner 13.30 : Userflow 4 : Analyse des clients - détails 14.30 : Conclusion, rap-up et étapes 15.00 : Boissons et délai
 
 ## Conditions préalables
 
@@ -100,7 +65,7 @@ D’autres vidéos intéressantes sont disponibles. [sur notre canal YouTube](ht
 
 ## Flux utilisateur
 
-[1. Acquisition](./uc/uc1/uc1.md)
+[1. Acquisition ](./uc/uc1/uc1.md)
 
 Dans ce flux d’utilisateurs, vous comprendrez tous les éléments dont vous avez besoin pour mettre en oeuvre des cas d’utilisation axés sur l’acquisition pour des utilisateurs inconnus et non authentifiés, ainsi que pour des utilisateurs connus et authentifiés à l’aide de Real-Time CDP.
 
