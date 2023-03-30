@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 8%
 
 ---
@@ -160,7 +160,6 @@ Vous pouvez maintenant préparer et importer les données dans votre environneme
    * `2-Luma-CRM-Data.postman_collection.json` crée un schéma et un jeu de données renseigné pour les données CRM des clients. Le schéma est basé sur la classe XDM Individual Profile qui comprend les détails démographiques, les coordonnées personnelles, les détails de préférences et un groupe de champs d’identité personnalisé.
    * `3-Luma-Product-Catalog.postman_collection.json` crée un schéma et un jeu de données renseigné pour les informations du catalogue de produits. Le schéma est basé sur une classe de catalogue de produits personnalisée et utilise un groupe de champs de catalogue de produits personnalisé.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` crée un schéma et un jeu de données renseigné pour les données d’événement d’achat hors ligne des clients. Le schéma est basé sur la classe XDM ExperienceEvent et comprend une identité personnalisée et des groupes de champs Détails du commerce .
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` crée un schéma et un jeu de données renseigné pour les événements liés aux produits en stock et en rupture de stock. Le schéma est basé sur une classe d’événements professionnels personnalisée et un groupe de champs personnalisé.
    * `6-Luma-Test-Profiles.postman_collection.json` crée un schéma et un jeu de données rempli avec des profils de test à utiliser dans Adobe Journey Optimizer.
    * `7-Luma-Web-Events.postman_collection.json` crée un schéma et un jeu de données renseigné avec de simples données web historiques.
@@ -173,7 +172,12 @@ Les exemples de données ont été conçus de sorte que, lorsque les collections
 1. Accédez à **[!UICONTROL Profils]** > **[!UICONTROL Parcourir]**
 1. Sélectionner `Luma Loyalty Id` comme la propriété **[!UICONTROL Espace de noms d’identité]**
 1. Rechercher `5625458` comme la propriété **[!UICONTROL Valeur d’identité]**
-1. Ouvrez le `Danny Wright` profile
+1. Ouvrez le `Daniel Wright` profile
+
+>[!TIP]
+>
+>Si vous ne voyez pas le profil, vérifiez la variable [!UICONTROL Jeux de données] pour confirmer que tous les jeux de données ont été créés et ingérés avec succès. Si cela semble correct, patientez quinze minutes et vérifiez si le profil est disponible dans la visionneuse.  En cas de problème lié à l’ingestion des données, vérifiez les messages d’erreur pour tenter de localiser le problème. Vous pouvez également essayer d’activer les diagnostics d’erreur sur le [!UICONTROL Jeux de données] et effectuez un glisser-déposer du fichier de données json pour ingérer à nouveau les données.
+
 
 ![Ouverture d’un profil](../assets/data-generator/images/validation-profile-open.png)
 
