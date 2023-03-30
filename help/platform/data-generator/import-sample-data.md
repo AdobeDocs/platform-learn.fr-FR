@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 7%
+source-wordcount: '1752'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Ce tutoriel se concentre sur une marque fictive de vente au détail appelée Lum
 
 >[!NOTE]
 >
->Le résultat final de ce tutoriel est un environnement de test contenant les mêmes données d’exemple que la variable [Tutoriel Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>Le résultat final de ce tutoriel est un environnement de test contenant des données similaires à la variable [Tutoriel Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Il a été mis à jour en avril 2023 pour prendre en charge la variable [Défis liés à Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=fr).
 
 
 ## Conditions préalables
@@ -48,9 +48,9 @@ Avant de suivre les étapes, assurez-vous d’avoir téléchargé la [Postman](h
    >
    >Données utilisateur contenues dans la variable [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) est fictif et doit être utilisé à des fins de démonstration uniquement.
 
-1. Dans votre dossier de téléchargements, déplacez le `platform-utils-main.zip` vers l’emplacement souhaité sur votre ordinateur, puis décompressez-le.
-1. Dans le `luma-data` , ouvrez tous les `json` dans un éditeur de texte et remplacez toutes les instances de `_techmarketingdemos` avec votre propre identifiant de client, précédé d’un trait de soulignement.
-1. Ouvrir `luma-offline-purchases.json` dans un éditeur de texte et mettez à jour tous les horodatages afin que les événements se produisent le dernier mois (par exemple, recherchez `"timestamp":"2022-06` et remplacer l’année et le mois)
+1. Dans votre dossier de téléchargements, déplacez le fichier `platform-utils-main.zip` vers l’emplacement souhaité sur votre ordinateur, puis décompressez-le.
+1. Dans le `luma-data` , ouvrez tous les `json` dans un éditeur de texte et remplacez toutes les instances de `_yourOrganizationID` avec votre propre identifiant de client, précédé d’un trait de soulignement.
+1. Ouvrir `luma-offline-purchases.json` et `luma-web-events.json` dans un éditeur de texte et mettez à jour tous les horodatages afin que les événements se produisent le dernier mois (par exemple, recherchez `"timestamp":"2022-11` et remplacer l’année et le mois)
 1. Notez l’emplacement du dossier décompressé, car vous en aurez besoin ultérieurement lors de la configuration de la variable `FILE_PATH` Variable d’environnement Postman :
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Ensuite, vous devez importer les collections dans Postman.
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![Importation de collections](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Vous pouvez maintenant préparer et importer les données dans votre environneme
    * `3-Luma-Product-Catalog.postman_collection.json` crée un schéma et un jeu de données renseigné pour les informations du catalogue de produits. Le schéma est basé sur une classe de catalogue de produits personnalisée et utilise un groupe de champs de catalogue de produits personnalisé.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` crée un schéma et un jeu de données renseigné pour les données d’événement d’achat hors ligne des clients. Le schéma est basé sur la classe XDM ExperienceEvent et comprend une identité personnalisée et des groupes de champs Détails du commerce .
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` crée un schéma et un jeu de données renseigné pour les événements liés aux produits en stock et en rupture de stock. Le schéma est basé sur une classe d’événements professionnels personnalisée et un groupe de champs personnalisé.
+   * `6-Luma-Test-Profiles.postman_collection.json` crée un schéma et un jeu de données rempli avec des profils de test à utiliser dans Adobe Journey Optimizer.
+   * `7-Luma-Web-Events.postman_collection.json` crée un schéma et un jeu de données renseigné avec de simples données web historiques.
+
+
 ## Validation
 
 Les exemples de données ont été conçus de sorte que, lorsque les collections sont exécutées, des profils clients en temps réel sont créés pour combiner des données provenant de plusieurs systèmes. Un bon exemple en est le premier enregistrement des jeux de données de fidélité, de gestion de la relation client et d’achat hors ligne. Recherchez ce profil pour confirmer que les données ont été ingérées. Dans le [Interface de Adobe Experience Platform](https://platform.adobe.com/):
@@ -174,6 +182,8 @@ En parcourant les données de la variable **[!UICONTROL Attributs]** et **[!UICO
 
 ## Étapes suivantes
 
+Si vous souhaitez en savoir plus sur Adobe Journey Optimizer, cet environnement de test contient tout ce dont vous avez besoin pour utiliser la variable [Défis liés à Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=fr)
+
 Si vous souhaitez en savoir plus sur les stratégies de fusion, la gouvernance des données, le service de requête et le créateur de segments, passez à [leçon 11 du tutoriel Prise en main des architectes de données et des ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Les leçons précédentes de cet autre tutoriel vous ont permis de créer manuellement tous les éléments qui venaient d’être renseignés par ces collections Postman.
 
 Si vous souhaitez créer un exemple de mise en oeuvre du SDK Web pour créer un lien vers cet environnement de test, accédez à la section
@@ -184,6 +194,6 @@ Si vous souhaitez créer un exemple de mise en oeuvre du SDK Mobile pour créer 
 
 ## Réinitialisation de l’environnement Sandbox {#reset-sandbox}
 
-La réinitialisation d’un environnement de test hors production supprime toutes les ressources associées à cet environnement de test (schémas, jeux de données, etc.) tout en conservant le nom et les autorisations associés de l’environnement de test. Cet environnement de test « propre » reste disponible avec le même nom auprès des utilisateurs qui y ont accès.
+La réinitialisation d’un sandbox hors production supprime toutes les ressources associées à ce sandbox (schémas, jeux de données, etc.) tout en conservant le nom et les autorisations associés du sandbox. Ce sandbox « propre » reste disponible avec le même nom auprès des utilisateurs qui y ont accès.
 
 Suivez les étapes [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) pour réinitialiser un environnement de test.
