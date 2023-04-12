@@ -2,14 +2,14 @@
 title: Utilisation du débogueur Adobe Experience Cloud
 description: Découvrez comment utiliser Adobe Experience Cloud Debugger pour faciliter la compréhension et la résolution des problèmes liés à vos implémentations Experience Cloud.
 landing-page-description: Apprenez à utiliser Experience Cloud Debugger pour résoudre les problèmes liés à vos implémentations. Identifiez les solutions Adobe mises en œuvre et les appels qu’elles lancent.
-short-description: Learn to use the Experience Cloud Debugger to troubleshoot your implementations. Understand what Adobe solutions are implemented and what calls they're making.
+short-description: Apprenez à utiliser Experience Cloud Debugger pour résoudre les problèmes liés à vos implémentations. Identifiez les solutions Adobe mises en œuvre et les appels qu’elles lancent.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 44%
+source-wordcount: '190'
+ht-degree: 50%
 
 ---
 

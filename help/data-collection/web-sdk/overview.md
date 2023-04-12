@@ -2,14 +2,14 @@
 title: SDK web Adobe Experience Platform et présentation du réseau Edge
 description: Découvrez comment le SDK web Adobe Experience Platform et le réseau Edge permettent aux clients d’utiliser une seule bibliothèque JavaScript et une seule balise pour envoyer des données aux applications Adobe et aux destinations tierces.
 landing-page-description: Obtenez une présentation du SDK web et du réseau Edge.
-short-description: Get an overview of Web SDK and Edge Network.
+short-description: Obtenez une présentation du SDK web et du réseau Edge.
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 38%
+source-wordcount: '217'
+ht-degree: 41%
 
 ---
 

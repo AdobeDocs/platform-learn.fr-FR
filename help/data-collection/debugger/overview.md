@@ -2,14 +2,14 @@
 title: Présentation de Adobe Experience Platform Debugger
 description: Découvrez comment l’extension Chrome et le module complémentaire Adobe Experience Platform Debugger vous permettent de déboguer vos implémentations web de SDK Web Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, les balises et plus encore.
 landing-page-description: Déboguez vos mises en œuvre web du SDK web Adobe Experience Platform et des applications Experience Cloud.
-short-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
+short-description: Déboguez vos implémentations web du SDK web Adobe Experience Platform et des applications Experience Cloud.
 kt: 4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 59%
+source-wordcount: '166'
+ht-degree: 63%
 
 ---
 
