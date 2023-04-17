@@ -6,10 +6,10 @@ description: Dans cette leçon, vous allez configurer les autorisations utilisat
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ Les ressources clés :
 * [Tutoriels Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Documentation Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
 * [Cours Experience League](https://experienceleague.adobe.com/?lang=fr#dashboard/learning)
-
-Voici un autre tutoriel que vous pouvez consulter pour en savoir plus sur les connexions à des applications tierces :
-
-* [Tutoriel technique complet d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Merci pour vos efforts et bonne chance pour votre parcours avec Adobe Experience Platform !
