@@ -1,6 +1,6 @@
 ---
 title: Présentation des sources
-description: Découvrez comment ingérer facilement des données à partir d’applications tierces, propriétaires et d’Adobe dans Real-Time Customer Profile de Platform et dans le lac de données.
+description: Découvrez comment ingérer facilement des données à partir d’applications tierces, propriétaires et d’Adobe dans le profil client en temps réel de Platform et dans le lac de données.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
