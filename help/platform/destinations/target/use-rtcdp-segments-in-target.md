@@ -1,5 +1,5 @@
 ---
-title: Utilisation des segments de la plateforme de données clients en temps réel dans Target
+title: Comment utiliser les segments de la plateforme de données clients en temps réel dans Adobe Target ?
 description: Découvrez comment utiliser les segments Real-time Customer Data Platform dans Adobe Target pour offrir des expériences personnalisées sur votre site web et vos applications mobiles.
 feature-set: Experience Platform, Target
 feature: Destinations, Segments, Audiences, Integrations
@@ -9,9 +9,9 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-05T00:00:00Z
 jira: KT-13141
-source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
+source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Comment partager des segments et des attributs de profil de la plateforme de données clients en temps réel d’Adobe vers Adobe Target ?
-description: Description manquante
+description: Découvrez comment partager des segments et des attributs de profil d’Adobe Real-time Customer Data Platform vers Adobe Target pour afficher du contenu personnalisé en temps réel sur vos sites web, applications mobiles et autres propriétés numériques.
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 

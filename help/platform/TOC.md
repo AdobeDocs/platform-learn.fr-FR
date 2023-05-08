@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
+source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 43%
+source-wordcount: '932'
+ht-degree: 42%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 43%
    + [Configuration de l’espace de stockage dans le cloud basé sur les fichiers ou des destinations de marketing par e-mail](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configuration d’une destination de réseau social](/help/platform/destinations/configure-a-social-destination.md)
    + Adobe Target et personnalisation personnalisée{#target}
-      + [Personnalisation de l’accès suivant avec Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=fr)
+      + [Personnalisation de l’accès suivant avec Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configuration de la destination Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Activation des segments et des attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Utilisation des segments Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -199,11 +199,10 @@ ht-degree: 43%
    + [Ingérer des données à partir de bases de données](/help/platform/sources/ingest-data-from-databases.md)
    + [Diffuser les données en continu avec l’API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Diffusion de données à l’aide des connecteurs sources](/help/platform/sources/streaming-ingestion-source-connector.md)
-
+   + [Personnalisation de l’accès suivant avec Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Intégrations Experience Cloud {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Orchestration des campagnes avec Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Personnalisation de l’accès suivant avec Adobe Target](/help/platform/experience-cloud/next-hit-personalization.md)
 + Tendances du secteur {#industry}
    + [L’avenir de la gestion des données et les changements d’environnement](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [A Tale of Two Perceptions - Brands vs. Consumers (Double perception - Marques contre Consommateurs)](/help/platform/industry/brands-vs-consumers.md)
