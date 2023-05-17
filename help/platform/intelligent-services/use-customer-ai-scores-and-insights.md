@@ -1,6 +1,6 @@
 ---
 title: Utiliser les scores et les informations de Customer AI
-description: Découvrez comment utiliser les scores de propension et les statistiques de Customer AI pour convertir et fidéliser les clients.
+description: Découvrez comment utiliser les scores de propension et les statistiques de l’IA dédiée aux clients pour convertir et fidéliser les clients et les clientes.
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
@@ -16,7 +16,7 @@ ht-degree: 59%
 
 # Utiliser les scores et les informations de Customer AI
 
-Découvrez comment utiliser les scores de propension et les statistiques de Customer AI pour convertir et fidéliser les clients.
+Découvrez comment utiliser les scores de propension et les statistiques de l’IA dédiée aux clients pour convertir et fidéliser les clients et les clientes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
 

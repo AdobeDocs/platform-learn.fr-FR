@@ -1,6 +1,6 @@
 ---
 title: Utiliser les scores et les informations d’Attribution AI
-description: Découvrez comment utiliser la page d’informations Attribution AI pour comprendre le retour sur investissement des canaux et campagnes marketing.
+description: Découvrez comment utiliser la page d’informations IA dédiée à l’attribution pour comprendre le retour sur investissement des canaux et campagnes marketing.
 feature: Attribution AI
 role: User
 kt: 4173
