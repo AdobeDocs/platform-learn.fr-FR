@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
+source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '939'
 ht-degree: 42%
 
 ---
@@ -49,8 +49,8 @@ ht-degree: 42%
    + [Aperçu](/help/platform/governance/understanding-data-governance.md)
    + [Démo de bout en bout](/help/platform/governance/introduction-to-data-governance.md)
    + [Classification des données à l’aide des étiquettes de gouvernance](/help/platform/governance/classify-data-using-governance-labels.md)
-   + [Création de stratégies d’utilisation des données](/help/platform/governance/create-data-usage-policies.md)
-   + [Application des stratégies d’utilisation des données](/help/platform/governance/enforce-data-usage-policies.md)
+   + [Création de politiques d’utilisation des données](/help/platform/governance/create-data-usage-policies.md)
+   + [Application des politiques d’utilisation des données](/help/platform/governance/enforce-data-usage-policies.md)
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
    + [Intégration à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Hygiène des données {#data-hygiene}
@@ -102,6 +102,7 @@ ht-degree: 42%
       + [Configuration de la destination Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Activation des segments et des attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Utilisation des segments Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
+      + [Utilisation des attributs de profil Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Webinaire Activation des données vers des applications non Adobes](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identités {#identities}
    + [Présentation des graphiques des identités et des identités](/help/platform/identities/understanding-identity-and-identity-graphs.md)

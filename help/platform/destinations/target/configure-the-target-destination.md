@@ -7,9 +7,9 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13122
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 758ccd3aef6789c727bbe19e30947bb7ee5f2615
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '130'
 ht-degree: 6%
 
 ---
