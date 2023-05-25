@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
+source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 42%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 42%
 + Gouvernance des données {#data-governance}
    + [Aperçu](/help/platform/governance/understanding-data-governance.md)
    + [Démo de bout en bout](/help/platform/governance/introduction-to-data-governance.md)
-   + [Classification des données à l’aide des étiquettes de gouvernance](/help/platform/governance/classify-data-using-governance-labels.md)
+   + [Classification des données à l’aide d’étiquettes](/help/platform/governance/classify-data-using-labels.md)
    + [Création de politiques d’utilisation des données](/help/platform/governance/create-data-usage-policies.md)
    + [Application des politiques d’utilisation des données](/help/platform/governance/enforce-data-usage-policies.md)
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
@@ -188,7 +188,7 @@ ht-degree: 42%
    + [Configuration de la connexion à Correspondance de segments](/help/platform/segments/segment-match-connection-setup.md)
    + [Gouvernance des données de Correspondance de segments](/help/platform/segments/segment-match-data-governance.md)
    + [Flux de configuration de Correspondance de segments](/help/platform/segments/segment-match-configuration-flow.md)
-   + [Insights sur le prépartage de Correspondance de segments](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [Informations sur le prépartage de Correspondance de segments](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Correspondance de segments recevant des données](/help/platform/segments/segment-match-receiving-data.md)
 + Sources {#sources}
    + [Présentation des sources](/help/platform/sources/overview.md)
