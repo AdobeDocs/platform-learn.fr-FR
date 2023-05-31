@@ -6,10 +6,10 @@ feature: Profiles
 kt: 4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 11%
+source-wordcount: '64'
+ht-degree: 9%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 11%
 Cette vidéo vous guide tout au long d’un diagramme d’aperçu illustrant la fonctionnalité Real-time Customer Profile de Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33600?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours [Prise en main de Adobe Experience Platform pour les ingénieurs de données](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), disponible gratuitement sur Experience League !
 
 Pour plus d’informations, consultez la [Documentation sur Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr).
 

@@ -8,10 +8,10 @@ kt: 9259, 13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 4%
+source-wordcount: '162'
+ht-degree: 5%
 
 ---
 
@@ -30,10 +30,6 @@ Découvrez comment configurer le connecteur source pour Marketo à l’aide du w
 Découvrez comment configurer le connecteur source pour Marketo à l’aide du workflow standard. Le workflow standard nécessite la création préalable de schémas et d’espaces de noms d’identité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours, [Prise en main de Real-Time CDP, Édition B2B pour les spécialistes du marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), disponible gratuitement sur Experience League !
 
 Pour plus d’informations, consultez la documentation suivante :
 * [Documentation du connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

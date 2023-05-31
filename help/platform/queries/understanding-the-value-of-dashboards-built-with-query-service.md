@@ -6,10 +6,10 @@ feature: Queries
 kt: 3714
 thumbnail: 28981.jpg
 exl-id: bf78cbeb-151a-43ef-a90b-6438af7ffbeb
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 5%
+source-wordcount: '156'
+ht-degree: 3%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 5%
 Avec Adobe Experience Platform, les marques peuvent ingérer, stocker, structurer et extraire tous les jeux de données stockés, y compris les données comportementales, CRM, de point de vente, etc. Grâce au service de requête des Experience Platform, les marques peuvent interroger ces jeux de données et répondre à des questions spécifiques sur l’entreprise, puis commencer à générer des informations pertinentes. Cette vidéo présente l’intérêt de créer des tableaux de bord dans les outils de Business Intelligence (BI) à l’aide de Query Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28981?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours [Prise en main de Adobe Experience Platform pour les ingénieurs de données](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), disponible gratuitement sur Experience League !
 
 Pour plus d’informations, consultez la [Documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 

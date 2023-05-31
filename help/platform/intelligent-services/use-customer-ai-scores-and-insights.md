@@ -7,10 +7,10 @@ role: User
 kt: 4171
 thumbnail: 32666.jpg
 exl-id: f3f628ef-223a-48d9-979e-86f038268923
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 59%
+source-wordcount: '58'
+ht-degree: 84%
 
 ---
 
@@ -19,9 +19,5 @@ ht-degree: 59%
 Découvrez comment utiliser les scores de propension et les statistiques de l’IA dédiée aux clients pour convertir et fidéliser les clients et les clientes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours, [Prise en main des services intelligents pour les marketeurs](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), disponible gratuitement sur Experience League !
 
 Pour plus d’informations, consultez la [Documentation de Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr)

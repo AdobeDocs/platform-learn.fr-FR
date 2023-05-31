@@ -6,10 +6,10 @@ feature: Sources
 kt: 7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 47%
+source-wordcount: '117'
+ht-degree: 52%
 
 ---
 
@@ -19,10 +19,6 @@ Cette vidéo explique comment diffuser en temps réel des données d’une sourc
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours [Ingestion de données pour les ingénieurs de données](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=fr), disponible gratuitement sur Experience League !
 
 ## Ressources supplémentaires
 

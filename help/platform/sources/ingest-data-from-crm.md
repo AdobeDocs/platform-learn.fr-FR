@@ -7,10 +7,10 @@ kt: 3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 6%
+source-wordcount: '208'
+ht-degree: 4%
 
 ---
 
@@ -29,10 +29,6 @@ Découvrez comment configurer le connecteur source pour Salesforce CRM à l’ai
 Découvrez comment configurer le connecteur source pour Salesforce CRM à l’aide du workflow de modèle. Ce workflow génère automatiquement les ressources nécessaires à l’ingestion de données Salesforce basées sur des modèles. Cela vous permet de gagner du temps au début et les ressources peuvent être personnalisées en fonction de vos besoins. Ce workflow n’est pas pris en charge pour tous les connecteurs source CRM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours [Ingestion de données pour les ingénieurs de données](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion&amp;lang=fr), disponible gratuitement sur Experience League !
 
 Pour plus d’informations, consultez la documentation suivante :
 * [Salesforce Création d’une documentation de connexion](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).

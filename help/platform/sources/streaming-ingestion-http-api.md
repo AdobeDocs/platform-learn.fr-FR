@@ -6,22 +6,18 @@ feature: Sources
 kt: 6686
 thumbnail: 331028.jpg
 exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 31%
+source-wordcount: '115'
+ht-degree: 37%
 
 ---
 
-# Diffusion de données en continu avec l’API HTTP
+# Diffuser les données en continu avec l’API HTTP
 
 Cette vidéo explique comment diffuser des données vers Adobe Experience Platform en temps réel à l’aide du point d’entrée de l’API HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331028?quality=12&learn=on)
-
->[!INFO]
->
-> Cette vidéo fait partie d&#39;un cours [Ingestion de données pour les ingénieurs de données](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=fr), disponible gratuitement sur Experience League !
 
 ## Informations supplémentaires
 
