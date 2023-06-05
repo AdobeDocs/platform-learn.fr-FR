@@ -2,10 +2,10 @@
 title: Consentement
 description: Découvrez comment mettre en oeuvre le consentement dans une application mobile.
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Découvrez comment mettre en oeuvre le consentement dans une application mobile.
 
-L’extension mobile de consentement Adobe Experience Platform permet la collecte des préférences de consentement de votre application mobile lors de l’utilisation du SDK Mobile Adobe Experience Platform et de l’extension Edge Network. En savoir plus sur les [Extension de consentement](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network), dans la documentation.
+L’extension mobile de consentement Adobe Experience Platform permet la collecte des préférences de consentement de votre application mobile lors de l’utilisation du SDK Mobile Adobe Experience Platform et de l’extension Edge Network. En savoir plus sur les [Extension de consentement](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), dans la documentation.
 
 ## Conditions préalables
 

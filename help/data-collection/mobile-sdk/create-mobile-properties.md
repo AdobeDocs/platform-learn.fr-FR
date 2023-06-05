@@ -4,10 +4,10 @@ description: Découvrez comment créer une propriété de balise mobile dans la 
 feature: Mobile SDK
 kt: null
 exl-id: c0bfdd5a-03f7-49db-9124-7d420a884048
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 3%
+source-wordcount: '88'
+ht-degree: 4%
 
 ---
 
@@ -21,4 +21,4 @@ Découvrez comment créer une propriété de balise mobile dans la collecte de d
 
 >[!VIDEO](https://video.tv.adobe.com/v/26264/?quality=12&learn=on)
 
-Pour plus d’informations, consultez la [Documentation du SDK Mobile](https://aep-sdks.gitbook.io/docs/).
+Pour plus d’informations, consultez la [Documentation du SDK Mobile](https://developer.adobe.com/client-sdks/documentation/).

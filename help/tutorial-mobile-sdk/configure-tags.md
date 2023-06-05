@@ -2,10 +2,10 @@
 title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -33,7 +33,7 @@ Dans cette leçon, vous allez :
 ## Configuration initiale
 
 1. Créez une propriété de balise mobile :
-   1. Dans le [Interface de collecte de données](https://experience.adobe.com/data-collection/){target=&quot;_blank&quot;}, sélectionnez **[!UICONTROL Balises]** dans le volet de navigation de gauche
+   1. Dans le [Interface de collecte de données](https://experience.adobe.com/data-collection/){target="_blank"}, sélectionnez **[!UICONTROL Balises]** dans le volet de navigation de gauche
    1. Sélectionnez **[!UICONTROL Nouvelle propriété]**
 
       ![création d’une propriété de balise](assets/mobile-tags-new-property.png).
@@ -45,7 +45,7 @@ Dans cette leçon, vous allez :
 
       >[!NOTE]
       >
-      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, comme celle que vous effectuez dans ce tutoriel, proviennent de la [!UICONTROL Extension de consentement] et non le [!UICONTROL Confidentialité] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://aep-sdks.gitbook.io/docs/resources/privacy-and-gdpr).
+      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, comme celle que vous effectuez dans ce tutoriel, proviennent de la [!UICONTROL Extension de consentement] et non le [!UICONTROL Confidentialité] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Ouvrir la nouvelle propriété
@@ -81,7 +81,7 @@ Dans cette leçon, vous allez :
 
 1. Installez le **Consentement** extension .
 
-   Pour les besoins de ce tutoriel, sélectionnez **[!UICONTROL En attente]**. En savoir plus sur l’extension Consent dans [la documentation](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network).
+   Pour les besoins de ce tutoriel, sélectionnez **[!UICONTROL En attente]**. En savoir plus sur l’extension Consent dans [la documentation](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![paramètres de consentement](assets/mobile-tags-extension-consent.png)
 
@@ -110,14 +110,14 @@ Dans cette leçon, vous allez :
 
 1. Les instructions d’installation vous fournissent un bon point de départ pour la mise en oeuvre.
 
-   Vous trouverez des informations supplémentaires [here](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).
+   Vous trouverez des informations supplémentaires [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
    * **[!UICONTROL Identifiant de fichier d’environnement]**: Cet identifiant unique pointe vers votre environnement de développement. Notez cette valeur. Les valeurs d’ID de production/d’évaluation/de développement sont toutes différentes.
    * **[!UICONTROL Podfile]**: Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [documentation](https://cocoapods.org/).
    * **[!UICONTROL Code d’initialisation]**: Ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement.
 
 >[!NOTE]
->Les instructions d’installation doivent être considérées comme un point de départ et non comme une documentation définitive. Vous trouverez les dernières versions du SDK et des exemples de code dans la [documentation](https://aep-sdks.gitbook.io/docs/).
+>Les instructions d’installation doivent être considérées comme un point de départ et non comme une documentation définitive. Vous trouverez les dernières versions du SDK et des exemples de code dans la [documentation](https://developer.adobe.com/client-sdks/documentation/).
 
 ## Architecture des balises mobiles
 

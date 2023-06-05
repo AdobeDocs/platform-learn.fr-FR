@@ -4,9 +4,9 @@ description: Découvrez comment le SDK Mobile Adobe Experience Platform optimise
 feature: Mobile SDK
 kt: 3698
 exl-id: 0d55971d-35cc-4684-b1fb-f1aabd0b561c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 82%
 
 ---
@@ -21,4 +21,4 @@ Découvrez comment le SDK Mobile Adobe Experience Platform optimise l’engageme
 
 >[!VIDEO](https://video.tv.adobe.com/v/28948?quality=12&learn=on)
 
-Pour plus d’informations, consultez la [Documentation du SDK Mobile Platform](https://aep-sdks.gitbook.io/docs/).
+Pour plus d’informations, consultez la [Documentation du SDK Mobile Platform](https://developer.adobe.com/client-sdks/documentation/).

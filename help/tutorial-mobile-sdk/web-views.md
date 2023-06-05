@@ -3,7 +3,7 @@ title: Gestion des WebViews
 description: Découvrez comment gérer la collecte de données avec WebViews dans une application mobile.
 kt: 6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -72,7 +72,7 @@ if var urlString = url?.absoluteString {
 }
 ```
 
-Vous pouvez en savoir plus sur les `Identity.getUrlVariables` de l’API [Guide de référence de l’API d’extension Identity for Edge Network](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network/api-reference#geturlvariables).
+Vous pouvez en savoir plus sur les `Identity.getUrlVariables` de l’API [Guide de référence de l’API d’extension Identity for Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
 ## Validation
 

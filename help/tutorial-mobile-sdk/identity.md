@@ -2,10 +2,10 @@
 title: Identité
 description: Découvrez comment collecter des données d’identité dans une application mobile.
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 4%
+source-wordcount: '591'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment collecter des données d’identité dans une application mob
 
 Adobe Experience Platform Identity Service vous permet de mieux connaître vos clients et leurs comportements en rapprochant des identités entre appareils et systèmes, ce qui vous permet de proposer des expériences numériques personnelles et percutantes en temps réel. Les champs d’identité et les espaces de noms sont la colle qui relie différentes sources de données pour créer le profil client en temps réel à 360 degrés.
 
-En savoir plus sur les [Extension Identity](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network) et le [service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) dans la documentation.
+En savoir plus sur les [Extension Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) et le [service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) dans la documentation.
 
 ## Conditions préalables
 
@@ -65,10 +65,10 @@ Commencez par mettre à jour la carte d’identité de l’utilisateur lorsqu’
 
 ## Configuration d’un espace de noms d’identité personnalisé
 
-Les espaces de noms d’identité sont des composants de [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) qui servent d’indicateurs du contexte auquel une identité se rapporte. Par exemple, ils distinguent une valeur de &quot;name@email.com&quot; comme adresse électronique ou &quot;443522&quot; comme identifiant CRM numérique.
+Les espaces de noms d’identité sont des composants de [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) qui servent d’indicateurs du contexte auquel une identité se rapporte. Par exemple, ils distinguent une valeur de &quot;name@email.com&quot; comme adresse électronique ou &quot;443522&quot; comme identifiant CRM numérique.
 
 1. Dans l’interface Collecte de données, sélectionnez **[!UICONTROL Identités]** à partir du rail de navigation de gauche.
-1. Sélectionner **[!UICONTROL Créer un espace de noms d’identité]**.
+1. Sélectionnez **[!UICONTROL Créer un espace de noms d’identité]**.
 1. Fournissez une **[!UICONTROL Nom d’affichage]** de `Luma CRM ID` et un **[!UICONTROL Symbole d’identité]** valeur de `lumaCrmId`.
 1. Sélectionner **[!UICONTROL Identifiant multi-appareils]**.
 1. Sélectionnez **[!UICONTROL Créer]**.

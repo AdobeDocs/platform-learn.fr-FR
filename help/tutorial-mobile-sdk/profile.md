@@ -2,10 +2,10 @@
 title: Profile
 description: Découvrez comment collecter des données de profil dans une application mobile.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment collecter des données de profil dans une application mobile.
 
 Vous pouvez utiliser l’extension Profile pour stocker les attributs de votre utilisateur sur le client. Ces informations peuvent être utilisées ultérieurement pour cibler et personnaliser les messages lors de scénarios en ligne ou hors ligne, sans avoir à se connecter à un serveur pour des performances optimales. L’extension Profile gère le profil d’opération côté client (CSOP), permet de réagir aux API, de mettre à jour les attributs de profil utilisateur et de partager les attributs de profil utilisateur avec le reste du système en tant qu’événement généré.
 
-Les données de profil sont utilisées par d’autres extensions pour effectuer des actions liées au profil. Par exemple, l’extension Rules Engine qui consomme les données de profil et exécute des règles basées sur les données de profil. En savoir plus sur les [Extension de profil](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile) dans la documentation
+Les données de profil sont utilisées par d’autres extensions pour effectuer des actions liées au profil. Par exemple, l’extension Rules Engine qui consomme les données de profil et exécute des règles basées sur les données de profil. En savoir plus sur les [Extension de profil](https://developer.adobe.com/client-sdks/documentation/profile/) dans la documentation
 
 >[!IMPORTANT]
 >
@@ -65,7 +65,7 @@ L’équipe de personnalisation peut également souhaiter effectuer un ciblage e
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-Additional `updateUserAttributes` documentation disponible [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#update-user-attributes).
+Additional `updateUserAttributes` documentation disponible [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Obtenir
 
@@ -78,7 +78,7 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-Additional `getUserAttributes` documentation disponible [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#get-user-attributes).
+Additional `getUserAttributes` documentation disponible [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Validation avec Assurance
 

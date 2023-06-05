@@ -2,10 +2,10 @@
 title: Configuration d’Assurance
 description: Découvrez comment mettre en oeuvre l’extension Assurance dans une application mobile.
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 3%
+source-wordcount: '585'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment configurer Adobe Experience Platform Assurance dans une appli
 
 L’assurance, officiellement appelée Projet Griffon, est conçue pour vous aider à inspecter, tester, simuler et valider la manière dont vous collectez des données ou diffusez des expériences dans votre application mobile.
 
-Assurance vous aide à inspecter les événements SDK bruts générés par le SDK Mobile Adobe Experience Platform. Tous les événements collectés par le SDK sont disponibles pour inspection. Les événements du SDK sont chargés en mode Liste, triés par heure. Chaque événement dispose d’une vue détaillée qui fournit des détails supplémentaires. Des vues supplémentaires sur la configuration du SDK, les éléments de données, les états partagés et les versions de l’extension du SDK sont également fournies. En savoir plus sur les [Assurance](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance) dans la documentation du produit.
+Assurance vous aide à inspecter les événements SDK bruts générés par le SDK Mobile Adobe Experience Platform. Tous les événements collectés par le SDK sont disponibles pour inspection. Les événements du SDK sont chargés en mode Liste, triés par heure. Chaque événement dispose d’une vue détaillée qui fournit des détails supplémentaires. Des vues supplémentaires sur la configuration du SDK, les éléments de données, les états partagés et les versions de l’extension du SDK sont également fournies. En savoir plus sur les [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr) dans la documentation du produit.
 
 
 ## Conditions préalables
@@ -39,7 +39,7 @@ Vérifiez que votre entreprise a accès à Assurance en procédant comme suit :
 1. Connectez-vous à l’aide de vos informations d’identification Adobe ID pour l’Experience Cloud.
 1. Si vous êtes amené à la variable **[!UICONTROL Sessions]** puis vous avez accès. Si vous accédez à la page d’accès bêta, sélectionnez **[!UICONTROL Enregistrer]**.
 
-## Mise en œuvre
+## Implémenter
 
 Outre le [Installation du SDK](install-sdks.md) Si vous avez terminé la leçon précédente, iOS requiert également l’ajout suivant. Ajoutez le code suivant au `AppDelegate.swift` fichier :
 
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-Vous trouverez plus d’informations[ ici](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
+Vous trouverez plus d’informations [ici](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Configuration d’une URL de base
 
@@ -94,7 +94,7 @@ L’assurance s’exécute en ouvrant une URL, soit via un navigateur, soit via 
    * Événements Experience Cloud provenant de l’interface utilisateur web.
       ![événements d’assurance](assets/mobile-assurance-events.png)
 
-Si vous rencontrez des défis, veuillez consulter la section [technique](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
+Si vous rencontrez des défis, veuillez consulter la section [technique](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr){target="_blank"}.
 
 Suivant : **[Consentement](consent.md)**
 

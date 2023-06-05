@@ -2,10 +2,10 @@
 title: Installation des SDK Adobe Experience Platform Mobile
 description: Découvrez comment mettre en oeuvre le SDK Mobile Adobe Experience Platform dans une application mobile.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -17,9 +17,9 @@ Découvrez comment mettre en oeuvre le SDK Mobile Adobe Experience Platform dans
 
 * La bibliothèque de balises a été créée avec succès avec les extensions décrites dans la section [leçon précédente](configure-tags.md).
 * Identifiant du fichier d’environnement de développement du [Instructions d’installation mobile](configure-tags.md#generate-sdk-install-instructions).
-* Téléchargé, vide [exemple d’application](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;}.
-* Expérience avec [XCode](https://developer.apple.com/xcode/){target=&quot;_blank&quot;}.
-* De base [ligne de commande](https://en.wikipedia.org/wiki/Command-line_interface)Connaissances {target=&quot;_blank&quot;}.
+* Téléchargé, vide [exemple d’application](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Expérience avec [XCode](https://developer.apple.com/xcode/){target="_blank"}.
+* De base [ligne de commande](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} connaissance.
 
 ## Objectifs d&#39;apprentissage
 
@@ -142,7 +142,7 @@ Le code ci-dessus effectue les opérations suivantes :
 
 * Enregistre les extensions requises.
 * Configure MobileCore et d’autres extensions pour utiliser la configuration de la propriété de balise.
-* Active la journalisation de débogage. Vous trouverez plus de détails et d’options dans la section [Documentation du SDK Mobile](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
+* Active la journalisation de débogage. Vous trouverez plus de détails et d’options dans la section [Documentation du SDK Mobile](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >Dans une application de production, vous devez changer AppId en fonction de l’environnement actuel (dev/stag/prod).

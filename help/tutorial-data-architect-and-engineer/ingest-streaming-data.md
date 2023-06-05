@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3346'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savo
 
 >[!NOTE]
 >
->Bien que ce tutoriel se concentre sur l’ingestion par flux à partir de sites web avec SDK Web, vous pouvez également diffuser des données à l’aide de la fonction [Adobe du SDK Mobile](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), et d’autres mécanismes.
+>Bien que ce tutoriel se concentre sur l’ingestion par flux à partir de sites web avec SDK Web, vous pouvez également diffuser des données à l’aide de la fonction [Adobe du SDK Mobile](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), et d’autres mécanismes.
 
 ## Autorisations requises
 
@@ -324,7 +324,7 @@ Vous pouvez également confirmer que le nouveau profil s’affiche :
 1. Sélectionnez la **[!UICONTROL Identifiant de profil]** pour ouvrir le profil
    ![Recherche et ouverture du profil](assets/websdk-platform-openProfile.png)
 1. Sélectionnez la **[!UICONTROL Événements]** pour afficher les pages que vous avez consultées.
-   ![Événements de profil](assets/websdk-platform-profileEvents.png)
+   ![Événements de profil](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
 ## Ajout de données personnalisées à l’événement
@@ -457,11 +457,11 @@ Pour vérifier que l’identifiant CRM est maintenant envoyé par le SDK Web :
 
 ## Ressources supplémentaires
 
-* [Implémentation dʼAdobe Experience Cloud avec le SDK web](/help/tutorial-web-sdk/overview.md)
+* [Implémenter dʼAdobe Experience Cloud avec le SDK web](/help/tutorial-web-sdk/overview.md)
 * [Documentation sur l’ingestion par flux](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr)
-* [Référence de l’API d’ingestion par flux](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Référence de l’API d’ingestion en flux continu](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
 
-Super boulot ! C’était beaucoup d’informations sur le SDK Web et Launch. Il y a beaucoup plus d’implication dans une implémentation complète, mais ce sont les bases pour vous aider à commencer et voir les résultats dans Platform.
+Très bon travail ! C’était beaucoup d’informations sur le SDK Web et Launch. Il y a beaucoup plus d’implication dans une implémentation complète, mais ce sont les bases pour vous aider à commencer et voir les résultats dans Platform.
 
 >[!NOTE]
 >

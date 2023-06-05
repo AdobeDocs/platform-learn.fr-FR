@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez comment collecter des données d’événement dans une application mobile.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Découvrez comment effectuer le suivi des événements dans une application mobile.
 
-L’extension Edge Network fournit une API pour envoyer des événements d’expérience à Platform Edge Network. Un événement d’expérience est un objet qui contient des données conformes à la définition de schéma XDM ExperienceEvent. Plus simplement, ils capturent ce que les gens font dans votre application mobile. Une fois les données reçues par Platform Edge Network, elles peuvent être transférées vers les applications et services configurés dans votre flux de données, tels qu’Adobe Analytics et Experience Platform. En savoir plus sur les [Événements d’expérience](https://aep-sdks.gitbook.io/docs/getting-started/initialize-the-sdk) dans la documentation du produit.
+L’extension Edge Network fournit une API pour envoyer des événements d’expérience à Platform Edge Network. Un événement d’expérience est un objet qui contient des données conformes à la définition de schéma XDM ExperienceEvent. Plus simplement, ils capturent ce que les gens font dans votre application mobile. Une fois les données reçues par Platform Edge Network, elles peuvent être transférées vers les applications et services configurés dans votre flux de données, tels qu’Adobe Analytics et Experience Platform. En savoir plus sur les [Événements d’expérience](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) dans la documentation du produit.
 
 ## Conditions préalables
 
@@ -49,7 +49,7 @@ Le processus est le suivant...
 
 1. Créer et envoyer un événement.
 
-1. Validation.
+1. Valider.
 
 Regardons quelques exemples.
 

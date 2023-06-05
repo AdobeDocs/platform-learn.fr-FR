@@ -4,21 +4,19 @@ description: Découvrez comment utiliser CocoaPods et Gradle pour gérer les ext
 feature: Mobile SDK
 kt: null
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '61'
 ht-degree: 9%
 
 ---
 
 # Utilisation des gestionnaires de dépendances
 
-Découvrez comment utiliser CocoaPods et Gradle pour gérer les extensions et dépendances du SDK Mobile Adobe Experience Platform.
+Découvrez comment utiliser CocoaPods et Gradle pour gérer les extensions et dépendances du SDK Mobile Adobe Experience Platform. Pour plus d’informations sur l’installation du SDK avec CocoaPods et Gradle, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
 >[!NOTE]
 >
 > Launch est maintenant **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26263/?quality=12&learn=on)
-
-* [Obtention de la documentation du SDK Mobile Experience Platform](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).

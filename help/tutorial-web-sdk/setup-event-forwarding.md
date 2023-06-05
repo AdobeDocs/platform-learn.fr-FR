@@ -3,9 +3,9 @@ title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1887'
 ht-degree: 7%
 
 ---
@@ -19,8 +19,8 @@ Le transfert d’événement est un nouveau type de propriété disponible dans 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
 * [SDK web Adobe Experience Platform](overview.md)
-* [ SDK Mobile Adobe Experience Platform](https://aep-sdks.gitbook.io/docs/)
-<!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+* [ SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/)
+   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
       * [Configuration des autorisations](configure-permissions.md)
       * [Configuration d’un schéma XDM](configure-schemas.md)
       * [Configuration d’un espace de noms d’identité](configure-identities.md)
-      * [Configurer un flux de données](configure-datastream.md)
+      * [Configurer un train de données](configure-datastream.md)
    * Configuration des balises
 
       * [Installation de l’extension SDK Web](install-web-sdk.md)
@@ -84,7 +84,7 @@ Pour que le transfert d’événement utilise les données que vous envoyez au r
 
 Pour configurer Target dans le flux de données :
 
-1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection)Interface de {target=&quot;blank&quot;}
+1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
 1. Sélectionnez la `Luma Web SDK` datastream
 
@@ -165,7 +165,7 @@ Au cours de cet exercice, vous allez transférer la hauteur de la fenêtre d’a
 
 1. Création d’un autre élément de données
 
-1. **[!UICONTROL Nom]** it `ecid`
+1. **** Nommez-la `ecid`
 
 1. Sous **[!UICONTROL Extension]**, laissez `CORE`
 
@@ -238,11 +238,11 @@ Pour configurer une règle de transfert de données vers votre webhook, vous dev
 
 1. Revenir **[!UICONTROL Collecte de données]** > **[!UICONTROL Transfert d’événement]** > **[!UICONTROL Règles]** à partir du volet de navigation de gauche
 
-1. Sélectionner **[!UICONTROL Créer une règle]**
+1. Sélectionnez **[!UICONTROL Créer une règle]**
 
    ![Transfert d’événement Nouvelle règle](assets/event-forwarding-new-rules.png)
 
-1. Nommez-le `all events - ad cloud connector - webhook`
+1. Nommez-la `all events - ad cloud connector - webhook`
 
 1. Ajout d’une action
 
