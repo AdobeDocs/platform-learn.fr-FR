@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 4%
+source-wordcount: '944'
+ht-degree: 10%
 
 ---
 
@@ -49,7 +49,7 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 
 ## Créer un espace de noms d’identité
 
-Dans cet exercice, nous allons créer des espaces de noms d’identité pour les champs d’identité personnalisés de Luma, `loyaltyId`, `crmId`, et `productSku`. Les espaces de noms d’identité jouent un rôle essentiel dans la création de profils clients en temps réel, car deux valeurs correspondantes dans le même espace de noms permettent à deux sources de données de former un graphique d’identités.
+Dans cet exercice, nous allons créer des espaces de noms d’identité pour les champs d’identité personnalisés de Luma, `loyaltyId`, `crmId`, et `productSku`. Les espaces de noms d’identité jouent un rôle essentiel dans la création de profils clients en temps réel, car deux valeurs correspondantes dans le même espace de noms permettent à deux sources de données de former un graphique d’identité.
 
 
 ### Création d’espaces de noms dans l’interface utilisateur
@@ -68,7 +68,7 @@ Commençons par créer un espace de noms pour le schéma de fidélité Luma :
 
 1. Sélectionnez **[!UICONTROL Créer]**
 
-   ![Créer des espaces de noms](assets/identity-createNamespace.png)
+   ![Création d’espaces de noms.](assets/identity-createNamespace.png)
 
 Configurez maintenant un autre espace de noms pour le schéma du catalogue de produits Luma avec les détails suivants :
 
@@ -76,7 +76,7 @@ Configurez maintenant un autre espace de noms pour le schéma du catalogue de pr
 |---------------|-----------|
 | Nom d’affichage | SKU du produit Luma |
 | Symbole d’identité | lumaProductSKU |
-| Type | Identifiant de non-personne |
+| Type | Identifiant non-humain |
 
 
 
@@ -92,12 +92,11 @@ Nous allons créer notre espace de noms CRM via l&#39;API.
 > 1. Comme la variable **[!UICONTROL Symbole d’identité]**, utilisez `lumaCrmId`
 > 1. Comme la variable **[!UICONTROL Type]**, utilisez le mode multi-appareils
 
-
 Créons l’espace de noms d’identité `Luma CRM Id`:
 
 1. Télécharger [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) à `Luma Tutorial Assets` folder
 1. Importez la collection dans [!DNL Postman]
-1. Si vous n’avez pas fait de demande au cours des dernières 24 heures, vos jetons d’autorisation ont probablement expiré. Ouvrir la requête **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]**, puis sélectionnez **Envoyer** pour demander de nouveaux jetons JWT et d’accès.
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès.
 1. Sélectionner la requête **[!UICONTROL Identity Service] > [!UICONTROL Espace de noms d’identité] > [!UICONTROL Création d’un espace de noms d’identité].**
 1. Collez les éléments suivants en tant que [!DNL Body] de la requête :
 
@@ -128,13 +127,13 @@ Chaque schéma utilisé avec Real-time Customer Profile doit disposer d’une id
 
 Ajoutons une identité Principale à la variable `Luma Loyalty Schema`:
 
-1. Ouvrez le `Luma Loyalty Schema`
-1. Sélectionnez l’événement `Luma Identity profile field group`.
+1. Ouvrez le `Luma Loyalty Schema`.
+1. Sélectionnez le `Luma Identity profile field group`
 1. Sélectionnez la `loyaltyId` field
 1. Vérifiez les **[!UICONTROL Identité]** box
 1. Vérifiez les **[!UICONTROL Identité Principal]** box, également
-1. Sélectionnez la `Luma Loyalty Id` namespace de **[!UICONTROL Espaces de noms d’identité]** menu déroulant
-1. Sélectionner **[!UICONTROL Appliquer]**
+1. Sélectionnez l’espace de noms `Luma Loyalty Id` dans le menu déroulant **[!UICONTROL Espaces de noms d’identité]**
+1. Sélectionnez **[!UICONTROL Appliquer]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
    ![Identité Principal ](assets/identity-loyalty-primary.png)
@@ -157,11 +156,11 @@ Avec notre sélection d&#39;identités Principales, il est clair de voir comment
 
 Plusieurs champs d’identité peuvent être ajoutés à un schéma. Les identités non Principales sont souvent appelées identités secondaires. Pour connecter les achats hors ligne au comportement en ligne, nous allons ajouter crmId en tant qu’identifiant secondaire à notre `Luma Loyalty Schema` et plus tard dans nos données d’événements web. Mettons à jour le `Luma Loyalty Schema`:
 
-1. Ouvrez le `Luma Loyalty Schema`
-1. Sélectionner `Luma Identity Profile Field group`
+1. Ouvrez le `Luma Loyalty Schema`.
+1. Sélectionnez `Luma Identity Profile Field group`
 1. Sélectionner `crmId` field
 1. Vérifiez les **[!UICONTROL Identité]** box
-1. Sélectionnez la `Luma CRM Id` namespace de **[!UICONTROL Espaces de noms d’identité]** menu déroulant
+1. Sélectionnez l’espace de noms `Luma CRM Id` dans le menu déroulant **[!UICONTROL Espaces de noms d’identité]**
 1. Sélectionner **[!UICONTROL Appliquer]** puis sélectionnez l’option **[!UICONTROL Enregistrer]** pour enregistrer vos modifications.
 
    ![Identité Secondaire](assets/identity-loyalty-secondaryId.png)
@@ -170,13 +169,13 @@ Plusieurs champs d’identité peuvent être ajoutés à un schéma. Les identit
 
 Maintenant que nos champs d’identité sont libellés, nous pouvons terminer la configuration des relations de schéma entre le catalogue de produits de Luma et les schémas d’événement :
 
-1. Ouvrez le `Luma Offline Purchase Events Schema`
+1. Ouvrez le `Luma Offline Purchase Events Schema`.
 1. Sélectionner **[!UICONTROL Détails du commerce]** groupe de champs
 1. Sélectionner **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** field
 1. Vérifiez les **[!UICONTROL Relation]** box
 1. Sélectionner `Luma Product Catalog Schema` comme la propriété **[!UICONTROL Schéma de référence]**
 1. `Luma Product SKU` doit être automatiquement renseigné en tant que **[!UICONTROL Espace de noms d’identité de référence]**
-1. Sélectionner **[!UICONTROL Appliquer]**
+1. Sélectionnez **[!UICONTROL Appliquer]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
    ![Champ de référence](assets/identity-offlinePurchase-relationship.png)

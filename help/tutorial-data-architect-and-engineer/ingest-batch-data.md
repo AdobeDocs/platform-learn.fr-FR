@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2528'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,6 @@ Commencez par obtenir les exemples de données et personnalisez-les pour votre c
 >* L’activation des diagnostics d’erreur génère des données sur l’ingestion de vos données, que vous pouvez ensuite examiner à l’aide de l’API Data Access. En savoir plus à ce sujet dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* L’ingestion partielle vous permet d’ingérer des données contenant des erreurs, jusqu’à un certain seuil que vous pouvez spécifier. En savoir plus à ce sujet dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
-
 ### Validation des données
 
 Il existe plusieurs façons de confirmer que les données ont bien été ingérées.
@@ -103,7 +102,6 @@ Pour confirmer que les données ont atterri dans Profile (cela peut prendre quel
 1. Sélectionnez votre `Luma Loyalty Id` namespace
 1. Ensuite, saisissez l’une des options suivantes : `loyaltyId` des valeurs de votre jeu de données,  `5625458`
 1. Sélectionner **[!UICONTROL Affichage]**
-
    ![Confirmation d’un profil à partir du jeu de données](assets/ingestion-loyalty-profile.png)
 
 #### Validation avec des événements d’ingestion de données
@@ -137,7 +135,7 @@ Maintenant, téléchargeons les données à l’aide de l’API.
 Tout d’abord, obtenons l’identifiant du jeu de données dans lequel nous voulons ingérer des données :
 
 1. Ouvrir [!DNL Postman]
-1. Si vous n’avez pas fait de demande au cours des dernières 24 heures, vos jetons d’autorisation ont probablement expiré. Ouvrir la requête **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** et sélectionnez **Envoyer** pour demander de nouveaux jetons JWT et d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrez vos variables d’environnement et assurez-vous que la valeur de **CONTAINER_ID** est toujours `tenant`
 1. Ouvrir la requête **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** et sélectionnez **Envoyer**
 1. Vous devriez avoir une `200 OK` response
@@ -238,7 +236,7 @@ Examinons une autre manière de transférer des données. La fonctionnalité de 
 1. Vous devez avoir déjà téléchargé et décompressé. [luma-data.zip](assets/luma-data.zip) dans `Luma Tutorial Assets` dossier.
 1. Confirmez que vous avez`luma-products.csv`
 
-### Création dʼun workflow
+### Créer un workflow
 
 Maintenant, configurez le workflow :
 
@@ -337,12 +335,12 @@ Adobe des partenaires avec plusieurs fournisseurs ETL pour la prise en charge de
 
 * [Développement d’intégrations ETL pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Page Connecteur Adobe Experience Platform Informatica sur Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Documentation d’Information sur Adobe Experience Platform Connector. ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [Documentation d’Information sur Adobe Experience Platform Connector.](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snappack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Ressources supplémentaires
 
 * [Documentation sur l’ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Référence de l’API Batch Ingestion](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Référence de l’API d’ingestion par lots](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
 
 Maintenant, allons [données de diffusion en continu à l’aide du SDK Web](ingest-streaming-data.md)

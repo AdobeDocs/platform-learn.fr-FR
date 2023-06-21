@@ -8,10 +8,10 @@ feature: Data Management
 kt: 4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 9%
+source-wordcount: '569'
+ht-degree: 10%
 
 ---
 
@@ -76,7 +76,7 @@ Créez maintenant le `Luma CRM Dataset` à l’aide de l’API.
 Tout d’abord, nous devons obtenir le `$id` de `Luma CRM Schema`:
 
 1. Ouvrir [!DNL Postman]
-1. Si vous n’avez pas fait de demande au cours des dernières 24 heures, vos jetons d’autorisation ont probablement expiré. Ouvrir la requête **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** et sélectionnez **Envoyer** pour demander de nouveaux jetons JWT et d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Sélectionnez la **Envoyer** button
 1. Vous devriez obtenir une réponse 200
@@ -117,10 +117,9 @@ Vous pouvez maintenant créer le jeu de données :
 > Problèmes courants à l’origine de cette demande et correctifs probables :
 >
 > * `400: There was a problem retrieving xdm schema`. Assurez-vous d’avoir remplacé l’identifiant dans l’exemple ci-dessus par l’identifiant de votre propre compte. `Luma CRM Schema`
-> * Aucun jeton d’authentification : Exécutez la variable **IMS : JWT Generate + Auth via User Token** appel pour générer de nouveaux jetons
+> * Aucun jeton d’authentification : Exécutez la variable **OAuth : Demander le jeton d’accès** requête de génération d’un nouveau jeton
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Mettez à jour le **CONTAINER_ID** Variable d’environnement de `global` to `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Vérification des autorisations utilisateur dans le Admin Console
-
 
 
 Vous pouvez revenir au **[!UICONTROL Jeux de données]** dans l’interface utilisateur de Platform, vous pouvez vérifier la création réussie des cinq jeux de données.

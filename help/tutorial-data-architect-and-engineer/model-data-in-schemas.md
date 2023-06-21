@@ -8,10 +8,10 @@ feature: Schemas
 kt: 4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 7%
+source-wordcount: '2485'
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ Dans cette leçon, vous allez modéliser les données de Luma en schémas. C&#39
 
 La normalisation et l’interopérabilité sont les concepts clés d’Adobe Experience Platform. Le modèle de données d’expérience (XDM) vise à normaliser les données d’expérience client et à définir des schémas pour la gestion de l’expérience client.
 
-XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences numériques. Elle fournit des structures et des définitions communes permettant à chaque application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous pouvez obtenir des insights précieux à partir des actions des clients, définir des audiences de clients par le biais de segments et utiliser les attributs du client à des fins de personnalisation.
+XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences digitales. Elle fournit des structures et des définitions communes permettant à chaque application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous pouvez obtenir des informations précieuses à partir des actions des clients, définir des audiences de clients par le biais de segments et utiliser les attributs du client à des fins de personnalisation.
 
 XDM est le cadre de base qui permet à Adobe Experience Cloud, optimisé par Experience Platform, de transmettre le message approprié à la bonne personne, sur le bon canal et exactement au bon moment. La méthodologie sur laquelle Experience Platform repose, **à savoir le système XDM**, rend les schémas de modèles de données d’expérience opérationnels pour qu’ils soient utilisés par les services Platform.
 
@@ -47,7 +47,7 @@ Avant de commencer les exercices, regardez cette courte vidéo pour en savoir pl
 
 >[!TIP]
 >
-> Pour approfondir la modélisation des données en Experience Platform, nous vous recommandons de suivre le cours . [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), disponible gratuitement sur Experience League !
+> Pour approfondir la modélisation des données en Experience Platform, nous vous recommandons de suivre le cours . [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr), disponible gratuitement sur Experience League !
 
 ## Autorisations requises
 
@@ -71,7 +71,7 @@ Au cours de cet exercice, nous allons créer un schéma pour les données de fid
 
 1. Accédez à l’interface utilisateur de Platform et vérifiez que votre environnement de test est sélectionné.
 1. Accédez à **[!UICONTROL Schémas]** dans le volet de navigation de gauche
-1. Sélectionnez la **[!UICONTROL Création d’un schéma]** en haut à droite
+1. Sélectionnez le bouton **[!UICONTROL Créer un schéma]** en haut à droite
 1. Dans le menu déroulant, sélectionnez **[!UICONTROL XDM Individual Profile]**, puisque nous allons modéliser les attributs d’un client individuel (points, état, etc.).
    ![Schéma avec groupe de champs prêts à l’emploi](assets/schemas-loyaltyCreateSchema.png)
 
@@ -79,19 +79,19 @@ Au cours de cet exercice, nous allons créer un schéma pour les données de fid
 
 Vous serez ensuite invité à ajouter des groupes de champs au schéma. Tous les champs doivent être ajoutés aux schémas à l’aide de groupes. Vous pouvez choisir parmi un grand ensemble de groupes de champs standard fournis par Adobe ou créer les vôtres. Lorsque vous commencez à modéliser vos propres données en Experience Platform, il est bon de vous familiariser avec les groupes de champs standard fournis par Adobe. Dans la mesure du possible, il est recommandé de les utiliser, car ils alimentent parfois des services en aval, tels que Customer AI, Attribution AI et Adobe Analytics.
 
-Lorsque vous utilisez vos propres données, une grande étape consiste à déterminer celles qui doivent être capturées dans Platform et comment elles doivent être modélisées. Ce grand sujet est abordé plus en détail dans le cours. [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). Dans ce tutoriel, je vais vous guider tout au long de l’implémentation de certains schémas prédéterminés.
+Lorsque vous utilisez vos propres données, une grande étape consiste à déterminer celles qui doivent être capturées dans Platform et comment elles doivent être modélisées. Ce grand sujet est abordé plus en détail dans le cours. [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr). Dans ce tutoriel, je vais vous guider tout au long de l’implémentation de certains schémas prédéterminés.
 
 Pour ajouter des groupes de champs :
 
 1. Dans le **[!UICONTROL Ajouter des groupes de champs]** modale, sélectionnez les groupes de champs suivants :
    1. **[!UICONTROL Détails démographiques]** pour les données client de base telles que le nom et la date d’anniversaire
-   1. **[!UICONTROL Détails du contact personnel]** pour les détails de contact de base tels que l’adresse électronique et le numéro de téléphone
+   1. **[!UICONTROL Coordonnées personnelles]** pour les coordonnées de base, telles que l’adresse e-mail et le numéro de téléphone
 1. Vous pouvez prévisualiser les champs fournis dans le groupe de champs en sélectionnant l’icône située sur le côté droit de la ligne.
-   ![Sélectionner des groupes de champs standard](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
+   ![Sélection de groupes de champs standards.](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Vérifiez les **[!UICONTROL Secteur industriel]** > **[!UICONTROL Vente au détail]** pour exposer des groupes de champs spécifiques au secteur.
 1. Sélectionner **[!UICONTROL Fidélité]** pour ajouter les champs du programme de fidélité.
-1. Sélectionner **[!UICONTROL Ajouter un groupe de champs]** pour ajouter les trois groupes de champs au schéma.
+1. Sélectionnez **[!UICONTROL Ajouter un groupe de champs]** pour ajouter les trois groupes de champs au schéma.
    ![Ajout de groupes de champs standard au schéma de fidélité](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -99,7 +99,7 @@ Prenez quelques instants pour explorer l’état actuel du schéma. Les groupes 
 
 Pour enregistrer le schéma :
 
-1. Sélectionnez le noeud supérieur du schéma.
+1. Sélectionnez le nœud supérieur du schéma.
 1. Entrée `Luma Loyalty Schema` comme la propriété **[!UICONTROL Nom d’affichage]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![Nommer et enregistrer le schéma](assets/schemas-loyalty-nameAndSave.png)
@@ -118,21 +118,20 @@ Les groupes de champs doivent être créés dans le workflow de schéma. Pour cr
 
 1. Sélectionner **[!UICONTROL Ajouter]** sous le **[!UICONTROL Groupes de champs de schéma]** titre
    ![Ajouter un nouveau groupe de champs](assets/schemas-loyalty-addFieldGroup.png)
-1. Sélectionner **[!UICONTROL Créer un groupe de champs]**
+1. Sélectionnez **[!UICONTROL Créer un groupe de champs]**
 1. Utilisation `Luma Identity profile field group` comme la propriété **[!UICONTROL Nom d’affichage]**
 1. Utilisation `system identifiers for XDM Individual Profile class` comme la propriété **[!UICONTROL Description]**
-1. Sélectionner **[!UICONTROL Ajouter des groupes de champs]**
-
+1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**
    ![Ajouter un nouveau groupe de champs](assets/schemas-loyalty-nameFieldGroup.png)
 
 Le nouveau groupe de champs vide est ajouté à votre schéma. Le **[!UICONTROL +]** Vous pouvez utiliser les boutons pour ajouter de nouveaux champs à n’importe quel emplacement de la hiérarchie. Dans notre cas, nous souhaitons ajouter des champs au niveau racine :
 
-1. Sélectionner **[!UICONTROL +]** en regard du nom du schéma. Un nouveau champ est alors ajouté sous l’espace de noms de l’identifiant du client pour gérer les conflits entre vos champs personnalisés et les champs standard.
+1. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma. Un nouveau champ est alors ajouté sous l’espace de noms de l’identifiant du client pour gérer les conflits entre vos champs personnalisés et les champs standard.
 1. Dans le **[!UICONTROL Propriétés du champ]** sidebar ajoutez les détails du nouveau champ :
    1. **[!UICONTROL Nom du champ]**: `systemIdentifier`
    1. **[!UICONTROL Nom d’affichage]**: `System Identifier`
    1. **[!UICONTROL Type]**: **[!UICONTROL Objet]**
-   1. Sélectionner **[!UICONTROL Appliquer]**
+   1. Sélectionnez **[!UICONTROL Appliquer]**
 
    ![Ajouter un nouveau groupe de champs](assets/schemas-loyalty-addSystemIdentifier.png)
 
@@ -174,14 +173,13 @@ Nous allons maintenant créer un schéma à l’aide de l’API.
 > Si vous préférez ignorer l’exercice d’API, vous pouvez créer le schéma suivant à l’aide de la méthode d’interface utilisateur :
 >
 > 1. Utilisez la variable [!UICONTROL XDM Individual Profile] class
-> 1. Nommez-le `Luma CRM Schema`
+> 1. Nommez-la `Luma CRM Schema`
 > 1. Utilisez les groupes de champs suivants : Détails démographiques, coordonnées personnelles et groupe de champs de profil Identité Luma
-
 
 Commencez par créer le schéma vide :
 
 1. Ouvrir [!DNL Postman]
-1. Si vous n’avez pas fait de demande au cours des dernières 24 heures, vos jetons d’autorisation ont probablement expiré. Ouvrir la requête **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** et sélectionnez **Envoyer** pour demander de nouveaux jetons JWT et d’accès.
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès.
 1. Ouvrez vos variables d’environnement et modifiez la valeur de **CONTAINER_ID** de `global` to `tenant`. Souvenez-vous que vous devez utiliser `tenant` lorsque vous souhaitez interagir avec vos propres éléments personnalisés dans Platform, par exemple en créant un schéma.
 1. Sélectionnez **Enregistrer**
    ![Remplacez CONTAINER_ID par client](assets/schemas-crm-changeContainerId.png)
@@ -218,10 +216,9 @@ Commencez par créer le schéma vide :
 >
 > Problèmes courants liés à cet appel et correctifs probables :
 >
-> * Aucun jeton d’authentification : Exécutez la variable **IMS : JWT Generate + Auth via User Token** appel pour générer de nouveaux jetons
+> * Aucun jeton d’authentification : Exécutez la variable **OAuth : Demander le jeton d’accès** requête de génération d’un nouveau jeton
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Mettez à jour le **CONTAINER_ID** Variable d’environnement de `global` to `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Vérification des autorisations utilisateur dans le Admin Console
-
 
 ### Ajouter des groupes de champs standard
 
@@ -277,7 +274,6 @@ Ajoutons maintenant notre `Luma Identity profile field group` au schéma. Tout d
    ```
 
 1. Sélectionner **Envoyer**
-
    ![Ajout du groupe Champ d’identité](assets/schemas-crm-addIdentityMixin.png)
 
 Vérifiez que le groupe de champs a été ajouté au schéma en vérifiant la réponse de l’API et dans l’interface.
@@ -297,7 +293,7 @@ Créons maintenant un schéma basé sur le **[!UICONTROL XDM ExperienceEvent]** 
 1. Comme la variable **[!UICONTROL Nom d’affichage]**, saisissez `System Identifier`
 1. Comme la variable **[!UICONTROL Type]**, sélectionnez **Identifiant du système** qui est le type de données personnalisé que vous avez créé précédemment
 1. Sélectionnez la **[!UICONTROL Appliquer]** button
-1. Nommer votre schéma `Luma Offline Purchase Events Schema`
+1. Nommer le schéma `Luma Offline Purchase Events Schema`
 1. Sélectionnez la **[!UICONTROL Enregistrer]** button
 
 Notez comment le type de données a ajouté tous les champs.
@@ -337,7 +333,7 @@ Tout d’abord, nous devons créer un schéma pour le catalogue de produits de L
 1. Sélectionnez la **[!UICONTROL Créer un schéma]** et sélectionnez l’option **[!UICONTROL Parcourir]** dans la liste déroulante
    ![Créer un nouveau schéma](assets/schemas-newSchema-browseClasses.png)
 1. Sélectionnez la **[!UICONTROL Création d’une classe]** bouton radio
-1. Nommez-le `Luma Product Catalog Class`
+1. Nommez-la `Luma Product Catalog Class`
 1. Laissez le champ **[!UICONTROL Comportement]** as **[!UICONTROL Enregistrement]**
 1. Sélectionnez la **[!UICONTROL Attribuer une classe]** button
    ![Créer une classe](assets/schemas-productClass.png)

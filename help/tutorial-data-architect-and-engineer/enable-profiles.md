@@ -8,9 +8,9 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1103'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,6 @@ Commençons par la tâche simple d’activation d’un schéma :
    > 1. Réingérer les données
 
 
-
    ![Basculement du profil](assets/profile-loyalty-enableSchema.png)
 
 Facile, n&#39;est-ce pas ? Répétez les étapes ci-dessus pour ces autres schémas :
@@ -86,7 +85,7 @@ Il est maintenant temps d’activer la variable `Luma CRM Schema` avec l’API .
 Commençons par obtenir le `meta:altId` de `Luma CRM Schema`:
 
 1. Ouvrir [!DNL Postman]
-1. Si vous n’avez pas fait de demande au cours des dernières 24 heures, vos jetons d’autorisation ont probablement expiré. Ouvrir la requête **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** et sélectionnez **Envoyer** pour demander de nouveaux jetons JWT et d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Sélectionnez la **Envoyer** button
 1. Vous devriez obtenir une réponse 200
@@ -147,14 +146,14 @@ Vous allez maintenant activer un jeu de données pour Profile à l’aide de l�
 Tout d’abord, nous devons obtenir le `id` de `Luma CRM Dataset`:
 
 1. Ouvrir [!DNL Postman]
-1. Si vous n’avez pas fait de demande au cours des dernières 24 heures, vos jetons d’autorisation ont probablement expiré. Ouvrir la requête **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** et sélectionnez **Envoyer** pour demander de nouveaux jetons JWT et d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrir la requête **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Sélectionnez la **Envoyer** button
 1. Vous devriez obtenir une réponse 200
 1. Recherchez dans la réponse pour la variable `Luma CRM Dataset` et copiez l’identifiant :
    ![Copier l’ID](assets/profile-crm-copyDatasetId.png)
 
-### Activation du jeu de données
+### Activer le jeu de données
 
 Maintenant que nous disposons de l’identifiant du jeu de données, nous pouvons l’activer pour le profil :
 

@@ -1,21 +1,21 @@
 ---
-title: Création d’un environnement de test
+title: Création d’un sandbox
 seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: Création d’un environnement de test
+breadcrumb-title: Création d’un sandbox
 description: Dans cette leçon, vous allez créer un environnement de test d’environnement de développement que vous pourrez utiliser pour le reste du tutoriel.
 role: Data Architect, Data Engineer
 feature: Sandboxes
 kt: 4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '404'
 ht-degree: 5%
 
 ---
 
-# Création d’un environnement de test
+# Création d’un sandbox
 
 <!--25min-->
 
@@ -64,27 +64,17 @@ Patientez jusqu’à ce que votre environnement de test soit &quot;[!UICONTROL P
 
 ## Ajouter le nouvel environnement de test au profil de produit
 
-Une fois l’environnement de test principal, vous devez l’inclure dans votre profil de produit pour pouvoir l’utiliser. Pour l’ajouter à votre profil de produit :
+Une fois l’environnement de test principal, vous devez l’inclure dans votre rôle pour pouvoir l’utiliser. Pour l’ajouter à votre rôle (nécessite des privilèges d’administrateur système ou d’administrateur de produit) :
 
-1. Dans un onglet de navigateur distinct, connectez-vous au [Admin Console](https://adminconsole.adobe.com)
-1. Accédez à **[!UICONTROL Produits > Adobe Experience Platform]**
-1. Ouvrez le `Luma Tutorial Platform` profile
-
-   ![Sélection du profil de produit](assets/sandbox-selectProfile.png)
-
-1. Accédez au **[!UICONTROL Autorisations]** tab
-
+1. Accédez au [!UICONTROL Autorisations] écran
+1. Ouvrez le `Luma Tutorial Platform` rôle
+1. _Supprimer_ la valeur `Prod` environnement de test du rôle
+1. Ajoutez la variable `Luma Tutorial` sandbox
+1. Sélectionnez **[!UICONTROL Enregistrer]**
 1. Sur le [!UICONTROL Environnements de test] ligne, sélectionnez **[!UICONTROL Modifier]**
 
-   ![Sélectionnez Modifier](assets/sandbox-selectSandboxes.png)
+   ![Ajout du tutoriel Luma](assets/sandbox-addLumaTutorial.png)
 
-1. _Supprimer_ la valeur **[!UICONTROL Prod]** environnement de test que vous avez affecté au profil d’origine
-1. Sélectionnez la **[!UICONTROL +]** pour ajouter la nouvelle `Luma Tutorial` sandbox dans la colonne de droite
-1. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer les autorisations mises à jour
-
-   ![Déplacement de l’environnement de test vers l’autre colonne](assets/sandbox-addLumaTutorial.png)
-
-1. Revenez à l’onglet du navigateur avec l’Experience Platform
 1. Rechargez la page (ou rechargez-la en maintenant la touche Maj enfoncée). Vous devriez à présent : `Luma Tutorial` sandbox ou devrait apparaître dans la liste déroulante sandbox
 1. Basculez vers le `Luma Tutorial` sandbox si vous n’y êtes pas déjà
 
