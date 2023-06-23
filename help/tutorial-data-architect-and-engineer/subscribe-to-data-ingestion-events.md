@@ -5,10 +5,10 @@ breadcrumb-title: Abonnement aux événements d’ingestion de données
 description: Dans cette leçon, vous vous abonnerez aux événements d’ingestion de données en configurant un webhook avec la console Adobe Developer et un outil de développement webhook en ligne. Vous utiliserez ces événements pour surveiller l’état de vos tâches d’ingestion de données dans les leçons suivantes.
 role: Data Engineer
 feature: Data Management
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 6%
@@ -50,7 +50,7 @@ Dans cet exercice, nous allons créer un webhook à l’aide d’un outil en lig
 
    ![Modifier la réponse](assets/ioevents-webhook-editResponse.png)
 
-## Configuration
+## Configurer
 
 1. Dans un autre onglet du navigateur, ouvrez le [Console Adobe Developer](https://console.adobe.io/)
 1. Ouvrez votre `Luma Tutorial API Project`
@@ -71,7 +71,7 @@ Dans cet exercice, nous allons créer un webhook à l’aide d’un outil en lig
 1. Comme la variable **[!UICONTROL URL du webhook]**, collez la valeur de la variable **Votre URL unique** champ de webhook.site
 1. Sélectionnez la **[!UICONTROL Enregistrement des événements configurés]** button
    ![Enregistrement des événements](assets/ioevents-addWebhook.png)
-1. Attendez que votre configuration soit enregistrée et vous devriez constater que votre `Platform notifications` est Principal avec les détails de votre webhook et aucun message d’erreur
+1. Patientez jusqu’à ce que votre configuration soit enregistrée. Vous devriez constater que votre `Platform notifications` est Principal avec les détails de votre webhook et aucun message d’erreur
    ![Configuration enregistrée](assets/ioevents-webhookConfigured.png)
 1. Revenez à l’onglet webhook.site et vous devriez voir la première requête envoyée au webhook, suite à la validation de la configuration de Developer Console :
    ![Première requête dans webhook.site](assets/ioevents-webhook-firstRequest.png)

@@ -2,10 +2,10 @@
 title: Fonctions définies par Adobe
 description: Apprenez comment utiliser des fonctions définies par Adobe dans Query Service dʼAdobe Experience Platform afin dʼexécuter des tâches commerciales courantes sur les données dʼévénement dʼexpérience.
 feature: Queries
-kt: 7685
+jira: KT-7685
 thumbnail: 333701.jpg
 exl-id: 81976285-5cb2-4e0f-94f7-1b408408bf2b
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 85%

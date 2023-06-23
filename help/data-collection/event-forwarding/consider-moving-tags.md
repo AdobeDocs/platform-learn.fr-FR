@@ -3,11 +3,11 @@ title: Envisager de déplacer les balises du fournisseur vers le transfert d’�
 description: Découvrez comment évaluer une balise fournisseur côté client pour la distribution de données côté serveur.
 feature: Event Forwarding, Tags, Integrations
 solution: Data Collection
-kt: 9921
+jira: KT-9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 6%
@@ -102,6 +102,6 @@ L’investigation et le test des points de terminaison de l’API du fournisseur
 
 Cet article fournit une séquence d’étapes permettant d’évaluer une balise côté client du fournisseur et de la déplacer potentiellement côté serveur dans une propriété de transfert d’événement. Pour plus d’informations sur les sujets connexes, voir les liens suivants :
 
-- [Gestion des balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) dans Adobe Experience Platform
+- [Gestion des balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) dans Adobe Experience Platform
 - [Transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) pour le traitement côté serveur
-- [Mises à jour de terminologie](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) dans la collecte de données
+- [Mises à jour de terminologie](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=fr) dans la collecte de données

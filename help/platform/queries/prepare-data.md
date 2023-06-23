@@ -2,10 +2,10 @@
 title: Préparation des données
 description: Découvrez comment nettoyer, préparer et combiner les données de plusieurs jeux de données pour créer un nouveau jeu de données à l’aide des fonctions CTAS (Create Table AS) et Spark SQL pour la création de rapports et la création de tableaux de bord.
 feature: Queries
-kt: 8005
+jira: KT-8005
 thumbnail: 333699.jpg
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 12%

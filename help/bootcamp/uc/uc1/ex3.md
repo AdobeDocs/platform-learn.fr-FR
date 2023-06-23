@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Real-time Customer Profile - Création d’un segment - interface utilisateur
 description: Bootcamp - Real-time Customer Profile - Création d’un segment - interface utilisateur
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 37d4a5e8-e2bc-4c8c-a74f-09f74ea79962
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 3%

@@ -3,9 +3,9 @@ title: Créer des segments dans plusieurs classes et Inclure le contexte du segm
 description: La segmentation entre les classes (segmentation d’entités multiples) vous permet de créer des segments combinant des données basées sur la classe de profils XDM et les jeux de données créés à l’aide d’autres classes XDM. Le contexte du segment (payload de segment) vous permet de fournir des détails contextuels clés, tels que le contenu du panier abandonné d’un visiteur, dans votre définition de segment afin que vous puissiez envoyer des messages personnalisés.
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 28947.jpg
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 5%

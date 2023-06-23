@@ -5,10 +5,10 @@ breadcrumb-title: Ingestion de données en flux continu
 description: Dans cette leçon, vous allez diffuser des données dans Experience Platform à l’aide du SDK Web.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 2%
@@ -82,7 +82,6 @@ Tout d’abord, nous allons configurer le flux de données. Un flux de données 
 Pour créer votre [!UICONTROL datastream]:
 
 1. Connectez-vous au [Interface utilisateur de la collecte de données Experience Platform](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. Sélectionner **[!UICONTROL Datastreams]** dans le volet de navigation de gauche
@@ -103,7 +102,6 @@ Dans l’écran suivant, vous spécifiez l’emplacement d’envoi des données.
 1. Pour **[!UICONTROL Jeu de données d’événement]**, sélectionnez `Luma Web Events Dataset`
 1. Si vous utilisez d’autres applications Adobe, n’hésitez pas à explorer les autres sections pour déterminer les informations requises dans la configuration Edge de ces autres solutions. N’oubliez pas que le SDK Web a été développé non seulement pour diffuser des données en continu dans Experience Platform, mais également pour remplacer toutes les bibliothèques JavaScript précédentes utilisées par d’autres applications Adobe. La configuration Edge permet de spécifier les détails du compte de chaque application à laquelle vous souhaitez envoyer les données.
 1. Sélectionnez **[!UICONTROL Enregistrer]**
-
    ![Configuration du flux de données et enregistrement](assets/websdk-edgeConfig-addEnvironment.png)
 
 Une fois la configuration Edge enregistrée, l’écran qui en résulte affiche trois environnements créés pour le développement, l’évaluation et la production. D’autres environnements de développement peuvent être ajoutés :
@@ -124,7 +122,6 @@ Pour créer une propriété :
 1. Comme la variable **[!UICONTROL Nom]**, saisissez `Luma Platform Tutorial` (ajoutez votre nom à la fin, si plusieurs personnes de votre société suivent ce tutoriel)
 1. Comme la variable **[!UICONTROL Domaines]**, saisissez `enablementadobe.com` (expliqué ultérieurement)
 1. Sélectionnez **[!UICONTROL Enregistrer]**
-
    ![Détails de la propriété](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -248,7 +245,7 @@ Comme vous pouvez le voir sur la [!UICONTROL Flux de publication] le processus d
 
 ## Valider les données de la requête
 
-### Ajout du débogueur Adobe Experience Platform
+### Ajouter l’Adobe Experience Platform Debugger
 
 Le débogueur Experience Platform est une extension disponible pour les navigateurs Chrome et Firefox qui vous permet de voir la technologie d’Adobe mise en oeuvre dans vos pages web. Téléchargez la version de votre navigateur préféré :
 
@@ -281,7 +278,6 @@ Le débogueur Experience Platform dispose d’une fonctionnalité intéressante 
 1. Maintenant, accédez à **[!UICONTROL Launch]** dans le volet de navigation de gauche
 1. Sélectionnez l’onglet Configuration .
 1. À droite de l’emplacement où il vous montre la variable **[!UICONTROL Codes d’intégration de page]**, ouvrez le **[!UICONTROL Actions]** , puis sélectionnez **[!UICONTROL Remplacer]**
-
    ![Sélectionnez Actions > Remplacer .](assets/websdk-debugger-replaceLibrary.png)
 1. Puisque vous êtes authentifié, le débogueur va extraire vos propriétés et environnements Launch disponibles. Sélectionnez votre `Luma Platform Tutorial` property
 1. Sélectionnez votre `Development` environnement
@@ -364,7 +360,6 @@ Sur le **[!UICONTROL Éléments de données]** page :
 1. Sélectionnez la `web.webPageDetails.name` field
 1. Comme la variable **[!UICONTROL Valeur]**, sélectionnez l’icône pour ouvrir le modal de sélection de l’élément de données et choisissez votre `Page Name` élément de données
 1. Sélectionner **[!UICONTROL Enregistrer dans la bibliothèque]**
-
    ![Faire correspondre le nom de page à l’élément de données de l’objet XDM](assets/websdk-property-dataElement-createXDMObject.png)
 
 Ce même processus est utilisé pour mapper des données personnalisées supplémentaires sur votre site web aux champs XDM.

@@ -5,14 +5,14 @@ feature: Web SDK
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: cb322540-e8ef-4226-b537-a67c7ca273f5
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -87,7 +87,7 @@ Pour cette règle (contrairement aux autres règles que vous avez créées), vou
 
 Vous vous demandez peut-être : &quot;Ça a l&#39;air sympa. Pourquoi cette option n’est-elle pas toujours activée alors ?&quot;
 
-Eh bien, c’est un peu compliqué, mais lorsque vous utilisez cette fonctionnalité, le SDK utilise une méthode de navigateur appelée [`sendBeacon`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon) pour envoyer la demande. Lors de l’envoi d’une requête à l’aide de `sendBeacon`, le navigateur n’autorise pas le SDK (ni rien d’autre) à accéder aux données renvoyées par le serveur. Si le SDK devait utiliser cette fonctionnalité pour chaque demande, il ne serait jamais en mesure de recevoir des données du serveur. Pour cette raison, il est important de vérifier la variable [!UICONTROL Le document sera déchargé.] uniquement lorsque le document actif est déchargé, auquel cas les données de réponse peuvent être ignorées.
+Eh bien, c’est un peu compliqué, mais lorsque vous utilisez cette fonctionnalité, le SDK utilise une méthode de navigateur appelée [`sendBeacon`](https://developer.mozilla.org/fr-FR/docs/Web/API/Navigator/sendBeacon) pour envoyer la demande. Lors de l’envoi d’une requête à l’aide de `sendBeacon`, le navigateur n’autorise pas le SDK (ni rien d’autre) à accéder aux données renvoyées par le serveur. Si le SDK devait utiliser cette fonctionnalité pour chaque demande, il ne serait jamais en mesure de recevoir des données du serveur. Pour cette raison, il est important de vérifier la variable [!UICONTROL Le document sera déchargé.] uniquement lorsque le document actif est déchargé, auquel cas les données de réponse peuvent être ignorées.
 
 ![Case à cocher Le document va se décharger](../../../assets/implementation-strategy/document-will-unload.png)
 

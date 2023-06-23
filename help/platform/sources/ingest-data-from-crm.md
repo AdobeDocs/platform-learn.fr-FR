@@ -3,18 +3,18 @@ title: Ingestion de données à l’aide des connecteurs source CRM
 description: Découvrez comment ingérer facilement par lots des données provenant de sources CRM dans Adobe Experience Platform Real-Time Customer Profile et un lac de données en toute transparence.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 3826, 13272
+jira: KT-3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
-# Ingestion de données à l’aide des connecteurs source CRM
+# Ingérer des données à l’aide de connecteurs source CRM
 
 Découvrez comment ingérer facilement par lots des données provenant de sources CRM dans Adobe Experience Platform Real-Time Customer Profile et un lac de données en toute transparence. Pour obtenir une documentation du produit plus détaillée, voir [gestion de la relation client (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) sur la page d’aperçu des connecteurs source .
 

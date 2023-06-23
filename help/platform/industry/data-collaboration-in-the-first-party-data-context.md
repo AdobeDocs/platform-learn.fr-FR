@@ -6,12 +6,12 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 337665.jpg
-kt: 9145
+jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 27%
+ht-degree: 36%
 
 ---
 
@@ -21,7 +21,7 @@ Tenez votre engagement en matière dʼexpérience, avec un accès à moins de do
 
 >[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
 
-## Points à retenir :
+## Points clés:
 
 * Comment incorporer des modèles de collaboration de données dans le contexte de données propriétaires, avec le consentement des consommateurs.
 * Création de partenariats de marque à marque et de direction d’éditeur qui offrent la promesse d’expérience.
@@ -29,8 +29,8 @@ Tenez votre engagement en matière dʼexpérience, avec un accès à moins de do
 
 ## Informations supplémentaires 
 
-[Correspondance de segment - Aperçu](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
+[Vue d’ensemble de la correspondance de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
 
 [Audience Marketplace pour les acheteurs de données](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
-[Destinations basées sur les personnes](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=en)
+[Destinations basées sur les personnes](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=fr)

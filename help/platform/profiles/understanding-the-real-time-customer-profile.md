@@ -3,10 +3,10 @@ title: Présentation de Real-time Customer Profile
 description: Cette vidéo décrit comment Adobe Experience Platform assemble et met à jour des profils clients en temps réel et la façon dont vous pouvez accéder à ces profils et les utiliser.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 2701
+jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 79%

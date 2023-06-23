@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Préparation des données dans Analysis Workspace
 description: Bootcamp - Customer Journey Analytics - Préparation des données dans Analysis Workspace
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 9%
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 ## 4.4.1 Interface utilisateur d’Analysis Workspace dans CJA
 
-Analysis Workspace élimine toutes les limites courantes d’un rapport Analytics unique. Il offre un canevas robuste et souple permettant de créer des projets d’analyses personnalisés. Faites glisser un nombre indéfini de tableaux de données, de visualisations et de composants (dimensions, mesures, segments et granularités temporelles) vers un projet. Créez instantanément des ventilations et des segments, des cohortes pour analyse, ainsi que des alertes, comparez des segments, analysez les flux et les abandons, et traitez et planifiez les rapports pour les partager avec n’importe qui dans votre entreprise.
+Analysis Workspace élimine toutes les limites courantes d’un rapport Analytics unique. Il offre un canevas robuste et souple permettant de créer des projets d’analyses personnalisés. Faites glisser un nombre indéfini de tableaux de données, de visualisations et de composants (dimensions, mesures, segments et granularités temporelles) vers un projet. Créez instantanément des répartitions et des segments, des cohortes pour analyse, ainsi que des alertes, comparez des segments, analysez les flux et les abandons, et traitez et planifiez les rapports pour les partager avec n’importe qui dans votre entreprise.
 
 Customer Journey Analytics ajoute cette solution aux données Platform. Nous vous recommandons vivement de regarder cette vidéo de présentation de quatre minutes :
 

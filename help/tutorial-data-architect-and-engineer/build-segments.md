@@ -5,13 +5,13 @@ breadcrumb-title: Créer des segments
 description: Dans cette leçon, nous allons créer certains segments en fonction des données de profil que nous avons ingérées dans les leçons précédentes.
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -67,7 +67,6 @@ Au cours de cet exercice, nous allons créer un segment pour les clients qui ont
 1. Faites glisser le **[!UICONTROL Achats]** type d’événement sur la zone de travail _deux fois distinctes_
 1. Sélectionner l’icône de l’horloge entre les deux **[!UICONTROL Achats]** et sélectionnez &quot;dans les 30 jours&quot;
 1. Confirmez que votre définition de segment à ce stade se lit comme suit : **&quot;Inclure l’audience qui comporte au moins 1 événement Achats puis au moins 1 événement Achats dans les 30 jours&quot;**
-
    ![Deux achats dans les 30 jours](assets/segment-twoPurchases.png)
 1. Maintenant, remplacez le filtre d’événement par `sku`
 1. Faites glisser le champ SKU vers le deuxième événement d’achat

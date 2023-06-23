@@ -5,10 +5,10 @@ breadcrumb-title: Configuration de Developer Console et de Postman
 description: Dans cette leçon, vous allez configurer un projet dans la console Adobe Developer et vous fournir [!DNL Postman] Collections pour pouvoir commencer à utiliser les API de Platform.
 role: Data Architect, Data Engineer
 feature: API
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-set-up-developer-console-and-postman.jpg
 exl-id: 72b541fa-3ea1-4352-b82b-c5b79ff98491
-source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 2%

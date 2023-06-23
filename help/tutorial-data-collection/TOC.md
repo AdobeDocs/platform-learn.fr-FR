@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriel sur la collecte de données
 solution: Data Collection
 role: Developer
 level: Intermediate
-kt: 10447
+jira: KT-10447
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 14%
@@ -21,7 +21,7 @@ ht-degree: 14%
 + [Structuration de vos données](structuring-your-data.md)
 + Configuration du serveur{#server}
    + [Création d’un schéma](configure-the-server/create-a-schema.md)
-   + [Création d’un jeu de données](configure-the-server/create-a-dataset.md)
+   + [Créer un jeu de données](configure-the-server/create-a-dataset.md)
    + [Création dʼun flux de données](configure-the-server/create-a-datastream.md)
 + Configuration du client{#client}
    + [Qu’est-ce qu’une couche de données ?](configure-the-client/whats-a-data-layer.md)

@@ -1,14 +1,14 @@
 ---
 title: Bootcamp - Fusion physique et numérique - Journey Optimizer Créez votre parcours et votre notification push
 description: Bootcamp - Fusion physique et numérique - Journey Optimizer Créez votre parcours et votre notification push
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '831'
 ht-degree: 4%
 
 ---
@@ -150,7 +150,7 @@ Vous devez maintenant définir les valeurs de chaque paramètre d’action. Suiv
 | ACTIVITYID | `''` |
 | PLACEMENTID | `''` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Pour définir ces valeurs, cliquez sur le bouton **Modifier** icône .
 

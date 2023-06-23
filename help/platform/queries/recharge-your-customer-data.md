@@ -3,10 +3,10 @@ title: Rechargez vos données client pour offrir des expériences d’électrifi
 description: Découvrez comment atténuer l’impact de données de mauvaise qualité, réduire le temps à évaluer et multiplier le retour sur investissement en utilisant les mêmes données pour une multitude de cas d’utilisation.
 role: Data Engineer, Data Architect, Developer
 feature: Queries
-kt: 10323
+jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

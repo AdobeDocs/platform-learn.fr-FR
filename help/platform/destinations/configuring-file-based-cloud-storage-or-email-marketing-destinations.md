@@ -4,13 +4,13 @@ description: Obtenez des conseils lors d’une présentation détaillée de la c
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 6624
+jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 Obtenez des conseils lors d’une présentation détaillée de la configuration d’une destination basée sur des fichiers dans Real-time Customer Data Platform (CDP) d’Adobe. Cela s’applique à [!UICONTROL espace de stockage] destinations (par ex. S3 ou SFTP) et également [!UICONTROL marketing par e-mail] destinations. Pour obtenir une documentation du produit plus détaillée, voir :
 
-* [Activation des données d’audience vers des destinations d’exportation de profils par lots](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) pour obtenir des instructions sur l’activation des données vers des destinations de marketing par lots ou par e-mail à l’aide de l’interface utilisateur de l’Experience Platform
+* [Activation des données d’audience vers des destinations d’exportation de profils par lots](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=fr) pour obtenir des instructions sur l’activation des données vers des destinations de marketing par lots ou par e-mail à l’aide de l’interface utilisateur de l’Experience Platform
 * [Connexion aux destinations par lots et activation des données à l’aide de l’API Flow Service](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) pour obtenir des instructions sur l’activation des données vers des destinations de marketing par lots ou par e-mail à l’aide de l’API Flow Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)

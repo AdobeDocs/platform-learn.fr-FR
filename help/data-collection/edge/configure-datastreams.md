@@ -2,10 +2,10 @@
 title: Configurer les flux de données
 description: Découvrez comment créer et configurer des flux de données.
 feature: Web SDK
-kt: 9762
+jira: KT-9762
 thumbnail: 340825.jpeg
 exl-id: 890a2129-1c17-43d1-9568-ce8025470306
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 81%

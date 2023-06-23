@@ -5,13 +5,13 @@ breadcrumb-title: Création de stratégies de fusion
 description: Dans cette leçon, vous allez créer des stratégies de fusion afin de déterminer comment les données sont fusionnées en profils.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4348
+jira: KT-4348
 audience: data architect
 doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -73,8 +73,8 @@ Maintenant, que se passe-t-il si vous n’aimez pas cette stratégie de fusion p
 1. Glisser-déposer `Luma Loyalty Dataset` et `Luma CRM Dataset` au **[!UICONTROL Jeu de données]** du panneau.
 1. Assurez-vous de `Luma Loyalty Dataset` est en haut en le faisant glisser au-dessus de la balise `Luma CRM Dataset`
 1. Sélectionnez la **[!UICONTROL Enregistrer]** button
-<!--do i need to explain Private Graph? Is that GA?-->
-![Stratégie de fusion](assets/mergepolicies-newPolicy.png)
+   <!--do i need to explain Private Graph? Is that GA?-->
+   ![Stratégie de fusion](assets/mergepolicies-newPolicy.png)
 
 ## Validation de la stratégie de fusion
 

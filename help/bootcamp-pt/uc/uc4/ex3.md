@@ -1,11 +1,12 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Créer une vue de données - Brésil
 description: Customer Journey Analytics - Créer une vue de données - Brésil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 072179998d19c32589280defdb257a86d8728fea
+exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1655'
 ht-degree: 2%
@@ -116,7 +117,7 @@ Vamos deixar sur Nome da Página como Prop. Dessa forma, você não precisa alte
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
-| Nom (web.webPageDetails.name) | Nom de la page |  |
+| Nom (web.webPageDetails.name) | Nom de la page |          |
 
 Em seguida, escolha a dimensião **phoneNumber** solte-a na tela. Utilisateur d’auteur novo désigné **Numéro de téléphone**.
 
@@ -144,7 +145,7 @@ Altere o nome para **Pages vues** sous le **Paramètres des composants**.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
 | ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | Page Views |  |
+| web.webPageDetails.pageViews.value | Pages vues |         |
 
 ![demo](./images/7-v2.png)
 
@@ -159,26 +160,26 @@ Em seguida, você terá que configurar várias Dimensões e Métricas, conforme 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
 | brandName | Nom de la marque | Session la plus récente |
-| callentiment | Raisonnement des appels |  |
-| ID d’appel | Type d’interaction d’appel |  |
+| callentiment | Raisonnement des appels |          |
+| ID d’appel | Type d’interaction d’appel |          |
 | callTopic | Rubrique d’appel | Session la plus récente |
 | ecid | ECID | Le plus récent, Personne (fenêtre de reporting) |
 | adresse e-mail | Email ID | Le plus récent, Personne (fenêtre de reporting) |
-| Type de paiement | Type de paiement |  |
+| Type de paiement | Type de paiement |          |
 | Méthode d’ajout de produit | Méthode d’ajout de produit | Session la plus récente |
-| Type d’événement | Type d’événement |  |
-| Nom (productListItems.name) | Nom du produit |  |
+| Type d’événement | Type d’événement |         |
+| Nom (productListItems.name) | Nom du produit |         |
 | SKU | SKU (session) | Session la plus récente |
-| Identifiant de transaction | Identifiant de transaction |  |
-| URL (web.webPageDetails.URL) | URL |  |
+| Identifiant de transaction | Identifiant de transaction |         |
+| URL (web.webPageDetails.URL) | URL |         |
 | Agent utilisateur | Agent utilisateur | Session la plus récente |
 
 ### MÉTRICA
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
 | ----------------- |-------------| --------------------| 
-| Quantité | Quantité |  |
-| commerce.order.priceTotal | Recettes |  |
+| Quantité | Quantité |          |
+| commerce.order.priceTotal | Recettes |         |
 
 Sua configuração deve ser semelhante ao seguinte :
 

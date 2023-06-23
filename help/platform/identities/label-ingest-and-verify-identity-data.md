@@ -3,10 +3,10 @@ title: Étiquetage, ingestion et vérification des données d’identité
 description: Découvrez comment étiqueter les champs de données en tant qu’identités, ingérer les données d’identité et vérifier les données dans le graphique privé dʼAdobe Experience Platform Identity Service.
 role: Data Architect
 feature: Identities
-kt: 2707
+jira: KT-2707
 thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 72%

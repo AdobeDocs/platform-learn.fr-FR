@@ -1,14 +1,15 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Création d’une vue de données
 description: 'Customer Journey Analytics : création d’une vue de données'
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
+exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -117,7 +118,7 @@ Laissez le Nom de page comme Prop. Par conséquent, vous n’avez pas besoin de 
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
-| Nom (web.webPageDetails.name) | Nom de la page |  |
+| Nom (web.webPageDetails.name) | Nom de la page |          |
 
 Sélectionnez ensuite la dimension. **phoneNumber** et déposez-le sur la zone de travail. Le nouveau nom doit être : **Numéro de téléphone**.
 
@@ -145,7 +146,7 @@ Modifiez le nom pour qu’il soit **Pages vues** sous le **Paramètres des compo
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
 | ----------------- |-------------| --------------------| 
-| web.webPageDetails.pageViews.value | Page Views |  |
+| web.webPageDetails.pageViews.value | Pages vues |         |
 
 ![demo](./images/7-v2.png)
 
@@ -161,28 +162,28 @@ Vous devrez ensuite configurer de nombreuses Dimensions et mesures, comme indiqu
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
 | brandName | Nom de la marque | Session la plus récente |
-| callentiment | Raisonnement des appels |  |
-| ID d’appel | Type d’interaction d’appel |  |
+| callentiment | Raisonnement des appels |          |
+| ID d’appel | Type d’interaction d’appel |          |
 | callTopic | Rubrique d’appel | Session la plus récente |
 | ecid | ECID | Le plus récent, Personne (fenêtre de reporting) |
 | adresse e-mail | Email ID | Le plus récent, Personne (fenêtre de reporting) |
-| Type de paiement | Type de paiement |  |
+| Type de paiement | Type de paiement |          |
 | Méthode d’ajout de produit | Méthode d’ajout de produit | Session la plus récente |
-| Type d’événement | Type d’événement |  |
-| Nom (productListItems.name) | Nom du produit |  |
+| Type d’événement | Type d’événement |         |
+| Nom (productListItems.name) | Nom du produit |         |
 | SKU | SKU (session) | Session la plus récente |
-| Identifiant de transaction | Identifiant de transaction |  |
-| URL (web.webPageDetails.URL) | URL |  |
+| Identifiant de transaction | Identifiant de transaction |         |
+| URL (web.webPageDetails.URL) | URL |         |
 | Agent utilisateur | Agent utilisateur | Session la plus récente |
-| level | Niveau de fidélité |  |
-| points | Valeur de durée de vie du client |  |
+| level | Niveau de fidélité |          |
+| points | Valeur de durée de vie du client |          |
 
 ### MESURES
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
 | ----------------- |-------------| --------------------| 
-| Quantité | Quantité |  |
-| commerce.order.priceTotal | Recettes |  |
+| Quantité | Quantité |          |
+| commerce.order.priceTotal | Recettes |         |
 
 Votre configuration doit alors se présenter comme suit :
 

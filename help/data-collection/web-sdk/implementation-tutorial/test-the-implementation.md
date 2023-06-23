@@ -4,11 +4,11 @@ description: Test de l’implémentation
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: e2213c23-d395-4c57-8c6c-0319cd0fb0ac
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 2%
@@ -74,7 +74,7 @@ Vous devrez peut-être attendre quelques minutes, mais bientôt, des information
 
 ## Utilisation de l’extension Adobe Experience Platform Debugger
 
-Pour plus d’informations sur le comportement de votre mise en oeuvre sur le navigateur et sur les serveurs d’Adobe, consultez l’extension de navigateur Adobe Experience Platform Debugger .
+Pour plus d’informations sur le comportement de votre mise en oeuvre sur le navigateur et sur les serveurs d’Adobe, consultez l’extension de navigateur d’Adobe Experience Platform Debugger !
 
 [Extension Adobe Experience Platform Debugger pour Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 

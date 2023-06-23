@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 42%
+source-wordcount: '937'
+ht-degree: 43%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 42%
    + [Utilisation de l’interface utilisateur de Platform](/help/platform/intro-to-platform/interface-tour.md)
    + [Rôles et phases de projet](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Présentation de Real-Time CDP {#rtcdp}
-   + [Présentation](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [Vue d’ensemble](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [Démo de bout en bout](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Présentation de l’édition B2B](/help/platform/rtcdp/b2b-overview.md)
@@ -48,7 +48,7 @@ ht-degree: 42%
 + Gouvernance des données {#data-governance}
    + [Aperçu](/help/platform/governance/understanding-data-governance.md)
    + [Démo de bout en bout](/help/platform/governance/introduction-to-data-governance.md)
-   + [Classification des données à l’aide d’étiquettes](/help/platform/governance/classify-data-using-labels.md)
+   + [Classer les données à l’aide de libellés](/help/platform/governance/classify-data-using-labels.md)
    + [Création de politiques d’utilisation des données](/help/platform/governance/create-data-usage-policies.md)
    + [Application des politiques d’utilisation des données](/help/platform/governance/enforce-data-usage-policies.md)
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
@@ -56,7 +56,7 @@ ht-degree: 42%
 + Hygiène des données {#data-hygiene}
    + [Suppression de jeux de données](/help/platform/data-hygiene/delete-datasets.md)
 + Ingestion des données {#data-ingestion}
-   + [Présentation](/help/platform/data-ingestion/understanding-data-ingestion.md)
+   + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Présentation de l’ingestion par lots](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Création et remplissage d’un jeu de données](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=fr){target="_blank"}
@@ -72,7 +72,7 @@ ht-degree: 42%
    + [Tutoriels du SDK Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutoriels du SDK Mobile](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=fr){target="_blank"}
 + Espace de travail de science des données {#data-science-workspace}
-   + [Présentation](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
+   + [Vue d’ensemble](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architecture](data-science-workspace/architecture-overview.md)
    + [Création du schéma de cours et du jeu de données](data-science-workspace/create-the-course-schema-and-dataset.md)
    + [Chargement des données dans les blocs-notes JupyterLab](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
@@ -100,7 +100,7 @@ ht-degree: 42%
    + Adobe Target et personnalisation personnalisée{#target}
       + [Personnalisation de l’accès suivant avec Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configuration de la destination Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [Activation des segments et des attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Activer les segments et les attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Utilisation des segments Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Utilisation des attributs de profil Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Webinaire Activation des données vers des applications non Adobes](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -109,7 +109,7 @@ ht-degree: 42%
    + [Étiquetage, ingestion et vérification des données d’identité](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Consultation des diagrammes dʼidentités](/help/platform/identities/view-identity-graphs.md)
 + Intelligent Services {#intelligent-services}
-   + [Présentation](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Vue d’ensemble](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Présentation d’Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
    + [Valeur Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Configuration d’Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
@@ -143,7 +143,7 @@ ht-degree: 42%
    + [10 considérations à prendre en compte pour une gestion des données client responsable](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [Élever le rôle du marketeur en tant que responsable des données](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + Requêtes {#queries}
-   + [Présentation](/help/platform/queries/understanding-query-service.md)
+   + [Vue d’ensemble](/help/platform/queries/understanding-query-service.md)
    + [UI Query Service](/help/platform/queries/query-service-ui.md)
    + [API Query Service](/help/platform/queries/query-service-api.md)
    + [Explorer les données](/help/platform/queries/explore-data.md)
@@ -158,7 +158,7 @@ ht-degree: 42%
    + [Rechargement des données client](/help/platform/queries/recharge-your-customer-data.md)
    + [Connexion des clients à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schémas {#schemas}
-   + [Présentation](/help/platform/schemas/schemas-and-experience-data-model.md)
+   + [Vue d’ensemble](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [Blocs de création](/help/platform/schemas/schema-building-blocks.md)
    + [Planification de votre modèle de données](/help/platform/schemas/plan-your-data-model.md)
    + [Convertir votre modèle de données en XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
@@ -203,7 +203,7 @@ ht-degree: 42%
    + [Personnalisation de l’accès suivant avec Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Intégrations Experience Cloud {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Orchestration des campagnes avec Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Orchestration des campagnes avec Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + Tendances du secteur {#industry}
    + [L’avenir de la gestion des données et les changements d’environnement](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [A Tale of Two Perceptions - Brands vs. Consumers (Double perception - Marques contre Consommateurs)](/help/platform/industry/brands-vs-consumers.md)

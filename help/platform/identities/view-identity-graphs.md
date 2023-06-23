@@ -3,10 +3,10 @@ title: Affichage des graphiques d’identités
 description: Découvrez comment utiliser la fonction de visionneuse de graphiques d’identités pour rechercher, explorer et filtrer des graphiques d’identités à des fins de validation et de débogage.
 role: Data Engineer
 feature: Identities
-kt: 7046
+jira: KT-7046
 thumbnail: 331030.jpg
 exl-id: 1e289250-6b9c-4e43-84a4-7376044b3db6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 15%

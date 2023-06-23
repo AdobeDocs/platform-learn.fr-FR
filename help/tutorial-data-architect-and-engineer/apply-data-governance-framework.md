@@ -5,13 +5,13 @@ breadcrumb-title: Application de la structure de gouvernance des données
 description: Dans cette leçon, vous appliquerez le cadre de gouvernance des données aux données que vous avez ingérées dans votre environnement de test.
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Dans cette leçon, vous appliquerez le cadre de gouvernance des données aux données que vous avez ingérées dans votre environnement de test.
 
-La gouvernance des données d’Adobe Experience Platform vous permet de gérer les données clients et de garantir la conformité aux réglementations, aux restrictions et aux stratégies applicables à l’utilisation des données. Il joue un rôle clé dans Experience Platform à différents niveaux, notamment en contrôlant l’utilisation des données.
+La gouvernance des données d’Adobe Experience Platform vous permet de gérer les données clients et de garantir la conformité aux réglementations, aux restrictions et aux politiques applicables à l’utilisation des données. Il joue un rôle clé dans Experience Platform à différents niveaux, notamment en contrôlant l’utilisation des données.
 
 Avant de commencer les exercices, regardez ces courtes vidéos sur la gouvernance des données :
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
@@ -57,7 +57,7 @@ Il existe de nombreux libellés prêts à l’emploi, et vous pouvez créer les 
 Il est maintenant temps d&#39;étiqueter les données dont nous voulons restreindre l&#39;utilisation :
 
 1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Jeux de données]** dans le volet de navigation de gauche
-1. Ouvrez le `Luma Loyalty Dataset`
+1. Ouvrez le `Luma Loyalty Dataset`.
 1. Accédez au **[!UICONTROL Gouvernance des données]** tab
 1. Vous pouvez appliquer des libellés à des champs individuels ou à l’ensemble du jeu de données. Nous appliquerons le libellé au jeu de données entier. Cliquez sur l’icône en forme de crayon. Si vous ne voyez pas l’icône, essayez d’élargir votre navigateur ou faites défiler le panneau du milieu vers la droite.
    ![Gouvernance des données](assets/governance-dataset.png)
