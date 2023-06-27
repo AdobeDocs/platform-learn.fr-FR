@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Platform est une API d’abord créée. Bien que des workflows d’interface exi
 ### Technologies tierces
 
 Bien que vous utiliserez plusieurs technologies dans ce tutoriel, vous resterez presque entièrement dans l’écosystème Adobe. Dans votre propre mise en oeuvre de Platform, vous allez probablement intégrer Platform à des technologies tierces spécifiques. Pour que ce tutoriel reste pertinent pour tous les clients, nous utiliserons une mise en oeuvre plus générique.
+
+## Mises à jour des tutoriels
+
+* Juin 2023 : Mise à jour afin d’inclure un nouveau workflow d’autorisation et d’utiliser les informations d’identification de l’API OAuth Server-to-Server
+
 
 Passons maintenant à la première leçon...[configuration des autorisations](configure-permissions.md).
