@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '943'
 ht-degree: 43%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 43%
 + Administration {#admin}
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
-   + [Configuration du contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [Configurer le contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Gestion des profils de produit](/help/platform/admin/managing-product-profiles.md)
 + [Journaux d’audit](/help/platform/governance/audit-logs.md)
@@ -130,6 +130,7 @@ ht-degree: 43%
    + [Affichage des profils de compte](/help/platform/profiles/view-account-profiles.md)
    + [Création de stratégies de fusion](/help/platform/profiles/create-merge-policies.md)
    + [Présentation des schémas d’union](/help/platform/profiles/union-schemas-overview.md)
+   + [Mise à jour d’un attribut spécifique à l’aide de la fonction upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Confidentialité et sécurité {#privacy}
    + [Présentation du Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Données d’identité dans les demandes d’accès à des informations personnelles](/help/platform/privacy/identity-data-in-privacy-requests.md)
@@ -162,7 +163,7 @@ ht-degree: 43%
    + [Blocs de création](/help/platform/schemas/schema-building-blocks.md)
    + [Planification de votre modèle de données](/help/platform/schemas/plan-your-data-model.md)
    + [Convertir votre modèle de données en XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
-   + [Création de schémas](/help/platform/schemas/create-schemas.md)
+   + [Créer des schémas](/help/platform/schemas/create-schemas.md)
    + [Création de schémas pour les données B2B](/help/platform/schemas/create-schemas-for-b2b-data.md)
    + [Création de classes](/help/platform/schemas/create-classes.md)
    + [Créer des groupes de champs](/help/platform/schemas/create-schema-field-groups.md)
