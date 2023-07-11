@@ -1,11 +1,12 @@
 ---
 title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
+feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
@@ -17,13 +18,13 @@ La normalisation et l’interopérabilité sont les concepts clés d’Adobe Ex
 
 ## Que sont les schémas XDM ?
 
-XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences numériques. Il fournit des structures et des définitions communes qui permettent à toute application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous pouvez obtenir des insights précieux à partir des actions des clients, définir des audiences de clients par le biais de segments et utiliser les attributs du client à des fins de personnalisation.
+XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences digitales. Il fournit des structures et des définitions communes qui permettent à toute application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous pouvez obtenir des informations précieuses à partir des actions des clients, définir des audiences de clients par le biais de segments et utiliser les attributs du client à des fins de personnalisation.
 
 Experience Platform utilise des schémas pour décrire la structure des données de manière cohérente et réutilisable. En définissant les données de manière cohérente sur l’ensemble des systèmes, il est plus simple de leur donner du sens et donc d’en tirer profit.
 
-Avant que les données puissent être ingérées dans Platform, un schéma doit être composé pour décrire la structure des données et fournir des contraintes au type de données pouvant être contenues dans chaque champ. Les schémas se composent d’une classe de base et de zéro ou plusieurs groupes de champs.
+Avant que les données puissent être ingérées dans Platform, il est nécessaire de composer un schéma pour décrire la structure des données et fournir des contraintes au type de données pouvant être contenues dans chaque champ. Les schémas se composent d’une classe de base et de zéro ou plusieurs groupes de champs.
 
-Pour plus d’informations sur le modèle de composition de schémas, y compris les principes de conception et les bonnes pratiques, voir la section [principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) ou le cours [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
+Pour plus d’informations sur le modèle de composition de schémas, y compris les principes de conception et les bonnes pratiques, voir la section [principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) ou le cours [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr).
 
 >[!TIP]
 >
@@ -117,7 +118,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 >
 >Le `Consumer Experience Event` possède un type de données appelé `Web information`, qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
 
-## Création d’un type de données personnalisé
+## Créer un type de données personnalisé
 
 Vous commencez par créer un type de données personnalisé décrivant les deux événements :
 
@@ -141,7 +142,7 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 
    Ce champ est un objet conteneur pour l’interaction de l’application. Donnez-lui un chameau. **[!UICONTROL Nom du champ]** `appInteraction`, **[!UICONTROL nom d&#39;affichage]** `App Interaction`, et **[!UICONTROL type]** `Object`.
 
-1. Sélectionner **[!UICONTROL Appliquer]**.
+1. Sélectionnez **[!UICONTROL Appliquer]**.
 
    ![Ajout d’un nouvel événement d’action d’application](assets/mobile-schema-datatype-app-action.png)
 
@@ -151,7 +152,7 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 
    Cette étape serait l’équivalent d’un événement de succès dans Adobe Analytics.
 
-1. Sélectionner **[!UICONTROL Appliquer]**.
+1. Sélectionnez **[!UICONTROL Appliquer]**.
 
    ![Ajout d’un champ de nom d’action](assets/mobile-schema-datatype-action-name.png)
 
@@ -193,7 +194,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 1. Sélectionner `App Information` de la **[!UICONTROL Type]** , le type de données que vous avez créé lors de l’exercice précédent.
 
-1. Sélectionner **[!UICONTROL Appliquer]**.
+1. Sélectionnez **[!UICONTROL Appliquer]**.
 
    ![Sélectionner l’application](assets/mobile-schema-fieldgroup-apply.png)
 

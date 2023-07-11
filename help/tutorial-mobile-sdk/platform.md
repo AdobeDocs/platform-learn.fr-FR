@@ -1,8 +1,10 @@
 ---
 title: Envoi de données à Adobe Experience Platform
 description: Découvrez comment envoyer des données à Adobe Experience Platform.
+solution: Data Collection,Experience Platform
+feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 11%
@@ -35,7 +37,7 @@ Dans cette leçon, vous allez :
 * Validez les données dans le graphique d’identités.
 
 
-## Création d’un jeu de données
+## Créer un jeu de données
 
 Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées en tant que jeux de données dans le lac de données. Un jeu de données est une structure de stockage et de gestion pour une collection de données, généralement sous la forme d’un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées. Voir [documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) pour plus d’informations.
 
@@ -90,7 +92,7 @@ Le profil client en temps réel de l’Experience Platform vous permet de créer
 
    ![activation du schéma pour le profil](assets/mobile-platform-profile-schema.png)
 
-### Activation du jeu de données
+### Activer le jeu de données
 
 1. Ouvrir votre jeu de données
 1. Activer **[!UICONTROL Profil]**

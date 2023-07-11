@@ -5,10 +5,10 @@ feature: Web SDK, Tags
 role: Developer, Data Engineer
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: 951987c5c360aca005c78a976a6090d088f36455
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 2%
+source-wordcount: '3321'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,6 @@ De nombreuses réglementations juridiques relatives à la confidentialité ont i
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
 > * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 Ce tutoriel explique comment mettre en oeuvre et activer les données de consentement obtenues à partir d’une plateforme de gestion du consentement (CMP) à l’aide de l’extension SDK Web Platform dans Data Collection. Pour ce faire, nous utiliserons à la fois les normes Adobe et les normes de consentement du TCF 2.0 de l’IAB, avec OneTrust ou Sourcepoint comme exemples de CMP.
 
@@ -42,7 +41,7 @@ Pour la version 2.0 de la norme de consentement de Platform, nous aurons égalem
 Ce tutoriel suppose que vous avez accès à la collecte de données et que vous avez créé une propriété Balises côté client avec l’extension SDK Web installée et une bibliothèque de travail créée et créée pour le développement. Ces rubriques sont détaillées et affichées dans ces documents :
 
 * [Création ou configuration d’une propriété](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
-* [Présentation des bibliothèques](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
+* [Présentation des bibliothèques](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=fr)
 * [Présentation de la publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr)
 
 Nous utiliserons également la variable [Débogueur Platform](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Extension Chrome pour inspecter et valider notre mise en oeuvre.
@@ -231,7 +230,7 @@ Sélectionnez le bouton bleu Enregistrer pour enregistrer l’action et le bouto
 
 ### Étape 3 : Enregistrer dans la bibliothèque et créer
 
-Si vous utilisez la variable [bibliothèque de travail](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prérequis, vous avez déjà enregistré ces modifications et créé votre bibliothèque de développement :
+Si vous utilisez la variable [bibliothèque de travail](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) prérequis, vous avez déjà enregistré ces modifications et créé votre bibliothèque de développement :
 
 ![](./images/save-library.png)
 

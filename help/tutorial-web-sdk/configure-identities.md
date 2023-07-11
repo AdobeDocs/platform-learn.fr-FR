@@ -1,12 +1,12 @@
 ---
 title: Configuration d’un espace de noms d’identité
 description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-feature: Identities
+feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 7%
+source-wordcount: '693'
+ht-degree: 12%
 
 ---
 
@@ -43,14 +43,14 @@ Vous devez avoir terminé les leçons précédentes :
 
 ## Création d’un espace de noms d’identité
 
-Dans cet exercice, vous créez un espace de noms d’identité pour le champ d’identité personnalisé de Luma, `lumaCrmId`. Les espaces de noms d’identité jouent un rôle essentiel dans la création de profils clients en temps réel, car deux valeurs correspondantes dans le même espace de noms permettent à deux sources de données de former un graphique d’identités.
+Dans cet exercice, vous créez un espace de noms d’identité pour le champ d’identité personnalisé de Luma, `lumaCrmId`. Les espaces de noms d’identité jouent un rôle essentiel dans la création de profils clients en temps réel, car deux valeurs correspondantes dans le même espace de noms permettent à deux sources de données de former un graphique d’identité.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’identité dans Adobe Experience Platform :
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 
 Maintenant, créez un espace de noms pour l’ID de gestion de la relation client Luma :
 
-1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target="_blank"}
 1. Sélectionnez l’environnement de test que vous utilisez pour le tutoriel.
 
    >[!NOTE]
@@ -62,7 +62,7 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
 
    Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page, indiquant leurs noms, symboles d’identité, la date de la dernière mise à jour et s’ils sont des espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur la force du graphique d’identités.
 
-1. Sélectionner **[!UICONTROL Créer un espace de noms d’identité]**
+1. Sélectionnez **[!UICONTROL Créer un espace de noms d’identité]**
 
    ![Affichage des identités](assets/configure-identities-screen.png)
 
@@ -75,12 +75,12 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
    | Type | Identifiant multi-appareils |
 
 
-   ![Créer des espaces de noms](assets/identities-create-namespace.png)
+   ![Création d’espaces de noms.](assets/identities-create-namespace.png)
 
 
    L’espace de noms Identity est renseigné dans la variable **[!UICONTROL Identités]** écran.
 
-   ![Créer des espaces de noms](assets/configure-identities-namespace-lumaCrmId.png)
+   ![Création d’espaces de noms.](assets/configure-identities-namespace-lumaCrmId.png)
 
 
 >[!INFO]

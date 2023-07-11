@@ -1,11 +1,12 @@
 ---
-title: Configurer un flux de données
+title: Configurer un train de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
+feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -25,14 +26,14 @@ Dans cette leçon, vous allez :
 
 * Savoir quand utiliser un flux de données.
 * Création dʼun flux de données.
-* Configurer un flux de données.
+* Configurer un train de données.
 
 ## Création dʼun flux de données
 
 Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte de données] à l’aide de la fonction [!UICONTROL Datastream] de configuration. Pour créer un flux de données :
 
 1. Assurez-vous que vous vous trouvez dans le bon environnement de test Platform.
-1. Sélectionner **[!UICONTROL Nouvelle structure de données]**.
+1. Sélectionnez **[!UICONTROL Nouveau flux de données]**.
 
    ![accueil des datastreams](assets/mobile-datastream-new.png)
 

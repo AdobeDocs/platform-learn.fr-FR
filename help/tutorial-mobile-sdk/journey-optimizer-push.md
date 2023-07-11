@@ -1,11 +1,14 @@
 ---
 title: Messagerie push Adobe Journey Optimizer
 description: Découvrez comment créer des messages push vers une application mobile à l’aide du SDK Mobile Platform et de Adobe Journey Optimizer.
+solution: Data Collection,Journey Optimizer
+feature-set: Journey Optimizer
+feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '881'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -80,14 +83,14 @@ Une documentation supplémentaire peut être [ici](https://help.apple.com/develo
 1. Activez l’option **[!UICONTROL Informations d’identification push]** pour ajouter vos informations d’identification.
 1. Faites glisser et déposez votre `.p8` **Clé d’authentification des notifications push Apple** fichier .
 1. Fournissez l’ID de clé, une chaîne de 10 caractères attribuée lors de la création de la variable `p8` clé auth. Elle se trouve sous l&#39;onglet Clés de la page **Certificats, Identifiants et Profils**.
-1. Indiquez l&#39;identifiant d&#39;équipe. Il s’agit d’une valeur string qui se trouve sous la propriété **Abonnement** .
+1. Indiquez l&#39;identifiant d&#39;équipe. Il s’agit d’une valeur de chaîne qui se trouve sous l’onglet **Abonnement**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![configuration de la surface de l’application](assets/mobile-push-app-surface-config.png)
 
 ## Installation de l’extension de balises Adobe Journey Optimizer
 
 1. Accédez à [!UICONTROL Balises] > [!UICONTROL Extensions] > [!UICONTROL Catalogue], puis recherchez la variable **[!UICONTROL Adobe Journey Optimizer]** extension .
-1. Installer l’extension.
+1. Installation l’extension.
    ![installation de l’extension ajo](assets/mobile-push-tags-install.png)
 1. Sélectionner `CJM Push Tracking Experience Event Dataset` le jeu de données Adobe Experience Platform.
    ![Paramètres de l’extension AJO](assets/mobile-push-tags-ajo.png)
@@ -95,6 +98,7 @@ Une documentation supplémentaire peut être [ici](https://help.apple.com/develo
 
 >[!NOTE]
 >Si vous ne voyez pas l’option &quot;Jeu de données d’événement d’expérience de suivi Push CJM&quot; comme option, contactez l’assistance clientèle.
+>
 
 ## Mise en oeuvre de Adobe Journey Optimizer dans l’application
 

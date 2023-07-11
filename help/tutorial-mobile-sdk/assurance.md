@@ -1,8 +1,9 @@
 ---
 title: Configuration d’Assurance
 description: Découvrez comment mettre en oeuvre l’extension Assurance dans une application mobile.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 5%
@@ -90,9 +91,9 @@ L’assurance s’exécute en ouvrant une URL, soit via un navigateur, soit via 
    ![point d’entrée d’assurance](assets/mobile-assurance-enter-pin.png)
 1. Si la connexion a réussi, des événements s’affichent dans l’interface utilisateur web d’assurance et une icône Assurance flottante s’affiche dans l’application.
    * Icône Assurance flottante.
-      ![modal d’assurance](assets/mobile-assurance-modal.png)
+     ![modal d’assurance](assets/mobile-assurance-modal.png)
    * Événements Experience Cloud provenant de l’interface utilisateur web.
-      ![événements d’assurance](assets/mobile-assurance-events.png)
+     ![événements d’assurance](assets/mobile-assurance-events.png)
 
 Si vous rencontrez des défis, veuillez consulter la section [technique](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr){target="_blank"}.
 

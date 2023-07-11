@@ -1,12 +1,12 @@
 ---
 title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-feature: Debugger
+feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 5%
+source-wordcount: '1073'
+ht-degree: 6%
 
 ---
 
@@ -36,12 +36,12 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 
 ## Conditions préalables
 
-Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} et avoir suivi les leçons précédentes suivantes dans le tutoriel :
+Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avoir suivi les leçons précédentes suivantes dans le tutoriel :
 
 * [Configuration des autorisations](configure-permissions.md)
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
-* [Configurer un flux de données](configure-datastream.md)
+* [Configurer un train de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 * [Création d’éléments de données](create-data-elements.md)
 * [Création d’une règle de balise](create-tag-rule.md)

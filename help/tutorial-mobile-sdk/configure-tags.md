@@ -1,8 +1,9 @@
 ---
 title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 11%
@@ -35,7 +36,6 @@ Dans cette leçon, vous allez :
 1. Créez une propriété de balise mobile :
    1. Dans le [Interface de collecte de données](https://experience.adobe.com/data-collection/){target="_blank"}, sélectionnez **[!UICONTROL Balises]** dans le volet de navigation de gauche
    1. Sélectionnez **[!UICONTROL Nouvelle propriété]**
-
       ![création d’une propriété de balise](assets/mobile-tags-new-property.png).
    1. Pour le **[!UICONTROL Nom]**, saisissez `Mobile SDK Course`.
    1. Pour le **[!UICONTROL Plateforme]**, sélectionnez **[!UICONTROL Mobile]**.

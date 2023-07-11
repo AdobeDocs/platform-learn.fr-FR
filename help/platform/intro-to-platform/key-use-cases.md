@@ -2,10 +2,11 @@
 title: Cas d’utilisation clés
 description: Obtenez une vue d’ensemble des quatre principaux cas d’utilisation d’Experience Platform&mdash ; plateforme de données client en temps réel, intelligence de parcours client, expérience de diffusion et cross-canal, et développement d’applications d’expérience client.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+level: Beginner
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

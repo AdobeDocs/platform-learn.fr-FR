@@ -3,7 +3,7 @@ title: Ajout d’Adobe Target avec des balises
 description: Découvrez comment implémenter Adobe Target à l’aide de balises avec at.js, une requête de chargement de page, des paramètres, une requête de commande et un code d’en-tête/de pied de page personnalisé. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -14,7 +14,7 @@ ht-degree: 75%
 
 Dans cette leçon, nous allons mettre en œuvre [l’extension Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=fr) avec une requête de chargement de page et des paramètres personnalisés.
 
-[Adobe Target](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html) est la solution d’Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et d’autres canaux numériques.
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) est la solution d’Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et d’autres canaux numériques.
 
 >[!NOTE]
 >
@@ -23,7 +23,6 @@ Dans cette leçon, nous allons mettre en œuvre [l’extension Adobe Target](ht
 > * Le platform launch (côté client) est désormais **[!DNL tags]**
 > * Le platform launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
-
 
 ## Objectifs d’apprentissage
 
@@ -298,7 +297,7 @@ Vous n’avez pas besoin de transmettre des paramètres d’entité dans ce tuto
 
 ### Ajout de paramètres d’ID de client
 
-La collecte des ID de client avec Adobe Experience Platform Identity Service facilite l’importation de données depuis un CRM dans Target à l’aide de la fonctionnalité [Attributs du client](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) d’Adobe Experience Cloud. Elle favorise également [la connexité des visiteurs d’un appareil à l’autre](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), ce qui vous permet de maintenir une expérience utilisateur cohérente lorsque vos clients passent d’un ordinateur portable à leur appareil mobile.
+La collecte des ID de client avec Adobe Experience Platform Identity Service facilite l’importation de données depuis un CRM dans Target à l’aide de la fonctionnalité [Attributs du client](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=fr) d’Adobe Experience Cloud. Elle favorise également [la connexité des visiteurs d’un appareil à l’autre](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), ce qui vous permet de maintenir une expérience utilisateur cohérente lorsque vos clients passent d’un ordinateur portable à leur appareil mobile.
 
 Il est absolument nécessaire de définir l’ID de client dans l’action `Set Customer IDs` d’Identity Service avant de déclencher la demande de chargement de page. Pour ce faire, assurez-vous de disposer des fonctionnalités suivantes sur votre site :
 
@@ -388,7 +387,6 @@ Voici un exercice facultatif, si vous êtes un client Target Premium et si vous 
    ![Conserver les modifications](images/target-addATProperty-keepChanges.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
-
    ![Enregistrer dans la bibliothèque et créer](images/target-addATProperty-save.png)
 
 >[!WARNING]
@@ -567,7 +565,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 Il existe de rares cas où vous devez effectuer des requêtes Target autres que la requête de chargement de page et de confirmation de commande. Par exemple, les données importantes que vous souhaitez utiliser pour la personnalisation ne sont pas définies sur la page avant les codes incorporés de balise. Elles peuvent être codées en dur au bas de la page ou être renvoyées à partir d’une requête API asynchrone. Ces données peuvent être envoyées à Target à l’aide d’une requête supplémentaire, bien qu’il ne soit pas recommandé d’utiliser cette requête pour la diffusion de contenu puisque la page sera déjà visible. Ces données peuvent être utilisées pour enrichir le profil du visiteur en vue d’une utilisation ultérieure (à l’aide des paramètres de profil) ou pour compléter le catalogue Recommendations.
 
 Dans ces circonstances, utilisez l’action Code personnalisé dans l’extension Core pour déclencher une requête à l’aide des méthodes
-[getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) et [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html). Cette manipulation est similaire à ce que vous avez effectué dans l’exercice [Requête de confirmation de commande](#order-confirmation-request), mais vous utilisez un autre nom de requête et non des paramètres de commande spéciaux. Veillez à utiliser l’action **[!UICONTROL Charger Target]** avant d’adresser des requêtes Target à partir du code personnalisé.
+[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) et [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Cette manipulation est similaire à ce que vous avez effectué dans l’exercice [Requête de confirmation de commande](#order-confirmation-request), mais vous utilisez un autre nom de requête et non des paramètres de commande spéciaux. Veillez à utiliser l’action **[!UICONTROL Charger Target]** avant d’adresser des requêtes Target à partir du code personnalisé.
 
 ## En-tête et pied de page de bibliothèque
 

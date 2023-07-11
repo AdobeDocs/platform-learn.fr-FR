@@ -1,9 +1,9 @@
 ---
 title: Tutoriels sur la collecte de données
 description: Vidéos pratiques et tutoriels pour devenir un utilisateur expérimenté de la collecte de données
-mini-toc-levels: 1
+mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 37%
@@ -19,14 +19,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
 ## Nouveautés
 
 * **[Présentation de l’API serveur (vidéo)](server-api/overview.md)**
-
-   *Envoyez des données à l’aide d’une API de serveur sécurisée et authentifiée.*
+  *Envoyez des données à l’aide d’une API de serveur sécurisée et authentifiée.*
 * **[Mise en oeuvre de Adobe Experience Cloud dans les applications mobiles (tutoriel)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr)**
-
-   *Implémentez des applications Experience Cloud avec le SDK Mobile.*
+  *Implémentez des applications Experience Cloud avec le SDK Mobile.*
 * **[Déplacement de balises côté client (tutoriel)](event-forwarding/consider-moving-tags.md)**
-
-   *Envisagez de déplacer les balises côté client vers le transfert d’événement.*
+  *Envisagez de déplacer les balises côté client vers le transfert d’événement.*
 
 </div>
 
@@ -45,10 +42,10 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr" target="_blank">
-      <img alt="Implémentation dʼAdobe Experience Cloud avec le SDK web" src="assets/thumb_websdk.png" />
+      <img alt="Implémenter dʼAdobe Experience Cloud avec le SDK web" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr" target="_blank">
     <strong>Mise en oeuvre de l’Experience Cloud avec le SDK Web</strong>
     </a>
     </div>
@@ -57,11 +54,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr" target="_blank">
       <img alt="Mise en oeuvre dans les applications mobiles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr" target="_blank">
     <strong>Implémentation de l’Experience Cloud dans les applications mobiles</strong>
     </a>
     </div>

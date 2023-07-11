@@ -2,12 +2,15 @@
 user-guide-title: Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du SDK web
 breadcrumb-title: Tutoriel du SDK web
 solution: Data Collection
+feature: Web SDK,Tags
+role: Data Engineer
+level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 43%
+ht-degree: 46%
 
 ---
 
@@ -31,7 +34,7 @@ ht-degree: 43%
    + [Configuration d’un Experience Platform](setup-experience-platform.md)
    + [Configuration des Adobe Analytics](setup-analytics.md)
    + [Configuration de l’Audience Manager](setup-audience-manager.md)
-   + [Configuration de Target](setup-target.md)
+   + [Configurer Target](setup-target.md)
 
 + Gestion du consentement {#consent-management}
    + [Configuration du consentement](setup-consent.md)

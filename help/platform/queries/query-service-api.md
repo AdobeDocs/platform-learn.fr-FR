@@ -1,12 +1,12 @@
 ---
 title: API Query Service
 description: Apprenez comment écrire et exécuter des requêtes, créer des requêtes programmées et créer un modèle de requête à lʼaide de lʼAPI Query Service dʼAdobe Experience Platform.
-role: Data Engineer, User
 feature: Queries
+role: Data Engineer
 jira: KT-7682
 thumbnail: 333700.jpg
 exl-id: dd9a2521-e1e5-44b4-bd10-c460ed895e52
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 86%

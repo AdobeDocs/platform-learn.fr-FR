@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,7 @@ Nous devons effectuer deux tâches principales dans l’interface Collecte de do
 **Ingénieurs de données** Vous devrez ingérer des données en continu en dehors de ce tutoriel. Lors de la mise en oeuvre des SDK web ou mobiles Adobe Experience Platform, un développeur web ou mobile est généralement impliqué dans la création de couche de données et la configuration des propriétés de balise.
 
 Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savoir plus sur l’ingestion de données par flux et le SDK Web :
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -245,7 +246,7 @@ Comme vous pouvez le voir sur la [!UICONTROL Flux de publication] le processus d
 
 ## Valider les données de la requête
 
-### Ajouter l’Adobe Experience Platform Debugger
+### Ajout du débogueur Adobe Experience Platform
 
 Le débogueur Experience Platform est une extension disponible pour les navigateurs Chrome et Firefox qui vous permet de voir la technologie d’Adobe mise en oeuvre dans vos pages web. Téléchargez la version de votre navigateur préféré :
 
@@ -454,7 +455,7 @@ Pour vérifier que l’identifiant CRM est maintenant envoyé par le SDK Web :
 
 * [Implémenter dʼAdobe Experience Cloud avec le SDK web](/help/tutorial-web-sdk/overview.md)
 * [Documentation sur l’ingestion par flux](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=fr)
-* [Référence de l’API d’ingestion en flux continu](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Référence de l’API d’ingestion en flux continu](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Très bon travail ! C’était beaucoup d’informations sur le SDK Web et Launch. Il y a beaucoup plus d’implication dans une implémentation complète, mais ce sont les bases pour vous aider à commencer et voir les résultats dans Platform.
 

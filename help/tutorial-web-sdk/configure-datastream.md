@@ -1,16 +1,16 @@
 ---
-title: Configurer un flux de données
+title: Configurer un train de données
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-feature: Datastreams
+feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '448'
 ht-degree: 8%
 
 ---
 
-# Configurer un flux de données
+# Configurer un train de données
 
 Découvrez comment activer un flux de données et configurer des solutions Experience Cloud.
 
@@ -38,7 +38,7 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 
 **Pour créer un flux de données :**
 
-1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target="_blank"}
 1. Assurez-vous que vous vous trouvez dans le bon environnement de test.
 
    >[!NOTE]

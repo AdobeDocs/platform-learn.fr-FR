@@ -1,8 +1,9 @@
 ---
 title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 0%
@@ -36,7 +37,6 @@ Avant de commencer à configurer les paramètres de confidentialité et à crée
 >1. Une plateforme de gestion du consentement (ou CMP) est utilisée par les organisations pour documenter et gérer légalement les choix de consentement d’un visiteur avant de collecter, partager ou vendre des données de visiteur provenant de sources en ligne telles que des sites web et des applications.
 >
 >2. L’approche recommandée pour l’injection d’une CMP se fait directement par le biais du code source avant le script du gestionnaire de balises.
-
 
 ### Configurer Klaro
 

@@ -1,12 +1,12 @@
 ---
 title: Présentation des modèles d’utilisation des données avec Query Service
 description: Cette vidéo partage des conseils et des bonnes pratiques pour exécuter des requêtes dans l’interface de l’éditeur de requêtes, les clients PSQL, les solutions de Business Intelligence (BI) et l’API HTTP.
-role: Data Engineer,User
 feature: Queries
+role: Data Engineer
 jira: KT-3715
 thumbnail: 29811.jpg
 exl-id: 8d99063a-5107-4bee-a0a4-6778b56aeac0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 7%

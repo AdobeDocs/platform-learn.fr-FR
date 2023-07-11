@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2526'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,7 @@ L’ingestion de données par lots vous permet d’ingérer simultanément une g
 **Ingénieurs de données** Vous devrez ingérer des données de lot en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’ingestion de données :
+
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 
@@ -341,6 +342,6 @@ Adobe des partenaires avec plusieurs fournisseurs ETL pour la prise en charge de
 ## Ressources supplémentaires
 
 * [Documentation sur l’ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Référence de l’API d’ingestion par lots](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Référence de l’API d’ingestion par lots](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Maintenant, allons [données de diffusion en continu à l’aide du SDK Web](ingest-streaming-data.md)

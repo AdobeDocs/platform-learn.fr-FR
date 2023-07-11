@@ -1,12 +1,12 @@
 ---
 title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-feature: Schemas
+feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 6%
+source-wordcount: '1121'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,7 @@ Le SDK web Platform utilise votre schéma pour normaliser vos données d’évé
 >
 > À des fins de démonstration, les exercices de cette leçon créent un exemple de schéma pour capturer le contenu consulté et les produits achetés par les clients dans la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Bien que vous puissiez utiliser ces étapes pour créer un schéma différent à vos propres fins, il est recommandé de suivre d’abord la création de l’exemple de schéma pour découvrir les fonctionnalités de l’éditeur de schémas.
 
-Pour en savoir plus sur les schémas XDM, suivez le cours &quot;[Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)&quot; ou voir la variable [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
+Pour en savoir plus sur les schémas XDM, suivez le cours &quot;[Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr)&quot; ou voir la variable [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
 ## Objectifs d&#39;apprentissage
 
@@ -40,9 +40,9 @@ Toutes les autorisations d’utilisateur et d’approvisionnement nécessaires p
 
 Les schémas XDM sont la méthode standard pour décrire les données en Experience Platform, ce qui permet à toutes les données conformes aux schémas d’être réutilisées dans une organisation sans conflit, voire partagées entre plusieurs organisations. Pour en savoir plus, voir la section [Principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr).
 
-Au cours de cet exercice, vous allez créer un schéma XDM à l’aide des groupes de champs de ligne de base recommandés pour capturer les données d’événement web sur la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} :
+Au cours de cet exercice, vous allez créer un schéma XDM à l’aide des groupes de champs de ligne de base recommandés pour capturer les données d’événement web sur la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target=&quot;_blank&quot;}
+1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target="_blank"}
 1. Assurez-vous que vous vous trouvez dans le bon environnement de test.
 
    >[!NOTE]
@@ -50,7 +50,7 @@ Au cours de cet exercice, vous allez créer un schéma XDM à l’aide des group
    >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
 
 1. Accédez à **[!UICONTROL Schémas]** dans le volet de navigation de gauche
-1. Sélectionnez la **[!UICONTROL Création d’un schéma]** en haut à droite
+1. Sélectionnez le bouton **[!UICONTROL Créer un schéma]** en haut à droite
 1. Dans le menu déroulant, sélectionnez **[!UICONTROL XDM ExperienceEvent]**
 
 ![Événement d’expérience de schéma](assets/schema-XDM-experience-event.jpg)
@@ -70,7 +70,7 @@ Dans la mesure du possible, il est recommandé d’utiliser des groupes de champ
 1. Cochez la case
 1. Recherchez [!UICONTROL `Consumer Experience Event`].
 1. Cochez la case
-1. Sélectionner **[!UICONTROL Ajouter des groupes de champs]**
+1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**
 
    ![Ajouter un groupe de champs](assets/schema-add-field-group.jpg)
 
