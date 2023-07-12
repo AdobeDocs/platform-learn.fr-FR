@@ -3,10 +3,10 @@ title: Création d’éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 9b112881a3b062cbd56502b3644c701c82380735
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 5%
+source-wordcount: '1163'
+ht-degree: 6%
 
 ---
 
@@ -47,12 +47,12 @@ Cette leçon se concentre sur les types d’éléments de données d’objet XDM
 
 ## Conditions préalables
 
-Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html)La couche de données {target=&quot;_blank&quot;} et savez comment référencer des éléments de données dans des balises. Vous devez avoir suivi les étapes précédentes suivantes du tutoriel.
+Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir suivi les étapes précédentes suivantes du tutoriel.
 
 * [Configuration des autorisations](configure-permissions.md)
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
-* [Configurer un flux de données](configure-datastream.md)
+* [Configurer un train de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 
 >[!IMPORTANT]
@@ -61,7 +61,7 @@ Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de d
 
 ## Création d’éléments de données pour la capture de la couche de données
 
-Avant de commencer la création de l’objet XDM, créez l’ensemble suivant d’éléments de données mappés à l’objet [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html)Couche de données {target=&quot;_blank&quot;} :
+Avant de commencer la création de l’objet XDM, créez l’ensemble suivant d’éléments de données mappés à l’objet [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données :
 
 1. Accédez à **[!UICONTROL Éléments de données]** et sélectionnez **[!UICONTROL Ajouter un élément de données]** (ou **[!UICONTROL Créer un élément de données]** s’il n’existe aucun élément de données existant dans la propriété de balise)
 
@@ -80,17 +80,17 @@ Avant de commencer la création de l’objet XDM, créez l’ensemble suivant d�
 
 Suivez les mêmes étapes pour créer ces quatre éléments de données supplémentaires :
 
-* **`page.pageInfo.server`**  mappé à
-   `digitalData.page.pageInfo.server`
+* **`page.pageInfo.server`** mappé à .
+  `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**  mappé à
-   `digitalData.page.pageInfo.hierarchie1`
+* **`page.pageInfo.hierarchie1`** mappé à .
+  `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**  mappé à
-   `digitalData.user.0.profile.0.attributes.username`
+* **`user.profile.attributes.username`** mappé à .
+  `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`** mappé à
-   `digitalData.user.0.profile.0.attributes.loggedIn`
+* **`user.profile.attributes.loggedIn`** mappé à .
+  `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`cart.orderId`** mappé à `digitalData.cart.orderId` (vous utiliserez cette méthode lors de la [Configuration d’Analytics](setup-analytics.md) leçon)
 
@@ -136,10 +136,6 @@ Vous pouvez ensuite créer l’élément de données de carte des identités :
 
    ![Interface de collecte de données](assets/identity-id-namespace.png)
 
->[!WARNING]
->
->L’identité Principale est requise dans tous les enregistrements envoyés à Adobe Experience Platform. Par défaut, l’ID d’Experience Cloud (ECID) est utilisé comme identité Principale du SDK Web Platform. Vous ne voudriez jamais utiliser quelque chose comme le `Luma CRM ID` comme identité Principale avec le SDK Web, puisqu’il n’existe qu’après l’authentification de l’utilisateur et qu’il n’est donc pas disponible dans tous les enregistrements.
-
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
    
@@ -164,7 +160,7 @@ Il existe différentes manières de mapper des éléments de données à des cha
 Créez un objet XDM pour capturer des données de contenu :
 
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Éléments de données]**
-1. Sélectionner **[!UICONTROL Ajouter un élément de données]**
+1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**
 1. **** Nommez l’élément de données . **`xdm.content`**
 1. Comme la variable **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
 1. Comme la variable **[!UICONTROL Type d’élément de données]** select `XDM object`
@@ -208,10 +204,10 @@ A la fin de ces étapes, les éléments de données suivants doivent être cré�
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
 | `page.pageInfo.hierarchie1` | `xdm.content` |
-| `page.pageInfo.pageName` |  |
-| `page.pageInfo.server` |  |
-| `user.profile.attributes.loggedIn` |  |
-| `user.profile.attributes.username` |  |
+| `page.pageInfo.pageName` | |
+| `page.pageInfo.server` | |
+| `user.profile.attributes.loggedIn` | |
+| `user.profile.attributes.username` | |
 
 Une fois ces éléments de données en place, vous êtes prêt à commencer à envoyer des données à Platform Edge Network via l’objet XDM en créant une règle dans les balises .
 
