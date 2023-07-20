@@ -6,14 +6,14 @@ feature: Segments
 jira: KT-2705
 thumbnail: 27428.jpg
 exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: f1930db43c5e6fbfd4fe3daf116049fa09fcfb8b
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 7%
 
 ---
 
-# Création de segments dynamiques
+# Créer des audiences dynamiques
 
 Les audiences dynamiques sont une fonction de segmentation avancée de Adobe Experience Platform qui résout les problèmes d’évolutivité auxquels sont généralement confrontés les spécialistes du marketing lors de la création d’audiences pour les campagnes marketing.
 
