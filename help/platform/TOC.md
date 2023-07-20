@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
+source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 41%
+source-wordcount: '978'
+ht-degree: 42%
 
 ---
 
@@ -205,8 +205,11 @@ ht-degree: 41%
    + [Diffusion de données à l’aide des connecteurs sources](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Personnalisation de l’accès suivant avec Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Intégrations Experience Cloud {#experience-cloud}
-   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Orchestration des campagnes avec Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Tendances du secteur {#industry}
    + [L’avenir de la gestion des données et les changements d’environnement](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [A Tale of Two Perceptions - Brands vs. Consumers (Double perception - Marques contre Consommateurs)](/help/platform/industry/brands-vs-consumers.md)
