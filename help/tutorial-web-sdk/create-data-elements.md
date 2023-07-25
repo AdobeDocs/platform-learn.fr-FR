@@ -3,9 +3,9 @@ title: Création d’éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: e1c7ab68d0292edaaa3a93ae8da8cd49d8b4874c
+source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1202'
 ht-degree: 6%
 
 ---
@@ -141,7 +141,7 @@ Vous pouvez ensuite créer l’élément de données de carte des identités :
 >
 > Adobe recommande d’envoyer des identités représentant une personne, telles que `Luma CRM Id`, en tant que [!UICONTROL Principal] identité.
 >
-> Si la carte d’identité contient l’identifiant de personne (par exemple, Luma CRM Id), l’identifiant de personne deviendra la variable [!UICONTROL Principal] identité. Sinon, ECID devient la variable [!UICONTROL Principal] identité.
+> Si la carte d’identité contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne deviendra le [!UICONTROL Principal] identité. Sinon, `ECID` devient la propriété [!UICONTROL Principal] identité.
 
 
 
