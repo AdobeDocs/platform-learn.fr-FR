@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 42%
+source-wordcount: '975'
+ht-degree: 43%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 42%
 + [Tutoriels sur Platform](/help/platform/overview.md)
 + Présentation de Platform {#intro-to-platform}
    + [Expérience client optimisée par un Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [En arrière-plan : Expérience client optimisée par un Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [Scènes en arrière-plan : une expérience client optimisée par un Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Présentation d’Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Fonctionnalités principales](/help/platform/intro-to-platform/key-capabilities.md)
    + [Application et services intelligents](/help/platform/intro-to-platform/application-and-intelligent-services.md)
    + [Intégrations avec des applications Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Cas d’utilisation clés](/help/platform/intro-to-platform/key-use-cases.md)
    + [Architecture de base](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Utilisation de l’interface utilisateur de Platform](/help/platform/intro-to-platform/interface-tour.md)
+   + [Interface utilisateur](/help/platform/intro-to-platform/interface-tour.md)
    + [Rôles et phases de projet](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Présentation de Real-Time CDP {#rtcdp}
    + [Vue d’ensemble](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -32,7 +32,7 @@ ht-degree: 42%
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Présentation de l’édition B2B](/help/platform/rtcdp/b2b-overview.md)
    + [Orchestration des campagnes avec Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Prise en main : Architectes de données et ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [Prise en main : architectes des données et ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr){target="_blank"}
 + [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importer des données dʼexemple vers  Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
@@ -50,7 +50,7 @@ ht-degree: 42%
    + [Création d’audiences de conversion](audiences/create-conversion-audiences.md)
    + [Créer des audiences à partir d’audiences existantes](audiences/create-audiences-from-existing-audiences.md)
    + [Création d’audiences séquentielles](audiences/create-sequential-audiences.md)
-   + [Créer des audiences dynamiques](audiences/create-dynamic-audiences.md)
+   + [Création d’audiences dynamiques](audiences/create-dynamic-audiences.md)
    + [Création d’audiences d’entités multiples](audiences/create-multi-entity-audiences.md)
    + [Création d’audiences avec des données B2B](audiences/create-audiences-with-b2b-data.md)
    + [Démonstration de la segmentation par flux](/help/platform/audiences/streaming-segmentation-demo.md)
@@ -99,7 +99,7 @@ ht-degree: 42%
    + [Requête et découverte de données dans des notebooks JupyterLab](data-science-workspace/dsw-query-service.md)
    + [Analyse des données exploratoires](data-science-workspace/eda.md)
    + [Présentation des recettes, des modèles et des services](data-science-workspace/recipes-models-services-overview.md)
-   + [Création d’un modèle à l’aide du modèle de créateur de recettes](data-science-workspace/recipe-builder-template.md)
+   + [Créez un modèle à l’aide du modèle de créateur de recettes.](data-science-workspace/recipe-builder-template.md)
    + [Analyse des performances du modèle](data-science-workspace/analyze-model-performance.md)
    + [Création et publication d’un modèle formé (interface utilisateur)](data-science-workspace/create-model-ui.md)
    + [Planification de la formation et de la notation automatisées d’un service](data-science-workspace/schedule-training-scoring.md)
