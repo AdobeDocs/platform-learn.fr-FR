@@ -4,11 +4,11 @@ breadcrumb-title: Tutoriel sur les applications mobiles
 user-guide-description: Découvrez comment implémenter des applications Adobe Experience Cloud dans les applications mobiles avec le SDK Mobile Experience Platform.
 solution: Data Collection
 feature: Mobile SDK
-role: Developer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 71%
@@ -23,7 +23,7 @@ ht-degree: 71%
    + [Création d’un schéma](create-schema.md)
    + [Création dʼun flux de données](create-datastream.md)
    + [Configuration des balises](configure-tags.md)
-+ Mise en oeuvre des applications{#app-implementation}
++ Implémentation de l’application{#app-implementation}
    + [Installation des SDK](install-sdks.md)
    + [Assurance](assurance.md)
    + [Consentement](consent.md)

@@ -1,19 +1,20 @@
 ---
 title: Création et publication d’un modèle formé
 description: Découvrez comment créer, former, évaluer et publier un modèle à l’aide d’une recette créée avec le notebook du créateur de recettes JupyterLab.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7291
 thumbnail: 333595.jpg
 exl-id: 149909cf-8294-45ed-b854-b9db5582858e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%
 
 ---
 
-# Création et publication d’un modèle formé dans l’interface utilisateur
+# Créer et publier un modèle formé dans l’interface utilisateur
 
 Découvrez comment créer, former, évaluer et publier un modèle à l’aide d’une recette créée avec le notebook du créateur de recettes JupyterLab.
 

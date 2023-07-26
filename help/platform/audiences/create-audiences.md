@@ -1,12 +1,13 @@
 ---
 title: Création d’audiences
 description: Découvrez comment créer des audiences dans Adobe Experience Platform.
-role: User
 feature: Segments
+role: User
+level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 16%
@@ -23,4 +24,4 @@ Découvrez comment créer des audiences dans Adobe Experience Platform. Créez d
 
 >[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
 
-Pour plus d’informations, reportez-vous à la section [Documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).
+Pour plus d’informations, voir la section [Documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).

@@ -1,12 +1,13 @@
 ---
 title: Utilisation de la bibliothèque JavaScript Privacy
 description: Découvrez comment utiliser la bibliothèque JavaScript Privacy pour rassembler les identités client dans votre application avant de les envoyer à Privacy Service. Par exemple, découvrez comment configurer l’extension de balise dans la collecte de données (anciennement Launch).
-role: Data Engineer, Data Architect
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7716
 thumbnail: 336078.png
 exl-id: ed7f1e0d-eaf9-4912-9536-b16b6672b4ef
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 6%

@@ -2,10 +2,11 @@
 user-guide-title: Prise en main d’Experience Platform pour les architectes et ingénieurs de données
 breadcrumb-title: Prise en main pour les architectes et ingénieurs de données
 user-guide-description: Tutoriel pratique pour commencer la mise en œuvre de Platform. Exemples de données et de ressources fournies.
-audience: all
+role: Data Architect, Data Engineer, Developer
+level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 46%
@@ -17,7 +18,7 @@ ht-degree: 46%
 
 + [Tutoriel sur l’architecte et l’ingénieur des données](overview.md)
 + [1. Configuration des autorisations](configure-permissions.md)
-+ [2. Création d’un environnement de test](create-a-sandbox.md)
++ [2. Créer un environnement de test](create-a-sandbox.md)
 + [3. Configuration de Developer Console et de Postman](set-up-developer-console-and-postman.md)
 + [4. Données de modèle dans les schémas](model-data-in-schemas.md)
 + [5. Mappage des identités](map-identities.md)

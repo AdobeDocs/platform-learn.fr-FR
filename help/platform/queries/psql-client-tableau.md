@@ -2,11 +2,12 @@
 title: Connexion de Tableau à Query Service
 description: Découvrez comment vous connecter à Query Service à partir de diverses applications clientes de bureau qui prennent en charge le protocole PostgreSQL et comment utiliser les outils et les pilotes PostgreSQL pour vous connecter et écrire des requêtes.
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Intermediate
 jira: KT-7688
 thumbnail: 333702.jpg
 exl-id: c81e669e-af61-4b6b-8eb6-a516731b6529
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 18%

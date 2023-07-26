@@ -1,11 +1,11 @@
 ---
-title: Mise en oeuvre du consentement avec une plateforme de gestion des consentements (CMP)
+title: Mise en oeuvre du consentement avec une plateforme de gestion du consentement (CMP)
 description: Découvrez comment mettre en oeuvre et activer les données de consentement obtenues à partir d’une plateforme de gestion du consentement (CMP) à l’aide de l’extension SDK Web Adobe Experience Platform dans Data Collection.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 3%
@@ -38,7 +38,7 @@ Sur cette page, un &quot;jeu de données d’événement&quot; est requis et, co
 
 Pour la version 2.0 de la norme de consentement de Platform, nous aurons également besoin d’un accès à Adobe Experience Platform pour créer un schéma XDM Individual Profile et un jeu de données. Pour consulter un tutoriel sur la création de schémas, voir [Création d’un schéma à l’aide de l’éditeur de schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials) et pour le groupe de champs Détails du consentement et des préférences requis, voir [Configurer un jeu de données pour capturer les données de consentement et de préférence](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html).
 
-Ce tutoriel suppose que vous avez accès à la collecte de données et que vous avez créé une propriété Balises côté client avec l’extension SDK Web installée et une bibliothèque de travail créée et créée pour le développement. Ces rubriques sont détaillées et affichées dans ces documents :
+Ce tutoriel suppose que vous avez accès à la collecte de données et que vous avez créé une propriété Balises côté client avec l’extension SDK Web installée et une bibliothèque de travail créée et créée pour le développement. Ces sujets sont présentés en détail et présentés dans ces documents :
 
 * [Création ou configuration d’une propriété](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
 * [Présentation des bibliothèques](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=fr)
@@ -52,20 +52,20 @@ Pour mettre en oeuvre l’exemple du TCF de l’IAB avec une CMP sur votre propr
 
 >[!NOTE]
 >
->La norme 1.0 est progressivement abandonnée au profit de la version 2.0. La norme 2.0 vous permet d’ajouter des données de consentement supplémentaires qui peuvent être utilisées pour appliquer manuellement les préférences de consentement. Les captures d’écran ci-dessous de l’extension SDK Web Platform proviennent de la version [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0) de l’extension compatible avec la version 1.0 ou v2.0 de la norme de consentement de l’Adobe.
+>La norme 1.0 est progressivement abandonnée en faveur de la version 2.0. La version 2.0 vous permet d’ajouter des données de consentement supplémentaires qui peuvent être utilisées pour appliquer manuellement les préférences de consentement. Les captures d’écran ci-dessous de l’extension SDK Web Platform proviennent de la version [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0) de l’extension compatible avec la version 1.0 ou v2.0 de la norme de consentement de l’Adobe.
 
 Pour plus d’informations sur ces normes, voir [Prise en charge des préférences de consentement du client](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
 
-### Étape 1 : Configuration du consentement dans l’extension SDK Web
+### Étape 1 : configuration du consentement dans l’extension SDK Web
 
-Après avoir installé l’extension SDK Web Platform dans une propriété Tags, nous pouvons configurer les options pour traiter les données de consentement sur l’écran de configuration de l’extension :
+Après avoir installé l’extension SDK Web Platform dans une propriété Tags, nous pouvons configurer les options permettant d’adresser les données de consentement sur l’écran de configuration de l’extension :
 
 ![](./images/pending.png)
 
 La section &quot;Confidentialité&quot; définit le niveau de consentement du SDK si l’utilisateur n’a pas fourni de préférences de consentement auparavant. Cela définit l’état par défaut pour la collecte des données de consentement et d’événement dans le SDK. Le paramètre choisi répond à la question &quot;Que doit faire le SDK si l’utilisateur n’a pas encore fourni de préférences de consentement explicite ?&quot;.
 
 * Dans - Collectez les événements qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.
-* Sortie - Déposez les événements qui se produisent avant que l’utilisateur ne fournisse les préférences de consentement.
+* Sortie - Déposez les événements qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.
 * En attente : événements de file d’attente qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.
 * Fourni par l’élément de données
 
@@ -87,7 +87,7 @@ Pour en savoir plus sur la configuration de l’extension SDK Web, voir [Présen
 
 Dans cet exemple, choisissez l’option &quot;En attente&quot; et sélectionnez **Enregistrer** pour enregistrer nos paramètres de configuration.
 
-### Étape 2 : Communication des préférences de consentement
+### Étape 2 : communication des préférences de consentement
 
 Maintenant que nous avons défini le comportement par défaut du SDK, nous pouvons utiliser des balises pour envoyer les préférences de consentement explicite d’un visiteur à Platform. L’envoi de données de consentement à l’aide de la norme Adobe 1.0 ou 2.0 est facilement mis en oeuvre à l’aide de la variable `setConsent` action du SDK Web dans vos règles de balises.
 
@@ -103,9 +103,9 @@ Nous pouvons choisir de transmettre &quot;Entrée&quot;, &quot;Sortie&quot; ou &
 
 Dans cet exemple, nous sélectionnerons &quot;Entrée&quot; pour indiquer que le visiteur a consenti à autoriser le SDK Web à envoyer des données à Platform. Sélectionnez le bouton bleu &quot;Conserver les modifications&quot; pour enregistrer cette action, puis &quot;Enregistrer&quot; pour enregistrer cette règle.
 
-Remarque : Une fois qu’un visiteur du site web s’est désinscrit, le SDK ne vous permet pas de définir le consentement des utilisateurs sur dans .
+Remarque : Une fois qu’un visiteur du site Web s’est désabonné, le SDK ne vous permet pas de définir le consentement des utilisateurs sur dans .
 
-Les règles de balises peuvent être déclenchées par diverses [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) qui peut être utilisé pour transmettre ces données de consentement au moment approprié au cours d’une session de visiteur. Dans l’exemple ci-dessus, nous avons utilisé l’événement window loaded pour déclencher la règle. Dans une section ultérieure, nous utiliserons un événement de préférence de consentement d’une CMP pour déclencher une action Définir le consentement . Vous pouvez utiliser une action Définir le consentement dans une règle déclenchée par tout événement que vous préférez qui indique un paramètre de préférence d’inclusion.
+Les règles de balises peuvent être déclenchées par un large éventail de règles intégrées ou personnalisées. [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) qui peut être utilisé pour transmettre ces données de consentement au moment approprié au cours d’une session de visiteur. Dans l’exemple ci-dessus, nous avons utilisé l’événement window loaded pour déclencher la règle. Dans une section ultérieure, nous utiliserons un événement de préférence de consentement d’une CMP pour déclencher une action Définir le consentement . Vous pouvez utiliser une action Définir le consentement dans une règle déclenchée par tout événement que vous préférez qui indique un paramètre de préférence d’inclusion.
 
 #### Définition du consentement avec Platform Consent Standard 2.0
 
@@ -115,7 +115,7 @@ Nous allons créer un élément de données de code personnalisé pour transmett
 
 ![](./images/collect-metadata.png)
 
-Ce groupe de champs Consentements et Détails des préférences contient des champs pour la variable [Type de données XDM Consentements et Préférences](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) qui contiendra les données de préférences de consentement que nous envoyons à Platform avec l’extension SDK Web Platform dans notre action de règle. Actuellement, les seules propriétés requises pour mettre en oeuvre Platform Consent Standard 2.0 sont la valeur de collecte (val) et la valeur de temps des métadonnées, surlignée en rouge ci-dessus.
+Ce groupe de champs Consentements et Détails des préférences contient des champs pour la variable [Type de données XDM Consommations et préférences](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) qui contiendra les données de préférences de consentement que nous envoyons à Platform avec l’extension SDK Web Platform dans notre action de règle. Actuellement, les seules propriétés requises pour mettre en oeuvre Platform Consent Standard 2.0 sont la valeur de collecte (val) et la valeur de temps des métadonnées, surlignée en rouge ci-dessus.
 
 Créons un élément de données pour ces données. Sélectionnez Data Elements (Éléments de données) et le bouton bleu Add Data Element (Ajouter un élément de données). Appelons cela &quot;xdm-consent 2.0&quot; et, à l’aide de l’extension Core, nous sélectionnerons un type de code personnalisé. Vous pouvez saisir ou copier et coller les données suivantes dans la fenêtre de l’éditeur de code personnalisé :
 
@@ -134,7 +134,7 @@ return {
 
 Le champ d’heure doit indiquer le moment où l’utilisateur a mis à jour pour la dernière fois ses préférences de consentement. Nous créons ici un horodatage comme exemple à l’aide d’une méthode standard sur l’objet Date JavaScript. Sélectionnez Enregistrer pour enregistrer le code personnalisé et cliquez à nouveau sur Enregistrer pour enregistrer l’élément de données.
 
-Sélectionnez ensuite Règles, puis le bouton bleu Ajouter une règle et saisissez le nom &quot;setConsent onLoad - Consent 2.0&quot;. Sélectionnez l’événement Window Loaded (Fenêtre chargée) comme déclencheur de règle, puis cliquez sur Add (Ajouter) sous Actions. Sélectionnez l’extension SDK Web Platform et, pour le type d’action, choisissez Définir le consentement. La norme doit être Adobe et la version doit être 2.0. Pour la valeur, nous utiliserons l’élément de données que nous venons de créer qui contient les valeurs de collecte et d’heure que nous devons envoyer à Platform :
+Sélectionnez ensuite Règles, puis le bouton bleu Ajouter une règle et saisissez le nom &quot;setConsent onLoad - Consent 2.0&quot;. Sélectionnez l’événement Window Loaded (Fenêtre chargée) comme déclencheur de règle, puis cliquez sur Add (Ajouter) sous Actions. Sélectionnez l’extension SDK Web Platform et, pour le type d’action, choisissez Définir le consentement. La version standard doit être Adobe et la version doit être 2.0. Pour Value, nous utiliserons l’élément de données que nous venons de créer qui contient les valeurs de collecte et d’heure que nous devons envoyer à Platform :
 
 ![](./images/2-0-form.png)
 
@@ -154,7 +154,7 @@ Pour définir les données de préférences de consentement à l’aide de cette
 
 Ce groupe de champs contient les champs de préférences de consentement requis par la norme IAB TCF 2.0. Pour plus d’informations sur les schémas et les groupes de champs, voir la section [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
-### Étape 1 : Création d’un élément de données de consentement
+### Étape 1 : création d’un élément de données de consentement
 
 Pour envoyer des données d’événement de consentement à partir de balises en utilisant la norme de consentement du TCF 2.0 de l’IAB, nous avons d’abord configuré un élément de données xdm avec les champs de consentement requis :
 
@@ -172,7 +172,7 @@ Nous définirons chaque paramètre consentStrings comme suit :
 * **`containsPersonalData`**:  `False` (à partir du bouton Sélectionner la valeur )
 * **`gdprApplies`**:  `%IAB TCF Consent GDPR%`
 
-Le `consentStandard` et `consentStandardVersion` Les champs ne sont que des chaînes de texte pour la norme que nous utilisons, qui est la version 2.0 du TCF de l’IAB. La variable `consentStringValue` référence un élément de données nommé &quot;Chaîne de consentement du TCF de l’IAB&quot;. Les signes de pourcentage autour du texte indiquent le nom d&#39;un élément de données, et nous allons y regarder dans un instant. Le `containsPersonalData` indique si la chaîne de consentement du TCF 2.0 de l’IAB contient des données personnelles avec &quot;True&quot; ou &quot;False&quot;. Le `gdprApplies` indique soit &quot;true&quot; pour l’application du RGPD, soit &quot;false&quot; pour l’application du RGPD, soit &quot;undefined&quot; pour savoir si le RGPD s’applique. Actuellement, le SDK Web traite &quot;non défini&quot; comme &quot;true&quot;. Les données de consentement envoyées avec &quot;gdprApplies&quot; sont donc traitées comme &quot;true&quot; : &quot;non défini&quot; est traité comme si le visiteur se trouve dans une zone où le RGPD s’applique.
+La variable `consentStandard` et `consentStandardVersion` Les champs ne sont que des chaînes de texte pour la norme que nous utilisons, qui est IAB TCF version 2.0. La variable `consentStringValue` référence un élément de données nommé &quot;Chaîne de consentement du TCF de l’IAB&quot;. Les signes de pourcentage autour du texte indiquent le nom d&#39;un élément de données, et nous allons y regarder dans un instant. La variable `containsPersonalData` indique si la chaîne de consentement du TCF 2.0 de l’IAB contient des données personnelles avec &quot;True&quot; ou &quot;False&quot;. La variable `gdprApplies` indique soit &quot;true&quot; pour l’application du RGPD, soit &quot;false&quot; pour l’application du RGPD, soit &quot;undefined&quot; pour savoir si le RGPD s’applique. Actuellement, le SDK Web traite &quot;undefined&quot; comme &quot;true&quot;. Les données de consentement envoyées avec &quot;gdprApplies: undefined&quot; sont donc traitées comme si le visiteur se trouve dans une zone où le RGPD s’applique.
 
 Voir [documentation sur le consentement](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) pour plus d’informations sur ces propriétés et sur IAB TCF 2.0 dans les balises .
 
@@ -218,9 +218,9 @@ Configurez maintenant l’action Définir la règle de consentement pour utilise
 
 Sélectionnez Ajouter dans la section Actions . Sous Extension, sélectionnez SDK Web Platform dans la liste déroulante. Sous Type d’action, sélectionnez Définir le consentement. Nommons cette action setConsent.
 
-Dans la configuration de l’action sous Informations sur le consentement, sélectionnez Remplir un formulaire. Pour Standard, sélectionnez IAB TCF et pour Version saisissez 2.0. Pour la Valeur, nous utiliserons la variable personnalisée de notre événement et saisirons `%IAB TCF Consent String%` qui provient de la variable [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) nous avons capturé dans notre fonction personnalisée d’événement de règle ci-dessus.
+Dans la configuration de l’action sous Informations sur le consentement, sélectionnez Remplir un formulaire. Pour Standard, sélectionnez IAB TCF et pour Version, saisissez 2.0. Pour la Valeur, nous utiliserons la variable personnalisée de notre événement et saisirons `%IAB TCF Consent String%` qui provient de la variable [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) nous avons capturé dans notre fonction personnalisée d’événement de règle ci-dessus.
 
-Sous Application en vertu du RGPD, nous utiliserons l’autre variable personnalisée de notre événement et nous saisirons `%IAB TCF Consent GDPR%` qui provient également de la variable `tcData` nous avons capturé dans notre fonction personnalisée d’événement de règle ci-dessus. Si vous savez que le RGPD s’appliquera ou non aux visiteurs de ce site Web, vous pouvez sélectionner Oui ou Non, selon le cas, au lieu d’utiliser le choix de variable personnalisée (élément de données). Vous pouvez également utiliser une logique conditionnelle dans un élément de données pour vérifier si le RGPD s’applique et renvoie la valeur appropriée.
+Sous Application en vertu du RGPD, nous utiliserons l’autre variable personnalisée de notre événement et nous saisirons `%IAB TCF Consent GDPR%` qui provient également de la variable `tcData` nous avons capturé dans notre fonction personnalisée d’événement de règle ci-dessus. Si vous savez que le RGPD s’appliquera ou ne s’appliquera certainement pas aux visiteurs de ce site Web, vous pouvez sélectionner Oui ou Non, selon le cas, au lieu d’utiliser le choix de variable personnalisée (élément de données). Vous pouvez également utiliser une logique conditionnelle dans un élément de données pour vérifier si le RGPD s’applique et renvoie la valeur appropriée.
 
 Sous le RGPD contient des données personnelles, sélectionnez l’option permettant d’indiquer si les données de cet utilisateur contiennent des données personnelles. Un élément de données ici doit se résoudre sur true ou false.
 

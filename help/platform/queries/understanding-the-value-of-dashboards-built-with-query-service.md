@@ -2,11 +2,12 @@
 title: Présentation de la valeur des tableaux de bord créés avec Query Service
 description: Avec Adobe Experience Platform, les marques peuvent ingérer, stocker, structurer et extraire tous les jeux de données stockés et les jeux de données, y compris les données comportementales, CRM, de point de vente, etc. Grâce au service de requête des Experience Platform, les marques peuvent interroger ces jeux de données et répondre à des questions spécifiques sur l’entreprise, puis commencer à générer des informations pertinentes. Cette vidéo présente l’intérêt de créer des tableaux de bord dans les outils de Business Intelligence (BI) à l’aide de Query Service.
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-3714
 thumbnail: 28981.jpg
 exl-id: bf78cbeb-151a-43ef-a90b-6438af7ffbeb
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%

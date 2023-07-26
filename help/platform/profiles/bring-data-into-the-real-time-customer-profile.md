@@ -1,12 +1,13 @@
 ---
 title: Importation de données dans Real-time Customer Profile
 description: Le profil client en temps réel permet la personnalisation cross-canal à l’échelle de chaque étape du parcours client. Les données par lots ou en flux continu peuvent être activées pour Real-time Customer Profile en activant le schéma et le jeu de données correspondant.
-role: Data Architect, Data Engineer
 feature: Profiles
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-2702
 thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 27%

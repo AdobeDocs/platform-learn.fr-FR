@@ -1,13 +1,14 @@
 ---
 title: Importer des données dʼexemple vers Adobe Experience Platform
 description: Découvrez comment configurer un environnement de test Experience Platform avec des exemples de données.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 8%
@@ -26,7 +27,7 @@ Ce tutoriel se concentre sur une marque fictive de vente au détail appelée Lum
 
 >[!NOTE]
 >
->Le résultat final de ce tutoriel est un environnement de test contenant des données similaires à la variable [Tutoriel Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Il a été mis à jour en avril 2023 pour prendre en charge la variable [Défis liés à Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=fr). Il a été mis à jour en juin 2023 afin de passer la méthode d’authentification à OAuth.
+>Le résultat final de ce tutoriel est un environnement de test contenant des données similaires au [Tutoriel Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr). Il a été mis à jour en avril 2023 pour prendre en charge la variable [Défis liés à Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=fr). Il a été mis à jour en juin 2023 afin de passer la méthode d’authentification à OAuth.
 
 
 ## Conditions préalables
@@ -75,13 +76,13 @@ Avant de suivre les étapes, assurez-vous d’avoir téléchargé la [Postman](h
    > Si les fichiers sont chargés à partir du répertoire de travail, il s’exécute correctement sur les appareils si les mêmes fichiers sont stockés sur les autres appareils. Cependant, si vous souhaitez exécuter des fichiers en dehors du répertoire de travail, un paramètre doit être activé pour indiquer la même intention. Si votre `FILE_PATH` n’est pas identique à [!DNL Postman]chemin du répertoire de travail de , cette option doit être activée.
 
 1. Fermez la **Paramètres** du panneau.
-1. Sélectionnez la **Environnements** puis sélectionnez **Importer**:
+1. Sélectionnez la variable **Environnements** puis sélectionnez **Importer**:
    ![Importation d’environnement](../assets/data-generator/images/env-import.png)
 1. Importez le fichier d’environnement json téléchargé, `DataInExperiencePlatform.postman_environment`
-1. Dans Postman, sélectionnez votre environnement dans la liste déroulante supérieure droite, puis cliquez sur l’icône représentant un oeil pour afficher les variables d’environnement :
+1. Dans Postman, sélectionnez votre environnement dans la liste déroulante en haut à droite, puis cliquez sur l’icône représentant un oeil pour afficher les variables d’environnement :
    ![Sélection de l’environnement](../assets/data-generator/images/env-selection.png)
 
-1. Assurez-vous que les variables d’environnement suivantes sont renseignées. Pour savoir comment obtenir la valeur des variables d’environnement, consultez la section [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md) tutoriel pour des instructions étape par étape.
+1. Assurez-vous que les variables d’environnement suivantes sont renseignées. Pour savoir comment obtenir la valeur des variables d’environnement, consultez la section [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md) tutoriel pour des instructions détaillées.
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` dans la console Adobe Developer
@@ -132,7 +133,7 @@ Vous devez ensuite vous authentifier et générer un jeton utilisateur. Veuillez
 
 Vous pouvez maintenant préparer et importer les données dans votre environnement de test Platform. Les collections Postman que vous avez importées feront le gros du travail !
 
-1. Ouvrez le `1-Luma-Loyalty-Data` collection et cliquez sur **Exécuter** dans l’onglet d’aperçu pour démarrer un programme d’exécution de la collection.
+1. Ouvrez le `1-Luma-Loyalty-Data` collection et cliquez sur **Exécuter** dans l’onglet d’aperçu pour démarrer un Runner Collection.
 
    ![Importation de collections](../assets/data-generator/images/loyalty.png)
 
@@ -170,7 +171,7 @@ Les exemples de données ont été conçus de sorte que, lorsque les collections
 
 1. Accédez à **[!UICONTROL Profils]** > **[!UICONTROL Parcourir]**
 1. Sélectionner `Luma Loyalty Id` comme la propriété **[!UICONTROL Espace de noms d’identité]**
-1. Rechercher `5625458` comme la propriété **[!UICONTROL Valeur d’identité]**
+1. Recherchez `5625458` comme la propriété **[!UICONTROL Valeur d’identité]**
 1. Ouvrez le `Daniel Wright` profile
 
 >[!TIP]
@@ -180,14 +181,14 @@ Les exemples de données ont été conçus de sorte que, lorsque les collections
 
 ![Ouverture d’un profil](../assets/data-generator/images/validation-profile-open.png)
 
-En parcourant les données de la variable **[!UICONTROL Attributs]** et **[!UICONTROL Événements]** onglets, vous devriez constater que le profil contient des données issues des différents fichiers de données :
+En parcourant les données de la variable **[!UICONTROL Attributs]** et **[!UICONTROL Événements]** onglets, vous devriez constater que le profil contient des données provenant des différents fichiers de données :
 ![Données d’événement du fichier d’événements d’achat hors ligne](../assets/data-generator/images/validation-profile-events.png)
 
 ## Étapes suivantes
 
 Si vous souhaitez en savoir plus sur Adobe Journey Optimizer, cet environnement de test contient tout ce dont vous avez besoin pour utiliser la variable [Défis liés à Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=fr)
 
-Si vous souhaitez en savoir plus sur les stratégies de fusion, la gouvernance des données, le service de requête et le créateur de segments, passez à [leçon 11 du tutoriel Prise en main des architectes de données et des ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Les leçons précédentes de cet autre tutoriel vous ont permis de créer manuellement tous les éléments qui venaient d’être renseignés par ces collections Postman.
+Si vous souhaitez en savoir plus sur les stratégies de fusion, la gouvernance des données, le service de requête et le créateur de segments, passez à [leçon 11 du tutoriel Prise en main des architectes et des ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Les leçons précédentes de cet autre tutoriel vous ont permis de créer manuellement tous les éléments qui venaient d’être renseignés par ces collections Postman.
 
 Si vous souhaitez créer un exemple de mise en oeuvre du SDK Web pour créer un lien vers cet environnement de test, accédez à la section
 [Tutoriel sur la mise en oeuvre de Adobe Experience Cloud avec le SDK Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr). Après avoir configuré les leçons &quot;Configuration initiale&quot;, &quot;Configuration des balises&quot; et &quot;Configuration Experience Platform&quot; du tutoriel du SDK Web, connectez-vous au site web Luma à l’aide des dix premières adresses électroniques du `luma-crm.json` fichier utilisant le mot de passe `test` pour voir la fusion des fragments de profil avec les données chargées dans ce tutoriel.

@@ -4,11 +4,10 @@ description: Découvrez le créateur de règles d’audience dans Experience Pla
 feature: Segments
 role: User
 level: Beginner
-doc-type: feature video
-thumbnail: 333301.jpg
 jira: KT-7887
+thumbnail: 333301.jpg
 exl-id: ed66a76e-909b-4b60-887f-58e3d6ab349f
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 6%
@@ -26,4 +25,4 @@ Découvrez le créateur de règles d’audience dans Experience Platform, notamm
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?quality=12&learn=on)
 
-Pour plus d’informations, reportez-vous à la section [Documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).
+Pour plus d’informations, voir la section [Documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).

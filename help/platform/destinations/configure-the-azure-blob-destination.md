@@ -1,22 +1,23 @@
 ---
 title: Configuration de la destination Azure Blob
-description: Découvrez comment suivre les étapes requises pour configurer et configurer une destination de stockage Azure Blob dans Real-time Customer Data Platform (Real-Time CDP).
+description: Découvrez comment configurer et configurer une destination de stockage Azure Blob dans Real-time Customer Data Platform (Real-Time CDP).
 solution: Real-Time Customer Data Platform
 feature: Destinations
-role: User
-thumbnail: 331082.jpg
+role: User, Admin
+level: Intermediate
 jira: KT-7068
+thumbnail: 331082.jpg
 exl-id: 17340357-2e3a-4c94-b010-442fba70b216
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 33%
+source-wordcount: '63'
+ht-degree: 39%
 
 ---
 
 # Configuration de la destination Azure Blob
 
-Découvrez comment suivre les étapes requises pour configurer et configurer une destination de stockage Azure Blob dans Real-time Customer Data Platform (Real-Time CDP).
+Découvrez comment configurer et configurer une destination de stockage Azure Blob dans Real-time Customer Data Platform (Real-Time CDP).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?quality=12&learn=on)
 

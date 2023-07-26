@@ -3,12 +3,11 @@ title: Créer des audiences à partir d’audiences existantes
 description: Le créateur de règles d’audience dans Experience Platform vous permet d’utiliser des audiences existantes dans le cadre d’une nouvelle définition de règle d’audience. Regardez cette vidéo pour voir des conseils sur la façon de le faire.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333304.jpg
+level: Intermediate
 jira: KT-7891
+thumbnail: 333304.jpg
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 6%
@@ -25,4 +24,4 @@ Le créateur de règles d’audience dans Experience Platform vous permet d’ut
 
 >[!VIDEO](https://video.tv.adobe.com/v/333304/?quality=12&learn=on)
 
-Pour plus d’informations, reportez-vous à la section [Documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).
+Pour plus d’informations, voir la section [Documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).

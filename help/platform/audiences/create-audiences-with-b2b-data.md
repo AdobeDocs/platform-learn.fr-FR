@@ -4,10 +4,11 @@ description: Découvrez comment créer des audiences avec des données B2B.
 solution: Real-Time Customer Data Platform
 feature: Segments
 role: User
+level: Beginner
 jira: KT-9261
 thumbnail: 338252.jpg
 exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%
@@ -24,4 +25,4 @@ Découvrez comment créer des audiences avec vos données B2B dans Real-time Cus
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?quality=12&learn=on)
 
-Pour plus d’informations, reportez-vous à la section [Documentation sur la segmentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Pour plus d’informations, voir la section [Documentation sur la segmentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).

@@ -1,22 +1,23 @@
 ---
 title: Intégration de la correspondance client Google à Real-time Customer Data Platform d’Adobe
-description: Cette vidéo montre comment les fonctionnalités de correspondance client de Real-time Customer Data Platform et Google d’Adobe aident les marques à interagir avec les clients sur les propriétés détenues et exploitées de Google pour mettre à l’échelle leurs campagnes de sensibilisation.
+description: Cette vidéo montre comment les fonctionnalités de correspondance client Real-time Customer Data Platform et Google d’Adobe aident les marques à interagir avec les clients sur les propriétés détenues et exploitées Google pour mettre à l’échelle leurs campagnes de sensibilisation.
 solution: Real-Time Customer Data Platform
-role: User
 feature: Destinations
+role: User, Admin
+level: Intermediate
 jira: KT-5948
 thumbnail: 38180.jpg
 exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 7%
+source-wordcount: '87'
+ht-degree: 8%
 
 ---
 
 # Intégration de la correspondance client Google
 
-Cette vidéo montre comment les fonctionnalités de correspondance client de Real-time Customer Data Platform et Google d’Adobe aident les marques à interagir avec les clients sur les propriétés détenues et exploitées de Google pour mettre à l’échelle leurs campagnes de sensibilisation.
+Découvrez comment les fonctionnalités de correspondance client Real-time Customer Data Platform et Google d’Adobe aident les marques à interagir avec les clients sur les propriétés détenues et exploitées Google pour mettre à l’échelle leurs campagnes de sensibilisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?quality=12&learn=on)
 

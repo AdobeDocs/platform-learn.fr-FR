@@ -2,12 +2,11 @@
 title: Ajout d’une extension de transfert d’événement
 description: Découvrez comment ajouter une extension de transfert d’événement dans la collecte de données.
 feature: Event Forwarding
-role: Data Engineer
 level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 18%

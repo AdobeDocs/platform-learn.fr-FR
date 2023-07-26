@@ -1,12 +1,13 @@
 ---
 title: Ingestion de données à l’aide du connecteur de données Adobe Audience Manager
 description: Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-time Customer Data Platform, vous pouvez utiliser le connecteur de données d’Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données riches (y compris les informations d’identification personnelles) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration d’AAM Data Connector for Real-Time CDP.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 2%
@@ -25,4 +26,4 @@ Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe 
 >
 >Veuillez consulter la [28 avril 2022 Épisode de LIVE Experience League](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=fr) où ceci est abordé en détail.
 
-Pour plus d’informations, reportez-vous à la section [Documentation sur le connecteur source d’Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+Pour plus d’informations, voir la section [Documentation sur le connecteur source d’Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).

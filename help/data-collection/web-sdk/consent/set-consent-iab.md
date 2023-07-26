@@ -2,10 +2,10 @@
 title: Définition du consentement à l’aide du standard IAB TCF 2.0
 description: Découvrez comment utiliser le SDK Web de Adobe Experience Platform pour définir des valeurs de consentement conformément à la norme IAB TCF 2.0.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7572
 exl-id: 341a4e01-02a9-4e21-b3d6-b2657d75c233
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%

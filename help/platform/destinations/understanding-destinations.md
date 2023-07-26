@@ -2,12 +2,13 @@
 title: Présentation des destinations dans Real-time Customer Data Platform d’Adobe (RTCDP)
 description: Cette vidéo définit les deux types de destinations&mdash;Exportations de profils et Exports de segments&mdash;et fournit des exemples/cas d’utilisation pour chaque type de destination.
 solution: Real-Time Customer Data Platform
-role: User
 feature: Destinations
+role: User, Admin
+level: Beginner
 jira: KT-3797
 thumbnail: 29707.jpg
 exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 30%

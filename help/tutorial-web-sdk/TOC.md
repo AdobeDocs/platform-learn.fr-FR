@@ -3,11 +3,11 @@ user-guide-title: Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à
 breadcrumb-title: Tutoriel du SDK web
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 46%
@@ -20,7 +20,7 @@ ht-degree: 46%
 + [Présentation du tutoriel](overview.md)
 + Configuration initiale {#initial-configuration}
    + [Configuration des autorisations](configure-permissions.md)
-   + [Configuration d’un schéma XDM](configure-schemas.md)
+   + [Configurer un schéma XDM](configure-schemas.md)
    + [Configuration d’un espace de noms d’identité](configure-identities.md)
    + [Configurer un train de données](configure-datastream.md)
 

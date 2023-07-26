@@ -1,12 +1,13 @@
 ---
 title: Création de politiques d’utilisation des données
 description: Découvrez comment créer et gérer des stratégies d’utilisation des données dans l’interface utilisateur de Adobe Experience Platform. Les stratégies d’utilisation des données vous permettent de restreindre l’utilisation des données à des fins spécifiques en fonction de l’étiquetage des données.
-role: Data Architect
 feature: Data Governance
+role: Data Architect, Admin
+level: Beginner
 jira: KT-4347
 thumbnail: 32977.jpg
 exl-id: 7bcab1e1-6344-48bd-8622-309c9dc17df9
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 8%

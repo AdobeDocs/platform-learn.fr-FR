@@ -5,11 +5,10 @@ landing-page-description: Apprenez à utiliser Experience Cloud Debugger pour r�
 short-description: Apprenez à utiliser Experience Cloud Debugger pour résoudre les problèmes liés à vos implémentations. Identifiez les solutions Adobe mises en œuvre et les appels qu’elles lancent.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 50%
@@ -22,12 +21,12 @@ Découvrez comment utiliser Adobe Experience Cloud Debugger pour faciliter la 
 
 >[!NOTE]
 >
->Envisagez de mettre à niveau vers la [Débogueur Adobe Experience Platform](../overview.md), qui est une version mise à jour de l’extension présentée dans cette vidéo et qui contient la prise en charge de nouvelles fonctionnalités telles que le SDK Web Platform.
+>Envisagez de mettre à niveau vers la [Adobe Experience Platform Debugger](../overview.md), qui est une version mise à jour de l’extension présentée dans cette vidéo et qui contient la prise en charge de nouvelles fonctionnalités telles que le SDK Web Platform.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/23064/?quality=12)
 
 ## Ressources supplémentaires
 
-* [Téléchargez l’extension Adobe Experience Cloud Debugger à partir de la boutique Chrome.](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Téléchargez l’extension Adobe Experience Cloud Debugger depuis la boutique Chrome.](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 * [Documentation Experience Cloud Debugger](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html)

@@ -1,12 +1,13 @@
 ---
 title: Application des politiques d’utilisation des données
 description: Découvrez comment appliquer des stratégies d’utilisation des données lors de l’activation d’une audience vers une destination. Découvrez comment ajouter des actions marketing aux destinations, comment analyser une violation de politique lors de l’activation et comment utiliser la traçabilité des données pour comprendre et corriger les violations de stratégie.
-role: Data Architect, User
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-4380
 thumbnail: 33631.jpg
 exl-id: 9372f240-73a0-4262-8c23-122007786ea5
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 6%

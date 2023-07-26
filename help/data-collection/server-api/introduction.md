@@ -6,11 +6,11 @@ doc-type: article
 feature-set: Experience Platform
 feature: Server API,API,Data Collection,Integrations
 level: Beginner
-role: User,Developer
+role: User, Data Engineer, Developer
 solution: Data Collection
 topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '2087'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Si vous envisagez de cliquer sur un lien d’une page web, le navigateur utilise
 
 >[!NOTE]
 >
-> Bien qu’il y ait de nombreuses API, l’accent sera mis ici sur les API Web et de navigateur : en gros, quand une application logicielle interagit avec une autre sur Internet.
+> Bien qu’il y ait de nombreuses API, l’accent sera mis ici sur les API Web et de navigateur : en fait, lorsqu’une application logicielle interagit avec une autre sur Internet.
 
 ## Termes et concepts de l’API
 
@@ -39,7 +39,7 @@ Que signifie un mot ou une expression, et comment puis-je y penser simplement et
 
 Dans cette capture d’écran, le curseur de la souris survole le lien Adobe Experience Platform. En bas se trouve la barre d’état du navigateur web qui indique &quot;l’adresse&quot; de la page que le navigateur obtiendra. En d’autres termes, cliquer sur le lien Adobe Experience Platform indique au navigateur d’&quot;obtenir cette page pour que je puisse la voir ici sur mon écran&quot;.
 
-Lorsqu’un utilisateur clique sur un lien, le navigateur envoie une requête à un serveur pour obtenir une page. Il s’agit d’une `GET` request, l’une des méthodes de requête couramment utilisées avec les API web. Une chose dont le navigateur a besoin pour répondre à la demande est l’&quot;adresse&quot; de la page - où se trouve-t-il sur le web ?
+Lorsqu’un utilisateur clique sur un lien, le navigateur envoie une requête à un serveur pour obtenir une page. Ceci est une `GET` request, l’une des méthodes de requête couramment utilisées avec les API web. Une chose dont le navigateur a besoin pour répondre à la demande est l’&quot;adresse&quot; de la page - où se trouve-t-il sur le web ?
 
 ### Parties d’une URL
 
@@ -55,25 +55,25 @@ Cette adresse, l’URL, comporte des parties spécifiques qui sont très pertine
 
 **Schéma**
 
-Le `scheme` ci-dessus est également appelé `protocol` avec les API web et c’est généralement soit `http` ou `https`. Le protocole de transfert HTTP ou HyperText est la manière dont les ressources telles que les pages web sont transférées d’un serveur web à un navigateur web. HTTPS est la version sécurisée, où le transfert se produit sur Internet à l&#39;aide de la sécurité destinée à empêcher toute interférence avec la ressource qui est transférée. Il est courant de voir une petite icône de verrouillage dans la barre d’adresse du navigateur lors de l’affichage d’une page via HTTPS.
+La variable `scheme` ci-dessus est également appelé `protocol` avec les API web et c’est généralement soit `http` ou `https`. Le protocole de transfert HTTP ou HyperText est la manière dont les ressources telles que les pages web sont transférées d’un serveur web à un navigateur web. HTTPS est la version sécurisée, où le transfert se produit sur Internet à l&#39;aide de la sécurité destinée à empêcher toute interférence avec la ressource qui est transférée. Il est courant de voir une petite icône de verrouillage dans la barre d’adresse du navigateur lors de l’affichage d’une page via HTTPS.
 
 Pour les API web, les transferts de ces ressources se font par le biais de requêtes HTTP, c’est-à-dire des requêtes via HTTP.
 
 **Hôtes et domaines**
 
-Le `business.adobe.com` est l’hôte de la ressource demandée. Lorsque vous cliquez sur notre exemple de lien, le navigateur utilise cette partie de l’URL pour trouver le serveur sur lequel la page est hébergée. Ce n’est pas toujours exactement la même chose que le serveur web, mais à un niveau de base, nous pouvons le considérer comme le serveur sur lequel le navigateur obtiendra la page que nous avons demandée.
+La variable `business.adobe.com` est l’hôte de la ressource demandée. Lorsque vous cliquez sur notre exemple de lien, le navigateur utilise cette partie de l’URL pour trouver le serveur sur lequel la page est hébergée. Ce n’est pas toujours exactement la même chose que le serveur web, mais à un niveau de base, nous pouvons le considérer comme le serveur où le navigateur obtiendra la page que nous avons demandée.
 
-Les noms de domaine font partie du système de noms de domaine, plus connu sous le nom de DNS. La plupart des gens pensent à `adobe.com` ou `example.com` comme &quot;nom de domaine&quot;, mais il existe des parties pertinentes pour les API. `www.adobe.com` et `business.adobe.com` peut être appelé noms de domaine, mais la variable `www.` et le `business.` les parties sont appelées sous-domaines. Les API interagissent souvent avec une URL qui inclut un sous-domaine comme `api.example.com` ou `sub.www.example.com`.
+Les noms de domaine font partie du système de noms de domaine, plus connu sous le nom de DNS. La plupart des gens pensent à `adobe.com` ou `example.com` comme &quot;nom de domaine&quot;, mais il existe des parties pertinentes pour les API. `www.adobe.com` et `business.adobe.com` peut être appelé noms de domaine, mais la variable `www.` et la variable `business.` les parties sont appelées sous-domaines. Les API interagissent souvent avec une URL qui inclut un sous-domaine comme `api.example.com` ou `sub.www.example.com`.
 
 Il est très courant de voir le terme _hôte_ faire référence à un nom de domaine complet, y compris tout sous-domaine comme `business.adobe.com`. Il est également courant de voir les termes _domain_ ou _nom de domaine_ en cas de référence à un hôte sans sous-domaine, comme `adobe.com`. Il n’est pas important ici de mémoriser les termes spécifiques pour chaque partie et variation d’un hôte. Mais il est important de savoir que ces termes sont couramment utilisés afin de pouvoir clarifier les détails pertinents de votre entreprise et de vos discussions.
 
-**Origin**
+**Origine**
 
 Origin est un autre terme qui est lié aux parties d’une URL. À un niveau de base, une origine correspond approximativement à la valeur `scheme` plus le `host` plus le `domain` like `https://business.adobe.com`. Les différentes valeurs représentent souvent des origines différentes, telles que `https://business.adobe.com` et `http://business.adobe.com` ne sont pas de même origine parce qu&#39;ils ont des schémas différents. `https://www.adobe.com` et `https://business.adobe.com` ne sont pas non plus la même origine dans de nombreux usages en raison des différents sous-domaines.
 
 **Path**
 
-La dernière partie de l’exemple d’URL ci-dessus est la suivante : `path` à la ressource : la page dans notre exemple. Le `/products/experience-platform/` représente généralement des dossiers ou des répertoires sur le serveur web. Tout comme nous avons des dossiers ou des répertoires sur nos ordinateurs pour les documents et les photos, nous avons aussi des dossiers sur les serveurs web pour organiser le contenu. Et enfin, le `/adobe-experience-platform.html` part est le nom du fichier, c’est-à-dire la page web.
+La dernière partie de l’exemple d’URL ci-dessus est la `path` à la ressource : la page dans notre exemple. La variable `/products/experience-platform/` représente généralement des dossiers ou des répertoires sur le serveur web. Tout comme nous avons des dossiers ou des répertoires sur nos ordinateurs pour les documents et les photos, nous avons aussi des dossiers sur les serveurs web pour organiser le contenu. Et enfin, le `/adobe-experience-platform.html` part est le nom du fichier, c’est-à-dire la page web.
 
 D’autres parties plus détaillées d’une URL seront mises en évidence dans la partie suivante de cette série.
 
@@ -81,7 +81,7 @@ D’autres parties plus détaillées d’une URL seront mises en évidence dans 
 
 Les API Web sont parfois appelées API tierces. Pensez à ceci comme aux parties impliquées dans une transaction. Dans notre exemple de lien, vous (ou plus spécifiquement votre navigateur), êtes le premier dans la requête de la page. Le serveur web est le second. Où est le troisième ?
 
-Il est courant qu’une page web contienne du contenu ou des ressources provenant d’autres hôtes ou sources. Dans ce cas, lorsque votre navigateur commence à afficher la page, il envoie un autre ensemble de requêtes à ces autres hôtes, ou &quot;tiers&quot;, qui hébergent ces ressources. C’est très courant, en particulier pour le contenu multimédia tel que les vidéos ou les images, mais aussi pour les données qui doivent être mises à jour au moment de leur affichage ou de leur utilisation. L’obtention de l’heure actuelle, de la météo actuelle ou d’un message de bienvenue personnalisé pour une personne spécifique sont autant d’exemples où une API tierce peut fournir la ressource appropriée au bon moment. Il est courant que ces demandes proviennent de ces API tierces.
+Il est courant qu’une page web contienne du contenu ou des ressources provenant d’autres hôtes ou sources. Dans ce cas, lorsque votre navigateur commence à afficher la page, il envoie un autre ensemble de requêtes à ces autres hôtes, ou &quot;tiers&quot;, qui hébergent ces ressources. C’est très courant, en particulier pour le contenu multimédia tel que les vidéos ou les images, mais aussi pour les données qui doivent être mises à jour au moment de leur affichage ou de leur utilisation. L’obtention de l’heure actuelle, de la météo actuelle ou d’un message de bienvenue personnalisé pour une personne spécifique sont autant d’exemples où une API tierce peut fournir la ressource appropriée au bon moment. Il est courant que ces requêtes proviennent de ces API tierces.
 
 ## Utilisations courantes des API web
 
@@ -97,7 +97,7 @@ L’API Adobe Experience Platform Data Access est une API web qui permet aux pro
 
 Lorsque les programmeurs &quot;utilisent&quot; un navigateur ou une API web dans leurs programmes, ils envoient généralement des requêtes pour envoyer ou recevoir des ressources, comme notre exemple de navigateur demandant une page web. La documentation de l’API répertorie souvent des &quot;points de terminaison&quot; pour ces requêtes, par exemple : `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`. Il s’agit du modèle spécifique ou &quot;point de terminaison&quot; de l’API d’accès aux données de Platform qu’un programmeur utilisera pour obtenir un fichier de jeu de données.
 
-Le `{dataSetFileId}` entouré de ces accolades représente une valeur que le programmeur doit envoyer dans la requête. Ainsi, l’URL de la requête API réelle ressemblerait à `https://platform.adobe.io/data/foundation/export/files/xyz123brb` où le `xyz123brb` doit être un identifiant valide du fichier de jeu de données que le programmeur souhaite recevoir.
+La variable `{dataSetFileId}` entouré de ces accolades représente une valeur que le programmeur doit envoyer dans la requête. Ainsi, l’URL de la requête API réelle ressemblerait à `https://platform.adobe.io/data/foundation/export/files/xyz123brb` où la variable `xyz123brb` doit être un identifiant valide du fichier de jeu de données que le programmeur souhaite recevoir.
 
 En d’autres termes, tout comme le navigateur obtient une page à une URL spécifique, les requêtes d’API obtiennent des ressources d’un point de terminaison spécifique, ou en envoient des vers, comme cet exemple de jeu de données.
 
@@ -109,23 +109,23 @@ L’ensemble du processus, de la demande à la réponse, implique de nombreuses 
 
 **`GET`**
 
-Le `GET` La méthode de requête est utilisée lors de la demande d’une réponse qui fournit une ressource, comme notre page web et des exemples de jeux de données. Lorsque nous cliquons sur un lien dans un navigateur ou appuyez sur un lien sur un périphérique mobile, nous créons un événement `GET` demande en coulisses.
+La variable `GET` La méthode de requête est utilisée lors de la demande d’une réponse qui fournit une ressource, comme notre page web et des exemples de jeux de données. Lorsque nous cliquons sur un lien dans un navigateur ou appuyez sur un lien sur un périphérique mobile, nous créons un événement `GET` demande en coulisses.
 
 **`POST`**
 
-Le `POST` envoie des données avec la requête. Il peut sembler étrange qu’une &quot;requête&quot; envoie des données, mais l’idée est que l’exécution de la requête API demande au point de terminaison (le logiciel de réception) d’accepter la requête, et dans le cas d’une `POST`, afin d’accepter également les données envoyées. Les données envoyées sont généralement écrites dans un entrepôt de données, tel qu’une base de données ou un fichier, afin de pouvoir être enregistrées.
+La variable `POST` envoie des données avec la requête. Il peut sembler étrange qu’une &quot;requête&quot; envoie des données, mais l’idée est que l’exécution de la requête API demande au point de terminaison (le logiciel de réception) d’accepter la requête, et dans le cas d’une `POST`, afin d’accepter également les données envoyées. Les données envoyées sont généralement écrites dans un entrepôt de données, tel qu’une base de données ou un fichier, afin de pouvoir être enregistrées.
 
 **`PUT`**
 
-Le `PUT` la méthode de requête est similaire à `POST` puisqu’il envoie des données, mais si les données envoyées existent déjà au point de terminaison, un `PUT` mettra à jour les données existantes en les remplaçant. A `POST` ne se met pas à jour, envoie simplement plusieurs `POST` les demandes peuvent créer plusieurs enregistrements des données envoyées, au lieu de mettre à jour un enregistrement existant.
+La variable `PUT` la méthode de requête est similaire à `POST` puisqu’il envoie des données, mais si les données envoyées existent déjà au point de terminaison, un `PUT` mettra à jour les données existantes en les remplaçant. A `POST` ne se met pas à jour, envoie simplement plusieurs `POST` les demandes peuvent créer plusieurs enregistrements des données envoyées, au lieu de mettre à jour un enregistrement existant.
 
 **`PATCH`**
 
-Le `PATCH` La méthode de requête est utilisée pour envoyer des données qui mettent à jour une partie d’un enregistrement existant, comme lorsque nous changeons d’adresse en mettant à jour notre profil de compte. Avec `POST` demander la création d’un profil supplémentaire, avec un `PUT`, le profil existant peut être remplacé, mais en utilisant la variable `PATCH` nous mettons simplement à jour la partie appropriée de l&#39;enregistrement existant, comme notre adresse.
+La variable `PATCH` La méthode de requête est utilisée pour envoyer des données qui mettent à jour une partie d’un enregistrement existant, comme lorsque nous changeons d’adresse en mettant à jour notre profil de compte. Avec `POST` demander la création d’un profil supplémentaire, avec un `PUT`, le profil existant peut être remplacé, mais en utilisant la variable `PATCH` nous mettons simplement à jour la partie appropriée de l&#39;enregistrement existant, comme notre adresse.
 
 **`DELETE`**
 
-Le `DELETE` la méthode de requête supprime une ressource spécifiée dans la requête, comme si nous cliquions sur un lien pour supprimer entièrement notre profil de compte.
+La variable `DELETE` la méthode de requête supprime une ressource spécifiée dans la requête, comme si nous cliquions sur un lien pour supprimer entièrement notre profil de compte.
 
 Il existe plusieurs autres méthodes, mais il s’agit de la liste des méthodes les plus courantes lorsque vous utilisez des API.
 
@@ -162,7 +162,7 @@ fetch(
 );
 ```
 
-Dans le code ci-dessus, vous pouvez voir la variable `URL` le navigateur demande et, en bas de l’écran, le `method: "GET"` méthode de requête. Les autres lignes de code font également partie de la requête, mais ne sont pas incluses dans cet article.
+Dans le code ci-dessus, vous pouvez voir le `URL` le navigateur demande et, en bas de l’écran, le `method: "GET"` méthode de requête. Les autres lignes de code font également partie de la requête, mais ne sont pas incluses dans cet article.
 
 
-*[API]: Interface de programmation d’application *[URL]: Uniform Resource Locator *[HTTP]: Protocole de transfert HyperText *[DNS]: Système de noms de domaine
+*[API]: Interface de programmation d’application *[URL]: Uniform Resource Locator *[HTTP]: HyperText Transfer Protocol *[DNS]: système de noms de domaine

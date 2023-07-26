@@ -2,16 +2,17 @@
 title: Choisissez une option d’hébergement pour votre bibliothèque de balises (anciennement la bibliothèque Launch).
 description: Découvrez comment choisir la meilleure option d’hébergement pour votre bibliothèque de balises.
 feature: Tags
+level: Beginner
 jira: KT-3526
 exl-id: adc00363-7490-44ab-95e2-46f9f630021c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
 
 ---
 
-# Choix d’une option d’hébergement
+# Choisissez une option d’hébergement
 
 Découvrez comment choisir la meilleure option d’hébergement pour votre bibliothèque de balises.
 

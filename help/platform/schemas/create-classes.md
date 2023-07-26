@@ -1,12 +1,13 @@
 ---
 title: Création de classes
 description: Cette vidéo montre comment créer des classes dans Adobe Experience Platform à utiliser dans les schémas de modèle de données d’expérience (XDM).
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7936
 thumbnail: 333538.jpg
 exl-id: b106691e-8c41-494e-97a1-d0230d61c597
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 17%

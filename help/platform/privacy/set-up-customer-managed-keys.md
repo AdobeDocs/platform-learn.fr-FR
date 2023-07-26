@@ -2,13 +2,13 @@
 title: Configuration des clés gérées par le client (CMK)
 description: Gérez le chiffrement des données au repos à l’aide de vos propres clés de chiffrement.
 feature: Privacy
-role: Admin, Data Architect
+role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
-last-substantial-update: 2022-11-01T00:00:00Z
 jira: KT-11382
 thumbnail: 3410673.jpeg
+last-substantial-update: 2022-11-01T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 17%

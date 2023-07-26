@@ -2,12 +2,11 @@
 title: Configuration d’un flux de données pour le transfert d’événement
 description: Découvrez comment configurer un flux de données pour le transfert d’événement.
 feature: Event Forwarding, Datastreams
-role: Data Engineer
 level: Intermediate
 jira: KT-6421
 thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 17%

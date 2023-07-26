@@ -1,12 +1,13 @@
 ---
 title: Utilisation des environnements de test
 description: Découvrez comment les environnements de test Experience Platform offrent l’isolation des données et des environnements dans lesquels ils peuvent tester des fonctionnalités nouvelles ou existantes, travailler avec une approche "fail fast" (Échec rapide) et être en mesure de réinitialiser et de redémarrer les initiatives de développement.
-role: Data Architect, Data Engineer
 feature: Sandboxes
+role: Data Architect, Data Engineer, Admin
+level: Beginner
 jira: KT-4018
 thumbnail: 29838.jpg
 exl-id: 65e50b0e-0999-4992-86e9-037065ed0d01
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 6%
