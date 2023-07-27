@@ -1,6 +1,6 @@
 ---
-title: Démonstration de Real-time Customer Data Platform (RTCDP) de l’Adobe
-description: Regardez une démonstration montrant comment Real-Time CDP est utilisée pour collecter des données provenant de sources multiples, puis pour les fusionner en temps réel en un profil client unique et activer ces données afin de créer des expériences client personnalisées.
+title: Démonstration de Real-time Customer Data Platform (RTCDP) d’Adobe
+description: Regardez une démonstration montrant comment Real-Time CDP est utilisé pour collecter des données provenant de sources multiples, puis pour les fusionner en temps réel en un profil client unique et activer ces données afin de créer des expériences client personnalisées.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User
@@ -11,15 +11,15 @@ exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
-# Démonstration de Real-time Customer Data Platform
+# Démonstration de Real-Time Customer Data Platform
 
-Cette vidéo montre comment Real-Time CDP est utilisé pour collecter des données provenant de plusieurs sources, les fusionner en un seul profil client en temps réel et activer ces données pour créer des expériences client personnalisées.
+Cette vidéo montre comment Real-Time CDP est utilisé pour collecter des données provenant de sources multiples, puis pour les fusionner en un profil client en temps réel unique et activer ces données afin de créer des expériences client personnalisées.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34558?quality=12&learn=on)
 
 
-Pour plus d’informations, consultez la [Documentation Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=fr).
+Pour plus d’informations, consultez la [documentation Real-Time Customer Data Platform d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=fr).
