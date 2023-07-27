@@ -2,15 +2,17 @@
 title: Ingestion de données à l’aide du connecteur de données Adobe Audience Manager
 description: Lorsque vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-time Customer Data Platform, vous pouvez utiliser le connecteur de données d’Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données riches (y compris les informations d’identification personnelles) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration d’AAM Data Connector for Real-Time CDP.
 feature: Sources
+topic: Integrations
+badgeIntegration: label="Intégration" type="positive"
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 3%
 
 ---
 
