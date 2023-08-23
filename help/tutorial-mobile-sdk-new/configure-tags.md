@@ -4,9 +4,9 @@ description: Découvrez comment configurer une propriété de balise dans le [!U
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ Pour terminer la leçon, vous devez disposer des autorisations nécessaires pour
 
 >[!NOTE]
 >
-> Le platform launch (côté client) est désormais [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
+> Le platform launch (côté client) est désormais [Balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
 
 ## Objectifs d&#39;apprentissage
 
@@ -136,7 +136,12 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
 
    Les instructions d’installation vous fournissent un bon point de départ pour la mise en oeuvre. Vous trouverez des informations supplémentaires [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. Sélectionnez la variable **[!UICONTROL Swift]** sous-onglet **[!UICONTROL Ajout d’un code d’initialisation]**. Ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement.
+   >[!INFO]
+   >
+   >Pour le reste de ce tutoriel, vous allez **not** Suivez les instructions CocoaPods , mais utilisez plutôt une configuration SPM (Swift Package Manager) native.
+   >
+
+1. Sélectionnez la variable **[!UICONTROL Swift]** sous-onglet **[!UICONTROL Ajout d’un code d’initialisation]**. Ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement. Pour plus d’informations, reportez-vous à la section [Installation des SDK](install-sdks.md).
 
 1. Copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) la valeur **[!UICONTROL Identifiant de fichier d’environnement]** et le stocker à un endroit où vous en aurez besoin plus tard. Cet identifiant unique pointe vers votre environnement de développement. Chaque environnement (production, évaluation, développement) possède sa propre valeur d’identifiant unique.
 
@@ -145,11 +150,6 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
 >[!NOTE]
 >
 >Les instructions d’installation doivent être considérées comme un point de départ et non comme une documentation définitive. Vous trouverez les dernières versions du SDK et des exemples de code dans la [documentation](https://developer.adobe.com/client-sdks/documentation/).
-
->[!INFO]
->
->Pour le reste de ce tutoriel, vous êtes **not** à l’aide des instructions CocoaPods , mais regardez une configuration native basée sur un package Swift.
-
 
 ## Architecture des balises mobiles
 
