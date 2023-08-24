@@ -3,8 +3,7 @@ title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 9%

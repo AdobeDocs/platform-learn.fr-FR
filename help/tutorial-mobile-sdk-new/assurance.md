@@ -3,11 +3,10 @@ title: Configuration d’Assurance
 description: Découvrez comment mettre en oeuvre l’extension Assurance dans une application mobile.
 feature: Mobile SDK,Assurance
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 4%
+source-wordcount: '741'
+ht-degree: 5%
 
 ---
 
@@ -43,17 +42,19 @@ Vérifiez que votre entreprise a accès à Assurance en procédant comme suit :
 
 ## Implémenter
 
-En plus du [Installation du SDK](install-sdks.md), que vous avez terminé dans la leçon précédente, iOS requiert également l’ajout suivant pour démarrer la session d’assurance pour votre application. Ajoutez le code suivant à **[!UICONTROL SceneDelegate]**:
+En plus du [Installation du SDK](install-sdks.md), que vous avez terminé dans la leçon précédente, iOS requiert également l’ajout suivant pour démarrer la session d’assurance pour votre application.
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** dans le navigateur de projet de votre code.
+
+1. Ajoutez le code suivant à `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>` :
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 Vous trouverez plus d’informations [ici](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
 
@@ -94,7 +95,7 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
 1. Fournissez une **[!UICONTROL Nom de session]** par exemple `Luma Mobile App Session` et la variable **[!UICONTROL URL de base]**, qui est un schéma d’URL que vous avez saisi dans Xcode, suivi de `://`. Par exemple : `lumatutorialswiftui://`.
 1. Sélectionnez **[!UICONTROL Suivant]**.
    ![création d’une session d’assurance](assets/assurance-create-session.png)
-1. Dans la boîte de dialogue Créer une session :
+1. Dans le **[!UICONTROL Créer une session]** boîte de dialogue modale :
 
    Si vous utilisez un appareil physique :
 

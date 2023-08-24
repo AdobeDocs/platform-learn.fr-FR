@@ -3,10 +3,9 @@ title: Mappage Analytics
 description: Découvrez comment collecter des données pour Adobe Analytics dans une application mobile.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 Voici à quoi peut ressembler une règle de traitement utilisant ces données :
 
-* Vous remplacez la valeur de `App Screen Name (eVar2)` (1) avec la valeur de `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) si `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` est définie.
+* You **[!UICONTROL Remplacer la valeur de]** (1) **[!UICONTROL Nom de l’écran de l’application (eVar2)]** (2) avec la valeur de **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screename]** (3) si **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screename]** (4) **[!UICONTROL est défini]** (5).
 
-* Vous définissez `Add to Wishlist (Event 3)` to `a.x.commerce.saveForLaters.value(Context)` if `a.x.commerce.saveForLaters.value(Context)` est définie.
+* You **[!UICONTROL Définir un événement]** (6) **[!UICONTROL Ajouter à la liste blanche (événement 3)]** (7) à **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) si **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL est défini]** (10)
 
 ![règles de traitement analytics](assets/analytics-processing-rules.png)
 

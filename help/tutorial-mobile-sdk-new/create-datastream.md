@@ -3,8 +3,7 @@ title: Configurer un train de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-hidefromtoc: true
-source-git-commit: 45481ca81f2ee4119bc900a0dd2652818269df6b
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 9%
@@ -88,7 +87,7 @@ Vous pouvez également activer le service Adobe Experience Platform.
 >
 >L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations sur les paramètres du flux de données, consultez la documentation [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-Lors de l’implémentation du SDK Mobile Platform sur votre propre site web, vous devez créer trois flux de données à mapper à vos trois environnements de balises (développement, évaluation et production). Si vous utilisez le SDK Platform Mobile avec des applications basées sur Platform telles qu’Adobe Real-time Customer Data Platform ou Adobe Journey Optimizer, vous devez veiller à créer ces flux de données dans les environnements de test Platform appropriés.
+Lors de l’implémentation du SDK Mobile Platform dans votre propre application, vous devez créer trois flux de données à mapper à vos trois environnements de balises (développement, évaluation et production). Si vous utilisez le SDK Platform Mobile avec des applications basées sur Platform telles qu’Adobe Real-time Customer Data Platform ou Adobe Journey Optimizer, vous devez veiller à créer ces flux de données dans les environnements de test Platform appropriés.
 
 >[!SUCCESS]
 >
