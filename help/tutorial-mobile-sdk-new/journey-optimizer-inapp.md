@@ -4,7 +4,7 @@ description: Découvrez comment créer des messages in-app vers une application 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -73,11 +73,11 @@ Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de 
 1. Faites défiler jusqu’à **[!UICONTROL Action]**, puis sélectionnez **[!UICONTROL Modifier le contenu]**.
 1. Dans le **[!UICONTROL Message In-App]** écran :
    1. Sélectionner **[!UICONTROL Modal]** comme la propriété **[!UICONTROL Disposition du message]**.
-   1. Entrée `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` pour **[!UICONTROL URL du média]**.
-   1. Saisissez un **[!UICONTROL En-tête]**, par exemple `Welcome to this Luma In-App Message` et saisissez un **[!UICONTROL Corps]**, par exemple `Triggered by pushing that button in the app...`.
-   1. Entrée **[!UICONTROL Ignorer]** comme la propriété **[!UICONTROL Texte #1 bouton (principal)]**.
-   1. Notez comment l’aperçu est mis à jour.
-   1. Sélectionner **[!UICONTROL Réviser pour activer]**.
+   2. Entrée `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` pour **[!UICONTROL URL du média]**.
+   3. Saisissez un **[!UICONTROL En-tête]**, par exemple `Welcome to this Luma In-App Message` et saisissez un **[!UICONTROL Corps]**, par exemple `Triggered by pushing that button in the app...`.
+   4. Entrée **[!UICONTROL Ignorer]** comme la propriété **[!UICONTROL Texte #1 bouton (principal)]**.
+   5. Notez comment l’aperçu est mis à jour.
+   6. Sélectionner **[!UICONTROL Réviser pour activer]**.
       ![Editeur in-app](assets/ajo-in-app-editor.png)
 1. Dans le **[!UICONTROL Réviser pour activer (Luma - Campagne de messagerie in-app)]** écran, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) dans le **[!UICONTROL Planification]** mosaïque.
    ![Planification de la révision : sélectionnez Planification](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de 
    1. Cliquez sur **[!UICONTROL Terminé]**.
       ![Logique de déclenchement](assets/ajo-trigger-logic.png)
 
-   Vous avez défini une action de suivi, où la variable **[!UICONTROL Action]** est égal à `in-app` et la variable **[!UICONTROL Données contextuelles]** avec l’action est une paire valeur-clé de `showMessage = true`.
+   Vous avez défini une action de suivi, où la variable **[!UICONTROL Action]** est égal à `in-app` et la variable **[!UICONTROL Données contextuelles]** avec l’action est une paire valeur-clé de `"showMessage" : "true"`.
 
 1. De retour dans le **[!UICONTROL Luma - Campagne de messagerie in-app]** écran, sélectionnez **[!UICONTROL Réviser pour activer]**.
 1. Dans le **[!UICONTROL Réviser pour activer (Luma - Campagne de messagerie in-app)]** écran, sélectionnez **[!UICONTROL Activer]**.
@@ -103,14 +103,14 @@ Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-a
 1. Accédez à Luma > Luma > Utils > MobileSDK dans le navigateur de projet Xcode, recherchez la variable `func sendTrackAction(action: String, data: [String: Any]?)` et ajoutez le code suivant, qui appelle la fonction `MobileCore.track` fonction, en fonction des paramètres `action` et `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Accédez à Luma > Luma > Vues > Général > ConfigView dans Xcode Project Navigator. Recherchez le code du bouton Message in-app et ajoutez le code suivant :
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Général]** > **[!UICONTROL ConfigView]** dans Xcode Project Navigator. Recherchez le code du bouton Message in-app et ajoutez le code suivant :
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
