@@ -3,36 +3,37 @@ title: Messagerie in-app Adobe Journey Optimizer
 description: Découvrez comment créer des messages in-app vers une application mobile avec le SDK Mobile Platform et Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
+feature: In App
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 2%
+source-wordcount: '1607'
+ht-degree: 3%
 
 ---
 
-# Messagerie in-app Adobe Journey Optimizer
+# Messagerie in-app Journey Optimizer
 
-Découvrez comment créer des messages in-app pour les applications mobiles avec le SDK Mobile Platform et Adobe Journey Optimizer.
+Découvrez comment créer des messages in-app pour les applications mobiles avec le SDK Mobile Platform et Journey Optimizer.
 
-Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages in-app aux audiences ciblées. Avant d’envoyer des messages in-app avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données de la messagerie in-app dans Adobe Journey Optimizer, reportez-vous à la section [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizer vous permet de créer des campagnes pour envoyer des messages in-app aux audiences ciblées. Avant d’envoyer des messages in-app avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données de la messagerie in-app dans Journey Optimizer, reportez-vous à la section [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
->Cette leçon est facultative et s’applique uniquement aux utilisateurs de Adobe Journey Optimizer qui souhaitent envoyer des messages in-app.
+>Cette leçon est facultative et s’applique uniquement aux utilisateurs de Journey Optimizer qui souhaitent envoyer des messages in-app.
 
 
 ## Conditions préalables
 
 * Création et exécution de l’application avec les SDK installés et configurés.
-* Accès à Adobe Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Adobe Journey Optimizer suivantes.
-   * Gérer une campagne.
+* Accès à Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Journey Optimizer suivantes.
+   * Gestion des campagnes.
 * Compte de développeur Apple payant disposant d’un accès suffisant pour créer des certificats, identifiants et clés.
 * Appareil ou simulateur iOS physique à tester.
-* [Identifiant d’application enregistré avec service de notification push Apple](journey-optimizer-push.md#register-app-id-with-apn)
-* [Ajout des informations d’identification push de votre application dans Data Collection](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
-* [Extension des balises Adobe Journey Optimizer installées](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
-* [Mise en oeuvre de Adobe Journey Optimizer dans l’application](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+* Identifiant d’application enregistré avec service de notification push Apple
+* Ajout des informations d’identification push de votre application dans Data Collection
+* Extension des balises Journey Optimizer installées
+* Mise en oeuvre de Journey Optimizer dans l’application
 
 
 ## Objectifs d&#39;apprentissage
@@ -40,16 +41,121 @@ Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages
 Dans cette leçon, vous allez
 
 * Enregistrez l’ID d’application avec le service Apple Push Notification (APN).
-* Créez un **[!UICONTROL Surface de l’application]** dans AJO.
-* Mettez à jour votre **[!UICONTROL schema]** pour inclure des champs de messagerie push.
-* Installez et configurez la variable **[!UICONTROL Adobe Journey Optimizer]** extension de balise.
-* Mettez à jour votre application pour inclure l’extension de balise AJO.
+* Créez une surface d’application dans AJO.
+* Installez et configurez l’extension de balise Journey Optimizer.
+* Mettez à jour votre application pour inclure l’extension de balise Journey Optimizer.
 * Validez la configuration dans Assurance.
 * Définissez votre propre campagne et votre propre expérience de message in-app dans Journey Optimizer.
 * Envoyez votre propre message in-app depuis l’application.
 
+## Configuration de votre application
 
-## Validation avec Assurance
+>[!TIP]
+>
+>Si vous avez déjà configuré votre application dans le cadre de la [Messagerie push Journey Optimizer](journey-optimizer-push.md) vous pouvez ignorer cette section.
+
+### Enregistrement de l’ID d’application avec APNS
+
+Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont conçues pour vous guider tout au long de la configuration APNS.
+
+### Création d’une clé privée
+
+1. Sur le portail destiné aux développeurs Apple, accédez à **[!UICONTROL Clés]**.
+1. Pour créer une clé, sélectionnez **[!UICONTROL +]**.
+   ![créer une clé](assets/mobile-push-apple-dev-new-key.png)
+
+1. Fournissez une **[!UICONTROL Nom de la clé]**.
+1. Sélectionnez la variable **[!UICONTROL Service de notification push Apple] (APNS)** .
+1. Sélectionnez **[!UICONTROL Continuer]**.
+   ![configurer la nouvelle clé](assets/mobile-push-apple-dev-config-key.png)
+1. Vérifiez la configuration et sélectionnez **[!UICONTROL Enregistrer]**.
+1. Téléchargez la `.p8` clé privée. Il est utilisé dans la configuration Surface de l’application.
+1. Prenez note de la **[!UICONTROL ID de clé]**. Il est utilisé dans la configuration Surface de l’application.
+1. Prenez note de la **[!UICONTROL Identifiant de l’équipe]**. Il est utilisé dans la configuration Surface de l’application.
+   ![Détails clés](assets/push-apple-dev-key-details.png)
+
+Une documentation supplémentaire peut être [se trouve ici](https://help.apple.com/developer-account/#/devcdfbb56a3).
+
+### Ajout des informations d’identification push de votre application à la collecte de données
+
+1. Dans la [Interface de collecte de données](https://experience.adobe.com/data-collection/), sélectionnez **[!UICONTROL Surfaces de l’application]** dans le panneau de gauche.
+1. Pour créer une configuration, sélectionnez **[!UICONTROL Créer une surface d’application]**.
+   ![page d’accueil de l’application](assets/push-app-surface.png)
+1. Saisissez un **[!UICONTROL Nom]** pour la configuration, par exemple `Luma App Tutorial`  .
+1. De **[!UICONTROL Configuration des applications mobiles]**, sélectionnez **[!UICONTROL Apple iOS]**.
+1. Renseignez l&#39;ID de bundle de l&#39;application mobile dans le champ **[!UICONTROL ID de l&#39;application (ID de bundle iOS)]**. Par exemple : `com.adobe.luma.tutorial.swiftui`.
+1. Activez l’option **[!UICONTROL Informations d’identification push]** pour ajouter vos informations d’identification.
+1. Faites glisser et déposez votre `.p8` **Clé d’authentification des notifications push Apple** fichier .
+1. Fournissez les **[!UICONTROL ID de clé]**, chaîne de 10 caractères attribuée lors de la création de la variable `p8` clé auth. Elle se trouve sous la variable **[!UICONTROL Clés]** dans le **Certificats, identifiants et profils** page des pages du portail des développeurs Apple. Voir aussi [Création d’une clé privée](#create-a-private-key).
+1. Indiquez l&#39;**[!UICONTROL identifiant d&#39;équipe]**. L’ ID d’équipe est une valeur qui se trouve sous la variable **Abonnement** ou dans la partie supérieure de la page Portail des développeurs Apple. Voir aussi [Création d’une clé privée](#create-a-private-key).
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+   ![configuration de la surface de l’application](assets/push-app-surface-config.png)
+
+### Installation de l’extension de balises Journey Optimizer
+
+Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre à jour votre propriété de balise.
+
+1. Accédez à **[!UICONTROL Balises]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**,
+1. Ouvrez votre propriété, par exemple **[!UICONTROL Tutoriel sur l’application mobile Luma]**.
+1. Sélectionner **[!UICONTROL Catalogue]**.
+1. Recherchez le **[!UICONTROL Adobe Journey Optimizer]** extension .
+1. Installation l’extension.
+1. Dans le **[!UICONTROL Installer l’extension]** dialog
+   1. Sélectionnez un environnement, par exemple **[!UICONTROL Développement]**.
+   1. Sélectionnez la variable **[!UICONTROL Jeu de données d’événement de suivi push AJO]** jeu de données à partir du **[!UICONTROL Jeu de données d’événement]** liste.
+   1. Sélectionner **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
+      ![Paramètres de l’extension AJO](assets/push-tags-ajo.png)
+
+>[!NOTE]
+>
+>Si vous ne voyez pas `AJO Push Tracking Experience Event Dataset` contactez l’assistance clientèle.
+>
+
+### Mise en oeuvre de Journey Optimizer dans l’application
+
+Comme indiqué dans les leçons précédentes, l’installation d’une extension de balise mobile fournit uniquement la configuration. Vous devez ensuite installer et enregistrer le SDK de messagerie. Si ces étapes ne sont pas claires, passez en revue la [Installation des SDK](install-sdks.md) .
+
+>[!NOTE]
+>
+>Si vous avez terminé la [Installation des SDK](install-sdks.md) , le SDK est déjà installé et vous pouvez ignorer cette étape.
+>
+
+1. Dans Xcode, assurez-vous que [Messagerie AEP](https://github.com/adobe/aepsdk-messaging-ios.git) est ajouté à la liste des modules dans les dépendances de modules. Voir [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** dans le navigateur de projet Xcode.
+1. Assurez-vous que `AEPMessaging` fait partie de votre liste d’importations.
+
+   `import AEPMessaging`
+
+1. Assurez-vous que `Messaging.self` fait partie du tableau des extensions que vous enregistrez.
+
+   ```swift
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
+   ```
+
+1. Ajoutez la variable `MobileCore.setPushIdentifier` à la fonction `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` de la fonction
+
+   ```swift
+   // Send push token to Experience Platform
+   MobileCore.setPushIdentifier(deviceToken)
+   ```
+
+   Cette fonction récupère le jeton de l’appareil unique sur lequel l’application est installée. Définit ensuite le jeton pour la diffusion de la notification push à l’aide de la configuration que vous avez configurée et qui repose sur le service Apple Push Notification (APN).
+
+
+## Validation de la configuration Assurance
 
 1. Consultez la section [instructions de configuration](assurance.md) .
 1. Installez l’application sur votre appareil physique ou sur le simulateur.
@@ -79,7 +185,7 @@ Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez **[!UICONTROL Campagnes]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Créer une campagne]**.
 1. Dans le **[!UICONTROL Créer une campagne]** écran :
-   1. Sélectionner **[!UICONTROL Message in-app]** et sélectionnez **[!UICONTROL Application mobile Luma]** de la **[!UICONTROL Surface de l’application]** liste.
+   1. Sélectionner **[!UICONTROL Message in-app]** et sélectionnez une surface d’application dans la **[!UICONTROL Surface de l’application]** liste, par exemple **[!UICONTROL Application mobile Luma]**.
    1. Sélectionnez **[!UICONTROL Créer]**
       ![Propriétés de campagne](assets/ajo-campaign-properties.png)
 1. Dans l’écran de définition de campagne, à l’adresse **[!UICONTROL Propriétés]**, saisissez une **[!UICONTROL Nom]** pour la campagne, par exemple `Luma - In-App Messaging Campaign`, et a **[!UICONTROL Description]**, par exemple `In-app messaging campaign for Luma app`.
@@ -112,9 +218,9 @@ Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de 
 
 ## Déclenchement du message in-app
 
-Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-app. Reste à savoir comment déclencher ce message in-app dans votre code.
+Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-app. Reste à savoir comment déclencher ce message in-app dans votre application.
 
-1. Accédez à Luma > Luma > Utils > MobileSDK dans le navigateur de projet Xcode, recherchez la variable `func sendTrackAction(action: String, data: [String: Any]?)` et ajoutez le code suivant, qui appelle la fonction `MobileCore.track` fonction, en fonction des paramètres `action` et `data`.
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode. Recherchez le `func sendTrackAction(action: String, data: [String: Any]?)` et ajoutez le code suivant, qui appelle la fonction `MobileCore.track` fonction, en fonction des paramètres `action` et `data`.
 
 
    ```swift
@@ -122,7 +228,7 @@ Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-a
    MobileCore.track(action: action, data: data)
    ```
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Général]** > **[!UICONTROL ConfigView]** dans Xcode Project Navigator. Recherchez le code du bouton Message in-app et ajoutez le code suivant :
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Général]** > **[!UICONTROL ConfigView]** dans Xcode Project Navigator (Navigateur de projets Xcode). Recherchez le code du bouton Message in-app et ajoutez le code suivant :
 
    ```swift
    Task {
@@ -141,7 +247,7 @@ Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-a
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## Validation dans Assurance
+## Validation de la mise en oeuvre dans Assurance
 
 Vous pouvez valider vos messages in-app dans l’interface utilisateur d’assurance.
 
@@ -152,12 +258,12 @@ Vous pouvez valider vos messages in-app dans l’interface utilisateur d’assur
    ![Assurance : message in-app](assets/assurance-in-app-display-message.png)
 
 
-## Mise en oeuvre dans votre application
+## Étapes suivantes
 
-Vous devriez maintenant disposer de tous les outils pour commencer à ajouter des notifications push, le cas échéant et de manière applicable, à l’application Luma. Par exemple, accueillir l’utilisateur lorsqu’il se connecte à l’application ou à l’approche d’une géolocalisation spécifique.
+Vous devriez maintenant disposer de tous les outils pour commencer à ajouter des messages in-app, le cas échéant et applicable, à l’application Luma. Par exemple, la promotion de produits en fonction d’interactions spécifiques suivies dans l’application.
 
 >[!SUCCESS]
 >
->Vous avez désormais activé l’application pour la messagerie in-app et ajouté une campagne de messagerie in-app à l’aide de Adobe Journey Optimizer et de l’extension Adobe Journey Optimizer pour le SDK Adobe Experience Platform Mobile.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous avez activé l’application pour la messagerie in-app et ajouté une campagne de messagerie in-app à l’aide de Journey Optimizer et de l’extension Journey Optimizer pour le SDK mobile Experience Platform.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Affichage d’offres avec Journey Optimizer](journey-optimizer-offers.md)**
