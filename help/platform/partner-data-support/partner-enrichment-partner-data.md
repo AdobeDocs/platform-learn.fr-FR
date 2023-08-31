@@ -1,5 +1,5 @@
 ---
-title: Ajout d’attributs de partenaire aux profils propriétaires dans la variable [!DNL Real-time CDP]
+title: Ajout d’attributs de partenaire aux profils propriétaires dans la variable [!DNL Real-Time CDP]
 description: Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée par le biais de canaux supplémentaires dans la [!DNL Real-Time CDP].
 feature: Integrations
 topic: Integrations
@@ -8,14 +8,14 @@ level: Intermediate
 jira: KT-13830
 thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+source-git-commit: 2b4f50e114f07da72048fa863c551eaa3223f4cd
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
-# Ajout d’attributs de partenaire aux profils propriétaires dans la variable [!DNL Real-time CDP]
+# Ajout d’attributs de partenaire aux profils propriétaires dans la variable [!DNL Real-Time CDP]
 
 Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée par le biais de canaux supplémentaires dans la [!DNL Real-Time CDP].
 
