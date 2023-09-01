@@ -3,9 +3,9 @@ title: Identité
 description: Découvrez comment collecter des données d’identité dans une application mobile.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 8%
 
 ---
@@ -144,7 +144,7 @@ Vous pouvez utiliser `removeIdentity` pour supprimer l’identité de la carte d
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. Recherchez dans l’interface utilisateur web d’assurance le **[!UICONTROL Identités de mise à jour d’identité Edge]**de la variable **[!UICONTROL com.adobe.griffon.mobile]** fournisseur.
+1. Dans l’interface utilisateur web d’Assurance, recherchez la variable **[!UICONTROL Identités de mise à jour d’identité Edge]** de l’événement **[!UICONTROL com.adobe.griffon.mobile]** fournisseur.
 1. Sélectionnez l’événement et passez en revue les données de la variable **[!UICONTROL ACPExtensionEventData]** . Vous devriez voir les identités que vous avez mises à jour.
    ![mise à jour des identités de validation](assets/identity-validate-assurance.png)
 
