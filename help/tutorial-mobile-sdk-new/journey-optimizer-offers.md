@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,11 @@ Dans cette leçon, vous allez
 * Mettez en oeuvre les offres de la gestion de la décision dans votre application.
 
 
-## Configuration de votre application
+## Configuration
 
 >[!TIP]
 >
->Si vous avez déjà configuré votre application dans le cadre de la [Configuration de tests A/B avec Target](target.md) tutoriel, vous pouvez ignorer [Installer Adobe Journey Optimizer - Extension des balises de prise de décision](#install-adobe-journey-optimizer---decisioning-tags-extension) et [Mettre à jour votre schéma](#update-your-schema).
+>Si vous avez déjà configuré votre environnement dans le cadre de la [Configuration de tests A/B avec Target](target.md) tutoriel, vous pouvez ignorer [Installer Adobe Journey Optimizer - Extension des balises de prise de décision](#install-adobe-journey-optimizer---decisioning-tags-extension) et [Mettre à jour votre schéma](#update-your-schema).
 
 ### Mise à jour de la configuration Edge
 
@@ -368,7 +368,7 @@ Vous devriez maintenant disposer de tous les outils pour commencer à ajouter d�
 
 * appliquer différents paramètres à vos offres (par exemple, priorité, limitation) ;
 * collecte des attributs de profil dans l’application (voir [Profil](profile.md)) et utilisez ces attributs de profil pour créer des audiences. Utilisez ensuite ces audiences dans le cadre des règles d’éligibilité de votre décision.
-* combiner plusieurs portées de décision
+* combiner plusieurs portées de décision.
 
 >[!SUCCESS]
 >

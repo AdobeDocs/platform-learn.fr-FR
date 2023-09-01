@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2173'
 ht-degree: 4%
 
 ---
@@ -49,11 +49,11 @@ Dans cette leçon, vous allez
 * Envoyez votre propre notification push depuis l’application.
 
 
-## Configuration de votre application
+## Configuration
 
 >[!TIP]
 >
->Si vous avez déjà configuré votre application dans le cadre de la [Messagerie in-app Journey Optimizer](journey-optimizer-inapp.md) vous pouvez ignorer cette section.
+>Si vous avez déjà configuré votre environnement dans le cadre de la [Messagerie in-app Journey Optimizer](journey-optimizer-inapp.md) vous pouvez ignorer cette section.
 
 ### Enregistrement de l’ID d’application avec APNS
 
