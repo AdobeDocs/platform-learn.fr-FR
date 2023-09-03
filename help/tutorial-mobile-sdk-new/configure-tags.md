@@ -3,7 +3,7 @@ title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 9%
@@ -129,7 +129,7 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
 
    ![écran d’accueil des environnements](assets/tags-environments.png)
 
-1. Dans le [!UICONTROL Instructions d’installation mobile] , sélectionnez **[!UICONTROL iOS]** .
+1. Dans le **[!UICONTROL Instructions d’installation mobile]** , sélectionnez **[!UICONTROL iOS]** .
 
 1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de CocoaPods. Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [documentation](https://cocoapods.org/).
 

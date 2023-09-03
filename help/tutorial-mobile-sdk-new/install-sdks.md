@@ -2,9 +2,9 @@
 title: Installation des SDK Adobe Experience Platform Mobile
 description: Découvrez comment mettre en oeuvre le SDK Mobile Adobe Experience Platform dans une application mobile.
 hide: true
-source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ Découvrez comment mettre en oeuvre le SDK Mobile Adobe Experience Platform dans
 
 ## Conditions préalables
 
-* La bibliothèque de balises a été créée avec succès avec les extensions décrites dans la section [leçon précédente](configure-tags.md).
+* Création réussie d’une bibliothèque de balises avec les extensions décrites dans la section [leçon précédente](configure-tags.md).
 * Identifiant du fichier d’environnement de développement du [Instructions d’installation mobile](configure-tags.md#generate-sdk-install-instructions).
-* Téléchargé, vide [exemple d’application](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Téléchargé le vide [exemple d’application](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
 * Expérience avec [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Objectifs d&#39;apprentissage
@@ -44,10 +44,10 @@ Dans Xcode, utilisez **[!UICONTROL Fichier]** > **[!UICONTROL Ajouter des packag
 | [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | L’extension mobile AEP Edge Identity permet de gérer les données d’identité utilisateur d’une application mobile lors de l’utilisation du SDK Adobe Experience Platform et de l’extension Edge Network. |
 | [Consentement AEP Edge](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | L’extension mobile AEP Consent Collection permet la collecte des préférences de consentement de l’application mobile lors de l’utilisation du SDK Adobe Experience Platform et de l’extension Edge Network. |
 | [Profil utilisateur AEP](https://github.com/adobe/aepsdk-userprofile-ios.git) | L’extension mobile Profil utilisateur Adobe Experience Platform est une extension permettant de gérer les profils utilisateur pour le SDK Adobe Experience Platform. |
-| [Places AEP](https://github.com/adobe/aepsdk-places-ios) | L’extension Adobe Experience Platform Places est une extension du SDK Adobe Experience Platform Swift. L’extension AEPPlaces vous permet de suivre les événements de géolocalisation tels que définis dans l’interface utilisateur d’Adobe Places et dans les règles Adobe Launch. |
-| [Messagerie AEP](https://github.com/adobe/aepsdk-messaging-ios.git) | L’extension de messagerie AEP est une extension du SDK Adobe Experience Platform Swift. L’extension de messagerie AEP vous permet d’envoyer des jetons de notification push et des commentaires de clic publicitaire de notification push à Adobe Experience Platform. |
+| [Places AEP](https://github.com/adobe/aepsdk-places-ios) | L’extension AEPPlaces vous permet de suivre les événements de géolocalisation tels que définis dans l’interface utilisateur d’Adobe Places et dans les règles de balise de collecte de données d’Adobe. |
+| [Messagerie AEP](https://github.com/adobe/aepsdk-messaging-ios.git) | L’extension de messagerie AEP vous permet d’envoyer des jetons de notification push et des commentaires de clic publicitaire de notification push à Adobe Experience Platform. |
 | [Optimisation AEP](https://github.com/adobe/aepsdk-optimize-ios) | L’extension AEP Optimize fournit des API pour activer les workflows de personnalisation en temps réel dans les SDK Adobe Experience Platform Mobile à l’aide d’Adobe Target ou de Adobe Journey Optimizer Offer Decisioning. Cela nécessite `AEPCore` et `AEPEdge` extensions pour envoyer des événements de requête de personnalisation au réseau Experience Edge. |
-| [Assurance AEP](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (alias Griffon) est un nouveau produit innovant qui vous aide à inspecter, à tester, à simuler et à valider la manière dont vous collectez des données ou diffusez des expériences dans votre application mobile. |
+| [Assurance AEP](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (alias Griffon) est un nouveau produit innovant qui vous aide à inspecter, à tester, à simuler et à valider la manière dont vous collectez des données ou diffusez des expériences dans votre application mobile. Cette extension active votre application pour l’assurance. |
 
 
 Après avoir installé tous les packages, votre code Xcode **[!UICONTROL Dépendances de modules]** L’écran doit se présenter comme suit :
@@ -57,7 +57,7 @@ Après avoir installé tous les packages, votre code Xcode **[!UICONTROL Dépend
 
 ## Importation d’extensions
 
-Dans Xcode, accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** et ajoutez les imports suivants.
+Dans Xcode, accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** et assurez-vous que les imports suivants font partie de ce fichier source.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -91,6 +91,7 @@ Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** dans
 1. Ajoutez le code suivant au `application(_, didFinishLaunchingWithOptions)` de la fonction
 
    ```swift
+   // Define extensions
    let extensions = [
        AEPIdentity.Identity.self,
        Lifecycle.self,
@@ -105,6 +106,7 @@ Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** dans
        Assurance.self
    ]
    
+   // Register extensions
    MobileCore.registerExtensions(extensions, {
        // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
        Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
@@ -120,10 +122,6 @@ Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** dans
    
        // assume unknown, adapt to your needs.
        MobileCore.setPrivacyStatus(.unknown)
-   
-       // update version and build
-       Logger.configuration.info("Luma - Updating version and build number...")
-       SettingsBundleHelper.setVersionAndBuildNumber()
    })
    ```
 
@@ -132,6 +130,8 @@ Le code ci-dessus effectue les opérations suivantes :
 1. Enregistre les extensions requises.
 1. Configure MobileCore et d’autres extensions pour utiliser la configuration de la propriété de balise.
 1. Active la journalisation de débogage. Vous trouverez plus de détails et d’options dans la section [Documentation du SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. Commence la surveillance du cycle de vie. Voir [Cycle de vie](lifecycle-data.md) pour plus d’informations, consultez le tutoriel .
+1. Définit le consentement par défaut sur inconnu. Voir [Consentement](consent.md) pour plus d’informations, consultez le tutoriel .
 
 >[!IMPORTANT]
 >

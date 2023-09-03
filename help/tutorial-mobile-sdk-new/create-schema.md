@@ -3,10 +3,10 @@ title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 17%
+source-wordcount: '1416'
+ht-degree: 18%
 
 ---
 
@@ -100,7 +100,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
    ![Sélection d’ExperienceEvent dans la liste déroulante](assets/schema-create.png)
 
-1. Sélectionner ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter** en regard de [!UICONTROL Groupes de champs].
+1. Sélectionner ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter** en regard de **[!UICONTROL Groupes de champs]**.
 
    ![Ajout d’un groupe de champs.](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
    Vous revenez à l’écran principal de composition de schéma où vous pouvez voir tous les champs disponibles.
 
-1. Attribuez un nom à votre schéma en sélectionnant **[!UICONTROL Schéma sans titre]** en haut à gauche, puis en fournissant un **[!UICONTROL Nom d’affichage]** &amp; **[!UICONTROL Description]**, par exemple `Luma Mobile App Event Schema` et `Schema for Luma mobile app experience events.`
+1. Attribuez un nom à votre schéma en sélectionnant **[!UICONTROL Schéma sans titre]** de la **[!UICONTROL Composition]** (sous **[!UICONTROL Schéma]**) et en fournissant un **[!UICONTROL Nom d’affichage]** &amp; **[!UICONTROL Description]**, par exemple `Luma Mobile App Event Schema` et `Schema for Luma mobile app experience events.`
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -125,8 +125,8 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 >[!NOTE]
 >
 >Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
->
->La variable `Consumer Experience Event` possède un type de données appelé `Web information`, qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
+
+La variable [!UICONTROL Événement d’expérience client] un groupe de champs possède un type de données appelé [!UICONTROL Informations web], qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
 
 ## Créer un type de données personnalisé
 
@@ -152,9 +152,8 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 
 1. Pour ajouter un champ, sélectionnez l’option ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) bouton .
 
-   Ce champ est un objet conteneur pour l’interaction de l’application.
 
-1. Fournir un dossier de chameau **[!UICONTROL Nom du champ]** `appInteraction`, **[!UICONTROL Nom d’affichage]** `App Interaction`, puis sélectionnez `Object` de la **[!UICONTROL Type]** liste.
+1. Ce champ est un objet conteneur pour l’interaction de l’application. Par conséquent, fournissez une case Camel. **[!UICONTROL Nom du champ]** `appInteraction`, **[!UICONTROL Nom d’affichage]** `App Interaction`, puis sélectionnez `Object` de la **[!UICONTROL Type]** liste.
 
 1. Sélectionnez **[!UICONTROL Appliquer]**.
 
@@ -180,7 +179,7 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 
 1. Faites défiler l’écran vers le bas du rail de droite et sélectionnez **[!UICONTROL Appliquer]**.
 
-1. Pour créer une `appStateDetails` objet contenant un objet **[!UICONTROL Mesure]** champ appelé `screenView` et deux **[!UICONTROL Chaîne]** champs appelés `screenName` et `screenType` procédez de la même manière que lors de la création de la variable **[!UICONTROL appInteraction]** .
+1. Pour créer une `appStateDetails` objet contenant un objet **[!UICONTROL Mesure]** champ appelé `screenView` et deux **[!UICONTROL Chaîne]** champs appelés `screenName` et `screenType`, procédez de la même manière que lors de la création de la variable **[!UICONTROL appInteraction]** .
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -196,7 +195,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
    ![Ajouter un nouveau groupe de champs](assets/schema-fieldgroup-add.png)
 
-1. Créez un groupe de champs personnalisé en sélectionnant **[!UICONTROL Créer un groupe de champs]** Bouton radio près du haut.
+1. Sélectionnez **[!UICONTROL Créer un groupe de champs]**.
 
 1. Fournissez une **[!UICONTROL Nom d’affichage]** et **[!UICONTROL Description]**, par exemple : `App Interactions` et `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 1. Dans le rail de droite, indiquez un **[!UICONTROL Nom du champ]** de `appInformation`, un **[!UICONTROL Nom d’affichage]** de `App Information`, et a **[!UICONTROL Type]** de `App Information`.
 
-1. Sélectionner **[!UICONTROL Interactions de l’application]** de la **[!UICONTROL Type]** , qui est le type de données que vous avez créé lors de l’exercice précédent.
+1. Sélectionner **[!UICONTROL Interactions de l’application]** de la **[!UICONTROL Type]** , qui est le type de données personnalisé que vous avez créé dans l’exercice précédent.
 
 1. Sélectionnez **[!UICONTROL Appliquer]**.
 
@@ -220,7 +219,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 >[!NOTE]
 >
->Les groupes de champs personnalisés sont toujours placés sous l’identifiant de votre organisation Experience Cloud. Donc `_techmarketingdemos` est remplacé par la valeur unique de votre organisation.
+>Les groupes de champs personnalisés sont toujours placés sous l’identifiant de votre organisation Experience Cloud. Donc `_techmarketingdemos`, utilisé dans les captures d’écran, est remplacé par la valeur unique de votre entreprise.
 
 
 >[!SUCCESS]

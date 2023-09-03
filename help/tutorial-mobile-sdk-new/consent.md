@@ -3,7 +3,7 @@ title: Consentement
 description: Découvrez comment mettre en oeuvre le consentement dans une application mobile.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -41,6 +41,7 @@ Pour commencer à collecter des données, vous devez obtenir le consentement de 
    Ajoutez ce code à la variable `updateConsent` de la fonction
 
    ```swift
+   // Update consent
    let collectConsent = ["collect": ["val": value]]
    let currentConsents = ["consents": collectConsent]
    Consent.update(with: currentConsents)
@@ -52,12 +53,14 @@ Pour commencer à collecter des données, vous devez obtenir le consentement de 
    Ajoutez le code suivant au `ATTrackingManager.requestTrackingAuthorization { status in` fermeture.
 
    ```swift
+   // Add consent based on authorization
    if status == .authorized {
-         // Set consent to yes
-         MobileSDK.shared.updateConsent(value: "y")
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
    }
    else {
-         MobileSDK.shared.updateConsent(value: "n")
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
@@ -70,6 +73,7 @@ L’extension mobile Consent supprime/met en attente/permet le suivi en fonction
    Ajoutez le code suivant au `getConsents` function:
 
    ```swift
+   // Get consents
    Consent.getConsents { consents, error in
       guard error == nil, let consents = consents else { return }
       guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }

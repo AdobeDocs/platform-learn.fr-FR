@@ -3,9 +3,9 @@ title: Gestion des WebViews
 description: Découvrez comment gérer la collecte de données avec WebViews dans une application mobile.
 jira: KT-6987
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Dans cette leçon, vous allez :
 
 ## Problèmes de suivi potentiels
 
-Si vous envoyez des données à partir de la partie native de l’application et d’un affichage Web, chacun génère son propre identifiant Experience Cloud (ECID), ce qui entraîne des accès déconnectés et une augmentation des données sur les visites/visiteurs. Vous trouverez plus d’informations sur l’ECID dans la section [Présentation d’ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Si vous envoyez des données à partir de la partie native de l’application et d’une vue WebView au sein de l’application, chacune génère son propre identifiant Experience Cloud (ECID), ce qui entraîne des accès déconnectés et une augmentation des données de visite/visiteur. Vous trouverez plus d’informations sur l’ECID dans la section [Présentation d’ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
 Pour résoudre cette situation indésirable, il est important de transmettre l’ECID de l’utilisateur de la partie native de votre application à un WebView que vous souhaitez peut-être utiliser dans votre application.
 
@@ -39,7 +39,7 @@ L’extension JavaScript du service d’ID Experience Cloud dans WebView extrait
 Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Infos]** > **[!UICONTROL TermsOfServiceSheet]**, puis localisez la variable `func loadUrl()` dans la fonction `final class SwiftUIWebViewModel: ObservableObject` classe . Ajoutez l’appel suivant pour gérer l’affichage web :
 
 ```swift
-// Adobe Experience Platform - Handle Web View
+// Handle web view
 AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
     if let error = error {
         print("Error with Webview", error)
@@ -59,7 +59,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-La variable `AEPEdgeIdentity.Identity.getUrlVariables` L’API configure les variables pour que l’URL contienne toutes les informations pertinentes, comme ECID, et plus encore. Dans cet exemple, vous utilisez un fichier local, mais les mêmes concepts s’appliquent aux pages distantes.
+La variable [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) L’API configure les variables pour que l’URL contienne toutes les informations pertinentes, comme ECID, et plus encore. Dans cet exemple, vous utilisez un fichier local, mais les mêmes concepts s’appliquent aux pages distantes.
 
 Vous pouvez en savoir plus sur les `Identity.getUrlVariables` de l’API [Guide de référence de l’API d’extension Identity for Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 

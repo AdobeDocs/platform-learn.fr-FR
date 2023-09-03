@@ -2,9 +2,9 @@
 title: Places
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -88,8 +88,8 @@ Vous définissez certains points ciblés dans le service Places.
 1. Accédez à **[!UICONTROL Balises]** et recherchez la propriété de balise mobile et ouvrez-la.
 1. Sélectionner **[!UICONTROL Extensions]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
-1. Recherchez le **[!UICONTROL Adobe Journey Optimizer - Prise de décision]** extension .
-1. Installation l’extension. L’extension ne nécessite pas de configuration supplémentaire.
+1. Recherchez le **[!UICONTROL Places]** extension .
+1. Installation l’extension.
 
    ![Ajout de l’extension de prise de décision](assets/tag-places-extension.png)
 
@@ -116,7 +116,7 @@ Vérifiez si votre schéma est défini dans la section [Créer un schéma](creat
 
 ### Mettre à jour votre balise
 
-L’extension Places permet de surveiller les événements de géolocalisation et de déclencher des actions en fonction de ces événements. Vous pouvez utiliser cette fonctionnalité pour minimiser le codage de l’API que vous devez implémenter dans l’application.
+L’extension Places pour les balises permet de surveiller les événements de géolocalisation et de déclencher des actions en fonction de ces événements. Vous pouvez utiliser cette fonctionnalité pour minimiser le codage de l’API que vous devez implémenter dans l’application.
 
 **Éléments de données**
 
@@ -128,7 +128,7 @@ Vous devez d’abord créer plusieurs éléments de données.
 1. Dans le **[!UICONTROL Créer un élément de données]** , saisissez un nom, par exemple `Name - Entered`.
 1. Sélectionner **[!UICONTROL Places]** de la **[!UICONTROL Extension]** liste.
 1. Sélectionner **[!UICONTROL Nom]** de la **[!UICONTROL Type d’élément de données]** liste.
-1. Sélectionner **[!UICONTROL Point ciblé actuel]**underneath **[!UICONTROL TARGET]**.
+1. Sélectionner **[!UICONTROL Point ciblé actuel]** underneath **[!UICONTROL TARGET]**.
 1. Sélectionner **[!UICONTROL Enregistrer dans la bibliothèque]**.
    ![Élément de données](assets/tags-create-data-element.png)
 
@@ -148,9 +148,9 @@ Vous devez d’abord créer plusieurs éléments de données.
 
 **Règles**
 
-Vous allez maintenant définir des règles pour travailler avec ces éléments de données.
+Vous allez ensuite définir des règles pour travailler avec ces éléments de données.
 
-1. Sélectionner **[!UICONTROL Règles]** dans le rail de gauche.
+1. Dans la propriété de balise. select **[!UICONTROL Règles]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Ajouter une règle]**.
 1. Dans le **[!UICONTROL Créer une règle]** , saisissez un nom pour la règle, par exemple `POI - Entry`.
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ÉVÉNEMENTS]**.
@@ -158,7 +158,7 @@ Vous allez maintenant définir des règles pour travailler avec ces éléments d
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
       ![Événement de balise](assets/tags-event-mobile-core.png).
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ACTIONS]**.
-   1. Sélectionner **[!UICONTROL Mobile Core]** de **[!UICONTROL Extension]** list, select **[!UICONTROL Joindre des données]** de **[!UICONTROL Type d’action]** liste. Cette action associe des données de payload.
+   1. Sélectionner **[!UICONTROL Mobile Core]** de la **[!UICONTROL Extension]** list, select **[!UICONTROL Joindre des données]** de **[!UICONTROL Type d’action]** la liste. Cette action associe des données de payload.
    1. Dans le **[!UICONTROL Charge utile JSON]**, collez la charge utile suivante :
 
       ```json
@@ -183,7 +183,7 @@ Vous allez maintenant définir des règles pour travailler avec ces éléments d
       }
       ```
 
-      La variable `{%% ... %%}` peuvent également être facilement insérées en sélectionnant la variable ![Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) en regard de la boîte de dialogue et en sélectionnant un élément de données dans la boîte de dialogue.
+      Vous pouvez également insérer `{%% ... %%}` valeurs d’espace réservé de l’élément de données dans le fichier JSON en sélectionnant ![Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Une boîte de dialogue contextuelle vous permet de sélectionner un élément de données que vous avez créé.
 
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
       ![Action Balises](assets/tags-action-mobile-core.png)
@@ -249,7 +249,7 @@ Pour vous assurer que toutes les modifications apportées à votre balise sont p
 Pour valider votre configuration dans Assurance :
 
 1. Accédez à l’interface utilisateur d’assurance.
-1. S’il n’est pas déjà disponible dans le rail de gauche. select **[!UICONTROL Configurer]** dans le rail de gauche et sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de **[!UICONTROL Événements]** et **[!UICONTROL Carte et simulation]** underneath **[!UICONTROL SERVICE PLACES]**.
+1. Si elle n’est pas déjà disponible dans le rail de gauche, sélectionnez **[!UICONTROL Configurer]** dans le rail de gauche et sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de **[!UICONTROL Événements]** et **[!UICONTROL Carte et simulation]** underneath **[!UICONTROL SERVICE PLACES]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Sélectionner **[!UICONTROL Carte et simulation]** dans le rail de gauche.
 1. Sélectionnez l’un des points ciblés définis dans le service Places et, dans la fenêtre contextuelle, sélectionnez ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulation de l’événement d’entrée]**.
@@ -291,12 +291,21 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    ]
    ```
 
-1. Accédez à Luma > Luma > Utils > MobileSDK dans le navigateur de projet Xcode et recherchez la fonction asynchrone processusRegionEvent(regionEvent: PlacesRegionEvent, forRegion: CLRegion) . Cette fonction est un wrapper autour de [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API.
-1. Accédez à Luma > Luma > Vues > Emplacement > Feuille de géolocalisation dans le navigateur de projets de Xcode.
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Ajoutez le code suivant :
+
+   ```swift
+   // Process geolocation event
+   Places.processRegionEvent(regionEvent, forRegion: region)
+   ```
+
+   Ceci [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) L’API communique les informations de géolocalisation au service Places.
+
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Emplacement]** > **[!UICONTROL GeofenceSheet]** dans le navigateur de projet de Xcode.
 
    1. Pour le bouton Entrée, saisissez le code suivant :
 
    ```swift
+   // Simulate geofence entry event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
    }
@@ -305,12 +314,13 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    1. Pour le bouton Quitter , saisissez le code suivant :
 
    ```swift
+   // Simulate geofence exit event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
    }
    ```
 
-Ce tutoriel ne se limite pas à la rubrique pour expliquer en détail l’implémentation de Location Manager dans iOS.
+Ce tutoriel ne vous concerne pas et explique en détail l’implémentation de Location Manager dans iOS.
 
 
 ## Validation à l’aide de votre application
@@ -321,13 +331,13 @@ Ce tutoriel ne se limite pas à la rubrique pour expliquer en détail l’implé
 
 1. Déplacez la carte pour vous assurer que le cercle bleu au milieu se trouve au-dessus de l’un de vos points ciblés, par exemple Londres.
 
-1. Appuyez sur le bouton bleu <img src="assets/geobutton.png" width="20" /> tant que la catégorie et le nom ne s’affichent pas dans la partie inférieure droite.
+1. Pression <img src="assets/geobutton.png" width="20" /> tant que la catégorie et le nom ne s’affichent pas dans la partie inférieure droite.
 
-1. Appuyez sur le libellé du point ciblé, ce qui ouvre la feuille du point ciblé le plus proche.
+1. Appuyez sur le libellé du point ciblé, ce qui ouvre la variable **[!UICONTROL Point ciblé voisin]** feuille.
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. Appuyez sur les boutons Entrée ou Sortie pour simuler les événements de géolocalisation de l’application.
+1. Appuyez sur la touche **[!UICONTROL Entrée]** ou **[!UICONTROL Quitter]** pour simuler les événements d’entrée et de sortie de géobarrière de l’application.
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -337,9 +347,11 @@ Ce tutoriel ne se limite pas à la rubrique pour expliquer en détail l’implé
 
 ## Étapes suivantes
 
-Vous devriez maintenant disposer de tous les outils pour commencer à ajouter d’autres fonctionnalités à votre fonctionnalité de géolocalisation dans l’application. Lorsque vous avez transféré les événements vers le réseau Edge et, par le biais de votre flux de données, vers Experience Platform, les événements d’expérience doivent apparaître pour le profil utilisé dans l’application. Ces événements d’expérience peuvent être utilisés pour déclencher des parcours dans Journey Optimizer (voir [notification push](journey-optimizer-inapp.md) et [messagerie in-app](journey-optimizer-push.md) avec Journey Optimizer). Par exemple, l’exemple habituel d’envoi d’une notification push à l’utilisateur de votre application lorsqu’il entre dans la clôture virtuelle d’une boutique physique.
+Vous devriez maintenant disposer de tous les outils pour commencer à ajouter d’autres fonctionnalités à votre fonctionnalité de géolocalisation dans l’application. Lorsque vous avez transféré les événements vers le réseau Edge, une fois que vous avez configuré l’application pour [Experience Platform](platform.md), vous devriez voir les événements d’expérience apparaissant pour le profil utilisé dans l’application.
 
-Vous avez vu une mise en oeuvre de la fonctionnalité de votre application, principalement pilotée par le service Places, ainsi que par les éléments de données et les règles que vous avez définis dans votre propriété Tag. Vous pouvez également mettre en oeuvre la même fonctionnalité directement dans votre application à l’aide du [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (voir [Événements](events.md) pour plus d’informations) avec un payload XDM contenant un objet placeContext renseigné.
+Dans la section Journey Optimizer de ce tutoriel, vous verrez que les événements d’expérience peuvent être utilisés pour déclencher des parcours (voir [notification push](journey-optimizer-inapp.md) et [messagerie in-app](journey-optimizer-push.md) avec Journey Optimizer). Par exemple, l’exemple habituel d’envoi à l’utilisateur de votre application d’une notification push avec une promotion de produit lorsque cet utilisateur accède à la clôture d’une boutique physique.
+
+Vous avez vu une mise en oeuvre de la fonctionnalité de votre application, principalement pilotée par le service Places, ainsi que par les éléments de données et les règles que vous avez définis dans votre propriété de balise. Par conséquent, minimisez le code dans votre application. Vous pouvez également mettre en oeuvre la même fonctionnalité directement dans votre application à l’aide du [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (voir [Événements](events.md) pour plus d’informations) avec un payload XDM contenant un `placeContext` .
 
 >[!SUCCESS]
 >

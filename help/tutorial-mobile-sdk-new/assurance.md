@@ -3,9 +3,9 @@ title: Configuration d’Assurance
 description: Découvrez comment mettre en oeuvre l’extension Assurance dans une application mobile.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '765'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Dans cette leçon, vous allez :
 Vérifiez que votre entreprise a accès à Assurance en procédant comme suit :
 
 1. Visite [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Connectez-vous à l’aide de vos informations d’identification Adobe ID pour l’Experience Cloud.
+1. Connectez-vous à l’aide de vos informations d’identification Adobe ID pour Experience Cloud.
 1. Si vous voyez le **[!UICONTROL Sessions]** puis vous avez accès. Si la page d’accès (bêta) s’affiche, sélectionnez **[!UICONTROL Enregistrer]** pour vous inscrire.
 
 ## Implémenter
@@ -56,6 +56,8 @@ En plus du [Installation du SDK](install-sdks.md), que vous avez terminé dans l
    }
    ```
 
+   Ce code lance une session d’assurance lorsque l’application est en arrière-plan et s’ouvre à l’aide d’un lien profond.
+
 Vous trouverez plus d’informations [ici](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Signature
@@ -63,21 +65,21 @@ Vous trouverez plus d’informations [ici](https://developer.adobe.com/client-sd
 Avant d’exécuter l’application pour la première fois dans Xcode, veillez à mettre à jour la signature.
 
 1. Ouvrez le projet  dans Xcode.
-1. Sélectionner **[!UICONTROL Luma]** dans le navigateur.
+1. Sélectionner **[!UICONTROL Luma]** dans le navigateur de projet.
 1. Sélectionnez la variable **[!UICONTROL Luma]** cible.
 1. Sélectionnez la variable **Signature et fonctionnalités** .
-1. Configurer **[!UICONTROL Gestion automatique de la signature]**, **[!UICONTROL Équipe]**, et **[!UICONTROL Identifiant du lot]**.
+1. Configurer **[!UICONTROL Gestion automatique de la signature]**, **[!UICONTROL Équipe]**, et **[!UICONTROL Identifiant du lot]** ou utilisez les détails de mise en service du développement Apple spécifiques.
 
    ![Fonctionnalités de signature Xcode](assets/xcode-signing-capabilities.png)
 
 ## Configuration d’une URL de base
 
 1. Accédez à votre projet dans Xcode.
-1. Sélectionner **[!UICONTROL Luma]** dans le navigateur.
+1. Sélectionner **[!UICONTROL Luma]** dans le navigateur de projet.
 1. Sélectionnez la variable **[!UICONTROL Luma]** cible.
 1. Sélectionnez la variable **Infos** .
 1. Pour ajouter une URL de base, faites défiler l’écran jusqu’à **Types d’URL** et sélectionnez la variable **+** bouton .
-1. Définir **Identifiant** à l’identifiant du lot que vous avez configuré dans [Signature](#signing) (par exemple `com.adobe.luma.tutorial.swiftui`) et **Modèles d’URL** to `lumatutorialswiftui`.
+1. Définir **Identifiant** à l’identifiant du lot que vous avez configuré dans [Signature](#signing) (par exemple `com.adobe.luma.tutorial.swiftui`) et définissez une **Modèles d’URL**, par exemple `lumatutorialswiftui`.
 
    ![url d&#39;assurance](assets/assurance-url-type.png)
 
@@ -106,7 +108,7 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
    Si vous utilisez un simulateur :
 
    1. Sélectionner **[!UICONTROL Copier le lien]**.
-   1. Copiez le lien profond à l’aide de la copie ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) et utilisez le lien profond pour ouvrir l’application avec Safari dans le simulateur.
+   1. Copiez le lien profond à l’aide de ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  et utilisez le lien profond pour ouvrir l’application avec Safari dans le simulateur.
       ![Lien de copie d’assurance](assets/assurance-copy-link.png)
 
 1. Au chargement de l’application, une boîte de dialogue modale vous demande de saisir le code PIN affiché à l’étape 7.
@@ -119,15 +121,15 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
 1. Si la connexion a réussi, vous voyez :
    * Une icône Assurance qui flotte au-dessus de votre application.
 
-   <img src="assets/assurance-modal.png" width="300">
+     <img src="assets/assurance-modal.png" width="300">
 
-   * Mises à jour Experience Cloud effectuées dans l’interface utilisateur web d’Assurance, indiquant :
+   * Mises à jour Experience Cloud effectuées dans l’interface utilisateur d’Assurance, indiquant :
 
       1. Événements d’expérience provenant de l’application.
       1. Détails d’un événement sélectionné.
       1. L’appareil et la chronologie.
 
-     ![événements d’assurance](assets/assurance-events.png)
+         ![événements d’assurance](assets/assurance-events.png)
 
 Si vous rencontrez des défis, veuillez consulter la section [technique](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr){target="_blank"}.
 

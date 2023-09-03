@@ -3,9 +3,9 @@ title: Mappage Analytics
 description: Découvrez comment collecter des données pour Adobe Analytics dans une application mobile.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ La plupart des champs XDM standard sont automatiquement mappés aux variables An
 
 ### Exemple #1 - s.products
 
-Un bon exemple est le suivant : [variable products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) qui ne peuvent pas être renseignées à l’aide de règles de traitement. Avec une implémentation XDM, vous transmettez toutes les données nécessaires dans productListItems et s.products est automatiquement renseigné via le mappage Analytics.
+Un bon exemple est le suivant : [variable products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) qui ne peuvent pas être renseignées à l’aide de règles de traitement. Avec une implémentation XDM, vous transmettez toutes les données nécessaires dans `productListItems` et `s.products` sont automatiquement renseignées via le mappage Analytics.
 
 Cet objet :
 
@@ -56,7 +56,7 @@ Cet objet :
 ]
 ```
 
-Cela se traduirait par ce qui suit :
+a pour résultat :
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Actuellement `productListItems[N].SKU` est ignorée par le mappage automatique.
+
 
 ### Exemple #2 - scAdd
 
@@ -80,7 +81,7 @@ Cet objet :
 }
 ```
 
-Cela se traduirait par ce qui suit :
+a pour résultat :
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ Cet objet :
 }
 ```
 
-Cela se traduirait par ce qui suit :
+a pour résultat :
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Validation avec Assurance
 
-En utilisant la variable [Outil Assurance qualité](assurance.md) vous pouvez confirmer que vous envoyez un événement ExperienceEvent, que les données XDM sont correctes et que le mappage Analytics se produit comme prévu. Par exemple :
+En utilisant la variable [Assurance](assurance.md) vous pouvez confirmer que vous envoyez un événement d’expérience, que les données XDM sont correctes et que le mappage Analytics se produit comme prévu. Par exemple :
 
 1. Envoyez un événement productListAdds .
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 Par exemple :
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 
@@ -192,7 +193,7 @@ Vous trouverez des informations supplémentaires sur les règles de traitement e
 
 >[!TIP]
 >
->Contrairement aux mises en oeuvre précédentes d’applications mobiles, il n’existe aucune distinction entre les pages vues/écrans et les autres événements. Vous pouvez à la place incrémenter la variable **[!UICONTROL Page vue]** en définissant la mesure **[!UICONTROL Nom de la page]** dans une règle de traitement. Puisque vous collectez le `screenName` dans le tutoriel, il est vivement recommandé de mapper le nom de l’écran à **[!UICONTROL Nom de la page]** dans une règle de traitement.
+>Contrairement aux mises en oeuvre précédentes d’applications mobiles, il n’existe aucune distinction entre les pages vues/écrans et d’autres événements. Vous pouvez à la place incrémenter la variable **[!UICONTROL Page vue]** en définissant la mesure **[!UICONTROL Nom de la page]** dans une règle de traitement. Puisque vous collectez le `screenName` dans le tutoriel, il est vivement recommandé de mapper le nom de l’écran à **[!UICONTROL Nom de la page]** dans une règle de traitement.
 
 >[!SUCCESS]
 >

@@ -2,9 +2,9 @@
 title: Données du cycle de vie
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ L’exercice précédent distribue les événements de premier plan et d’arri�
    1. Sélectionner **[!UICONTROL Contexte]** comme la propriété **[!UICONTROL Type d’événement]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
       ![Configuration des événements de règle](assets/rule-event-configuration-background.png)
-      ![Règle Ajouter une action](assets/rule-action-button.png)
+1. De retour dans le **[!UICONTROL Créer une règle]** écran, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** underneath **[!UICONTROL ACTIONS]**.
+   ![Règle Ajouter une action](assets/rule-action-button.png)
 1. Dans le **[!UICONTROL Configuration d’action]** étape :
    1. Sélectionner **[!UICONTROL Adobe Experience Edge Network]** comme la propriété **[!UICONTROL Extension]**.
    1. Sélectionner **[!UICONTROL Transfert d’un événement vers Edge Network]** comme la propriété **[!UICONTROL Type d’action]**.
