@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 3%
+source-wordcount: '1569'
+ht-degree: 4%
 
 ---
 
 # Messagerie in-app Journey Optimizer
 
-Découvrez comment créer des messages in-app pour les applications mobiles avec le SDK Mobile Platform et Journey Optimizer.
+Découvrez comment créer des messages in-app pour les applications mobiles avec le SDK Mobile Experience Platform et Journey Optimizer.
 
 Journey Optimizer vous permet de créer des campagnes pour envoyer des messages in-app aux audiences ciblées. Avant d’envoyer des messages in-app avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données de la messagerie in-app dans Journey Optimizer, reportez-vous à la section [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -145,17 +145,8 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    ]
    ```
 
-1. Ajoutez la variable `MobileCore.setPushIdentifier` à la fonction `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` de la fonction
 
-   ```swift
-   // Send push token to Experience Platform
-   MobileCore.setPushIdentifier(deviceToken)
-   ```
-
-   Cette fonction récupère le jeton de l’appareil unique sur lequel l’application est installée. Définit ensuite le jeton pour la diffusion de la notification push à l’aide de la configuration que vous avez configurée et qui repose sur le service Apple Push Notification (APN).
-
-
-## Validation de la configuration Assurance
+## Validation de la configuration avec Assurance
 
 1. Consultez la section [instructions de configuration](assurance.md) .
 1. Installez l’application sur votre appareil physique ou sur le simulateur.
@@ -166,8 +157,8 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![save](assets/assurance-in-app-config.png)
 1. Sélectionner **[!UICONTROL Messagerie in-app]** dans le volet de navigation de gauche.
-1. Sélectionnez la variable **[!UICONTROL Validation]** .
-1. Confirmez que vous n’obtenez aucune erreur.
+1. Sélectionnez la variable **[!UICONTROL Validation]** . Confirmez que vous n’obtenez aucune erreur.
+
    ![Validation In-App](assets/assurance-in-app-validate.png)
 
 
@@ -193,7 +184,7 @@ Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de 
 1. Faites défiler jusqu’à **[!UICONTROL Action]**, puis sélectionnez **[!UICONTROL Modifier le contenu]**.
 1. Dans le **[!UICONTROL Message In-App]** écran :
    1. Sélectionner **[!UICONTROL Modal]** comme la propriété **[!UICONTROL Disposition du message]**.
-   2. Entrée `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` pour **[!UICONTROL URL du média]**.
+   2. Entrée `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` pour le **[!UICONTROL URL du média]**.
    3. Saisissez un **[!UICONTROL En-tête]**, par exemple `Welcome to this Luma In-App Message` et saisissez un **[!UICONTROL Corps]**, par exemple `Triggered by pushing that button in the app...`.
    4. Entrée **[!UICONTROL Ignorer]** comme la propriété **[!UICONTROL Texte #1 bouton (principal)]**.
    5. Notez comment l’aperçu est mis à jour.
@@ -216,21 +207,22 @@ Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de 
    ![Liste des campagnes](assets/ajo-campaign-list.png)
 
 
-## Déclenchement du message in-app
+## Déclencher le message in-app
 
 Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-app. Reste à savoir comment déclencher ce message in-app dans votre application.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode. Recherchez le `func sendTrackAction(action: String, data: [String: Any]?)` et ajoutez le code suivant, qui appelle la fonction `MobileCore.track` fonction, en fonction des paramètres `action` et `data`.
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode. Recherchez le `func sendTrackAction(action: String, data: [String: Any]?)` et ajoutez le code suivant, qui appelle la fonction [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) fonction, en fonction des paramètres `action` et `data`.
 
 
    ```swift
-   // send trackAction event
+   // Send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
 1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Général]** > **[!UICONTROL ConfigView]** dans Xcode Project Navigator (Navigateur de projets Xcode). Recherchez le code du bouton Message in-app et ajoutez le code suivant :
 
    ```swift
+   // Setting parameters and calling function to send in-app message
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }

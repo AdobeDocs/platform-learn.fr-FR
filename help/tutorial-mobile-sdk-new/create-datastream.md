@@ -3,9 +3,9 @@ title: Configurer un train de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '551'
 ht-degree: 9%
 
 ---
@@ -50,6 +50,8 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
 
 Ensuite, vous connectez vos services Experience Cloud à votre flux de données. Lorsque le SDK Mobile Platform envoie des données à Edge Network, le flux de données envoie les données à ces services :
 
+### Adobe Analytics
+
 1. Sélectionnez **[!UICONTROL Ajouter un service]**.
 
 1. Ajouter **[!UICONTROL Adobe Analytics]** de la [!UICONTROL Service] list,
@@ -61,6 +63,9 @@ Ensuite, vous connectez vos services Experience Cloud à votre flux de données.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Ajout d’Adobe Analytics en tant que service de flux de données](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 Vous pouvez également activer le service Adobe Experience Platform.
 

@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ Dans cette leçon, vous allez
 
 >[!TIP]
 >
->Si vous avez déjà configuré votre application dans le cadre de la [Offres Journey Optimizer](journey-optimizer-offers.md) tutoriel,
+>Si vous avez déjà configuré votre application dans le cadre de la [Offres Journey Optimizer](journey-optimizer-offers.md) tutoriel, vous pouvez ignorer [Installer Adobe Journey Optimizer - Extension des balises de prise de décision](#install-adobe-journey-optimizer---decisioning-tags-extension) et [Mettre à jour votre schéma](#update-your-schema).
 
 ### Mise à jour de la configuration Edge
 
@@ -104,13 +104,13 @@ Pour valider votre configuration dans Assurance :
 
 1. Dans l’interface utilisateur de Target, sélectionnez **[!UICONTROL Activités]** dans la barre supérieure.
 1. Sélectionner **[!UICONTROL Créer une activité]** et **[!UICONTROL Test A/B]** dans le menu contextuel.
-1. Dans le **[!UICONTROL Créer une activité de test A/B]** modal, sélectionnez **[!UICONTROL Mobile]** comme la propriété **[!UICONTROL Type]**, sélectionnez un espace de travail dans la **[!UICONTROL Choisir Workspace]** et sélectionnez votre propriété dans la liste **[!UICONTROL Choisir la propriété]** liste.
+1. Dans le **[!UICONTROL Créer une activité de test A/B]** boîte de dialogue, sélectionnez **[!UICONTROL Mobile]** comme la propriété **[!UICONTROL Type]**, sélectionnez un espace de travail dans la **[!UICONTROL Choisir Workspace]** et sélectionnez votre propriété dans la liste **[!UICONTROL Choisir la propriété]** liste.
 1. Sélectionnez **[!UICONTROL Créer]**.
    ![Activité Créer Target](assets/target-create-activity1.png)
 
 1. Dans le **[!UICONTROL Activité sans titre]** , au niveau de l’écran **[!UICONTROL Expériences]** étape :
 
-   1. Entrée `luma-mobileapp-abtest` in **[!UICONTROL Sélectionner un emplacement]** sous L**[!UICONTROL OCATION 1]**.
+   1. Entrée `luma-mobileapp-abtest` in **[!UICONTROL Sélectionner un emplacement]** underneath **[!UICONTROL EMPLACEMENT 1]**.
    1. Sélectionner ![Chrevron vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) en regard de **[!UICONTROL Contenu par défaut]** et sélectionnez **[!UICONTROL Création d’une offre JSON]** dans le menu contextuel.
    1. Copiez le fichier JSON suivant dans **[!UICONTROL Saisie d’un objet JSON valide]**.
 
@@ -194,9 +194,23 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    ]
    ```
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode. Recherchez le ` func updatePropositionAT(ecid: String, location: String) async` de la fonction Inspect du code qui configure
-   * dictionnaire XDM `xdmData`, contenant l’ECID pour identifier le profil pour lequel vous devez présenter le test A/B, et
-   * la valeur `decisionScope`, un tableau d’emplacements sur lequel présenter le test A/B.
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode. Recherchez le ` func updatePropositionAT(ecid: String, location: String) async` de la fonction Ajoutez le code suivant :
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   Cette fonction
+
+   * Configuration d’un dictionnaire XDM `xdmData`, contenant l’ECID pour identifier le profil pour lequel vous devez présenter le test A/B, et
+   * définit une `decisionScope`, un tableau d’emplacements sur lequel présenter le test A/B.
 
    La fonction appelle ensuite deux API : [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  et [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Ces fonctions effacent toutes les propositions mises en cache et mettent à jour les propositions de ce profil.
 
