@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 3%
 
 ---
@@ -218,7 +218,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    * récupère les propositions du profil actuel en fonction de la portée de la décision (c’est-à-dire l’emplacement que vous avez défini dans le test A/B) et
    * libère le résultat du contenu qui peut être affiché correctement dans l’application.
 
-1. Toujours dans **[!UICONTROL TargetOffersView]**, recherchez le f`unc updatePropositions(location: String) async` et ajoutez le code suivant :
+1. Toujours dans **[!UICONTROL TargetOffersView]**, recherchez la variable `func updatePropositions(location: String) async` et ajoutez le code suivant :
 
    ```swift
        Task {

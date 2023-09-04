@@ -4,9 +4,9 @@ description: Découvrez comment envoyer des données à Adobe Experience Platfor
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 7%
 
 ---
@@ -133,6 +133,9 @@ Dans l’écran des détails du profil :
    Cette visualisation vous présente toutes les identités liées entre elles dans un profil et leur origine. Voici un exemple de graphique d’identités construit à partir des données collectées à l’issue de ce tutoriel sur le SDK Mobile (source de données 2) et du [Tutoriel sur le SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr) (Source de données 1) :
 
    ![saisie d’une valeur d’identité](assets/platform-profile-identitygraph.png)
+
+
+## Étapes suivantes
 
 Les spécialistes du marketing et de l’analyse peuvent en faire bien plus avec les données capturées dans Experience Platform, notamment en les analysant dans Customer Journey Analytics et en créant des segments dans Real-time Customer Data Platform. Vous partez pour un bon départ !
 
