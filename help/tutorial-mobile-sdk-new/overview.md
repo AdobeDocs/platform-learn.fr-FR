@@ -3,7 +3,7 @@ title: Présentation du tutoriel Mise en oeuvre de Adobe Experience Cloud dans l
 description: Découvrez comment mettre en oeuvre les applications mobiles Adobe Experience Cloud. Ce tutoriel vous guide tout au long d’une mise en oeuvre d’applications Experience Cloud dans un exemple d’application Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 10%
@@ -84,8 +84,8 @@ Tous les clients Experience Cloud doivent avoir accès aux fonctionnalités requ
 Deux versions de l’exemple d’application sont disponibles en téléchargement. Les deux versions peuvent être téléchargées/clonées depuis [Github](https://git.corp.adobe.com/rmaur/Luma). Vous trouverez deux dossiers :
 
 
-1. [Début](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): un projet sans code ou avec un code d’emplacement pour la plupart du code du SDK Mobile Experience Platform que vous devez utiliser pour terminer les exercices pratiques de ce tutoriel.
-1. [Terminer](https://git.corp.adobe.com/Luma{target="_blank"}): version avec mise en oeuvre complète à titre de référence.
+1. [Début](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: un projet sans code ou avec un code d’emplacement pour la plupart du code du SDK Mobile Experience Platform que vous devez utiliser pour terminer les exercices pratiques de ce tutoriel.
+1. [Terminer](https://git.corp.adobe.com/Luma){target="_blank"}: version avec mise en oeuvre complète à titre de référence.
 
 C’est parti !
 
