@@ -3,9 +3,9 @@ title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 7%
 
 ---
@@ -47,9 +47,9 @@ Au cours de cet exercice, vous allez créer un schéma XDM à l’aide des group
 
    >[!NOTE]
    >
-   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
+   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
 
-1. Accédez à **[!UICONTROL Schémas]** dans le volet de navigation de gauche
+1. Accédez à **[!UICONTROL Schémas]** dans la navigation de gauche
 1. Sélectionnez le bouton **[!UICONTROL Créer un schéma]** en haut à droite
 1. Dans le menu déroulant, sélectionnez **[!UICONTROL XDM ExperienceEvent]**
 
@@ -83,7 +83,7 @@ Une fois les groupes de champs sélectionnés, vous êtes prêt à nommer votre 
 
 ![Données d’événement web Luma](assets/schema-luma-web-event-data.png)
 
-Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. Le [!UICONTROL nom d&#39;affichage] de chaque champ s’affiche pour les spécialistes du marketing dans l’interface du créateur de segments des applications basées sur Platform. Vous pouvez modifier le nom d’affichage des champs standard en fonction de vos besoins. Vous pouvez également supprimer les champs que vous ne souhaitez pas. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous pouvez voir à quels groupes appartiennent. **[!UICONTROL Événement d’expérience client]**.
+Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. La variable [!UICONTROL nom d&#39;affichage] de chaque champ s’affiche pour les spécialistes du marketing dans l’interface du créateur de segments des applications basées sur Platform. Vous pouvez modifier le nom d’affichage des champs standard en fonction de vos besoins. Vous pouvez également supprimer les champs que vous ne souhaitez pas. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous pouvez voir à quels groupes appartiennent. **[!UICONTROL Événement d’expérience client]**.
 
 ![Groupes de champs de schéma](assets/schema-consumer-experience-event.jpg)
 
@@ -103,7 +103,7 @@ Il s’agit d’un objet obligatoire pour toute collecte de données Web, car il
 >
 > Il est possible d’activer **[!UICONTROL Profil]** pour un schéma avant d’enregistrer votre schéma. **Ne pas** l’activer à ce stade. Une fois qu’un schéma est activé pour Profile, il ne peut pas être désactivé ni supprimé. De plus, les champs ne peuvent plus être supprimés du schéma après ce point. Il est important de tenir compte de ces implications ultérieurement lorsque vous travaillez avec vos propres données dans votre environnement de production.
 >
->Ce paramètre est décrit plus en détail lors de la [Configuration d’Experience Platform](setup-experience-platform.md) leçon.
+>Ce paramètre est abordé plus en détail au cours de la [Configuration d’un Experience Platform](setup-experience-platform.md) leçon.
 >![Schéma de profil](assets/schema-profile.png)
 
 Vous pouvez maintenant référencer ce schéma lorsque vous ajoutez l’extension SDK Web à votre propriété de balise.
