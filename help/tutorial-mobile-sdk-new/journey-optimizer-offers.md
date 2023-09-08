@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 3%
 
 ---
@@ -320,35 +320,12 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
      Cependant, vous pouvez utiliser n’importe quel type d’implémentation pour vous assurer que les API d’optimisation obtiennent les paramètres appropriés (`activityId`, `placementId` et `itemCount`), pour construire une [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) pour votre mise en oeuvre.
    * appelle deux API : [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  et [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Ces fonctions effacent toutes les propositions mises en cache et mettent à jour les propositions de ce profil.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Personnalisation]** > **[!UICONTROL EdgeOffersView]** dans le navigateur de projet Xcode. Recherchez le `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` et examinez le code de cette fonction. La partie la plus importante de cette fonction est la fonction  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) appel API, qui
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Personnalisation]** > **[!UICONTROL EdgeOffersView]** dans le navigateur de projet Xcode. Recherchez le `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` et examinez le code de cette fonction. La partie la plus importante de cette fonction est la fonction [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) appel API, qui
 
-   * récupère les propositions du profil actuel en fonction de la portée de la décision (que vous avez définie dans Journey Optimizer - Gestion des décisions) et
-   * libère le résultat du contenu qui peut être affiché correctement dans l’application.
-
-1. Toujours dans **[!UICONTROL EdgeOffersView]**, recherchez la variable `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` et ajoutez le code suivant :
-
-   ```swift
-   // Update and then get propositions
-   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
-   Task {
-      await self.updatePropositionOD(
-          ecid: currentEcid,
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-     )
-   }
-   try? await Task.sleep(seconds: 2.0)
-   Task {
-      await self.getPropositionOD(
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-      )
-   }
-   ```
-
-   Ce code permet de mettre à jour les propositions, puis de récupérer les résultats à l&#39;aide des fonctions décrites dans les étapes 5 et 6.
+   * récupère les propositions du profil actuel en fonction de la portée de la décision (que vous avez définie dans Journey Optimizer - Gestion des décisions),
+   * récupère l&#39;offre à partir de la proposition,
+   * libère le contenu de l’offre afin qu’elle puisse s’afficher correctement dans l’application ; et
+   * déclenche la variable `displayed()` action sur l’offre qui renvoie un événement vers le réseau Edge informant l’offre s’affiche.
 
 
 ## Validation à l’aide de l’application
