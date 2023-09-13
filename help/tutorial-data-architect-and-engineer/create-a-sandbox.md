@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
+source-git-commit: fdb6a49caa29d98d73524fd0887d25641ef67780
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 5%
@@ -62,7 +62,7 @@ La création des environnements de test prend environ 30 secondes, au cours de l
 
 Patientez jusqu’à ce que votre environnement de test soit &quot;[!UICONTROL Actif]&quot; avant de poursuivre l’exercice suivant.
 
-## Ajout du nouvel environnement de test à votre rôle
+## Ajouter le nouvel environnement de test au rôle
 
 Une fois que l’environnement de test est actif, vous devez l’inclure dans votre rôle pour pouvoir l’utiliser. Pour l’ajouter à votre rôle (nécessite des privilèges d’administrateur système ou d’administrateur de produit) :
 
