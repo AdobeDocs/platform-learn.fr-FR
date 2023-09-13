@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 5%
@@ -44,7 +44,7 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 Créons un environnement de test :
 
 1. Connectez-vous au [Adobe Experience Platform](https://experience.adobe.com/platform) interface
-1. Accédez à **[!UICONTROL Environnements de test]** dans le volet de navigation de gauche
+1. Accédez à **[!UICONTROL Environnements de test]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Création d’un environnement de test]** en haut à droite
    ![Sélectionner Créer un environnement de test](assets/sandbox-createSandbox.png)
 
@@ -57,25 +57,25 @@ Créons un environnement de test :
    >
    >Bien que vous puissiez utiliser n’importe quelle valeur arbitraire pour votre nom et votre titre d’environnement de test, il est recommandé de respecter les valeurs suggérées, car nous nous référerons à ces étiquettes tout au long du tutoriel. Si plusieurs personnes de votre entreprise suivent ce tutoriel, pensez à ajouter votre nom à la fin du titre et du nom de l’environnement de test, par exemple luma-tutorial-ignatiusjreilly.
 
-La création des environnements de test prend environ 30 secondes, au cours de laquelle un &quot;[!UICONTROL Création]&quot; s’affiche. Une fois l’environnement de test entièrement créé, il s’affiche sous la forme &quot;[!UICONTROL Principal]&quot;:
-![État principal](assets/sandbox-active.png)
+La création des environnements de test prend environ 30 secondes, au cours de laquelle un &quot;[!UICONTROL Création]&quot; s’affiche. Une fois l’environnement de test entièrement créé, il s’affiche sous la forme &quot;[!UICONTROL Actif]&quot;:
+![État actif](assets/sandbox-active.png)
 
-Patientez jusqu’à ce que votre environnement de test soit &quot;[!UICONTROL Principal]&quot; avant de poursuivre l’exercice suivant.
+Patientez jusqu’à ce que votre environnement de test soit &quot;[!UICONTROL Actif]&quot; avant de poursuivre l’exercice suivant.
 
-## Ajouter le nouvel environnement de test au profil de produit
+## Ajout du nouvel environnement de test à votre rôle
 
-Une fois l’environnement de test principal, vous devez l’inclure dans votre rôle pour pouvoir l’utiliser. Pour l’ajouter à votre rôle (nécessite des privilèges d’administrateur système ou d’administrateur de produit) :
+Une fois que l’environnement de test est actif, vous devez l’inclure dans votre rôle pour pouvoir l’utiliser. Pour l’ajouter à votre rôle (nécessite des privilèges d’administrateur système ou d’administrateur de produit) :
 
 1. Accédez au [!UICONTROL Autorisations] écran
 1. Ouvrez le `Luma Tutorial Platform` rôle
-1. _Supprimer_ la valeur `Prod` environnement de test du rôle
+1. Facultatif _remove_ la valeur `Prod` environnement de test du rôle
 1. Ajoutez la variable `Luma Tutorial` sandbox
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 1. Sur le [!UICONTROL Environnements de test] ligne, sélectionnez **[!UICONTROL Modifier]**
 
    ![Ajout du tutoriel Luma](assets/sandbox-addLumaTutorial.png)
 
-1. Rechargez la page (ou rechargez-la en maintenant la touche Maj enfoncée). Vous devriez à présent : `Luma Tutorial` sandbox ou devrait apparaître dans la liste déroulante sandbox
+1. Rechargez la page (ou rechargez-la en maintenant la touche Maj enfoncée). Vous devriez à présent : `Luma Tutorial` environnement de test ou il doit apparaître dans la liste déroulante des environnements de test
 1. Basculez vers le `Luma Tutorial` sandbox si vous n’y êtes pas déjà
 
    ![Confirmation du sandbox](assets/sandbox-confirmDropdown.png)
