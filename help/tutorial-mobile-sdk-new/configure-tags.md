@@ -3,10 +3,10 @@ title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 9%
+source-wordcount: '1095'
+ht-degree: 8%
 
 ---
 
@@ -45,7 +45,7 @@ Dans cette leçon, vous allez :
 
       >[!NOTE]
       >
-      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, comme celle que vous effectuez dans ce tutoriel, proviennent de la [!UICONTROL Extension de consentement] et non le [!UICONTROL Privacy] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, telles que celle que vous effectuez dans cette leçon, proviennent du [!UICONTROL Extension de consentement] et non le [!UICONTROL Privacy] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Ouvrez la nouvelle propriété.
@@ -112,7 +112,7 @@ Dans cette leçon, vous allez :
 
    1. Dans **[!UICONTROL Datastreams]** sélectionnez l’option **[!UICONTROL Datastream]** que vous avez créé dans le [étape précédente](create-datastream.md) pour chacun des environnements, par exemple **[!UICONTROL Application mobile Luma]**.
 
-   1. Spécifiez la variable **[!UICONTROL Domaine du réseau Edge]** dans **[!UICONTROL Configuration des domaines]**. Le domaine réseau Edge est le nom de votre environnement de test, suivi de `data.adobedc.net`, par exemple `techmarketingdemos.data.adobedc.net`.
+   1. Spécifiez la variable **[!UICONTROL Domaine du réseau Edge]** dans **[!UICONTROL Configuration des domaines]**. Le domaine réseau Edge est le nom de votre organisation, suivi de `data.adobedc.net`, par exemple `techmarketingdemos.data.adobedc.net`.
 
    1. Dans la **[!UICONTROL Enregistrer dans la bibliothèque]** menu, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
 
@@ -131,7 +131,7 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
 
 1. Dans le **[!UICONTROL Instructions d’installation mobile]** , sélectionnez **[!UICONTROL iOS]** .
 
-1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de CocoaPods. Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [documentation](https://cocoapods.org/).
+1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de CocoaPods. Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [Documentation Cocoapods](https://cocoapods.org/). Si vous utilisez Android comme plateforme de développement, Gradle est l’outil permettant de gérer la version, les téléchargements et les dépendances du SDK. Pour en savoir plus, consultez la section [Documentation sur le graphique](https://gradle.org/)
 
    Les instructions d’installation vous fournissent un bon point de départ pour la mise en oeuvre. Vous trouverez des informations supplémentaires [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Si vous connaissez la version web des balises, anciennement Launch, il est impor
 
 * Sur le Web, une propriété de balise est rendue dans JavaScript, qui est ensuite (généralement) hébergée dans le cloud. Ce fichier JavaScript est référencé directement dans le site web.
 
-* Dans une propriété de balise mobile, les règles et les configurations sont rendues dans des fichiers JSON hébergés dans le cloud. Les fichiers JSON sont téléchargés et lus par l’extension Mobile Core dans l’application mobile. Les extensions sont des SDK distincts qui fonctionnent ensemble. Si vous ajoutez une extension à votre propriété de balise, vous devez également mettre à jour l’application. Si vous modifiez un paramètre d’extension ou créez une règle, ces modifications sont répercutées dans l’application une fois que vous avez publié la bibliothèque de balises mise à jour.
+* Dans une propriété de balise mobile, les règles et les configurations sont rendues dans des fichiers JSON hébergés dans le cloud. Les fichiers JSON sont téléchargés et lus par l’extension Mobile Core dans l’application mobile. Les extensions sont des SDK distincts qui fonctionnent ensemble. Si vous ajoutez une extension à votre propriété de balise, vous devez également mettre à jour l’application. Si vous modifiez un paramètre d’extension ou créez une règle, ces modifications sont répercutées dans l’application une fois que vous avez publié la bibliothèque de balises mise à jour. Cette flexibilité vous permet de modifier les paramètres (comme l’identifiant de la suite de rapports Adobe Analytics) ou même de modifier le comportement de votre application (à l’aide d’éléments de données et de règles, comme vous le verrez dans les leçons ultérieures) sans avoir à modifier le code de votre application et avoir à soumettre de nouveau l’application à la boutique d’applications.
 
 >[!SUCCESS]
 >

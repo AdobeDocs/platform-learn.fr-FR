@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez comment collecter des données d’événement dans une application mobile.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Pour les groupes de champs standard, le processus ressemble à :
    * `commerce.productViews.id`: une valeur string représentant le SKU du produit
    * `commerce.productViews.value`: valeur numérique ou booléenne de l’événement. S’il s’agit d’une valeur booléenne (ou &quot;Compteur&quot; dans Adobe Analytics), la valeur est toujours définie sur 1. S’il s’agit d’un événement numérique ou monétaire, la valeur peut être supérieure à 1.
 
-* Dans votre schéma, identifiez toutes les données supplémentaires associées à l’événement d’affichage de produit commercial. Dans cet exemple, incluez **[!UICONTROL productListItem]** qui est un ensemble standard de champs utilisé avec tous les événements liés au commerce :
+* Dans votre schéma, identifiez toutes les données supplémentaires associées à l’événement d’affichage de produit commercial. Dans cet exemple, incluez **[!UICONTROL productListItems]** qui est un ensemble standard de champs utilisé avec tout événement commercial :
 
   ![schéma d’éléments de liste de produits](assets/datacollection-prodListItems-schema.png)
    * Notez que **[!UICONTROL productListItems]** est un tableau qui permet de fournir plusieurs produits.
@@ -189,6 +189,11 @@ Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commer
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Si vous développez pour Android, utilisez Map (`java.util.Map`) comme interface de base pour construire votre charge utile XDM.
+
 
 ### Groupes de champs personnalisés
 
@@ -339,15 +344,7 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 1. Exécutez l’application, connectez-vous et interagissez avec un produit.
 
    1. Déplacez l’icône Assurance vers la gauche.
-   1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets.
-   1. Sélectionnez le <img src="assets/login.png" width="15" /> pour ouvrir la feuille de connexion.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Sélectionnez le <img src="assets/insert.png" width="15" /> pour insérer un email aléatoire et un ID de client.
-   1. Sélectionner **[!UICONTROL Connexion]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets et vérifiez que vous voyez une **[!UICONTROL ECID]**, **[!UICONTROL Email]** et **[!UICONTROL Identifiant CRM]** dans l’écran Accueil .
    1. Sélectionner **[!UICONTROL Produits]** dans la barre d’onglets.
    1. Sélectionnez un produit.
    1. Sélectionner <img src="assets/saveforlater.png" width="15" />.

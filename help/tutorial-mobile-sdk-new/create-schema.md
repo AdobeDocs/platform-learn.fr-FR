@@ -3,10 +3,10 @@ title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 18%
+source-wordcount: '1473'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +18,7 @@ La normalisation et l’interopérabilité sont les concepts clés d’Adobe Ex
 
 ## Que sont les schémas XDM ?
 
-XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences digitales. Il fournit des structures et des définitions communes qui permettent à toute application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous pouvez obtenir des informations précieuses à partir des actions des clients, définir des audiences de clients par le biais de segments et utiliser les attributs du client à des fins de personnalisation.
+XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences digitales. Il fournit des structures et des définitions communes qui permettent à toute application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous obtenez des informations précieuses à partir des actions des clients, définissez les audiences des clients par le biais de segments et utilisez les attributs du client à des fins de personnalisation.
 
 Experience Platform utilise des schémas pour décrire la structure des données de manière cohérente et réutilisable. En définissant les données de manière cohérente sur l’ensemble des systèmes, il est plus simple de leur donner du sens et donc d’en tirer profit.
 
@@ -92,7 +92,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
 <!--Later in the tutorial, you can [update the schema](lifecycle-data.md) to include the **[!UICONTROL AEP Mobile Lifecycle Details]** field group.-->
 
-## Création d’un schéma
+## Créer un schéma
 
 1. Sélectionner **[!UICONTROL Création d’un schéma]**.
 
@@ -118,13 +118,18 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
 1. Attribuez un nom à votre schéma en sélectionnant **[!UICONTROL Schéma sans titre]** de la **[!UICONTROL Composition]** (sous **[!UICONTROL Schéma]**) et en fournissant un **[!UICONTROL Nom d’affichage]** &amp; **[!UICONTROL Description]**, par exemple `Luma Mobile App Event Schema` et `Schema for Luma mobile app experience events.`
 
+   >[!NOTE]
+   >
+   >Si vous passez par ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation. Par exemple, utilisez `Luma Mobile App Event Schema` plutôt que `Luma Mobile App Event Schema - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
+
+
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Sélectionner l’application](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
+>Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Vous pouvez également supprimer des champs si cela permet de conserver le schéma concis et compréhensible. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
 
 La variable [!UICONTROL Événement d’expérience client] un groupe de champs possède un type de données appelé [!UICONTROL Informations web], qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
 

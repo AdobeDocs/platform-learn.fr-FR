@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1689'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,11 @@ ht-degree: 4%
 
 Découvrez comment créer des messages in-app pour les applications mobiles avec le SDK Mobile Experience Platform et Journey Optimizer.
 
-Journey Optimizer vous permet de créer des campagnes pour envoyer des messages in-app aux audiences ciblées. Avant d’envoyer des messages in-app avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données de la messagerie in-app dans Journey Optimizer, reportez-vous à la section [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizer vous permet de créer des campagnes pour envoyer des messages in-app aux audiences ciblées. Les campagnes dans Journey Optimizer sont utilisées pour diffuser du contenu ponctuel vers une audience spécifique à l’aide de divers canaux. Avec les campagnes, les actions sont exécutées simultanément, immédiatement ou selon un planning spécifié. Lors de l’utilisation de parcours (voir [Notifications push Journey Optimizer](journey-optimizer-push.md) leçon), les actions sont exécutées en séquence.
+
+![Architecture](assets/architecture-ajo.png)
+
+Avant d’envoyer des messages in-app avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données de la messagerie in-app dans Journey Optimizer, reportez-vous à la section [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Journey Optimizer vous permet de créer des campagnes pour envoyer des messages 
 ## Conditions préalables
 
 * Création et exécution de l’application avec les SDK installés et configurés.
+* Configurez l’application pour Adobe Experience Platform.
 * Accès à Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Journey Optimizer suivantes.
    * Gestion des campagnes.
 * Compte de développeur Apple payant disposant d’un accès suffisant pour créer des certificats, identifiants et clés.
@@ -43,7 +48,7 @@ Dans cette leçon, vous allez
 * Enregistrez l’ID d’application avec le service Apple Push Notification (APN).
 * Créez une surface d’application dans AJO.
 * Installez et configurez l’extension de balise Journey Optimizer.
-* Mettez à jour votre application pour inclure l’extension de balise Journey Optimizer.
+* Mettez à jour votre application pour enregistrer l’extension de balise Journey Optimizer.
 * Validez la configuration dans Assurance.
 * Définissez votre propre campagne et votre propre expérience de message in-app dans Journey Optimizer.
 * Envoyez votre propre message in-app depuis l’application.
@@ -96,7 +101,7 @@ Une documentation supplémentaire peut être [se trouve ici](https://help.apple.
 
 Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre à jour votre propriété de balise.
 
-1. Accédez à **[!UICONTROL Balises]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**,
+1. Accédez à **[!UICONTROL Balises]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**.
 1. Ouvrez votre propriété, par exemple **[!UICONTROL Tutoriel sur l’application mobile Luma]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Adobe Journey Optimizer]** extension .
@@ -167,11 +172,12 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 Pour créer votre propre message in-app, vous devez définir dans Journey Optimizer une campagne qui déclenche un message in-app en fonction des événements qui se produisent. Ces événements peuvent être :
 
 * données envoyées à Adobe Experience Platform,
-* les événements de suivi principaux, tels que l’action, l’état ou la collecte des données de PII, via les API génériques Mobile Core,
+* les événements de suivi principaux, tels que l’action, l’état ou la collecte de données de PII, via les API génériques Mobile Core,
 * les événements de cycle de vie des applications, tels que le lancement, l’installation, la mise à niveau, la fermeture ou le blocage,
 * événements de géolocalisation, comme l’entrée ou la sortie d’un point ciblé.
 
-Dans ce tutoriel, vous allez utiliser les API génériques et indépendantes de l’extension Mobile Core pour faciliter le suivi des événements des écrans utilisateur, des actions et des données de PII. Les événements générés par ces API sont publiés sur le centre d’événements du SDK et peuvent être utilisés par des extensions. Par exemple, lorsque l’extension Analytics est installée, toutes les actions de l’utilisateur et les données d’événement des écrans d’application sont envoyées aux points de terminaison de création de rapports Analytics appropriés.
+Dans ce tutoriel, vous allez utiliser les API génériques Mobile Core et indépendantes de l’extension (voir [API génériques Core pour mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) pour faciliter le suivi des événements des écrans utilisateur, des actions et des données de PII. Les événements générés par ces API sont publiés sur le centre d’événements du SDK et peuvent être utilisés par des extensions. Le hub d’événements SDK fournit la structure de données de base liée à toutes les extensions SDK AEP Mobile, en conservant une liste d’extensions enregistrées et de modules internes, une liste d’écouteurs d’événements enregistrés et une base de données d’état partagée.
+Le hub d’événements SDK publie et reçoit des données d’événement des extensions enregistrées afin de simplifier les intégrations avec les solutions d’Adobe et tierces. Par exemple, lorsque l’extension Optimize est installée, toutes les demandes et interactions avec le moteur d’offres Journey Optimizer - Gestion des décisions sont gérées par le hub d’événements.
 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez **[!UICONTROL Campagnes]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Créer une campagne]**.
@@ -252,7 +258,7 @@ Vous pouvez valider vos messages in-app dans l’interface utilisateur d’assur
 
 ## Étapes suivantes
 
-Vous devriez maintenant disposer de tous les outils pour commencer à ajouter des messages in-app, le cas échéant et applicable, à l’application Luma. Par exemple, la promotion de produits en fonction d’interactions spécifiques suivies dans l’application.
+Vous devez maintenant disposer de tous les outils pour commencer à ajouter des messages in-app, le cas échéant et selon le cas.  Par exemple, la promotion de produits en fonction d’interactions spécifiques dont vous effectuez le suivi dans votre application.
 
 >[!SUCCESS]
 >

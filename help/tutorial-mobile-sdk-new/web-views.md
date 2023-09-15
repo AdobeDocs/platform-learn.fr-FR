@@ -3,9 +3,9 @@ title: Gestion des WebViews
 description: Découvrez comment gérer la collecte de données avec WebViews dans une application mobile.
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Si vous envoyez des données à partir de la partie native de l’application et
 
 Pour résoudre cette situation indésirable, il est important de transmettre l’ECID de l’utilisateur de la partie native de votre application à un WebView que vous souhaitez peut-être utiliser dans votre application.
 
-L’extension JavaScript du service d’ID Experience Cloud dans WebView extrait l’ECID de l’URL au lieu d’envoyer une demande d’Adobe d’un nouvel ID. Le service d’ID utilise cet ECID pour effectuer le suivi du visiteur.
+L’extension AEP Edge Identity utilisée dans WebView collecte l’ECID actuel et l’ajoute à l’URL au lieu d’envoyer une demande d’Adobe d’un nouvel ID. L’implémentation utilise ensuite cet ECID pour demander l’URL.
 
 ## Mise en œuvre
 

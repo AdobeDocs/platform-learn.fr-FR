@@ -1,12 +1,12 @@
 ---
-title: Configurer un train de données
+title: Configurer un trains de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 9%
+source-wordcount: '598'
+ht-degree: 10%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 9%
 Découvrez comment créer un flux de données dans Experience Platform.
 
 Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers Platform Edge Network sont acheminées vers les applications et services Adobe Experience Cloud de manière appropriée. Pour plus d’informations, voir [documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr) ou ceci [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=fr).
+
+![Architecture](assets/architecture.png)
 
 ## Conditions préalables
 
@@ -27,7 +29,7 @@ Dans cette leçon, vous allez :
 
 * Savoir quand utiliser un flux de données.
 * Création dʼun flux de données.
-* Configurer un train de données.
+* Configurer un trains de données.
 
 ## Création dʼun flux de données
 
@@ -40,6 +42,11 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
    ![accueil des datastreams](assets/datastream-new.png)
 
 1. Fournissez une **[!UICONTROL Nom]**, par exemple `Luma Mobile App` et un **[!UICONTROL Description]**, par exemple `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >Rappel final : si vous passez en revue ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions de dénomination. Par exemple, utilisez `Luma Mobile App Event Dataset` plutôt que `Luma Mobile App Event Dataset - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
+
 1. Sélectionnez le schéma que vous avez créé dans la leçon précédente à partir du **Schéma d’événement** une liste.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 

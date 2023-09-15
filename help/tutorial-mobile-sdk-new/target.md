@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 3%
+source-wordcount: '1601'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,9 @@ ht-degree: 3%
 
 Découvrez comment effectuer des tests A/B dans vos applications mobiles avec le SDK Mobile Platform et Adobe Target.
 
-Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à optimiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et d’autres canaux numériques. Ce tutoriel se concentre sur la fonctionnalité de test A/B de Target. Voir [Présentation des tests A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) pour plus d’informations.
+Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à optimiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et d’autres canaux numériques. Target peut effectuer des tests A/B, des tests multivariés, recommander des produits et du contenu, cibler du contenu, personnaliser automatiquement le contenu à l’aide de l’IA, etc. Cette leçon porte principalement sur la fonctionnalité de test A/B de Target.  Voir [Présentation des tests A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) pour plus d’informations.
+
+![Architecture](assets/architecture-at.png)
 
 Avant de pouvoir effectuer des tests A/B avec Target, vous devez vous assurer que les configurations et intégrations appropriées sont en place.
 
@@ -29,20 +31,19 @@ Avant de pouvoir effectuer des tests A/B avec Target, vous devez vous assurer qu
 ## Conditions préalables
 
 * Création et exécution de l’application avec les SDK installés et configurés.
-* Accès à Adobe Target Premium avec autorisations, rôles, espaces de travail et propriétés correctement configurés, comme décrit [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=fr).
-Vous devriez également pouvoir utiliser Target Standard, mais le tutoriel utilise certains concepts avancés (par exemple, les propriétés de Target) qui sont propres à Target Premium.
+* Accès à Adobe Target avec des autorisations, des rôles, des espaces de travail et des propriétés correctement configurés, comme décrit [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=fr).
 
 
 ## Objectifs d&#39;apprentissage
 
 Dans cette leçon, vous allez
 
-* Mettez à jour votre configuration Edge pour l’intégration de Target.
+* Mettez à jour votre flux de données pour l’intégration de Target.
 * Mettez à jour votre propriété de balise avec l’extension Journey Optimizer - Decisioning.
 * Mettez à jour votre schéma pour capturer les événements de proposition.
 * Validez la configuration dans Assurance.
 * Créez un test A/B simple dans Target.
-* Mettez à jour votre application pour inclure l’extension Optimizer.
+* Mettez à jour votre application pour enregistrer l’extension Optimizer.
 * Mettez en oeuvre le test A/B dans votre application.
 * Validez l’implémentation dans Assurance.
 
@@ -51,15 +52,15 @@ Dans cette leçon, vous allez
 
 >[!TIP]
 >
->Si vous avez déjà configuré votre application dans le cadre de la [Offres Journey Optimizer](journey-optimizer-offers.md) tutoriel, vous pouvez ignorer [Installer Adobe Journey Optimizer - Extension des balises de prise de décision](#install-adobe-journey-optimizer---decisioning-tags-extension) et [Mettre à jour votre schéma](#update-your-schema).
+>Si vous avez déjà configuré votre application dans le cadre du [Offres Journey Optimizer](journey-optimizer-offers.md) leçon, vous pouvez ignorer les deux [Installer Adobe Journey Optimizer - Extension des balises de prise de décision](#install-adobe-journey-optimizer---decisioning-tags-extension) et [Mettre à jour votre schéma](#update-your-schema).
 
-### Mise à jour de la configuration Edge
+### Mise à jour de la configuration des flux de données
 
-Pour vous assurer que les données envoyées de votre application mobile vers le réseau Edge sont transférées vers Adobe Target, vous devez mettre à jour votre configuration Experience Edge.
+Pour vous assurer que les données envoyées de votre application mobile à Experience Platform Edge Network sont transférées vers Adobe Target, vous devez mettre à jour la configuration de la banque de données.
 
 1. Dans l’interface utilisateur de la collecte de données, sélectionnez **[!UICONTROL Datastreams]**, puis sélectionnez votre flux de données, par exemple **[!UICONTROL Application mobile Luma]**.
 1. Sélectionner **[!UICONTROL Ajouter un service]** et sélectionnez **[!UICONTROL Adobe Target]** de la **[!UICONTROL Service]** liste.
-1. Saisissez la cible **[!UICONTROL Jeton de propriété]** que vous souhaitez utiliser pour cette intégration.
+1. Si vous êtes client Target Premium et souhaitez utiliser des jetons de propriété, saisissez la variable **[!UICONTROL Jeton de propriété]** que vous souhaitez utiliser pour cette intégration. Les utilisateurs de Target Standard peuvent ignorer cette étape.
 
    Vous trouverez vos propriétés dans l’interface utilisateur de Target, dans **[!UICONTROL Administration]** > **[!UICONTROL Propriétés]**. Sélectionner ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) pour afficher le jeton de propriété de la propriété que vous souhaitez utiliser. Le jeton de propriété a un format semblable à `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; vous ne devez saisir que la valeur `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
@@ -70,7 +71,7 @@ Pour vous assurer que les données envoyées de votre application mobile vers le
 
 ### Installer Adobe Journey Optimizer - Extension des balises de prise de décision
 
-1. Accédez à **[!UICONTROL Balises]** et recherchez la propriété de balise mobile et ouvrez-la.
+1. Accédez à **[!UICONTROL Balises]**, recherchez la propriété de balise mobile, puis ouvrez la propriété .
 1. Sélectionner **[!UICONTROL Extensions]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Adobe Journey Optimizer - Prise de décision]** extension .
@@ -81,13 +82,13 @@ Pour vous assurer que les données envoyées de votre application mobile vers le
 
 ### Mettre à jour votre schéma
 
-1. Accédez à l’interface utilisateur de la collecte de données et sélectionnez Schémas dans le rail de gauche.
+1. Accédez à l’interface de collecte de données et sélectionnez **[!UICONTROL Schémas]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Parcourir]** dans la barre supérieure.
 1. Sélectionnez votre schéma pour l’ouvrir.
 1. Dans l’éditeur de schéma, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** en regard de **[!UICONTROL Groupes de champs]**.
 1. Dans la boîte de dialogue Ajouter des groupes de champs, recherchez `proposition`, sélectionnez **[!UICONTROL Événement d’expérience - Interactions de propositions]** et sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
    ![Proposition](assets/schema-fieldgroup-proposition.png)
-1. pour enregistrer les modifications apportées à votre schéma, sélectionnez **[!UICONTROL Enregistrer]** .
+1. Pour enregistrer les modifications apportées à votre schéma, sélectionnez **[!UICONTROL Enregistrer]**.
 
 
 ### Validation de la configuration dans Assurance
@@ -102,15 +103,17 @@ Pour valider votre configuration dans Assurance :
 
 ## Création d’un test A/B
 
+Il existe de nombreux types d’activités que vous pouvez créer dans Adobe Target et mettre en oeuvre dans une application mobile, comme indiqué dans l’introduction. Pour cette leçon, vous allez vous concentrer sur la création et la mise en oeuvre d’un test A/B.
+
 1. Dans l’interface utilisateur de Target, sélectionnez **[!UICONTROL Activités]** dans la barre supérieure.
 1. Sélectionner **[!UICONTROL Créer une activité]** et **[!UICONTROL Test A/B]** dans le menu contextuel.
-1. Dans le **[!UICONTROL Créer une activité de test A/B]** boîte de dialogue, sélectionnez **[!UICONTROL Mobile]** comme la propriété **[!UICONTROL Type]**, sélectionnez un espace de travail dans la **[!UICONTROL Choisir Workspace]** et sélectionnez votre propriété dans la liste **[!UICONTROL Choisir la propriété]** liste.
+1. Dans le **[!UICONTROL Créer une activité de test A/B]** boîte de dialogue, sélectionnez **[!UICONTROL Mobile]** comme la propriété **[!UICONTROL Type]**, sélectionnez un espace de travail dans la **[!UICONTROL Choisir Workspace]** et sélectionnez votre propriété dans la liste **[!UICONTROL Choisir la propriété]** répertorie si vous êtes un client Target Premium et que vous avez spécifié un jeton de propriété dans le flux de données.
 1. Sélectionnez **[!UICONTROL Créer]**.
    ![Activité Créer Target](assets/target-create-activity1.png)
 
 1. Dans le **[!UICONTROL Activité sans titre]** , au niveau de l’écran **[!UICONTROL Expériences]** étape :
 
-   1. Entrée `luma-mobileapp-abtest` in **[!UICONTROL Sélectionner un emplacement]** underneath **[!UICONTROL EMPLACEMENT 1]**.
+   1. Entrée `luma-mobileapp-abtest` in **[!UICONTROL Sélectionner un emplacement]** underneath **[!UICONTROL EMPLACEMENT 1]**. Ce nom d’emplacement (souvent appelé mbox) est utilisé ultérieurement dans la mise en oeuvre de l’application.
    1. Sélectionner ![Chrevron vers le bas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) en regard de **[!UICONTROL Contenu par défaut]** et sélectionnez **[!UICONTROL Création d’une offre JSON]** dans le menu contextuel.
    1. Copiez le fichier JSON suivant dans **[!UICONTROL Saisie d’un objet JSON valide]**.
 
@@ -207,14 +210,14 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    }
    ```
 
-   Cette fonction
+   Cette fonction :
 
    * Configuration d’un dictionnaire XDM `xdmData`, contenant l’ECID pour identifier le profil pour lequel vous devez présenter le test A/B, et
    * définit une `decisionScope`, un tableau d’emplacements sur lequel présenter le test A/B.
 
    La fonction appelle ensuite deux API : [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  et [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Ces fonctions effacent toutes les propositions mises en cache et mettent à jour les propositions de ce profil.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Personnalisation]** > **[!UICONTROL TargetOffersView]** dans le navigateur de projet Xcode. Recherchez le `func onPropositionsUpdateAT(location: String) async {` et examinez le code de cette fonction. La partie la plus importante de cette fonction est la fonction  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) appel API, qui
+1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Personnalisation]** > **[!UICONTROL TargetOffersView]** dans le navigateur de projet Xcode. Recherchez le `func onPropositionsUpdateAT(location: String) async {` et examinez le code de cette fonction. La partie la plus importante de cette fonction est la fonction  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) appel API, qui :
    * récupère les propositions du profil actuel en fonction de la portée de la décision (qui est l’emplacement que vous avez défini dans le test A/B),
    * récupère l&#39;offre à partir de la proposition,
    * libère le contenu de l’offre afin qu’elle puisse s’afficher correctement dans l’application ; et
@@ -264,7 +267,7 @@ Pour valider le test A/B dans Assurance :
 
 ## Étapes suivantes
 
-Vous devez maintenant disposer de tous les outils pour commencer à ajouter d’autres tests A/B ou d’autres activités Target (comme le ciblage d’expérience, le test multivarié), le cas échéant et selon le cas, à l’application Luma. Des informations plus détaillées sont disponibles dans la section [Référentiel Github pour l’extension Optimiser](https://github.com/adobe/aepsdk-optimize-ios) où vous pouvez également trouver un lien vers un [tutoriel](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) sur le suivi des offres Adobe Target.
+Vous devez maintenant disposer de tous les outils pour commencer à ajouter d’autres tests A/B ou d’autres activités Target (comme le ciblage d’expérience, le test multivarié), le cas échéant, à votre application. Des informations plus détaillées sont disponibles dans la section [Référentiel Github pour l’extension Optimiser](https://github.com/adobe/aepsdk-optimize-ios) où vous pouvez également trouver un lien vers un [tutoriel](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) sur le suivi des offres Adobe Target.
 
 >[!SUCCESS]
 >

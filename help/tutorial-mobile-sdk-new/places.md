@@ -2,7 +2,7 @@
 title: Places
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Dans cette leçon, vous allez
 * Mettez à jour votre propriété de balise avec l’extension Places.
 * Mettez à jour votre schéma pour capturer les événements de géolocalisation.
 * Validez la configuration dans Assurance.
-* Mettez à jour votre application pour inclure l’extension Places.
+* Mettez à jour votre application pour enregistrer l’extension Places.
 * Mettez en oeuvre le suivi de la géolocalisation à partir du service Places dans votre application.
 
 
@@ -49,7 +49,7 @@ Dans cette leçon, vous allez
 * Mettez à jour votre schéma pour capturer les événements de proposition.
 * Validez la configuration dans Assurance.
 * Créez une décision d’offre en fonction des offres dans Journey Optimizer - Gestion de la décision.
-* Mettez à jour votre application pour inclure l’extension Optimizer.
+* Mettez à jour votre application pour enregistrer l’extension Optimizer.
 * Mettez en oeuvre les offres de la gestion de la décision dans votre application.
 
 
@@ -106,7 +106,7 @@ Vous définissez certains points ciblés dans le service Places.
 
 Vérifiez si votre schéma est défini dans la section [Créer un schéma](create-schema.md), intègre les groupes de champs et classes nécessaires pour collecter les données des points ciblés et de géolocalisation.
 
-1. Accédez à l’interface utilisateur de la collecte de données et sélectionnez **[!UICONTROL Schémas]** dans le rail de gauche.
+1. Accédez à l’interface de collecte de données et sélectionnez **[!UICONTROL Schémas]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Parcourir]** dans la barre supérieure.
 1. Sélectionnez votre schéma pour l’ouvrir.
 1. Dans l’éditeur de schéma, sélectionnez **[!UICONTROL Événement d’expérience client]**.
@@ -258,7 +258,7 @@ Pour valider votre configuration dans Assurance :
    ![Validation de la prise de décision AJO](assets/places-events.png)
 
 
-## Implémentation des emplacements dans votre application
+## Mise en oeuvre de Places dans votre application
 
 Comme indiqué dans les leçons précédentes, l’installation d’une extension de balise mobile fournit uniquement la configuration. Vous devez ensuite installer et enregistrer le SDK Places. Si ces étapes ne sont pas claires, passez en revue la [Installation des SDK](install-sdks.md) .
 
@@ -320,7 +320,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    }
    ```
 
-Ce tutoriel ne vous concerne pas et explique en détail l’implémentation de Location Manager dans iOS.
+Cette leçon ne s’applique pas aux détails de l’implémentation de Location Manager dans iOS.
 
 
 ## Validation à l’aide de votre application

@@ -2,9 +2,9 @@
 title: Données du cycle de vie
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ L’extension de cycle de vie du SDK Mobile Adobe Experience Platform active les
 
 ## Conditions préalables
 
-* Création et exécution de l’application avec les SDK installés et configurés.
+* Création et exécution de l’application avec les SDK installés et configurés. Dans le cadre de cette leçon, vous avez déjà commencé la surveillance du cycle de vie. Voir [Installation des SDK - Mise à jour d’AppDelegate](install-sdks.md#update-appdelegate) pour la révision.
 * Enregistrez l’extension Assurance comme décrit dans la section [leçon précédente](install-sdks.md).
 
 ## Objectifs d&#39;apprentissage

@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2241'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 4%
 
 Découvrez comment créer des messages push pour les applications mobiles avec le SDK Mobile Experience Platform et Journey Optimizer.
 
-Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages à des audiences ciblées. Avant d’envoyer des notifications push avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données des notifications push dans Journey Optimizer, reportez-vous au [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Journey Optimizer vous permet de créer des parcours et d’envoyer des messages à des audiences ciblées. Avant d’envoyer des notifications push avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données des notifications push dans Journey Optimizer, reportez-vous au [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+
+![Architecture](assets/architecture-ajo.png)
 
 >[!NOTE]
 >
@@ -26,6 +28,7 @@ Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages
 ## Conditions préalables
 
 * Création et exécution de l’application avec les SDK installés et configurés.
+* Configurez l’application pour Adobe Experience Platform.
 * Accès à Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Journey Optimizer suivantes.
    * Créez une surface d’application.
    * Créez un parcours.
@@ -42,7 +45,7 @@ Dans cette leçon, vous allez
 * Créez une surface d’application dans Journey Optimizer.
 * Mettez à jour votre schéma pour inclure les champs de messagerie push.
 * Installez et configurez l’extension de balise Journey Optimizer.
-* Mettez à jour votre application pour inclure l’extension de balise Journey Optimizer.
+* Mettez à jour votre application pour enregistrer l’extension de balise Journey Optimizer.
 * Validez la configuration dans Assurance.
 * Envoi d’un message de test à partir d’Assurance
 * Définissez votre propre événement, parcours et expérience de notification push dans Journey Optimizer.
@@ -55,9 +58,9 @@ Dans cette leçon, vous allez
 >
 >Si vous avez déjà configuré votre environnement dans le cadre de la [Messagerie in-app Journey Optimizer](journey-optimizer-inapp.md) vous pouvez ignorer cette section.
 
-### Enregistrement de l’ID d’application avec APNS
+### Enregistrement de l’ID d’application avec des APNS
 
-Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont conçues pour vous guider tout au long de la configuration APNS.
+Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont conçues pour vous guider tout au long de la configuration des APNS.
 
 ### Création d’une clé privée
 
@@ -70,7 +73,7 @@ Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont
 1. Sélectionnez **[!UICONTROL Continuer]**.
    ![configurer la nouvelle clé](assets/mobile-push-apple-dev-config-key.png)
 1. Vérifiez la configuration et sélectionnez **[!UICONTROL Enregistrer]**.
-1. Téléchargez la `.p8` clé privée. Il est utilisé dans la configuration Surface de l’application.
+1. Téléchargez la `.p8` clé privée. Il est utilisé dans la configuration Surface de l’application plus loin dans cette leçon.
 1. Prenez note de la **[!UICONTROL ID de clé]**. Il est utilisé dans la configuration Surface de l’application.
 1. Prenez note de la **[!UICONTROL Identifiant de l’équipe]**. Il est utilisé dans la configuration Surface de l’application.
    ![Détails clés](assets/push-apple-dev-key-details.png)
@@ -194,7 +197,7 @@ Vous allez définir un nouveau type d’événement, qui n’est pas encore disp
 1. Sélectionnez votre schéma, par exemple **[!UICONTROL Schéma d’événement d’application mobile Luma]** pour l’ouvrir.
 1. Dans l’éditeur de schémas :
    1. Sélectionnez la variable **[!UICONTROL eventType]** champ .
-   1. Dans le **[!UICONTROL Propriétés du champ]** , faites défiler l’écran vers le bas pour afficher la liste des valeurs possibles pour le type d’événement. Sélectionner **[!UICONTROL Ajouter une ligne]** et ajoutez `application.test` comme la propriété **[!UICONTROL VALEUR]** et **[!UICONTROL Événement de test pour la notification push]** comme la propriété `DISPLAY NAME`.
+   1. Dans le **[!UICONTROL Propriétés du champ]** , faites défiler l’écran vers le bas pour afficher la liste des valeurs possibles pour le type d’événement. Sélectionner **[!UICONTROL Ajouter une ligne]** et ajoutez `application.test` comme la propriété **[!UICONTROL VALEUR]** et `[!UICONTROL Test event for push notification]` comme la propriété `DISPLAY NAME`.
    1. Sélectionnez **[!UICONTROL Appliquer]**.
    1. Sélectionnez **[!UICONTROL Enregistrer]**.
       ![Ajouter une valeur aux types d’événements](assets/ajo-update-schema-eventtype-enum.png)
@@ -357,7 +360,7 @@ Cette fois, l’événement d’expérience que vous êtes sur le point d’envo
 
 ## Étapes suivantes
 
-Vous devez maintenant disposer de tous les outils pour commencer à créer des parcours qui envoient des notifications push et votre application qui gère les notifications push depuis Journey Optimizer. Par exemple, pour accueillir l’utilisateur lorsqu’il se connecte à l’application.
+Vous devriez maintenant disposer de tous les outils pour gérer les notifications push dans votre application. Par exemple, vous pouvez créer dans Journey Optimizer un parcours qui envoie une notification push de bienvenue lorsqu’un utilisateur de l’application se connecte. Ou un message push de confirmation lorsqu’un utilisateur achète un produit dans l’application. Ou entre dans la clôture virtuelle d’un emplacement (comme vous le verrez dans la variable [Places](places.md) leçon).
 
 >[!SUCCESS]
 >

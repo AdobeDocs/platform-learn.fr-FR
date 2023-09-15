@@ -3,10 +3,10 @@ title: Mappage Analytics
 description: Découvrez comment collecter des données pour Adobe Analytics dans une application mobile.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 1%
 Découvrez comment mapper des données mobiles à Adobe Analytics.
 
 La variable [event](events.md) les données que vous avez collectées et envoyées à Platform Edge Network dans les leçons précédentes sont transférées aux services configurés dans votre flux de données, y compris Adobe Analytics. Vous mappez les données aux variables correctes de votre suite de rapports.
+
+![Architecture](assets/architecture-aa.png)
 
 ## Conditions préalables
 
@@ -186,7 +188,7 @@ Voici à quoi peut ressembler une règle de traitement utilisant ces données :
 >Certaines des variables mappées automatiquement ne peuvent pas être utilisées dans les règles de traitement.
 >
 >
->La première fois que vous mappez à une règle de traitement que l’interface utilisateur ne vous affiche pas les variables de données contextuelles de l’objet XDM. Pour corriger les éléments qui sélectionnent une valeur, cliquez sur Enregistrer pour revenir à la modification. Toutes les variables XDM doivent maintenant apparaître.
+>La première fois que vous mappez à une règle de traitement, l’interface ne vous affiche pas les variables de données contextuelles de l’objet XDM. Pour corriger les éléments qui sélectionnent une valeur, cliquez sur Enregistrer pour revenir à la modification. Toutes les variables XDM doivent maintenant apparaître.
 
 
 Vous trouverez des informations supplémentaires sur les règles de traitement et les données contextuelles. [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
