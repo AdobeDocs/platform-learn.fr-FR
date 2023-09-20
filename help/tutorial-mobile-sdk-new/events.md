@@ -1,15 +1,15 @@
 ---
-title: Collecter les données d’événement
-description: Découvrez comment collecter des données d’événement dans une application mobile.
+title: Suivi des données d’événement
+description: Découvrez comment effectuer le suivi des données d’événement dans une application mobile.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 2%
 
 ---
 
-# Collecter les données d’événement
+# Suivi des données d’événement
 
 Découvrez comment effectuer le suivi des événements dans une application mobile.
 
@@ -380,4 +380,4 @@ Maintenant que vous avez collecté les événements et que vous les avez envoyé
 >
 >Vous avez maintenant configuré votre application pour effectuer le suivi des événements de commerce, d’interaction d’application et de suivi d’écran sur le réseau Adobe Experience Platform Edge et tous les services que vous avez définis dans votre flux de données.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Suivant : **[WebViews](web-views.md)**
+Suivant : **[Gestion des WebViews](web-views.md)**

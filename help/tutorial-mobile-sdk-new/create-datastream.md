@@ -3,9 +3,9 @@ title: Configurer un trains de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 9%
 
 ---
@@ -106,4 +106,4 @@ Lors de la mise en oeuvre du SDK Mobile Platform dans votre propre application, 
 >
 >Vous devez maintenant utiliser un flux de données pour le reste du tutoriel.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Suivant : **[Configuration des balises](configure-tags.md)**
+Suivant : **[Configuration d’une propriété de balise](configure-tags.md)**

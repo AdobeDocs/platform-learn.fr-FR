@@ -2,9 +2,9 @@
 title: Utilisation des services de géolocalisation
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 4%
 
 ---
@@ -33,24 +33,6 @@ Dans cette leçon, vous allez
 * Validez la configuration dans Assurance.
 * Mettez à jour votre application pour enregistrer l’extension Places.
 * Mettez en oeuvre le suivi de la géolocalisation à partir du service Places dans votre application.
-
-
-## Conditions préalables
-
-* Création et exécution de l’application avec les SDK appropriés installés et configurés.
-
-
-## Objectifs d&#39;apprentissage
-
-Dans cette leçon, vous allez
-
-* Mettez à jour votre configuration Edge pour la gestion de la décision.
-* Mettez à jour votre propriété de balise avec l’extension Journey Optimizer - Decisioning.
-* Mettez à jour votre schéma pour capturer les événements de proposition.
-* Validez la configuration dans Assurance.
-* Créez une décision d’offre en fonction des offres dans Journey Optimizer - Gestion de la décision.
-* Mettez à jour votre application pour enregistrer l’extension Optimizer.
-* Mettez en oeuvre les offres de la gestion de la décision dans votre application.
 
 
 ## Configuration
