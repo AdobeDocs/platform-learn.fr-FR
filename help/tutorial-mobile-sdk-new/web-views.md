@@ -3,9 +3,9 @@ title: Gestion des WebViews
 description: Découvrez comment gérer la collecte de données avec WebViews dans une application mobile.
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ L’extension AEP Edge Identity utilisée dans WebView collecte l’ECID actuel 
 
 ## Mise en œuvre
 
-Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Infos]** > **[!UICONTROL TermsOfServiceSheet]**, puis localisez la variable `func loadUrl()` dans la fonction `final class SwiftUIWebViewModel: ObservableObject` classe . Ajoutez l’appel suivant pour gérer l’affichage web :
+Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**, puis localisez la variable `func loadUrl()` dans la fonction `final class SwiftUIWebViewModel: ObservableObject` classe . Ajoutez l’appel suivant pour gérer l’affichage web :
 
 ```swift
 // Handle web view
@@ -63,12 +63,12 @@ La variable [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe
 
 Vous pouvez en savoir plus sur les `Identity.getUrlVariables` de l’API [Guide de référence de l’API d’extension Identity for Edge Network](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validation
+## Valider
 
 Pour exécuter le code :
 
 1. Accédez au **[!UICONTROL Paramètres]** dans l’application
-1. Appuyez sur le bouton **[!UICONTROL Afficher...]** pour afficher le **[!UICONTROL Conditions d’utilisation]**.
+1. Appuyez sur le bouton **[!DNL View...]** pour afficher le **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ Pour exécuter le code :
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+Malheureusement, le débogage de la session web est limité. Vous ne pouvez pas utiliser l’Adobe Experience Platform Debugger dans votre navigateur, par exemple pour continuer le débogage de la session d’affichage web.
 
 >[!NOTE]
 >

@@ -4,10 +4,10 @@ description: Découvrez comment envoyer des données à Adobe Experience Platfor
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 7%
+source-wordcount: '1056'
+ht-degree: 8%
 
 ---
 
@@ -33,6 +33,7 @@ Si vous n’y avez pas accès, vous pouvez [ignorer cette leçon](install-sdks.m
 Dans cette leçon, vous allez :
 
 * Créez un jeu de données Experience Platform.
+* Configurez votre flux de données pour transférer des données vers Experience Platform.
 * Validez les données du jeu de données.
 * Activez votre schéma et votre jeu de données pour Real-time Customer Profile.
 * Validation des données dans Real-time Customer Profile.
@@ -54,7 +55,7 @@ Toutes les données correctement ingérées dans Adobe Experience Platform sont 
    ![accueil du jeu de données](assets/dataset-create.png)
 
 1. Recherchez votre schéma. par exemple en utilisant `Luma Mobile` dans le champ de recherche.
-1. Sélectionnez votre schéma, par exemple **[!UICONTROL Schéma d’événement d’application mobile Luma]**.
+1. Sélectionnez votre schéma, par exemple **[!DNL Luma Mobile App Event Schema]**.
 
 1. Sélectionnez **[!UICONTROL Suivant]**.
    ![configuration du jeu de données](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Toutes les données correctement ingérées dans Adobe Experience Platform sont 
 1. Sélectionnez **[!UICONTROL Terminer]**.
    ![fin du jeu de données](assets/dataset-finish.png)
 
-## Mise à jour du flux de données
 
-Une fois que vous avez créé votre jeu de données, veillez à [mettre à jour votre flux de données](create-datastream.md#adobe-experience-platform) pour ajouter Adobe Experience Platform. Cette mise à jour assure les flux de données dans Platform.
+## Ajout du service Adobe Experience Platform datastream
+
+Pour envoyer vos données XDM du réseau Edge à Adobe Experience Platform, vous configurez le service Adobe Experience Platform vers la banque de données que vous configurez dans le cadre de la [Création d’un flux de données](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Vous ne pouvez activer le service Adobe Experience Platform que lorsque vous avez créé un jeu de données d’événement.
+
+1. Dans l’interface utilisateur de la collecte de données, sélectionnez **[!UICONTROL Datastreams]** et votre flux de données.
+
+1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter un service]**.
+
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform]** dans la liste [!UICONTROL Service].
+
+1. Activez le service en basculant **[!UICONTROL Activé]** sur .
+
+1. Sélectionnez la variable **[!UICONTROL Jeu de données d’événement]** que vous avez créé précédemment , par exemple **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+   ![Ajout de Adobe Experience Platform en tant que service de flux de données](assets/datastream-service-aep.png)
+1. La configuration finale devrait ressembler à ceci.
+
+   ![paramètres du flux de données](assets/datastream-settings.png)
+
 
 ## Validation des données dans le jeu de données
 
@@ -89,7 +113,7 @@ Le profil client en temps réel de l’Experience Platform vous permet de créer
 
 ### Activation du schéma
 
-1. Ouvrez votre schéma, par exemple. **[!UICONTROL Schéma d’événement d’application mobile Luma]**.
+1. Ouvrez votre schéma, par exemple. **[!DNL Luma Mobile App Event Schema]**.
 1. Activer **[!UICONTROL Profil]**.
 1. Sélectionner **[!UICONTROL Les données de ce schéma contiendront une identité principale dans le champ identityMap .]** dans la boîte de dialogue.
 1. **** Enregistrement du schéma.
@@ -98,7 +122,7 @@ Le profil client en temps réel de l’Experience Platform vous permet de créer
 
 ### Activer le jeu de données
 
-1. Ouvrez votre jeu de données, par exemple **[!UICONTROL Jeu de données d’événement d’application mobile Luma]**.
+1. Ouvrez votre jeu de données, par exemple **[!DNL Luma Mobile App Event Dataset]**.
 1. Activer **[!UICONTROL Profil]**.
 
    ![activation du jeu de données pour le profil](assets/platform-profile-dataset.png)

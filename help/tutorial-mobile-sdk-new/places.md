@@ -1,15 +1,15 @@
 ---
-title: Places
+title: Utilisation des services de géolocalisation
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 4%
 
 ---
 
-# Places
+# Utilisation des services de géolocalisation
 
 Découvrez comment utiliser le service de géolocalisation dans votre application.
 
@@ -72,7 +72,7 @@ Vous définissez certains points ciblés dans le service Places.
 1. Pour fermer la variable **[!UICONTROL Gestion des bibliothèques]** boîte de dialogue, sélectionnez **[!UICONTROL Fermer]**.
 1. Retour à **[!UICONTROL Gestion des points ciblés]**, sélectionnez **[!UICONTROL Importation de points ciblés]**.
 1. Sélectionner **[!UICONTROL Début]** en t**[!UICONTROL Importer des emplacements]Boîte de dialogue **.
-1. Sélectionner **[!UICONTROL Luma]** de la liste des bibliothèques,
+1. Sélectionner **[!DNL Luma]** de la liste des bibliothèques,
 1. Sélectionnez **[!UICONTROL Suivant]**.
    ![Sélectionner une bibliothèque](assets/places-import-select-library.png)
 1. Téléchargez la [Fichier ZIP des points ciblés Luma](assets/luma_pois.csv.zip) et extrayez-le vers un emplacement de votre ordinateur.
@@ -94,7 +94,7 @@ Vous définissez certains points ciblés dans le service Places.
    ![Ajout de l’extension de prise de décision](assets/tag-places-extension.png)
 
 1. Dans le **[!UICONTROL Installer l’extension]** dialog :
-   1. Sélectionner **[!UICONTROL Luma]** de la **[!UICONTROL Sélection d’une bibliothèque]** liste.
+   1. Sélectionner **[!DNL Luma]** de la **[!UICONTROL Sélection d’une bibliothèque]** liste.
    1. Vérifiez que vous avez sélectionné votre bibliothèque de travail, par exemple : **[!UICONTROL Version initiale]**.
    1. Sélectionner **[!UICONTROL Enregistrer dans la bibliothèque et créer]** de **[!UICONTROL Enregistrer dans la bibliothèque]**.
       ![Installation de l’extension Places](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 >
 
 1. Dans Xcode, assurez-vous que [Places AEP](https://github.com/adobe/aepsdk-places-ios) est ajouté à la liste des modules dans les dépendances de modules. Voir [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** dans le navigateur de projet Xcode.
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** dans le navigateur de projet Xcode.
 1. Assurez-vous que `AEPPlaces` fait partie de votre liste d’importations.
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    ]
    ```
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Ajoutez le code suivant :
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Ajoutez le code suivant :
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 
    Ceci [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) L’API communique les informations de géolocalisation au service Places.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Emplacement]** > **[!UICONTROL GeofenceSheet]** dans le navigateur de projet de Xcode.
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** dans le navigateur de projet de Xcode.
 
    1. Pour le bouton Entrée, saisissez le code suivant :
 

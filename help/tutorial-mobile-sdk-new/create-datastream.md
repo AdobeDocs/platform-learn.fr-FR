@@ -3,10 +3,10 @@ title: Configurer un trains de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 10%
+source-wordcount: '615'
+ht-degree: 9%
 
 ---
 
@@ -47,7 +47,7 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
    >
    >Rappel final : si vous passez en revue ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions de dénomination. Par exemple, utilisez `Luma Mobile App Event Dataset` plutôt que `Luma Mobile App Event Dataset - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
 
-1. Sélectionnez le schéma que vous avez créé dans la leçon précédente à partir du **Schéma d’événement** une liste.
+1. Sélectionnez le schéma que vous avez créé dans la leçon précédente à partir du **Schéma d’événement** liste.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![nouveaux flux de données](assets/datastream-name.png)
@@ -55,7 +55,7 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
 
 ## Ajout de services
 
-Ensuite, vous connectez vos services Experience Cloud à votre flux de données. Lorsque le SDK Mobile Platform envoie des données à Edge Network, le flux de données envoie les données à ces services :
+Lorsque vous exécutez le (facultatif) [Analytics](analytics.md) et [Experience Platform](platform.md) leçons de ce tutoriel, vous ajoutez des services à votre flux de données pour vous assurer que lorsque le SDK Mobile Platform envoie des données au réseau Edge, le flux de données les transfère vers les services configurés.
 
 ### Adobe Analytics
 

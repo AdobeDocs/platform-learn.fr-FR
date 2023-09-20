@@ -3,7 +3,7 @@ title: Présentation du tutoriel Mise en oeuvre de Adobe Experience Cloud dans l
 description: Découvrez comment mettre en oeuvre les applications mobiles Adobe Experience Cloud. Ce tutoriel vous guide tout au long d’une mise en oeuvre d’applications Experience Cloud dans un exemple d’application Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 9%
@@ -103,4 +103,4 @@ C’est parti !
 >
 >Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Suivant : **[Créer un schéma XDM](create-schema.md)**.
+Suivant : **[Créer un schéma XDM](create-schema.md)**

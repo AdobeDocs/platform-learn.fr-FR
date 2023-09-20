@@ -1,15 +1,15 @@
 ---
-title: Données du cycle de vie
+title: Collecter les données du cycle de vie
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# Données du cycle de vie
+# Collecter les données du cycle de vie
 
 Découvrez comment collecter des données de cycle de vie dans une application mobile.
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Vous pouvez maintenant mettre à jour votre projet pour enregistrer les événements de cycle de vie.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** dans le navigateur de projet Xcode.
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** dans le navigateur de projet Xcode.
 
 1. Une fois lancée, si votre application reprend à partir d’un état d’arrière-plan, iOS peut appeler votre `sceneWillEnterForeground:` déléguez . C’est là que vous souhaitez déclencher un événement de début de cycle de vie. Ajoutez ce code à `func sceneWillEnterForeground(_ scene: UIScene)`:
 

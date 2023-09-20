@@ -1,15 +1,15 @@
 ---
-title: Événements
+title: Collecter les données d’événement
 description: Découvrez comment collecter des données d’événement dans une application mobile.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 1%
+source-wordcount: '1309'
+ht-degree: 2%
 
 ---
 
-# Événements
+# Collecter les données d’événement
 
 Découvrez comment effectuer le suivi des événements dans une application mobile.
 
@@ -127,7 +127,7 @@ Vous avez différentes actions commerciales liées aux produits dans votre appli
 
 Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commerce de manière réutilisable, vous utilisez une fonction dédiée :
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode, puis ajoutez ce qui suit au `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` de la fonction
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode, puis ajoutez ce qui suit au `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` de la fonction
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -158,7 +158,7 @@ Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commer
    * configure un événement d’expérience à l’aide du dictionnaire,
    * envoie l’événement d’expérience à l’aide de la fonction [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Produits]** > **[!UICONTROL ProductView]** dans le navigateur de projet Xcode et ajoutez divers appels à la fonction `sendCommerceExperienceEvent` function:
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** dans le navigateur de projet Xcode et ajoutez divers appels à la fonction `sendCommerceExperienceEvent` function:
 
    1. À l’emplacement `.task` , dans la propriété `ATTrackingManager.trackingAuthorizationStatus` fermeture. Ceci `.task` est appelé lorsque la consultation de produit est initialisée et affichée. vous souhaitez donc envoyer un événement de consultation de produit à ce moment spécifique.
 
@@ -263,7 +263,7 @@ Imaginez que vous souhaitiez effectuer le suivi des affichages d’écran et des
 
 Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 
-1. Pour des raisons pratiques, vous définissez deux fonctions dans **[!UICONTROL MobileSDK]**. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** dans votre navigateur de projet Xcode.
+1. Pour des raisons pratiques, vous définissez deux fonctions dans **[!UICONTROL MobileSDK]**. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans votre navigateur de projet Xcode.
 
    1. Une pour les interactions avec l’application. Ajoutez ce code à la variable `func sendAppInteractionEvent(actionName: String)` function:
 
@@ -321,7 +321,7 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
       * configure un événement d’expérience à l’aide du dictionnaire,
       * envoie l’événement d’expérience à l’aide de la fonction [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Accédez à **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Vues]** > **[!UICONTROL Général]** > **[!UICONTROL LoginSheet]**.
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
    1. Ajoutez le code en surbrillance suivant à la fermeture du bouton Connexion :
 
@@ -345,7 +345,7 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 
    1. Déplacez l’icône Assurance vers la gauche.
    1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets et vérifiez que vous voyez une **[!UICONTROL ECID]**, **[!UICONTROL Email]** et **[!UICONTROL Identifiant CRM]** dans l’écran Accueil .
-   1. Sélectionner **[!UICONTROL Produits]** dans la barre d’onglets.
+   1. Sélectionner **[!DNL Products]** dans la barre d’onglets.
    1. Sélectionnez un produit.
    1. Sélectionner <img src="assets/saveforlater.png" width="15" />.
    1. Sélectionner <img src="assets/addtocart.png" width="20" />.
@@ -361,7 +361,7 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 
 ## Étapes suivantes
 
-Vous devriez maintenant disposer de tous les outils pour commencer à ajouter la collecte de données à l’application Luma. Vous pouvez ajouter plus d’informations sur la manière dont l’utilisateur interagit avec vos produits dans l’application et ajouter d’autres appels d’interaction et de suivi d’écran à l’application :
+Vous devez maintenant disposer de tous les outils pour commencer à ajouter la collecte de données à votre application. Vous pouvez ajouter plus d’informations sur la manière dont l’utilisateur interagit avec vos produits dans l’application et ajouter d’autres appels d’interaction et de suivi d’écran à l’application :
 
 * Mettez en oeuvre la commande, le passage en caisse, le panier vide et d’autres fonctionnalités dans l’application et ajoutez des événements d’expérience commerciale pertinents à cette fonctionnalité.
 * Répétez l’appel à `sendAppInteractionEvent` avec le paramètre approprié pour suivre les autres interactions de l’application par l’utilisateur.

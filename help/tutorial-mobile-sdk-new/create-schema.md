@@ -3,9 +3,9 @@ title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1482'
 ht-degree: 16%
 
 ---
@@ -28,7 +28,7 @@ Pour plus d’informations sur le modèle de composition de schémas, y compris 
 
 >[!TIP]
 >
->Si vous connaissez les DTS (Solution Design Reference) d’Analytics, vous pouvez considérer un schéma comme un DTS plus robuste.
+>Si vous connaissez les DTS (Solution Design Reference) d’Analytics, vous pouvez considérer un schéma comme un DTS plus robuste. Voir [Créer et gérer un document de référence de conception de solution (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=fr) pour plus d’informations.
 
 ## Conditions préalables
 
@@ -214,7 +214,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 1. Dans le rail de droite, indiquez un **[!UICONTROL Nom du champ]** de `appInformation`, un **[!UICONTROL Nom d’affichage]** de `App Information`, et a **[!UICONTROL Type]** de `App Information`.
 
-1. Sélectionner **[!UICONTROL Interactions de l’application]** de la **[!UICONTROL Type]** , qui est le type de données personnalisé que vous avez créé dans l’exercice précédent.
+1. Sélectionner **[!UICONTROL Interactions de l’application]** de la **[!UICONTROL Groupe de champs]** pour affecter les champs à votre nouveau groupe de champs.
 
 1. Sélectionnez **[!UICONTROL Appliquer]**.
 
@@ -224,7 +224,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 >[!NOTE]
 >
->Les groupes de champs personnalisés sont toujours placés sous l’identifiant de votre organisation Experience Cloud. Donc `_techmarketingdemos`, utilisé dans les captures d’écran, est remplacé par la valeur unique de votre entreprise.
+>Les groupes de champs personnalisés sont toujours placés sous l’identifiant de votre organisation Experience Cloud.
 
 
 >[!SUCCESS]

@@ -3,9 +3,9 @@ title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ Dans cette leçon, vous allez :
 
 1. Utilisez la variable ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Rechercher]** pour rechercher et installer le champ **Adobe Experience Platform Edge Network** extension .
 
-   1. Dans **[!UICONTROL Datastreams]** sélectionnez l’option **[!UICONTROL Datastream]** que vous avez créé dans le [étape précédente](create-datastream.md) pour chacun des environnements, par exemple **[!UICONTROL Application mobile Luma]**.
+   1. Dans **[!UICONTROL Datastreams]** sélectionnez l’option **[!UICONTROL Datastream]** que vous avez créé dans le [étape précédente](create-datastream.md) pour chacun des environnements, par exemple **[!DNL Luma Mobile App]**.
 
-   1. Spécifiez la variable **[!UICONTROL Domaine du réseau Edge]** dans **[!UICONTROL Configuration des domaines]**. Le domaine réseau Edge est le nom de votre organisation, suivi de `data.adobedc.net`, par exemple `techmarketingdemos.data.adobedc.net`.
+   1. Si la variable n’est pas déjà renseignée, spécifiez la variable **[!UICONTROL Domaine du réseau Edge]** dans **[!UICONTROL Configuration des domaines]**. Le domaine réseau Edge est le nom de votre organisation, suivi de `data.adobedc.net`, par exemple `techmarketingdemos.data.adobedc.net`.
 
    1. Dans la **[!UICONTROL Enregistrer dans la bibliothèque]** menu, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
 
