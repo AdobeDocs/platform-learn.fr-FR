@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriels
 user-guide-description: Découvrez les nombreux composants d’Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 42%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 42%
    + [Présentation d’Audience Portal et de la composition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Chargement d’audiences](audiences/upload-audiences.md)
    + [Présentation du créateur de règles d’audience](audiences/audience-rule-builder-overview.md)
-   + [Création d’audiences](audiences/create-audiences.md)
+   + [Créer des audiences](audiences/create-audiences.md)
    + [Création d’audiences basées sur du contenu](audiences/create-content-based-audiences.md)
    + [Création d’audiences de conversion](audiences/create-conversion-audiences.md)
    + [Créer des audiences à partir d’audiences existantes](audiences/create-audiences-from-existing-audiences.md)
@@ -112,6 +112,7 @@ ht-degree: 42%
    + [Connexion aux destinations](/help/platform/destinations/connecting-to-destinations.md)
    + [Création de destinations et activation de données](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Activation de profils et de segments vers une destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Configuration d’une destination d’exportation de jeux de données](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Intégration à la correspondance client Google](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configuration de la destination Azure Blob](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Configuration de la destination Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
@@ -157,7 +158,7 @@ ht-degree: 42%
    + [Présentation des schémas d’union](/help/platform/profiles/union-schemas-overview.md)
    + [Mise à jour d’un attribut spécifique à l’aide de la fonction upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Confidentialité et sécurité {#privacy}
-   + [Présentation du Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Présentation de Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Données d’identité dans les demandes d’accès à des informations personnelles](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [Bibliothèque JavaScript Privacy](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Étiquettes de confidentialité dans Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
