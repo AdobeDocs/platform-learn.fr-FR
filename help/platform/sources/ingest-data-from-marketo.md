@@ -11,7 +11,7 @@ jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 6%
@@ -26,13 +26,13 @@ Découvrez comment ingérer facilement des données de Marketo Engage dans Real-
 
 Découvrez comment configurer le connecteur source pour Marketo à l’aide du workflow de modèle. Ce workflow génère automatiquement les ressources nécessaires à l’ingestion de données Marketo basées sur des modèles. Cela vous permet de gagner du temps au début et les ressources peuvent être personnalisées en fonction de vos besoins.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on)
 
 ## Workflow standard
 
 Découvrez comment configurer le connecteur source pour Marketo à l’aide du workflow standard. Le workflow standard nécessite la création préalable de schémas et d’espaces de noms d’identité.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 Pour plus d’informations, consultez la documentation suivante :
 * [Documentation du connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

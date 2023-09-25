@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service vous aide à comprendre vos données en 
 **Architectes de données** et **Ingénieurs de données** Vous devrez utiliser query service en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Query Service :
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## Autorisations requises
 
@@ -41,8 +41,8 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 
 Commençons par quelques requêtes simples :
 
-1. Dans l’interface utilisateur de Platform, accédez à **Requêtes** dans le volet de navigation de gauche
-1. Sélectionnez la **Créer une requête** bouton en haut à droite pour ouvrir une zone de texte afin d’exécuter et d’exécuter des requêtes.
+1. Dans l’interface utilisateur de Platform, accédez à **Requêtes** dans la navigation de gauche
+1. Sélectionnez la variable **Créer une requête** bouton en haut à droite pour ouvrir une zone de texte afin d’exécuter et d’exécuter des requêtes.
 1. Saisissez la requête suivante dans l’éditeur, puis appuyez sur Maj+Entrée ou Maj+Retour pour exécuter la requête.
 
    ```
@@ -68,7 +68,7 @@ Commençons par quelques requêtes simples :
    ![Erreur dans la requête](assets/queries-error.png)
 
 1. Avec votre requête réussie, **[!UICONTROL Nom]** it `Luma Gold Level Customers`
-1. Sélectionnez la **[!UICONTROL Enregistrer]** button
+1. Sélectionnez la variable **[!UICONTROL Enregistrer]** button
    ![Enregistrer la requête](assets/queries-loyaltySelect-save.png)
 
 

@@ -1,25 +1,25 @@
 ---
 title: Diffusion de données à l’aide des connecteurs sources
-description: Cette vidéo explique comment diffuser en temps réel des données d’une source d’espace de stockage vers la plateforme et utiliser ces données en temps réel pour l’engagement client.
+description: Découvrez comment diffuser des données en temps réel d’une source de stockage dans le cloud vers Platform et utiliser les données en temps réel pour l’engagement des clients.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 52%
+source-wordcount: '113'
+ht-degree: 10%
 
 ---
 
 # Diffusion de données à l’aide des connecteurs sources
 
-Cette vidéo explique comment diffuser en temps réel des données d’une source d’espace de stockage vers la plateforme et utiliser ces données en temps réel pour l’engagement client.
+Découvrez comment diffuser des données en temps réel d’une source de stockage dans le cloud vers Platform et utiliser les données en temps réel pour l’engagement des clients.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## Ressources supplémentaires
 

@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 3%
@@ -33,7 +33,7 @@ Il y a de l&#39;importance [Barrières de sécurité pour les données Real-time
 **Architectes de données** Vous devrez activer Real-time Customer Profile en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Real-time Customer Profile :
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Autorisations requises
 
@@ -54,7 +54,7 @@ Commençons par la tâche simple d’activation d’un schéma :
 1. Dans l’interface utilisateur de Platform, ouvrez le **Schéma de fidélité Luma**
 1. Dans **[!UICONTROL Propriétés du schéma]**, faites basculer le **Profil** switch
 1. Dans le modal de confirmation, appuyez sur la touche **[!UICONTROL Activer]** pour confirmer
-1. Sélectionnez la **[!UICONTROL Enregistrer]** pour enregistrer vos modifications.
+1. Sélectionnez la variable **[!UICONTROL Enregistrer]** pour enregistrer vos modifications.
 
    >[!IMPORTANT]
    >
@@ -74,7 +74,7 @@ Facile, n&#39;est-ce pas ? Répétez les étapes ci-dessus pour ces autres sché
 
 1. Schéma du catalogue de produits Luma
 1. Schéma d’événements d’achat hors ligne Luma
-1. Schéma des événements web Luma (dans le modal de confirmation, cochez la case &quot;Les données de ce schéma contiendront une identité Principale dans le champ identityMap&quot;.
+1. Schéma des événements web Luma (dans le modal de confirmation, cochez la case &quot;Les données de ce schéma contiendront une identité principale dans le champ identityMap&quot;.
 
 ## Activation des schémas pour Real-time Customer Profile à l’aide de l’API Platform
 
@@ -87,9 +87,9 @@ Commençons par obtenir le `meta:altId` de `Luma CRM Schema`:
 1. Ouvrir [!DNL Postman]
 1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Sélectionnez la **Envoyer** button
+1. Sélectionnez la variable **Envoyer** button
 1. Vous devriez obtenir une réponse 200
-1. Recherchez dans la réponse pour la variable `Luma CRM Schema` et copiez l’élément `meta:altId` value
+1. Recherchez dans la réponse la `Luma CRM Schema` et copiez le `meta:altId` value
    ![Copiez le méta:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### Activation du schéma
@@ -108,7 +108,7 @@ Maintenant que nous avons le meta:altId du schéma, nous pouvons l&#39;activer p
    }]
    ```
 
-1. Sélectionnez la **Envoyer** button
+1. Sélectionnez la variable **Envoyer** button
 1. Vous devriez obtenir une réponse 200
 
    ![Activez le schéma CRM pour le profil avec votre méta:altIid personnalisé utilisé comme paramètre SCHEMA_ID .](assets/profile-crm-enableProfile.png)
@@ -148,9 +148,9 @@ Tout d’abord, nous devons obtenir le `id` de `Luma CRM Dataset`:
 1. Ouvrir [!DNL Postman]
 1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrir la requête **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. Sélectionnez la **Envoyer** button
+1. Sélectionnez la variable **Envoyer** button
 1. Vous devriez obtenir une réponse 200
-1. Recherchez dans la réponse pour la variable `Luma CRM Dataset` et copiez l’identifiant :
+1. Recherchez dans la réponse la `Luma CRM Dataset` et copiez l’identifiant :
    ![Copier l’ID](assets/profile-crm-copyDatasetId.png)
 
 ### Activer le jeu de données
@@ -172,7 +172,7 @@ Maintenant que nous disposons de l’identifiant du jeu de données, nous pouvon
    }
    ```
 
-1. Sélectionnez la **Envoyer** button
+1. Sélectionnez la variable **Envoyer** button
 1. Vous devriez obtenir une réponse 200
 
    ![Activez le jeu de données CRM pour le profil, en veillant à utiliser votre identifiant de jeu de données personnalisé comme paramètre DATASET_ID .](assets/profile-crm-enableDataset.png)
@@ -191,4 +191,4 @@ Vous pouvez également confirmer que l’interface utilisateur affiche le jeu de
 
 
 **Ingénieurs de données** doit continuer à [Abonnement aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md) leçon.
-**Architectes de données** _peuvent ignorer_ et accédez au [leçon sur l’ingestion par lots](ingest-batch-data.md).
+**Architectes de données** _peut sauter en amont_ et accédez au [leçon sur l’ingestion par lots](ingest-batch-data.md).

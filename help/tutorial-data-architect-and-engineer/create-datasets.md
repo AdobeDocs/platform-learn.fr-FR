@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 10%
@@ -26,7 +26,7 @@ Toutes les données correctement ingérées dans Adobe Experience Platform sont 
 **Architectes de données** Vous devrez créer des jeux de données en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les jeux de données :
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 
 ## Autorisations requises
 
@@ -44,7 +44,7 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 Au cours de cet exercice, nous allons créer des jeux de données dans l’interface utilisateur. Commençons par les données de fidélité :
 
 1. Accédez à **[!UICONTROL Jeux de données]** dans la navigation de gauche de l’interface utilisateur de Platform
-1. Sélectionnez la **[!UICONTROL Création d’un jeu de données]** button
+1. Sélectionnez la variable **[!UICONTROL Création d’un jeu de données]** button
    ![Création d’un jeu de données](assets/datasets-createDataset.png)
 
 1. Dans l’écran suivant, sélectionnez **Création d’un jeu de données à partir d’un schéma**
@@ -63,7 +63,7 @@ Vous avez terminé. Je vous ai dit que ça allait être rapide. Créez ces autre
 1. `Luma Product Catalog Dataset` pour votre `Luma Product Catalog Schema`
 
 
-## Création d’un jeu de données à l’aide d’une API
+## Créer un jeu de données à l’aide d’une API
 
 Créez maintenant le `Luma CRM Dataset` à l’aide de l’API.
 
@@ -78,16 +78,16 @@ Tout d’abord, nous devons obtenir le `$id` de `Luma CRM Schema`:
 1. Ouvrir [!DNL Postman]
 1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
 1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Sélectionnez la **Envoyer** button
+1. Sélectionnez la variable **Envoyer** button
 1. Vous devriez obtenir une réponse 200
-1. Recherchez dans la réponse pour la variable `Luma CRM Schema` et copiez l’élément `$id` value
+1. Recherchez dans la réponse la `Luma CRM Schema` et copiez le `$id` value
    ![Copiez le $id](assets/dataset-crm-getSchemaId.png)
 
 ### Création du jeu de données
 
 Vous pouvez maintenant créer le jeu de données :
 
-1. Télécharger [API.postman_collection.json du service de catalogue](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) à `Luma Tutorial Assets` dossier.
+1. Télécharger [API.postman_collection.json du service de catalogue](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) à votre `Luma Tutorial Assets` dossier.
 1. Importez la collection dans [!DNL Postman]
 1. Sélectionner la requête **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
 1. Collez les éléments suivants en tant que **Corps** de la requête, ***en remplaçant la valeur id par la vôtre***:
@@ -108,7 +108,7 @@ Vous pouvez maintenant créer le jeu de données :
    }
    ```
 
-1. Sélectionnez la **Envoyer** button
+1. Sélectionnez la variable **Envoyer** button
 1. Vous devriez obtenir une réponse 201 Créée contenant l’identifiant de votre nouveau jeu de données !
    ![Jeu de données créé avec l’API, votre $id personnalisé utilisé dans le corps](assets/datasets-crm-created.png)
 
@@ -117,8 +117,8 @@ Vous pouvez maintenant créer le jeu de données :
 > Problèmes courants à l’origine de cette demande et correctifs probables :
 >
 > * `400: There was a problem retrieving xdm schema`. Assurez-vous d’avoir remplacé l’identifiant dans l’exemple ci-dessus par l’identifiant de votre propre compte. `Luma CRM Schema`
-> * Aucun jeton d’authentification : Exécutez la variable **OAuth : Demander le jeton d’accès** requête de génération d’un nouveau jeton
-> * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Mettez à jour le **CONTAINER_ID** Variable d’environnement de `global` to `tenant`
+> * Aucun jeton d’authentification : exécutez la **OAuth : Request Access Token** requête de génération d’un nouveau jeton
+> * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: mettez à jour la variable **CONTAINER_ID** Variable d’environnement de `global` to `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Vérification des autorisations utilisateur dans le Admin Console
 
 

@@ -8,25 +8,19 @@ feature: Debugger
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 8cddffe88b2d15970d4d742a839577333a29d966
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 50%
+source-wordcount: '182'
+ht-degree: 41%
 
 ---
 
 # Utilisation du débogueur Adobe Experience Cloud
 
-Découvrez comment utiliser Adobe Experience Cloud Debugger pour faciliter la compréhension et la résolution des problèmes liés à vos implémentations Experience Cloud. Le débogueur est optimisé pour vous montrer exactement quelles solutions d’Adobe sont mises en oeuvre et quels appels ils lancent, en particulier vers Analytics, Target, l’Audience Manager, Ad Cloud, les balises, Dynamic Tag Management et Identity Service.
+Découvrez comment utiliser le [Débogueur Adobe Experience Cloud](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) pour vous aider à comprendre et à résoudre les problèmes liés aux mises en oeuvre de vos Experience Cloud. Le débogueur est optimisé pour vous montrer exactement quelles solutions d’Adobe sont mises en oeuvre et quels appels ils lancent, en particulier vers Analytics, Target, l’Audience Manager, Ad Cloud, les balises, Dynamic Tag Management et le service d’identité. Pour plus d’informations, voir [Documentation Experience Cloud Debugger](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html).
 
 >[!NOTE]
 >
 >Envisagez de mettre à niveau vers la [Adobe Experience Platform Debugger](../overview.md), qui est une version mise à jour de l’extension présentée dans cette vidéo et qui contient la prise en charge de nouvelles fonctionnalités telles que le SDK Web Platform.
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/23064/?quality=12)
-
-## Ressources supplémentaires
-
-* [Téléchargez l’extension Adobe Experience Cloud Debugger depuis la boutique Chrome.](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Documentation Experience Cloud Debugger](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html)

@@ -9,7 +9,7 @@ jira: KT-7035
 thumbnail: 331022.jpg
 type: Event
 exl-id: b1efeaa8-e168-497d-8e11-80e1cc631e63
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Ce webinaire montre comment Real-Time CDP d’Adobe vous aide à créer de vraies stratégies de personnalisation avec vos audiences, mais aussi comment il se plie à vos applications existantes d’écosystème et non-Adobe à partir de Microsoft, Google et Facebook.
 
->[!VIDEO](https://video.tv.adobe.com/v/331022/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331022/?learn=on)
 
 

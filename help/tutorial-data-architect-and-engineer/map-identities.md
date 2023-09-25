@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 10%
@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service vous permet de mieux connaître vos c
 **Architectes de données** Vous devrez mapper des identités en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’identité dans Adobe Experience Platform :
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >
@@ -56,8 +56,8 @@ Dans cet exercice, nous allons créer des espaces de noms d’identité pour les
 
 Commençons par créer un espace de noms pour le schéma de fidélité Luma :
 
-1. Dans l’interface utilisateur de Platform, accédez à **[!UICONTROL Identités]** dans le volet de navigation de gauche
-1. Vous remarquerez que plusieurs espaces de noms d’identité d’usine sont disponibles. Sélectionnez la **[!UICONTROL Créer un espace de noms d’identité]** button
+1. Dans l’interface utilisateur de Platform, accédez à **[!UICONTROL Identités]** dans la navigation de gauche
+1. Vous remarquerez que plusieurs espaces de noms d’identité d’usine sont disponibles. Sélectionnez la variable **[!UICONTROL Créer un espace de noms d’identité]** button
 1. Fournissez les détails suivants :
 
    | Champ | Valeur |
@@ -94,10 +94,10 @@ Nous allons créer notre espace de noms CRM via l&#39;API.
 
 Créons l’espace de noms d’identité `Luma CRM Id`:
 
-1. Télécharger [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) à `Luma Tutorial Assets` folder
+1. Télécharger [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) à votre `Luma Tutorial Assets` folder
 1. Importez la collection dans [!DNL Postman]
 1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès.
-1. Sélectionner la requête **[!UICONTROL Identity Service] > [!UICONTROL Espace de noms d’identité] > [!UICONTROL Création d’un espace de noms d’identité].**
+1. Sélectionner la requête **[!UICONTROL Identity Service] > [!UICONTROL Identity Namespace] > [!UICONTROL Créer un espace de noms d’identité].**
 1. Collez les éléments suivants en tant que [!DNL Body] de la requête :
 
    ```json
@@ -113,7 +113,7 @@ Créons l’espace de noms d’identité `Luma CRM Id`:
    ![Espace de noms d’identité](assets/identity-createUsingApi.png)
 
 Si vous revenez à l’interface utilisateur, vos trois nouveaux espaces de noms personnalisés s’affichent désormais :
-![Espace de noms d’identité ](assets/identity-newIdentities.png)
+![Identity Namespace ](assets/identity-newIdentities.png)
 
 
 ## Étiquetage des champs d’identité dans les schémas
@@ -123,38 +123,38 @@ Maintenant que nous disposons de nos espaces de noms, l’étape suivante consis
 
 ### Étiquetage Des Champs XDM Pour L’Identité Principal
 
-Chaque schéma utilisé avec Real-time Customer Profile doit disposer d’une identité Principale spécifiée. Et chaque enregistrement ingéré doit avoir une valeur pour ce champ.
+Chaque schéma utilisé avec Real-time Customer Profile doit comporter une identité principale spécifiée. Et chaque enregistrement ingéré doit avoir une valeur pour ce champ.
 
-Ajoutons une identité Principale à la variable `Luma Loyalty Schema`:
+Ajoutons une identité principale au `Luma Loyalty Schema`:
 
 1. Ouvrez le `Luma Loyalty Schema`.
 1. Sélectionnez le `Luma Identity profile field group`
-1. Sélectionnez la `loyaltyId` field
+1. Sélectionnez la variable `loyaltyId` field
 1. Vérifiez les **[!UICONTROL Identité]** box
-1. Vérifiez les **[!UICONTROL Identité Principal]** box, également
+1. Vérifiez les **[!UICONTROL Identité du Principal]** box, également
 1. Sélectionnez l’espace de noms `Luma Loyalty Id` dans le menu déroulant **[!UICONTROL Espaces de noms d’identité]**
 1. Sélectionnez **[!UICONTROL Appliquer]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
-   ![Identité Principal ](assets/identity-loyalty-primary.png)
+   ![Identité du Principal ](assets/identity-loyalty-primary.png)
 
 Répétez le processus pour certains de vos autres schémas :
 
-1. Dans le `Luma CRM Schema`, étiquetez la variable `crmId` comme identité Principale à l’aide de la variable `Luma CRM Id` namespace
-1. Dans le `Luma Offline Purchase Events Schema`, étiquetez la variable `loyaltyId` comme identité Principale à l’aide de la variable `Luma Loyalty Id` namespace
-1. Dans le `Luma Product Catalog Schema`, étiquetez la variable `productSku` comme identité Principale à l’aide de la variable `Luma Product SKU` namespace
+1. Dans le `Luma CRM Schema`, étiquetez la variable `crmId` comme identité principale à l’aide de la propriété `Luma CRM Id` namespace
+1. Dans le `Luma Offline Purchase Events Schema`, étiquetez la variable `loyaltyId` comme identité principale à l’aide de la propriété `Luma Loyalty Id` namespace
+1. Dans le `Luma Product Catalog Schema`, étiquetez la variable `productSku` comme identité principale à l’aide de la propriété `Luma Product SKU` namespace
 
 >[!NOTE]
 >
->Les données collectées avec le SDK Web constituent une exception à la pratique habituelle de l’étiquetage des champs d’identité dans le schéma. Le SDK Web utilise la carte des identités pour étiqueter les identités *côté implémentation* et ainsi, nous déterminerons les identités pour la variable `Luma Web Events Schema` lorsque nous implémentons le SDK Web sur le site web de Luma. Dans cette leçon ultérieure, nous allons collecter l’identifiant visiteur Experience Cloud (ECID) en tant qu’identifiant Principal et l’identifiant crmId en tant qu’identifiant secondaire.
+>Les données collectées avec le SDK Web constituent une exception à la pratique habituelle de l’étiquetage des champs d’identité dans le schéma. Le SDK Web utilise la carte des identités pour étiqueter les identités *côté implémentation* et ainsi, nous déterminerons les identités pour la variable `Luma Web Events Schema` lorsque nous implémentons le SDK Web sur le site web de Luma. Dans cette leçon ultérieure, nous allons collecter l’identifiant visiteur Experience Cloud (ECID) comme identifiant principal et crmId comme identifiant secondaire.
 
-Avec notre sélection d&#39;identités Principales, il est clair de voir comment `Luma CRM Schema` peut se connecter au `Luma Offline Purchase Events Schema` car ils utilisent tous deux `loyaltyId` comme identifiant. Mais comment pouvons-nous connecter nos achats hors ligne au comportement en ligne ? Comment classer les produits achetés avec notre catalogue de produits ? Nous utiliserons d’autres champs d’identité et relations de schémas.
+Avec notre sélection des identités primaires, il est clair de voir comment `Luma CRM Schema` peut se connecter au `Luma Offline Purchase Events Schema` car ils utilisent tous deux `loyaltyId` comme identifiant. Mais comment pouvons-nous connecter nos achats hors ligne au comportement en ligne ? Comment pouvons-nous classer les produits achetés dans notre catalogue de produits ? Nous utiliserons d’autres champs d’identité et relations de schémas.
 
 <!--use a visual-->
 
 ### Étiquetage Des Champs XDM Pour L’Identité Secondaire
 
-Plusieurs champs d’identité peuvent être ajoutés à un schéma. Les identités non Principales sont souvent appelées identités secondaires. Pour connecter les achats hors ligne au comportement en ligne, nous allons ajouter crmId en tant qu’identifiant secondaire à notre `Luma Loyalty Schema` et plus tard dans nos données d’événements web. Mettons à jour le `Luma Loyalty Schema`:
+Plusieurs champs d’identité peuvent être ajoutés à un schéma. Les identités non primaires sont souvent appelées identités secondaires. Pour connecter les achats hors ligne au comportement en ligne, nous allons ajouter crmId en tant qu’identifiant secondaire à notre `Luma Loyalty Schema` et plus tard dans nos données d’événements web. Mettons à jour le `Luma Loyalty Schema`:
 
 1. Ouvrez le `Luma Loyalty Schema`.
 1. Sélectionnez `Luma Identity Profile Field group`
@@ -174,13 +174,13 @@ Maintenant que nos champs d’identité sont libellés, nous pouvons terminer la
 1. Sélectionner **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** field
 1. Vérifiez les **[!UICONTROL Relation]** box
 1. Sélectionner `Luma Product Catalog Schema` comme la propriété **[!UICONTROL Schéma de référence]**
-1. `Luma Product SKU` doit être automatiquement renseigné en tant que **[!UICONTROL Espace de noms d’identité de référence]**
+1. `Luma Product SKU` doit être automatiquement renseigné en tant que **[!UICONTROL Espace d’identification de référence]**
 1. Sélectionnez **[!UICONTROL Appliquer]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
    ![Champ de référence](assets/identity-offlinePurchase-relationship.png)
 
-Répétez ce processus pour créer une relation entre la variable `Luma Web Events Schema` et le `Luma Product Catalog Schema`.
+Répétez ce processus pour créer une relation entre la variable `Luma Web Events Schema` et la variable `Luma Product Catalog Schema`.
 
 Notez qu’après avoir défini la relation, elle est indiquée dans la variable **[!UICONTROL Composition]** et **[!UICONTROL Structure]** de l’éditeur de schéma.
 

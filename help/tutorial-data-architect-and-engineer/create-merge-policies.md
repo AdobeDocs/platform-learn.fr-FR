@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nous allons nous en tenir à l’interface utilisateur pour cette leçon, mais d
 **Architectes de données** Vous devrez créer des stratégies de fusion en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les stratégies de fusion :
->[!VIDEO](https://video.tv.adobe.com/v/330433?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Autorisations requises
 
@@ -49,30 +49,30 @@ Vous vous souvenez peut-être que, dans la leçon sur l’ingestion par lots, no
 
 Alors, pourquoi ? `Danny` win comme prénom ? Jetons un coup d&#39;oeil :
 
-1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Profils]** dans le volet de navigation de gauche
+1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Profils]** dans la navigation de gauche
 1. Accédez au **[!UICONTROL Stratégies de fusion]** tab
 1. La stratégie de fusion par défaut est horodatée. Puisque vous avez chargé les données CRM après les données de fidélité, `Danny` a été sélectionné comme prénom dans le profil :
 
 ![Écran Stratégie de fusion](assets/mergepolicies-default.png)
 
-Lorsque plusieurs schémas sont activés pour le profil, une [!UICONTROL Schéma d’union] est automatiquement créé pour tous les schémas d’enregistrement activés pour les profils partageant une classe de base. Vous pouvez afficher la variable [!UICONTROL Schémas d’union] en accédant à la fonction **[!UICONTROL Schéma d’union]** .
+Lorsque plusieurs schémas sont activés pour le profil, une [!UICONTROL Schéma d’union] est automatiquement créé pour tous les schémas d’enregistrement activés pour les profils partageant une classe de base. Vous pouvez afficher la [!UICONTROL Schémas d’union] en accédant à la **[!UICONTROL Schéma d’union]** .
 
 ![Écran Stratégie de fusion](assets/mergepolicies-unionSchema.png)
 
 Notez qu’il n’existe pas de schéma d’union pour la classe ExperienceEvent. Bien que les données ExperienceEvent se trouvent toujours dans le profil, puisqu’elles sont basées sur des séries temporelles, chaque événement comprend un horodatage et les identifiants et les collisions ne posent pas problème.
 
-Maintenant, que se passe-t-il si vous n’aimez pas cette stratégie de fusion par défaut ? Que se passe-t-il si Luma décide que son système de gestion de la relation client devrait être la source de vérité en cas de conflit ? Pour cela, nous allons créer une stratégie de fusion.
+Maintenant, que se passe-t-il si vous n’aimez pas cette stratégie de fusion par défaut ? Que se passe-t-il si Luma décide que son système de gestion de la relation client devrait être la source de vérité en cas de conflit ? Pour ce faire, nous allons créer une stratégie de fusion.
 
-## Création d’une stratégie de fusion dans l’interface utilisateur
+## Créer une stratégie de fusion dans l’interface utilisateur
 
 1. Dans l’écran Stratégies de fusion, sélectionnez la variable **[!UICONTROL Créer une stratégie de fusion]** dans le coin supérieur droit
 1. Comme la variable **[!UICONTROL Nom]**, saisissez `Loyalty Prioritized`
 1. Comme la variable **[!UICONTROL Schéma]**, sélectionnez **[!UICONTROL Profil XDM]** (notez que votre classe personnalisée, puisqu’il s’agit de données d’enregistrement, est également disponible pour les stratégies de fusion).
 1. Pour **[!UICONTROL Assemblage D’Id]**, sélectionnez **[!UICONTROL Graphique privé]**
 1. Pour **[!UICONTROL Fusion d’attributs]**, sélectionnez **[!UICONTROL Priorité du jeu de données]**
-1. Glisser-déposer `Luma Loyalty Dataset` et `Luma CRM Dataset` au **[!UICONTROL Jeu de données]** du panneau.
+1. Glisser-déposer `Luma Loyalty Dataset` et `Luma CRM Dataset` à la fonction **[!UICONTROL Jeu de données]** du panneau.
 1. Assurez-vous de `Luma Loyalty Dataset` est en haut en le faisant glisser au-dessus de la balise `Luma CRM Dataset`
-1. Sélectionnez la **[!UICONTROL Enregistrer]** button
+1. Sélectionnez la variable **[!UICONTROL Enregistrer]** button
    <!--do i need to explain Private Graph? Is that GA?-->
    ![Stratégie de fusion](assets/mergepolicies-newPolicy.png)
 
@@ -84,7 +84,7 @@ Voyons si la stratégie de fusion fait ce à quoi nous nous attendons :
 1. Modifiez la variable **[!UICONTROL Stratégie de fusion]** à votre nouvelle `Loyalty Prioritized` policy
 1. Comme la variable **[!UICONTROL Espace de noms d’identité]**, utilisez `Luma CRM Id`
 1. Comme la variable **[!UICONTROL Valeur d’identité]** use `112ca06ed53d3db37e4cea49cc45b71e`
-1. Sélectionnez la **[!UICONTROL Afficher le profil]** button
+1. Sélectionnez la variable **[!UICONTROL Afficher le profil]** button
 1. `Daniel` est de retour !
 
 ![Affichage d’un profil avec une stratégie de fusion différente](assets/mergepolicies-lookupProfileWithMergePolicy.png)
@@ -99,7 +99,7 @@ Lors de la création de stratégies de fusion utilisant la priorité du jeu de d
 1. Pour **[!UICONTROL Assemblage D’Id]**, sélectionnez **[!UICONTROL Aucun]**
 1. Pour **[!UICONTROL Fusion d’attributs]**, sélectionnez **[!UICONTROL Priorité du jeu de données]**
 1. Faites glisser et déposez uniquement le `Luma Loyalty Dataset` to **[!UICONTROL Jeu de données sélectionné]** du panneau.
-1. Sélectionnez la **[!UICONTROL Enregistrer]** button
+1. Sélectionnez la variable **[!UICONTROL Enregistrer]** button
 
 ![Stratégie de fusion Loyalty Only](assets/mergepolicies-loyaltyOnly.png)
 
@@ -111,19 +111,19 @@ Examinons maintenant ce que cette stratégie de fusion fait :
 1. Modifiez la variable **[!UICONTROL Stratégie de fusion]** à votre nouvelle `Loyalty Only` policy
 1. Comme la variable **[!UICONTROL Espace de noms d’identité]**, utilisez `Luma CRM Id`
 1. Comme la variable **[!UICONTROL Valeur d’identité]** use `112ca06ed53d3db37e4cea49cc45b71e`
-1. Sélectionnez la **[!UICONTROL Afficher le profil]** button
+1. Sélectionnez la variable **[!UICONTROL Afficher le profil]** button
 1. Vérifiez qu’aucun profil n’est trouvé :
    ![Fidélité Uniquement aucune recherche d’identifiant CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
 
-L’identifiant CRM est un champ d’identité dans la variable `Luma Loyalty Dataset`, mais seules les identités Principales peuvent être utilisées pour rechercher des profils. Donc, recherchons le profil à l&#39;aide de la Principale identité, `Luma Loyalty Id`&quot;
+L’identifiant CRM est un champ d’identité dans la variable `Luma Loyalty Dataset`, mais seules les identités primaires peuvent être utilisées pour rechercher des profils. Donc, recherchons le profil à l&#39;aide de l&#39;identité principale, `Luma Loyalty Id`&quot;
 
-1. Modifiez la variable **[!UICONTROL Espace de noms d’identité]** to `Luma Loyalty Id`
+1. Modifiez la variable **[!UICONTROL Identity Namespace]** to `Luma Loyalty Id`
 1. Comme la variable **[!UICONTROL Valeur d’identité]** use `5625458`
-1. Sélectionnez la **[!UICONTROL Afficher le profil]** button
+1. Sélectionnez la variable **[!UICONTROL Afficher le profil]** button
 1. Sélectionner l’identifiant du profil pour ouvrir le profil
 1. Accédez au **[!UICONTROL Attributs]** tab
 1. Notez que d’autres détails de profil du jeu de données CRM, tels que le numéro de téléphone mobile et l’adresse électronique, ne sont pas disponibles, car nous ne faisons que
-   ![Les données de gestion de la relation client ne sont pas visibles dans la stratégie de fidélité uniquement](assets/mergepolicies-loyaltyOnly-attributes.png)
+   ![Les données CRM ne sont pas visibles dans la stratégie de fidélité uniquement](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. Accédez au **[!UICONTROL Événements]** tab
 1. Les données ExperienceEvent sont disponibles même si elles ne sont pas explicitement incluses dans les jeux de données de stratégie de fusion :
    ![Les événements sont visibles dans la stratégie de fidélité uniquement](assets/mergepolicies-loyaltyOnly-events.png)

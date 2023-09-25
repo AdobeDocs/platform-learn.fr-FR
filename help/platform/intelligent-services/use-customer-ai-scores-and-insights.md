@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-4171
 thumbnail: 32666.jpg
 exl-id: f3f628ef-223a-48d9-979e-86f038268923
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 84%
@@ -17,8 +17,7 @@ ht-degree: 84%
 
 # Utiliser les scores et les informations de Customer AI
 
-Découvrez comment utiliser les scores de propension et les statistiques de l’IA dédiée aux clients pour convertir et fidéliser les clients et les clientes.
+Découvrez comment utiliser les scores de propension et les statistiques de l’IA dédiée aux clients pour convertir et fidéliser les clients et les clientes. Pour plus d’informations, consultez la [Documentation de Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on)
 
-Pour plus d’informations, consultez la [Documentation de Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr)

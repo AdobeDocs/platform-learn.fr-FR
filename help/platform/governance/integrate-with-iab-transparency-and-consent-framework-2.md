@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-5950
 thumbnail: 38346.jpg
 exl-id: 337b97d0-fd29-4bdb-a79a-9fe428adaae8
-source-git-commit: 214e7a21894274ac0de3af6c6c40d666a4ad8ce2
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 50%
@@ -19,4 +19,4 @@ ht-degree: 50%
 
 Cette vidéo montre comment Real-time Customer Data Platform de l’Adobe aide les marques à respecter le consentement des consommateurs lorsqu’elles se lancent dans des propriétés numériques. Grâce à l’appui du Framework 2.0 sur la transparence et le consentement de l’IAB, les marques améliorent leur flexibilité quant à la façon dont elles peuvent interagir avec les consommateurs tout en leur offrant un meilleur contrôle sur leur consentement à le faire.
 
->[!VIDEO](https://video.tv.adobe.com/v/38346?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38346?learn=on)

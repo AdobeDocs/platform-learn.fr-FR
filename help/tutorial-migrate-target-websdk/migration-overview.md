@@ -1,7 +1,8 @@
 ---
 title: Présentation de la migration | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez les principales différences entre at.js et le SDK Web Platform et comment planifier votre effort de migration.
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 1%
@@ -16,7 +17,7 @@ Quelle que soit la simplicité ou la complexité de votre mise en oeuvre, il est
 
 Le processus de migration comprend les étapes clés suivantes :
 
-1. Évaluer votre mise en oeuvre actuelle et déterminer une approche de migration
+1. Évaluation de votre mise en oeuvre actuelle et détermination d’une approche de migration
 1. Configuration des composants initiaux pour la connexion au réseau Adobe Experience Platform Edge
 1. Mettez à jour l’implémentation de base pour remplacer at.js par le SDK Web Platform.
 1. Améliorez la mise en oeuvre du SDK Web Platform pour vos cas d’utilisation spécifiques. Cela peut impliquer la transmission de paramètres supplémentaires, la prise en compte des modifications d’affichage d’une seule page (SPA), l’utilisation de jetons de réponse, etc.
@@ -29,9 +30,9 @@ Avant de commencer le processus de migration, il est important de comprendre les
 
 ### Différences opérationnelles
 
-Le SDK Web Platform combine les fonctionnalités de plusieurs applications Adobe en une seule bibliothèque. Cette approche unifiée signifie que vous devez tenir compte des responsabilités et des processus entre les équipes pour garantir une mise en oeuvre saine.
+Le SDK Web Platform combine les fonctionnalités de plusieurs applications Adobe en une seule bibliothèque. Cette approche unifiée signifie que vous devez prendre en compte les responsabilités et les processus entre les équipes pour garantir une mise en oeuvre saine.
 
-|  | Target at.js 2.x | SDK Web de Platform |
+| | Target at.js 2.x | SDK Web de Platform |
 |---|---|---|
 | Propriété | La bibliothèque at.js est indépendante des autres bibliothèques d’applications. Les personnalisations et la propriété de ces bibliothèques disparates peuvent s’aligner sur différentes équipes de l’entreprise. | La bibliothèque SDK Web Platform et les données transmises sont unifiées pour toutes les applications Adobe. La propriété de l’implémentation du SDK Web Platform doit représenter les parties prenantes de toutes les applications en aval. |
 | Maintenance | Des équipes distinctes peuvent travailler sur les améliorations de mise en oeuvre pour chaque application d’Adobe, telles que Target et Analytics. | Idéalement, une seule équipe doit être responsable des améliorations qui affectent l’implémentation du SDK Web Platform. |
@@ -42,20 +43,20 @@ Le SDK Web Platform combine les fonctionnalités de plusieurs applications Adobe
 
 Le SDK Web Platform n’est pas une évolution de la bibliothèque at.js de Target. Il s’agit d’une nouvelle approche unifiée pour la mise en oeuvre de toutes les applications Adobe pour le canal web. Il y a plusieurs différences techniques à connaître.
 
-|  | Target at.js 2.x | SDK Web de Platform |
+| | Target at.js 2.x | SDK Web de Platform |
 |---|---|---|
 | Fonctionnalité de bibliothèque | Fonctionnalité de Target fournie par at.js. Intégrations à d’autres applications fournies par Visitor.js et AppMeasurement.js | Fonctionnalité pour toutes les applications Adobe fournies par une seule bibliothèque SDK Web Platform : alloy.js |
 | Performance | at.js est l’une des nombreuses bibliothèques qui doivent être chargées pour une intégration correcte dans les applications. Cela se traduit par un temps de chargement inférieur à la durée optimale. | Le SDK Web Platform est une bibliothèque légère unique qui élimine la nécessité de plusieurs bibliothèques spécifiques à l’application, ce qui se traduit par de meilleures performances de chargement de page. |
 | Demandes | Séparez les appels pour chaque application d’Adobe. Les appels Target sont largement indépendants des autres appels réseau. | Un seul appel pour toutes les applications Adobe. Les modifications apportées aux données transmises dans ces appels peuvent avoir un impact sur plusieurs applications en aval. |
 | Ordre de chargement | Une intégration correcte avec d’autres applications Adobe nécessite un ordre de chargement spécifique de bibliothèques et d’appels réseau. | Une intégration correcte ne repose pas sur l’assemblage de données à partir d’appels réseau disparates spécifiques à l’application. Par conséquent, l’ordre de chargement n’est pas un problème. |
-| Edge Network | Utilise le réseau Adobe Experience Cloud Edge (tt.omtrdc.net), éventuellement avec un CNAME spécifique à Target. | Utilise le réseau Edge Adobe Experience Platform (edge.adobedc.net), éventuellement avec un seul CNAME. |
+| Edge Network | Utilise le réseau Adobe Experience Cloud Edge (tt.omtrdc.net), éventuellement avec un CNAME spécifique à Target. | Utilise le réseau Adobe Experience Platform Edge (edge.adobedc.net), éventuellement avec un seul CNAME. |
 | Terminologie de base | Nom d’at.js : <br> - `mbox` <br> - `pageLoad` event (mbox globale) <br> - `offer` | SDK Web Platform équivalent : <br> - `decisionScope` <br> - `__view__` décisionScope <br> - `proposition` |
 
 ### Vue d’ensemble des vidéos
 
 La vidéo suivante présente un aperçu du SDK web Adobe Experience Platform et du réseau Adobe Experience Platform Edge.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
 Maintenant que vous comprenez les différences de haut niveau entre at.js et le SDK Web Platform, vous pouvez [planifier la migration](plan-migration.md).
 

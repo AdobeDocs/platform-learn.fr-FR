@@ -2,9 +2,9 @@
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1606'
 ht-degree: 10%
 
 ---
@@ -30,41 +30,41 @@ Experience Platform utilise le même schéma XDM que celui que vous avez créé 
 
 Vous devez avoir terminé les leçons suivantes :
 
-* Le **Configuration initiale** leçons :
-   * [Configuration des autorisations](configure-permissions.md)
-   * [Configuration d’un schéma XDM](configure-schemas.md)
-   * [Configurer un flux de données](configure-datastream.md)
+* La variable **Configuration initiale** leçons :
+   * [Configurer les autorisations](configure-permissions.md)
+   * [Configurer un schéma XDM](configure-schemas.md)
+   * [Configurer un trains de données](configure-datastream.md)
    * [Configuration d’un espace de noms d’identité](configure-identities.md)
 
-* Le **Configuration des balises** leçons :
-   * [Installation de l’extension SDK Web](install-web-sdk.md)
+* La variable **Configuration des balises** leçons :
+   * [Installer l’extension SDK Web](install-web-sdk.md)
    * [Création d’éléments de données](create-data-elements.md)
    * [Création de règles de balise](create-tag-rule.md)
 
 
-## Création d’un jeu de données
+## Créer un jeu de données
 
-Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées en tant que jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
+Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées sous la forme de jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
 Dans cet exercice, vous créez un jeu de données pour effectuer le suivi du contenu et des détails de commerce électronique pour le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!WARNING]
 >
->Vous devez avoir déjà créé la variable `Luma Web Event Data` schéma, comme indiqué dans la leçon précédente, [Configuration d’un schéma XDM](configure-schemas.md).
+>Vous devez avoir déjà créé la variable `Luma Web Event Data` schéma, comme indiqué dans la leçon précédente, [Configurer un schéma XDM](configure-schemas.md).
 
 
 1. Accédez au [Interface Experience Platform](https://experience.adobe.com/platform/)
 1. Vérifiez que vous vous trouvez dans l’environnement de test de développement que vous utilisez pour ce tutoriel.
 1. Ouvrir **[!UICONTROL Jeux de données]** à partir du volet de navigation de gauche
-1. Sélectionner **[!UICONTROL Création d’un jeu de données]**
+1. Sélectionnez **[!UICONTROL Créer un jeu de données]**
 
    ![Créer un schéma](assets/experience-platform-create-dataset.png)
 
-1. Sélectionnez la **[!UICONTROL Création d’un jeu de données à partir d’un schéma]** option
+1. Sélectionnez la variable **[!UICONTROL Création d’un jeu de données à partir d’un schéma]** option
 
    ![Créer un jeu de données à partir d’un schéma](assets/experience-platform-create-dataset-schema.png)
 
-1. Sélectionnez la `Luma Web Event Data` schéma créé dans [leçon précédente](configure-schemas.md) puis sélectionnez **[!UICONTROL Suivant]**
+1. Sélectionnez la variable `Luma Web Event Data` schéma créé dans la [leçon précédente](configure-schemas.md) puis sélectionnez **[!UICONTROL Suivant]**
 
    ![Jeu de données, sélectionnez le schéma](assets/experience-platform-create-dataset-schema-selection.png)
 
@@ -78,14 +78,13 @@ Un jeu de données est maintenant configuré pour commencer à collecter des don
 
 Vous pouvez maintenant configurer votre [!UICONTROL datastream] pour envoyer des données à [!UICONTROL Adobe Experience Platform]. Le flux de données est le lien entre votre propriété de balise, le réseau Platform Edge et le jeu de données Experience Platform.
 
-1. Ouvrez le [Collecte de données](https://experience.adobe.com/#/data-collection)Interface de {target=&quot;blank&quot;}
+1. Ouvrez le [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Sélectionner **[!UICONTROL Datastreams]** à partir du volet de navigation de gauche
 1. Ouvrez le flux de données que vous avez créé dans le [Configuration d’un flux de données](configure-datastream.md) leçon, `Luma Web SDK`
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**
-
    ![Ajout d’un service au flux de données](assets/experience-platform-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Experience Platform]** comme la propriété **[!UICONTROL Service]**
 1. Sélectionner `Luma Web Event Data` comme la propriété **[!UICONTROL Jeu de données d’événement]**
@@ -118,11 +117,11 @@ Ces étapes sont plus ou moins identiques à celles que vous avez effectuées da
 
 1. Revenez à la [page d’accueil de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Dans les balises réseau du SDK Web Platform affichées par le débogueur, sélectionnez la ligne &quot;Événements&quot; pour développer les détails dans une fenêtre contextuelle.
+1. Dans les balises réseau du SDK Web Platform affichées par le débogueur, sélectionnez la ligne &quot;events&quot; pour développer les détails dans une fenêtre contextuelle.
 
    ![SDK Web dans Debugger](assets/experience-platform-debugger-dev-eventType.png)
 
-1. Recherchez &quot;identityMap&quot; dans la fenêtre contextuelle. Vous devriez y voir lumaCrmId avec trois clés de authenticatedState, id et Principal.
+1. Recherchez &quot;identityMap&quot; dans la fenêtre contextuelle. Vous devriez y voir lumaCrmId avec trois clés de authenticatedState, id et primary
    ![SDK Web dans Debugger](assets/experience-platform-debugger-dev-idMap.png)
 
 Désormais, les données doivent être renseignées dans la variable `Luma Web Event Data` jeu de données et prêt pour la validation &quot;Aperçu du jeu de données&quot;.
@@ -156,9 +155,9 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 ## Activation du jeu de données et du schéma pour Real-time Customer Profile
 
-L’étape suivante consiste à activer le jeu de données et le schéma pour Real-Time Customer Profile. La diffusion en continu de données à partir du SDK Web est l’une des nombreuses sources de données qui transitent par Platform et vous souhaitez joindre vos données web à d’autres sources de données pour créer des profils clients à 360 degrés. Pour en savoir plus sur Real-time Customer Profile, regardez cette courte vidéo :
+L’étape suivante consiste à activer le jeu de données et le schéma pour Real-Time Customer Profile. La diffusion en continu de données à partir du SDK Web est l’une des nombreuses sources de données qui se connecte à Platform et vous souhaitez joindre vos données web à d’autres sources de données pour créer des profils clients à 360 degrés. Pour en savoir plus sur Real-time Customer Profile, regardez cette courte vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -169,7 +168,7 @@ L’étape suivante consiste à activer le jeu de données et le schéma pour Re
 
 1. Ouvrez le jeu de données que vous avez créé, `Luma Web Event Data`
 
-1. Sélectionnez la **[!UICONTROL Basculement du profil]** pour l’activer
+1. Sélectionnez la variable **[!UICONTROL Basculement du profil]** pour l’activer
 
    ![Basculement du profil](assets/setup-experience-platform-profile.png)
 
@@ -181,15 +180,15 @@ L’étape suivante consiste à activer le jeu de données et le schéma pour Re
 
 1. Ouvrez le schéma que vous avez créé, `Luma Web Event Data`
 
-1. Sélectionnez la **[!UICONTROL Basculement du profil]** pour l’activer
+1. Sélectionnez la variable **[!UICONTROL Basculement du profil]** pour l’activer
 
    ![Basculement du profil](assets/setup-experience-platform-profile-schema.png)
 
-1. Sélectionner **[!UICONTROL Les données de ce schéma contiendront une identité Principale dans le champ identityMap .]**
+1. Sélectionner **[!UICONTROL Les données de ce schéma contiendront une identité principale dans le champ identityMap .]**
 
    >[!IMPORTANT]
    >
-   >    Des identités Principal sont requises dans chaque enregistrement envoyé à Real-Time Customer Profile. En règle générale, les champs d’identité sont étiquetés dans le schéma. Toutefois, lors de l’utilisation des mappages d’identité, les champs d’identité ne sont pas visibles dans le schéma. Cette boîte de dialogue vous permet de confirmer que vous pensez à une identité Principale et que vous la spécifiez dans une carte d’identité lors de l’envoi de vos données. Comme vous le savez, le SDK Web utilise une carte d’identité et l’identifiant Experience Cloud (ECID) est l’identité Principale par défaut.
+   >    Les identités de Principal sont requises dans chaque enregistrement envoyé à Real-time Customer Profile. En règle générale, les champs d’identité sont étiquetés dans le schéma. Toutefois, lors de l’utilisation des mappages d’identité, les champs d’identité ne sont pas visibles dans le schéma. Cette boîte de dialogue vous permet de confirmer que vous avez en tête une identité principale et que vous la spécifiez dans une carte d’identité lors de l’envoi de vos données. Comme vous le savez, le SDK Web utilise une carte d’identité et l’identifiant Experience Cloud (ECID) est l’identité principale par défaut.
 
 
 1. Sélectionner **[!UICONTROL Activer]**
@@ -213,14 +212,13 @@ Désormais, le schéma est également activé pour profile.
 > * Réingérer les données
 
 
-
 ### Validation d’un profil
 
 Vous pouvez rechercher un profil client dans l’interface de Platform (ou de Journey Optimizer) pour confirmer que les données ont atterri dans Real-time Customer Profile. Comme son nom l’indique, les profils sont renseignés en temps réel. Il n’y a donc aucun délai comme lors de la validation des données dans le jeu de données.
 
 Vous devez tout d’abord générer davantage de données d’exemple. Répétez les étapes précédentes de cette leçon pour vous connecter au site web Luma lorsqu’il est mappé à votre propriété de balise. Inspect de la demande du SDK Web Platform pour s’assurer qu’il envoie des données avec la variable `lumaCRMId`.
 
-1. Dans le [Experience Platform](https://experience.adobe.com/platform/) interface, sélectionnez **[!UICONTROL Profils]** dans le volet de navigation de gauche
+1. Dans le [Experience Platform](https://experience.adobe.com/platform/) interface, sélectionnez **[!UICONTROL Profils]** dans la navigation de gauche
 
 1. Comme la variable **[!UICONTROL Espace de noms d’identité]** use `lumaCRMId`
 1. Copiez et collez la valeur de la variable `lumaCRMId` transmis dans l’appel que vous avez inspecté dans le débogueur Experience Platform (probablement `112ca06ed53d3db37e4cea49cc45b71e`).

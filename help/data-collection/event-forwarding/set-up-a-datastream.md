@@ -6,16 +6,17 @@ level: Intermediate
 jira: KT-6421
 thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 17%
 
 ---
 
 # Configuration d’un flux de données pour le transfert d’événement
 
-Découvrez comment configurer un flux de données pour le transfert d’événement.
+Découvrez comment configurer un flux de données pour le transfert d’événement. Pour plus d’informations, veuillez consulter [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+
 
 >[!NOTE]
 >
@@ -25,6 +26,4 @@ Découvrez comment configurer un flux de données pour le transfert d’événem
 > * Le platform launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)
-
-Pour plus d’informations, veuillez consulter [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on)

@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 5%
@@ -18,5 +18,5 @@ ht-degree: 5%
 
 Découvrez les fonctionnalités clés de la résolution des identités dans Adobe Experience Platform : collecte des identités, graphiques d’identités et API. Découvrez comment Identity Service lie les identités déconnectées pour offrir une expérience connectée cohérente en créant un profil unifié. Pour plus d’informations, consultez la [documentation d’identity service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 

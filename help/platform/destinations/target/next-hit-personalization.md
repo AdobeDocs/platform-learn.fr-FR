@@ -11,7 +11,7 @@ level: Beginner
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 8%
@@ -22,5 +22,5 @@ ht-degree: 8%
 
 Découvrez comment personnaliser lors de l’accès suivant avec Real-time Customer Data Platform et Adobe Target. La destination Adobe Target dans Real-Time CDP vous permet d’utiliser des segments Experience Platform dans Adobe Target pour une personnalisation de même page et de page suivante avec prise en charge de la gouvernance et de la confidentialité. Pour plus d’informations, voir [Configuration des destinations de personnalisation pour la documentation de personnalisation de la même page et de la page suivante](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=fr)
 
->[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340091?learn=on)
 

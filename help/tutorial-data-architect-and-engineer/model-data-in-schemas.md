@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 11%
@@ -40,10 +40,10 @@ Key terms:
 * **Field**: a field is the lowest level element of a schema. Each field has a name for referencing and a type to identify the type of data that it contains. Field types can include, integer, number, string, Boolean and schema.
 -->
 
-**Architectes de données** Vous devrez créer des schémas en dehors de ce tutoriel, mais **Ingénieurs de données** travaillera en étroite collaboration avec les schémas créés par l’architecte de données.
+**Architectes de données** Vous devrez créer des schémas en dehors de ce tutoriel, mais **Ingénieurs de données** collaboreront étroitement avec les schémas créés par l’architecte de données.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les schémas et le modèle de données d’expérience (XDM) :
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
@@ -65,12 +65,12 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 ## Luma's goals
 -->
 
-## Création d’un schéma de fidélité via l’interface utilisateur
+## Créer un schéma de fidélité via l’interface utilisateur
 
 Au cours de cet exercice, nous allons créer un schéma pour les données de fidélité de Luma.
 
 1. Accédez à l’interface utilisateur de Platform et vérifiez que votre environnement de test est sélectionné.
-1. Accédez à **[!UICONTROL Schémas]** dans le volet de navigation de gauche
+1. Accédez à **[!UICONTROL Schémas]** dans la navigation de gauche
 1. Sélectionnez le bouton **[!UICONTROL Créer un schéma]** en haut à droite
 1. Dans le menu déroulant, sélectionnez **[!UICONTROL XDM Individual Profile]**, puisque nous allons modéliser les attributs d’un client individuel (points, état, etc.).
    ![Schéma avec groupe de champs prêts à l’emploi](assets/schemas-loyaltyCreateSchema.png)
@@ -89,7 +89,7 @@ Pour ajouter des groupes de champs :
 1. Vous pouvez prévisualiser les champs fournis dans le groupe de champs en sélectionnant l’icône située sur le côté droit de la ligne.
    ![Sélection de groupes de champs standards.](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
-1. Vérifiez les **[!UICONTROL Secteur industriel]** > **[!UICONTROL Vente au détail]** pour exposer des groupes de champs spécifiques au secteur.
+1. Vérifiez les **[!UICONTROL Secteur industriel]** > **[!UICONTROL Retail]** pour exposer des groupes de champs spécifiques au secteur.
 1. Sélectionner **[!UICONTROL Fidélité]** pour ajouter les champs du programme de fidélité.
 1. Sélectionnez **[!UICONTROL Ajouter un groupe de champs]** pour ajouter les trois groupes de champs au schéma.
    ![Ajout de groupes de champs standard au schéma de fidélité](assets/schemas-loyalty-saveOotbMixins.png)
@@ -124,7 +124,7 @@ Les groupes de champs doivent être créés dans le workflow de schéma. Pour cr
 1. Sélectionnez **[!UICONTROL Ajouter des groupes de champs]**
    ![Ajouter un nouveau groupe de champs](assets/schemas-loyalty-nameFieldGroup.png)
 
-Le nouveau groupe de champs vide est ajouté à votre schéma. Le **[!UICONTROL +]** Vous pouvez utiliser les boutons pour ajouter de nouveaux champs à n’importe quel emplacement de la hiérarchie. Dans notre cas, nous souhaitons ajouter des champs au niveau racine :
+Le nouveau groupe de champs vide est ajouté à votre schéma. La variable **[!UICONTROL +]** Vous pouvez utiliser les boutons pour ajouter de nouveaux champs à n’importe quel emplacement de la hiérarchie. Dans notre cas, nous souhaitons ajouter des champs au niveau racine :
 
 1. Sélectionnez **[!UICONTROL +]** en regard du nom du schéma. Un nouveau champ est alors ajouté sous l’espace de noms de l’identifiant du client pour gérer les conflits entre vos champs personnalisés et les champs standard.
 1. Dans le **[!UICONTROL Propriétés du champ]** sidebar ajoutez les détails du nouveau champ :
@@ -146,7 +146,7 @@ Ajoutez maintenant deux champs sous le `systemIdentifier` objet :
    1. **[!UICONTROL Nom d’affichage]**: `CRM Id`
    1. **[!UICONTROL Type]**: **[!UICONTROL Chaîne]**
 
-Votre nouveau groupe de champs devrait ressembler à ceci. Sélectionnez la **[!UICONTROL Enregistrer]** pour enregistrer votre schéma, mais laissez le schéma ouvert pour l’exercice suivant.
+Votre nouveau groupe de champs devrait ressembler à ceci. Sélectionnez la variable **[!UICONTROL Enregistrer]** pour enregistrer votre schéma, mais laissez le schéma ouvert pour l’exercice suivant.
 ![Fin du groupe de champs de fidélité](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## Création d’un type de données
@@ -155,11 +155,11 @@ Groupes de champs, tels que votre nouvelle `Luma Identity profile field group`, 
 
 Le type de données est un autre concept à champs multiples qui peut être réutilisé dans les schémas. _sur plusieurs classes_. Convertissons notre nouveau `systemIdentifier` dans un type de données :
 
-Avec le `Luma Loyalty Schema` toujours ouvert, sélectionnez l’option `systemIdentifier` et sélectionnez  **[!UICONTROL Convertir en nouveau type de données]**
+Avec la variable `Luma Loyalty Schema` toujours ouvert, sélectionnez l’option `systemIdentifier` et sélectionnez  **[!UICONTROL Convertir en nouveau type de données]**
 
 ![Groupe de champs de fidélité Complète](assets/schemas-loyalty-convertToDataType.png)
 
-Si vous **[!UICONTROL Annuler]** hors du schéma et accédez à la **[!UICONTROL Types de données]** , le type de données que vous venez de créer s’affiche. Nous utiliserons ce type de données plus loin dans la leçon.
+Si vous **[!UICONTROL Annuler]** en dehors du schéma et accédez à la **[!UICONTROL Types de données]** vous verrez votre nouveau type de données. Nous utiliserons ce type de données plus loin dans la leçon.
 
 ![Groupe de champs de fidélité Complète](assets/schemas-loyalty-confirmDataType.png)
 
@@ -174,7 +174,7 @@ Nous allons maintenant créer un schéma à l’aide de l’API.
 >
 > 1. Utilisez la variable [!UICONTROL XDM Individual Profile] class
 > 1. Nommez-la `Luma CRM Schema`
-> 1. Utilisez les groupes de champs suivants : Détails démographiques, coordonnées personnelles et groupe de champs de profil Identité Luma
+> 1. Utilisez les groupes de champs suivants : Détails démographiques, Détails des contacts personnels et Groupe de champs Identité Luma
 
 Commencez par créer le schéma vide :
 
@@ -182,7 +182,7 @@ Commencez par créer le schéma vide :
 1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès.
 1. Ouvrez vos variables d’environnement et modifiez la valeur de **CONTAINER_ID** de `global` to `tenant`. Souvenez-vous que vous devez utiliser `tenant` lorsque vous souhaitez interagir avec vos propres éléments personnalisés dans Platform, par exemple en créant un schéma.
 1. Sélectionnez **Enregistrer**
-   ![Remplacez CONTAINER_ID par client](assets/schemas-crm-changeContainerId.png)
+   ![Remplacez CONTAINER_ID par le client](assets/schemas-crm-changeContainerId.png)
 1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Create a new custom schema.]**
 1. Ouvrez le **Corps** et collez le code suivant, puis sélectionnez **Envoyer** pour effectuer l’appel API. Cet appel crée un nouveau schéma utilisant le même `XDM Individual Profile` classe de base :
 
@@ -210,14 +210,14 @@ Commencez par créer le schéma vide :
 
 >[!NOTE]
 >
-> Le `meta:altId` Vous pouvez également obtenir l’ID de schéma en effectuant la requête API. **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** avec le **[!UICONTROL CONTAINER_ID]** défini sur `tenant` et un en-tête d’acceptation `application/vnd.adobe.xdm+json`.
+> La variable `meta:altId` Vous pouvez également obtenir l’ID de schéma en effectuant la requête API. **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** avec la propriété **[!UICONTROL CONTAINER_ID]** défini sur `tenant` et un en-tête accept `application/vnd.adobe.xdm+json`.
 
 >[!TIP]
 >
 > Problèmes courants liés à cet appel et correctifs probables :
 >
-> * Aucun jeton d’authentification : Exécutez la variable **OAuth : Demander le jeton d’accès** requête de génération d’un nouveau jeton
-> * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Mettez à jour le **CONTAINER_ID** Variable d’environnement de `global` to `tenant`
+> * Aucun jeton d’authentification : exécutez la **OAuth : Request Access Token** requête de génération d’un nouveau jeton
+> * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: mettez à jour la variable **CONTAINER_ID** Variable d’environnement de `global` to `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Vérification des autorisations utilisateur dans le Admin Console
 
 ### Ajouter des groupes de champs standard
@@ -256,11 +256,11 @@ Il est maintenant temps d’ajouter les groupes de champs au schéma :
 Ajoutons maintenant notre `Luma Identity profile field group` au schéma. Tout d’abord, nous devons trouver l’identifiant de notre nouveau groupe de champs à l’aide d’une API de liste :
 
 1. Ouvrir la requête **[!DNL Schema Registry API > Field groups > Retrieve a list of field groups within the specified container.]**
-1. Sélectionnez la **Envoyer** pour récupérer une liste de tous les groupes de champs personnalisés de votre compte.
+1. Sélectionnez la variable **Envoyer** pour récupérer une liste de tous les groupes de champs personnalisés de votre compte.
 1. Attrapez le `$id` de la variable `Luma Identity profile field group` (la vôtre sera différente de la valeur de cette capture d’écran)
    ![Récupération de la liste des groupes de champs](assets/schemas-crm-getListOfMixins.png)
 1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** again
-1. Le **Paramètres** L’onglet doit toujours comporter la variable `$id` de votre schéma
+1. La variable **Paramètres** L’onglet doit toujours comporter la variable `$id` de votre schéma
 1. Ouvrez le **Corps** et collez le code suivant, en remplaçant la fonction `$ref` avec la valeur `$id` de votre propre `Luma Identity profile field group`:
 
    ```json
@@ -285,22 +285,22 @@ Créons maintenant un schéma basé sur le **[!UICONTROL XDM ExperienceEvent]** 
 1. Créez un schéma avec le **[!UICONTROL XDM ExperienceEvent]** class
 1. Ajouter le groupe de champs standard **[!UICONTROL Détails du commerce]** pour capturer les détails de commande courants. Passez quelques minutes à explorer les objets à l&#39;intérieur.
 1. Recherchez `Luma Identity profile field group`. Elle n’est pas disponible ! N’oubliez pas que les groupes de champs sont liés à une classe. Comme nous utilisons une autre classe pour ce schéma, nous ne pouvons pas l’utiliser. Nous devons ajouter un nouveau groupe de champs pour la classe XDM ExperienceEvent contenant les champs d’identité. Notre type de données rendra cela vraiment facile !
-1. Sélectionnez la **[!UICONTROL Créer un groupe de champs]** bouton radio
+1. Sélectionnez la variable **[!UICONTROL Créer un groupe de champs]** bouton radio
 1. Saisissez le **[!UICONTROL Nom d’affichage]** as `Luma Identity ExperienceEvent field group` et sélectionnez la variable **[!UICONTROL Ajouter des groupes de champs]** button
-1. Assurez-vous que la variable **[!UICONTROL +]** apparaissent dans les **[!UICONTROL Structure]** afin d’ajouter de nouveaux champs
+1. Assurez-vous que la variable **[!UICONTROL +]** apparaissent dans les **[!UICONTROL Structure]** pour ajouter de nouveaux champs
 1. Dans **[!UICONTROL Structure]** , sélectionnez **[!UICONTROL +]** au niveau supérieur du schéma
 1. Comme la variable **[!UICONTROL Nom du champ]**, saisissez `systemIdentifier`
 1. Comme la variable **[!UICONTROL Nom d’affichage]**, saisissez `System Identifier`
-1. Comme la variable **[!UICONTROL Type]**, sélectionnez **Identifiant du système** qui est le type de données personnalisé que vous avez créé précédemment
-1. Sélectionnez la **[!UICONTROL Appliquer]** button
+1. Comme la variable **[!UICONTROL Type]**, sélectionnez **Identifiant du système** qui est le type de données personnalisé créé précédemment
+1. Sélectionnez la variable **[!UICONTROL Appliquer]** button
 1. Nommer le schéma `Luma Offline Purchase Events Schema`
-1. Sélectionnez la **[!UICONTROL Enregistrer]** button
+1. Sélectionnez la variable **[!UICONTROL Enregistrer]** button
 
 Notez comment le type de données a ajouté tous les champs.
 
 ![Ajouter le type de données au groupe de champs](assets/schemas-offlinePurchases-addDatatype.png)
 
-Sélectionnez également **[!UICONTROL XDM ExperienceEvent]** sous le **[!UICONTROL Classe]** parcourir certains champs fournis par cette classe. Notez que les champs _id et horodatage sont requis lors de l’utilisation de la classe XDM ExperienceEvent : ces champs doivent être renseignés pour chaque enregistrement que vous ingérez lors de l’utilisation de ce schéma :
+Sélectionnez également **[!UICONTROL XDM ExperienceEvent]** sous le **[!UICONTROL Classe]** parcourir certains des champs fournis par cette classe. Notez que les champs _id et horodatage sont requis lors de l’utilisation de la classe XDM ExperienceEvent : ces champs doivent être renseignés pour chaque enregistrement que vous ingérez lors de l’utilisation de ce schéma :
 
 ![Structure de base des événements d’expérience](assets/schemas-offlinePurchase-experienceEventbase.png)
 
@@ -315,9 +315,9 @@ Nous allons maintenant créer un schéma supplémentaire pour les données du si
 | Groupe de champs | Événement d’expérience client |
 | Nom du schéma | Schéma des événements web Luma |
 
-Sélectionnez la **[!UICONTROL Événement d’expérience client]** groupe de champs. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans [!UICONTROL Détails du commerce]. En effet [!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard, également disponibles séparément. [!UICONTROL Mixin ExperienceEvent du SDK Web AEP] groupe de champs contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent harmonieusement.
+Sélectionnez la variable **[!UICONTROL Événement d’expérience client]** groupe de champs. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans [!UICONTROL Détails du commerce]. En effet [!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard, également disponibles séparément. [!UICONTROL Mixin ExperienceEvent du SDK Web AEP] groupe de champs contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent harmonieusement.
 
-Notez que nous n’avons pas ajouté la variable `Luma Identity ExperienceEvent field group` à ce schéma. Cela est dû au fait que le SDK web dispose d’une autre manière de collecter les identités. Si vous sélectionnez la variable **[!UICONTROL XDM ExperienceEvent]** dans la classe **[!UICONTROL Composition]** dans l’éditeur de schéma, vous remarquerez que l’un des champs qu’il ajoute par défaut est appelé **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] est utilisé par différentes applications Adobe pour créer un lien vers Platform. Vous verrez comment les identités sont envoyées à Platform via identityMap dans la leçon sur l’ingestion par flux.
+Notez que nous n’avons pas ajouté la variable `Luma Identity ExperienceEvent field group` à ce schéma. Cela est dû au fait que le SDK web dispose d’une autre manière de collecter les identités. Si vous sélectionnez l’option **[!UICONTROL XDM ExperienceEvent]** dans la classe **[!UICONTROL Composition]** dans l’éditeur de schéma, vous remarquerez que l’un des champs qu’il ajoute par défaut est appelé **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] est utilisé par différentes applications Adobe pour créer un lien vers Platform. Vous verrez comment les identités sont envoyées à Platform via identityMap dans la leçon sur l’ingestion par flux.
 
 
 ## Création d’un schéma de catalogue de produits
@@ -330,21 +330,21 @@ En utilisant la variable  [!UICONTROL Détails du commerce] et [!UICONTROL Évé
 
 Tout d’abord, nous devons créer un schéma pour le catalogue de produits de Luma à l’aide d’une classe personnalisée :
 
-1. Sélectionnez la **[!UICONTROL Créer un schéma]** et sélectionnez l’option **[!UICONTROL Parcourir]** dans la liste déroulante
-   ![Créer un nouveau schéma](assets/schemas-newSchema-browseClasses.png)
-1. Sélectionnez la **[!UICONTROL Création d’une classe]** bouton radio
+1. Sélectionnez la variable **[!UICONTROL Créer un schéma]** et sélectionnez l’option **[!UICONTROL Parcourir]** dans la liste déroulante
+   ![Création d’un schéma](assets/schemas-newSchema-browseClasses.png)
+1. Sélectionnez la variable **[!UICONTROL Création d’une classe]** bouton radio
 1. Nommez-la `Luma Product Catalog Class`
 1. Laissez le champ **[!UICONTROL Comportement]** as **[!UICONTROL Enregistrement]**
-1. Sélectionnez la **[!UICONTROL Attribuer une classe]** button
-   ![Créer une classe](assets/schemas-productClass.png)
+1. Sélectionnez la variable **[!UICONTROL Attribuer une classe]** button
+   ![Créer une nouvelle classe](assets/schemas-productClass.png)
 1. Créer [!UICONTROL groupe de champs] appelé `Luma Product Catalog field group` avec les champs suivants :
-   1. productName : Nom du produit : Chaîne
-   1. productCategory : Catégorie de produits : Chaîne
-   1. productColor : Couleur du produit : Chaîne
-   1. productSku : SKU du produit : Chaîne | Obligatoire
-   1. productSize : Taille du produit : Chaîne
-   1. productPrice: Prix du produit : Double
-1. Nommer le schéma `Luma Product Catalog Schema` (veillez à mettre à jour le champ correct et non à mettre à jour le nom de classe)
+   1. productName : Nom du produit : chaîne
+   1. productCategory : Catégorie de produits : chaîne
+   1. productColor : Product Color : String
+   1. productSku : SKU du produit : chaîne | Obligatoire
+   1. productSize : Taille du produit : chaîne
+   1. productPrice : Prix du produit : Double
+1. Nommer le schéma `Luma Product Catalog Schema` (veillez à mettre à jour le champ correct et non le nom de classe)
 1. **** Enregistrement du schéma
 
 Votre nouveau schéma devrait ressembler à ceci. Notez comment la variable `productSku` est répertorié dans le champ [!UICONTROL Champs obligatoires] section :

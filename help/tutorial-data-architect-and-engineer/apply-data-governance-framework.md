@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 8%
@@ -24,9 +24,9 @@ Dans cette leçon, vous appliquerez le cadre de gouvernance des données aux don
 La gouvernance des données d’Adobe Experience Platform vous permet de gérer les données clients et de garantir la conformité aux réglementations, aux restrictions et aux politiques applicables à l’utilisation des données. Il joue un rôle clé dans Experience Platform à différents niveaux, notamment en contrôlant l’utilisation des données.
 
 Avant de commencer les exercices, regardez ces courtes vidéos sur la gouvernance des données :
->[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
 
 <!--
 ## Permissions required
@@ -47,7 +47,7 @@ Luma promet aux membres de son programme de fidélité que les données de fidé
 
 La première étape du processus de gouvernance des données consiste à appliquer des étiquettes de gouvernance à vos données. Avant de procéder, examinons rapidement les étiquettes disponibles :
 
-1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Stratégies]** dans le volet de navigation de gauche
+1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Stratégies]** dans la navigation de gauche
 1. Accédez au **[!UICONTROL Étiquettes]** pour afficher tous les libellés du compte.
 
 Il existe de nombreux libellés prêts à l’emploi, et vous pouvez créer les vôtres par l’intermédiaire de la fonction [!UICONTROL Créer une étiquette] bouton . Il existe trois types principaux : [!UICONTROL Étiquettes Contrat], [!UICONTROL Étiquettes Identité], et [!UICONTROL Étiquettes sensibles] qui correspondent à des raisons courantes pour lesquelles les données peuvent être restreintes. Chacune des étiquettes comporte une [!UICONTROL Nom convivial] et court [!UICONTROL Nom] qui n’est qu’un abréviation du type et d’un nombre. Par exemple, la variable [!DNL C1] est destiné à &quot;Aucun export tiers&quot;, ce dont nous avons besoin pour notre politique de fidélité.
@@ -56,13 +56,13 @@ Il existe de nombreux libellés prêts à l’emploi, et vous pouvez créer les 
 
 Il est maintenant temps d&#39;étiqueter les données dont nous voulons restreindre l&#39;utilisation :
 
-1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Jeux de données]** dans le volet de navigation de gauche
+1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Jeux de données]** dans la navigation de gauche
 1. Ouvrez le `Luma Loyalty Dataset`.
 1. Accédez au **[!UICONTROL Gouvernance des données]** tab
 1. Vous pouvez appliquer des libellés à des champs individuels ou à l’ensemble du jeu de données. Nous appliquerons le libellé au jeu de données entier. Cliquez sur l’icône en forme de crayon. Si vous ne voyez pas l’icône, essayez d’élargir votre navigateur ou faites défiler le panneau du milieu vers la droite.
    ![Gouvernance des données](assets/governance-dataset.png)
 1. Dans le modal, développez la variable **[!UICONTROL Étiquettes Contrat]** et vérifiez les **[!UICONTROL C2]** label
-1. Sélectionnez la **[!UICONTROL Enregistrer les modifications]** button
+1. Sélectionnez la variable **[!UICONTROL Enregistrer les modifications]** button
    ![Gouvernance des données](assets/governance-applyLabel.png)
 1. Revenir à la page principale [!UICONTROL Gouvernance des données] avec l’écran **[!UICONTROL Afficher les libellés hérités]** Activez cette option pour voir comment le libellé a été appliqué à tous les champs du jeu de données.
    ![Gouvernance des données](assets/governance-labelsAdded.png)
@@ -75,7 +75,7 @@ Il est maintenant temps d&#39;étiqueter les données dont nous voulons restrein
 
 Maintenant que nos données sont étiquetées, nous pouvons créer une stratégie.
 
-1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Stratégies]** dans le volet de navigation de gauche
+1. Dans l’interface utilisateur de Platform, sélectionnez **[!UICONTROL Stratégies]** dans la navigation de gauche
 1. Dans l’onglet Parcourir , il existe déjà une stratégie d’usine appelée &quot;restriction d’exportation tierce&quot; qui associe le libellé C2 à l’action marketing. [!UICONTROL Exporter vers un tiers]—exactement ce dont nous avons besoin !
 1. Sélectionnez la stratégie, puis activez-la au moyen de l’option **[!UICONTROL État de la stratégie]** basculer
    ![Gouvernance des données](assets/governance-enablePolicy.png)

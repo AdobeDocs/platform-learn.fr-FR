@@ -3,7 +3,7 @@ title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience P
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 6%
@@ -21,7 +21,7 @@ Le débogueur Experience Platform est une extension disponible pour les navigate
 
 Si vous n’avez jamais utilisé le débogueur auparavant et que celui-ci est différent de l’ancien débogueur Adobe Experience Cloud, vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 Dans cette leçon, vous utiliserez la variable [Extension Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) pour remplacer la propriété de balise codée en dur sur la propriété [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) avec votre propre propriété.
 
@@ -38,10 +38,10 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 
 Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avoir suivi les leçons précédentes suivantes dans le tutoriel :
 
-* [Configuration des autorisations](configure-permissions.md)
-* [Configuration d’un schéma XDM](configure-schemas.md)
+* [Configurer les autorisations](configure-permissions.md)
+* [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
-* [Configurer un train de données](configure-datastream.md)
+* [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 * [Création d’éléments de données](create-data-elements.md)
 * [Création d’une règle de balise](create-tag-rule.md)
@@ -58,19 +58,19 @@ Le débogueur Experience Platform dispose d’une fonctionnalité intéressante 
 1. Assurez-vous que le site Luma est ouvert et sélectionnez l’icône de l’extension Debugger Experience Platform.
 1. Le débogueur s’ouvre et affiche quelques détails sur l’implémentation codée en dur, qui n’est pas liée à ce tutoriel (vous devrez peut-être recharger le site Luma après avoir ouvert le débogueur).
 1. Vérifiez que le débogueur est &quot;**[!UICONTROL Connexion à Luma]**&quot; comme illustré ci-dessous, puis sélectionnez &quot;**[!UICONTROL lock]**&quot; pour verrouiller le débogueur sur le site Luma.
-1. Sélectionnez la **[!UICONTROL Se connecter]** et connectez-vous à Adobe Experience Cloud à l’aide de votre identifiant d’Adobe.
-1. Maintenant, accédez à **[!UICONTROL Balises Experience Platform]** dans le volet de navigation de gauche
+1. Sélectionnez la variable **[!UICONTROL Se connecter]** et connectez-vous à Adobe Experience Cloud à l’aide de votre identifiant d’Adobe.
+1. Accédez à **[!UICONTROL Balises Experience Platform]** dans la navigation de gauche
 
    ![Écran de balise Debugger](assets/validate-launch-screen.png)
 
-1. Sélectionnez la **[!UICONTROL Configuration]** tab
+1. Sélectionnez la variable **[!UICONTROL Configuration]** tab
 1. À droite de l’emplacement où il vous montre la variable **[!UICONTROL Codes d’intégration de page]**, ouvrez le **[!UICONTROL Actions]** , puis sélectionnez **[!UICONTROL Remplacer]**
 
    ![Sélectionnez Actions > Remplacer .](assets/validate-switch-environment.png)
 
 1. Puisque vous êtes authentifié, le débogueur va extraire vos propriétés et environnements de balise disponibles. Sélectionnez votre `Web SDK Course` property
 1. Sélectionnez votre `Development` environnement
-1. Sélectionnez la **[!UICONTROL Appliquer]** button
+1. Sélectionnez la variable **[!UICONTROL Appliquer]** button
 
    ![Sélectionnez la propriété de balise alternative.](assets/validate-switch-selection.png)
 
@@ -88,12 +88,12 @@ Vous pouvez utiliser Debugger pour valider votre mise en oeuvre du SDK Web Platf
 
    ![Onglet Résumé](assets/validate-summary.png)
 
-1. Maintenant, accédez à **[!UICONTROL SDK Web Experience Platform]** dans le volet de navigation de gauche pour afficher la variable **[!UICONTROL Requêtes réseau]**
+1. Accédez à **[!UICONTROL SDK Web Experience Platform]** dans le volet de navigation de gauche pour afficher la variable **[!UICONTROL Requêtes réseau]**
 1. Ouvrez le **[!UICONTROL events]** row (ne vous inquiétez pas si cette capture d’écran affiche plus de requêtes que la vôtre, elle inclut des requêtes issues de futures leçons et vous pouvez ignorer pour l’instant)
 
    ![Requête SDK Web Adobe Experience Platform](assets/validate-aep-screen.png)
 
-1. Notez comment nous pouvons voir la variable `web.webpagedetails.pageView` type d’événement que nous avons spécifié dans notre [!UICONTROL Envoyer un événement] , ainsi que d’autres variables prêtes à l’emploi conformes à la `AEP Web SDK ExperienceEvent Mixin` format
+1. Notez comment nous pouvons voir la variable `web.webpagedetails.pageView` type d’événement spécifié dans notre [!UICONTROL Envoyer un événement] , ainsi que d’autres variables prêtes à l’emploi conformes à la `AEP Web SDK ExperienceEvent Mixin` format
 
    ![Détails de l’événement](assets/validate-event-pageViews.png)
 
@@ -107,15 +107,15 @@ Vous pouvez également valider les détails de la carte des identités :
 
 1. Revenez à la [page d’accueil de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Ouvrez le **[!UICONTROL SDK Web Experience Platform]** dans le volet de navigation de gauche
+1. Ouvrez le **[!UICONTROL SDK Web Experience Platform]** dans la navigation de gauche
 
    ![SDK Web dans Debugger](assets/identity-debugger-websdk-dark.png)
 
-1. Sélectionnez la **[!UICONTROL events]** pour ouvrir les détails dans une fenêtre contextuelle
+1. Sélectionnez la variable **[!UICONTROL events]** pour ouvrir les détails dans une fenêtre contextuelle
 
    ![SDK Web dans Debugger](assets/identity-deugger-websdk-event-dark.png)
 
-1. Recherchez le **identityMap** dans la fenêtre contextuelle. Ici, vous devriez voir `lumaCrmId` avec trois clés authenticatedState, id et Principal :
+1. Recherchez le **identityMap** dans la fenêtre contextuelle. Ici, vous devriez voir `lumaCrmId` avec trois clés authenticatedState, id et primary :
    ![SDK Web dans Debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
 
@@ -127,7 +127,7 @@ Ces types de détails de requête sont également visibles dans les outils de d�
 
    ![Onglet Réseau](assets/validate-dev-console.png)
 
-1. Accédez au **Réponse** et notez comment la valeur ECID est incluse dans la réponse. Copiez cette valeur car vous l’utiliserez pour valider les informations de profil lors de l’exercice suivant.
+1. Accédez au **Réponse** et notez comment la valeur ECID est incluse dans la réponse. Copiez cette valeur, car vous l’utiliserez pour valider les informations de profil lors de l’exercice suivant.
 
    ![Onglet Réseau](assets/validate-dev-console-ecid.png)
 

@@ -8,7 +8,7 @@ jira: KT-10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%
@@ -22,7 +22,7 @@ Découvrez comment planifier des suppressions de jeux de données à l’aide de
 La suppression de jeux de données permet aux gestionnaires de données et aux ingénieurs de données de définir une date d’expiration pour un jeu de données. Pour plus d’informations, consultez la [documentation sur l’hygiène des données](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=fr).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
 
 >[!NOTE]
 >
