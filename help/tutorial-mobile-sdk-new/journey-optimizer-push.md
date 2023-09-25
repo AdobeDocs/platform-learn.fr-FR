@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 4%
@@ -153,7 +153,7 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### Ajout de fonctionnalités de notification push à votre application
+## Ajout de fonctionnalités de notification push à votre application
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Une extension de notification push doit maintenant être ajoutée à votre appli
 ![Extension des notifications push](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Mise en oeuvre de Journey Optimizer dans l’application
+## Mise en oeuvre de Journey Optimizer dans l’application
 
 Comme indiqué dans les leçons précédentes, l’installation d’une extension de balise mobile fournit uniquement la configuration. Vous devez ensuite installer et enregistrer le SDK de messagerie. Si ces étapes ne sont pas claires, passez en revue la [Installation des SDK](install-sdks.md) .
 
@@ -205,7 +205,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    ]
    ```
 
-### Enregistrement du jeton de périphérique pour les notifications push
+## Enregistrement du jeton de périphérique pour les notifications push
 
 1. Ajoutez la variable [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) de l’API `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` de la fonction
 
@@ -318,7 +318,7 @@ L’étape suivante consiste à créer le parcours qui déclenche l’envoi de l
    ![Parcours terminé](assets/ajo-journey-finished.png)
 
 
-## Déclenchement de la notification push
+## Déclencher la notification push
 
 Vous avez tous les ingrédients en place pour envoyer une notification push. Reste à savoir comment déclencher cette notification push. Essentiellement, c’est la même chose que précédemment : envoyez simplement un événement d’expérience avec la charge utile appropriée (comme dans [Événements](events.md)).
 
