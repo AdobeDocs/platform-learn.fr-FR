@@ -8,10 +8,10 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 72%
+source-wordcount: '75'
+ht-degree: 73%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 72%
    + Parcours Optimzer{#journey-optimizer}
       + [Notifications push](journey-optimizer-push.md)
       + [Les messages in-app](journey-optimizer-inapp.md)
-      + [Offres](journey-optimizer-offers.md)
+      + [Gestion des décisions](journey-optimizer-offers.md)
    + [Target](target.md)
 + [Conclusion](conclusion.md)
 

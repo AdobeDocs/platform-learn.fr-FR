@@ -3,13 +3,13 @@ title: Configurer un trains de données
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 9%
+source-wordcount: '459'
+ht-degree: 8%
 
 ---
-
 
 # Création dʼun flux de données
 
@@ -57,43 +57,47 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
 
 Lorsque vous exécutez le (facultatif) [Analytics](analytics.md) et [Experience Platform](platform.md) leçons de ce tutoriel, vous ajoutez des services à votre flux de données pour vous assurer que lorsque le SDK Mobile Platform envoie des données au réseau Edge, le flux de données les transfère vers les services configurés.
 
-### Adobe Analytics
+<!--
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**.
+### Adobe Analytics
 
-1. Ajouter **[!UICONTROL Adobe Analytics]** de la [!UICONTROL Service] list,
+1. Select **[!UICONTROL Add Service]**.
 
-1. Entrez le nom du site de rapports dans lequel vous souhaitez utiliser **[!UICONTROL Identifiant de suite de rapports]**.
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. Activez le service en basculant **[!UICONTROL Activé]** sur .
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-   ![Ajout d’Adobe Analytics en tant que service de flux de données](assets/datastream-service-aa.png)
+1. Select **[!UICONTROL Save]**.
+
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
-### Adobe Experience Platform
+### Adobe Experience Platform
 
-Vous pouvez également activer le service Adobe Experience Platform.
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->Vous ne pouvez activer le service Adobe Experience Platform que lorsque vous avez créé un jeu de données d’événement. Si vous n’avez pas encore créé de jeu de données d’événement, suivez les instructions. [here](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. Cliquez sur ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter un service]** pour ajouter un autre service.
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform]** dans la liste [!UICONTROL Service].
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. Activez le service en basculant **[!UICONTROL Activé]** sur .
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Sélectionnez la variable **[!UICONTROL Jeu de données d’événement]** que vous avez créé dans le cadre de la [Création d’un jeu de données](platform.md#create-a-dataset) instructions, par exemple **Jeu de données d’événement d’application mobile Luma**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Ajout de Adobe Experience Platform en tant que service de flux de données](assets/datastream-service-aep.png)
-1. La configuration finale devrait ressembler à ceci.
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![paramètres du flux de données](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]

@@ -1,17 +1,18 @@
 ---
-title: Utilisation des services de géolocalisation
+title: Utiliser des emplacements
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 4%
 
 ---
 
-# Utilisation des services de géolocalisation
+# Utiliser des emplacements
 
-Découvrez comment utiliser le service de géolocalisation dans votre application.
+Découvrez comment utiliser le service de géolocalisation Places dans votre application.
 
 Le service Adobe Experience Platform Data Collection Places est un service de géolocalisation qui permet aux applications mobiles reconnaissant l’emplacement de l’application de comprendre le contexte de l’emplacement. Le service utilise des interfaces SDK riches et faciles à utiliser, accompagnées d’une base de données flexible de points ciblés (POI).
 
@@ -81,7 +82,7 @@ Vous définissez certains points ciblés dans le service Places.
    1. Sélectionner **[!UICONTROL Enregistrer dans la bibliothèque et créer]** de **[!UICONTROL Enregistrer dans la bibliothèque]**.
       ![Installation de l’extension Places](assets/places-install-extension.png).
 
-1. Votre bibliothèque est en cours de reconstruction.
+1. Votre bibliothèque est reconstruite.
 
 
 ### Vérification de votre schéma
@@ -96,7 +97,7 @@ Vérifiez si votre schéma est défini dans la section [Créer un schéma](creat
    ![Lieux de schéma](assets/schema-places-context.png).
 
 
-### Mettre à jour votre balise
+### Mettre à jour la propriété de balise
 
 L’extension Places pour les balises permet de surveiller les événements de géolocalisation et de déclencher des actions en fonction de ces événements. Vous pouvez utiliser cette fonctionnalité pour minimiser le codage de l’API que vous devez implémenter dans l’application.
 
@@ -132,7 +133,7 @@ Vous devez d’abord créer plusieurs éléments de données.
 
 Vous allez ensuite définir des règles pour travailler avec ces éléments de données.
 
-1. Dans la propriété de balise. select **[!UICONTROL Règles]** dans le rail de gauche.
+1. Dans la propriété de balise, sélectionnez **[!UICONTROL Règles]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Ajouter une règle]**.
 1. Dans le **[!UICONTROL Créer une règle]** , saisissez un nom pour la règle, par exemple `POI - Entry`.
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ÉVÉNEMENTS]**.
@@ -215,6 +216,10 @@ Créons une autre règle
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de **[!UICONTROL Noyau mobile - Joindre des données]** action.
    1. Sélectionner **[!UICONTROL Adobe Experience Platform Edge Network]** de la **[!UICONTROL Extension]** répertorier et sélectionner **[!UICONTROL Transfert d’un événement vers Edge Network]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
+1. Pour enregistrer la règle, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
+
+   ![Composants de](assets/tags-rule-poi-exit.png)
 
 
 Pour vous assurer que toutes les modifications apportées à votre balise sont publiées
@@ -302,18 +307,15 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    }
    ```
 
-Cette leçon ne s’applique pas aux détails de l’implémentation de Location Manager dans iOS.
-
-
 ## Validation à l’aide de votre application
 
 1. Ouvrez votre application sur un appareil ou dans le simulateur.
 
 1. Accédez au **[!UICONTROL Emplacement]** .
 
-1. Déplacez la carte pour vous assurer que le cercle bleu au milieu se trouve au-dessus de l’un de vos points ciblés, par exemple Londres.
+1. Déplacez (faites glisser) la carte pour vous assurer que le cercle central bleu se trouve au-dessus de l’un de vos points ciblés, par exemple Londres.
 
-1. Pression <img src="assets/geobutton.png" width="20" /> tant que la catégorie et le nom ne s’affichent pas dans la partie inférieure droite.
+1. Pression <img src="assets/geobutton.png" width="20" /> jusqu’à ce que la catégorie et le nom apparaissent dans l’étiquette à l’emplacement rouge avec l’épingle.
 
 1. Appuyez sur le libellé du point ciblé, ce qui ouvre la variable **[!UICONTROL Point ciblé voisin]** feuille.
 

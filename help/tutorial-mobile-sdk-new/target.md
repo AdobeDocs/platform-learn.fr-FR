@@ -5,17 +5,17 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
 
+# Optimisation et personnalisation avec Adobe Target
 
-# Exécution de tests A/B
-
-Découvrez comment effectuer des tests A/B dans vos applications mobiles avec le SDK Mobile Platform et Adobe Target.
+Découvrez comment optimiser et personnaliser les expériences de vos applications mobiles avec le SDK Mobile Platform et Adobe Target.
 
 Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à optimiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et d’autres canaux numériques. Target peut effectuer des tests A/B, des tests multivariés, recommander des produits et du contenu, cibler du contenu, personnaliser automatiquement le contenu à l’aide de l’IA, etc. Cette leçon porte principalement sur la fonctionnalité de test A/B de Target.  Voir [Présentation des tests A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) pour plus d’informations.
 
@@ -36,7 +36,7 @@ Avant de pouvoir effectuer des tests A/B avec Target, vous devez vous assurer qu
 
 ## Objectifs d&#39;apprentissage
 
-Dans cette leçon, vous allez
+Dans cette leçon, vous allez :
 
 * Mettez à jour votre flux de données pour l’intégration de Target.
 * Mettez à jour votre propriété de balise avec l’extension Journey Optimizer - Decisioning.
@@ -56,7 +56,7 @@ Dans cette leçon, vous allez
 
 ### Mise à jour de la configuration des flux de données
 
-### Adobe Target
+#### Adobe Target
 
 Pour vous assurer que les données envoyées de votre application mobile à Experience Platform Edge Network sont transférées vers Adobe Target, vous devez mettre à jour la configuration de la banque de données.
 
@@ -66,6 +66,10 @@ Pour vous assurer que les données envoyées de votre application mobile à Expe
 
    Vous trouverez vos propriétés dans l’interface utilisateur de Target, dans **[!UICONTROL Administration]** > **[!UICONTROL Propriétés]**. Sélectionner ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) pour afficher le jeton de propriété de la propriété que vous souhaitez utiliser. Le jeton de propriété a un format semblable à `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; vous ne devez saisir que la valeur `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
+   Vous pouvez éventuellement spécifier un ID d’environnement cible. Target utilise des environnements pour organiser vos sites et environnements de préproduction afin de faciliter la gestion et la création de rapports distincts. Les environnements prédéfinis incluent Production, Test et Développement. Voir [Environnements](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) et [Identifiant d’environnement de Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) pour plus d’informations.
+
+   Vous pouvez éventuellement spécifier un espace de noms d’identifiant tiers Target pour prendre en charge la synchronisation des profils sur un espace de noms d’identité (par exemple, un identifiant CRM). Voir [Espace de noms d’ID tiers de Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) pour plus d’informations.
+
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Ajout de Target à un flux de données](assets/edge-datastream-target.png)
@@ -73,7 +77,7 @@ Pour vous assurer que les données envoyées de votre application mobile à Expe
 
 #### Adobe Journey Optimizer
 
-Pour vous assurer que les données envoyées de votre application mobile vers le réseau Edge sont transférées vers Journey Optimizer - Gestion des décisions, mettez à jour votre configuration Experience Edge .
+Pour vous assurer que les données envoyées de votre application mobile au réseau Edge sont transférées vers Journey Optimizer - Gestion des décisions, mettez à jour votre configuration de flux de données.
 
 1. Dans l’interface utilisateur de la collecte de données, sélectionnez **[!UICONTROL Datastreams]**, puis sélectionnez votre flux de données, par exemple **[!DNL Luma Mobile App]**.
 1. Sélectionner ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) pour **[!UICONTROL Experience Platform]** et sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier]** dans le menu contextuel.
@@ -214,6 +218,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** dans le navigateur de projet Xcode. Recherchez le ` func updatePropositionAT(ecid: String, location: String) async` de la fonction Ajoutez le code suivant :
 
    ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
    Task {
        let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
        let identityMap = ["identityMap" : ecid]
@@ -229,7 +234,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    * Configuration d’un dictionnaire XDM `xdmData`, contenant l’ECID pour identifier le profil pour lequel vous devez présenter le test A/B, et
    * définit une `decisionScope`, un tableau d’emplacements sur lequel présenter le test A/B.
 
-   La fonction appelle ensuite deux API : [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  et [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Ces fonctions effacent toutes les propositions mises en cache et mettent à jour les propositions de ce profil.
+   La fonction appelle ensuite deux API : [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) et [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Ces fonctions effacent toutes les propositions mises en cache et mettent à jour les propositions de ce profil. Dans ce contexte, une proposition est l’expérience (offre) sélectionnée dans l’activité Target (votre test A/B) et que vous avez définie dans [Création d’un test A/B](#create-an-ab-test).
 
 1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** dans le navigateur de projet Xcode. Recherchez le `func onPropositionsUpdateAT(location: String) async {` et examinez le code de cette fonction. La partie la plus importante de cette fonction est la fonction  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) appel API, qui :
    * récupère les propositions du profil actuel en fonction de la portée de la décision (qui est l’emplacement que vous avez défini dans le test A/B),
@@ -258,11 +263,9 @@ Vous pouvez envoyer des paramètres Target supplémentaires (comme des paramètr
 
 ## Validation à l’aide de l’application
 
-1. Ouvrez votre application sur un appareil ou dans le simulateur.
+1. Recréez et exécutez l’application dans le simulateur ou sur un appareil physique à partir de Xcode, en utilisant ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Accédez au **[!UICONTROL Personnalisation]** .
-
-1. Sélectionner **[!UICONTROL Personnalisation d’Edge]**.
 
 1. Faites défiler l’écran jusqu’en bas pour voir l’une des deux offres que vous avez définies dans votre test A/B affichée dans la **[!UICONTROL TARGET]** mosaïque.
 
@@ -273,7 +276,7 @@ Vous pouvez envoyer des paramètres Target supplémentaires (comme des paramètr
 
 Pour valider le test A/B dans Assurance :
 
-1. Accédez à l’interface utilisateur d’assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Sélectionner **[!UICONTROL Configurer]** dans le rail de gauche et sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de **[!UICONTROL Révision et simulation]** underneath **[!UICONTROL PRISE DE DÉCISION ADOBE JOURNEY OPTIMIZER]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Sélectionner **[!UICONTROL Révision et simulation]** dans le rail de gauche. La configuration du flux de données est validée et celle du SDK dans votre application.

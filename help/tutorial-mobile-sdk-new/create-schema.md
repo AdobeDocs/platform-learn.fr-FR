@@ -3,9 +3,10 @@ title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 16%
 
 ---
@@ -96,9 +97,22 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
 1. Sélectionner **[!UICONTROL Création d’un schéma]**.
 
-1. Sélectionner **[!UICONTROL XDM ExperienceEvent]** dans le menu.
+1. Dans le **[!UICONTROL Sélectionner une classe]** de la **[!UICONTROL Créer un schéma]** assistant, sélectionnez **[!UICONTROL Événement d’expérience]** underneath **[!UICONTROL Sélectionner une classe de base pour ce schéma]**.
 
-   ![Sélection d’ExperienceEvent dans la liste déroulante](assets/schema-create.png)
+1. Sélectionnez **[!UICONTROL Suivant]**.
+
+   ![Classe de base de l’assistant de schéma](assets/schema-wizard-base-class.png)
+
+1. Dans le **[!UICONTROL Nom et révision]** de la **[!UICONTROL Créer un schéma]** assistant, saisissez une **[!UICONTROL Nom d’affichage du schéma]**, par exemple `Luma Mobile Event Schema` et un [!UICONTROL Description], par exemple `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Si vous passez par ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation. Par exemple, utilisez `Luma Mobile App Event Schema` plutôt que `Luma Mobile App Event Schema - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
+
+1. Sélectionner **[!UICONTROL Terminer]** pour terminer l’assistant.
+
+   ![Nom et révision du schéma](assets/schema-wizard-name-and-review.png)
+
 
 1. Sélectionner ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Ajouter** en regard de **[!UICONTROL Groupes de champs]**.
 
@@ -116,16 +130,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
    Vous revenez à l’écran principal de composition de schéma où vous pouvez voir tous les champs disponibles.
 
-1. Attribuez un nom à votre schéma en sélectionnant **[!UICONTROL Schéma sans titre]** de la **[!UICONTROL Composition]** (sous **[!UICONTROL Schéma]**) et en fournissant un **[!UICONTROL Nom d’affichage]** &amp; **[!UICONTROL Description]**, par exemple `Luma Mobile App Event Schema` et `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >Si vous passez par ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation. Par exemple, utilisez `Luma Mobile App Event Schema` plutôt que `Luma Mobile App Event Schema - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
-
-
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
-
-   ![Sélectionner l’application](assets/schema-name-save.png)
 
 >[!NOTE]
 >

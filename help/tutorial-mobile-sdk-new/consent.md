@@ -3,10 +3,11 @@ title: Mise en oeuvre du consentement
 description: Découvrez comment mettre en oeuvre le consentement dans une application mobile.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ Dans cette leçon, vous allez :
 
 Si vous avez suivi le tutoriel depuis le début, vous vous souvenez peut-être que vous avez défini le consentement par défaut dans l’extension Consentement sur **[!UICONTROL En attente : événements de file d’attente qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.]**
 
-Pour commencer à collecter des données, vous devez obtenir le consentement de l’utilisateur. Dans ce tutoriel, vous obtenez le consentement de l’utilisateur en le demandant simplement avec une alerte. Dans une application réelle, vous souhaitez consulter les bonnes pratiques en matière de consentement pour votre région.
+Pour commencer à collecter des données, vous devez obtenir le consentement de l’utilisateur. Dans une application réelle, vous souhaiteriez consulter les bonnes pratiques en matière de consentement pour votre région. Dans ce tutoriel, vous obtenez le consentement de l’utilisateur en le demandant simplement avec une alerte :
 
-1. Vous ne souhaitez demander à l’utilisateur qu’une seule fois. Vous souhaitez donc combiner le consentement du SDK Mobile avec les autorisations requises pour le suivi à l’aide d’Apple [Structure de transparence du suivi des applications](https://developer.apple.com/documentation/apptrackingtransparency). Dans cette application, supposons que lorsque l’utilisateur autorise le suivi, il consent également à la collecte des événements.
+1. Vous ne souhaitez demander le consentement de l’utilisateur qu’une seule fois. Vous souhaitez donc combiner le consentement du SDK Mobile avec les autorisations requises pour le suivi à l’aide d’Apple [Structure de transparence du suivi des applications](https://developer.apple.com/documentation/apptrackingtransparency). Dans cette application, supposons que lorsque l’utilisateur autorise le suivi, il consent également à la collecte des événements.
 
 1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode.
 
@@ -95,9 +96,7 @@ Dans l’exemple ci-dessus, vous enregistrez simplement l’état du consentemen
 
 ## Validation avec Assurance
 
-1. Consultez la section [Assurance](assurance.md) leçon.
-1. Installez l’application.
-1. Lancez l’application à l’aide de l’URL générée par Assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Si vous avez correctement ajouté le code ci-dessus, vous êtes invité à fournir votre consentement.
 
    Sélectionner **[!UICONTROL Continuer...]** puis sélectionnez **[!UICONTROL Autoriser]**.
@@ -107,6 +106,17 @@ Dans l’exemple ci-dessus, vous enregistrez simplement l’état du consentemen
 
 1. Vous devriez voir une **[!UICONTROL Obtenir une réponse de consentement]** dans l’interface utilisateur d’Assurance.
    ![valider le consentement](assets/consent-update.png)
+
+
+## Réinitialiser le consentement
+
+Si vous souhaitez réinitialiser le consentement :
+
+1. Accédez à **[!UICONTROL Paramètres]** dans l’application.
+
+1. Sélectionner **[!UICONTROL Paramètres de l’application...]** Les paramètres de l’application Luma s’affichent alors dans l’application Paramètres d’iOS.
+
+1. Basculer **[!UICONTROL Autoriser le suivi]** off.
 
 
 

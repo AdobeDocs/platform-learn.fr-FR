@@ -2,10 +2,11 @@
 title: Collecte des données de profil
 description: Découvrez comment collecter des données de profil dans une application mobile.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 5%
+source-wordcount: '597'
+ht-degree: 4%
 
 ---
 
@@ -64,7 +65,7 @@ Il serait utile pour le ciblage et/ou la personnalisation dans l’application d
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ Vous trouverez de la documentation supplémentaire [here](https://developer.adob
 
 ## Validation avec Assurance
 
-1. Consultez la section [instructions de configuration](assurance.md) .
-1. Installez l’application.
-1. Lancez l’application à l’aide de l’URL générée par Assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Exécutez l’application pour vous connecter et interagir avec un produit.
 
    1. Déplacez l’icône Assurance vers la gauche.
@@ -132,4 +131,4 @@ Vous trouverez de la documentation supplémentaire [here](https://developer.adob
 >
 >Vous avez maintenant configuré votre application pour mettre à jour les attributs des profils dans le réseau Edge et (lors de la configuration) avec Adobe Experience Platform.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Suivant : **[Utilisation des services de géolocalisation](places.md)**
+Suivant : **[Utiliser des emplacements](places.md)**

@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 6%
 
 ---
@@ -136,9 +137,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 
 ## Validation de la configuration avec Assurance
 
-1. Consultez la section [instructions de configuration](assurance.md) .
-1. Installez l’application sur votre appareil physique ou sur le simulateur.
-1. Lancez l’application à l’aide de l’URL générée par Assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Dans l’interface utilisateur d’assurance, sélectionnez **[!UICONTROL Configurer]**.
    ![configurer le clic](assets/push-validate-config.png)
 1. Sélectionnez la variable ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) bouton en regard de **[!UICONTROL Messagerie in-app]**.
@@ -159,7 +158,8 @@ Pour créer votre propre message in-app, vous devez définir dans Journey Optimi
 * les événements de cycle de vie des applications, tels que le lancement, l’installation, la mise à niveau, la fermeture ou le blocage,
 * événements de géolocalisation, comme l’entrée ou la sortie d’un point ciblé.
 
-Dans ce tutoriel, vous allez utiliser les API génériques Mobile Core et indépendantes de l’extension (voir [API génériques Core pour mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) pour faciliter le suivi des événements des écrans utilisateur, des actions et des données de PII. Les événements générés par ces API sont publiés sur le centre d’événements du SDK et peuvent être utilisés par des extensions. Le hub d’événements SDK fournit la structure de données de base liée à toutes les extensions SDK AEP Mobile, en conservant une liste d’extensions enregistrées et de modules internes, une liste d’écouteurs d’événements enregistrés et une base de données d’état partagée.
+Dans ce tutoriel, vous allez utiliser les API génériques Mobile Core et indépendantes de l’extension (voir [API génériques Core pour mobile](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) pour faciliter le suivi des événements des écrans utilisateur, des actions et des données de PII. Les événements générés par ces API sont publiés sur le centre d’événements du SDK et peuvent être utilisés par des extensions. Le hub d’événements SDK fournit la structure de données principale liée à toutes les extensions du SDK Mobile Platform, en conservant une liste d’extensions enregistrées et de modules internes, une liste d’écouteurs d’événements enregistrés et une base de données d’état partagée.
+
 Le hub d’événements SDK publie et reçoit des données d’événement des extensions enregistrées afin de simplifier les intégrations avec les solutions d’Adobe et tierces. Par exemple, lorsque l’extension Optimize est installée, toutes les demandes et interactions avec le moteur d’offres Journey Optimizer - Gestion des décisions sont gérées par le hub d’événements.
 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez **[!UICONTROL Campagnes]** dans le rail de gauche.
@@ -219,7 +219,7 @@ Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-a
 
 ## Validation à l’aide de votre application
 
-1. Ouvrez votre application sur un appareil ou dans le simulateur.
+1. Recréez et exécutez l’application dans le simulateur ou sur un appareil physique à partir de Xcode, en utilisant ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Accédez au **[!UICONTROL Paramètres]** .
 
@@ -232,6 +232,7 @@ Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-a
 
 Vous pouvez valider vos messages in-app dans l’interface utilisateur d’assurance.
 
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Sélectionner **[!UICONTROL Messagerie in-app]**.
 1. Sélectionner **[!UICONTROL Liste des événements]**.
 1. Sélectionnez une **[!UICONTROL Afficher le message]** entrée .

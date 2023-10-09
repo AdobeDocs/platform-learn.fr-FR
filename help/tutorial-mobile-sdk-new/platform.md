@@ -4,9 +4,10 @@ description: Découvrez comment envoyer des données à Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 8%
 
 ---
@@ -98,7 +99,7 @@ Maintenant que vous avez créé un jeu de données et mis à jour votre flux de 
 
 Ouvrez l’application et accédez aux écrans dans lesquels vous effectuez le suivi des événements. Vous pouvez également déclencher des mesures de cycle de vie.
 
-Ouvrez votre jeu de données dans l’interface de Platform. Les données doivent parvenir par lots au jeu de données.
+Ouvrez votre jeu de données dans l’interface de Platform. Vous devriez voir les données arriver par lots au jeu de données. Les données arrivent généralement par microlots toutes les 15 minutes. Il se peut donc que vos données ne s’affichent pas immédiatement.
 
 ![valider les lots de jeux de données de la plateforme d’entrée de données](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Les spécialistes du marketing et de l’analyse peuvent en faire bien plus avec
 >
 >Vous avez maintenant configuré votre application pour envoyer des données non seulement au réseau Edge, mais également à Adobe Experience Platform.<br>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Suivant : **[Création et notifications push](journey-optimizer-push.md)**
+Suivant : **[Créer et envoyer des notifications push](journey-optimizer-push.md)**

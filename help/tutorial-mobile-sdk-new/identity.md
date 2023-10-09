@@ -3,10 +3,11 @@ title: Collecte de données d’identité
 description: Découvrez comment collecter des données d’identité dans une application mobile.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 6%
+source-wordcount: '860'
+ht-degree: 5%
 
 ---
 
@@ -103,7 +104,7 @@ Vous souhaitez mettre à jour l’identité standard (e-mail) et l’identité p
 1. Accédez à **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** dans le navigateur de projet Xcode et recherchez le code à exécuter lors de la sélection de la variable **[!UICONTROL Connexion]** bouton . Ajoutez le code suivant :
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ Vous souhaitez mettre à jour l’identité standard (e-mail) et l’identité p
 
 Vous pouvez utiliser la variable [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API pour supprimer l’identité de la carte d’identité côté client stockée. L’extension Identity cesse d’envoyer l’identifiant au réseau Edge. L’utilisation de cette API ne supprime pas l’identifiant du graphique d’identités côté serveur. Voir [Affichage des graphiques d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) pour plus d’informations sur les graphiques d’identités.
 
-1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et ajoutez le code suivant au `func removeIdentities(emailAddress: String, crmId: String)` function:
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et ajoutez le code suivant au `func removeIdentities(emailAddress: String, crmId: String)` function:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ Vous pouvez utiliser la variable [`Identity.removeIdentity`](https://developer.a
 
 ## Validation avec Assurance
 
-1. Consultez la section [instructions de configuration](assurance.md) et connectez votre simulateur ou votre appareil à Assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Dans l’application Luma
-   1. Sélectionnez la variable **[!UICONTROL Accueil]** .
+   1. Sélectionnez la variable **[!UICONTROL Accueil]** et déplacez l’icône Assurance vers la gauche.
    1. Sélectionnez le <img src="assets/login.png" width="15" /> en haut à droite.
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Une fois que vous avez terminé les étapes de la section [leçon Experience Pla
 1. Vous voyez le **[!UICONTROL Identités]** répertorié.
 
    ![validation du graphique d’identités](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>Il n’existe pas de code dans l’application pour réinitialiser l’ECID, ce qui signifie que vous pouvez uniquement réinitialiser l’ECID (et créer de fait un nouveau profil avec un nouvel ECID sur l’appareil) par le biais d’une désinstallation et d’une réinstallation de l’application. Pour mettre en oeuvre la réinitialisation des identifiants, voir la section [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) et [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) Appels API. Soyez toutefois prudent lors de l’utilisation d’un identifiant de notification push (voir [Envoi de notifications push](journey-optimizer-push.md)), cet identifiant devient un autre identifiant de profil &quot;attractif&quot; sur l’appareil.
 
 
 >[!SUCCESS]

@@ -3,9 +3,10 @@ title: Configuration d’Assurance
 description: Découvrez comment mettre en oeuvre l’extension Assurance dans une application mobile.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '962'
 ht-degree: 4%
 
 ---
@@ -68,7 +69,7 @@ Avant d’exécuter l’application pour la première fois dans Xcode, veillez �
 
    >[!IMPORTANT]
    >
-   >Assurez-vous d’utiliser un identifiant de lot unique, différent de la valeur par défaut `com.adobe.luma.tutorial.swiftui`  entrée dans le projet de démarrage, car chaque identifiant de lot doit être unique.
+   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `Luma` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`. La version Terminée de ce tutoriel, par exemple, utilise `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Fonctionnalités de signature Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
 
 ## Connexion à une session
 
-1. Exécutez l’application dans le simulateur ou sur un appareil physique connecté.
+1. Recréez et exécutez l’application dans le simulateur ou sur un appareil physique à partir de Xcode, en utilisant ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. Sélectionner **[!UICONTROL Assurance]** dans le rail de gauche de l’interface utilisateur de la collecte de données.
 1. Sélectionner **[!UICONTROL Créer une session]**.
 1. Sélectionner **[!UICONTROL Début]**.
@@ -133,6 +134,34 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
          ![événements d’assurance](assets/assurance-events.png)
 
 Si vous rencontrez des défis, veuillez consulter la section [technique](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr){target="_blank"}.
+
+
+## Vérifier les extensions
+
+Pour vérifier si votre application utilise les extensions les plus récentes :
+
+1. Sélectionner **[!UICONTROL Configurer]**.
+
+1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) pour ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versions d’extension]**.
+
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+   ![Configuration des versions d’extension](assets/assurance-configure-extension-versions.png)
+
+1. Sélectionner ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versions d’extension]**. Vous verrez un aperçu des dernières extensions disponibles et des extensions utilisées dans votre version de l’application.
+
+   ![Versions d’extension](assets/assurance-extension-versions.png)
+
+1. Pour mettre à jour vos versions d’extension (par exemple **[!UICONTROL Messagerie]** et **[!UICONTROL Optimiser]**), dans Xcode, pour les extensions spécifiques nécessitant une mise à niveau, sélectionnez le package (extension) depuis **[!UICONTROL Dépendances de modules]** (par exemple, **[!UICONTROL AEPMessaging]**) et, dans le menu contextuel, sélectionnez **[!UICONTROL Mettre à jour le package]**. Xcode met à jour les dépendances du package.
+
+
+>[!NOTE]
+>
+>Lorsque vous avez mis à jour vos extensions (packages) dans Xcode, vous devez fermer et supprimer votre session actuelle et répéter toutes les étapes de [Connexion à une session](#connecting-to-a-session) et [Vérifier les extensions](#verify-extensions) pour vous assurer qu’Assurance signale correctement les extensions correctes dans une nouvelle session d’assurance.
+
+
+
+
 
 >[!SUCCESS]
 >

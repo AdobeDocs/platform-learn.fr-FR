@@ -2,9 +2,10 @@
 title: Collecter les données du cycle de vie
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -66,13 +67,11 @@ Vous pouvez maintenant mettre à jour votre projet pour enregistrer les événem
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## Validation avec Assurance
 
-1. Consultez la section [instructions de configuration](assurance.md) et connectez votre simulateur ou votre appareil à Assurance.
-1. Lancez l’application.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Envoyez l’application en arrière-plan. Vérifier **[!UICONTROL LifecyclePause]** dans l’interface utilisateur d’Assurance.
 1. Amener l’application au premier plan. Vérifier **[!UICONTROL LifecycleResume]** dans l’interface utilisateur d’Assurance.
    ![cycle de vie de validation](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ Vous pouvez maintenant mettre à jour votre projet pour enregistrer les événem
 
 L’exercice précédent distribue les événements de premier plan et d’arrière-plan au SDK Adobe Experience Platform Mobile. Pour transférer ces événements vers Platform Edge Network :
 
-1. Sélectionner **[!UICONTROL Règles]** dans l’interface utilisateur de la collecte de données.
+1. Sélectionner **[!UICONTROL Règles]** dans la propriété Balises.
    ![Créer une règle](assets/rule-create.png)
 1. Sélectionner **[!UICONTROL Version initiale]** comme bibliothèque à utiliser.
 1. Sélectionnez **[!UICONTROL Créer une règle]**.
