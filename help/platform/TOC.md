@@ -5,7 +5,7 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 43%
@@ -38,8 +38,8 @@ ht-degree: 43%
 + [Importer des données dʼexemple vers  Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
-   + [Utilisation des sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Copier des objets entre sandbox](/help/platform/admin/use-sandboxes.md)
+   + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
+   + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Configurer le contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Gestion des profils de produit](/help/platform/admin/managing-product-profiles.md)
