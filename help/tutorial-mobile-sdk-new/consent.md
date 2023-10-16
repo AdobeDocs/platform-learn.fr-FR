@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre le consentement dans une applic
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -96,28 +96,10 @@ Dans l’exemple ci-dessus, vous enregistrez simplement l’état du consentemen
 
 ## Validation avec Assurance
 
+1. Supprimez l’application de votre appareil ou de votre simulateur, car nous voulons réinitialiser correctement et initialiser le suivi et le consentement.
 1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
-1. Si vous avez correctement ajouté le code ci-dessus, vous êtes invité à fournir votre consentement.
-
-   Sélectionner **[!UICONTROL Continuer...]** puis sélectionnez **[!UICONTROL Autoriser]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. Vous devriez voir une **[!UICONTROL Obtenir une réponse de consentement]** dans l’interface utilisateur d’Assurance.
+1. Lorsque vous migrez dans l’application à partir de **[!UICONTROL Accueil]** écran à **[!UICONTROL Produits]** écran et retour à **[!UICONTROL Accueil]** vous devriez voir une **[!UICONTROL Obtenir une réponse de consentement]** dans l’interface utilisateur d’Assurance.
    ![valider le consentement](assets/consent-update.png)
-
-
-## Réinitialiser le consentement
-
-Si vous souhaitez réinitialiser le consentement :
-
-1. Accédez à **[!UICONTROL Paramètres]** dans l’application.
-
-1. Sélectionner **[!UICONTROL Paramètres de l’application...]** Les paramètres de l’application Luma s’affichent alors dans l’application Paramètres d’iOS.
-
-1. Basculer **[!UICONTROL Autoriser le suivi]** off.
-
 
 
 >[!SUCCESS]

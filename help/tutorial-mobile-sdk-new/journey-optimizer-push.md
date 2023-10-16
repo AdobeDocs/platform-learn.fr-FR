@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2734'
 ht-degree: 4%
 
 ---
@@ -155,6 +155,26 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 1. La notification push de test devrait apparaître dans votre application.
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## Signature
+
+La signature de l’application Luma n’est nécessaire que pour la variable [Créer et envoyer des notifications push](journey-optimizer-push.md) et la variable [Créer et envoyer des messages in-app](journey-optimizer-inapp.md) leçons de ce tutoriel. Ces leçons nécessitent un profil de configuration Apple qui **nécessite un compte de développeur Apple payant**.
+
+Pour mettre à jour la signature de votre application :
+
+1. Accédez à votre application dans Xcode.
+1. Sélectionner **[!DNL Luma]** dans le navigateur de projet.
+1. Sélectionnez la variable **[!DNL Luma]** cible.
+1. Sélectionnez la variable **Signature et fonctionnalités** .
+1. Configurer **[!UICONTROL Gestion automatique de la signature]**, **[!UICONTROL Équipe]**, et **[!UICONTROL Identifiant du lot]** ou utilisez les détails de mise en service du développement Apple spécifiques.
+
+   >[!IMPORTANT]
+   >
+   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`. La version Terminée de ce tutoriel, par exemple, utilise `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Fonctionnalités de signature Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## Ajout de fonctionnalités de notification push à votre application

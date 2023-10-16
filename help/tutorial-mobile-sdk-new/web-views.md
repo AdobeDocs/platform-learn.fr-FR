@@ -3,13 +3,13 @@ title: Gestion des WebViews
 description: Découvrez comment gérer la collecte de données avec WebViews dans une application mobile.
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des WebViews
 
@@ -67,6 +67,7 @@ Vous pouvez en savoir plus sur les `Identity.getUrlVariables` de l’API [Guide 
 
 Pour exécuter le code :
 
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Accédez au **[!UICONTROL Paramètres]** dans l’application
 1. Appuyez sur le bouton **[!DNL View...]** pour afficher le **[!DNL Terms of Use]**.
 

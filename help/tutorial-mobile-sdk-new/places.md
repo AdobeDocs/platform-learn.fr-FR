@@ -3,9 +3,9 @@ title: Utiliser des emplacements
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 4%
 
 ---
@@ -239,7 +239,10 @@ Pour valider votre configuration dans Assurance :
 1. Si elle n’est pas déjà disponible dans le rail de gauche, sélectionnez **[!UICONTROL Configurer]** dans le rail de gauche et sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de **[!UICONTROL Événements]** et **[!UICONTROL Carte et simulation]** underneath **[!UICONTROL SERVICE PLACES]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Sélectionner **[!UICONTROL Carte et simulation]** dans le rail de gauche.
-1. Sélectionnez l’un des points ciblés définis dans le service Places et, dans la fenêtre contextuelle, sélectionnez ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulation de l’événement d’entrée]**.
+1. Déplacez la carte vers un emplacement de l’un de vos points ciblés.
+1. Sélectionner ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulation de la charge des points ciblés.  Votre point ciblé est identifié à l’aide d’un cercle et d’une broche.
+1. Sélectionnez votre point ciblé.
+1. Dans la fenêtre contextuelle, sélectionnez ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulation de l’événement d’entrée]**.
    ![Simulation de l’événement d’entrée](assets/places-simulate.png)
 1. Sélectionner **[!UICONTROL Événements]** dans le rail de gauche, et vous devriez voir les événements que vous avez simulés.
    ![Validation de la prise de décision AJO](assets/places-events.png)
@@ -258,7 +261,9 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** dans le navigateur de projet Xcode.
 1. Assurez-vous que `AEPPlaces` fait partie de votre liste d’importations.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. Assurez-vous que `Places.self` fait partie du tableau des extensions que vous enregistrez.
 

@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 6%
+source-wordcount: '1690'
+ht-degree: 5%
 
 ---
 
@@ -100,6 +100,27 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 >
 >Si vous ne voyez pas `AJO Push Tracking Experience Event Dataset` contactez l’assistance clientèle.
 >
+
+
+## Signature
+
+La signature de l’application Luma n’est nécessaire que pour la variable [Créer et envoyer des notifications push](journey-optimizer-push.md) et la variable [Créer et envoyer des messages in-app](journey-optimizer-inapp.md) leçons de ce tutoriel. Ces leçons nécessitent un profil de configuration Apple qui **nécessite un compte de développeur Apple payant**.
+
+Pour mettre à jour la signature de votre application :
+
+1. Accédez à votre application dans Xcode.
+1. Sélectionner **[!DNL Luma]** dans le navigateur de projet.
+1. Sélectionnez la variable **[!DNL Luma]** cible.
+1. Sélectionnez la variable **Signature et fonctionnalités** .
+1. Configurer **[!UICONTROL Gestion automatique de la signature]**, **[!UICONTROL Équipe]**, et **[!UICONTROL Identifiant du lot]** ou utilisez les détails de mise en service du développement Apple spécifiques.
+
+   >[!IMPORTANT]
+   >
+   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`. La version Terminée de ce tutoriel, par exemple, utilise `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Fonctionnalités de signature Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+
 
 ### Mise en oeuvre de Journey Optimizer dans l’application
 
@@ -213,7 +234,7 @@ Vous disposez de tous les ingrédients nécessaires pour envoyer un message in-a
    ```swift
    // Setting parameters and calling function to send in-app message
    Task {
-       AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
+       MobileSDK.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
    ```
 

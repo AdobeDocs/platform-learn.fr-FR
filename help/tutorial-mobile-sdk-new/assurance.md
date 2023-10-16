@@ -4,10 +4,10 @@ description: Découvrez comment mettre en oeuvre l’extension Assurance dans un
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 4%
+source-wordcount: '976'
+ht-degree: 3%
 
 ---
 
@@ -57,22 +57,28 @@ En plus du [Installation du SDK](install-sdks.md), que vous avez terminé dans l
 
 Vous trouverez plus d’informations [ici](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## Signature
+<!-- not initially required
 
-Avant d’exécuter l’application pour la première fois dans Xcode, veillez à mettre à jour la signature.
+## Signing
 
-1. Ouvrez le projet  dans Xcode.
-1. Sélectionner **[!DNL Luma]** dans le navigateur de projet.
-1. Sélectionnez la variable **[!DNL Luma]** cible.
-1. Sélectionnez la variable **Signature et fonctionnalités** .
-1. Configurer **[!UICONTROL Gestion automatique de la signature]**, **[!UICONTROL Équipe]**, et **[!UICONTROL Identifiant du lot]** ou utilisez les détails de mise en service du développement Apple spécifiques.
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `Luma` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`. La version Terminée de ce tutoriel, par exemple, utilise `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Fonctionnalités de signature Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## Configuration d’une URL de base
 
@@ -81,9 +87,13 @@ Avant d’exécuter l’application pour la première fois dans Xcode, veillez �
 1. Sélectionnez la variable **[!DNL Luma]** cible.
 1. Sélectionnez la variable **Infos** .
 1. Pour ajouter une URL de base, faites défiler l’écran jusqu’à **Types d’URL** et sélectionnez la variable **+** bouton .
-1. Définir **Identifiant** à l’identifiant du lot que vous avez configuré dans [Signature](#signing) (par exemple `com.adobe.luma.tutorial.swiftui`) et définissez une **Modèles d’URL**, par exemple `lumatutorialswiftui`.
+1. Définir **Identifiant** à l’identifiant du lot de votre choix et définissez une **Modèles d’URL** de votre choix .
 
    ![url d&#39;assurance](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`.<br/>De même, utilisez un modèle d’URL unique et remplacez le `lumatutorialswiftui` avec votre modèle d’URL unique.
 
 Pour en savoir plus sur les schémas d’URL dans iOS, consultez [Documentation Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
 
 ## Connexion à une session
 
-1. Recréez et exécutez l’application dans le simulateur ou sur un appareil physique à partir de Xcode, en utilisant ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. Sélectionner **[!UICONTROL Assurance]** dans le rail de gauche de l’interface utilisateur de la collecte de données.
+Dans Xcode :
+
+1. Créez ou recréez et exécutez l’application dans le simulateur ou sur un appareil physique à partir de Xcode, en utilisant ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. Dans le **[!UICONTROL Autoriser &quot;Luma App&quot; à utiliser votre emplacement]** boîte de dialogue, sélectionnez **[!UICONTROL Autoriser lors de l’utilisation de l’application]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. Dans le **[!UICONTROL &quot;Luma App&quot; souhaite vous envoyer des notifications]** boîte de dialogue, sélectionnez **[!UICONTROL Autoriser]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. Sélectionner **[!UICONTROL Continuer...]** pour permettre à l’application d’effectuer le suivi de votre activité.
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. Dans le **[!UICONTROL Autoriser &quot;l’application Luma&quot; à effectuer le suivi de votre activité sur l’application et les sites web d’autres entreprises]** boîte de dialogue, sélectionnez **[!UICONTROL Autoriser]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+Dans votre navigateur :
+
+1. Accédez à l’interface utilisateur de la collecte de données.
+1. Sélectionner **[!UICONTROL Assurance]** dans le rail de gauche.
 1. Sélectionner **[!UICONTROL Créer une session]**.
 1. Sélectionner **[!UICONTROL Début]**.
 1. Fournissez une **[!UICONTROL Nom de session]** par exemple `Luma Mobile App Session` et la variable **[!UICONTROL URL de base]**, qui est un schéma d’URL que vous avez saisi dans Xcode, suivi de `://` Par exemple : `lumatutorialswiftui://`
