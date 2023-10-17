@@ -3,9 +3,9 @@ title: Tutoriels sur la collecte de données
 description: Vidéos pratiques et tutoriels pour devenir un utilisateur expérimenté de la collecte de données
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 37%
 
 ---
@@ -63,7 +63,20 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     </a>
     </div>
     <p>
-    <em>Utilisation des balises pour implémenter le SDK Mobile Platform</em>
+    <em>Utilisation des balises pour mettre en oeuvre le SDK Mobile Platform</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr" target="_blank">
+      <img alt="Migration de Target vers le SDK Web" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr" target="_blank">
+    <strong>Migration d’Adobe Target vers le SDK Web</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migration d’at.js vers le SDK Web</em>
     <p>
   </td>
 </tr>

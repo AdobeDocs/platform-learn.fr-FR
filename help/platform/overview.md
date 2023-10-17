@@ -4,16 +4,16 @@ description: En savoir plus sur Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 40%
+ht-degree: 48%
 
 ---
 
 # Tutoriels Adobe Experience Platform
 
-Adobe Experience Platform est l’un des meilleurs systèmes ouverts, flexibles et performants du marché permettant de créer et de gérer des solutions complètes qui optimisent l’expérience client. Experience Platform permet aux entreprises de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système et d’appliquer la science des données et l’apprentissage automatique afin d’améliorer considérablement la conception et la diffusion d’expériences riches et personnalisées. Utilisez ces vidéos et tutoriels pour découvrir les nombreux composants d’Experience Platform.
+Adobe Experience Platform est l’un des meilleurs systèmes ouverts, flexibles et performants du marché permettant de créer et de gérer des solutions complètes qui optimisent l’expérience client. Experience Platform permet aux entreprises de centraliser et de normaliser les données et le contenu des clients à partir de n’importe quel système et d’appliquer la science des données et le machine learning afin d’améliorer considérablement la conception et la diffusion d’expériences riches et personnalisées. Utilisez ces vidéos et tutoriels pour découvrir les nombreux composants d’Experience Platform.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -42,11 +42,11 @@ Adobe Experience Platform est l’un des meilleurs systèmes ouverts, flexible
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-      <img alt="image miniature du tutoriel "Prise en main pour les architectes de données et les ingénieurs de données"" src="assets/thumb_Getting_started.jpg" />
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr">
+      <img alt="image miniature du tutoriel &quot;Prise en main pour les architectes de données et les ingénieurs de données&quot;" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr">
     <strong>Prise en main pour les architectes de données et les ingénieurs de données</strong>
     </a>
     </div>
@@ -56,7 +56,7 @@ Adobe Experience Platform est l’un des meilleurs systèmes ouverts, flexible
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="image miniature de la vidéo "Comprendre les connecteurs source"" src="assets/thumb_Sources.png" />
+      <img alt="image miniature de la vidéo &quot;Comprendre les connecteurs source&quot;" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">
