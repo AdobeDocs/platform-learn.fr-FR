@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre l’extension Assurance dans un
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 3%
 
 ---
@@ -105,6 +105,11 @@ L’assurance fonctionne en ouvrant une URL, que ce soit par navigateur ou par c
 Dans Xcode :
 
 1. Créez ou recréez et exécutez l’application dans le simulateur ou sur un appareil physique à partir de Xcode, en utilisant ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >Si vous le souhaitez, vous pouvez &quot;nettoyer&quot; votre version, en particulier lorsque des résultats inattendus s’affichent. Pour ce faire, sélectionnez **[!UICONTROL Nettoyer le dossier de génération...]** de Xcode **[!UICONTROL Produit]** .
+
 
 1. Dans le **[!UICONTROL Autoriser &quot;Luma App&quot; à utiliser votre emplacement]** boîte de dialogue, sélectionnez **[!UICONTROL Autoriser lors de l’utilisation de l’application]**.
 
