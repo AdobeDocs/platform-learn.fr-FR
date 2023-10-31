@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 43%
+source-wordcount: '1002'
+ht-degree: 44%
 
 ---
 
@@ -91,7 +91,7 @@ ht-degree: 43%
    + [Présentation de l’ingestion par flux](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Diffuser les données en continu avec l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=fr)
    + [Diffusion de données à l’aide des connecteurs sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=fr)
-   + [Tutoriels du SDK Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Tutoriels du SDK Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=fr){target="_blank"}
    + [Tutoriels du SDK Mobile](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=fr){target="_blank"}
 + Espace de travail de science des données {#data-science-workspace}
    + [Vue d’ensemble](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
@@ -120,6 +120,7 @@ ht-degree: 43%
    + [Configuration de la destination Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
    + [Configuration de l’espace de stockage dans le cloud basé sur les fichiers ou des destinations de marketing par e-mail](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configuration d’une destination de réseau social](/help/platform/destinations/configure-a-social-destination.md)
+   + [Activation via les destinations LiveRamp](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target et personnalisation personnalisée{#target}
       + [Personnalisation de l’accès suivant avec Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configuration de la destination Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
