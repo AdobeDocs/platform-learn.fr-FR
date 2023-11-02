@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Lorsque plusieurs schémas sont activés pour le profil, une [!UICONTROL Schéma
 
 Notez qu’il n’existe pas de schéma d’union pour la classe ExperienceEvent. Bien que les données ExperienceEvent se trouvent toujours dans le profil, puisqu’elles sont basées sur des séries temporelles, chaque événement comprend un horodatage et les identifiants et les collisions ne posent pas problème.
 
-Maintenant, que se passe-t-il si vous n’aimez pas cette stratégie de fusion par défaut ? Que se passe-t-il si Luma décide que son système de gestion de la relation client devrait être la source de vérité en cas de conflit ? Pour ce faire, nous allons créer une stratégie de fusion.
+Maintenant, que se passe-t-il si vous n’aimez pas cette stratégie de fusion par défaut ? Et si Luma décide que leur système de fidélité devrait être la source de vérité en cas de conflit ? Pour ce faire, nous allons créer une stratégie de fusion.
 
 ## Créer une stratégie de fusion dans l’interface utilisateur
 
