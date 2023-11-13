@@ -1,13 +1,13 @@
 ---
 title: Cas d’utilisation clés
-description: Obtenez un aperçu des cinq cas d’utilisation clés d’Experience Platform&mdash;réengagement intelligent, campagnes "Ne pas perdre", optimisation de la conversion client, reconnaissance contextuelle et valeur unique par rapport à la valeur de durée de vie.
+description: Obtenez un aperçu des cinq cas d’utilisation clés d’Experience Platform&mdash;réengagement intelligent, Ne pas perdre les campagnes, optimisation de la conversion client, reconnaissance contextuelle et valeur unique à la valeur de durée de vie.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: cc38679e0e7f27a10fe2513b4b4986347e501010
+source-git-commit: 4809c5e9b7ef031dd57f710b5e1fe39a55edf134
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
