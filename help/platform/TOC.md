@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
+source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 44%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 44%
    + [Scènes en arrière-plan : une expérience client optimisée par un Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Présentation d’Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Fonctionnalités principales](/help/platform/intro-to-platform/key-capabilities.md)
-   + [Application et services intelligents](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [Applications basées sur des plateformes](/help/platform/intro-to-platform/native-applications.md)
    + [Intégrations avec des applications Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Cas d’utilisation clés](/help/platform/intro-to-platform/key-use-cases.md)
    + [Architecture de base](/help/platform/intro-to-platform/basic-architecture.md)
