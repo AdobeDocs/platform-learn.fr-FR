@@ -2,9 +2,9 @@
 title: Ajouter du code incorporé
 description: Découvrez comment obtenir les codes incorporés de votre propriété de balise et les mettre en oeuvre dans votre site web. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1056'
 ht-degree: 49%
 
 ---
@@ -18,9 +18,8 @@ Dans cette leçon, vous allez mettre en oeuvre le code incorporé asynchrone de 
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 ## Objectifs d’apprentissage
 
@@ -35,7 +34,7 @@ Dans cette leçon, vous allez mettre en oeuvre le code incorporé asynchrone de 
 
 Le code incorporé est un `<script>` balise que vous placez sur vos pages web pour charger et exécuter la logique que vous créez dans les balises . Si vous chargez la bibliothèque de manière asynchrone, le navigateur continue à charger la page, récupère la bibliothèque de balises et l’exécute parallèlement. Dans ce cas, il n’y a qu’un seul code incorporé à placer dans l’élément `<head>`. (Lorsque les balises sont déployées de manière synchrone, deux codes incorporés sont disponibles, l’un que vous placez dans la variable `<head>` et un autre que vous placez avant l’événement `</body>`).
 
-Dans l’écran Présentation de la propriété, cliquez sur **[!UICONTROL Environnements]** dans le volet de navigation de gauche pour accéder à la page environnements. Notez que les environnements de développement, d’évaluation et de production ont déjà été créés pour vous.
+Dans l’écran Présentation de la propriété, cliquez sur **[!UICONTROL Environnements]** dans le volet de navigation de gauche pour accéder à la page des environnements. Notez que les environnements de développement, d’évaluation et de production ont déjà été créés pour vous.
 
 ![Clic sur Environnements dans la barre de navigation supérieure](images/launch-environments.png)
 
@@ -61,7 +60,56 @@ Copions maintenant le code incorporé :
 
 Le code incorporé doit être mis en œuvre dans l’élément `<head>` de toutes les pages HTML qui partageront la propriété. Il peut y avoir un ou plusieurs fichiers de modèle qui contrôlent la variable `<head>` sur l’ensemble du site, ce qui simplifie le processus d’ajout de balises.
 
-Si ce n’est déjà fait, téléchargez [l’exemple de page html](https://www.enablementadobe.com/multi/web/basic-sample.html) (cliquez avec le bouton droit sur ce lien, puis cliquez sur &quot;Enregistrer le lien sous&quot;) et ouvrez-le dans un éditeur de code. Si vous en avez besoin, [Brackets](https://brackets.io/) est un éditeur libre et open source.
+Si ce n’est déjà fait, copiez l’exemple de code de page HTML et collez-le dans un éditeur de code. Si vous en avez besoin, [Brackets](https://brackets.io/) est un éditeur libre et open source.
+
++++Exemple de code de page HTML
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
 
 Remplacez le code incorporé existant sur la ligne 34, ou autour de celle-ci, par le code du presse-papiers et enregistrez la page. Ouvrez ensuite la page dans un navigateur web. Si vous chargez la page à l’aide du protocole `file://`, vous devez ajouter « https: » au début de l’URL du code incorporé dans l’éditeur de code. Les lignes 33 à 36 de votre page d’exemple devraient ressembler à ceci :
 
@@ -86,13 +134,13 @@ Prenez quelques instants pour passer en revue certaines des bonnes pratiques de 
 
    * Définissez votre couche de données avant le code incorporé de balise afin d’optimiser ce que vous pouvez faire avec les solutions Experience Cloud.
 
-* **Bibliothèques d’assistance JavaScript**: Si une bibliothèque comme JQuery est déjà implémentée dans la variable `<head>` de vos pages, chargez-la avant les balises afin d’exploiter sa syntaxe dans les balises et dans Target.
+* **Bibliothèques d’assistance JavaScript**: si une bibliothèque comme JQuery est déjà implémentée dans la variable `<head>` de vos pages, chargez-la avant les balises afin d’exploiter sa syntaxe dans les balises et dans Target.
 
 * **Doctype HTML5** : Target a besoin du doctype HTML5.
 
 * **preconnect et dns-prefetch** : utilisez preconnect and dns-prefetch pour améliorer le temps de chargement de la page. Voir aussi : [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **prémasquage du fragment de code pour les implémentations asynchrones de Target**: Vous en apprendrez plus à ce sujet dans la leçon sur Target, mais lorsque Target est déployé via des codes incorporés de balise asynchrones, vous devez coder en dur un fragment de code de masquage préalable sur vos pages avant les codes incorporés de balise afin de gérer le scintillement du contenu.
+* **prémasquage du fragment de code pour les implémentations asynchrones de Target**: vous en apprendrez plus à ce sujet dans la leçon sur Target, mais lorsque Target est déployé via des codes incorporés de balise asynchrones, vous devez coder en dur un fragment de code de masquage préalable sur vos pages avant les codes incorporés de balise afin de gérer le scintillement du contenu.
 
 Voici un résumé des bonnes pratiques décrites ci-dessus dans l’ordre conseillé. Notez qu’il existe des espaces réservés pour les détails spécifiques au compte :
 

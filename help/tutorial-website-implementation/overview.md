@@ -3,14 +3,14 @@ title: Mise en oeuvre de l’Experience Cloud dans les sites web avec des balise
 description: La mise en oeuvre de l’Experience Cloud dans les sites web avec balises est le point de départ idéal pour les développeurs front-end ou les spécialistes du marketing technique qui souhaitent apprendre à mettre en oeuvre les solutions Adobe Experience Cloud sur leur site web.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 44%
+source-wordcount: '897'
+ht-degree: 43%
 
 ---
 
-# Présentation
+# Vue d’ensemble
 
 _Mise en oeuvre de l’Experience Cloud dans les sites web avec des balises_ est le point de départ idéal pour les développeurs front-end ou les spécialistes du marketing technique qui souhaitent apprendre à mettre en oeuvre les solutions Adobe Experience Cloud sur leur site web.
 
@@ -44,9 +44,8 @@ Après avoir terminé cette formation, vous saurez comment :
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 >[!NOTE]
 >
@@ -60,13 +59,13 @@ Dans ces leçons, nous supposons que vous disposez d’un Adobe ID et des autor
 * Pour Adobe Analytics, vous devez connaitre votre serveur de suivi et les suites de rapports que vous utiliserez pour terminer ce tutoriel.
 * Pour toute Audience Manager, vous devez connaître votre sous-domaine d’Audience Manager (également appelé &quot;Nom de partenaire&quot;, &quot;Identifiant de partenaire&quot; ou &quot;Sous-domaine de partenaire&quot;).
 
-En outre, vous êtes censé connaitre les langages de développement d’interfaces tels que HTML et JavaScript. Vous n’avez pas besoin d’être un expert dans ces langues pour terminer les leçons, mais vous en tirerez plus d’informations si vous pouvez facilement lire et comprendre le code.
+En outre, on suppose que vous connaissez bien les langages de développement front-end tels que HTML et JavaScript. Vous n’avez pas besoin d’être un expert dans ces langues pour terminer les leçons, mais vous en tirerez plus d’informations si vous pouvez facilement lire et comprendre le code.
 
 ## À propos des balises
 
 La fonctionnalité de balises de Adobe Experience Platform est la nouvelle génération de fonctionnalités de gestion de SDK mobile et de balises de sites web d’Adobe. Les balises offrent aux clients un moyen simple de déployer et gérer toutes les solutions d’analyse, de marketing et de publicité nécessaires pour proposer des expériences client pertinentes. Les balises ne sont pas soumises à des frais supplémentaires. Il est disponible pour tout client Adobe Experience Cloud.
 
-Les balises de sites web vous permettent de gérer de manière centralisée l’ensemble du code JavaScript associé aux solutions d’analyse, de marketing et de publicité utilisées sur vos sites pour mobiles et ordinateurs de bureau. Par exemple, si vous déployez Adobe Analytics, les balises gèrent la bibliothèque JavaScript AppMeasurement, renseignent les variables et déclenchent les demandes.
+Les balises pour les sites web vous permettent de gérer de manière centralisée l’ensemble du code JavaScript associé aux solutions d’analyse, de marketing et de publicité utilisées sur vos sites pour mobiles et ordinateurs de bureau. Par exemple, si vous déployez Adobe Analytics, les balises gèrent la bibliothèque JavaScript d’AppMeasurement, renseignent les variables et déclenchent les demandes.
 
 Le contenu de votre conteneur est réduit, y compris votre code personnalisé. Tout est modulaire. Si vous n’avez pas besoin d’un élément, celui-ci n’est pas inclus dans votre bibliothèque. Vous obtenez ainsi une mise en œuvre rapide et compacte.
 
@@ -82,7 +81,57 @@ Dans ces leçons, vous allez mettre en œuvre Adobe Experience Cloud dans un f
 
 1. Puisque vous utiliserez certaines extensions spécifiques au navigateur, nous vous recommandons de suivre le tutoriel en utilisant le [navigateur web Chrome](https://www.google.com/intl/fr/chrome/)
 1. Ajoutez l’extension [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) à votre navigateur Chrome.
-1. Téléchargez la [page HTML d’exemple](https://www.enablementadobe.com/multi/web/basic-sample.html) (cliquez avec le bouton droit sur ce lien et cliquez sur « Enregistrer le lien sous »).
+1. Copie de l’exemple de code de page HTML
+
++++Exemple de code de page HTML
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+```
+
++++
+
 1. Utilisez un éditeur de texte dans lequel vous pouvez modifier la page HTML d’exemple. (Si vous n’en avez pas, nous vous recommandons d’essayer [Brackets](https://brackets.io/)).
 1. Ajoutez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) à vos favoris.
 
