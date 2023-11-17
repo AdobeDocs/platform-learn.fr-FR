@@ -3,7 +3,7 @@ title: Suivi des données d’événement
 description: Découvrez comment effectuer le suivi des données d’événement dans une application mobile.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 3%
@@ -367,7 +367,7 @@ Vous devez maintenant disposer de tous les outils pour commencer à ajouter la c
 
 >[!TIP]
 >
->Consultez la section [application terminée](https://git.corp.adobe.com/rmaur/Luma) pour plus d’exemples.
+>Consultez la section [application terminée](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) pour plus d’exemples.
 
 
 ## Envoi d’événements à Analytics et Platform

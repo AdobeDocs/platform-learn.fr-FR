@@ -2,16 +2,20 @@
 title: Données du cycle de vie
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '508'
+ht-degree: 2%
 
 ---
 
 # Données du cycle de vie
 
 Découvrez comment collecter des données de cycle de vie dans une application mobile.
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 L’extension de cycle de vie du SDK Mobile Adobe Experience Platform active les données de cycle de vie de collecte de votre application mobile. L’extension Adobe Experience Platform Edge Network envoie ces données de cycle de vie à Platform Edge Network, où elles sont ensuite transférées vers d’autres applications et services conformément à votre configuration de flux de données. En savoir plus sur les [Extension Lifecycle](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) dans la documentation du produit.
 
@@ -21,9 +25,9 @@ L’extension de cycle de vie du SDK Mobile Adobe Experience Platform active les
 * Création et exécution de l’application avec les SDK installés et configurés.
 * Importation du SDK Assurance.
 
-   ```swift
-   import AEPAssurance
-   ```
+  ```swift
+  import AEPAssurance
+  ```
 
 * Enregistrez l’extension Assurance comme décrit dans la section [leçon précédente](install-sdks.md).
 
@@ -32,7 +36,7 @@ L’extension de cycle de vie du SDK Mobile Adobe Experience Platform active les
 Dans cette leçon, vous allez :
 
 * Ajoutez le groupe de champs de cycle de vie au schéma.
-* Activez des mesures de cycle de vie précises en démarrant/mettant correctement en pause lorsque l’application se déplace entre le premier plan et l’arrière-plan.
+* Activez des mesures de cycle de vie précises en démarrant/mettant correctement en pause lorsque l’application passe du premier plan à l’arrière-plan.
 * Envoyez des données de l’application à Platform Edge Network.
 * Validez dans Assurance.
 
@@ -75,8 +79,8 @@ Maintenant, vous pouvez mettre à jour `AppDelegate.swift` pour enregistrer les 
 
 1. Consultez la section [instructions de configuration](assurance.md) et connectez votre simulateur ou votre appareil à Assurance.
 1. Lancez l’application.
-1. Envoyez l’application en arrière-plan. Rechercher `LifecyclePause`.
-1. Amener l’application au premier plan. Rechercher `LifecycleResume`.
+1. Envoyez l’application en arrière-plan. Vérifier `LifecyclePause`.
+1. Amener l’application au premier plan. Vérifier `LifecycleResume`.
    ![cycle de vie de validation](assets/mobile-lifecycle-lifecycle-assurance.png)
 
 
@@ -94,4 +98,4 @@ Suivant : **[Suivi des événements](events.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

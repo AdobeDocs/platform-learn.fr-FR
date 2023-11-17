@@ -3,9 +3,9 @@ title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '733'
 ht-degree: 11%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 11%
 # Configuration d’une propriété de balise
 
 Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 Les balises dans Adobe Experience Platform Launch représentent la nouvelle génération des fonctionnalités de gestion des balises dʼAdobe. Les balises offrent aux clients un moyen simple de déployer et de gérer toutes les balises dʼanalyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. En savoir plus sur [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) dans la documentation du produit.
 
@@ -34,7 +38,7 @@ Dans cette leçon, vous allez :
 ## Configuration initiale
 
 1. Créez une propriété de balise mobile :
-   1. Dans le [Interface de collecte de données](https://experience.adobe.com/data-collection/){target="_blank"}, sélectionnez **[!UICONTROL Balises]** dans le volet de navigation de gauche
+   1. Dans le [Interface de collecte de données](https://experience.adobe.com/data-collection/){target="_blank"}, sélectionnez **[!UICONTROL Balises]** dans la navigation de gauche
    1. Sélectionnez **[!UICONTROL Nouvelle propriété]**
       ![création d’une propriété de balise](assets/mobile-tags-new-property.png).
    1. Pour le **[!UICONTROL Nom]**, saisissez `Mobile SDK Course`.
@@ -45,11 +49,11 @@ Dans cette leçon, vous allez :
 
       >[!NOTE]
       >
-      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, comme celle que vous effectuez dans ce tutoriel, proviennent de la [!UICONTROL Extension de consentement] et non le [!UICONTROL Confidentialité] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, comme celle que vous effectuez dans ce tutoriel, proviennent de la [!UICONTROL Extension de consentement] et non le [!UICONTROL Privacy] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Ouvrir la nouvelle propriété
-1. Création d’une bibliothèque :
+1. Créer une bibliothèque :
 
    1. Accédez à **[!UICONTROL Flux de publication]** dans le volet de navigation de gauche.
    1. Sélectionner **[!UICONTROL Ajouter une bibliothèque]**.
@@ -98,7 +102,7 @@ Dans cette leçon, vous allez :
 
 1. Sélectionner **[!UICONTROL Environnements]**.
 
-1. Sélectionnez la **[!UICONTROL Développement]** icône d’installation.
+1. Sélectionnez la variable **[!UICONTROL Développement]** icône d’installation.
 
    ![écran d’accueil des environnements](assets/mobile-tags-environments.png)
 
@@ -112,9 +116,9 @@ Dans cette leçon, vous allez :
 
    Vous trouverez des informations supplémentaires [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-   * **[!UICONTROL Identifiant de fichier d’environnement]**: Cet identifiant unique pointe vers votre environnement de développement. Notez cette valeur. Les valeurs d’ID de production/d’évaluation/de développement sont toutes différentes.
-   * **[!UICONTROL Podfile]**: Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [documentation](https://cocoapods.org/).
-   * **[!UICONTROL Code d’initialisation]**: Ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement.
+   * **[!UICONTROL Identifiant de fichier d’environnement]**: cet identifiant unique pointe vers votre environnement de développement, notez cette valeur. Les valeurs d’identifiant de production/évaluation/développement sont toutes différentes.
+   * **[!UICONTROL Podfile]**: les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [documentation](https://cocoapods.org/).
+   * **[!UICONTROL Code d’initialisation]**: ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement.
 
 >[!NOTE]
 >Les instructions d’installation doivent être considérées comme un point de départ et non comme une documentation définitive. Vous trouverez les dernières versions du SDK et des exemples de code dans la [documentation](https://developer.adobe.com/client-sdks/documentation/).
@@ -131,4 +135,4 @@ Suivant : **[Installation des SDK](install-sdks.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

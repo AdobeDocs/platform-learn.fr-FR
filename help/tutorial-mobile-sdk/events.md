@@ -2,9 +2,9 @@
 title: Événements
 description: Découvrez comment collecter des données d’événement dans une application mobile.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # Événements
 
 Découvrez comment effectuer le suivi des événements dans une application mobile.
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 L’extension Edge Network fournit une API pour envoyer des événements d’expérience à Platform Edge Network. Un événement d’expérience est un objet qui contient des données conformes à la définition de schéma XDM ExperienceEvent. Plus simplement, ils capturent ce que les gens font dans votre application mobile. Une fois les données reçues par Platform Edge Network, elles peuvent être transférées vers les applications et services configurés dans votre flux de données, tels qu’Adobe Analytics et Experience Platform. En savoir plus sur les [Événements d’expérience](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) dans la documentation du produit.
 
@@ -73,8 +77,8 @@ Examinez l’exemple suivant sans essayer de le mettre en oeuvre dans l’exempl
    ]
    ```
 
-   * eventType : Décrit l’événement qui s’est produit, en utilisant une [valeur connue](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) si possible.
-   * commerce.productViews.value: Indiquez la valeur numérique de l’événement. S’il s’agit d’une valeur booléenne (ou &quot;compteur&quot; dans Adobe Analytics), la valeur sera toujours 1. S’il s’agit d’un événement numérique ou monétaire, la valeur peut être supérieure à 1.
+   * eventType : décrit l’événement qui s’est produit, utilisez une variable [valeur connue](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) si possible.
+   * commerce.productViews.value : indiquez la valeur numérique de l’événement. S’il s’agit d’une valeur booléenne (ou &quot;compteur&quot; dans Adobe Analytics), la valeur sera toujours 1. S’il s’agit d’un événement numérique ou monétaire, la valeur peut être supérieure à 1.
 
 1. Dans votre schéma, identifiez toutes les données supplémentaires associées à l’événement. Dans cet exemple, incluez `productListItems` qui est un ensemble standard de champs utilisé avec les événements liés au commerce :
    ![schéma d’éléments de liste de produits](assets/mobile-datacollection-prodListItems-schema.png)
@@ -220,14 +224,14 @@ Dans cet exemple, supposons que l’utilisateur ait effectué avec succès l’a
    * SKU : 9841
 * Total de la commande : 79,99 $
 * Identifiant de commande unique : 298234720
-* Type de paiement : Carte de crédit Visa
+* Type de paiement : carte de crédit Visa
 * Identifiant de transaction de paiement unique : 847361
 
 #### Schéma
 
 Voici les champs de schéma associés à utiliser :
 
-* eventType : &quot;commerce.purchase&quot;
+* eventType : &quot;commerce.purchases&quot;
 * commerce.purchases
 * commerce.order
 * productsListItems
@@ -317,13 +321,13 @@ Vous devez disposer de tous les outils pour commencer à ajouter la collecte de 
 
 * Effectuez le suivi de chaque affichage d’écran.
    * Champs du schéma : screenType, screenName, screenView
-* Suivi des actions non commerciales.
-   * Champs du schéma : appInteraction.name, appAction
+* Suivi des actions autres que commerciales.
+   * Champs de schéma : appInteraction.name, appAction
 * Actions commerciales :
    * Page de produit : productViews
    * Ajouter au panier : productListAdds
    * Supprimer du panier : productListRemovals
-   * Commencer l’extraction : checkouts
+   * Début du passage en caisse : passages en caisse
    * Afficher le panier : productListViews
    * Ajouter à la liste blanche : saveForLaters
    * Achat : achats, commande
@@ -349,4 +353,4 @@ Suivant : **[WebViews](web-views.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

@@ -3,16 +3,20 @@ title: Créer un schéma XDM
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 18%
+source-wordcount: '1315'
+ht-degree: 17%
 
 ---
 
 # Créer un schéma XDM
 
 Découvrez comment créer un schéma XDM pour les événements d’application mobile.
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 La normalisation et l’interopérabilité sont les concepts clés d’Adobe Experience Platform. Le modèle de données d’expérience (XDM), optimisé par Adobe, vise à normaliser les données d’expérience client et à définir des schémas pour la gestion de l’expérience client.
 
@@ -50,7 +54,7 @@ Dans cette leçon, vous allez :
 
    ![Liste déroulante 3x3](assets/mobile-schema-navigate1.png)
 
-1. Assurez-vous que vous vous trouvez dans l’environnement de test Experience Platform que vous utilisez pour ce tutoriel.
+1. Vérifiez que vous vous trouvez dans l’environnement de test Experience Platform que vous utilisez pour ce tutoriel.
 
    >[!NOTE]
    >
@@ -85,12 +89,12 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
 À des fins d’apprentissage, vous utiliserez des groupes de champs prédéfinis et personnalisés.
 
-* **Événement d’expérience client**: Groupe de champs prédéfini contenant de nombreux champs communs.
-* **Informations sur l’application**: Groupe de champs personnalisé conçu pour imiter les concepts TrackState/TrackAction Analytics.
+* **Événement d’expérience client**: groupe de champs prédéfini contenant de nombreux champs communs.
+* **Informations sur l’application**: groupe de champs personnalisé conçu pour imiter les concepts TrackState/TrackAction Analytics.
 
 <!--Later in the tutorial, you can [update the schema](lifecycle-data.md) to include the **[!UICONTROL AEP Mobile Lifecycle Details]** field group.-->
 
-## Création d’un schéma
+## Créer un schéma
 
 1. Sélectionner **[!UICONTROL Création d’un schéma]** pour afficher le menu déroulant des options, sélectionnez **[!UICONTROL XDM ExperienceEvent]**.
 
@@ -116,7 +120,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 >
 >Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
 >
->Le `Consumer Experience Event` possède un type de données appelé `Web information`, qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
+>La variable `Consumer Experience Event` possède un type de données appelé `Web information`, qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
 
 ## Créer un type de données personnalisé
 
@@ -125,7 +129,7 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 * Affichage d’écran
 * Interaction de l’application
 
-1. Sélectionnez la **[!UICONTROL Types de données]** , puis sélectionnez **[!UICONTROL Création d’un type de données]**.
+1. Sélectionnez la variable **[!UICONTROL Types de données]** , puis sélectionnez **[!UICONTROL Création d’un type de données]**.
 
    ![Sélection du menu du type de données](assets/mobile-schema-datatype-create.png)
 
@@ -135,7 +139,7 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 
    >[!TIP]
    >
-   > Toujours utiliser des variables lisibles, descriptives [!UICONTROL noms d’affichage] pour vos champs personnalisés, car cette pratique les rend plus accessibles aux marketeurs lorsque les champs apparaissent dans les services en aval comme le créateur de segments.
+   > Toujours utiliser un contenu lisible, descriptif [!UICONTROL noms d’affichage] pour vos champs personnalisés, car cette pratique les rend plus accessibles aux marketeurs lorsque les champs apparaissent dans les services en aval comme le créateur de segments.
 
 
 1. Pour ajouter un champ, cliquez sur le bouton (+).
@@ -210,4 +214,4 @@ Suivant : **[Créez un [!UICONTROL datastream]](create-datastream.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

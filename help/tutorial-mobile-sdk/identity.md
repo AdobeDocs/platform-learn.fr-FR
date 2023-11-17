@@ -3,9 +3,9 @@ title: Identité
 description: Découvrez comment collecter des données d’identité dans une application mobile.
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 3%
 
 ---
@@ -14,9 +14,13 @@ ht-degree: 3%
 
 Découvrez comment collecter des données d’identité dans une application mobile.
 
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
+
 Adobe Experience Platform Identity Service vous permet de mieux connaître vos clients et leurs comportements en rapprochant des identités entre appareils et systèmes, ce qui vous permet de proposer des expériences numériques personnelles et percutantes en temps réel. Les champs d’identité et les espaces de noms sont la colle qui relie différentes sources de données pour créer le profil client en temps réel à 360 degrés.
 
-En savoir plus sur les [Extension Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) et le [service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) dans la documentation.
+En savoir plus sur les [Extension Identity](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) et la variable [service d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) dans la documentation.
 
 ## Conditions préalables
 
@@ -47,7 +51,7 @@ Commencez par mettre à jour la carte d’identité de l’utilisateur lorsqu’
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
    ```
 
-1. Ajoutez la variable `IdentityItem` au `IdentityMap`
+1. Ajoutez la variable `IdentityItem` à la fonction `IdentityMap`
 
    ```swift
    identityMap.add(item:emailIdentity, withNamespace: "Email")
@@ -125,7 +129,7 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 1. Dans l’application, sélectionnez l’icône Compte en bas à droite.
 
    ![compte de l’application luma](assets/mobile-identity-login.png)
-1. Sélectionnez la **Connexion** bouton .
+1. Sélectionnez la variable **Connexion** bouton .
 1. Vous avez la possibilité de saisir un nom d’utilisateur et un mot de passe. Ces deux options sont facultatives. Vous pouvez simplement sélectionner **Connexion**.
 
    ![connexion à l’application luma](assets/mobile-identity-login-final.png)
@@ -137,11 +141,11 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 
 Une fois que vous avez terminé les étapes de la section [leçon Experience Platform](platform.md), vous pourrez également confirmer la capture d’identité dans la visionneuse de graphiques d’identités de Platform :
 
-![validation d’un graphique d’identités](assets/mobile-identity-validate.png)
+![validation du graphique d’identités](assets/mobile-identity-validate.png)
 
 
 Suivant : **[Profil](profile.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

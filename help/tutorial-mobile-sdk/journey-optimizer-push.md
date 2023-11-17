@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '899'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,11 @@ ht-degree: 7%
 
 Découvrez comment créer des messages push pour les applications mobiles avec le SDK Mobile Platform et Adobe Journey Optimizer.
 
-Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages à des audiences ciblées. Avant d’envoyer des notifications push avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données des notifications push dans Adobe Journey Optimizer, reportez-vous à la section [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
+
+Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages à des audiences ciblées. Avant d’envoyer des notifications push avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données des notifications push dans Adobe Journey Optimizer, reportez-vous à [la documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
 >[!NOTE]
 >
@@ -31,8 +35,8 @@ Journey Optimizer vous permet de créer vos parcours et d’envoyer des messages
    * Créer un parcours
    * Créez un message.
    * Création de préréglages de message.
-* Compte de développeur Apple payant disposant d’un accès suffisant pour créer des certificats, des identifiants et des clés.
-* Appareil iOS physique à des fins de test.
+* Compte de développeur Apple payant disposant d’un accès suffisant pour créer des certificats, identifiants et clés.
+* Appareil iOS physique à tester.
 
 ## Objectifs d&#39;apprentissage
 
@@ -41,15 +45,15 @@ Dans cette leçon, vous allez :
 * Enregistrez l’ID d’application avec le service Apple Push Notification (APN).
 * Créez un **[!UICONTROL Surface de l’application]** dans AJO.
 * Mettez à jour votre **[!UICONTROL schema]** pour inclure des champs de messagerie push.
-* Installez et configurez le **[!UICONTROL Adobe Journey Optimizer]** extension de balise.
+* Installez et configurez la variable **[!UICONTROL Adobe Journey Optimizer]** extension de balise.
 * Mettez à jour votre application pour inclure l’extension de balise AJO.
 * Validez la configuration dans Assurance.
 * Envoyez un message de test.
 
 
-## Enregistrement de l’ID d’application avec APN
+## Enregistrement de l’ID d’application avec l’APN
 
-Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont conçues pour vous guider tout au long de la configuration APN.
+Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont conçues pour vous guider tout au long de la configuration de l’APN.
 
 ### Créez un `.p8` clé privée
 
@@ -58,16 +62,16 @@ Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont
    ![créer une clé](assets/mobile-push-apple-dev-new-key.png)
 
 1. Fournissez une **[!UICONTROL Nom de la clé]**.
-1. Sélectionnez la **[!UICONTROL APN]** .
+1. Sélectionnez la variable **[!UICONTROL APN]** .
 1. Sélectionnez **[!UICONTROL Continuer]**.
    ![configurer la nouvelle clé](assets/mobile-push-apple-dev-config-key.png)
 1. Vérifiez la configuration et sélectionnez **[!UICONTROL Enregistrer]**.
 1. Téléchargez la `.p8` clé privée. Il est utilisé dans la configuration Surface de l’application.
 1. Prenez note de la **[!UICONTROL ID de clé]**. Il est utilisé dans la configuration Surface de l’application.
 
-Une documentation supplémentaire peut être [ici](https://help.apple.com/developer-account/#/devcdfbb56a3).
+Une documentation supplémentaire peut être [se trouve ici](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-### Récupération de votre identifiant d’équipe de développement Apple
+### Récupération de l’identifiant de l’équipe de développement Apple
 
 1. Sur le portail destiné aux développeurs Apple, accédez à **[!UICONTROL Abonnement]**.
 1. Votre **[!UICONTROL Identifiant de l’équipe]** est répertorié avec vos autres informations d’adhésion. Il est utilisé dans la configuration Surface de l’application.
@@ -137,7 +141,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 1. Envoyez l’application en arrière-plan.
 1. Dans l’interface utilisateur d’assurance, sélectionnez **[!UICONTROL Configurer]**.
    ![configurer le clic](assets/mobile-push-validate-config.png)
-1. Sélectionnez la **[!UICONTROL +]** bouton en regard de **[!UICONTROL Débogage Push]**.
+1. Sélectionnez la variable **[!UICONTROL +]** bouton en regard de **[!UICONTROL Débogage Push]**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![save](assets/mobile-push-validate-save.png)
 1. Sélectionner **[!UICONTROL Débogage Push]** dans le volet de navigation de gauche.
@@ -152,4 +156,4 @@ Suivant : **[Conclusion et prochaines étapes](conclusion.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

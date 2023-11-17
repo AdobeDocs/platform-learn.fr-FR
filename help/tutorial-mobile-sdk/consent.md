@@ -3,9 +3,9 @@ title: Consentement
 description: Découvrez comment mettre en oeuvre le consentement dans une application mobile.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '391'
 ht-degree: 6%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 6%
 # Consentement
 
 Découvrez comment mettre en oeuvre le consentement dans une application mobile.
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 L’extension mobile de consentement Adobe Experience Platform permet la collecte des préférences de consentement de votre application mobile lors de l’utilisation du SDK Mobile Adobe Experience Platform et de l’extension Edge Network. En savoir plus sur les [Extension de consentement](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), dans la documentation.
 
@@ -25,14 +29,14 @@ L’extension mobile de consentement Adobe Experience Platform permet la collect
 Dans cette leçon, vous allez :
 
 * Demandez à l’utilisateur son consentement.
-* Mettez à jour l’extension en fonction de la réponse de l’utilisateur.
+* Mettez à jour l’extension selon la réponse de l’utilisateur.
 * Découvrez comment obtenir l’état actuel du consentement.
 
 ## Demander le consentement
 
 Si vous avez suivi le tutoriel à partir du début, vous vous souviendrez de la définition de la variable **[!UICONTROL Niveau de consentement par défaut]** à &quot;En attente&quot;. Pour commencer à collecter des données, vous devez obtenir le consentement de l’utilisateur. Dans ce tutoriel, obtenez le consentement en demandant simplement une alerte, dans une application réelle, vous souhaiterez consulter les bonnes pratiques en matière de consentement pour votre région.
 
-1. Vous ne souhaitez demander à l’utilisateur qu’une seule fois. Une façon simple de gérer cela consiste à simplement utiliser `UserDefaults`.
+1. Vous ne souhaitez demander à l’utilisateur qu’une seule fois. Une façon simple de gérer cela est d’utiliser simplement `UserDefaults`.
 1. Accédez à `Home.swift`.
 1. Ajoutez le code suivant à `viewDidLoad()`.
 
@@ -99,4 +103,4 @@ Suivant : **[Collecter les données du cycle de vie](lifecycle-data.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

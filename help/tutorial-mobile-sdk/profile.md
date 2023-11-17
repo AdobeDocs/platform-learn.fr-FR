@@ -2,9 +2,9 @@
 title: Profile
 description: Découvrez comment collecter des données de profil dans une application mobile.
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 3%
 # Profile
 
 Découvrez comment collecter des données de profil dans une application mobile.
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 Vous pouvez utiliser l’extension Profile pour stocker les attributs de votre utilisateur sur le client. Ces informations peuvent être utilisées ultérieurement pour cibler et personnaliser les messages lors de scénarios en ligne ou hors ligne, sans avoir à se connecter à un serveur pour des performances optimales. L’extension Profile gère le profil d’opération côté client (CSOP), permet de réagir aux API, de mettre à jour les attributs de profil utilisateur et de partager les attributs de profil utilisateur avec le reste du système en tant qu’événement généré.
 
@@ -27,9 +31,9 @@ Les données de profil sont utilisées par d’autres extensions pour effectuer 
 * Création et exécution de l’application avec les SDK installés et configurés.
 * Importation du SDK Profile.
 
-   ```swift
-   import AEPUserProfile
-   ```
+  ```swift
+  import AEPUserProfile
+  ```
 
 ## Objectifs d&#39;apprentissage
 
@@ -45,7 +49,7 @@ Il serait utile pour le ciblage et/ou la personnalisation de savoir rapidement s
 
 1. Accédez à `Cart.swift`
 
-1. Ajoutez le code ci-dessous à la variable `processOrder() `fonction .
+1. Ajoutez le code ci-dessous à la variable `processOrder() `de la fonction
 
    ```swift
    var profileMap = [String: Any]()
@@ -57,7 +61,7 @@ L’équipe de personnalisation peut également souhaiter effectuer un ciblage e
 
 1. Accédez à `Account.swift`
 
-1. Ajoutez le code ci-dessous à la variable `showUserInfo()` fonction .
+1. Ajoutez le code ci-dessous à la variable `showUserInfo()` de la fonction
 
    ```swift
    var profileMap = [String: Any]()
@@ -65,7 +69,7 @@ L’équipe de personnalisation peut également souhaiter effectuer un ciblage e
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-Additional `updateUserAttributes` documentation disponible [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+Additional `updateUserAttributes` La documentation est disponible [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Obtenir
 
@@ -78,14 +82,14 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-Additional `getUserAttributes` documentation disponible [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+Additional `getUserAttributes` La documentation est disponible [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Validation avec Assurance
 
 1. Consultez la section [instructions de configuration](assurance.md) .
 1. Installez l’application.
 1. Lancez l’application à l’aide de l’URL générée par Assurance.
-1. Cliquez sur l’icône Compte , puis sélectionnez Connexion. Remarque : vous n&#39;avez pas d&#39;informations d&#39;identification.
+1. Cliquez sur l’icône Compte , puis sélectionnez Connexion. Remarque : vous ne disposez d’aucune information d’identification.
 1. Fermez les menus de connexion, puis sélectionnez à nouveau l’icône Compte . Vous accédez alors à l’écran des détails du compte où `loyaltyLevel` est définie.
 1. Vous devriez voir une **[!UICONTROL UserProfileUpdate]** dans l’interface utilisateur d’assurance avec la mise à jour `profileMap` .
    ![valider le profil](assets/mobile-profile-validate.png)
@@ -94,4 +98,4 @@ Suivant : **[Mappage des données à Adobe Analytics](analytics.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

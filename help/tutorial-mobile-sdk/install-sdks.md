@@ -2,9 +2,9 @@
 title: Installation des SDK Adobe Experience Platform Mobile
 description: Découvrez comment mettre en oeuvre le SDK Mobile Adobe Experience Platform dans une application mobile.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '591'
 ht-degree: 2%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 2%
 # Installation des SDK Adobe Experience Platform Mobile
 
 Découvrez comment mettre en oeuvre le SDK Mobile Adobe Experience Platform dans une application mobile.
+
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
 
 ## Conditions préalables
 
@@ -85,11 +89,11 @@ Si vous souhaitez effectuer la mise à niveau vers la dernière version, exécut
 
 ## Créer des CocoaPods
 
-Pour créer des CocoaPods, ouvrez `Luma.xcworkspace`, puis sélectionnez **Produit**, suivie de **Dossier de génération propre**.
+Pour créer des CocoaPods, ouvrez `Luma.xcworkspace`, puis sélectionnez **Produit**, suivie de **Nettoyer le dossier Build**.
 
 >[!NOTE]
 >
-> Vous devrez peut-être définir **Créer une architecture Principale uniquement** to **Non**. Pour ce faire, sélectionnez le projet Pods dans le navigateur de projet, puis sélectionnez **Paramètres de création**, puis définissez la variable **Créer une architecture Principale** to **Non**.
+> Vous devrez peut-être définir **Créer uniquement l’architecture active** to **Non**. Pour ce faire, sélectionnez le projet Pods dans le navigateur de projet, puis sélectionnez **Paramètres de création**, puis définissez la variable **Créer une architecture active** to **Non**.
 
 Vous pouvez désormais créer et exécuter le projet.
 
@@ -99,13 +103,13 @@ Vous pouvez désormais créer et exécuter le projet.
 >
 >Le projet Luma a été créé avec Xcode v12.5 sur un jeu de puces M1 et s’exécute sur le simulateur iOS. Si vous utilisez une autre configuration, vous devrez peut-être modifier vos paramètres de génération pour refléter votre architecture.
 >
->Si votre version n’a pas réussi, essayez de rétablir la variable **Créer une architecture Principale** > **Déboguer** de retour à **Oui**.
+>Si votre version n’a pas réussi, essayez de rétablir la variable **Créer une architecture active** > **Déboguer** de retour à **Oui**.
 >
->La configuration du simulateur &quot;iPod touch (7e génération)&quot; a été utilisée lors de la création de ce tutoriel.
+>La configuration du simulateur &quot;iPod touch (7e génération)&quot; a été utilisée pour créer ce tutoriel.
 
 ## Importation d’extensions
 
-Dans chaque `.swift` ajoutez les imports suivants. Commencez par ajouter à `AppDelegate.swift`.
+Dans chacun des `.swift` ajoutez les imports suivants. Commencez par ajouter à `AppDelegate.swift`.
 
 ```swift
 import AEPUserProfile
@@ -146,9 +150,10 @@ Le code ci-dessus effectue les opérations suivantes :
 
 >[!IMPORTANT]
 >Dans une application de production, vous devez changer AppId en fonction de l’environnement actuel (dev/stag/prod).
+>
 
 Suivant : **[Configuration d’Assurance](assurance.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

@@ -3,9 +3,10 @@ title: Présentation du tutoriel Mise en oeuvre de Adobe Experience Cloud dans l
 description: Découvrez comment mettre en oeuvre les applications mobiles Adobe Experience Cloud. Ce tutoriel vous guide tout au long d’une mise en oeuvre d’applications Experience Cloud dans un exemple d’application Swift.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '874'
 ht-degree: 9%
 
 ---
@@ -86,11 +87,11 @@ Tous les clients Experience Cloud doivent avoir accès aux fonctionnalités requ
 
 ## Téléchargement de l’application Luma
 
-Deux versions de l’exemple d’application sont disponibles en téléchargement. Les deux versions peuvent être téléchargées/clonées depuis [Github](https://git.corp.adobe.com/rmaur/Luma). Vous trouverez deux dossiers :
+Deux versions de l’exemple d’application sont disponibles en téléchargement. Les deux versions peuvent être téléchargées/clonées depuis [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Vous trouverez deux dossiers :
 
 
-1. [Début](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: un projet sans code ou avec un code d’emplacement pour la plupart du code du SDK Mobile Experience Platform que vous devez utiliser pour terminer les exercices pratiques de ce tutoriel.
-1. [Terminer](https://git.corp.adobe.com/Luma){target="_blank"}: version avec mise en oeuvre complète à titre de référence.
+1. [Début](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: un projet sans code ou avec un code d’emplacement pour la plupart du code du SDK Mobile Experience Platform que vous devez utiliser pour terminer les exercices pratiques de ce tutoriel.
+1. [Terminer](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: version avec mise en oeuvre complète à titre de référence.
 
 >[!NOTE]
 >

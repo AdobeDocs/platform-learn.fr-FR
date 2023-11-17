@@ -3,10 +3,10 @@ title: Mappage Analytics
 description: Découvrez comment collecter des données pour Adobe Analytics dans une application mobile.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 2%
+source-wordcount: '609'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,12 @@ ht-degree: 2%
 
 Découvrez comment mapper des données mobiles à Adobe Analytics.
 
-Le [event](events.md) les données que vous avez collectées et envoyées à Platform Edge Network dans les leçons précédentes sont transférées aux services configurés dans votre flux de données, y compris Adobe Analytics. Il vous suffit de mettre en correspondance les données avec les variables correctes de votre suite de rapports.
+>[!INFO]
+>
+> Ce tutoriel sera remplacé par un nouveau tutoriel utilisant un nouvel exemple d’application mobile à la fin novembre 2023.
+
+
+La variable [event](events.md) les données que vous avez collectées et envoyées à Platform Edge Network dans les leçons précédentes sont transférées aux services configurés dans votre flux de données, y compris Adobe Analytics. Il vous suffit de mettre en correspondance les données avec les variables correctes de votre suite de rapports.
 
 ## Conditions préalables
 
@@ -68,7 +73,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 ### Exemple #2 - scAdd
 
-Si vous observez attentivement, tous les événements comportent deux champs. `value` (obligatoire) et `id` (facultatif). Le `value` sert à incrémenter le nombre d’événements. Le `id` est utilisé pour la sérialisation.
+Si vous observez attentivement, tous les événements comportent deux champs. `value` (obligatoire) et `id` (facultatif). La variable `value` sert à incrémenter le nombre d’événements. La variable `id` est utilisé pour la sérialisation.
 
 Cet objet :
 
@@ -214,4 +219,4 @@ Suivant : **[Experience Platform](platform.md)**
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
