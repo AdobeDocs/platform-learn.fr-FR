@@ -1,22 +1,22 @@
 ---
-title: Création d’éléments de données
+title: Créer des éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 6%
+source-wordcount: '1201'
+ht-degree: 7%
 
 ---
 
-# Création d’éléments de données
+# Créer des éléments de données
 
 Découvrez comment créer les éléments de données essentiels nécessaires pour capturer des données avec le SDK Web Experience Platform. Capturez à la fois les données de contenu et d’identité sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Découvrez comment utiliser le schéma XDM que vous avez créé précédemment pour collecter des données à l’aide du SDK Web Platform par le biais d’un nouveau type d’élément de données appelé Objet XDM.
 
 >[!NOTE]
 >
-> À des fins de démonstration, les exercices de cette leçon s’appuient sur l’exemple utilisé pendant [Configuration d’un schéma](configure-schemas.md) step; création d’exemples d’objets XDM qui capturent le contenu affiché et les identités des utilisateurs sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+> À des fins de démonstration, les exercices de cette leçon s’appuient sur l’exemple utilisé pendant [Configuration d’un schéma](configure-schemas.md) création d’exemples d’objets XDM qui capturent le contenu affiché et les identités des utilisateurs sur la page [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
@@ -49,17 +49,17 @@ Cette leçon se concentre sur les types d’éléments de données d’objet XDM
 
 Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir suivi les étapes précédentes suivantes du tutoriel.
 
-* [Configuration des autorisations](configure-permissions.md)
-* [Configuration d’un schéma XDM](configure-schemas.md)
+* [Configurer les autorisations](configure-permissions.md)
+* [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
-* [Configurer un train de données](configure-datastream.md)
+* [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 
 >[!IMPORTANT]
 >
->Le [Extension du service d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la fonctionnalité du service d’ID est intégrée au SDK Web de Platform.
+>La variable [Extension du service d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la fonctionnalité du service d’ID est intégrée au SDK Web de Platform.
 
-## Création d’éléments de données pour la capture de la couche de données
+## Créer des éléments de données pour capturer la couche de données
 
 Avant de commencer la création de l’objet XDM, créez l’ensemble suivant d’éléments de données mappés à l’objet [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données :
 
@@ -72,7 +72,7 @@ Avant de commencer la création de l’objet XDM, créez l’ensemble suivant d�
 
 1. Cochez les cases pour **[!UICONTROL Forcer la valeur minuscule]** et **[!UICONTROL Nettoyer le texte]** pour normaliser la casse et supprimer les espaces superflus.
 
-1. Laissez tomber `None` comme la propriété **[!UICONTROL Durée de stockage]** étant donné que cette valeur est différente sur chaque page
+1. Laisser `None` comme la propriété **[!UICONTROL Durée de stockage]** car cette valeur est différente sur chaque page
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
@@ -97,7 +97,7 @@ Suivez les mêmes étapes pour créer ces quatre éléments de données supplém
 
 >[!CAUTION]
 >
->Le [!UICONTROL Variable JavaScript] Le type d’élément de données traite les références aux tableaux comme des points plutôt que des crochets. Par conséquent, le fait de référencer l’élément de données username comme `digitalData.user[0].profile[0].attributes.username` **ne fonctionnera pas**.
+>La variable [!UICONTROL Variable JavaScript] Le type d’élément de données traite les références aux tableaux comme des points plutôt que des crochets. Par conséquent, le fait de référencer l’élément de données username comme `digitalData.user[0].profile[0].attributes.username` **ne fonctionnera pas**.
 
 ## Créer un élément de données de carte des identités
 
@@ -121,7 +121,7 @@ Vous pouvez ensuite créer l’élément de données de carte des identités :
    >
    >    Si vous ne voyez pas votre `Luma CRM Id` , vérifiez que vous l’avez également créé dans votre environnement de test de production par défaut. Seuls les espaces de noms créés dans l’environnement de test de production par défaut s’affichent actuellement dans la liste déroulante des espaces de noms.
 
-1. Après la **[!UICONTROL Espace de noms]** est sélectionnée, un ID doit être défini. Sélectionnez la `user.profile.attributes.username` élément de données créé plus tôt dans cette leçon, qui capture un identifiant lorsque les utilisateurs sont connectés au site Luma.
+1. Après la **[!UICONTROL Espace de noms]** est sélectionnée, un ID doit être défini. Sélectionnez la variable `user.profile.attributes.username` élément de données créé plus tôt dans cette leçon, qui capture un identifiant lorsque les utilisateurs sont connectés au site Luma.
 
 <!--  >[!TIP]
    >
@@ -139,9 +139,9 @@ Vous pouvez ensuite créer l’élément de données de carte des identités :
 
 >[!TIP]
 >
-> Adobe recommande d’envoyer des identités représentant une personne, telles que `Luma CRM Id`, en tant que [!UICONTROL Principal] identité.
+> Adobe recommande d’envoyer des identités représentant une personne, telles que `Luma CRM Id`, en tant que [!UICONTROL primary] identité.
 >
-> Si la carte d’identité contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne deviendra le [!UICONTROL Principal] identité. Sinon, `ECID` devient la propriété [!UICONTROL Principal] identité.
+> Si la carte d’identité contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne deviendra la variable [!UICONTROL primary] identité. Sinon, `ECID` se transforme en [!UICONTROL primary] identité.
 
 
 
@@ -175,8 +175,8 @@ Créez un objet XDM pour capturer des données de contenu :
 1. **** Nommez l’élément de données . **`xdm.content`**
 1. Comme la variable **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
 1. Comme la variable **[!UICONTROL Type d’élément de données]** select `XDM object`
-1. Sélectionner la plateforme **[!UICONTROL Sandbox]** dans lequel vous avez créé le schéma XDM au cours de la [Configuration d’un schéma XDM](configure-schemas.md) leçon, dans cet exemple `DEVELOPMENT Mobile and Web SDK Courses`
-1. Comme la variable **[!UICONTROL Schéma]**, sélectionnez votre `Luma Web Event Data` schema :
+1. Sélectionner la plateforme **[!UICONTROL Sandbox]** dans lequel vous avez créé le schéma XDM au cours de la [Configurer un schéma XDM](configure-schemas.md) leçon, dans cet exemple `DEVELOPMENT Mobile and Web SDK Courses`
+1. Comme la variable **[!UICONTROL Schéma]**, sélectionnez `Luma Web Event Data` schema :
 
    ![Objet XDM](assets/data-element-xdm.content-fields.png)
 
@@ -185,7 +185,7 @@ Créez un objet XDM pour capturer des données de contenu :
    >L’environnement de test correspond à l’environnement de test Experience Platform dans lequel vous avez créé le schéma. Plusieurs environnements de test peuvent être disponibles dans votre instance d’Experience Platform. Veillez donc à sélectionner le bon environnement de test. Travaillez toujours en développement d’abord, puis en production.
 
 1. Faites défiler l’écran vers le bas jusqu’à ce que vous atteigniez le **`web`** objet
-1. Sélectionnez cette option pour l’ouvrir.
+1. Sélectionner pour l’ouvrir
 
    ![Objet Web](assets/data-element-pageviews-xdm-object.png)
 

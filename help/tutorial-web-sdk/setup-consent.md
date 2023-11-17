@@ -3,9 +3,9 @@ title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Découvrez comment configurer les paramètres de confidentialité de l’extensi
 
 >[!NOTE]
 > 
->À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/) en tant que CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
+>À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/) comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
 
 
 ## Objectifs d&#39;apprentissage
@@ -43,12 +43,12 @@ Avant de commencer à configurer les paramètres de confidentialité et à crée
 Avant de passer aux configurations de balise, découvrez la plateforme de gestion du consentement utilisée dans ce tutoriel Klaro.
 
 1. Visite [Klaro](https://heyklaro.com/) et configurez un compte.
-1. Accédez à **Privacy Manager** et créez une instance en fonction des instructions.
+1. Accédez à **Gestionnaire de confidentialité** et créez une instance en fonction des instructions.
 1. Utilisez la variable **Code d’intégration** pour injecter Klaro dans votre propriété de balise (les instructions se trouvent dans l’exercice suivant).
 1. Ignorer **Analyse** , car il détectera la propriété de balise qui est codée en dur sur le site web de démonstration de Luma et non celle que vous avez créée pour ce tutoriel.
 1. Ajoutez un service appelé `aep web sdk` et basculez sur **État par défaut du service**. Lorsque cette option est activée, la valeur de consentement par défaut est `true`, sinon il est `false`. Cette configuration s’avère pratique lorsque vous souhaitez déterminer l’état du consentement par défaut (avant le consentement du visiteur) pour votre application web. Par exemple :
    * Pour le CCPA, le consentement par défaut est généralement défini sur `true`. Vous allez référencer ce scénario comme **Accord préalable implicite** tout au long de ce tutoriel
-   * Pour le RGPD, le consentement par défaut est généralement défini sur `false`. Vous allez référencer ce scénario comme **Désinscription (opt-out) imposée** tout au long de ce tutoriel.
+   * Pour le RGPD, le consentement par défaut est généralement défini sur `false`. Vous allez référencer ce scénario comme **Désinscription implicite** tout au long de ce tutoriel.
 
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
@@ -76,7 +76,7 @@ Le bloc de code personnalisé doit ressembler à ce qui suit :
 
 ![Injection de la règle de CMP](assets/consent-cmp-inject-rule-2.png)
 
-Maintenant enregistrez cette règle et créez-la dans votre bibliothèque de développement. validez l’affichage de la bannière de consentement en passant de la bibliothèque de balises du site Luma à la vôtre. Une bannière de CMP doit apparaître sur le site web comme ci-dessous. Et pour vérifier l’autorisation de consentement du visiteur actuel, vous pouvez utiliser le fragment de code suivant sur la console du navigateur.
+Maintenant enregistrez cette règle et créez-la dans votre bibliothèque de développement. validez l’affichage de la bannière de consentement en passant de la bibliothèque de balises du site Luma à la vôtre. Une bannière de CMP doit s’afficher sur le site web comme ci-dessous. Et pour vérifier l’autorisation de consentement du visiteur actuel, vous pouvez utiliser le fragment de code suivant sur la console du navigateur.
 
 ```javascript
     klaro.getManager().consents 
@@ -104,10 +104,10 @@ L’inclusion signifie que l’entreprise n’a pas besoin d’obtenir le consen
 
 Vous allez maintenant configurer et mettre en oeuvre le consentement pour ce scénario :
 
-1. Dans le **[!UICONTROL Confidentialité]** de l’extension de balise SDK Web Experience Platform, assurez-vous que la variable  **[!UICONTROL Consentement par défaut]** est défini sur **[!UICONTROL Dans]** :
+1. Dans le **[!UICONTROL Privacy]** de l’extension de balise SDK Web Experience Platform, assurez-vous que la variable  **[!UICONTROL Consentement par défaut]** est défini sur **[!UICONTROL Dans]** :
 
 
-   ![Consentement de la configuration de la confidentialité de l’extension AEP](assets/consent-web-sdk-privacy-in.png)
+   ![Configuration de la confidentialité de l’extension AEP](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
@@ -117,7 +117,7 @@ Vous allez maintenant configurer et mettre en oeuvre le consentement pour ce sc�
 
 
 
-2. Enregistrez et générez cette modification dans votre bibliothèque de balises.
+2. Enregistrer et créer cette modification dans votre bibliothèque de balises
 3. Chargement de votre bibliothèque de balises sur le site de démonstration Luma
 4. Activez le débogage des balises sur le site Luma et rechargez la page. Dans la console de développement de votre navigateur, vous devriez constater que defaultConsent est égal à **[!UICONTROL Dans]**
 5. Avec cette configuration, l’extension SDK Web Experience Platform continue à effectuer des requêtes réseau, sauf si un visiteur décide de rejeter les cookies et de se désabonner :
@@ -166,7 +166,7 @@ Désormais, lorsqu’un visiteur se désinscrit, la règle configurée de la man
 
 Validez en vous rendant sur le site de démonstration Luma, rejetez les cookies et vérifiez qu’aucune demande de SDK Web ne se déclenche après exclusion.
 
-### Scénario 2 : Exclusion appliquée
+### Scénario 2 : exclusion appliquée
 
 
 Le droit d’opposition appliqué signifie que les visiteurs doivent être traités comme ayant fait l’objet d’un droit d’opposition par défaut et que les cookies ne doivent pas être définis. Les demandes du SDK Web ne doivent pas se déclencher, sauf si les visiteurs décident de s’inscrire manuellement en acceptant les cookies par le biais de la bannière de consentement. Vous devrez peut-être traiter un tel cas d’utilisation dans la région de l’Union européenne où le RGPD s’applique.
@@ -175,9 +175,9 @@ Voici comment configurer la configuration d’un scénario d’exclusion implici
 
 1. À Klaro, basculez **État par défaut du service** dans votre `aep web sdk` et enregistrez la configuration mise à jour.
 
-1. Dans **[!UICONTROL Confidentialité]** section de l’extension SDK Web Experience Platform, définissez le consentement par défaut sur **[!UICONTROL Out]** ou **[!UICONTROL En attente]** selon les besoins.
+1. Dans **[!UICONTROL Privacy]** section de l’extension SDK Web Experience Platform, définissez le consentement par défaut sur **[!UICONTROL Out]** ou **[!UICONTROL En attente]** selon les besoins.
 
-   ![Consentement de la configuration de la confidentialité de l’extension AEP](assets/consent-implied-opt-out.png)
+   ![Configuration de la confidentialité de l’extension AEP](assets/consent-implied-opt-out.png)
 
 1. **Enregistrer** la configuration mise à jour dans votre bibliothèque de balises et recréez-la.
 
@@ -198,7 +198,7 @@ Si un visiteur décide de s’inscrire (accepter les cookies de suivi), vous dev
 
    ![L’utilisateur de condition de règle clique sur &quot;C’est ok&quot;.](assets/consent-optIn-clickEvent.png)
 
-1. Ajout d’une action à l’aide du SDK Web Experience Platform [!UICONTROL Extension], **[!UICONTROL Type d’action]** de **[!UICONTROL Définition du consentement]**, **[!UICONTROL Consentement général]** as **[!UICONTROL Dans]**.
+1. Ajouter une action à l’aide du SDK Web Experience Platform [!UICONTROL Extension], **[!UICONTROL Type d’action]** de **[!UICONTROL Définition du consentement]**, **[!UICONTROL Consentement général]** as **[!UICONTROL Dans]**.
 
    ![Action d’inclusion de règle de consentement](assets/consent-rule-optin-action.png)
 

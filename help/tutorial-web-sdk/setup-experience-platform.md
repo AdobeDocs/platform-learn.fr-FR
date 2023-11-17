@@ -2,10 +2,10 @@
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 10%
+source-wordcount: '1605'
+ht-degree: 11%
 
 ---
 
@@ -38,7 +38,7 @@ Vous devez avoir terminé les leçons suivantes :
 
 * La variable **Configuration des balises** leçons :
    * [Installer l’extension SDK Web](install-web-sdk.md)
-   * [Création d’éléments de données](create-data-elements.md)
+   * [Créer des éléments de données](create-data-elements.md)
    * [Création de règles de balise](create-tag-rule.md)
 
 

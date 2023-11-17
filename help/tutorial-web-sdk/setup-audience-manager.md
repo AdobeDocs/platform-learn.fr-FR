@@ -3,9 +3,9 @@ title: Configuration de l’Audience Manager avec le SDK Web Platform
 description: Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1385'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) est la solution Adobe Experience Cloud qui fournit tout ce qui est nécessaire pour collecter des informations commercialement pertinentes sur les visiteurs du site, créer des segments commercialisables et diffuser des publicités et du contenu ciblés à la bonne audience.
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=fr) est la solution Adobe Experience Cloud qui fournit tout ce qui est nécessaire pour collecter des informations commercialement pertinentes sur les visiteurs du site, créer des segments commercialisables et diffuser des publicités et du contenu ciblés à la bonne audience.
 
 
 ## Objectifs d&#39;apprentissage
@@ -34,21 +34,19 @@ Pour terminer cette leçon, vous devez d’abord :
 
 ## Configuration du flux de données
 
-L’implémentation de l’Audience Manager à l’aide du SDK Web de Platform diffère de l’implémentation à l’aide de [transfert côté serveur (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=fr). Le transfert côté serveur transmet les données de demande Adobe Analytics à Audience Manager. Une mise en oeuvre du SDK Web Platform transmet les données XDM envoyées à Platform Edge Network pour Audience Manager. L’Audience Manager est activée dans le flux de données :
+La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform diffère de celle à l’aide de [transfert côté serveur (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=fr). Le transfert côté serveur transmet les données de demande Adobe Analytics à l’Audience Manager. Une mise en oeuvre du SDK Web Platform transmet les données XDM envoyées à Platform Edge Network pour Audience Manager. L’Audience Manager est activée dans le flux de données :
 
-1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection)Interface de {target=&quot;blank&quot;}
+1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
 1. Sélectionnez la `Luma Web SDK` datastream
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**
-
    ![Ajout d’un service au flux de données](assets/aam-datastream-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Audience Manager]** comme la propriété **[!UICONTROL Service]**
 1. Confirmez que **[!UICONTROL Destinations de cookie activées]** et **[!UICONTROL Destinations d’URL activées]** sont sélectionnées
 1. Sélectionnez **[!UICONTROL Enregistrer]**
-
    ![Confirmez les paramètres du flux de données d’Audience Manager et enregistrez](assets/aam-datastream-save.png)
 
 ## Création d’une source de données
@@ -57,8 +55,8 @@ Créez ensuite un [Source de données](https://experienceleague.adobe.com/docs/a
 
 1. Accédez au [Audience Manager](https://experience.adobe.com/#/audience-manager/) interface
 1. Sélectionner **[!UICONTROL Données d’audience]** à partir de la navigation supérieure ;
-1. Sélectionnez la **[!UICONTROL Sources de données]** dans le menu déroulant
-1. Sélectionnez la **[!UICONTROL Ajouter]** dans la partie supérieure de la page Sources de données.
+1. Sélectionnez la variable **[!UICONTROL Sources de données]** dans le menu déroulant
+1. Sélectionnez la variable **[!UICONTROL Ajouter]** en haut de la page Sources de données
 
    ![Sources de données d’Audience Manager Adobe Experience Platform](assets/data-sources-list.jpg)
 
@@ -73,7 +71,7 @@ Créez ensuite un [Source de données](https://experienceleague.adobe.com/docs/a
 
 ## Création d’une caractéristique
 
-Une fois la source de données enregistrée, configurez une [trait](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=en). Les caractéristiques sont une combinaison d’un ou de plusieurs signaux en Audience Manager. Créez une caractéristique pour les visiteurs de la page d’accueil.
+Une fois la source de données enregistrée, configurez une [trait](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=fr). Les caractéristiques sont une combinaison d’un ou de plusieurs signaux en Audience Manager. Créez une caractéristique pour les visiteurs de la page d’accueil.
 
 >[!NOTE]
 >
@@ -82,10 +80,10 @@ Une fois la source de données enregistrée, configurez une [trait](https://expe
 1. Sélectionner **[!UICONTROL Données d’audience]** >  **[!UICONTROL Caractéristiques]**
 1. Sélectionner **[!UICONTROL Ajouter]** >  **[!UICONTROL Basé sur des règles]** trait
 
-   ![Caractéristique basée sur des règles d’Audience Manager Adobe Experience Platform](assets/rule-based-trait.jpg)
+   ![Caractéristique basée sur des règles Adobe Experience Platform Audience Manager](assets/rule-based-trait.jpg)
 
 1. Donnez un nom et une description conviviaux à votre caractéristique, `Luma homepage view`
-1. Sélectionnez la **[!UICONTROL Source de données]** vous avez créé dans la section précédente.
+1. Sélectionnez la variable **[!UICONTROL Source de données]** vous avez créé dans la section précédente.
 1. **[!UICONTROL Sélection d’un dossier]** dans lequel enregistrer votre caractéristique dans le volet de droite. Vous pouvez créer un dossier par **en sélectionnant l’icône +** en regard d’un dossier parent existant. Vous pouvez nommer ce nouveau dossier. `Platform Web SDK tutorial`.
 1. Développez l’objet **[!UICONTROL Expression de caractéristique]** accent circonflexe et sélectionnez **[!UICONTROL Générateur d’expression]** Vous devez fournir une paire de valeurs de clé qui signifie une visite de page d’accueil.
 1. Ouvrez le [Page d’accueil Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mappé à la propriété tag) et la variable **Débogueur du SDK Web Platform** et actualisez la page.
@@ -106,7 +104,7 @@ L’étape suivante consiste à créer une **segment** et affectez votre caract�
 1. Ajoutez un code d’intégration, qui dans ce cas est un jeu aléatoire de nombres. 1. Dans le **[!UICONTROL Source de données]** , sélectionnez **[!UICONTROL Audience Manager]** et la source de données que vous avez créée précédemment.
 1. Développez l’objet **[!UICONTROL Caractéristiques]** et recherchez la caractéristique que vous avez créée.
 1. Sélectionner **[!UICONTROL Ajouter une caractéristique]**.
-1. Sélectionner **[!UICONTROL Enregistrer]** au bas de la page
+1. Sélectionner **[!UICONTROL Enregistrer]** au bas de la page ;
 
    ![Adobe Experience Platform Audience Manager Add Trait](assets/add-trait-segment.jpg)
 
@@ -116,7 +114,7 @@ L’étape suivante consiste à créer une **segment** et affectez votre caract�
 
 Créez ensuite un **Destination basée sur les cookies** en utilisant la variable **Créateur de destinations**. Le créateur de destinations vous permet de créer et de gérer des destinations de cookie, d’URL et de serveur à serveur.
 
-1. Ouvrez le créateur de destinations en sélectionnant **[!UICONTROL Destinations]** dans le **Données d’audience** dans le volet de navigation supérieur.
+1. Ouvrez le créateur de destinations en sélectionnant **[!UICONTROL Destinations]** dans la fonction **Données d’audience** dans le volet de navigation supérieur.
 1. Sélectionner **[!UICONTROL Création d’une destination]**
 1. Entrez un nom et une description, `Platform Web SDK tutorial`
 1. Comme la variable **[!UICONTROL Catégorie]**, sélectionnez **[!UICONTROL Personnalisé]**
@@ -149,7 +147,6 @@ Créez ensuite un **Destination basée sur les cookies** en utilisant la variabl
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
 1. Sélectionnez **[!UICONTROL Terminé]**
-
    ![Adobe Experience Platform Audience Manager Add Trait](assets/luma-cookie-segment-dw.png)
 
 La période de mappage des segments nécessite quelques heures pour être activée. Une fois l’opération terminée, vous pouvez actualiser l’interface d’Audience Manager et voir que la variable **Segments mappés** mise à jour de la liste.
@@ -169,7 +166,7 @@ Tout d’abord, vérifiez que vous pouvez être admissible pour le segment.
    ![Adobe Experience Platform Audience Manager Add Trait](assets/segment-validate-response.jpg)
 
 1. Ouvrez le **Application** et ouvrez **Cookies** de la **Stockage** .
-1. Sélectionnez la **`https://luma.enablementadobe.com`** et vérifiez que le cookie est correctement écrit dans la liste.
+1. Sélectionnez la variable **`https://luma.enablementadobe.com`** et vérifiez que le cookie est correctement écrit dans la liste.
 
    ![Adobe Experience Platform Audience Manager Add Trait](assets/validate-cookie.jpg)
 

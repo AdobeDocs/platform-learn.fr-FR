@@ -3,9 +3,10 @@ title: Conclusion et prochaines étapes
 description: Que faire après avoir terminé le tutoriel
 recommendations: display,noCatalog
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+exl-id: be256529-fd4f-428b-b023-409b7a35c204
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '464'
 ht-degree: 8%
 
 ---
@@ -37,12 +38,12 @@ Passons rapidement en revue tout ce que vous avez accompli. Vous avez :
 
 Vous êtes prêt à commencer la phase suivante de votre parcours : implémentation de Adobe Experience Cloud dans votre propre application mobile.
 
-Et il y a toujours plus à apprendre ! Voici quelques suggestions d’autres contenus à développer sur la base de votre mise en oeuvre :
+Et il y a toujours plus à apprendre ! Pour développer votre mise en oeuvre, voici quelques suggestions d’autres contenus à explorer :
 
-* **Activation du transfert dʼévénements**. Le transfert d’événement peut facilement être activé dans votre flux de données. Voici [leçon pratique pour configurer le transfert d’événement](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) à partir du tutoriel du SDK Web. Utilisez simplement les ressources créées pour votre mise en oeuvre mobile et sélectionnez les champs XDM que vous avez mis en oeuvre dans l’application.
-* **Connexion au Customer Journey Analytics**. Si vous avez créé la variable [Jeu de données Platform](platform.md), vous pouvez connecter le jeu de données à Customer Journey Analytics. En savoir plus à ce sujet [tutoriel vidéo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=fr)
-* **Activer l’Audience Manager** Activez l’Audience Manager dans votre flux de données pour envoyer vos événements d’expérience XDM et commencer à créer des segments en fonction de l’engagement des applications mobiles.
-* **Création d’un segment dans Platform**. Si vous avez activé [schéma et jeu de données pour Real-time Customer Profile](platform.md), vous pouvez créer des segments en fonction des événements de votre application mobile, les combiner avec des données provenant d’autres sources, puis les envoyer vers des destinations dans Real-time Customer Data Platform. En savoir plus sur le créateur de segments dans cette [tutoriel vidéo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
+* **Activation du transfert dʼévénements**. Le transfert d’événement peut facilement être activé dans votre flux de données. Voici [leçon pratique pour configurer le transfert d’événement](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) à partir du tutoriel du SDK Web. Utilisez les ressources créées pour votre mise en oeuvre mobile et sélectionnez les champs XDM que vous avez mis en oeuvre dans l’application.
+* **Connexion au Customer Journey Analytics**. Si vous avez créé la variable [Jeu de données Platform](platform.md), vous pouvez connecter le jeu de données à Customer Journey Analytics. En savoir plus à ce sujet [tutoriel vidéo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=fr)
+* **Activation de l’Audience Manager dans votre flux de données**. Envoyez vos événements d’expérience XDM à Audience Manager et commencez à créer des segments en fonction de l’Audience Manager d’engagement des applications mobiles.
+* **Création d’un segment dans Platform**. Si vous avez activé [schéma et jeu de données pour Real-time Customer Profile](platform.md), vous pouvez créer des segments en fonction des événements de votre application mobile, les combiner avec des données provenant d’autres sources, puis les envoyer vers des destinations dans Real-time Customer Data Platform. En savoir plus sur le créateur de segments dans cette [tutoriel vidéo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html).
 * **Mise en oeuvre du SDK Web de Platform**. Maintenant que vous maîtrisez un SDK, apprenez-en un autre ! Le SDK Web de Adobe Experience Platform est le SDK JavaScript utilisé pour alimenter les services Experience Cloud et tiers sur les sites Web. Il existe une [tutoriel pratique pour SDK Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr). Effectuez les deux opérations et visualisez la fusion des profils entre les appareils !
 * **En savoir plus sur Experience Platform**. Découvrez comment ingérer des données provenant d’autres sources et les combiner à vos données SDK Mobile, dans [Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr)
 

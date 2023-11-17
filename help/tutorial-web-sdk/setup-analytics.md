@@ -3,16 +3,16 @@ title: Configuration d’Adobe Analytics à l’aide du SDK Web Experience Platf
 description: Découvrez comment configurer Adobe Analytics à l’aide du SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '3554'
-ht-degree: 2%
+source-wordcount: '3545'
+ht-degree: 3%
 
 ---
 
 # Configuration d’Adobe Analytics avec le SDK Web de Platform
 
-Découvrez comment configurer Adobe Analytics à l’aide de [SDK Web Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), créez des règles de balise pour envoyer des données à Adobe Analytics et vérifiez qu’Analytics capture les données comme prévu.
+Découvrez comment configurer Adobe Analytics à l’aide de [SDK Web Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=fr), créez des règles de balise pour envoyer des données à Adobe Analytics et vérifiez qu’Analytics capture les données comme prévu.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr) est une application de pointe qui vous permet de comprendre vos clients en tant que personnes et d’orienter votre activité grâce aux renseignements sur vos clients.
 
@@ -20,7 +20,7 @@ Découvrez comment configurer Adobe Analytics à l’aide de [SDK Web Experience
 
 À la fin de cette leçon, vous saurez comment :
 
-* Configurez un schéma XDM pour Adobe Analytics et comprenez la différence entre les variables XDM mappées automatiquement et manuellement pour Analytics.
+* Configurer un schéma XDM pour Adobe Analytics et comprendre la différence entre les variables XDM mappées automatiquement et manuellement pour Analytics
 * Configuration d’un flux de données pour activer Adobe Analytics
 * Mappage d’éléments de données de tableau individuels ou entiers à l’objet XDM
 * Capture des pages vues dans Adobe Analytics avec l’objet XDM
@@ -31,20 +31,20 @@ Découvrez comment configurer Adobe Analytics à l’aide de [SDK Web Experience
 
 ## Conditions préalables
 
-Vous connaissez les balises, Adobe Analytics et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} fonctionnalité de connexion et d’achat.
+Vous connaissez les balises, Adobe Analytics et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} fonction de connexion et d’achat.
 
 Vous avez besoin d’au moins un identifiant de suite de rapports de test/développement. Si vous ne disposez pas d’une suite de rapports de test/développement que vous pouvez utiliser pour ce tutoriel, [créez-en une](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=fr).
 
 Vous devez avoir suivi toutes les étapes des sections précédentes du tutoriel :
 
 * Configuration initiale
-   * [Configuration des autorisations](configure-permissions.md)
-   * [Configuration d’un schéma XDM](configure-schemas.md)
+   * [Configurer les autorisations](configure-permissions.md)
+   * [Configurer un schéma XDM](configure-schemas.md)
    * [Configuration d’un espace de noms d’identité](configure-identities.md)
-   * [Configurer un flux de données](configure-datastream.md)
+   * [Configurer un trains de données](configure-datastream.md)
 * Configuration des balises
-   * [Installation de l’extension SDK Web](install-web-sdk.md)
-   * [Création d’éléments de données](create-data-elements.md)
+   * [Installer l’extension SDK Web](install-web-sdk.md)
+   * [Créer des éléments de données](create-data-elements.md)
    * [Création d’une règle de balise](create-tag-rule.md)
    * [Validation avec le débogueur Adobe Experience Platform](validate-with-debugger.md)
 
@@ -74,14 +74,14 @@ Le schéma créé dans la variable [Configuration d’un schéma](configure-sche
 | `commerce.purchases.value` | Achat |
 | `commerce.order.currencyCode` | s.currencyCode |
 | `commerce.order.purchaseID` | s.purchaseID |
-| `productListItems[].SKU` | s.products=;nom du produit;;; (Principal - voir la remarque ci-dessous) |
-| `productListItems[].name` | s.products=;nom du produit;;; (fallback - voir la remarque ci-dessous) |
+| `productListItems[].SKU` | s.products=;product name;;; (primary - voir la remarque ci-dessous) |
+| `productListItems[].name` | s.products=;product name;;; (fallback - voir la remarque ci-dessous) |
 | `productListItems[].quantity` | s.products=;;quantité du produit;; |
 | `productListItems[].priceTotal` | s.product=;;;prix du produit; |
 
 >[!NOTE]
 >
->Les sections individuelles de la chaîne de produit Analytics sont définies par le biais de différentes variables XDM sous le `productListItems` .
+>Les sections individuelles de la chaîne de produit Analytics sont définies par le biais de différentes variables XDM sous la variable `productListItems` .
 >Depuis le 18 août 2022, `productListItems[].SKU` est prioritaire pour le mappage au nom du produit dans la variable s.products .
 >La valeur définie sur `productListItems[].name` est mappé sur le nom du produit uniquement si `productListItems[].SKU` n’existe pas. Dans le cas contraire, il n’est pas mappé et est disponible dans les données contextuelles.
 >Ne définissez pas de chaîne vide ni de valeur nulle sur  `productListItems[].SKU`. Cela a pour effet indésirable de mapper le nom du produit dans la variable s.products .
@@ -91,14 +91,13 @@ Le schéma créé dans la variable [Configuration d’un schéma](configure-sche
 
 Le SDK Web Platform envoie les données de votre site Web vers Platform Edge Network. Votre flux de données indique ensuite à Platform Edge Network où transférer ces données, dans ce cas, laquelle de vos suites de rapports Adobe Analytics.
 
-1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection)Interface de {target=&quot;blank&quot;}
+1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
 1. Sélectionnez la `Luma Web SDK` datastream
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**
-
    ![Ajout d’un service au flux de données](assets/analytics-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Analytics]** comme la propriété **[!UICONTROL Service]**
 1. Saisissez le  **[!UICONTROL Identifiant de suite de rapports]** de votre suite de rapports de développement
@@ -121,15 +120,15 @@ Ensuite, capturez les données supplémentaires de la couche de données Luma et
 
 ### Créer des éléments de données de commerce électronique
 
-Lors de la leçon Créer des éléments de données, vous [éléments de données JavaScript créés](create-data-elements.md#create-data-elements-to-capture-the-data-layer) qui a capturé le contenu et les détails de l’identité. Vous allez maintenant créer des éléments de données supplémentaires pour capturer des données de commerce électronique. Parce que la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} utilise différentes structures de couche de données pour les pages Détails du produit et les produits du panier. Vous devez créer des éléments de données pour chaque scénario. Vous devrez créer des éléments de données de code personnalisé pour obtenir ce dont vous avez besoin de la couche de données Luma, ce qui peut être nécessaire ou non lors de l’implémentation sur votre propre site. Dans ce cas, vous devez passer en revue un tableau d’articles du panier pour obtenir des détails spécifiques sur chaque produit. Utilisez les fragments de code fournis ci-dessous :
+Lors de la leçon Créer des éléments de données, vous [éléments de données JavaScript créés](create-data-elements.md#create-data-elements-to-capture-the-data-layer) qui a capturé le contenu et les détails de l’identité. Vous allez maintenant créer des éléments de données supplémentaires pour capturer des données de commerce électronique. Parce que la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} utilise différentes structures de couche de données pour les pages Détails du produit et les produits du panier. vous devez créer des éléments de données pour chaque scénario. Vous devrez créer des éléments de données de code personnalisé pour obtenir ce dont vous avez besoin de la couche de données Luma, ce qui peut être nécessaire ou non lors de l’implémentation sur votre propre site. Dans ce cas, vous devez passer en revue un tableau d’articles du panier pour obtenir des détails spécifiques sur chaque produit. Utilisez les fragments de code fournis ci-dessous :
 
 1. Ouvrez la propriété de balise que vous utilisez pour le tutoriel.
 1. Accédez à **[!UICONTROL Éléments de données]**
-1. Sélectionner **[!UICONTROL Ajouter un élément de données]**
-1. Nommez-le **`product.productInfo.sku`**
+1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**
+1. Nommez-la **`product.productInfo.sku`**
 1. Utilisez la variable **[!UICONTROL Code personnalisé]** **[!UICONTROL Type d’élément de données]**
 1. Laissez les cases à cocher pour **[!UICONTROL Forcer la valeur en minuscules]** et **[!UICONTROL Texte clair]** unchecked
-1. Laissez tomber `None` comme la propriété **[!UICONTROL Durée de stockage]** étant donné que cette valeur est différente sur chaque page
+1. Laisser `None` comme la propriété **[!UICONTROL Durée de stockage]** car cette valeur est différente sur chaque page
 1. Sélectionnez **[!UICONTROL Ouvrir l’éditeur]**
 
    ![Élément de données de code personnalisé](assets/data-element-open-editor.jpg)
@@ -155,32 +154,32 @@ Suivez les mêmes étapes pour créer ces éléments de données supplémentaire
 
 * **`product.productInfo.title`**
 
-   ```javascript
-   var cart = digitalData.product;
-   var cartItem;
-   cart.forEach(function(item){
-   cartItem = item.productInfo.title;
-   });
-   return cartItem;
-   ```
+  ```javascript
+  var cart = digitalData.product;
+  var cartItem;
+  cart.forEach(function(item){
+  cartItem = item.productInfo.title;
+  });
+  return cartItem;
+  ```
 
 * **`cart.productInfo`**
 
-   ```javascript
-   var cart = digitalData.cart.cartEntries;
-   var cartItem = [];
-   cart.forEach(function(item, index, array){
-   var qty = parseInt(item.qty);
-   var price = parseInt(item.price);
-   cartItem.push({
-   "SKU": item.sku,
-   "name":item.title,
-   "quantity":qty,
-   "priceTotal":price
-   });
-   });
-   return cartItem;
-   ```
+  ```javascript
+  var cart = digitalData.cart.cartEntries;
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "name":item.title,
+  "quantity":qty,
+  "priceTotal":price
+  });
+  });
+  return cartItem;
+  ```
 
 Après avoir ajouté ces éléments de données et créé les éléments précédents dans la variable [Création d’éléments de données](create-data-elements.md) Pour la leçon, vous devez disposer des éléments de données suivants :
 
@@ -205,10 +204,9 @@ Après avoir ajouté ces éléments de données et créé les éléments précé
 >* **[!UICONTROL identityMap]** pour capturer l’ID authentifié en fonction de la variable [Créer un élément de données de carte des identités](create-data-elements.md#create-identity-map-data-element) dans la variable [Création d’éléments de données](create-data-elements.md) leçon.
 >* **[!UICONTROL web]** pour capturer le contenu conformément aux [objet XDM de contenu](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) dans la variable [Création d’éléments de données](create-data-elements.md) leçon sur chaque élément de données ci-dessus.
 
-
 ### Incrémenter les pages vues
 
-Dans la leçon Créer des éléments de données , vous [créé un `xdm.content` élément de données](create-data-elements.md#map-content-data-elements-to-xdm-schema-individually) pour capturer des dimensions de contenu. Puisque vous envoyez maintenant des données à Adobe Analytics, vous devez également mapper un champ XDM supplémentaire pour indiquer qu’une balise doit être traitée comme une page vue d’Analytics.
+Dans la leçon Créer des éléments de données , vous [a créé une `xdm.content` élément de données](create-data-elements.md#map-content-data-elements-to-xdm-schema-individually) pour capturer des dimensions de contenu. Puisque vous envoyez maintenant des données à Adobe Analytics, vous devez également mapper un champ XDM supplémentaire pour indiquer qu’une balise doit être traitée comme une page vue d’Analytics.
 
 1. Ouvrez votre `xdm.content` élément de données
 1. Faites défiler la page vers le bas et sélectionnez cette option pour ouvrir jusqu’à `web.webPageDetails`
@@ -227,8 +225,8 @@ Dans la leçon Créer des éléments de données , vous [créé un `xdm.content`
 
 Avant de procéder à la mise en correspondance avec la chaîne de produit, il est important de comprendre qu’il existe deux objets principaux dans le schéma XDM utilisés pour capturer des données de commerce électronique ayant des relations spéciales avec Adobe Analytics :
 
-1. Le `commerce` définit des événements Analytics tels que `prodView`, `scView`, et `purchase`
-1. Le `productListItems` définit des dimensions Analytics telles que `productID`.
+1. La variable `commerce` définit des événements Analytics tels que `prodView`, `scView`, et `purchase`
+1. La variable `productListItems` définit des dimensions Analytics telles que `productID`.
 
 Voir [Collecte de données commerciales et de produits](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) pour plus d’informations.
 
@@ -260,7 +258,7 @@ Vous pouvez mapper sur des variables individuelles pour capturer des données su
 
    >[!CAUTION]
    >
-   >Le **`productListItems`** est un `array` type de données afin qu’il s’attende à ce que les données entrent dans une collection d’éléments. En raison de la structure de couche de données du site de démonstration Luma et parce qu’il est possible d’afficher un seul produit à la fois sur le site Luma, vous allez ajouter des éléments individuellement. Lors de l’implémentation sur votre propre site web, en fonction de la structure de votre couche de données, vous pouvez fournir un tableau entier.
+   >La variable **`productListItems`** est un `array` type de données afin qu’il s’attende à ce que les données entrent dans une collection d’éléments. En raison de la structure de couche de données du site de démonstration Luma et parce qu’il est possible d’afficher un seul produit à la fois sur le site Luma, vous allez ajouter des éléments individuellement. Lors de l’implémentation sur votre propre site web, en fonction de la structure de votre couche de données, vous pouvez fournir un tableau entier.
 
 1. Sélectionner pour ouvrir **[!UICONTROL Élément 1]**
 1. Mappage des variables XDM suivantes aux éléments de données
@@ -316,7 +314,7 @@ Revenez à la mise en correspondance de l’objet XDM avec un tableau entier. Cr
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
-Créer un autre **[!UICONTROL Objet XDM]**  **[!UICONTROL Type d’élément de données]** pour les passages en caisse appelés `xdm.commerce.checkout`. Cette fois, la variable **[!UICONTROL commerce.checkouts.value]** to `1`, map **[!UICONTROL productListItems]** to **`cart.productInfo`** comme vous venez de le faire, ajoutez les variables &quot;globales&quot; et le compteur de pages vues.
+Créer un autre **[!UICONTROL Objet XDM]**  **[!UICONTROL Type d’élément de données]** pour les paiements appelés `xdm.commerce.checkout`. Cette fois, la variable **[!UICONTROL commerce.checkouts.value]** to `1`, map **[!UICONTROL productListItems]** to **`cart.productInfo`** comme vous venez de le faire, ajoutez les variables &quot;globales&quot; et le compteur de pages vues.
 
 >[!TIP]
 >
@@ -328,7 +326,7 @@ Il existe d’autres étapes pour capturer la variable `purchase` event:
 1. Créer un autre  **[!UICONTROL Objet XDM]**  **[!UICONTROL Type d’élément de données]** pour les achats appelés `xdm.commerce.purchase`
 1. Ouvrir **[!UICONTROL commerce]** objet
 1. Ouvrez le **[!UICONTROL order]** objet
-1. Carte **[!UICONTROL purchaseID]** au `cart.orderId` élément de données
+1. Carte **[!UICONTROL purchaseID]** à la fonction `cart.orderId` élément de données
 1. Définir **[!UICONTROL currencyCode]** à la valeur codée en dur `USD`
 
    ![Définition de purchaseID pour Analytics](assets/analytics-commerce-purchaseID.png)
@@ -366,14 +364,14 @@ Il existe d’autres étapes pour capturer la variable `purchase` event:
 Avec les multiples éléments de données d’objet XDM créés, vous êtes prêt à définir les balises à l’aide de règles. Dans cet exercice, vous créez des règles individuelles par événement de commerce électronique et utilisez des conditions de sorte que les règles se déclenchent sur les pages appropriées. Commençons par un événement Consultation produit.
 
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Règles]** puis sélectionnez **[!UICONTROL Ajouter une règle]**
-1. Nommez-le  [!UICONTROL `product view - library load - AA`]
+1. Nommez-la  [!UICONTROL `product view - library load - AA`]
 1. Sous **[!UICONTROL Événements]**, sélectionnez **[!UICONTROL Bibliothèque chargée (Haut de page)]**
 1. Sous **[!UICONTROL Conditions]**, sélectionnez sur **[!UICONTROL Ajouter]**
 
    ![Règles XDM Analytics](assets/analytics-rule-product-view-event.png)
 
-1. Laissez tomber **[!UICONTROL Type de logique]** as **[!UICONTROL Normal]**
-1. Laissez tomber **[!UICONTROL Extensions]** as **[!UICONTROL Core]**
+1. Laisser **[!UICONTROL Type de logique]** as **[!UICONTROL Normal]**
+1. Laisser **[!UICONTROL Extensions]** as **[!UICONTROL Core]**
 1. Sélectionner **[!UICONTROL Type de condition]** as **[!UICONTROL Chemin sans chaîne de requête]**
 1. Sur la droite, activez l’option **[!UICONTROL Regex]** basculer
 1. Sous **[!UICONTROL path est égal à]** set `/products/`. Pour le site de démonstration Luma, la règle se déclenche uniquement sur les pages de produits.
@@ -384,7 +382,7 @@ Avec les multiples éléments de données d’objet XDM créés, vous êtes prê
 1. Sous **[!UICONTROL Actions]** select **[!UICONTROL Ajouter]**
 1. Sélectionner **[!UICONTROL SDK Web Adobe Experience Platform]** extension
 1. Sélectionner **[!UICONTROL Type d’action]** as **[!UICONTROL Envoyer un événement]**
-1. Le **[!UICONTROL Type]** comporte une liste déroulante de valeurs parmi lesquelles choisir. Sélectionner `[!UICONTROL commerce.productViews]`
+1. La variable **[!UICONTROL Type]** comporte une liste déroulante de valeurs parmi lesquelles choisir. Sélectionnez `[!UICONTROL commerce.productViews]`
 
    >[!TIP]
    >
@@ -404,23 +402,23 @@ Répétez la même opération pour tous les autres événements de commerce éle
 
 **Nom de la règle**: affichage du panier - chargement de bibliothèque - AA
 
-* **[!UICONTROL Type d’événement]**: Bibliothèque chargée (Haut de page)
+* **[!UICONTROL Type d’événement]**: bibliothèque chargée (haut de page)
 * **[!UICONTROL Condition]**: /content/luma/us/en/user/cart.html
 * **Valeur de type sous SDK Web - Action d’envoi**: commerce.productListViews
 * **Données XDM pour SDK Web - Envoyer l’action :** `%xdm.commerce.cartView%`
 
-**Nom de la règle**: checkout - chargement de bibliothèque - AA
+**Nom de la règle**: passage en caisse - chargement de bibliothèque - AA
 
-* **[!UICONTROL Type d’événement]**: Bibliothèque chargée (Haut de page)
+* **[!UICONTROL Type d’événement]**: bibliothèque chargée (haut de page)
 * **[!UICONTROL Condition]** /content/luma/us/en/user/checkout.html
 * **Type pour le SDK web - Action d’envoi**: commerce.checkouts
 * **Données XDM pour SDK Web - Envoyer l’action :** `%xdm.commerce.checkout%`
 
 **Nom de la règle**: purchase - chargement de bibliothèque - AA
 
-* **[!UICONTROL Type d’événement]**: Bibliothèque chargée (Haut de page)
+* **[!UICONTROL Type d’événement]**: bibliothèque chargée (haut de page)
 * **[!UICONTROL Condition]** /content/luma/us/en/user/checkout/order/thank-you.html
-* **Type pour le SDK web - Action d’envoi**: commerce.purchases
+* **Type pour le SDK web - Action d’envoi**: commerce.achats
 * **Données XDM pour SDK Web - Envoyer l’action :** `%xdm.commerce.purchase%`
 
 Lorsque vous avez terminé, les règles suivantes doivent être créées.
@@ -445,16 +443,15 @@ Découvrez comment vérifier qu’Adobe Analytics capture l’ECID, les pages vu
 
 ### Validation des identifiants Experience Cloud
 
-1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;} et utilisez le débogueur Experience Platform pour [basculez la propriété de balise sur le site sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et utilisez le débogueur Experience Platform pour [basculez la propriété de balise sur le site sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
    >[!WARNING]
    >
    >Avant de poursuivre, assurez-vous d’être connecté au site Luma.  Si vous n’êtes pas connecté, le site Luma ne vous permet pas d’extraire.
    >
-   > 1. Sur Luma, sélectionnez le bouton de connexion en haut à droite et utilisez les informations d’identification. **u : test@adobe.com test** pour vous authentifier
+   > 1. Sur Luma, sélectionnez le bouton de connexion en haut à droite et utilisez les informations d’identification. **u : test@adobe.com p: test** pour vous authentifier
    >
    > 1. Vous serez automatiquement redirigé vers le [Page produit Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) lors du chargement de la page suivante
-
 
 1. Pour activer Edge Trace, accédez à Experience Platform Debugger, dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Journaux]**, puis sélectionnez la variable **[!UICONTROL Edge]** et sélectionnez **[!UICONTROL Connexion]**
 
@@ -474,7 +471,7 @@ Découvrez comment vérifier qu’Adobe Analytics capture l’ECID, les pages vu
    >La deuxième liste déroulante correspond à l’identifiant de suite de rapports Analytics auquel vous envoyez des données. Elle doit correspondre à votre propre suite de rapports, et non à celle de la capture d’écran.
 
 1. Faire défiler vers le bas pour trouver `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. Il s’agit d’une variable de données contextuelles qui capture ECID.
-1. Continuez à faire défiler l’écran vers le bas jusqu’à ce que vous voyiez Analytics `[!UICONTROL mid]` . Les deux identifiants correspondent à l’identifiant Experience Cloud de votre appareil.
+1. Continuez à faire défiler l’écran vers le bas jusqu’à ce que vous voyiez Analytics `[!UICONTROL mid]` Variable . Les deux identifiants correspondent à l’identifiant Experience Cloud de votre appareil.
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -487,8 +484,8 @@ Découvrez comment vérifier qu’Adobe Analytics capture l’ECID, les pages vu
 
 Vous utilisez la même balise pour valider que les pages vues du contenu sont capturées par Analytics.
 
-1. Rechercher `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. Cela vous dit que `s.t()` La balise de page vue est envoyée à Analytics
-1. Faites défiler l’écran vers le bas pour afficher la `[!UICONTROL gn]` . Il s’agit de la syntaxe dynamique Analytics de la variable `[!UICONTROL s.pageName]` . Il capture le nom de la page à partir de la couche de données.
+1. Recherchez `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. Cela vous dit que `s.t()` La balise de page vue est envoyée à Analytics
+1. Faites défiler l’écran vers le bas pour afficher la `[!UICONTROL gn]` Variable . Il s’agit de la syntaxe dynamique Analytics de la variable `[!UICONTROL s.pageName]` Variable . Il capture le nom de la page à partir de la couche de données.
 
    ![Chaîne de produit Analytics](assets/analytics-debugger-edge-page-view.png)
 
@@ -497,15 +494,15 @@ Vous utilisez la même balise pour valider que les pages vues du contenu sont ca
 Comme vous vous trouvez déjà sur une page de produit, cet exercice continue d’utiliser la même trace Edge pour valider que les données de produit sont capturées par Analytics. Les événements de chaîne de produit et de commerce électronique sont automatiquement associés à des variables XDM dans Analytics. Tant que vous avez mappé sur le `productListItem` Variable XDM pendant [configuration d’un schéma XDM pour Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), le réseau Platform Edge s’occupe de mapper les données aux variables d’analyse appropriées.
 
 1. Commencez par valider que la variable `Product String` est défini
-1. Rechercher `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. La variable capture la valeur de l’élément de données que vous avez mappée à la variable `productListItems.item1.sku` plus tôt dans cette leçon
-1. Faites défiler l’écran vers le bas pour afficher la `[!UICONTROL pl]` . Il s’agit de la syntaxe dynamique de la variable de chaîne de produit Analytics.
+1. Recherchez `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. La variable capture la valeur de l’élément de données que vous avez mappée à la variable `productListItems.item1.sku` plus tôt dans cette leçon
+1. Faites défiler l’écran vers le bas pour afficher la `[!UICONTROL pl]` Variable . Il s’agit de la syntaxe dynamique de la variable de chaîne de produit Analytics.
 1. Les deux valeurs correspondent au nom de produit disponible dans la couche de données.
 
    ![Chaîne de produit Analytics](assets/analytics-debugger-prodstring.png)
 
-Le suivi Edge traite `commerce` événements légèrement différents `productList` dimensions. Une variable de données contextuelles n’est pas mappée de la même manière que le nom du produit est mappé sur `[!UICONTROL c.a.x.productlistitem.[0].name]` ci-dessus. À la place, le suivi Edge affiche le mappage automatique de l’événement final dans Analytics. `event` . Platform Edge Network mappe ce contenu en conséquence tant que vous mappez à la XDM appropriée. `commerce` Variable while [configuration du schéma pour Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); dans ce cas, la variable `commerce.productViews.value=1`.
+Le suivi Edge traite `commerce` événements légèrement différents `productList` dimensions. Une variable de données contextuelles n’est pas mappée de la même manière que le nom du produit est mappé sur `[!UICONTROL c.a.x.productlistitem.[0].name]` ci-dessus. À la place, le suivi Edge affiche le mappage automatique de l’événement final dans Analytics. `event` Variable . Platform Edge Network mappe ce contenu en conséquence tant que vous mappez à la XDM appropriée. `commerce` Variable while [configuration du schéma pour Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); dans ce cas, la variable `commerce.productViews.value=1`.
 
-1. De retour dans la fenêtre du débogueur Experience Platform, faites défiler l’écran jusqu’au `[!UICONTROL event]` , elle est définie sur `[!UICONTROL prodView]`
+1. De retour dans la fenêtre du débogueur Experience Platform, faites défiler l’écran jusqu’au `[!UICONTROL event]` est définie sur `[!UICONTROL prodView]`
 
    ![Consultation produit Analytics](assets/analytics-debugger-prodView.png)
 
@@ -514,7 +511,7 @@ Validez le reste des événements de commerce électronique et les chaînes de p
 1. Ajouter [Didi Sport Watch](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) au panier
 1. Accédez au [Page Panier](https://luma.enablementadobe.com/content/luma/us/en/user/cart.html), vérifiez Edge Trace pour `[!UICONTROL events: "scView"]` et la chaîne de produit
 
-   ![Vue du panier d’Analytics](assets/analytics-debugger-cartView.png)
+   ![Vue du panier Analytics](assets/analytics-debugger-cartView.png)
 
 1. Passez à l’extraction, cochez Edge Trace pour `[!UICONTROL events: "scCheckout"]` et la chaîne de produit
 
@@ -538,12 +535,12 @@ Maintenant que vous avez validé les balises Analytics avec Edge Trace, vous pou
 
 Dans cet exercice, vous mappez une variable XDM à une prop afin de pouvoir l’afficher dans les rapports en temps réel. Suivez les mêmes étapes que pour tout mappage personnalisé que vous devez effectuer pour n’importe quel mappage `eVar`, `prop`, `event`ou accessible via les règles de traitement.
 
-1. Dans l’interface utilisateur d’Analytics, accédez à [!UICONTROL Administration] > [!UICONTROL Outils d’administration] > [!UICONTROL Suites de rapports ]
+1. Dans l’interface utilisateur d’Analytics, accédez à [!UICONTROL Administration] > [!UICONTROL Outils d’administration] > [!UICONTROL Suites de rapports]
 1. Sélectionnez la suite de rapports de développement/test que vous utilisez pour le tutoriel > [!UICONTROL Modifier les paramètres] > [!UICONTROL Général] > [!UICONTROL Règles de traitement]
 
    ![Achat Analytics](assets/analytics-process-rules.png)
 
-1. Créer une règle pour **[!UICONTROL Remplacer la valeur de]** `[!UICONTROL Product Name (prop1)]` to `a.x.productlistitems.0.name`. N’oubliez pas d’ajouter votre note expliquant pourquoi vous créez la règle et nommez son titre. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Création d’une règle pour **[!UICONTROL Remplacer la valeur de]** `[!UICONTROL Product Name (prop1)]` to `a.x.productlistitems.0.name`. N’oubliez pas d’ajouter votre note expliquant pourquoi vous créez la règle et nommez son titre. Sélectionnez **[!UICONTROL Enregistrer]**
 
    ![Achat Analytics](assets/analytics-set-processing-rule.png)
 
@@ -551,13 +548,13 @@ Dans cet exercice, vous mappez une variable XDM à une prop afin de pouvoir l’
    >
    >La première fois que vous mappez à une règle de traitement, l’interface utilisateur ne vous affiche pas les variables de données contextuelles de l’objet XDM. Pour corriger les éléments qui sélectionnent une valeur, cliquez sur Enregistrer pour revenir à la modification. Toutes les variables XDM doivent maintenant apparaître.
 
-1. Accédez à [!UICONTROL Modifier les paramètres] >  [!UICONTROL Temps réel]. Configurez les trois avec les paramètres ci-dessous afin que vous puissiez valider les pages vues du contenu, les consultations de produits et les achats.
+1. Accédez à [!UICONTROL Modifier les paramètres] >  [!UICONTROL Temps réel]. Configurez les trois avec les paramètres ci-dessous afin de pouvoir valider les pages vues du contenu, les consultations de produits et les achats.
 
    ![Achat Analytics](assets/analytics-debugger-real-time.png)
 
 1. Répétez les étapes de validation. Vous devriez constater que les rapports en temps réel renseignent les données en conséquence.
 
-   **Page Views**
+   **Pages vues**
    ![Contenu en temps réel](assets/analytics-real-time-content.png)
 
    **Consultations produits**

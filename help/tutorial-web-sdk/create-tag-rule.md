@@ -3,9 +3,9 @@ title: Création d’une règle de balise
 description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ Découvrez comment envoyer un événement à Platform Edge Network avec votre ob
 
 >[!NOTE]
 >
-> À des fins de démonstration, les exercices de cette leçon s’appuient sur l’exemple utilisé pendant la [Création d’éléments de données](create-data-elements.md) step; envoi d’une action d’événement XDM pour capturer le contenu et les identités des utilisateurs sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+> À des fins de démonstration, les exercices de cette leçon s’appuient sur l’exemple utilisé pendant la [Création d’éléments de données](create-data-elements.md) étape ; envoi d’une action d’événement XDM pour capturer le contenu et les identités des utilisateurs sur la [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 
 ## Objectifs d&#39;apprentissage
@@ -24,7 +24,7 @@ Découvrez comment envoyer un événement à Platform Edge Network avec votre ob
 À la fin de cette leçon, vous saurez comment :
 
 * Utilisation d’une convention d’affectation de nom pour la gestion des règles dans les balises
-* Création d’une règle de balise pour envoyer un événement XDM
+* Créer une règle de balise pour envoyer un événement XDM
 * Publier une règle de balise dans une bibliothèque de développement
 
 
@@ -32,12 +32,12 @@ Découvrez comment envoyer un événement à Platform Edge Network avec votre ob
 
 Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html), et vous devez avoir suivi les leçons précédentes suivantes dans le tutoriel :
 
-* [Configuration des autorisations](configure-permissions.md)
-* [Configuration d’un schéma XDM](configure-schemas.md)
+* [Configurer les autorisations](configure-permissions.md)
+* [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
-* [Configurer un flux de données](configure-datastream.md)
+* [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
-* [Création d’éléments de données](create-data-elements.md)
+* [Créer des éléments de données](create-data-elements.md)
 
 ## Conventions de nommage
 
@@ -59,8 +59,8 @@ Dans les balises, les règles sont utilisées pour exécuter des actions (appels
 Pour créer une règle de balise :
 
 1. Ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
-1. Accédez à **[!UICONTROL Règles]** dans le volet de navigation de gauche
-1. Sélectionnez la **[!UICONTROL Créer une règle]** button
+1. Accédez à **[!UICONTROL Règles]** dans la navigation de gauche
+1. Sélectionnez la variable **[!UICONTROL Créer une règle]** button
    ![Créer une règle](assets/rules-create.png)
 1. Donnez à la règle le nom `all pages - library load - AA & AT`.
 
@@ -69,7 +69,6 @@ Pour créer une règle de balise :
    > Cette règle sera utilisée de manière spécifique par Adobe Analytics et Target dans une leçon ultérieure, c’est pourquoi `AA & AT` est utilisée à la fin du nom.
 
 1. Dans le **[!UICONTROL Événements]** , sélectionnez **[!UICONTROL Ajouter]**
-
    ![Attribuez un nom à la règle et ajoutez un événement](assets/rule-name.png)
 1. Utilisez la variable **[!UICONTROL Extension Core]** et sélectionnez `Library Loaded (Page Top)` comme la propriété **[!UICONTROL Type d’événement]**.
 
@@ -81,7 +80,6 @@ Pour créer une règle de balise :
 1. Sélectionner **[!UICONTROL Type de logique]** `Exception`, **[!UICONTROL Extension]** `Core`, et **[!UICONTROL Type de condition]** `Path Without Query String`
 1. Saisissez le chemin de l’URL. `/content/luma/us/en/user/cart.html` dans le **[!UICONTROL path est égal à]** et **[!UICONTROL name]** it `Core - cart page`
 1. Sélectionnez **[!UICONTROL Conserver les modifications]**
-
    ![Ajouter des conditions](assets/rule-condition-exception.png)
 1. Ajouter trois autres exceptions pour les chemins d’URL suivants
 
@@ -114,7 +112,7 @@ Ensuite, publiez la règle dans votre environnement de développement afin que n
 
 Pour créer une bibliothèque :
 
-1. Accédez à **[!UICONTROL Flux de publication]** dans le volet de navigation de gauche
+1. Accédez à **[!UICONTROL Flux de publication]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Ajouter une bibliothèque]**
 
    ![Sélectionner Ajouter une bibliothèque](assets/rule-publish-library.png)
@@ -136,7 +134,7 @@ La création de la bibliothèque peut prendre quelques minutes. Une fois l’op�
 
 Comme vous pouvez le voir sur la [!UICONTROL Flux de publication] le processus de publication, qui dépasse le cadre de ce tutoriel, contient beaucoup d’autres éléments. Ce tutoriel utilise une seule bibliothèque dans votre environnement de développement.
 
-Vous êtes maintenant prêt à valider les données de la requête à l’aide du débogueur Adobe Experience Platform.
+Vous êtes maintenant prêt à valider les données de la requête à l’aide de l’Adobe Experience Platform Debugger .
 
 [Suivant ](validate-with-debugger.md)
 

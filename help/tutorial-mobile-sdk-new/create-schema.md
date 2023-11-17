@@ -4,9 +4,9 @@ description: Découvrez comment créer un schéma XDM pour les événements d’
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 16%
 
 ---
@@ -134,7 +134,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
 >[!NOTE]
 >
->Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Vous pouvez également supprimer des champs si cela permet de conserver le schéma concis et compréhensible. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
+>Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Vous pouvez également supprimer des champs pour que le schéma reste concis et compréhensible. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
 
 La variable [!UICONTROL Événement d’expérience client] un groupe de champs possède un type de données appelé [!UICONTROL Informations web], qui décrit les événements tels que les pages vues et les clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
 
@@ -163,7 +163,7 @@ Vous commencez par créer un type de données personnalisé décrivant les deux 
 1. Pour ajouter un champ, sélectionnez l’option ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) bouton .
 
 
-1. Ce champ est un objet conteneur pour l’interaction de l’application. Par conséquent, fournissez une case Camel. **[!UICONTROL Nom du champ]** `appInteraction`, **[!UICONTROL Nom d’affichage]** `App Interaction`, puis sélectionnez `Object` de la **[!UICONTROL Type]** liste.
+1. Ce champ est un objet conteneur pour l’interaction de l’application. Par conséquent, fournissez une casse mixte. **[!UICONTROL Nom du champ]** `appInteraction`, **[!UICONTROL Nom d’affichage]** `App Interaction`, puis sélectionnez `Object` de la **[!UICONTROL Type]** liste.
 
 1. Sélectionnez **[!UICONTROL Appliquer]**.
 
@@ -234,6 +234,8 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 >[!SUCCESS]
 >
->Vous devez maintenant utiliser un schéma pour le reste du tutoriel.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous devez maintenant utiliser un schéma pour le reste du tutoriel.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Créez un [!UICONTROL datastream]](create-datastream.md)**

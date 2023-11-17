@@ -3,9 +3,9 @@ title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience P
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 6%
 
 ---
@@ -43,7 +43,7 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
-* [Création d’éléments de données](create-data-elements.md)
+* [Créer des éléments de données](create-data-elements.md)
 * [Création d’une règle de balise](create-tag-rule.md)
 
 

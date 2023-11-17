@@ -3,10 +3,10 @@ title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 7%
+source-wordcount: '1121'
+ht-degree: 8%
 
 ---
 
@@ -87,7 +87,7 @@ Avec les deux groupes de champs, notez que vous avez accès aux paires clé-vale
 
 ![Groupes de champs de schéma](assets/schema-consumer-experience-event.jpg)
 
-Cette leçon n&#39;est qu&#39;un point de départ. Lors de la création de votre propre schéma d’événements web, vous devez explorer et documenter les besoins de votre entreprise. Ce processus est similaire à la création d’une [Document sur les besoins de l’entreprise](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=fr) et [Référence de conception de solution](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) pour une mise en oeuvre Adobe Analytics, mais doit inclure des exigences pour _tous les destinataires de données en aval_ telles que les destinations de transfert de Platform, de Target et d’événement.
+Cette leçon n&#39;est qu&#39;un point de départ. Lors de la création de votre propre schéma d’événements web, vous devez explorer et documenter les besoins de votre entreprise. Ce processus est similaire à la création d’une [Document sur les besoins de l’entreprise](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=fr) et [Référence de conception de solution](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=fr) pour une mise en oeuvre Adobe Analytics, mais doit inclure des exigences pour _tous les destinataires de données en aval_ telles que les destinations de transfert de Platform, de Target et d’événement.
 
 
 ### Objet identityMap

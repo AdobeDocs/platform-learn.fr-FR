@@ -3,7 +3,7 @@ title: Collecter les données du cycle de vie
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 hide: true
 exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -121,6 +121,8 @@ Vous devriez voir **[!UICONTROL Fermeture de l’application (arrière-plan)]** 
 
 >[!SUCCESS]
 >
->Vous avez maintenant configuré votre application pour envoyer des événements d’état d’application (de premier plan, en arrière-plan) au réseau Adobe Experience Platform Edge et tous les services que vous avez définis dans votre flux de données.<br>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vous avez maintenant configuré votre application pour envoyer des événements d’état d’application (de premier plan, en arrière-plan) au réseau Adobe Experience Platform Edge et tous les services que vous avez définis dans votre flux de données.
+>
+> Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Suivi des données d’événement](events.md)**

@@ -1,16 +1,16 @@
 ---
-title: Configurer un train de données
+title: Configurer un trains de données
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '447'
 ht-degree: 8%
 
 ---
 
-# Configurer un train de données
+# Configurer un trains de données
 
 Découvrez comment activer un flux de données et configurer des solutions Experience Cloud.
 
@@ -28,7 +28,7 @@ Les flux de données indiquent à Adobe Experience Platform Edge Network où env
 
 Avant de configurer votre flux de données, vous devez avoir terminé les leçons suivantes :
 
-* [Configuration des autorisations](configure-permissions.md)
+* [Configurer les autorisations](configure-permissions.md)
 * [Configuration d’un schéma](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 
@@ -43,9 +43,9 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 
    >[!NOTE]
    >
-   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez la variable **[!UICONTROL Prod]** sandbox.
+   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
 
-1. Accédez à **[!UICONTROL Datastreams]** dans le volet de navigation de gauche
+1. Accédez à **[!UICONTROL Datastreams]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Nouvelle structure de données]** sur le côté droit de l’écran.
 1. Entrée `Luma Web SDK` comme la propriété **[!UICONTROL Nom]**. Ce nom est référencé ultérieurement lorsque vous configurez l’extension SDK Web dans la propriété de balise.
 1. Sélectionnez votre `Luma Web Event Data` comme la propriété **[!UICONTROL Schéma d’événement]**
@@ -60,7 +60,7 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 
 
 
-Sur l’écran suivant, vous pouvez ajouter des services tels que des applications d’Adobe à la banque de données, mais vous n’ajouterez aucun service à ce stade du tutoriel. Vous le ferez plus tard dans les leçons. [Configuration d’un Experience Platform](setup-experience-platform.md), [Configuration d’Analytics](setup-analytics.md), [Configuration de l’Audience Manager](setup-audience-manager.md), [Configuration de Target](setup-target.md)ou [Transfert d’événement](setup-event-forwarding.md).
+Sur l’écran suivant, vous pouvez ajouter des services tels que des applications d’Adobe à la banque de données, mais vous n’ajouterez aucun service à ce stade du tutoriel. Vous le ferez plus tard dans les leçons. [Configuration d’un Experience Platform](setup-experience-platform.md), [Configuration d’Analytics](setup-analytics.md), [Configuration de l’Audience Manager](setup-audience-manager.md), [Configuration de Target](setup-target.md), ou [Transfert d’événement](setup-event-forwarding.md).
 
 >[!NOTE]
 >

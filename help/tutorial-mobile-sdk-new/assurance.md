@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre l’extension Assurance dans un
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -53,7 +53,7 @@ En plus du [Installation du SDK](install-sdks.md), que vous avez terminé dans l
    }
    ```
 
-   Ce code lance une session d’assurance lorsque l’application est en arrière-plan et s’ouvre à l’aide d’un lien profond.
+   Ce code lance une session d’assurance lorsque l’application est en arrière-plan et ouverte à l’aide d’un lien profond.
 
 Vous trouverez plus d’informations [ici](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -123,7 +123,7 @@ Dans Xcode :
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. Dans le **[!UICONTROL Autoriser &quot;l’application Luma&quot; à effectuer le suivi de votre activité sur l’application et les sites web d’autres entreprises]** boîte de dialogue, sélectionnez **[!UICONTROL Autoriser]**.
+1. Dans le **[!UICONTROL Autoriser &quot;l’application Luma&quot; à effectuer le suivi de votre activité sur les applications et sites web d’autres entreprises]** boîte de dialogue, sélectionnez **[!UICONTROL Autoriser]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -141,7 +141,7 @@ Dans votre navigateur :
 
    Si vous utilisez un appareil physique :
 
-   * Sélectionner **[!UICONTROL Analyser le code QR]**. Utilisez votre appareil photo sur votre appareil physique pour analyser le code QR et appuyez sur le lien pour ouvrir l’application.
+   * Sélectionner **[!UICONTROL Analyser le code QR]**. Pour ouvrir l’application, utilisez l’appareil photo de votre appareil physique pour analyser le code QR et appuyez sur le lien.
 
      ![code qa d’assurance](assets/assurance-qr-code.png)
 
@@ -171,7 +171,7 @@ Dans votre navigateur :
 
          ![événements d’assurance](assets/assurance-events.png)
 
-Si vous rencontrez des défis, veuillez consulter la section [technique](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr){target="_blank"}.
+Si vous rencontrez des problèmes, passez en revue la variable [technique](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=fr){target="_blank"}.
 
 
 ## Vérifier les extensions
@@ -186,16 +186,16 @@ Pour vérifier si votre application utilise les extensions les plus récentes :
 
    ![Configuration des versions d’extension](assets/assurance-configure-extension-versions.png)
 
-1. Sélectionner ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versions d’extension]**. Vous verrez un aperçu des dernières extensions disponibles et des extensions utilisées dans votre version de l’application.
+1. Sélectionner ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versions d’extension]** pour afficher un aperçu des dernières extensions disponibles et des extensions utilisées dans votre version de l’application.
 
    ![Versions d’extension](assets/assurance-extension-versions.png)
 
-1. Pour mettre à jour vos versions d’extension (par exemple **[!UICONTROL Messagerie]** et **[!UICONTROL Optimiser]**), dans Xcode, pour les extensions spécifiques nécessitant une mise à niveau, sélectionnez le package (extension) depuis **[!UICONTROL Dépendances de modules]** (par exemple, **[!UICONTROL AEPMessaging]**) et, dans le menu contextuel, sélectionnez **[!UICONTROL Mettre à jour le package]**. Xcode met à jour les dépendances du package.
+1. Pour mettre à jour vos versions d’extension (par exemple, **[!UICONTROL Messagerie]** et **[!UICONTROL Optimiser]**) sélectionnez le module (extension) depuis **[!UICONTROL Dépendances de modules]** (par exemple, **[!UICONTROL AEPMessaging]**) et, dans le menu contextuel, sélectionnez **[!UICONTROL Mettre à jour le package]**. Xcode met à jour les dépendances du package.
 
 
 >[!NOTE]
 >
->Lorsque vous avez mis à jour vos extensions (packages) dans Xcode, vous devez fermer et supprimer votre session actuelle et répéter toutes les étapes de [Connexion à une session](#connecting-to-a-session) et [Vérifier les extensions](#verify-extensions) pour vous assurer qu’Assurance signale correctement les extensions correctes dans une nouvelle session d’assurance.
+>Une fois que vous avez mis à jour vos extensions (modules) dans Xcode, fermez et supprimez votre session actuelle, puis répétez toutes les étapes de [Connexion à une session](#connecting-to-a-session) et [Vérifier les extensions](#verify-extensions) pour vous assurer qu’Assurance signale correctement les extensions correctes dans une nouvelle session d’assurance.
 
 
 
@@ -203,7 +203,9 @@ Pour vérifier si votre application utilise les extensions les plus récentes :
 
 >[!SUCCESS]
 >
->Vous avez maintenant configuré votre application pour utiliser Assurance pour le reste du tutoriel.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vous avez maintenant configuré votre application pour utiliser Assurance pour le reste du tutoriel.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Suivant : **[Mise en oeuvre du consentement](consent.md)**

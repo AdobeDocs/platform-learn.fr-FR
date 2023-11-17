@@ -3,9 +3,10 @@ title: Configuration d’une propriété de balise
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1090'
 ht-degree: 8%
 
 ---
@@ -45,7 +46,7 @@ Dans cette leçon, vous allez :
 
       >[!NOTE]
       >
-      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, telles que celle que vous effectuez dans cette leçon, proviennent du [!UICONTROL Extension de consentement] et non le [!UICONTROL Privacy] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > Les paramètres de consentement par défaut pour les implémentations de sdk mobile basées sur les périphériques, telles que celle que vous effectuez dans cette leçon, proviennent du [!UICONTROL Extension de consentement] et non le [!UICONTROL Privacy] dans la configuration de la propriété de balise. Vous allez ajouter et configurer l’extension Consentement plus loin dans cette leçon. Pour plus d’informations, voir [la documentation](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Ouvrez la nouvelle propriété.
@@ -131,7 +132,7 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
 
 1. Dans le **[!UICONTROL Instructions d’installation mobile]** , sélectionnez **[!UICONTROL iOS]** .
 
-1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de CocoaPods. Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [Documentation Cocoapods](https://cocoapods.org/). Si vous utilisez Android comme plateforme de développement, Gradle est l’outil permettant de gérer la version, les téléchargements et les dépendances du SDK. Pour en savoir plus, consultez la section [Documentation sur le graphique](https://gradle.org/)
+1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de CocoaPods. Les CocoaPods sont utilisés pour gérer les versions et téléchargements de SDK. Pour en savoir plus, consultez la section [Documentation CocoaPods](https://cocoapods.org/). Si vous utilisez Android™ comme plateforme de développement, Gradle est l’outil permettant de gérer la version, les téléchargements et les dépendances du SDK. Pour en savoir plus, consultez la section [Documentation sur le graphique](https://gradle.org/)
 
    Les instructions d’installation vous fournissent un bon point de départ pour la mise en oeuvre. Vous trouverez des informations supplémentaires [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -140,7 +141,7 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
    >Pour le reste de ce tutoriel, vous allez **not** Suivez les instructions CocoaPods , mais utilisez plutôt une configuration SPM (Swift Package Manager) native.
    >
 
-1. Sélectionnez la variable **[!UICONTROL Swift]** sous-onglet **[!UICONTROL Ajout d’un code d’initialisation]**. Ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement. Pour plus d’informations, reportez-vous à la section [Installation des SDK](install-sdks.md).
+1. Sélectionnez la variable **[!UICONTROL Swift]** sous-onglet **[!UICONTROL Ajout d’un code d’initialisation]**. Ce bloc de code indique comment importer les SDK requis et enregistrer les extensions au lancement. Cela est décrit plus en détail dans la section [Installation des SDK](install-sdks.md).
 
 1. Copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) la valeur **[!UICONTROL Identifiant de fichier d’environnement]** et le stocker à un endroit où vous en aurez besoin plus tard. Cet identifiant unique pointe vers votre environnement de développement. Chaque environnement (production, évaluation, développement) possède sa propre valeur d’identifiant unique.
 
@@ -148,7 +149,7 @@ Votre bibliothèque est créée pour les nouvelles extensions et configurations.
 
 >[!NOTE]
 >
->Les instructions d’installation doivent être considérées comme un point de départ et non comme une documentation définitive. Vous trouverez les dernières versions du SDK et des exemples de code dans la [documentation](https://developer.adobe.com/client-sdks/documentation/).
+>Les instructions d’installation doivent être considérées comme un point de départ et non comme une documentation définitive. Vous trouverez les dernières versions du SDK et des exemples de code dans la [documentation](https://developer.adobe.com/client-sdks/home/).
 
 ## Architecture des balises mobiles
 
@@ -156,10 +157,12 @@ Si vous connaissez la version web des balises, anciennement Launch, il est impor
 
 * Sur le Web, une propriété de balise est rendue dans JavaScript, qui est ensuite (généralement) hébergée dans le cloud. Ce fichier JavaScript est référencé directement dans le site web.
 
-* Dans une propriété de balise mobile, les règles et les configurations sont rendues dans des fichiers JSON hébergés dans le cloud. Les fichiers JSON sont téléchargés et lus par l’extension Mobile Core dans l’application mobile. Les extensions sont des SDK distincts qui fonctionnent ensemble. Si vous ajoutez une extension à votre propriété de balise, vous devez également mettre à jour l’application. Si vous modifiez un paramètre d’extension ou créez une règle, ces modifications sont répercutées dans l’application une fois que vous avez publié la bibliothèque de balises mise à jour. Cette flexibilité vous permet de modifier les paramètres (comme l’identifiant de la suite de rapports Adobe Analytics) ou même de modifier le comportement de votre application (à l’aide d’éléments de données et de règles, comme vous le verrez dans les leçons ultérieures) sans avoir à modifier le code de votre application et avoir à soumettre de nouveau l’application à la boutique d’applications.
+* Dans une propriété de balise mobile, les règles et les configurations sont rendues dans des fichiers JSON hébergés dans le cloud. Les fichiers JSON sont téléchargés et lus par l’extension Mobile Core dans l’application mobile. Les extensions sont des SDK distincts qui fonctionnent ensemble. Si vous ajoutez une extension à votre propriété de balise, vous devez également mettre à jour l’application. Si vous modifiez un paramètre d’extension ou créez une règle, ces modifications sont répercutées dans l’application une fois que vous avez publié la bibliothèque de balises mise à jour. Cette flexibilité vous permet de modifier les paramètres (comme l’identifiant de suite de rapports Adobe Analytics) ou même de modifier le comportement de votre application (à l’aide d’éléments de données et de règles, comme vous le verrez dans les leçons ultérieures) sans avoir à modifier le code de votre application et envoyer de nouveau l’app store.
 
 >[!SUCCESS]
 >
->Vous devez maintenant utiliser une propriété de balise mobile dans le reste de ce tutoriel.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vous devez maintenant utiliser une propriété de balise mobile dans le reste de ce tutoriel.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Installation des SDK](install-sdks.md)**

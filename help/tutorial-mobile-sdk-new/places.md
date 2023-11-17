@@ -3,9 +3,9 @@ title: Utiliser des emplacements
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ Vous définissez certains points ciblés dans le service Places.
    ![Créer une bibliothèque](assets/places-create-library.png)
 1. Pour fermer la variable **[!UICONTROL Gestion des bibliothèques]** boîte de dialogue, sélectionnez **[!UICONTROL Fermer]**.
 1. Retour à **[!UICONTROL Gestion des points ciblés]**, sélectionnez **[!UICONTROL Importation de points ciblés]**.
-1. Sélectionner **[!UICONTROL Début]** en t**[!UICONTROL Importer des emplacements]Boîte de dialogue **.
+1. Sélectionner **[!UICONTROL Début]** dans le **[!UICONTROL Importer des emplacements]** boîte de dialogue.
 1. Sélectionner **[!DNL Luma]** de la liste des bibliothèques,
 1. Sélectionnez **[!UICONTROL Suivant]**.
    ![Sélectionner une bibliothèque](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Vous allez ensuite définir des règles pour travailler avec ces éléments de d
       ![Action Balises](assets/tags-action-mobile-core.png)
 
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de **[!UICONTROL Noyau mobile - Joindre des données]** action.
-   1. Sélectionner **[!UICONTROL Adobe Experience Platform Edge Network]** de la **[!UICONTROL Extension]** répertorier et sélectionner **[!UICONTROL Transfert d’un événement vers Edge Network]**. Cette action garantit que l’événement et les données de charge utile supplémentaires sont transférés vers le réseau Edge.
+   1. Sélectionner **[!UICONTROL Adobe Experience Platform Edge Network]** de la **[!UICONTROL Extension]** répertorier et sélectionner **[!UICONTROL Transfert d’un événement vers Edge Network]**. Cette action garantit que l’événement et les données de charge utile supplémentaires sont transférés vers Platform Edge Network.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
 
 1. Pour enregistrer la règle, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
@@ -240,7 +240,7 @@ Pour valider votre configuration dans Assurance :
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. Sélectionner **[!UICONTROL Carte et simulation]** dans le rail de gauche.
 1. Déplacez la carte vers un emplacement de l’un de vos points ciblés.
-1. Sélectionner ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulation de la charge des points ciblés.  Votre point ciblé est identifié à l’aide d’un cercle et d’une broche.
+1. Sélectionner ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulation de la charge des points ciblés. Votre point ciblé est identifié à l’aide d’un cercle et d’une broche.
 1. Sélectionnez votre point ciblé.
 1. Dans la fenêtre contextuelle, sélectionnez ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulation de l’événement d’entrée]**.
    ![Simulation de l’événement d’entrée](assets/places-simulate.png)
@@ -283,7 +283,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
    ]
    ```
 
-1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Ajoutez le code suivant :
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` de la fonction Ajoutez le code suivant :
 
    ```swift
    // Process geolocation event
@@ -320,7 +320,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 
 1. Déplacez (faites glisser) la carte pour vous assurer que le cercle central bleu se trouve au-dessus de l’un de vos points ciblés, par exemple Londres.
 
-1. Pression <img src="assets/geobutton.png" width="20" /> jusqu’à ce que la catégorie et le nom apparaissent dans l’étiquette à l’emplacement rouge avec l’épingle.
+1. Pression <img src="assets/geobutton.png" width="20" /> jusqu’à ce que la catégorie et le nom apparaissent dans le libellé à l’emplacement rouge avec l’épingle.
 
 1. Appuyez sur le libellé du point ciblé, ce qui ouvre la variable **[!UICONTROL Point ciblé voisin]** feuille.
 
@@ -344,6 +344,8 @@ Vous avez vu une mise en oeuvre de la fonctionnalité de votre application, prin
 
 >[!SUCCESS]
 >
->Vous avez désormais activé l’application pour les services de géolocalisation à l’aide de l’extension Places dans le SDK Mobile Experience Platform.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous avez désormais activé l’application pour les services de géolocalisation à l’aide de l’extension Places dans le SDK Mobile Experience Platform.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Mappage des données à Adobe Analytics](analytics.md)**

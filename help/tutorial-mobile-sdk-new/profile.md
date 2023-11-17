@@ -3,9 +3,9 @@ title: Collecte des données de profil
 description: Découvrez comment collecter des données de profil dans une application mobile.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Dans cette leçon, vous allez :
 
 Il serait utile pour le ciblage et/ou la personnalisation dans l’application de savoir rapidement si un utilisateur a effectué un achat dans le passé ou récemment. Définissons-le dans l’application Luma.
 
-1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func updateUserAttribute(attributeName: String, attributeValue: String)` de la fonction Ajoutez le code suivant :
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func updateUserAttributes(attributeName: String, attributeValue: String)` de la fonction Ajoutez le code suivant :
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -56,11 +56,11 @@ Il serait utile pour le ciblage et/ou la personnalisation dans l’application d
 
    1. Utilise la variable `profileMap` comme valeur du dictionnaire `attributeDict` du paramètre [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) appel API.
 
-1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** dans le navigateur de projet Xcode et recherchez l’appel à `updateUserAttributes` (dans le code des Achats ; <img src="assets/purchase.png" width="15" /> button). Ajoutez le code suivant :
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** dans le navigateur de projet Xcode et recherchez l’appel à `updateUserAttributes` (dans le code des Achats ; <img src="assets/purchase.png" width="15" /> ). Ajoutez le code suivant :
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -98,11 +98,11 @@ Vous trouverez de la documentation supplémentaire [here](https://developer.adob
 
    1. Déplacez l’icône Assurance vers la gauche.
    1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets.
-   1. Pour ouvrir la feuille de connexion, sélectionnez la <img src="assets/login.png" width="15" /> button.
+   1. Pour ouvrir la feuille de connexion, sélectionnez la <img src="assets/login.png" width="15" /> bouton .
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. Pour insérer un e-mail aléatoire et un ID de client, sélectionnez la variable <img src="assets/insert.png" width="15" /> button .
+   1. Pour insérer un e-mail aléatoire et un ID de client, sélectionnez la variable <img src="assets/insert.png" width="15" /> bouton .
    1. Sélectionner **[!UICONTROL Connexion]**.
 
       <img src="./assets/mobile-app-events-2.png" width="300">
@@ -115,7 +115,7 @@ Vous trouverez de la documentation supplémentaire [here](https://developer.adob
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. Revenir à **[!UICONTROL Accueil]** écran. Vous devriez voir un badge ajouté <img src="assets/person-badge-icon.png" width="15" />.
+   1. Revenir à **[!UICONTROL Accueil]** écran. Vous devriez constater qu’un badge a été ajouté. <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ Vous trouverez de la documentation supplémentaire [here](https://developer.adob
 
 >[!SUCCESS]
 >
->Vous avez maintenant configuré votre application pour mettre à jour les attributs des profils dans le réseau Edge et (lors de la configuration) avec Adobe Experience Platform.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous avez maintenant configuré votre application pour mettre à jour les attributs des profils dans le réseau Edge et (lors de la configuration) avec Adobe Experience Platform.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Utiliser des emplacements](places.md)**

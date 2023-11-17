@@ -3,7 +3,7 @@ title: Suivi des données d’événement
 description: Découvrez comment effectuer le suivi des données d’événement dans une application mobile.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 3%
@@ -171,7 +171,7 @@ Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commer
       1. Pour <img src="assets/saveforlater.png" width="15" /> :
 
          ```swift
-         // Send saveForLaters commerce experience event
+         // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -185,13 +185,13 @@ Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commer
       1. Pour <img src="assets/purchase.png" width="20" /> :
 
          ```swift
-         // Send purchases commerce experience event
+         // Send purchase commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
 >[!TIP]
 >
->Si vous développez pour Android, utilisez Map (`java.util.Map`) comme interface de base pour construire votre charge utile XDM.
+>Si vous développez pour Android™, utilisez Map (`java.util.Map`) comme interface de base pour construire votre charge utile XDM.
 
 
 ### Groupes de champs personnalisés
@@ -205,9 +205,9 @@ Imaginez que vous souhaitiez effectuer le suivi des affichages d’écran et des
 
   >[!NOTE]
   >
-  >* Les groupes de champs standard commencent toujours à la racine de l’objet.
+  * Les groupes de champs standard commencent toujours à la racine de l’objet.
   >
-  >* Les groupes de champs personnalisés commencent toujours sous un objet unique à votre organisation Experience Cloud, `_techmarketingdemos` dans cet exemple.
+  * Les groupes de champs personnalisés commencent toujours sous un objet unique à votre organisation Experience Cloud, `_techmarketingdemos` dans cet exemple.
 
   Pour l’événement d’interaction de l’application, vous devez créer un objet du type :
 
@@ -338,10 +338,10 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 
 ## Validation
 
-1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter votre simulateur ou votre périphérique à l’aide d’Assurance.
 
    1. Déplacez l’icône Assurance vers la gauche.
-   1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets et vérifiez que vous voyez une **[!UICONTROL ECID]**, **[!UICONTROL Email]** et **[!UICONTROL Identifiant CRM]** dans l’écran Accueil .
+   1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets et vérifiez que vous voyez une **[!UICONTROL ECID]**, **[!UICONTROL Email]**, et **[!UICONTROL Identifiant CRM]** dans l’écran Accueil .
    1. Sélectionner **[!DNL Products]** dans la barre d’onglets.
    1. Sélectionnez un produit.
    1. Sélectionner <img src="assets/saveforlater.png" width="15" />.
@@ -367,15 +367,17 @@ Vous devez maintenant disposer de tous les outils pour commencer à ajouter la c
 
 >[!TIP]
 >
->Consultez la section [application terminée](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) pour plus d’exemples.
+Consultez la section [application terminée](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) pour plus d’exemples.
 
 
 ## Envoi d’événements à Analytics et Platform
 
-Maintenant que vous avez collecté les événements et que vous les avez envoyés à Platform Edge Network, ils sont envoyés aux applications et services configurés dans votre [datastream](create-datastream.md). Dans les leçons ultérieures, vous mappez ces données avec [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) et d’autres solutions Adobe Experience Cloud telles que [Adobe Target](target.md) et Adobe Journey Optimizer.
+Maintenant que vous avez collecté les événements et que vous les avez envoyés à Platform Edge Network, ils sont envoyés aux applications et services configurés dans votre [datastream](create-datastream.md). Dans les leçons ultérieures, vous mappez ces données avec [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md)et d’autres solutions Adobe Experience Cloud telles que [Adobe Target](target.md) et Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >
->Vous avez maintenant configuré votre application pour effectuer le suivi des événements de commerce, d’interaction d’application et de suivi d’écran sur le réseau Adobe Experience Platform Edge et tous les services que vous avez définis dans votre flux de données.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+Vous avez maintenant configuré votre application pour effectuer le suivi des événements de commerce, d’interaction d’application et de suivi d’écran sur le réseau Adobe Experience Platform Edge et tous les services que vous avez définis dans votre flux de données.
+>
+Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Gestion des WebViews](web-views.md)**

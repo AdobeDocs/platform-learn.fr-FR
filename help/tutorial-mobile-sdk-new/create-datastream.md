@@ -4,10 +4,10 @@ description: Découvrez comment créer un flux de données dans Experience Platf
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 8%
+source-wordcount: '444'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Découvrez comment créer un flux de données dans Experience Platform.
 
-Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers Platform Edge Network sont acheminées vers les applications et services Adobe Experience Cloud de manière appropriée. Pour plus d’informations, voir [documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr) ou ceci [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=fr).
+Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers Platform Edge Network sont acheminées vers les applications et services Adobe Experience Cloud de manière appropriée. Pour plus d’informations, voir [documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) ou ceci [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=fr).
 
 ![Architecture](assets/architecture.png)
 
@@ -55,7 +55,7 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
 
 ## Ajout de services
 
-Lorsque vous exécutez le (facultatif) [Analytics](analytics.md) et [Experience Platform](platform.md) leçons de ce tutoriel, vous ajoutez des services à votre flux de données pour vous assurer que lorsque le SDK Mobile Platform envoie des données au réseau Edge, le flux de données les transfère vers les services configurés.
+Lorsque vous accédez à la section (facultatif) [Analytics](analytics.md) et [Experience Platform](platform.md) leçons de ce tutoriel, vous ajoutez des services à votre flux de données afin que les données envoyées à Platform Edge Network soient transférées vers ces applications.
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations sur les paramètres du flux de données, consultez la documentation [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations sur les paramètres du flux de données, consultez la documentation [here](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr).
 
 Lors de la mise en oeuvre du SDK Mobile Platform dans votre propre application, vous devez créer trois flux de données à mapper à vos trois environnements de balises (développement, évaluation et production). Si vous utilisez le SDK Platform Mobile avec des applications basées sur Platform telles qu’Adobe Real-time Customer Data Platform ou Adobe Journey Optimizer, vous devez veiller à créer ces flux de données dans les environnements de test appropriés.
 
 >[!SUCCESS]
 >
->Vous devez maintenant utiliser un flux de données pour le reste du tutoriel.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Vous devez maintenant utiliser un flux de données pour le reste du tutoriel.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Configuration d’une propriété de balise](configure-tags.md)**

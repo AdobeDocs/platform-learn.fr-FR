@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2734'
+source-wordcount: '2701'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 4%
 
 Découvrez comment créer des notifications push pour les applications mobiles avec le SDK Mobile Experience Platform et Journey Optimizer.
 
-Journey Optimizer vous permet de créer des parcours et d’envoyer des messages à des audiences ciblées. Avant d’envoyer des notifications push avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données des notifications push dans Journey Optimizer, reportez-vous au [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Journey Optimizer vous permet de créer des parcours et d’envoyer des messages à des audiences ciblées. Avant d’envoyer des notifications push avec Journey Optimizer, vous devez vous assurer que les configurations et intégrations appropriées sont en place. Pour comprendre le flux de données des notifications push dans Journey Optimizer, reportez-vous au [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
 
 ![Architecture](assets/architecture-ajo.png)
 
@@ -30,12 +30,12 @@ Journey Optimizer vous permet de créer des parcours et d’envoyer des messages
 
 * Création et exécution de l’application avec les SDK installés et configurés.
 * Configurez l’application pour Adobe Experience Platform.
-* Accès à Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Journey Optimizer suivantes.
+* Accès à Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Journey Optimizer suivantes.
    * Créez une surface d’application.
    * Créez un parcours.
    * Créez un message.
    * Création de préréglages de message.
-* Compte de développeur Apple payant disposant d’un accès suffisant pour créer des certificats, identifiants et clés.
+* **Compte de développeur Apple payant** avec un accès suffisant pour créer des certificats, des identifiants et des clés.
 * Appareil ou simulateur iOS physique à tester.
 
 ## Objectifs d&#39;apprentissage
@@ -117,7 +117,7 @@ Pour vous assurer que les données envoyées de votre application mobile au rés
 
 ### Installation de l’extension de balises Journey Optimizer
 
-Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre à jour votre propriété de balise.
+Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre à jour la propriété de balise.
 
 1. Accédez à **[!UICONTROL Balises]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**,
 1. Ouvrez votre propriété, par exemple **[!DNL Luma Mobile App Tutorial]**.
@@ -159,7 +159,7 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 
 ## Signature
 
-La signature de l’application Luma n’est nécessaire que pour la variable [Créer et envoyer des notifications push](journey-optimizer-push.md) et la variable [Créer et envoyer des messages in-app](journey-optimizer-inapp.md) leçons de ce tutoriel. Ces leçons nécessitent un profil de configuration Apple qui **nécessite un compte de développeur Apple payant**.
+La signature de l’application Luma est nécessaire pour envoyer des notifications push et **nécessite un compte de développeur Apple payant**.
 
 Pour mettre à jour la signature de votre application :
 
@@ -183,11 +183,11 @@ Pour mettre à jour la signature de votre application :
 >
 >Pour mettre en oeuvre et tester une notification push dans une application iOS, vous devez disposer d’un **paid** Compte de développeur Apple. Si vous ne disposez pas d’un compte de développeur Apple payant, vous pouvez ignorer le reste de cette leçon.
 
-1. Dans Xcode, sélectionnez **[!DNL Luma]** de la **[!UICONTROL CIBLES]** , sélectionnez la variable **[!UICONTROL Signature et fonctionnalités]** , sélectionnez l’onglet **[!UICONTROL + Fonctionnalité]** , puis sélectionnez **[!UICONTROL Notifications push]**. Votre application pourra ainsi recevoir des notifications push.
+1. Dans Xcode, sélectionnez **[!DNL Luma]** de la **[!UICONTROL CIBLES]** , sélectionnez la variable **[!UICONTROL Signature et fonctionnalités]** , sélectionnez l’onglet **[!UICONTROL + Fonctionnalité]** , puis sélectionnez **[!UICONTROL Notifications push]**. Cela permet à votre application de recevoir des notifications push.
 
-1. Vous devrez ensuite ajouter une extension de notification à l’application. Revenez au **[!DNL General]** et sélectionnez l’option **[!UICONTROL +]** en bas de la page **[!UICONTROL CIBLES]** .
+1. Vous devez ensuite ajouter une extension de notification à l’application. Revenez au **[!DNL General]** et sélectionnez l’option **[!UICONTROL +]** en bas de la page **[!UICONTROL CIBLES]** .
 
-1. Vous serez invité à sélectionner le modèle de votre nouvelle cible. Sélectionner **[!UICONTROL Extension du service de notification]** puis sélectionnez **[!UICONTROL Suivant]**.
+1. Vous êtes invité à sélectionner le modèle correspondant à votre nouvelle cible. Sélectionner **[!UICONTROL Extension du service de notification]** puis sélectionnez **[!UICONTROL Suivant]**.
 
 1. Dans la fenêtre suivante, utilisez `NotificationExtension` comme nom de l’extension et cliquez sur le bouton **[!UICONTROL Terminer]** bouton .
 
@@ -205,7 +205,7 @@ Comme indiqué dans les leçons précédentes, l’installation d’une extensio
 >Si vous avez terminé la [Installation des SDK](install-sdks.md) , le SDK est déjà installé et vous pouvez ignorer cette étape.
 >
 
-1. Dans Xcode, assurez-vous que [Messagerie AEP](https://github.com/adobe/aepsdk-messaging-ios.git) est ajouté à la liste des modules dans les dépendances de modules. Voir [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Dans Xcode, assurez-vous que [Messagerie AEP](https://github.com/adobe/aepsdk-messaging-ios) est ajouté à la liste des modules dans les dépendances de modules. Voir [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** dans le navigateur de projet Xcode.
 1. Assurez-vous que `AEPMessaging` fait partie de votre liste d’importations.
 
@@ -304,7 +304,7 @@ Les événements dans Journey Optimizer vous permettent de déclencher vos parco
    1. Sélectionnez **[!UICONTROL Enregistrer]**.
       ![Étape 2 de la modification de l’événement](assets/ajo-edit-event2.png)
 
-Vous venez de créer une configuration d’événement basée sur le schéma d’événements d’expérience d’application mobile que vous avez créé précédemment dans le cadre de ce tutoriel. Cette configuration d’événement filtrera les événements d’expérience entrants à l’aide de votre type d’événement spécifique (`application.test`), afin que seuls les événements de ce type spécifique, lancés à partir de votre application mobile, déclenchent le parcours que vous créez à l’étape suivante. Dans un scénario réel, vous souhaiterez peut-être envoyer des notifications push depuis un service externe. Toutefois, les mêmes concepts s’appliquent : de l’application externe, envoyez un événement d’expérience dans un Experience Platform contenant des champs spécifiques sur lesquels vous pouvez appliquer des conditions avant que ces événements ne déclenchent un parcours.
+Vous venez de créer une configuration d’événement basée sur le schéma d’événements d’expérience d’application mobile que vous avez créé précédemment dans le cadre de ce tutoriel. Cette configuration d’événement filtrera les événements d’expérience entrants à l’aide de votre type d’événement spécifique (`application.test`), de sorte que seuls les événements de ce type spécifique, lancés à partir de votre application mobile, déclencheront le parcours que vous créez à l’étape suivante. Dans un scénario réel, vous souhaiterez peut-être envoyer des notifications push depuis un service externe. Toutefois, les mêmes concepts s’appliquent : depuis l’application externe, envoyez un événement d’expérience dans un Experience Platform contenant des champs spécifiques sur lesquels vous pouvez appliquer des conditions avant que ces événements ne déclenchent un parcours.
 
 ### Création du parcours
 
@@ -425,6 +425,8 @@ Vous devriez maintenant disposer de tous les outils pour gérer les notification
 
 >[!SUCCESS]
 >
->Vous avez maintenant activé l’application pour la notification push à l’aide de Journey Optimizer et de l’extension Journey Optimizer pour le SDK Mobile Experience Platform.<br/>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous avez maintenant activé l’application pour la notification push à l’aide de Journey Optimizer et de l’extension Journey Optimizer pour le SDK Mobile Experience Platform.
+>
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Créer et envoyer des messages in-app](journey-optimizer-inapp.md)**

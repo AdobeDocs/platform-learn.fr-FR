@@ -3,16 +3,16 @@ title: Installation et configuration de l’extension de balise du SDK Web Adobe
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 13%
+source-wordcount: '618'
+ht-degree: 15%
 
 ---
 
 # Installation de l’extension de balise du SDK Web Adobe Experience Platform
 
-Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette extension de balise est la suivante : _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et Journey Optimizer !
+Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette extension de balise est _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et Journey Optimizer !
 
 ## Objectifs d&#39;apprentissage
 
@@ -26,22 +26,22 @@ Découvrez comment installer et configurer l’extension de balise SDK Web Platf
 
 Vous devez avoir terminé les leçons précédentes de ce tutoriel :
 
-* [Configuration des autorisations](configure-permissions.md)
-* [Configuration d’un schéma XDM](configure-schemas.md)
+* [Configurer les autorisations](configure-permissions.md)
+* [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
-* [Configurer un flux de données](configure-datastream.md)
+* [Configurer un trains de données](configure-datastream.md)
 
 ## Installation de l’extension SDK Web Experience Platform
 
-### Ajout d’une propriété
+### Ajouter une propriété
 
 Tout d’abord, vous devez disposer d’une propriété de balise. Une propriété est un conteneur pour l’ensemble du code JavaScript, des règles et d’autres fonctionnalités nécessaires pour collecter des détails à partir d’une page web et les envoyer à différents emplacements.
 
 Créez une propriété de balise pour le tutoriel :
 
-1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target=&quot;_blank&quot;}
-1. Sélectionner **[!UICONTROL Balises]** dans le volet de navigation de gauche
-1. Sélectionnez la **[!UICONTROL Nouvelle propriété]** button
+1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target="_blank"}
+1. Sélectionner **[!UICONTROL Balises]** dans la navigation de gauche
+1. Sélectionnez la variable **[!UICONTROL Nouvelle propriété]** button
    ![Ajouter une nouvelle propriété](assets/websdk-property-addNewProperty.png)
 1. Comme la variable **[!UICONTROL Nom]**, saisissez `Web SDK Course` (ajoutez votre nom à la fin, si plusieurs personnes de votre société suivent ce tutoriel)
 1. Comme la variable **[!UICONTROL Domaines]**, saisissez `enablementadobe.com` (expliqué ultérieurement)
@@ -53,7 +53,7 @@ Créez une propriété de balise pour le tutoriel :
 Avec votre schéma XDM, votre flux de données et votre propriété de balise maintenant créés, vous êtes prêt à installer l’extension SDK Web Platform :
 
 1. Ouvrez la nouvelle propriété de balise .
-1. Accédez à **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**
+1. Accédez à **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**.
 1. Recherchez `Adobe Experience Platform Web SDK`.
 1. Sélectionner **[!UICONTROL Installer]**
 
@@ -85,7 +85,7 @@ Maintenant que vous avez installé le SDK Web de Platform et que vous l’avez a
 >
 >Bien que vous n’ayez pas configuré un CNAME dans la variable [!UICONTROL Domaine Edge] dans cette leçon, Adobe vous recommande d’utiliser un CNAME lorsque vous implémentez le SDK Web Platform sur votre propre site web. Bien quʼune implémentation CNAME ne permette pas dʼallonger la durée de vie des cookies, elle offre dʼautres avantages. Parmi ceux-ci, citons les bloqueurs de publicités et les navigateurs moins utilisés qui empêchent lʼenvoi des données aux domaines quʼils considèrent être des dispositifs de suivi. Dans ce cas, lʼutilisation dʼun CNAME peut éviter que votre collecte de données ne soit interrompue pour les utilisateurs qui se servent de ces outils.
 
-Pour plus d’informations sur chaque section de l’extension, voir [Configuration de l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)
+Pour plus d’informations sur chaque section de l’extension, voir [Configuration de l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=fr)
 
 
 

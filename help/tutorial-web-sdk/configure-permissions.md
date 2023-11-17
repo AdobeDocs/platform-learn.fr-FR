@@ -3,9 +3,9 @@ title: Configuration des autorisations pour le tutoriel
 description: Découvrez comment demander l’accès au SDK Web Experience Platform et configurer l’autorisation requise pour terminer le tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,7 @@ Ces fonctionnalités doivent être disponibles pour tous les clients Experience 
 * Accès à **[!UICONTROL Gestion des schémas]** et **[!UICONTROL Affichage des schémas]** under **[!UICONTROL Modélisation des données]**
 * Accès à **[!UICONTROL Gestion des espaces de noms d’identité]** et **[!UICONTROL Affichage des espaces de noms d’identité]** under **[!UICONTROL Identity Management]**
 * Accès à **[!UICONTROL Gestion des flux de données]** et **[!UICONTROL Affichage des flux de données]** under **[!UICONTROL Collecte de données]**
-* Si vous êtes client d’une application basée sur Platform et que vous allez exécuter la variable [Configuration d’un Experience Platform](setup-experience-platform.md) vous devez également disposer des éléments suivants :
+* Si vous êtes client d’une application basée sur Platform et que vous allez exécuter la variable [Configuration d’un Experience Platform](setup-experience-platform.md) leçon, vous devez également disposer des éléments suivants :
    * Accès à un **development** sandbox.
    * Tous les éléments d’autorisation sous **[!UICONTROL Data Management]**, et **[!UICONTROL Gestion des profils]**:
 
@@ -44,7 +44,7 @@ Pour la leçon facultative Adobe Target, vous devez disposer des [Éditeur ou ap
 
 ## Adobe Audience Manager
 
-* Pour la leçon d’Audience Manager facultative, vous devez avoir accès à la création, à la lecture et à l’écriture de caractéristiques, de segments et de destinations. Pour plus d’informations, reportez-vous au tutoriel sur [Contrôle d’accès en fonction du rôle de l’Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Pour la leçon d’Audience Manager facultative, vous devez avoir accès à la création, à la lecture et à l’écriture de caractéristiques, de segments et de destinations. Pour plus d’informations, consultez le tutoriel sur [Contrôle d’accès en fonction du rôle de l’Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
 
 Vous êtes maintenant prêt à démarrer les étapes de configuration initiales.
 
