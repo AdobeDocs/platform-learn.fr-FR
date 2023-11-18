@@ -3,7 +3,7 @@ title: Collecte des données de profil
 description: Découvrez comment collecter des données de profil dans une application mobile.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 4%
@@ -39,7 +39,7 @@ Dans cette leçon, vous allez :
 
 Il serait utile pour le ciblage et/ou la personnalisation dans l’application de savoir rapidement si un utilisateur a effectué un achat dans le passé ou récemment. Définissons-le dans l’application Luma.
 
-1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func updateUserAttributes(attributeName: String, attributeValue: String)` de la fonction Ajoutez le code suivant :
+1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** dans le navigateur de projet Xcode et recherchez le `func updateUserAttribute(attributeName: String, attributeValue: String)` de la fonction Ajoutez le code suivant :
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Il serait utile pour le ciblage et/ou la personnalisation dans l’application d
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -86,7 +86,7 @@ Une fois que vous avez mis à jour l’attribut d’un utilisateur, il est dispo
 
    Ce code :
 
-   1. Appelle le [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) avec l’API `iPaidUser` nom d’attribut comme élément unique dans `attributeNames` tableau.
+   1. Appelle le [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) avec l’API `isPaidUser` nom d’attribut comme élément unique dans `attributeNames` tableau.
    1. Vérifie ensuite la valeur de la variable `isPaidUser` et quand `yes`, place un badge sur l’objet <img src="assets/paiduser.png" width="20" /> dans la barre d’outils supérieure droite.
 
 Vous trouverez de la documentation supplémentaire [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
