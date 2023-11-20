@@ -2,16 +2,16 @@
 title: Changement d’environnements de balise avec le débogueur Adobe Experience Cloud
 description: Découvrez comment utiliser l’Experience Cloud Debugger pour charger différents codes incorporés de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 40%
+source-wordcount: '623'
+ht-degree: 37%
 
 ---
 
 # Changement d’environnements de balise avec l’Experience Cloud Debugger
 
-Dans cette leçon, vous utiliserez la variable [Extension Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) pour remplacer la propriété de balise codée en dur sur la propriété [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) avec votre propre propriété.
+Dans cette leçon, vous utiliserez la variable [Extension Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur la propriété [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) avec votre propre propriété.
 
 Cette technique, appelée changement d’environnement, vous sera utile ultérieurement lorsque vous utiliserez des balises sur votre propre site web. Vous pourrez charger votre site web de production dans votre navigateur, mais avec votre *development* environnement de balises. Cela vous permet d’effectuer et de valider des modifications de balises en toute confiance, indépendamment de vos mises à jour de code standard.  Après tout, cette séparation entre les mises à jour de balises marketing et les mises à jour de code standard est l’une des principales raisons pour lesquelles les clients utilisent des balises en premier lieu !
 
@@ -20,9 +20,8 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 ## Objectifs d’apprentissage
 
@@ -47,7 +46,7 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 
 1. Ouvrez le [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dans votre navigateur Chrome.
 
-1. Ouvrez l’[extension Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) en cliquant sur l’icône ![icône Debugger](images/icon-debugger.png).
+1. Ouvrez le [Extension Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en cliquant sur le bouton ![Icône Debugger](images/icon-debugger.png) icon
 
    ![Clic sur l’icône Debugger](images/switchEnvironments-openDebugger.png)
 

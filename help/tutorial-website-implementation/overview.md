@@ -3,10 +3,10 @@ title: Mise en oeuvre de l’Experience Cloud dans les sites web avec des balise
 description: La mise en oeuvre de l’Experience Cloud dans les sites web avec balises est le point de départ idéal pour les développeurs front-end ou les spécialistes du marketing technique qui souhaitent apprendre à mettre en oeuvre les solutions Adobe Experience Cloud sur leur site web.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 43%
+source-wordcount: '896'
+ht-degree: 41%
 
 ---
 
@@ -80,7 +80,7 @@ Dans ces leçons, vous allez mettre en œuvre Adobe Experience Cloud dans un f
 ## Obtention des outils
 
 1. Puisque vous utiliserez certaines extensions spécifiques au navigateur, nous vous recommandons de suivre le tutoriel en utilisant le [navigateur web Chrome](https://www.google.com/intl/fr/chrome/)
-1. Ajoutez l’extension [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) à votre navigateur Chrome.
+1. Ajoutez la variable [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) extension à votre navigateur Chrome
 1. Copie de l’exemple de code de page HTML
 
    +++Exemple de code de page HTML

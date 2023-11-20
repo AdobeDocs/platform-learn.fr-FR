@@ -3,7 +3,7 @@ title: Ajout d’Adobe Target avec des balises
 description: Découvrez comment implémenter Adobe Target à l’aide de balises avec at.js, une requête de chargement de page, des paramètres, une requête de commande et un code d’en-tête/de pied de page personnalisé. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -111,7 +111,7 @@ Dans ce premier exercice, nous allons ajouter l’extension et examiner les conf
 **Ajout de l’extension**
 
 1. Accédez à **[!UICONTROL Extensions > Catalogue]**.
-1. Saisissez `target` dans le filtre pour localiser rapidement les extensions Adobe Target. Il existe deux extensions : Adobe Target et Adobe Target v2. Ce tutoriel utilisera la version v2 de l’extension, qui utilise la dernière version d’at.js (actuellement 2.x), idéale pour les sites web traditionnels et les applications d’une seule page (SPA).
+1. Saisissez `target` dans le filtre pour localiser rapidement les extensions Adobe Target. Il existe deux extensions : Adobe Target et Adobe Target v2. Ce tutoriel utilisera la version v2 de l’extension, qui utilise la dernière version d’at.js (actuellement 2.x), idéale pour les sites web traditionnels et les applications monopages.
 1. Cliquez sur **[!UICONTROL Installer]**.
 
    ![Installation de l’extension Target v2](images/target-installExtension.png)
@@ -136,7 +136,7 @@ Vous pouvez utiliser la règle `All Pages - Library Loaded` que vous avez créé
 
 **Chargement de Target**
 
-1. Accédez au **[!UICONTROL Règles]** dans le volet de navigation de gauche, puis cliquez sur `All Pages - Library Loaded` pour ouvrir l’éditeur de règles
+1. Accédez au **[!UICONTROL Règles]** dans la navigation de gauche, puis cliquez sur `All Pages - Library Loaded` pour ouvrir l’éditeur de règles
 
    ![Ouverture de la règle chargée Bibliothèque - pages les Toutes](images/target-editRule.png)
 
@@ -152,7 +152,7 @@ Vous pouvez utiliser la règle `All Pages - Library Loaded` que vous avez créé
 
    ![Cliquez sur modifications les Conserver](images/target-addLoadTargetAction-keepChanges.png)
 
-Target Charger`Load Target` ajoutée, at.js se charge sur la page. Toutefois, aucune requête Target ne se déclenche tant que nous n’avons pas ajouté l’action `Fire Page Load Request`.
+Avec l’action `Load Target` ajoutée, at.js se charge sur la page. Toutefois, aucune requête Target ne se déclenche tant que nous n’avons pas ajouté l’action `Fire Page Load Request`.
 
 **Déclenchement de la requête de chargement de page**
 
@@ -225,7 +225,7 @@ Ajoutons l’élément de données `Page Name` que nous avons créé plus tôt d
 
 **Ajout du paramètre de requête**
 
-1. Accédez au **[!UICONTROL Règles]** dans le volet de navigation de gauche, puis cliquez sur `All Pages - Library Loaded` pour ouvrir l’éditeur de règles.
+1. Accédez au **[!UICONTROL Règles]** dans la navigation de gauche, puis cliquez sur `All Pages - Library Loaded` pour ouvrir l’éditeur de règles.
 
    ![Ouverture de la règle chargée Bibliothèque - pages les Toutes](images/target-editRule.png)
 
@@ -301,7 +301,7 @@ La collecte des ID de client avec Adobe Experience Platform Identity Service f
 
 Il est absolument nécessaire de définir l’ID de client dans l’action `Set Customer IDs` d’Identity Service avant de déclencher la demande de chargement de page. Pour ce faire, assurez-vous de disposer des fonctionnalités suivantes sur votre site :
 
-* L’ID de client doit être disponible sur la page avant le code incorporé des balises.
+* L’ID de client doit être disponible sur la page avant les balises Code incorporé
 * L’extension Adobe Experience Platform Identity Service doit être installée.
 * Vous devez utiliser l’action `Set Customer IDs` dans une règle qui se déclenche à l’événement « (page la de Haut chargée Bibliothèque) ».
 * Utilisez l’action `Fire Page Load Request` dans une règle qui se déclenche *après l’action* « client de ID des Définition ».
@@ -354,7 +354,7 @@ Le jeton de propriété est un paramètre réservé utilisé avec la fonctionnal
 Les propriétés de Target sont similaires aux propriétés de balise et aux suites de rapports Analytics. Une entreprise qui possède plusieurs marques, sites web et équipes marketing peut utiliser une propriété Target, une propriété de balise et une suite de rapports Analytics différentes pour chaque site web ou application mobile. Les propriétés des balises se différencient par leur code incorporé, les suites de rapports Analytics par leur identifiant de suite de rapports et les propriétés Target par leur paramètre de jeton de propriété.
 
 
-Le jeton de propriété doit être implémenté à l’aide d’une action de code personnalisé dans les balises avec la propriété `targetPageParams()` fonction . Si vous implémentez plusieurs sites avec des valeurs at_property différentes avec une seule propriété de balise, vous pouvez gérer la valeur at_property par le biais d’un élément de données.
+Le jeton de propriété doit être implémenté à l’aide d’une action de code personnalisé dans les balises avec la propriété `targetPageParams()` de la fonction Si vous implémentez plusieurs sites avec des valeurs at_property différentes avec une seule propriété de balise, vous pouvez gérer la valeur at_property par le biais d’un élément de données.
 
 Voici un exercice facultatif, si vous êtes un client Target Premium et si vous souhaitez mettre en œuvre un jeton de propriété dans votre propriété de tutoriel :
 
@@ -362,13 +362,13 @@ Voici un exercice facultatif, si vous êtes un client Target Premium et si vous 
 
 1. Accédez à **[!UICONTROL Administration > Propriétés]**
 
-1. Identifiez la propriété à utiliser, puis cliquez sur le bouton **[!UICONTROL &lt;/>]** (ou créer une propriété)
+1. Identifiez la propriété que vous souhaitez utiliser, puis cliquez sur le bouton **[!UICONTROL &lt;/>]** (ou créer une propriété)
 
 1. Copiez le fragment de code dans le `<script></script>` dans le presse-papiers ;
 
    ![Obtention du jeton de propriété à partir de l’interface Adobe Target](images/target-addATProperty-targetProperties.png)
 
-1. Dans l’onglet de vos balises, accédez à la **[!UICONTROL Règles]** dans le volet de navigation de gauche, puis cliquez sur `All Pages - Library Loaded` pour ouvrir l’éditeur de règles.
+1. Dans l’onglet de vos balises, accédez à la **[!UICONTROL Règles]** dans la navigation de gauche, puis cliquez sur `All Pages - Library Loaded` pour ouvrir l’éditeur de règles.
 
    ![Toutes les pages - Bibliothèque chargée](images/target-editRule.png)
 
@@ -438,7 +438,7 @@ Ajoutons les éléments de données et la règle dont nous avons besoin pour dé
 
 **Création de l’élément de données pour l’ID de commande**
 
-1. Cliquez sur **[!UICONTROL Éléments de données]** dans le volet de navigation de gauche
+1. Cliquez sur **[!UICONTROL Éléments de données]** dans la navigation de gauche
 1. Cliquez sur **[!UICONTROL Ajouter un élément de données]**.
 1. Nommez l’élément de données `Order Id`.
 1. Sélectionnez **[!UICONTROL Type d’élément de données > Variable JavaScript]**.
@@ -482,12 +482,12 @@ Nous devons maintenant créer une règle pour déclencher la requête de confirm
 
 **Création de la règle pour la page de confirmation de commande**
 
-1. Cliquez sur **[!UICONTROL Règles]** dans le volet de navigation de gauche
+1. Cliquez sur **[!UICONTROL Règles]** dans la navigation de gauche
 1. Cliquez sur **[!UICONTROL Ajouter une règle]**.
 1. Donnez à la règle le nom `Order Confirmation Page - Library Loaded - 60`.
 1. Cliquez sur **[!UICONTROL Événements > Ajouter]**.
    1. Sélectionnez **[!UICONTROL Type d’événement > Bibliothèque chargée (Haut de page)]**.
-   1. Sous **[!UICONTROL Options avancées]**, modifiez la variable `Order` to `60` afin qu’il se déclenche après l’événement `Load Target` action (qui se trouve dans notre `All Pages - Library Loaded` où `Order` est défini sur `50`)
+   1. Sous **[!UICONTROL Options avancées]**, modifiez la variable `Order` to `60` afin qu’il se déclenche après l’événement `Load Target` action (qui se trouve dans notre `All Pages - Library Loaded` rule where `Order` est défini sur `50`)
    1. Cliquez sur **[!UICONTROL Conserver les modifications]**
 1. Cliquez sur **[!UICONTROL Conditions > Ajouter]**.
    1. Sélectionnez **[!UICONTROL Type de condition > Chemin sans chaîne de requête]**.
@@ -562,14 +562,14 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 ### Requêtes personnalisées
 
-Il existe de rares cas où vous devez effectuer des requêtes Target autres que la requête de chargement de page et de confirmation de commande. Par exemple, les données importantes que vous souhaitez utiliser pour la personnalisation ne sont pas définies sur la page avant les codes incorporés de balise. Elles peuvent être codées en dur au bas de la page ou être renvoyées à partir d’une requête API asynchrone. Ces données peuvent être envoyées à Target à l’aide d’une requête supplémentaire, bien qu’il ne soit pas recommandé d’utiliser cette requête pour la diffusion de contenu puisque la page sera déjà visible. Ces données peuvent être utilisées pour enrichir le profil du visiteur en vue d’une utilisation ultérieure (à l’aide des paramètres de profil) ou pour compléter le catalogue Recommendations.
+Il existe de rares cas où vous devez effectuer des requêtes Target autres que la requête de chargement de page et de confirmation de commande. Par exemple, les données importantes que vous souhaitez utiliser pour la personnalisation ne sont pas définies sur la page avant les codes incorporés de balise. Elles peuvent être codées en dur au bas de la page ou être renvoyées à partir d’une requête API asynchrone. Ces données peuvent être envoyées à Target à l’aide d’une requête supplémentaire, bien qu’il ne soit pas recommandé d’utiliser cette requête pour la diffusion de contenu, puisque la page sera déjà visible. Ces données peuvent être utilisées pour enrichir le profil du visiteur en vue d’une utilisation ultérieure (à l’aide des paramètres de profil) ou pour compléter le catalogue Recommendations.
 
 Dans ces circonstances, utilisez l’action Code personnalisé dans l’extension Core pour déclencher une requête à l’aide des méthodes
 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) et [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Cette manipulation est similaire à ce que vous avez effectué dans l’exercice [Requête de confirmation de commande](#order-confirmation-request), mais vous utilisez un autre nom de requête et non des paramètres de commande spéciaux. Veillez à utiliser l’action **[!UICONTROL Charger Target]** avant d’adresser des requêtes Target à partir du code personnalisé.
 
 ## En-tête et pied de page de bibliothèque
 
-L’écran Modifier at.js de l’interface utilisateur de Target contient des emplacements dans lesquels vous pouvez coller le code JavaScript personnalisé qui s’exécute immédiatement avant ou après le fichier at.js. L’en-tête de bibliothèque est parfois utilisé pour remplacer les paramètres at.js par le biais de la fonction [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) ou pour transmettre des données provenant de tiers en utilisant la fonction [Fournisseurs de données](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). Le pied de page de la bibliothèque est parfois utilisé pour ajouter des détecteurs [d’événements personnalisés at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html).
+L’écran Modifier at.js de l’interface utilisateur de Target contient des emplacements dans lesquels vous pouvez coller le code JavaScript personnalisé qui s’exécute immédiatement avant ou après le fichier at.js. L’en-tête de bibliothèque est parfois utilisé pour remplacer les paramètres at.js par le biais de la fonction [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) ou pour transmettre des données provenant de tiers en utilisant la fonction [Fournisseurs de données](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). Le pied de page de la bibliothèque est parfois utilisé pour ajouter des détecteurs [d’événements personnalisés at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html).
 
 Pour répliquer cette fonctionnalité dans des balises, utilisez simplement l’action Custom Code (Code personnalisé) dans l’extension Core et séquencez l’action avant (En-tête de bibliothèque) ou après (Pied de page de bibliothèque) l’action Load Target (Charger Target). Cette action peut être effectuée dans la même règle que l’action `Load Target`, comme illustré ci-dessous, ou dans des règles distinctes avec des événements ou des paramètres de commande qui se déclenchent de manière fiable avant ou après la règle contenant `Load Target` :
 

@@ -2,10 +2,10 @@
 title: Publication de la propriété de balise
 description: Découvrez comment publier votre propriété de balise de l’environnement de développement vers les environnements d’évaluation et de production. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 72%
+source-wordcount: '597'
+ht-degree: 70%
 
 ---
 
@@ -18,9 +18,8 @@ Maintenant que vous avez mis en œuvre certaines solutions clés d’Adobe Expe
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 ## Objectifs d’apprentissage
 
@@ -70,20 +69,20 @@ Dans un scénario réel, l’étape suivante du processus consisterait à demand
 
 1. Ouvrez le [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dans votre navigateur Chrome.
 
-1. Ouvrez l’[extension Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) en cliquant sur l’icône ![icône Debugger](images/icon-debugger.png).
+1. Ouvrez le [Extension Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) en cliquant sur le bouton ![Icône Debugger](images/icon-debugger.png) icon
 
    ![Clic sur l’icône Debugger](images/switchEnvironments-openDebugger.png)
 
 1. Accédez à l’onglet Outils.
 
-1. Dans le **[!UICONTROL Adobe Launch > Remplacer le code incorporé de Launch]** collez le code incorporé d’évaluation qui se trouve dans le presse-papiers.
+1. Dans le **[!UICONTROL Adobe Launch > Remplacer le code incorporé de Launch]** collez le code incorporé d’évaluation figurant dans le presse-papiers.
 1. Activez l’option **[!UICONTROL Appliquez-les sur luma.enablementadobe.com]** switch
 
 1. Cliquez sur l’icône de disquette pour enregistrer.
 
    ![Environnement de balises affiché dans Debugger](images/switchEnvironments-debugger-save.png)
 
-1. Actualisez et consultez l’onglet Résumé du débogueur. Sous la section Launch, vous devriez constater que votre propriété d’évaluation est mise en oeuvre et voir le nom de votre propriété (c.-à-d. &quot;Tutoriel sur les balises&quot; ou tout autre élément que vous avez appelé votre propriété) !
+1. Actualisez et consultez l’onglet Résumé du débogueur. Sous la section Launch, vous devriez constater que votre propriété d’évaluation est mise en oeuvre, en indiquant le nom de votre propriété (c’est-à-dire &quot;Tutoriel sur les balises&quot; ou tout autre élément que vous avez appelé votre propriété).
 
    ![Environnement de balises affiché dans Debugger](images/publishing-debugger-staging.png)
 

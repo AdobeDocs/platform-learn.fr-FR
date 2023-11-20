@@ -5,23 +5,23 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 3%
 
 ---
 
 # Mise en oeuvre du consentement avec une plateforme de gestion du consentement (CMP) à l’aide de l’extension SDK Web Platform
 
-De nombreuses réglementations juridiques relatives à la confidentialité ont introduit des exigences de consentement principal et spécifique en ce qui concerne la collecte de données, la personnalisation et d’autres cas d’utilisation marketing. Pour répondre à ces exigences, Adobe Experience Platform vous permet de capturer les informations de consentement dans des profils client individuels et d’utiliser ces préférences comme facteur déterminant dans la manière dont les données de chaque client sont utilisées dans les workflows Platform en aval.
+De nombreuses réglementations juridiques relatives à la confidentialité ont introduit des exigences de consentement actif et spécifique en ce qui concerne la collecte de données, la personnalisation et d’autres cas d’utilisation marketing. Pour répondre à ces exigences, Adobe Experience Platform vous permet de capturer les informations de consentement dans des profils client individuels et d’utiliser ces préférences comme facteur déterminant dans la manière dont les données de chaque client sont utilisées dans les workflows Platform en aval.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
 
 Ce tutoriel explique comment mettre en oeuvre et activer les données de consentement obtenues à partir d’une plateforme de gestion du consentement (CMP) à l’aide de l’extension SDK Web Platform dans Data Collection. Pour ce faire, nous utiliserons à la fois les normes Adobe et les normes de consentement du TCF 2.0 de l’IAB, avec OneTrust ou Sourcepoint comme exemples de CMP.
@@ -40,7 +40,7 @@ Pour la version 2.0 de la norme de consentement de Platform, nous aurons égalem
 
 Ce tutoriel suppose que vous avez accès à la collecte de données et que vous avez créé une propriété Balises côté client avec l’extension SDK Web installée et une bibliothèque de travail créée et créée pour le développement. Ces sujets sont présentés en détail et présentés dans ces documents :
 
-* [Création ou configuration d’une propriété](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
+* [Création ou configuration d’une propriété](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=fr)
 * [Présentation des bibliothèques](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=fr)
 * [Présentation de la publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr)
 
@@ -65,7 +65,7 @@ Après avoir installé l’extension SDK Web Platform dans une propriété Tags,
 La section &quot;Confidentialité&quot; définit le niveau de consentement du SDK si l’utilisateur n’a pas fourni de préférences de consentement auparavant. Cela définit l’état par défaut pour la collecte des données de consentement et d’événement dans le SDK. Le paramètre choisi répond à la question &quot;Que doit faire le SDK si l’utilisateur n’a pas encore fourni de préférences de consentement explicite ?&quot;.
 
 * Dans - Collectez les événements qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.
-* Sortie - Déposez les événements qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.
+* Sortie - Déposez les événements qui se produisent avant que l’utilisateur ne fournisse les préférences de consentement.
 * En attente : événements de file d’attente qui se produisent avant que l’utilisateur ne fournisse ses préférences de consentement.
 * Fourni par l’élément de données
 
@@ -115,7 +115,7 @@ Nous allons créer un élément de données de code personnalisé pour transmett
 
 ![](./images/collect-metadata.png)
 
-Ce groupe de champs Consentements et Détails des préférences contient des champs pour la variable [Type de données XDM Consommations et préférences](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) qui contiendra les données de préférences de consentement que nous envoyons à Platform avec l’extension SDK Web Platform dans notre action de règle. Actuellement, les seules propriétés requises pour mettre en oeuvre Platform Consent Standard 2.0 sont la valeur de collecte (val) et la valeur de temps des métadonnées, surlignée en rouge ci-dessus.
+Ce groupe de champs Consentements et Détails des préférences contient des champs pour la variable [Type de données XDM Consentements et Préférences](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) qui contiendra les données de préférences de consentement que nous envoyons à Platform avec l’extension SDK Web Platform dans notre action de règle. Actuellement, les seules propriétés requises pour mettre en oeuvre Platform Consent Standard 2.0 sont la valeur de collecte (val) et la valeur de temps des métadonnées, surlignée en rouge ci-dessus.
 
 Créons un élément de données pour ces données. Sélectionnez Data Elements (Éléments de données) et le bouton bleu Add Data Element (Ajouter un élément de données). Appelons cela &quot;xdm-consent 2.0&quot; et, à l’aide de l’extension Core, nous sélectionnerons un type de code personnalisé. Vous pouvez saisir ou copier et coller les données suivantes dans la fenêtre de l’éditeur de code personnalisé :
 
@@ -236,7 +236,7 @@ Si vous utilisez la variable [bibliothèque de travail](https://experienceleague
 
 ### Étape 4 : Inspect et validation de la collecte de données
 
-Sur notre site, nous actualisons la page et confirmons la version de bibliothèque dans la variable [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Extension Chrome, dans la section du menu de balises :
+Sur notre site, nous actualisons la page et confirmons la version de bibliothèque dans la variable [Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Extension Chrome, dans la section du menu de balises :
 
 ![](./images/build-date.png)
 

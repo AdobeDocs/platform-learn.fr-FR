@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 43%
+source-wordcount: '214'
+ht-degree: 48%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 43%
    + [Choisissez une option d’hébergement](tags/choose-a-hosting-option.md)
    + [Utiliser des environnements](tags/use-environments.md)
    + [Ajout et configuration d’extensions](tags/add-and-configure-extensions.md)
-   + [Création d’éléments de données](tags/create-data-elements.md)
+   + [Créer des éléments de données](tags/create-data-elements.md)
    + [Créer des règles](tags/build-rules.md)
    + [Création et publication d’une bibliothèque](tags/build-and-publish-a-library.md)
    + [Utilisateurs et autorisations](tags/users-and-permissions.md)
@@ -66,8 +66,3 @@ ht-degree: 43%
    + [Identifiants d’appareils propriétaires](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
    + [Vue d’ensemble](debugger/overview.md)
-   + Experience Cloud Debugger{#experience-cloud}
-      + [Installation du débogueur](debugger/experience-cloud/add-the-extension.md)
-      + [Utilisation du débogueur](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-      + [Résolution des problèmes liés à Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
-      + [Changement d’environnement de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}
