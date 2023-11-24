@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre les applications mobiles Adobe 
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
+source-git-commit: 8810829ec80b38afafbd4384005f5e145c5b5999
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 6%
 
 ---
@@ -82,6 +82,10 @@ Dans ces leçons, on suppose que vous disposez d’un identifiant d’Adobe et d
 >
 >Dans le cadre de ce tutoriel, vous créez des schémas, des jeux de données, des identités, etc. Si plusieurs personnes suivent ce tutoriel dans un seul environnement de test, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation lors de la création de ces objets. Par exemple, ajoutez ` - <your name or initials>` au nom de l’objet que vous êtes invité à créer.
 
+>[!NOTE]
+>
+>Vous utilisez iOS comme plateforme, [!DNL Swift] comme langage de programmation, [!DNL SwiftUI] comme structure de l’interface utilisateur et [!DNL Xcode] comme environnement de développement intégré (IDE). Cependant, la plupart des concepts de mise en oeuvre expliqués sont similaires pour d’autres plateformes de développement. Nombre d’entre eux ont déjà terminé ce tutoriel avec une expérience iOS/Swift (interface utilisateur) qui n’avait que peu ou pas d’expérience auparavant. Vous n’avez pas besoin d’être un expert pour terminer les leçons, mais vous en retirez davantage si vous pouvez facilement lire et comprendre le code.
+
 
 ## Téléchargement de l’application Luma
 
@@ -91,15 +95,9 @@ Deux versions de l’exemple d’application sont disponibles en téléchargemen
 1. [Début](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: un projet sans code ou avec un code d’emplacement pour la plupart du code du SDK Mobile Experience Platform que vous devez utiliser pour terminer les exercices pratiques de ce tutoriel.
 1. [Terminer](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: version avec mise en oeuvre complète à titre de référence.
 
->[!NOTE]
->
->Vous utilisez iOS comme plateforme, [!DNL Swift] comme langage de programmation, [!DNL SwiftUI] comme structure de l’interface utilisateur et [!DNL Xcode] comme environnement de développement intégré (IDE). Cependant, la plupart des concepts de mise en oeuvre expliqués sont similaires pour d’autres plateformes de développement. Nombre d’entre eux ont déjà terminé ce tutoriel avec une expérience iOS/Swift (interface utilisateur) qui n’avait que peu ou pas d’expérience auparavant. Vous n’avez pas besoin d’être un expert pour terminer les leçons, mais vous en retirez davantage si vous pouvez facilement lire et comprendre le code.
+Si vous souhaitez simplement tester l’application finale, vous pouvez également télécharger l’application directement à partir d’Apple App Store.
 
->[!INFO]
->
->Si vous souhaitez simplement tester l’application finale, vous pouvez également télécharger l’application directement à partir d’Apple App Store.
->[![Téléchargement](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
-
+[<img src="assets/download-app.svg">](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 C’est parti !
 
