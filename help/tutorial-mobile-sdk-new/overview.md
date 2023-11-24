@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre les applications mobiles Adobe 
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 6%
 
 ---
@@ -91,10 +91,14 @@ Deux versions de l’exemple d’application sont disponibles en téléchargemen
 1. [Début](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: un projet sans code ou avec un code d’emplacement pour la plupart du code du SDK Mobile Experience Platform que vous devez utiliser pour terminer les exercices pratiques de ce tutoriel.
 1. [Terminer](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: version avec mise en oeuvre complète à titre de référence.
 
-
 >[!NOTE]
 >
 >Vous utilisez iOS comme plateforme, [!DNL Swift] comme langage de programmation, [!DNL SwiftUI] comme structure de l’interface utilisateur et [!DNL Xcode] comme environnement de développement intégré (IDE). Cependant, la plupart des concepts de mise en oeuvre expliqués sont similaires pour d’autres plateformes de développement. Nombre d’entre eux ont déjà terminé ce tutoriel avec une expérience iOS/Swift (interface utilisateur) qui n’avait que peu ou pas d’expérience auparavant. Vous n’avez pas besoin d’être un expert pour terminer les leçons, mais vous en retirez davantage si vous pouvez facilement lire et comprendre le code.
+
+>[!INFO]
+>
+>Si vous souhaitez simplement tester l’application finale, vous pouvez également télécharger l’application directement à partir d’Apple App Store.
+>[![Téléchargement](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 C’est parti !

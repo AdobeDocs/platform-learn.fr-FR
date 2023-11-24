@@ -3,9 +3,9 @@ title: Suivi des données d’événement
 description: Découvrez comment effectuer le suivi des données d’événement dans une application mobile.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -322,7 +322,7 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 
 1. Accédez à **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
-   1. Ajoutez le code en surbrillance suivant à la fermeture du bouton Connexion :
+   1. Ajoutez le code mis en surbrillance suivant au `Button("Login") {` fermeture :
 
       ```swift
       // Send app interaction event

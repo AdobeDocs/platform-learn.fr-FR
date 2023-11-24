@@ -3,7 +3,7 @@ title: Collecte des données de profil
 description: Découvrez comment collecter des données de profil dans une application mobile.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 4%
@@ -96,8 +96,8 @@ Vous trouverez de la documentation supplémentaire [here](https://developer.adob
 1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Exécutez l’application pour vous connecter et interagir avec un produit.
 
-   1. Déplacez l’icône Assurance vers la gauche.
    1. Sélectionner **[!UICONTROL Accueil]** dans la barre d’onglets.
+   1. Déplacez l’icône Assurance vers la gauche.
    1. Pour ouvrir la feuille de connexion, sélectionnez la <img src="assets/login.png" width="15" /> bouton .
 
       <img src="./assets/mobile-app-events-1.png" width="300">

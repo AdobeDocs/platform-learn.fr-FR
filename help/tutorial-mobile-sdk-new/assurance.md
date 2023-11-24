@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre l’extension Assurance dans un
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 3%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. Sélectionner **[!DNL Luma]** dans le navigateur de projet.
 1. Sélectionnez la variable **[!DNL Luma]** cible.
 1. Sélectionnez la variable **Infos** .
-1. Pour ajouter une URL de base, faites défiler l’écran jusqu’à **Types d’URL** et sélectionnez la variable **+** bouton .
+1. Faites défiler jusqu’à **Types d’URL (1)** et ouvrez la section à l’aide du chevron (>) si aucun chevron n’est déjà ouvert.
 1. Définir **Identifiant** à l’identifiant du lot de votre choix et définissez une **Modèles d’URL** de votre choix .
 
    ![url d&#39;assurance](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`.<br/>De même, utilisez un modèle d’URL unique et remplacez le `lumatutorialswiftui` avec votre modèle d’URL unique.
+   >Assurez-vous d’utiliser une _unique_ l’identifiant du lot, remplacez donc la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`.<br/>De même, utilisez un modèle d’URL unique. Par conséquent, remplacez le `lumatutorialswiftui` avec votre modèle d’URL unique.
 
 Pour en savoir plus sur les schémas d’URL dans iOS, consultez [Documentation Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
