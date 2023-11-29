@@ -3,9 +3,9 @@ title: Présentation du tutoriel Mise en oeuvre de Adobe Experience Cloud dans l
 description: Découvrez comment mettre en oeuvre les applications mobiles Adobe Experience Cloud. Ce tutoriel vous guide tout au long d’une mise en oeuvre d’applications Experience Cloud dans un exemple d’application Swift.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '844'
 ht-degree: 6%
 
 ---
@@ -81,6 +81,10 @@ Dans ces leçons, on suppose que vous disposez d’un identifiant d’Adobe et d
 >
 >Dans le cadre de ce tutoriel, vous créez des schémas, des jeux de données, des identités, etc. Si plusieurs personnes suivent ce tutoriel dans un seul environnement de test, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation lors de la création de ces objets. Par exemple, ajoutez ` - <your name or initials>` au nom de l’objet que vous êtes invité à créer.
 
+## Historique des versions
+
+* 29 novembre 2023 : révision majeure avec un nouvel exemple d’application et nouvelles leçons pour la messagerie in-app, la gestion des décisions et Adobe Target.
+* 9 mars 2022 : première publication
 
 ## Téléchargement de l’application Luma
 
