@@ -4,23 +4,23 @@ breadcrumb-title: Tutoriel sur les applications mobiles
 user-guide-description: Découvrez comment implémenter des applications Adobe Experience Cloud dans les applications mobiles avec le SDK Mobile Experience Platform.
 solution: Data Collection
 feature: Mobile SDK
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 779ce60b8e89520231d4d9cbaecfe09a8cabc38f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 71%
+source-wordcount: '75'
+ht-degree: 73%
 
 ---
 
 
 # Implémentation de l’Experience Cloud dans les applications mobiles {#implement-mobile-sdk}
 
-+ [Présentation du tutoriel](overview.md)
++ [Vue d’ensemble du tutoriel](overview.md)
 + Configuration initiale {#initial-configuration}
-   + [Création d’un schéma](create-schema.md)
+   + [Créer un schéma](create-schema.md)
    + [Création dʼun flux de données](create-datastream.md)
    + [Configuration des balises](configure-tags.md)
 + Implémentation de l’application{#app-implementation}
@@ -32,8 +32,14 @@ ht-degree: 71%
    + [WebViews](web-views.md)
    + [Identité](identity.md)
    + [Profile](profile.md)
+   + [Places](places.md)
 + Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
-   + [Journey Optimizer messagerie push](journey-optimizer-push.md)
+   + Parcours Optimzer{#journey-optimizer}
+      + [Notification push Notifications](journey-optimizer-push.md)
+      + [Les messages in-app](journey-optimizer-inapp.md)
+      + [Gestion des décisions](journey-optimizer-offers.md)
+   + [Target](target.md)
 + [Conclusion](conclusion.md)
+
