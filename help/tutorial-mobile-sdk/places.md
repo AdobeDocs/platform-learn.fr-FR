@@ -2,7 +2,7 @@
 title: Utilisation de lieux avec le SDK Mobile Platform
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 4%
@@ -182,7 +182,7 @@ Créons une autre règle
 
 1. Dans le **[!UICONTROL Créer une règle]** , saisissez un nom pour la règle, par exemple `POI - Exit`.
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ÉVÉNEMENTS]**.
-   1. Sélectionner **[!UICONTROL Places]** de la **[!UICONTROL Extension]** répertorier et sélectionner **[!UICONTROL Entrée dans le point ciblé]** de la **[!UICONTROL Type d’événement]** liste.
+   1. Sélectionner **[!UICONTROL Places]** de la **[!UICONTROL Extension]** répertorier et sélectionner **[!UICONTROL Quitter le point ciblé]** de la **[!UICONTROL Type d’événement]** liste.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
 1. Sélectionner ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ACTIONS]**.
    1. Sélectionner **[!UICONTROL Mobile Core]** de **[!UICONTROL Extension]** list, select **[!UICONTROL Joindre des données]** de **[!UICONTROL Type d’action]** liste.

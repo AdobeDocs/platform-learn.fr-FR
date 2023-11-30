@@ -3,10 +3,10 @@ title: Mappage des données collectées avec le SDK Mobile Platform à Adobe Ana
 description: Découvrez comment collecter et mapper des données pour Adobe Analytics dans une application mobile.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 1%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
@@ -86,7 +86,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 >[!NOTE]
 >
->Actuellement `productListItems[N].SKU` est ignorée par le mappage automatique.
+>Si `productListItems[].SKU` et `productListItems[].name` contiennent tous deux des données, la valeur de `productListItems[].SKU` est utilisée. Voir [Mappage des variables Analytics dans Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) pour plus d’informations.
 
 
 ### Exemple #2 - scAdd
