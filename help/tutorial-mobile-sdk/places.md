@@ -1,11 +1,12 @@
 ---
 title: Utilisation de lieux avec le SDK Mobile Platform
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 4%
+source-wordcount: '1588'
+ht-degree: 3%
 
 ---
 
@@ -71,7 +72,7 @@ Vous définissez certains points ciblés dans le service Places.
 1. Sélectionner **[!UICONTROL Extensions]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Places]** extension .
-1. Installation l’extension.
+1. Installez l’extension .
 
    ![Ajout de l’extension de prise de décision](assets/tag-places-extension.png)
 
@@ -176,7 +177,7 @@ Vous allez ensuite définir des règles pour travailler avec ces éléments de d
 
 1. Pour enregistrer la règle, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
 
-   ![Composants de](assets/tags-rule-poi-entry.png)
+   ![Règle](assets/tags-rule-poi-entry.png)
 
 Créons une autre règle
 
@@ -218,7 +219,7 @@ Créons une autre règle
 
 1. Pour enregistrer la règle, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
 
-   ![Composants de](assets/tags-rule-poi-exit.png)
+   ![Règle](assets/tags-rule-poi-exit.png)
 
 
 Pour vous assurer que toutes les modifications apportées à votre balise sont publiées

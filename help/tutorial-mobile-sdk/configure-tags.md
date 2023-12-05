@@ -2,11 +2,12 @@
 title: Configuration d’une propriété de balise pour les implémentations du SDK Platform Mobile
 description: Découvrez comment configurer une propriété de balise dans le [!UICONTROL Collecte de données] .
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 8%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +36,11 @@ Dans cette leçon, vous allez :
 
 1. Créez une nouvelle propriété de balise mobile dans l’interface de collecte de données :
    1. Sélectionner **[!UICONTROL Balises]** dans le volet de navigation de gauche.
-   1. Sélectionnez **[!UICONTROL Nouvelle propriété]**
+   1. Sélectionner **[!UICONTROL Nouvelle propriété]**
       ![création d’une propriété de balise](assets/tags-new-property.png).
    1. Pour le **[!UICONTROL Nom]**, saisissez `Luma Mobile App Tutorial`.
    1. Pour le **[!UICONTROL Plateforme]**, sélectionnez **[!UICONTROL Mobile]**.
-   1. Sélectionnez **[!UICONTROL Enregistrer]**.
+   1. Sélectionner  **[!UICONTROL Enregistrer]**.
 
       ![configuration de la propriété de balise](assets/tags-property-config.png)
 

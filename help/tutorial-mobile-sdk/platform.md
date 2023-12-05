@@ -3,11 +3,12 @@ title: Envoi de données à l’Experience Platform avec le SDK Mobile Platform
 description: Découvrez comment envoyer des données à Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
+jira: KT-14637
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 8%
+source-wordcount: '1032'
+ht-degree: 6%
 
 ---
 
@@ -116,7 +117,7 @@ Le profil client en temps réel de l’Experience Platform vous permet de créer
 1. Ouvrez votre schéma, par exemple. **[!DNL Luma Mobile App Event Schema]**.
 1. Activer **[!UICONTROL Profil]**.
 1. Sélectionner **[!UICONTROL Les données de ce schéma contiendront une identité principale dans le champ identityMap .]** dans la boîte de dialogue.
-1. **[!UICONTROL Enregistrez le schéma.]**
+1. **[!UICONTROL Enregistrer]** le schéma.
 
    ![activation du schéma pour le profil](assets/platform-profile-schema.png)
 

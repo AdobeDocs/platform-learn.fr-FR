@@ -4,11 +4,12 @@ description: Découvrez comment créer et envoyer des messages in-app à une app
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 6%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +33,7 @@ Avant d’envoyer des messages in-app avec Journey Optimizer, vous devez vous as
 * Création et exécution de l’application avec les SDK installés et configurés.
 * Configurez l’application pour Adobe Experience Platform.
 * Accès à Journey Optimizer et autorisations suffisantes, comme décrit [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Vous avez également besoin d’une autorisation suffisante pour accéder aux fonctionnalités Journey Optimizer suivantes.
-   * Gestion des campagnes.
+   * Gérer les campagnes.
 * Appareil ou simulateur iOS physique à tester.
 
 
@@ -61,7 +62,7 @@ Dans cette leçon, vous allez
    ![page d’accueil de l’application](assets/push-app-surface.png)
 1. Saisissez un **[!UICONTROL Nom]** pour la configuration, par exemple `Luma App Tutorial`  .
 1. De **[!UICONTROL Configuration des applications mobiles]**, sélectionnez **[!UICONTROL Apple iOS]**.
-1. Renseignez l&#39;ID de bundle de l&#39;application mobile dans le champ **[!UICONTROL ID de l&#39;application (ID de bundle iOS)]**. Par exemple : `com.adobe.luma.tutorial.swiftui`.
+1. Saisissez l’ID du lot de l’application mobile dans la **[!UICONTROL ID d’application (ID de bundle iOS)]** champ . Par exemple :  `com.adobe.luma.tutorial.swiftui`.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![configuration de la surface de l’application](assets/push-app-surface-config-inapp.png)
@@ -89,7 +90,7 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 1. Ouvrez votre propriété, par exemple **[!DNL Luma Mobile App Tutorial]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Adobe Journey Optimizer]** extension .
-1. Installation l’extension.
+1. Installez l’extension .
 1. Dans le **[!UICONTROL Installer l’extension]** dialog
    1. Sélectionnez un environnement, par exemple **[!UICONTROL Développement]**.
    1. Sélectionnez la variable **[!UICONTROL Jeu de données d’événement de suivi push AJO]** jeu de données à partir du **[!UICONTROL Jeu de données d’événement]** liste.
@@ -166,7 +167,7 @@ Le hub d’événements SDK publie et reçoit des données d’événement des e
 1. Sélectionner **[!UICONTROL Créer une campagne]**.
 1. Dans le **[!UICONTROL Créer une campagne]** écran :
    1. Sélectionner **[!UICONTROL Message in-app]** et sélectionnez une surface d’application dans la **[!UICONTROL Surface de l’application]** liste, par exemple **[!DNL Luma Mobile App]**.
-   1. Sélectionnez **[!UICONTROL Créer]**
+   1. Sélectionner **[!UICONTROL Créer]**
       ![Propriétés de campagne](assets/ajo-campaign-properties.png)
 1. Dans l’écran de définition de campagne, à l’adresse **[!UICONTROL Propriétés]**, saisissez une **[!UICONTROL Nom]** pour la campagne, par exemple `Luma - In-App Messaging Campaign`, et a **[!UICONTROL Description]**, par exemple `In-app messaging campaign for Luma app`.
    ![Nom de la campagne](assets/ajo-campaign-properties-name.png)

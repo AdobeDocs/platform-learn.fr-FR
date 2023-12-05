@@ -4,11 +4,12 @@ description: Découvrez comment créer des notifications push vers une applicati
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 4%
+source-wordcount: '2556'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +34,7 @@ Journey Optimizer vous permet de créer des parcours et d’envoyer des messages
    * Créez une surface d’application.
    * Créez un parcours.
    * Créez un message.
-   * Création de préréglages de message.
+   * Créer des paramètres prédéfinis de message.
 * **Compte de développeur Apple payant** avec un accès suffisant pour créer des certificats, des identifiants et des clés.
 * Appareil ou simulateur iOS physique à tester.
 
@@ -87,7 +88,7 @@ Une documentation supplémentaire peut être [se trouve ici](https://help.apple.
    ![page d’accueil de l’application](assets/push-app-surface.png)
 1. Saisissez un **[!UICONTROL Nom]** pour la configuration, par exemple `Luma App Tutorial`  .
 1. De **[!UICONTROL Configuration des applications mobiles]**, sélectionnez **[!UICONTROL Apple iOS]**.
-1. Renseignez l&#39;ID de bundle de l&#39;application mobile dans le champ **[!UICONTROL ID de l&#39;application (ID de bundle iOS)]**. Par exemple : `com.adobe.luma.tutorial.swiftui`.
+1. Saisissez l’ID du lot de l’application mobile dans la **[!UICONTROL ID d’application (ID de bundle iOS)]** champ . Par exemple :  `com.adobe.luma.tutorial.swiftui`.
 1. Activez l’option **[!UICONTROL Informations d’identification push]** pour ajouter vos informations d’identification.
 1. Faites glisser et déposez votre `.p8` **Clé d’authentification des notifications push Apple** fichier .
 1. Fournissez les **[!UICONTROL ID de clé]**, chaîne de 10 caractères attribuée lors de la création de la variable `p8` clé auth. Elle se trouve sous la variable **[!UICONTROL Clés]** dans le **Certificats, identifiants et profils** page des pages du portail des développeurs Apple. Voir aussi [Création d’une clé privée](#create-a-private-key).
@@ -122,7 +123,7 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 1. Ouvrez votre propriété, par exemple **[!DNL Luma Mobile App Tutorial]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Adobe Journey Optimizer]** extension .
-1. Installation l’extension.
+1. Installez l’extension .
 1. Dans le **[!UICONTROL Installer l’extension]** dialog
    1. Sélectionnez un environnement, par exemple **[!UICONTROL Développement]**.
    1. Sélectionnez la variable **[!UICONTROL Jeu de données d’événement de suivi push AJO]** jeu de données à partir du **[!UICONTROL Jeu de données d’événement]** liste.
@@ -146,7 +147,7 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 1. Sélectionnez la variable **[!UICONTROL Validation de la configuration]** .
 1. Sélectionnez votre périphérique dans le **[!UICONTROL Client]** liste.
 1. Confirmez que vous n’obtenez aucune erreur.
-   ![validate](assets/push-validate-confirm.png)
+   ![valider](assets/push-validate-confirm.png)
 1. Sélectionnez la variable **[!UICONTROL Envoyer le test push]** .
 1. (Facultatif) Modifiez les détails par défaut de la variable **[!UICONTROL Titre]** et **[!UICONTROL Corps]**
 1. Sélectionner ![Bogue](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL Envoi de la notification push de test]**.

@@ -4,11 +4,12 @@ description: Découvrez comment utiliser un test A/B Target dans votre applicati
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +93,7 @@ Pour vous assurer que les données envoyées de votre application mobile au rés
 1. Sélectionner **[!UICONTROL Extensions]**.
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Adobe Journey Optimizer - Prise de décision]** extension .
-1. Installation l’extension. L’extension ne nécessite pas de configuration supplémentaire.
+1. Installez l’extension . L’extension ne nécessite pas de configuration supplémentaire.
 
    ![Ajout de l’extension de prise de décision](assets/tag-add-decisioning-extension.png)
 

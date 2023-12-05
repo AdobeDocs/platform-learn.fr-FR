@@ -2,11 +2,12 @@
 title: Création d’un schéma XDM pour les implémentations du SDK Platform Mobile
 description: Découvrez comment créer un schéma XDM pour les événements d’application mobile.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 16%
+source-wordcount: '1414'
+ht-degree: 14%
 
 ---
 
@@ -106,7 +107,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 
    >[!NOTE]
    >
-   >Si vous passez par ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation. Par exemple, utilisez `Luma Mobile App Event Schema` plutôt que `Luma Mobile App Event Schema - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
+   >Si vous passez par ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions d’appellation. Par exemple, au lieu de `Luma Mobile App Event Schema`, utilisez `Luma Mobile App Event Schema - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
 
 1. Sélectionner **[!UICONTROL Terminer]** pour terminer l’assistant.
 

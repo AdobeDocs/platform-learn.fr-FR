@@ -2,11 +2,12 @@
 title: Configuration d’un flux de données pour les implémentations du SDK Platform Mobile
 description: Découvrez comment créer un flux de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 9%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +28,8 @@ Pour créer un flux de données, votre organisation doit être configurée pour 
 Dans cette leçon, vous allez :
 
 * Savoir quand utiliser un flux de données.
-* Création dʼun flux de données.
-* Configurer un trains de données.
+* Créez un flux de données.
+* Configurez un flux de données.
 
 ## Création dʼun flux de données
 
@@ -44,7 +45,7 @@ Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte
 
    >[!NOTE]
    >
-   >Rappel final : si vous passez en revue ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions de dénomination. Par exemple, utilisez `Luma Mobile App Event Dataset` plutôt que `Luma Mobile App Event Dataset - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
+   >Rappel final : si vous passez en revue ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions de dénomination. Par exemple, au lieu de `Luma Mobile App Event Dataset`, utilisez `Luma Mobile App Event Dataset - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
 
 1. Sélectionnez le schéma que vous avez créé dans la leçon précédente à partir du **Schéma d’événement** liste.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.

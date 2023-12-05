@@ -2,11 +2,12 @@
 title: Collecte de données d’identité dans une application mobile avec SDK Mobile
 description: Découvrez comment collecter des données d’identité dans une application mobile.
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 5%
+source-wordcount: '815'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +35,7 @@ Dans cette leçon, vous allez :
 
 ## Configuration d’un espace de noms d’identité personnalisé
 
-Les espaces de noms d’identité sont des composants de [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) qui servent d’indicateurs du contexte auquel une identité se rapporte. Par exemple, ils distinguent une valeur `name@email.com` comme adresse e-mail ou `443522` comme identifiant CRM numérique.
+Les espaces de noms d’identité sont des composants de [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) qui servent d’indicateurs du contexte auquel une identité se rapporte. Par exemple, ils distinguent une valeur de `name@email.com` en tant qu’adresse électronique ou `443522` comme identifiant CRM numérique.
 
 >[!NOTE]
 >
@@ -140,7 +141,7 @@ Vous pouvez utiliser la variable [`Identity.removeIdentity`](https://developer.a
 1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter le simulateur ou l’appareil à Assurance.
 1. Dans l’application Luma
    1. Sélectionnez la variable **[!UICONTROL Accueil]** et déplacez l’icône Assurance vers la gauche.
-   1. Sélectionnez le <img src="assets/login.png" width="15" /> en haut à droite.
+   1. Sélectionnez la variable <img src="assets/login.png" width="15" /> en haut à droite.
 
       <img src="./assets/identity1.png" width="300">
 

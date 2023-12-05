@@ -1,11 +1,12 @@
 ---
 title: Suivi des données d’événement dans les applications mobiles avec le SDK Mobile Platform
 description: Découvrez comment effectuer le suivi des données d’événement dans une application mobile.
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 3%
+source-wordcount: '1328'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +50,7 @@ Le processus est le suivant...
 
 1. Créer et envoyer un événement.
 
-1. Valider.
+1. Validez.
 
 
 ### Groupes de champs standard
