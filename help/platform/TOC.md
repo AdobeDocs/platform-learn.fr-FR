@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 21%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 21%
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Ajouter des utilisateurs](/help/platform/admin/add-users.md)
+   + [Ajouter des développeurs](/help/platform/admin/add-developers.md)
    + [Ajout d’administrateurs de produit](/help/platform/admin/add-product-administrators.md)
    + [Configurer le contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
 + Audiences et segmentation {#audiences}
@@ -142,7 +143,7 @@ ht-degree: 21%
    + [Valeur de Customer AI](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Configuration de Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Utiliser les scores et les informations de Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Surveillance {#monitoring}
++ Surveillance {#monitoring}
    + [Surveiller l’ingestion des données](/help/platform/monitoring/monitoring-dashboard.md)
    + [Surveillance de l’activation des segments](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Surveiller les flux de données](/help/platform/monitoring/data-monitoring.md)
