@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre l’extension Assurance dans un
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '1021'
 ht-degree: 1%
 
 ---
@@ -57,28 +57,25 @@ En plus du [Installation du SDK](install-sdks.md), que vous avez terminé dans l
 
 Plus d’informations sont disponibles [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-<!-- not initially required
 
-## Signing
 
-Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+## Définition de l’identifiant de lot
 
-To update the signing for the lessons that require that you sign the application:
+Vous devez fournir un identifiant de lot unique pour votre application.
 
-1. Open the project in Xcode.
-1. Select **[!DNL Luma]** in the Project navigator.
-1. Select the **[!DNL Luma]** target.
-1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
- 
+1. Ouvrez le projet dans Xcode.
+1. Sélectionner **[!DNL Luma]** dans le navigateur de projet.
+1. Sélectionnez la variable **[!DNL Luma]** cible.
+1. Sélectionnez la variable **Signature et fonctionnalités** .
+1. Définition d’une **[!UICONTROL Identifiant du lot]**.
+
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`. La version Terminée de ce tutoriel, par exemple, utilise `com.adobe.luma.tutorial.swiftui`.
 
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+   ![Fonctionnalités de signature Xcode](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
--->
 
 ## Configuration d’une URL de base
 
@@ -93,7 +90,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`.<br/>De même, utilisez un modèle d’URL unique et remplacez le `lumatutorialswiftui` avec votre modèle d’URL unique.
+   >Assurez-vous d’utiliser une _unique_ identifiant de lot et remplacez la variable `com.adobe.luma.tutorial.swiftui` identifiant de lot, car chaque identifiant de lot doit être unique. En règle générale, vous utilisez un format DNS inversé pour les chaînes d’ID de lot, comme `com.organization.brand.uniqueidentifier`. Vous pouvez utiliser le même identifiant de lot que celui utilisé dans [Définition de l’identifiant de lot](#define-bundle-identifier).<br/>De même, utilisez un modèle d’URL unique et remplacez le `lumatutorialswiftui` avec votre modèle d’URL unique.
 
 Pour en savoir plus sur les schémas d’URL dans iOS, consultez [Documentation Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
