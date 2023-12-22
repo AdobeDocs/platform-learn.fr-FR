@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Pour vous assurer que les données envoyées de votre application mobile au rés
 1. Pour enregistrer votre configuration de flux de données, sélectionnez **[!UICONTROL Enregistrer]**.
 
 
-   ![Configuration des flux de données AEP](assets/datastream-aep-configuration.png)
+   ![Configuration des flux de données AEP](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Installation de l’extension de balises Journey Optimizer
@@ -91,16 +91,9 @@ Pour que votre application fonctionne avec Journey Optimizer, vous devez mettre 
 1. Sélectionner **[!UICONTROL Catalogue]**.
 1. Recherchez le **[!UICONTROL Adobe Journey Optimizer]** extension .
 1. Installez l’extension .
-1. Dans le **[!UICONTROL Installer l’extension]** dialog
-   1. Sélectionnez un environnement, par exemple **[!UICONTROL Développement]**.
-   1. Sélectionnez la variable **[!UICONTROL Jeu de données d’événement de suivi push AJO]** jeu de données à partir du **[!UICONTROL Jeu de données d’événement]** liste.
-   1. Sélectionner **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
-      ![Paramètres de l’extension AJO](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->Si vous ne voyez pas `AJO Push Tracking Experience Event Dataset` contactez l’assistance clientèle.
->
+When *only* utilisation de messages in-app dans votre application, in **[!UICONTROL Installer l’extension]** ou **[!UICONTROL Configuration de l’extension]**, vous n’avez rien à configurer. Toutefois, si vous avez déjà suivi la méthode [Notifications push](journey-optimizer-push.md) dans le tutoriel, vous verrez cela pour le **[!UICONTROL Développement]** l’environnement, **[!UICONTROL Jeu de données d’événement de suivi push AJO]** le jeu de données est sélectionné dans la variable **[!UICONTROL Jeu de données d’événement]** liste.
+
 
 ### Mise en oeuvre de Journey Optimizer dans l’application
 
