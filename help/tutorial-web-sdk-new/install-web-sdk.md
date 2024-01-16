@@ -2,16 +2,16 @@
 title: Installation et configuration de l’extension de balise du SDK Web Adobe Experience Platform
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 14%
 
 ---
 
 # Installation de l’extension de balise du SDK Web Adobe Experience Platform
 
-Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette extension de balise est _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et Journey Optimizer !
+Découvrez comment installer et configurer l’extension de balise SDK Web Platform. Le moyen le plus simple d’implémenter le SDK Web consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement Launch). L’extension de balise du SDK Web Platform est la suivante : _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et Journey Optimizer !
 
 ## Objectifs d&#39;apprentissage
 
@@ -25,9 +25,6 @@ Découvrez comment installer et configurer l’extension de balise SDK Web Platf
 
 Vous devez avoir terminé les leçons précédentes de ce tutoriel :
 
-* [Configuration des autorisations](configure-permissions.md)
-* [Configurer un schéma XDM](configure-schemas.md)
-* [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 
 ## Installation de l’extension SDK Web Experience Platform
@@ -66,6 +63,7 @@ Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieu
 1. Sous **[!UICONTROL Datastreams]**, sélectionnez la variable **[!UICONTROL Choisir parmi les listes]** méthode d&#39;entrée
 1. Sélectionnez le flux de données que vous avez créé précédemment, `Luma Web SDK`
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
    >[!NOTE]
    >
    > Si vous ne trouvez pas votre flux de données, accédez au [Configuration d’un flux de données](configure-datastream.md) leçon et suivez les étapes pour en créer une
@@ -76,9 +74,7 @@ Maintenant que vous avez installé le SDK Web de Platform et que vous l’avez a
 
 >[!NOTE]
 >
->Au cours de ce tutoriel, vous ne configurez qu’une seule banque de données et vous l’associez à tous les environnements de balises (développement, évaluation et production). Lorsque vous implémentez le SDK Web Platform sur votre propre site web, vous devez configurer un flux de données distinct pour chaque environnement et les mapper à vos environnements de balises à l’aide de la fonction **[!UICONTROL Méthode d’entrée]** > **[!UICONTROL Saisir des valeurs]**
->
->![Sélection des flux de données](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>Au cours de ce tutoriel, vous ne configurez qu’une seule banque de données et vous l’associez à tous les environnements de balises (développement, évaluation et production). Lorsque vous mettez en oeuvre le SDK Web Platform sur votre propre site web, vous devez configurer un flux de données distinct pour chaque environnement et les mapper à vos environnements de balises.
 
 >[!NOTE]
 >

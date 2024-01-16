@@ -2,7 +2,7 @@
 title: Configuration de l’Audience Manager avec le SDK Web Platform
 description: Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Une fois la source de données enregistrée, configurez une [trait](https://expe
 1. Sélectionnez la variable **[!UICONTROL Source de données]** vous avez créé dans la section précédente.
 1. **[!UICONTROL Sélection d’un dossier]** dans lequel enregistrer votre caractéristique dans le volet de droite. Vous pouvez créer un dossier par **en sélectionnant l’icône +** en regard d’un dossier parent existant. Vous pouvez nommer ce nouveau dossier. `Platform Web SDK tutorial`.
 1. Développez l’objet **[!UICONTROL Expression de caractéristique]** accent circonflexe et sélectionnez **[!UICONTROL Générateur d’expression]** Vous devez fournir une paire de valeurs de clé qui signifie une visite de page d’accueil.
-1. Ouvrez le [Page d’accueil Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mappé à la propriété tag) et la variable **Débogueur du SDK Web Platform** et actualisez la page.
+1. Ouvrez le [Page d’accueil Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mappé à la propriété tag) et la variable **Adobe Experience Platform Debugger** et actualisez la page.
 1. Consultez les requêtes réseau et les détails de l’événement pour le SDK Web Platform afin de trouver la clé et la valeur de nom de la page d’accueil.
    ![Données XDM d’Audience Manager Adobe Experience Platform](assets/xdm-keyvalue.jpg)
 1. Revenez au Générateur d’expression dans l’interface utilisateur d’Audience Manager et saisissez la touche **`web.webPageDetails.name`** et la valeur de **`content:luma:us:en`**. Cette étape vous permet de déclencher une caractéristique chaque fois que vous chargez la page d’accueil.
@@ -100,7 +100,8 @@ L’étape suivante consiste à créer une **segment** et affectez votre caract�
 1. Sélectionner **[!UICONTROL Ajouter]** en haut à gauche de la page pour ouvrir le créateur de segments.
 1. Attribuez un nom et une description conviviaux à votre segment, tels que `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Sélection d’un dossier]** où votre segment sera enregistré dans le volet de droite. Vous pouvez créer un dossier par **en sélectionnant l’icône +** en regard d’un dossier parent existant. Vous pouvez nommer ce nouveau dossier. `Platform Web SDK tutorial`.
-1. Ajoutez un code d’intégration, qui dans ce cas est un jeu aléatoire de nombres. 1. Dans le **[!UICONTROL Source de données]** , sélectionnez **[!UICONTROL Audience Manager]** et la source de données que vous avez créée précédemment.
+1. Ajoutez un code d’intégration, qui dans ce cas est un jeu aléatoire de nombres.
+1. Dans le **[!UICONTROL Source de données]** , sélectionnez **[!UICONTROL Audience Manager]** et la source de données que vous avez créée précédemment.
 1. Développez l’objet **[!UICONTROL Caractéristiques]** et recherchez la caractéristique que vous avez créée.
 1. Sélectionner **[!UICONTROL Ajouter une caractéristique]**.
 1. Sélectionner **[!UICONTROL Enregistrer]** au bas de la page ;

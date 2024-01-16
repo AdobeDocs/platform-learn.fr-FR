@@ -2,9 +2,9 @@
 title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 4%
 
 ---
@@ -59,6 +59,7 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 
       * [Installer l’extension SDK Web](install-web-sdk.md)
       * [Créer des éléments de données](create-data-elements.md)
+      * [Création d’identités](create-identities.md)
       * [Création d’une règle de balise](create-tag-rule.md)
       * [Validation avec le débogueur Adobe Experience Platform](validate-with-debugger.md)
 

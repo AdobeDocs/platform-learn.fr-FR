@@ -2,9 +2,9 @@
 title: Configuration des autorisations pour le tutoriel
 description: Découvrez comment demander l’accès au SDK Web Experience Platform et configurer l’autorisation requise pour terminer le tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 4%
 
 ---
@@ -23,9 +23,9 @@ Découvrez comment demander l’accès au SDK Web Experience Platform et configu
 Ces fonctionnalités doivent être disponibles pour tous les clients Experience Cloud, même si vous n’êtes pas client d’une application basée sur Platform comme Real-Time CDP.
 
 * L’accès au **production par défaut**, **&quot;Prod&quot;** sandbox.
-* Accès à **[!UICONTROL Gestion des schémas]** et **[!UICONTROL Affichage des schémas]** under **[!UICONTROL Modélisation des données]**
-* Accès à **[!UICONTROL Gestion des espaces de noms d’identité]** et **[!UICONTROL Affichage des espaces de noms d’identité]** under **[!UICONTROL Identity Management]**
-* Accès à **[!UICONTROL Gestion des flux de données]** et **[!UICONTROL Affichage des flux de données]** under **[!UICONTROL Collecte de données]**
+* Accès à **[!UICONTROL Gestion des schémas]** et **[!UICONTROL Affichage des schémas]** under **[!UICONTROL Modélisation des données]**.
+* Accès à **[!UICONTROL Gestion des espaces de noms d’identité]** et **[!UICONTROL Affichage des espaces de noms d’identité]** under **[!UICONTROL Identity Management]**.
+* Accès à **[!UICONTROL Gestion des flux de données]** et **[!UICONTROL Affichage des flux de données]** under **[!UICONTROL Collecte de données]**.
 * Si vous êtes client d’une application basée sur Platform et que vous allez exécuter la variable [Configuration d’un Experience Platform](setup-experience-platform.md) leçon, vous devez également disposer des éléments suivants :
    * Accès à un **development** sandbox.
    * Tous les éléments d’autorisation sous **[!UICONTROL Data Management]**, et **[!UICONTROL Gestion des profils]**:

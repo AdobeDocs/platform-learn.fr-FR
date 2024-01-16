@@ -2,9 +2,9 @@
 title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Consent
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
