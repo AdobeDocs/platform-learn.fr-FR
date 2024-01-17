@@ -3,9 +3,9 @@ title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Découvrez comment configurer les paramètres de confidentialité de l’extensi
 
 >[!NOTE]
 > 
->À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/) comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
+>À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/){target="_blank"} comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
 
 
 ## Objectifs d&#39;apprentissage
@@ -66,7 +66,7 @@ Avant de passer aux configurations de balise, découvrez la plateforme de gestio
 
 Maintenant, une fois les configurations de Klaro terminées, créez une règle de balise avec les configurations suivantes :
 
-* [!UICONTROL Nom]: `all pages - library load - Klaro`
+* [!UICONTROL Nom] : `all pages - library load - Klaro`
 * [!UICONTROL Événement]: [!UICONTROL Bibliothèque chargée (Haut de page)] avec [!UICONTROL Options avancées] > [!UICONTROL Commande] défini sur 1
 * [!UICONTROL Action]: [!UICONTROL Code personnalisé], [!UICONTROL Langue]: HTML pour charger le script de CMP.
 
