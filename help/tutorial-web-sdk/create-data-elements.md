@@ -3,10 +3,10 @@ title: Créer des éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 7%
+source-wordcount: '1174'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +49,7 @@ Cette leçon se concentre sur les types d’éléments de données d’objet XDM
 
 Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir suivi les étapes précédentes suivantes du tutoriel.
 
-* [Configurer les autorisations](configure-permissions.md)
+* [Configuration des autorisations](configure-permissions.md)
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
@@ -70,26 +70,26 @@ Avant de commencer la création de l’objet XDM, créez l’ensemble suivant d�
 1. Nommez l’élément de données `page.pageInfo.pageName`.
 1. Utilisez la variable **[!UICONTROL Variable JavaScript]** **[!UICONTROL Type d’élément de données]** pour pointer vers une valeur dans la couche de données de Luma : `digitalData.page.pageInfo.pageName`
 
-1. Cochez les cases pour **[!UICONTROL Forcer la valeur minuscule]** et **[!UICONTROL Nettoyer le texte]** pour normaliser la casse et supprimer les espaces superflus.
+1. Cochez les cases correspondant à **[!UICONTROL Forcer la valeur en minuscules]** et **[!UICONTROL Texte clair]** pour normaliser la casse et supprimer les espaces superflus
 
 1. Laisser `None` comme la propriété **[!UICONTROL Durée de stockage]** car cette valeur est différente sur chaque page
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Élément de données Nom de page](assets/data-element-pageName.jpg)
 
 Suivez les mêmes étapes pour créer ces quatre éléments de données supplémentaires :
 
-* **`page.pageInfo.server`** mappé à .
+* **`page.pageInfo.server`**  mappé à
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`** mappé à .
+* **`page.pageInfo.hierarchie1`**  mappé à
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`** mappé à .
+* **`user.profile.attributes.username`**  mappé à
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`** mappé à .
+* **`user.profile.attributes.loggedIn`** mappé à
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`cart.orderId`** mappé à `digitalData.cart.orderId` (vous utiliserez cette méthode lors de la [Configuration d’Analytics](setup-analytics.md) leçon)
@@ -133,7 +133,7 @@ Vous pouvez ensuite créer l’élément de données de carte des identités :
 1. Comme la variable **[!UICONTROL État authentifié]**, sélectionnez **[!UICONTROL Authentifié]**
 1. Sélectionner **[!UICONTROL Principal]**
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Interface de collecte de données](assets/identity-id-namespace.png)
 
@@ -166,13 +166,13 @@ Vous pouvez ensuite créer l’élément de données de carte des identités :
 
 Tous les éléments de données que vous créez doivent être mappés à un objet XDM. Cet objet doit être conforme au schéma XDM que vous avez créé lors de la [Configuration d’un schéma](configure-schemas.md) leçon.
 
-Il existe différentes manières de mapper des éléments de données à des champs d’objet XDM. Vous pouvez mapper des éléments de données individuels à des champs XDM individuels ou mapper des éléments de données à des objets XDM entiers tant que votre élément de données correspond au schéma de paire clé-valeur exact présent dans l’objet XDM. Dans cette leçon, vous allez capturer des données de contenu en les mappant à des champs individuels. Vous apprendrez à [mappage d’un élément de données à un objet XDM entier](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) dans le [Configuration d’Analytics](setup-analytics.md) leçon.
+Il existe différentes manières de mapper des éléments de données à des champs d’objet XDM. Vous pouvez mapper des éléments de données individuels à des champs XDM individuels ou mapper des éléments de données à des objets XDM entiers tant que votre élément de données correspond au schéma de paire clé-valeur exact présent dans l’objet XDM. Dans cette leçon, vous allez capturer les données de contenu en les mappant à des champs individuels. Vous apprendrez à [mappage d’un élément de données à un objet XDM entier](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) dans le [Configuration d’Analytics](setup-analytics.md) leçon.
 
 Créez un objet XDM pour capturer des données de contenu :
 
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Éléments de données]**
-1. Sélectionnez **[!UICONTROL Ajouter un élément de données]**
-1. **** Nommez l’élément de données . **`xdm.content`**
+1. Sélectionner **[!UICONTROL Ajouter un élément de données]**
+1. **[!UICONTROL Nom]** l’élément de données **`xdm.content`**
 1. Comme la variable **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
 1. Comme la variable **[!UICONTROL Type d’élément de données]** select `XDM object`
 1. Sélectionner la plateforme **[!UICONTROL Sandbox]** dans lequel vous avez créé le schéma XDM au cours de la [Configurer un schéma XDM](configure-schemas.md) leçon, dans cet exemple `DEVELOPMENT Mobile and Web SDK Courses`
@@ -202,7 +202,7 @@ Créez un objet XDM pour capturer des données de contenu :
 
 1. Associer à la variable `identityMap.loginID` élément de données
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Interface de collecte de données](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
 
