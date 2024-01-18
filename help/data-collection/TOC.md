@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 48%
+source-wordcount: '185'
+ht-degree: 34%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 48%
 # Tutoriels sur la collecte de données{#data-collection}
 
 + [Tutoriels sur la collecte de données](overview.md)
++ [Utilisateurs et autorisations](admin/users-and-permissions.md)
 + Balises{#tags}
    + [Présentation et création d’une propriété](tags/create-a-property.md)
    + [Choisissez une option d’hébergement](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 48%
    + [Créer des éléments de données](tags/create-data-elements.md)
    + [Créer des règles](tags/build-rules.md)
    + [Création et publication d’une bibliothèque](tags/build-and-publish-a-library.md)
-   + [Utilisateurs et autorisations](tags/users-and-permissions.md)
    + [Mise en oeuvre dans les sites web avec le SDK Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr){target="_blank"}
    + [Implémentation dans des sites web avec des SDK de solution](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=fr){target="_blank"}
    + [Mise en oeuvre dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr){target="_blank"}
@@ -40,7 +40,7 @@ ht-degree: 48%
       + [Définition des valeurs de consentement à l’aide du standard IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
       + [Inspect et validation des données de consentement](web-sdk/consent/inspect.md)
       + [Tutoriel sur le traitement du consentement de bout en bout](web-sdk/consent/tutorial.md)
-+ SDK Mobile{#mobile-sdk}
++ SDK Mobile{#mobile-sdk}
    + [Vue d’ensemble](mobile-sdk/overview.md)
    + [Création de propriétés mobiles](mobile-sdk/create-mobile-properties.md)
    + [Utilisation des gestionnaires de dépendances](mobile-sdk/use-dependency-managers.md)
@@ -48,14 +48,14 @@ ht-degree: 48%
 + API du serveur{#server-api}
    + [Vue d’ensemble](server-api/overview.md)
    + [Principes de base des API](server-api/introduction.md)
-+ Transfert dʼévénement{#event-forwarding}
++ Transfert d’événement{#event-forwarding}
    + [Vue d’ensemble](event-forwarding/overview.md)
    + [Création d’une propriété](event-forwarding/create-a-property.md)
    + [Configurer un flux de données](event-forwarding/set-up-a-datastream.md)
    + [Ajouter une extension](event-forwarding/add-an-extension.md)
    + [Créer une règle](event-forwarding/create-a-rule.md)
    + [Workflows de démarrage rapide](event-forwarding/quick-start-workflows.md)
-   + [Surveiller le transfert d’événement](event-forwarding/monitor.md)
+   + [Surveillance du transfert d’événement](event-forwarding/monitor.md)
    + [Déplacement des balises côté client](event-forwarding/consider-moving-tags.md)
    + [Configuration de conversions améliorées de Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Extension Adobe pour Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
