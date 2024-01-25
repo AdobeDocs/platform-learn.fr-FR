@@ -4,9 +4,9 @@ description: Découvrez comment collecter et mapper des données pour Adobe Anal
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Cet objet :
 a pour résultat :
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ Pour mapper ces données contextuelles XDM à vos données Analytics dans votre 
 
 * Créez des payloads XDM dans votre application, conformes au groupe de champs Extension complète Adobe Analytics ExperienceEvent , comme vous l’avez fait dans la section [Suivi des données d’événement](events.md) leçon ou
 * Créez des règles dans la propriété Balises qui utilisent des actions de règle pour joindre ou modifier des données au groupe de champs Extension complète Adobe Analytics ExperienceEvent . Voir pour plus d’informations [Association de données aux événements du SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) ou [Modification des données dans les événements du SDK](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### eVars de marchandisage
+
+Si vous utilisez [eVars de marchandisage](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) dans votre configuration Analytics, par exemple pour capturer la couleur des produits, comme `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, vous devez étendre la charge utile XDM que vous avez définie dans [Suivi des données d’événement](events.md) pour capturer ces informations de marchandisage.
+
+* Dans JSON :
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* Dans le code :
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### Utilisation des règles de traitement
