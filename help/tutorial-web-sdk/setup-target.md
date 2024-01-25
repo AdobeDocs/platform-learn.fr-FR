@@ -3,10 +3,10 @@ title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +67,7 @@ Ce fragment est déjà présent sur le site Luma, mais regardons de plus près p
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -128,11 +128,11 @@ Pour configurer Target dans le flux de données :
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**
+1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/target-datastream-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Target]** comme la propriété **[!UICONTROL Service]**
 1. Si vous le souhaitez, renseignez les détails facultatifs de votre mise en oeuvre Target, en suivant les instructions ci-dessous.
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Configuration du flux de données Target](assets/target-datastream.png)
 
@@ -151,7 +151,7 @@ Pour configurer ou rechercher des jetons de propriété, accédez à **Adobe Tar
 
 ### Identifiant de l’environnement Target
 
-Les [](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)environnements dans Target vous permettent de gérer la mise en œuvre à toutes les étapes de développement. Ce paramètre facultatif spécifie l’environnement Target que vous allez utiliser avec chaque flux de données.
+[Environnements](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) dans Target, vous pouvez gérer votre mise en oeuvre à toutes les étapes du développement. Ce paramètre facultatif spécifie l’environnement Target que vous allez utiliser avec chaque flux de données.
 
 Adobe recommande de définir différemment l’identifiant de l’environnement cible pour chacun de vos flux de données de développement, d’évaluation et de production afin de garder les choses simples.
 
@@ -245,7 +245,7 @@ Si vous configurez une activité, le rendu du contenu doit s’afficher sur la p
 
 1. Ouvrez l’extension de navigateur du débogueur Adobe Experience Platform
 1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [basculez la propriété de balise sur le site sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. Rechargez la page
+1. Recharger la page
 1. Sélectionnez la variable **[!UICONTROL Réseau]** dans le débogueur
 1. Filtrer par **[!UICONTROL SDK Web Adobe Experience Platform]**
 1. Sélectionner la valeur de la ligne d’événements pour le premier appel
@@ -402,7 +402,7 @@ Si vous avez activé votre activité, le rendu de votre contenu doit s’affiche
 
 1. Ouvrez l’extension de navigateur du débogueur Adobe Experience Platform
 1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [basculez la propriété de balise sur le site sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. Rechargez la page
+1. Recharger la page
 1. Sélectionnez la variable **[!UICONTROL Réseau]** dans le débogueur
 1. Filtrer par **[!UICONTROL SDK Web Adobe Experience Platform]**
 1. Sélectionner la valeur de la ligne d’événements pour le premier appel
@@ -486,7 +486,7 @@ Maintenant que les règles sont mises à jour, vous pouvez vérifier si les donn
 1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et se connecter à l’aide de l’email `test@adobe.com` et mot de passe `test`
 1. Accédez à une page de détails de produit.
 1. Ouvrez l’extension de navigateur du débogueur Adobe Experience Platform et [basculez la propriété de balise sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. Rechargez la page
+1. Recharger la page
 1. Sélectionnez la variable **Réseau** dans le débogueur et filtrez par **SDK Web Adobe Experience Platform**
 1. Sélectionner la valeur de la ligne d’événements pour le premier appel
 1. Notez qu’il existe des clés sous `data` > `__adobe` > `target` et ils contiennent des informations sur le produit, la catégorie et l’état de connexion.
