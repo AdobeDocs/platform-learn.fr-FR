@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre la gestion de la décision à l
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 Découvrez comment mettre en oeuvre la gestion de la décision à l’aide du SDK Web Platform. Ce guide couvre les conditions préalables fondamentales de la gestion des décisions, les étapes détaillées pour la configuration et une présentation approfondie d’un cas d’utilisation centré sur l’état de fidélité.
 
-En suivant cette documentation, les utilisateurs de Journey Optimizer sont équipés pour appliquer efficacement les fonctionnalités d’offer decisioning, ce qui améliore la personnalisation et la pertinence de leurs interactions avec les clients.
+En suivant ce tutoriel, les utilisateurs de Journey Optimizer sont équipés pour appliquer efficacement les fonctionnalités d’offer decisioning, ce qui améliore la personnalisation et la pertinence de leurs interactions avec les clients.
 
 ## Objectifs d’apprentissage
 
@@ -24,7 +24,7 @@ En suivant cette documentation, les utilisateurs de Journey Optimizer sont équi
 
 * Maîtrisez les concepts de base de la gestion de la décision dans Adobe Journey Optimizer et son intégration au SDK Web de Adobe Experience Platform.
 
-* Découvrez le processus étape par étape de configuration du SDK Web pour Offer Decisioning, assurant une intégration transparente avec AJO.
+* Découvrez le processus détaillé de configuration du SDK Web pour Offer Decisioning, assurant une intégration transparente avec Journey Optimizer.
 
 * Explorez un cas d’utilisation détaillé axé sur les offres d’état de fidélité, en obtenant des informations sur la création et la gestion efficaces des offres, des décisions et des emplacements.
 
@@ -38,13 +38,11 @@ En suivant cette documentation, les utilisateurs de Journey Optimizer sont équi
 
 Pour terminer les leçons de cette section, vous devez d’abord :
 
-* Assurez-vous que votre entreprise a accès à Adobe Journey Optimizer Ultimate (AJO et Offer Decisioning) ou à Adobe Experience Platform et au module complémentaire du service d’application Offer Decisioning.
+* Assurez-vous que votre entreprise a accès à Adobe Journey Optimizer Ultimate (Journey Optimizer et Offer Decisioning) ou à Adobe Experience Platform et au module complémentaire du service d’application Offer Decisioning.
 
 * Suivez toutes les leçons pour la configuration initiale du SDK Web de Platform.
 
 * Activez votre organisation pour Edge Decisioning.
-
-* Publiez votre flux de données.
 
 * Découvrez comment configurer un emplacement et instancier les ID d’emplacement et d’activité dans votre JSON de portée de décision.
 
@@ -64,7 +62,7 @@ Offer Decisioning doit être activé dans la variable **datastream** avant que t
 
 Pour configurer l’Offer decisioning dans le flux de données :
 
-1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection) .
+1. Accédez au [Collecte de données](https://experience.adobe.com/#/data-collection) .
 
 1. Dans le volet de navigation de gauche, sélectionnez **Datastreams**.
 
@@ -143,7 +141,7 @@ Ce cas pratique vous permet de mieux comprendre comment Journey Optimizer peut v
 
 >[!NOTE]
 >
-> Comme ce tutoriel est destiné aux implémentateurs, il est intéressant de noter que cette leçon implique un travail substantiel de l’interface utilisateur dans AJO. Bien que ces tâches de l’interface utilisateur soient généralement gérées par les marketeurs, il peut s’avérer utile pour les implémenteurs d’obtenir des informations sur le processus, même s’ils ne sont pas responsables de la création de campagnes de gestion de décision à long terme.
+> Comme ce tutoriel est destiné aux implémentateurs, il est intéressant de noter que cette leçon implique un travail d’interface substantiel dans Journey Optimizer. Bien que ces tâches d’interface soient généralement gérées par les marketeurs, il peut s’avérer utile pour les implémenteurs d’obtenir des informations sur le processus, même s’ils ne sont pas responsables de la création de campagnes de gestion de décision à long terme.
 
 ## Composants
 
@@ -173,7 +171,7 @@ Pour créer l’emplacement, procédez comme suit :
 
 1. Cliquez sur **Enregistrer**.
 1. Une fois l’emplacement créé, il s’affiche dans la liste des emplacements.
-1. Prenez note de l’identifiant d’emplacement, car cela peut s’avérer nécessaire pour la configuration dans votre portée de décision.
+1. Sélectionnez la ligne contenant votre nouvel emplacement et notez l’identifiant de référencement, car cela peut s’avérer nécessaire pour la configuration dans votre champ de décision.
 
    ![Voir Identifiant de référencement ](../assets/decisioning-placement-id.png)
 
@@ -189,7 +187,7 @@ Pour créer des règles de décision, procédez comme suit :
 
    ![Création de la règle](../assets/decisioning-create-rule.png)
 
-1. Nommons la première règle &#39;*Règle d’état de fidélité Gold*&#39;. Vous pouvez utiliser des champs XDM pour définir la règle. Adobe Experience Platform **Créateur de segments** est une interface utilisateur intuitive que vous pouvez utiliser pour créer les conditions de règle.
+1. Nommons la première règle &#39;*Règle d’état de fidélité Gold*&#39;. Vous pouvez utiliser des champs XDM pour définir la règle. Adobe Experience Platform **Créateur de segments** est une interface intuitive que vous pouvez utiliser pour créer les conditions de règle.
 
    ![Définir la règle](../assets/decisioning-define-rule.png)
 
