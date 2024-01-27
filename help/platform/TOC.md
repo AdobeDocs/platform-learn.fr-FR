@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 21%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 21%
    + [mettre à jour les schémas,](/help/platform/schemas/update-schemas.md)
    + [Création d’un schéma ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Sources {#sources}
-   + [Présentation des sources](/help/platform/sources/overview.md)
+   + [Vue d’ensemble](/help/platform/sources/overview.md)
    + [Ingestion de données à partir d’Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Ingestion de données à partir d’une Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Ingestion de données à partir de Marketo](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 21%
    + [Diffusion de données en continu avec API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Diffusion de données en continu à l’aide des connecteurs source](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Résolution des problèmes : Connecteur SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Playbooks de cas d’utilisation {#use-case-playbooks}
+   + [Vue d’ensemble](/help/platform/use-case-playbooks/overview.md)
+   + [Configuration d’un environnement de test de livres de lecture](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Création et publication d’une instance de livre de lecture](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Intégrations Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
