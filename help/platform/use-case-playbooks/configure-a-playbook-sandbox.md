@@ -8,10 +8,10 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 10%
+source-wordcount: '91'
+ht-degree: 9%
 
 ---
 
@@ -23,6 +23,8 @@ Découvrez comment configurer un environnement de test pour les classeurs de cas
 1. Création d’un environnement de test de développement avec `-ucp` comme suffixe dans le nom
 1. Ajouter des autorisations et des utilisateurs à l’environnement de test
 1. Configuration des surfaces de canal pour les emails, les notifications push et les SMS
+
+Pour plus d’informations, voir [Prise en main](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
 

@@ -5,7 +5,7 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 21%
@@ -219,7 +219,7 @@ ht-degree: 21%
    + [Résolution des problèmes : Connecteur SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Playbooks de cas d’utilisation {#use-case-playbooks}
    + [Vue d’ensemble](/help/platform/use-case-playbooks/overview.md)
-   + [Configuration d’un environnement de test de livres de lecture](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Configuration d’un environnement de test du livre de lecture](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Création et publication d’une instance de livre de lecture](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Intégrations Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
