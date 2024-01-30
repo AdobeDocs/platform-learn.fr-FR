@@ -2,9 +2,9 @@
 title: Configuration d’Adobe Analytics à l’aide du SDK Web Experience Platform
 description: Découvrez comment configurer Adobe Analytics à l’aide du SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Analytics
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '4675'
+source-wordcount: '4681'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 Découvrez comment configurer Adobe Analytics à l’aide de [SDK Web Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=fr), créez des règles de balise pour envoyer des données à Adobe Analytics et vérifiez qu’Analytics capture les données comme prévu.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr) est une application de pointe qui vous permet de comprendre vos clients en tant que personnes et d’orienter votre activité grâce aux renseignements sur vos clients.
+
+![Diagramme SDK Web vers Adobe Analytics](assets/dc-websdk-aa.png)
 
 ## Objectifs d&#39;apprentissage
 

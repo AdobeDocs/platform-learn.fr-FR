@@ -1,9 +1,9 @@
 ---
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1608'
 ht-degree: 8%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 8%
 Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web Platform.
 
 Experience Platform est la colonne vertébrale de toutes les nouvelles applications Experience Cloud, telles qu’Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics et Adobe Journey Optimizer. Ces applications sont conçues pour utiliser le SDK Web Platform comme méthode optimale de collecte de données web.
+
+
+![Diagramme SDK web et Adobe Experience Platform](assets/dc-websdk-aep.png)
 
 Experience Platform utilise le même schéma XDM que celui que vous avez créé précédemment pour capturer des données d’événement à partir du site web de Luma. Lorsque ces données sont envoyées à Platform Edge Network, la configuration du flux de données peut les transférer à l’Experience Platform.
 

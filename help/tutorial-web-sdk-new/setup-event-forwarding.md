@@ -2,9 +2,9 @@
 title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 4%
 Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web.
 
 Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de Adobe Experience Platform Edge Network au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagramme SDK web et transfert d’événement](assets/dc-websdk-eventforwarding.png)
 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
@@ -50,7 +53,6 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 
    * Configuration initiale
 
-      * [Configuration des autorisations](configure-permissions.md)
       * [Configurer un schéma XDM](configure-schemas.md)
       * [Configuration d’un espace de noms d’identité](configure-identities.md)
       * [Configurer un trains de données](configure-datastream.md)

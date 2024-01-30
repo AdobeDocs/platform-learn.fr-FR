@@ -2,9 +2,9 @@
 title: Configurer un trains de données
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 5%
 Découvrez comment activer un flux de données et configurer des applications Experience Cloud.
 
 Les flux de données indiquent à Adobe Experience Platform Edge Network où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements. Voir [Principes de base de la configuration d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr) pour plus d’informations.
+
+
+![Diagramme SDK web, flux de données et réseau Edge](assets/dc-websdk-datastreams.png)
 
 ## Objectifs d&#39;apprentissage
 

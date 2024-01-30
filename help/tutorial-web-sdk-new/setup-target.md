@@ -2,9 +2,9 @@
 title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '4282'
+source-wordcount: '4288'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
 
+![Diagramme SDK Web et Adobe Target](assets/dc-websdk-at.png)
 
 ## Objectifs d&#39;apprentissage
 
