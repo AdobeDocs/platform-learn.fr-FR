@@ -2,9 +2,9 @@
 title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ Certains points de données peuvent s’avérer utiles à Target qui ne sont pas
 * [Paramètres réservés Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Valeurs de catégorie pour [affinité catégorielle](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Création d’éléments de données pour les paramètres Target
+### Création d’un élément de données pour des paramètres Target spéciaux
 
-Tout d’abord, vous allez configurer quelques éléments de données supplémentaires pour un attribut de profil, un attribut d’entité, une valeur de catégorie, puis construire la variable `data` objet utilisé pour transmettre des données autres que XDM :
-
-* **`target.entity.id`** mappé à `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** mappé à `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** en utilisant le code personnalisé suivant pour analyser l’URL du site pour la catégorie de niveau supérieur :
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+Tout d’abord, utilisez les éléments de données créés dans le [Création d’éléments de données](create-data-elements.md) leçon à tirer de la création de `data` objet utilisé pour transmettre des données autres que XDM :
 
 * **`data.content`** à l’aide du code personnalisé suivant :
 
@@ -417,10 +404,10 @@ Tout d’abord, vous allez configurer quelques éléments de données supplémen
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }

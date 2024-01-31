@@ -2,10 +2,10 @@
 title: Création d’identités
 description: Découvrez comment créer des identités dans XDM et utiliser l’élément de données de carte des identités pour capturer les identifiants d’utilisateur. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 2%
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
@@ -13,14 +13,7 @@ ht-degree: 2%
 
 Découvrez comment capturer des identités avec le SDK Web Experience Platform. Capturez les données d’identité non authentifiées et authentifiées sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Découvrez comment utiliser les éléments de données que vous avez créés précédemment pour collecter des données authentifiées avec un type d’élément de données SDK Web Platform appelé Identity Map.
 
-Quatre nouveaux types d’éléments de données sont introduits par l’extension des balises SDK Web Platform :
-
-1. Identifiant de fusion d’événements
-1. Mappage d’identités
-1. Variable
-1. Objet XDM
-
-Cette leçon porte sur l’élément de données de carte des identités. Vous mappez des éléments de données contenant un ID utilisateur authentifié et un état d’authentification à XDM.
+Cette leçon porte sur l’élément de données Identity Map disponible avec l’extension de balises SDK Web Adobe Experience Platform. Vous mappez des éléments de données contenant un ID utilisateur authentifié et un état d’authentification à XDM.
 
 ## Objectifs d&#39;apprentissage
 
@@ -32,7 +25,7 @@ Cette leçon porte sur l’élément de données de carte des identités. Vous m
 
 ## Conditions préalables
 
-Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir suivi les étapes précédentes suivantes du tutoriel :
+Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir suivi les leçons précédentes suivantes dans le tutoriel :
 
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -40,14 +33,10 @@ Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de d
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 * [Créer des éléments de données](create-data-elements.md)
 
->[!IMPORTANT]
->
->La variable [Extension du service d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la fonctionnalité du service d’ID est intégrée au SDK Web de Platform.
 
 ## Experience Cloud ID
 
 La variable [Identifiant Experience Cloud (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) est un espace de noms d’identité partagé utilisé dans les applications Adobe Experience Platform et Adobe Experience Cloud. ECID constitue la base de l’identité du client et l’identité par défaut des propriétés numériques. Cela fait d’ECID l’identifiant idéal pour le suivi du comportement non authentifié de l’utilisateur, car il est toujours présent.
-
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ La variable [Identifiant Experience Cloud (ECID)](https://experienceleague.adobe
 En savoir plus sur la manière dont [Le suivi des ECID s’effectue à l’aide du SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 Les ECID sont définis à l’aide d’une combinaison de cookies propriétaires et de Platform Edge Network. Par défaut, les cookies propriétaires sont définis par le SDK Web. Pour tenir compte des restrictions du navigateur sur la durée de vie des cookies, vous pouvez choisir de définir et de gérer vos propres cookies propriétaires à la place. On parle alors d’identifiants d’appareil propriétaires (FPID).
+
+>[!IMPORTANT]
+>
+>La variable [Extension du service d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la fonctionnalité du service d’ID est intégrée au SDK Web de Platform.
 
 ## Identifiant de périphérique propriétaire (FPID)
 

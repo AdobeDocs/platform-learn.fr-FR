@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre la gestion de la décision à l
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 3%
 Découvrez comment mettre en oeuvre la gestion de la décision à l’aide du SDK Web Platform. Ce guide couvre les conditions préalables fondamentales de la gestion des décisions, les étapes détaillées pour la configuration et une présentation approfondie d’un cas d’utilisation centré sur l’état de fidélité.
 
 En suivant ce tutoriel, les utilisateurs de Journey Optimizer sont équipés pour appliquer efficacement les fonctionnalités d’offer decisioning, ce qui améliore la personnalisation et la pertinence de leurs interactions avec les clients.
+
+
+![Diagramme SDK Web et Adobe Analytics](../assets/dc-websdk-ajo.png)
 
 ## Objectifs d’apprentissage
 
