@@ -1,7 +1,7 @@
 ---
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 8%
@@ -84,7 +84,7 @@ Vous pouvez maintenant configurer votre [!UICONTROL datastream] pour envoyer des
 1. Sélectionner **[!UICONTROL Datastreams]** à partir du volet de navigation de gauche
 1. Ouvrez le flux de données que vous avez créé dans le [Configuration d’un flux de données](configure-datastream.md) leçon, `Luma Web SDK`
 
-   ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
+   ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk-development.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/experience-platform-addService.png)

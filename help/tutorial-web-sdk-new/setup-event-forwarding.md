@@ -2,7 +2,7 @@
 title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 4%
@@ -88,9 +88,9 @@ Pour configurer Target dans le flux de données :
 
 1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
-1. Sélectionnez la `Luma Web SDK` datastream
+1. Sélectionnez la `Luma Web SDK: Development Environment` datastream
 
-   ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
+   ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk-development.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/event-forwarding-datastream-addService.png)

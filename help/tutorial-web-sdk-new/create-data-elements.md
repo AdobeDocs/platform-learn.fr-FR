@@ -2,7 +2,7 @@
 title: Créer des éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Avant de créer l’objet XDM, créez l’ensemble suivant d’éléments de don
 
 1. Accédez à **[!UICONTROL Éléments de données]** et sélectionnez **[!UICONTROL Ajouter un élément de données]** (ou **[!UICONTROL Créer un élément de données]** s’il n’existe aucun élément de données existant dans la propriété de balise)
 
-   ![Créer un élément de données](assets/data-element-create.jpg)
+   ![Créer un élément de données](assets/data-element-create.png)
 
 1. Nommez l’élément de données `page.pageInfo.pageName`.
 1. Utilisez la variable **[!UICONTROL Variable JavaScript]** **[!UICONTROL Type d’élément de données]** pour pointer vers une valeur dans la couche de données de Luma : `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ Avant de créer l’objet XDM, créez l’ensemble suivant d’éléments de don
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-   ![Élément de données Nom de page](assets/data-element-pageName.jpg)
+   ![Élément de données Nom de page](assets/data-element-pageName.png)
 
 Créez ces éléments de données supplémentaires en procédant comme suit :
 
