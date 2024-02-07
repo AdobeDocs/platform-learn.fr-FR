@@ -2,9 +2,9 @@
 title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 
 ## Conditions préalables
 
-Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avoir suivi les leçons précédentes suivantes dans le tutoriel :
+Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avoir terminé les leçons précédentes du tutoriel :
 
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -49,14 +49,10 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 
 ## Chargement de bibliothèques de balises alternatives avec Debugger
 
-Ce tutoriel utilise une version hébergée publiquement de [Site web de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Ouvrez la page d’accueil et mettez-la en signet.
-
-![Page d’accueil Luma](assets/validate-luma-site.png)
-
 Le débogueur Experience Platform dispose d’une fonctionnalité intéressante qui vous permet de remplacer une bibliothèque de balises existante par une autre. Cette technique est utile pour la validation et nous permet d’ignorer de nombreuses étapes d’implémentation dans ce tutoriel.
 
-1. Assurez-vous que le site Luma est ouvert et sélectionnez l’icône de l’extension Debugger Experience Platform.
-1. Le débogueur s’ouvre et affiche quelques détails sur l’implémentation codée en dur, qui n’est pas liée à ce tutoriel (vous devrez peut-être recharger le site Luma après avoir ouvert le débogueur).
+1. Assurez-vous que la variable [Site web de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} ouvrez et sélectionnez l’icône de l’extension Debugger Experience Platform
+1. Le débogueur s’ouvre et affiche des détails sur l’implémentation codée en dur (vous devrez peut-être recharger le site Luma après avoir ouvert le débogueur).
 1. Vérifiez que le débogueur est &quot;**[!UICONTROL Connexion à Luma]**&quot; comme illustré ci-dessous, puis sélectionnez &quot;**[!UICONTROL lock]**&quot; pour verrouiller le débogueur sur le site Luma.
 1. Sélectionnez la variable **[!UICONTROL Se connecter]** et connectez-vous à Adobe Experience Cloud à l’aide de votre identifiant d’Adobe.
 1. Accédez à **[!UICONTROL Balises Experience Platform]** dans la navigation de gauche
@@ -78,7 +74,7 @@ Le débogueur Experience Platform dispose d’une fonctionnalité intéressante 
 
    ![propriété de balise remplacée](assets/validate-switch-success.png)
 
-Au fur et à mesure que vous continuez le tutoriel, vous utilisez cette technique pour mapper le site Luma sur votre propre propriété de balise afin de valider votre mise en oeuvre du SDK Web Platform. Lorsque vous commencez à utiliser des balises sur votre site web de production, vous pouvez utiliser cette même technique pour valider les modifications.
+Au fur et à mesure que vous continuez le tutoriel, vous utilisez cette technique pour mapper le site Luma sur votre propre propriété de balise afin de valider votre mise en oeuvre du SDK Web Platform. Lorsque vous commencez à utiliser des balises sur votre site web de production, vous pouvez utiliser cette même technique pour valider les modifications que vous apportez dans votre environnement de développement de balises.
 
 ## Validation des requêtes réseau côté client avec le débogueur Experience Platform
 
@@ -138,18 +134,20 @@ Ces types de détails de requête sont également visibles dans les outils de d�
 
    ![Onglet Réseau](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > La valeur ECID est visible dans la réponse réseau. Elle n’est pas incluse dans la variable `identityMap` de la requête réseau, et elle n’est pas stockée dans ce format dans un cookie.
 
 ## Validation des requêtes réseau côté serveur avec le débogueur Experience Platform
 
-Comme vous l’avez appris dans la [Configuration d’un flux de données](configure-datastream.md) leçon à retenir, le SDK Web Platform envoie d’abord des données de votre propriété numérique à Platform Edge Network. Ensuite, Platform Edge Network effectue des requêtes supplémentaires côté serveur vers les services correspondants activés dans votre flux de données.
+Comme vous l’avez appris dans la [Configuration d’un flux de données](configure-datastream.md) leçon à retenir, le SDK Web Platform envoie d’abord des données de votre propriété numérique à Platform Edge Network. Ensuite, Platform Edge Network effectue des requêtes supplémentaires côté serveur vers les services correspondants activés dans votre flux de données. Vous pouvez valider les requêtes côté serveur effectuées par Platform Edge Network à l’aide d’Edge Trace dans le débogueur.
 
-Vous pouvez valider les requêtes côté serveur en activant Edge Trace dans le débogueur. En outre, vous pouvez également valider la charge utile entièrement traitée après qu’elle a atteint une application d’Adobe en utilisant [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-Dans les deux exercices suivants, vous activez Edge Trace et affichez l’identifiant Experience Cloud généré à partir de Platform Edge Network à l’aide d’Assurance.
 
 ### Activation d’Edge Trace
 
-Pour activer Edge Trace
+Pour activer Edge Trace :
 
 1. Dans le volet de navigation de gauche de **[!UICONTROL Débogueur Experience Platform]** select **[!UICONTROL Journaux]**
 1. Sélectionnez la variable **[!UICONTROL Edge]** et sélectionnez **[!UICONTROL Connexion]**
@@ -164,37 +162,9 @@ Pour activer Edge Trace
 
    ![Balise Analytics Edge Trace](assets/validate-edge-trace.png)
 
-À ce stade, vous ne pouvez pas afficher les requêtes Platform Edge Network envoyées à une application Adobe, car vous n’en avez activé aucune dans le flux de données. Dans les leçons futures, vous utiliserez Edge Trace pour afficher les requêtes sortantes côté serveur pour Adobe des applications. Cependant, avec Assurance, vous pouvez toujours afficher l’identifiant Experience Cloud généré par Platform Edge Network.
+À ce stade, vous ne pouvez pas afficher les requêtes Platform Edge Network envoyées à des applications Adobe, car vous n’en avez activé aucune dans le flux de données. Dans les leçons futures, vous utiliserez Edge Trace pour afficher les requêtes sortantes côté serveur pour Adobe des applications et du transfert d’événement. Mais tout d’abord, découvrez un autre outil pour valider les requêtes côté serveur effectuées par Platform Edge Network—Adobe Experience Platform Assurance !
 
-### Démarrer une session d’assurance
-
-Adobe Experience Platform Assurance est un produit de Adobe Experience Cloud qui vous aide à inspecter, à tester, à simuler et à valider la manière dont vous collectez des données ou diffusez des expériences.
-
-En savoir plus sur [Assurance Adobe](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-Chaque fois que vous activez Edge Trace, une session d’assurance est lancée en arrière-plan.
-
-Pour afficher la session Assurance,
-
-1. Une fois Edge Trace activé, une icône de lien sortant s’affiche en haut de l’écran. Sélectionnez l’icône pour ouvrir Assurance. Un nouvel onglet s’ouvre dans votre navigateur.
-
-   ![Démarrer la session Assurance](assets/validate-debugger-start-assurnance.png)
-
-1. Sélectionnez la ligne avec l’événement appelé Adobe Response Handle.
-1. Un menu s’affiche à droite. Sélectionnez la variable `+` signe en regard de `[!UICONTROL ACPExtensionEvent]`
-1. Effectuez un zoom avant en sélectionnant `[!UICONTROL payload > 0 > payload > 0 > namespace]`. L’identifiant affiché sous la dernière `0` correspond au `ECID`. Vous le savez par la valeur qui apparaît sous `namespace` match `ECID`
-
-   ![Assurance validate ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >Vous pouvez voir une valeur ECID tronquée en raison de la largeur de la fenêtre. Il vous suffit de sélectionner la barre de gestion dans l’interface et de faire glisser le curseur vers la gauche pour afficher l’ensemble de l’ECID.
-
-Dans les futures leçons, vous utiliserez Assurance pour valider les payloads entièrement traités atteignant une application d’Adobe activée dans votre flux de données.
-
-Avec un objet XDM qui se déclenche maintenant sur une page et avec les connaissances nécessaires pour valider votre collecte de données, vous êtes prêt à configurer les applications Adobe individuelles à l’aide du SDK Web Platform.
-
-[Suivant : ](setup-experience-platform.md)
+[Suivant : ](validate-with-assurance.md)
 
 >[!NOTE]
 >

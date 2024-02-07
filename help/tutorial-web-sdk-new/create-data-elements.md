@@ -2,9 +2,9 @@
 title: Créer des éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 2%
 
 ---
@@ -24,13 +24,13 @@ Découvrez comment créer des éléments de données dans les balises pour les d
 À la fin de cette leçon, vous pouvez :
 
 * Présentation des différentes approches pour mapper une couche de données à XDM
-* Créer des éléments de données pour capturer les données de contenu
-* Mise en correspondance des éléments de données avec un élément de données d’objet XDM
+* Création d’éléments de données pour la capture de données
+* Mise en correspondance des éléments de données avec un objet XDM
 
 
 ## Conditions préalables
 
-Vous comprenez ce qu’est une couche de données et avez suivi les leçons précédentes suivantes dans le tutoriel :
+Vous connaissez la couche de données et avez terminé les leçons précédentes du tutoriel :
 
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -41,9 +41,9 @@ Vous comprenez ce qu’est une couche de données et avez suivi les leçons pré
 
 Il existe plusieurs façons de mapper les données de votre couche de données à XDM à l’aide de la fonctionnalité de balises de Adobe Experience Platform. Voici quelques avantages et inconvénients de trois approches différentes :
 
-* [Mise en oeuvre de XDM dans la couche de données](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [Mappage à XDM dans le flux de données](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [Mappage à XDM dans les balises](create-data-elements.md#map-data-layer-in-tags)
+1. Mise en oeuvre de XDM dans la couche de données
+1. Mappage à XDM dans les balises
+1. Mappage à XDM dans le flux de données
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Il existe plusieurs façons de mapper les données de votre couche de données �
 
 ### Mise en oeuvre de XDM dans la couche de données
 
-Cette approche implique l’utilisation de l’objet XDM entièrement défini comme structure pour votre couche de données. Ensuite, vous mappez l’ensemble de la couche de données à un élément de données d’objet XDM dans les balises Adobe. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut s’avérer idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la méthode [Commande XDM sendEvent](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Si vous utilisez des balises d’Adobe, vous pouvez créer un élément de données de code personnalisé qui capture l’ensemble de la couche de données en tant qu’objet JSON de transfert vers XDM. Ensuite, vous mappez le JSON de transfert au champ d’objet XDM dans l’action Envoyer l’événement.
+Cette approche implique l’utilisation de l’objet XDM entièrement défini comme structure pour votre couche de données. Ensuite, vous mappez l’ensemble de la couche de données à un élément de données d’objet XDM dans des balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut s’avérer idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la méthode [Commande XDM sendEvent](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé qui capture l’ensemble de la couche de données en tant qu’objet JSON de transfert vers XDM. Ensuite, vous mappez le JSON de transfert au champ d’objet XDM dans l’action Envoyer l’événement.
 
 Vous trouverez ci-dessous un exemple de l’apparence de la couche de données à l’aide du format de couche de données client Adobe :
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 Avantages
 
-* Ignore les étapes de mappage de variables de couche de données individuelles à XDM.
+* Élimine les étapes supplémentaires de remap des variables de couche de données vers XDM
 * Déploiement peut être plus rapide si votre équipe de développement possède le balisage du comportement numérique
 
 Inconvénients
@@ -108,41 +108,44 @@ Inconvénients
 * Impossible d’utiliser la couche de données pour les pixels tiers
 * Impossible de transformer les données entre la couche de données et XDM
 
-### Mappage à XDM dans le flux de données
-
-Cette approche utilise une fonctionnalité intégrée à la configuration de flux de données appelée [Préparation de données pour la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) et ignore le mappage des variables de couche de données sur XDM dans les balises .
-
-Avantages
-
-* Flexibilité, car vous pouvez mapper des variables individuelles à XDM
-* Capacité à [calculer les nouvelles valeurs](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=fr) ou [transformation des types de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) d’une couche de données avant de passer à XDM ;
-* Exploitation d’un [Interface utilisateur du mappage](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) pour mapper des champs de vos données source à XDM avec une interface utilisateur pointer-cliquer
-
-Inconvénients
-
-* Impossible d’utiliser des variables de couche de données comme éléments de données pour les pixels tiers côté client, mais peut les utiliser avec le transfert d’événement de balises d’Adobe.
-* Impossible d’utiliser la fonctionnalité de mise à l’échelle des balises de Adobe Experience Platform
-* La complexité de la maintenance augmente lors du mappage de la couche de données dans les balises et dans le flux de données.
-
 ### Mappage de la couche de données dans les balises
 
 Cette approche implique le mappage de variables de couche de données individuelles OU d’objets de couche de données à des éléments de données dans des balises et éventuellement à XDM. Il s’agit de l’approche traditionnelle de l’implémentation à l’aide d’un système de gestion des balises.
 
-Avantages
+#### Avantages
 
 * L’approche la plus flexible qui soit, car vous pouvez contrôler des variables individuelles et transformer des données avant qu’elles ne soient transférées vers XDM.
 * Peut utiliser les déclencheurs de balises d’Adobe et la fonctionnalité de mise à l’échelle pour transmettre des données à XDM
 * Peut mapper des éléments de données à des pixels tiers côté client
 
-Inconvénients
+#### Inconvénients
 
-* La mise en oeuvre peut prendre plus de temps.
+* La reconstruction de la couche de données en tant qu’éléments de données prend du temps.
+
 
 >[!TIP]
 >
 > Couche de données Google
 > 
-> Si votre entreprise utilise déjà des Google Analytics et dispose de l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser la variable [Extension de la couche de données Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) dans Balises d’Adobe. Cela vous permet de déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
+> Si votre entreprise utilise déjà des Google Analytics et dispose de l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser la variable [Extension de la couche de données Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) dans les balises . Cela vous permet de déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
+
+### Mappage à XDM dans le flux de données
+
+Cette approche utilise une fonctionnalité intégrée à la configuration de flux de données appelée [Préparation de données pour la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) et ignore le mappage des variables de couche de données sur XDM dans les balises .
+
+#### Avantages
+
+* Flexibilité, car vous pouvez mapper des variables individuelles à XDM
+* Capacité à [calculer les nouvelles valeurs](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=fr) ou [transformation des types de données](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) d’une couche de données avant de passer à XDM ;
+* Exploitation d’un [Interface utilisateur du mappage](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) pour mapper des champs de vos données source à XDM avec une interface utilisateur pointer-cliquer
+
+#### Inconvénients
+
+* Impossible d’utiliser des variables de couche de données comme éléments de données pour les pixels tiers côté client, mais peut les utiliser avec le transfert d’événement
+* Impossible d’utiliser la fonctionnalité de mise à l’échelle des balises de Adobe Experience Platform
+* La complexité de la maintenance augmente lors du mappage de la couche de données dans les balises et dans le flux de données.
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ Pour créer l’élément de données Variable :
 
 A la fin de ces étapes, les éléments de données suivants doivent être créés :
 
-| Éléments de données d’extension CORE | Éléments de données du SDK Web Platform |
+| Éléments de données de l’extension Core | Éléments de données d’extension du SDK Web Platform |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ A la fin de ces étapes, les éléments de données suivants doivent être cré�
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ A la fin de ces étapes, les éléments de données suivants doivent être cré�
 
 >[!TIP]
 >
->Dans le futur [Création d’une règle de balise](create-tag-rule.md) leçon, vous découvrez comment la fonction **[!UICONTROL Variable]** l’élément de données vous permet d’empiler plusieurs règles dans des balises à l’aide de la variable **[!UICONTROL Type d’action de mise à jour de variable]**. Ensuite, vous pouvez envoyer indépendamment l’objet XDM à Adobe Experience Platform Edge Network à l’aide d’une **[!UICONTROL Type d’action Envoyer un événement]**.
+>Dans le futur [Création d’une règle de balise](create-tag-rule.md) leçon, vous découvrez comment la fonction **[!UICONTROL Variable]** l’élément de données vous permet d’empiler plusieurs règles dans des balises à l’aide de la variable **[!UICONTROL Type d’action de mise à jour de variable]**.
 
 Une fois ces éléments de données en place, vous êtes prêt à commencer à envoyer des données à Platform Edge Network avec une règle de balises. Mais découvrez tout d’abord comment collecter des identités avec le SDK Web.
 

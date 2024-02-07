@@ -2,9 +2,9 @@
 title: Configuration d’un espace de noms d’identité
 description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Identities
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '640'
 ht-degree: 8%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 8%
 
 Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform.
 
-La variable [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr) définit un identifiant visiteur commun à toutes les applications Adobe afin d’optimiser les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
+La variable [Service Adobe Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr) définit un identifiant visiteur commun (l’ECID) dans les applications d’Adobe basées sur le SDK afin d’optimiser les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
 
-Si votre site web utilise déjà le service d’ID Experience Cloud sur votre site web (via l’API visiteur ou l’extension de balise du service d’ID Experience Cloud) et que vous souhaitez continuer à l’utiliser lors de la migration vers le SDK Web Adobe Experience Platform, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service d’ID Experience Cloud. Voir [Migration des identifiants](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) pour plus d’informations.
+La variable [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) (oui, il y en a deux !) utilise les ECID et les ID de client pour générer des graphiques d’identité, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
+
+
 
 >[!NOTE]
 >
-> À des fins de démonstration, les exercices de cette leçon vous permettent de capturer les détails d’identité d’un client fictif connecté à la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) à l&#39;aide des informations d&#39;identification, **user : `test@adobe.com` / password : test**. Bien que vous puissiez utiliser ces étapes pour créer une identité différente à vos propres fins, pour découvrir les fonctionnalités de la carte des identités dans l’interface de collecte de données, il est recommandé de suivre d’abord pour capturer l’exemple d’identité.
+> À des fins de démonstration, les exercices de cette leçon vous permettent de capturer les détails d’identité d’un client fictif connecté à la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) à l&#39;aide des informations d&#39;identification, **user : `test@adobe.com` / password : test**.
 
 ## Objectifs d&#39;apprentissage
 
@@ -38,6 +40,8 @@ Vous devez avoir terminé les leçons précédentes :
 >[!IMPORTANT]
 >
 >La variable [Extension d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la bibliothèque JavaScript du SDK Web contient la fonctionnalité du service d’identification des visiteurs.
+>
+> Si votre site web utilise déjà le service d’ID Experience Cloud sur votre site web (via l’API visiteur ou l’extension de balise du service d’ID Experience Cloud) et que vous souhaitez continuer à l’utiliser lors de la migration vers le SDK Web Adobe Experience Platform, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service d’ID Experience Cloud. Voir [Migration des identifiants](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) pour plus d’informations.
 
 ## Création d’un espace de noms d’identité
 
@@ -54,12 +58,12 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
 
    >[!NOTE]
    >
-   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
+   >Si vous êtes client d’une application basée sur Platform telle que Real-Time CDP ou Journey Optimizer, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
 
 1. Sélectionner **[!UICONTROL Identités]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Parcourir]**
 
-   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page, indiquant leurs noms, symboles d’identité, la date de la dernière mise à jour et s’ils sont des espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur la force du graphique d’identités.
+   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page, indiquant leurs noms, symboles d’identité, la date de la dernière mise à jour et s’ils sont des espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL Force du graphique d’identités].
 
 1. Sélectionner **[!UICONTROL Créer un espace de noms d’identité]**
 

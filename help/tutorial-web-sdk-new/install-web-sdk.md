@@ -2,7 +2,7 @@
 title: Installation et configuration de l’extension de balise du SDK Web Adobe Experience Platform
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 14%
@@ -11,7 +11,7 @@ ht-degree: 14%
 
 # Installation de l’extension de balise du SDK Web Adobe Experience Platform
 
-Découvrez comment installer et configurer l’extension de balise SDK Web Platform. Le moyen le plus simple d’implémenter le SDK Web consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement Launch). L’extension de balise du SDK Web Platform est la suivante : _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et Journey Optimizer !
+Découvrez comment installer et configurer l’extension de balise SDK Web Platform. Le moyen le plus simple d’implémenter le SDK Web consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement Launch). L’extension de balise du SDK Web Platform est la suivante : _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et [Journey Optimizer](journey-optimizer/setup-web-channel.md)!
 
 ## Objectifs d&#39;apprentissage
 

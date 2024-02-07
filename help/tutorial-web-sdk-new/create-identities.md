@@ -2,9 +2,9 @@
 title: Création d’identités
 description: Découvrez comment créer des identités dans XDM et utiliser l’élément de données de carte des identités pour capturer les identifiants d’utilisateur. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Cette leçon porte sur l’élément de données Identity Map disponible avec l�
 
 À la fin de cette leçon, vous pouvez :
 
-* Comprendre la différence entre l’identifiant Experience Cloud (ECID) et l’identifiant de périphérique propriétaire
+* Comprendre la relation entre l’identifiant Experience Cloud (ECID) et l’identifiant de périphérique propriétaire (FPID)
 * Comprendre la différence entre les ID non authentifiés et les ID authentifiés
 * Création d’un élément de données de mappage d’identité
 
 ## Conditions préalables
 
-Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir suivi les leçons précédentes suivantes dans le tutoriel :
+Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} couche de données et savoir comment référencer des éléments de données dans des balises. Vous devez avoir terminé les leçons précédentes du tutoriel :
 
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -55,11 +55,11 @@ Les ECID sont définis à l’aide d’une combinaison de cookies propriétaires
 
 ## Identifiant de périphérique propriétaire (FPID)
 
-Les FPID sont des cookies propriétaires. _vous définissez à l’aide de vos propres serveurs web ;_ l’Adobe qui utilise ensuite pour définir l’ECID, au lieu d’utiliser le cookie propriétaire défini par le SDK Web. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur qui exploite un enregistrement DNS A (pour IPv4) ou AAAA (pour IPv6), par opposition à un CNAME DNS ou à un code JavaScript.
+Les FPID sont des cookies propriétaires. _vous définissez à l’aide de vos propres serveurs web ;_ l’Adobe qui utilise ensuite pour créer l’ECID, au lieu d’utiliser le cookie propriétaire défini par le SDK Web. Bien que la prise en charge du navigateur puisse varier, les cookies propriétaires ont tendance à être plus durables lorsqu’ils sont définis par un serveur qui exploite un enregistrement DNS A (pour IPv4) ou AAAA (pour IPv6), par opposition à lorsqu’ils sont définis par un CNAME DNS ou un code JavaScript.
 
 Une fois qu’un cookie FPID est défini, sa valeur peut être récupérée et envoyée à l’Adobe à mesure que les données d’événement sont collectées. Les FPID collectés sont utilisés comme graines pour générer des ECID sur Platform Edge Network, qui restent les identifiants par défaut dans les applications Adobe Experience Cloud.
 
-En savoir plus sur [Identifiants d’appareil propriétaires dans le SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=fr)
+Bien que les FPID ne soient pas utilisés dans ce tutoriel, nous vous recommandons d’utiliser des FPID dans votre propre mise en oeuvre de SDK Web. En savoir plus sur [Identifiants d’appareil propriétaires dans le SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=fr)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ En savoir plus sur [Identifiants d’appareil propriétaires dans le SDK Web Pla
 
 Comme indiqué ci-dessus, un ECID est attribué par Adobe à tous les visiteurs de vos propriétés numériques lors de l’utilisation du SDK Web Platform. Cela fait d’ECID l’identité par défaut pour le suivi des comportements numériques non authentifiés.
 
-Vous pouvez également envoyer un ID utilisateur authentifié afin que Platform puisse créer des [Graphiques d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=fr), Target peut définir sa valeur tierce . Pour ce faire, utilisez la méthode [!UICONTROL Carte des identités] type d’élément de données.
+Vous pouvez également envoyer un ID utilisateur authentifié afin que Platform puisse créer des [Graphiques d’identités](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=fr) et Target peut définir ses [Identifiant tiers](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=fr). Pour ce faire, utilisez la méthode [!UICONTROL Carte des identités] type d’élément de données.
 
 Pour créer la variable [!UICONTROL Carte des identités] élément de données :
 
@@ -133,12 +133,17 @@ Pour créer la variable [!UICONTROL Carte des identités] élément de données 
 
 A la fin de ces étapes, les éléments de données suivants doivent être créés :
 
-| Éléments de données d’extension CORE | Éléments de données du SDK Web Platform |
+| Éléments de données de l’extension Core | Éléments de données d’extension du SDK Web Platform |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

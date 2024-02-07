@@ -2,9 +2,9 @@
 title: Configurer un trains de données
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 5%
 
 ---
@@ -43,7 +43,7 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 
    >[!NOTE]
    >
-   >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
+   >Si vous êtes client d’une application basée sur Platform telle que Real-Time CDP ou Journey Optimizer, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
 
 1. Accédez à **[!UICONTROL Datastreams]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Nouvelle structure de données]** sur le côté droit de l’écran.
@@ -52,13 +52,6 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Création du flux de données](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >La fonctionnalité de mappage sera intégrée ultérieurement à ce tutoriel.
-
-
-
 
 Sur l’écran suivant, vous pouvez ajouter des services tels que des applications d’Adobe à la banque de données, mais vous n’ajouterez aucun service à ce stade du tutoriel. Vous le ferez plus tard dans les leçons. [Configuration d’un Experience Platform](setup-experience-platform.md), [Configuration d’Analytics](setup-analytics.md), [Configuration de l’Audience Manager](setup-audience-manager.md), [Configuration de Target](setup-target.md), ou [Transfert d’événement](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ Le remplacement de la configuration du flux de données est un processus en deux
 1. Tout d’abord, vous définissez vos remplacements de flux de données dans la configuration de flux de données. Cette opération doit être effectuée par application par Adobe que vous souhaitez remplacer.
 1. Ensuite, vous envoyez les remplacements au réseau Edge par une action d’événement d’envoi de SDK Web ou par une configuration dans l’extension de balise du SDK Web.
 
-Voir [la configuration du flux de données remplace la documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) pour obtenir des instructions détaillées sur la façon de remplacer les configurations datastream.
+Dans le [Configuration d’Adobe Analytics](setup-analytics.md) leçon Vous remplacez la suite de rapports pour une page à l’aide de l’action Envoyer l’événement du SDK Web Platform.
 
-Dans la leçon Configuration d’Adobe Analytics, vous pouvez suivre [remplacer la suite de rapports pour une page à l’aide de l’action Envoyer l’événement du SDK Web Platform](setup-analytics.md).
+Voir [la configuration du flux de données remplace la documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) pour obtenir des instructions détaillées sur la façon de remplacer les configurations datastream.
 
 Vous êtes maintenant prêt à installer l’extension SDK Web Platform dans votre propriété de balise !
 
