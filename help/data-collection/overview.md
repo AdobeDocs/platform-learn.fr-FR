@@ -3,29 +3,16 @@ title: Tutoriels sur la collecte de données
 description: Vidéos pratiques et tutoriels pour devenir un utilisateur expérimenté de la collecte de données
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 37%
+source-wordcount: '165'
+ht-degree: 32%
 
 ---
 
 # Tutoriels sur la collecte de données
 
 La collecte de données est la nouvelle génération de fonctionnalités de gestion de SDK mobile et de balises de sites web d’Adobe. La collecte de données offre aux clients un moyen simple de déployer et de gérer les solutions d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. Utilisez ces vidéos et tutoriels pour découvrir cette technologie essentielle.
-
-<div id="whats-new-section">
-
-## Nouveautés
-
-* **[Présentation de l’API serveur (vidéo)](server-api/overview.md)**
-  *Envoyez des données à l’aide d’une API de serveur sécurisée et authentifiée.*
-* **[Mise en oeuvre de Adobe Experience Cloud dans les applications mobiles (tutoriel)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr)**
-  *Implémentez des applications Experience Cloud avec le SDK Mobile.*
-* **[Déplacement de balises côté client (tutoriel)](event-forwarding/consider-moving-tags.md)**
-  *Envisagez de déplacer les balises côté client vers le transfert d’événement.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
