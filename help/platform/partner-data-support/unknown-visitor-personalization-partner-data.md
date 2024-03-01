@@ -3,12 +3,13 @@ title: Personnaliser les expériences sur site pour les visiteurs inconnus à l�
 description: Découvrez comment collecter des attributs tiers à partir du [!DNL Adobe Experience Platform Web SDK] et personnaliser votre expérience sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs par les partenaires.
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13831
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 87600927-d5bd-4edf-9332-f401b01c782f
-source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
+source-git-commit: c0ad9603e3e954eb8438418062657f41b3d91b67
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%

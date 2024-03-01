@@ -3,12 +3,13 @@ title: Prise en charge des cas d’utilisation de prospection hors site à l’a
 description: Découvrez le workflow utilisé pour ingérer de nouveaux prospects à partir de partenaires dans [!DNL Real-Time CDP] pour le ciblage avant la visite. 
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13827
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 58427feb-ed4e-43fe-921b-8deb24e2c531
-source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
+source-git-commit: c0ad9603e3e954eb8438418062657f41b3d91b67
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
