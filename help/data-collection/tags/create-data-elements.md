@@ -3,10 +3,11 @@ title: Création d’éléments de données de balise
 description: Découvrez comment créer des éléments de données pour stocker les valeurs extraites de votre couche de données et les rendre disponibles pour les règles et les extensions dans votre propriété de balise.
 feature: Tags
 level: Beginner
-jira: KT-3529
+duration: 588
 last-substantial-update: 2024-02-23T00:00:00Z
+jira: KT-3529
 exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
-source-git-commit: 1c939857f362542cf88dff3d1477cd71fa5c9389
+source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 5%
