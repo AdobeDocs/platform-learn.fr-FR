@@ -3,14 +3,19 @@ title: Création d’une règle de balise
 description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # Création d’une règle de balise
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose.
 
@@ -32,7 +37,7 @@ Découvrez comment envoyer un événement à Platform Edge Network avec votre ob
 
 Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html), et vous devez avoir suivi les leçons précédentes suivantes dans le tutoriel :
 
-* [Configurer les autorisations](configure-permissions.md)
+* [Configuration des autorisations](configure-permissions.md)
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
@@ -45,7 +50,7 @@ Pour mieux gérer les règles dans les balises, il est recommandé de respecter 
 
 * [location] - [event] - [outil]
 
-où;
+où ;
 
 1. location correspond à la ou aux pages du site sur lesquelles la règle se déclenche.
 1. est le déclencheur qui déclenche la balise
@@ -61,7 +66,7 @@ Pour créer une règle de balise :
 1. Ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
 1. Accédez à **[!UICONTROL Règles]** dans la navigation de gauche
 1. Sélectionnez la variable **[!UICONTROL Créer une règle]** button
-   ![Créer une règle](assets/rules-create.png)
+   ![Création d’une règle](assets/rules-create.png)
 1. Donnez à la règle le nom `all pages - library load - AA & AT`.
 
    >[!NOTE]
@@ -79,7 +84,7 @@ Pour créer une règle de balise :
    ![Ajouter des conditions](assets/rules-add-conditions.png)
 1. Sélectionner **[!UICONTROL Type de logique]** `Exception`, **[!UICONTROL Extension]** `Core`, et **[!UICONTROL Type de condition]** `Path Without Query String`
 1. Saisissez le chemin de l’URL. `/content/luma/us/en/user/cart.html` dans le **[!UICONTROL path est égal à]** et **[!UICONTROL name]** it `Core - cart page`
-1. Sélectionnez **[!UICONTROL Conserver les modifications]**
+1. Sélectionner **[!UICONTROL Conserver les modifications]**
    ![Ajouter des conditions](assets/rule-condition-exception.png)
 1. Ajouter trois autres exceptions pour les chemins d’URL suivants
 

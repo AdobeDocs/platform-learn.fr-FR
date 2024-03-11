@@ -3,14 +3,19 @@ title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 7%
+source-wordcount: '1893'
+ht-degree: 4%
 
 ---
 
 # Configuration d’une propriété de transfert d’événement
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web.
 
@@ -51,7 +56,7 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 
    * Configuration initiale
 
-      * [Configurer les autorisations](configure-permissions.md)
+      * [Configuration des autorisations](configure-permissions.md)
       * [Configurer un schéma XDM](configure-schemas.md)
       * [Configuration d’un espace de noms d’identité](configure-identities.md)
       * [Configurer un trains de données](configure-datastream.md)
@@ -90,7 +95,7 @@ Pour configurer Target dans le flux de données :
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**
+1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/event-forwarding-datastream-addService.png)
 1. Sélectionner **[!UICONTROL Transfert d’événement]** comme la propriété **[!UICONTROL Service]**
 
@@ -149,7 +154,7 @@ Au cours de cet exercice, vous allez transférer la hauteur de la fenêtre d’a
 
    ![Transfert d’événement d’un nouvel élément de données](assets/event-forwarding-new-dataelement.png)
 
-1. **** Nommez l’élément de données . `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL Nom]** l’élément de données `environment.browserDetails.viewportHeight`
 
 1. Sous **[!UICONTROL Extension]**, laissez `CORE`
 
@@ -157,14 +162,14 @@ Au cours de cet exercice, vous allez transférer la hauteur de la fenêtre d’a
 
 1. Saisissez le chemin d’accès de l’objet XDM contenant la hauteur de la fenêtre d’affichage du navigateur. `arc.event.xdm.environment.browserDetails.viewportHeight`
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Chemin d’accès ECID de transfert d’événement](assets/event-forwarding-browser-viewpoirt-height.png)
 
 
 1. Création d’un autre élément de données
 
-1. **** Nommez-la `ecid`
+1. **[!UICONTROL Nom]** it `ecid`
 
 1. Sous **[!UICONTROL Extension]**, laissez `CORE`
 
@@ -172,7 +177,7 @@ Au cours de cet exercice, vous allez transférer la hauteur de la fenêtre d’a
 
 1. Saisissez le chemin d’accès à l’objet XDM contenant l’identifiant Experience Cloud. `arc.event.xdm.identityMap.ECID.0.id`
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Chemin d’accès ECID de transfert d’événement](assets/event-forwarding-ecid.png)
 
@@ -183,8 +188,8 @@ Au cours de cet exercice, vous allez transférer la hauteur de la fenêtre d’a
 
    >[!TIP]
    >
-   Lorsque vous utilisez votre propre site web, vous pouvez trouver le chemin d’accès de l’objet XDM avec les outils réseau de votre navigateur web, en filtrant pour `/ee` requêtes, ouverture de la balise [!UICONTROL **Payload**] et descendre vers la variable que vous recherchez. Cliquez avec le bouton droit de la souris et sélectionnez &quot;Copier le chemin de la propriété&quot;. Voici un exemple pour la hauteur de la fenêtre d’affichage du navigateur :
-   ![Chemin XDM de transfert d’événement](assets/event-forwarding-xdm-path.png)
+   >Lorsque vous utilisez votre propre site web, vous pouvez trouver le chemin d’accès de l’objet XDM avec les outils réseau de votre navigateur web, en filtrant pour `/ee` requêtes, ouverture de la balise [!UICONTROL **Payload**] et descendre vers la variable que vous recherchez. Cliquez avec le bouton droit de la souris et sélectionnez &quot;Copier le chemin de la propriété&quot;. Voici un exemple pour la hauteur de la fenêtre d’affichage du navigateur :
+   > ![Chemin XDM de transfert d’événement](assets/event-forwarding-xdm-path.png)
 
 ### Installation de l’extension Adobe Cloud Connector
 
@@ -209,15 +214,15 @@ Il existe quelques différences principales entre la configuration des règles d
    * **Balises**: toutes les règles sont déclenchées par un événement qui doit être spécifié dans la règle, par exemple : `Library Loaded - Page Top`. Les conditions sont facultatives.
    * **Transfert d’événement**: on suppose que chaque événement envoyé à Platform Edge Network est un déclencheur pour transférer des données. Par conséquent, il n’existe pas de [!UICONTROL Événements] qui doit être sélectionné dans les règles de transfert d’événement. Pour gérer les événements qui déclenchent une règle de transfert d’événement, vous devez configurer des conditions.
 
-* **Segmentation d’éléments de données en unités lexicales**:
+* **Jeton d’élément de données**:
 
    * **Balises**: les noms des éléments de données sont segmentés en unités lexicales avec un `%` au début et à la fin du nom de l’élément de données lorsqu’il est utilisé dans une règle. Par exemple : `%viewportHeight%`.
 
    * **Transfert d’événement**: les noms des éléments de données sont segmentés en unités lexicales avec `{{` au début et `}}` à la fin du nom de l’élément de données lorsqu’il est utilisé dans une règle. Par exemple : `{{viewportHeight}}`.
 
-* **Séquence des actions de règle**:
+* **Séquence d’actions de règle**:
 
-   * La section Actions d’une règle de transfert d’événements est toujours exécutée de manière séquentielle. Assurez-vous que l’ordre des actions est correct lorsque vous enregistrez une règle. Cette séquence d’exécution ne peut pas être exécutée de manière asynchrone, à la différence des balises.
+   * La section Actions d’une règle de transfert d’événement est toujours exécutée de manière séquentielle. Assurez-vous que l’ordre des actions est correct lorsque vous enregistrez une règle. Cette séquence d’exécution ne peut pas être exécutée de manière asynchrone, à la différence des balises.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -238,11 +243,11 @@ Pour configurer une règle de transfert de données vers votre webhook, vous dev
 
 1. Revenir **[!UICONTROL Collecte de données]** > **[!UICONTROL Transfert d’événement]** > **[!UICONTROL Règles]** à partir du volet de navigation de gauche
 
-1. Sélectionnez **[!UICONTROL Créer une règle]**
+1. Sélectionner **[!UICONTROL Créer une règle]**
 
    ![Transfert d’événement Nouvelle règle](assets/event-forwarding-new-rules.png)
 
-1. Nommez-la `all events - ad cloud connector - webhook`
+1. Nommez-le `all events - ad cloud connector - webhook`
 
 1. Ajout d’une action
 
@@ -262,13 +267,13 @@ Pour configurer une règle de transfert de données vers votre webhook, vous dev
 
 1. Sur le **[!UICONTROL Clé]** type de colonne dans `ecid`. Dans la colonne Valeur , saisissez la valeur `{{ecid}}` élément de données
 
-1. Sélectionnez **[!UICONTROL Conserver les modifications]**
+1. Sélectionner **[!UICONTROL Conserver les modifications]**
 
    ![Ajouter un paramètre de requête](assets/event-forwarding-rule-query-parameter.png)
 
 1. Votre règle doit ressembler à ci-dessous.
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Enregistrer la règle de transfert d’événement](assets/event-forwarding-rule-save.png)
 
@@ -278,7 +283,7 @@ Créez une bibliothèque et générez toutes les modifications dans votre enviro
 
 >[!NOTE]
 >
-Si vous n’avez pas lié les propriétés d’évaluation et de transfert d’événement de production à votre flux de données, vous verrez l’environnement de développement comme la seule option vers laquelle créer une bibliothèque.
+>Si vous n’avez pas lié les propriétés d’évaluation et de transfert d’événement de production à votre flux de données, vous verrez l’environnement de développement comme la seule option vers laquelle créer une bibliothèque.
 
 ![Enregistrer la règle de transfert d’événement](assets/event-forwarding-initial-build.png)
 
@@ -294,7 +299,7 @@ Vous pouvez maintenant valider votre propriété de transfert d’événement à
 
    ![Session réseau de périphérie du transfert d’événement](assets/event-forwarding-edge-session.png)
 
-1. Rechargez la page
+1. Recharger la page
 
 1. D’autres requêtes s’affichent, vous donnant ainsi une vue d’ensemble des requêtes côté serveur envoyées par Platform Edge Network à WebHook.
 
@@ -321,4 +326,4 @@ Félicitations ! Vous avez configuré le transfert d’événement !
 
 >[!NOTE]
 >
-Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,10 +1,10 @@
 ---
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 8%
+source-wordcount: '1587'
+ht-degree: 7%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 8%
 Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web Platform.
 
 Experience Platform est la colonne vertébrale de toutes les nouvelles applications Experience Cloud, telles qu’Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics et Adobe Journey Optimizer. Ces applications sont conçues pour utiliser le SDK Web Platform comme méthode optimale de collecte de données web.
-
 
 ![Diagramme SDK web et Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Experience Platform utilise le même schéma XDM que celui que vous avez créé 
 
 ## Conditions préalables
 
-Vous devez avoir terminé les leçons suivantes :
+Pour terminer cette leçon, vous devez d’abord :
 
-* La variable **Configuration initiale** leçons :
-   * [Configurer un schéma XDM](configure-schemas.md)
-   * [Configurer un trains de données](configure-datastream.md)
-   * [Configuration d’un espace de noms d’identité](configure-identities.md)
-
-* La variable **Configuration des balises** leçons :
-   * [Installer l’extension SDK Web](install-web-sdk.md)
-   * [Créer des éléments de données](create-data-elements.md)
-   * [Création d’identités](create-identities.md)
-   * [Création de règles de balise](create-tag-rule.md)
+* Avoir accès à une application Adobe Experience Platform telle que Real-time Customer Data Platform, Journey Optimizer ou Customer Journey Analytics
+* Suivez les leçons des sections Configuration initiale et Configuration des balises de ce tutoriel.
 
 
 ## Créer un jeu de données
 
 Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées sous la forme de jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
-Dans cet exercice, vous créez un jeu de données pour effectuer le suivi du contenu et des détails de commerce électronique pour le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->Vous devez avoir déjà créé la variable `Luma Web Event Data` schéma, comme indiqué dans la leçon précédente, [Configurer un schéma XDM](configure-schemas.md).
+Configurez un jeu de données pour vos données d’événement web Luma :
 
 
 1. Accédez au [Interface Experience Platform](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Désormais, le schéma est également activé pour profile.
 > * Tout d’abord, ingérez des données dans vos jeux de données.
 > * Résolvez tous les problèmes qui se produisent pendant le processus d’ingestion des données (par exemple, les problèmes de validation des données ou de mappage).
 > * Activation des jeux de données et des schémas pour Profile
-> * Réingérer les données
+> * Réingérer les données, le cas échéant
 
 
 ### Validation d’un profil

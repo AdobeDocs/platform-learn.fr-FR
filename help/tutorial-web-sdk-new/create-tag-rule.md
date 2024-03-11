@@ -2,9 +2,9 @@
 title: Création de règles de balise
 description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 2%
 
 ---
@@ -40,15 +40,16 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 
 ## Conventions de nommage
 
-Pour mieux gérer les règles dans les balises, il est recommandé de respecter une convention d’affectation des noms standard. Ce tutoriel utilise une convention de dénomination en trois parties :
+Pour mieux gérer les règles dans les balises, il est recommandé de respecter une convention d’affectation des noms standard. Ce tutoriel utilise une convention de dénomination en cinq parties :
 
-* [**location**] - [**event**] - [**outil**] (**séquence**)
+* [**location**] - [**event**] - [**objectif**] - [**outil**] - [**order**]
 
 où ;
 
 1. **location** est la ou les pages du site sur lesquelles la règle se déclenche.
 1. **event** est le déclencheur de la règle.
-1. **outil** correspond à l’application ou aux applications spécifiques utilisées à l’étape d’action pour cette règle.
+1. **objectif** est l’action principale effectuée par la règle.
+1. **outil** est l’application ou les applications spécifiques utilisées à l’étape d’action pour cette règle, ce qui devrait être rare avec le SDK Web.
 1. **séquence** est l’ordre dans lequel la règle doit se déclencher par rapport aux autres règles.
 <!-- minor update -->
 
@@ -59,19 +60,25 @@ Dans les balises, les règles sont utilisées pour exécuter des actions (appels
 * **[!UICONTROL Mettre à jour la variable]** mappe des éléments de données aux champs XDM ;
 * **[!UICONTROL Envoyer un événement]** envoie l’objet XDM à Experience Platform Edge Network
 
-Tout d’abord, nous définissons une &quot;configuration globale&quot; des champs XDM que nous voulons envoyer sur chaque page du site web (par exemple, le nom de page) à l’aide de la variable **[!UICONTROL Mettre à jour la variable]** action.
+Dans le reste de cette leçon, nous :
 
-Ensuite, nous définissons des règles supplémentaires contenant **[!UICONTROL Mettre à jour la variable]** pour compléter la &quot;configuration globale&quot; par des champs XDM supplémentaires qui ne sont disponibles que sous certaines conditions (par exemple, l’ajout de détails de produit sur les pages de produit).
+1. Créez une règle pour définir une &quot;configuration globale&quot; des champs XDM (à l’aide de [!UICONTROL Mettre à jour la variable] que nous voulons envoyer sur chaque page du site web (par exemple, le nom de page) à l’aide de la variable **[!UICONTROL Mettre à jour la variable]** action.
 
-Enfin, nous utiliserons une autre règle avec la variable **[!UICONTROL Envoyer un événement]** Action qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
+1. Créez des règles supplémentaires qui remplacent notre &quot;configuration globale&quot; ou contribuez à des champs XDM supplémentaires (en utilisant [!UICONTROL Mettre à jour la variable] à nouveau) qui ne sont pertinentes que sous certaines conditions (par exemple, l’ajout de détails sur un produit sur les pages du produit).
+
+1. Créez une autre règle avec la variable **[!UICONTROL Envoyer un événement]** Action qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
 
 Toutes ces règles seront séquencées correctement à l’aide de la variable &quot;[!UICONTROL order]&quot;.
+
+Cette vidéo donne un aperçu du processus :
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### Mettre à jour les règles de variable
 
 #### Configuration globale
 
-Pour créer une règle de balise pour les champs XDM globaux :
+Pour créer des règles de balise pour les champs XDM globaux :
 
 1. Ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
 
@@ -81,24 +88,22 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
    ![Création d’une règle](assets/rules-create.png)
 
-1. Donnez à la règle le nom `all pages global content variables - library loaded - AA (order 1)`.
+1. Donnez à la règle le nom `all pages - library loaded - set global variables - 1`.
 
 1. Dans le **[!UICONTROL Événements]** , sélectionnez **[!UICONTROL Ajouter]**
 
    ![Attribuez un nom à la règle et ajoutez un événement](assets/rule-name-new.png)
 
-1. Utilisez la variable **[!UICONTROL Extension Core]** et sélectionnez `Page Bottom` comme la propriété **[!UICONTROL Type d’événement]**
+1. Utilisez la variable **[!UICONTROL Extension Core]** et sélectionnez **[!UICONTROL Bibliothèque chargée (Haut de page)]** comme la propriété **[!UICONTROL Type d’événement]**
 
-1. Sous , **[!UICONTROL Nom]** champ, nommez-le `Core - Page Bottom - order 1`. Vous pouvez ainsi décrire le déclencheur avec un nom significatif.
-
-1. Sélectionner **[!UICONTROL Avancé]** menu déroulant et entrée `1` in **[!UICONTROL Commande]**
+1. Sélectionner **[!UICONTROL Avancé]** menu déroulant et entrée `1` comme la propriété **[!UICONTROL Commande]**
 
    >[!NOTE]
    >
    > Plus le numéro de commande est bas, plus tôt il s’exécute. Par conséquent, nous donnons à notre &quot;configuration globale&quot; un numéro de commande faible.
 
 1. Sélectionner **[!UICONTROL Conserver les modifications]** pour revenir à l’écran de la règle principale
-   ![Sélectionner le déclenchement inférieur de la page](assets/create-tag-rule-trigger-bottom.png)
+   ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-bottom.png)
 
 1. Dans le **[!UICONTROL Actions]** , sélectionnez **[!UICONTROL Ajouter]**
 
@@ -122,7 +127,7 @@ Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICON
 
    >[!TIP]
    >
-   > Pour comprendre les valeurs à renseigner dans la variable `eventType` , vous devez accéder à la page de schéma et sélectionner la variable `eventType` pour afficher les valeurs suggérées sur le rail de droite.
+   > Pour comprendre les valeurs à renseigner dans la variable `eventType` , vous devez accéder à la page de schéma et sélectionner la variable `eventType` pour afficher les valeurs suggérées sur le rail de droite. Vous pouvez également saisir une nouvelle valeur, si nécessaire.
    > ![eventType valeurs suggérées sur la page schémas](assets/create-tag-rule-eventType.png)
 
 1. Recherchez ensuite le `identityMap` dans le schéma et sélectionnez-le.
@@ -160,7 +165,7 @@ Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICON
 
 #### Champs de page de produit
 
-Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** dans plusieurs règles séquencées pour enrichir l’objet XDM avant de l’envoyer à [!UICONTROL Plateforme Edge Network].
+Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** dans d’autres règles séquencées pour enrichir l’objet XDM avant de l’envoyer à [!UICONTROL Plateforme Edge Network].
 
 >[!TIP]
 >
@@ -171,12 +176,11 @@ Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** da
 Commencez par effectuer le suivi des consultations de produit sur la page des détails du produit de Luma :
 
 1. Sélectionner **[!UICONTROL Ajouter une règle]**
-1. Nommez-le  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. Nommez-le  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. Sélectionnez la variable ![+ symbole](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Sous Événement pour ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Core]**
-1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bas de page]**
-1. Nommez-le `Core - Page Bottom - order 20`
-1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`. Cela garantit que la règle s’exécute après la `all pages global content variables - library loaded - AA (order 1)` qui définit les variables de contenu globales.
+1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bibliothèque chargée (Haut de page)]**
+1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`. Cela garantit que la règle s’exécute après la `all pages - library loaded - set global variables - 1` qui définit la configuration globale.
 
    ![Règles XDM Analytics](assets/set-up-analytics-pdp.png)
 
@@ -246,11 +250,10 @@ Comparez l’élément de données à la variable `productListItems` structure (
 Mappons maintenant notre tableau à l’objet XDM :
 
 
-1. Créez une règle nommée `ecommerce - cart library loaded - AA (order 20)`
+1. Créez une règle nommée `ecommerce - library loaded - set shopping cart variables - 20`
 1. Sélectionnez la variable ![+ symbole](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Sous Événement pour ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Core]**
-1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bas de page]**
-1. Nommez-le `Core - Page Bottom - order 20`
+1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bibliothèque chargée (Haut de page)]**
 1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`
 1. Sélectionner **[!UICONTROL Conserver les modifications]**
 
@@ -292,7 +295,7 @@ Mappons maintenant notre tableau à l’objet XDM :
 
 Créez deux autres règles pour le passage en caisse et l’achat suivant le même modèle avec les différences suivantes :
 
-**Nom de la règle**: `ecommerce - checkout library loaded - AA (order 20)`
+**Nom de la règle**: `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout.html
 1. Définissez `eventType` sur `commerce.checkouts`.
@@ -303,7 +306,7 @@ Créez deux autres règles pour le passage en caisse et l’achat suivant le mê
    >Cela équivaut à définir `scCheckout` dans Analytics
 
 
-**Nom de la règle**: `ecommerce - purchase library loaded - AA (order 20)`
+**Nom de la règle**: `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout/order/thank-you.html
 1. Définissez `eventType` sur `commerce.purchases`.
@@ -338,18 +341,16 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. À droite, sélectionnez **[!UICONTROL Ajouter une règle]** pour créer une autre règle
 
-1. Donnez à la règle le nom `all pages send event - library loaded - AA (order 50)`.
+1. Donnez à la règle le nom `all pages - library loaded - set send event - 50`.
 
 1. Dans le **[!UICONTROL Événements]** , sélectionnez **[!UICONTROL Ajouter]**
 
-1. Utilisez la variable **[!UICONTROL Extension Core]** et sélectionnez `Page Bottom` comme la propriété **[!UICONTROL Type d’événement]**
-
-1. Sous , **[!UICONTROL Nom]** champ, nommez-le `Core - Page Bottom - order 50`. Vous pouvez ainsi décrire le déclencheur avec un nom significatif.
+1. Utilisez la variable **[!UICONTROL Extension Core]** et sélectionnez `Library Loaded (Page Top)` comme la propriété **[!UICONTROL Type d’événement]**
 
 1. Sélectionner **[!UICONTROL Avancé]** menu déroulant et entrée `50` in **[!UICONTROL Commande]**. Cela garantit que la deuxième règle se déclenche après la première règle que vous définissez pour déclencher comme `1`.
 
 1. Sélectionner **[!UICONTROL Conserver les modifications]** pour revenir à l’écran de la règle principale
-   ![Sélectionner le déclenchement inférieur de la page](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. Dans le **[!UICONTROL Actions]** , sélectionnez **[!UICONTROL Ajouter]**
 
@@ -383,7 +384,7 @@ Pour créer une bibliothèque :
 
    >[!NOTE]
    >
-   >    Outre l’extension du SDK Web de Adobe Experience Platform et la variable `all pages global content variables - library loaded - AA (order 50)` règle, vous voyez les composants de balise créés dans les leçons précédentes. L’extension Core contient le code JavaScript de base requis par toutes les propriétés de balise Web.
+   >    Vous devriez voir tous les composants de balise créés dans les leçons précédentes. L’extension Core contient le code JavaScript de base requis par toutes les propriétés de balise Web.
 
 1. Sélectionner **[!UICONTROL Enregistrement et création pour le développement]**
 

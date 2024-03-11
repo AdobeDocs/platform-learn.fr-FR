@@ -2,9 +2,9 @@
 title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
@@ -62,7 +62,7 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
       * [Installer l’extension SDK Web](install-web-sdk.md)
       * [Créer des éléments de données](create-data-elements.md)
       * [Création d’identités](create-identities.md)
-      * [Création d’une règle de balise](create-tag-rule.md)
+      * [Création de règles de balise](create-tag-rule.md)
       * [Validation avec le débogueur Adobe Experience Platform](validate-with-debugger.md)
 
 
@@ -185,8 +185,8 @@ Au cours de cet exercice, vous allez transférer la hauteur de la fenêtre d’a
 
    >[!TIP]
    >
-   Lorsque vous utilisez votre propre site web, vous pouvez trouver le chemin d’accès de l’objet XDM avec les outils réseau de votre navigateur web, en filtrant pour `/ee` requêtes, ouverture de la balise [!UICONTROL **Payload**] et descendre vers la variable que vous recherchez. Cliquez avec le bouton droit de la souris et sélectionnez &quot;Copier le chemin de la propriété&quot;. Voici un exemple pour la hauteur de la fenêtre d’affichage du navigateur :
-   ![Chemin XDM de transfert d’événement](assets/event-forwarding-xdm-path.png)
+   >Lorsque vous utilisez votre propre site web, vous pouvez trouver le chemin d’accès de l’objet XDM avec les outils réseau de votre navigateur web, en filtrant pour `/ee` requêtes, ouverture de la balise [!UICONTROL **Payload**] et descendre vers la variable que vous recherchez. Cliquez avec le bouton droit de la souris et sélectionnez &quot;Copier le chemin de la propriété&quot;. Voici un exemple pour la hauteur de la fenêtre d’affichage du navigateur :
+   > ![Chemin XDM de transfert d’événement](assets/event-forwarding-xdm-path.png)
 
 ### Installation de l’extension Adobe Cloud Connector
 
@@ -280,7 +280,7 @@ Créez une bibliothèque et générez toutes les modifications dans votre enviro
 
 >[!NOTE]
 >
-Si vous n’avez pas lié les propriétés d’évaluation et de transfert d’événement de production à votre flux de données, vous verrez l’environnement de développement comme la seule option vers laquelle créer une bibliothèque.
+>Si vous n’avez pas lié les propriétés d’évaluation et de transfert d’événement de production à votre flux de données, vous verrez l’environnement de développement comme la seule option vers laquelle créer une bibliothèque.
 
 ![Enregistrer la règle de transfert d’événement](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Félicitations ! Vous avez configuré le transfert d’événement !
 
 >[!NOTE]
 >
-Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

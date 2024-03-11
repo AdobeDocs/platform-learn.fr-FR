@@ -3,14 +3,19 @@ title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience P
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 6%
+source-wordcount: '1070'
+ht-degree: 2%
 
 ---
 
 # Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger.
 
@@ -38,7 +43,7 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 
 Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avoir suivi les leçons précédentes suivantes dans le tutoriel :
 
-* [Configurer les autorisations](configure-permissions.md)
+* [Configuration des autorisations](configure-permissions.md)
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)

@@ -3,14 +3,19 @@ title: Conclusion et prochaines étapes
 description: Que faire après avoir terminé le tutoriel
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 8%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
 
 # Conclusion et prochaines étapes
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Félicitations ! Vous avez terminé le tutoriel &quot;Mise en oeuvre de Adobe Experience Cloud avec le SDK Web&quot; !
 
@@ -35,7 +40,7 @@ Et il y a toujours plus à apprendre ! Voici quelques suggestions d’autres con
 
 
 * **Déclenchement d’un parcours dans Journey Optimizer**. Les événements que vous avez implémentés sur le site web de Luma peuvent être utilisés pour déclencher des parcours. En savoir plus à ce sujet [tutoriel vidéo](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html?lang=fr).
-* **Connexion au Customer Journey Analytics**. Si vous avez créé la variable [Jeu de données Platform](setup-experience-platform.md), vous pouvez connecter le jeu de données à Customer Journey Analytics. En savoir plus à ce sujet [tutoriel vidéo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=fr)
+* **Connexion au Customer Journey Analytics**. Si vous avez créé la variable [Jeu de données Platform](setup-experience-platform.md), vous pouvez connecter le jeu de données à Customer Journey Analytics. En savoir plus à ce sujet [tutoriel vidéo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
 * **Création d’un segment dans Platform**. Si vous avez activé [schéma et jeu de données pour Real-time Customer Profile](setup-experience-platform.md), vous pouvez créer des segments en fonction de vos événements web, les combiner avec des données provenant d’autres sources, puis les envoyer vers des destinations dans Real-time Customer Data Platform. En savoir plus sur le créateur de segments dans cette [tutoriel vidéo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
 * **Mise en oeuvre du SDK Mobile Platform**. Maintenant que vous maîtrisez un SDK, apprenez-en un autre ! Le SDK Mobile Adobe Experience Platform est utilisé pour alimenter les services Experience Cloud et tiers sur les applications mobiles. Il existe une [tutoriel pratique pour SDK Mobile](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr). Effectuez les deux opérations et visualisez la fusion des profils entre les appareils !
 * **En savoir plus sur Experience Platform**. Découvrez comment ingérer des données provenant d’autres sources et les combiner à vos données SDK Web, dans [Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr)

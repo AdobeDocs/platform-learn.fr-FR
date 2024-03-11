@@ -2,22 +2,16 @@
 title: Créer des éléments de données
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 2%
 
 ---
 
 # Créer des éléments de données
 
-Découvrez comment créer des éléments de données dans les balises pour les données de contenu, de commerce et d’identité sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Renseignez ensuite les champs de votre schéma XDM à l’aide du type d’élément de données Variable .
-
-
->[!IMPORTANT]
->
->Les données de cette leçon proviennent de la `[!UICONTROL digitalData]` couche de données sur le site Luma. Pour afficher la couche de données, ouvrez votre console de développement et saisissez `[!UICONTROL digitalData]` pour afficher la couche de données complète disponible.![couche de données digitalData](assets/data-element-data-layer.png)
-
+Découvrez comment créer des éléments de données dans les balises pour les données de contenu, de commerce et d’identité sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Renseignez ensuite les champs de votre schéma XDM avec le type d’élément de données Variable de l’extension SDK Web Platform .
 
 ## Objectifs d&#39;apprentissage
 
@@ -37,9 +31,15 @@ Vous connaissez la couche de données et avez terminé les leçons précédentes
 * [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>Les données de cette leçon proviennent de la `[!UICONTROL digitalData]` couche de données sur le site Luma. Pour afficher la couche de données, ouvrez votre console de développement et saisissez `[!UICONTROL digitalData]` pour afficher la couche de données complète disponible.![couche de données digitalData](assets/data-element-data-layer.png)
+
+
 ## Méthodes de couche de données
 
-Il existe plusieurs façons de mapper les données de votre couche de données à XDM à l’aide de la fonctionnalité de balises de Adobe Experience Platform. Voici quelques avantages et inconvénients de trois approches différentes :
+Il existe plusieurs façons de mapper les données de votre couche de données à XDM à l’aide de la fonctionnalité de balises de Adobe Experience Platform. Vous trouverez ci-dessous quelques avantages et inconvénients de trois approches différentes. Si vous le souhaitez, vous pouvez combiner plusieurs approches :
 
 1. Mise en oeuvre de XDM dans la couche de données
 1. Mappage à XDM dans les balises
@@ -104,7 +104,7 @@ Inconvénients
 
 * Dépendance totale envers l’équipe de développement et le cycle de développement pour la mise à jour des données vers XDM
 * Flexibilité limitée car XDM reçoit la charge utile exacte de la couche de données
-* Impossible d’utiliser les fonctionnalités intégrées de balises, telles que le raclage, la persistance et les fonctionnalités pour les déploiements rapides.
+* Impossible d’utiliser les fonctionnalités de balises intégrées, telles que la mise au rebut, la persistance, pour les déploiements rapides.
 * Impossible d’utiliser la couche de données pour les pixels tiers
 * Impossible de transformer les données entre la couche de données et XDM
 
@@ -289,7 +289,7 @@ A la fin de ces étapes, les éléments de données suivants doivent être cré�
 
 >[!TIP]
 >
->Dans le futur [Création d’une règle de balise](create-tag-rule.md) leçon, vous découvrez comment la fonction **[!UICONTROL Variable]** l’élément de données vous permet d’empiler plusieurs règles dans des balises à l’aide de la variable **[!UICONTROL Type d’action de mise à jour de variable]**.
+>Dans le futur [Création de règles de balise](create-tag-rule.md) leçon, vous découvrez comment la fonction **[!UICONTROL Variable]** l’élément de données vous permet d’empiler plusieurs règles dans des balises à l’aide de la variable **[!UICONTROL Type d’action de mise à jour de variable]**.
 
 Une fois ces éléments de données en place, vous êtes prêt à commencer à envoyer des données à Platform Edge Network avec une règle de balises. Mais découvrez tout d’abord comment collecter des identités avec le SDK Web.
 

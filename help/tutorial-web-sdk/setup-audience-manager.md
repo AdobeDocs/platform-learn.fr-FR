@@ -3,14 +3,19 @@ title: Configuration de l’Audience Manager avec le SDK Web Platform
 description: Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 1%
 
 ---
 
 # Configuration de l’Audience Manager avec le SDK Web Platform
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie.
 
@@ -42,11 +47,11 @@ La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform dif
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**
+1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/aam-datastream-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Audience Manager]** comme la propriété **[!UICONTROL Service]**
 1. Confirmez que **[!UICONTROL Destinations de cookie activées]** et **[!UICONTROL Destinations d’URL activées]** sont sélectionnées
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![Confirmez les paramètres du flux de données d’Audience Manager et enregistrez](assets/aam-datastream-save.png)
 
 ## Création d’une source de données
@@ -116,7 +121,7 @@ Créez ensuite un **Destination basée sur les cookies** en utilisant la variabl
 
 1. Ouvrez le créateur de destinations en sélectionnant **[!UICONTROL Destinations]** dans la fonction **Données d’audience** dans le volet de navigation supérieur.
 1. Sélectionner **[!UICONTROL Création d’une destination]**
-1. Entrez un nom et une description, `Platform Web SDK tutorial`
+1. Saisissez un nom et une description, `Platform Web SDK tutorial`
 1. Comme la variable **[!UICONTROL Catégorie]**, sélectionnez **[!UICONTROL Personnalisé]**
 1. Comme la variable **[!UICONTROL Type]**, sélectionnez **[!UICONTROL Cookie]**
 
@@ -144,9 +149,9 @@ Créez ensuite un **Destination basée sur les cookies** en utilisant la variabl
 
 1. Une fois que vous avez ajouté votre segment, une fenêtre contextuelle s’ouvre dans laquelle vous devez fournir une valeur attendue pour votre cookie. Pour cet exercice, saisissez la valeur &quot;hpvisitor&quot;.
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-1. Sélectionnez **[!UICONTROL Terminé]**
+1. Sélectionner **[!UICONTROL Terminé]**
    ![Adobe Experience Platform Audience Manager Add Trait](assets/luma-cookie-segment-dw.png)
 
 La période de mappage des segments nécessite quelques heures pour être activée. Une fois l’opération terminée, vous pouvez actualiser l’interface d’Audience Manager et voir que la variable **Segments mappés** mise à jour de la liste.

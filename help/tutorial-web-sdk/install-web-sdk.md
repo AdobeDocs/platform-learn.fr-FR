@@ -3,14 +3,19 @@ title: Installation et configuration de l’extension de balise du SDK Web Adobe
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 15%
+source-wordcount: '644'
+ht-degree: 13%
 
 ---
 
 # Installation de l’extension de balise du SDK Web Adobe Experience Platform
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette extension de balise est _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et Journey Optimizer !
 
@@ -26,14 +31,14 @@ Découvrez comment installer et configurer l’extension de balise SDK Web Platf
 
 Vous devez avoir terminé les leçons précédentes de ce tutoriel :
 
-* [Configurer les autorisations](configure-permissions.md)
+* [Configuration des autorisations](configure-permissions.md)
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 
 ## Installation de l’extension SDK Web Experience Platform
 
-### Ajouter une propriété
+### Ajout d’une propriété
 
 Tout d’abord, vous devez disposer d’une propriété de balise. Une propriété est un conteneur pour l’ensemble du code JavaScript, des règles et d’autres fonctionnalités nécessaires pour collecter des détails à partir d’une page web et les envoyer à différents emplacements.
 
@@ -45,7 +50,7 @@ Créez une propriété de balise pour le tutoriel :
    ![Ajouter une nouvelle propriété](assets/websdk-property-addNewProperty.png)
 1. Comme la variable **[!UICONTROL Nom]**, saisissez `Web SDK Course` (ajoutez votre nom à la fin, si plusieurs personnes de votre société suivent ce tutoriel)
 1. Comme la variable **[!UICONTROL Domaines]**, saisissez `enablementadobe.com` (expliqué ultérieurement)
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![Détails de la propriété](assets/websdk-property-propertyDetails.png)
 
 ## Ajout de l’extension SDK Web
@@ -66,7 +71,7 @@ Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieu
 
 1. Sous **[!UICONTROL Datastreams]**, sélectionnez la variable **[!UICONTROL Choisir parmi les listes]** méthode d&#39;entrée
 1. Sélectionnez le flux de données que vous avez créé précédemment, `Luma Web SDK`
-1. Sélectionnez **[!UICONTROL Enregistrer]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
    >[!NOTE]
    >
    > Si vous ne trouvez pas votre flux de données, accédez au [Configuration d’un flux de données](configure-datastream.md) leçon et suivez les étapes pour en créer une

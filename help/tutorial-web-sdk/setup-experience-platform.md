@@ -2,14 +2,19 @@
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 11%
+source-wordcount: '1600'
+ht-degree: 8%
 
 ---
 
 # Diffusion en continu de données vers un Experience Platform avec le SDK Web
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web Platform.
 
@@ -31,7 +36,7 @@ Experience Platform utilise le même schéma XDM que celui que vous avez créé 
 Vous devez avoir terminé les leçons suivantes :
 
 * La variable **Configuration initiale** leçons :
-   * [Configurer les autorisations](configure-permissions.md)
+   * [Configuration des autorisations](configure-permissions.md)
    * [Configurer un schéma XDM](configure-schemas.md)
    * [Configurer un trains de données](configure-datastream.md)
    * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -56,7 +61,7 @@ Dans cet exercice, vous créez un jeu de données pour effectuer le suivi du con
 1. Accédez au [Interface Experience Platform](https://experience.adobe.com/platform/)
 1. Vérifiez que vous vous trouvez dans l’environnement de test de développement que vous utilisez pour ce tutoriel.
 1. Ouvrir **[!UICONTROL Jeux de données]** à partir du volet de navigation de gauche
-1. Sélectionnez **[!UICONTROL Créer un jeu de données]**
+1. Sélectionner **[!UICONTROL Création d’un jeu de données]**
 
    ![Créer un schéma](assets/experience-platform-create-dataset.png)
 
@@ -84,7 +89,7 @@ Vous pouvez maintenant configurer votre [!UICONTROL datastream] pour envoyer des
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**
+1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/experience-platform-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Experience Platform]** comme la propriété **[!UICONTROL Service]**
 1. Sélectionner `Luma Web Event Data` comme la propriété **[!UICONTROL Jeu de données d’événement]**

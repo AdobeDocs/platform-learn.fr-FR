@@ -3,14 +3,19 @@ title: Configuration d’un espace de noms d’identité
 description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 12%
+source-wordcount: '694'
+ht-degree: 8%
 
 ---
 
 # Configuration d’un espace de noms d’identité
+
+
+>[!CAUTION]
+>
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform.
 
@@ -58,11 +63,11 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
    >Si vous êtes le client d’une application basée sur Platform comme Real-Time CDP, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
 
 1. Sélectionner **[!UICONTROL Identités]** dans la navigation de gauche
-1. Sélectionnez **[!UICONTROL Parcourir]**
+1. Sélectionner **[!UICONTROL Parcourir]**
 
    Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page, indiquant leurs noms, symboles d’identité, la date de la dernière mise à jour et s’ils sont des espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur la force du graphique d’identités.
 
-1. Sélectionnez **[!UICONTROL Créer un espace de noms d’identité]**
+1. Sélectionner **[!UICONTROL Créer un espace de noms d’identité]**
 
    ![Affichage des identités](assets/configure-identities-screen.png)
 
@@ -94,7 +99,7 @@ En raison d’une limitation actuelle de l’extension SDK Web, les espaces de n
 ## Ressources supplémentaires
 
 * [Documentation d’Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr)
-* [API Identity Service](https://www.adobe.io/experience-platform-apis/references/identity-service/)
+* [API Service d’identités](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 Maintenant que les identités sont en place, le flux de données peut être configuré.
 
