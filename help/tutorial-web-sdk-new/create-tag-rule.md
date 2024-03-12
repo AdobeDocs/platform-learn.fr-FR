@@ -2,9 +2,9 @@
 title: Création de règles de balise
 description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,9 @@ Découvrez comment envoyer des événements à Platform Edge Network avec votre 
 À la fin de cette leçon, vous pouvez :
 
 * Utilisation d’une convention d’affectation de nom pour la gestion des règles dans les balises
-* Envoi d’un événement XDM à l’aide des types d’action Mettre à jour une variable et Envoyer un événement dans une règle de balise
+* Envoi d’un événement avec des champs XDM à l’aide des actions Mettre à jour la variable et Envoyer un événement
+* Empiler plusieurs jeux de champs XDM dans plusieurs règles
+* Mappage d’éléments de données de tableau individuels ou entiers à l’objet XDM
 * Publier une règle de balise dans une bibliothèque de développement
 
 

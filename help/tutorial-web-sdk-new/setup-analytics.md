@@ -2,9 +2,9 @@
 title: Configuration d’Adobe Analytics à l’aide du SDK Web Experience Platform
 description: Découvrez comment configurer Adobe Analytics à l’aide du SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 1%
 
 ---
@@ -21,16 +21,12 @@ Découvrez comment configurer Adobe Analytics à l’aide de [SDK Web Experience
 
 À la fin de cette leçon, vous saurez comment :
 
-* Configuration d’un schéma XDM pour Adobe Analytics
-* Comprendre la différence entre les variables XDM mappées automatiquement et manuellement pour Analytics
 * Configuration d’un flux de données pour activer Adobe Analytics
-* Remplacement d’un flux de données pour envoyer des données à une autre suite de rapports Adobe Analytics
-* Mappage d’éléments de données de tableau individuels ou entiers à l’objet XDM
-* Utilisez le type d’action Mettre à jour la règle de variable pour empiler plusieurs règles dans un événement XDM.
-* Capture des pages vues dans Adobe Analytics avec l’objet XDM
-* Capture des données de commerce électronique avec l’objet XDM pour la chaîne de produit Adobe Analytics
+* Comprendre la différence entre les variables XDM mappées automatiquement et manuellement pour Analytics
+* Configuration d’un schéma XDM pour des variables spécifiques à Adobe Analytics
 * Définir un eVar de marchandisage de syntaxe de produit à l’aide de XDM
-* Les variables Adobe Analytics sont définies avec l’objet XDM à l’aide du débogueur Experience Platform.
+* Remplacement d’un flux de données pour envoyer des données à une autre suite de rapports Adobe Analytics
+* Validation des variables Adobe Analytics à l’aide du débogueur Experience Platform
 * Utilisation de règles de traitement Adobe Analytics pour définir des variables personnalisées
 * La validation des données est capturée par Adobe Analytics à l’aide de Adobe Experience Platform Assurance
 * La validation des données est capturée par Adobe Analytics à l’aide de rapports en temps réel
