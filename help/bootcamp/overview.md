@@ -3,16 +3,16 @@ title: Experience Makers Bootcamp
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
+source-git-commit: 7ee17ab7d847b82dc56c91f552d79b24649a8c6a
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 2%
+source-wordcount: '718'
+ht-degree: 1%
 
 ---
 
 # Experience Makers Bootcamp
 
-## Aperçu
+## Vue d’ensemble
 
 De nombreuses entreprises ne sont pas conscientes des frictions qui existent dans le parcours de leurs clients, qui sont la conséquence d’une approche cloisonnée et fragmentée dans l’orchestration de la communication client. Les données, les profils et le contenu doivent être parfaitement alignés pour concevoir et offrir des expériences client exceptionnelles.
 
@@ -20,18 +20,55 @@ Rejoignez ce bootcamp pour découvrir comment une approche basée sur une platef
 
 La personnalisation à grande échelle commence par la compréhension de ce qui peut être amélioré, et une vue en temps réel de votre client est essentielle à cela. Les connaissances mènent à l&#39;action, ce qui nous permet d&#39;avoir plus d&#39;informations. L’approche axée sur la plateforme unique d’Adobe vous donne les outils nécessaires non seulement pour stimuler l’évolution technologique, mais également pour influencer votre entreprise, votre équipe et votre capacité à offrir une expérience client holistique au lieu d’une expérience client spécifique à un canal.
 
->[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
-
 ## Agenda
 
-### Jour 1
+### Jour 1
 
 
-10:00: Lancement 10:30: Démonstration du Parcours client : Art du possible 11:00: 1-1 personnalisation, chasse à la friction, silos, Adobe POV (tableau blanc) 11:45: Saut 12:00: Ventilation de l’architecture des solutions (tableau blanc) 13:00: Déjeuner 14:00: Userflow 1 - Inscription et intégration - présentation (pourquoi-quoi-faire) 15:30: Saut 16:00: Userflow 2 Combinaison physique et numérique - présentation pratique et pratique / plongée profonde 18:00: Saut 18:30: Marchez jusqu&#39;au restaurant 19:00: Dîner
+9:30: Présentation
 
-### Jour 2
+10:00: Lancement / Défi Intro &amp; Bootcamp
 
-08:00: Petit déjeuner 08:30: Présentation de la diffusion basée sur les Parcours utilisateur, de la structure d’équipe, du log de diffusion 09.45 : Userflow 3 Blending physique et numérique - Présentation avec exercice pratique 11.15 : Break 11.30 : Fin des flux d’utilisateurs - (où-où-quand) 12:00: Group Presentations 12.30 : Déjeuner 13.30 : Userflow 4 : Analyse des clients - détails 14.30 : Conclusion, rap-up et étapes 15.00 : Boissons et délai
+11:00: Personnalisation 1-1, chasse aux friction, silos, Adobe POV (tableau blanc)
+
+12:00: Rompre
+
+12:15: Ventilation de l’architecture des solutions (tableau blanc)
+
+13:00: Déjeuner
+
+14:00: Flux utilisateur 1 - Présentation &quot;Acquisition&quot; et plongée en profondeur
+
+15:30: Rompre
+
+16:00: Enregistrement et intégration d’Userflow 2
+
+17:30: Golfclinique et Borrel
+
+19:30: Dîner
+
+### Jour 2
+
+08:30: Session de petit-déjeuner : présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion
+
+09.45 : Comprendre Les Flux De Données AEP Par Le Biais De Scénarios Practifs
+
+10.15 : Donner des moyens à la confidentialité : informations sur la gouvernance des données avec AEP
+
+10.45 : pause
+
+12:00: Flux d’utilisateurs 3 - Fusion physique et numérique
+
+12.30 : Déjeuner
+
+13.30 : Customer Journey Analytics - profondeur
+
+14.15 : Exploration des dernières innovations autour de GenAI pour AEP et au-delà
+
+14.45 : Conversion et récapitulation
+
+15.00 : Boissons et ajournement
+
 
 ## Conditions préalables
 
@@ -75,7 +112,7 @@ Dans ce flux d’utilisateurs, vous comprendrez tous les éléments dont vous av
 
 [3. Fusion physique et numérique](./uc/uc3/uc3.md)
 
-Dans ce flux d’utilisateurs, vous personnaliserez l’expérience client sur les canaux en ligne et hors ligne de manière cohérente, à l’aide de Real-Time CDP et de Adobe Journey Optimizer.
+Dans ce flux d’utilisateurs, vous personnaliserez l’expérience client sur les canaux en ligne et hors ligne de manière cohérente, à l’aide de Real-Time CDP et Adobe Journey Optimizer.
 
 [4. Analyse des Parcours client](./uc/uc4/uc4.md)
 
