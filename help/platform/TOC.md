@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
+source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '874'
 ht-degree: 21%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 21%
    + [Intégration à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Hygiène des données {#data-hygiene}
    + [Suppression de jeux de données](/help/platform/data-hygiene/delete-datasets.md)
+   + [Expiration pseudonyme du profil et de l’événement](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Ingestion des données {#data-ingestion}
    + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Présentation de l’ingestion par lots](/help/platform/data-ingestion/batch-ingestion-overview.md)
