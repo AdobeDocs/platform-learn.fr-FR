@@ -2,9 +2,10 @@
 title: Validation des mises en oeuvre du SDK Web avec Experience Platform Assurance
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Assurance. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 3%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Platform Assurance est un produit de Adobe Experience Cloud qui
 À la fin de cette leçon, vous saurez comment :
 
 * Démarrer une session d’assurance
-* Affichage des requêtes envoyées à et depuis Platform Edge Network
+* Affichage des requêtes envoyées à et depuis l’Edge Network Platform
 
 ## Conditions préalables
 
@@ -31,7 +32,7 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
 * [Créer des éléments de données](create-data-elements.md)
 * [Création d’identités](create-identities.md)
-* [Création de règles de balise](create-tag-rule.md)
+* [Création d’une règle de balise](create-tag-rule.md)
 * [Validation avec Debugger](validate-with-debugger.md)
 
 
