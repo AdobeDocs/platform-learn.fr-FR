@@ -2,7 +2,8 @@
 title: Installation et configuration de l’extension de balise du SDK Web Adobe Experience Platform
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 14%
@@ -53,7 +54,7 @@ Avec votre schéma XDM, votre flux de données et votre propriété de balise ma
 1. Recherchez `Adobe Experience Platform Web SDK`.
 1. Sélectionner **[!UICONTROL Installer]**
 
-   ![Installation de l’extension SDK Web](assets/extension-platform-web-sdk.jpg)
+   ![Installation de l’extension SDK Web](assets/extension-platform-web-sdk.png)
 
 
 ## Lier le SDK Web Platform à votre flux de données

@@ -3,9 +3,9 @@ title: Validation des mises en oeuvre du SDK Web avec Experience Platform Assura
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Assurance. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -61,13 +61,16 @@ Revue de la leçon sur Debugger :
 1. Ouvrez le [Interface de collecte de données](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Sélectionnez Assurance dans la navigation de gauche.
 1. Sélectionner Créer une session
+   ![Création d’une session d’assurance](assets/assurance-create-session.png)
 1. Sélectionner le début
 1. Attribuez un nom à la session, par exemple : `Luma Web SDK validation`
 1. Comme la variable **[!UICONTROL URL de base]** enter `https://luma.enablementadobe.com/`
+   ![Attribution d’un nom à la session Assurance](assets/assurance-name-session.png)
 1. Dans l’écran suivant, sélectionnez **[!UICONTROL Copier le lien]**
 1. Sélectionnez l’icône pour copier le lien dans le presse-papiers.
 1. Collez l’URL dans votre navigateur, qui ouvre le site web Luma avec un paramètre d’URL spécial. `adb_validation_sessionid` et démarrez la session
 1. Dans l’interface Assurance, un message doit s’afficher pour vous indiquer que vous avez réussi à vous connecter à la session et que les événements sont capturés dans l’interface Assurance.
+   ![La session d’assurance est connectée.](assets/assurance-success.png)
 
 ## Validation de l’état actuel de la mise en oeuvre de votre SDK Web
 

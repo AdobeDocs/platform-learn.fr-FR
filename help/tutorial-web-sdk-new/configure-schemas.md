@@ -2,7 +2,8 @@
 title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ Découvrez comment créer un schéma XDM pour les données web dans l’interfac
 
 Les schémas de modèle de données d’expérience (XDM) sont les blocs de création, les principes et les bonnes pratiques pour la collecte de données dans Adobe Experience Platform.
 
-Le SDK web Platform utilise votre schéma pour normaliser vos données d’événement web, les envoyer au réseau Platform Edge et, en fin de compte, transférer les données vers toute application Experience Cloud configurée dans le flux de données. Cette étape est essentielle, car elle définit un modèle de données standard requis pour ingérer des données d’expérience client dans Experience Platform et permet aux services et applications en aval de fonctionner conformément à ces normes.
+Le SDK Web Platform utilise votre schéma pour normaliser vos données d’événement web, les envoyer à l’Edge Network Platform et, en fin de compte, transférer les données à toute application Experience Cloud configurée dans le flux de données. Cette étape est essentielle, car elle définit un modèle de données standard requis pour ingérer des données d’expérience client dans Experience Platform et permet aux services et applications en aval de fonctionner conformément à ces normes.
 
 ## Pourquoi modéliser les données ?
 
@@ -122,7 +123,7 @@ Dans la mesure du possible, il est recommandé d’utiliser des groupes de champ
 1. Cochez la case
 1. Sélectionner **[!UICONTROL Ajouter des groupes de champs]**
 
-   ![Ajouter un groupe de champs](assets/schema-add-field-group.jpg)
+   ![Ajouter un groupe de champs](assets/schema-add-field-group.png)
 
 Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. La variable [!UICONTROL nom d&#39;affichage] de chaque champ s’affiche pour les spécialistes du marketing dans l’interface du créateur de segments des applications basées sur Platform. Vous pouvez modifier le nom d’affichage des champs standard en fonction de vos besoins. Vous pouvez également supprimer les champs que vous ne souhaitez pas. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous pouvez voir à quels groupes appartiennent. **[!UICONTROL Événement d’expérience client]**.
 

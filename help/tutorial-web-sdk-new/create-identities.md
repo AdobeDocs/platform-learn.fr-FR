@@ -2,7 +2,8 @@
 title: Création d’identités
 description: Découvrez comment créer des identités dans XDM et utiliser l’élément de données de carte des identités pour capturer les identifiants d’utilisateur. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -47,7 +48,7 @@ La variable [Identifiant Experience Cloud (ECID)](https://experienceleague.adobe
 
 En savoir plus sur la manière dont [Le suivi des ECID s’effectue à l’aide du SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-Les ECID sont définis à l’aide d’une combinaison de cookies propriétaires et de Platform Edge Network. Par défaut, les cookies propriétaires sont définis par le SDK Web. Pour tenir compte des restrictions du navigateur sur la durée de vie des cookies, vous pouvez choisir de définir et de gérer vos propres cookies propriétaires à la place. On parle alors d’identifiants d’appareil propriétaires (FPID).
+Les ECID sont définis à l’aide d’une combinaison de cookies propriétaires et d’Edge Network Platform. Par défaut, les cookies propriétaires sont définis côté client par le SDK Web. Pour tenir compte des restrictions du navigateur sur la durée de vie des cookies, vous pouvez choisir de définir vos propres cookies propriétaires côté serveur. On parle alors d’identifiants d’appareil propriétaires (FPID).
 
 >[!IMPORTANT]
 >

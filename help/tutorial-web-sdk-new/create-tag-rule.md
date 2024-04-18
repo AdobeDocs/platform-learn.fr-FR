@@ -1,8 +1,9 @@
 ---
 title: Création de règles de balise
-description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 2%
@@ -11,7 +12,7 @@ ht-degree: 2%
 
 # Création de règles de balise
 
-Découvrez comment envoyer des événements à Platform Edge Network avec votre objet XDM à l’aide de règles de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose. Avec le SDK Web Platform, les règles sont utilisées pour envoyer des événements à Platform Edge Network avec les champs XDM appropriés.
+Découvrez comment envoyer des événements à l’Edge Network Platform avec votre objet XDM à l’aide de règles de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose. Avec le SDK Web Platform, les règles sont utilisées pour envoyer des événements à l’Edge Network Platform avec les champs XDM appropriés.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ où ;
 Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. L’extension de balises SDK Web Platform comprend deux actions qui seront utilisées dans cette leçon :
 
 * **[!UICONTROL Mettre à jour la variable]** mappe des éléments de données aux champs XDM ;
-* **[!UICONTROL Envoyer un événement]** envoie l’objet XDM à Experience Platform Edge Network
+* **[!UICONTROL Envoyer un événement]** envoie l’objet XDM à l’Edge Network Experience Platform ;
 
 Dans le reste de cette leçon, nous :
 
@@ -68,7 +69,7 @@ Dans le reste de cette leçon, nous :
 
 1. Créez des règles supplémentaires qui remplacent notre &quot;configuration globale&quot; ou contribuez à des champs XDM supplémentaires (en utilisant [!UICONTROL Mettre à jour la variable] à nouveau) qui ne sont pertinentes que sous certaines conditions (par exemple, l’ajout de détails sur un produit sur les pages du produit).
 
-1. Créez une autre règle avec la variable **[!UICONTROL Envoyer un événement]** Action qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
+1. Créez une autre règle avec la variable **[!UICONTROL Envoyer un événement]** qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
 
 Toutes ces règles seront séquencées correctement à l’aide de la variable &quot;[!UICONTROL order]&quot;.
 
@@ -105,7 +106,7 @@ Pour créer des règles de balise pour les champs XDM globaux :
    > Plus le numéro de commande est bas, plus tôt il s’exécute. Par conséquent, nous donnons à notre &quot;configuration globale&quot; un numéro de commande faible.
 
 1. Sélectionner **[!UICONTROL Conserver les modifications]** pour revenir à l’écran de la règle principale
-   ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-bottom.png)
+   ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-loaded.png)
 
 1. Dans le **[!UICONTROL Actions]** , sélectionnez **[!UICONTROL Ajouter]**
 
@@ -167,7 +168,7 @@ Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICON
 
 #### Champs de page de produit
 
-Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** dans d’autres règles séquencées pour enrichir l’objet XDM avant de l’envoyer à [!UICONTROL Plateforme Edge Network].
+Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** dans d’autres règles séquencées pour enrichir l’objet XDM avant de l’envoyer à [!UICONTROL Edge Network de plateforme].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ Lorsque vous avez terminé, les règles suivantes doivent être créées.
 
 ### Envoyer la règle d’événement
 
-Maintenant que vous avez défini les variables, vous pouvez créer la règle pour envoyer l’objet XDM complet à Platform Edge Network avec le **[!UICONTROL Envoyer un événement]** action.
+Maintenant que vous avez défini les variables, vous pouvez créer la règle pour envoyer l’objet XDM complet à l’Edge Network Platform avec le **[!UICONTROL Envoyer un événement]** action.
 
 1. À droite, sélectionnez **[!UICONTROL Ajouter une règle]** pour créer une autre règle
 
@@ -352,7 +353,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 1. Sélectionner **[!UICONTROL Avancé]** menu déroulant et entrée `50` in **[!UICONTROL Commande]**. Cela garantit que la deuxième règle se déclenche après la première règle que vous définissez pour déclencher comme `1`.
 
 1. Sélectionner **[!UICONTROL Conserver les modifications]** pour revenir à l’écran de la règle principale
-   ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. Dans le **[!UICONTROL Actions]** , sélectionnez **[!UICONTROL Ajouter]**
 
