@@ -3,7 +3,7 @@ title: Configuration de l’Audience Manager avec le SDK Web Platform
 description: Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie.
 
@@ -39,7 +39,7 @@ Pour terminer cette leçon, vous devez d’abord :
 
 ## Configuration du flux de données
 
-La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform diffère de celle à l’aide de [transfert côté serveur (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=fr). Le transfert côté serveur transmet les données de demande Adobe Analytics à l’Audience Manager. Une mise en oeuvre du SDK Web Platform transmet les données XDM envoyées à Platform Edge Network pour Audience Manager. L’Audience Manager est activée dans le flux de données :
+La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform diffère de celle à l’aide de [transfert côté serveur (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=fr). Le transfert côté serveur transmet les données de demande Adobe Analytics à l’Audience Manager. Une implémentation du SDK Web Platform transmet les données XDM envoyées à l’Edge Network Platform à Audience Manager. L’Audience Manager est activée dans le flux de données :
 
 1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**

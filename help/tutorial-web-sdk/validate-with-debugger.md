@@ -3,7 +3,7 @@ title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience P
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger.
 
@@ -37,7 +37,7 @@ Cette technique, appelée changement d’environnement, vous sera utile ultérie
 À la fin de cette leçon, vous pourrez utiliser le débogueur pour :
 
 * Chargement d’une autre bibliothèque de balises
-* Validez que l’objet XDM capture et envoie des données comme prévu dans Edge Network
+* Valider que l’objet XDM capture et envoie des données comme Edge Network attendu
 
 ## Conditions préalables
 
@@ -87,7 +87,7 @@ Au fur et à mesure que vous poursuivez le tutoriel, vous utiliserez cette techn
 
 ## Validation de votre mise en oeuvre dans Experience Platform Debugger
 
-Vous pouvez utiliser Debugger pour valider votre mise en oeuvre du SDK Web Platform et afficher les données envoyées à Platform Edge Network :
+Vous pouvez utiliser Debugger pour valider votre mise en oeuvre du SDK Web Platform et afficher les données envoyées à l’Edge Network Platform :
 
 1. Accédez à **[!UICONTROL Résumé]** dans le volet de navigation de gauche, pour afficher les détails de votre propriété de balise
 

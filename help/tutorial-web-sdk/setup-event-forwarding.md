@@ -3,7 +3,7 @@ title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 4%
@@ -15,11 +15,11 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web.
 
-Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de Adobe Experience Platform Edge Network au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de l’Edge Network Adobe Experience Platform au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
@@ -31,7 +31,7 @@ Pour utiliser le transfert d’événement dans Adobe Experience Platform, les d
 >[!NOTE]
 >Le SDK Web Platform et le SDK Mobile Platform ne nécessitent pas de déploiement par le biais de balises. Toutefois, il est recommandé d’utiliser des balises pour déployer ces SDK.
 
-Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoyer des données à Platform Edge Network à l’aide du SDK Web. Une fois que les données se trouvent dans Platform Edge Network, vous pouvez activer le transfert d’événement et utiliser une propriété de transfert d’événement pour envoyer des données à des solutions non-Adobes.
+Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoyer des données à Platform Edge Network à l’aide du SDK Web. Une fois que les données se trouvent dans l’Edge Network Platform, vous pouvez activer le transfert d’événement et utiliser une propriété de transfert d’événement pour envoyer des données à des solutions non-Adobes.
 
 ## Objectifs d&#39;apprentissage
 
@@ -52,7 +52,7 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 * Autorisation de l’utilisateur pour le transfert d’événement. (Dans [Admin Console](https://adminconsole.adobe.com/), sous le produit Adobe Experience Platform Launch, éléments d’autorisation pour[!UICONTROL Plateformes] > [!UICONTROL Edge] et tout [!UICONTROL Droits de propriété]). Une fois accordée, vous devriez voir [!UICONTROL Transfert d’événement] dans le volet de navigation de gauche de l’interface Collecte de données :
   ![Propriétés Event Forwarting](assets/event-forwarding-menu.png)
 
-* SDK Web ou mobile Adobe Experience Platform configuré pour envoyer des données à Edge Network. Vous devez avoir terminé les leçons suivantes de ce tutoriel :
+* SDK Web ou mobile Adobe Experience Platform configuré pour envoyer des données à l’Edge Network. Vous devez avoir terminé les leçons suivantes de ce tutoriel :
 
    * Configuration initiale
 
@@ -113,7 +113,7 @@ Pour configurer Target dans le flux de données :
 
 Répétez ces étapes pour les flux de données d’évaluation et de production lorsque vous êtes prêt à promouvoir vos modifications par le biais du flux de publication.
 
-## Transfert de données de Platform Edge Network vers une solution non-Adobe
+## Transfert de données de l’Edge Network Platform vers une solution non Adobe
 
 Dans cet exercice, vous apprendrez à configurer un élément de données de transfert d’événement, à configurer une règle de transfert d’événement et à valider à l’aide d’un outil tiers appelé [Webhook.site](https://webhook.site/).
 
@@ -123,7 +123,7 @@ Dans cet exercice, vous apprendrez à configurer un élément de données de tra
 
 >[!IMPORTANT]
 >
->Vous devez avoir déjà créé et mappé des éléments de données à un objet XDM, ainsi que configuré des règles de balise et créé ces modifications dans une bibliothèque dans un environnement de balise pour continuer. Dans le cas contraire, reportez-vous à la section **Configuration des balises** dans la section [conditions préalables](setup-event-forwarding.md#prerequisites) . Ces étapes garantissent que les données sont envoyées à Platform Edge Network. De là, vous pouvez configurer une propriété de transfert d’événement pour transférer des données vers une solution non-Adobe.
+>Vous devez avoir déjà créé et mappé des éléments de données à un objet XDM, ainsi que configuré des règles de balise et créé ces modifications dans une bibliothèque dans un environnement de balise pour continuer. Dans le cas contraire, reportez-vous à la section **Configuration des balises** dans la section [conditions préalables](setup-event-forwarding.md#prerequisites) . Ces étapes garantissent que les données sont envoyées à l’Edge Network Platform. Vous pouvez ensuite configurer une propriété de transfert d’événement pour transférer des données vers une solution non-Adobe.
 
 
 ### Création d’un élément de données de transfert d’événement
@@ -212,7 +212,7 @@ Il existe quelques différences principales entre la configuration des règles d
 * **[!UICONTROL Événements] &amp; [!UICONTROL Conditions]**:
 
    * **Balises**: toutes les règles sont déclenchées par un événement qui doit être spécifié dans la règle, par exemple : `Library Loaded - Page Top`. Les conditions sont facultatives.
-   * **Transfert d’événement**: on suppose que chaque événement envoyé à Platform Edge Network est un déclencheur pour transférer des données. Par conséquent, il n’existe pas de [!UICONTROL Événements] qui doit être sélectionné dans les règles de transfert d’événement. Pour gérer les événements qui déclenchent une règle de transfert d’événement, vous devez configurer des conditions.
+   * **Transfert d’événement**: on suppose que chaque événement envoyé à l’Edge Network Platform est un déclencheur pour transférer des données. Par conséquent, il n’existe pas de [!UICONTROL Événements] qui doit être sélectionné dans les règles de transfert d’événement. Pour gérer les événements qui déclenchent une règle de transfert d’événement, vous devez configurer des conditions.
 
 * **Jeton d’élément de données**:
 
@@ -295,13 +295,13 @@ Vous pouvez maintenant valider votre propriété de transfert d’événement à
 
 1. Avant de recharger la page, ouvrez Debugger dans l’Experience Platform **[!UICONTROL Journaux]** à partir du volet de navigation de gauche
 
-1. Sélectionnez la variable **[!UICONTROL Edge]** , puis sélectionnez **[!UICONTROL Connexion]** pour afficher les requêtes Platform Edge Network
+1. Sélectionnez la variable **[!UICONTROL Edge]** , puis sélectionnez **[!UICONTROL Connexion]** pour afficher les demandes de l’Edge Network Platform
 
    ![Session réseau de périphérie du transfert d’événement](assets/event-forwarding-edge-session.png)
 
 1. Recharger la page
 
-1. D’autres requêtes s’affichent, vous donnant ainsi une vue d’ensemble des requêtes côté serveur envoyées par Platform Edge Network à WebHook.
+1. D’autres requêtes s’affichent, vous donnant ainsi une vue d’ensemble des requêtes côté serveur envoyées par l’Edge Network Platform à WebHook.
 
 1. La demande sur laquelle se concentrer la validation est celle qui montre l’URL entièrement construite envoyée par le réseau Edge.
 

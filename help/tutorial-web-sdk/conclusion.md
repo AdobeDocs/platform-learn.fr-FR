@@ -3,7 +3,7 @@ title: Conclusion et prochaines étapes
 description: Que faire après avoir terminé le tutoriel
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Félicitations ! Vous avez terminé le tutoriel &quot;Mise en oeuvre de Adobe Experience Cloud avec le SDK Web&quot; !
 
@@ -24,14 +24,14 @@ Passons rapidement en revue tout ce que vous avez accompli. Vous avez :
 * Création d’un schéma à l’aide de groupes de champs standard et personnalisés.
 * Configuration d’un flux de données.
 * Création d’une propriété de balise.
-* Champs capturés à partir d’une couche de données, transformés en XDM et envoyés à Platform Edge Network.
+* Champs capturés à partir d’une couche de données, transformés en XDM et envoyés à l’Edge Network Platform.
 * Consentement capturé et identités authentifiées.
 * Connectez l’implémentation du SDK Web aux applications Experience Cloud suivantes :
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Transfert d’événement utilisé pour envoyer des données de Platform Edge Network vers un point d’extension web.
+* Transfert d’événement utilisé pour envoyer des données de l’Edge Network Platform vers un point d’extension web.
 * Validation de la mise en oeuvre à l’aide d’Adobe Experience Platform Debugger.
 
 Vous êtes prêt à commencer la prochaine phase de votre parcours, en mettant Adobe Experience Cloud en oeuvre sur votre propre site web !

@@ -1,9 +1,9 @@
 ---
 title: Création d’une règle de balise
-description: Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 3%
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Nous prévoyons de publier les modifications majeures de ce tutoriel le vendredi 15 mars 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
+>Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
-Découvrez comment envoyer un événement à Platform Edge Network avec votre objet XDM à l’aide d’une règle de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose.
+Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ où ;
 
 ## Créer une règle de balise
 
-Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. Vous utiliserez cette première règle pour envoyer l’objet XDM au réseau Edge à l’aide du SDK Web. [!UICONTROL Envoyer un événement] action. Plus loin dans ce tutoriel, vous enverrez différentes versions de l’objet XDM en fonction du type de page sur laquelle se trouve le visiteur. C’est pourquoi vous utiliserez des conditions de règle pour exclure ces autres types de pages.
+Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. Utilisez cette première règle pour envoyer l’objet XDM à l’Edge Network à l’aide des SDK Web. [!UICONTROL Envoyer un événement] action. Plus loin dans ce tutoriel, vous enverrez différentes versions de l’objet XDM en fonction du type de page sur laquelle se trouve le visiteur. C’est pourquoi vous utiliserez des conditions de règle pour exclure ces autres types de pages.
 
 Pour créer une règle de balise :
 
