@@ -3,7 +3,7 @@ title: Création de règles de balise
 description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 2%
@@ -344,7 +344,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. À droite, sélectionnez **[!UICONTROL Ajouter une règle]** pour créer une autre règle
 
-1. Donnez à la règle le nom `all pages - library loaded - set send event - 50`.
+1. Donnez à la règle le nom `all pages - library loaded - send event - 50`.
 
 1. Dans le **[!UICONTROL Événements]** , sélectionnez **[!UICONTROL Ajouter]**
 

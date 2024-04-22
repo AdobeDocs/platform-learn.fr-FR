@@ -1,20 +1,21 @@
 ---
-title: Configuration d’un canal web avec le SDK web Platform
-description: Découvrez comment mettre en oeuvre le canal web à l’aide du SDK web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+title: Configuration du canal web Journey Optimizer avec le SDK web Platform
+description: Découvrez comment mettre en oeuvre le canal web Journey Optimizer à l’aide du SDK web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
 
 
-# Configuration d’un canal web avec le SDK web Platform
+# Configuration du canal web Journey Optimizer
 
-Découvrez comment mettre en oeuvre le canal web à l’aide du SDK web Platform. Ce guide couvre les conditions préalables fondamentales du canal web, les étapes détaillées de configuration et une section approfondie sur un cas d’utilisation centré sur l’état de fidélité.
+Découvrez comment mettre en oeuvre le canal web Journey Optimizer à l’aide du SDK web Platform. Ce guide couvre les conditions préalables fondamentales du canal web, les étapes détaillées de configuration et une section approfondie sur un cas d’utilisation centré sur l’état de fidélité.
 
 En suivant ce guide, les utilisateurs de Journey Optimizer sont à même d’appliquer efficacement le canal web pour une personnalisation en ligne avancée à l’aide du Concepteur web de Journey Optimizer.
 
@@ -48,7 +49,7 @@ Pour terminer les leçons de cette section, vous devez d’abord :
 * Si vous utilisez la fonction d’expérimentation de contenu, assurez-vous que votre jeu de données web est également inclus dans votre configuration de création de rapports.
 * Actuellement, deux types d’implémentations sont pris en charge pour activer la création et la diffusion de campagnes de canal web sur vos propriétés web :
    * Côté client uniquement : pour modifier votre site web, vous devez mettre en oeuvre le SDK Web de Adobe Experience Platform.
-   * Mode hybride : vous pouvez utiliser l’API Platform Edge Network Server pour demander une personnalisation côté serveur. La réponse de l’API est ensuite fournie au SDK Web de Adobe Experience Platform pour le rendu des modifications côté client. Pour plus d’informations, consultez la documentation de l’API Adobe Experience Platform Edge Network Server. Vous trouverez des détails supplémentaires et des exemples de mise en oeuvre pour le mode hybride dans cet article de blog.
+   * Mode hybride : vous pouvez utiliser l’API du serveur Edge Network Platform pour demander une personnalisation côté serveur. La réponse de l’API est ensuite fournie au SDK Web de Adobe Experience Platform pour le rendu des modifications côté client. Pour plus d’informations, consultez la documentation de l’API Adobe Experience Platform Edge Network Server. Vous trouverez des détails supplémentaires et des exemples de mise en oeuvre pour le mode hybride dans cet article de blog.
 
 >[!NOTE]
 >
@@ -124,9 +125,16 @@ Ce cas pratique vous permet de mieux comprendre comment Journey Optimizer peut v
 >
 >Comme ce tutoriel est destiné aux implémentateurs, il est intéressant de noter que cette leçon implique un travail d’interface substantiel dans Journey Optimizer. Bien que ces tâches d’interface soient généralement gérées par les marketeurs, il peut s’avérer utile pour les implémenteurs d’obtenir des informations sur le processus, même s’ils ne sont pas responsables de la création finale de campagnes de canal web.
 
+### Création d’un schéma de fidélité et ingestion de données d’exemple
+
+Lorsque les données du SDK Web sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par toutes les autres données que vous avez ingérées. Lorsqu’un utilisateur s’authentifie sur le site Luma et qu’une identité authentifiée est envoyée à Platform pour représenter une identité dans le système de gestion de la relation client de Luma. Un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour les profils contenant également des identités avec la variable `lumaCrmId` L’espace de noms peut être joint pour créer des profils client en temps réel. Nous allons rapidement créer un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin de pouvoir démontrer comment les profils client en temps réel peuvent être utilisés dans les campagnes web Journey Optimizer. Puisque vous avez déjà effectué des exercices similaires, les instructions seront brèves.
+
+
+
+
 ### Créer une campagne de récompenses de fidélité
 
-Commençons par créer la campagne du canal web Loyalty Rewards dans Adobe Journey Optimizer.
+Maintenant que nous avons ingéré nos exemples de données de fidélité, nous pouvons créer la campagne du canal web Loyalty Rewards dans Adobe Journey Optimizer.
 
 Pour créer l&#39;exemple de campagne :
 
@@ -297,7 +305,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Vous pouvez ensuite vous connecter au site à l’aide de divers comptes de fidélité Luma et utiliser le débogueur pour valider les requêtes envoyées au réseau Edge Adobe Experience Platform.
+1. Vous pouvez ensuite vous connecter au site à l’aide de différents comptes de fidélité Luma et utiliser le débogueur pour valider les requêtes envoyées à l’Edge Network Adobe Experience Platform.
    <!--
     ![ADD SCREENSHOT](#)
     -->
