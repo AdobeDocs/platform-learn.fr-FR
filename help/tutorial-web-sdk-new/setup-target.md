@@ -2,9 +2,10 @@
 title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform
 
 ## Objectifs d&#39;apprentissage
 
-À la fin de cette leçon, vous saurez comment :
+À la fin de cette leçon, vous serez en mesure d’effectuer les opérations suivantes avec une mise en oeuvre SDK Web de Target :
 
-* Découvrez comment ajouter le fragment de code de pré-masquage du SDK Web Platform pour empêcher le scintillement lors de l’utilisation de Target avec des codes intégrés de balises asynchrones
+* Ajouter le fragment de code de masquage préalable pour empêcher le scintillement
 * Configuration d’un flux de données pour activer la fonctionnalité Target
 * Rendu des activités du compositeur d’expérience visuelle
 * Activités de rendu de compositeur de formulaire
 * Transmission de données XDM à Target et compréhension du mappage aux paramètres Target
 * Transmission de données personnalisées à Target, telles que des paramètres de profil et d’entité
-* Validation d’une mise en oeuvre Target avec le SDK Web de Platform
-* Envoi de requêtes de proposition de Target distinctes des requêtes Adobe Analytics et résolution ultérieure de leurs événements d’affichage
+* valider une mise en œuvre de Target.
+* Séparation des requêtes de personnalisation des requêtes d’analyse
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Pour terminer les leçons de cette section, vous devez d’abord :
    * [Utilisation du compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [Création d’activités de ciblage d’expérience](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Ajout de la limitation du scintillement
+## Ajout de la gestion des scintillements
 
 Avant de commencer, déterminez si une solution de gestion du scintillement supplémentaire est nécessaire en fonction de la manière dont la bibliothèque de balises est chargée.
 
@@ -59,7 +60,7 @@ Avant de commencer, déterminez si une solution de gestion du scintillement supp
 
 ### Mise en oeuvre asynchrone
 
-Lorsqu’une bibliothèque de balises se charge de manière asynchrone, le rendu de la page peut se terminer avant que Target n’ait effectué un échange de contenu. Ce comportement peut entraîner un &quot;scintillement&quot;, dans lequel le contenu par défaut s’affiche brièvement avant d’être remplacé par le contenu personnalisé spécifié par Target. Si vous souhaitez éviter ce scintillement, Adobe recommande d’ajouter un fragment de code de masquage préalable spécial juste avant le code incorporé de balise asynchrone.
+Lorsqu’une bibliothèque de balises se charge de manière asynchrone, le rendu de la page peut se terminer avant que Target ne remplace le contenu par défaut par du contenu personnalisé. Ce comportement peut entraîner un &quot;scintillement&quot;, dans lequel le contenu par défaut s’affiche brièvement avant d’être remplacé par le contenu personnalisé spécifié par Target. Si vous souhaitez éviter ce scintillement, Adobe recommande d’ajouter un fragment de code de masquage préalable spécial juste avant le code incorporé de balise asynchrone.
 
 Ce fragment est déjà présent sur le site Luma, mais regardons de plus près pour comprendre ce que fait ce code :
 
@@ -181,7 +182,7 @@ Pour les besoins de ce tutoriel à l’aide du site Luma, utilisez le symbole d�
 
 ## Rendu des décisions de personnalisation visuelle
 
-Tout d’abord, vous devez comprendre la terminologie utilisée dans les interfaces de Target et de balises.
+Les décisions de personnalisation visuelle font référence aux expériences créées dans le compositeur d’expérience visuelle Adobe Target. Tout d’abord, vous devez comprendre la terminologie utilisée dans les interfaces de Target et de balises :
 
 * **Activité**: ensemble d’expériences ciblées sur une ou plusieurs audiences. Par exemple, un simple test A/B peut être une activité avec deux expériences.
 * **Expérience**: ensemble d’actions ciblées sur un ou plusieurs emplacements ou portées de décision.

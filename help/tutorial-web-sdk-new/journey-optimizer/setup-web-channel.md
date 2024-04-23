@@ -5,10 +5,10 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2587'
-ht-degree: 0%
+source-wordcount: '2675'
+ht-degree: 1%
 
 ---
 
@@ -127,10 +127,29 @@ Ce cas pratique vous permet de mieux comprendre comment Journey Optimizer peut v
 
 ### Création d’un schéma de fidélité et ingestion de données d’exemple
 
-Lorsque les données du SDK Web sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par toutes les autres données que vous avez ingérées. Lorsqu’un utilisateur s’authentifie sur le site Luma et qu’une identité authentifiée est envoyée à Platform pour représenter une identité dans le système de gestion de la relation client de Luma. Un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour les profils contenant également des identités avec la variable `lumaCrmId` L’espace de noms peut être joint pour créer des profils client en temps réel. Nous allons rapidement créer un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin de pouvoir démontrer comment les profils client en temps réel peuvent être utilisés dans les campagnes web Journey Optimizer. Puisque vous avez déjà effectué des exercices similaires, les instructions seront brèves.
+Lorsque les données du SDK Web sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par d’autres sources de données que vous avez ingérées dans Platform. Par exemple, lorsqu’un utilisateur se connecte au site Luma, la variable `lumaCrmId` est envoyé à Platform pour représenter une identité dans le système CRM de Luma. Un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour le profil peuvent potentiellement être unis pour créer des profils client en temps réel. Nous allons rapidement créer un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin de pouvoir démontrer comment les profils client en temps réel peuvent être utilisés dans les campagnes web Journey Optimizer. Puisque vous avez déjà effectué des exercices similaires, les instructions seront brèves.
 
+Pour créer le schéma :
 
+1. Créer un schéma
+1. Choisir **[!UICONTROL Profil individuel]** comme la propriété [!UICONTROL classe de base]
+1. Nommer le schéma `Luma Loyalty Schema`
+1. Sélectionnez la variable `personID` le champ et la marque sont comme [!UICONTROL Identité] et [!UICONTROL Identité du Principal] en utilisant la variable `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
+1. Ajoutez la variable [!UICONTROL Détails de fidélité] groupe de champs
+1. Activation du schéma pour [!UICONTROL Profil]
 
+CAPTURE D’ÉCRAN DU SCHÉMA
+
+Pour créer le jeu de données et ingérer les exemples de données :
+
+1. Créez un nouveau jeu de données à partir de la variable `Luma Loyalty Schema`
+1. Nommer le jeu de données `Luma Loyalty Dataset`
+1. Activation du jeu de données pour [!UICONTROL Profil]
+1. Téléchargez l’exemple de fichier LoyaltyWebSDK.json .
+1. Glissez-déposez le fichier dans votre jeu de données
+1. Confirmer que les données ont bien été ingérées
+
+CAPTURE D’ÉCRAN DU JEU DE DONNÉES ET CONFIRMATION
 
 ### Créer une campagne de récompenses de fidélité
 
