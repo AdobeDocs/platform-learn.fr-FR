@@ -3,10 +3,10 @@ title: Configuration d’un espace de noms d’identité
 description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 8%
 
 Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform.
 
-La variable [Service Adobe Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr) définit un identifiant visiteur commun (l’ECID) dans les applications d’Adobe basées sur le SDK afin d’optimiser les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
+La variable [Service Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home) définit un identifiant visiteur commun (l’ECID) dans les applications d’Adobe basées sur le SDK afin d’optimiser les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
 
-La variable [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr) (oui, il y en a deux !) utilise les ECID et les ID de client pour générer des graphiques d’identité, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
+La variable [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (oui, il y en a deux !) utilise les ECID et les ID de client pour générer des graphiques d’identité, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Vous devez avoir terminé les leçons précédentes :
 >
 >La variable [Extension d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la bibliothèque JavaScript du SDK Web contient la fonctionnalité du service d’identification des visiteurs.
 >
-> Si votre site web utilise déjà le service d’ID Experience Cloud sur votre site web (via l’API visiteur ou l’extension de balise du service d’ID Experience Cloud) et que vous souhaitez continuer à l’utiliser lors de la migration vers le SDK Web Adobe Experience Platform, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service d’ID Experience Cloud. Voir [Migration des identifiants](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) pour plus d’informations.
+> Si votre site web utilise déjà le service d’ID Experience Cloud sur votre site web (via l’API visiteur ou l’extension de balise du service d’ID Experience Cloud) et que vous souhaitez continuer à l’utiliser lors de la migration vers le SDK Web Adobe Experience Platform, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service d’ID Experience Cloud. Voir [Migration des identifiants](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) pour plus d’informations.
 
 ## Création d’un espace de noms d’identité
 

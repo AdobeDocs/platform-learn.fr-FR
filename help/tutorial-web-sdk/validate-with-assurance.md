@@ -3,7 +3,7 @@ title: Validation des mises en oeuvre du SDK Web avec Experience Platform Assura
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Assurance. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Validation des mises en oeuvre du SDK Web avec Experience Platform Assurance
 
-Adobe Experience Platform Assurance est un produit de Adobe Experience Cloud qui vous aide à inspecter, à tester, à simuler et à valider la manière dont vous collectez des données ou diffusez des expériences. En savoir plus sur [Assurance Adobe](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform Assurance est un produit de Adobe Experience Cloud qui vous aide à inspecter, à tester, à simuler et à valider la manière dont vous collectez des données ou diffusez des expériences. En savoir plus sur [Assurance Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Objectifs d&#39;apprentissage

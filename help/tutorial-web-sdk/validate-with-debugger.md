@@ -3,7 +3,7 @@ title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience P
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -142,7 +142,7 @@ Ces types de détails de requête sont également visibles dans les outils de d�
 
 Comme vous l’avez appris dans la [Configuration d’un flux de données](configure-datastream.md) leçon, le SDK Web Platform envoie d’abord des données de votre propriété numérique à l’Edge Network Platform. Ensuite, Platform Edge Network envoie des requêtes supplémentaires côté serveur aux services correspondants activés dans votre flux de données. Vous pouvez valider les requêtes côté serveur effectuées par l’Edge Network Platform à l’aide d’Edge Trace dans le débogueur.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Activation d’Edge Trace

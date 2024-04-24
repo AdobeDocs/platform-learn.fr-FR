@@ -3,10 +3,10 @@ title: Configuration de l’Audience Manager avec le SDK Web Platform
 description: Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Platform et valider l’implémentation à l’aide d’une destination de cookie.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=fr) est la solution Adobe Experience Cloud qui fournit tout ce qui est nécessaire pour collecter des informations commercialement pertinentes sur les visiteurs du site, créer des segments commercialisables et diffuser des publicités et du contenu ciblés à la bonne audience.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) est la solution Adobe Experience Cloud qui fournit tout ce qui est nécessaire pour collecter des informations commercialement pertinentes sur les visiteurs du site, créer des segments commercialisables et diffuser des publicités et du contenu ciblés à la bonne audience.
 
 ![Diagramme SDK web et Adobe Audience Manager](assets/dc-websdk-aam.png)
 
@@ -31,11 +31,11 @@ Découvrez comment configurer Adobe Audience Manager à l’aide du SDK Web Plat
 Pour terminer cette leçon, vous devez d’abord :
 
 * Suivez les leçons des sections Configuration initiale et Configuration des balises de ce tutoriel.
-* Avoir accès à Adobe Audience Manager et aux autorisations appropriées pour créer, lire et écrire des caractéristiques, des segments et des destinations. Pour plus d’informations, veuillez consulter [Contrôle d’accès en fonction du rôle de l’Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Avoir accès à Adobe Audience Manager et aux autorisations appropriées pour créer, lire et écrire des caractéristiques, des segments et des destinations. Pour plus d’informations, veuillez consulter [Contrôle d’accès en fonction du rôle de l’Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## Configuration du flux de données
 
-La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform diffère de celle à l’aide de [transfert côté serveur (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=fr). Le transfert côté serveur transmet les données de demande Adobe Analytics à l’Audience Manager. Une implémentation du SDK Web Platform transmet les données XDM envoyées à l’Edge Network Platform à Audience Manager. L’Audience Manager est activée dans le flux de données :
+La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform diffère de celle à l’aide de [transfert côté serveur (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). Le transfert côté serveur transmet les données de demande Adobe Analytics à l’Audience Manager. Une implémentation du SDK Web Platform transmet les données XDM envoyées à l’Edge Network Platform à Audience Manager. L’Audience Manager est activée dans le flux de données :
 
 1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
@@ -52,7 +52,7 @@ La mise en oeuvre de l’Audience Manager à l’aide du SDK Web de Platform dif
 
 ## Création d’une source de données
 
-Créez ensuite un [Source de données](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en), un outil fondamental pour organiser les données au sein de l’Audience Manager :
+Créez ensuite un [Source de données](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), un outil fondamental pour organiser les données au sein de l’Audience Manager :
 
 1. Accédez au [Audience Manager](https://experience.adobe.com/#/audience-manager/) interface
 1. Sélectionner **[!UICONTROL Données d’audience]** à partir de la navigation supérieure ;
@@ -72,7 +72,7 @@ Créez ensuite un [Source de données](https://experienceleague.adobe.com/docs/a
 
 ## Création d’une caractéristique
 
-Une fois la source de données enregistrée, configurez une [trait](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=fr). Les caractéristiques sont une combinaison d’un ou de plusieurs signaux en Audience Manager. Créez une caractéristique pour les visiteurs de la page d’accueil.
+Une fois la source de données enregistrée, configurez une [trait](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). Les caractéristiques sont une combinaison d’un ou de plusieurs signaux en Audience Manager. Créez une caractéristique pour les visiteurs de la page d’accueil.
 
 >[!NOTE]
 >

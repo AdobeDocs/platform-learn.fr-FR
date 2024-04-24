@@ -2,7 +2,7 @@
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 7%
@@ -38,7 +38,7 @@ Pour terminer cette leçon, vous devez d’abord :
 
 ## Créer un jeu de données
 
-Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées sous la forme de jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
+Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées sous la forme de jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
 Configurez un jeu de données pour vos données d’événement web Luma :
 
@@ -140,7 +140,7 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 >[!INFO]
 >
->Le service de requête Adobe Experience Platform est une méthode plus robuste pour valider les données dans le lac, mais ne répond pas au cadre de ce tutoriel. Pour plus d’informations, voir [Explorer les données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=fr) dans la section Tutoriels Platform .
+>Le service de requête Adobe Experience Platform est une méthode plus robuste pour valider les données dans le lac, mais ne répond pas au cadre de ce tutoriel. Pour plus d’informations, voir [Explorer les données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels Platform .
 
 
 ## Activation du jeu de données et du schéma pour Real-time Customer Profile

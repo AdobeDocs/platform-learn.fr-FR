@@ -3,10 +3,10 @@ title: Installation et configuration de l’extension de balise du SDK Web Adobe
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 14%
+ht-degree: 13%
 
 ---
 
@@ -81,7 +81,7 @@ Maintenant que vous avez installé le SDK Web de Platform et que vous l’avez a
 >
 >Bien que vous n’ayez pas configuré un CNAME dans la variable [!UICONTROL Domaine Edge] dans cette leçon, Adobe vous recommande d’utiliser un CNAME lorsque vous implémentez le SDK Web Platform sur votre propre site web. Bien quʼune implémentation CNAME ne permette pas dʼallonger la durée de vie des cookies, elle offre dʼautres avantages. Parmi ceux-ci, citons les bloqueurs de publicités et les navigateurs moins utilisés qui empêchent lʼenvoi des données aux domaines quʼils considèrent être des dispositifs de suivi. Dans ce cas, lʼutilisation dʼun CNAME peut éviter que votre collecte de données ne soit interrompue pour les utilisateurs qui se servent de ces outils.
 
-Pour plus d’informations sur chaque section de l’extension, voir [Configuration de l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=fr)
+Pour plus d’informations sur chaque section de l’extension, voir [Configuration de l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

@@ -3,10 +3,10 @@ title: Configurer un trains de données
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Découvrez comment activer un flux de données et configurer des applications Experience Cloud.
 
-Les flux de données indiquent à Adobe Experience Platform Edge Network où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements. Voir [Principes de base de la configuration d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr) pour plus d’informations.
+Les flux de données indiquent à Adobe Experience Platform Edge Network où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements. Voir [Principes de base de la configuration d’un flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) pour plus d’informations.
 
 
 ![SDK Web, flux de données et diagramme Edge Network](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ Le remplacement de la configuration du flux de données est un processus en deux
 
 Dans le [Configuration d’Adobe Analytics](setup-analytics.md) leçon Vous remplacez la suite de rapports pour une page à l’aide de l’action Envoyer l’événement du SDK Web Platform.
 
-Voir [la configuration du flux de données remplace la documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) pour obtenir des instructions détaillées sur la façon de remplacer les configurations datastream.
+Voir [la configuration du flux de données remplace la documentation](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) pour obtenir des instructions détaillées sur la façon de remplacer les configurations datastream.
 
 Vous êtes maintenant prêt à installer l’extension SDK Web Platform dans votre propriété de balise !
 

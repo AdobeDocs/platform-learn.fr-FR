@@ -3,7 +3,7 @@ title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '4307'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Découvrez comment diffuser des expériences et comment transmettre des paramètres supplémentaires à Target.
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
+[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
 
 ![Diagramme SDK Web et Adobe Target](assets/dc-websdk-at.png)
 
@@ -42,12 +42,12 @@ Pour terminer les leçons de cette section, vous devez d’abord :
 
 * Suivez toutes les leçons relatives à la configuration initiale du SDK Web de Platform, y compris la configuration des éléments de données et des règles.
 * Assurez-vous que vous disposez d’une [Rôle d’éditeur ou d’approbateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) dans Adobe Target.
-* Installez le [Extension d’assistance du compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) si vous utilisez le navigateur Google Chrome.
+* Installez le [Extension d’assistance du compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) si vous utilisez le navigateur Google Chrome.
 * Découvrez comment configurer des activités dans Target. Si vous avez besoin d’une actualisation, les tutoriels et guides suivants sont utiles pour cette leçon :
-   * [Utilisation de l’extension d’assistance du compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)
-   * [Utilisation du Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [Utilisation du compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [Création d’activités de ciblage d’expérience](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [Utilisation de l’extension d’assistance du compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [Utilisation du Compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [Utilisation du compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [Création d’activités de ciblage d’expérience](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## Ajout de la gestion des scintillements
 
@@ -116,7 +116,7 @@ Le style de prémasquage pour les implémentations synchrones peut être configu
 >
 >Le paramètre de style de prémasquage est destiné uniquement à être utilisé pour les implémentations synchrones. Ce style doit être vide ou commenté si vous utilisez une mise en oeuvre asynchrone des balises.
 
-Pour en savoir plus sur la façon dont le SDK Web Platform peut gérer le scintillement, consultez la section du guide : [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html).
+Pour en savoir plus sur la façon dont le SDK Web Platform peut gérer le scintillement, consultez la section du guide : [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker).
 
 
 ## Configuration du flux de données
@@ -141,7 +141,7 @@ Pour configurer Target dans le flux de données :
 
 ### Jeton de propriété
 
-Les clients Target Premium ont la possibilité de gérer les autorisations d’utilisateur avec des propriétés. Les propriétés de Target vous permettent de définir des limites autour de l’emplacement où les utilisateurs peuvent exécuter des activités Target. Voir [Autorisations d’entreprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr) pour plus d’informations.
+Les clients Target Premium ont la possibilité de gérer les autorisations d’utilisateur avec des propriétés. Les propriétés de Target vous permettent de définir des limites autour de l’emplacement où les utilisateurs peuvent exécuter des activités Target. Voir [Autorisations d’entreprise](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview) pour plus d’informations.
 
 Pour configurer ou rechercher des jetons de propriété, accédez à **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Propriétés]**. La variable `</>` affiche le code d’implémentation. La variable `at_property` est le jeton de propriété que vous utiliseriez dans votre flux de données.
 
@@ -155,9 +155,9 @@ Un seul jeton de propriété peut être spécifié par flux de données, mais le
 
 ### Identifiant de l’environnement Target
 
-[Environnements](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) dans Target, vous pouvez gérer votre mise en oeuvre à toutes les étapes du développement. Ce paramètre facultatif spécifie l’environnement Target que vous allez utiliser avec chaque flux de données.
+[Environnements](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) dans Target, vous pouvez gérer votre mise en oeuvre à toutes les étapes du développement. Ce paramètre facultatif spécifie l’environnement Target que vous allez utiliser avec chaque flux de données.
 
-Adobe recommande de définir différemment l’identifiant de l’environnement cible pour chacun de vos flux de données de développement, d’évaluation et de production afin de garder les choses simples. Vous pouvez également organiser vos environnements dans l’interface de Target à l’aide de la variable [hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=fr) fonction .
+Adobe recommande de définir différemment l’identifiant de l’environnement cible pour chacun de vos flux de données de développement, d’évaluation et de production afin de garder les choses simples. Vous pouvez également organiser vos environnements dans l’interface de Target à l’aide de la variable [hosts](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts) fonction .
 
 Pour configurer ou rechercher des ID d’environnement, accédez à **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Environnements]**.
 
@@ -169,7 +169,7 @@ Pour configurer ou rechercher des ID d’environnement, accédez à **Adobe Targ
 
 ### Espace de noms d’ID tiers de Target
 
-Ce paramètre facultatif vous permet de spécifier le symbole d’identité à utiliser pour l’identifiant tiers Target. Target prend uniquement en charge la synchronisation des profils sur un seul symbole d’identité ou espace de noms. Pour plus d’informations, reportez-vous au [Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=fr) de Target.
+Ce paramètre facultatif vous permet de spécifier le symbole d’identité à utiliser pour l’identifiant tiers Target. Target prend uniquement en charge la synchronisation des profils sur un seul symbole d’identité ou espace de noms. Pour plus d’informations, reportez-vous au [Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) de Target.
 
 Les symboles d’identité se trouvent dans la liste des identités sous **Collecte de données** > **[!UICONTROL Client]** > **[!UICONTROL Identités]**.
 
@@ -215,16 +215,16 @@ Le paramètre de rendu des décisions de personnalisation visuelle oblige le SDK
 >
 >En règle générale, la variable [!UICONTROL Rendu des décisions de personnalisation visuelle] ne doit être activé que pour une seule action Envoyer l’événement par chargement de page complet. Si ce paramètre est activé pour plusieurs actions Envoyer l’événement , les demandes de rendu suivantes sont ignorées.
 
-Si vous préférez effectuer vous-même le rendu ou agir sur ces décisions à l’aide du code personnalisé, vous pouvez laisser la variable [!UICONTROL Rendu des décisions de personnalisation visuelle] désactivée. Le SDK Web Platform est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Pour plus d’informations sur les [rendu manuel de contenu personnalisé](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+Si vous préférez effectuer vous-même le rendu ou agir sur ces décisions à l’aide du code personnalisé, vous pouvez laisser la variable [!UICONTROL Rendu des décisions de personnalisation visuelle] désactivée. Le SDK Web Platform est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Pour plus d’informations sur les [rendu manuel de contenu personnalisé](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Configuration d’une activité Target avec le compositeur d’expérience visuelle
 
-Maintenant que la partie de mise en oeuvre de base est terminée, créez une activité de ciblage d’expérience (XT) dans Target pour vérifier que tout fonctionne correctement. Vous pouvez vous reporter au tutoriel de Target pour [création d’activités de ciblage d’expérience](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html) si vous avez besoin d&#39;aide.
+Maintenant que la partie de mise en oeuvre de base est terminée, créez une activité de ciblage d’expérience (XT) dans Target pour vérifier que tout fonctionne correctement. Vous pouvez vous reporter au tutoriel de Target pour [création d’activités de ciblage d’expérience](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities) si vous avez besoin d&#39;aide.
 
 >[!NOTE]
 >
->Si vous utilisez Google Chrome comme navigateur, la variable [Extension d’assistance du compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) est requis pour charger le site correctement en vue de le modifier dans le VEC.
+>Si vous utilisez Google Chrome comme navigateur, la variable [Extension d’assistance du compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) est requis pour charger le site correctement en vue de le modifier dans le VEC.
 
 1. Accès à l’interface d’Adobe Target
 1. Créez une activité de ciblage d’expérience (XT) à l’aide de la page d’accueil Luma pour l’URL d’activité.
@@ -248,9 +248,9 @@ Maintenant que la partie de mise en oeuvre de base est terminée, créez une act
    >Si vous n’utilisez pas Adobe Analytics, sélectionnez Target comme source de création de rapports et choisissez une autre mesure comme **Engagement > Pages vues** au lieu de . Une mesure d’objectif est requise pour enregistrer et prévisualiser l’activité.
 
 1. Enregistrement de l’activité
-1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier la variable [URL d’aperçu de l’assurance qualité](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier la variable [URL d’aperçu de l’assurance qualité](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Chargez la page d’accueil de Luma et vos modifications devraient être appliquées.
-1. Au bout de quelques heures, vous devriez être en mesure d’afficher les données d’activité et les conversions de Target dans Adobe Analytics. Reportez-vous au Guide de Target pour plus d’informations sur [Rapports Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/reporting.html?lang=en).
+1. Au bout de quelques heures, vous devriez être en mesure d’afficher les données d’activité et les conversions de Target dans Adobe Analytics. Reportez-vous au Guide de Target pour plus d’informations sur [Rapports Analytics for Target (A4T)](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting).
 
 
 
@@ -260,7 +260,7 @@ Si vous configurez une activité, le contenu doit s’afficher sur la page. Cepe
 
 >[!CAUTION]
 >
->Si vous utilisez Google Chrome et que vous disposez de la variable [Extension d’assistance du compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) installé, assurez-vous que la variable **Injection de bibliothèques Target** est désactivé. L’activation de ce paramètre entraîne des requêtes Target supplémentaires.
+>Si vous utilisez Google Chrome et que vous disposez de la variable [Extension d’assistance du compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) installé, assurez-vous que la variable **Injection de bibliothèques Target** est désactivé. L’activation de ce paramètre entraîne des requêtes Target supplémentaires.
 
 1. Ouvrez l’extension Adobe Experience Platform Debugger browser
 1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [basculez la propriété de balise sur le site sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
@@ -358,7 +358,7 @@ Maintenant que vous disposez d’une règle pour effectuer le rendu manuel d’u
 
 1. Sur le [!UICONTROL Objectifs et paramètres] , choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
 1. Enregistrement de l’activité
-1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier la variable [URL d’aperçu de l’assurance qualité](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier la variable [URL d’aperçu de l’assurance qualité](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Chargez la page d’accueil de Luma et vos modifications devraient être appliquées.
 
 >[!NOTE]
@@ -401,10 +401,10 @@ Certains de ces champs XDM sont mappés à des objets spéciaux dans le serveur 
 
 Certains points de données peuvent s’avérer utiles à Target qui ne sont pas mappés à partir de l’objet XDM. Ces paramètres Target spéciaux incluent :
 
-* [Attributs de profil](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes.html?lang=en)
-* [Attributs d’entité Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=en)
-* [Paramètres réservés Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
-* Valeurs de catégorie pour [affinité catégorielle](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
+* [Attributs de profil](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Attributs d’entité Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
+* [Paramètres réservés Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* Valeurs de catégorie pour [affinité catégorielle](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
 
 Ces paramètres doivent être envoyés dans la variable `data` plutôt que dans `xdm` . En outre, les paramètres de page (ou mbox) peuvent également être inclus dans la variable `data` .
 

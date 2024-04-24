@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 3%
@@ -57,7 +57,7 @@ Prenez note des restrictions suivantes :
 
 ## Octroi de l’accès à la gestion des décisions
 
-Pour accorder l’accès à la fonctionnalité de gestion des décisions, vous devez créer une **Profil de produit** et attribuez les autorisations correspondantes à vos utilisateurs. [En savoir plus sur la gestion des utilisateurs et des autorisations Journey Optimizer dans cette section](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+Pour accorder l’accès à la fonctionnalité de gestion des décisions, vous devez créer une **Profil de produit** et attribuez les autorisations correspondantes à vos utilisateurs. [En savoir plus sur la gestion des utilisateurs et des autorisations Journey Optimizer dans cette section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configuration du flux de données
 
@@ -340,7 +340,7 @@ Pour commencer le test, sélectionnez l’événement **Simulation** à partir d
 
 ### Test des offres de fidélité
 
-1. Sélectionnez un profil de test à utiliser pour la simulation. Cliquez sur **Gérer le profil**. [Pour créer ou désigner un nouveau profil de test pour le test d’offre, suivez ce guide.](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. Sélectionnez un profil de test à utiliser pour la simulation. Cliquez sur **Gérer le profil**. [Pour créer ou désigner un nouveau profil de test pour le test d’offre, suivez ce guide.](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ La variable **Adobe Experience Platform Debugger** , disponible pour Chrome et F
 
 Vous pouvez utiliser le débogueur sur le site Luma pour valider la logique de prise de décision en production. Il s’agit d’une bonne pratique une fois que le cas d’utilisation Loyalty Rewards est opérationnel, afin de s’assurer que tout est correctement configuré.
 
-[Découvrez comment configurer le débogueur dans votre navigateur en suivant le guide ici](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Découvrez comment configurer le débogueur dans votre navigateur en suivant le guide ici](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Pour commencer la validation à l’aide du débogueur :
 

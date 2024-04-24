@@ -3,7 +3,7 @@ title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web.
 
-Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de l’Edge Network Adobe Experience Platform au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de l’Edge Network Adobe Experience Platform au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 ![Diagramme SDK web et transfert d’événement](assets/dc-websdk-eventforwarding.png)
@@ -23,7 +23,7 @@ Pour utiliser le transfert d’événement dans Adobe Experience Platform, les d
 
 * [SDK web Adobe Experience Platform](overview.md)
 * [ SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]

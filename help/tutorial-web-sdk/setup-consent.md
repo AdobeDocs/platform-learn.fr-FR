@@ -3,7 +3,7 @@ title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 0%
@@ -215,10 +215,10 @@ Une fois cette règle en place, la collecte des événements doit commencer lors
 ![Consentement de l’option Visiteur de publication](assets/consent-post-user-optin.png)
 
 
-Pour plus d’informations sur le consentement dans le SDK Web, voir [Prise en charge des préférences de consentement du client](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+Pour plus d’informations sur le consentement dans le SDK Web, voir [Prise en charge des préférences de consentement du client](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Pour plus d’informations sur la variable [!UICONTROL Définition du consentement] action, voir [Définition du consentement](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+Pour plus d’informations sur la variable [!UICONTROL Définition du consentement] action, voir [Définition du consentement](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [Suivant : ](setup-event-forwarding.md)
 
