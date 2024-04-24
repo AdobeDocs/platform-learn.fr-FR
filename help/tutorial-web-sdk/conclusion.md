@@ -2,20 +2,15 @@
 title: Conclusion et prochaines étapes
 description: Que faire après avoir terminé le tutoriel
 recommendations: display,noCatalog
-exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
 
 # Conclusion et prochaines étapes
-
-
->[!CAUTION]
->
->Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
 
 Félicitations ! Vous avez terminé le tutoriel &quot;Mise en oeuvre de Adobe Experience Cloud avec le SDK Web&quot; !
 

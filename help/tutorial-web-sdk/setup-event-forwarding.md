@@ -3,23 +3,21 @@ title: Configuration d’une propriété de transfert d’événement
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 4%
 
 ---
 
 # Configuration d’une propriété de transfert d’événement
 
-
->[!CAUTION]
->
->Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
-
 Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web.
 
 Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de l’Edge Network Adobe Experience Platform au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagramme SDK web et transfert d’événement](assets/dc-websdk-eventforwarding.png)
 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
@@ -56,7 +54,6 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 
    * Configuration initiale
 
-      * [Configuration des autorisations](configure-permissions.md)
       * [Configurer un schéma XDM](configure-schemas.md)
       * [Configuration d’un espace de noms d’identité](configure-identities.md)
       * [Configurer un trains de données](configure-datastream.md)
@@ -65,7 +62,8 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 
       * [Installer l’extension SDK Web](install-web-sdk.md)
       * [Créer des éléments de données](create-data-elements.md)
-      * [Création d’une règle de balise](create-tag-rule.md)
+      * [Création d’identités](create-identities.md)
+      * [Création de règles de balise](create-tag-rule.md)
       * [Validation avec le débogueur Adobe Experience Platform](validate-with-debugger.md)
 
 
@@ -91,9 +89,9 @@ Pour configurer Target dans le flux de données :
 
 1. Accédez à [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Datastreams]**
-1. Sélectionnez la `Luma Web SDK` datastream
+1. Sélectionnez la `Luma Web SDK: Development Environment` datastream
 
-   ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk.png)
+   ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk-development.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**.
    ![Ajout d’un service au flux de données](assets/event-forwarding-datastream-addService.png)

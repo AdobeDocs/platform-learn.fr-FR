@@ -3,25 +3,20 @@ title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
 
 # Configuration du consentement avec le SDK Web de Platform
 
-
->[!CAUTION]
->
->Nous prévoyons de publier les modifications majeures de ce tutoriel le mardi 23 avril 2024. Après ce point, de nombreux exercices changeront et vous devrez peut-être redémarrer le tutoriel dès le début pour terminer toutes les leçons.
-
 Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Définissez le consentement en fonction de l’interaction du visiteur avec une bannière d’une plateforme de gestion du consentement (CMP).
 
 >[!NOTE]
 > 
->À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/){target="_blank"} comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
+>À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/) comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
 
 
 ## Objectifs d&#39;apprentissage
@@ -69,7 +64,7 @@ Avant de passer aux configurations de balise, découvrez la plateforme de gestio
 >La bonne pratique pour mettre en oeuvre une plateforme de gestion du consentement consiste généralement à charger la CMP. _before_ chargement de votre gestionnaire de balises. Pour faciliter ce tutoriel, vous allez charger la CMP _avec_ gestionnaire de balises. Cette leçon est conçue pour vous montrer comment utiliser les fonctionnalités de consentement dans le SDK Web de Platform et ne doit pas être utilisée comme guide pour configurer correctement Klaro ou toute autre CMP.
 
 
-Maintenant, une fois les configurations de Klaro terminées, créez une règle de balise avec les configurations suivantes :
+Maintenant, une fois les configurations de Klaro terminées, créez des règles de balise avec les configurations suivantes :
 
 * [!UICONTROL Nom] : `all pages - library load - Klaro`
 * [!UICONTROL Événement]: [!UICONTROL Bibliothèque chargée (Haut de page)] avec [!UICONTROL Options avancées] > [!UICONTROL Commande] défini sur 1
