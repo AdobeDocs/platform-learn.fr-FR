@@ -7,39 +7,44 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+index: false
+hide: true
+source-git-commit: a56a63c79417fc98f2c3ec4a9613e39c46ac098a
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 46%
+source-wordcount: '95'
+ht-degree: 30%
 
 ---
 
 
-# Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du SDK web. {#implement-web-sdk}
+# Tutoriel de mise en oeuvre de Adobe Experience Cloud avec le SDK Web. {#implement-web-sdk}
 
-+ [Présentation du tutoriel](overview.md)
++ [Vue d’ensemble du tutoriel](overview.md)
 + Configuration initiale {#initial-configuration}
-   + [Configuration des autorisations](configure-permissions.md)
    + [Configurer un schéma XDM](configure-schemas.md)
    + [Configuration d’un espace de noms d’identité](configure-identities.md)
-   + [Configurer un train de données](configure-datastream.md)
+   + [Configurer un trains de données](configure-datastream.md)
 
 + Configuration des balises {#tags-configuration}
-   + [Installation de l’extension SDK Web](install-web-sdk.md)
-   + [Création d’éléments de données](create-data-elements.md)
-   + [Création d’une règle de balise](create-tag-rule.md)
+   + [Installer l’extension SDK Web](install-web-sdk.md)
+   + [Créer des éléments de données](create-data-elements.md)
+   + [Création d’identités](create-identities.md)
+   + [Création de règles de balise](create-tag-rule.md)
    + [Validation avec Debugger](validate-with-debugger.md)
+   + [Validation avec Assurance](validate-with-assurance.md)
 
 + Configuration des applications {#applications-setup}
    + [Configuration d’un Experience Platform](setup-experience-platform.md)
-   + [Configuration des Adobe Analytics](setup-analytics.md)
+   + [Configuration d’Adobe Analytics](setup-analytics.md)
    + [Configuration de l’Audience Manager](setup-audience-manager.md)
    + [Configurer Target](setup-target.md)
+   + [Configuration du canal web Journey Optimizer](setup-web-channel.md)
+   + [Configuration de la gestion des décisions Journey Optimizer](setup-decision-management.md)
 
 + Gestion du consentement {#consent-management}
    + [Configuration du consentement](setup-consent.md)
 
-+ Transfert dʼévénement {#event-forwarding}
++ Transfert d’événement {#event-forwarding}
    + [Configuration du transfert d’événement](setup-event-forwarding.md)
 
 + [Conclusion](conclusion.md)
