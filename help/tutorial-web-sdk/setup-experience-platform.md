@@ -2,9 +2,9 @@
 title: Diffusion en continu de données vers Adobe Experience Platform avec SDK Web
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1591'
 ht-degree: 7%
 
 ---
@@ -230,7 +230,7 @@ Vous devez tout d’abord générer davantage de données d’exemple. Répétez
 
    ![Profil client](assets/experience-platform-validate-dataset-custProfile.png)
 
-Vous avez maintenant activé le SDK Web Platform pour Experience Platform (et Real-Time CDP). Et Journey Optimizer !) !
+Vous avez maintenant activé le SDK Web Platform pour Experience Platform (et Real-Time CDP). Et Journey Optimizer ! Et Customer Journey Analytics !).
 
 
 [Suivant : ](setup-analytics.md)

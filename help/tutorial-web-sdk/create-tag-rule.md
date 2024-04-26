@@ -3,21 +3,16 @@ title: Création de règles de balise
 description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 2%
 
 ---
 
 # Création de règles de balise
 
-Découvrez comment envoyer des événements à l’Edge Network Platform avec votre objet XDM à l’aide de règles de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose. Avec le SDK Web Platform, les règles sont utilisées pour envoyer des événements à l’Edge Network Platform avec les champs XDM appropriés.
-
->[!NOTE]
->
-> À des fins de démonstration, les exercices de cette leçon s’appuient sur les leçons précédentes pour envoyer des événements d’utilisateurs sur la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+Découvrez comment envoyer des événements à l’Edge Network Platform avec votre objet XDM à l’aide de règles de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose. Avec le SDK Web Platform, les règles sont utilisées pour envoyer des événements à l’Edge Network Platform avec les données appropriées.
 
 ## Objectifs d&#39;apprentissage
 
@@ -45,29 +40,28 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 
 Pour mieux gérer les règles dans les balises, il est recommandé de respecter une convention d’affectation des noms standard. Ce tutoriel utilise une convention de dénomination en cinq parties :
 
-* [**location**] - [**event**] - [**objectif**] - [**outil**] - [**order**]
+* [**location**] - [**event**] - [**objectif**] - [**order**]
 
 où ;
 
 1. **location** est la ou les pages du site sur lesquelles la règle se déclenche.
 1. **event** est le déclencheur de la règle.
 1. **objectif** est l’action principale effectuée par la règle.
-1. **outil** est l’application ou les applications spécifiques utilisées à l’étape d’action pour cette règle, ce qui devrait être rare avec le SDK Web.
-1. **séquence** est l’ordre dans lequel la règle doit se déclencher par rapport aux autres règles.
+1. **order** est l’ordre dans lequel la règle doit se déclencher par rapport aux autres règles.
 <!-- minor update -->
 
 ## Création de règles de balise
 
 Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. L’extension de balises SDK Web Platform comprend deux actions qui seront utilisées dans cette leçon :
 
-* **[!UICONTROL Mettre à jour la variable]** mappe des éléments de données aux champs XDM ;
+* **[!UICONTROL Mettre à jour la variable]** mappe des éléments de données aux propriétés dans un objet XDM.
 * **[!UICONTROL Envoyer un événement]** envoie l’objet XDM à l’Edge Network Experience Platform ;
 
 Dans le reste de cette leçon, nous :
 
-1. Créez une règle pour définir une &quot;configuration globale&quot; des champs XDM (à l’aide de [!UICONTROL Mettre à jour la variable] que nous voulons envoyer sur chaque page du site web (par exemple, le nom de page) à l’aide de la variable **[!UICONTROL Mettre à jour la variable]** action.
+1. Créez une règle avec la variable **[!UICONTROL Mettre à jour la variable]** pour définir une &quot;configuration globale&quot; des champs XDM.
 
-1. Créez des règles supplémentaires qui remplacent notre &quot;configuration globale&quot; ou contribuez à des champs XDM supplémentaires (en utilisant [!UICONTROL Mettre à jour la variable] à nouveau) qui ne sont pertinentes que sous certaines conditions (par exemple, l’ajout de détails sur un produit sur les pages du produit).
+1. Créez des règles supplémentaires avec la fonction **[!UICONTROL Mettre à jour la variable]** action qui remplace notre &quot;configuration globale&quot; et qui contribue à des champs XDM supplémentaires sous certaines conditions (par exemple, l’ajout de détails de produit sur les pages de produit).
 
 1. Créez une autre règle avec la variable **[!UICONTROL Envoyer un événement]** qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
 
@@ -77,11 +71,9 @@ Cette vidéo donne un aperçu du processus :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### Mettre à jour les règles de variable
+### Champs de configuration globaux
 
-#### Configuration globale
-
-Pour créer des règles de balise pour les champs XDM globaux :
+Pour créer une règle de balise pour les champs XDM globaux :
 
 1. Ouvrez la propriété de balise que vous utilisez pour ce tutoriel.
 
@@ -118,11 +110,7 @@ Pour créer des règles de balise pour les champs XDM globaux :
 
    ![Mettre à jour le schéma de variable](assets/create-rule-update-variable.png)
 
-Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICONTROL schema] utilisé par votre objet XDM.
-
->[!NOTE]
-> 
-> Vous pouvez mapper des propriétés individuelles ou des objets entiers. Dans cet exemple, vous mappez des propriétés individuelles.
+Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICONTROL schema] utilisé par votre objet XDM. Vous pouvez mapper des propriétés individuelles ou des objets entiers. Dans cet exemple, vous mappez les propriétés individuelles :
 
 1. Recherchez le champ eventType et sélectionnez-le
 
@@ -160,13 +148,13 @@ Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICON
 
    >[!TIP]
    >
-   > Tant que `eventType` défini sur `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` Si Adobe Analytics doit traiter une balise en tant que page vue, il est utile d’avoir une méthode standard pour indiquer une page vue pour d’autres applications en aval.
+   > Tant que `eventType` défini sur `web.webpagedetails.pageViews` nor `web.webPageDetails.pageViews.value` Si Adobe Analytics doit traiter une balise en tant que page vue, il est utile d’avoir une méthode standard pour indiquer une page vue pour d’autres applications en aval.
 
 
 1. Sélectionner **[!UICONTROL Conserver les modifications]** puis **[!UICONTROL Enregistrer]** la règle dans l’écran suivant pour terminer la création de la règle
 
 
-#### Champs de page de produit
+### Champs de page de produit
 
 Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** dans d’autres règles séquencées pour enrichir l’objet XDM avant de l’envoyer à [!UICONTROL Edge Network de plateforme].
 
@@ -235,7 +223,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 1. Sélectionner **[!UICONTROL Enregistrer]** pour enregistrer la règle
 
 
-#### Champs du panier
+### Champs du panier
 
 Vous pouvez mapper un tableau entier à un objet XDM, à condition que le tableau corresponde au format du schéma XDM. L’élément de données de code personnalisé `cart.productInfo` vous avez créé des boucles précédentes à l’aide de la fonction `digitalData.cart.cartEntries` objet de couche de données sur Luma et le convertit au format requis de l’objet `productListItems` du schéma XDM.
 
