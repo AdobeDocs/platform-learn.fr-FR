@@ -2,11 +2,12 @@
 title: Configuration d’un espace de noms d’identité
 description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform.
 
-La variable [Service Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home) définit un identifiant visiteur commun (l’ECID) dans les applications d’Adobe basées sur le SDK afin d’optimiser les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
+La variable [Service Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home) définit un identifiant visiteur commun (l’ECID) dans les applications d’Adobe basées sur le SDK afin d’alimenter les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
 
 La variable [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (oui, il y en a deux !) utilise les ECID et les ID de client pour générer des graphiques d’identité, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
 
@@ -38,9 +39,9 @@ Vous devez avoir terminé les leçons précédentes :
 
 >[!IMPORTANT]
 >
->La variable [Extension d’ID Experience Cloud](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la bibliothèque JavaScript du SDK Web contient la fonctionnalité du service d’identification des visiteurs.
+>La variable [Extension d’ID Experience Cloud](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) n’est pas nécessaire lors de l’implémentation du SDK Web de Adobe Experience Platform, car la bibliothèque JavaScript du SDK Web contient la fonctionnalité du service d’identification des visiteurs.
 >
-> Si votre site web utilise déjà le service d’ID Experience Cloud sur votre site web (via l’API visiteur ou l’extension de balise du service d’ID Experience Cloud) et que vous souhaitez continuer à l’utiliser lors de la migration vers le SDK Web Adobe Experience Platform, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service d’ID Experience Cloud. Voir [Migration des identifiants](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) pour plus d’informations.
+> Si votre site web utilise déjà le service d’ID Experience Cloud sur votre site web (via l’API visiteur ou l’extension de balise du service d’ID Experience Cloud) et que vous souhaitez continuer à l’utiliser lors de la migration vers le SDK Web Adobe Experience Platform, vous devez utiliser la dernière version de l’API visiteur ou de l’extension de balise du service d’ID Experience Cloud. Voir [Migration des identifiants](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) pour plus d’informations.
 
 ## Création d’un espace de noms d’identité
 
@@ -68,7 +69,7 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
 
    ![Affichage des identités](assets/configure-identities-screen.png)
 
-1. Indiquez les détails suivants et sélectionnez **[!UICONTROL Créer]**.
+1. Indiquez les détails comme suit et sélectionnez **[!UICONTROL Créer]**.
 
    | Champ | Valeur |
    |---------------|-----------|
@@ -89,14 +90,10 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
 >
 > Dans le [Création d’identités](create-identities.md) leçon : vous apprendrez à utiliser cet espace de noms lors de l’envoi d’identités à Platform Edge Network.
 
-## Création de l’espace de noms d’identité dans votre environnement de test de production
-
-En raison d’une limitation actuelle de l’extension SDK Web, les espaces de noms d’identité doivent également être créés dans l’environnement de test de production afin d’utiliser l’espace de noms pour envoyer des données à un environnement de test de développement. Ainsi, si vous avez utilisé un environnement de test de développement pour ce tutoriel, créez également la variable `Luma CRM ID` dans votre environnement de test de production.
-
 Maintenant que les identités sont en place, le flux de données peut être configuré.
 
 [Suivant : ](configure-datastream.md)
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

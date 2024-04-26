@@ -1,18 +1,19 @@
 ---
-title: Créer des éléments de données
+title: Création d’éléments de données pour le SDK Web Platform
 description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 2%
 
 ---
 
 # Créer des éléments de données
 
-Découvrez comment créer des éléments de données dans les balises pour les données de contenu, de commerce et d’identité sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Renseignez ensuite les champs de votre schéma XDM avec le type d’élément de données Variable de l’extension SDK Web Platform .
+Découvrez comment créer des éléments de données dans les balises pour les données de contenu, de commerce et d’identité sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Renseignez ensuite les champs de votre schéma XDM avec le type d’élément de données Variable de l’extension SDK Web Adobe Experience Platform .
 
 ## Objectifs d&#39;apprentissage
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 Avantages
 
 * Élimine les étapes supplémentaires de remap des variables de couche de données vers XDM
-* Déploiement peut être plus rapide si votre équipe de développement possède le balisage du comportement numérique
+* Le déploiement peut être plus rapide si votre équipe de développement possède le comportement numérique de balisage
 
 Inconvénients
 
@@ -138,7 +139,7 @@ Cette approche utilise une fonctionnalité intégrée à la configuration de flu
 
 * Flexibilité, car vous pouvez mapper des variables individuelles à XDM
 * Capacité à [calculer les nouvelles valeurs](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformation des types de données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) d’une couche de données avant de passer à XDM ;
-* Exploitation d’un [Interface utilisateur du mappage](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) pour mapper des champs de vos données source à XDM avec une interface utilisateur pointer-cliquer
+* Exploitation d’un [Interface utilisateur du mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) pour mapper des champs de vos données source à XDM avec une interface utilisateur pointer-cliquer
 
 #### Inconvénients
 
@@ -298,4 +299,4 @@ Une fois ces éléments de données en place, vous êtes prêt à commencer à e
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

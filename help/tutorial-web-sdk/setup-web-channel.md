@@ -4,20 +4,21 @@ description: Découvrez comment mettre en oeuvre le canal web Journey Optimizer 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 1%
 
 ---
 
 
-# Configuration du canal web Journey Optimizer
+# Configuration du canal web Journey Optimizer avec le SDK web
 
-Découvrez comment mettre en oeuvre Journey Optimizer [canal web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) à l’aide du SDK Web Platform. Cette leçon porte sur les conditions préalables fondamentales pour les canaux web, les étapes détaillées de configuration et une présentation approfondie d’un cas d’utilisation centré sur l’état de fidélité.
+Découvrez comment mettre en oeuvre Adobe Journey Optimizer [canal web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) à l’aide du SDK Web Adobe Experience Platform. Cette leçon porte sur les conditions préalables fondamentales pour les canaux web, les étapes détaillées de configuration et une présentation approfondie d’un cas d’utilisation centré sur l’état de fidélité.
 
-En suivant cette leçon, les utilisateurs de Journey Optimizer sont équipés pour appliquer efficacement le canal web pour une personnalisation en ligne avancée à l’aide du concepteur web de Journey Optimizer.
+En suivant cette leçon, les utilisateurs de Journey Optimizer sont équipés pour utiliser le canal web pour une personnalisation en ligne avancée à l’aide du concepteur web de Journey Optimizer.
 
 ![Diagramme SDK Web et Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Pour terminer les leçons de cette section, vous devez d’abord :
   > 1. Le site web est incorporé dans un iframe.
   > 1. Le site d’assurance qualité ou d’évaluation du client n’est pas accessible en externe (il s’agit d’un site interne).
 
-* Lors de la création d’expériences web et de l’inclusion de contenu à partir de la bibliothèque Adobe Experience Manager Assets Essentials, il est nécessaire de [configurer le sous-domaine pour publier ce contenu](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* Lors de la création d’expériences web et de l’inclusion de contenu à partir de la bibliothèque Adobe Experience Manager Assets Essentials, il est nécessaire de [configurer le sous-domaine pour publier ce contenu](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Si vous utilisez la fonction d’expérimentation de contenu, assurez-vous que votre jeu de données web est également inclus dans votre configuration de création de rapports.
 * Actuellement, deux types d’implémentations sont pris en charge pour activer la création et la diffusion de campagnes de canal web sur vos propriétés web :
    * Côté client uniquement : pour modifier votre site web, vous devez mettre en oeuvre le SDK Web de Adobe Experience Platform.
@@ -259,7 +260,7 @@ Maintenant, créons l’expérience du canal web. Pour ce faire, utilisez Adobe 
 
    ![Modification du contenu](assets/web-channel-edit-content.png)
 
-1. Cliquez maintenant sur **[!UICONTROL Modifier la page web]** pour commencer la création.
+1. Maintenant, cliquez sur **[!UICONTROL Modifier la page web]** pour commencer la création.
 
    ![Modifier la page web](assets/web-channel-edit-web-page.png)
 
@@ -296,7 +297,7 @@ Dans l’éditeur, ajoutez le HTML de la fonction `Luma Loyalty Rewards – Gold
 
 ![Validation du HTML](assets/web-channel-add-custom-html-validate.png)
 
-Examinez maintenant le nouveau composant de HTML personnalisé pour déterminer l’ajustement et l’aspect.
+Maintenant, passez en revue le nouveau composant de HTML personnalisé pour l’ajustement et l’aspect.
 
 ![Vérification du HTML personnalisé](assets/web-channel-review-custom-html.png)
 
@@ -387,4 +388,4 @@ Pour commencer la validation à l’aide du débogueur :
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

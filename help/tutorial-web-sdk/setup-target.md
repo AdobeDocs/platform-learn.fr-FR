@@ -2,17 +2,18 @@
 title: Configuration d’Adobe Target avec le SDK Web de Platform
 description: Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # Configuration d’Adobe Target avec le SDK Web de Platform
 
-Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform. Découvrez comment diffuser des expériences et comment transmettre des paramètres supplémentaires à Target.
+Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web de Adobe Experience Platform. Découvrez comment diffuser des expériences et comment transmettre des paramètres supplémentaires à Target.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
 
@@ -20,7 +21,7 @@ Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform
 
 ## Objectifs d&#39;apprentissage
 
-À la fin de cette leçon, vous serez en mesure d’effectuer les opérations suivantes avec une mise en oeuvre SDK Web de Target :
+À la fin de cette leçon, vous pouvez effectuer les opérations suivantes avec une mise en oeuvre SDK Web de Target :
 
 * Ajouter le fragment de code de masquage préalable pour empêcher le scintillement
 * Configuration d’un flux de données pour activer la fonctionnalité Target
@@ -41,7 +42,7 @@ Découvrez comment mettre en oeuvre Adobe Target à l’aide du SDK Web Platform
 Pour terminer les leçons de cette section, vous devez d’abord :
 
 * Suivez toutes les leçons relatives à la configuration initiale du SDK Web de Platform, y compris la configuration des éléments de données et des règles.
-* Assurez-vous que vous disposez d’une [Rôle d’éditeur ou d’approbateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) dans Adobe Target.
+* Assurez-vous que vous disposez d’une [Rôle d’éditeur ou d’approbateur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) dans Adobe Target.
 * Installez le [Extension d’assistance du compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) si vous utilisez le navigateur Google Chrome.
 * Découvrez comment configurer des activités dans Target. Si vous avez besoin d’une actualisation, les tutoriels et guides suivants sont utiles pour cette leçon :
    * [Utilisation de l’extension d’assistance du compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ Avant de commencer, déterminez si une solution de gestion du scintillement supp
 
 >[!NOTE]
 >
->Ce tutoriel utilise la méthode [Site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) qui dispose d’une mise en oeuvre asynchrone des balises et d’une atténuation du scintillement. Cette section sert de référence pour comprendre comment la limitation du scintillement fonctionne avec le SDK Web Platform.
+>Ce tutoriel utilise la méthode [Site web Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, qui a mis en place une mise en oeuvre asynchrone des balises et une atténuation du scintillement. Cette section sert de référence pour comprendre comment la limitation du scintillement fonctionne avec le SDK Web Platform.
 
 
 ### Mise en oeuvre asynchrone
 
-Lorsqu’une bibliothèque de balises se charge de manière asynchrone, le rendu de la page peut se terminer avant que Target ne remplace le contenu par défaut par du contenu personnalisé. Ce comportement peut entraîner un &quot;scintillement&quot;, dans lequel le contenu par défaut s’affiche brièvement avant d’être remplacé par le contenu personnalisé spécifié par Target. Si vous souhaitez éviter ce scintillement, Adobe recommande d’ajouter un fragment de code de masquage préalable spécial juste avant le code incorporé de balise asynchrone.
+Lorsqu’une bibliothèque de balises se charge de manière asynchrone, le rendu de la page peut se terminer avant que Target ne remplace le contenu par défaut par du contenu personnalisé. Ce comportement peut entraîner un &quot;scintillement&quot;, où le contenu par défaut s’affiche brièvement avant d’être remplacé par le contenu personnalisé. Si vous souhaitez éviter ce scintillement, Adobe recommande d’ajouter un fragment de code de masquage préalable spécial juste avant le code incorporé de balise asynchrone.
 
 Ce fragment est déjà présent sur le site Luma, mais regardons de plus près pour comprendre ce que fait ce code :
 
@@ -182,13 +183,13 @@ Pour les besoins de ce tutoriel à l’aide du site Luma, utilisez le symbole d�
 
 ## Rendu des décisions de personnalisation visuelle
 
-Les décisions de personnalisation visuelle font référence aux expériences créées dans le compositeur d’expérience visuelle Adobe Target. Tout d’abord, vous devez comprendre la terminologie utilisée dans les interfaces de Target et de balises :
+Les décisions de personnalisation visuelle se rapportent aux expériences créées dans le compositeur d’expérience visuelle Adobe Target. Tout d’abord, vous devez comprendre la terminologie utilisée dans les interfaces de Target et de balises :
 
 * **Activité**: ensemble d’expériences ciblées sur une ou plusieurs audiences. Par exemple, un simple test A/B peut être une activité avec deux expériences.
 * **Expérience**: ensemble d’actions ciblées sur un ou plusieurs emplacements ou portées de décision.
 * **Portée de décision**: emplacement où une expérience Target est diffusée. Les portées de décision sont équivalentes à des &quot;mbox&quot; si vous connaissez l’utilisation d’anciennes versions de Target.
 * **Décision de personnalisation**: une action que le serveur détermine doit être appliquée. Ces décisions peuvent être basées sur les critères d’audience et la hiérarchisation des activités Target.
-* **Proposition**: résultat des décisions prises par le serveur et qui sont diffusées dans la réponse du SDK Web Platform. Par exemple, la permutation d’une image de bannière est une proposition.
+* **Proposition**: résultat des décisions prises par le serveur, qui sont diffusées dans la réponse du SDK Web Platform. Par exemple, la permutation d’une image de bannière est une proposition.
 
 ### Mettez à jour le [!UICONTROL Envoyer un événement] action
 
@@ -231,7 +232,7 @@ Maintenant que la partie de mise en oeuvre de base est terminée, créez une act
 
    ![Création d’une activité XT](assets/target-xt-create-activity.png)
 
-1. Modifiez la page, par exemple modifiez le texte sur la bannière principale de la page d’accueil.  Lorsque vous avez terminé, sélectionnez **[!UICONTROL Enregistrer]** then **[!UICONTROL Suivant]**.
+1. Modifiez la page, par exemple, modifiez le texte sur la bannière principale de la page d’accueil.  Lorsque vous avez terminé, sélectionnez **[!UICONTROL Enregistrer]** then **[!UICONTROL Suivant]**.
 
    ![Modification du VEC de Target](assets/target-xt-vec-modification.png)
 
@@ -302,7 +303,7 @@ Modifiez votre règle de chargement de page pour ajouter une portée de décisio
 
 ### Traitement de la réponse de Target
 
-Maintenant que vous avez configuré le SDK Web de Platform pour demander du contenu pour le `homepage-hero` , vous devez faire quelque chose avec la réponse. L’extension de balise SDK Web Platform fournit une [!UICONTROL Envoyer l’événement terminé] qui peut être utilisé pour déclencher immédiatement une nouvelle règle lors d’une réponse d’une [!UICONTROL Envoyer un événement] action est reçue.
+Maintenant que vous avez configuré le SDK Web de Platform pour demander du contenu pour le `homepage-hero` , vous devez faire quelque chose avec la réponse. L’extension de balise SDK Web Platform fournit une [!UICONTROL Envoyer l’événement terminé] qui peut être utilisé pour déclencher immédiatement une nouvelle règle lors d’une réponse d’un événement [!UICONTROL Envoyer un événement] action est reçue.
 
 1. Créez une règle appelée `homepage - send event complete - render homepage-hero`.
 1. Ajoutez un événement à la règle. Utilisez la variable **SDK Web Adobe Experience Platform** et l’extension **[!UICONTROL Envoi de l’événement terminé]** type d’événement.
@@ -393,7 +394,7 @@ Dans cette section, vous allez transmettre des données spécifiques à Target e
 
 ### Paramètres de page (mbox) et XDM
 
-Tous les champs XDM sont automatiquement transmis à Target en tant que [paramètres de page](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) ou les paramètres de mbox.
+Tous les champs XDM sont automatiquement transmis à Target en tant que [paramètres de page](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) ou les paramètres de mbox.
 
 Certains de ces champs XDM sont mappés à des objets spéciaux dans le serveur principal de Target. Par exemple : `web.webPageDetails.URL` sera automatiquement disponible pour créer des conditions de ciblage basées sur une URL ou en tant que `page.url` lors de la création de scripts de profil.
 
@@ -401,7 +402,7 @@ Certains de ces champs XDM sont mappés à des objets spéciaux dans le serveur 
 
 Certains points de données peuvent s’avérer utiles à Target qui ne sont pas mappés à partir de l’objet XDM. Ces paramètres Target spéciaux incluent :
 
-* [Attributs de profil](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [Attributs de profil](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Attributs d’entité Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Paramètres réservés Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * Valeurs de catégorie pour [affinité catégorielle](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -551,4 +552,4 @@ Maintenant que vous avez terminé cette leçon, vous devez disposer d’une mise
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,21 +1,21 @@
 ---
-title: Configurer un trains de données
+title: Configuration d’un flux de données pour le SDK Web Platform
 description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Datastreams
+jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '531'
 ht-degree: 4%
 
 ---
 
 # Configurer un trains de données
 
-Découvrez comment activer un flux de données et configurer des applications Experience Cloud.
+Découvrez comment configurer un flux de données pour le SDK Web Adobe Experience Platform.
 
-Les flux de données indiquent à Adobe Experience Platform Edge Network où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements. Voir [Principes de base de la configuration d’un flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) pour plus d’informations.
-
+[Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indiquer à l’Edge Network Adobe Experience Platform où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements.
 
 ![SDK Web, flux de données et diagramme Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -40,19 +40,22 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 **Pour créer un flux de données :**
 
 1. Ouvrez le [Interface de collecte de données](https://launch.adobe.com/){target="_blank"}
-1. Assurez-vous que vous vous trouvez dans le bon environnement de test.
+1. Assurez-vous que vous vous trouvez dans le bon environnement de test
 
    >[!NOTE]
    >
    >Si vous êtes client d’une application basée sur Platform telle que Real-Time CDP ou Journey Optimizer, nous vous recommandons d’utiliser un environnement de test de développement pour ce tutoriel. Si ce n’est pas le cas, utilisez le **[!UICONTROL Prod]** sandbox.
 
 1. Accédez à **[!UICONTROL Datastreams]** dans la navigation de gauche
-1. Sélectionner **[!UICONTROL Nouvelle structure de données]** sur le côté droit de l’écran.
+1. Sélectionner **[!UICONTROL Nouvelle structure de données]**
 1. Entrée `Luma Web SDK: Development Environment` comme la propriété **[!UICONTROL Nom]**. Ce nom est référencé ultérieurement lorsque vous configurez l’extension SDK Web dans la propriété de balise.
-1. Sélectionnez votre `Luma Web Event Data` comme la propriété **[!UICONTROL Schéma d’événement]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Création du flux de données](assets/datastream-create-new-datastream.png)
+
+   >[!NOTE]
+   >
+   >Vous n’avez besoin de sélectionner un schéma que si vous utilisez le [Préparation de données pour la collecte de données](/help/data-collection/edge/data-prep.md) fonction .
 
 Sur l’écran suivant, vous pouvez ajouter des services tels que des applications d’Adobe à la banque de données, mais vous n’ajouterez aucun service à ce stade du tutoriel. Vous le ferez plus tard dans les leçons. [Configuration d’un Experience Platform](setup-experience-platform.md), [Configuration d’Analytics](setup-analytics.md), [Configuration de l’Audience Manager](setup-audience-manager.md), [Configuration de Target](setup-target.md), ou [Transfert d’événement](setup-event-forwarding.md).
 
@@ -62,17 +65,14 @@ Sur l’écran suivant, vous pouvez ajouter des services tels que des applicatio
 
 ## Remplacement d’un flux de données
 
-Les remplacements de flux de données vous permettent de définir des configurations supplémentaires pour vos flux de données, puis de remplacer votre configuration par défaut sous certaines conditions de votre mise en oeuvre.
-
+[Remplacements des flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre flux de données, puis de remplacer votre configuration par défaut sous certaines conditions.
 
 Le remplacement de la configuration du flux de données est un processus en deux étapes :
 
-1. Tout d’abord, vous définissez vos remplacements de flux de données dans la configuration de flux de données. Cette opération doit être effectuée par application par Adobe que vous souhaitez remplacer.
-1. Ensuite, vous envoyez les remplacements à l’Edge Network soit par une action Envoyer l’événement au SDK Web, soit par une configuration dans l’extension de balise du SDK Web.
+1. Tout d’abord, vous définissez des remplacements de flux de données dans la configuration du service de flux de données. Vous pouvez par exemple définir d’autres suites de rapports Analytics, espaces de travail Target ou jeux de données Platform à utiliser comme remplacements.
+1. Ensuite, vous envoyez les remplacements à l’Edge Network par une action d’événement d’envoi de SDK Web ou par une configuration dans l’extension de balise SDK Web.
 
-Dans le [Configuration d’Adobe Analytics](setup-analytics.md) leçon Vous remplacez la suite de rapports pour une page à l’aide de l’action Envoyer l’événement du SDK Web Platform.
-
-Voir [la configuration du flux de données remplace la documentation](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) pour obtenir des instructions détaillées sur la façon de remplacer les configurations datastream.
+Dans le [Configuration d’Adobe Analytics](setup-analytics.md) leçon : vous remplacez la suite de rapports pour une page à l’aide de l’action Envoyer l’événement du SDK Web Platform.
 
 Vous êtes maintenant prêt à installer l’extension SDK Web Platform dans votre propriété de balise !
 
@@ -80,4 +80,4 @@ Vous êtes maintenant prêt à installer l’extension SDK Web Platform dans vot
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

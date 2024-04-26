@@ -2,17 +2,18 @@
 title: Création d’un schéma XDM pour les données web
 description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1498'
 ht-degree: 1%
 
 ---
 
 # Création d’un schéma XDM pour les données web
 
-Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données.
+Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données Adobe Experience Platform.
 
 Les schémas de modèle de données d’expérience (XDM) sont les blocs de création, les principes et les bonnes pratiques pour la collecte de données dans Adobe Experience Platform.
 
@@ -22,7 +23,7 @@ Le SDK Web Platform utilise votre schéma pour normaliser vos données d’évé
 
 Les entreprises ont leur propre langue pour communiquer sur leur domaine. Les concessionnaires automobiles s&#39;occupent des marques, des modèles et des cylindres. Les compagnies aériennes traitent des numéros de vol, des classes de service et des assignations de places. Certains de ces termes sont propres à une entreprise spécifique, d’autres sont partagés entre les secteurs d’activité et d’autres sont partagés par presque toutes les entreprises. Pour les termes partagés dans un secteur industriel vertical ou même au-delà, vous pouvez commencer à utiliser vos données de manière puissante lorsque vous nommez et structurez ces termes de manière commune.
 
-Par exemple, de nombreuses entreprises traitent des commandes. Et si, collectivement, ces entreprises décidaient de modéliser une commande de la même manière ? Par exemple, que se passe-t-il si le modèle de données est constitué d’un objet avec une `priceTotal` qui représentait le prix total de la commande ? Que se passe-t-il si cet objet possède également des propriétés nommées `currencyCode` et `purchaseOrderNumber`? L’objet order peut contenir une propriété nommée `payments` qui serait un tableau d&#39;objets de paiement. Chaque objet représente un paiement pour la commande. Par exemple, un client a peut-être payé une partie de la commande avec une carte-cadeau et payé le reste avec une carte de crédit. Vous pouvez commencer à construire un modèle qui ressemble à ceci :
+Par exemple, de nombreuses entreprises traitent des commandes. Et si, collectivement, ces entreprises décidaient de modéliser une commande de la même manière ? Par exemple, que se passe-t-il si le modèle de données est constitué d’un objet avec une `priceTotal` qui représentait le prix total de la commande ? Que se passe-t-il si cet objet possède également des propriétés nommées `currencyCode` et `purchaseOrderNumber`? L’objet order peut contenir une propriété nommée `payments` qui serait un tableau d&#39;objets de paiement. Chaque objet représente un paiement pour la commande. Par exemple, un client a peut-être payé une partie de la commande avec une carte-cadeau et le reste avec une carte de crédit. Vous pouvez commencer à construire un modèle qui ressemble à ceci :
 
 ```json
 {
@@ -111,7 +112,7 @@ Dans la mesure du possible, il est recommandé d’utiliser des groupes de champ
 >Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL ExperienceEvent du SDK Web AEP]**_ et _**[!UICONTROL Événement d’expérience client]**_.
 >
 >
-> Si vous implémentez uniquement **Adobe Analytics** avec le SDK Web et sans envoyer de données à **Experience Platform**, utilisez le [!UICONTROL Modèle ExperienceEvent Adobe Analytics] groupe de champs pour définir le schéma XDM. Elle sera utilisée dans la variable [Configuration d’Analytics](setup-analytics.md) leçon.
+> Si vous implémentez uniquement **Adobe Analytics** avec le SDK Web et sans envoyer de données à **Experience Platform**, utilisez le [!UICONTROL Modèle ExperienceEvent Adobe Analytics] groupe de champs pour définir le schéma XDM. Elle est utilisée dans la variable [Configuration d’Analytics](setup-analytics.md) leçon.
 
 1. Dans le **[!UICONTROL Groupes de champs]** , sélectionnez **[!UICONTROL Ajouter]**
 
@@ -125,7 +126,7 @@ Dans la mesure du possible, il est recommandé d’utiliser des groupes de champ
 
    ![Ajouter un groupe de champs](assets/schema-add-field-group.png)
 
-Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. La variable [!UICONTROL nom d&#39;affichage] de chaque champ s’affiche pour les spécialistes du marketing dans l’interface du créateur de segments des applications basées sur Platform. Vous pouvez modifier le nom d’affichage des champs standard en fonction de vos besoins. Vous pouvez également supprimer les champs que vous ne souhaitez pas. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous pouvez voir à quels groupes appartiennent. **[!UICONTROL Événement d’expérience client]**.
+Avec les deux groupes de champs, notez que vous avez accès aux paires clé-valeur les plus couramment utilisées requises pour la collecte de données sur le Web. La variable [!UICONTROL nom d&#39;affichage] de chaque champ s’affiche pour les spécialistes du marketing dans l’interface du créateur de segments des applications basées sur Platform. Vous pouvez modifier le nom d’affichage des champs standard en fonction de vos besoins. Vous pouvez également supprimer les champs que vous ne souhaitez pas. Lorsque vous cliquez sur l’un des noms de groupe de champs, l’interface met en évidence les regroupements de paires clé-valeur qui lui appartiennent. Dans l’exemple ci-dessous, vous voyez à quels champs appartiennent **[!UICONTROL Événement d’expérience client]**.
 
 ![Groupes de champs de schéma](assets/schema-consumer-experience-event.png)
 
@@ -143,7 +144,7 @@ Il s’agit d’un objet obligatoire pour toute collecte de données Web, car il
 
 >[!IMPORTANT]
 >
-> Il est possible d’activer **[!UICONTROL Profil]** pour un schéma avant d’enregistrer votre schéma. **Ne pas** l’activer à ce stade. Une fois qu’un schéma est activé pour Profile, il ne peut pas être désactivé ni supprimé. Les champs ne peuvent pas non plus être supprimés des schémas à ce stade, bien qu’il soit possible de [Champs obsolètes dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Il est important de tenir compte de ces implications ultérieurement lorsque vous travaillez avec vos propres données dans votre environnement de production.
+> Il est possible d’activer **[!UICONTROL Profil]** pour un schéma avant d’enregistrer votre schéma. **Ne pas** l’activer à ce stade. Une fois qu’un schéma est activé pour Profile, il ne peut pas être désactivé ni supprimé sans réinitialiser l’ensemble de l’environnement de test. Les champs ne peuvent pas non plus être supprimés des schémas à ce stade, bien qu’il soit possible de [Champs obsolètes dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Il est important de tenir compte de ces implications ultérieurement lorsque vous travaillez avec vos propres données dans votre environnement de production.
 >
 >
 >Ce paramètre est abordé plus en détail au cours de la [Configuration d’un Experience Platform](setup-experience-platform.md) leçon.
@@ -154,11 +155,11 @@ Pour terminer cette leçon, sélectionnez **[!UICONTROL Enregistrer]** en haut �
 ![Enregistrer le schéma](assets/schema-select-save.png)
 
 
-Vous pouvez maintenant référencer ce schéma lorsque vous ajoutez l’extension SDK Web à votre propriété de balise.
+Désormais, vous pouvez référencer ce schéma lorsque vous ajoutez l’extension SDK Web à votre propriété de balise.
 
 
 [Suivant : ](configure-identities.md)
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

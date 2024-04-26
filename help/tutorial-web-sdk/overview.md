@@ -3,7 +3,7 @@ title: Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du
 description: Découvrez comment mettre en oeuvre des applications Experience Cloud à l’aide du SDK Web de Adobe Experience Platform.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Experience Platform Web SDK est une bibliothèque JavaScript côté client qui p
 
 Ce tutoriel vous guide tout au long de l’implémentation du SDK Web de Platform sur un exemple de site web de vente au détail appelé Luma. La variable [Site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dispose d’une couche de données et de fonctionnalités riches qui vous permettent de créer une mise en oeuvre réaliste. Pour ce tutoriel, vous :
 
-* Créez votre propre propriété de balises dans votre propre compte avec une mise en oeuvre du SDK Web Platform pour le site web Luma.
+* Créez votre propre propriété de balises, dans votre propre compte, avec une mise en oeuvre SDK Web Platform pour le site web Luma.
 * Configurez toutes les fonctionnalités de collecte de données pour les implémentations de SDK Web telles que les jeux de données, les schémas et les espaces de noms d’identité.
 * Ajoutez les applications Adobe Experience Cloud suivantes :
    * **[Adobe Experience Platform](setup-experience-platform.md)** (et les applications créées sur Platform telles qu’Adobe Real-time Customer Data Platform, Adobe Journey Optimizer et Adobe Customer Journey Analytics)
@@ -48,7 +48,7 @@ Dans ces leçons, on suppose que vous disposez d’un compte Adobe et des autori
    * **[!UICONTROL Droits de propriété]**—autorisation pour **[!UICONTROL Approuver]**, **[!UICONTROL Développer]**, **[!UICONTROL Modifier la propriété]**, **[!UICONTROL Gestion des environnements]**, **[!UICONTROL Gestion des extensions]**, et **[!UICONTROL Publier]**,
    * **[!UICONTROL Droits d’entreprise]**—autorisation pour **[!UICONTROL Gestion des propriétés]**
 
-     Pour plus d’informations sur les autorisations de balises, voir [la documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Pour plus d’informations sur les autorisations de balise, voir [la documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * Pour **Experience Platform**, vous devez disposer des éléments suivants :
 
@@ -66,7 +66,7 @@ Dans ces leçons, on suppose que vous disposez d’un compte Adobe et des autori
 
 * Pour le paramètre **Adobe Analytics** leçon, vous devez avoir [Accès de l’administrateur aux paramètres de la suite de rapports, aux règles de traitement et à Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Pour le paramètre **Adobe Target** leçon, vous devez avoir [Éditeur ou approbateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) accès.
+* Pour le paramètre **Adobe Target** leçon, vous devez avoir [Éditeur ou approbateur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) accès.
 
 * Pour le paramètre **Audience Manager** leçon, vous devez avoir accès à la création, à la lecture et à l’écriture de caractéristiques, de segments et de destinations. Pour plus d’informations, consultez le tutoriel sur [Contrôle d’accès en fonction du rôle de l’Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ Dans ces leçons, on suppose que vous disposez d’un compte Adobe et des autori
 
 ## Mises à jour
 
-* 24 avril 2024 : mise à jour majeure comprenant l’ajout de la variable Set/Update, le fractionnement des requêtes de personnalisation et d’analyse, leçons Journey Optimizer
+* 24 avril 2024 : mises à jour majeures comprenant l’ajout de la variable Set/Update, le fractionnement des requêtes de personnalisation et d’analyse, leçons Journey Optimizer
 
 ## Chargement du site web Luma
 
@@ -91,4 +91,4 @@ C’est parti !
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

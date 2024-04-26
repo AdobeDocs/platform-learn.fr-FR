@@ -1,18 +1,19 @@
 ---
-title: Création de règles de balise
+title: Création de règles de balise pour le SDK Web Platform
 description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1963'
 ht-degree: 2%
 
 ---
 
 # Création de règles de balise
 
-Découvrez comment envoyer des événements à l’Edge Network Platform avec votre objet XDM à l’aide de règles de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose. Avec le SDK Web Platform, les règles sont utilisées pour envoyer des événements à l’Edge Network Platform avec les données appropriées.
+Découvrez comment envoyer des événements à l’Edge Network Adobe Experience Platform avec votre objet XDM à l’aide de règles de balise. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise de faire quelque chose. Avec le SDK Web Platform, les règles sont utilisées pour envoyer des événements à l’Edge Network Platform avec les données appropriées.
 
 ## Objectifs d&#39;apprentissage
 
@@ -38,7 +39,7 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 
 ## Conventions de nommage
 
-Pour mieux gérer les règles dans les balises, il est recommandé de respecter une convention d’affectation des noms standard. Ce tutoriel utilise une convention de dénomination en cinq parties :
+Pour gérer les règles dans les balises, il est recommandé de respecter une convention d’affectation de nom standard. Ce tutoriel utilise une convention de dénomination en cinq parties :
 
 * [**location**] - [**event**] - [**objectif**] - [**order**]
 
@@ -52,7 +53,7 @@ où ;
 
 ## Création de règles de balise
 
-Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. L’extension de balises SDK Web Platform comprend deux actions qui seront utilisées dans cette leçon :
+Dans les balises, les règles sont utilisées pour exécuter des actions (appels de déclenchement) sous diverses conditions. L’extension de balises SDK Web Platform comprend deux actions utilisées dans cette leçon :
 
 * **[!UICONTROL Mettre à jour la variable]** mappe des éléments de données aux propriétés dans un objet XDM.
 * **[!UICONTROL Envoyer un événement]** envoie l’objet XDM à l’Edge Network Experience Platform ;
@@ -63,7 +64,7 @@ Dans le reste de cette leçon, nous :
 
 1. Créez des règles supplémentaires avec la fonction **[!UICONTROL Mettre à jour la variable]** action qui remplace notre &quot;configuration globale&quot; et qui contribue à des champs XDM supplémentaires sous certaines conditions (par exemple, l’ajout de détails de produit sur les pages de produit).
 
-1. Créez une autre règle avec la variable **[!UICONTROL Envoyer un événement]** qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
+1. Créez une autre règle avec la variable **[!UICONTROL Envoyer un événement]** , qui enverra l’objet XDM complet à Adobe Experience Platform Edge Network.
 
 Toutes ces règles seront séquencées correctement à l’aide de la variable &quot;[!UICONTROL order]&quot;.
 
@@ -110,7 +111,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
    ![Mettre à jour le schéma de variable](assets/create-rule-update-variable.png)
 
-Mappez maintenant vos [!UICONTROL éléments de données] à la fonction [!UICONTROL schema] utilisé par votre objet XDM. Vous pouvez mapper des propriétés individuelles ou des objets entiers. Dans cet exemple, vous mappez les propriétés individuelles :
+Maintenant, faites correspondre votre [!UICONTROL éléments de données] à la fonction [!UICONTROL schema] utilisé par votre objet XDM. Vous pouvez mapper des propriétés individuelles ou des objets entiers. Dans cet exemple, vous mappez les propriétés individuelles :
 
 1. Recherchez le champ eventType et sélectionnez-le
 
@@ -171,7 +172,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 1. Sélectionnez la variable ![+ symbole](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Sous Événement pour ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Core]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bibliothèque chargée (Haut de page)]**
-1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`. Cela garantit que la règle s’exécute après la `all pages - library loaded - set global variables - 1` qui définit la configuration globale.
+1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`. Cette valeur de commande permet de s’assurer que la règle s’exécute après la variable `all pages - library loaded - set global variables - 1` qui définit la configuration globale.
 
    ![Règles XDM Analytics](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. Dans le **[!UICONTROL Actions]** , sélectionnez **[!UICONTROL Ajouter]**
 
-1. Comme la variable **[!UICONTROL Extension]**, sélectionnez  **[!UICONTROL SDK Web Adobe Experience Platform]**
+1. Comme la variable **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL SDK Web Adobe Experience Platform]**
 
-1. Comme la variable  **[!UICONTROL Type d’action]**, sélectionnez  **[!UICONTROL Envoyer un événement]**
+1. Comme la variable  **[!UICONTROL Type d’action]**, sélectionnez **[!UICONTROL Envoyer un événement]**
 
 1. Comme la variable **[!UICONTROL XDM]**, sélectionnez la variable `xdm.variable.content` élément de données créé dans la leçon précédente
 
@@ -358,7 +359,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
    ![Enregistrer la règle](assets/create-rule-save-rule.png)
 
-## Publier la règle dans une bibliothèque
+## Publication des règles dans une bibliothèque
 
 Ensuite, publiez la règle dans votre environnement de développement afin que vous puissiez vérifier qu’elle fonctionne.
 
@@ -385,7 +386,7 @@ La création de la bibliothèque peut prendre quelques minutes. Une fois l’op�
 
 ![Build complete](assets/create-rule-development-success.png)
 
-Comme vous pouvez le voir sur la [!UICONTROL Flux de publication] le processus de publication, qui dépasse le cadre de ce tutoriel, contient beaucoup d’autres éléments. Ce tutoriel utilise une seule bibliothèque dans votre environnement de développement.
+Comme vous pouvez le voir sur la [!UICONTROL Flux de publication] le processus de publication, qui dépasse le cadre de ce tutoriel, comporte beaucoup d’autres éléments. Ce tutoriel utilise une seule bibliothèque dans votre environnement de développement.
 
 Vous êtes maintenant prêt à valider les données de la requête à l’aide de l’Adobe Experience Platform Debugger .
 
@@ -393,4 +394,4 @@ Vous êtes maintenant prêt à valider les données de la requête à l’aide d
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,18 +1,19 @@
 ---
 title: Installation et configuration de l’extension de balise du SDK Web Adobe Experience Platform
 description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
-feature: Web SDK
+feature: Web SDK, Tags
+jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 14%
+source-wordcount: '594'
+ht-degree: 10%
 
 ---
 
 # Installation de l’extension de balise du SDK Web Adobe Experience Platform
 
-Découvrez comment installer et configurer l’extension de balise SDK Web Platform. Le moyen le plus simple d’implémenter le SDK Web consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement Launch). L’extension de balise du SDK Web Platform est la suivante : _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et [Journey Optimizer](setup-web-channel.md)!
+Découvrez comment installer et configurer l’extension de balise du SDK Web de Adobe Experience Platform. Le moyen le plus simple d’implémenter le SDK Web consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement Launch). L’extension de balise du SDK Web Platform est la suivante : _extension de balise uniquement_ requis pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Cible](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform et [Journey Optimizer](setup-web-channel.md)!
 
 ## Objectifs d&#39;apprentissage
 
@@ -69,11 +70,11 @@ Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieu
 
    ![Sélection des flux de données](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Pour plus d’informations sur chaque section de l’extension, voir [Configuration de l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
+Pour plus d’informations sur chaque section de l’extension, voir [Configuration de l’extension du SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
->Bien que vous n’ayez pas configuré un CNAME dans la variable [!UICONTROL Domaine Edge] dans cette leçon, Adobe vous recommande d’utiliser un CNAME lorsque vous implémentez le SDK Web Platform sur votre propre site web. Bien quʼune implémentation CNAME ne permette pas dʼallonger la durée de vie des cookies, elle offre dʼautres avantages. Parmi ceux-ci, citons les bloqueurs de publicités et les navigateurs moins utilisés qui empêchent lʼenvoi des données aux domaines quʼils considèrent être des dispositifs de suivi. Dans ce cas, lʼutilisation dʼun CNAME peut éviter que votre collecte de données ne soit interrompue pour les utilisateurs qui se servent de ces outils.
+>Bien que vous n’ayez pas configuré un CNAME dans la variable [!UICONTROL Domaine Edge] dans cette leçon, Adobe vous recommande d’utiliser un CNAME lorsque vous implémentez le SDK Web Platform sur votre propre site web. Bien quʼune implémentation CNAME ne permette pas dʼallonger la durée de vie des cookies, elle offre dʼautres avantages. Ces avantages incluent les bloqueurs d’annonces et les navigateurs moins courants qui empêchent l’envoi de données aux domaines qu’ils classent comme outils de suivi. Dans ce cas, lʼutilisation dʼun CNAME peut éviter que votre collecte de données ne soit interrompue pour les utilisateurs qui se servent de ces outils.
 
 >[!NOTE]
 >
@@ -85,4 +86,4 @@ Maintenant que vous avez installé le SDK Web de Platform et que vous l’avez a
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

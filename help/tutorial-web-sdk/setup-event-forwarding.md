@@ -1,18 +1,19 @@
 ---
-title: Configuration d’une propriété de transfert d’événement
+title: Configuration d’un transfert d’événement avec les données du SDK Web Platform
 description: Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1873'
 ht-degree: 4%
 
 ---
 
-# Configuration d’une propriété de transfert d’événement
+# Configuration du transfert d’événement avec les données du SDK Web Platform
 
-Découvrez comment utiliser la propriété de transfert d’événement à l’aide des données Experience Platform du SDK Web.
+Découvrez comment utiliser le transfert d’événement avec les données du SDK Web de Adobe Experience Platform.
 
 Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événements vous permet d’envoyer des données à des fournisseurs tiers non Adobes directement à partir de l’Edge Network Adobe Experience Platform au lieu du navigateur côté client traditionnel. Découvrez les avantages du transfert d’événement dans la section [Présentation du transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ Le transfert d’événement est un nouveau type de propriété disponible dans 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
 * [SDK web Adobe Experience Platform](overview.md)
-* [ SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/)
+* [ SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -46,11 +47,11 @@ Après avoir suivi les leçons précédentes de ce tutoriel, vous devriez envoye
 ## Conditions préalables
 
 * Une licence logicielle qui inclut le transfert d’événement. Le transfert d’événement est une fonctionnalité payante de la collecte de données. Pour plus d’informations, contactez votre équipe de compte d’Adobe.
-* Transfert d’événement activé dans votre organisation Experience Cloud.
+* Le transfert d’événement est activé dans votre organisation Experience Cloud.
 * Autorisation de l’utilisateur pour le transfert d’événement. (Dans [Admin Console](https://adminconsole.adobe.com/), sous le produit Adobe Experience Platform Launch, éléments d’autorisation pour[!UICONTROL Plateformes] > [!UICONTROL Edge] et tout [!UICONTROL Droits de propriété]). Une fois accordée, vous devriez voir [!UICONTROL Transfert d’événement] dans le volet de navigation de gauche de l’interface Collecte de données :
   ![Propriétés Event Forwarting](assets/event-forwarding-menu.png)
 
-* SDK Web ou mobile Adobe Experience Platform configuré pour envoyer des données à l’Edge Network. Vous devez avoir terminé les leçons suivantes de ce tutoriel :
+* Le SDK Adobe Experience Platform Web ou Mobile est configuré pour envoyer des données à l’Edge Network. Vous devez avoir terminé les leçons suivantes de ce tutoriel :
 
    * Configuration initiale
 
@@ -76,14 +77,14 @@ Commencez par créer une propriété de transfert d’événement :
 1. Sélectionnez **[!UICONTROL Nouvelle propriété]**.
    ![Propriétés Event Forwarting](assets/event-forwarding-new.png)
 
-1. Attribuez un nom à la propriété. Dans ce cas `Server-Side - Web SDK Course`
+1. Attribuez un nom à la propriété. Dans ce cas, `Server-Side - Web SDK Course`
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
    ![enregistrement de propriété de transfert d’événement](assets/event-forwarding-save.png)
 
 ## Configuration du flux de données
 
-Pour que le transfert d’événement utilise les données que vous envoyez au réseau Edge, vous devez lier la propriété de transfert d’événement nouvellement créée au même flux de données que celui utilisé pour envoyer des données aux solutions Adobe.
+Pour que le transfert d’événement utilise les données que vous envoyez à l’Edge Network Platform, vous devez lier la propriété de transfert d’événement nouvellement créée à la même structure de données que celle utilisée pour envoyer des données à des solutions Adobe.
 
 Pour configurer Target dans le flux de données :
 
@@ -209,7 +210,7 @@ Il existe quelques différences principales entre la configuration des règles d
 
 * **[!UICONTROL Événements] &amp; [!UICONTROL Conditions]**:
 
-   * **Balises**: toutes les règles sont déclenchées par un événement qui doit être spécifié dans la règle, par exemple : `Library Loaded - Page Top`. Les conditions sont facultatives.
+   * **Balises**: toutes les règles sont déclenchées par un événement qui doit être spécifié dans la règle ; par exemple, `Library Loaded - Page Top`. Les conditions sont facultatives.
    * **Transfert d’événement**: on suppose que chaque événement envoyé à l’Edge Network Platform est un déclencheur pour transférer des données. Par conséquent, il n’existe pas de [!UICONTROL Événements] qui doit être sélectionné dans les règles de transfert d’événement. Pour gérer les événements qui déclenchent une règle de transfert d’événement, vous devez configurer des conditions.
 
 * **Jeton d’élément de données**:
@@ -231,7 +232,7 @@ Pour configurer une règle de transfert de données vers votre webhook, vous dev
 
 1. Accédez à [Webhook.site](https://webhook.site)
 
-1. Rechercher **Votre URL unique**, vous l’utiliserez comme requête d’URL dans votre règle de transfert d’événement.
+1. Rechercher **Votre URL unique**, vous l’utilisez comme requête d’URL dans votre règle de transfert d’événement.
 
 1. Sélectionner **[!UICONTROL Copier dans le presse-papiers]**
 
@@ -324,4 +325,4 @@ Félicitations ! Vous avez configuré le transfert d’événement !
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

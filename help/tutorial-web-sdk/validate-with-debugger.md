@@ -2,28 +2,29 @@
 title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
 description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Debugger
+jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
 
 # Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
 
-Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger.
+Découvrez comment valider votre mise en oeuvre du SDK Web Adobe Experience Platform avec Adobe Experience Platform Debugger.
 
-Le débogueur Experience Platform est une extension disponible pour les navigateurs Chrome et Firefox qui vous permet de voir la technologie d’Adobe mise en oeuvre dans vos pages web. Téléchargez la version de votre navigateur préféré :
+L’extension Experience Platform Debugger est disponible pour les navigateurs Chrome et Firefox, ce qui vous permet de voir la technologie d’Adobe mise en oeuvre dans vos pages web. Téléchargez la version de votre navigateur préféré :
 
 * [Extension Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
-* [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Extension Chrome](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Si vous n’avez jamais utilisé le débogueur auparavant, vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-Dans cette leçon, vous utilisez la méthode [Extension Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) pour remplacer la propriété de balise codée en dur sur la propriété [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) avec votre propre propriété.
+Dans cette leçon, vous utilisez la méthode [Extension Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur la propriété [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) avec votre propre propriété.
 
 Cette technique, appelée changement d’environnement, vous sera utile ultérieurement lorsque vous utiliserez des balises sur votre propre site web. Il vous permet de charger votre site web de production dans votre navigateur, mais avec votre *development* bibliothèque de balises. Cette fonctionnalité vous permet d’effectuer et de valider des modifications de balises en toute confiance, indépendamment de vos mises à jour de code standard. Après tout, cette séparation entre les mises à jour de balises marketing et les mises à jour de code standard est l’une des principales raisons pour lesquelles les clients utilisent des balises en premier lieu !
 
@@ -55,7 +56,7 @@ Le débogueur Experience Platform dispose d’une fonctionnalité intéressante 
 1. Le débogueur s’ouvre et affiche des détails sur l’implémentation codée en dur (vous devrez peut-être recharger le site Luma après avoir ouvert le débogueur).
 1. Vérifiez que le débogueur est &quot;**[!UICONTROL Connexion à Luma]**&quot; comme illustré ci-dessous, puis sélectionnez &quot;**[!UICONTROL lock]**&quot; pour verrouiller le débogueur sur le site Luma.
 1. Sélectionnez la variable **[!UICONTROL Se connecter]** et connectez-vous à Adobe Experience Cloud à l’aide de votre identifiant d’Adobe.
-1. Accédez à **[!UICONTROL Balises Experience Platform]** dans la navigation de gauche
+1. Maintenant, accédez à **[!UICONTROL Balises Experience Platform]** dans la navigation de gauche
 
    ![Écran de balise Debugger](assets/validate-launch-screen.png)
 
@@ -84,7 +85,7 @@ Vous pouvez utiliser le débogueur pour valider les balises côté client décle
 
    ![Onglet Résumé](assets/validate-summary.png)
 
-1. Accédez à **[!UICONTROL SDK Web Experience Platform]** dans le volet de navigation de gauche pour afficher la variable **[!UICONTROL Requêtes réseau]**
+1. Maintenant, accédez à **[!UICONTROL SDK Web Experience Platform]** dans le volet de navigation de gauche pour afficher la variable **[!UICONTROL Requêtes réseau]**
 1. Ouvrez le **[!UICONTROL events]** row
 
    ![Requête SDK Web Adobe Experience Platform](assets/validate-aep-screen.png)
@@ -162,10 +163,10 @@ Pour activer Edge Trace :
 
    ![Balise Analytics Edge Trace](assets/validate-edge-trace.png)
 
-À ce stade, vous ne pouvez pas afficher les requêtes de l’Edge Network de Platform adressées à des applications Adobe, car vous n’en avez activé aucune dans le flux de données. Dans les leçons futures, vous utiliserez Edge Trace pour afficher les requêtes sortantes côté serveur pour Adobe des applications et du transfert d’événement. Mais tout d’abord, découvrez un autre outil pour valider les requêtes côté serveur effectuées par l’Edge Network Platform—Adobe Experience Platform Assurance !
+À ce stade, vous ne pouvez pas afficher les requêtes de l’Edge Network Platform qui vont vers les applications Adobe, car vous n’en avez activé aucune dans le flux de données. Dans les leçons futures, vous utiliserez Edge Trace pour afficher les requêtes sortantes côté serveur pour Adobe des applications et du transfert d’événement. Mais tout d’abord, découvrez un autre outil pour valider les requêtes côté serveur effectuées par l’Edge Network Platform—Adobe Experience Platform Assurance !
 
 [Suivant : ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

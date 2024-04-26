@@ -2,21 +2,22 @@
 title: Configuration du consentement avec le SDK Web de Platform
 description: Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Configuration du consentement avec le SDK Web de Platform
 
-Découvrez comment configurer les paramètres de confidentialité de l’extension de balise SDK Web Experience Platform. Définissez le consentement en fonction de l’interaction du visiteur avec une bannière d’une plateforme de gestion du consentement (CMP).
+Découvrez comment configurer les paramètres de confidentialité de l’extension de balise du SDK Web de Adobe Experience Platform. Définissez le consentement en fonction de l’interaction du visiteur avec une bannière d’une plateforme de gestion du consentement (CMP).
 
 >[!NOTE]
 > 
->À des fins de démonstration, ce tutoriel utilise [Klaro](https://heyklaro.com/) comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
+>À des fins de démonstration, ce tutoriel utilise [Klaro](https://klaro.org/) comme CMP. Nous vous invitons à suivre l’exemple de Klaro ou de la CMP que vous utilisez avec votre site web.
 
 
 ## Objectifs d&#39;apprentissage
@@ -32,20 +33,21 @@ Découvrez comment configurer les paramètres de confidentialité de l’extensi
 Vous devez connaître les balises et les étapes de création de règles, d’éléments de données, de création de bibliothèques dans des environnements et de basculement de bibliothèques de balises à l’aide du débogueur Experience Platform.
 
 Avant de commencer à configurer les paramètres de confidentialité et à créer les règles pour définir le consentement, assurez-vous d’avoir injecté le script de votre plateforme de gestion du consentement sur le site web et de fonctionner correctement. Une CMP peut être chargée directement dans le code source à l’aide des développeurs de site ou par le biais de balises elles-mêmes. Cette leçon illustre cette dernière approche.
+
 >[!NOTE]
 > 
 >1. Une plateforme de gestion du consentement (ou CMP) est utilisée par les organisations pour documenter et gérer légalement les choix de consentement d’un visiteur avant de collecter, partager ou vendre des données de visiteur provenant de sources en ligne telles que des sites web et des applications.
 >
->2. L’approche recommandée pour l’injection d’une CMP se fait directement par le biais du code source avant le script du gestionnaire de balises.
+>2. L’approche recommandée pour l’injection d’une CMP se fait directement via le code source avant le script du gestionnaire de balises.
 
 ### Configurer Klaro
 
 Avant de passer aux configurations de balise, découvrez la plateforme de gestion du consentement utilisée dans ce tutoriel Klaro.
 
-1. Visite [Klaro](https://heyklaro.com/) et configurez un compte.
+1. Visite [Klaro](https://klaro.org/) et configurez un compte.
 1. Accédez à **Gestionnaire de confidentialité** et créez une instance en fonction des instructions.
 1. Utilisez la variable **Code d’intégration** pour injecter Klaro dans votre propriété de balise (les instructions se trouvent dans l’exercice suivant).
-1. Ignorer **Analyse** , car il détectera la propriété de balise qui est codée en dur sur le site web de démonstration de Luma et non celle que vous avez créée pour ce tutoriel.
+1. Ignorer **Analyse** , car il détecte la propriété de balise codée en dur sur le site web de démonstration de Luma et non celle que vous avez créée pour ce tutoriel.
 1. Ajoutez un service appelé `aep web sdk` et basculez sur **État par défaut du service**. Lorsque cette option est activée, la valeur de consentement par défaut est `true`, sinon il est `false`. Cette configuration s’avère pratique lorsque vous souhaitez déterminer l’état du consentement par défaut (avant le consentement du visiteur) pour votre application web. Par exemple :
    * Pour le CCPA, le consentement par défaut est généralement défini sur `true`. Vous allez référencer ce scénario comme **Accord préalable implicite** tout au long de ce tutoriel
    * Pour le RGPD, le consentement par défaut est généralement défini sur `false`. Vous allez référencer ce scénario comme **Désinscription implicite** tout au long de ce tutoriel.
@@ -218,10 +220,10 @@ Une fois cette règle en place, la collecte des événements doit commencer lors
 Pour plus d’informations sur le consentement dans le SDK Web, voir [Prise en charge des préférences de consentement du client](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Pour plus d’informations sur la variable [!UICONTROL Définition du consentement] action, voir [Définition du consentement](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+Pour plus d’informations sur la variable [!UICONTROL Définition du consentement] action, voir [Définition du consentement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Suivant : ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
