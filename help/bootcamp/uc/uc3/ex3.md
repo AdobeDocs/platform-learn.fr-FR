@@ -9,9 +9,9 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '839'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Dans cet exercice, vous allez configurer le parcours et le message qui doivent être déclenchés lorsqu’une personne entre dans une balise à l’aide de l’application mobile.
 
-Connectez-vous à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com). Cliquez sur **Journey Optimizer**.
+Connectez-vous à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
@@ -50,7 +50,7 @@ Sélectionnez votre événement, faites-le glisser et déposez-le sur le canevas
 
 ![ACOP](./images/journeyevent.png)
 
-Pour la deuxième étape du parcours, vous devez ajouter une **Push** action. Accédez au côté gauche de l’écran pour **Actions**, sélectionnez la variable **Push** puis faites-la glisser sur le deuxième noeud de votre parcours.
+Pour la deuxième étape du parcours, vous devez ajouter une **Push** action. Accédez au côté gauche de l’écran pour **Actions**, sélectionnez la variable **Push** , puis faites-la glisser sur le deuxième noeud de votre parcours.
 
 ![ACOP](./images/journeyactions.png)
 
@@ -135,11 +135,11 @@ Pour la troisième étape du parcours, vous devez ajouter une **sendMessageToScr
 
 ![ACOP](./images/jomsg15.png)
 
-Le **sendMessageToScreen** action est une action personnalisée qui publie un message sur le point de terminaison utilisé par l’affichage en magasin. Le **sendMessageToScreen** attend la définition de plusieurs variables. Vous pouvez afficher ces variables en faisant défiler la page vers le bas jusqu’à ce que vous voyiez **Paramètres d’action**.
+La variable **sendMessageToScreen** action est une action personnalisée qui publie un message sur le point de terminaison utilisé par l’affichage en magasin. La variable **sendMessageToScreen** attend la définition d’un certain nombre de variables. Vous pouvez afficher ces variables en faisant défiler la page vers le bas jusqu’à ce que vous voyiez **Paramètres d’action**.
 
 ![ACOP](./images/jomsg16.png)
 
-Vous devez maintenant définir les valeurs de chaque paramètre d’action. Suivez ce tableau pour déterminer les valeurs requises.
+Vous devez maintenant définir les valeurs de chaque paramètre d’action. Suivez ce tableau pour déterminer les valeurs requises à quel emplacement.
 
 | Paramètre | valeur |
 |:-------------:| :---------------:|
@@ -155,7 +155,7 @@ Vous devez maintenant définir les valeurs de chaque paramètre d’action. Suiv
 
 {style="table-layout:auto"}
 
-Pour définir ces valeurs, cliquez sur le bouton **Modifier** icône .
+Cliquez sur le bouton **Modifier** Icône
 
 ![ACOP](./images/jomsg17.png)
 
@@ -177,11 +177,11 @@ Le résultat final doit ressembler à ceci :
 
 ![ACOP](./images/jomsg20.png)
 
-Faites défiler la page vers le haut et cliquez sur **Ok**.
+Faites défiler vers le haut et cliquez sur **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur le bouton **Propriétés** en haut à droite de l’écran.
+Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur le bouton **Crayon** en haut à gauche de l’écran.
 
 ![ACOP](./images/journeyname.png)
 

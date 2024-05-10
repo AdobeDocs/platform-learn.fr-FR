@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 32a084a3-4c04-4367-947e-f7151fdad73b
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 Le parcours de l’inconnu au connu est l’un des sujets les plus importants parmi les marques de nos jours, tout comme le parcours client de l’acquisition à la rétention.
 
-Adobe Experience Platform joue un rôle énorme dans ce parcours. La plateforme est le cerveau de la communication, la **système d’enregistrement d’expérience**.
+Adobe Experience Platform joue un rôle énorme dans ce parcours. La plate-forme est le cerveau de la communication, la **système d’enregistrement d’expérience**.
 
 Platform est un environnement dans lequel le mot client est plus large que les clients connus. Un visiteur inconnu du site web est également un client du point de vue de Platform et, en tant que tel, tout le comportement en tant que visiteur inconnu est également envoyé à Platform. Grâce à cette approche, lorsque ce visiteur devient finalement un client connu, une marque peut également visualiser ce qui s’est produit avant ce moment. Cela s’avère utile du point de vue de l’attribution et de l’optimisation de l’expérience.
 
 ## Flux de parcours client
 
-Accédez à [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Cliquez sur **Tout autoriser**.
+Accédez à [https://bootcamp.aepdemo.net](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Cliquez sur **Autoriser tout**.
 
 ![DSN](./images/web8.png)
 
@@ -34,7 +34,7 @@ Cliquez sur l’icône représentant un logo d’Adobe dans le coin supérieur g
 
 ![Démonstration](./images/pv1.png)
 
-Consultez le panneau Visionneuse de profils et le profil client en temps réel avec le **ID Experience Cloud** comme identifiant Principal de ce client actuellement inconnu.
+Consultez le panneau Visionneuse de profils et le profil client en temps réel avec le **Identifiant Experience Cloud** comme identifiant principal de ce client actuellement inconnu.
 
 ![Démonstration](./images/pv2.png)
 

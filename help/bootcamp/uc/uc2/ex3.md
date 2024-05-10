@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Journey Optimizer Créez votre parcours et votre message électronique.
-description: Bootcamp - Journey Optimizer Créez votre parcours et votre message électronique.
+title: Bootcamp - Journey Optimizer Créez votre parcours et votre message électronique
+description: Bootcamp - Journey Optimizer Créez votre parcours et votre message électronique
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -9,18 +9,18 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '948'
 ht-degree: 5%
 
 ---
 
-# 2.3 Création de votre parcours et de votre message électronique
+# 2.3 Création de votre parcours et de votre email
 
 Dans cet exercice, vous allez configurer le parcours qui doit être déclenché lorsqu’une personne crée un compte sur le site web de démonstration.
 
-Connectez-vous à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com). Cliquez sur **Journey Optimizer**.
+Connectez-vous à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
@@ -60,7 +60,7 @@ Votre parcours ressemble maintenant à ceci. Dans la partie droite de l’écran
 
 Cliquez sur **Ok** pour enregistrer vos modifications.
 
-Pour la troisième étape du parcours, vous devez ajouter une **Email** action. Accédez au côté gauche de l’écran pour **Actions**, sélectionnez la variable **Email** puis faites-la glisser sur le deuxième noeud de votre parcours. Vous voyez maintenant ceci.
+Pour la troisième étape du parcours, vous devez ajouter une **Email** action. Accédez au côté gauche de l’écran pour **Actions**, sélectionnez la variable **Email** , puis faites-la glisser sur le deuxième noeud de votre parcours. Vous voyez maintenant ceci.
 
 ![ACOP](./images/journeyactions.png)
 
@@ -112,15 +112,15 @@ Vous serez alors de retour ici. Cliquez sur **Concepteur d&#39;email** pour cré
 
 Dans l’écran suivant, vous serez invité à utiliser 3 méthodes différentes pour fournir le contenu de l’email :
 
-- **Conception à partir de zéro**: Commencez par un canevas vierge et utilisez l’éditeur WYSIWYG pour faire glisser et déposer la structure et les composants de contenu afin de créer visuellement le contenu de l’email.
-- **Codez vos propres**: Créez votre propre modèle d&#39;email en le codant à l&#39;aide de HTML
-- **HTML d’importation**: Importez un modèle de HTML existant que vous pourrez éditer.
+- **Conception à partir de zéro**: commencez par un canevas vierge et utilisez l’éditeur WYSIWYG pour faire glisser et déposer la structure et les composants de contenu afin de créer visuellement le contenu de l’email.
+- **Codez vos propres**: créez votre propre modèle d&#39;email en le codant à l&#39;aide de HTML.
+- **HTML d’importation**: importez un modèle de HTML existant que vous pourrez modifier.
 
 Cliquez sur **HTML d’importation**. Vous pouvez également cliquer sur **Modèles enregistrés** et sélectionnez le modèle. **Bootcamp - Modèle de courrier électronique**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Si vous avez sélectionné **HTML d’importation**, vous pouvez désormais faire glisser et déposer le fichier. **mailtemplatebootcamp.html**, que vous pouvez télécharger [here](../../assets/html/mailtemplatebootcamp.html.zip). Cliquez sur Importer.
+Si vous avez sélectionné **HTML d’importation**, vous pouvez désormais faire glisser et déposer le fichier **mailtemplatebootcamp.html**, que vous pouvez télécharger [here](../../assets/html/mailtemplatebootcamp.html.zip). Cliquez sur Importer.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -128,7 +128,7 @@ Ce modèle d’email par défaut s’affiche alors :
 
 ![Journey Optimizer](./images/msg14.png)
 
-Personnalisons l&#39;email. Cliquez sur en regard du texte. **Bonjour** puis cliquez sur le bouton **Ajouter une personnalisation** icône .
+Personnalisons l&#39;email. Cliquez sur en regard du texte. **Bonjour** puis cliquez sur le bouton **Ajouter une personnalisation** Icône
 
 ![Journey Optimizer](./images/msg35.png)
 
@@ -158,9 +158,9 @@ Cliquez sur **OK**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Publication du parcours
+## 2.3.3 Publication de votre parcours
 
-Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur le bouton **Propriétés** en haut à droite de l’écran.
+Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur le bouton **Crayon** en haut à gauche de l’écran.
 
 ![ACOP](./images/journeyname.png)
 
