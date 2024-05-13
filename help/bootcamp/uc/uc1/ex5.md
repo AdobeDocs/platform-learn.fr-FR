@@ -1,20 +1,20 @@
 ---
-title: Bootcamp - CDP en temps réel - Créer un segment et agir - Envoyer votre segment à DV360
-description: Bootcamp - CDP en temps réel - Créer un segment et agir - Envoyer votre segment à DV360
+title: Bootcamp - CDP en temps réel - Créer une audience et agir - Envoyer votre audience à DV360
+description: Bootcamp - CDP en temps réel - Créer une audience et agir - Envoyer votre audience à DV360
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 feature: Destinations
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
 
 ---
 
-# 1.5 Action : envoyez votre segment à Facebook
+# 1.5 Action : envoyez votre audience à Facebook
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
@@ -24,7 +24,7 @@ Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement 
 
 ![Ingestion des données](./images/sb1.png)
 
-Dans le menu de gauche, accédez à **Destinations**, puis accédez à **Catalogue**. Vous verrez alors le **Catalogue des destinations**. Dans **Destinations**, cliquez sur **Activation des segments** sur le **Audience personnalisée facebook** carte.
+Dans le menu de gauche, accédez à **Destinations**, puis accédez à **Catalogue**. Vous verrez alors le **Catalogue des destinations**. Dans **Destinations**, cliquez sur **Activation des audiences** sur le **Audience personnalisée facebook** carte.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
@@ -32,7 +32,7 @@ Sélectionner la destination **bootcamp-facebook** et cliquez sur **Suivant**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Dans la liste des segments disponibles, sélectionnez le segment que vous avez créé lors de l’exercice précédent. Cliquez sur **Suivant**.
+Dans la liste des audiences disponibles, sélectionnez l’audience que vous avez créée lors de l’exercice précédent. Cliquez sur **Suivant**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
@@ -40,7 +40,7 @@ Sur le **Mappage** , assurez-vous que la variable **Appliquer la transformation*
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Sur le **Planification des segments** , sélectionnez **Origine de votre audience** et définissez-le sur **Directement des clients**. Cliquez sur **Suivant**.
+Sur le **Planification de l’audience** , sélectionnez **Origine de votre audience** et définissez-le sur **Directement des clients**. Cliquez sur **Suivant**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
@@ -48,9 +48,9 @@ Enfin, le **Réviser** page, cliquez sur **Terminer**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Votre segment est maintenant lié aux audiences personnalisées Facebook. Chaque fois qu’un client est admissible pour ce segment, un signal est envoyé côté serveur à Facebook pour inclure ce client dans l’audience personnalisée côté Facebook.
+Votre audience est maintenant liée aux audiences personnalisées Facebook. Chaque fois qu’un client est admissible pour cette audience, un signal est envoyé côté serveur à Facebook pour inclure ce client dans l’audience personnalisée côté Facebook.
 
-Dans Facebook, vous trouverez votre segment de Adobe Experience Platform sous Audiences personnalisées :
+Dans Facebook, vous trouverez votre audience de Adobe Experience Platform sous Audiences personnalisées :
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 

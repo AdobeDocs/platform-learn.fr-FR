@@ -3,9 +3,9 @@ title: Experience Makers Bootcamp
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
+source-git-commit: 97591b0e14468c136e60c60580aeab0b7bbbbbb4
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -20,18 +20,54 @@ Rejoignez ce bootcamp pour découvrir comment une approche basée sur une platef
 
 La personnalisation à grande échelle commence par la compréhension de ce qui peut être amélioré, et une vue en temps réel de votre client est essentielle à cela. Les connaissances mènent à l&#39;action, ce qui nous permet d&#39;avoir plus d&#39;informations. L’approche axée sur la plateforme unique d’Adobe vous donne les outils nécessaires non seulement pour stimuler l’évolution technologique, mais également pour influencer votre entreprise, votre équipe et votre capacité à offrir une expérience client holistique au lieu d’une expérience client spécifique à un canal.
 
->[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
-
 ## Agenda
 
 ### Jour 1
 
+9:30: Présentation
 
-10:00: Lancement 10:30: Démonstration du Parcours client : Art du possible 11:00: 1-1 personnalisation, chasse à la friction, silos, Adobe POV (tableau blanc) 11:45: Saut 12:00: Ventilation de l’architecture des solutions (tableau blanc) 13:00: Déjeuner 14:00: Userflow 1 - Inscription et intégration - présentation (pourquoi-quoi-faire) 15:30: Saut 16:00: Userflow 2 Combinaison physique et numérique - présentation pratique et pratique / plongée profonde 18:00: Saut 18:30: Marchez jusqu&#39;au restaurant 19:00: Dîner
+10:00: Lancement / Défi Intro &amp; Bootcamp
+
+11:00: Personnalisation 1-1, chasse aux friction, silos, Adobe POV (tableau blanc)
+
+12:00: Rompre
+
+12:15: Ventilation de l’architecture des solutions (tableau blanc)
+
+13:00: Déjeuner
+
+14:00: Flux utilisateur 1 - Présentation &quot;Acquisition&quot; et plongée en profondeur
+
+15:30: Rompre
+
+16:00: Enregistrement et intégration d’Userflow 2
+
+17:30: Golfclinique et Borrel
+
+19:30: Dîner
 
 ### Jour 2
 
-08:00: Petit déjeuner 08:30: Introduction à la diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion 09.45 : flux d’utilisateurs 3 Blending physique and digital - Présentation avec exercice pratique 11.15 : rupture 11.30 : les flux d’utilisateurs s’enroulent - (où-où-quand) 12:00: Groupe Presentations 12.30 : Déjeuner 13.30 : Dépôt 4 : Analyse client - Profondeur 14.30 : conclusion, résumé et étapes 15.00 : boissons et loisirs
+08:30: Session de petit-déjeuner : présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion
+
+09.45 : Comprendre Les Flux De Données AEP Par Le Biais De Scénarios Practifs
+
+10.15 : Donner des moyens à la confidentialité : informations sur la gouvernance des données avec AEP
+
+10.45 : pause
+
+12:00: Flux d’utilisateurs 3 - Fusion physique et numérique
+
+12.30 : Déjeuner
+
+13.30 : Customer Journey Analytics - profondeur
+
+14.15 : Exploration des dernières innovations autour de GenAI pour AEP et au-delà
+
+14.45 : Conversion et récapitulation
+
+15.00 : Boissons et ajournement
+
 
 ## Conditions préalables
 
@@ -80,3 +116,4 @@ Dans ce flux d’utilisateurs, vous personnaliserez l’expérience client sur l
 [4. Analyse des Parcours client](./uc/uc4/uc4.md)
 
 Dans ce flux d’utilisateurs, vous découvrirez comment les clients évoluent d’un canal à l’autre, d’un canal en ligne à un autre en passant par un centre d’appel, etc.
+

@@ -5,9 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Segments, Integrations, Destinations
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%
@@ -38,16 +38,16 @@ Dans cet exercice, vous allez suivre un script et parcourir le site web.
 
 Au cours de cet exercice, vous vous connecterez à Adobe Experience Platform et vous verrez votre propre profil client en temps réel dans l’interface utilisateur.
 
-[1.3 Création d’un segment - IU](./ex3.md)
+[1.3 Création d’une audience - IU](./ex3.md)
 
-Dans cet exercice, vous allez créer un segment à l’aide du créateur de segments de Adobe Experience Platform.
+Au cours de cet exercice, vous allez créer une audience en utilisant le créateur d’audiences Adobe Experience Platform.
 
-[1.4 Action : envoyez votre segment à Adobe Target](./ex4.md)
+[1.4 Action à effectuer : envoyez votre audience à Adobe Target](./ex4.md)
 
-Utilisez le segment que vous avez créé dans l’exercice 1.1 pour configurer une activité de ciblage d’expérience dans Adobe Target.
+Utilisez l’audience que vous avez créée dans l’exercice 1.1 pour configurer une activité de ciblage d’expérience dans Adobe Target.
 
-[1.5 Action : envoyez votre segment à Facebook](./ex5.md)
+[1.5 Action : envoyez votre audience à Facebook](./ex5.md)
 
-Connectez le segment que vous avez créé dans l’exercice 1.1 au Facebook de destination.
+Connectez l’audience que vous avez créée dans l’exercice 1.1 au Facebook de destination.
 
 [Revenir à tous les modules](../../overview.md)

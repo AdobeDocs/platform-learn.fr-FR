@@ -1,22 +1,22 @@
 ---
-title: Bootcamp - Real-time Customer Profile - Création d’un segment - interface utilisateur
-description: Bootcamp - Real-time Customer Profile - Création d’un segment - interface utilisateur
+title: Bootcamp - Real-time Customer Profile - Création d’une audience - interface utilisateur
+description: Bootcamp - Real-time Customer Profile - Création d’une audience - interface utilisateur
 jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-feature: Segments
+feature: Audiences
 exl-id: 37d4a5e8-e2bc-4c8c-a74f-09f74ea79962
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '533'
 ht-degree: 3%
 
 ---
 
-# 1.3 Création d’un segment - IU
+# 1.3 Création d’une audience - IU
 
-Dans cet exercice, vous allez créer un segment à l’aide du créateur de segments de Adobe Experience Platform.
+Au cours de cet exercice, vous allez créer une audience en utilisant le créateur d’audiences Adobe Experience Platform.
 
 ## Histoire
 
@@ -28,19 +28,27 @@ Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement 
 
 ![Ingestion des données](./images/sb1.png)
 
-Dans le menu de gauche, accédez à **Segments**. Sur cette page, vous pouvez voir un aperçu de tous les segments existants. Cliquez sur le bouton **+ Créer un segment** pour commencer à créer un segment.
+Dans le menu de gauche, accédez à **Audiences**. Sur cette page, vous verrez des tableaux de bord contenant des informations essentielles sur **Audience** performance.
 
 ![Segmentation](./images/menuseg.png)
 
-Une fois que vous êtes dans le nouveau créateur de segments, vous constatez immédiatement que la variable **Attributs** et l’option **XDM Individual Profile** référence.
+Cliquez sur **Parcourir** pour afficher un aperçu de toutes les audiences existantes. Cliquez sur le bouton **+ Créer une audience** pour créer une audience.
+
 
 ![Segmentation](./images/segmentationui.png)
 
-Étant donné que XDM est le langage qui alimente les activités d’expérience, XDM est également la base du créateur de segments. Toutes les données ingérées dans Platform doivent être mappées sur XDM. Par conséquent, toutes les données font partie du même modèle de données, quel que soit l’endroit d’où elles proviennent. Cela vous offre un grand avantage lors de la création de segments. Comme dans cette interface utilisateur du créateur de segments, vous pouvez combiner des données provenant de n’importe quelle origine dans le même workflow. Les segments créés dans le créateur de segments peuvent être envoyés à des solutions telles qu’Adobe Target, Adobe Campaign et Adobe Audience Manager pour activation.
+Une pop-Ip s’affiche, vous demandant si vous souhaitez : **&#39;Composer l&#39;audience&#39;** ou **&#39;Créer une règle&#39;**. Choisir **&#39;Créer une règle&#39;** pour continuer et cliquez sur **create**.
 
-Vous devez maintenant créer un segment de tous les clients qui ont consulté le produit. **Real-Time CDP**.
+![Segmentation][def]
 
-Pour créer ce segment, vous devez ajouter un événement d’expérience. Vous pouvez trouver tous les événements d’expérience en cliquant sur la variable **Événements** dans le **Champs** de la barre de menus.
+Une fois que vous êtes dans le créateur d’audiences, vous remarquez immédiatement le **Attributs** et l’option **XDM Individual Profile** référence.
+
+
+Étant donné que XDM est le langage qui alimente les activités d’expérience, XDM est également la base du créateur d’audiences. Toutes les données ingérées dans Platform doivent être mappées sur XDM. Par conséquent, toutes les données font partie du même modèle de données, quel que soit l’endroit d’où elles proviennent. Cela vous offre un grand avantage lors de la création d’audiences. Comme dans cette interface utilisateur du créateur d’audiences, vous pouvez combiner des données provenant de n’importe quelle origine dans le même workflow. Les audiences créées dans Audience Builder peuvent être envoyées à des solutions telles qu’Adobe Target, Adobe Campaign ou tout autre canal d’activation.
+
+Vous devez maintenant créer une audience de tous les clients qui ont consulté le produit. **Real-Time CDP**.
+
+Pour créer cette audience, vous devez ajouter un événement d’expérience. Vous pouvez trouver tous les événements d’expérience en cliquant sur la variable **Événements** dans le **Champs** de la barre de menus.
 
 ![Segmentation](./images/findee.png)
 
@@ -52,7 +60,7 @@ Accédez à **Éléments de liste de produits**.
 
 ![Segmentation](./images/plitems.png)
 
-Sélectionner **Nom** et faites glisser et déposez le **Nom** du menu de gauche sur le canevas du créateur de segments dans la **Événements** . Vous verrez alors :
+Sélectionner **Nom** et faites glisser et déposez le **Nom** du menu de gauche sur le canevas du créateur d’audiences dans la **Événements** . Vous verrez alors :
 
 ![Segmentation](./images/eewebpdtlname.png)
 
@@ -60,7 +68,7 @@ Le paramètre de comparaison doit être **est égal à** et dans le champ de sai
 
 ![Segmentation](./images/pv.png)
 
-Chaque fois que vous ajoutez un élément au créateur de segments, vous pouvez cliquer sur le bouton **Actualiser l’estimation** pour obtenir une nouvelle estimation de la population de votre segment.
+Chaque fois que vous ajoutez un élément au créateur d’audiences, vous pouvez cliquer sur le **Actualiser l’estimation** pour obtenir une nouvelle estimation de la population de votre audience.
 
 ![Segmentation](./images/refreshest.png)
 
@@ -68,24 +76,27 @@ As **Méthode d’évaluation**, sélectionnez **Edge**.
 
 ![Segmentation](./images/evedge.png)
 
-Enfin, attribuons un nom à votre segment et enregistrez-le.
+Enfin, attribuons un nom à votre audience et enregistrez-le.
 
 Pour définir une convention d’affectation des noms, utilisez :
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Cliquez ensuite sur le bouton **Enregistrer et fermer** pour enregistrer votre segment.
+Cliquez ensuite sur le bouton **Enregistrer et fermer** pour enregistrer votre audience.
 
 ![Segmentation](./images/segmentname.png)
 
-Revenez maintenant à la page d’aperçu des segments, où vous trouverez un exemple d’aperçu des profils de clients qui remplissent les critères de votre segment.
+Revenez maintenant à la page d’aperçu de l’audience, où vous trouverez un exemple d’aperçu des profils de clients qui remplissent les critères de votre audience.
 
 ![Segmentation](./images/savedsegment.png)
 
-Vous pouvez maintenant passer à l’exercice suivant et utiliser votre segment avec Adobe Target.
+Vous pouvez maintenant poursuivre l’exercice suivant et utiliser votre audience avec Adobe Target.
 
-Étape suivante : [1.4 Action : envoyez votre segment à Adobe Target](./ex4.md)
+Étape suivante : [1.4 Action à effectuer : envoyez votre audience à Adobe Target](./ex4.md)
 
 [Retour au flux utilisateur 1](./uc1.md)
 
 [Revenir à tous les modules](../../overview.md)
+
+
+[def]: ./images/segmentationpopup.png

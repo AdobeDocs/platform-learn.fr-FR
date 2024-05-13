@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Au cours de cet exercice, vous vous connecterez à Adobe Experience Platform et 
 
 ## Histoire
 
-Dans Real-time Customer Profile, toutes les données de profil s’affichent avec les données d’événement, ainsi que les appartenances à des segments existants. Les données affichées peuvent provenir de n’importe où, des applications d’Adobe et des solutions externes. Il s’agit de la vue la plus puissante de Adobe Experience Platform, le véritable système d’enregistrement d’expérience.
+Dans Real-time Customer Profile, toutes les données de profil s’affichent avec les données d’événement, ainsi que les appartenances à l’audience existantes. Les données affichées peuvent provenir de n’importe où, des applications d’Adobe et des solutions externes. Il s’agit de la vue la plus puissante de Adobe Experience Platform, le véritable système d’enregistrement d’expérience.
 
 ## 1.2.1 Utilisation de la vue Profil client dans Adobe Experience Platform
 
@@ -30,7 +30,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné le [!UICONTROL sandbox], vous verrez le changement d’écran et vous êtes maintenant dans votre [!UICONTROL sandbox].
 
-![Ingestion des données](./images/sb1.png)
+
 
 Dans le menu de gauche, accédez à **Profils** et à **Parcourir**.
 
@@ -39,6 +39,9 @@ Dans le menu de gauche, accédez à **Profils** et à **Parcourir**.
 Dans le panneau Visionneuse de profils de votre site web, vous trouverez la présentation des identités. Chaque identité est liée à un espace de noms.
 
 ![Profil client](./images/identities.png)
+
+
+
 
 Avec Adobe Experience Platform, tous les identifiants sont également importants. Auparavant, l’ECID était l’identifiant le plus important dans le contexte de l’Adobe et tous les autres identifiants étaient liés à l’ECID dans une relation hiérarchique. Avec Adobe Experience Platform, ce n’est plus le cas, et chaque ID peut être considéré comme un identifiant principal.
 
@@ -56,13 +59,13 @@ Accédez à **Événements**, où vous pouvez voir les entrées pour chaque év�
 
 ![Profil client](./images/profileee.png)
 
-Enfin, sélectionnez l’option de menu . **abonnement au segment**. Vous verrez désormais tous les segments à inclure dans ce profil.
+Enfin, sélectionnez l’option de menu . **abonnement à l’audience**. Vous verrez désormais toutes les audiences qui remplissent les critères de ce profil.
 
 ![Profil client](./images/profileseg.png)
 
-Créez maintenant un segment qui vous permettra de personnaliser l’expérience client pour un client anonyme ou qui connaît un client.
+Créons maintenant une nouvelle audience qui vous permettra de personnaliser l’expérience client pour un client anonyme ou un client connu.
 
-Étape suivante : [1.3 Création d’un segment - IU](./ex3.md)
+Étape suivante : [1.3 Création d’une audience - IU](./ex3.md)
 
 [Retour au flux utilisateur 1](./uc1.md)
 
