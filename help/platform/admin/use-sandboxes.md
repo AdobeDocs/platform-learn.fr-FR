@@ -1,28 +1,23 @@
 ---
-title: Utilisation des environnements de test
-description: Découvrez comment les environnements de test Experience Platform offrent l’isolation des données et des environnements dans lesquels ils peuvent tester des fonctionnalités nouvelles ou existantes, travailler avec une approche "fail fast" (Échec rapide) et être en mesure de réinitialiser et de redémarrer les initiatives de développement.
+title: Utilisation des sandbox
+description: Découvrez comment les environnements de test Experience Platform fournissent des environnements isolés pour tester des fonctionnalités nouvelles ou existantes et travailler avec une approche "fail fast". Découvrez comment réinitialiser et redémarrer les environnements de développement et utiliser les environnements de test avec les appels d’API.
 feature: Sandboxes
 role: Data Architect, Data Engineer, Admin
 level: Beginner
 jira: KT-4018
 thumbnail: 29838.jpg
 exl-id: 65e50b0e-0999-4992-86e9-037065ed0d01
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 7f1c712397bf0e0ed24665ae343d284a6b648c08
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 6%
+source-wordcount: '88'
+ht-degree: 5%
 
 ---
 
 # Utilisation des sandbox
 
-Découvrez comment les environnements de test Experience Platform offrent l’isolation des données et des environnements dans lesquels ils peuvent tester des fonctionnalités nouvelles ou existantes, travailler avec une approche &quot;fail fast&quot; (Échec rapide) et être en mesure de réinitialiser et de redémarrer les initiatives de développement. Pour plus d’informations, consultez la [Guide d’utilisation des environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr).
+Découvrez comment les environnements de test Experience Platform fournissent des environnements isolés pour tester des fonctionnalités nouvelles ou existantes et travailler avec une approche &quot;fail fast&quot;. Découvrez comment réinitialiser et redémarrer les environnements de développement et utiliser les environnements de test avec les appels d’API. Pour plus d’informations, consultez la [Guide d’utilisation des environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 
->[!NOTE]
->
->Depuis l’enregistrement de cette vidéo, le sélecteur d’environnement de test s’est déplacé en haut à droite de l’interface de l’Experience Cloud afin de vous donner plus d’espace vertical pour vous concentrer sur votre travail :
->
-> ![Déplacement du sélecteur de sandbox](../assets/sandbox-switcher.gif)
 
