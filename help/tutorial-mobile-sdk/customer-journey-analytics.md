@@ -4,9 +4,9 @@ description: Découvrez comment créer des rapports et analyser les interactions
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 2%
 
 ---
@@ -85,9 +85,9 @@ Une connexion en Customer Journey Analytics définit les jeux de données (et le
          | ODE DecisionEvents - *nom de l’environnement de test* prise de décision | identityMap | date et heure | Données de l’application mobile | enable | enable |
          | Jeu de données d’événement d’expérience de tracking de notifications push AJO | identityMap | date et heure | Données de l’application mobile | enable | enable |
 
-         ![Connexions CJA 3](assets/cja-connections-3.png)
-
       1. Sélectionner **[!UICONTROL Ajout de jeux de données]**.
+
+         ![Connexions CJA 3](assets/cja-connections-3.png)
 
 1. De retour dans le **[!UICONTROL Connexions]** > **[!UICONTROL Application Luma - Connexion au tutoriel SDK AEP Mobile]**, sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer votre connexion.
 
@@ -156,8 +156,6 @@ Pour créer votre vue de données :
       ![Paramètres du composant Vue des données CJA](assets/cja-dataview-component-settings.png)
 
    1. Maintenant que vous comprenez comment ajouter des champs à votre vue de données et configurer le composant résultant, utilisez les tableaux ci-dessous pour obtenir une liste de champs de schéma à ajouter en tant que mesure ou dimension. Utilisez la variable **Chemin du schéma** valeur de colonne du tableau ci-dessous pour rechercher ou parcourir le champ de schéma spécifique. Une fois que vous avez effectué un glisser-déposer, vérifiez la variable **Paramètres des composants** valeur de colonne dans le tableau indiquant si des paramètres spécifiques sont requis pour un composant, comme la modification de son **[!UICONTROL Nom du composant]** ou définir **[!UICONTROL INCLURE DES VALEURS D’EXCLUSION]**.
-
-      ![Paramètres du composant Vue des données CJA](assets/cja-dataview-component-settings.png)
 
       **MESURES**
 
@@ -232,9 +230,9 @@ Pour créer votre projet :
 
    1. Sélectionner **[!UICONTROL Projet Workspace vierge]** dans la boîte de dialogue contextuelle.
 
-      ![Projets CJA - 1](assets/cja-projects-1.png)
-
    1. Sélectionnez **[!UICONTROL Créer]**.
+
+      ![Projets CJA - 1](assets/cja-projects-1.png)
 
 1. Vous recevez le rapport **[!UICONTROL Nouveau projet]** . Dans cette interface, vous pouvez créer des rapports et des visualisations.
 
@@ -357,8 +355,10 @@ Sur la base du rapport précédent, vous souhaitez visualiser l’abandon dans l
    ![Projets CJA 18](assets/cja-projects-18.png)
 Vous pouvez également faire glisser et déposer le **[!UICONTROL Vue Produits]** sous la dimension **[!UICONTROL Tous les gens]** dans la **[!UICONTROL Abandon]** visualisation.
 
-1. Répétez l’étape ci-dessus pour **[!UICONTROL Produit ajouté aux listes]** et **[!UICONTROL Achats]** dimensions. Votre **[!UICONTROL Abandon]** la visualisation affiche désormais une représentation visuelle de l’entonnoir de conversion pour vos produits.
-   ![Projets CJA 19](assets/cja-projects-19.png)
+1. Répétez l’étape ci-dessus pour **[!UICONTROL Produit ajouté aux listes]** et **[!UICONTROL Achats]** dimensions.
+
+Votre **[!UICONTROL Abandon]** la visualisation affiche désormais une représentation visuelle de l’entonnoir de conversion pour vos produits.
+![Projets CJA 19](assets/cja-projects-19.png)
 
 N’oubliez pas de sauvegarder votre projet !
 
