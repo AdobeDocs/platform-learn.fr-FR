@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 21%
+source-wordcount: '876'
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 21%
 
 + [Tutorials de plateforme](/help/platform/overview.md)
 + Présentation de Platform {#intro-to-platform}
-   + [Expérience client optimisée par un Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Une expérience utilisateur avec la technologie Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Scènes en arrière-plan : une expérience client optimisée par un Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Présentation d’Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Fonctionnalités principales](/help/platform/intro-to-platform/key-capabilities.md)
@@ -40,7 +40,7 @@ ht-degree: 21%
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Ajouter des utilisateurs](/help/platform/admin/add-users.md)
+   + [Ajout d’utilisateurs](/help/platform/admin/add-users.md)
    + [Ajout d’utilisateurs à la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Ajouter des développeurs](/help/platform/admin/add-developers.md)
    + [Ajout d’administrateurs de produit](/help/platform/admin/add-product-administrators.md)
@@ -54,7 +54,7 @@ ht-degree: 21%
    + [Création d’audiences de conversion](audiences/create-conversion-audiences.md)
    + [Créer des audiences à partir d’audiences existantes](audiences/create-audiences-from-existing-audiences.md)
    + [Création d’audiences séquentielles](audiences/create-sequential-audiences.md)
-   + [Création d’audiences dynamiques](audiences/create-dynamic-audiences.md)
+   + [Créer des audiences dynamiques](audiences/create-dynamic-audiences.md)
    + [Création d’audiences d’entités multiples](audiences/create-multi-entity-audiences.md)
    + [Créer et activer des audiences de compte (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Démonstration de la segmentation par flux](/help/platform/audiences/streaming-segmentation-demo.md)
@@ -66,9 +66,9 @@ ht-degree: 21%
    + [Informations sur les prépartages de la correspondance de segment](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Correspondance de segment recevant des données](/help/platform/segments/segment-match-receiving-data.md)
 + [Journaux d’audit](/help/platform/governance/audit-logs.md)
-+ [Collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=fr){target="_blank"}
++ [Collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Tableaux de bord {#dashboards}
-   + [Créer un tableau de bord](/help/platform/dashboards/create-a-dashboard.md)
+   + [Création d’un tableau de bord](/help/platform/dashboards/create-a-dashboard.md)
 + Gouvernance des données {#data-governance}
    + [Aperçu](/help/platform/governance/understanding-data-governance.md)
    + [Démo de bout en bout](/help/platform/governance/introduction-to-data-governance.md)
@@ -78,13 +78,12 @@ ht-degree: 21%
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
    + [Intégration à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Hygiène des données {#data-hygiene}
-   + [Suppression de jeux de données](/help/platform/data-hygiene/delete-datasets.md)
    + [Expiration pseudonyme du profil et de l’événement](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Ingestion des données {#data-ingestion}
    + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
-   + [Présentation de l’ingestion par lots](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [Aperçu de l&#39;ingestion en lot](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Création et remplissage d’un jeu de données](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=fr){target="_blank"}
+   + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Présentation des sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingestion de données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
    + [Ingestion de données à partir d’une Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -94,8 +93,10 @@ ht-degree: 21%
    + [Présentation de l’ingestion par flux](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Diffuser les données en continu avec l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=fr)
    + [Diffusion de données à l’aide des connecteurs sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=fr)
-   + [Tutoriels du SDK Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=fr){target="_blank"}
+   + [Tutoriels du SDK Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutoriels du SDK Mobile](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=fr){target="_blank"}
++ Cycle de vie des données {#data-lifecycle}
+   + [Expiration des jeux de données](/help/platform/data-lifecycle/expire-datasets.md)
 + Espace de travail de science des données {#data-science-workspace}
    + [Vue d’ensemble](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Architecture](data-science-workspace/architecture-overview.md)
@@ -127,7 +128,7 @@ ht-degree: 21%
    + Adobe Target et personnalisation personnalisée{#target}
       + [Personnalisation de l’accès suivant avec Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configuration de la destination Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [Activer les segments et les attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Activation des segments et des attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Utilisation des segments Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Utilisation des attributs de profil Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Webinaire Activation des données vers des applications non Adobes](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -145,7 +146,7 @@ ht-degree: 21%
    + [Valeur de Customer AI](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Configuration de Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Utiliser les scores et les informations de Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Surveillance {#monitoring}
++ Surveillance {#monitoring}
    + [Surveiller l’ingestion des données](/help/platform/monitoring/monitoring-dashboard.md)
    + [Surveillance de l’activation des segments](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Surveiller les flux de données](/help/platform/monitoring/data-monitoring.md)
@@ -157,7 +158,7 @@ ht-degree: 21%
 + Profils {#profiles}
    + [Présentation de Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagramme de présentation des profils](/help/platform/profiles/overview-diagram.md)
-   + [Importation de données dans Profile](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [Importation des données dans le profil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [Personnalisation des détails d’affichage du profil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Affichage des profils de compte](/help/platform/profiles/view-account-profiles.md)
    + [Création de stratégies de fusion](/help/platform/profiles/create-merge-policies.md)
@@ -205,7 +206,7 @@ ht-degree: 21%
    + [Configurer les relations entre les schémas](/help/platform/schemas/configure-relationships-between-schemas.md)
    + [Utiliser des champs énumérés et des valeurs suggérées](/help/platform/schemas/use-enumerated-fields.md)
    + [Copie de schémas entre des environnements de test](/help/platform/schemas/copy-schemas-between-sandboxes.md)
-   + [mettre à jour les schémas,](/help/platform/schemas/update-schemas.md)
+   + [Mise à jour des schémas](/help/platform/schemas/update-schemas.md)
    + [Création d’un schéma ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Sources {#sources}
    + [Vue d’ensemble](/help/platform/sources/overview.md)
