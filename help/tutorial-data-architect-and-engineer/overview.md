@@ -8,10 +8,10 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
+source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 0%
 
 ---
 
@@ -26,13 +26,13 @@ _Prise en main de Adobe Experience Platform pour les architectes de données et 
 
 ## Objectifs d’apprentissage
 
-Les architectes de données et les ingénieurs de données doivent collaborer étroitement pour réussir un déploiement Experience Platform. Ce tutoriel pratique vous apprend les tâches clés exécutées par _les deux rôles_ pour que vous sachiez comment commencer à implémenter Platform pour votre propre entreprise. Vous serez guidé par des exercices qui vous présenteront la terminologie, les fonctionnalités, l’interface et l’API clés de l’Experience Platform. Les clients d’applications Adobe Experience Cloud telles que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer trouveront également ce contenu utile, car les services Platform sont les fondements essentiels de ces applications.
+Les architectes de données et les ingénieurs de données doivent collaborer étroitement pour réussir un déploiement Experience Platform. Ce tutoriel pratique vous apprend les tâches clés exécutées par _les deux rôles_ pour que vous sachiez comment commencer à implémenter Platform pour votre propre entreprise. Vous serez guidé par des exercices qui vous présenteront la terminologie, les fonctionnalités, l’interface et les API clés de l’Experience Platform. Les clients d’applications Adobe Experience Cloud telles que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer trouveront également ce contenu utile, car les services Platform sont les fondements essentiels de ces applications.
 
 ![Présentation de Adobe Experience Cloud présentant les services Platform couverts dans ce tutoriel : identité, profil, segmentation, ingestion, requête et gouvernance](assets/marketecture.png)
 
 Les sujets incluent :
 
-* Configuration des autorisations utilisateur
+* Configuration des autorisations d’utilisateur
 * Création d’environnements de test
 * Configuration d’un projet Developer Console et utilisation de l’API Platform
 * Gestion des données, notamment la création de schémas, de jeux de données, d’identités, de stratégies de fusion et de gouvernance des données
@@ -76,7 +76,7 @@ Bien que vous utiliserez plusieurs technologies dans ce tutoriel, vous resterez 
 
 ## Mises à jour des tutoriels
 
-* Juin 2023 : Mise à jour afin d’inclure un nouveau workflow d’autorisation et d’utiliser les informations d’identification de l’API OAuth Server-to-Server
+* Juin 2023 : mise à jour afin d’inclure un nouveau workflow d’autorisation et d’utiliser les informations d’identification de l’API OAuth serveur à serveur
 
 
 Passons maintenant à la première leçon...[configuration des autorisations](configure-permissions.md).
