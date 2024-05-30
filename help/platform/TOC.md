@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '890'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 19%
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
    + [Intégration à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Hygiène des données {#data-hygiene}
-   + [Expiration pseudonyme du profil et de l’événement](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Pseudonyme du profil et expiration de l’événement (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Préparation de données pour l’hygiène des données](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Expiration des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Mise à jour d’un attribut de profil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Ingestion des données {#data-ingestion}
    + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Aperçu de l&#39;ingestion en lot](/help/platform/data-ingestion/batch-ingestion-overview.md)

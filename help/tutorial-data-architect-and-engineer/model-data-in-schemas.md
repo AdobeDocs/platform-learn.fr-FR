@@ -8,9 +8,9 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
+source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
 workflow-type: tm+mt
-source-wordcount: '2611'
+source-wordcount: '2619'
 ht-degree: 7%
 
 ---
@@ -86,7 +86,7 @@ Au cours de cet exercice, nous allons créer un schéma pour les données de fid
 
 Une fois le schéma créé, vous êtes redirigé vers l’éditeur de schémas dans lequel vous pouvez ajouter des champs au schéma. Vous pouvez ajouter des champs individuels directement au schéma ou utiliser des groupes de champs. Il est important de noter que tous les champs individuels sont toujours associés à une classe ou à un groupe de champs. Vous pouvez choisir parmi un grand ensemble de groupes de champs standard fournis par Adobe ou créer les vôtres. Lorsque vous commencez à modéliser vos propres données en Experience Platform, il est bon de vous familiariser avec les groupes de champs standard fournis par Adobe. Dans la mesure du possible, il est recommandé de les utiliser, car ils alimentent parfois des services en aval, tels que Customer AI, Attribution AI et Adobe Analytics.
 
-Lorsque vous utilisez vos propres données, une grande étape consiste à déterminer celles qui doivent être capturées dans Platform et comment elles doivent être modélisées. Ce grand sujet est abordé plus en détail dans le cours. [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr). Dans ce tutoriel, je vais vous guider tout au long de l’implémentation de certains schémas prédéterminés.
+Lorsque vous utilisez vos propres données, une étape importante consiste à déterminer celles qui doivent être capturées dans Platform et comment elles doivent être modélisées. Ce grand sujet est abordé plus en détail dans le cours. [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr). Dans ce tutoriel, je vous guiderai tout au long de la mise en oeuvre de certains schémas prédéterminés.
 
 Pour ajouter des groupes de champs :
 
@@ -99,27 +99,32 @@ Pour ajouter des groupes de champs :
    ![Sélection de groupes de champs standards.](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Vérifiez les **[!UICONTROL Secteur industriel]** > **[!UICONTROL Retail]** pour exposer des groupes de champs spécifiques au secteur.
-1. Sélectionner **[!UICONTROL Fidélité]** pour ajouter les champs du programme de fidélité.
-1. Sélectionnez **[!UICONTROL Ajouter un groupe de champs]** pour ajouter les trois groupes de champs au schéma.
+1. Sélectionner **[!UICONTROL Détails de fidélité]** pour ajouter les champs du programme de fidélité.
+1. Sélectionner **[!UICONTROL Ajouter des groupes de champs]** pour ajouter les trois groupes de champs au schéma.
    ![Ajout de groupes de champs standard au schéma de fidélité](assets/schemas-loyalty-saveOotbMixins.png)
 
 
-Prenez quelques instants pour explorer l’état actuel du schéma. Les groupes de champs ont ajouté des champs standard liés à une personne, ses coordonnées et l’état du programme de fidélité. Ces deux groupes de champs peuvent s’avérer utiles lorsque vous créez des schémas pour les données de votre propre entreprise. Sélectionnez une ligne de groupe de champs spécifique ou cochez la case en regard du nom du groupe de champs pour voir comment la visualisation change.
+Maintenant, prenez du temps pour explorer l’état actuel du schéma. Les groupes de champs ont ajouté des champs standard liés à une personne, ses coordonnées et l’état du programme de fidélité. Ces deux groupes de champs peuvent s’avérer utiles lorsque vous créez des schémas pour les données de votre propre entreprise. Sélectionnez une ligne de groupe de champs spécifique ou cochez la case en regard du nom du groupe de champs pour voir comment la visualisation change.
 
 Pour enregistrer le schéma, sélectionnez **[!UICONTROL Enregistrer]**.
 ![Enregistrement du schéma](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
->Cela ne vous dérange pas si un groupe de champs ajoute un champ pour un point de données que vous ne collectez pas. Par exemple, &quot;faxPhone&quot; peut être un champ pour lequel Luma ne collecte pas de données. Ça va. Ce n’est pas parce qu’un champ est défini dans le schéma que les données le concernent. *must* être ingéré ultérieurement.
+>Cela ne vous dérange pas si un groupe de champs ajoute un champ pour un point de données que vous ne collectez pas. Par exemple, &quot;faxPhone&quot; peut être un champ pour lequel Luma ne collecte pas de données. Ça va. Ce n’est pas parce qu’un champ est défini dans le schéma que les données le concernent. *must* être ingéré ultérieurement. Vous pouvez également supprimer le champ du schéma.
 
 ### Ajouter un groupe de champs personnalisé
 
-Créons maintenant un groupe de champs personnalisé.
+Maintenant, créons un groupe de champs personnalisé.
 
 Alors que le groupe de champs de fidélité contenait une `loyaltyID` , Luma souhaite gérer tous les identifiants système dans un seul groupe afin d’assurer la cohérence entre leurs schémas.
 
-Les groupes de champs doivent être créés dans le workflow de schéma. Vous pouvez ajouter un nouveau champ personnalisé à votre schéma et créer ainsi un groupe de champs personnalisé. Vous pouvez également créer un groupe de champs personnalisé en premier, puis y ajouter des champs. Dans ce tutoriel, nous commençons par créer un groupe de champs personnalisé.
+Les groupes de champs doivent être créés dans le workflow de schéma. Vous pouvez effectuer l’une des actions suivantes :
+
+* Ajoutez d’abord un nouveau champ personnalisé à votre schéma, puis créez un groupe de champs personnalisé, ou
+* Créez d’abord un groupe de champs personnalisé, puis ajoutez-y des champs.
+
+Dans ce tutoriel, nous commençons par créer un groupe de champs personnalisé.
 
 Pour créer le groupe de champs :
 
