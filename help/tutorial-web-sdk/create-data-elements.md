@@ -1,17 +1,17 @@
 ---
 title: Création d’éléments de données pour le SDK Web Platform
-description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment créer un objet XDM et y mapper des éléments de données dans des balises. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1306'
 ht-degree: 2%
 
 ---
 
-# Créer des éléments de données
+# Création d’éléments de données
 
 Découvrez comment créer des éléments de données dans les balises pour les données de contenu, de commerce et d’identité sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Renseignez ensuite les champs de votre schéma XDM avec le type d’élément de données Variable de l’extension SDK Web Adobe Experience Platform .
 
@@ -168,7 +168,7 @@ Avant de créer l’objet XDM, créez l’ensemble suivant d’éléments de don
 
 1. Laisser `None` comme la propriété **[!UICONTROL Durée de stockage]** car cette valeur est différente sur chaque page
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]**
 
    ![Élément de données Nom de page](assets/data-element-pageName.png)
 
@@ -256,29 +256,41 @@ Créez ces éléments de données supplémentaires en procédant comme suit :
 >
 >La variable [!UICONTROL Variable JavaScript] Le type d’élément de données traite les références aux tableaux comme des points plutôt que des crochets. Par conséquent, le fait de référencer l’élément de données username comme `digitalData.user[0].profile[0].attributes.username` **ne fonctionnera pas**.
 
-## Création d’un élément de données Variable
+## Création d’éléments de données de variable pour XDM et les objets de données
 
-Après avoir créé les éléments de données, mappez-les au XDM à l’aide de la variable **[!UICONTROL Variable]** élément de données qui définit le schéma utilisé pour l’objet XDM. Cet objet doit être conforme au schéma XDM que vous avez créé lors de la [Configuration d’un schéma](configure-schemas.md) leçon.
+Les éléments de données que vous venez de créer seront utilisés pour créer un objet XDM (pour les applications Platform) et un objet de données (pour Analytics, Target et Audience Manager). Ces objets possèdent leurs propres éléments de données spéciaux appelés **[!UICONTROL Variable]** éléments de données qui sont très faciles à créer.
 
-Pour créer l’élément de données Variable :
+Pour créer l’élément de données Variable pour XDM, vous l’associez au schéma que vous avez créé dans la variable [Configuration d’un schéma](configure-schemas.md) leçon :
 
 1. Sélectionner **[!UICONTROL Ajouter un élément de données]**
 1. Nommer votre élément de données `xdm.variable.content`. Il est recommandé d’ajouter le préfixe &quot;xdm&quot; aux éléments de données spécifiques à XDM pour mieux organiser la propriété de balise.
 1. Sélectionnez la variable **[!UICONTROL SDK Web Adobe Experience Platform]** comme la propriété **[!UICONTROL Extension]**
 1. Sélectionnez la variable **[!UICONTROL Variable]** comme la propriété **[!UICONTROL Type d’élément de données]**
+1. Sélectionner **[!UICONTROL XDM]** comme la propriété **[!UICONTROL property]**
 1. Sélectionnez l’Experience Platform approprié. **[!UICONTROL Sandbox]**
 1. Sélectionnez les **[!UICONTROL Schéma]**, dans ce cas `Luma Web Event Data`
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]**
 
-   ![Élément de données de variable](assets/analytics-tags-data-element-xdm-variable.png)
+   ![Élément de données de variable pour XDM](assets/analytics-tags-data-element-xdm-variable.png)
+
+Créez ensuite l’élément de données Variable pour votre objet de données :
+
+1. Sélectionner **[!UICONTROL Ajouter un élément de données]**
+1. Nommer votre élément de données `data.variable`. Il est recommandé d’ajouter le préfixe &quot;data&quot; aux éléments de données spécifiques à l’objet de données pour mieux organiser la propriété de balise.
+1. Sélectionnez la variable **[!UICONTROL SDK Web Adobe Experience Platform]** comme la propriété **[!UICONTROL Extension]**
+1. Sélectionnez la variable **[!UICONTROL Variable]** comme la propriété **[!UICONTROL Type d’élément de données]**
+1. Sélectionner **[!UICONTROL data]** comme la propriété **[!UICONTROL property]**
+1. Sélectionner **[!UICONTROL Enregistrer]**
+
+   ![Élément de données variable pour l’objet de données](assets/data-element-data-variable.png.png)
 
 
 A la fin de ces étapes, les éléments de données suivants doivent être créés :
 
 | Éléments de données de l’extension Core | Éléments de données d’extension du SDK Web Platform |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,7 +303,7 @@ A la fin de ces étapes, les éléments de données suivants doivent être cré�
 
 >[!TIP]
 >
->Dans le futur [Création de règles de balise](create-tag-rule.md) leçon, vous découvrez comment la fonction **[!UICONTROL Variable]** l’élément de données vous permet d’empiler plusieurs règles dans des balises à l’aide de la variable **[!UICONTROL Type d’action de mise à jour de variable]**.
+>Dans le futur [Création de règles de balise](create-tag-rule.md) leçon, vous découvrez comment la fonction **[!UICONTROL Variable]** les éléments de données vous permettent d’empiler plusieurs règles dans des balises à l’aide de la variable **[!UICONTROL Type d’action de mise à jour de variable]**.
 
 Une fois ces éléments de données en place, vous êtes prêt à commencer à envoyer des données à l’Edge Network Platform avec une règle de balises. Mais découvrez tout d’abord comment collecter des identités avec le SDK Web.
 

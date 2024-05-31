@@ -1,23 +1,27 @@
 ---
 title: Création d’un schéma XDM pour les données web
-description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
 # Création d’un schéma XDM pour les données web
 
-Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données Adobe Experience Platform.
+Découvrez comment créer un schéma XDM pour les données web dans l’interface de collecte de données d’Adobe Experience Platform.
 
 Les schémas de modèle de données d’expérience (XDM) sont les blocs de création, les principes et les bonnes pratiques pour la collecte de données dans Adobe Experience Platform.
 
 Le SDK Web Platform utilise votre schéma pour normaliser vos données d’événement web, les envoyer à l’Edge Network Platform et, en fin de compte, transférer les données à toute application Experience Cloud configurée dans le flux de données. Cette étape est essentielle, car elle définit un modèle de données standard requis pour ingérer des données d’expérience client dans Experience Platform et permet aux services et applications en aval de fonctionner conformément à ces normes.
+
+>[!NOTE]
+>
+>Un schéma XDM est _non requis_ pour mettre en oeuvre Adobe Analytics, Adobe Target ou Adobe Audience Manager avec le SDK Web (les données peuvent être transmises dans la variable `data` au lieu de l’objet `xdm` comme vous le verrez plus loin). Un schéma XDM est requis pour les implémentations les plus performantes des applications natives à Platform telles que Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics. Bien que vous puissiez décider de ne pas utiliser un schéma XDM dans votre propre mise en oeuvre, vous devez le faire dans le cadre de ce tutoriel.
 
 ## Pourquoi modéliser les données ?
 
@@ -70,7 +74,7 @@ Toutes les autorisations d’utilisateur et d’approvisionnement nécessaires p
 
 ## Créer un schéma XDM
 
-Les schémas XDM sont la méthode standard pour décrire les données en Experience Platform, ce qui permet à toutes les données conformes aux schémas d’être réutilisées dans une organisation sans conflit, voire partagées entre plusieurs organisations. Pour en savoir plus, voir la section [Principes de base de la composition des schémas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
+Les schémas XDM sont la méthode standard pour décrire les données en Experience Platform, ce qui permet à toutes les données conformes aux schémas d’être réutilisées dans une organisation sans conflit, voire partagées entre plusieurs organisations. Pour en savoir plus, voir la section [Principes de base de la composition des schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition).
 
 Au cours de cet exercice, vous allez créer un schéma XDM à l’aide des groupes de champs de ligne de base recommandés pour capturer les données d’événement web sur la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -111,16 +115,15 @@ Dans la mesure du possible, il est recommandé d’utiliser des groupes de champ
 > 
 >Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL ExperienceEvent du SDK Web AEP]**_ et _**[!UICONTROL Événement d’expérience client]**_.
 >
->
-> Si vous implémentez uniquement **Adobe Analytics** avec le SDK Web et sans envoyer de données à **Experience Platform**, utilisez le [!UICONTROL Modèle ExperienceEvent Adobe Analytics] groupe de champs pour définir le schéma XDM. Elle est utilisée dans la variable [Configuration d’Analytics](setup-analytics.md) leçon.
+
 
 1. Dans le **[!UICONTROL Groupes de champs]** , sélectionnez **[!UICONTROL Ajouter]**
 
    ![Nouveau groupe de champs](assets/schema-new-field-group.png)
 
-1. Recherchez [!UICONTROL `AEP Web SDK ExperienceEvent`].
+1. Recherchez [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. Cochez la case
-1. Recherchez [!UICONTROL `Consumer Experience Event`].
+1. Recherchez [!UICONTROL `Consumer Experience Event`]
 1. Cochez la case
 1. Sélectionner **[!UICONTROL Ajouter des groupes de champs]**
 

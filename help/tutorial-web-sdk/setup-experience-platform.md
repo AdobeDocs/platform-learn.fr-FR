@@ -1,18 +1,18 @@
 ---
 title: Diffusion en continu de données vers Adobe Experience Platform avec le SDK Web Platform
-description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1940'
 ht-degree: 7%
 
 ---
 
 # Diffusion en continu de données vers un Experience Platform avec le SDK Web
 
-Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web Platform.
+Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK web de Platform.
 
 Experience Platform est la colonne vertébrale de toutes les nouvelles applications Experience Cloud, telles qu’Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics et Adobe Journey Optimizer. Ces applications sont conçues pour utiliser le SDK Web Platform comme méthode optimale de collecte de données web.
 
@@ -39,7 +39,7 @@ Pour terminer cette leçon, vous devez d’abord :
 
 ## Créer un jeu de données
 
-Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées sous la forme de jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau contenant un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
+Toutes les données correctement ingérées dans Adobe Experience Platform sont conservées sous la forme de jeux de données dans le lac de données. A [dataset](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview) est une structure de stockage et de gestion pour une collecte de données, généralement un tableau contenant un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
 Configurez un jeu de données pour vos données d’événement web Luma :
 
@@ -75,7 +75,7 @@ Vous pouvez maintenant configurer votre [!UICONTROL datastream] pour envoyer des
 
    ![Sélectionnez la flux de données du SDK Web Luma.](assets/datastream-luma-web-sdk-development.png)
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**.
+1. Sélectionner **[!UICONTROL Ajouter un service]**
    ![Ajout d’un service au flux de données](assets/experience-platform-addService.png)
 1. Sélectionner **[!UICONTROL Adobe Experience Platform]** comme la propriété **[!UICONTROL Service]**
 1. Sélectionner `Luma Web Event Data` comme la propriété **[!UICONTROL Jeu de données d’événement]**
@@ -232,6 +232,57 @@ Vous devez tout d’abord générer davantage de données d’exemple. Répétez
    ![Profil client](assets/experience-platform-validate-dataset-custProfile.png)
 
 Vous avez maintenant activé le SDK Web Platform pour Experience Platform (et Real-Time CDP). Et Journey Optimizer ! Et Customer Journey Analytics !).
+
+### Création d’un schéma de fidélité et ingestion de données d’exemple
+
+La fin de cet exercice est attendue pour les clients de Real-time Customer Data Platform et Journey Optimizer.
+
+Lorsque les données du SDK Web sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par d’autres sources de données que vous avez ingérées dans Platform. Par exemple, lorsqu’un utilisateur se connecte au site Luma, un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour les profils peuvent potentiellement être unis pour créer des profils client en temps réel. Pour voir cela en action, créez rapidement un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin que vous puissiez utiliser des profils client en temps réel avec Real-time Customer Data Platform et Journey Optimizer. Puisque vous avez déjà effectué des exercices similaires, les instructions seront brèves.
+
+Créez le schéma de fidélité :
+
+1. Créer un schéma
+1. Choisir **[!UICONTROL Profil individuel]** comme la propriété [!UICONTROL classe de base]
+1. Nommer le schéma `Luma Loyalty Schema`
+1. Ajoutez la variable [!UICONTROL Détails de fidélité] groupe de champs
+1. Ajoutez la variable [!UICONTROL Détails démographiques] groupe de champs
+1. Sélectionnez la variable `Person ID` et le marquer comme un [!UICONTROL Identité] et [!UICONTROL Identité du Principal] en utilisant la variable `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
+1. Activation du schéma pour [!UICONTROL Profil]
+
+   ![Schéma de fidélité](assets/web-channel-loyalty-schema.png)
+
+Pour créer le jeu de données et ingérer les exemples de données :
+
+1. Créez un nouveau jeu de données à partir de la variable `Luma Loyalty Schema`
+1. Nommer le jeu de données `Luma Loyalty Dataset`
+1. Activation du jeu de données pour [!UICONTROL Profil]
+1. Télécharger le fichier d’exemple [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. Glissez-déposez le fichier dans votre jeu de données
+1. Confirmer que les données ont bien été ingérées
+
+   ![Schéma de fidélité](assets/web-channel-loyalty-dataset.png)
+
+### Créer une audience
+
+Les audiences regroupent les profils autour de caractéristiques communes. Créez une audience rapide que vous pouvez utiliser dans votre campagne web :
+
+1. Dans l’interface de l’Experience Platform, accédez à **[!UICONTROL Audiences]** dans la navigation de gauche
+1. Sélectionner **[!UICONTROL Créer une audience]**
+1. Sélectionner **[!UICONTROL Créer une règle]**
+1. Sélectionner **[!UICONTROL Créer]**
+
+   ![Création d’une audience](assets/web-campaign-create-audience.png)
+
+1. Sélectionner **[!UICONTROL Attributs]**
+1. Recherchez le **[!UICONTROL Fidélité]** > **[!UICONTROL Niveau]** et faites-le glisser sur le champ **[!UICONTROL Attributs]** section
+1. Définissez l’audience comme des utilisateurs dont `tier` is `gold`
+1. Nommer l’audience `Luma Loyalty Rewards – Gold Status`
+1. Sélectionner **[!UICONTROL Edge]** comme la propriété **[!UICONTROL Méthode d’évaluation]**
+1. Sélectionner **[!UICONTROL Enregistrer]**
+
+   ![Définition de l’audience](assets/web-campaign-define-audience.png)
+
+Comme il s’agit d’une audience très simple, nous pouvons utiliser la méthode d’évaluation Edge. Les audiences Edge évaluent sur le serveur Edge. Par conséquent, dans la même requête envoyée par le SDK Web à l’Edge Network Platform, nous pouvons évaluer la définition de l’audience et confirmer immédiatement si l’utilisateur est admissible.
 
 
 [Suivant : ](setup-analytics.md)

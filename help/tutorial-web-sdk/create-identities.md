@@ -1,19 +1,19 @@
 ---
 title: Création d’identités pour le SDK Web Platform
-description: Découvrez comment créer des identités dans XDM et utiliser l’élément de données de carte des identités pour capturer les identifiants d’utilisateur. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment créer des identités dans XDM et utiliser l’élément de données de carte des identités pour capturer les identifiants d’utilisateur. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 # Création d’identités
 
-Découvrez comment capturer des identités avec le SDK Web de Adobe Experience Platform. Capturez les données d’identité non authentifiées et authentifiées sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Découvrez comment utiliser les éléments de données que vous avez créés précédemment pour collecter des données authentifiées avec un type d’élément de données SDK Web Platform appelé Identity Map.
+Découvrez comment capturer des identités avec le SDK web d’Adobe Experience Platform. Capturez les données d’identité non authentifiées et authentifiées sur le [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Découvrez comment utiliser les éléments de données que vous avez créés précédemment pour collecter des données authentifiées avec un type d’élément de données SDK Web Platform appelé Identity Map.
 
 Cette leçon porte sur l’élément de données Identity Map disponible avec l’extension de balises SDK Web Adobe Experience Platform. Vous mappez des éléments de données contenant un ID utilisateur authentifié et un état d’authentification à XDM.
 
@@ -33,7 +33,7 @@ Vous comprenez ce qu’est une couche de données, vous connaissez le [Site de d
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
-* [Créer des éléments de données](create-data-elements.md)
+* [Création d’éléments de données](create-data-elements.md)
 
 
 ## Experience Cloud ID
@@ -101,7 +101,7 @@ Pour créer la variable [!UICONTROL Carte des identités] élément de données 
 1. Comme la variable **[!UICONTROL État authentifié]**, sélectionnez **[!UICONTROL Authentifié]**
 1. Sélectionner **[!UICONTROL Principal]**
 
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]**
 
    ![Interface de collecte de données](assets/identity-id-namespace.png)
 
@@ -133,9 +133,9 @@ A la fin de ces étapes, les éléments de données suivants doivent être cré�
 
 | Éléments de données de l’extension Core | Éléments de données d’extension du SDK Web Platform |
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `identityMap.loginID` |
+| `cart.productInfo.purchase` | `xdm.variable.content` |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |

@@ -1,23 +1,27 @@
 ---
 title: Configuration d’un espace de noms d’identité
-description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # Configuration d’un espace de noms d’identité
 
-Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK Web de Adobe Experience Platform.
+Découvrez comment configurer les espaces de noms d’identité à utiliser avec le SDK web d’Adobe Experience Platform.
 
 La variable [Service Adobe Experience Cloud Identity](https://experienceleague.adobe.com/en/docs/id-service/using/home) définit un identifiant visiteur commun (l’ECID) dans les applications d’Adobe basées sur le SDK afin d’alimenter les fonctionnalités Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au service pour permettre le ciblage entre appareils et les intégrations avec d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
 
 La variable [Service Adobe Experience Platform Identity](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (oui, il y en a deux !) utilise les ECID et les ID de client pour générer des graphiques d’identité, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
+
+>[!NOTE]
+>
+>Un espace de noms d’identité personnalisé est _non requis_ pour mettre en oeuvre Adobe Analytics, Adobe Target ou Adobe Audience Manager avec le SDK Web (les identités authentifiées peuvent être transmises dans la variable `data` au lieu de l’objet `xdm` comme vous le verrez plus loin). Les espaces de noms d’identité sont requis pour les applications natives à Platform telles que Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics. Bien que vous puissiez décider de ne pas utiliser un espace de noms d’identité dans votre propre mise en oeuvre, vous devez le faire dans le cadre de ce tutoriel.
 
 >[!NOTE]
 >
@@ -75,7 +79,7 @@ Maintenant, créez un espace de noms pour l’ID de gestion de la relation clien
    |---------------|-----------|
    | Nom d’affichage | Identifiant Luma CRM |
    | Symbole d’identité | lumaCrmId |
-   | Type | Identifiant individuel multi-appareils |
+   | Type | Identifiant individuel sur l&#39;ensemble des appareils |
 
 
    ![Création d’espaces de noms.](assets/identities-create-namespace.png)

@@ -1,14 +1,14 @@
 ---
 title: Configuration du canal web Journey Optimizer avec le SDK web Platform
-description: Découvrez comment mettre en oeuvre le canal web Journey Optimizer à l’aide du SDK web Platform. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment mettre en oeuvre le canal web Journey Optimizer à l’aide du SDK web Platform. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 1%
 
 ---
@@ -133,55 +133,6 @@ Ce cas pratique vous permet de mieux comprendre comment Journey Optimizer peut v
 
 Comme ce tutoriel est destiné aux implémentateurs, il est intéressant de noter que cette leçon implique un travail d’interface substantiel dans Journey Optimizer. Bien que ces tâches d’interface soient généralement gérées par les marketeurs, il peut s’avérer utile pour les implémenteurs d’obtenir des informations sur le processus, même s’ils ne sont généralement pas responsables de la création de campagnes de canal web.
 
-### Création d’un schéma de fidélité et ingestion de données d’exemple
-
-Lorsque les données du SDK Web sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par d’autres sources de données que vous avez ingérées dans Platform. Par exemple, lorsqu’un utilisateur se connecte au site Luma, un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour les profils peuvent potentiellement être unis pour créer des profils client en temps réel. Pour voir cela en action, créez rapidement un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin que vous puissiez utiliser des profils client en temps réel dans des campagnes web Journey Optimizer. Puisque vous avez déjà effectué des exercices similaires, les instructions seront brèves.
-
-Créez le schéma de fidélité :
-
-1. Créer un schéma
-1. Choisir **[!UICONTROL Profil individuel]** comme la propriété [!UICONTROL classe de base]
-1. Nommer le schéma `Luma Loyalty Schema`
-1. Ajoutez la variable [!UICONTROL Détails de fidélité] groupe de champs
-1. Ajoutez la variable [!UICONTROL Détails démographiques] groupe de champs
-1. Sélectionnez la variable `Person ID` et le marquer comme un [!UICONTROL Identité] et [!UICONTROL Identité du Principal] en utilisant la variable `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
-1. Activation du schéma pour [!UICONTROL Profil]
-
-   ![Schéma de fidélité](assets/web-channel-loyalty-schema.png)
-
-Pour créer le jeu de données et ingérer les exemples de données :
-
-1. Créez un nouveau jeu de données à partir de la variable `Luma Loyalty Schema`
-1. Nommer le jeu de données `Luma Loyalty Dataset`
-1. Activation du jeu de données pour [!UICONTROL Profil]
-1. Télécharger le fichier d’exemple [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. Glissez-déposez le fichier dans votre jeu de données
-1. Confirmer que les données ont bien été ingérées
-
-   ![Schéma de fidélité](assets/web-channel-loyalty-dataset.png)
-
-### Création d’une audience
-
-Les audiences regroupent les profils autour de caractéristiques communes. Créez une audience rapide que vous pouvez utiliser dans votre campagne web :
-
-1. Dans l’interface de l’Experience Platform, accédez à **[!UICONTROL Audiences]** dans la navigation de gauche
-1. Sélectionner **[!UICONTROL Créer une audience]**
-1. Sélectionner **[!UICONTROL Créer une règle]**
-1. Sélectionner **[!UICONTROL Créer]**
-
-   ![Création d’une audience](assets/web-campaign-create-audience.png)
-
-1. Sélectionner **[!UICONTROL Attributs]**
-1. Recherchez le **[!UICONTROL Fidélité]** > **[!UICONTROL Niveau]** et faites-le glisser sur le champ **[!UICONTROL Attributs]** section
-1. Définissez l’audience comme des utilisateurs dont `tier` is `gold`
-1. Nommer l’audience `Luma Loyalty Rewards – Gold Status`
-1. Sélectionner **[!UICONTROL Edge]** comme la propriété **[!UICONTROL Méthode d’évaluation]**
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
-
-   ![Définition de l’audience](assets/web-campaign-define-audience.png)
-
-Comme il s’agit d’une audience très simple, nous pouvons utiliser la méthode d’évaluation Edge. Les audiences Edge évaluent sur le serveur Edge. Par conséquent, dans la même requête envoyée par le SDK Web à l’Edge Network Platform, nous pouvons évaluer la définition de l’audience et confirmer immédiatement si l’utilisateur est admissible.
-
 ### Créer une campagne de récompenses de fidélité
 
 Maintenant que vous avez ingéré nos exemples de données de fidélité et que vous avez créé notre segment, créez la campagne du canal web Loyalty Rewards dans Adobe Journey Optimizer.
@@ -258,7 +209,7 @@ Maintenant, créons l’expérience du canal web. Pour ce faire, utilisez Adobe 
 
 1. Dans le **[!UICONTROL Action]** de l&#39;opération, cliquez sur **[!UICONTROL Modifier le contenu]**. Puisque vous avez saisi une URL de page unique comme surface, vous devriez être prêt à commencer à travailler dans le compositeur.
 
-   ![Modification du contenu](assets/web-channel-edit-content.png)
+   ![Modifier le contenu](assets/web-channel-edit-content.png)
 
 1. Maintenant, cliquez sur **[!UICONTROL Modifier la page web]** pour commencer la création.
 
@@ -270,7 +221,7 @@ Maintenant, créons l’expérience du canal web. Pour ce faire, utilisez Adobe 
 
 1. Ajoutez également une personnalisation au conteneur à l’aide du **[!UICONTROL Editeur d&#39;expression]**.
 
-   ![Ajouter de la personnalisation](assets/web-channel-add-basic-personalization.png)
+   ![Ajouter une personnalisation](assets/web-channel-add-basic-personalization.png)
 
 1. Assurez-vous que l’expérience est correctement suivie pour les clics. Choisir **[!UICONTROL Clic sur l’élément de suivi]** dans le menu contextuel.
 

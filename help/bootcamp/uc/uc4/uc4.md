@@ -9,16 +9,16 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
 
 # 4. Analyse des Parcours client
 
-Dans ce flux d’utilisateurs, vous bénéficiez d’une expérience pratique avec le service d’application de Customer Journey Analytics.
+Dans ce flux d’utilisateurs, vous bénéficiez d’une expérience pratique avec l’application de Customer Journey Analytics.
 
 Customer Journey Analytics fournit une boîte à outils aux équipes d’intelligence d’entreprise et de science des données pour l’assemblage et l’analyse de données cross-canal (en ligne et hors ligne). Les fonctionnalités de Customer Journey Analytics offrent un contexte et une clarté aux parcours clients multicanaux complexes. Le contexte fourni génère des informations exploitables sur la manière de supprimer les problèmes du processus de conversion des clients et de fournir des expériences positives dans les moments qui comptent le plus.
 
@@ -40,7 +40,7 @@ Plus d’informations sur Customer Journey Analytics sont disponibles [here](htt
 
 - Une certaine familiarité avec Analysis Workspace est préférable, mais elle n’est pas requise.
 - Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accès au service d’application Customer Journey Analytics
+- Accès à une application Customer Journey Analytics
 
 >[!IMPORTANT]
 >
@@ -68,7 +68,7 @@ Découvrez comment préparer des données avant de poursuivre l’analyse.
 
 Découvrez comment visualiser les données Adobe Experience Platform à l’aide de Customer Journey Analytics.
 
-[4.6 D’insights à l’action](./ex6.md)
+[4.6 Des insights aux actions](./ex6.md)
 
 Découvrez comment mettre en oeuvre vos insights sous la forme d’une audience à l’aide de la plateforme CPD en temps réel et de Adobe Journey Optimizer.
 

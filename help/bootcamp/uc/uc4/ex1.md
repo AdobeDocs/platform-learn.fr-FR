@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 solution: Customer Journey Analytics
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '875'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 ## Objectifs
 
-- Présentation du service d’application CJA
+- Présentation de l’application CJA
 - Découvrez comment positionner CJA
-- Comprendre le workflow CJA : depuis la connexion aux données vers les insights
+- Comprendre le processus CJA : de la connexion aux données aux informations
 
 ## 4.1.1 Qu’est-ce que le Customer Journey Analytics ?
 
@@ -37,8 +37,8 @@ Les équipes métier et Insight peuvent discuter avec CJA, poser des questions e
 Les trois principaux avantages pour les clients sont les suivants :
 
 - la possibilité de rendre les informations disponibles à tous (c’est-à-dire la démocratisation de l’accès aux données) ;
-- La possibilité de voir le client dans un parcours contextuel (c’est-à-dire que les données peuvent être visualisées de manière séquentielle, couvrant plusieurs canaux à la fois en ligne et hors ligne).
-- La capacité d’exploiter la puissance des données sans avoir à utiliser (c’est-à-dire qu’elle permet aux êtres humains normaux d’utiliser des données pour déverrouiller des informations et des analyses approfondies en vue de l’activation marketing).
+- La possibilité de voir le client dans un parcours contextuel (c’est-à-dire que les données peuvent être visualisées de manière séquentielle, couvrant plusieurs canaux en ligne et hors ligne)
+- La capacité d’exploiter la puissance des données sans avoir à utiliser (c’est-à-dire qu’elle permet aux êtres humains normaux d’utiliser des données pour déverrouiller des informations et des analyses profondes pour l’activation marketing).
 
 ## 4.1.3 Pourquoi choisir Customer Journey Analytics ?
 
@@ -49,7 +49,7 @@ Traditionnellement, les applications de BI sont incapables d’activer une véri
 
 - Ils ne peuvent pas effectuer d’attribution et ne font pas d’analyse de parcours client.
 - Les applications de BI doivent connaître la question à l’avance.
-- Les requêtes interactives sont limitées par la structure de la base de données.
+- Les requêtes interactives sont limitées par la structure de la base de données
 - Des compétences SQL sont requises.
 - Les applications de BI ne vous permettent pas de demander pourquoi quelque chose s&#39;est produit.
 - Les applications BI n’ont aucune connexion directe avec les points de contact clients.
@@ -92,18 +92,18 @@ Regardez ces schémas et jeux de données dans Adobe Experience Platform.
 
 Veillez à avoir au moins vérifié les éléments suivants :
 
-- Identités : CRMID, phoneNumber, ECID, email. Quelles identités sont les identifiants Principaux, lesquels sont les identifiants secondaires ?
+- Identités : CRMID, phoneNumber, ECID, email. Quelles identités sont les identifiants principaux, lesquels sont les identifiants secondaires ?
 Vous pouvez trouver les identifiants en ouvrant un schéma et en regardant l’objet `_experienceplatform.identification.core`. Consultez le schéma [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/identity.png)
 
-- Exploration de l’objet de commerce dans le schéma [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explorer l’objet de commerce dans le schéma [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/commerce.png)
 
 - Aperçu de tous les [jeux de données](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) et consulter les données.
 
-Vous êtes maintenant prêt à commencer à utiliser l’interface utilisateur de Customer Journey Analytics.
+Vous êtes maintenant prêt à commencer à utiliser l’interface utilisateur du Customer Journey Analytics.
 
 Étape suivante : [4.2 Connexion des jeux de données Adobe Experience Platform dans Customer Journey Analytics](./ex2.md)
 
