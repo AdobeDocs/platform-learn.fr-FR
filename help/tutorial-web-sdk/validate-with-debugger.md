@@ -1,19 +1,19 @@
 ---
 title: Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
-description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Debugger. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # Validation des mises en oeuvre du SDK Web avec le débogueur Experience Platform
 
-Découvrez comment valider votre mise en oeuvre du SDK Web Adobe Experience Platform avec Adobe Experience Platform Debugger.
+Découvrez comment valider votre implémentation du SDK web d’Adobe Experience Platform avec Adobe Experience Platform Debugger.
 
 L’extension Experience Platform Debugger est disponible pour les navigateurs Chrome et Firefox, ce qui vous permet de voir la technologie d’Adobe mise en oeuvre dans vos pages web. Téléchargez la version de votre navigateur préféré :
 
@@ -44,7 +44,7 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
-* [Créer des éléments de données](create-data-elements.md)
+* [Création d’éléments de données](create-data-elements.md)
 * [Création d’identités](create-identities.md)
 * [Création de règles de balise](create-tag-rule.md)
 
@@ -75,7 +75,7 @@ Le débogueur Experience Platform dispose d’une fonctionnalité intéressante 
 
    ![propriété de balise remplacée](assets/validate-switch-success.png)
 
-Au fur et à mesure que vous continuez le tutoriel, vous utilisez cette technique pour mapper le site Luma sur votre propre propriété de balise afin de valider votre mise en oeuvre du SDK Web Platform. Lorsque vous commencez à utiliser des balises sur votre site web de production, vous pouvez utiliser cette même technique pour valider les modifications que vous apportez dans votre environnement de développement de balises.
+Au fur et à mesure que vous continuez le tutoriel, vous utilisez cette technique pour mapper le site Luma sur votre propre propriété de balise afin de valider votre mise en oeuvre du SDK Web Platform. Lorsque vous utilisez des balises sur votre propre site web, vous pouvez utiliser cette même technique pour valider les bibliothèques de balises de développement sur votre site web de production.
 
 ## Validation des requêtes réseau côté client avec le débogueur Experience Platform
 
@@ -131,7 +131,7 @@ Ces types de détails de requête sont également visibles dans les outils de d�
 
    ![Onglet Réseau](assets/validate-dev-console.png)
 
-1. Accédez au **Réponse** et notez comment la valeur ECID est incluse dans la réponse. Copiez cette valeur, car vous l’utiliserez pour valider les informations de profil lors de l’exercice suivant.
+1. Accédez au **Réponse** et notez comment la valeur ECID est incluse dans la réponse.
 
    ![Onglet Réseau](assets/validate-dev-console-ecid.png)
 

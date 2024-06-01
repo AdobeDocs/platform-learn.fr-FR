@@ -3,9 +3,9 @@ title: Diffusion en continu de données vers Adobe Experience Platform avec le S
 description: Découvrez comment diffuser en continu des données web vers Adobe Experience Platform à l’aide du SDK Web. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2107'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,8 @@ Experience Platform utilise le même schéma XDM que celui que vous avez créé 
 * Configuration du flux de données pour envoyer des données du SDK Web à Adobe Experience Platform
 * Activation de la diffusion en continu de données web pour Real-time Customer Profile
 * Validez les données renvoyées à la fois dans le jeu de données Platform et dans Real-Time Customer Profile.
+* Ingestion d’exemples de données de programme de fidélité dans Platform
+* Création d’une audience Platform simple
 
 ## Conditions préalables
 
@@ -36,6 +38,9 @@ Pour terminer cette leçon, vous devez d’abord :
 * Avoir accès à une application Adobe Experience Platform telle que Real-time Customer Data Platform, Journey Optimizer ou Customer Journey Analytics
 * Suivez les leçons des sections Configuration initiale et Configuration des balises de ce tutoriel.
 
+>[!NOTE]
+>
+>Si vous ne disposez d’aucune application Platform, vous pouvez ignorer cette leçon ou la lire.
 
 ## Créer un jeu de données
 
@@ -44,7 +49,7 @@ Toutes les données correctement ingérées dans Adobe Experience Platform sont 
 Configurez un jeu de données pour vos données d’événement web Luma :
 
 
-1. Accédez au [Interface Experience Platform](https://experience.adobe.com/platform/)
+1. Accédez au [Experience Platform](https://experience.adobe.com/platform/) ou [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) interface
 1. Vérifiez que vous vous trouvez dans l’environnement de test de développement que vous utilisez pour ce tutoriel.
 1. Ouvrir **[!UICONTROL Gestion des données > Jeux de données]** à partir du volet de navigation de gauche
 1. Sélectionner **[!UICONTROL Création d’un jeu de données]**
@@ -139,14 +144,28 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
    ![Aperçu du jeu de données 1](assets/experience-platform-dataset-preview-1.png)
 
+
+### Interrogation des données
+
+1. Dans le [Experience Platform](https://experience.adobe.com/platform/) interface, sélectionnez **[!UICONTROL Gestion des données > Requêtes]** dans le volet de navigation de gauche pour ouvrir la **[!UICONTROL Requêtes]** écran.
+1. Sélectionner **[!UICONTROL Créer une requête]**
+1. Commencez par exécuter une requête pour afficher tous les noms des tables du lac de données. Entrée `SHOW TABLES` dans l’éditeur de requêtes et cliquez sur l’icône de lecture pour exécuter la requête.
+1. Dans les résultats, notez à quel point le nom du tableau ressemble. `luma_web_event_data`
+1. Interrogez maintenant la table à l&#39;aide d&#39;une simple requête référençant votre table (notez que la requête sera par défaut limitée à 100 résultats) : `SELECT * FROM "luma_web_event_data"`
+1. Après quelques instants, vous devriez voir des exemples d’enregistrements de vos données web.
+
+>[!ERROR]
+>
+>Si vous obtenez une erreur &quot;Table non configurée&quot;, vérifiez deux fois le nom de votre table. Il se pourrait aussi que le micro-lot de données n&#39;ait pas encore atterri dans le lac de données. Réessayez dans 10 à 15 minutes.
+
 >[!INFO]
 >
->Le service de requête Adobe Experience Platform est une méthode plus robuste pour valider les données dans le lac, mais ne répond pas au cadre de ce tutoriel. Pour plus d’informations, voir [Explorer les données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels Platform .
+>  Pour plus d’informations sur le service de requête Adobe Experience Platform, voir [Explorer les données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels Platform .
 
 
 ## Activation du jeu de données et du schéma pour Real-time Customer Profile
 
-L’étape suivante consiste à activer le jeu de données et le schéma pour Real-Time Customer Profile. La diffusion en continu de données à partir du SDK Web est l’une des nombreuses sources de données qui se connecte à Platform et vous souhaitez joindre vos données web à d’autres sources de données pour créer des profils clients à 360 degrés. Pour en savoir plus sur Real-time Customer Profile, regardez cette courte vidéo :
+Pour les clients de Real-time Customer Data Platform et Journey Optimizer, l’étape suivante consiste à activer le jeu de données et le schéma pour Real-time Customer Profile. La diffusion en continu de données à partir du SDK Web est l’une des nombreuses sources de données qui se connecte à Platform et vous souhaitez joindre vos données web à d’autres sources de données pour créer des profils clients à 360 degrés. Pour en savoir plus sur Real-time Customer Profile, regardez cette courte vidéo :
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -179,7 +198,7 @@ L’étape suivante consiste à activer le jeu de données et le schéma pour Re
 
    >[!IMPORTANT]
    >
-   >    Les identités de Principal sont requises dans chaque enregistrement envoyé à Real-time Customer Profile. En règle générale, les champs d’identité sont étiquetés dans le schéma. Toutefois, lors de l’utilisation des mappages d’identité, les champs d’identité ne sont pas visibles dans le schéma. Cette boîte de dialogue vous permet de confirmer que vous avez en tête une identité principale et que vous la spécifiez dans une carte d’identité lors de l’envoi de vos données. Comme vous le savez, le SDK Web utilise une carte d’identité et l’identifiant Experience Cloud (ECID) est l’identité principale par défaut.
+   >    Les identités de Principal sont requises dans chaque enregistrement envoyé à Real-time Customer Profile. En règle générale, les champs d’identité sont étiquetés dans le schéma. Toutefois, lors de l’utilisation des mappages d’identité, les champs d’identité ne sont pas visibles dans le schéma. Cette boîte de dialogue vous permet de confirmer que vous avez en tête une identité principale et que vous la spécifiez dans une carte d’identité lors de l’envoi de vos données. Comme vous le savez, le SDK Web utilise une carte d’identité avec l’identifiant Experience Cloud (ECID) comme identité principale par défaut et un identifiant authentifié comme identité principale, le cas échéant.
 
 
 1. Sélectionner **[!UICONTROL Activer]**
@@ -192,7 +211,7 @@ Désormais, le schéma est également activé pour profile.
 
 >[!IMPORTANT]
 >
->    Une fois qu’un schéma est activé pour Profile, il ne peut pas être désactivé ni supprimé. De plus, les champs ne peuvent plus être supprimés du schéma après ce point. Il est important de tenir compte de ces implications ultérieurement lorsque vous travaillez avec vos propres données dans votre environnement de production. Vous devriez utiliser un environnement de test de développement dans ce tutoriel, qui peut être supprimé à tout moment.
+>    Une fois qu’un schéma est activé pour Profile, il ne peut pas être désactivé ou supprimé sans réinitialiser ou supprimer l’ensemble de l’environnement de test. De plus, les champs ne peuvent plus être supprimés du schéma après ce point.
 >
 >   
 > Lorsque vous utilisez vos propres données, nous vous recommandons de procéder dans l’ordre suivant :
@@ -209,7 +228,7 @@ Vous pouvez rechercher un profil client dans l’interface de Platform (ou de Jo
 
 Vous devez tout d’abord générer davantage de données d’exemple. Répétez les étapes précédentes de cette leçon pour vous connecter au site web Luma lorsqu’il est mappé à votre propriété de balise. Inspect de la demande du SDK Web Platform pour s’assurer qu’il envoie des données avec la variable `lumaCRMId`.
 
-1. Dans le [Experience Platform](https://experience.adobe.com/platform/) interface, sélectionnez **[!UICONTROL Profils]** dans la navigation de gauche
+1. Dans le [Experience Platform](https://experience.adobe.com/platform/) interface, sélectionnez **[!UICONTROL Client]** > **[!UICONTROL Profils]** dans la navigation de gauche
 
 1. Comme la variable **[!UICONTROL Espace de noms d’identité]** use `lumaCRMId`
 1. Copiez et collez la valeur de la variable `lumaCRMId` transmis dans l’appel que vous avez inspecté dans le débogueur Experience Platform, dans ce cas `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -247,7 +266,8 @@ Créez le schéma de fidélité :
 1. Ajoutez la variable [!UICONTROL Détails de fidélité] groupe de champs
 1. Ajoutez la variable [!UICONTROL Détails démographiques] groupe de champs
 1. Sélectionnez la variable `Person ID` et le marquer comme un [!UICONTROL Identité] et [!UICONTROL Identité du Principal] en utilisant la variable `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
-1. Activation du schéma pour [!UICONTROL Profil]
+1. Activation du schéma pour [!UICONTROL Profil]. Si vous ne trouvez pas le bouton bascule Profil , essayez de cliquer sur le nom du schéma en haut à gauche.
+1. Enregistrement du schéma
 
    ![Schéma de fidélité](assets/web-channel-loyalty-schema.png)
 
@@ -266,7 +286,7 @@ Pour créer le jeu de données et ingérer les exemples de données :
 
 Les audiences regroupent les profils autour de caractéristiques communes. Créez une audience rapide que vous pouvez utiliser dans votre campagne web :
 
-1. Dans l’interface de l’Experience Platform, accédez à **[!UICONTROL Audiences]** dans la navigation de gauche
+1. Dans l’interface de l’Experience Platform ou de Journey Optimizer, accédez à **[!UICONTROL Client]** > **[!UICONTROL Audiences]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Créer une audience]**
 1. Sélectionner **[!UICONTROL Créer une règle]**
 1. Sélectionner **[!UICONTROL Créer]**

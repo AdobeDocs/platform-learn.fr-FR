@@ -1,21 +1,21 @@
 ---
 title: Configuration d’un flux de données pour le SDK Web Platform
-description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment activer un flux de données et configurer des solutions Experience Cloud. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 9%
 
 ---
 
 # Configurer un trains de données
 
-Découvrez comment configurer un flux de données pour le SDK Web Adobe Experience Platform.
+Découvrez comment configurer un flux de données pour le SDK web d’Adobe Experience Platform.
 
-[Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) indiquer à l’Edge Network Adobe Experience Platform où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements.
+[Datastreams](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) indiquer à l’Edge Network Adobe Experience Platform où envoyer les données collectées par le SDK Web Platform. Dans la configuration des flux de données, vous activez les applications Experience Cloud, votre compte Experience Platform et le transfert des événements.
 
 ![SDK Web, flux de données et diagramme Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -49,15 +49,15 @@ Vous pouvez maintenant créer un flux de données pour indiquer à Platform Edge
 1. Accédez à **[!UICONTROL Datastreams]** dans la navigation de gauche
 1. Sélectionner **[!UICONTROL Nouvelle structure de données]**
 1. Entrée `Luma Web SDK: Development Environment` comme la propriété **[!UICONTROL Nom]**. Ce nom est référencé ultérieurement lorsque vous configurez l’extension SDK Web dans la propriété de balise.
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]**
 
    ![Création du flux de données](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >Vous n’avez besoin de sélectionner un schéma que si vous utilisez le [Préparation de données pour la collecte de données](/help/data-collection/edge/data-prep.md) fonction .
+   >Il n’est pas nécessaire de sélectionner un schéma. Une sélection de schéma n’est requise que si vous utilisez le [Préparation de données pour la collecte de données](/help/data-collection/edge/data-prep.md) fonction .
 
-Sur l’écran suivant, vous pouvez ajouter des services tels que des applications d’Adobe à la banque de données, mais vous n’ajouterez aucun service à ce stade du tutoriel. Vous le ferez plus tard dans les leçons. [Configuration d’un Experience Platform](setup-experience-platform.md), [Configuration d’Analytics](setup-analytics.md), [Configuration de l’Audience Manager](setup-audience-manager.md), [Configuration de Target](setup-target.md), ou [Transfert d’événement](setup-event-forwarding.md).
+Sur l’écran suivant, vous pouvez ajouter des services tels que des applications d’Adobe à la banque de données, mais vous n’ajouterez aucun service à ce stade. Vous le ferez plus tard dans les leçons. [Configuration d’un Experience Platform](setup-experience-platform.md), [Configuration d’Analytics](setup-analytics.md), [Configuration de l’Audience Manager](setup-audience-manager.md), [Configuration de Target](setup-target.md), ou [Transfert d’événement](setup-event-forwarding.md).
 
 >[!NOTE]
 >

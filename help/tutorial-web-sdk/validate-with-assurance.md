@@ -1,13 +1,13 @@
 ---
 title: Validation des mises en oeuvre du SDK Web avec Experience Platform Assurance
-description: Découvrez comment valider votre mise en oeuvre du SDK Web Platform avec Adobe Experience Platform Assurance. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment valider votre implémentation du SDK web de Platform avec Adobe Experience Platform Assurance. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 3%
+source-wordcount: '606'
+ht-degree: 7%
 
 ---
 
@@ -31,7 +31,7 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 * [Extension SDK Web installée dans la propriété de balise](install-web-sdk.md)
-* [Créer des éléments de données](create-data-elements.md)
+* [Création d’éléments de données](create-data-elements.md)
 * [Création d’identités](create-identities.md)
 * [Création d’une règle de balise](create-tag-rule.md)
 * [Validation avec Debugger](validate-with-debugger.md)
@@ -78,8 +78,8 @@ Revue de la leçon sur Debugger :
 
 Les informations à afficher à ce stade de la mise en oeuvre sont limitées. Une valeur que nous pouvons voir est votre identifiant Experience Cloud (ECID) généré sur Platform Edge Network :
 
-1. Sélectionnez la ligne avec l’événement appelé Adobe Response Handle.
-1. Un menu s’affiche à droite. Sélectionnez la variable `+` signe en regard de `[!UICONTROL ACPExtensionEvent]`
+1. Sélectionnez la ligne avec l’événement appelé `Alloy Response Handle`.
+1. Un menu s’affiche à droite. Sélectionnez la variable `+` signe en regard de `[!UICONTROL ACPExtensionEventData]`
 1. Effectuez un zoom avant en sélectionnant `[!UICONTROL payload > 0 > payload > 0 > namespace]`. L’identifiant affiché sous la dernière `0` correspond au `ECID`. Vous le savez par la valeur qui apparaît sous `namespace` match `ECID`
 
    ![Assurance validate ECID](assets/validate-assurance-ecid.png)

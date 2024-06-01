@@ -1,12 +1,12 @@
 ---
 title: Création de règles de balise pour le SDK Web Platform
-description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment envoyer un événement à l’Edge Network Platform avec votre objet XDM à l’aide d’une règle de balise. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1983'
 ht-degree: 2%
 
 ---
@@ -34,10 +34,10 @@ Vous connaissez bien les balises de collecte de données et la variable [Site de
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 * [Installer l’extension SDK Web](install-web-sdk.md)
-* [Créer des éléments de données](create-data-elements.md)
+* [Création d’éléments de données](create-data-elements.md)
 * [Création d’identités](create-identities.md)
 
-## Conventions de nommage
+## Conventions de dénomination
 
 Pour gérer les règles dans les balises, il est recommandé de respecter une convention d’affectation de nom standard. Ce tutoriel utilise une convention de dénomination en cinq parties :
 
@@ -139,9 +139,9 @@ Maintenant, faites correspondre votre [!UICONTROL éléments de données] à la 
 
 1. Mappez les éléments de données suivants aux `web` Variables XDM
 
-   * **`web.webPageDetials.name`** vers `%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`** vers `%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`** vers `%page.pageInfo.hierarchie1%`
+   * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
 
 1. Définissez `web.webPageDetials.pageViews.value` sur `1`.
 
@@ -163,7 +163,6 @@ Maintenant, commencez à utiliser **[!UICONTROL Mettre à jour la variable]** da
 >
 >L’ordre des règles détermine la règle qui s’exécute en premier lorsqu’un événement est déclenché. Si deux règles possèdent le même type d’événement, celle dont le nombre est le plus faible s’exécute en premier.
 > 
->![rule-order](assets/set-up-analytics-sequencing.png)
 
 Commencez par effectuer le suivi des consultations de produit sur la page des détails du produit de Luma :
 
@@ -172,7 +171,8 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 1. Sélectionnez la variable ![+ symbole](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Sous Événement pour ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Core]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bibliothèque chargée (Haut de page)]**
-1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`. Cette valeur de commande permet de s’assurer que la règle s’exécute après la variable `all pages - library loaded - set global variables - 1` qui définit la configuration globale.
+1. Sélectionner pour ouvrir **[!UICONTROL Options avancées]**, saisissez `20`. Cette valeur de commande garantit l’exécution de la règle. _after_ la valeur `all pages - library loaded - set global variables - 1` qui définit la configuration globale.
+1. Sélectionner **[!UICONTROL Conserver les modifications]**
 
    ![Règles XDM Analytics](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 1. Sous **[!UICONTROL Actions]** select **[!UICONTROL Ajouter]**
 1. Sélectionner **[!UICONTROL SDK Web Adobe Experience Platform]** extension
 1. Sélectionner **[!UICONTROL Type d’action]** as **[!UICONTROL Mettre à jour la variable]**
+1. Sélectionner `xdm.variable.content` comme la propriété **[!UICONTROL Élément de données]**
 1. Faites défiler l’écran vers le bas jusqu’à `commerce` objet
 1. Ouvrez le **[!UICONTROL productViews]** objet et définition **[!UICONTROL value]** to `1`
 
@@ -202,7 +203,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 
    >[!NOTE]
    >
-   >Cette règle ayant un ordre plus élevé, elle remplace la variable `eventType` défini dans la règle &quot;configuration globale&quot;. `eventType` ne peut contenir qu’une seule valeur. Nous vous recommandons de la définir avec l’événement de valeur la plus élevée.
+   >Cette règle ayant un ordre plus élevé, elle remplace la variable `eventType` défini dans la règle &quot;configuration globale&quot;. `eventType` ne peut contenir qu’une seule valeur et nous vous recommandons de la définir avec l’événement le plus précieux.
 
 1. Faites défiler l’écran jusqu’à et sélectionnez `productListItems` tableau
 1. Sélectionner **[!UICONTROL Fournir des éléments individuels]**
@@ -215,7 +216,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
    >La variable **`productListItems`** est un `array` type de données afin qu’il s’attende à ce que les données entrent dans une collection d’éléments. En raison de la structure de couche de données du site de démonstration Luma et parce qu’il est possible d’afficher un seul produit à la fois sur le site Luma, vous ajoutez des éléments individuellement. Lors de l’implémentation sur votre propre site web, en fonction de la structure de votre couche de données, vous pouvez fournir un tableau entier.
 
 1. Sélectionner pour ouvrir **[!UICONTROL Élément 1]**
-1. Mappez **`productListItems.item1.SKU`** à `%product.productInfo.sku%`.
+1. Carte **`productListItems.item1.SKU`** to `%product.productInfo.sku%`
 
    ![Variable d’objet XDM SKU du produit](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ Mappons maintenant notre tableau à l’objet XDM :
 1. Sous **[!UICONTROL Actions]** select **[!UICONTROL Ajouter]**
 1. Sélectionner **[!UICONTROL SDK Web Adobe Experience Platform]** extension
 1. Sélectionner **[!UICONTROL Type d’action]** as **[!UICONTROL Mettre à jour la variable]**
+1. Sélectionner `xdm.variable.content` comme la propriété **[!UICONTROL Élément de données]**
 1. Faites défiler l’écran vers le bas jusqu’à `commerce` et sélectionnez pour l’ouvrir.
 1. Ouvrez le **[!UICONTROL productListViews]** objet et définition **[!UICONTROL value]** to `1`
 
@@ -320,7 +322,8 @@ Créez deux autres règles pour le passage en caisse et l’achat suivant le mê
 1. Faites défiler l’écran jusqu’à et sélectionnez **[!UICONTROL productListItems]** tableau
 1. Sélectionner **[!UICONTROL Fournir un tableau entier]**
 1. Associer à **`cart.productInfo.purchase`** élément de données
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Conserver les modifications]**
+1. Sélectionner **[!UICONTROL Enregistrer]**
 
 Lorsque vous avez terminé, les règles suivantes doivent être créées.
 
@@ -339,7 +342,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. Utilisez la variable **[!UICONTROL Extension Core]** et sélectionnez `Library Loaded (Page Top)` comme la propriété **[!UICONTROL Type d’événement]**
 
-1. Sélectionner **[!UICONTROL Avancé]** menu déroulant et entrée `50` in **[!UICONTROL Commande]**. Cela garantit que la deuxième règle se déclenche après la première règle que vous définissez pour déclencher comme `1`.
+1. Sélectionner **[!UICONTROL Avancé]** menu déroulant et entrée `50` in **[!UICONTROL Commande]**. Cette règle se déclenche après toutes les autres règles que vous avez configurées (qui avaient `1` ou `20` comme [!UICONTROL Commande]).
 
 1. Sélectionner **[!UICONTROL Conserver les modifications]** pour revenir à l’écran de la règle principale
    ![Sélectionner le déclencheur chargé de bibliothèque](assets/create-tag-rule-trigger-loaded-send.png)

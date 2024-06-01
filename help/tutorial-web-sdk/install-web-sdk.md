@@ -1,13 +1,13 @@
 ---
 title: Installation et configuration de l’extension de balise du SDK Web Adobe Experience Platform
-description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Mise en oeuvre de Adobe Experience Cloud avec le SDK Web .
+description: Découvrez comment installer et configurer l’extension de balise SDK Web Platform dans l’interface de collecte de données. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 10%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -41,7 +41,7 @@ Créez une propriété de balise pour le tutoriel :
    ![Ajouter une nouvelle propriété](assets/websdk-property-addNewProperty.png)
 1. Comme la variable **[!UICONTROL Nom]**, saisissez `Web SDK Course` (ajoutez votre nom à la fin, si plusieurs personnes de votre société suivent ce tutoriel)
 1. Comme la variable **[!UICONTROL Domaines]**, saisissez `enablementadobe.com` (expliqué ultérieurement)
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]**
    ![Détails de la propriété](assets/websdk-property-propertyDetails.png)
 
 ## Ajout de l’extension SDK Web
@@ -49,8 +49,8 @@ Créez une propriété de balise pour le tutoriel :
 Avec votre schéma XDM, votre flux de données et votre propriété de balise maintenant créés, vous êtes prêt à installer l’extension SDK Web Platform :
 
 1. Ouvrez la nouvelle propriété de balise .
-1. Accédez à **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**.
-1. Recherchez `Adobe Experience Platform Web SDK`.
+1. Accédez à **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**
+1. Recherchez `Adobe Experience Platform Web SDK`
 1. Sélectionner **[!UICONTROL Installer]**
 
    ![Installation de l’extension SDK Web](assets/extension-platform-web-sdk.png)
@@ -61,8 +61,9 @@ Avec votre schéma XDM, votre flux de données et votre propriété de balise ma
 Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieurement, si nécessaire. La seule chose à faire maintenant est de lier l’extension à votre flux de données :
 
 1. Sous **[!UICONTROL Datastreams]**, sélectionnez la variable **[!UICONTROL Choisir parmi les listes]** méthode d&#39;entrée
+1. Sélectionnez l’environnement de test dans lequel vous avez créé le schéma, l’espace de noms d’identité et le flux de données.
 1. Sélectionnez le flux de données que vous avez créé précédemment, `Luma Web SDK`
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionner **[!UICONTROL Enregistrer]**
 
    >[!NOTE]
    >
