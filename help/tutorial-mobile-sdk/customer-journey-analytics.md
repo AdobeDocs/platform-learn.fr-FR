@@ -4,9 +4,10 @@ description: Découvrez comment créer des rapports et analyser les interactions
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3282'
 ht-degree: 2%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 Découvrez comment créer des rapports et analyser les interactions de votre application mobile avec Customer Journey Analytics.
 
-Les données d’événement d’application mobile que vous avez collectées et envoyées à Platform Edge Network dans les leçons précédentes sont transférées aux services configurés dans votre flux de données. Si vous avez suivi le [Envoi de données à l’Experience Platform](platform.md) leçon : ces données sont désormais stockées dans le lac de données d’Experience Platform en tant que jeux de données. À ce stade, les données peuvent désormais être utilisées par Customer Journey Analytics pour la création de rapports et l’analyse.
+Les données d’événement d’application mobile, que vous avez collectées et envoyées à l’Edge Network Platform dans les leçons précédentes, sont transférées aux services configurés dans votre flux de données. Si vous avez suivi le [Envoi de données à l’Experience Platform](platform.md) leçon : ces données sont désormais stockées dans un jeu de données Experience Platform et peuvent être utilisées par Customer Journey Analytics pour la création de rapports et l’analyse.
 
 Contrairement à Adobe Analytics, Customer Journey Analytics *uses* données des jeux de données créés dans Experience Platform. Les données ne sont pas directement envoyées à Customer Journey Analytics à l’aide du SDK Adobe Experience Platform Mobile, mais elles sont envoyées aux jeux de données. Les connexions sont ensuite configurées dans Customer Journey Analytics pour sélectionner les jeux de données que vous utiliserez dans vos projets de création de rapports et d’analyse.
 
