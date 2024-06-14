@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 19%
+source-wordcount: '896'
+ht-degree: 18%
 
 ---
 
@@ -80,6 +80,7 @@ ht-degree: 19%
 + Hygiène des données {#data-hygiene}
    + [Pseudonyme du profil et expiration de l’événement (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Préparation de données pour l’hygiène des données](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Suppression de jeux de données et de lots](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Expiration des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Mise à jour d’un attribut de profil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Ingestion des données {#data-ingestion}
@@ -167,6 +168,7 @@ ht-degree: 19%
    + [Création de stratégies de fusion](/help/platform/profiles/create-merge-policies.md)
    + [Présentation des schémas d’union](/help/platform/profiles/union-schemas-overview.md)
    + [Création d’un attribut calculé](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [Suppression de profils](/help/platform/profiles/delete-profiles.md)
    + [Mise à jour d’un attribut spécifique à l’aide de la fonction upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Confidentialité et sécurité {#privacy}
    + [Présentation du Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
