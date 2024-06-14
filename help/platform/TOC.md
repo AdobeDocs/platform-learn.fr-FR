@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 18%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 18%
 + [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importation de données d’exemple dans Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
+   + [Utilisation de l’assistant AI](/help/platform/admin/ai-assistant.md)
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
