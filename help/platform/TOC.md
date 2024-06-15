@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
+source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '912'
 ht-degree: 18%
 
 ---
@@ -79,15 +79,17 @@ ht-degree: 18%
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
    + [Intégration à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Hygiène des données {#data-hygiene}
-   + [Pseudonyme du profil et expiration de l’événement (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Préparation de données pour l’hygiène des données](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Suppression de jeux de données et de lots](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Expiration des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Pseudonyme du profil et expiration de l’événement (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Suppression de profils](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Mise à jour d’un attribut de profil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Ingestion des données {#data-ingestion}
    + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Aperçu de l&#39;ingestion en lot](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Création et remplissage d’un jeu de données](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [Suppression de jeux de données et de lots](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Présentation des sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingestion de données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
@@ -169,6 +171,7 @@ ht-degree: 18%
    + [Création de stratégies de fusion](/help/platform/profiles/create-merge-policies.md)
    + [Présentation des schémas d’union](/help/platform/profiles/union-schemas-overview.md)
    + [Création d’un attribut calculé](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [Expirations des profils pseudonymes (TTL)](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [Suppression de profils](/help/platform/profiles/delete-profiles.md)
    + [Mise à jour d’un attribut spécifique à l’aide de la fonction upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Confidentialité et sécurité {#privacy}
