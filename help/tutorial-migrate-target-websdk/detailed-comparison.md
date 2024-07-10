@@ -2,10 +2,10 @@
 title: Comparaison d’at.js 2.x avec le SDK Web | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez les différences entre at.js 2.x et le SDK Web Platform, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 78f0dcc0aa4674eb071c5fd091b5df04eb971326
+source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2007'
+ht-degree: 4%
 
 ---
 
@@ -44,10 +44,10 @@ Si vous découvrez le SDK Web Platform, ne vous inquiétez pas : les éléments 
 | Offres distantes | Pris en charge | Pris en charge |
 | Offres de redirection | Pris en charge | Pris en charge. Cependant, une redirection d’une page avec le SDK Web Platform vers une page avec at.js (et dans la direction opposée) n’est pas prise en charge. |
 | Prise de décision sur appareil | Pris en charge | Non pris en charge actuellement |
-| Prérécupération des mbox | Pris en charge pour les portées personnalisées et SPA VEC | Pas actuellement pris en charge pour le VEC standard |
+| Prérécupération des mbox | Pris en charge pour les portées personnalisées et SPA VEC | La prérécupération est le mode par défaut du SDK Web. |
 | Événements personnalisés | Pris en charge | Non pris en charge. Voir [feuille de route publique](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) pour l’état actuel. |
 | Jetons de réponse | Pris en charge | Pris en charge. Voir [documentation sur les jetons de réponse dédiés](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) pour obtenir des exemples de code et des différences entre at.js et le SDK Web Platform |
-| Fournisseurs de données  | Pris en charge | Non pris en charge. Le code personnalisé peut être utilisé pour déclencher un SDK Web Platform. `sendEvent` une fois les données récupérées auprès d’un autre fournisseur. |
+| Fournisseurs de données | Pris en charge | Non pris en charge. Le code personnalisé peut être utilisé pour déclencher un SDK Web Platform. `sendEvent` une fois les données récupérées auprès d’un autre fournisseur. |
 
 
 ## Légendes dignes de mention
@@ -56,7 +56,7 @@ Si vous découvrez le SDK Web Platform, ne vous inquiétez pas : les éléments 
 |---|---|---|
 | Réduction du scintillement | Le fragment de code de masquage préalable pour les implémentations asynchrones utilise un ID de style de `at-body-style`. at.js recherche cet ID d’élément pour supprimer le style une fois qu’une réponse est reçue. | Le fragment de code de masquage préalable par défaut utilise un ID de style de `alloy-prehiding`. Le SDK Web n’est pas compatible avec le fragment de code de masquage préalable d’at.js. Il doit donc être modifié dans le cadre du processus de migration. |
 | Rendu automatique du contenu au chargement de la page | Contrôlé avec un paramètre global de Target. Activé lorsque `pageLoadEnabled` est défini sur `true`. | Spécifié dans le SDK Web Platform `sendEvent` . Activé en définissant la variable `renderDecisions` option à `true`. |
-| Rendu manuel du contenu | La variable `applyOffer()` et `applyOffers()` les fonctions prennent uniquement en charge le paramètre de HTML | La variable `applyPropositions` prend en charge le paramétrage, le remplacement ou l’ajout de HTMLS pour une plus grande flexibilité ; |
+| Rendu manuel du contenu | La variable `applyOffer()` et `applyOffers()` fonctions prenant uniquement en charge le paramètre HTML | La variable `applyPropositions` prend en charge le paramétrage, le remplacement ou l’ajout d’un HTML pour une plus grande flexibilité. |
 | Suivi des événements personnalisés | Pris en charge avec `trackEvent()` et `sendNotifications()` fonctions. Ces fonctions sont spécifiques à Target et n’ont aucune incidence sur les mesures Adobe Analytics. | Toutes les données du SDK Web Platform `sendEvent` Les appels sont transférés vers Target. Les données supplémentaires nécessaires spécifiquement à Target doivent être incluses dans la variable `sendEvent` avec un eventType de `decisioning.propositionDisplay` ou `decisioning.propositionInteract` pour garantir que les mesures Adobe Analytics ne sont pas affectées. |
 | CNAME Target | Pris en charge. Il est distinct du CNAME utilisé pour Analytics et du service d’ID Experience Cloud. | Plus pertinent. Un seul CNAME peut être utilisé pour tous les appels du SDK Web Platform. |
 | Débogage | La variable `mboxDisable`, `mboxDebug`, et `mboxTrace` Les paramètres d’URL peuvent être utilisés pour le débogage avec les outils de développement de votre navigateur.<br><br>L’Adobe Experience Platform Debugger est également un outil de débogage pris en charge. | La variable `mboxDisable`, `mboxDebug`, et `mboxTrace` Les paramètres URL ne sont pas pris en charge.<br><br>Vous pouvez activer le débogage du SDK Web en ajoutant la variable `alloy_debug=true` à votre chaîne de requête ou à votre exécution `alloy("setDebug", { "enabled": true });` dans votre console de développement.<br><br>L’extension de navigateur Adobe Experience Platform Debugger peut être utilisée pour lancer une trace de périphérie pour le débogage.<br><br>Voir [débogage du SDK Web de Platform](debugging.md) pour plus d’informations. |
@@ -119,26 +119,26 @@ Les diagrammes suivants doivent vous aider à comprendre les différences de flu
 
 ### Diagramme du système at.js 2.x
 
-![comportement d’at.js 2.0 au chargement de la page](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
+![comportement d’at.js 2.0 au chargement de la page](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
-| Appel | Détails |
+| Appeler | Détails |
 | --- | --- |
 | 1 | L’appel renvoie un ID d’Experience Cloud (ECID). Si l’utilisateur est authentifié, un autre appel synchronise l’ID de client. |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document (at.js peut également être chargé de manière asynchrone avec un extrait de code prémasqué facultatif implémenté sur la page). |
 | 3 | La requête de chargement de page est effectuée, y compris tous les paramètres configurés, ECID, SDID et ID de client. |
 | 4 | Les scripts de profil s’exécutent et sont introduits dans le magasin de profils. Le magasin demande des audiences qualifiées auprès de la bibliothèque d’audiences (par exemple, audiences partagées à partir d’Analytics, d’Audience Manager, etc.). Les attributs du client sont envoyés par lot dans le magasin de profils. |
 | 5 | En fonction de l’URL, des paramètres de requête et des données de profil, Target décide quelles activités et expériences renvoyer au visiteur pour la page active et les futures vues. |
-| 6 | Contenu ciblé renvoyé à la page, comprenant éventuellement des valeurs de profil pour une personnalisation supplémentaire.<br><br>Le contenu ciblé sur la page actuelle est affiché aussi rapidement que possible, sans scintillement du contenu par défaut.<br><br>Le contenu ciblé pour les futures vues d’une application d’une seule page est mis en cache dans le navigateur. Il peut donc être appliqué instantanément sans appel au serveur supplémentaire lorsque les vues sont déclenchées. |
+| 6 | Contenu ciblé renvoyé à la page, comprenant éventuellement des valeurs de profil pour une personnalisation supplémentaire.<br><br>Le contenu ciblé sur la page active est affiché aussi rapidement que possible, sans scintillement du contenu par défaut.<br><br>Le contenu ciblé pour les futures vues d’une application d’une seule page est mis en cache dans le navigateur. Il peut donc être appliqué instantanément sans appel au serveur supplémentaire lorsque les vues sont déclenchées. |
 | 7 | Données Analytics envoyées de la page aux serveurs de collecte de données. |
-| 8 | Les données Target sont associées aux données Analytics par l’intermédiaire du SDID et sont traitées dans le magasin de rapports Analytics. Il est alors possible de consulter les données Analytics à la fois dans Analytics et Target, par l’intermédiaire des rapports d’A4T. |
+| 8 | Les données Target sont associées aux données Analytics par l’intermédiaire du SDID et sont traitées dans le stockage de rapports Analytics. Les données Analytics peuvent ensuite être visualisées à la fois dans Analytics et dans Target au moyen de rapports A4T. |
 
 Pour plus d’informations sur la manière de procéder, consultez le guide de développement . [mise en oeuvre de Target avec at.js pour les applications d’une seule page](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application/).
 
-### Diagramme système du SDK Web Platform
+### Diagramme du système SDK Web Platform
 
 ![Diagramme de prise de décision Adobe Target Edge avec le SDK Web Platform](assets/target-platform-web-sdk.png)
 
-| Appel | Détails |
+| Appeler | Détails |
 | --- | --- |
 | 1 | L’appareil charge le SDK Web Platform. Le SDK Web Platform envoie une demande au réseau Edge avec des données XDM, l’identifiant d’environnement des flux de données, les paramètres transmis et l’identifiant client (facultatif). La page (ou les conteneurs) est prémasquée. |
 | 2 | Le réseau Edge envoie la demande aux services Edge pour l’enrichir avec l’identifiant visiteur, le consentement et d’autres informations contextuelles sur le visiteur, telles que la géolocalisation et les noms conviviaux de l’appareil. |
