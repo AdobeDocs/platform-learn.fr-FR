@@ -68,7 +68,7 @@ Avant de commencer les exercices suivants, il est essentiel de comprendre les é
 
 Avant de commencer les étapes ci-dessus, n’oubliez pas l’étape 0, qui consiste à comprendre les données disponibles dans Adobe Experience Platform.
 
-**Des ordures, des ordures.** Vous vous souvenez ? Vous devez avoir une idée claire des données disponibles et de la manière dont les schémas dans Adobe Experience Platform sont configurés. La compréhension des données de Adobe Experience Platform facilite les choses, non seulement de la connexion aux données, mais également lors de la création de visualisations et de l’analyse.
+**Videz les ordures, videz les ordures.** Vous souvenez-vous ? Vous devez avoir une idée claire des données disponibles et de la manière dont les schémas dans Adobe Experience Platform sont configurés. La compréhension des données de Adobe Experience Platform facilite les choses, non seulement de la connexion aux données, mais également lors de la création de visualisations et de l’analyse.
 
 ## 4.1.5 Étape 0 : Présentation des schémas et des jeux de données Adobe Experience Platform
 
@@ -78,7 +78,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](../uc1/images/home.png)
 
-Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Prod]** dans le coin supérieur droit de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Prod]** dans le coin supérieur droit de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ Regardez ces schémas et jeux de données dans Adobe Experience Platform.
 Veillez à avoir au moins vérifié les éléments suivants :
 
 - Identités : CRMID, phoneNumber, ECID, email. Quelles identités sont les identifiants principaux, lesquels sont les identifiants secondaires ?
-Vous pouvez trouver les identifiants en ouvrant un schéma et en regardant l’objet `_experienceplatform.identification.core`. Consultez le schéma [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
+Vous pouvez trouver les identifiants en ouvrant un schéma et en regardant l’objet `_experienceplatform.identification.core`. Regardez le schéma [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/identity.png)
 
-- Explorer l’objet de commerce dans le schéma [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explorez l’objet de commerce dans le schéma [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/commerce.png)
 
-- Aperçu de tous les [jeux de données](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) et consulter les données.
+- Prévisualisez tous les [jeux de données](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) et examinez les données.
 
 Vous êtes maintenant prêt à commencer à utiliser l’interface utilisateur du Customer Journey Analytics.
 
-Étape suivante : [4.2 Connexion des jeux de données Adobe Experience Platform dans Customer Journey Analytics](./ex2.md)
+Étape suivante : [4.2 Connexion de jeux de données Adobe Experience Platform dans Customer Journey Analytics](./ex2.md)
 
 [Retour au flux utilisateur 4](./uc4.md)
 

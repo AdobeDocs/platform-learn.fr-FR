@@ -1,6 +1,6 @@
 ---
-title: Ajout d’attributs de partenaire aux profils propriétaires dans [!DNL Real-Time CDP]
-description: Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée par le biais de canaux supplémentaires dans [!DNL Real-Time CDP].
+title: Ajout d’attributs de partenaire aux profils propriétaires dans  [!DNL Real-Time CDP]
+description: Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée par le biais de canaux supplémentaires dans  [!DNL Real-Time CDP].
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Ajout d’attributs de partenaire aux profils propriétaires dans [!DNL Real-Time CDP]
 
-Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée par le biais de canaux supplémentaires dans [!DNL Real-Time CDP]. Pour plus d’informations, consultez la [Compléter les profils propriétaires avec les attributs fournis par les partenaires](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) la documentation.
+Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée par le biais de canaux supplémentaires dans [!DNL Real-Time CDP]. Pour plus d’informations, consultez la documentation [Compléter les profils propriétaires avec les attributs fournis par les partenaires](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on)

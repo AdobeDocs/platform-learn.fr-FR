@@ -19,16 +19,16 @@ ht-degree: 0%
 
 <!--5min-->
 
-_Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données_ est le point de départ idéal pour prendre contact avec un Experience Platform.
+_Prise en main de Adobe Experience Platform pour les architectes de données et les ingénieurs de données_ est le point de départ idéal pour obtenir des instructions pratiques auprès des Experience Platform.
 
 
 <!--How do we address ETL-->
 
 ## Objectifs d’apprentissage
 
-Les architectes de données et les ingénieurs de données doivent collaborer étroitement pour réussir un déploiement Experience Platform. Ce tutoriel pratique vous apprend les tâches clés exécutées par _les deux rôles_ pour que vous sachiez comment commencer à implémenter Platform pour votre propre entreprise. Vous serez guidé par des exercices qui vous présenteront la terminologie, les fonctionnalités, l’interface et les API clés de l’Experience Platform. Les clients d’applications Adobe Experience Cloud telles que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer trouveront également ce contenu utile, car les services Platform sont les fondements essentiels de ces applications.
+Les architectes de données et les ingénieurs de données doivent collaborer étroitement pour réussir un déploiement Experience Platform. Ce tutoriel pratique vous explique les tâches clés exécutées par les _deux rôles_ afin que vous sachiez comment commencer à implémenter Platform pour votre propre entreprise. Vous serez guidé par des exercices qui vous présenteront la terminologie, les fonctionnalités, l’interface et les API clés de l’Experience Platform. Les clients d’applications Adobe Experience Cloud telles que Real-Time Customer Data Platform, Customer Journey Analytics et Journey Optimizer trouveront également ce contenu utile, car les services Platform sont les fondements essentiels de ces applications.
 
-![Présentation de Adobe Experience Cloud présentant les services Platform couverts dans ce tutoriel : identité, profil, segmentation, ingestion, requête et gouvernance](assets/marketecture.png)
+![Adobe Experience Cloud marketing présentant les services Platform couverts dans ce tutoriel : identité, profil, segmentation, ingestion, requête et gouvernance](assets/marketecture.png)
 
 Les sujets incluent :
 
@@ -48,9 +48,9 @@ Adobe Experience Platform est une plateforme technique conçue pour vous aider �
 
 ## Prérequis
 
-* Vous avez terminé la [Présentation du cours Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=fr) sur Experience League et connaissent les fonctionnalités de Platform
+* Vous avez terminé le [cours d’introduction à Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=fr) sur Experience League et connaissez les fonctionnalités de Platform.
 * Vous avez accès à un compte configuré avec Adobe Experience Platform (ou à une application basée sur une plateforme telle que Real-Time CDP ou Journey Optimizer) et la collecte de données (anciennement Launch).
-* Vous êtes administrateur système de ce compte ou vous pouvez en avoir un [configuration des autorisations utilisateur](configure-permissions.md) pour vous.
+* Vous êtes un administrateur système de ce compte ou vous pouvez disposer d’une [configuration des autorisations utilisateur](configure-permissions.md) pour vous.
 
 ## Utilisation de ce tutoriel
 
@@ -58,7 +58,7 @@ Ce tutoriel combine des tâches pour les ingénieurs de données et les architec
 
 Lorsque vous créez divers éléments Platform au cours de ce tutoriel, essayez de vous en tenir aux noms que je recommande autant que possible. Cependant, il existe quelques noms d’éléments de haut niveau que vous pouvez personnaliser au cas où plusieurs personnes de votre entreprise suivraient ce tutoriel simultanément. Par exemple, vous pouvez nommer l’environnement de test Platform &quot;Plateforme de tutoriel Luma - Ignatius J Reilly&quot; au lieu de simplement &quot;Plateforme de tutoriel Luma&quot;.
 
-Si vous êtes bloqué, essayez d’abord de relire les instructions, puis utilisez la méthode ![Enregistrer un problème](https://experienceleague.adobe.com/assets/img/feedback.svg) lien sur la barre latérale de chaque page pour me contacter.
+Si vous êtes bloqué, essayez d&#39;abord de relire les instructions, puis utilisez le lien ![Log an issue](https://experienceleague.adobe.com/assets/img/feedback.svg) (Soumettre un problème) sur la barre latérale de chaque page pour me contacter.
 
 ## Notes techniques
 
@@ -68,7 +68,7 @@ Dans le tutoriel, vous allez créer un environnement de test et l’utiliser pou
 
 ### API
 
-Platform est une API d’abord créée. Bien que des workflows d’interface existent pour tous les workflows Platform principaux et seront utilisés principalement, le tutoriel contient quelques exercices orientés API. Je vous guiderai tout au long de la configuration de base du projet dans la console Adobe Developer et vous fournirai [!DNL Postman] environnements et collections pour commencer à utiliser l’API Platform. Après avoir terminé le tutoriel, il peut s’avérer utile de connaître l’API Platform et de l’utiliser dans votre propre déploiement.
+Platform est une API d’abord créée. Bien que des workflows d’interface existent pour tous les workflows Platform principaux et seront utilisés principalement, le tutoriel contient quelques exercices orientés API. Je vous guiderai tout au long de la configuration de projet de base dans Adobe Developer Console et vous fournirai [!DNL Postman] environnements et collections pour commencer à utiliser l’API Platform. Après avoir terminé le tutoriel, il peut s’avérer utile de connaître l’API Platform et de l’utiliser dans votre propre déploiement.
 
 ### Technologies tierces
 
@@ -79,4 +79,4 @@ Bien que vous utiliserez plusieurs technologies dans ce tutoriel, vous resterez 
 * Juin 2023 : mise à jour afin d’inclure un nouveau workflow d’autorisation et d’utiliser les informations d’identification de l’API OAuth serveur à serveur
 
 
-Passons maintenant à la première leçon...[configuration des autorisations](configure-permissions.md).
+Passons maintenant à la première leçon : [configurer les autorisations](configure-permissions.md).

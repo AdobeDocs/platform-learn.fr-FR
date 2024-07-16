@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Créer une propriété de balise
 
-Découvrez comment créer des propriétés de balise pour gérer les balises marketing sur votre site web. Pour plus d’informations, voir [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=fr) la documentation.
+Découvrez comment créer des propriétés de balise pour gérer les balises marketing sur votre site web. Pour plus d’informations, voir la documentation [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=fr) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)

@@ -4,7 +4,7 @@ description: Découvrez les principales différences entre at.js et le SDK Web P
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Quelle que soit la simplicité ou la complexité de votre mise en oeuvre, il est
 Le processus de migration comprend les étapes clés suivantes :
 
 1. Évaluation de votre mise en oeuvre actuelle et détermination d’une approche de migration
-1. Configuration des composants initiaux pour la connexion au réseau Adobe Experience Platform Edge
+1. Configuration des composants initiaux pour la connexion à Adobe Experience Platform Edge Network
 1. Mettez à jour l’implémentation de base pour remplacer at.js par le SDK Web Platform.
 1. Améliorez la mise en oeuvre du SDK Web Platform pour vos cas d’utilisation spécifiques. Cela peut impliquer la transmission de paramètres supplémentaires, la prise en compte des modifications d’affichage d’une seule page (SPA), l’utilisation de jetons de réponse, etc.
 1. Mise à jour d’objets dans l’interface de Target, tels que les scripts de profil, les activités et les définitions d’audience
@@ -46,15 +46,15 @@ Le SDK Web Platform n’est pas une évolution de la bibliothèque at.js de Targ
 | | Target at.js 2.x | SDK Web de Platform |
 |---|---|---|
 | Fonctionnalité de bibliothèque | Fonctionnalité de Target fournie par at.js. Intégrations à d’autres applications fournies par Visitor.js et AppMeasurement.js | Fonctionnalité pour toutes les applications Adobe fournies par une seule bibliothèque SDK Web Platform : alloy.js |
-| Performance | at.js est l’une des nombreuses bibliothèques qui doivent être chargées pour une intégration correcte dans les applications. Cela se traduit par un temps de chargement inférieur à la durée optimale. | Le SDK Web Platform est une bibliothèque légère unique qui élimine la nécessité de plusieurs bibliothèques spécifiques à l’application, ce qui se traduit par de meilleures performances de chargement de page. |
+| Performances | at.js est l’une des nombreuses bibliothèques qui doivent être chargées pour une intégration correcte dans les applications. Cela se traduit par un temps de chargement inférieur à la durée optimale. | Le SDK Web Platform est une bibliothèque légère unique qui élimine la nécessité de plusieurs bibliothèques spécifiques à l’application, ce qui se traduit par de meilleures performances de chargement de page. |
 | Demandes | Séparez les appels pour chaque application d’Adobe. Les appels Target sont largement indépendants des autres appels réseau. | Un seul appel pour toutes les applications Adobe. Les modifications apportées aux données transmises dans ces appels peuvent avoir un impact sur plusieurs applications en aval. |
 | Ordre de chargement | Une intégration correcte avec d’autres applications Adobe nécessite un ordre de chargement spécifique de bibliothèques et d’appels réseau. | Une intégration correcte ne repose pas sur l’assemblage de données à partir d’appels réseau disparates spécifiques à l’application. Par conséquent, l’ordre de chargement n’est pas un problème. |
-| Edge Network | Utilise le réseau Adobe Experience Cloud Edge (tt.omtrdc.net), éventuellement avec un CNAME spécifique à Target. | Utilise le réseau Adobe Experience Platform Edge (edge.adobedc.net), éventuellement avec un seul CNAME. |
-| Terminologie de base | Nom d’at.js : <br> - `mbox` <br> - `pageLoad` event (mbox globale) <br> - `offer` | SDK Web Platform équivalent : <br> - `decisionScope` <br> - `__view__` décisionScope <br> - `proposition` |
+| Edge Network | Utilise l’Edge Network Adobe Experience Cloud (tt.omtrdc.net), éventuellement avec un CNAME spécifique à Target. | Utilise l’Edge Network Adobe Experience Platform (edge.adobedc.net), éventuellement avec un seul CNAME. |
+| Terminologie de base | Nom at.js : <br> - `mbox` <br> - `pageLoad` événement (mbox globale) <br> - `offer` | Équivalent du SDK Web Platform : <br> - `decisionScope` <br> - `__view__` DecisionScope <br> - `proposition` |
 
 ### Vue d’ensemble des vidéos
 
-La vidéo suivante présente un aperçu du SDK web Adobe Experience Platform et du réseau Adobe Experience Platform Edge.
+La vidéo suivante présente un aperçu du SDK Web Adobe Experience Platform et de l’Edge Network Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
@@ -62,4 +62,4 @@ Maintenant que vous comprenez les différences de haut niveau entre at.js et le 
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

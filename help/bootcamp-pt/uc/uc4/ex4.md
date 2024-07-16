@@ -11,7 +11,7 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -32,17 +32,17 @@ O Customer Journey Analytics traz essa Solution além dos dados da plataforma É
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-Se você nunca usou o Analysis Workspace antes, recomendamos este vídeo
+Se você nunca usou o Analysis Workspace antes, recomendamos este video
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Criez le projet
 
-Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique **Créer**.
+Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Cliquez Sur **Créer**.
 
 ![demo](./images/prmenu.png)
 
-Em seguida, você verá a tela abaixo. Select **Projet vierge** enão mafieux em **Créer**.
+Em seguida, você verá a tela abaixo. Sélectionnez **Projet vierge** et cliquez sur em **Créer**.
 
 ![demo](./images/prmenu1.png)
 
@@ -56,7 +56,7 @@ Primeiro, certifique-se de selecionar a Visualização de dados correta no canto
 
 Em seguida, você irá salvar seu projeto e dar um nome a ele. Você pode usar o seguinte comando para salvar :
 
-| Système d’exploitation | Court |
+| SE | Couper court |
 | ----------------- |-------------| 
 | Windows | Ctrl + S |
 | Mac | Commande + S |
@@ -71,7 +71,7 @@ Utilisez le modèle de genre de nomenclatura :
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Em seguida, groupe em **Enregistrer**.
+Em seguida, groupe-moi **Save**.
 
 ![demo](./images/prsave2.png)
 
@@ -83,23 +83,23 @@ Como exemplaire, criaremos uma Taxa de conversada usando a métrica/evento Compr
 
 ## Taxa de conversão
 
-Vamos começar a abrir de construction de métricas calculadas. Clique **+** para criar sua primeira Métrica calculada sur Analysis Workspace.
+Vamos começar a abrir de construction de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada sur Analysis Workspace.
 
 ![demo](./images/pradd.png)
 
-O **Créateur de mesures calculées** Aparecer irá :
+O **Créateur de mesures calculées** :
 
 ![demo](./images/prbuilder.png)
 
-Encontre **Achats** une liste de métricas pas de menu pour lado esquerdo. Em **Mesures** groupe **Tout afficher**
+Encontre **Achats** na lista de métricas no menu do lado esquerdo. Em **Metrics** em de clique **Show all**
 
 ![demo](./images/calcbuildercr1.png)
 
-Agora arraste e solte a métrica **Achats** une définition ição da métrica calculada.
+Agora arraste e solte a métrica **Achats** na define da métrica calculada.
 
 ![demo](./images/calcbuildercr2.png)
 
-Normalmente, taxa de conversão signião **Conversions / Sessions**. Então, vamos fazer o mesmo cálculo na tela de definition de métrica calculada. Encontre a métrica **Sessions** e arraste e solte-a no criador de define, pas même **Achats**.
+Normalmente, taxa de conversão signia **Conversions/sessions**. Então, vamos fazer o mesmo cálculo na tela de definition de métrica calculada. Encontre a métrica **Sessions** e arraste e solte-a no criador de define, no evento **Achats**.
 
 ![demo](./images/calcbuildercr3.png)
 
@@ -121,15 +121,15 @@ Por fim, altere o nome a descripção da métrica calculada :
 
 ![demo](./images/calcbuildercr6.png)
 
-Não se esqueça **Salvar** une calculette Métrica.
+Não se esqueça de **Salvar** a Métrica calculada.
 
 ![demo](./images/pr9.png)
 
 ## 4.4.3 Dimensões calculadas : Filtros (segmentação) e intervalles de données
 
-### Filtres : Dimensões calculadas
+### Filtros : Dimensões calculadas
 
-Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante, algumas **Dimensions calculées**. Isso signifiait, essencialmente, **segments** Aucun Adobe Analytics. Aucun Customer Journey Analytics, ainsi segmentos são chamados de **Filtres**.
+Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar algumas **Dimensions calculées**. Isso signifia, essencialmente, **segments** sur Adobe Analytics. Aucun Customer Journey Analytics, les segments são chamados de **Filters**.
 
 ![demo](./images/prfilters.png)
 
@@ -143,7 +143,7 @@ Esses filtros podem ser criados antes ou durante a parte de análise (o que voc�
 
 ### Intervalos de datas : Dimensões de tempo calculadas
 
-En tant que dimensions du tempo são outro tipo de dimensues calculadas. Alguns já foram criados, mas você também pode criar suas próprias Dimensões de tempo personalizadas a fase de preparação de dados.
+En tant que dimensions du tempo são outro tipo de dimensues calculadas. Alguns já foram criados, mas você também pode criar suas próprias des tempo personalizadas a fase de preparação de dados.
 
 Essas Dimensões de tempo calculado ajudarão analistas e usuários de negócios a lembar datas importantes e usá-las filtrar e alterar o tempo de relatório . Perguntas e dúvidas típicas quando fazemos análises
 

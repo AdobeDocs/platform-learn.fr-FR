@@ -4,8 +4,8 @@ description: Découvrez comment créer des éléments de données, des règles e
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 66%
+source-wordcount: '1441'
+ht-degree: 54%
 
 ---
 
@@ -20,9 +20,8 @@ Les éléments de données et les règles sont les blocs de création de base de
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 ## Objectifs d’apprentissage
 
@@ -41,11 +40,11 @@ Les éléments de données sont la version des balises d’une couche de donnée
 
 **Création d’un élément de données**
 
-1. Dans le volet de navigation de gauche, cliquez sur **[!UICONTROL Éléments de données]**
+1. Dans le volet de navigation de gauche, cliquez sur **[!UICONTROL Data Elements]**
 
 1. Comme vous n’avez pas encore créé d’éléments de données dans cette propriété, une courte vidéo s’affiche et vous montre des informations supplémentaires sur cette rubrique. Regardez cette vidéo si vous le souhaitez.
 
-1. Cliquez sur le bouton **[!UICONTROL Créer un élément de données]** :
+1. Cliquez sur le bouton **[!UICONTROL Créer un élément de données]** :
 
    ![Créer un élément de données](images/launch-newDataElement.png)
 
@@ -53,9 +52,9 @@ Les éléments de données sont la version des balises d’une couche de donnée
 
 1. Utilisez le type d’élément de données [!UICONTROL Variable JavaScript] pour pointer vers une valeur dans la couche de données de votre page d’exemple : `digitalData.page.pageInfo.pageName`.
 
-1. Cochez les cases pour **[!UICONTROL Forcer la valeur minuscule]** et **[!UICONTROL Nettoyer le texte]** pour normaliser la casse et supprimer les espaces superflus.
+1. Cochez les cases correspondant à **[!UICONTROL Forcer l’utilisation de minuscules pour la valeur]** et **[!UICONTROL Clean text]** pour normaliser la casse et supprimer les espaces superflus.
 
-1. Laissez **[!UICONTROL Aucun]** comme paramètre pour le paramètre **[!UICONTROL Durée de stockage]**, car cette valeur est généralement différente sur chaque page.
+1. Laissez **[!UICONTROL None]** comme paramètre **[!UICONTROL Durée de stockage]** , car cette valeur sera généralement différente sur chaque page.
 
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]** pour enregistrer l’élément de données.
 
@@ -63,7 +62,7 @@ Les éléments de données sont la version des balises d’une couche de donnée
 
 >[!NOTE]
 >
->Les fonctionnalités d’élément de données _peuvent être complétées par des extensions_. Par exemple, l’extension ContextHub vous permet d’ajouter des éléments de données à l’aide de fonctionnalités de l’extension.
+>Les fonctionnalités d’élément de données _peuvent être étendues avec les extensions_. Par exemple, l’extension ContextHub vous permet d’ajouter des éléments de données à l’aide de fonctionnalités de l’extension.
 
 ## Création d’une règle
 
@@ -77,7 +76,7 @@ Vous allez créer une règle transmettant la valeur de l’élément de données
 
 1. Comme vous n’avez pas encore créé de règle dans cette propriété, une courte vidéo s’affiche et vous montre des informations supplémentaires sur cette rubrique. Regardez cette vidéo si vous le souhaitez.
 
-1. Cliquez sur le bouton Cliquez sur le bouton **[!UICONTROL Créer une règle]** :
+1. Cliquez sur le bouton **[!UICONTROL Créer une règle]** :
 
    ![Clic sur le bouton Créer une règle](images/launch-newRule.png)
 
@@ -87,19 +86,19 @@ Vous allez créer une règle transmettant la valeur de l’élément de données
 
    ![Attribution d’un nom à la règle et ajout d’un événement](images/launch-addEventToRule.png)
 
-   1. Pour Event Type (Type d’événement), sélectionnez **[!UICONTROL Chargé par bibliothèque - Haut de page]**. Notez que lorsque vous sélectionnez le type d’événement, les balises prérenseignent le nom de l’événement à l’aide de votre sélection. Notez également que l’ordre par défaut de l’événement est 50. La commande est une puissante fonctionnalité des balises qui vous permet de contrôler précisément la séquence d’actions lorsque plusieurs règles sont déclenchées par le même événement. Vous utiliserez cette fonctionnalité plus loin dans le tutoriel.
+   1. Comme type d’événement, sélectionnez **[!UICONTROL Chargé par bibliothèque Haut de page]**. Notez que lorsque vous sélectionnez le type d’événement, les balises prérenseignent le nom de l’événement à l’aide de votre sélection. Notez également que l’ordre par défaut de l’événement est 50. La commande est une puissante fonctionnalité des balises qui vous permet de contrôler précisément la séquence d’actions lorsque plusieurs règles sont déclenchées par le même événement. Vous utiliserez cette fonctionnalité plus loin dans le tutoriel.
 
-   1. Cliquez sur le bouton **[!UICONTROL Conserver les modifications]**.
+   1. Cliquez sur le bouton **[!UICONTROL Conserver les modifications]**
 
    ![Sélection d’un événement](images/launch-ruleSelectEvent.png)
 
-1. Puisque cette règle doit se déclencher sur toutes les pages, laissez vide le champ **[!UICONTROL Conditions]**. Si vous ouvrez le modal Conditions, vous verrez que les conditions peuvent ajouter des restrictions aussi bien que des exclusions en fonction d’une grande variété d’options, y compris les URL, les valeurs d’élément de données, les périodes, etc.
+1. Puisque cette règle doit se déclencher sur toutes les pages, laissez vide **[!UICONTROL Conditions]**. Si vous ouvrez le modal Conditions, vous verrez que les conditions peuvent ajouter des restrictions aussi bien que des exclusions en fonction d’une grande variété d’options, y compris les URL, les valeurs d’élément de données, les périodes, etc.
 
-1. Sous Actions, cliquez sur **[!UICONTROL Ajouter]**.
+1. Sous Actions, cliquez sur **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Type d’action > Code personnalisé]**, qui est la seule option disponible pour l’instant. Plus loin dans le tutoriel, au fur et à mesure que vous ajouterez des extensions, plus d’options deviennent disponibles.
+1. Sélectionnez **[!UICONTROL Type d’action > Code personnalisé]**, qui est à ce stade la seule option. Plus loin dans le tutoriel, au fur et à mesure que vous ajouterez des extensions, plus d’options deviennent disponibles.
 
-1. Sélectionnez **[!UICONTROL &lt;/> Ouvrir l’éditeur]** pour ouvrir l’éditeur de code.
+1. Sélectionnez **[!UICONTROL &lt;/> Ouvrir l’éditeur]** pour ouvrir l’éditeur de code.
 
    ![Sélection d’une action](images/launch-selectAction.png)
 
@@ -113,7 +112,7 @@ Vous allez créer une règle transmettant la valeur de l’élément de données
 
    ![Saisie d’un code personnalisé](images/launch-customCodeAction.png)
 
-1. Dans l’écran Configuration de l’action, cliquez sur **[!UICONTROL Conserver les modifications]**.
+1. Dans l’écran Configuration de l’action, cliquez sur **[!UICONTROL Conserver les modifications]**
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la règle.
 
@@ -134,17 +133,17 @@ Dans une précédente leçon, vous avez mis en œuvre le code incorporé de votr
 
    ![Ajout d’une bibliothèque](images/launch-addNewLibrary.png)
 
-1. Nommez la bibliothèque, par exemple : `Initial Setup`
+1. Nommez la bibliothèque, par exemple `Initial Setup`.
 
-1. Sélectionnez **[!UICONTROL Environnement > Développement]**
+1. Sélectionnez **[!UICONTROL Environnement > Développement]**
 
 1. Cliquez sur **[!UICONTROL Ajouter toutes les ressources modifiées]**
 
    ![Ajout de toutes les ressources modifiées](images/launch-addAllChangedResources.png)
 
-1. Notez qu’après avoir cliqué sur **[!UICONTROL Ajouter toutes les ressources modifiées]** Les balises résument les modifications que vous venez d’effectuer.
+1. Notez qu’après avoir cliqué sur **[!UICONTROL Ajouter toutes les ressources modifiées]** , les balises résument les modifications que vous venez d’effectuer.
 
-1. Cliquez sur **[!UICONTROL Enregistrer et générer pour le développement]**
+1. Cliquez sur **[!UICONTROL Enregistrer et créer pour le développement]**
 
    ![Enregistrement et génération pour le développement](images/launch-saveAndBuild.png)
 
@@ -170,15 +169,15 @@ Félicitations, vous avez créé votre premier élément de données et votre pr
 
 Lorsque vous effectuez de nombreuses modifications dans les balises, il n’est pas pratique d’avoir à accéder à l’onglet Publication, d’ajouter des modifications et de créer la bibliothèque chaque fois que vous souhaitez voir le résultat.  Une fois votre bibliothèque de configuration initiale créée, vous pouvez utiliser la fonctionnalité Bibliothèque de travail pour enregistrer rapidement vos modifications et recréer la bibliothèque en une seule étape.
 
-Apportez un petit changement à la règle « Toutes les pages - Bibliothèque chargée ». Dans le volet de navigation de gauche, cliquez sur **[!UICONTROL Règles]** puis cliquez sur le bouton `All Pages - Library Loaded` pour l’ouvrir.
+Apportez un petit changement à la règle « Toutes les pages - Bibliothèque chargée ». Dans le volet de navigation de gauche, cliquez sur **[!UICONTROL Rules]** , puis sur la règle `All Pages - Library Loaded` pour l’ouvrir.
 
 ![Réouverture de la règle](images/launch-reopenRule.png)
 
-Sur la page `Edit Rule`, cliquez sur la liste déroulante ***[!UICONTROL Bibliothèque de travail]*** et sélectionnez votre bibliothèque `Initial Setup`.
+Sur la page `Edit Rule`, cliquez sur la liste déroulante ***[!UICONTROL Working Library]*** (Bibliothèque de travail) et sélectionnez votre bibliothèque `Initial Setup`.
 
 ![Sélection de la bibliothèque Configuration initiale comme bibliothèque de travail](images/launch-setWorkingLibrary.png)
 
-Une fois que vous avez sélectionné la bibliothèque, vous devriez voir que la variable **[!UICONTROL Enregistrer]** par défaut, le bouton **[!UICONTROL Enregistrer dans la bibliothèque]**. Lorsque vous effectuez une modification des balises, vous pouvez utiliser cette option pour ajouter automatiquement la modification à votre bibliothèque de travail et/ou la recréer.
+Une fois la bibliothèque sélectionnée, vous devriez constater que le bouton **[!UICONTROL Enregistrer]** est désormais **[!UICONTROL Enregistrer dans la bibliothèque]** par défaut. Lorsque vous effectuez une modification des balises, vous pouvez utiliser cette option pour ajouter automatiquement la modification à votre bibliothèque de travail et/ou la recréer.
 
 Faites le test. Ouvrez votre action Code personnalisé et ajoutez un point-virgule après le texte « Le nom de page est » afin que le bloc de code entier soit :
 
@@ -186,7 +185,7 @@ Faites le test. Ouvrez votre action Code personnalisé et ajoutez un point-virgu
 console.log('The page name is: '+_satellite.getVar('Page Name'));
 ```
 
-Enregistrez le code, conservez les modifications dans l’action, puis cliquez sur le bouton **[!UICONTROL Enregistrer dans la bibliothèque et Créer]**.
+Enregistrez le code, conservez les modifications dans l’action, puis cliquez sur le bouton **[!UICONTROL Enregistrer dans la bibliothèque et créer]** .
 
 ![L’option Enregistrer et créer existe désormais](images/launch-workingLibrary-saveAndBuild.png)
 
@@ -196,4 +195,4 @@ Patientez jusqu’à ce que le point vert réapparaisse en regard de la liste d�
 
 C’est une façon beaucoup plus rapide de travailler et ce sera la méthode utilisée pour le reste du tutoriel.
 
-[Suite : « Changement d’environnements avec l’Experience Cloud Debugger » >](switch-environments.md)
+[Suite : &quot;Changement d’environnements avec l’Experience Cloud Debugger&quot; >](switch-environments.md)

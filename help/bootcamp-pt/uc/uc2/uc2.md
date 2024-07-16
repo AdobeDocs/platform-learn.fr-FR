@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 21ca2a7a-fdf2-4cdf-97df-13c4e208d2ea
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 3%
+source-wordcount: '218'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 >
 >Tutoriel Este foi criado para facilitar um formato específico de bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para ceber as informações rendárias .
 
-## Exercícios
+## exercice
 
 [2.1 Visite du site e crier sua](./ex1.md)
 

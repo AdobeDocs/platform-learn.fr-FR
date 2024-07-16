@@ -10,7 +10,7 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '97'
 ht-degree: 3%
 
 ---
@@ -33,8 +33,8 @@ ht-degree: 3%
    + [Vérification de l’application mobile](/help/csc-bootcamp/phases/delivery/app.md)
    + [Création d’une page dans AEM](/help/csc-bootcamp/phases/delivery/page-in-aem.md)
    + [GO/NO-GO de la campagne](/help/csc-bootcamp/phases/delivery/go-nogo.md)
-+ Phase 4 - Informations {#insights}
++ Phase 4 - Statistiques {#insights}
    + [Vue d’ensemble](/help/csc-bootcamp/phases/insights/overview.md)
    + [Informations pour un chef de projet](/help/csc-bootcamp/phases/insights/project-manager.md)
    + [Statistiques pour un responsable marketing](/help/csc-bootcamp/phases/insights/marketing-manager.md)
-+ [Conclusion / Cumul](/help/csc-bootcamp/conclusion.md)
++ [Conclusion / Retour à la ligne](/help/csc-bootcamp/conclusion.md)

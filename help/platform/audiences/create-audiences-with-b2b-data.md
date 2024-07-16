@@ -1,6 +1,6 @@
 ---
-title: Création et activation d’audiences de compte pour [!DNL B2B] et [!DNL B2P]
-description: En savoir plus sur les fonctionnalités de Account-Based Marketing dans [!DNL B2B] et [!DNL B2P] éditions de [!DNL Real-Time Customer Data Platform], notamment la création et l’activation d’audiences de compte.
+title: Créer et activer des audiences de compte pour [!DNL B2B] et [!DNL B2P]
+description: Découvrez les fonctionnalités de Account-Based Marketing dans les  [!DNL B2B]  et  [!DNL B2P] éditions de [!DNL Real-Time Customer Data Platform], notamment la création et l’activation d’audiences de compte.
 solution: Real-Time Customer Data Platform
 feature: Segments
 role: User
@@ -12,13 +12,13 @@ last-substantial-update: 2024-02-29T00:00:00Z
 source-git-commit: 4f363a3932ca3b2666c220c1e5c79d2d94242b96
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
-# Création et activation d’audiences de compte pour [!DNL B2B] et [!DNL B2P]
+# Créer et activer des audiences de compte pour [!DNL B2B] et [!DNL B2P]
 
-En savoir plus sur les fonctionnalités de Account-Based Marketing dans [!DNL B2B] et [!DNL B2P] éditions de [!DNL Real-Time Customer Data Platform], notamment la création et l’activation d’audiences de compte. Pour plus dʼinformations, consultez la [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Découvrez les fonctionnalités de Account-Based Marketing dans les éditions [!DNL B2B] et [!DNL B2P] de [!DNL Real-Time Customer Data Platform], notamment la création et l’activation d’audiences de compte. Pour plus d’informations, consultez la [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on)
 

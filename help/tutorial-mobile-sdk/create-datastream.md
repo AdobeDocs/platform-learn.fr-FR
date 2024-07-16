@@ -1,21 +1,21 @@
 ---
 title: Configuration d’un flux de données pour les implémentations du SDK Platform Mobile
-description: Découvrez comment créer un flux de données dans Experience Platform.
+description: Découvrez comment créer un train de données dans Experience Platform.
 feature: Mobile SDK,Datastreams
 jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
 # Création dʼun flux de données
 
-Découvrez comment créer un flux de données dans Experience Platform.
+Découvrez comment créer un train de données dans Experience Platform.
 
-Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers Platform Edge Network sont acheminées vers les applications et services Adobe Experience Cloud de manière appropriée. Pour plus d’informations, voir [documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) ou ceci [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=fr).
+Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers l’Edge Network Platform sont acheminées vers les applications et services Adobe Experience Cloud de manière appropriée. Pour plus d’informations, voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) ou cette [vidéo](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=fr).
 
 ![Architecture](assets/architecture.png)
 
@@ -33,29 +33,29 @@ Dans cette leçon, vous allez :
 
 ## Création dʼun flux de données
 
-Les flux de données peuvent être créés dans la variable [!UICONTROL Collecte de données] à l’aide de la fonction [!UICONTROL Datastream] de configuration. Pour créer un flux de données :
+Les flux de données peuvent être créés dans l’interface [!UICONTROL Collecte de données] à l’aide de l’outil de configuration [!UICONTROL Datastream]. Pour créer un flux de données :
 
 1. Assurez-vous que vous vous trouvez dans l’environnement de test Experience Platform correct, car les flux de données sont définis au niveau de l’environnement de test.
-1. Sélectionner **[!UICONTROL Datastreams]** dans le rail de gauche.
-1. Sélectionnez **[!UICONTROL Nouveau flux de données]**.
+1. Sélectionnez **[!UICONTROL Datastreams]** dans le rail de gauche.
+1. Sélectionnez **[!UICONTROL New Datastream]**.
 
-   ![accueil des datastreams](assets/datastream-new.png)
+   ![datastreams home](assets/datastream-new.png)
 
-1. Fournissez une **[!UICONTROL Nom]**, par exemple `Luma Mobile App` et un **[!UICONTROL Description]**, par exemple `Datastream for Luma Mobile App`.
+1. Fournissez un **[!UICONTROL nom]**, par exemple `Luma Mobile App` et une **[!UICONTROL description]**, par exemple `Datastream for Luma Mobile App`.
 
    >[!NOTE]
    >
-   >Rappel final : si vous passez en revue ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions de dénomination. Par exemple, au lieu de `Luma Mobile App Event Dataset`, utilisez `Luma Mobile App Event Dataset - Joe Smith`. Voir également la remarque dans la section [Présentation](overview.md).
+   >Rappel final : si vous passez en revue ce tutoriel avec plusieurs personnes sur un seul environnement de test ou que vous utilisez un compte partagé, envisagez d’ajouter ou de préparer une identification dans le cadre de vos conventions de dénomination. Par exemple, utilisez `Luma Mobile App Event Dataset - Joe Smith` au lieu de `Luma Mobile App Event Dataset`. Voir également la note dans [Overview](overview.md).
 
-1. Sélectionnez le schéma que vous avez créé dans la leçon précédente à partir du **Schéma d’événement** liste.
+1. Sélectionnez le schéma que vous avez créé lors de la leçon précédente dans la liste **Event Schema**.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-   ![nouveaux flux de données](assets/datastream-name.png)
+   ![new datastreams](assets/datastream-name.png)
 
 
 ## Ajout de services
 
-Lorsque vous accédez à la section (facultatif) [Analytics](analytics.md) et [Experience Platform](platform.md) leçons de ce tutoriel, vous ajoutez des services à votre flux de données afin que les données envoyées à Platform Edge Network soient transférées vers ces applications.
+Lorsque vous suivez les leçons (facultatives) [Analytics](analytics.md) et [Experience Platform](platform.md) de ce tutoriel, vous ajoutez des services à votre flux de données afin que les données envoyées à l’Edge Network Platform soient transférées vers ces applications.
 
 <!--
 
@@ -102,14 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations sur les paramètres du flux de données, consultez la documentation [here](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr).
+>L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations sur les paramètres de flux de données, consultez la documentation [ici](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr).
 
-Lors de la mise en oeuvre du SDK Mobile Platform dans votre propre application, vous devez créer trois flux de données à mapper à vos trois environnements de balises (développement, évaluation et production). Si vous utilisez le SDK Platform Mobile avec des applications basées sur Platform telles qu’Adobe Real-time Customer Data Platform ou Adobe Journey Optimizer, vous devez veiller à créer ces flux de données dans les environnements de test appropriés.
+Lors de la mise en oeuvre du SDK Mobile Platform dans votre propre application, vous devez créer trois flux de données à mapper à vos trois environnements de balises (développement, évaluation et production). Si vous utilisez le SDK Platform Mobile avec des applications basées sur Platform telles qu’Adobe Real-Time Customer Data Platform ou Adobe Journey Optimizer, vous devez veiller à créer ces flux de données dans les environnements de test appropriés.
 
 >[!SUCCESS]
 >
 >Vous devez maintenant utiliser un flux de données pour le reste du tutoriel.
 >
->Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Configuration d’une propriété de balise](configure-tags.md)**

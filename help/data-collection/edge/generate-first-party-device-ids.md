@@ -1,5 +1,5 @@
 ---
-title: Générer des identifiants d’appareil propriétaires
+title: Génération d’identifiants d’appareil propriétaires
 description: Découvrez comment générer des identifiants d’appareil propriétaires
 feature: Web SDK
 level: Experienced
@@ -8,12 +8,12 @@ thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
 source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 3%
+source-wordcount: '682'
+ht-degree: 1%
 
 ---
 
-# Générer des identifiants d’appareil propriétaires
+# Génération d’identifiants d’appareil propriétaires
 
 Les applications Adobe Experience Cloud ont traditionnellement généré des cookies pour stocker les identifiants d’appareil à l’aide de différentes technologies, notamment :
 
@@ -25,20 +25,20 @@ Les modifications récentes du navigateur limitent la durée de ces types de coo
 
 Voici un exemple rapide du fonctionnement de cette fonctionnalité :
 
-![Identifiants d’appareils propriétaires (FPID) et identifiants Experience Cloud (ECID)](../assets/kt-9728.png)
+![ ID d’appareils propriétaires (FPID) et ID Experience Cloud (ECID)](../assets/kt-9728.png)
 
 1. Le navigateur d’un utilisateur final demande une page Web au serveur Web ou au réseau de diffusion de contenu d’un client.
 1. Le client génère un identifiant d’appareil (FPID) sur son serveur web ou CDN (le serveur web doit être associé à l’enregistrement DNS A/AAAA du nom de domaine).
 1. Le client définit un cookie propriétaire pour stocker le FPID dans le navigateur de l’utilisateur final.
-1. L’implémentation du SDK Web Adobe Experience Platform du client émet une requête à Platform Edge Network, y compris le FPID dans la carte d’identité.
-1. Experience Platform Edge Network reçoit le FPID et l’utilise pour générer un identifiant Experience Cloud (ECID).
+1. L’implémentation du SDK Web Adobe Experience Platform du client émet une requête à l’Edge Network Platform, y compris le FPID dans la carte d’identité.
+1. L’Edge Network Experience Platform reçoit le FPID et l’utilise pour générer un identifiant Experience Cloud (ECID).
 1. La réponse du SDK Web Platform envoie l’ECID à son navigateur.
-1. Si la variable `idMigrationEnabled=true`, le SDK Web Platform utilise JavaScript pour stocker l’ECID en tant que `AMCV_` dans le navigateur de l’utilisateur final.
-1. Dans l’événement , la variable `AMCV_` expire, le processus se répète. Tant que le même identifiant d’appareil propriétaire est disponible, une nouvelle `AMCV_` est créé avec la même valeur ECID qu’auparavant.
+1. Si le `idMigrationEnabled=true`, le SDK Web de Platform utilise JavaScript pour stocker l’ECID en tant que cookie `AMCV_` dans le navigateur de l’utilisateur final.
+1. Dans le cas où le cookie `AMCV_` expire, le processus se répète. Tant que le même identifiant d’appareil propriétaire est disponible, un nouveau cookie `AMCV_` est créé avec la même valeur ECID qu’auparavant.
 
 >[!NOTE]
 >
->La variable `idMigrationEnabled` ne doit pas être défini sur `true` pour utiliser FPID. Avec `idMigrationEnabled=false` vous pouvez ne pas voir de `AMCV_` Toutefois, et doivent rechercher la valeur ECID dans la réponse réseau.
+>`idMigrationEnabled` n’a pas besoin d’être défini sur `true` pour utiliser FPID. Avec `idMigrationEnabled=false`, vous ne verrez peut-être pas de cookie `AMCV_` et devrez rechercher la valeur ECID dans la réponse réseau.
 
 
 Dans ce tutoriel, un exemple spécifique utilisant le langage de script PHP est utilisé pour montrer comment :
@@ -136,7 +136,7 @@ La dernière étape consiste à utiliser PHP pour faire écho à la valeur du co
 >
 >Le symbole de l’espace de noms d’identité utilisé dans la carte d’identité doit être appelé `FPID`.
 >
-> `FPID` est un espace de noms d’identité réservé qui n’est pas visible dans les listes des espaces de noms d’identité de l’interface.
+> `FPID` est un espace de noms d’identité réservé qui n’est pas visible dans les listes d’interface des espaces de noms d’identité.
 
 
 ## Validation de la génération d’ECID
@@ -144,10 +144,10 @@ La dernière étape consiste à utiliser PHP pour faire écho à la valeur du co
 Validez l’implémentation en confirmant que le même ECID est généré à partir de votre identifiant d’appareil propriétaire :
 
 1. Générez un cookie FPID.
-1. Envoyez une requête à Platform Edge Network à l’aide du SDK Web Platform.
+1. Envoyez une requête à l’Edge Network Platform à l’aide du SDK Web Platform.
 1. Un cookie au format `AMCV_<IMSORGID@AdobeOrg>` est généré. Ce cookie contient l’ECID.
-1. Notez la valeur du cookie générée, puis supprimez tous les cookies de votre site, à l’exception de la variable `FPID` du cookie.
-1. Envoyez une autre requête à Platform Edge Network.
-1. Confirmez la valeur de la variable `AMCV_<IMSORGID@AdobeOrg>` cookie est identique `ECID` comme dans la variable `AMCV_` qui a été supprimé. Si la valeur du cookie est identique pour un FPID donné, le processus d’ensemencement de l’ECID a réussi.
+1. Notez la valeur du cookie qui est générée, puis supprimez tous les cookies de votre site, à l’exception du cookie `FPID`.
+1. Envoyez une autre requête à l’Edge Network Platform.
+1. Vérifiez que la valeur du cookie `AMCV_<IMSORGID@AdobeOrg>` est la même valeur `ECID` que dans le cookie `AMCV_` qui a été supprimé. Si la valeur du cookie est identique pour un FPID donné, le processus d’ensemencement de l’ECID a réussi.
 
-Pour plus d’informations sur cette fonctionnalité, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=fr).
+Pour plus d’informations sur cette fonctionnalité, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).

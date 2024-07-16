@@ -20,11 +20,11 @@ ht-degree: 5%
 
 Dans cet exercice, vous allez configurer le parcours qui doit être déclenché lorsqu’une personne crée un compte sur le site web de démonstration.
 
-Connectez-vous à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
+Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Vous serez redirigé vers le **Accueil**  dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser est appelé `Bootcamp`. Pour passer d’un environnement de test à un autre, cliquez sur **Prod** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **Bootcamp**. Vous serez alors dans le **Accueil** affichage de votre environnement de test `Bootcamp`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `Bootcamp`. Pour passer d’un environnement de test à un autre, cliquez sur **Prod** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est appelé **Bootcamp**. Vous serez alors dans la vue **Home** de votre environnement de test `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Vous verrez alors un écran de parcours vide.
 
 ![ACOP](./images/journeyempty.png)
 
-Dans l’exercice précédent, vous avez créé une **Événement**. Vous l’avez appelé comme suit : `yourLastNameAccountCreationEvent` et remplacé `yourLastName` par votre nom de famille. Il s’agit du résultat de la création de l’événement :
+Dans l’exercice précédent, vous avez créé un **événement**. Vous l&#39;avez appelé comme suit `yourLastNameAccountCreationEvent` et remplacé `yourLastName` par votre nom de famille. Il s’agit du résultat de la création de l’événement :
 
 ![ACOP](./images/eventdone.png)
 
@@ -50,7 +50,7 @@ Sélectionnez votre événement, faites-le glisser et déposez-le sur le canevas
 
 ![ACOP](./images/journeyevent.png)
 
-Pour la deuxième étape du parcours, vous devez ajouter une **Attente** étape . Accédez au côté gauche de l’écran au **Orchestration** pour le trouver. Vous utiliserez les attributs de profil et devez vous assurer qu’ils sont renseignés dans le profil client en temps réel.
+Pour la deuxième étape du parcours, vous devez ajouter une étape **Wait** courte. Accédez à la section **Orchestration** sur le côté gauche de votre écran pour trouver ceci. Vous utiliserez les attributs de profil et devez vous assurer qu’ils sont renseignés dans le profil client en temps réel.
 
 ![ACOP](./images/journeywait.png)
 
@@ -60,11 +60,11 @@ Votre parcours ressemble maintenant à ceci. Dans la partie droite de l’écran
 
 Cliquez sur **Ok** pour enregistrer vos modifications.
 
-Pour la troisième étape du parcours, vous devez ajouter une **Email** action. Accédez au côté gauche de l’écran pour **Actions**, sélectionnez la variable **Email** , puis faites-la glisser sur le deuxième noeud de votre parcours. Vous voyez maintenant ceci.
+Comme troisième étape du parcours, vous devez ajouter une action **Email**. Accédez au côté gauche de votre écran à **Actions**, sélectionnez l’action **Email**, puis faites-la glisser sur le deuxième noeud de votre parcours. Vous voyez maintenant ceci.
 
 ![ACOP](./images/journeyactions.png)
 
-Définissez la variable **Catégorie** to **Marketing** et sélectionnez une surface d&#39;email permettant d&#39;envoyer des emails. Dans ce cas, la surface de l&#39;email à sélectionner est **Email**. Assurez-vous que les cases à cocher de **Clics sur l&#39;email** et **ouvertures de courrier électronique** sont toutes deux activées.
+Définissez la **catégorie** sur **Marketing** et sélectionnez une surface d&#39;email qui vous permet d&#39;envoyer des emails. Dans ce cas, la surface de l&#39;email à sélectionner est **Email**. Assurez-vous que les cases à cocher des **clics sur l’email** et des **ouvertures d’email** sont toutes deux activées.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -82,45 +82,45 @@ Vous voyez maintenant ceci.
 
 ![ACOP](./images/journeyactions3.png)
 
-Cliquez sur le bouton **Objet** Champ de texte.
+Cliquez sur le champ de texte **Objet** .
 
 ![Journey Optimizer](./images/msg5.png)
 
-Dans la zone de texte, commencez à écrire. **Bonjour**
+Dans la zone de texte, commencez à écrire **Hi**
 
 ![Journey Optimizer](./images/msg6.png)
 
-L’objet n’est pas encore terminé. Vous devez ensuite importer le jeton de personnalisation pour le champ. **Prénom** qui est stocké sous `profile.person.name.firstName`. Dans le menu de gauche, faites défiler l’écran vers le bas pour trouver le **Personne** et cliquez sur la flèche pour aller plus loin.
+L’objet n’est pas encore terminé. Vous devez ensuite importer le jeton de personnalisation pour le champ **Prénom** stocké sous `profile.person.name.firstName`. Dans le menu de gauche, faites défiler l’écran vers le bas pour trouver l’élément **Person** et cliquez sur la flèche pour aller plus loin.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Maintenant, trouvez la variable **Nom complet** et cliquez sur la flèche pour aller plus loin.
+Recherchez maintenant l’élément **Nom complet** et cliquez sur la flèche pour aller plus loin.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Enfin, recherchez la **Prénom** et cliquez sur le champ **+** signe à côté. Le jeton de personnalisation apparaît alors dans le champ de texte.
+Enfin, recherchez le champ **Prénom** et cliquez sur le signe **+** situé à côté. Le jeton de personnalisation apparaît alors dans le champ de texte.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Ajoutez ensuite le texte. **, merci de vous être inscrit !**. Cliquez sur **Enregistrer**.
+Ajoutez ensuite le texte **, merci de vous être inscrit !**. Cliquez sur **Enregistrer**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Vous serez alors de retour ici. Cliquez sur **Concepteur d&#39;email** pour créer le contenu de l&#39;email.
+Vous serez alors de retour ici. Cliquez sur **Email Designer** pour créer le contenu de l’email.
 
 ![Journey Optimizer](./images/msg11.png)
 
 Dans l’écran suivant, vous serez invité à utiliser 3 méthodes différentes pour fournir le contenu de l’email :
 
-- **Conception à partir de zéro**: commencez par un canevas vierge et utilisez l’éditeur WYSIWYG pour faire glisser et déposer la structure et les composants de contenu afin de créer visuellement le contenu de l’email.
-- **Codez vos propres**: créez votre propre modèle d&#39;email en le codant à l&#39;aide de HTML.
-- **HTML d’importation**: importez un modèle de HTML existant que vous pourrez modifier.
+- **Conception à partir de zéro** : commencez par un canevas vierge et utilisez l’éditeur WYSIWYG pour faire glisser et déposer la structure et les composants de contenu afin de créer visuellement le contenu de l’email.
+- **Codez votre propre** : créez votre propre modèle d&#39;email en le codant à l&#39;aide de HTML
+- **Importer un HTML** : importez un modèle d’HTML existant que vous pourrez modifier.
 
-Cliquez sur **HTML d’importation**. Vous pouvez également cliquer sur **Modèles enregistrés** et sélectionnez le modèle. **Bootcamp - Modèle de courrier électronique**.
+Cliquez sur **Importer l’HTML**. Vous pouvez également cliquer sur **Modèles enregistrés** et sélectionner le modèle **Bootcamp - Modèle de courrier électronique**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Si vous avez sélectionné **HTML d’importation**, vous pouvez désormais faire glisser et déposer le fichier **mailtemplatebootcamp.html**, que vous pouvez télécharger [here](../../assets/html/mailtemplatebootcamp.html.zip). Cliquez sur Importer.
+Si vous avez sélectionné **Importer l&#39;HTML**, vous pouvez désormais faire glisser et déposer le fichier **mailtemplatebootcamp.html**, que vous pouvez télécharger [ici](../../assets/html/mailtemplatebootcamp.html.zip). Cliquez sur Importer.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -128,11 +128,11 @@ Ce modèle d’email par défaut s’affiche alors :
 
 ![Journey Optimizer](./images/msg14.png)
 
-Personnalisons l&#39;email. Cliquez sur en regard du texte. **Bonjour** puis cliquez sur le bouton **Ajouter une personnalisation** Icône
+Personnalisons l&#39;email. Cliquez sur en regard du texte **Hi** et cliquez sur l’icône **Ajouter Personalization** .
 
 ![Journey Optimizer](./images/msg35.png)
 
-Ensuite, vous devez apporter le **Prénom** jeton de personnalisation stocké sous `profile.person.name.firstName`. Dans le menu, recherchez le **Personne** élément, accédez au **Nom complet** , puis cliquez sur le bouton **+** pour ajouter le champ Prénom à l’éditeur d’expression.
+Ensuite, vous devez importer le jeton de personnalisation **Prénom** stocké sous `profile.person.name.firstName`. Dans le menu, recherchez l’élément **Person** , recherchez l’élément **Full Name** , puis cliquez sur l’icône **+** pour ajouter le champ First Name à l’éditeur d’expression.
 
 Cliquez sur **Enregistrer**.
 
@@ -146,7 +146,7 @@ Cliquez sur **Enregistrer** pour enregistrer votre message.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Revenez au tableau de bord du message en cliquant sur le bouton **flèche** en regard du texte de l’objet dans le coin supérieur gauche.
+Revenez au tableau de bord des messages en cliquant sur la **flèche** en regard de l’objet du texte dans le coin supérieur gauche.
 
 ![Journey Optimizer](./images/msg56.png)
 
@@ -158,9 +158,9 @@ Cliquez sur **OK**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Publication de votre parcours
+## 2.3.3 Publish de votre parcours
 
-Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur le bouton **Crayon** en haut à gauche de l’écran.
+Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur l’icône **Crayon** dans le coin supérieur gauche de votre écran.
 
 ![ACOP](./images/journeyname.png)
 
@@ -168,11 +168,11 @@ Vous pouvez ensuite y saisir le nom du parcours. Veuillez utiliser `yourLastName
 
 ![ACOP](./images/journeyname1.png)
 
-Vous pouvez maintenant publier votre parcours en cliquant sur **Publier**.
+Vous pouvez maintenant publier votre parcours en cliquant sur **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-Cliquez sur **Publier** encore une fois.
+Cliquez de nouveau sur **Publish**.
 
 ![ACOP](./images/publish1.png)
 

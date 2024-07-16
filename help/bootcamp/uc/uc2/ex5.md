@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Installation de l’application mobile
 
-Avant d’installer l’application, vous devez activer **Tracking** sur votre appareil iOS. Pour ce faire, accédez à **Paramètres** > **Confidentialité et sécurité** > **Tracking** et assurez-vous que l’option **Autoriser les applications à demander pour effectuer le suivi**.
+Avant d’installer l’application, vous devez activer le **suivi** sur votre appareil iOS. Pour ce faire, accédez à **Settings** > **Privacy &amp; Security** > **Tracking** et assurez-vous que l’option **Allow Apps to Request to Track** (Autoriser les applications à demander le suivi).
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -39,7 +39,7 @@ Cliquez sur **Autoriser**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Cliquez sur **Je suis d&#39;accord.**.
+Cliquez sur **J&#39;accepte**.
 
 ![DSN](./../uc3/images/app7.png)
 
@@ -57,7 +57,7 @@ Vous êtes maintenant dans l’application, sur la page d’accueil, prêt à pa
 
 ## Flux de parcours client
 
-Tout d&#39;abord, vous devez vous connecter. Cliquez sur **Ouverture de session**.
+Tout d&#39;abord, vous devez vous connecter. Cliquez sur **Login**.
 
 ![DSN](./../uc3/images/app13.png)
 
@@ -65,7 +65,7 @@ Après avoir créé votre compte dans les exercices précédents, vous l’avez 
 
 ![Démonstration](./../uc3/images/pv1.png)
 
-Saisissez ici l&#39;adresse email que vous avez utilisée sur le site web et cliquez sur **Connexion**.
+Entrez l’adresse électronique que vous avez utilisée sur le site web ici et cliquez sur **Connexion**.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -77,17 +77,17 @@ Revenez à la page d’accueil de l’application et d’autres fonctionnalités
 
 ![DSN](./../uc3/images/app17.png)
 
-Accédez à **Produits**. Cliquez sur n’importe quel produit, dans cet exemple **Café à emporter**.
+Accédez à **Products**. Cliquez sur n&#39;importe quel produit, dans cet exemple **Café à consommer}.**
 
 ![DSN](./images/app19.png)
 
-Vous verrez le **Café à emporter** page produit dans l’application. Cliquez sur **Acheter**.
+Vous verrez la page produit **Café to go** dans l’application. Cliquez sur **Acheter**.
 
 ![DSN](./images/app20.png)
 
 Vous avez maintenant terminé cet exercice et vous êtes prêt pour les exercices suivants.
 
-Étape suivante : [2.6 Personnalisation dans le centre d’appels](./ex6.md)
+Étape suivante : [2.6 Personalization dans le centre d’appels](./ex6.md)
 
 [Retour au flux utilisateur 2](./uc2.md)
 

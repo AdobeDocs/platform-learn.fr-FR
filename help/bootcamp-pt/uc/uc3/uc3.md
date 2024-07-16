@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 2%
+source-wordcount: '202'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Requêtes préalables
 
-- Acesso à Adobe Experience Platform :  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Acesso o site de démonstration
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 >
 >Tutoriel Este foi criado para facilitar um formato específico de bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para ceber as informações rendárias .
 
-## Exercícios
+## exercice
 
 [3.1 Utilisation de la balise aplicativo móvel e acione sinalizador](./ex1.md)
 

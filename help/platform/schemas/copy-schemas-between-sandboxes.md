@@ -20,6 +20,6 @@ Cette vidéo montre comment copier un schéma d’un environnement de test vers 
 
 >[!TIP]
 >
->Un processus beaucoup plus simple et centré sur l’interface pour déplacer des schémas et d’autres objets entre des environnements de test a été introduit fin 2023, que nous vous recommandons d’utiliser à la place. Veuillez consulter [Copie d’objets entre des environnements de test](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=fr).
+>Un processus beaucoup plus simple et centré sur l’interface pour déplacer des schémas et d’autres objets entre des environnements de test a été introduit fin 2023, que nous vous recommandons d’utiliser à la place. Voir [Copie d’objets entre des environnements de test](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

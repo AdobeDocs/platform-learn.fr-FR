@@ -8,8 +8,8 @@ doc-type: multipage
 recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 46%
+source-wordcount: '104'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 + [Tutoriel sur l’architecte et l’ingénieur des données](overview.md)
 + [1. Configuration des autorisations](configure-permissions.md)
 + [2. Créer un environnement de test](create-a-sandbox.md)
-+ [3. Configuration de Developer Console et de Postman](set-up-developer-console-and-postman.md)
++ [3. Configuration de Developer Console et Postman](set-up-developer-console-and-postman.md)
 + [4. Données de modèle dans les schémas](model-data-in-schemas.md)
 + [5. Mappage des identités](map-identities.md)
 + [6. Création de jeux de données](create-datasets.md)

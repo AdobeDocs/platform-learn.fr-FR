@@ -1,7 +1,7 @@
 ---
-user-guide-title: Tutoriel sur la mise en oeuvre de l’Experience Cloud dans les applications mobiles
+user-guide-title: Tutoriel sur l’implémentation d’Experience Cloud dans les applications mobiles
 breadcrumb-title: Tutoriel sur les applications mobiles
-user-guide-description: Découvrez comment implémenter des applications Adobe Experience Cloud dans des applications mobiles avec le SDK Mobile Experience Platform.
+user-guide-description: Découvrez comment implémenter des applications Adobe Experience Cloud dans les applications mobiles avec le SDK Mobile Experience Platform.
 solution: Data Collection
 feature: Mobile SDK
 role: Developer
@@ -11,19 +11,19 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 34%
+ht-degree: 71%
 
 ---
 
 
 # Implémentation de l’Experience Cloud dans les applications mobiles {#implement-mobile-sdk}
 
-+ [Présentation du tutoriel](overview.md)
++ [Vue d’ensemble du tutoriel](overview.md)
 + Configuration initiale {#initial-configuration}
    + [Créer un schéma](create-schema.md)
    + [Création dʼun flux de données](create-datastream.md)
    + [Configuration des balises](configure-tags.md)
-+ Implémentation de l’application{#app-implementation}
++ Mise en oeuvre de l’application{#app-implementation}
    + [Installation des SDK](install-sdks.md)
    + [Assurance](assurance.md)
    + [Consentement](consent.md)

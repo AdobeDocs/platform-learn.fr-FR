@@ -28,7 +28,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./images/home.png)
 
-Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné le [!UICONTROL sandbox], vous verrez le changement d’écran et vous êtes maintenant dans votre [!UICONTROL sandbox].
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 
 
@@ -45,13 +45,13 @@ Dans le panneau Visionneuse de profils de votre site web, vous trouverez la pré
 
 Avec Adobe Experience Platform, tous les identifiants sont également importants. Auparavant, l’ECID était l’identifiant le plus important dans le contexte de l’Adobe et tous les autres identifiants étaient liés à l’ECID dans une relation hiérarchique. Avec Adobe Experience Platform, ce n’est plus le cas, et chaque ID peut être considéré comme un identifiant principal.
 
-En règle générale, l’identifiant principal dépend du contexte. Si vous demandez à votre centre d’appels, **Quel est l’identifiant le plus important ?** ils répondront probablement, **le numéro de téléphone !** Mais si vous demandez à votre équipe CRM, elle répond : **L&#39;adresse email !**  Adobe Experience Platform comprend cette complexité et la gère à votre place. Chaque application, qu’elle soit Adobe ou non, parlera avec Adobe Experience Platform en se référant à l’identifiant qu’elle considère comme principal. Et ça marche tout simplement.
+En règle générale, l’identifiant principal dépend du contexte. Si vous demandez à votre centre d&#39;appels, **Quel est l&#39;identifiant le plus important ?** ils répondront probablement, **le numéro de téléphone !** Mais si vous demandez à votre équipe de gestion de la relation client, ils répondront, **L&#39;adresse email !** Adobe Experience Platform comprend cette complexité et la gère à votre place. Chaque application, qu’elle soit Adobe ou non, parlera avec Adobe Experience Platform en se référant à l’identifiant qu’elle considère comme principal. Et ça marche tout simplement.
 
-Pour le champ **Espace de noms d’identité**, sélectionnez **ECID** et pour le champ **Valeur d’identité** entrez l’ECID qui se trouve dans le panneau Visionneuse de profils du site web bootcamp. Cliquez sur **Affichage**. Votre profil s’affiche alors dans la liste. Cliquez sur le bouton **Identifiant de profil** pour ouvrir votre profil.
+Pour le champ **Identity namespace**, sélectionnez **ECID** et, pour le champ **Identity Value**, saisissez l’ECID que vous pouvez trouver dans le panneau Visionneuse de profils du site web de bootcamp. Cliquez sur **Afficher**. Votre profil s’affiche alors dans la liste. Cliquez sur l’ **ID de profil** pour ouvrir votre profil.
 
 ![Profil client](./images/popupecid.png)
 
-Vous voyez maintenant un aperçu de quelques éléments importants : **Attributs de profil** de votre profil client.
+Vous voyez maintenant un aperçu de quelques **attributs de profil** importants de votre profil client.
 
 ![Profil client](./images/profile.png)
 
@@ -59,7 +59,7 @@ Accédez à **Événements**, où vous pouvez voir les entrées pour chaque év�
 
 ![Profil client](./images/profileee.png)
 
-Enfin, sélectionnez l’option de menu . **abonnement à l’audience**. Vous verrez désormais toutes les audiences qui remplissent les critères de ce profil.
+Enfin, accédez à l’option de menu **Appartenance à une audience**. Vous verrez désormais toutes les audiences qui remplissent les critères de ce profil.
 
 ![Profil client](./images/profileseg.png)
 

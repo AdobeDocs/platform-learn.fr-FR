@@ -10,8 +10,8 @@ thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 4%
+source-wordcount: '314'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,14 @@ Dans cette leçon, vous apprendrez à configurer, écrire et exécuter des requ�
 
 Adobe Experience Platform Query Service vous aide à comprendre vos données en vous permettant d’utiliser le langage SQL standard pour interroger des données dans Platform. Grâce à Query Service, vous pouvez joindre n’importe quel jeu de données dans le lac de données et capturer les résultats de la requête sous la forme d’un nouveau jeu de données à utiliser dans les rapports, l’apprentissage automatique ou pour ingestion dans Real-Time Customer Profile.
 
-**Architectes de données** et **Ingénieurs de données** Vous devrez utiliser query service en dehors de ce tutoriel.
+**Les architectes de données** et les **ingénieurs de données** devront utiliser le service de requête en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Query Service :
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## Autorisations requises
 
-Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous configurez tous les contrôles d’accès requis pour terminer cette leçon.
+Dans la leçon [Configurer les autorisations](configure-permissions.md) , vous configurez tous les contrôles d’accès requis pour terminer cette leçon.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -41,8 +41,8 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 
 Commençons par quelques requêtes simples :
 
-1. Dans l’interface utilisateur de Platform, accédez à **Requêtes** dans la navigation de gauche
-1. Sélectionnez la variable **Créer une requête** bouton en haut à droite pour ouvrir une zone de texte afin d’exécuter et d’exécuter des requêtes.
+1. Dans l’interface utilisateur de Platform, accédez à **Requêtes** dans le volet de navigation de gauche.
+1. Sélectionnez le bouton **Créer une requête** en haut à droite pour ouvrir une zone de texte afin d’exécuter et d’exécuter des requêtes.
 1. Saisissez la requête suivante dans l’éditeur, puis appuyez sur Maj+Entrée ou Maj+Retour pour exécuter la requête.
 
    ```
@@ -54,7 +54,7 @@ Commençons par quelques requêtes simples :
    ![requête SHOW TABLE](assets/queries-showTables.png)
 
 
-1. Essayez maintenant cette requête, en remplaçant `_techmarketingdemos` avec votre propre espace de noms de client, qui, si vous vous souvenez, est visible dans vos schémas.
+1. Essayez maintenant cette requête, en remplaçant `_techmarketingdemos` par votre propre espace de noms du client, qui, si vous vous souvenez, est visible dans vos schémas.
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -62,14 +62,14 @@ Commençons par quelques requêtes simples :
    WHERE loyalty.tier ='gold'
    ```
 
-   ![SÉLECTIONNEZ les données du jeu de données de fidélité](assets/queries-loyaltySelect.png)
+   ![SELECT data from the loyalty dataset](assets/queries-loyaltySelect.png)
 
-1. En cas d’erreur, des messages détaillés s’affichent dans la variable **[!UICONTROL Console]** , comme illustré ci-dessous
+1. En cas d’erreur, des messages détaillés s’affichent dans l’onglet **[!UICONTROL Console]**, comme illustré ci-dessous.
    ![Erreur dans la requête](assets/queries-error.png)
 
-1. Avec votre requête réussie, **[!UICONTROL Nom]** it `Luma Gold Level Customers`
-1. Sélectionnez la variable **[!UICONTROL Enregistrer]** button
-   ![Enregistrer la requête](assets/queries-loyaltySelect-save.png)
+1. Avec votre requête réussie, **[!UICONTROL Name]** it `Luma Gold Level Customers`
+1. Sélectionnez le bouton **[!UICONTROL Enregistrer]**
+   ![Enregistrement de la requête](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -122,4 +122,4 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 * [Documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr)
 * [Référence de l’API Query Service](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-Et maintenant, pour la dernière leçon pratique, [création de segments](build-segments.md)!
+Et maintenant, pour la dernière leçon pratique, [création de segments](build-segments.md) !

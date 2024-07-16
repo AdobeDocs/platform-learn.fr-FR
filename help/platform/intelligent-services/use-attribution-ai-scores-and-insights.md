@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Utiliser les scores et les informations d’Attribution AI
 
-Découvrez comment utiliser la page d’informations Attribution AI pour comprendre le retour sur investissement des canaux et campagnes marketing. Pour plus d’informations, consultez la [Documentation Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Découvrez comment utiliser la page d’informations Attribution AI pour comprendre le retour sur investissement des canaux et campagnes marketing. Pour plus d’informations, consultez la [documentation Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)

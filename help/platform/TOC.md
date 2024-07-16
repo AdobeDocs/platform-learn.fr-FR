@@ -8,7 +8,7 @@ auto-video-transcripts: true
 source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 18%
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Présentation de l’édition B2B](/help/platform/rtcdp/b2b-overview.md)
    + [Orchestration des campagnes avec Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Prise en main : architectes des données et ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr){target="_blank"}
++ [Prise en main : architectes de données et ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr){target="_blank"}
 + [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importation de données d’exemple dans Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
@@ -41,8 +41,8 @@ ht-degree: 18%
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [Ajout d’utilisateurs](/help/platform/admin/add-users.md)
-   + [Ajout d’utilisateurs à la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [Ajouter des utilisateurs](/help/platform/admin/add-users.md)
+   + [Ajouter des utilisateurs à la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Ajouter des développeurs](/help/platform/admin/add-developers.md)
    + [Ajout d’administrateurs de produit](/help/platform/admin/add-product-administrators.md)
    + [Configurer le contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
@@ -59,8 +59,8 @@ ht-degree: 18%
    + [Création d’audiences d’entités multiples](audiences/create-multi-entity-audiences.md)
    + [Créer et activer des audiences de compte (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Démonstration de la segmentation par flux](/help/platform/audiences/streaming-segmentation-demo.md)
-   + [Évaluation d’une règle d’audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [Création d’un jeu de données pour exporter des données](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [Évaluer une règle d’audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [ Créez un jeu de données pour exporter des données ](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Configuration de la connexion de correspondance de segment](/help/platform/segments/segment-match-connection-setup.md)
    + [Gouvernance des données de correspondance de segment](/help/platform/segments/segment-match-data-governance.md)
    + [Flux de configuration de correspondance de segment](/help/platform/segments/segment-match-configuration-flow.md)
@@ -81,11 +81,11 @@ ht-degree: 18%
 + Hygiène des données {#data-hygiene}
    + [Préparation de données pour l’hygiène des données](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Suppression de jeux de données et de lots](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [Expiration des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Expérience des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Pseudonyme du profil et expiration de l’événement (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [Suppression de profils](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [Mise à jour d’un attribut de profil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ Ingestion des données {#data-ingestion}
+   + [Supprimer des profils](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [Mettre à jour un attribut de profil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
++ Ingestion de données {#data-ingestion}
    + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Aperçu de l&#39;ingestion en lot](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Création et remplissage d’un jeu de données](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
@@ -93,9 +93,9 @@ ht-degree: 18%
    + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Présentation des sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingestion de données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
-   + [Ingestion de données à partir d’une Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Ingérer des données à partir d’une Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Ingestion de données à partir de l’espace de stockage dans le cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=fr)
-   + [Ingestion de données à partir de CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=fr)
+   + [Ingérer des données à partir de CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=fr)
    + [Ingérer des données à partir de bases de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [Présentation de l’ingestion par flux](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Diffuser les données en continu avec l’API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=fr)
@@ -117,9 +117,9 @@ ht-degree: 18%
    + [Création et publication d’un modèle formé (interface utilisateur)](data-science-workspace/create-model-ui.md)
    + [Planification de la formation et de la notation automatisées d’un service](data-science-workspace/schedule-training-scoring.md)
    + [Enrichissement des profils client en temps réel avec des insights d’apprentissage automatique](data-science-workspace/dsw-profile-segmentation.md)
-   + [Regroupement des fichiers source dans une recette](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [Importation d’une recette empaquetée (interface utilisateur)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [Importation d’une recette empaquetée (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
+   + [ Former une recette empaquetée à partir de fichiers source](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [Importer une recette empaquetée (interface utilisateur)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [Importer une recette empaquetée (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinations {#destinations}
    + [Présentation des destinations](/help/platform/destinations/understanding-destinations.md)
    + [Connexion aux destinations](/help/platform/destinations/connecting-to-destinations.md)
@@ -132,7 +132,7 @@ ht-degree: 18%
    + [Configuration de l’espace de stockage dans le cloud basé sur les fichiers ou des destinations de marketing par e-mail](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configuration d’une destination de réseau social](/help/platform/destinations/configure-a-social-destination.md)
    + [Activation via les destinations LiveRamp](/help/platform/destinations/liveramp-destinations.md)
-   + Adobe Target et personnalisation personnalisée{#target}
+   + Adobe Target et Personalization personnalisé{#target}
       + [Personnalisation de l’accès suivant avec Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configuration de la destination Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Activation des segments et des attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
@@ -153,7 +153,7 @@ ht-degree: 18%
    + [Valeur de Customer AI](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [Configuration de Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [Utiliser les scores et les informations de Customer AI](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Surveillance {#monitoring}
++ Surveillance {#monitoring}
    + [Surveiller l’ingestion des données](/help/platform/monitoring/monitoring-dashboard.md)
    + [Surveillance de l’activation des segments](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Surveiller les flux de données](/help/platform/monitoring/data-monitoring.md)
@@ -166,18 +166,18 @@ ht-degree: 18%
    + [Présentation de Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagramme de présentation des profils](/help/platform/profiles/overview-diagram.md)
    + [Importation des données dans le profil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [Personnalisation des détails d’affichage du profil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [Personnaliser les détails de la vue de profil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Affichage des profils de compte](/help/platform/profiles/view-account-profiles.md)
    + [Création de stratégies de fusion](/help/platform/profiles/create-merge-policies.md)
    + [Présentation des schémas d’union](/help/platform/profiles/union-schemas-overview.md)
    + [Création d’un attribut calculé](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
-   + [Expirations des profils pseudonymes (TTL)](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
+   + [Expirations du profil pseudonyme (TTL)](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [Suppression de profils](/help/platform/profiles/delete-profiles.md)
    + [Mise à jour d’un attribut spécifique à l’aide de la fonction upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Confidentialité et sécurité {#privacy}
    + [Présentation du Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Données d’identité dans les demandes d’accès à des informations personnelles](/help/platform/privacy/identity-data-in-privacy-requests.md)
-   + [Bibliothèque JavaScript Privacy](/help/platform/privacy/using-privacy-javascript-library.md)
+   + [Bibliothèque Privacy JavaScript](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Étiquettes de confidentialité dans Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Prise en main de l’API du Privacy Service](/help/platform/privacy/getting-started-with-privacy-services-api.md)
    + [Interface utilisateur du Privacy Service](/help/platform/privacy/using-privacy-services-ui.md)
@@ -195,12 +195,12 @@ ht-degree: 18%
    + [Fonctions définies par Adobe](/help/platform/queries/adobe-defined-functions.md)
    + [Modèles d’utilisation des données](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Exécution de requêtes](/help/platform/queries/run-queries.md)
-   + [Génération de jeux de données à partir des résultats de requête](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [Générer des jeux de données à partir de résultats de requête](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Analyse et visualisation des données](/help/platform/queries/analyze-and-visualize.md)
    + [Création de tableaux de bord à l’aide des outils de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Rechargement des données client](/help/platform/queries/recharge-your-customer-data.md)
-   + [Connexion des clients à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Connecter les clients à Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Validation des données dans le lac de données](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schémas {#schemas}
    + [Vue d’ensemble](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -215,8 +215,8 @@ ht-degree: 18%
    + [Configurer les relations entre les schémas](/help/platform/schemas/configure-relationships-between-schemas.md)
    + [Utiliser des champs énumérés et des valeurs suggérées](/help/platform/schemas/use-enumerated-fields.md)
    + [Copie de schémas entre des environnements de test](/help/platform/schemas/copy-schemas-between-sandboxes.md)
-   + [Mise à jour des schémas](/help/platform/schemas/update-schemas.md)
-   + [Création d’un schéma ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
+   + [mettre à jour les schémas,](/help/platform/schemas/update-schemas.md)
+   + [Créer un schéma ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Sources {#sources}
    + [Vue d’ensemble](/help/platform/sources/overview.md)
    + [Ingestion de données à partir d’Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -226,7 +226,7 @@ ht-degree: 18%
    + [Ingestion de données à partir de CRM](/help/platform/sources/ingest-data-from-crm.md)
    + [Ingestion de données à partir de bases de données](/help/platform/sources/ingest-data-from-databases.md)
    + [Diffusion de données en continu avec API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
-   + [Diffusion de données en continu à l’aide des connecteurs source](/help/platform/sources/streaming-ingestion-source-connector.md)
+   + [Diffusion de données en continu à l’aide des connecteurs Source](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Résolution des problèmes : Connecteur SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Playbooks de cas d’utilisation {#use-case-playbooks}
    + [Vue d’ensemble](/help/platform/use-case-playbooks/overview.md)
@@ -243,4 +243,4 @@ ht-degree: 18%
    + [Un tableau de deux perceptions : les marques et les consommateurs](/help/platform/industry/brands-vs-consumers.md)
    + [Évolution de votre centre d’excellence d’audience](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Amélioration des expériences avec les profils client](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [Collaboration des données dans le contexte des données propriétaires](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
+   + [Collaboration de données dans le contexte des données propriétaires](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)

@@ -10,7 +10,7 @@ exl-id: 4392bdc2-ec43-4f2d-99af-719e9979f0c5
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 >
 >Tutoriel Este foi criado para facilitar um formato específico de Bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um Bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para Receber as informações rendárias .
 
-## Exercícios
+## exercice
 
 [1.1 Visite sur site](./ex1.md)
 
@@ -42,12 +42,12 @@ Neste exercio, você irá fazer login na Adobe Experience Platform e visualizar 
 
 Neste exercio, você irá criar um segmento usando Contrutor de Segmentos da Adobe Experience Platform.
 
-[1.4 Ação : J’ai envie segmento para o Adobe Target](./ex4.md)
+[1.4 Ação : J&#39;ai envie seu segmento para o Adobe Target](./ex4.md)
 
 Utilisez o segmento strucído no exercice 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
 
-[1.5 Ação : j&#39;ai envie segmento para o Facebook](./ex5.md)
+[1.5 Ação : J&#39;ai envie de segmento para o Facebook](./ex5.md)
 
-Conecte o segmento que você criou no Exercício 1.1 ao destinée Facebook.
+Conecte o segmento que você criou no exercice 1.1 ao destinée o Facebook
 
 [Retornar para Todos os módulos](../../overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Ingestion de données à l’aide des connecteurs source CRM
+title: Ingestion de données à l’aide des connecteurs Source CRM
 description: Découvrez comment ingérer facilement par lots des données provenant de sources CRM dans Adobe Experience Platform Real-Time Customer Profile et un lac de données en toute transparence.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -10,14 +10,14 @@ last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 7%
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
-# Ingérer des données à l’aide de connecteurs source CRM
+# Ingestion de données à l’aide des connecteurs source CRM
 
-Découvrez comment ingérer facilement par lots des données provenant de sources CRM dans Adobe Experience Platform Real-Time Customer Profile et un lac de données en toute transparence. Pour obtenir une documentation du produit plus détaillée, voir [gestion de la relation client (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) sur la page d’aperçu des connecteurs source .
+Découvrez comment ingérer facilement par lots des données provenant de sources CRM dans Adobe Experience Platform Real-Time Customer Profile et un lac de données en toute transparence. Pour plus d’informations sur la documentation du produit, voir [Gestion de la relation client (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) sur la page d’aperçu des connecteurs Source.
 
 ## Workflow standard
 
@@ -32,6 +32,6 @@ Découvrez comment configurer le connecteur source pour Salesforce CRM à l’ai
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
 
 Pour plus d’informations, consultez la documentation suivante :
-* [Salesforce Création d’une documentation de connexion](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [Créer un flux de données de sources à l’aide de modèles dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Salesforce créez une documentation de connexion](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [Créez un flux de données de sources à l’aide de modèles dans l’interface utilisateur ](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 

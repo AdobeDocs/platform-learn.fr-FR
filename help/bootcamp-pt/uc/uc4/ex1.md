@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 exl-id: 63933d9e-b774-483f-b547-188c77440595
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 - Entenda o que é o CJA
 - Entenda qual é o papa do CJA
-- Entenda au workflow pour CJA : da conexão de dados aos insights
+- Entenda au workflow pour le CJA : da conexão de dados aos insights
 
 ## 4.1.1 O que é o Customer Journey Analytics ?
 
@@ -36,7 +36,7 @@ Comme équipes de negócios e insights podem conversar com o CJA, fazer pergunta
 
 Os três principais bénéfique para os clientes são :
 
-- Une condensidade de disponibilité des connaissances para todos (ou seja, Democzar o acesso aos dados).
+- Une condensidade de disponibilité des connaissances para todos (ou seja, democracy ou acesso aos dados).
 - Une condensidade de ver o cliente em uma jornada contextuelle (ou seja, os dados podem ser visualizados séquencialmente, abrangendo múltiplos canais on-line e off-line).
 - Une capacidade de aproveitar o poder dos dados sem que haja a necessidade (ou seja, permite que indivíduos usem dados para desbloquear insights e análises profundas para ativação de marketing).
 
@@ -69,9 +69,9 @@ Antes de iniciar os próximos exerícios, é essencial talender quais etapas sã
 
 Antes de iniciar as etapas acima, não se esqueça da etapa 0, que é je comprends os dados que estão disponíveis na Adobe Experience Platform.
 
-**Des ordures, des ordures.** Le Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas a Adobe Experience Platform são configurados Comprendre les dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construcir visualizações e fazer análises.
+**Videz les ordures, videz les ordures.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas a Adobe Experience Platform são configurados. Comprendre les dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construcir visualizações e fazer análises.
 
-## 4.1.5 Etapa 0 : Comprendre les schémas et les jeux de données dans Adobe Experience Platform
+## 4.1.5 Etapa 0 : schémas globaux des jeux de données de Adobe Experience Platform
 
 Faça se connecte à Adobe Experience Platform et accède à une URL : [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -79,7 +79,7 @@ Depois de fazer login, você irá acessar a página official da Adobe Experience
 
 ![Ingestion des données](../uc1/images/home.png)
 
-Antes de continuar, você precisa selecionar um **sandbox**. O nomo do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso clicando no ícone **[!UICONTROL Prod]** pas de canto supérieur direito da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu sandbox dedicado.
+Antes de continuar, você precisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso clicando no ícone **[!UICONTROL Prod]** no canto supérieur direito da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu sandbox dedicado.
 
 ![Ingestion des données](../uc1/images/sb1.png)
 
@@ -93,21 +93,21 @@ Vérification : envoie des schémas et des jeux de données dans Adobe Experienc
 
 Certifique-se de ter verificado ao menos :
 
-- Identidades : CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários ?
+- Identifiants : CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários ?
 
-Você pode encontrar os identificadores abrindo um schema e observando objecto `_experienceplatform.identification.core`. Vérification du schéma o [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
+Você pode encontrar os identificadores abrindo um schema e observando objeto `_experienceplatform.identification.core`. Vérification du schéma [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/identity.png)
 
-- Exploration du schéma objeto de comércio dentro do [Système de démonstration - Schéma d’événement pour le site web (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explorez le schéma objeto de comércio dentro do [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/commerce.png)
 
-- Visualisation des outils [jeux de données](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
+- Visualisez les todos os [datasets](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
 
 Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-Próxima etapa : [4.2 Concevoir les jeux de données da Adobe Experience Platform sans Customer Journey Analytics](./ex2.md)
+Próxima etapa : [4.2 Concevoir des jeux de données da Adobe Experience Platform sur Customer Journey Analytics{1](./ex2.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

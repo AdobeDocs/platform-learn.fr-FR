@@ -2,9 +2,10 @@
 title: Bootcamp CSC - Informations pour un responsable marketing
 description: Bootcamp CSC - Informations pour un responsable marketing
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -15,35 +16,35 @@ ht-degree: 0%
 
 Dans la colonne de gauche, cliquez sur &quot;Vue hebdomadaire du chef de projet&quot; :
 
-![affichage hebdomadaire des chefs de projet](./images/weekly-view.png)
+![ chefs de projet vue hebdomadaire ](./images/weekly-view.png)
 
 Cela couvre un large éventail de rapports, toujours cliquables/exploitables pour plus de détails :
 
-- Le **Tâches Échéantes Cette Semaine Par Projet**
+- Les **tâches prévues cette semaine par projet**
 
-![dû cette semaine](./images/tasks-due.png)
+![cette semaine](./images/tasks-due.png)
 
-- Le **Jalons à venir de la gestion de projet** :
+- Les **jalons à venir de la gestion de projet** :
 
 ![jalons à venir](./images/upcoming-milestones.png)
 
-- Le **Problèmes en cours par priorité**
+- **Problèmes en cours par priorité**
 
 ![problèmes par priorité](./images/open-issues.png)
 
-- Le **Tâches en retard par département**
+- **Tâches en retard par département**
 
-![tâches en retard](./images/late-tasks.png)
+![tâches terminées](./images/late-tasks.png)
 
-- Le **Tâches en retard par individu**
+- **Tâches en retard par l’individu**
 
-![tâches différées individuelles](./images/individual-late-tasks.png)
+![tâches de retard individuelles](./images/individual-late-tasks.png)
 
 ## Informations relatives à SCRUM
 
-Dans la colonne de gauche, cliquez sur &quot;État de l’itération&quot;.
+Dans la colonne de gauche, cliquez sur &quot;État de l’itération&quot;
 
-![état d’itération du clic](./images/iteration-status.png)
+![état d’itération de clic](./images/iteration-status.png)
 
 Si vos équipes fonctionnent avec la méthodologie SCRUM, il s’agit d’un jeu de rapports de gestion intéressant :
 
@@ -55,7 +56,7 @@ Si vos équipes fonctionnent avec la méthodologie SCRUM, il s’agit d’un jeu
 
 ![vitesse moyenne](./images/average-velocity.png)
 
-- **Totaux des heures terminées des itérations actuelles par cessionnaire**
+- **Totaux des heures d’itérations actuelles terminées par cessionnaire**
 
 ![totaux d’heure terminés](./images/iteration-status.png)
 
@@ -67,7 +68,7 @@ Si vos équipes fonctionnent avec la méthodologie SCRUM, il s’agit d’un jeu
 
 Toujours dans la colonne de gauche, cliquez sur &quot;Efficacité&quot;.
 
-![efficacité des clics](./images/efficiency.png)
+![cliquer sur efficacité](./images/efficiency.png)
 
 - **Ratio planifié/non planifié** (du travail effectué)
 
@@ -79,17 +80,17 @@ Toujours dans la colonne de gauche, cliquez sur &quot;Efficacité&quot;.
 
 ## Informations sur le projet en vol
 
-Toujours dans la colonne de gauche, cliquez sur &quot;Marketing - Projets en cours de vol&quot;.
+Toujours dans la colonne de gauche, cliquez sur &quot;Marketing - Projets en cours&quot;.
 
 - **État des projets en vol**
 
-![projets en cours de vol](./images/inflight-projects.png)
+![Projets en cours](./images/inflight-projects.png)
 
 - **Projets Par Condition Par Mois**
 
 ![projets par condition](./images/project-by-condition.png)
 
-- Liste, état d&#39;avancement et détails financiers de **Projets en vol**
+- Liste, état d&#39;avancement et détails financiers des **projets en vol**
 
 ![détails financiers](./images/inflights-projects.png)
 
@@ -97,9 +98,9 @@ Toujours dans la colonne de gauche, cliquez sur &quot;Marketing - Projets en cou
 
 Pour revenir à la ligne &quot;PIN&quot;, cliquez sur &quot;Portfolio vue Gant&quot; :
 
-![clic sur la vue principale du portfolio](./images/gant-view.png)
+![clic sur la vue de passerelle de portefeuille](./images/gant-view.png)
 
-Ici, vous pouvez **Vue Graphique général d’un groupe de projets** avec des dépendances possibles (prédécesseurs) entre les projets
+Vous disposez ici d’une **vue Graphique général d’un groupe de projets** avec des dépendances possibles (prédécesseurs) entre les projets.
 
 ![dépendances entre les projets](./images/gant-chart.png)
 
@@ -111,7 +112,7 @@ Ici, vous pouvez **Vue Graphique général d’un groupe de projets** avec des d
 
 Sur la ligne &quot;PIN&quot;, cliquez sur &quot;Résumé de campagne&quot; :
 
-- **Résumé d’Adobe Campaign**
+- **Adobe Campaign Summary**
 
 ![Résumé](./images/campaign-summary.png)
 
@@ -119,7 +120,7 @@ Sur la ligne &quot;PIN&quot;, cliquez sur &quot;Résumé de campagne&quot; :
 
 ![envoyé à l’ouverture](./images/sent-to-open.png)
 
-- **Adobe Campaign s’ouvre aux clics**
+- **Adobe Campaign s’ouvre sur les clics**
 
 ![ouvrir pour cliquer](./images/open-to-click.png)
 

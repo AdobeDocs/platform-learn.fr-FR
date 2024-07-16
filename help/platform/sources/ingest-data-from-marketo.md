@@ -13,14 +13,14 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 6%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
 # Ingestion de données à partir de Marketo Engage
 
-Découvrez comment ingérer facilement des données de Marketo Engage dans Real-time Customer Data Platform, l’édition B2B et Adobe Experience Platform à l’aide du connecteur source à l’aide de deux workflows.
+Découvrez comment ingérer facilement des données à partir de Marketo Engage dans Real-time Customer Data Platform, l’édition B2B et Adobe Experience Platform avec le connecteur source à l’aide de deux workflows.
 
 ## Workflow des modèles
 
@@ -35,5 +35,5 @@ Découvrez comment configurer le connecteur source pour Marketo à l’aide du w
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 Pour plus d’informations, consultez la documentation suivante :
-* [Documentation du connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Créer un flux de données de sources à l’aide de modèles dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Documentation sur le connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [Création d’un flux de données de sources à l’aide de modèles dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

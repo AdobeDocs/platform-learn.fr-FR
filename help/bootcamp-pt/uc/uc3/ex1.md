@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -18,35 +18,35 @@ ht-degree: 0%
 
 ## Installer sur aplicativo móvel
 
-Antes de installar o aplicativo, é rendário o **Rastreamento** pas de dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de installar o aplicativo, é rendário habilitar o **Rastreamento** no seu dispositivo iOS. Para isso, accédez à **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Accès à une ressource App Store da Apple `aepmobile-bootcamp`. Clique **Instalar** Vous **Télécharger**.
+Accédez à une App Store da Apple et demandez `aepmobile-bootcamp`. Cliquez Sur **Instalar** Ou **Télécharger**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Installation de Depois que o aplicativo, groupe em **Abrir**.
+Installation de Depois que o aplicativo estiver, groupe em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Clique **OK**.
+Cliquez Sur L’Écran **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Clique **Permitir**.
+Clique-Les **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Cliquez sur **Je suis d&#39;accord.**.
+Cliquez sur **J&#39;accepte**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique **Permitir enquanto usa o aplicativo**.
+Clique em **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Clique **Permitir**.
+Clique-Les **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -56,7 +56,7 @@ Agora você está no aplicativo, a página inegal, pronto(a) para verificar day 
 
 ## Fluxo da jornada do cliente
 
-Primeiramente, é rendário fazer pour se connecter. Clique **Connexion**.
+Primeiramente, é rendário fazer pour se connecter. Cliquez Sur **Login**.
 
 ![DSN](./images/app13.png)
 
@@ -64,7 +64,7 @@ Depois de criar sua nos exerícios anteriores, isso é exibido no site. Agora é
 
 ![Démonstration](./images/pv1.png)
 
-Digite o endereço de e-mail que você usou no site e clique em **Connexion**.
+Digite o endereço de e-mail que você ne nous parle pas de site e groupe em **Login**.
 
 ![DSN](./images/app14.png)
 
@@ -76,11 +76,11 @@ L&#39;appareillage Retorne para a página inegal do aplicativo e os recursos adi
 
 ![DSN](./images/app17.png)
 
-Primeiro, accès **Produits**. Clique em qualquer producto, neste exemplaire : **Café à emporter**.
+Primeiro, accédez à **Products**. Clique em qualquer producto, neste exemplaire : **Café à aller**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do producto **Café à emporter** pas d&#39;aplicativo.
+Você verá a página do producto **Café à aller** no aplicativo.
 
 ![DSN](./images/app20.png)
 
@@ -96,7 +96,7 @@ Em seguida, retorne para a página officier. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Após essa etapa, ou seguinte será exibido. Primeiro, select **Balise d’écran Bootcamp** La clique pas botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
+Após essa etapa, ou seguinte será exibido. Primeiro, sélectionnez **Bootcamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
@@ -104,7 +104,7 @@ Agora confirme une tela da loja. Você verá o último producto visualizado apar
 
 ![DSN](./images/screen2.png)
 
-Em seguida, retorne para **Produits**. Clique em qualquer producto, neste exemplaire : **Plage Tan**.
+Em seguida, restauré para **Products**. Clique em qualquer producto, neste exemplaire : **couverture de plage Tan**.
 
 ![DSN](./images/app22.png)
 
@@ -112,7 +112,7 @@ Em seguida, retorne para a página officier. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Em seguida, selecione **Balise d’écran Bootcamp** La clique pas botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (balise).
+Em seguida, select **Bootcamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (balise).
 
 ![DSN](./images/app21.png)
 
@@ -126,7 +126,7 @@ Agora, vamos vérificar também o seu Visualizador de Perfil sur aucun site. Voc
 
 Nos próximos exerícios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-Próxima etapa : [3.2 Événement de la seu de crie](./ex2.md)
+Próxima etapa : [3.2 Crie seu evento](./ex2.md)
 
 [Retornar para Fluxo de Usuário 3](./uc3.md)
 

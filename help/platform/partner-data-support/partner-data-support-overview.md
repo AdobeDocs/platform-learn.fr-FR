@@ -1,6 +1,6 @@
 ---
 title: Présentation de la prise en charge des données des partenaires dans Real-Time CDP
-description: Découvrez comment [!DNL Real-Time Customer Data Platform] prend en charge le marketing par entonnoir complet à l’aide de données de partenaire pour les cas d’utilisation d’enrichissement et de prospection de données propriétaires, car les cookies tiers continuent à être obsolètes. 
+description: Découvrez comment  [!DNL Real-Time Customer Data Platform] prend en charge le marketing par entonnoir complet à l’aide de données de partenaire pour l’enrichissement de données propriétaires et la prospection de cas d’utilisation à mesure que les cookies tiers deviennent obsolètes. 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Prise en charge des données des partenaires - Aperçu [!DNL Real-Time CDP]
+# Présentation de la prise en charge des données des partenaires dans [!DNL Real-Time CDP]
 
-Découvrez comment [!DNL Real-Time Customer Data Platform] prend en charge le marketing par entonnoir complet à l’aide de données de partenaire pour les cas d’utilisation d’enrichissement et de prospection de données propriétaires, car les cookies tiers continuent à être obsolètes. 
+Découvrez comment [!DNL Real-Time Customer Data Platform] prend en charge le marketing par entonnoir complet à l’aide de données de partenaire pour l’enrichissement des données propriétaires et la prospection de cas d’utilisation à mesure que les cookies tiers deviennent obsolètes. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

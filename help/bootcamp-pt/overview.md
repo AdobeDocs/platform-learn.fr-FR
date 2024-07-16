@@ -2,9 +2,10 @@
 title: Experience Makers Bootcamp - Brésil
 description: Point de départ pour les participants de l’Experience Makers Bootcamp
 doc-type: multipage-overview
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 64effc7f-6581-49a5-a3ab-4da17bc9bd08
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -29,19 +30,19 @@ Une personalização em escala começa com a saisensão do que pode ser primorad
 
 10.00 - 10.30 : Boas-vindas &#x200B;
 
-10.30 - 11.00 : Jornada do cliente : &quot;L&#39;art du possible&quot; (sessão em inglês) &#x200B;
+10.30 - 11.00 : Jornada do cliente : &quot;Art du possible&quot; (sessão em inglês) &#x200B;
 
-11.00 - 12.00 : Personalização exponencial vs Ecossistemas em silos (sessão em inglês) &#x200B;
+11.00 - 12.00 : Personalização exponencial vs. Ecossistemas em silos (sessão em inglês) &#x200B;
 
 12.00 - 13.30 : Almoço e network &#x200B;
 
-13.30 - 14.30 : Arquitetura de solução (sessão em inglês) &#x200B;
+13.30 - 14.30 : Arquitetura de Solution (sessão em inglês) &#x200B;
 
 14.30 - 16.00 : Faites-le vous-même : Aquisição &#x200B;
 
-16.00 - 16.15 : Durée de la coupure
+16.00 - 16.15 : Temps de pause
 
-16.15 - 18.00 : Faites-le vous-même : Cadastro et &#x200B; d&#39;intégration
+16.15 - 18.00 : Faites-le vous-même : Cadastro &amp; l&#39;intégration &#x200B;
 
 
 ### Dia 2
@@ -58,7 +59,7 @@ Une personalização em escala começa com a saisensão do que pode ser primorad
 
 14.45 - 16.00 : Conclusões e próximos passos
 
-16.00 - 19.00 : Flux d’utilisateur 4 : Mise en réseau et bonne heure
+16.00 - 19.00 : Flux d’utilisateurs 4 : Mise en réseau et Bonne heure
 
 
 ## Requêtes préalables
@@ -89,7 +90,7 @@ Acesse : [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/compre
 
 ## YouTube
 
-É possível encontrar vídeos interessantes adicions [em nosso canal do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É possível encontrar vídeos interessantes adiciencier [em nosso canal do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Flux utilisateur
 
@@ -101,7 +102,7 @@ Neste User Flow, você irá Je comprends tous les éléments nécessaires ários
 
 Neste User Flow, você irá Je comprends tous les éléments nécessaires ários para implementar casos de uso de cadastro e intégration à Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. Combinação do físico e do digital ](./uc/uc3/uc3.md)
+[3. La combinaison des deux : le numérique](./uc/uc3/uc3.md)
 
 Nesse User Flow, você irá personalizar a experiência do cliente nos canais online e offline de maneira .
 

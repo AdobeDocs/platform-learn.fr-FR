@@ -11,7 +11,7 @@ feature: Audiences
 exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## 4.6.1 Crie uma audiência e publique-a
 
-Em seu projeto, você criou um filtro chamado **Sentiments d’appel** e sitguiu visualizar a quantidade de usuários que tiveram suas ligações ao call center classificadas como **positizone**. Agora, você poderá criar um segmento com esses usuários e ativação-los em jornadas ou em canais de comunicação.
+Em seu projeto, você criou um filtro chamado **Call Feeling** e conservguiu visualizar a quantidade de usuários que tiveram suas ligações ao call center classificadas como **positivas**. Agora, você poderá criar um segmento com esses usuários e ativação-los em jornadas ou em canais de comunicação.
 
-O primeiro passo é : Pas de peintures criado no último Exercício, selecione a linha **1. Sentiment d’appel - positif**, la clique com o botão direito de seu mouse e selecione a opção **Création d’une audience d’après une sélection**:
+O primeiro passo é : pas de peintures criado no último exercice cio, selecione a linha **1. Appelez le ressenti : positif**, clique com o botão direito de seu mouse e selecione a opção **Créer une audience d’après la sélection** :
 
 ![demo](./images/aud1.png)
 
-Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - appel de l’audience de cia**:
+Em seguida, dê um nome para a sua audiência seguindo o modelo **yourLastName - cia audience appel impression positive** :
 
 ![demo](./images/aud2.png)
 
@@ -39,13 +39,13 @@ Remarque que é possível ter um preview da audiência que está sendo criada :
 
 ![demo](./images/aud3.png)
 
-Para finalizar, clique-moi **Public**:
+Para finalizar, groupe-em **Publicar** :
 
 ![demo](./images/aud4.png)
 
 ## 4.6.2 Utilisation de sua audiência como parte de um segmento
 
-Voltando para a Adobe Experience Platform, vá em **Segments > Parcourir** e você conseguirá visualizar o seu segmento criado no CJA pronto e disponível para usado nas suas ativações e jornadas !
+Voltando para a Adobe Experience Platform, vá em **Segments > Browse** e você consultation guirá visualizar o seu segmento criado no CJA pronto e disponível para ser usado nas suas ativações e jornadas !
 
 ![demo](./images/aud5.png)
 
@@ -53,11 +53,11 @@ Vamos agora usar esse segmento em uma ativação no Facebook e em uma jornada do
 
 ## 4.6.3 Utiliser seu segmento a Real-Time CDP em tempo real
 
-Na Adobe Experience Platform, vá em **Segments > Parcourir** e contre une audiência que você criou no CJA :
+Na Adobe Experience Platform, vá em **Segments > Browse** e contre a audiência que você crou no CJA :
 
 ![demo](./images/aud6.png)
 
-Clique no seu segmento e, em seguida, clique em **Activation vers la destination**:
+Clique sans seu segmento e, em seguida, clic em **Activer vers la destination** :
 
 ![demo](./images/aud7.png)
 
@@ -69,20 +69,20 @@ Em seguida, groupe em Next novamente :
 
 ![demo](./images/aud9.png)
 
-Sélectionner une opção **Origine de votre audience** e define como **Directement des clients** Accrochez-moi à la suite :
+Choisissez une option **Origine de votre audience** e define como **Directly from clients** e clic em Suivant :
 
 ![demo](./images/aud10.png)
 
-Por fim, un página **Réviser** claquez-moi la fin !
+Por fim, un página **Review** et clic em Finish !
 
 ![demo](./images/aud11.png)
 
 Pronto ! Agora o seu segmento está vinculado aos públicos personalizados do Facebook.
-Agora, vamos utiliszar esse segmento no AJO !
+Agora, vamos utiliszar esse segmento no AJO!
 
 ## 4.6.4 Utilisation de segments de menu à pas dans Adobe Journey Optimizer
 
-Na interface da Adobe Experience Platform clique em Journey Optimizer e, em seguidon, pas de menu latéral esquerdo, clic em **Parcours** e comece : uma jornada clicando em **Créer un Parcours**:
+Na interface da Adobe Experience Platform clique em Journey Optimizer e, em seguida, pas de menu latéral esquerdo, et moi **Parcours** e commerce un criar uma jornada clicando em **Créer un Parcours** :
 
 ![demo](./images/aud20.png)
 
@@ -90,15 +90,15 @@ Na interface da Adobe Experience Platform clique em Journey Optimizer e, em segu
 
 ![demo](./images/aud22.png)
 
-Em seguida, pas d&#39;esquerdo latéral de menu, em Eventos, selecione **Qualification de segment** e arraste-o até a jornada :
+Em seguida, aucun menu latéral esquerdo, em Eventos, select **Qualification de segment** e arraste-o até a jornada
 
 ![demo](./images/aud23.png)
 
-Em seguida, em **Segment** groupe **Modifier** para selecionar um segmento :
+Em seguida, em **Segment** et em **Edit** para selecionar um segmento:
 
 ![demo](./images/aud24.png)
 
-Selecione a audiência que você crio no CJA e clique em **Enregistrer**:
+Sélectionner une audience, une audio que você criou non CJA e clique em **Sauvez** :
 
 ![demo](./images/aud25.png)
 

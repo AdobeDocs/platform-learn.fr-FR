@@ -9,15 +9,15 @@ thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 3%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
 # Rechargez vos données client pour offrir des expériences d’électrification
 
 Les données omnicanal sont un ingrédient essentiel pour alimenter les profils clients exploitables utilisés par les marketeurs pour orchestrer l’activation et mesurer les parcours client qui en résultent. Toutefois, les entreprises doivent relever des défis pour gérer la qualité, l’échelle et la variété de ces données. Elles nécessitent des solutions rationalisées pour atténuer l’impact de données de mauvaise qualité, réduire le temps à évaluer et multiplier le retour sur investissement en utilisant les mêmes données pour une multitude de cas d’utilisation.
-Pour plus d’informations, consultez la [Documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
+Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
 Cette vidéo explore :
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Cette vidéo est un extrait de la session Adobe Summit 2020. *[Rechargement des données omnicanales pour l’électrification des expériences](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Cette vidéo est un extrait de la session Adobe Summit 2020 *[Recharging Omnichannel Data for Electrifying Experiences](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

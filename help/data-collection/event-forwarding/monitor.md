@@ -1,5 +1,5 @@
 ---
-title: Surveiller le transfert d’événement
+title: Surveillance du transfert d’événement
 description: Découvrez comment surveiller le transfert d’événement dans l’interface de collecte de données.
 feature: Event Forwarding
 level: Experienced
@@ -8,13 +8,13 @@ thumbnail: 343999.jpeg
 exl-id: 15948005-53d7-413d-9379-0d7b5189b839
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 63%
+source-wordcount: '38'
+ht-degree: 31%
 
 ---
 
-# Surveiller le transfert d’événement
+# Surveillance du transfert d’événement
 
-Découvrez comment surveiller le transfert d’événement dans l’interface de collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Découvrez comment surveiller le transfert d’événement dans l’interface de collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on)

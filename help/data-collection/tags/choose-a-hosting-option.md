@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Choisissez une option d’hébergement
 
-Découvrez comment choisir la meilleure option d’hébergement pour votre bibliothèque de balises. Pour plus d’informations, voir [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) la documentation.
+Découvrez comment choisir la meilleure option d’hébergement pour votre bibliothèque de balises. Pour plus d’informations, consultez la documentation [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)

@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Utilisation des environnements de balises et des codes incorporés
 
-Découvrez comment utiliser les environnements de développement, d’évaluation et de production et les codes incorporés pour développer et valider votre propriété de balise. Pour plus d’informations, voir [environnements](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) la documentation.
+Découvrez comment utiliser les environnements de développement, d’évaluation et de production et les codes incorporés pour développer et valider votre propriété de balise. Pour plus d’informations, voir la documentation [environnements](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

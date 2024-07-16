@@ -8,14 +8,14 @@ thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 62%
+source-wordcount: '131'
+ht-degree: 42%
 
 ---
 
 # Présentation du transfert dʼévénements
 
-Découvrez comment le transfert d’événement centralise la collecte de données, réduit la quantité de code requise dans vos applications web et mobiles et diffuse les données vers des solutions non-Adobe via Adobe Experience Platform Edge Network. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Découvrez comment le transfert d’événement centralise la collecte de données, réduit la quantité de code requise dans vos applications web et mobiles et diffuse les données vers des solutions non-Adobes via Adobe Experience Platform Edge Network. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr).
 
 >[!NOTE]
 >

@@ -11,8 +11,8 @@ feature: Connections
 exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Créons votre première connexion. Cliquez sur **Créer une connexion**.
 
 ![demo](./images/cja4.png)
 
-Vous verrez alors le **Créer une connexion** Interface utilisateur.
+Vous verrez ensuite l’interface utilisateur **Créer une connexion**.
 
 ![demo](./images/cja5.png)
 
@@ -49,17 +49,17 @@ Utilisez cette convention d’affectation des noms : `yourLastName – Omnichann
 
 Exemple : `vangeluw - Omnichannel Data Connection`
 
-Vous devez également sélectionner l’environnement de test correct à utiliser. Dans le menu des environnements de test, sélectionnez votre environnement de test, qui doit être `Bootcamp`. Dans cet exemple, l’environnement de test à utiliser est **Bootcamp**. Et vous devez également définir la variable **Nombre moyen d’événements quotidiens** to **moins de 1 million**.
+Vous devez également sélectionner l’environnement de test approprié. Dans le menu des environnements de test, sélectionnez votre environnement de test, qui doit être `Bootcamp`. Dans cet exemple, l’environnement de test à utiliser est **Bootcamp**. Vous devez également définir le **nombre moyen d&#39;événements quotidiens** sur **moins de 1 million**.
 
 ![demo](./images/cjasb.png)
 
-Après avoir sélectionné votre environnement de test, vous pouvez commencer à ajouter des jeux de données à cette connexion. Cliquez sur **Ajout de jeux de données**.
+Après avoir sélectionné votre environnement de test, vous pouvez commencer à ajouter des jeux de données à cette connexion. Cliquez sur **Ajouter des jeux de données**.
 
 ![demo](./images/cjasb1.png)
 
 ## 4.2.2 Sélection de jeux de données Adobe Experience Platform
 
-Recherche du jeu de données `Demo System - Event Dataset for Website (Global v1.1)`. Cliquez sur **+** pour ajouter le jeu de données à cette connexion.
+Recherchez le jeu de données `Demo System - Event Dataset for Website (Global v1.1)`. Cliquez sur **+** pour ajouter le jeu de données à cette connexion.
 
 ![demo](./images/cja7.png)
 
@@ -73,11 +73,11 @@ Vous aurez alors ceci. Cliquez sur **Suivant**.
 
 ### ID de personne
 
-L’objectif est maintenant de rejoindre ces jeux de données. Pour chaque jeu de données sélectionné, un champ appelé **ID de personne**. Chaque jeu de données possède son propre champ ID de personne.
+L’objectif est maintenant de rejoindre ces jeux de données. Pour chaque jeu de données que vous avez sélectionné, un champ appelé **ID de personne** s’affiche. Chaque jeu de données possède son propre champ ID de personne.
 
 ![demo](./images/cja11.png)
 
-Comme vous pouvez le constater, l’ID de personne est automatiquement sélectionné pour la plupart d’entre eux. En effet, un identifiant Principal est sélectionné dans chaque schéma de Adobe Experience Platform. Par exemple, voici le schéma pour `Demo System - Event Schema for Call Center (Global v1.1)`, où vous pouvez voir que l’identifiant de Principal est défini sur `phoneNumber`.
+Comme vous pouvez le constater, l’ID de personne est automatiquement sélectionné pour la plupart d’entre eux. En effet, un identifiant de Principal est sélectionné dans chaque schéma de Adobe Experience Platform. Par exemple, voici le schéma pour `Demo System - Event Schema for Call Center (Global v1.1)`, où vous pouvez voir que l’identifiant de Principal est défini sur `phoneNumber`.
 
 ![demo](./images/cja13.png)
 
@@ -87,13 +87,13 @@ Cependant, vous pouvez toujours influencer l’identifiant qui sera utilisé pou
 
 Comme mentionné, vous pouvez définir différents ID de personne pour chaque jeu de données. Cela vous permet de rassembler différents jeux de données provenant de plusieurs origines dans CJA. Imaginez que vous introduisiez des NPS ou des données d&#39;enquête qui seraient très intéressantes et utiles pour comprendre le contexte et pourquoi quelque chose s&#39;est passé.
 
-Le nom du champ ID de personne n’est pas important tant que la valeur des champs ID de personne correspond. Par exemple, si l’ID de personne est `email` dans un jeu de données et `emailAddress` dans un autre, et `dnb-bootcamp@adobe.com` est la même valeur pour le champ ID de personne dans les deux jeux de données, CJA sera en mesure de regrouper les données.
+Le nom du champ ID de personne n’est pas important tant que la valeur des champs ID de personne correspond. Par exemple, si l’ID de personne est `email` dans un jeu de données et `emailAddress` dans un autre et que `dnb-bootcamp@adobe.com` est la même valeur pour le champ ID de personne dans les deux jeux de données, CJA sera en mesure de regrouper les données.
 
-Il existe actuellement d&#39;autres limitations telles que l&#39;assemblage du comportement anonyme à connu. Consultez les questions fréquentes ici : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
+Il existe actuellement d&#39;autres limitations telles que l&#39;assemblage du comportement anonyme à connu. Consultez les questions fréquentes ici : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Assemblage des données à l’aide de l’ID de personne
 
-Maintenant que vous comprenez le concept de regroupement de jeux de données à l’aide de l’ID de personne, nous allons choisir `email` comme ID de personne pour chaque jeu de données.
+Maintenant que vous comprenez le concept de regroupement de jeux de données à l’aide de l’ID de personne, choisissons `email` comme ID de personne pour chaque jeu de données.
 
 ![demo](./images/cja15.png)
 
@@ -101,13 +101,13 @@ Accédez à chaque jeu de données pour mettre à jour l’ID de personne.
 
 ![demo](./images/cja12a.png)
 
-Renseignez maintenant le champ ID de personne en choisissant la variable `email` dans la liste déroulante.
+Renseignez maintenant le champ ID de personne en choisissant `email` dans la liste déroulante.
 
 ![demo](./images/cja17.png)
 
 Une fois que vous avez assemblé les trois jeux de données, nous sommes prêts à continuer.
 
-| jeu de données | ID de personne |
+| Jeu de données | ID de personne |
 | ----------------- |-------------| 
 | Système de démonstration - Jeu de données d’événement pour le site web (Global v1.1) | adresse e-mail |
 | Système de démonstration - Jeu de données de profil pour la fidélité (Global v1.1) | adresse e-mail |
@@ -118,12 +118,12 @@ Vous devez également vous assurer que pour chaque jeu de données, ces options 
 - Importer toutes les nouvelles données
 - Renvoi de toutes les données existantes
 
-Cliquez sur **Ajout de jeux de données**.
+Cliquez sur **Ajouter des jeux de données**.
 
 ![demo](./images/cja16.png)
 
-Cliquez sur **Enregistrer** et passez à l’exercice suivant.
-Après avoir créé votre **Connexion** il peut s’écouler quelques heures avant que vos données ne soient disponibles dans CJA.
+Cliquez sur **Enregistrer** et accédez à l’exercice suivant.
+Après avoir créé votre **connexion**, il peut s’écouler quelques heures avant que vos données ne soient disponibles dans CJA.
 
 ![demo](./images/cja20.png)
 

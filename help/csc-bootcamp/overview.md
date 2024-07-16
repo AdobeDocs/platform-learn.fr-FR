@@ -2,73 +2,74 @@
 title: Experience Makers Content Supply Chain Bootcamp
 description: Point de départ pour les participants de l’environnement de démarrage de la chaîne d’approvisionnement de contenu Experience Makers
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: df80423b-f9cf-4e92-a3e9-427c0f07ebc8
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 1%
+source-wordcount: '387'
+ht-degree: 0%
 
 ---
 
 # Experience Makers Content Supply Chain Bootcamp
 
-## Présentation
+## Vue d’ensemble
 
-Le monde est maintenant le premier numérique. C&#39;est une réalité avec laquelle les entreprises ont été forcées de se réconcilier, et elle ne disparaîtra pas de sitôt. Dans ce monde numérique, nous faisons face à une énorme vague de contenus propulsés par plus de gens naviguant sur les médias sociaux, passant du temps dans les espaces numériques et travaillant à distance.
+Le monde est maintenant le premier numérique. C&#39;est une réalité avec laquelle les entreprises ont été forcées de se réconcilier, et elle ne disparaîtra pas de sitôt. Dans ce monde numérique, nous faisons face à une énorme vague de contenus propulsés par plus de gens naviguant sur les médias sociaux, passant du temps dans les espaces numériques, et travaillant à distance.
 
 Cela signifie pour vous qu’il y a plus de canaux, de marchés et de formats pour diffuser du contenu — et qu’il y a un plus grand besoin que ce contenu soit dynamique et optimisé.
 
-Ce bootcamp vous apprend à suivre la demande de contenu : il existe un moyen de planifier, de produire et de diffuser du contenu plus rapidement et plus facilement. Ça s&#39;appelle une chaîne d&#39;approvisionnement en contenu. Et si vous pouvez en lancer un en utilisant des processus lisses, une stratégie solide et des pratiques solides, vous pouvez rationaliser l’ensemble du cycle de vie du contenu.
+Ce bootcamp vous apprend à suivre la demande de contenu : il existe un moyen de planifier, produire et diffuser du contenu plus rapidement et plus facilement. Ça s&#39;appelle une chaîne d&#39;approvisionnement en contenu. Et si vous pouvez en lancer un en utilisant des processus lisses, une stratégie solide et des pratiques solides, vous pouvez rationaliser l’ensemble du cycle de vie du contenu.
 
 ## Agenda
 
-### Jour 1
+### Jour 1
 
-10.00 - 10.30 : Lancement et introduction
+10:00 - 10.30 : Lancement et présentation
 
-10.30 - 11.00 : Le défi des Lego
+10.30 - 11.00 : le défi des Lego
 
-11.00 - 12.00 : &quot;Présentation et démonstration de la chaîne d’approvisionnement de contenu - Art du possible&quot;
+11.00 - 12.00 : &quot;Présentation et démonstration de la chaîne d&#39;approvisionnement de contenu - Art du possible&quot;
 
-12.00 - 12.15 : Rompre
+12.00 - 12.15 : pause
 
 12.15 - 13.00 : Phase de planification - Planification de campagne et prise en charge
 
-13.00 - 14.00 : Déjeuner
+13 h - 14 h : déjeuner
 
-14.00 - 14.30 : Phase de planification - Tâches initiales
+14.00 - 14.30 : phase de planification - tâches initiales
 
-14.30 - 15.30 : Phase de production - Création d’une bannière de page d’accueil
+14.30 - 15.30 : phase de production - création d’une bannière de page d’accueil
 
-15.30 - 15.45 : Rompre
+15.30 - 15.45 : pause
 
-15.45 - 16.30 : &quot;Exploration de l’Adobe Express et de l’Adobe du lien de la ressource&quot;
+15.45 - 16.30 : &quot;Exploration de l’Adobe Express et de l’Adobe Asset Link&quot;
 
-16.30 - 17.00 : Phase de production - Création d’une publication sur les médias sociaux
+16.30 - 17.00 : phase de production - création d’une publication sur les médias sociaux
 
-18 h - 19 h 00 : Activité amusante
+18.00 - 19.00 : Activité amusante
 
-19 h - 22 h 00 : Dîner
+19 h - 22 h : dîner
 
 
-### Jour 2
+### Jour 2
 
 09.00 - 09.30 : &quot;LEGO - Prendre le contrôle du travail à faire&quot;
 
-09.30 - 10.00 : Phase de production - Création de contenu d’application mobile
+09.30 - 10.00 : phase de production - Création de contenu d’application mobile
 
-10.00 - 10.15 : Rompre
+10.00 - 10.15 : pause
 
-10.15 - 10.45 : Phase de diffusion - Vérification de l’application mobile
+10.15 - 10.45 : phase de diffusion - Vérification de l’application mobile
 
-10.45 - 12.30 : Phase de diffusion - Création de pages dans AEM
+10.45 - 12.30 : phase de diffusion - Création de pages dans AEM
 
 12.30 - 13.30 : Déjeuner
 
-13.30 - 14.30 : Phase de diffusion - GO/NO-GO de la campagne
+13.30 - 14.30 : phase de diffusion - GO/NO-GO de la campagne
 
 14.30 - 15.00 : Informations - Découvrez vos campagnes
 
-15.00 - 15.30 : Conclusion, récapitulation et étapes suivantes
+15.00 - 15.30 : conclusion, résumé et étapes suivantes
 
 15.30 : Départ
 

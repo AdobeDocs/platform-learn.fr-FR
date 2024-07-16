@@ -11,12 +11,12 @@ feature: Audiences
 exl-id: 7a38a0a4-46e4-41f2-9a75-316dfde7128f
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-# 4.6 D’insights à l’action
+# 4.6 Des insights aux actions
 
 ## Objectifs
 
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## 4.6.1 Création d’une audience et publication de celle-ci
 
-Dans votre projet, vous avez créé un filtre appelé **Sentiments d’appel** et ont pu afficher le nombre d’utilisateurs pour lesquels leurs appels au centre d’appel étaient classés comme **positive**. Vous pouvez désormais créer un segment avec ces utilisateurs et les activer dans des parcours ou des canaux de communication.
+Dans votre projet, vous avez créé un filtre appelé **Sentiments d’appel** et vous avez pu afficher le nombre d’utilisateurs pour lesquels leurs appels au centre d’appel sont classés comme **positifs**. Vous pouvez désormais créer un segment avec ces utilisateurs et les activer dans des parcours ou des canaux de communication.
 
-La première étape est la suivante : Dans le panneau créé lors du dernier exercice, sélectionnez la ligne **1. Sentiment d’appel - positif**, cliquez avec le bouton droit de la souris et sélectionnez l’événement **Création d’une audience d’après une sélection** option :
+La première étape est : dans le panneau créé lors du dernier exercice, sélectionnez la ligne **1. Appelez l’impression : positive**, cliquez avec le bouton droit et sélectionnez l’option **Créer une audience d’après la sélection** :
 
 ![demo](./images/aud1.png)
 
-Attribuez ensuite un nom à votre audience en suivant le modèle **yourLastName - appel de l’audience CJA qui se sent positif**:
+Attribuez ensuite un nom à votre audience en suivant le modèle **votreNom - appel d’audience CJA se sentant positif** :
 
 ![demo](./images/aud2.png)
 
@@ -39,7 +39,7 @@ Notez qu’il est possible de disposer d’un aperçu de l’audience en cours d
 
 ![demo](./images/aud3.png)
 
-Enfin, cliquez sur **Publier**.
+Enfin, cliquez sur **Publish**.
 
 ![demo](./images/aud4.png)
 
@@ -57,7 +57,7 @@ Dans Adobe Experience Platform, accédez à **Segments > Parcourir** et recherch
 
 ![demo](./images/aud6.png)
 
-Cliquez sur votre segment, puis sur **Activation vers la destination**:
+Cliquez sur votre segment, puis sur **Activer à la destination** :
 
 ![demo](./images/aud7.png)
 
@@ -65,11 +65,11 @@ Sélectionnez la destination nommée **bootcamp-facebook**, puis cliquez sur **S
 
 ![demo](./images/aud8.png)
 
-Cliquez sur **Suivant** encore une fois.
+Cliquez à nouveau sur **Suivant**.
 
 ![demo](./images/aud9.png)
 
-Sélectionnez la **Origine de votre audience** et définissez-la sur **Directement des clients**, cliquez sur **Suivant**.
+Sélectionnez l&#39;option **Origine de votre audience** et définissez-la sur **Directly from clients**, puis cliquez sur **Suivant**.
 
 ![demo](./images/aud10.png)
 
@@ -89,7 +89,7 @@ Dans Adobe Experience Platform, cliquez sur **Journey Optimizer**, puis, dans le
 
 ![demo](./images/aud22.png)
 
-Ensuite, dans le menu de gauche, sous **Événements**, sélectionnez **Qualification de segment** et faites-le glisser sur le parcours :
+Ensuite, dans le menu de gauche, sous **Événements**, sélectionnez **Qualification de segment** et faites-le glisser vers le parcours :
 
 ![demo](./images/aud23.png)
 
@@ -97,7 +97,7 @@ Sous Segment, cliquez sur **Modifier** pour sélectionner un segment :
 
 ![demo](./images/aud24.png)
 
-Sélectionnez l’audience que vous avez créée précédemment dans CJA et cliquez sur  **Enregistrer**.
+Sélectionnez l’audience que vous avez créée précédemment dans CJA et cliquez sur **Enregistrer**.
 
 ![demo](./images/aud25.png)
 

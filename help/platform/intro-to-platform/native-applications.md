@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Applications créées sur Experience Platform
 
-Découvrez les applications créées en mode natif sur Adobe Experience Platform : Customer Journey Analytics, Real-time Customer Data Platform, Journey Optimizer et Mix Modeler.
+Découvrez les applications créées en mode natif sur Adobe Experience Platform : Customer Journey Analytics, Real-Time Customer Data Platform, Journey Optimizer et Mix Modeler.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on)
 

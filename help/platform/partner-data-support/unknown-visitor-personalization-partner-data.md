@@ -1,6 +1,6 @@
 ---
 title: Personnaliser les expériences sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs avec l’aide de partenaires
-description: Découvrez comment collecter des attributs tiers à partir du [!DNL Adobe Experience Platform Web SDK] et personnaliser votre expérience sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs par les partenaires.
+description: Découvrez comment collecter des attributs tiers à partir de  [!DNL Adobe Experience Platform Web SDK]  et personnaliser votre expérience sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs par les partenaires.
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Personnaliser les expériences sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs avec l’aide de partenaires
 
-Découvrez comment collecter des attributs tiers à partir du [!DNL Adobe Experience Platform Web SDK] et personnaliser votre expérience sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs par les partenaires. Pour plus d’informations, consultez la [Utiliser la reconnaissance des visiteurs par les partenaires pour personnaliser les expériences sur site](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) la documentation.
+Découvrez comment collecter des attributs tiers à partir de [!DNL Adobe Experience Platform Web SDK] et personnaliser votre expérience sur site pour les visiteurs inconnus à l’aide de la reconnaissance des visiteurs par les partenaires. Pour plus d’informations, consultez la documentation [Utiliser la reconnaissance des visiteurs avec l’aide d’un partenaire pour personnaliser les expériences sur site](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

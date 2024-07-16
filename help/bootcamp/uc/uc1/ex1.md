@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Le parcours de l’inconnu au connu est l’un des sujets les plus importants parmi les marques de nos jours, tout comme le parcours client de l’acquisition à la rétention.
 
-Adobe Experience Platform joue un rôle énorme dans ce parcours. La plate-forme est le cerveau de la communication, la **système d’enregistrement d’expérience**.
+Adobe Experience Platform joue un rôle énorme dans ce parcours. Platform est le cerveau de la communication, le **système d&#39;enregistrement d&#39;expérience**.
 
 Platform est un environnement dans lequel le mot client est plus large que les clients connus. Un visiteur inconnu du site web est également un client du point de vue de Platform et, en tant que tel, tout le comportement en tant que visiteur inconnu est également envoyé à Platform. Grâce à cette approche, lorsque ce visiteur devient finalement un client connu, une marque peut également visualiser ce qui s’est produit avant ce moment. Cela s’avère utile du point de vue de l’attribution et de l’optimisation de l’expérience.
 
@@ -34,7 +34,7 @@ Cliquez sur l’icône représentant un logo d’Adobe dans le coin supérieur g
 
 ![Démonstration](./images/pv1.png)
 
-Consultez le panneau Visionneuse de profils et le profil client en temps réel avec le **Identifiant Experience Cloud** comme identifiant principal de ce client actuellement inconnu.
+Consultez le panneau Visionneuse de profils et Real-time Customer Profile avec l’**identifiant Experience Cloud** comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](./images/pv2.png)
 
@@ -42,25 +42,25 @@ Vous pouvez également voir tous les événements d’expérience collectés en 
 
 ![Démonstration](./images/pv3.png)
 
-Accédez au **Services d’application** et cliquez sur le produit. **Real-Time CDP**.
+Accédez à l’option de menu **Services d’application** et cliquez sur le produit **Real-Time CDP**.
 
 ![Démonstration](./images/pv4.png)
 
-Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Consultation produit** a maintenant été envoyé à Adobe Experience Platform à l’aide de l’implémentation du SDK Web que vous avez examinée dans le module 1. Ouvrez le panneau Visionneuse de profils et examinez les **Événements d’expérience**.
+Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Consultation produit** a maintenant été envoyé à Adobe Experience Platform à l’aide de l’implémentation du SDK Web que vous avez examinée dans le module 1. Ouvrez le panneau Visionneuse de profils et examinez vos **événements d’expérience**.
 
 ![Démonstration](./images/pv5.png)
 
-Accédez au **Services d’application** et cliquez sur le produit. **Adobe Journey Optimizer**. Un autre événement d’expérience a été envoyé à Adobe Experience Platform.
+Accédez à l’option de menu **Services d’application** et cliquez sur le produit **Adobe Journey Optimizer**. Un autre événement d’expérience a été envoyé à Adobe Experience Platform.
 
 ![Démonstration](./images/pv7.png)
 
-Ouvrez le panneau Visionneuse de profils . Vous verrez désormais deux événements d’expérience de type **Consultation produit**. Bien que le comportement soit anonyme, chaque clic est suivi et stocké dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tout comportement anonyme avec le profil de connaissance.
+Ouvrez le panneau Visionneuse de profils . Vous verrez désormais 2 événements d’expérience de type **Consultation produit**. Bien que le comportement soit anonyme, chaque clic est suivi et stocké dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tout comportement anonyme avec le profil de connaissance.
 
 ![Démonstration](./images/pv8.png)
 
 Analysons maintenant votre profil client, puis utilisons votre comportement pour personnaliser votre expérience client sur le site web.
 
-Étape suivante : [1.2 Visualiser votre propre profil client en temps réel - interface utilisateur](./ex2.md)
+Étape suivante : [1.2 Visualisez votre propre profil client en temps réel - IU](./ex2.md)
 
 [Retour au flux utilisateur 1](./uc1.md)
 

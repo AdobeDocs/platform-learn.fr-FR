@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 46861546-6483-4997-98b7-1d3addef65dd
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 4%
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 

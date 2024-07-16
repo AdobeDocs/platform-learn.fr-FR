@@ -2,9 +2,10 @@
 title: Camp de démarrage du CSC - Informations pour un chef de projet
 description: Camp de démarrage du CSC - Informations pour un chef de projet
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: f9f552f5-b065-4246-a317-297835ea8a36
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -15,9 +16,9 @@ ht-degree: 0%
 
 Sur la ligne &quot;PIN&quot;, cliquez sur &quot;Sensibilisation aux applications mobiles&quot;, puis sur &quot;Mesures&quot; :
 
-![Clic sur la conscience des applications mobiles](./images/mobile-app-awareness.png)
+![Cliquer sur la sensibilisation aux applications mobiles](./images/mobile-app-awareness.png)
 
-![Affichage des détails sur le projet](./images/awareness-view.png)
+![Afficher les détails du projet](./images/awareness-view.png)
 
 Vous disposez ici d’une vue graphique de l’état d’un projet/campagne unique.
 
@@ -29,15 +30,15 @@ Vous disposez ici d’une vue graphique de l’état d’un projet/campagne uniq
 
 Sur la ligne &quot;PIN&quot;, cliquez sur &quot;Projets :
 
-![Clic sur les projets](./images/projects.png)
+![Cliquez sur les projets](./images/projects.png)
 
 Dans la colonne de gauche, cliquez sur &quot;État de la campagne&quot; :
 
-La partie supérieure vous donne des informations sur une seule campagne portant sur 1/ Campagne **planifié par rapport au réel** heures passées et 2/ La variable **Condition de campagne** pour chaque canal :
+La partie supérieure vous donne des informations sur une seule campagne portant sur 1/ Campagne **planifiée par rapport aux** heures passées et 2/ La **condition de campagne** pour chaque canal :
 
 ![Informations sur Campaign](./images/campaign-insights.png)
 
-La partie inférieure vous donne des informations sur la **Livrables de campagne** status :
+La partie inférieure vous donne des informations sur l’état **Livrables de campagne** :
 
 ![livrables de campagne](./images/deliverables-status.png)
 
@@ -45,13 +46,13 @@ La partie inférieure vous donne des informations sur la **Livrables de campagne
 
 Toujours dans la colonne de gauche, cliquez sur &quot;Surveillance&quot;.
 
-![suivi des clics](./images/monitoring.png)
+![cliquez sur monitoring](./images/monitoring.png)
 
-La partie supérieure vous donne des informations sur l’état d’un groupe de projets, à partir de la **État des tâches** du point de vue et du **Condition du projet** point de vue :
+La partie supérieure vous donne des informations sur l’état d’un groupe de projets, à la fois du point de vue **État des tâches** et du point de vue **Condition du projet** :
 
 ![aperçu](./images/group-status.png)
 
-La partie inférieure affiche toutes les **aux approbations de risque** et devront être pourchassés :
+La partie inférieure affiche tous les **approbations à risque** et devra être pourchassée :
 
 ![Risques identifiés](./images/risk-approvals.png)
 
@@ -59,18 +60,18 @@ La partie inférieure affiche toutes les **aux approbations de risque** et devro
 
 Toujours dans la colonne de gauche, cliquez sur &quot;TABLEAU DE BORD DU CONTENU&quot; :
 
-![tableau de bord du contenu de clic](./images/content-dashboard.png)
+![clic sur le tableau de bord du contenu](./images/content-dashboard.png)
 
-La partie supérieure donne un bon aperçu de tous vos **approbation du BAT du document** statut (est-il approuvé, combien de versions avons-nous besoin, etc.)
+La partie supérieure donne de bons renseignements sur l’état **de l’approbation du BAT du document** (est-elle approuvée, combien de versions avons-nous besoin, etc.)
 
-![preuve de validation](./images/proof-of-approval.png)
+![BAT des approbations](./images/proof-of-approval.png)
 
-La partie inférieure est une **Examen de l’approbation du BAT** qui donne un autre angle de vue aux états de validation du BAT :
+La partie inférieure est une **révision de l’approbation du BAT** qui donne un autre angle de vue aux états d’approbation du BAT :
 
-![validations de BAT](./images/poa-review.png)
+![Révisions de BAT pour approbation](./images/poa-review.png)
 
-Étape suivante : [Phase 4 - Informations pour un gestionnaire marketing](./marketing-manager.md)
+Étape suivante : [Phase 4 - Statistiques pour un gestionnaire marketing](./marketing-manager.md)
 
-[Revenir à la phase 4 - Statistiques : Présentation](./overview.md)
+[Revenir à la phase 4 - Statistiques : présentation](./overview.md)
 
 [Revenir à tous les modules](../../overview.md)

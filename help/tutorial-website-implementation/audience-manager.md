@@ -5,8 +5,8 @@ solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 84%
+source-wordcount: '1749'
+ht-degree: 73%
 
 ---
 
@@ -21,9 +21,8 @@ Cette leçon vous guidera tout au long des étapes nécessaires à l’activatio
 >Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été apportées à l’interface que vous devez connaître lors de l’utilisation de ce contenu :
 >
 > * Le platform launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Le platform launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
 > * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
-
 
 ## Objectifs d’apprentissage
 
@@ -37,7 +36,7 @@ Cette leçon vous guidera tout au long des étapes nécessaires à l’activatio
 
 Pour pouvoir suivre cette leçon, vous devez :
 
-1. avoir terminé les leçons de la rubrique [Configuration des balises](create-a-property.md), [Ajouter Adobe Analytics](analytics.md), et [Ajout d’Identity Service](id-service.md).
+1. Pour avoir terminé les leçons dans [Configurer les balises](create-a-property.md), [Ajouter Adobe Analytics](analytics.md) et [Ajouter le service d’identité](id-service.md).
 
 1. disposer d’un accès à Adobe Analytics pour activer le transfert côté serveur pour la suite de rapports que vous utilisez pour ce tutoriel. Vous pouvez également demander à un administrateur existant de votre organisation de le faire à votre place, en suivant les instructions ci-dessous.
 
@@ -62,7 +61,7 @@ Comme vous avez déjà déployé Adobe Analytics au cours de ce tutoriel, vous 
 Voici les deux étapes principales d’une mise en œuvre avec transfert côté serveur :
 
 1. Cocher une case dans l’Admin Console Analytics pour transférer les données depuis Analytics vers Audience Manager *par suite de rapports*.
-1. Mettre en place le code, ce qui se fait par le biais de balises. Pour que cela fonctionne, vous devez avoir installé l’extension Adobe Experience Platform Identity Service, ainsi que l’extension Analytics (vous *n’aurez pas* besoin de l’extension AAM, comme expliqué ci-dessous).
+1. Mettre en place le code, ce qui se fait par le biais de balises. Pour que cela fonctionne, vous devez avoir installé l’extension Service d’identités d’Adobe Experience Platform, ainsi que l’extension Analytics (vous *n’aurez pas* besoin de l’extension AAM, comme expliqué ci-dessous).
 
 ### Activation du transfert côté serveur dans l’Admin Console d’Analytics
 
@@ -74,11 +73,11 @@ Il est nécessaire d’effectuer une configuration dans l’Admin Console d’Ad
 
    ![Connexion à Adobe Analytics](images/aam-logIntoAnalytics.png)
 
-1. Dans le volet de navigation supérieur d’Analytics, choisissez **[!UICONTROL Administration > Suites de rapports]**, puis, dans la liste déroulante à sélection multiple, sélectionnez la ou les suites de rapports à transférer dans Audience Manager.
+1. Dans le volet de navigation supérieur d’Analytics, choisissez **[!UICONTROL Admin > Report Suites]**, puis, dans la liste déroulante, sélectionnez la ou les suite(s) de rapports à transférer vers l’Audience Manager.
 
    ![Clic sur l’Admin Console](images/aam-analyticsAdminConsoleReportSuites.png)
 
-1. Sur l’écran Suite de rapports et une fois la/les suite(s) de rapports sélectionnée(s), choisissez **[!UICONTROL Modifier les paramètres > Général > Transfert côté serveur]**.
+1. Dans l’écran Report Suites et avec la ou les suites de rapports sélectionnées, choisissez **[!UICONTROL Modifier les paramètres > Général > Transfert côté serveur]**.
 
    ![Sélection du menu de transfert côté serveur](images/aam-selectSSFmenu.png)
 
@@ -94,33 +93,33 @@ Il est nécessaire d’effectuer une configuration dans l’Admin Console d’Ad
 
 >[!NOTE]
 >
->Comme le transfert côté serveur doit être activé par suite de rapports, veillez à répéter cette étape pour vos véritables suites de rapports lorsque vous déploierez le transfert côté serveur sur la suite de rapports de votre véritable site.
+>Comme le transfert côté serveur doit être activé par suite de rapports, veillez à répéter cette étape pour vos véritables suites de rapports lorsque vous déployez le transfert côté serveur sur la suite de rapports de votre véritable site.
 >
->De plus, si l’option Transfert côté serveur est grisée, vous devrez mapper la ou les suites de rapports à votre organisation Experience Cloud afin d’activer l’option. Cela est expliqué dans [la documentation](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
+>De plus, si l’option Transfert côté serveur est grisée, vous devrez mapper la ou les suites de rapports à votre organisation Experience Cloud afin d’activer l’option. Cela est expliqué dans [la documentation](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-Une fois cette étape effectuée et si Adobe Experience Platform Identity Service est activé, les données sont transférées d’Analytics à AAM. Toutefois, pour terminer le processus de sorte que la réponse soit renvoyée correctement d’AAM à la page (et également à Analytics via la fonction d’Audience Analytics), vous devez également effectuer l’étape suivante dans les balises . C’est très facile.
+Une fois cette étape effectuée et si le service d’identités d’Adobe Experience Platform est activé, les données sont transférées d’Analytics à AAM. Toutefois, pour terminer le processus de sorte que la réponse soit renvoyée correctement d’AAM à la page (et également à Analytics via la fonction d’Audience Analytics), vous devez également effectuer l’étape suivante dans les balises . C’est très facile.
 
 ### Activation du transfert côté serveur dans les balises
 
-C’est la seconde étape de l’activation du transfert côté serveur. Vous avez déjà inversé le commutateur dans le Admin Console Analytics. Vous devez maintenant ajouter le code, ce qui est fait pour vous si vous cochez simplement la case appropriée.
+C’est la seconde étape de l’activation du transfert côté serveur. Vous avez déjà inversé le commutateur dans l’Admin Console d’Analytics. Vous devez maintenant ajouter le code, ce que les balises feront pour vous si vous cochez simplement la case appropriée.
 
 >[!NOTE]
 >
->Pour mettre en oeuvre le transfert côté serveur des données Analytics dans AAM, nous allons modifier/configurer l’extension Analytics dans les balises, **not** l’extension AAM. L’extension AAM est utilisée exclusivement pour les mises en œuvre DIL côté client, pour les personnes qui ne disposent pas d’Adobe Analytics. Les étapes suivantes ont été correctement réalisées lorsqu’elles vous envoient vers l’extension Analytics pour la configuration.
+>Pour mettre en oeuvre le transfert côté serveur des données Analytics dans AAM, nous allons modifier/configurer l’extension Analytics dans les balises, **et non** l’extension AAM. L’extension AAM est utilisée exclusivement pour les mises en œuvre DIL côté client, pour les personnes qui ne disposent pas d’Adobe Analytics. Les étapes suivantes ont été correctement réalisées lorsqu’elles vous envoient vers l’extension Analytics pour la configuration.
 
 #### Pour activer le transfert côté serveur dans les balises
 
-1. Accédez à **[!UICONTROL Extensions > Installées]** et cliquez pour configurer l’extension Analytics.
+1. Accédez à **[!UICONTROL Extensions > Installées]** et cliquez pour configurer l’extension Analytics.
 
    ![Configuration de l’extension Analytics](images/aam-configAnalyticsExtension.png)
 
 1. Développez la section `Adobe Audience Manager`.
 
-1. Cochez la case pour **[!UICONTROL Partager automatiquement les données Analytics avec Audience Manager]**. Cette opération ajoute le « module » Audience Manager (code) à la mise en œuvre `AppMeasurement.js` d’Analytics.
+1. Cochez la case pour **[!UICONTROL Partager automatiquement les données Analytics avec l’Audience Manager]**. Cette opération ajoute le « module » Audience Manager (code) à la mise en œuvre `AppMeasurement.js` d’Analytics.
 
 1. Ajoutez votre « Sous-domaine Audience Manager » (également appelé « Nom de partenaire », « Identifiant de partenaire » ou « Sous-domaine de partenaire »). Suivez ces instructions pour [obtenir votre sous-domaine Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
-1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
+1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque et créer]**
 
    ![Configuration du transfert côté serveur](images/aam-configLaunchSSF.png)
 
@@ -132,7 +131,8 @@ La principale manière de vérifier que le transfert côté serveur est opérati
 
 #### Vérification du chargement correct du code
 
-Le code qui balise l’installation pour gérer le transfert, et en particulier la réponse de l’AAM à la page, est appelé l’Audience Manager &quot;Module&quot;. Nous pouvons utiliser l’Experience Cloud Debugger pour nous assurer qu’il a bien été chargé.
+Le code qui balise l’installation pour gérer le transfert, et en particulier la réponse d’AAM à la page, est appelé Audience Manager.
+&quot;Module&quot;. Nous pouvons utiliser l’Experience Cloud Debugger pour nous assurer qu’il a bien été chargé.
 
 1. Ouvrez le site Luma.
 1. Cliquez sur l’icône Debugger dans votre navigateur pour ouvrir Experience Cloud Debugger.
@@ -152,7 +152,7 @@ Ensuite, nous pouvons également vérifier que le débogueur sélectionne le bon
 
 >[!WARNING]
 >
->Vous remarquerez peut-être que la section Audience Manager du débogueur fait référence à « DIL » la « bibliothèque d’intégration de données », et fait généralement référence à une mise en œuvre côté client, par opposition à l’approche côté serveur que nous avons mise en œuvre ici. Le « module » AAM (utilisé dans cette approche avec transfert côté serveur) utilise en grande partie le même code que la bibliothèque DIL côté client. C’est pourquoi ce débogueur le signale en tant que tel. Si vous avez suivi les étapes de ce tutoriel et que le reste des éléments de cette section de validation est correct, assurez-vous que le transfert côté serveur fonctionne.
+>Vous remarquerez peut-être que la section Audience Manager du débogueur fait référence à &quot;DIL&quot;, qui est le &quot;Data Integration Library&quot;, et fait généralement référence à une mise en oeuvre côté client, par opposition à l’approche côté serveur que nous avons mise en oeuvre ici. Le « module » AAM (utilisé dans cette approche avec transfert côté serveur) utilise en grande partie le même code que la bibliothèque DIL côté client. C’est pourquoi ce débogueur le signale en tant que tel. Si vous avez suivi les étapes de ce tutoriel et que le reste des éléments de cette section de validation est correct, assurez-vous que le transfert côté serveur fonctionne.
 
 #### Vérification de la requête et de la réponse Analytics
 
@@ -175,8 +175,8 @@ Malheureusement, actuellement, le débogueur Experience Cloud ne prend pas en c
 
 >[!WARNING]
 >
->Attention au faux « succès » : s’il y a une réponse, et que tout semble fonctionner, **assurez-vous** d’avoir cet objet « stuff ». Dans le cas contraire, un message peut s’afficher dans la réponse et indiquer « status » : « SUCCESS ». Aussi incroyable que cela puisse paraître, c’est pourtant bien la preuve qu’il ne fonctionne **PAS** correctement. Si vous voyez cela, cela signifie que vous avez terminé cette deuxième étape (le code dans les balises), mais que le transfert dans le Admin Console Analytics (première étape de cette section) n’est pas encore terminé. Dans ce cas, vous devez vous assurer d’avoir activé le transfert côté serveur dans l’Admin Console d’Analytics. Si tel est le cas, mais que le délai de quatre heures n’est pas encore passé, soyez patient.
+>Méfiez-vous du faux &quot;Succès&quot; - S’il y a une réponse et que tout semble fonctionner, assurez-vous **sure** que vous avez cet objet &quot;stuff&quot;. Dans le cas contraire, un message peut s’afficher dans la réponse et indiquer « status » : « SUCCESS ». Aussi incroyable que cela puisse paraître, c’est pourtant bien la preuve qu’il ne fonctionne **PAS** correctement. Si vous voyez cela, cela signifie que vous avez terminé cette deuxième étape (le code dans les balises), mais que le transfert dans l’Admin Console Analytics (première étape de cette section) n’est pas encore terminé. Dans ce cas, vous devez vous assurer d’avoir activé le transfert côté serveur dans l’Admin Console d’Analytics. Si tel est le cas, mais que le délai de quatre heures n’est pas encore passé, soyez patient.
 
 ![Réponse AA - Faux « succès »](images/aam-responseFalseSuccess.png)
 
-[Suite : « Intégrations Experience Cloud » >](integrations.md)
+[Suite : &quot;Intégrations Experience Cloud&quot; >](integrations.md)

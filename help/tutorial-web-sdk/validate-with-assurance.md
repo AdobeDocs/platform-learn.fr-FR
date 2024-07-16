@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Validation des mises en oeuvre du SDK Web avec Experience Platform Assurance
 
-Adobe Experience Platform Assurance est une fonctionnalité qui vous permet d’inspecter, de tester, de simuler et de valider la manière dont vous collectez des données ou diffusez des expériences. En savoir plus sur [Assurance Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance est une fonctionnalité qui vous permet d’inspecter, de tester, de simuler et de valider la manière dont vous collectez des données ou diffusez des expériences. En savoir plus sur [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## Objectifs d&#39;apprentissage
@@ -25,7 +25,7 @@ Adobe Experience Platform Assurance est une fonctionnalité qui vous permet d’
 
 ## Conditions préalables
 
-Vous connaissez bien les balises de collecte de données et la variable [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avoir terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de collecte de données et le [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
 
 * [Configurer un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -47,40 +47,40 @@ Chaque fois que vous activez Edge Trace dans Adobe Experience Platform Debugger,
 
 Revue de la leçon sur Debugger :
 
-1. Accédez au [Site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [basculez la propriété de balise sur le site sur votre propre propriété de développement.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. Dans le volet de navigation de gauche de **[!UICONTROL Débogueur Experience Platform]** select **[!UICONTROL Journaux]**
-1. Sélectionnez la variable **[!UICONTROL Edge]** et sélectionnez **[!UICONTROL Connexion]**
+1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [ changer la propriété de balise sur le site en votre propre propriété de développement ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property).
+1. Dans le volet de navigation de gauche de **[!UICONTROL Experience Platform Debugger]**, sélectionnez **[!UICONTROL Logs]**
+1. Sélectionnez l’onglet **[!UICONTROL Edge]** et sélectionnez **[!UICONTROL Connect]**
 
-   ![Connexion à Edge Trace](assets/analytics-debugger-edgeTrace.png)
-1. Une fois Edge Trace activé, une icône de lien sortant s’affiche en haut de l’écran. Sélectionnez l’icône pour ouvrir Assurance.
+   ![Connecter Edge Trace](assets/analytics-debugger-edgeTrace.png)
+1. Une fois Edge Trace activé, vous pouvez voir une icône de lien sortant en haut. Sélectionnez l’icône pour ouvrir Assurance.
 
-   ![Démarrer la session Assurance](assets/validate-debugger-start-assurnance.png)
+   ![Démarrer la session d’assurance](assets/validate-debugger-start-assurnance.png)
 
 1. Un nouvel onglet du navigateur s’ouvre avec l’interface Assurance.
 
 ### Démarrer une session Assurance à partir de l’interface Assurance
 
-1. Ouvrez le [Interface de collecte de données](https://experience.adobe.com/#/data-collection/home){target="_blank"}
+1. Ouvrez l’ [ interface de collecte de données](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Sélectionnez Assurance dans la navigation de gauche.
 1. Sélectionner Créer une session
-   ![Création d’une session d’assurance](assets/assurance-create-session.png)
+   ![Créer une session d’assurance](assets/assurance-create-session.png)
 1. Sélectionner le début
-1. Attribuez un nom à la session, par exemple : `Luma Web SDK validation`
-1. Comme la variable **[!UICONTROL URL de base]** enter `https://luma.enablementadobe.com/`
-   ![Attribution d’un nom à la session Assurance](assets/assurance-name-session.png)
-1. Dans l’écran suivant, sélectionnez **[!UICONTROL Copier le lien]**
+1. Attribuez un nom à la session, par exemple `Luma Web SDK validation`.
+1. Comme **[!UICONTROL URL de base]**, saisissez `https://luma.enablementadobe.com/`
+   ![Nommez la session d’assurance](assets/assurance-name-session.png)
+1. Sur l’écran suivant, sélectionnez **[!UICONTROL Copier le lien]**
 1. Sélectionnez l’icône pour copier le lien dans le presse-papiers.
-1. Collez l’URL dans votre navigateur, qui ouvre le site web Luma avec un paramètre d’URL spécial. `adb_validation_sessionid` et démarrez la session
+1. Collez l’URL dans votre navigateur, qui ouvre le site web Luma avec un paramètre d’URL spécial `adb_validation_sessionid` et lance la session.
 1. Dans l’interface Assurance, un message doit s’afficher pour vous indiquer que vous avez réussi à vous connecter à la session et que les événements sont capturés dans l’interface Assurance.
-   ![La session d’assurance est connectée.](assets/assurance-success.png)
+   ![La session d’assurance est connectée](assets/assurance-success.png)
 
 ## Validation de l’état actuel de la mise en oeuvre de votre SDK Web
 
 Les informations à afficher à ce stade de la mise en oeuvre sont limitées. Une valeur que nous pouvons voir est votre identifiant Experience Cloud (ECID) généré sur Platform Edge Network :
 
 1. Sélectionnez la ligne avec l’événement appelé `Alloy Response Handle`.
-1. Un menu s’affiche à droite. Sélectionnez la variable `+` signe en regard de `[!UICONTROL ACPExtensionEventData]`
-1. Effectuez un zoom avant en sélectionnant `[!UICONTROL payload > 0 > payload > 0 > namespace]`. L’identifiant affiché sous la dernière `0` correspond au `ECID`. Vous le savez par la valeur qui apparaît sous `namespace` match `ECID`
+1. Un menu s’affiche à droite. Sélectionnez le signe `+` en regard de `[!UICONTROL ACPExtensionEventData]`
+1. Explorez en sélectionnant `[!UICONTROL payload > 0 > payload > 0 > namespace]`. L’identifiant affiché sous le dernier `0` correspond au `ECID`. Vous savez cela par la valeur qui apparaît sous `namespace` correspondant `ECID`
 
    ![Assurance validate ECID](assets/validate-assurance-ecid.png)
 
@@ -96,4 +96,4 @@ Avec un objet XDM qui se déclenche maintenant sur une page et avec les connaiss
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, partagez-les à ce sujet. [Article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

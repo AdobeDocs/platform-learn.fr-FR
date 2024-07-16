@@ -10,8 +10,8 @@ thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 3%
+source-wordcount: '1089'
+ht-degree: 2%
 
 ---
 
@@ -20,24 +20,24 @@ ht-degree: 3%
 <!-- 15min-->
 Dans cette leçon, vous allez activer vos schémas et jeux de données pour Real-time Customer Profile.
 
-Bon, j&#39;ai menti en disant que la leçon sur les jeux de données était la plus courte de ce tutoriel - celle-ci devrait prendre encore moins de temps ! Littéralement tout ce que vous allez faire c&#39;est retourner un tas de baskets. Mais ce qui se passe quand vous retournez ces bascules c&#39;est que _vraiment_ important donc je voulais lui dédier une page entière.
+Bon, j&#39;ai menti en disant que la leçon sur les jeux de données était la plus courte de ce tutoriel - celle-ci devrait prendre encore moins de temps ! Littéralement tout ce que vous allez faire c&#39;est retourner un tas de baskets. Mais ce qui se passe lorsque vous retournez ces bascules est _vraiment_ important, je voulais donc y consacrer une page entière.
 
 Real-Time Customer Profile offre une vue d’ensemble de chaque client qui combine des données issues de plusieurs canaux, notamment des données en ligne, hors ligne, CRM et tierces. Le profil vous permet de consolider vos diverses données client en une vue unifiée offrant un compte horodaté et exploitable de chaque interaction client.
 
-Aussi incroyable que cela paraisse, vous n&#39;avez pas besoin d&#39;activer *toutes vos données* pour profile. En fait, vous ne devez activer que les données dont vous avez besoin pour les cas d’utilisation de l’activation. Activez les données que vous souhaitez utiliser pour les cas d’utilisation marketing, les intégrations du centre d’appels, etc., où vous avez besoin d’un accès rapide à un profil client robuste. Si vous chargez des données uniquement à des fins d’analyse, elles ne doivent probablement pas être activées pour le profil.
+Aussi incroyable que cela paraisse, vous n&#39;avez pas besoin d&#39;activer *toutes vos données* pour le profil. En fait, vous ne devez activer que les données dont vous avez besoin pour les cas d’utilisation de l’activation. Activez les données que vous souhaitez utiliser pour les cas d’utilisation marketing, les intégrations du centre d’appels, etc., où vous avez besoin d’un accès rapide à un profil client robuste. Si vous chargez des données uniquement à des fins d’analyse, elles ne doivent probablement pas être activées pour le profil.
 
-Il y a de l&#39;importance [Barrières de sécurité pour les données Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que vous devez examiner lors du choix de vos propres données à activer pour profile.
+Il existe d’importantes [barrières de sécurité pour les données de profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que vous devez examiner lors du choix de vos propres données à activer pour le profil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**Architectes de données** Vous devrez activer Real-time Customer Profile en dehors de ce tutoriel.
+**Les architectes de données** devront activer Real-time Customer Profile en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Real-time Customer Profile :
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Autorisations requises
 
-Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous configurez tous les contrôles d’accès requis pour terminer cette leçon.
+Dans la leçon [Configurer les autorisations](configure-permissions.md) , vous configurez tous les contrôles d’accès requis pour terminer cette leçon.
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -51,16 +51,16 @@ Dans le [Configuration des autorisations](configure-permissions.md) leçon, vous
 
 Commençons par la tâche simple d’activation d’un schéma :
 
-1. Dans l’interface utilisateur de Platform, ouvrez le **Schéma de fidélité Luma**
-1. Dans **[!UICONTROL Propriétés du schéma]**, faites basculer le **Profil** switch
-1. Dans le modal de confirmation, appuyez sur la touche **[!UICONTROL Activer]** pour confirmer
-1. Sélectionnez la variable **[!UICONTROL Enregistrer]** pour enregistrer vos modifications.
+1. Dans l’interface utilisateur de Platform, ouvrez le **schéma de fidélité Luma**
+1. Dans **[!UICONTROL Propriétés du schéma]**, basculez le commutateur **Profile**
+1. Dans le modal de confirmation, appuyez sur le bouton **[!UICONTROL Activer]** pour confirmer.
+1. Sélectionnez le bouton **[!UICONTROL Enregistrer]** pour enregistrer vos modifications.
 
    >[!IMPORTANT]
    >
    >Une fois qu’un schéma est activé pour Profile, il ne peut pas être désactivé ni supprimé. De plus, les champs ne peuvent plus être supprimés du schéma après ce point. Il est important de tenir compte de ces implications ultérieurement lorsque vous travaillez avec vos propres données dans votre environnement de production. Vous devriez utiliser un environnement de test de développement dans ce tutoriel, qui peut être supprimé à tout moment.
    >
-   >Dans l’environnement contrôlé de ce tutoriel, vous activerez vos schémas et jeux de données pour les profils, _avant d’ingérer des données_. Lorsque vous utilisez vos propres données, nous vous recommandons de procéder dans l’ordre suivant :
+   >Dans l’environnement contrôlé de ce tutoriel, vous activerez vos schémas et jeux de données pour profile, _avant d’ingérer des données_. Lorsque vous utilisez vos propres données, nous vous recommandons de procéder dans l’ordre suivant :
    >
    > 1. Tout d’abord, ingérez des données dans vos jeux de données.
    > 1. Résolvez tous les problèmes qui se produisent pendant le processus d’ingestion des données (par exemple, les problèmes de validation des données ou de mappage).
@@ -78,27 +78,27 @@ Facile, n&#39;est-ce pas ? Répétez les étapes ci-dessus pour ces autres sché
 
 ## Activation des schémas pour Real-time Customer Profile à l’aide de l’API Platform
 
-Il est maintenant temps d’activer la variable `Luma CRM Schema` avec l’API . Si vous souhaitez ignorer cet exercice et l’activer simplement dans l’interface utilisateur, allez-y.
+Il est maintenant temps d’activer le `Luma CRM Schema` avec l’API. Si vous souhaitez ignorer cet exercice et l’activer simplement dans l’interface utilisateur, allez-y.
 
 ### Obtention du meta:altId du schéma
 
-Commençons par obtenir le `meta:altId` de `Luma CRM Schema`:
+Commençons par obtenir le `meta:altId` de `Luma CRM Schema` :
 
-1. Ouvrir [!DNL Postman]
-1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
-1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. Sélectionnez la variable **Envoyer** button
+1. Ouvrez [!DNL Postman]
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la leçon [!DNL Postman].
+1. Ouvrez la requête **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
+1. Sélectionnez le bouton **Send**
 1. Vous devriez obtenir une réponse 200
-1. Recherchez dans la réponse la `Luma CRM Schema` et copiez le `meta:altId` value
-   ![Copiez le méta:altIid](assets/profile-crm-getMetaAltId.png)
+1. Recherchez dans la réponse de l’élément `Luma CRM Schema` et copiez la valeur `meta:altId`.
+   ![Copiez le meta:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### Activation du schéma
 
 Maintenant que nous avons le meta:altId du schéma, nous pouvons l&#39;activer pour le profil :
 
-1. Ouvrir la requête **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
-1. Dans le **Paramètres** collez votre `meta:altId` comme valeur de `SCHEMA_ID` valeur param
-1. Dans le **Corps** , collez le code suivant
+1. Ouvrez la requête **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
+1. Dans **Params**, collez votre valeur `meta:altId` comme valeur de paramètre `SCHEMA_ID`
+1. Dans l’onglet **Body** , collez le code suivant :
 
    ```json
    [{
@@ -108,13 +108,13 @@ Maintenant que nous avons le meta:altId du schéma, nous pouvons l&#39;activer p
    }]
    ```
 
-1. Sélectionnez la variable **Envoyer** button
+1. Sélectionnez le bouton **Send**
 1. Vous devriez obtenir une réponse 200
 
-   ![Activez le schéma CRM pour le profil avec votre méta:altIid personnalisé utilisé comme paramètre SCHEMA_ID .](assets/profile-crm-enableProfile.png)
+   ![Activez le schéma CRM pour le profil avec votre méta:altIid personnalisé utilisé comme paramètre SCHEMA_ID](assets/profile-crm-enableProfile.png)
 
 Vous devriez être en mesure de voir dans l’interface utilisateur que les cinq schémas sont activés pour Profile (vous devrez peut-être MAJ-Recharger pour voir que `Luma CRM Schema` est activé) :
-![Tous les schémas activés](assets/profile-allSchemasEnabled.png)
+![ Tous les schémas activés](assets/profile-allSchemasEnabled.png)
 
 
 ## Activation des jeux de données pour Real-time Customer Profile à l’aide de l’interface utilisateur de Platform
@@ -122,10 +122,10 @@ Vous devriez être en mesure de voir dans l’interface utilisateur que les cinq
 Les jeux de données doivent également être activés pour Profile, et le processus est encore plus simple :
 
 1. Dans l’interface utilisateur de Platform, ouvrez le `Luma Loyalty Dataset`
-1. Activez/désactivez la variable **[!UICONTROL Profil]** switch
-1. Dans le modal de confirmation, appuyez sur la touche **[!UICONTROL Activer]** pour confirmer
+1. Basculer le commutateur **[!UICONTROL Profile]**
+1. Dans le modal de confirmation, appuyez sur le bouton **[!UICONTROL Activer]** pour confirmer.
 
-   ![ Basculement du profil](assets/profile-loyalty-enableDataset.png)
+   ![ Basculement des profils](assets/profile-loyalty-enableDataset.png)
 
 Répétez les étapes ci-dessus pour ces autres jeux de données :
 
@@ -143,23 +143,23 @@ Vous allez maintenant activer un jeu de données pour Profile à l’aide de l�
 
 ### Obtention de l’identifiant du jeu de données
 
-Tout d’abord, nous devons obtenir le `id` de `Luma CRM Dataset`:
+Tout d&#39;abord, nous devons obtenir le `id` de `Luma CRM Dataset` :
 
-1. Ouvrir [!DNL Postman]
-1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête . **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la variable [!DNL Postman] leçon.
-1. Ouvrir la requête **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. Sélectionnez la variable **Envoyer** button
+1. Ouvrez [!DNL Postman]
+1. Si vous ne disposez pas d’un jeton d’accès, ouvrez la requête **[!DNL OAuth: Request Access Token]** et sélectionnez **Envoyer** pour demander un nouveau jeton d’accès, comme vous l’avez fait dans la leçon [!DNL Postman].
+1. Ouvrez la requête **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
+1. Sélectionnez le bouton **Send**
 1. Vous devriez obtenir une réponse 200
-1. Recherchez dans la réponse la `Luma CRM Dataset` et copiez l’identifiant :
-   ![Copier l’ID](assets/profile-crm-copyDatasetId.png)
+1. Recherchez dans la réponse de l’élément `Luma CRM Dataset` et copiez l’identifiant :
+   ![Copiez l’id](assets/profile-crm-copyDatasetId.png)
 
 ### Activer le jeu de données
 
 Maintenant que nous disposons de l’identifiant du jeu de données, nous pouvons l’activer pour le profil :
 
-1. Ouvrir la requête **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
-1. Dans le **Paramètres** mettre à jour la variable `DATASET_ID` à vous-même
-1. Dans le **Corps** , collez le code suivant. Notez que les deux premières valeurs sont des balises préexistantes qui sont visibles dans la réponse précédente. Ils doivent être inclus dans le corps, en plus des deux nouvelles balises que nous ajoutons :
+1. Ouvrez la requête **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
+1. Dans **Params**, mettez à jour la valeur `DATASET_ID` en fonction de vos besoins.
+1. Dans l’onglet **Body**, collez le code suivant. Notez que les deux premières valeurs sont des balises préexistantes qui sont visibles dans la réponse précédente. Ils doivent être inclus dans le corps, en plus des deux nouvelles balises que nous ajoutons :
 
    ```json
    {
@@ -172,10 +172,10 @@ Maintenant que nous disposons de l’identifiant du jeu de données, nous pouvon
    }
    ```
 
-1. Sélectionnez la variable **Envoyer** button
+1. Sélectionnez le bouton **Send**
 1. Vous devriez obtenir une réponse 200
 
-   ![Activez le jeu de données CRM pour le profil, en veillant à utiliser votre identifiant de jeu de données personnalisé comme paramètre DATASET_ID .](assets/profile-crm-enableDataset.png)
+   ![Activez le jeu de données CRM pour le profil, en veillant à utiliser votre identifiant de jeu de données personnalisé comme paramètre DATASET_ID](assets/profile-crm-enableDataset.png)
 
 Vous pouvez également confirmer que l’interface utilisateur affiche le jeu de données activé :
 ![Confirmer](assets/profile-crm-confirmEnabled.png)
@@ -186,9 +186,9 @@ Vous pouvez également confirmer que l’interface utilisateur affiche le jeu de
 
 ## Ressources supplémentaires
 
-* [Documentation sur Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
+* [ Documentation sur Real-Time Customer Profile ](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
 * [Référence de l’API Real-Time Customer Profile](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**Ingénieurs de données** doit continuer à [Abonnement aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md) leçon.
-**Architectes de données** _peut sauter en amont_ et accédez au [leçon sur l’ingestion par lots](ingest-batch-data.md).
+**Les ingénieurs de données** doivent continuer la leçon [Abonner aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md) .
+**Les architectes de données** _peuvent passer à l’étape_ et accéder à la [leçon sur l’ingestion par lots](ingest-batch-data.md).

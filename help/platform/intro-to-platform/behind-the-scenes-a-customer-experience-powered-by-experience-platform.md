@@ -1,5 +1,5 @@
 ---
-title: 'Derrière les scènes : une expérience client optimisée par Adobe Experience Platform'
+title: Dans les coulisses de Scenes&#58 ; une expérience client optimisée par Adobe Experience Platform
 description: Dans la vidéo précédente, nous avons vu comment un exemple de marque, Luma, a pu créer une expérience client riche, gratifiante et pertinente. Cette vidéo montre comment Adobe Experience Platform est utilisé pour accomplir ce parcours.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner

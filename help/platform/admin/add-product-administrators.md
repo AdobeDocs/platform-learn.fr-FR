@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Ajout d’administrateurs de produit
 
-Découvrez comment ajouter des administrateurs de produit pour Adobe Experience Platform. Les administrateurs de produit gèrent le contrôle d’accès pour les applications basées sur Platform telles que Real-time Customer Data Platform et Journey Optimizer. Ils peuvent créer des utilisateurs, des développeurs et d’autres administrateurs dans Admin Console, puis leur accorder des autorisations (et des informations d’identification d’API) dans l’interface de Platform ou de Journey Optimizer. Pour plus d’informations, consultez la [Documentation sur le contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=fr).
+Découvrez comment ajouter des administrateurs de produit pour Adobe Experience Platform. Les administrateurs de produit gèrent le contrôle d’accès pour les applications basées sur Platform telles que Real-Time Customer Data Platform et Journey Optimizer. Ils peuvent créer des utilisateurs, des développeurs et d’autres administrateurs dans Admin Console, puis leur accorder des autorisations (et des informations d’identification d’API) dans l’interface de Platform ou de Journey Optimizer. Pour plus d’informations, consultez la [documentation sur le contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
 
 >[!TIP]
 >
->Nous vous recommandons également d’ajouter l’administrateur de produit en tant que **user** à la fonction `AEP-Default-All-Users` profil de produit dans Admin Console, puis ajoutez-les à un rôle dans l’écran des autorisations de l’interface Platform. Voir [Ajout d’utilisateurs](add-users.md) pour plus d’informations.
+>Nous vous recommandons également d’ajouter l’administrateur de produit en tant qu’ **utilisateur** au profil de produit `AEP-Default-All-Users` dans Admin Console, puis de les ajouter à un rôle dans l’écran des autorisations de l’interface de Platform. Pour plus d’informations, voir [Ajout d’utilisateurs](add-users.md) .

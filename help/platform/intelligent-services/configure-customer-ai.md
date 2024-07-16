@@ -21,6 +21,6 @@ Découvrez comment créer une instance de Customer AI pour prédire le comportem
 
 >[!TIP]
 >
->Customer AI prend en charge les jeux de données Adobe Analytics et Adobe Audience Manager sans avoir à utiliser ETL pour vos données afin de se conformer au schéma d’événement d’expérience client (CEE). Pour en savoir plus, consultez la [Guide de préparation des données d’Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
+>Customer AI prend en charge les jeux de données Adobe Analytics et Adobe Audience Manager sans avoir à utiliser ETL pour vos données afin de se conformer au schéma d’événement d’expérience client (CEE). Pour en savoir plus, consultez le [guide de préparation des données Intelligent Services](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on)

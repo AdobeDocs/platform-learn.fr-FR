@@ -24,23 +24,23 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 ### Jour 1
 
-9:30: Présentation
+9:30: - Présentation
 
-10:00: Lancement / Défi Intro &amp; Bootcamp
+10:00: Démarrage / Défi Intro &amp; Bootcamp
 
-11:00: Personnalisation 1-1, chasse aux friction, silos, Adobe POV (tableau blanc)
+11:00: 1-1 personnalisation, chasse à la friction, silos, Adobe POV (tableau blanc)
 
-12:00: Rompre
+Saut 12:00:
 
-12:15: Ventilation de l’architecture des solutions (tableau blanc)
+12:15: Ventilation de l’architecture de la solution (tableau blanc)
 
 13:00: Déjeuner
 
-14:00: Flux utilisateur 1 - Présentation &quot;Acquisition&quot; et plongée en profondeur
+14:00: Flux d’utilisateur 1 - Présentation &quot;Acquisition&quot; et plongée en profondeur
 
-15:30: Rompre
+Saut 15:30:
 
-16:00: Enregistrement et intégration d’Userflow 2
+16:00: Userflow 2 : enregistrement et intégration
 
 17:30: Golfclinique et Borrel
 
@@ -48,7 +48,7 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 ### Jour 2
 
-08:30: Session de petit-déjeuner : présentation d’une diffusion basée sur les Parcours utilisateur, structure d’équipe, retard de diffusion
+08:30: Session de petit-déjeuner : présentation de la diffusion basée sur les Parcours utilisateur, structure de l’équipe, retard de diffusion
 
 09.45 : Comprendre Les Flux De Données AEP Par Le Biais De Scénarios Practifs
 
@@ -56,7 +56,7 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 10.45 : pause
 
-12:00: Flux d’utilisateurs 3 - Fusion physique et numérique
+12:00: Flux d’utilisateurs 3 &quot;Fusion physique et numérique&quot;
 
 12.30 : Déjeuner
 
@@ -73,7 +73,7 @@ La personnalisation à grande échelle commence par la compréhension de ce qui 
 
 - Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Accès à la collecte de données Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accès au site web de bootcamp sur [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Accédez au site Web bootcamp sur [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Accédez à [Vidéos](https://experienceleague.adobe.com/docs/platform-learn/com
 
 ## YouTube
 
-D’autres vidéos intéressantes sont disponibles. [sur notre canal YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+Vous trouverez d’autres vidéos intéressantes [sur notre canal YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Flux utilisateur
 
@@ -113,7 +113,7 @@ Dans ce flux d’utilisateurs, vous comprendrez tous les éléments dont vous av
 
 Dans ce flux d’utilisateurs, vous personnaliserez l’expérience client sur les canaux en ligne et hors ligne de manière cohérente, à l’aide de Real-Time CDP et Adobe Journey Optimizer.
 
-[4. Analyse des Parcours client](./uc/uc4/uc4.md)
+[4. Analyse de Parcours client](./uc/uc4/uc4.md)
 
 Dans ce flux d’utilisateurs, vous découvrirez comment les clients évoluent d’un canal à l’autre, d’un canal en ligne à un autre en passant par un centre d’appel, etc.
 

@@ -17,7 +17,7 @@ ht-degree: 5%
 
 # Utilisation des sandbox
 
-Découvrez comment les environnements de test Experience Platform fournissent des environnements isolés pour tester des fonctionnalités nouvelles ou existantes et travailler avec une approche &quot;fail fast&quot;. Découvrez comment réinitialiser et redémarrer les environnements de développement et utiliser les environnements de test avec les appels d’API. Pour plus d’informations, consultez la [Guide d’utilisation des environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr).
+Découvrez comment les environnements de test Experience Platform fournissent des environnements isolés pour tester des fonctionnalités nouvelles ou existantes et travailler avec une approche &quot;fail fast&quot;. Découvrez comment réinitialiser et redémarrer les environnements de développement et utiliser les environnements de test avec les appels d’API. Pour plus d’informations, consultez le [guide d’utilisation des environnements de test](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 

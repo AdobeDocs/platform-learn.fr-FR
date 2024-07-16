@@ -6,7 +6,7 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
@@ -37,7 +37,7 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     </a>
     </div>
     <p>
-    <em>Utilisation des balises pour implémenter le SDK Web Platform</em>
+    <em> Utilisation de balises pour implémenter le SDK Web Platform</em>
     <p>
   </td>
   <td>
@@ -50,16 +50,16 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     </a>
     </div>
     <p>
-    <em>Utilisation des balises pour mettre en oeuvre le SDK Mobile Platform</em>
+    <em> Utilisation de balises pour implémenter le SDK Platform Mobile </em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
       <img alt="Migration de Target vers le SDK Web" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr" target="_blank">
-    <strong>Migration d’Adobe Target vers le SDK Web</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Migrer Adobe Target vers le SDK Web</strong>
     </a>
     </div>
     <p>

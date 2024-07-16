@@ -20,15 +20,15 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./images/home.png)
 
-Avant de continuer, vous devez sélectionner une **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné le [!UICONTROL sandbox], vous verrez le changement d’écran et vous êtes maintenant dans votre [!UICONTROL sandbox].
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``Bootcamp``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./images/sb1.png)
 
-Dans le menu de gauche, accédez à **Destinations**, puis accédez à **Catalogue**. Vous verrez alors le **Catalogue des destinations**. Dans **Destinations**, cliquez sur **Activation des audiences** sur le **Audience personnalisée facebook** carte.
+Dans le menu de gauche, accédez à **Destinations**, puis à **Catalogue**. Vous verrez ensuite le **catalogue des destinations**. Dans **Destinations**, cliquez sur **Activer les audiences** sur la carte **Audience personnalisée Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Sélectionner la destination **bootcamp-facebook** et cliquez sur **Suivant**.
+Sélectionnez la destination **bootcamp-facebook** et cliquez sur **Suivant**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -36,15 +36,15 @@ Dans la liste des audiences disponibles, sélectionnez l’audience que vous ave
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Sur le **Mappage** , assurez-vous que la variable **Appliquer la transformation** est activée. Cliquez sur **Suivant**.
+Sur la page **Mapping**, assurez-vous que la case **Apply Transformation** est activée. Cliquez sur **Suivant**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Sur le **Planification de l’audience** , sélectionnez **Origine de votre audience** et définissez-le sur **Directement des clients**. Cliquez sur **Suivant**.
+Sur la page **Audience Schedule**, sélectionnez l’ **origine de votre audience** et définissez-la sur **Directly from clients**. Cliquez sur **Suivant**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Enfin, le **Réviser** page, cliquez sur **Terminer**.
+Enfin, sur la page **Review**, cliquez sur **Terminer**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

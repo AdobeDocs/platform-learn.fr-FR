@@ -11,7 +11,7 @@ feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualiz
 exl-id: 70b06cca-879a-451b-8126-de2f830f056a
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Mais informações sobre o Customer Journey Analytics podem ser encontradas [aqu
 - Familiarize-se com a UI do Customer Journey Analytics
 - Traga os des jeux de données de Adobe Experience Platform para o Customer Journey Analytics
 - Entenda o Person ID e a junção de dados no CJA
-- Entenda os concitos de uma conexão de dados e uma visualização de dados
+- Entenda os concitos de uma conexão de dados e uma visualização
 - Utilisation des jeux de données com Analysis Workspace dans Adobe Experience Platform
 
 ## Requêtes préalables
@@ -46,7 +46,7 @@ Mais informações sobre o Customer Journey Analytics podem ser encontradas [aqu
 >
 >Tutoriel Este foi criado para facilitar um formato específico de Bootcamp. Tutoriel Sistemas e contas específicos aos quais você pode não ter acesso são Utizados neste . Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado . Se você é um participante de um Bootcamp e precisa das crédenciais de acesso, entre em contato com seu représentante da Adobe para Receber as informações rendárias .
 
-## Exercícios
+## exercice
 
 [4.1 Customer Journey Analytics 101](./ex1.md)
 
@@ -70,6 +70,6 @@ Le como de Saiba visualisar os dados da Adobe Experience Platform usando o Custo
 
 [4.6 De insights a ação](./ex6.md)
 
-Aprenda como usar s&#39;informe sur la politique à suivre pour la paix, la liberté et la liberté, le développement social, la démocratie, la démocratie, la démocratie et le Adobe Journey Optimizer.
+Aprenda como usar s&#39;informe sur la politique à suivre pour la paix, la liberté et la liberté, la diffusion, la diffusion, la mise au point et la mise en oeuvre de la politique à l&#39;égard des femmes.
 
 [Retornar para Todos os Módulos](../../overview.md)

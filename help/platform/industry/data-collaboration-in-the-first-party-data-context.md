@@ -1,5 +1,5 @@
 ---
-title: Collaboration en matière de données dans le contexte des données propriétaires
+title: Collaboration de données dans le contexte des données propriétaires
 description: Tenez votre engagement en matière dʼexpérience, avec un accès à moins de données. Que vous soyez annonceur, éditeur ou agence, ce webinaire vous aidera à libérer les opportunités de collaboration en matière de données dans un avenir sans cookies tiers.
 feature: Data Management
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
@@ -10,18 +10,18 @@ jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 36%
+source-wordcount: '135'
+ht-degree: 19%
 
 ---
 
-# Collaboration en matière de données dans le contexte des données propriétaires
+# Collaboration de données dans le contexte des données propriétaires
 
 Tenez votre engagement en matière dʼexpérience, avec un accès à moins de données. Que vous soyez annonceur, éditeur ou agence, ce webinaire vous aidera à libérer les opportunités de collaboration en matière de données dans un avenir sans cookies tiers.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
-## Points clés:
+## Principales mesures à prendre :
 
 * Comment incorporer des modèles de collaboration de données dans le contexte de données propriétaires, avec le consentement des consommateurs.
 * Création de partenariats de marque à marque et de direction d’éditeur qui offrent la promesse d’expérience.

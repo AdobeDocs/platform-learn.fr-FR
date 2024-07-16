@@ -1,15 +1,15 @@
 ---
-title: Ajouter du code incorporé
+title: Ajout du code incorporé
 description: Découvrez comment obtenir les codes incorporés de votre propriété de balise et les mettre en oeuvre dans votre site web. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 49%
+source-wordcount: '1037'
+ht-degree: 45%
 
 ---
 
-# Ajouter du code incorporé
+# Ajout du code incorporé
 
 Dans cette leçon, vous allez mettre en oeuvre le code incorporé asynchrone de l’environnement de développement de votre propriété de balise. En cours de route, vous découvrirez deux concepts principaux des balises : les environnements et les codes incorporés.
 
@@ -28,13 +28,13 @@ Dans cette leçon, vous allez mettre en oeuvre le code incorporé asynchrone de 
 * Obtention du code incorporé de votre propriété de balise
 * différencier environnement de développement, d’évaluation et de production ;
 * Ajout d’un code incorporé de balise à un document HTML
-* Expliquer l’emplacement optimal du code incorporé de balise par rapport à d’autres codes dans la variable `<head>` d’un document html
+* Expliquer l’emplacement optimal du code incorporé de balise par rapport à d’autres codes dans le `<head>` d’un document HTML
 
 ## Copie du code incorporé
 
-Le code incorporé est un `<script>` balise que vous placez sur vos pages web pour charger et exécuter la logique que vous créez dans les balises . Si vous chargez la bibliothèque de manière asynchrone, le navigateur continue à charger la page, récupère la bibliothèque de balises et l’exécute parallèlement. Dans ce cas, il n’y a qu’un seul code incorporé à placer dans l’élément `<head>`. (Lorsque les balises sont déployées de manière synchrone, deux codes incorporés sont disponibles, l’un que vous placez dans la variable `<head>` et un autre que vous placez avant l’événement `</body>`).
+Le code incorporé est une balise `<script>` que vous placez sur vos pages web pour charger et exécuter la logique que vous créez dans les balises . Si vous chargez la bibliothèque de manière asynchrone, le navigateur continue à charger la page, récupère la bibliothèque de balises et l’exécute parallèlement. Dans ce cas, il n’y a qu’un seul code incorporé à placer dans l’élément `<head>`. (Lorsque les balises sont déployées de manière synchrone, il existe deux codes incorporés, l’un que vous placez dans le `<head>` et l’autre que vous placez avant le `</body>`.)
 
-Dans l’écran Présentation de la propriété, cliquez sur **[!UICONTROL Environnements]** dans le volet de navigation de gauche pour accéder à la page des environnements. Notez que les environnements de développement, d’évaluation et de production ont déjà été créés pour vous.
+Dans l’écran Présentation de la propriété, cliquez sur **[!UICONTROL Environments]** dans le volet de navigation de gauche pour accéder à la page des environnements. Notez que les environnements de développement, d’évaluation et de production ont déjà été créés pour vous.
 
 ![Clic sur Environnements dans la barre de navigation supérieure](images/launch-environments.png)
 
@@ -46,7 +46,7 @@ Ce sont les seuls environnements nécessaires pour suivre jusqu’au bout ce tut
 
 Copions maintenant le code incorporé :
 
-1. Sur la ligne **[!UICONTROL Développement]**, cliquez sur l’icône Installer ![icône Installer](images/launch-installIcon.png) pour ouvrir le modal.
+1. Sur la ligne **[!UICONTROL Développement]**, cliquez sur l’icône Installer ![Icône Installer](images/launch-installIcon.png) pour ouvrir le modal.
 
 1. Notez que les balises sont définies par défaut sur les codes incorporés asynchrones.
 
@@ -58,7 +58,7 @@ Copions maintenant le code incorporé :
 
 ## Mise en œuvre du code incorporé dans l’élément `<head>` de la page HTML d’exemple
 
-Le code incorporé doit être mis en œuvre dans l’élément `<head>` de toutes les pages HTML qui partageront la propriété. Il peut y avoir un ou plusieurs fichiers de modèle qui contrôlent la variable `<head>` sur l’ensemble du site, ce qui simplifie le processus d’ajout de balises.
+Le code incorporé doit être mis en œuvre dans l’élément `<head>` de toutes les pages HTML qui partageront la propriété. Il se peut qu’un ou plusieurs fichiers de modèle contrôlent l’ `<head>` sur l’ensemble du site, ce qui simplifie le processus d’ajout de balises.
 
 Si ce n’est déjà fait, copiez l’exemple de code de page HTML et collez-le dans un éditeur de code. Si vous en avez besoin, [Brackets](https://brackets.io/) est un éditeur libre et open source.
 
@@ -120,7 +120,7 @@ Remplacez le code incorporé existant sur la ligne 34, ou autour de celle-ci, p
 ```
 
 Ouvrez les outils de développement de votre navigateur web et accédez à l’onglet Réseau. À ce stade, une erreur 404 devrait s’afficher pour l’URL de l’environnement de balises :
-![Erreur 404](images/samplepage-404.png)
+![404 error](images/samplepage-404.png)
 
 L’erreur 404 est attendue car vous n’avez pas encore créé de bibliothèque dans cet environnement de balises. Ce point sera abordé dans la leçon suivante. Si un message d’erreur « fail » s’affiche à la place d’une erreur 404, vous avez probablement oublié d’ajouter le protocole `https://` au code incorporé. Là encore, il suffit d’ajouter `https://` si vous chargez la page d’exemple à l’aide du protocole `file://`. Effectuez cette modification et rechargez la page jusqu’à ce que l’erreur 404 s’affiche.
 
@@ -130,17 +130,17 @@ Prenez quelques instants pour passer en revue certaines des bonnes pratiques de 
 
 * **Couche de données** :
 
-   * We *fortement* recommander la création d’une couche de données sur votre site contenant tous les attributs nécessaires pour renseigner les variables dans Analytics, Target et d’autres solutions marketing. Cette page d’exemple ne contient qu’une couche de données très simple, mais une véritable couche de données peut contenir beaucoup plus de détails à propos de la page, du visiteur, des informations sur son panier, etc. Pour plus d’informations sur les couches de données, consultez le document [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
+   * Nous *vous recommandons de créer une couche de données sur votre site contenant tous les attributs nécessaires pour renseigner les variables dans Analytics, Target et d’autres solutions marketing.* Cette page d’exemple ne contient qu’une couche de données très simple, mais une véritable couche de données peut contenir beaucoup plus de détails à propos de la page, du visiteur, des informations sur son panier, etc. Pour plus d’informations sur les couches de données, consultez le document [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf).
 
    * Définissez votre couche de données avant le code incorporé de balise afin d’optimiser ce que vous pouvez faire avec les solutions Experience Cloud.
 
-* **Bibliothèques d’assistance JavaScript**: si une bibliothèque comme JQuery est déjà implémentée dans la variable `<head>` de vos pages, chargez-la avant les balises afin d’exploiter sa syntaxe dans les balises et dans Target.
+* **Bibliothèques d’assistance JavaScript** : si une bibliothèque comme JQuery est déjà implémentée dans le `<head>` de vos pages, chargez-la avant les balises afin d’exploiter sa syntaxe dans les balises et dans Target.
 
 * **Doctype HTML5** : Target a besoin du doctype HTML5.
 
 * **preconnect et dns-prefetch** : utilisez preconnect and dns-prefetch pour améliorer le temps de chargement de la page. Voir aussi : [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **prémasquage du fragment de code pour les implémentations asynchrones de Target**: vous en apprendrez plus à ce sujet dans la leçon sur Target, mais lorsque Target est déployé via des codes incorporés de balise asynchrones, vous devez coder en dur un fragment de code de masquage préalable sur vos pages avant les codes incorporés de balise afin de gérer le scintillement du contenu.
+* **fragment de code de pré-masquage pour les implémentations asynchrones de Target** : Vous en apprendrez plus à ce sujet dans la leçon sur Target. Cependant, lorsque Target est déployé via des codes incorporés de balise asynchrones, vous devez coder en dur un fragment de code de pré-masquage sur vos pages avant les codes incorporés de balise afin de gérer le scintillement de contenu.
 
 Voici un résumé des bonnes pratiques décrites ci-dessus dans l’ordre conseillé. Notez qu’il existe des espaces réservés pour les détails spécifiques au compte :
 

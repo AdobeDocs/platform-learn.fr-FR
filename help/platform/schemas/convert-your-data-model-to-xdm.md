@@ -9,13 +9,13 @@ thumbnail: 333483.jpg
 exl-id: 20cff411-99e1-42d5-852d-9fd66cf0e6f9
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 7%
+source-wordcount: '87'
+ht-degree: 1%
 
 ---
 
 # Convertir votre modèle de données en XDM
 
-Cette vidéo montre comment les architectes de données peuvent prendre leur modèle de données transactionnelles existant et le convertir en modèle de données d’expérience. Elle montre la différence entre les approches de modélisation à l’aide de diagrammes de relation d’entité. Pour plus d’informations, consultez la [bonnes pratiques pour la documentation sur la modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=fr).
+Cette vidéo montre comment les architectes de données peuvent prendre leur modèle de données transactionnelles existant et le convertir en modèle de données d’expérience. Elle montre la différence entre les approches de modélisation à l’aide de diagrammes de relation d’entité. Pour plus d’informations, consultez la [documentation sur les bonnes pratiques de modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on)

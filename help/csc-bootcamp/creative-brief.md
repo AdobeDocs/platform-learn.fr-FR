@@ -2,10 +2,11 @@
 title: Le camp d'entraînement du CSC - résumé créatif
 description: Le camp d'entraînement du CSC - résumé créatif
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: e404b54d-cdd6-4ecf-9740-838c002b7872
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '325'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +26,7 @@ Le produit doit être positionné comme un vélo de haute qualité, fiable et é
 
 ## Public cible
 
-Notre public cible est constitué de navetteurs urbains, de passionnés de vélo et de remise en forme, âgés de 18 à 55 ans, qui valorisent la durabilité, la santé et la commodité. Ils sont férus de technologie, socialement conscients et ont un mode de vie principal.
+Notre public cible est constitué de navetteurs urbains, de passionnés de vélo et de remise en forme, âgés de 18 à 55 ans, qui valorisent la durabilité, la santé et la commodité. Ils sont férus de technologie, socialement conscients et ont un mode de vie actif.
 
 ## Message clé
 
@@ -40,7 +41,7 @@ Notre gamme de vélos électriques A1 combine technologie de pointe, durabilité
 
 ## Chronologie
 
-Le projet devrait être terminé dans un délai de 8 à 12 semaines.
+Le projet devrait être terminé dans les 8 à 12 semaines.
 
 ## Budget
 
@@ -49,7 +50,7 @@ Le budget du projet est de 100 000 dollars.
 ## Indicateurs de performance clés (IPC)
 
 1. Nombre de commandes préalables
-1. Chiffre d’affaires des ventes
+1. Recettes de ventes générées
 1. Engagement et impressions sur les médias sociaux
 1. Trafic et conversions web
 1. Satisfaction et commentaires des clients
@@ -59,8 +60,8 @@ Le budget du projet est de 100 000 dollars.
 Le lancement de notre nouvelle gamme de vélos électriques A1 offre une opportunité intéressante pour attirer les consommateurs soucieux de l&#39;environnement et de la santé qui recherchent un mode de transport fiable, élégant et pratique. En positionnant notre marque comme étant moderne, à la mode et respectueuse de l&#39;environnement, et en utilisant des stratégies marketing créatives et innovantes, nous pouvons atteindre nos objectifs et devenir un leader du marché dans l&#39;industrie des vélos électriques.
 
 
-Étape suivante : [Phase 1 - Planification : Planification](./phases/planning/planning.md)
+Étape suivante : [Phase 1 - Planification : planification](./phases/planning/planning.md)
 
-[Revenir à la chaîne d’approvisionnement de contenu en 4 phases](./csc-in-4-phases.md)
+[Revenez à la chaîne d’approvisionnement de contenu en 4 phases.](./csc-in-4-phases.md)
 
 [Revenir à tous les modules](./overview.md)

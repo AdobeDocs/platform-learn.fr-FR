@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -23,32 +23,32 @@ Antes de installar o aplicativo, é rendário habilitar Rastreamento no seu disp
 
 ![DSN](./../uc3/images/app4.png)
 
-Accès à une ressource App Store da Apple `aepmobile-bootcamp`.\
-Clique **Instalar** Vous **Télécharger**.
+Accédez à une App Store da Apple et demandez `aepmobile-bootcamp`.\
+Cliquez Sur **Instalar** Ou **Télécharger**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Installation de Depois que o aplicativo, groupe em **Abrir**.
+Installation de Depois que o aplicativo estiver, groupe em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Clique **OK**.
+Cliquez Sur L’Écran **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Clique **Permitir**.
+Clique-Les **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clique **Concordo**.
+Clique-Les **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique **Permitir enquanto uso app**.
+Clique em **Permitir enquanto sur app**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Clique **Permitir**.
+Clique-Les **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -58,7 +58,7 @@ Agora você está no aplicativo, a página inegal, pronto(a) para verificar day 
 
 ## Fluxo da jornada do cliente
 
-Primeiramente, é rendário fazer pour se connecter. Clique **Connexion**.
+Primeiramente, é rendário fazer pour se connecter. Cliquez Sur **Login**.
 
 ![DSN](./../uc3/images/app13.png)
 
@@ -66,7 +66,7 @@ Depois de criar sua nos exerícios anteriores, isso é exibido no site. Agora é
 
 ![Démonstration](./../uc3/images/pv1.png)
 
-Digite o endereço de e-mail que você usou no site e clique em **Connexion**.
+Digite o endereço de e-mail que você ne nous parle pas de site e groupe em **Login**.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -78,17 +78,17 @@ L&#39;appareillage Retorne para a página inegal do aplicativo e os recursos adi
 
 ![DSN](./../uc3/images/app17.png)
 
-Acesse **Produits**. Clique em qualquer producto, neste exemplaire : **Café à emporter**.
+Accédez à **Products**. Clique em qualquer producto, neste exemplaire : **Café à aller**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do producto **Café à emporter** pas d&#39;aplicativo. Clique **Acheter**.
+Você verá a página do producto **Café à aller** no aplicativo. Clique-Les **Buy**.
 
 ![DSN](./images/app20.png)
 
 Agora você terminou este exerício e está pronto para as próximas atividades .
 
-Próxima etapa : [ 2.6 Personalização no call center](./ex6.md)
+Próxima etapa : [ 2.6 Personalização no call center](./ex6.md)
 
 [Retornar para Fluxo de Usuário 2](./uc2.md)
 

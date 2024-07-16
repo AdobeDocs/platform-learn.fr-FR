@@ -11,8 +11,8 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
@@ -25,11 +25,11 @@ Pour tester votre parcours, vous devez utiliser l’identifiant d’événement 
 L’identifiant d’événement est ce qui doit être envoyé à Adobe Experience Platform pour déclencher le parcours. Dans cet exemple, eventID est :
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Ouvrez l’application mobile et accédez à la page d’accueil. Cliquez sur l’icône **Paramètres**.
+Ouvrez l’application mobile et accédez à la page d’accueil. Cliquez sur l’icône **Paramètres** .
 
 ![DSN](./images/appsett.png)
 
-Collez votre eventID dans le champ . **Identifiant d’événement de balise** et cliquez sur **Enregistrer**.
+Collez votre eventID dans le champ **Beacon EventID** et cliquez sur **Enregistrer**.
 
 ![DSN](./images/beacon1.png)
 
@@ -39,11 +39,11 @@ Vous verrez alors :
 
 ![DSN](./images/screen1.png)
 
-Ensuite, revenez à la page d’accueil. Cliquez sur le bouton **beacon** icône .
+Ensuite, revenez à la page d’accueil. Cliquez sur l’icône **balise** .
 
 ![DSN](./images/app23.png)
 
-Vous verrez alors ceci. Tout d’abord, sélectionnez **Balise d’écran Bootcamp** puis cliquez sur le bouton **entrée** bouton . Vous pourrez ainsi simuler une entrée de balise.
+Vous verrez alors ceci. Sélectionnez tout d&#39;abord **Bootcamp Screen Beacon** , puis cliquez sur le bouton **entry** . Vous pourrez ainsi simuler une entrée de balise.
 
 ![DSN](./images/app21.png)
 
