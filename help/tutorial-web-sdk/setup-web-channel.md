@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 9cb56b739efde38d8e85358f45ee6a35a0394e27
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 1%
@@ -201,7 +201,7 @@ Pour créer l’expérience de contenu :
 
 1. Vous pouvez également choisir de **[!UICONTROL Distribuer uniformément]**. Cochez cette option pour vous assurer que les divisions de traitement sont toujours égales.
 
-[En savoir plus sur les expériences de contenu dans le canal web Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
+[En savoir plus sur les expériences de contenu dans le canal web Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
 
 ### Modification de contenu à l’aide de Visual Helper
 

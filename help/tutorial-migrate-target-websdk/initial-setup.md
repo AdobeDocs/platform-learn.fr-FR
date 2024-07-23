@@ -2,7 +2,7 @@
 title: Configuration initiale | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez et configurez les éléments fondamentaux importants requis pour l’implémentation de votre SDK Web Platform.
 exl-id: dbf9683b-1cfc-474a-9c38-432cad4d1533
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La migration d’at.js vers le SDK Web Platform nécessite une configuration initiale pour permettre la capture de données, les fonctionnalités et les fonctions appropriées du SDK Web Platform. Les étapes suivantes du [tutoriel de mise en oeuvre du SDK Web Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr) doivent être effectuées avant toute modification de mise en oeuvre de site Web :
 
-- [Configurez les autorisations appropriées](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-permissions.html){target="_blank"} dans Adobe Admin Console pour la collecte de données
+- [Configurez les autorisations appropriées](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} dans Adobe Admin Console pour la collecte de données
 - [Configuration d’un schéma XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} pour transmettre des données structurées à l’Edge Network
 - [Configuration d’un espace de noms d’identité](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} pour la personnalisation sur plusieurs appareils et la fonctionnalité mbox3rdPartyId
 - [Créez un flux de données](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} pour activer le transfert de données à partir d’un Edge Network.
