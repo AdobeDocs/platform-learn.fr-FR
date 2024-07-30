@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
+source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '917'
 ht-degree: 20%
 
 ---
@@ -49,6 +49,7 @@ ht-degree: 20%
 + Audiences et segmentation {#audiences}
    + [Présentation d’Audience Portal et de la composition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Chargement d’audiences](audiences/upload-audiences.md)
+   + [Présentation de la composition des audiences fédérées](audiences/overview-of-federated-audience-composition.md)
    + [Présentation du créateur de règles d’audience](audiences/audience-rule-builder-overview.md)
    + [Créer des audiences](audiences/create-audiences.md)
    + [Création d’audiences basées sur du contenu](audiences/create-content-based-audiences.md)
@@ -83,13 +84,13 @@ ht-degree: 20%
    + [Suppression de jeux de données et de lots](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Expérience des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Pseudonyme du profil et expiration de l’événement (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [Supprimer des profils](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [Supprimer des profils](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Mettre à jour un attribut de profil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Ingestion de données {#data-ingestion}
    + [Vue d’ensemble](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Aperçu de l&#39;ingestion en lot](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Création et remplissage d’un jeu de données](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Suppression de jeux de données et de lots](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
+   + [Supprimer les jeux de données et les lots](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [Mappage d’un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Présentation des sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingestion de données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
