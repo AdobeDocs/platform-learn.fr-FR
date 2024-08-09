@@ -2,7 +2,7 @@
 title: Remplacement de la bibliothèque | Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 3%
@@ -193,7 +193,7 @@ Si votre mise en oeuvre est asynchrone comme dans les exemples ci-dessus, rempla
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("mboxEdit") !== -1, "body { opacity: 0 !important }", 3000);
 </script>
 ```
 
