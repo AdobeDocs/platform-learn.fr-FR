@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 20%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 20%
    + [Présentation d’Audience Portal et de la composition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Chargement d’audiences](audiences/upload-audiences.md)
    + [Présentation de la composition des audiences fédérées](audiences/overview-of-federated-audience-composition.md)
+   + [Connexion et configuration de la composition d’audiences fédérées](audiences/connect-and-configure-federated-audience-composition.md)
+   + [Création d’une composition d’audience fédérée](audiences/create-a-federated-audience-composition.md)
    + [Présentation du créateur de règles d’audience](audiences/audience-rule-builder-overview.md)
    + [Créer des audiences](audiences/create-audiences.md)
    + [Utiliser des contraintes de temps](audiences/time-constraints.md)
