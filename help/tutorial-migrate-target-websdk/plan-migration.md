@@ -1,8 +1,8 @@
 ---
-title: Planification | Migration de Target depuis at.js 2.x vers le SDK Web
+title: Planification - Migration de Target depuis at.js 2.x vers le SDK Web
 description: Découvrez comment planifier votre mise en oeuvre Adobe Target d’at.js 2.x au SDK Web Adobe Experience Platform.
 exl-id: 0e8f9cde-f361-4f69-886d-aad3074cd9b2
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 1%

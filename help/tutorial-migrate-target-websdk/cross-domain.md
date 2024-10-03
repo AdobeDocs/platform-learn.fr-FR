@@ -1,8 +1,8 @@
 ---
-title: Activation de la prise en charge inter-domaines | Migration de Target depuis at.js 2.x vers le SDK Web
+title: Activation de la prise en charge inter-domaines - Migration de Target d’at.js 2.x vers le SDK Web
 description: Découvrez comment configurer Adobe Target pour des scénarios de navigateur web inter-domaines et d’applications mobiles à l’aide du SDK web Experience Platform.
 exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
