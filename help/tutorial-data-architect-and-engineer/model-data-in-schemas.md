@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 8e470d8a0c9fee7389ac60a743431fe81012fa0f
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 7%
@@ -47,7 +47,7 @@ Avant de commencer les exercices, regardez cette courte vidéo pour en savoir pl
 
 >[!TIP]
 >
-> Pour approfondir la modélisation des données dans Experience Platform, nous vous recommandons de suivre le cours [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr), disponible gratuitement sur Experience League !
+> Pour approfondir la modélisation des données dans Experience Platform, nous vous recommandons de regarder la playlist [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible gratuitement sur Experience League !
 
 ## Autorisations requises
 
@@ -86,7 +86,7 @@ Au cours de cet exercice, nous allons créer un schéma pour les données de fid
 
 Une fois le schéma créé, vous êtes redirigé vers l’éditeur de schémas dans lequel vous pouvez ajouter des champs au schéma. Vous pouvez ajouter des champs individuels directement au schéma ou utiliser des groupes de champs. Il est important de noter que tous les champs individuels sont toujours associés à une classe ou à un groupe de champs. Vous pouvez choisir parmi un grand ensemble de groupes de champs standard fournis par Adobe ou créer les vôtres. Lorsque vous commencez à modéliser vos propres données en Experience Platform, il est bon de vous familiariser avec les groupes de champs standard fournis par Adobe. Dans la mesure du possible, il est recommandé de les utiliser, car ils alimentent parfois des services en aval, tels que Customer AI, Attribution AI et Adobe Analytics.
 
-Lorsque vous utilisez vos propres données, une étape importante consiste à déterminer celles qui doivent être capturées dans Platform et comment elles doivent être modélisées. Cette grande rubrique est abordée plus en détail dans le cours [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr). Dans ce tutoriel, je vous guiderai tout au long de la mise en oeuvre de certains schémas prédéterminés.
+Lorsque vous utilisez vos propres données, une étape importante consiste à déterminer celles qui doivent être capturées dans Platform et comment elles doivent être modélisées. Cette grande rubrique est abordée plus en détail dans la playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Dans ce tutoriel, je vous guiderai tout au long de la mise en oeuvre de certains schémas prédéterminés.
 
 Pour ajouter des groupes de champs :
 

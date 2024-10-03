@@ -4,7 +4,7 @@ description: Découvrez comment créer un schéma XDM pour les événements d’
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 14%
@@ -25,7 +25,7 @@ Experience Platform utilise des schémas pour décrire la structure des donnée
 
 Avant que les données puissent être ingérées dans Platform, il est nécessaire de composer un schéma pour décrire la structure des données et fournir des contraintes au type de données pouvant être contenues dans chaque champ. Les schémas se composent d’une classe de base et de zéro ou plusieurs groupes de champs.
 
-Pour plus d’informations sur le modèle de composition de schémas, y compris les principes de conception et les bonnes pratiques, consultez les [ principes de base de la composition de schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) ou le cours [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=fr) (Modèle de vos données d’expérience client avec XDM).
+Pour plus d’informations sur le modèle de composition de schémas, y compris sur les principes de conception et les bonnes pratiques, consultez les [ principes de base de la composition de schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) ou la liste de lecture [Modèle de vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >

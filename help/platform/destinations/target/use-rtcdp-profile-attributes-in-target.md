@@ -12,9 +12,9 @@ doc-type: Feature Video
 last-substantial-update: 2023-05-19T00:00:00Z
 jira: KT-13142
 exl-id: a469129b-0d8d-4bfb-963c-cea9dff58f6d
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 61060eae65c0cf68622be2cb8ea5cf1fcf24b4b1
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '96'
 ht-degree: 1%
 
 ---
@@ -24,3 +24,7 @@ ht-degree: 1%
 Découvrez comment utiliser les attributs de profil Adobe Real-Time Customer Data Platform dans Adobe Target pour offrir des expériences personnalisées sur votre site web et vos applications mobiles. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419318/?learn=on)
+
+>[!CAUTION]
+>
+>Les attributs de profil de plateforme peuvent être utilisés dans les conceptions Recommendations pour générer des valeurs d’attribut, mais ne peuvent pas être utilisés dans la logique ou les opérations Velocity.
