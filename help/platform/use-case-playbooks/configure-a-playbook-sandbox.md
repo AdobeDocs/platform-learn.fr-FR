@@ -9,9 +9,9 @@ duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
 exl-id: 4b231a49-5df8-4bad-800f-e58807b69aaa
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 050bfd05f39ee0736d188d7bcb5cc6ed6c5e320e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,6 @@ Découvrez comment configurer un environnement de test pour les classeurs de cas
 1. Ajouter des autorisations et des utilisateurs à l’environnement de test
 1. Configuration des surfaces de canal pour les emails, les notifications push et les SMS
 
-Pour plus d’informations, voir [Prise en main](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=fr).
+Pour plus d’informations, voir [Prise en main des classeurs de cas d’utilisation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
