@@ -6,10 +6,10 @@ level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Les applications Adobe Experience Cloud ont traditionnellement généré des coo
 1. Cookies propriétaires définis par un serveur Adobe à l’aide de la configuration CNAME d’un nom de domaine
 1. Cookies propriétaires définis par JavaScript
 
-Les modifications récentes du navigateur limitent la durée de ces types de cookies. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur détenu par le client à l’aide d’un enregistrement DNS A/AAAA plutôt que d’un CNAME DNS. La fonctionnalité d’identifiant d’appareil propriétaire (FPID) permet aux clients implémentant le SDK Web de Adobe Experience Platform d’utiliser les identifiants d’appareil dans les cookies des serveurs utilisant des enregistrements DNS A/AAAA. Ces identifiants peuvent ensuite être envoyés à Adobe et utilisés comme graines pour générer des identifiants Experience Cloud (ECID), qui reste l’identifiant principal dans les applications Adobe Experience Cloud.
+Les modifications récentes du navigateur limitent la durée de ces types de cookies. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur détenu par le client à l’aide d’un enregistrement DNS A/AAAA plutôt que d’un CNAME DNS. La fonctionnalité [ d’identifiant d’appareil propriétaire (FPID)](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) permet aux clients qui implémentent le SDK Web de Adobe Experience Platform d’utiliser des identifiants d’appareil dans des cookies provenant de serveurs utilisant des enregistrements DNS A/AAAA. Ces identifiants peuvent ensuite être envoyés à Adobe et utilisés comme graines pour générer des identifiants Experience Cloud (ECID), qui reste l’identifiant principal dans les applications Adobe Experience Cloud.
 
 Voici un exemple rapide du fonctionnement de cette fonctionnalité :
 
@@ -30,7 +30,9 @@ Voici un exemple rapide du fonctionnement de cette fonctionnalité :
 1. Le navigateur d’un utilisateur final demande une page Web au serveur Web ou au réseau de diffusion de contenu d’un client.
 1. Le client génère un identifiant d’appareil (FPID) sur son serveur web ou CDN (le serveur web doit être associé à l’enregistrement DNS A/AAAA du nom de domaine).
 1. Le client définit un cookie propriétaire pour stocker le FPID dans le navigateur de l’utilisateur final.
-1. L’implémentation du SDK Web Adobe Experience Platform du client émet une requête à l’Edge Network Platform, y compris le FPID dans la carte d’identité.
+1. L’implémentation du SDK Web Adobe Experience Platform du client émet une requête à l’Edge Network Platform et :
+   1. Inclut le FPID dans la carte d’identité.
+   1. Configure un CNAME pour leurs requêtes de SDK Web et configure leur flux de données avec le nom de leur cookie FPID.
 1. L’Edge Network Experience Platform reçoit le FPID et l’utilise pour générer un identifiant Experience Cloud (ECID).
 1. La réponse du SDK Web Platform envoie l’ECID à son navigateur.
 1. Si le `idMigrationEnabled=true`, le SDK Web de Platform utilise JavaScript pour stocker l’ECID en tant que cookie `AMCV_` dans le navigateur de l’utilisateur final.
