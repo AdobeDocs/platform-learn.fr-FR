@@ -1,41 +1,41 @@
 ---
 title: Comparaison de l’extension Target avec l’extension de prise de décision
-description: Découvrez les différences entre at.js 2.x et le SDK Web Platform, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: Découvrez les différences entre l’extension Target et l’extension de prise de décision, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 5%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
 # Comparaison de l’extension Target avec l’extension de prise de décision
 
-La bibliothèque Adobe Target at.js autonome diffère considérablement du SDK Web Platform. Les tableaux suivants constituent une référence pour vous aider à évaluer les zones de votre mise en oeuvre sur lesquelles vous devrez peut-être vous concentrer pendant le processus de migration.
+L’extension Adobe Journey Optimizer - Prise de décision diffère de l’extension Adobe Target pour les applications mobiles. Les tableaux suivants constituent une référence pour vous aider à évaluer les zones de votre mise en oeuvre sur lesquelles vous devrez peut-être vous concentrer pendant le processus de migration.
 
-Après avoir examiné les informations ci-dessous et évalué votre implémentation technique actuelle d’at.js, vous devriez être en mesure de comprendre les éléments suivants :
+Après avoir examiné les informations ci-dessous et évalué votre mise en oeuvre technique actuelle de l’extension Target, vous devriez être en mesure de comprendre les éléments suivants :
 
-- Quelles fonctionnalités Target sont prises en charge par le SDK Web Platform ?
-- Quelles fonctions at.js ont des équivalents du SDK Web Platform ?
-- Application des paramètres Target avec le SDK Web Platform
-- Différence entre le flux de données d’at.js et le SDK Web Platform
+- Quelles fonctionnalités Target sont prises en charge par Adobe Journey Optimizer - Prise de décision ?
+- Quelles fonctions d’extension Adobe Target ont des équivalents Adobe Journey Optimizer - Decisioning ?
+- Application des paramètres Target avec Adobe Journey Optimizer - Prise de décision
+- Différence entre le flux de données de l’extension Adobe Target et l’extension Adobe Journey Optimizer - Decisioning
 
 Si vous découvrez le SDK Web Platform, ne vous inquiétez pas : les éléments ci-dessous sont abordés plus en détail tout au long de ce tutoriel.
 
 ## Comparaison des fonctionnalités
 
-| | Extension Target | Extension de prise de décision (Target via Edge) | Expériences basées sur un code AJO (SDK de messagerie) |
+| | Extension Target | Extension de prise de décision (Target via Edge) |
 |---|---|---|---|
-| Mode de prérécupération | Pris en charge | Pris en charge | Pris en charge |
-| Mode d’exécution | Pris en charge | Non pris en charge | Non pris en charge |
-| Paramètres personnalisés | Pris en charge | Par paramètres de mbox ne sont pas pris en charge | Non pris en charge |
-| Accès aux audiences | Pris en charge | Pris en charge | Pris en charge via l’audience Campaign et le paramètre d’exclusion de l’expérience |
-| Segmentation d’audience à l’aide des mesures de cycle de vie mobile | Pris en charge | Pris en charge via les règles de collecte de données | Le ciblage d’expérience n’est actuellement pas pris en charge |
-| thirdPartyId (mbox3rdPartyId) | Pris en charge par le biais de la configuration d’Identity Map et de l’espace de noms dans le flux de données | Non pris en charge |
-| Notifications (affichage, clic) | Pris en charge | Pris en charge | Pris en charge |
-| Jetons de réponse | Pris en charge | Pris en charge | Aucun équivalent pour le renvoi de métadonnées spécifiques à Campaign en dehors du contenu |
-| Offres dynamiques | Pris en charge | Pris en charge | Le rendu du jeton associé au profil et à l’élément de décision dans le contenu est pris en charge |
-| Analytics for Target (A4T) | Côté client uniquement | Côté client et côté serveur | Non pris en charge |
-| Aperçus mobiles (mode AQ) | Pris en charge | Prise en charge limitée | En cours |
+| Mode de prérécupération | Pris en charge | Pris en charge |
+| Mode d’exécution | Pris en charge | Non pris en charge |
+| Paramètres personnalisés | Pris en charge | Par paramètres de mbox ne sont pas pris en charge |
+| Accès aux audiences | Pris en charge | Pris en charge |
+| Segmentation d’audience à l’aide des mesures de cycle de vie mobile | Pris en charge | Pris en charge via les règles de collecte de données |
+| thirdPartyId (mbox3rdPartyId) | Pris en charge par le biais de la configuration d’Identity Map et de l’espace de noms dans le flux de données |
+| Notifications (affichage, clic) | Pris en charge | Pris en charge |
+| Jetons de réponse | Pris en charge | Pris en charge |
+| Offres dynamiques | Pris en charge | Pris en charge |
+| Analytics for Target (A4T) | Côté client uniquement | Côté client et côté serveur |
+| Aperçus mobiles (mode AQ) | Pris en charge | Prise en charge limitée |
 
 
 
@@ -66,7 +66,7 @@ L’extension Target peut être configurée et téléchargée avec divers param�
 
 ## Comparaison des diagrammes système
 
-Les diagrammes suivants doivent vous aider à comprendre les différences de flux de données entre une implémentation Target à l’aide d’at.js et une implémentation à l’aide du SDK Web Platform.
+Les diagrammes suivants doivent vous aider à comprendre les différences de flux de données entre une mise en oeuvre Target à l’aide de l’extension Adobe Journey Optimizer - Prise de décision et une mise en oeuvre à l’aide de l’extension Adobe Target.
 
 ### Diagramme du système d’extension Target
 
