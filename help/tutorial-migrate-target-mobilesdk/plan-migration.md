@@ -1,16 +1,16 @@
 ---
-title: 'Planification : migration de Target dans les applications mobiles de l’extension Target vers l’extension Optimiser'
+title: Planification - Migration d’Adobe Target vers Adobe Journey Optimizer - Extension mobile de prise de décision
 description: Découvrez comment planifier votre mise en oeuvre Adobe Target d’at.js 2.x au SDK Web Adobe Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# Planification de la migration de Target vers l’extension Optimisation
+# Planification de la migration de Target vers l’extension de prise de décision
 
-Avant de mettre à niveau Target de l’extension Target vers l’extension Optimiser de votre application mobile, vous devez évaluer votre mise en oeuvre actuelle.
+Avant de mettre à niveau Target de l’extension Target vers l’extension de prise de décision dans votre application mobile, vous devez évaluer votre mise en oeuvre actuelle.
 
 ## Évaluation de la mise en oeuvre actuelle de l’extension Target
 
@@ -50,8 +50,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-Ensuite, passez en revue la [comparaison détaillée de l’extension Target et de l’extension Optimiser](detailed-comparison.md) pour mieux comprendre les différences techniques et identifier les domaines nécessitant un focus supplémentaire.
+Ensuite, passez en revue la [comparaison détaillée de l’extension Target et de l’extension de prise de décision](detailed-comparison.md) pour mieux comprendre les différences techniques et identifier les domaines nécessitant un focus supplémentaire.
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target mobile de l’extension Target vers l’extension Optimize. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target mobile de l’extension Target vers l’extension de prise de décision. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

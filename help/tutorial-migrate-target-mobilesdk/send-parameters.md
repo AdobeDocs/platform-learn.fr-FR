@@ -1,14 +1,14 @@
 ---
-title: Envoi de paramètres - Migration de Target d’at.js 2.x vers le SDK Web
+title: Envoi de paramètres - Migration d’Adobe Target vers l’extension Adobe Journey Optimizer - Prise de décision Mobile
 description: Découvrez comment envoyer des paramètres de mbox, de profil et d’entité à Adobe Target à l’aide du SDK Web Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# Envoyer des paramètres à Target à l’aide du SDK Web Platform
+# Envoi de paramètres à Target à l’aide de l’extension Adobe Journey Optimizer - Decisioning Mobile
 
 Les mises en oeuvre de Target diffèrent d’un site web à l’autre en raison de l’architecture du site, des exigences de l’entreprise et des fonctionnalités utilisées. La plupart des implémentations de Target incluent la transmission de divers paramètres pour les informations contextuelles, les audiences et les recommandations de contenu.
 
@@ -53,7 +53,7 @@ Les paramètres d’entité d’un élément spécifique doivent comporter le pr
 
 ## Paramètres d’achat
 
-Les paramètres d’achat sont transmis sur une page de confirmation de commande après une commande réussie et sont utilisés pour les objectifs de conversion et d’optimisation de Target. Avec une mise en oeuvre du SDK Mobile Platform à l’aide de l’extension Optimize , ces paramètres sont automatiquement mappés à partir des données XDM transmises dans le cadre du groupe de champs `commerce`.
+Les paramètres d’achat sont transmis sur une page de confirmation de commande après une commande réussie et sont utilisés pour les objectifs de conversion et d’optimisation de Target. Avec une mise en oeuvre du SDK Mobile Platform à l’aide de l’extension de prise de décision, ces paramètres et sont automatiquement mappés à partir des données XDM transmises dans le cadre du groupe de champs `commerce`.
 
 
 Les informations d’achat sont transmises à Target lorsque `purchases.value` est défini sur `1` pour le groupe de champs `commerce`. L’identifiant de commande et le total de la commande sont automatiquement mappés à partir de l’objet `order`. Si le tableau `productListItems` est présent, les valeurs `SKU` sont utilisées pour `productPurchasedId`.
@@ -69,4 +69,4 @@ Ensuite, découvrez comment [suivre les événements de conversion Target](track
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target mobile de l’extension Target vers l’extension Optimize. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target mobile de l’extension Target vers l’extension de prise de décision. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
