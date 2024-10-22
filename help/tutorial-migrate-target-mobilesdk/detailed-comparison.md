@@ -1,9 +1,9 @@
 ---
 title: Comparaison de l’extension Target avec l’extension de prise de décision
 description: Découvrez les différences entre l’extension Target et l’extension de prise de décision, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -23,8 +23,8 @@ Si vous découvrez le SDK Web Platform, ne vous inquiétez pas : les éléments 
 
 ## Comparaison des fonctionnalités
 
-| | Extension Target | Extension de prise de décision (Target via Edge) |
-|---|---|---|---|
+| Fonctionnalité | Extension Target | Extension de prise de décision (Target via Edge) |
+|---|---|---|
 | Mode de prérécupération | Pris en charge | Pris en charge |
 | Mode d’exécution | Pris en charge | Non pris en charge |
 | Paramètres personnalisés | Pris en charge | Par paramètres de mbox ne sont pas pris en charge |
