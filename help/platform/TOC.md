@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 20%
+source-wordcount: '934'
+ht-degree: 21%
 
 ---
 
@@ -31,13 +31,12 @@ ht-degree: 20%
    + [Vue d’ensemble](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [Démo de bout en bout](/help/platform/rtcdp/demo.md)
    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [Présentation de l’édition B2B](/help/platform/rtcdp/b2b-overview.md)
+   + [Présentation de B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Orchestration des campagnes avec Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Prise en main : architectes de données et ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr){target="_blank"}
 + [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importation de données d’exemple dans Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-   + [Utilisation de l’assistant AI](/help/platform/admin/ai-assistant.md)
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 20%
    + [Ajouter des développeurs](/help/platform/admin/add-developers.md)
    + [Ajout d’administrateurs de produit](/help/platform/admin/add-product-administrators.md)
    + [Configurer le contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
++ Assistant IA {#ai-assistant}
+   + [Vue d’ensemble](/help/platform/ai-assistant/overview.md)
+   + [Nettoyage des audiences](/help/platform/ai-assistant/find-unused-audiences.md)
 + Audiences et segmentation {#audiences}
    + [Présentation d’Audience Portal et de la composition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Chargement d’audiences](audiences/upload-audiences.md)
@@ -77,8 +79,8 @@ ht-degree: 20%
 + Gouvernance des données {#data-governance}
    + [Aperçu](/help/platform/governance/understanding-data-governance.md)
    + [Démo de bout en bout](/help/platform/governance/introduction-to-data-governance.md)
-   + [Classification des données à l’aide d’étiquettes](/help/platform/governance/classify-data-using-labels.md)
-   + [Création de politiques d’utilisation des données](/help/platform/governance/create-data-usage-policies.md)
+   + [Classer les données à l’aide de libellés](/help/platform/governance/classify-data-using-labels.md)
+   + [Créer des politiques d’utilisation des données](/help/platform/governance/create-data-usage-policies.md)
    + [Application des politiques d’utilisation des données](/help/platform/governance/enforce-data-usage-policies.md)
    + [Exiger le consentement](/help/platform/governance/enforce-consent.md)
    + [Intégration à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)

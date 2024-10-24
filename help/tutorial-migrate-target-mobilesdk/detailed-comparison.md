@@ -1,9 +1,9 @@
 ---
 title: Comparaison de l’extension Target avec l’extension de prise de décision
 description: Découvrez les différences entre l’extension Target et l’extension de prise de décision, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Si vous découvrez le SDK Web Platform, ne vous inquiétez pas : les éléments 
 | Paramètres personnalisés | Pris en charge | Par paramètres de mbox ne sont pas pris en charge |
 | Accès aux audiences | Pris en charge | Pris en charge |
 | Segmentation d’audience à l’aide des mesures de cycle de vie mobile | Pris en charge | Pris en charge via les règles de collecte de données |
-| thirdPartyId (mbox3rdPartyId) | Pris en charge par le biais de la configuration d’Identity Map et de l’espace de noms dans le flux de données |
+| thirdPartyId (mbox3rdPartyId) | Pris en charge | Pris en charge par le biais de la configuration d’Identity Map et de l’espace de noms dans le flux de données |
 | Notifications (affichage, clic) | Pris en charge | Pris en charge |
 | Jetons de réponse | Pris en charge | Pris en charge |
 | Offres dynamiques | Pris en charge | Pris en charge |
