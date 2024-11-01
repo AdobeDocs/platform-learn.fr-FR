@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
-ht-degree: 21%
+source-wordcount: '939'
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,8 @@ ht-degree: 21%
 + Administration {#admin}
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
-   + [Copier des objets entre sandbox](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Copie de modules entre des environnements de test](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Partage de packages sur les organisations IMS](/help/platform/admin/share-packages-across-orgs.md)
    + [Ajouter des utilisateurs](/help/platform/admin/add-users.md)
    + [Ajouter des utilisateurs à la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Ajouter des développeurs](/help/platform/admin/add-developers.md)
