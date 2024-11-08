@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. 
 description: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. - Déclenchez votre Parcours client orchestré
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Il s’agit de la page Propriétés de la collecte de données Adobe Experience 
 
 ![Page Propriétés](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--demoProfileLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
+Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--aepUserLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
 
 ![Zone de recherche](./../../../modules/datacollection/module1.1/images/property6.png)
 

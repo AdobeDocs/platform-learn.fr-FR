@@ -3,7 +3,7 @@ title: Foundation - Configuration de la collecte de données Adobe Experience Pl
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Présentation de la collecte de données Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Il s’agit de la page Propriétés de la collecte de données Adobe Experience 
 
 ![Page Propriétés](./images/launch1.png)
 
-Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--demoProfileLdap--` dans la zone **[!UICONTROL Rechercher]**.
+Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--aepUserLdap--` dans la zone **[!UICONTROL Rechercher]**.
 
 ![Zone de recherche](./images/property6.png)
 
@@ -44,7 +44,7 @@ Si le domaine Edge de votre instance est différent de celui par défaut, mettez
 
 ![Extensions home](./images/property9edgedomain.png)
 
-Maintenant, assurez-vous que le bouton radio **[!UICONTROL Choisir dans la liste]** est sélectionné sous l’en-tête **[!UICONTROL Datastreams]** et sélectionnez votre flux de données nommé : `--demoProfileLdap-- - Demo System Datastream`, dans la liste de la zone **[!UICONTROL Datastream]**.
+Maintenant, assurez-vous que le bouton radio **[!UICONTROL Choisir dans la liste]** est sélectionné sous l’en-tête **[!UICONTROL Datastreams]** et sélectionnez votre flux de données nommé : `--aepUserLdap-- - Demo System Datastream`, dans la liste de la zone **[!UICONTROL Datastream]**.
 
 ![Extensions home](./images/property9edge.png)
 

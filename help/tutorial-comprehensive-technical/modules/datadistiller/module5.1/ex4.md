@@ -3,7 +3,7 @@ title: Query Service - Power BI/Tableau
 description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Sélectionnez votre requête et cliquez sur **Jeu de données de sortie**.
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-Saisissez `--demoProfileLdap-- Callcenter Interaction Analysis` comme nom et description du jeu de données et appuyez sur le bouton **Exécuter la requête**
+Saisissez `--aepUserLdap-- Callcenter Interaction Analysis` comme nom et description du jeu de données et appuyez sur le bouton **Exécuter la requête**
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

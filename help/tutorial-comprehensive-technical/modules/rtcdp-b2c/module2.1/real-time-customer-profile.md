@@ -4,9 +4,9 @@ description: Foundation - Profil client en temps réel
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ Dans ce module, nous allons approfondir nos connaissances des fonctionnalités R
 - Accès à [https://public.aepdemo.net](https://public.aepdemo.net)
 - **Téléchargez ces ressources** :
    - [Collections Postman](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->Ce tutoriel a été créé pour faciliter un format d’atelier particulier. Il utilise des systèmes et des comptes spécifiques auxquels vous n’avez peut-être pas accès. Même sans accès, nous pensons que vous pouvez encore apprendre beaucoup en lisant à travers ce contenu très détaillé. Si vous participez à l’un des ateliers et que vous avez besoin de vos informations d’identification d’accès, veuillez contacter votre représentant d’Adobe qui vous fournira les informations requises.
 
 >[!NOTE]
 >

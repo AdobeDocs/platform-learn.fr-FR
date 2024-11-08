@@ -3,7 +3,7 @@ title: Activation de segment vers Microsoft Azure Event Hub - Action
 description: Activation de segment vers Microsoft Azure Event Hub - Action
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour
 
 ## 2.4.6.3 Qualifier votre intérêt pour le segment Matériel
 
-Accédez une fois à la page **Equipment** et **ne la rechargez ni ne l&#39;actualisez**. Cette action doit vous qualifier pour votre segment `--demoProfileLdap-- - Interest in Equipment`.
+Accédez une fois à la page **Equipment** et **ne la rechargez ni ne l&#39;actualisez**. Cette action doit vous qualifier pour votre segment `--aepUserLdap-- - Interest in Equipment`.
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-Pour vérifier, ouvrez le panneau Visionneuse de profils . Vous devez maintenant être membre de `--demoProfileLdap-- - Interest in Equipment`. Si les appartenances à vos segments ne sont pas encore mises à jour dans le panneau Visionneuse de profils, cliquez sur le bouton recharger .
+Pour vérifier, ouvrez le panneau Visionneuse de profils . Vous devez maintenant être membre de `--aepUserLdap-- - Interest in Equipment`. Si les appartenances à vos segments ne sont pas encore mises à jour dans le panneau Visionneuse de profils, cliquez sur le bouton recharger .
 
 ![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
 
-Revenez à Visual Studio Code et regardez votre onglet **TERMINAL**. Vous devriez voir une liste de segments pour votre **ECID** spécifique. Cette payload d’activation est diffusée vers votre centre d’événements dès que vous êtes admissible pour le segment `--demoProfileLdap-- - Interest in Equipment`.
+Revenez à Visual Studio Code et regardez votre onglet **TERMINAL**. Vous devriez voir une liste de segments pour votre **ECID** spécifique. Cette payload d’activation est diffusée vers votre centre d’événements dès que vous êtes admissible pour le segment `--aepUserLdap-- - Interest in Equipment`.
 
-Lorsque vous regardez de plus près la charge utile du segment, vous pouvez constater que `--demoProfileLdap-- - Interest in Equipment` est en état **réalisé**.
+Lorsque vous regardez de plus près la charge utile du segment, vous pouvez constater que `--aepUserLdap-- - Interest in Equipment` est en état **réalisé**.
 
 Un état de segment de **réalisé** signifie que notre profil vient d’entrer dans le segment. Bien que l’état **existant** signifie que notre profil reste dans le segment.
 

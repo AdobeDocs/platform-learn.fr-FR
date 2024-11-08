@@ -3,7 +3,7 @@ title: Foundation - Real-time Customer Profile - Visualisez votre propre profil 
 description: Foundation - Real-time Customer Profile - Visualisez votre propre profil client en temps réel - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 1%
@@ -141,10 +141,10 @@ Cliquez sur **Modifier le projet**.
 
 ![Adobe I/O d’une nouvelle intégration](./images/api14.png)
 
-Saisissez un nom et une description pour votre intégration. Par convention, nous utiliserons `AEP API --demoProfileLdap--`. Remplacez ldap par votre ldap.
+Saisissez un nom et une description pour votre intégration. Par convention, nous utiliserons `AEP API --aepUserLdap--`. Remplacez ldap par votre ldap.
 Par exemple, si votre ldap est vangeluw, le nom et la description de votre intégration deviennent vangeluw de l’API AEP.
 
-Saisissez `AEP API --demoProfileLdap--` comme **Titre du projet**. Cliquez sur **Enregistrer**.
+Saisissez `AEP API --aepUserLdap--` comme **Titre du projet**. Cliquez sur **Enregistrer**.
 
 ![Adobe I/O d’une nouvelle intégration](./images/api15.png)
 
@@ -307,11 +307,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez sur **Envoyer** pour envoyer votre demande à Platform.
 
@@ -478,11 +478,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez sur le bouton bleu **Send** et vérifiez la réponse.
 
@@ -512,11 +512,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez sur le bouton bleu **Send** et vérifiez la réponse.
 
@@ -570,11 +570,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez sur **Envoyer** pour envoyer votre demande à Platform.
 

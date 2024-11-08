@@ -3,7 +3,7 @@ title: Foundation - Ingestion de données - Configuration des jeux de données
 description: Foundation - Ingestion de données - Configuration des jeux de données
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Vous devez définir un jeu de données à partir du schéma que vous avez défin
 
 ![Ingestion des données](./images/datasetfromschema.png)
 
-Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé dans 1, `--demoProfileLdap-- - Demo System - Profile Schema for Website`.
+Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé dans 1, `--aepUserLdap-- - Demo System - Profile Schema for Website`.
 
 ![Ingestion des données](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ Attribuons un nom à votre jeu de données.
 
 Pour nommer notre jeu de données, utilisez ceci :
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
 
@@ -101,7 +101,7 @@ Vous devez définir un jeu de données à partir du schéma que vous avez défin
 
 ![Ingestion des données](./images/datasetfromschema.png)
 
-Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé dans 2.2, `--demoProfileLdap-- - Demo System - Event Schema for Website`.
+Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé dans 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website`.
 
 ![Ingestion des données](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ Attribuons un nom à votre jeu de données.
 
 Comme nom de notre jeu de données, nous utiliserons ceci :
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
 
@@ -137,7 +137,7 @@ Revenez à l’écran d’aperçu [!UICONTROL Jeux de données] .
 
 Vous devez maintenant activer vos jeux de données pour faire partie de Adobe Experience Platform Real-time Customer Profile.
 
-Ouvrez votre jeu de données `--demoProfileLdap--` - Système de démonstration - Jeu de données de profil pour le site web en cliquant dessus.
+Ouvrez votre jeu de données `--aepUserLdap--` - Système de démonstration - Jeu de données de profil pour le site web en cliquant dessus.
 
 Recherchez l’icône de basculement [!UICONTROL Profile] sur le côté droit de l’écran.
 
@@ -153,7 +153,7 @@ Cliquez sur le **[!UICONTROL Activer]**.
 
 Votre jeu de données est maintenant activé pour [!UICONTROL Profile].
 
-Revenez à la présentation des jeux de données et ouvrez votre jeu de données `--demoProfileLdap-- - Demo System - Event Dataset` pour le site web en cliquant dessus.
+Revenez à la présentation des jeux de données et ouvrez votre jeu de données `--aepUserLdap-- - Demo System - Event Dataset` pour le site web en cliquant dessus.
 
 Recherchez l’icône de basculement [!UICONTROL Profile] sur le côté droit de l’écran.
 

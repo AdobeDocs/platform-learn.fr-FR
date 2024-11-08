@@ -3,7 +3,7 @@ title: Ingérer et analyser les données Google Analytics dans Adobe Experience 
 description: Ingérer et analyser les données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Créez votre première requête dans BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Pour l’ **identifiant du jeu de données**, utilisez la convention d’affecta
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![demo](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ Une nouvelle fenêtre contextuelle s’affiche alors, dans laquelle votre **nom 
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 Vous devez maintenant saisir un nom de tableau. Utilisez cette convention d’affectation des noms :
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![demo](./images/ex3/16.png)
 
 Cliquez sur **SAVE**.
 
-Il peut s’écouler un certain temps avant que les données ne soient prêtes dans le tableau que vous avez créé. Au bout de quelques minutes, actualisez le navigateur. Vous devriez ensuite voir dans votre jeu de données la table `--demoProfileLdap--_GAdataTableBigquery` sous **Explorateur** dans votre projet BigQuery.
+Il peut s’écouler un certain temps avant que les données ne soient prêtes dans le tableau que vous avez créé. Au bout de quelques minutes, actualisez le navigateur. Vous devriez ensuite voir dans votre jeu de données la table `--aepUserLdap--_GAdataTableBigquery` sous **Explorateur** dans votre projet BigQuery.
 
 ![demo](./images/ex3/19.png)
 

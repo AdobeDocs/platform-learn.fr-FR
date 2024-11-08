@@ -3,7 +3,7 @@ title: Ingestion et analyse de données Google Analytics dans Adobe Experience P
 description: Ingestion et analyse de données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Connectez GCP et BigQuery à Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -90,7 +90,7 @@ La seule chose à faire ici est de saisir le nom de l&#39;écran de consentement
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |
 
 ![demo](./images/ex2/6-3.png)
 
@@ -305,7 +305,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -325,8 +325,8 @@ Utilisez cette convention d’affectation des noms :
 
 | Informations d’identification de BigQuery Connector | Valeur | Exemple |
 | ----------------- |-------------| -------------| 
-| Nom de compte | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - Connexion à BigQuery |
-| Description | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - Connexion à BigQuery |
+| Nom de compte | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Connexion à BigQuery |
+| Description | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Connexion à BigQuery |
 
 Ce qui devrait vous donner quelque chose comme ceci :
 

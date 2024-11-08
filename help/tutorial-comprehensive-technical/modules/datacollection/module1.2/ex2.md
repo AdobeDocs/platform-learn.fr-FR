@@ -3,7 +3,7 @@ title: Foundation - Ingestion de données - Configuration des schémas et défin
 description: Foundation - Ingestion de données - Configuration des schémas et définition d’identifiants
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3645'
 ht-degree: 5%
@@ -114,7 +114,7 @@ Au lieu de réutiliser un [!UICONTROL Groupe de champs] existant, vous allez mai
 Vous devez maintenant fournir un **[!UICONTROL nom d’affichage]** et une **[!UICONTROL description]** pour votre nouveau [!UICONTROL groupe de champs].
 
 Pour le nom de notre schéma, nous utiliserons ceci :
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
 
@@ -287,7 +287,7 @@ Attribuons maintenant un nom à votre schéma. Sélectionnez le champ **Schéma 
 
 Pour le nom de notre schéma, vous utiliserez ceci :
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 Remplacez **[!UICONTROL ldap]** par votre ldap spécifique. Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
 
@@ -419,7 +419,7 @@ Vous devez maintenant fournir un **[!UICONTROL nom d’affichage]** et une **[!U
 
 Pour le nom de votre groupe de champs, utilisez ceci :
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
 
@@ -528,7 +528,7 @@ Attribuons maintenant un nom à votre schéma. Sélectionnez le champ **Schéma 
 ![Ingestion des données](./images/schemaname1ee.png)
 
 Pour le nom de notre schéma, nous utiliserons ceci :
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
 

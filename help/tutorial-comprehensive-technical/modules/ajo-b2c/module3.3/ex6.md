@@ -3,7 +3,7 @@ title: Offer decisioning - Test de votre décision à l’aide de l’API
 description: Test de votre décision à l’aide de l’API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Sous **[!UICONTROL Params]**, vous verrez ceci :
 
 - property: `_instance.parentName==aepenablementfy22`
 
-Dans ce paramètre, **[!UICONTROL aepenablementfy22]** est le nom de l’environnement de test utilisé dans Adobe Experience Platform. L’environnement de test que vous devez utiliser est `--aepSandboxId--`. Remplacez le texte **[!UICONTROL aepenablementfy22]** par `--aepSandboxId--`.
+Dans ce paramètre, **[!UICONTROL aepenablementfy22]** est le nom de l’environnement de test utilisé dans Adobe Experience Platform. L’environnement de test que vous devez utiliser est `--aepSandboxName--`. Remplacez le texte **[!UICONTROL aepenablementfy22]** par `--aepSandboxName--`.
 
 Après avoir remplacé le nom de l’environnement de test, cliquez sur **[!UICONTROL Envoyer]**.
 

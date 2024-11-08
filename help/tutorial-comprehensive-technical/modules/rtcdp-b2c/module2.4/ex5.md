@@ -3,7 +3,7 @@ title: Activation de segment vers Microsoft Azure Event Hub - Définition d’un
 description: Activation de segment vers Microsoft Azure Event Hub - Définition d’une fonction Azure
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Sélectionnez **Azure Event Hub trigger** comme premier modèle de fonction de v
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-Saisissez un nom pour votre fonction, utilisez le format suivant `--demoProfileLdap---aep-event-hub-trigger` et appuyez sur Entrée :
+Saisissez un nom pour votre fonction, utilisez le format suivant `--aepUserLdap---aep-event-hub-trigger` et appuyez sur Entrée :
 
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ La première fois que vous exécuterez votre projet en mode de débogage, vous d
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-Dans la liste des comptes de stockage, sélectionnez celui que vous avez créé dans le cadre de la [13.1.4 Setup your Azure Storage Account](./ex1.md). Votre compte de stockage est nommé `--demoProfileLdap--aepstorage`, par exemple : **mmeewisaepstorage**.
+Dans la liste des comptes de stockage, sélectionnez celui que vous avez créé dans le cadre de la [13.1.4 Setup your Azure Storage Account](./ex1.md). Votre compte de stockage est nommé `--aepUserLdap--aepstorage`, par exemple : **mmeewisaepstorage**.
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

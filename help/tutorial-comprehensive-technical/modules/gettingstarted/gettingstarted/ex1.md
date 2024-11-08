@@ -3,7 +3,7 @@ title: Prise en main - Installation de l’extension Chrome pour la documentatio
 description: Prise en main - Installation de l’extension Chrome pour la documentation Experience League
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -23,8 +23,8 @@ Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs n
 |:-------------:| :---------------:|
 | Identifiant de l’organisation IMS AEP | `--aepImsOrgId--` |
 | Identifiant du client AEP | `--aepTenantId--` |
-| Identifiant d’insertion DCS | `--dcsInletId--` |
-| Demo Profile LDAP | `--demoProfileLdap--` |
+| Nom du sandbox AEP | `--aepSandboxName--` |
+| Protocole LDAP du profil du professeur | `--aepUserLdap--` |
 
 Par exemple, dans la capture d’écran ci-dessous, vous pouvez voir une référence à `--aepTenantId--`.
 

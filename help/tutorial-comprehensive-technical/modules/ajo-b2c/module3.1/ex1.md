@@ -3,7 +3,7 @@ title: Journey Optimizer Créer votre événement
 description: Journey Optimizer Créer votre événement
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience C
 
 ![ACOP](./images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxId--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxId--`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Une nouvelle fenêtre d’événement vide s’affiche alors.
 
 ![ACOP](./images/emptyevent1.png)
 
-Tout d’abord, attribuez un nom à votre événement comme ceci : `--demoProfileLdap--AccountCreationEvent`.
+Tout d’abord, attribuez un nom à votre événement comme ceci : `--aepUserLdap--AccountCreationEvent`.
 
 ![ACOP](./images/eventname.png)
 

@@ -3,7 +3,7 @@ title: 'Offer decisioning : testez votre décision à l’aide du site web de d�
 description: Test de votre décision à l’aide du site web de démonstration
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
@@ -66,11 +66,11 @@ Cliquez sur la zone contenant le texte **Catégories en vedette**. Cliquez sur *
 
 ![RTCDP](./images/vec3.png)
 
-Vous verrez alors cette fenêtre contextuelle. Sélectionnez votre environnement de test `--aepSandboxId--`, puis sélectionnez l’emplacement **Web - Image**.
+Vous verrez alors cette fenêtre contextuelle. Sélectionnez votre environnement de test `--aepSandboxName--`, puis sélectionnez l’emplacement **Web - Image**.
 
 ![RTCDP](./images/vec4.png)
 
-Sélectionnez ensuite votre décision `--demoProfileLdap-- - Luma Decision`. Cliquez sur **Enregistrer**.
+Sélectionnez ensuite votre décision `--aepUserLdap-- - Luma Decision`. Cliquez sur **Enregistrer**.
 
 ![RTCDP](./images/vec5.png)
 
@@ -82,7 +82,7 @@ Vous verrez alors ceci. Cliquez sur **Suivant**.
 
 ![RTCDP](./images/vec7.png)
 
-Saisissez un nom pour votre offre. Utilisez ce nom : `--demoProfileLdap-- - XT with Offers (VEC)`. Cliquez sur **Suivant**.
+Saisissez un nom pour votre offre. Utilisez ce nom : `--aepUserLdap-- - XT with Offers (VEC)`. Cliquez sur **Suivant**.
 
 ![RTCDP](./images/vec8.png)
 

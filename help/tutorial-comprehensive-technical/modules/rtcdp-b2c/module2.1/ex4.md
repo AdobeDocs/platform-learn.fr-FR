@@ -3,7 +3,7 @@ title: Foundation - Profil client en temps réel - Création d’un segment - in
 description: Foundation - Profil client en temps réel - Création d’un segment - interface utilisateur
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -108,7 +108,7 @@ Enfin, attribuons un nom à votre segment et enregistrez-le.
 
 Pour définir une convention d’affectation des noms, utilisez :
 
-- `--demoProfileLdap-- - Male customers with interest in Montana Wind Jacket`
+- `--aepUserLdap-- - Male customers with interest in Montana Wind Jacket`
 
 ![Segmentation](./images/segmentname.png)
 

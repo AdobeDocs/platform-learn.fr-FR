@@ -3,7 +3,7 @@ title: Intelligent Services - Customer AI Création d’une instance (configurat
 description: Customer AI - Création d’une instance (configuration)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 12%
@@ -30,7 +30,7 @@ Vous verrez alors ceci.
 
 Saisissez les détails requis pour l’instance Customer AI :
 
-- Nom : use `--demoProfileLdap-- Product Purchase Propensity`
+- Nom : use `--aepUserLdap-- Product Purchase Propensity`
 - Description : utilisez : **Prédire la probabilité que les clients achètent un produit**
 - Type de propension : sélectionnez **Conversion**
 

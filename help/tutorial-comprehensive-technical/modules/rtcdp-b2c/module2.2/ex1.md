@@ -3,7 +3,7 @@ title: Intelligent Services - Préparation des données Customer AI (Ingérer)
 description: Customer AI - Préparation de données (ingestion)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 4%
@@ -75,7 +75,7 @@ Donnez un nom à votre schéma maintenant.
 
 Pour le nom de notre schéma, vous utiliserez ceci :
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 Par exemple, pour ldap **vangeluw**, il doit s’agir du nom du schéma :
 
@@ -111,7 +111,7 @@ Dans l’écran suivant, sélectionnez le jeu de données que vous avez créé l
 
 ![Jeu de données](./images/createds1.png)
 
-Pour nommer votre jeu de données, utilisez `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`. Cliquez sur **Terminer**.
+Pour nommer votre jeu de données, utilisez `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`. Cliquez sur **Terminer**.
 
 ![Jeu de données](./images/createds2.png)
 

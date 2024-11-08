@@ -3,7 +3,7 @@ title: Collecte de données Adobe Experience Platform et transfert côté évén
 description: Création d’une propriété Transfert d’événement de collecte de données Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Accédez à [https://experience.adobe.com/#/data-collection/](https://experience
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 
-Vous devez maintenant saisir un nom pour la propriété Transfert d’événement de collecte de données Adobe Experience Platform. Pour la convention d’affectation des noms, utilisez `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. Par exemple, dans cet exemple, le nom est **vangeluw - Demo System (22/02/2022) (Edge)**. Cliquez sur **Enregistrer**.
+Vous devez maintenant saisir un nom pour la propriété Transfert d’événement de collecte de données Adobe Experience Platform. Pour la convention d’affectation des noms, utilisez `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`. Par exemple, dans cet exemple, le nom est **vangeluw - Demo System (22/02/2022) (Edge)**. Cliquez sur **Enregistrer**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf1.png)
 

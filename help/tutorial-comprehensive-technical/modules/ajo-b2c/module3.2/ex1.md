@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. 
 description: Adobe Journey Optimizer - API météorologique externe, action SMS, etc.
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -16,7 +16,7 @@ Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxId--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxId--`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Une nouvelle fenêtre d’événement vide s’affiche alors.
 
 ![ACOP](./images/emptyevent1.png)
 
-En tant que nom de l’événement, utilisez `--demoProfileLdap--GeofenceEntry`. Dans cet exemple, le nom de l’événement est `vangeluwGeofenceEntry`.
+En tant que nom de l’événement, utilisez `--aepUserLdap--GeofenceEntry`. Dans cet exemple, le nom de l’événement est `vangeluwGeofenceEntry`.
 
 Définissez la description sur : `Geofence Entry Event`.
 

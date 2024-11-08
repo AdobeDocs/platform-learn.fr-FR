@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer - Configuration et utilisation du canal SMS
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 6%
@@ -29,7 +29,7 @@ Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxId--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxId--`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ Dans le menu de gauche, accédez à **Parcours** et cliquez sur **Créer un Parc
 
 Tu devrais prénommer ton parcours.
 
-En tant que nom du parcours, utilisez `--demoProfileLdap-- - Geofence Entry Journey`. Dans cet exemple, le nom du parcours est `vangeluw - Geofence Entry Journey`. Aucune autre valeur ne doit être définie pour le moment. Cliquez sur **OK**.
+En tant que nom du parcours, utilisez `--aepUserLdap-- - Geofence Entry Journey`. Dans cet exemple, le nom du parcours est `vangeluw - Geofence Entry Journey`. Aucune autre valeur ne doit être définie pour le moment. Cliquez sur **OK**.
 
 ![Démonstration](./images/joname.png)
 
@@ -76,7 +76,7 @@ Vous verrez ensuite l’ **éditeur avancé** qui permet la saisie de code.
 
 Sélectionnez le code ci-dessous et collez-le dans l’ **éditeur avancé**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 10`
 
 Vous verrez alors ceci.
 
@@ -93,7 +93,7 @@ Vous devez ensuite trouver le champ qui contient la ville actuelle du client dan
 
 ![Démonstration](./images/jo12.png)
 
-Vous pouvez trouver le champ en accédant à `--demoProfileLdap--GeofenceEntry.placeContext.geo.city`.
+Vous pouvez trouver le champ en accédant à `--aepUserLdap--GeofenceEntry.placeContext.geo.city`.
 
 En cliquant sur ce champ, il sera ajouté comme valeur dynamique pour le paramètre `q`. Ce champ sera renseigné par exemple par le service de géolocalisation que vous avez mis en oeuvre dans votre application mobile. Dans notre cas, nous simulerons cela avec la console d’administration du site web de démonstration. Cliquez sur **OK**.
 
@@ -119,7 +119,7 @@ Vous verrez ensuite l’ **éditeur avancé** qui permet la saisie de code.
 
 Sélectionnez le code ci-dessous et collez-le dans l’ **éditeur avancé**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 10 and #{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 25`
 
 Vous verrez alors ceci.
 
@@ -136,7 +136,7 @@ Vous devez ensuite trouver le champ qui contient la ville actuelle du client dan
 
 ![Démonstration](./images/jo12.png)
 
-Vous pouvez trouver le champ en accédant à `--demoProfileLdap--GeofenceEntry.placeContext.geo.city`. En cliquant sur ce champ, il sera ajouté comme valeur dynamique pour le paramètre **q**. Ce champ sera renseigné par exemple par le service de géolocalisation que vous avez mis en oeuvre dans votre application mobile. Dans notre cas, nous simulerons cela avec la console d’administration du site web de démonstration. Cliquez sur **OK**.
+Vous pouvez trouver le champ en accédant à `--aepUserLdap--GeofenceEntry.placeContext.geo.city`. En cliquant sur ce champ, il sera ajouté comme valeur dynamique pour le paramètre **q**. Ce champ sera renseigné par exemple par le service de géolocalisation que vous avez mis en oeuvre dans votre application mobile. Dans notre cas, nous simulerons cela avec la console d’administration du site web de démonstration. Cliquez sur **OK**.
 
 ![Démonstration](./images/jo13.png)
 
@@ -163,7 +163,7 @@ Vous verrez ensuite l’ **éditeur avancé** qui permet la saisie de code.
 
 Sélectionnez le code ci-dessous et collez-le dans l’ **éditeur avancé**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 25`
 
 Vous verrez alors ceci.
 
@@ -180,7 +180,7 @@ Vous devez ensuite trouver le champ qui contient la ville actuelle du client dan
 
 ![Démonstration](./images/jo12.png)
 
-Vous pouvez trouver le champ en accédant à ```--demoProfileLdap--GeofenceEntry.placeContext.geo.city```. En cliquant sur ce champ, il sera ajouté comme valeur dynamique pour le paramètre **q**. Ce champ sera renseigné par exemple par le service de géolocalisation que vous avez mis en oeuvre dans votre application mobile. Dans notre cas, nous simulerons cela avec la console d’administration du site web de démonstration. Cliquez sur **OK**.
+Vous pouvez trouver le champ en accédant à ```--aepUserLdap--GeofenceEntry.placeContext.geo.city```. En cliquant sur ce champ, il sera ajouté comme valeur dynamique pour le paramètre **q**. Ce champ sera renseigné par exemple par le service de géolocalisation que vous avez mis en oeuvre dans votre application mobile. Dans notre cas, nous simulerons cela avec la console d’administration du site web de démonstration. Cliquez sur **OK**.
 
 ![Démonstration](./images/jo13.png)
 
@@ -254,7 +254,7 @@ Vous serez alors de retour ici. Cliquez sur **OK**.
 
 ![Journey Optimizer](./images/sms4b.png)
 
-Dans le menu de gauche, revenez à **Actions**, sélectionnez l’action `--demoProfileLdap--TextSlack`, puis faites-la glisser après l’action **Message**.
+Dans le menu de gauche, revenez à **Actions**, sélectionnez l’action `--aepUserLdap--TextSlack`, puis faites-la glisser après l’action **Message**.
 
 ![Démonstration](./images/joa18.png)
 
@@ -342,7 +342,7 @@ L’action terminée s’affiche désormais. Cliquez sur **OK**.
 
 ![Démonstration](./images/jop17.png)
 
-Dans le menu de gauche, revenez à **Actions**, sélectionnez l’action `--demoProfileLdap--TextSlack`, puis faites-la glisser après l’action **Message**.
+Dans le menu de gauche, revenez à **Actions**, sélectionnez l’action `--aepUserLdap--TextSlack`, puis faites-la glisser après l’action **Message**.
 
 ![Démonstration](./images/jop18.png)
 
@@ -430,7 +430,7 @@ L’action terminée s’affiche désormais. Cliquez sur **OK**.
 
 ![Démonstration](./images/jod17.png)
 
-Dans le menu de gauche, revenez à **Actions**, sélectionnez l’action `--demoProfileLdap--TextSlack`, puis faites-la glisser après l’action **Messages**.
+Dans le menu de gauche, revenez à **Actions**, sélectionnez l’action `--aepUserLdap--TextSlack`, puis faites-la glisser après l’action **Messages**.
 
 ![Démonstration](./images/jod18.png)
 

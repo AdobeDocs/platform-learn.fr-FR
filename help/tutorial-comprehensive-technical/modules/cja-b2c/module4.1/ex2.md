@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Connexion des jeux de données Adobe Experie
 description: Customer Journey Analytics - Connexion des jeux de données Adobe Experience Platform dans Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Vous verrez ensuite l’interface utilisateur **Créer une connexion**.
 
 Vous pouvez maintenant donner un nom à votre connexion.
 
-Utilisez cette convention d’affectation des noms : `--demoProfileLdap-- – Omnichannel Data Connection`.
+Utilisez cette convention d’affectation des noms : `--aepUserLdap-- – Omnichannel Data Connection`.
 
 Exemple : `vangeluw - Omnichannel Data Connection`
 

@@ -3,7 +3,7 @@ title: 'Customer Journey Analytics : création d’une vue de données'
 description: 'Customer Journey Analytics : création d’une vue de données'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 3%
@@ -45,17 +45,17 @@ Vous pouvez maintenant configurer les définitions de base de votre vue de donn�
 
 ![demo](./images/0-v2.png)
 
-La **connexion** que vous avez créée dans l’exercice précédent est déjà sélectionnée. Votre connexion est nommée `--demoProfileLdap-- – Omnichannel Data Connection`.
+La **connexion** que vous avez créée dans l’exercice précédent est déjà sélectionnée. Votre connexion est nommée `--aepUserLdap-- – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Attribuez ensuite un nom à votre vue de données en suivant cette convention d’affectation des noms : `--demoProfileLdap-- – Omnichannel Data View`.
+Attribuez ensuite un nom à votre vue de données en suivant cette convention d’affectation des noms : `--aepUserLdap-- – Omnichannel Data View`.
 
-Saisissez la même valeur pour la description : `--demoProfileLdap-- – Omnichannel Data View`.
+Saisissez la même valeur pour la description : `--aepUserLdap-- – Omnichannel Data View`.
 
 | Nom | Description |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View` |
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
 
 ![demo](./images/1-v2.png)
 

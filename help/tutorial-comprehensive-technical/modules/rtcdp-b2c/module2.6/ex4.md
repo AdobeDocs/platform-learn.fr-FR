@@ -3,7 +3,7 @@ title: Installation et configuration de Kafka Connect et du connecteur Adobe Exp
 description: Installation et configuration de Kafka Connect et du connecteur Adobe Experience Platform Sink
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Prenez l’exemple de payload d’événement d’expérience ci-dessous et copi
 
 Vous verrez alors ceci. Vous devez mettre à jour manuellement 2 champs :
 
-- **_id** : définissez-le sur un identifiant aléatoire, par exemple `--demoProfileLdap--1234`
+- **_id** : définissez-le sur un identifiant aléatoire, par exemple `--aepUserLdap--1234`
 - **timestamp** : mettez à jour l’horodatage vers la date et l’heure actuelles
 - **phoneNumber** : saisissez le numéro de téléphone du compte qui vient d’être créé sur le site web de démonstration. Vous pouvez le trouver dans le panneau Visionneuse de profils sous **Identités**.
 

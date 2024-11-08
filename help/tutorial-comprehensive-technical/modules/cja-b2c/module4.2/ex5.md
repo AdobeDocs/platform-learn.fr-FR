@@ -3,7 +3,7 @@ title: Ingestion et analyse de données Google Analytics dans Adobe Experience P
 description: Ingestion et analyse de données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Analyse des données Google Analytics à l’aide de Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Vous verrez ensuite l’interface utilisateur **Créer une connexion**.
 
 ![demo](./images/5.png)
 
-Tout d’abord, vous devez sélectionner l’environnement de test correct à utiliser. Dans le menu des environnements de test, sélectionnez votre environnement de test, qui doit être `--aepSandboxId--`. Dans cet exemple, l’environnement de test à utiliser est **AEP Enablement FY21**.
+Tout d’abord, vous devez sélectionner l’environnement de test correct à utiliser. Dans le menu des environnements de test, sélectionnez votre environnement de test, qui doit être `--aepSandboxName--`. Dans cet exemple, l’environnement de test à utiliser est **AEP Enablement FY21**.
 
 ![demo](./images/cjasb.png)
 

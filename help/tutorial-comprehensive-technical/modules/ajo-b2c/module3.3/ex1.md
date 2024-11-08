@@ -4,7 +4,7 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxId--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxId--`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -106,7 +106,7 @@ L’environnement Segmentation de Adobe Experience Platform s’affiche alors.
 
 Vous pouvez désormais accéder à tous les champs qui font partie du schéma d’union pour Real-time Customer Profile et créer n’importe quelle règle.
 
-Il est également intéressant de savoir que vous pouvez simplement réutiliser des segments déjà définis dans Adobe Experience Platform en accédant à **Audiences** > ``--aepTenantIdSchema--``.
+Il est également intéressant de savoir que vous pouvez simplement réutiliser des segments déjà définis dans Adobe Experience Platform en accédant à **Audiences** > ``--aepTenantId--``.
 
 ![Règle de décision](./images/decisionruleaud.png)
 

@@ -3,7 +3,7 @@ title: Configuration du point d’entrée de l’API HTTP dans Adobe Experience 
 description: Configuration du point d’entrée de l’API HTTP dans Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 8%
@@ -20,7 +20,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -28,7 +28,7 @@ Dans le menu de gauche, accédez à **Sources** et faites défiler l’écran ve
 
 ![Ingestion des données](./images/kaep1.png)
 
-Cliquez sur **Nouveau compte**. Utilisez `--demoProfileLdap-- - Kafka` comme nom pour votre connexion API HTTP, dans ce cas **vangeluw - Kafka**. Activez la case à cocher pour **Compatible XDM**. Cliquez sur **Se connecter à la source**.
+Cliquez sur **Nouveau compte**. Utilisez `--aepUserLdap-- - Kafka` comme nom pour votre connexion API HTTP, dans ce cas **vangeluw - Kafka**. Activez la case à cocher pour **Compatible XDM**. Cliquez sur **Se connecter à la source**.
 
 ![Ingestion des données](./images/kaep2.png)
 

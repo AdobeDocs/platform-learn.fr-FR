@@ -3,7 +3,7 @@ title: CDP en temps réel - SDK Destinations
 description: CDP en temps réel - SDK Destinations
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 3%
@@ -122,10 +122,10 @@ Cliquez sur **Modifier le projet**.
 
 ![Adobe I/O d’une nouvelle intégration](../module2.1/images/api14.png)
 
-Saisissez un nom et une description pour votre intégration. Par convention, nous utiliserons `AEP API --demoProfileLdap--`. Remplacez ldap par votre ldap.
+Saisissez un nom et une description pour votre intégration. Par convention, nous utiliserons `AEP API --aepUserLdap--`. Remplacez ldap par votre ldap.
 Par exemple, si votre ldap est vangeluw, le nom et la description de votre intégration deviennent vangeluw de l’API AEP.
 
-Saisissez `AEP API --demoProfileLdap--` comme **Titre du projet**. Cliquez sur **Enregistrer**.
+Saisissez `AEP API --aepUserLdap--` comme **Titre du projet**. Cliquez sur **Enregistrer**.
 
 ![Adobe I/O d’une nouvelle intégration](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ En ce qui concerne le format, nous utiliserons un modèle standard qui diffusera
 
 La première étape de la création de votre propre destination dans Adobe Experience Platform consiste à créer une configuration de serveur et de modèle.
 
-Pour ce faire, accédez à **API de création de destination**, à **Serveurs et modèles de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de serveur de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxId--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
+Pour ce faire, accédez à **API de création de destination**, à **Serveurs et modèles de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de serveur de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
 
 ![Ingestion des données](./images/sdkpm1.png)
 
-Remplacez-le par `--aepSandboxId--`.
+Remplacez-le par `--aepSandboxName--`.
 
 ![Ingestion des données](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Après avoir cliqué sur **Envoyer**, votre modèle de serveur est créé. Dans 
 
 ## 2.3.7.5 Création de votre configuration de destination
 
-Dans Postman, sous **API de création de destination**, accédez à **Configurations de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxId--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
+Dans Postman, sous **API de création de destination**, accédez à **Configurations de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
 
 ![Ingestion des données](./images/sdkpm7.png)
 
-Remplacez-le par `--aepSandboxId--`.
+Remplacez-le par `--aepSandboxName--`.
 
 ![Ingestion des données](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Saisissez un jeton de support factice, tel que **1234**. Cliquez sur **Se connec
 
 ![Ingestion des données](./images/destsdk3.png)
 
-Vous verrez alors ceci. Pour nommer votre destination, utilisez `--demoProfileLdap-- - Webhook`. Sélectionnez un point de terminaison de votre choix, dans cet exemple **EU**. Cliquez sur **Suivant**.
+Vous verrez alors ceci. Pour nommer votre destination, utilisez `--aepUserLdap-- - Webhook`. Sélectionnez un point de terminaison de votre choix, dans cet exemple **EU**. Cliquez sur **Suivant**.
 
 ![Ingestion des données](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ Vous pouvez éventuellement sélectionner une stratégie de gouvernance des donn
 
 ![Ingestion des données](./images/destsdk5.png)
 
-Sélectionnez le segment que vous avez créé précédemment, nommé `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Cliquez sur **Suivant**.
+Sélectionnez le segment que vous avez créé précédemment, nommé `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Cliquez sur **Suivant**.
 
 ![Ingestion des données](./images/destsdk6.png)
 

@@ -3,7 +3,7 @@ title: Ingestion et analyse de données de Google Analytics dans Adobe Experienc
 description: Ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Création de votre compte Google Cloud Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Nommez votre projet selon cette convention d’affectation des noms :
 
 | Convention | Exemple |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaiglecloud |
+| `--aepUserLdap---googlecloud` | delaiglecloud |
 
 ![demo](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ Avant de poursuivre l’exercice suivant, écrivez les éléments suivants dans 
 
 | Informations d’identification | Attribution d&#39;un nom | Exemple |
 | ----------------- |-------------| -------------|
-| Nom du projet | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud |
+| Nom du projet | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
 | Identifiant de projet | random | composé-tâche-306413 |
 
 Vous pouvez trouver votre nom de projet et votre ID de projet en cliquant sur le **nom du projet** dans la barre de menu supérieure :

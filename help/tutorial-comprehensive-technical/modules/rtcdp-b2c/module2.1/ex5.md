@@ -3,7 +3,7 @@ title: Foundation - Real-time Customer Profile - Création d’un segment - API
 description: Foundation - Real-time Customer Profile - Création d’un segment - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -77,11 +77,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez maintenant sur le bouton bleu **Envoyer** pour créer le segment et en afficher les résultats.
 
@@ -111,11 +111,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez sur le bouton bleu **Send** .
 
@@ -142,11 +142,11 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 | Clé | Valeur |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxId--`.
+>Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 Cliquez sur le bouton bleu **Send** .
 

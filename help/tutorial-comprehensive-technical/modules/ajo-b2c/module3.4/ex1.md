@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - Configuration d’un parcours basé sur un déc
 description: Dans cette section, vous allez configurer un parcours basé sur un déclencheur - Confirmation de commande
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 9%
@@ -16,7 +16,7 @@ Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxId--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxId--`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Une configuration d’événement vide s’affiche alors.
 
 ![Journey Optimizer](./images/oc32.png)
 
-Tout d’abord, attribuez un nom à votre événement comme suit : `--demoProfileLdap--PurchaseEvent` et ajoutez une description comme celle-ci : `Purchase Event`.
+Tout d’abord, attribuez un nom à votre événement comme suit : `--aepUserLdap--PurchaseEvent` et ajoutez une description comme celle-ci : `Purchase Event`.
 
 ![Journey Optimizer](./images/oc34.png)
 
@@ -100,11 +100,11 @@ Dans le menu, accédez à **Parcours** et cliquez sur **Créer un Parcours**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-Vous verrez alors ceci. Donnez un nom à votre parcours. Utilisez `--demoProfileLdap-- - Order Confirmation journey`. Cliquez sur **OK**.
+Vous verrez alors ceci. Donnez un nom à votre parcours. Utilisez `--aepUserLdap-- - Order Confirmation journey`. Cliquez sur **OK**.
 
 ![Journey Optimizer](./images/oc45.png)
 
-Tout d’abord, vous devez ajouter votre événement comme point de départ de votre parcours. Recherchez votre événement `--demoProfileLdap--PurchaseEvent` et faites-le glisser sur la zone de travail. Cliquez sur **OK**.
+Tout d’abord, vous devez ajouter votre événement comme point de départ de votre parcours. Recherchez votre événement `--aepUserLdap--PurchaseEvent` et faites-le glisser sur la zone de travail. Cliquez sur **OK**.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -266,7 +266,7 @@ Cliquez sur la flèche en regard de **Events** pour approfondir l’analyse.
 
 ![Journey Optimizer](./images/oc62.png)
 
-Cliquez sur la flèche en regard de `--demoProfileLdap--PurchaseEvent` pour approfondir l’analyse.
+Cliquez sur la flèche en regard de `--aepUserLdap--PurchaseEvent` pour approfondir l’analyse.
 
 ![Journey Optimizer](./images/oc63.png)
 
@@ -314,7 +314,7 @@ Cliquez sur la flèche en regard de **Events** pour approfondir l’analyse.
 
 ![Journey Optimizer](./images/oc722.png)
 
-Cliquez sur la flèche en regard de `--demoProfileLdap--PurchaseEvent` pour approfondir l’analyse.
+Cliquez sur la flèche en regard de `--aepUserLdap--PurchaseEvent` pour approfondir l’analyse.
 
 ![Journey Optimizer](./images/oc73.png)
 
@@ -379,7 +379,7 @@ Il s’agit de la page Propriétés de la collecte de données Adobe Experience 
 
 ![Page Propriétés](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--demoProfileLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
+Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--aepUserLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
 
 ![Zone de recherche](./../../../modules/datacollection/module1.1/images/property6.png)
 

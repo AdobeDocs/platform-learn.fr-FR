@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. 
 description: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. - Définition d’une source de données externe
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 3%
@@ -18,7 +18,7 @@ Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience C
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxId--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxId--`.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -73,7 +73,7 @@ Revenez à **Adobe Journey Optimizer**, dans la fenêtre contextuelle **Source d
 
 ![Démonstration](./images/emptyds.png)
 
-En tant que nom de la source de données, utilisez `--demoProfileLdap--WeatherApi`. Dans cet exemple, le nom de la source de données est `vangeluwWeatherApi `.
+En tant que nom de la source de données, utilisez `--aepUserLdap--WeatherApi`. Dans cet exemple, le nom de la source de données est `vangeluwWeatherApi `.
 
 Définissez la description sur : `Access to the Open Weather Map`.
 
@@ -106,7 +106,7 @@ Pour correspondre à la requête API attendue, configurez votre FieldGroup comme
 
 >[!IMPORTANT]
 >
->Le nom du groupe de champs doit être unique. Utilisez cette convention d’affectation des noms : `--demoProfileLdap--WeatherByCity`. Dans ce cas, le nom doit donc être `vangeluwWeatherByCity`.
+>Le nom du groupe de champs doit être unique. Utilisez cette convention d’affectation des noms : `--aepUserLdap--WeatherByCity`. Dans ce cas, le nom doit donc être `vangeluwWeatherByCity`.
 
 ![Démonstration](./images/fg1.png)
 

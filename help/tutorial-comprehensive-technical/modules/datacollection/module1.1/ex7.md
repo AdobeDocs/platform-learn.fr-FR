@@ -3,7 +3,7 @@ title: Foundation - Configuration de la collecte de données Adobe Experience Pl
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Schéma XDM requis dans Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Accédez à [https://experience.adobe.com/platform](https://experience.adobe.com
 
 ![Débogueur AEP](./images/exp1.png)
 
-Une fois connecté, sélectionnez l’environnement de test approprié en cliquant sur le texte **Production Prod** dans la ligne bleue en haut de votre écran. Sélectionnez l’environnement de test `--aepSandboxId--`.
+Une fois connecté, sélectionnez l’environnement de test approprié en cliquant sur le texte **Production Prod** dans la ligne bleue en haut de votre écran. Sélectionnez l’environnement de test `--aepSandboxName--`.
 
 Après avoir sélectionné votre environnement de test, l’écran change et vous êtes maintenant dans votre environnement de test.
 

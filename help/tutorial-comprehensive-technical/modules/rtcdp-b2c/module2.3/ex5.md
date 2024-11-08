@@ -3,7 +3,7 @@ title: CDP en temps réel - Créer un segment et agir - Envoyer votre segment à
 description: CDP en temps réel - Créer un segment et agir - Envoyer votre segment à Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 3%
@@ -16,23 +16,23 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 Vérification du flux de données
 
-La destination Adobe Target dans Real-Time CDP est connectée à la banque de données utilisée pour ingérer des données dans le réseau Edge d’Adobe. Si vous souhaitez définir votre destination Adobe Target, vous devez d’abord vérifier si votre flux de données est déjà activé pour Adobe Target. Votre jeu de données a été configuré dans l’ [exercice 0.2 de création de votre flux de données](./../../../modules/gettingstarted/gettingstarted/ex2.md) et a été nommé `--demoProfileLdap-- - Demo System Datastream`.
+La destination Adobe Target dans Real-Time CDP est connectée à la banque de données utilisée pour ingérer des données dans le réseau Edge d’Adobe. Si vous souhaitez définir votre destination Adobe Target, vous devez d’abord vérifier si votre flux de données est déjà activé pour Adobe Target. Votre jeu de données a été configuré dans l’ [exercice 0.2 de création de votre flux de données](./../../../modules/gettingstarted/gettingstarted/ex2.md) et a été nommé `--aepUserLdap-- - Demo System Datastream`.
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), puis cliquez sur **Datastreams** ou **Datastreams (Beta)**.
 
 ![Ingestion des données](./images/atdestds1.png)
 
-Dans le coin supérieur droit de votre écran, sélectionnez le nom de votre environnement de test, qui doit être `--aepSandboxId--`.
+Dans le coin supérieur droit de votre écran, sélectionnez le nom de votre environnement de test, qui doit être `--aepSandboxName--`.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1b.png)
 
-Dans les flux de données, recherchez votre flux de données nommé `--demoProfileLdap-- - Demo System Datastream`. Cliquez sur votre flux de données pour l’ouvrir.
+Dans les flux de données, recherchez votre flux de données nommé `--aepUserLdap-- - Demo System Datastream`. Cliquez sur votre flux de données pour l’ouvrir.
 
 ![Ingestion des données](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Vous verrez alors ceci.
 
 Dans l&#39;écran **Configurer une nouvelle destination**, vous devez configurer deux éléments :
 
-- Nom : utilisez le nom `--demoProfileLdap-- - Adobe Target (Web)`, qui doit ressembler à ceci : **vangeluw - Adobe Target (Web)**.
-- Identifiant de la banque de données : vous devez sélectionner la banque de données que vous avez configurée dans l’ [exercice 0.2 Création de la banque de données](./../../../modules/gettingstarted/gettingstarted/ex2.md). Le nom de votre flux de données doit être : `--demoProfileLdap-- - Demo System Datastream`.
+- Nom : utilisez le nom `--aepUserLdap-- - Adobe Target (Web)`, qui doit ressembler à ceci : **vangeluw - Adobe Target (Web)**.
+- Identifiant de la banque de données : vous devez sélectionner la banque de données que vous avez configurée dans l’ [exercice 0.2 Création de la banque de données](./../../../modules/gettingstarted/gettingstarted/ex2.md). Le nom de votre flux de données doit être : `--aepUserLdap-- - Demo System Datastream`.
 
 Cliquez sur **Suivant**.
 
@@ -91,7 +91,7 @@ Votre destination est maintenant créée et s’affichera dans la liste. Sélect
 
 ![AT](./images/atdest7.png)
 
-Dans la liste des segments disponibles, sélectionnez le segment que vous avez créé dans [Exercice 6.1 Create a segment](./ex1.md), nommé `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Cliquez ensuite sur **Suivant**.
+Dans la liste des segments disponibles, sélectionnez le segment que vous avez créé dans [Exercice 6.1 Create a segment](./ex1.md), nommé `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Cliquez ensuite sur **Suivant**.
 
 ![AT](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Cliquez sur le titre de votre activité dans le coin supérieur gauche pour la r
 
 Pour le nom, veuillez utiliser :
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

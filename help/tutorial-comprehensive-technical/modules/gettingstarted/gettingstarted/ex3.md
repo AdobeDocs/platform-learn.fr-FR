@@ -3,7 +3,7 @@ title: Prise en main - Création de la matrice de données
 description: Prise en main - Création de la matrice de données
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Cliquez sur **[!UICONTROL Datastreams]** ou **[!UICONTROL Datastreams (Beta)]**.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1a.png)
 
-Dans le coin supérieur droit de votre écran, sélectionnez le nom de votre environnement de test, qui doit être `--aepSandboxId--`.
+Dans le coin supérieur droit de votre écran, sélectionnez le nom de votre environnement de test, qui doit être `--aepSandboxName--`.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1b.png)
 
@@ -34,7 +34,7 @@ Cliquez sur **[!UICONTROL New Datastream]**.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1.png)
 
-Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--demoProfileLdap-- - Demo System Datastream`. Pour le schéma d’événement, sélectionnez **Demo System - Event Schema for Website (Global v1.1)**. Cliquez sur **Enregistrer**.
+Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--aepUserLdap-- - Demo System Datastream`. Pour le schéma d’événement, sélectionnez **Demo System - Event Schema for Website (Global v1.1)**. Cliquez sur **Enregistrer**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig2.png)
 
@@ -72,7 +72,7 @@ Vous verrez alors ceci. Pour **Datastreams**, une valeur factice est actuellemen
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig13.png)
 
-Assurez-vous d’avoir sélectionné votre **Datastream**. CONSEIL : vous pouvez filtrer facilement les résultats dans la liste déroulante en saisissant votre `--demoProfileLdap--`.
+Assurez-vous d’avoir sélectionné votre **Datastream**. CONSEIL : vous pouvez filtrer facilement les résultats dans la liste déroulante en saisissant votre `--aepUserLdap--`.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig14.png)
 
@@ -102,7 +102,7 @@ Cliquez sur **[!UICONTROL Datastreams]** ou **[!UICONTROL Datastreams (Beta)]**.
 
 ![Cliquez sur l’icône Datastream dans le volet de navigation de gauche](./images/edgeconfig1a.png)
 
-Dans le coin supérieur droit de votre écran, sélectionnez le nom de votre environnement de test, qui doit être `--aepSandboxId--`.
+Dans le coin supérieur droit de votre écran, sélectionnez le nom de votre environnement de test, qui doit être `--aepSandboxName--`.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1b.png)
 
@@ -110,7 +110,7 @@ Cliquez sur **[!UICONTROL New Datastream]**.
 
 ![Cliquez sur l’icône Datastream dans le volet de navigation de gauche](./images/edgeconfig1.png)
 
-Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--demoProfileLdap-- - Demo System Datastream (Mobile)`. Pour le schéma d’événement, sélectionnez **Demo System - Event Schema for Mobile App (Global v1.1)**. Cliquez sur **Enregistrer**.
+Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--aepUserLdap-- - Demo System Datastream (Mobile)`. Pour le schéma d’événement, sélectionnez **Demo System - Event Schema for Mobile App (Global v1.1)**. Cliquez sur **Enregistrer**.
 
 Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -144,7 +144,7 @@ Sur l’extension **Adobe Experience Platform Edge Network**, cliquez sur **Conf
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig12m.png)
 
-Vous verrez alors ceci. Vous devez maintenant sélectionner l’environnement de test et le flux de données corrects que vous venez de configurer. L’environnement de test à utiliser est `--aepSandboxId--` et le flux de données est appelé `--demoProfileLdap-- - Demo System Datastream (Mobile)`.
+Vous verrez alors ceci. Vous devez maintenant sélectionner l’environnement de test et le flux de données corrects que vous venez de configurer. L’environnement de test à utiliser est `--aepSandboxName--` et le flux de données est appelé `--aepUserLdap-- - Demo System Datastream (Mobile)`.
 
 Pour le **domaine Edge Network**, utilisez le domaine par défaut **edge.adobedc.net**.
 

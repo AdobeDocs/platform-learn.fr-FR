@@ -3,7 +3,7 @@ title: Offer decisioning - Utilisez votre décision dans un email
 description: Utiliser votre décision dans un email
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 11%
@@ -14,7 +14,7 @@ ht-degree: 11%
 
 Dans cet exercice, vous utiliserez votre décision pour personnaliser la diffusion d’un email et d’un SMS.
 
-Accédez à **Parcours**. Recherchez le parcours que vous avez créé dans l’exercice 7.2, intitulé `--demoProfileLdap-- - Account Creation Journey`. Cliquez sur votre parcours pour l’ouvrir.
+Accédez à **Parcours**. Recherchez le parcours que vous avez créé dans l’exercice 7.2, intitulé `--aepUserLdap-- - Account Creation Journey`. Cliquez sur votre parcours pour l’ouvrir.
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ Dans le menu, accédez à **Composants du contenu**. Sélectionnez le composant 
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-Sélectionnez le type d’emplacement que vous souhaitez inclure dans le courrier électronique. Dans le menu déroulant **Emplacements**, sélectionnez **Email - Image**, puis sélectionnez votre décision `--demoProfileLdap-- - Luma Decision`. Cliquez sur **Ajouter**.
+Sélectionnez le type d’emplacement que vous souhaitez inclure dans le courrier électronique. Dans le menu déroulant **Emplacements**, sélectionnez **Email - Image**, puis sélectionnez votre décision `--aepUserLdap-- - Luma Decision`. Cliquez sur **Ajouter**.
 
 ![Journey Optimizer](./images/emailoffer8.png)
 

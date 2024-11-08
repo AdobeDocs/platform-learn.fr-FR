@@ -3,7 +3,7 @@ title: Foundation - Configuration de la collecte de données Adobe Experience Pl
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Edge Network, flux de données et collecte de données côté serveur
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Cliquez sur **[!UICONTROL Datastreams]** ou **[!UICONTROL Datastreams (Beta)]** 
 
 ![Cliquez sur l’icône Datastream dans le volet de navigation de gauche](./images/edgeconfig1.png)
 
-Recherchez votre Datastream, nommé `--demoProfileLdap-- - Demo System Datastream`.
+Recherchez votre Datastream, nommé `--aepUserLdap-- - Demo System Datastream`.
 
 ![Nommez le flux de données et enregistrez](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ Vous devez interpréter les champs ci-dessous comme suit :
 
 Pour ce flux de données...
 
-- Toutes les données collectées seront stockées dans l’environnement de test `--aepSandboxId--` de Adobe Experience Platform.
+- Toutes les données collectées seront stockées dans l’environnement de test `--aepSandboxName--` de Adobe Experience Platform.
 - Toutes les données d’événement d’expérience sont collectées par défaut dans le jeu de données **Demo System - Event Dataset for Website (Global v1.1)**
 - Toutes les données Profile seront collectées par défaut dans le jeu de données **Demo System - Profile Dataset for Website (Global v1.1)** (l’ingestion de données de profil en mode natif avec le SDK Web n’est actuellement pas encore prise en charge par le SDK Web et sera rendue disponible ultérieurement).
 - Si vous souhaitez utiliser le service d&#39;application **Offer decisioning** pour cette Datastream, vous devez cocher la case pour l&#39;Offer decisioning. (Cela fera partie du [module 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))

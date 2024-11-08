@@ -3,7 +3,7 @@ title: CDP en temps réel - Audiences externes
 description: CDP en temps réel - Audiences externes
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Vous verrez alors ceci. Sélectionnez le champ **_id**. Dans le menu de droite, 
 
 ![ Schéma de métadonnées d’audiences externes 4](images/extAudMDXDM4.png)
 
-Sélectionnez ensuite le nom du schéma **Schéma sans titre**. Modifiez le nom en `--demoProfileLdap-- - External Audiences Metadata`.
+Sélectionnez ensuite le nom du schéma **Schéma sans titre**. Modifiez le nom en `--aepUserLdap-- - External Audiences Metadata`.
 
 ![ Schéma de métadonnées d’audiences externes 5](images/extAudMDXDM5.png)
 
@@ -81,11 +81,11 @@ Activez le bouton bascule **Profile** et confirmez. Enfin, cliquez sur **Enregis
 
 ## 2.3.6.1.3 Création du jeu de données de métadonnées Audiences externes
 
-Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--demoProfileLdap-- - External Audiences Metadata` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
+Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--aepUserLdap-- - External Audiences Metadata` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
 
 ![Métadonnées d’audiences externes DS 1](images/extAudMDDS1.png)
 
-Pour le champ **Name**, saisissez `--demoProfileLdap-- - External Audience Metadata`. Cliquez sur **Créer un jeu de données**.
+Pour le champ **Name**, saisissez `--aepUserLdap-- - External Audience Metadata`. Cliquez sur **Créer un jeu de données**.
 
 ![Métadonnées d’audiences externes DS 2](images/extAudMDDS2.png)
 
@@ -104,7 +104,7 @@ Accédez à **Sources**. Dans le champ de recherche, saisissez **HTTP**. Cliquez
 Renseignez les informations suivantes :
 
 - **Type de compte** : sélectionnez **Nouveau compte**
-- **Nom du compte** : saisissez `--demoProfileLdap-- - External Audience Metadata`
+- **Nom du compte** : saisissez `--aepUserLdap-- - External Audience Metadata`
 - Cochez la case **Case compatible XDM**
 
 Cliquez ensuite sur **Se connecter à la source**.
@@ -115,7 +115,7 @@ Vous verrez alors ceci. Cliquez sur **Suivant**.
 
 ![Métadonnées d’audiences externes http 2](images/extAudMDhttp2a.png)
 
-Sélectionnez **Jeu de données existant** et dans le menu déroulant, recherchez et sélectionnez le jeu de données `--demoProfileLdap-- - External Audience Metadata`.
+Sélectionnez **Jeu de données existant** et dans le menu déroulant, recherchez et sélectionnez le jeu de données `--aepUserLdap-- - External Audience Metadata`.
 
 Vérifiez les **détails du flux de données**, puis cliquez sur **Suivant**.
 
@@ -149,15 +149,15 @@ L’objet **xdmEntity** doit être remplacé par le code ci-dessous. Copiez le c
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -185,7 +185,7 @@ Actualisez l’écran du connecteur HTTP API Source, où vous verrez maintenant 
 
 Une fois le traitement terminé, vous pouvez vérifier la disponibilité des données dans le jeu de données à l’aide de Query Service.
 
-Dans le menu de droite, accédez à **Jeux de données** et sélectionnez le jeu de données `--demoProfileLdap-- - External Audience Metadata` que vous avez créé précédemment.
+Dans le menu de droite, accédez à **Jeux de données** et sélectionnez le jeu de données `--aepUserLdap-- - External Audience Metadata` que vous avez créé précédemment.
 
 ![Métadonnées d’audiences externes str 3](images/extAudMDstr3.png)
 
@@ -196,7 +196,7 @@ Dans le menu de droite, accédez à Requêtes et cliquez sur **Créer une requê
 Saisissez le code suivant, puis appuyez sur **Maj + ENTER** :
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 Dans les résultats de la requête, vous verrez les métadonnées de l’audience externe que vous avez ingérées.
@@ -229,7 +229,7 @@ Cliquez sur **Appliquer**.
 
 ![ Schéma de profil d’audiences externes 4](images/extAudPrXDM4.png)
 
-Sélectionnez ensuite le nom du schéma **Schéma sans titre**. Dans le champ du nom d&#39;affichage, saisissez `--demoProfileLdap-- - External Audiences Membership`.
+Sélectionnez ensuite le nom du schéma **Schéma sans titre**. Dans le champ du nom d&#39;affichage, saisissez `--aepUserLdap-- - External Audiences Membership`.
 
 ![ Schéma de profil d’audiences externes 5](images/extAudPrXDM5a.png)
 
@@ -239,11 +239,11 @@ Ensuite, activez le bouton d’activation/désactivation **Profile** et confirme
 
 ## 2.3.6.2.2 Création du jeu de données d’adhésion aux audiences externes
 
-Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--demoProfileLdap-- - External Audiences Membership` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
+Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--aepUserLdap-- - External Audiences Membership` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
 
 ![Métadonnées d’audiences externes DS 1](images/extAudPrDS1.png)
 
-Pour le champ **Name**, saisissez `--demoProfileLdap-- - External Audiences Membership`. Cliquez sur **Créer un jeu de données**.
+Pour le champ **Name**, saisissez `--aepUserLdap-- - External Audiences Membership`. Cliquez sur **Créer un jeu de données**.
 
 ![Métadonnées d’audiences externes DS 2](images/extAudPrDS2.png)
 
@@ -263,7 +263,7 @@ Accédez à **Sources**. Dans le champ de recherche, saisissez **HTTP**. Cliquez
 Renseignez les informations suivantes :
 
 - **Type de compte** : sélectionnez **Nouveau compte**
-- **Nom du compte** : saisissez `--demoProfileLdap-- - External Audience Membership`
+- **Nom du compte** : saisissez `--aepUserLdap-- - External Audience Membership`
 - Cochez la case **Case compatible XDM**
 
 Cliquez ensuite sur **Se connecter à la source**.
@@ -274,7 +274,7 @@ Vous verrez alors ceci. Cliquez sur **Suivant**.
 
 ![Métadonnées d’audiences externes http 2](images/extAudPrhttp2a.png)
 
-Sélectionnez **Jeu de données existant** et dans le menu déroulant, recherchez et sélectionnez le jeu de données `--demoProfileLdap-- - External Audiences Membership`.
+Sélectionnez **Jeu de données existant** et dans le menu déroulant, recherchez et sélectionnez le jeu de données `--aepUserLdap-- - External Audiences Membership`.
 
 Vérifiez les **détails du flux de données**, puis cliquez sur **Suivant**.
 
@@ -308,18 +308,18 @@ L’objet **xdmEntity** doit être remplacé par le code ci-dessous. Copiez le c
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -350,7 +350,7 @@ Actualisez l’écran du connecteur HTTP API Source où, au bout de quelques min
 
 Une fois le traitement terminé, vous pouvez vérifier la disponibilité des données dans le jeu de données à l’aide de Query Service.
 
-Dans le menu de droite, accédez à **Jeux de données** et sélectionnez le jeu de données `--demoProfileLdap-- - External Audiences Membership ` que vous avez créé précédemment.
+Dans le menu de droite, accédez à **Jeux de données** et sélectionnez le jeu de données `--aepUserLdap-- - External Audiences Membership ` que vous avez créé précédemment.
 
 ![Métadonnées d’audiences externes str 3](images/extAudPrstr3.png)
 
@@ -361,7 +361,7 @@ Dans le menu de droite, accédez à Requêtes et cliquez sur **Créer une requê
 Saisissez le code suivant, puis appuyez sur **Maj + ENTER** :
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 Dans les résultats de la requête, vous verrez les métadonnées de l’audience externe que vous avez ingérées.
@@ -382,11 +382,11 @@ Accédez à **Audiences**. Vous verrez alors ceci. Cliquez sur **Audiences exter
 
 ![ Audiences externes SegBuilder 1](images/extAudSegUI2a.png)
 
-Sélectionnez l’audience externe que vous avez créée précédemment, appelée `--demoProfileLdap---extaudience-01`. Faites glisser l’audience sur la zone de travail.
+Sélectionnez l’audience externe que vous avez créée précédemment, appelée `--aepUserLdap---extaudience-01`. Faites glisser l’audience sur la zone de travail.
 
 ![ Audiences externes SegBuilder 1](images/extAudSegUI2b.png)
 
-Attribuez un nom à votre segment, utilisez `--demoProfileLdap-- - extaudience-01`. Cliquez sur **Enregistrer et fermer**.
+Attribuez un nom à votre segment, utilisez `--aepUserLdap-- - extaudience-01`. Cliquez sur **Enregistrer et fermer**.
 
 ![ Audiences externes SegBuilder 1](images/extAudSegUI1.png)
 
@@ -398,7 +398,7 @@ Votre segment est maintenant prêt et peut être envoyé vers une destination po
 
 ## 2.3.6.4 Visualisation du profil client
 
-Vous pouvez désormais également visualiser la qualification du segment sur votre profil client. Accédez à **Profils**, utilisez l’espace de noms d’identité **Demo System - CRMID** et fournissez l’identité `--demoProfileLdap---profile-test-01`, que vous avez utilisée dans le cadre de l’exercice 6.6.2.4, puis cliquez sur **Afficher**. Cliquez ensuite sur l’ **ID de profil** pour ouvrir le profil.
+Vous pouvez désormais également visualiser la qualification du segment sur votre profil client. Accédez à **Profils**, utilisez l’espace de noms d’identité **Demo System - CRMID** et fournissez l’identité `--aepUserLdap---profile-test-01`, que vous avez utilisée dans le cadre de l’exercice 6.6.2.4, puis cliquez sur **Afficher**. Cliquez ensuite sur l’ **ID de profil** pour ouvrir le profil.
 
 ![ Audiences externes SegBuilder 1](images/extAudProfileUI1.png)
 

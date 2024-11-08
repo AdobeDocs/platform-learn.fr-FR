@@ -3,10 +3,10 @@ title: Prise en main - Résumé
 description: Prise en main - Résumé
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -26,11 +26,6 @@ ht-degree: 1%
 - Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Accès à Adobe Experience Platform Launch : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Accès au système de démonstration Suivant : [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-
->[!IMPORTANT]
->
->Ce tutoriel a été créé pour faciliter un format d’atelier particulier. Il utilise des systèmes et des comptes spécifiques auxquels vous n’avez peut-être pas accès. Même sans accès, nous pensons que vous pouvez encore apprendre beaucoup en lisant à travers ce contenu très détaillé. Si vous participez à l’un des ateliers et que vous avez besoin de vos informations d’identification d’accès, veuillez contacter votre représentant d’Adobe qui vous fournira les informations requises.
-
 
 ## Exercices
 

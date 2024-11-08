@@ -3,7 +3,7 @@ title: Collecte de données et transfert côté serveur en temps réel - Créati
 description: Création et configuration d’une fonction Google Cloud
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Vous verrez alors ceci.
 
 Effectuez les choix suivants :
 
-- **Nom de fonction** : `--demoProfileLdap---event-forwarding`
+- **Nom de fonction** : `--aepUserLdap---event-forwarding`
 - **Région** : sélectionnez une région
 - **Type de déclencheur** : sélectionnez **HTTP**
 - **Authentification** : sélectionnez **Autoriser les appels non authentifiés**

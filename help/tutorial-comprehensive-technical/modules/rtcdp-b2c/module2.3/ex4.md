@@ -3,7 +3,7 @@ title: CDP en temps réel - Créer un segment et agir - Envoyer votre segment à
 description: CDP en temps réel - Créer un segment et agir - Envoyer votre segment à une destination S3
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 5%
@@ -38,7 +38,7 @@ Vous verrez ensuite la page d’accueil **Amazon S3**. Cliquez sur **Créer un c
 
 Dans l&#39;écran **Créer un compartiment**, vous devez configurer deux éléments :
 
-- Nom : utilisez le nom `aepmodulertcdp--demoProfileLdap--`. Par exemple, dans cet exercice, le nom du compartiment est **aepmoduertcdpvangeluw**
+- Nom : utilisez le nom `aepmodulertcdp--aepUserLdap--`. Par exemple, dans cet exercice, le nom du compartiment est **aepmoduertcdpvangeluw**
 - Région : utilisez la région **UE (Francfort) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -69,7 +69,7 @@ Dans le menu de gauche, cliquez sur **Utilisateurs**. L’écran **Utilisateurs*
 
 Configurez ensuite votre utilisateur :
 
-- Nom d’utilisateur : utilisez `s3_--demoProfileLdap--_rtcdp` comme nom, donc dans cet exemple, le nom est `s3_vangeluw_rtcdp`.
+- Nom d’utilisateur : utilisez `s3_--aepUserLdap--_rtcdp` comme nom, donc dans cet exemple, le nom est `s3_vangeluw_rtcdp`.
 - Type d’accès AWS : sélectionnez **Clé d’accès - Accès programmatique**.
 
 Cliquez sur **Suivant : Autorisations**.
@@ -121,7 +121,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -157,9 +157,9 @@ Pour définir une convention d’affectation des noms, utilisez ce qui suit :
 
 | Identifiant de la clé d’accès | Clé d’accès secrète |
 |:-----------------------:| :-----------------------:|
-| Nom | `AWS - S3 - --demoProfileLdap--` |
-| Description | `AWS - S3 - --demoProfileLdap--` |
-| Nom du compartiment | `aepmodulertcdp--demoProfileLdap--` |
+| Nom | `AWS - S3 - --aepUserLdap--` |
+| Description | `AWS - S3 - --aepUserLdap--` |
+| Nom du compartiment | `aepmodulertcdp--aepUserLdap--` |
 | Chemin du dossier | / |
 
 Cliquez sur **Suivant**.
