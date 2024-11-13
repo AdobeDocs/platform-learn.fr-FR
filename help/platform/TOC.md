@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '942'
 ht-degree: 20%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 20%
    + [Configurer le contrôle d’accès basé sur les attributs](/help/platform/admin/configure-attribute-based-access-control.md)
 + Assistant IA {#ai-assistant}
    + [Vue d’ensemble](/help/platform/ai-assistant/overview.md)
+   + [Configuration de l’accès](/help/platform/ai-assistant/access.md)
    + [Nettoyage des audiences](/help/platform/ai-assistant/find-unused-audiences.md)
 + Audiences et segmentation {#audiences}
    + [Présentation d’Audience Portal et de la composition](audiences/introduction-to-audience-portal-and-composition.md)
