@@ -3,21 +3,22 @@ title: Prise en main - Installation de l’extension Chrome pour la documentatio
 description: Prise en main - Installation de l’extension Chrome pour la documentation Experience League
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
+exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
+source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
 
-# 0.1 Installation de l’extension Chrome pour la documentation Experience League
+# 0.1.1 Installation de l’extension Chrome pour la documentation Experience League
 
-## 0.1.1 Pourquoi avons-nous créé une extension Chrome ?
+## À propos de l’extension Chrome
 
 La documentation a été rendue générique afin d’être facilement réutilisée par n’importe qui, à l’aide de n’importe quelle instance Adobe Experience Platform.
-En rendant la documentation réutilisable, les **variables d’environnement** ont été introduites dans la documentation, ce qui signifie que vous trouverez les **clés** ci-dessous dans la documentation. Chaque clé est une variable spécifique pour un environnement spécifique. L’extension Chrome la modifie pour vous et vous permet ainsi de copier facilement du code et du texte à partir des pages du tutoriel et de le coller dans les différentes interfaces utilisateur que vous utiliserez dans le cadre du tutoriel.
+Afin de rendre la documentation réutilisable, des **variables d’environnement** ont été introduites dans la documentation, ce qui signifie que vous trouverez les **espaces réservés** ci-dessous dans la documentation. Chaque espace réservé est une variable spécifique pour un environnement spécifique. L’extension Chrome la modifiera afin que vous puissiez facilement copier du code et du texte des pages du tutoriel et le coller dans les différentes interfaces utilisateur que vous utiliserez dans le cadre du tutoriel.
 
-Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs ne peuvent pas encore être utilisées, mais dès que vous installez et activez l’extension Chrome, ces variables se transforment en texte &quot;normal&quot; que vous pouvez copier et réutiliser.
+Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs ne peuvent pas encore être utilisées, mais dès que vous installez et activez l’extension Chrome, ces variables se transforment en texte normal que vous pouvez copier et réutiliser.
 
 | Nom | Clé |
 |:-------------:| :---------------:|
@@ -26,7 +27,7 @@ Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs n
 | Nom du sandbox AEP | `--aepSandboxName--` |
 | Protocole LDAP du profil du professeur | `--aepUserLdap--` |
 
-Par exemple, dans la capture d’écran ci-dessous, vous pouvez voir une référence à `--aepTenantId--`.
+Par exemple, dans la capture d’écran ci-dessous, vous pouvez voir une référence à `aepTenantId`.
 
 ![DSN](./images/mod7before.png)
 
@@ -34,13 +35,9 @@ Une fois l’extension installée, ce même texte sera automatiquement modifié 
 
 ![DSN](./images/mod7.png)
 
-L’extension vous permettra également de :
+## 0.1.1.1 Installation de l’extension Chrome
 
-- S’inscrire au tutoriel
-
-## 0.1.2 Installation de l’extension Chrome
-
-Pour installer cette extension Chrome, ouvrez votre navigateur Chrome et accédez à : [https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&amp;authuser=0](https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&amp;authuser=0). Vous verrez alors ceci.
+Pour installer cette extension Chrome, ouvrez votre navigateur Chrome et accédez à : [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Vous verrez alors ceci.
 
 Cliquez sur **Ajouter à Chrome**.
 
@@ -58,9 +55,9 @@ Dans le menu **extensions**, cliquez sur l’icône **pièce de puzzle** et épi
 
 ![DSN](./images/c6.png)
 
-## 0.1.2 Configuration de l’extension Chrome
+## 0.1.1.2 Configuration de l’extension Chrome
 
-Accédez à [https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en) et cliquez sur l’icône d’extension pour l’ouvrir.
+Accédez à [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) et cliquez sur l’icône d’extension pour l’ouvrir.
 
 ![DSN](./images/tuthome.png)
 
@@ -68,88 +65,81 @@ Vous verrez alors cette fenêtre contextuelle. Cliquez sur l’icône **+** .
 
 ![DSN](./images/c7.png)
 
-Saisissez votre nom et l’ID de configuration qui a été créé pour votre environnement Adobe Experience Platform. Cliquez sur **Créer**.
-
->[!IMPORTANT]
->
->Si vous êtes un employé d’Adobe : vous pouvez trouver l’identifiant de configuration à utiliser sur le référentiel Github interne (https://git.corp.adobe.com/vangeluw/platformenablement).
->
->Si vous êtes un partenaire en solutions Adobe, contactez votre contact en solutions ou envoyez un email **spphelp@adobe.com**.
+Saisissez les valeurs indiquées ci-dessous, qui sont toutes liées à votre instance Adobe Experience Platform.
 
 ![DSN](./images/c8.png)
 
-Dans le menu de gauche de l’extension, une icône s’affiche avec vos initiales. Cliquez dessus. Vous verrez ensuite le mappage entre les **variables d’environnement** et vos valeurs d’instance Adobe Experience Platform spécifiques. Cliquez sur **Activer la configuration**.
+Si vous ne savez pas quelles valeurs saisir pour ces champs, suivez les instructions ci-dessous.
+
+**Nom de l’organisation IMS AEP**
+
+Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), le nom de votre instance se trouve dans le coin supérieur droit de votre écran.
+
+![DSN](./images/aepname.png)
+
+**ID de l’organisation IMS AEP**
+
+L’identifiant de l’organisation IMS est l’identifiant unique de votre instance Adobe Experience Cloud. Il est référencé à plusieurs emplacements dans ce tutoriel.
+
+Vous pouvez rechercher votre identifiant de l’organisation IMS de plusieurs manières. Si vous n’êtes pas sûr, contactez l’un des administrateurs système de votre instance pour trouver l’identifiant.
+
+Vous pouvez la trouver en vous rendant sur [Admin Console](https://https://adminconsole.adobe.com/), où vous pouvez la trouver dans l’URL.
+
+![DSN](./images/aepid1.png)
+
+Vous pouvez également la trouver en accédant à **Data Management > Queries** dans le menu AEP, où vous pouvez la trouver sous **Nom d’utilisateur**.
+
+![DSN](./images/aepid2.png)
+
+Veillez à copier et coller la partie **@AdobeOrg** avec l&#39;ID.
+
+**ID de tenant AEP**
+
+Votre identifiant du tenant est l’identifiant unique de l’instance AEP de votre organisation. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), vous trouverez l’identifiant du client dans l’URL.
+
+![DSN](./images/aeptenantid.png)
+
+Lorsque vous la saisissez dans l’extension Chrome, vous devez vous assurer qu’un trait de soulignement est ajouté comme préfixe. Dans cet exemple, **experienceplatform** devient **_experienceplatform**.
+
+**Nom de l’environnement de test AEP**
+
+Le nom de votre environnement de test est le nom de l’environnement que vous utiliserez dans votre instance AEP. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), vous trouverez l’identifiant du client dans l’URL.
+
+Avant de prendre le nom de l’environnement de test à partir de l’URL, vous devez vous assurer que vous vous trouvez dans l’environnement de test que vous devez utiliser pour ce tutoriel. Vous pouvez passer à l’environnement de test de droite en cliquant sur le menu de sélecteur d’environnement de test dans le coin supérieur droit de votre écran.
+
+![DSN](./images/aepsandboxsw.png)
+
+Dans cet exemple, le nom de l’environnement de test AEP est **tech-insiders**.
+
+![DSN](./images/aepsname.png)
+
+**Votre LDAP**
+
+Il s’agit du nom d’utilisateur qui sera utilisé dans le cadre du tutoriel. Dans cet exemple, le LDAP est basé sur l&#39;adresse email de cet utilisateur. L&#39;adresse email est **vangeluw@adobe.com**, de sorte que le LDAP devient **vangeluw**.
+
+Le protocole LDAP est utilisé pour s’assurer que la configuration que vous allez effectuer sera liée à vous et n’entrera pas en conflit avec d’autres utilisateurs qui utilisent peut-être la même instance et le même environnement de test que vous utilisez.
+
+Vos valeurs devraient ressembler à celles-ci.
+Enfin, cliquez sur **Créer**.
+
+![DSN](./images/c8a.png)
+
+
+Dans le menu de gauche de l’extension, une nouvelle icône s’affiche avec les initiales de votre environnement. Cliquez dessus. Vous verrez ensuite le mappage entre les **variables d’environnement** et vos valeurs d’instance Adobe Experience Platform spécifiques. Cliquez sur **Activer la configuration**.
 
 ![DSN](./images/c9.png)
 
-Une fois la configuration activée, un point vert s’affiche en regard de vos initiales. Cela signifie que votre ID de configuration est maintenant actif. Plusieurs options de menu supplémentaires s’affichent également.
+Une fois la configuration activée, un point vert s’affiche en regard des initiales de votre environnement. Cela signifie que votre environnement est désormais actif.
 
 ![DSN](./images/c10.png)
 
-Vous disposez désormais de 2 options :
+## 0.1.1.3 Vérification du contenu du tutoriel
 
-- Si vous êtes un utilisateur existant de l’activation avec une configuration existante, accédez à **0.1.3 Existant user - Login**
-- Si vous êtes un nouvel utilisateur qui lance ce tutoriel pour la première fois, accédez à **0.1.4 Signup** et ignorez **0.1.3 Existing user - Login**
+Pour un test, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
-## 0.1.3 Utilisateur existant - Connexion
+Vous devriez maintenant constater que toutes les **variables d’environnement** ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
->[!IMPORTANT]
->
->L’exercice **0.1.3 Existant - Connexion** ne fonctionnera que si vous êtes déjà un utilisateur qui s’est inscrit à ce tutoriel.
-
-Si vous êtes un utilisateur existant qui configure cette extension Chrome pour la première fois, cliquez sur l’icône violette dans le menu de gauche. Vous verrez alors ceci.
-
-![DSN](./images/chromeret1.png)
-
-Remplissez les valeurs suivant vos besoins.
-
->[!IMPORTANT]
->
->**LDAP** est le champ le plus important : vous devez utiliser le même LDAP que celui utilisé lorsque vous vous êtes inscrit pour la première fois au tutoriel. Cela permet de vous assurer que votre progression est bien chargée. Si vous n&#39;êtes pas sûr de ce qu&#39;est votre ldap, regardez votre adresse email. Utilisez le texte situé avant le @-symbol dans votre adresse email en tant que LDAP. Si votre adresse email est **techinsiders@adobe.com**, le LDAP que vous saisissez ici doit être **vangeluw**).
-
-![DSN](./images/chromeret2.png)
-
-Cliquez sur **OK**.
-
-![DSN](./images/chromeret3.png)
-
-Après 30 secondes à 1 minute, votre écran change et vous revenez à **Home**, où vous verrez ceci :
-
-![DSN](./images/chromeret4.png)
-
-Votre extension Chrome est maintenant configurée et vous pouvez désormais vérifier si tout fonctionne correctement.
-
-## 0.1.4 Nouvel utilisateur - S’inscrire
-
->[!IMPORTANT]
->
->L’exercice **0.1.4 New user - Sign** est destiné aux nouveaux utilisateurs qui commencent ce tutoriel pour la première fois.
-
-Si vous êtes un nouvel utilisateur qui s’inscrit pour la première fois à ce tutoriel, cliquez sur l’icône jaune dans le menu. Vous verrez alors ceci.
-
-![DSN](./images/c11.png)
-
-Renseignez les champs suivant vos besoins. Cliquez sur **Enregistrer**.
-
->[!IMPORTANT]
->
->**LDAP** est le champ le plus important. Si vous n&#39;êtes pas sûr de ce qu&#39;est votre ldap, regardez votre adresse email. Utilisez le texte situé avant le @-symbol dans votre adresse email en tant que LDAP. Si votre adresse email est **techinsiders@adobe.com**, le LDAP que vous saisissez ici doit être **vangeluw**).
-
-![DSN](./images/chrome1.png)
-
-Après 30 secondes à 1 minute, votre écran change et vous revenez à **Home**, où vous verrez ceci :
-
-![DSN](./images/chrome2.png)
-
-Votre extension Chrome est maintenant configurée et vous pouvez désormais vérifier si tout fonctionne correctement.
-
-## 0.1.5 Vérification du contenu du tutoriel
-
-Pour un test, accédez à [cette page](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module4/ex3.html?lang=en).
-
-Vous devriez maintenant constater que toutes les **variables d’environnement** ont été remplacées par leurs valeurs vraies, en fonction de l’ID de configuration dans l’extension Chrome.
-
-Vous devriez maintenant avoir une vue similaire à celle ci-dessous, où les variables d’environnement `--aepTenantId--` ont été remplacées par votre identifiant de client réel, qui dans ce cas est **_experienceplatform**.
+Vous devriez maintenant avoir une vue similaire à celle ci-dessous, où la variable d’environnement `aepTenantId` a été remplacée par votre identifiant réel de tenant AEP, qui dans ce cas est **_experienceplatform**.
 
 ![DSN](./images/c12.png)
 
