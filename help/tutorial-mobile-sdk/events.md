@@ -3,7 +3,7 @@ title: Suivi des données d’événement dans les applications mobiles avec le 
 description: Découvrez comment effectuer le suivi des données d’événement dans une application mobile.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Dans cette leçon, vous allez
 * Envoyez un événement XDM en fonction d’un groupe de champs standard.
 * Envoyez un événement XDM en fonction d’un groupe de champs personnalisé.
 * Envoyez un événement d’achat XDM.
-* Validez avec assurance.
+* Validez avec Assurance.
 
 ## Création d’un événement d’expérience
 
@@ -121,9 +121,9 @@ Vous allez maintenant mettre en oeuvre ce code dans votre projet Xcode.
 Vous avez différentes actions commerciales liées aux produits dans votre application et vous souhaitez envoyer des événements, en fonction des actions suivantes, telles qu’elles sont exécutées par l’utilisateur :
 
 * view : survient lorsqu’un utilisateur consulte un produit spécifique,
-* ajouter au panier : lorsqu’un utilisateur appuie sur <img src="assets/addtocart.png" width="20" /> dans un écran de détails de produit,
-* Enregistrer pour plus tard : lorsqu’un utilisateur appuie sur <img src="assets/saveforlater.png" width="15" /> dans un écran de détails de produit,
-* achat : lorsqu’un utilisateur appuie sur <img src="assets/purchase.png" width="20" /> dans un écran de détails de produit.
+* ajouter au panier : lorsqu’un utilisateur appuie sur <img src="assets/addtocart.png" width="20"/> dans un écran de détails de produit,
+* Enregistrer pour plus tard : lorsqu’un utilisateur appuie sur <img src="assets/saveforlater.png" width="15"/> dans un écran de détails de produit,
+* achat : lorsqu’un utilisateur appuie sur <img src="assets/purchase.png" width="20"/> dans un écran de détails de produit.
 
 Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commerce de manière réutilisable, vous utilisez une fonction dédiée :
 
@@ -166,23 +166,23 @@ Pour mettre en oeuvre l’envoi d’événements d’expérience liés au commer
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Pour chacun des boutons (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> et <img src="assets/purchase.png" width="20" />) dans la barre d’outils, ajoutez l’appel approprié dans la fermeture `ATTrackingManager.trackingAuthorizationStatus == .authorized` :
+   1. Pour chacun des boutons (<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> et <img src="assets/purchase.png" width="20"/>) dans la barre d’outils, ajoutez l’appel approprié dans la fermeture `ATTrackingManager.trackingAuthorizationStatus == .authorized` :
 
-      1. Pour <img src="assets/saveforlater.png" width="15" /> :
+      1. Pour <img src="assets/saveforlater.png" width="15"/> :
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Pour <img src="assets/addtocart.png" width="20" /> :
+      1. Pour <img src="assets/addtocart.png" width="20"/> :
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Pour <img src="assets/purchase.png" width="20" /> :
+      1. Pour <img src="assets/purchase.png" width="20"/> :
 
          ```swift
          // Send purchase commerce experience event
@@ -338,15 +338,15 @@ Encore une fois, permet de mettre en oeuvre ce code dans votre projet Xcode.
 
 ## Validation
 
-1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter votre simulateur ou votre appareil avec Assurance.
+1. Consultez la section [instructions de configuration](assurance.md#connecting-to-a-session) pour connecter votre simulateur ou périphérique à Assurance.
 
    1. Déplacez l’icône Assurance vers la gauche.
    1. Sélectionnez **[!UICONTROL Home]** dans la barre d’onglets et vérifiez que vous voyez un **[!UICONTROL ECID]**, un **[!UICONTROL Email]** et un **[!UICONTROL ID de gestion de la relation client]** dans l’écran Accueil.
    1. Sélectionnez **[!DNL Products]** dans la barre d’onglets.
    1. Sélectionnez un produit.
-   1. Sélectionner <img src="assets/saveforlater.png" width="15" />.
-   1. Sélectionner <img src="assets/addtocart.png" width="20" />.
-   1. Sélectionner <img src="assets/purchase.png" width="15" />.
+   1. Sélectionner <img src="assets/saveforlater.png" width="15"/>.
+   1. Sélectionner <img src="assets/addtocart.png" width="20"/>.
+   1. Sélectionner <img src="assets/purchase.png" width="15"/>.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
