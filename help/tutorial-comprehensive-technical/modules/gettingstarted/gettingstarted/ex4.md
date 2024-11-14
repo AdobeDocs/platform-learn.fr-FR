@@ -3,22 +3,23 @@ title: Prise en main - Utilisation du site web
 description: Prise en main - Utilisation du site web
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-# 0.4 Utilisation du site web
+# Utiliser le site web
 
-## 0.4.1 Option 1 : continuer de l’exercice précédent
+## Option 1 : continuer de l’exercice précédent
 
 >[!NOTE]
 >
->Si vous n’avez plus l’écran ci-dessous ouvert, accédez à l’exercice 0.4.2 à la place.
+>Si vous n’avez plus l’écran ci-dessous ouvert, accédez à l’option 2 à la place.
 
-Après l’exercice 0.1, vous obteniez ce résultat. Cliquez pour ouvrir le **projet Web Retail** qui a été créé pour vous.
+Après l’exercice 0.1, vous obteniez ce résultat. Cliquez pour ouvrir le **projet Web Telco** qui a été créé pour vous.
 
 ![DSN](./images/dsn5a.png)
 
@@ -26,9 +27,17 @@ Vous verrez alors ceci. Cliquez sur **Intégrations**.
 
 ![DSN](./images/web1.png)
 
-Sur la page **Intégrations**, vous devez sélectionner la propriété de collecte de données qui a été créée dans l’exercice 0.1.
+Sur la page **Intégrations** , vous devez sélectionner la propriété Collecte de données qui a été créée dans l’exercice précédent. Pour ce faire, cliquez sur **Sélectionner un environnement**.
 
 ![DSN](./images/web2.png)
+
+Cliquez sur **Sélectionner** sur la propriété de collecte de données qui a été créée à l’étape précédente, appelée `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+
+![DSN](./images/web2a.png)
+
+Vous verrez alors ceci. Cliquez sur **Exécuter** pour ouvrir le site web de démonstration.
+
+![DSN](./images/web2b.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
@@ -50,9 +59,9 @@ Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour
 
 ![DSN](./images/web7.png)
 
-## 0.4.2 Option 2 : commencer par une nouvelle fenêtre de navigateur incognito
+## Option 2 : commencer par une nouvelle fenêtre de navigateur incognito
 
-Si vous avez accidentellement fermé la fenêtre de votre navigateur, ou pour de futures sessions de démonstration ou d’activation, vous pouvez également accéder au projet de votre site web en accédant à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
+Si vous avez accidentellement fermé la fenêtre de votre navigateur ou pour les sessions suivantes, vous pouvez également accéder au projet de votre site web en accédant à [https://dsn.adobe.com/](https://dsn.adobe.com/). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **..** dans le projet de votre site web, puis cliquez sur **Modifier**.
 
 ![DSN](./images/web8.png)
 
@@ -60,9 +69,17 @@ Vous pouvez maintenant suivre le flux ci-dessous pour accéder au site web. Cliq
 
 ![DSN](./images/web1.png)
 
-Sur la page **Intégrations**, vous devez sélectionner la propriété de collecte de données qui a été créée dans l’exercice 0.1.
+Sur la page **Intégrations** , vous devez sélectionner la propriété Collecte de données qui a été créée dans l’exercice précédent. Pour ce faire, cliquez sur **Sélectionner un environnement**.
 
 ![DSN](./images/web2.png)
+
+Cliquez sur **Sélectionner** sur la propriété de collecte de données qui a été créée à l’étape précédente, appelée `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+
+![DSN](./images/web2a.png)
+
+Vous verrez alors ceci. Cliquez sur **Exécuter** pour ouvrir le site web de démonstration.
+
+![DSN](./images/web2b.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
@@ -84,8 +101,8 @@ Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour
 
 ![DSN](./images/web7.png)
 
-Étape suivante : [0.5 Utilisation de l’application mobile](./ex5.md)
+Étape suivante : [Utilisation de l’application mobile](./ex5.md)
 
-[Revenir au module 0](./getting-started.md)
+[Revenir à la prise en main](./getting-started.md)
 
 [Revenir à tous les modules](./../../../overview.md)

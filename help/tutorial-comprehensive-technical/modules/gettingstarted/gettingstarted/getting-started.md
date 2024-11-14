@@ -4,14 +4,14 @@ description: Prise en main - Résumé
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
-# 0.1 Prise en main
+# Commencer
 
 Dans ce module, vous allez tout configurer pour pouvoir collecter des données, accéder à l’environnement de démonstration et personnaliser les variables dynamiques dans ce tutoriel.
 
@@ -28,23 +28,23 @@ Dans ce module, vous allez tout configurer pour pouvoir collecter des données, 
 
 ## Exercices
 
-[0.1.1 Installation de l’extension Chrome pour la documentation Experience League](./ex1.md)
+[Installation de l’extension Chrome pour la documentation Experience League](./ex1.md)
 
 Dans cet exercice, vous allez installer et configurer l’extension Chrome afin de pouvoir l’utiliser pour personnaliser le contenu du tutoriel.
 
-[0.1.2 Utilisation du système de démonstration en regard de la configuration de la propriété client de collecte de données Adobe Experience Platform](./ex2.md)
+[Utilisation du système de démonstration en regard de la configuration de la propriété client de collecte de données Adobe Experience Platform](./ex2.md)
 
 Au cours de cet exercice, vous allez utiliser Demo System Next pour configurer vos propriétés Launch pour le Web et les appareils mobiles.
 
-[0.1.3 Création d’un flux de données](./ex3.md)
+[Créer votre flux de données](./ex3.md)
 
 Au cours de cet exercice, vous allez utiliser Demo System Next pour configurer vos propriétés Launch pour le Web et les appareils mobiles.
 
-[0.1.4 Utilisation du site web](./ex4.md)
+[Utiliser le site web](./ex4.md)
 
 Dans cet exercice, vous allez configurer le site web afin de pouvoir l’utiliser pour les démonstrations et l’activation.
 
-[0.1.5 Utilisation de l’application mobile](./ex5.md)
+[Utilisation de l’application mobile](./ex5.md)
 
 Dans cet exercice, vous allez configurer l’application mobile afin de pouvoir l’utiliser pour les démonstrations et l’activation.
 

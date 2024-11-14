@@ -3,26 +3,31 @@ title: Prise en main - Création de la matrice de données
 description: Prise en main - Création de la matrice de données
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
 
-# 0.3 Création de la matrice de données
+# Créer votre flux de données
 
-Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Après l’exercice précédent, vous disposez désormais de deux propriétés de collecte de données : une pour le web et une pour le mobile.
+Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
 ![DSN](./images/launchprop.png)
 
-Ces propriétés sont presque prêtes à être utilisées, mais avant de pouvoir commencer à collecter des données à l’aide de ces propriétés, vous devez configurer un flux de données. Vous obtiendrez plus d’informations sur le concept d’un flux de données et sur ce qu’il signifie dans l’exercice 1.2.
+Dans le menu de gauche, cliquez sur **[!UICONTROL Balises]**. Après l’exercice précédent, vous disposez désormais de deux propriétés de collecte de données : une pour le web et une pour le mobile.
+
+![DSN](./images/launchprop1.png)
+
+Ces propriétés sont presque prêtes à être utilisées, mais avant de pouvoir commencer à collecter des données à l’aide de ces propriétés, vous devez configurer un flux de données. Vous obtiendrez plus d’informations sur le concept d’un flux de données et sur ce qu’il signifie lors d’un exercice ultérieur dans le module de collecte de données.
 
 Pour l&#39;instant, veuillez suivre ces étapes.
 
-## 0.3.1 Création d’un flux de données pour le Web
+## Créer votre flux de données pour le Web
 
-Cliquez sur **[!UICONTROL Datastreams]** ou **[!UICONTROL Datastreams (Beta)]**.
+Cliquez sur **[!UICONTROL Datastreams]**.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1a.png)
 
@@ -34,7 +39,7 @@ Cliquez sur **[!UICONTROL New Datastream]**.
 
 ![Cliquez sur l’icône de configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1.png)
 
-Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--aepUserLdap-- - Demo System Datastream`. Pour le schéma d’événement, sélectionnez **Demo System - Event Schema for Website (Global v1.1)**. Cliquez sur **Enregistrer**.
+Pour le **[!UICONTROL nom]** et pour la description facultative, saisissez `--aepUserLdap-- - Demo System Datastream`. Pour **Mapping Schema**, sélectionnez **Demo System - Event Schema for Website (Global v1.1)**. Cliquez sur **Enregistrer**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig2.png)
 
@@ -64,21 +69,21 @@ Vous verrez alors ceci. Cliquez sur **Extensions**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig11.png)
 
-Sur l’extension SDK Web Adobe Experience Platform, cliquez sur **Configurer**.
+Cliquez d’abord sur l’extension SDK Web de Adobe Experience Platform, puis sur **Configurer**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig12.png)
 
-Vous verrez alors ceci. Pour **Datastreams**, une valeur factice est actuellement définie sur 1. Vous devez maintenant cliquer sur le bouton radio **Choisir dans la liste** . Dans la liste déroulante, sélectionnez le Datastream que vous avez créé précédemment.
+Vous verrez alors ceci. Faites un kook dans le menu **Datastreams** et assurez-vous que l’environnement de test approprié est sélectionné, qui dans votre cas doit être `--aepSandboxName--`.
+
+![Nommez la configuration Edge et enregistrez](./images/edgeconfig12a.png)
+
+Ouvrez la liste déroulante **Datastreams** et sélectionnez le Datastream que vous avez créé précédemment.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig13.png)
 
-Assurez-vous d’avoir sélectionné votre **Datastream**. CONSEIL : vous pouvez filtrer facilement les résultats dans la liste déroulante en saisissant votre `--aepUserLdap--`.
+Assurez-vous d’avoir sélectionné votre **Datastream** dans les trois environnements différents. Cliquez ensuite sur **Enregistrer**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig14.png)
-
-Faites défiler l’écran vers le bas jusqu’à ce que vous puissiez voir **Collecte de données**. Assurez-vous que la case à cocher de la **collecte de données de clic activée** n’est pas activée. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
-
-![Nommez la configuration Edge et enregistrez](./images/edgeconfig14a.png)
 
 Accédez à **Flux de publication**.
 
@@ -92,13 +97,15 @@ Cliquez sur **Ajouter toutes les ressources modifiées**, puis sur **Enregistrer
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig17.png)
 
-Vos modifications sont en cours de publication et seront prêtes dans quelques minutes.
+Vos modifications sont en cours de publication et seront prêtes dans quelques minutes, après quoi vous verrez le point vert en regard de **Main**.
 
-## 0.3.2 Création d’un flux de données pour Mobile
+![Nommez la configuration Edge et enregistrez](./images/edgeconfig17a.png)
+
+## Créer votre flux de données pour Mobile
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
-Cliquez sur **[!UICONTROL Datastreams]** ou **[!UICONTROL Datastreams (Beta)]**.
+Cliquez sur **[!UICONTROL Datastreams]**.
 
 ![Cliquez sur l’icône Datastream dans le volet de navigation de gauche](./images/edgeconfig1a.png)
 
@@ -110,7 +117,7 @@ Cliquez sur **[!UICONTROL New Datastream]**.
 
 ![Cliquez sur l’icône Datastream dans le volet de navigation de gauche](./images/edgeconfig1.png)
 
-Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--aepUserLdap-- - Demo System Datastream (Mobile)`. Pour le schéma d’événement, sélectionnez **Demo System - Event Schema for Mobile App (Global v1.1)**. Cliquez sur **Enregistrer**.
+Pour le **[!UICONTROL nom convivial]** et pour la description facultative, saisissez `--aepUserLdap-- - Demo System Datastream (Mobile)`. Pour **Schéma de mappage**, sélectionnez **Système de démonstration - Schéma d’événement pour application mobile (Global v1.1)**. Cliquez sur **Enregistrer**.
 
 Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -140,13 +147,13 @@ Vous verrez alors ceci. Cliquez sur **Extensions**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig11m.png)
 
-Sur l’extension **Adobe Experience Platform Edge Network**, cliquez sur **Configurer**.
+Cliquez sur l’extension **Adobe Experience Platform Edge Network**, puis sur **Configurer**.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig12m.png)
 
 Vous verrez alors ceci. Vous devez maintenant sélectionner l’environnement de test et le flux de données corrects que vous venez de configurer. L’environnement de test à utiliser est `--aepSandboxName--` et le flux de données est appelé `--aepUserLdap-- - Demo System Datastream (Mobile)`.
 
-Pour le **domaine Edge Network**, utilisez le domaine par défaut **edge.adobedc.net**.
+Pour le **domaine Edge Network**, utilisez le domaine par défaut.
 
 Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -164,10 +171,12 @@ Cliquez sur **Ajouter toutes les ressources modifiées**, puis sur **Enregistrer
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig17m.png)
 
-Vos modifications sont en cours de publication et seront prêtes dans quelques minutes.
+Vos modifications sont en cours de publication et seront prêtes dans quelques minutes, après quoi vous verrez le point vert en regard de **Main**.
 
-Étape suivante : [0.4 Utilisation du site Web](./ex4.md)
+![Nommez la configuration Edge et enregistrez](./images/edgeconfig17ma.png)
 
-[Revenir au module 0](./getting-started.md)
+Étape suivante : [Utiliser le site Web](./ex4.md)
+
+[Revenir à la prise en main](./getting-started.md)
 
 [Revenir à tous les modules](./../../../overview.md)

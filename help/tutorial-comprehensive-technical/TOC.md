@@ -5,10 +5,10 @@ user-guide-description: Tutoriel pratique couvrant de nombreux aspects de Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
+source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 3%
+source-wordcount: '914'
+ht-degree: 4%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 + [Vue d’ensemble du tutoriel](/help/tutorial-comprehensive-technical/overview.md)
 
-+ 0 Prise en main {#gettingstarted}
-   + 0.1 Prise en main {#gettingstarted}
++ Prise en main {#gettingstarted}
+   + Prise en main {#gettingstarted}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.1.1 Installation de l’extension Chrome pour la documentation Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.1.2 Utilisation du système de démonstration en regard de la configuration de la propriété client de collecte de données Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.1.3 Création d’un flux de données](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.1.4 Utilisation du site web](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.1.5 Utilisation de l’application mobile](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [Installation de l’extension Chrome pour la documentation Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [Utilisation du système de démonstration en regard de la configuration de la propriété client de collecte de données Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [Créer votre flux de données](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [Utiliser le site web](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [Utilisation de l’application mobile](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Collecte de données {#datacollection}
    + 1.1 Collecte de données Adobe Experience Platform et extension SDK Web {#module11}

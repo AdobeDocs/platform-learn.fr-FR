@@ -3,16 +3,17 @@ title: Prise en main - Utilisation de l’application mobile
 description: Prise en main - Utilisation de l’application mobile
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5 Utilisation de l’application mobile
+# Utilisation de l’application mobile
 
-## 0.5.1 Téléchargement de l’application
+## Téléchargement de l’application
 
 Accédez à [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) sur votre ordinateur. Vous verrez alors ceci.
 
@@ -22,7 +23,7 @@ Utilisez l’application **Camera** sur votre smartphone pour installer l’appl
 
 >[!NOTE]
 >
->Après avoir installé l’application pour la première fois sur un appareil iOS, un message d’erreur peut s’afficher lorsque vous essayez d’ouvrir l’application, indiquant : **Développeur d’entreprise non approuvé**. Pour résoudre ce problème, vous devez accéder à **Paramètres > Général > Gestion des appareils > Adobe Systems Inc.** et cliquer sur **Trust Adobe Systems Inc.**.
+>Après avoir installé l’application pour la première fois sur un appareil iOS, un message d’erreur peut s’afficher lorsque vous essayez d’ouvrir l’application, indiquant : **Développeur d’entreprise non approuvé**. Pour résoudre ce problème, vous devez accéder à **Paramètres > Général > Gestion des VPN et des périphériques > Adobe Systems Inc.** et cliquer sur **Trust Adobe Systems Inc.**.
 
 Une fois l’application installée, elle se trouve sur l’écran d’accueil de votre appareil. Cliquez sur l’icône pour ouvrir l’application.
 
@@ -48,21 +49,25 @@ Vous pouvez désormais charger un projet personnalisé. Cliquez sur le code QR p
 
 ![DSN](./images/mobileappn6.png)
 
-Après l’exercice 0.1, vous obteniez ce résultat. Cliquez pour ouvrir le **projet de vente au détail mobile** qui a été créé pour vous.
+Après l’exercice précédent, vous avez obtenu ce résultat. Cliquez pour ouvrir le **projet Mobile Edge Telco** qui a été créé pour vous.
 
 ![DSN](./images/dsn5b.png)
 
-Si vous avez accidentellement fermé la fenêtre de votre navigateur, ou pour de futures sessions de démonstration ou d’activation, vous pouvez également accéder au projet de votre site web en accédant à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur votre projet d’application mobile pour l’ouvrir.
+Si vous avez accidentellement fermé la fenêtre de votre navigateur, ou pour de futures sessions de démonstration ou d’activation, vous pouvez également accéder au projet de votre site web en accédant à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les trois points **..** sur votre projet d’application mobile, puis cliquez sur **Modifier**.
 
 ![DSN](./images/web8a.png)
 
-Vous verrez alors ceci. Cliquez sur **Intégrations**.
+Sur la page **Intégrations** , vous devez sélectionner la propriété Collecte de données qui a été créée dans l’exercice précédent. Pour ce faire, cliquez sur **Sélectionner un environnement**.
 
 ![DSN](./images/web8aa.png)
 
-Vous devez sélectionner la propriété Collecte de données pour mobile créée dans l’exercice 0.1. Cliquez ensuite sur **Exécuter**.
+Cliquez sur **Sélectionner** sur la propriété de collecte de données qui a été créée à l’étape précédente, appelée `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Cliquez ensuite sur **Enregistrer**.
 
 ![DSN](./images/web8b.png)
+
+Vous verrez alors ceci. Cliquez ensuite sur **Exécuter**.
+
+![DSN](./images/web8bb.png)
 
 Vous verrez alors cette fenêtre contextuelle, qui contient un code QR. Analysez ce code QR depuis l’application mobile.
 
@@ -76,8 +81,8 @@ Maintenant, revenez à **Home** dans l’application. Votre application est main
 
 ![DSN](./images/mobileappn8.png)
 
-Vous avez maintenant terminé le module 0.
+Vous avez maintenant terminé le module Prise en main et vous êtes prêt à commencer les exercices suivants.
 
-[Revenir au module 0](./getting-started.md)
+[Revenir à la prise en main](./getting-started.md)
 
 [Revenir à tous les modules](./../../../overview.md)
