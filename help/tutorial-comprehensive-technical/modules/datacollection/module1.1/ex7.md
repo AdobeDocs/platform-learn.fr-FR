@@ -3,9 +3,10 @@ title: Foundation - Configuration de la collecte de données Adobe Experience Pl
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Schéma XDM requis dans Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Dans le menu de gauche, accédez à **Schémas** et ouvrez le schéma **Demo Sys
 
 ![Débogueur AEP](./images/exp3.png)
 
-Sur ce schéma, vous verrez que le groupe de champs **AEP Web SDK ExperienceEvent Mixin** a été ajouté. Ce groupe de champs ajoute tous les champs minimalement requis au schéma. Chaque schéma d’événement d’expérience dans Adobe Experience Platform qui sera utilisé par le SDK Web nécessite toujours que ce groupe de champs fasse partie du schéma.
+Dans ce schéma, vous verrez que le groupe de champs **AEP Web SDK ExperienceEvent** a été ajouté. Ce groupe de champs ajoute tous les champs minimalement requis au schéma. Chaque schéma d’événement d’expérience dans Adobe Experience Platform qui sera utilisé par le SDK Web nécessite toujours que ce groupe de champs fasse partie du schéma.
 
 ![Débogueur AEP](./images/exp4.png)
 

@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Configuration d’un parcours basé sur un déc
 description: Dans cette section, vous allez configurer un parcours basé sur un déclencheur - Confirmation de commande
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1991'
 ht-degree: 9%
 
 ---
@@ -404,10 +405,6 @@ Testons le parcours mis à jour en achetant un produit sur le site web de démon
 Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Sur la page **Screens**, cliquez sur **Exécuter**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 

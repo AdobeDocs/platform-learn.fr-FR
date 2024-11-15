@@ -3,9 +3,10 @@ title: 'Customer Journey Analytics : création d’un tableau de bord à l’aid
 description: 'Customer Journey Analytics : création d’un tableau de bord à l’aide d’Analysis Workspace sur Adobe Experience Platform'
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Vous trouverez plus d&#39;informations sur le Customer Journey Analytics [ici](h
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [0.1 - Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 

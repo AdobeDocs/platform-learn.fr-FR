@@ -3,9 +3,10 @@ title: Ingestion et analyse de données Google Analytics dans Adobe Experience P
 description: Ingestion et analyse de données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: f19f6b4a44a34af3c9545eb7f8735ef6ccf5d6c7
+exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ En outre, nous pouvons enrichir ces données Google Analytics en les associant �
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [0.1 - Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 

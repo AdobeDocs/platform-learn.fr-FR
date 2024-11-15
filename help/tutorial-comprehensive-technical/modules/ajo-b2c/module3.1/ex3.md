@@ -3,9 +3,10 @@ title: Mise à jour de votre ID de configuration et test de votre Parcours
 description: Mise à jour de votre ID de configuration et test de votre Parcours
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ Votre bibliothèque sera alors mise à jour. Au bout de 1 à 2 minutes, vous pou
 Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Sur la page **Screens**, cliquez sur **Exécuter**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 

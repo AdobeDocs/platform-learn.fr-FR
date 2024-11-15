@@ -3,9 +3,10 @@ title: Activation de segment vers Microsoft Azure Event Hub
 description: Activation de segment vers Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Microsoft Azure Event Hubs est un service d’ingestion de données en temps ré
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [0.1 - Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 

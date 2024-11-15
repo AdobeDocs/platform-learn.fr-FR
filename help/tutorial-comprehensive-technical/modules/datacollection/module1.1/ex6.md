@@ -3,10 +3,11 @@ title: Foundation - Configuration de la collecte de données Adobe Experience Pl
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Mise en oeuvre d’Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Vous verrez alors ceci. Pour activer Adobe Target, cliquez sur **+Ajouter un ser
 
 ![Débogueur AEP](./images/aa2.png)
 
-Vous verrez alors ceci. Sélectionnez le service **Adobe Target**, après lequel vous pouvez éventuellement fournir des informations supplémentaires. Pour l’instant, il n’est pas nécessaire d’enregistrer cette opération. Cliquez donc sur **Annuler**.
+Vous verrez alors ceci. Sélectionnez le service **Adobe Target**, après lequel vous pouvez éventuellement fournir des informations supplémentaires. Cliquez sur **Enregistrer**.
 
 ![Débogueur AEP](./images/at1.png)
 

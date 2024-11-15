@@ -3,9 +3,10 @@ title: Foundation - Configuration de la collecte de données Adobe Experience Pl
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Explication de la collecte de données Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 3%
 
 ---
@@ -42,7 +43,12 @@ Maintenant, regardez le rail de gauche.
 - **[!UICONTROL Balises]** donne un aperçu de toutes les propriétés côté client.
 - **[!UICONTROL App Surfaces]** donne un aperçu de toutes les configurations d’application pour activer les notifications push (qui sont utilisées/activées conjointement avec Project Sierra).
 - **[!UICONTROL Les flux de données]** sont explorés dans l’ [exercice suivant](./ex2.md)
-- **[!UICONTROL Transfert d’événement]** donne un aperçu de toutes les propriétés côté serveur qui sont explorées dans [Module 14 - Connexions Real-Time CDP : Transfert d’événement](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Transfert d’événement]** donne un aperçu de toutes les propriétés côté serveur explorées dans [Module 2.5 - Connexions Real-Time CDP : Transfert d’événement](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Surveillance]** donne un aperçu du trafic d’événement entrant et sortant par le biais du transfert d’événement.
+- **[!UICONTROL Assurance]** donne accès au débogage d’une implémentation à l’aide de l’Adobe Debugger
+- **[!UICONTROL Places]** permet d’accéder à la gestion des points ciblés qui deviennent accessibles pour la personnalisation en fonction de l’emplacement dans les applications mobiles.
+- **[!UICONTROL Schémas]** donne accès à l’éditeur de schémas Adobe Experience Platform
+- **[!UICONTROL Identités]** donne accès à la configuration Adobe Experience Platform Identity Graph
 
 ## Informations supplémentaires
 

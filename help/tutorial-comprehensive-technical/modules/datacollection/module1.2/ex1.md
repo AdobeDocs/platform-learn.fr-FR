@@ -3,9 +3,10 @@ title: Foundation - Ingestion de données - Inconnu ou connu sur le site web
 description: Foundation - Ingestion de données - Inconnu ou connu sur le site web
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -29,10 +30,6 @@ Vous allez désormais ingérer des données dans Adobe Experience Platform et ce
 Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Sur la page **Screens**, cliquez sur **Exécuter**.
-
-![DSN](../module1.1/images/web2.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 

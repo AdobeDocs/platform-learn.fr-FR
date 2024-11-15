@@ -3,9 +3,10 @@ title: Collecte de données Adobe Experience Platform et transfert côté serveu
 description: Dans ce module, vous utiliserez les jeux de données, les schémas et la propriété du serveur de collecte de données Adobe Experience Platform configurés précédemment pour collecter des données, puis vous les transférerez côté serveur de données vers un point de terminaison de votre choix.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Regardez cette vidéo pour comprendre la valeur, le parcours client et le proces
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [0.1 - Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 

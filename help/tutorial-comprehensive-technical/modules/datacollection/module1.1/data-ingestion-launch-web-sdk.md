@@ -3,16 +3,15 @@ title: 1.1 Configuration de la collecte de données Adobe Experience Platform et
 description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web
-
-**Auteur : [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Ce module de base présente la vision de collecte de données de l’Adobe et explique comment obtenir des données d’un site web et d’une application mobile dans Adobe Experience Platform et d’autres applications via la collecte de données Adobe Experience Platform, les SDK Adobe Experience Platform et l’Edge Network Adobe Experience Platform. Ce module présente certains concepts et technologies qui ont un impact au-delà de la portée d’un tutoriel technique Adobe Experience Platform. Il doit être clair quelles parties de ces exercices sont essentielles pour le reste du tutoriel complet, qui vous en apprend davantage sur Experience Edge et ses fonctionnalités, et où aller pour plus d’informations et de tutoriels.
 
@@ -35,7 +34,7 @@ Ce module de base présente la vision de collecte de données de l’Adobe et ex
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [0.1 - Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
