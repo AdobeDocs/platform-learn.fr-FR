@@ -3,22 +3,23 @@ title: Foundation - Ingestion de données - Configuration des jeux de données
 description: Foundation - Ingestion de données - Configuration des jeux de données
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 7%
+source-wordcount: '571'
+ht-degree: 8%
 
 ---
 
 # 1.2.3 Configuration de jeux de données
 
-Au cours de cet exercice, vous allez configurer les jeux de données requis pour capturer et stocker les informations de profil et le comportement des clients. Chaque jeu de données que vous créez dans utilise l’un des schémas que vous avez créés à l’étape précédente.
+Dans cet exercice, vous allez configurer des jeux de données pour capturer et stocker des informations de profil et le comportement des clients. Chaque jeu de données que vous créez dans utilise l’un des schémas que vous avez créés à l’étape précédente.
 
-## Histoire
+## Contexte
 
 Après avoir défini la réponse aux questions **Qui est ce client ?** et **Que fait ce client ?** doit ressembler à , vous devez maintenant créer un compartiment qui utilise ces informations, pour recevoir et valider les données envoyées à Adobe Experience Platform.
 
-## 1.2.3.1 - Création de jeux de données
+## Création de jeux de données
 
 Vous devez maintenant créer 2 jeux de données :
 
@@ -45,39 +46,25 @@ Vous devez créer un nouveau jeu de données. Pour créer un nouveau jeu de donn
 
 ![Ingestion des données](./images/createdataset.png)
 
-Après avoir cliqué sur le bouton **[!UICONTROL + Créer un jeu de données]** , l’écran suivant s’affiche.
-
-![Ingestion des données](./images/datasetsetup.png)
-
 Vous devez définir un jeu de données à partir du schéma que vous avez défini à l’étape précédente. Cliquez sur l’option **[!UICONTROL Créer un jeu de données à partir du schéma]** - .
 
 ![Ingestion des données](./images/datasetfromschema.png)
 
 Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé dans 1, `--aepUserLdap-- - Demo System - Profile Schema for Website`.
 
+Cliquez sur **Suivant**.
+
 ![Ingestion des données](./images/schemaselection.png)
-
-Après avoir sélectionné le schéma, cliquez sur **[!UICONTROL Suivant]** pour continuer.
-
-![Ingestion des données](./images/next.png)
 
 Attribuons un nom à votre jeu de données.
 
-Pour nommer notre jeu de données, utilisez ceci :
+Pour nommer votre jeu de données, utilisez ceci :
 
 `--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
-Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
-
-**[!UICONTROL vangeluw - Système de démonstration - Jeu de données de profil pour le site web]**
-
-Cela devrait vous donner quelque chose comme ceci :
+Cliquez sur **Terminer**.
 
 ![Ingestion des données](./images/datasetname.png)
-
-Cliquez sur **[!UICONTROL Terminer]** pour terminer la configuration de votre jeu de données.
-
-![Ingestion des données](./images/finish.png)
 
 Vous verrez maintenant ceci :
 
@@ -89,47 +76,34 @@ Revenez à la présentation des [!UICONTROL jeux de données] . Le jeu de donné
 
 Vous allez ensuite configurer un deuxième jeu de données pour capturer les interactions avec le site web.
 
-Vous devez créer un nouveau jeu de données. Pour créer un nouveau jeu de données, cliquez sur le bouton **[!UICONTROL + Créer un jeu de données]**.
+Cliquez sur **[!UICONTROL + Créer un jeu de données]**.
 
 ![Ingestion des données](./images/createdataset.png)
 
-Après avoir cliqué sur le bouton **[!UICONTROL + Créer un jeu de données]** , l’écran suivant s’affiche.
-
-![Ingestion des données](./images/datasetsetup.png)
 
 Vous devez définir un jeu de données à partir du schéma que vous avez défini à l’étape précédente. Cliquez sur l’option **[!UICONTROL Créer un jeu de données à partir du schéma]** - .
 
 ![Ingestion des données](./images/datasetfromschema.png)
 
-Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé dans 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website`.
+Dans l’écran suivant, vous devez sélectionner le schéma que vous avez créé précédemment, `--aepUserLdap-- - Demo System - Event Schema for Website`.
+
+Cliquez sur **Suivant**.
 
 ![Ingestion des données](./images/schemaselectionee.png)
 
-Après avoir sélectionné le schéma, cliquez sur **[!UICONTROL Suivant]** pour continuer.
-
-![Ingestion des données](./images/next.png)
-
 Attribuons un nom à votre jeu de données.
 
-Comme nom de notre jeu de données, nous utiliserons ceci :
+Pour nommer notre jeu de données, utilisez ceci :
 
 `--aepUserLdap-- - Demo System - Event Dataset for Website`
 
-Par exemple, pour ldap **[!UICONTROL vangeluw]**, il doit s’agir du nom du schéma :
-
-**[!UICONTROL vangeluw - Système de démonstration - Jeu de données d’événement pour le site web]**
-
-Cela devrait vous donner quelque chose comme ceci :
+Cliquez sur **Terminer**.
 
 ![Ingestion des données](./images/datasetnameee.png)
 
-Cliquez sur **[!UICONTROL Terminer]** pour terminer la configuration de votre jeu de données.
-
-![Ingestion des données](./images/finish.png)
-
 Vous verrez alors :
 
-![Ingestion des données](./images/finish1.png)
+![Ingestion des données](./images/finish1ee.png)
 
 Revenez à l’écran d’aperçu [!UICONTROL Jeux de données] .
 
@@ -137,17 +111,14 @@ Revenez à l’écran d’aperçu [!UICONTROL Jeux de données] .
 
 Vous devez maintenant activer vos jeux de données pour faire partie de Adobe Experience Platform Real-time Customer Profile.
 
-Ouvrez votre jeu de données `--aepUserLdap--` - Système de démonstration - Jeu de données de profil pour le site web en cliquant dessus.
+Ouvrez votre jeu de données `--aepUserLdap-- - Demo System - Profile Dataset for Website` en cliquant dessus.
 
 Recherchez l’icône de basculement [!UICONTROL Profile] sur le côté droit de l’écran.
+Cliquez sur le bouton d’activation/désactivation [!UICONTROL Profile] pour activer ce jeu de données pour [!UICONTROL Profile].
 
 ![Ingestion des données](./images/ds1.png)
 
-Cliquez sur le bouton d’activation/désactivation [!UICONTROL Profile] pour activer ce jeu de données pour [!UICONTROL Profile].
-
-![Ingestion des données](./images/ds2.png)
-
-Cliquez sur le **[!UICONTROL Activer]**.
+Cliquez sur **[!UICONTROL Activer]**.
 
 ![Ingestion des données](./images/ds3.png)
 
@@ -155,13 +126,9 @@ Votre jeu de données est maintenant activé pour [!UICONTROL Profile].
 
 Revenez à la présentation des jeux de données et ouvrez votre jeu de données `--aepUserLdap-- - Demo System - Event Dataset` pour le site web en cliquant dessus.
 
-Recherchez l’icône de basculement [!UICONTROL Profile] sur le côté droit de l’écran.
+Recherchez l’icône de basculement [!UICONTROL Profile] sur le côté droit de l’écran. Cliquez sur la bascule [!UICONTROL Profile] pour activer [!UICONTROL Profile].
 
 ![Ingestion des données](./images/ds4.png)
-
-Cliquez sur la bascule [!UICONTROL Profile] pour activer [!UICONTROL Profile].
-
-![Ingestion des données](./images/ds2.png)
 
 Cliquez sur **[!UICONTROL Activer]**.
 

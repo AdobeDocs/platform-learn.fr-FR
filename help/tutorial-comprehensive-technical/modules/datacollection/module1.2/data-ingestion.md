@@ -3,16 +3,15 @@ title: Foundation - Ingestion de données
 description: Foundation - Ingestion de données
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
 # 1.2 Foundation - Ingestion des données
-
-**Auteur : [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Dans ce module, l’objectif est d’en savoir plus sur l’ingestion de données. Vous en apprendrez plus sur l’ingestion de données en flux continu et par lots. Vous allez mettre en oeuvre l’ingestion de données par flux à l’aide de Launch, de sorte que le comportement des clients sur le site web de l’atelier de gestion des actifs numériques soit diffusé en temps réel sur Adobe Experience Platform. Pour en savoir plus sur l’ingestion de données par lots, utilisez un workflow Adobe Experience Platform pour prendre un fichier CSV, le mapper à un schéma XDM et l’ingérer dans Adobe Experience Platform.
 

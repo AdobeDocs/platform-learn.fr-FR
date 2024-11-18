@@ -4,9 +4,9 @@ description: Prise en main - Utilisation du site web
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Si vous n’avez plus l’écran ci-dessous ouvert, accédez à l’option 2 à la place.
 
-Après l’exercice 0.1, vous obteniez ce résultat. Cliquez pour ouvrir le **projet Web Telco** qui a été créé pour vous.
+Après l’exercice précédent, vous avez obtenu ce résultat. Cliquez pour ouvrir le **projet Web Telco** qui a été créé pour vous.
 
 ![DSN](./images/dsn5a.png)
 

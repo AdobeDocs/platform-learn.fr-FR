@@ -4,14 +4,14 @@ description: Foundation - Ingestion de données - Inconnu ou connu sur le site w
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 - Inconnu ou connu sur le site web
+# 1.2.1 De inconnu à connu sur le site web
 
 ## Contexte
 
@@ -27,7 +27,7 @@ Vous allez désormais ingérer des données dans Adobe Experience Platform et ce
 
 ### Flux de Parcours client
 
-Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **..** dans le projet de votre site web, puis cliquez sur **Modifier**.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
 
@@ -41,12 +41,9 @@ Ouvrez une nouvelle fenêtre de navigateur incognito.
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Vous serez alors invité à vous connecter à l’aide de votre Adobe ID.
 
-
 Sélectionnez le type de compte et procédez à la connexion.
 
-
 Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque démonstration, vous devez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
-
 
 Cliquez sur l’icône représentant un logo d’Adobe dans le coin supérieur gauche de votre écran pour ouvrir la visionneuse de profils.
 
@@ -58,43 +55,45 @@ Consultez le panneau Visionneuse de profils et Real-time Customer Profile avec l
 
 Vous pouvez également voir tous les événements d’expérience collectés en fonction du comportement du client. La liste est actuellement vide, mais elle va bientôt changer.
 
-![Démonstration](../module1.2/images/pv3.png)
+![Démonstration](./images/pv3.png)
 
-Accédez à la catégorie de produits **Men**. Cliquez ensuite sur le produit **Montana Wind Jacket**.
+Accédez à la catégorie de produits **Phones &amp; devices** . Cliquez ensuite sur le produit **iPhone 15 Pro**.
 
-![Démonstration](../module1.2/images/pv4.png)
+![Démonstration](./images/pv4.png)
 
-Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Consultation produit** a maintenant été envoyé à Adobe Experience Platform à l’aide de l’implémentation du SDK Web que vous avez examinée dans le module 1.
+Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Consultation produit** a maintenant été envoyé à Adobe Experience Platform à l’aide de l’implémentation du SDK Web que vous avez examinée dans le module précédent.
 
-![Démonstration](../module1.2/images/pv5.png)
+![Démonstration](./images/pv5.png)
 
 Ouvrez le panneau Fournisseur de la visionneuse et observez vos **Événements d’expérience**.
 
-![Démonstration](../module1.2/images/pv6.png)
+![Démonstration](./images/pv6.png)
 
-Revenez à la page de catégorie **Femmes** et cliquez sur un autre produit. Un autre événement d’expérience a été envoyé à Adobe Experience Platform.
+Revenez à la page de catégorie **Téléphone et appareils** et cliquez sur un autre produit. Un autre événement d’expérience a été envoyé à Adobe Experience Platform.
 
-![Démonstration](../module1.2/images/pv7.png)
+Ouvrez le panneau Visionneuse de profils . Vous verrez désormais 2 événements d’expérience de type **Consultation produit**. Bien que le comportement soit anonyme, avec le consentement approprié en place, nous pouvons suivre chaque clic et le stocker dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tout comportement anonyme avec le profil de connaissance.
 
-Ouvrez le panneau Visionneuse de profils . Vous verrez désormais 2 événements d’expérience de type **Consultation produit**. Bien que le comportement soit anonyme, nous pouvons suivre chaque clic et le stocker dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tout comportement anonyme avec le profil de connaissance.
+![Démonstration](./images/pv7.png)
 
-![Démonstration](../module1.2/images/pv8.png)
+Cliquez sur **Se connecter** pour accéder à la page S’inscrire/Se connecter.
 
-Accédez à la page Enregistrer/Connexion . Cliquez sur **CRÉER UN COMPTE**.
+![Démonstration](./images/pv8.png)
 
-![Démonstration](../module1.2/images/pv9.png)
+Cliquez sur **CRÉER UN COMPTE**.
+
+![Démonstration](./images/pv9.png)
 
 Renseignez vos détails et cliquez sur **Enregistrer** après quoi vous serez redirigé vers la page précédente.
 
-![Démonstration](../module1.2/images/pv10.png)
+![Démonstration](./images/pv10.png)
 
 Ouvrez le panneau Visionneuse de profils et accédez à Real-time Customer Profile. Dans le panneau Visionneuse de profils, toutes vos données personnelles doivent s’afficher, comme les identifiants de téléphone et d’adresse électronique que vous venez d’ajouter.
 
-![Démonstration](../module1.2/images/pv11.png)
+![Démonstration](./images/pv11.png)
 
 Dans le panneau Visionneuse de profils, accédez à Événements d’expérience. Vous verrez les 2 produits que vous avez déjà consultés dans le panneau Visionneuse de profils . Ces deux événements sont désormais également connectés à votre profil &quot;connu&quot;.
 
-![Démonstration](../module1.2/images/pv12.png)
+![Démonstration](./images/pv12.png)
 
 Vous avez désormais ingéré des données dans Adobe Experience Platform et vous les avez liées à des identifiants tels que des ECID et des adresses électroniques. Le but est de comprendre le contexte commercial de ce que vous êtes sur le point de faire. Dans l’exercice suivant, vous allez commencer à configurer tout ce dont vous avez besoin pour rendre possible l’ingestion de données.
 
