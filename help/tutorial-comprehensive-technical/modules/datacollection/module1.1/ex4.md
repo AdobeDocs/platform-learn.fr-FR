@@ -4,16 +4,16 @@ description: Foundation - Configuration de la collecte de données Adobe Experie
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Collecte de données Web côté client
 
-## 1.1.4.1 Validation des données dans la requête
+## Valider les données de la requête
 
 ### Installation de l’Adobe Experience Platform Debugger
 
@@ -40,7 +40,7 @@ Vérifiez que ces deux paramètres sont activés :
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **...** dans le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 

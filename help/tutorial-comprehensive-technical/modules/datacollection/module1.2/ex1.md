@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données - Inconnu ou connu sur le site w
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Vous allez désormais ingérer des données dans Adobe Experience Platform et ce
 
 ### Flux de Parcours client
 
-Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **..** dans le projet de votre site web, puis cliquez sur **Modifier**.
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **...** dans le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
@@ -79,7 +79,7 @@ Cliquez sur **Se connecter** pour accéder à la page S’inscrire/Se connecter.
 
 ![Démonstration](./images/pv8.png)
 
-Cliquez sur **CRÉER UN COMPTE**.
+Cliquez sur **Créer un compte**.
 
 ![Démonstration](./images/pv9.png)
 

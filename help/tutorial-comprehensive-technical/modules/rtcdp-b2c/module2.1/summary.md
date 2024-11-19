@@ -3,9 +3,10 @@ title: Foundation - Profil client en temps réel - Résumé
 description: Foundation - Profil client en temps réel - Résumé
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ Mettons en évidence les avantages de Real-time Customer Profile :
 - Real-time Customer Profile repose sur un graphique d’identités flexible et en temps réel qui permet de fusionner dynamiquement des fragments de profil entre plusieurs jeux de données en fonction des identifiants.
 - Une fois les fragments de profil fusionnés via le graphique d’identités, tous les identifiants disponibles peuvent être utilisés pour récupérer le profil d’un client.
 - La segmentation est désormais effectuée en utilisant XDM comme langage à l’origine du segment, ce qui rend le segment facilement réutilisable et compréhensible.
-- Il est désormais possible de créer des segments par le biais de l’API, ce qui permet de définir un segment à l’extérieur par programmation, puis d’insérer la définition de segment via l’API.
 
 ## Consultez cette section
 

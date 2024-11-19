@@ -1,18 +1,19 @@
 ---
-title: Collecte de données - FAC - Intro à FAC
-description: Foundation - FAC - Intro à FAC
+title: Collecte de données - FAC - Configuration de votre compte de Snowflake
+description: Foundation - FAC - Configuration de votre compte de Snowflake
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: fb8a70d9-9789-4fca-90e4-771be2cfc3dc
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '30'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
 
-# 1.3.1 Présentation de l’AFC
+# 1.3.1 Configuration de votre compte de Snowflake
 
-Étape suivante : [Résumé et avantages](./summary.md)
+Étape suivante : [1.3.2 Création de schémas, de modèles de données et de liens](./ex2.md)
 
 [Revenir au module 1.3](./fac.md)
 

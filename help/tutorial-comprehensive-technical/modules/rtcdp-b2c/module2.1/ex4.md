@@ -3,9 +3,10 @@ title: Foundation - Profil client en temps réel - Création d’un segment - in
 description: Foundation - Profil client en temps réel - Création d’un segment - interface utilisateur
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: db1d744d-c4ff-4131-b104-98bb70269140
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '694'
 ht-degree: 3%
 
 ---
@@ -14,27 +15,29 @@ ht-degree: 3%
 
 Dans cet exercice, vous allez créer un segment à l’aide du créateur de segments de Adobe Experience Platform.
 
-## Histoire
-
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Dans le menu de gauche, accédez à **Segments**. Sur cette page, vous pouvez voir un aperçu de tous les segments existants. Cliquez sur le bouton **+ Créer un segment** pour commencer à créer un segment.
+Dans le menu de gauche, accédez à **Audiences**. Sur cette page, vous pouvez voir un aperçu de tous les segments existants. Cliquez sur le bouton **+ Créer une audience** pour commencer à créer un segment.
 
 ![Segmentation](./images/menuseg.png)
+
+Sélectionnez **Créer la règle** et cliquez sur **Créer**.
+
+![Segmentation](./images/menusegbr.png)
 
 Une fois que vous êtes dans le nouveau créateur de segments, vous remarquez immédiatement l’option de menu **Attributs** et la référence **XDM Individual Profile**.
 
 ![Segmentation](./images/segmentationui.png)
 
-Étant donné que XDM est le langage qui alimente les activités d’expérience, XDM est également la base du créateur de segments. Toutes les données ingérées dans Platform doivent être mappées sur XDM. Par conséquent, toutes les données font partie du même modèle de données, quel que soit l’endroit d’où elles proviennent. Cela vous offre un grand avantage lors de la création de segments. Comme dans cette interface utilisateur du créateur de segments, vous pouvez combiner des données provenant de n’importe quelle origine dans le même workflow. Les segments créés dans le créateur de segments peuvent être envoyés à des solutions telles qu’Adobe Target, Adobe Campaign et Adobe Audience Manager pour activation.
+Étant donné que XDM est le langage qui alimente les activités d’expérience, XDM est également la base du créateur d’audiences. Toutes les données ingérées dans Platform doivent être mappées sur XDM. Par conséquent, toutes les données font partie du même modèle de données, quel que soit l’endroit d’où elles proviennent. Cela vous offre un grand avantage lors de la création d’audiences. Comme dans cette interface utilisateur du créateur d’audiences, vous pouvez combiner des données provenant de n’importe quelle origine dans le même workflow. Les audiences créées dans le créateur d’audiences peuvent être envoyées à des solutions telles qu’Adobe Target, Adobe Campaign et Adobe Audience Manager pour activation.
 
-Créons un segment qui comprend tous les clients **masculin**.
+Créons une audience qui comprend tous les clients **masculin**.
 
 Pour accéder à l’attribut gender , vous devez comprendre et connaître XDM.
 
@@ -42,7 +45,7 @@ Le genre est un attribut de Personne, qui se trouve sous Attributs. Pour y parve
 
 ![Segmentation](./images/person.png)
 
-Vous verrez alors ceci. Dans **Person**, vous pouvez trouver l&#39;attribut **Gender**. Faites glisser l’attribut Genre sur le créateur de segments.
+Vous verrez alors ceci. Dans **Person**, vous pouvez trouver l&#39;attribut **Gender**. Faites glisser l’attribut Genre sur le créateur d’audiences.
 
 ![Segmentation](./images/gender.png)
 
@@ -50,7 +53,7 @@ Vous pouvez désormais choisir le genre spécifique parmi les options prérempli
 
 ![Segmentation](./images/genderselection.png)
 
-Après avoir sélectionné **Masculin**, vous pouvez obtenir une estimation de la population du segment en appuyant sur le bouton **Actualiser l’estimation** . Cela s’avère très utile pour un utilisateur chargé de la conception de parcours, de sorte qu’il puisse voir l’impact de certains attributs sur la taille du segment obtenue.
+Après avoir sélectionné **Masculin**, vous pouvez obtenir une estimation de la population de l’audience en appuyant sur le bouton **Actualiser l’estimation** . Cela s’avère très utile pour un utilisateur chargé de la conception de parcours, de sorte qu’il puisse voir l’impact de certains attributs sur la taille de l’audience qui en résulte.
 
 ![Segmentation](./images/segmentpreview.png)
 
@@ -58,21 +61,17 @@ Vous verrez ensuite une estimation comme celle-ci :
 
 ![Segmentation](./images/segmentpreviewest.png)
 
-Ensuite, vous devez affiner un peu votre segment. Vous devez créer un segment de tous les clients masculins qui ont consulté le produit **Proteus Fitness Jackshirt (Orange)**.
+Ensuite, vous devez affiner un peu votre audience. Vous devez créer une audience de tous les clients masculins qui ont consulté le produit **iPhone 15 Pro**.
 
-Pour créer ce segment, vous devez ajouter un événement d’expérience. Vous pouvez trouver tous les événements d’expérience en cliquant sur l’icône **Événements** dans la barre de menus **Champs**.
+Pour créer cette audience, vous devez ajouter un événement d’expérience. Vous pouvez trouver tous les événements d’expérience en cliquant sur l’icône **Événements** dans la barre de menus **Champs**. Vous verrez ensuite le noeud de niveau supérieur **XDM ExperienceEvents**. Cliquez sur **XDM ExperienceEvent**.
 
 ![Segmentation](./images/findee.png)
-
-Vous verrez ensuite le noeud de niveau supérieur **XDM ExperienceEvents**. Cliquez sur **XDM ExperienceEvent**.
-
-![Segmentation](./images/see.png)
 
 Accédez à **Éléments de liste de produits**.
 
 ![Segmentation](./images/plitems.png)
 
-Sélectionnez **Nom** et faites glisser et déposez l’objet **Nom** du menu de gauche sur le canevas du créateur de segments dans la section **Événements**.
+Sélectionnez **Nom** et faites glisser et déposez l’objet **Nom** du menu de gauche sur le canevas du créateur d’audiences dans la section **Événements** .
 
 ![Segmentation](./images/eeweb.png)
 
@@ -80,45 +79,42 @@ Vous verrez alors :
 
 ![Segmentation](./images/eewebpdtlname.png)
 
-Le paramètre de comparaison doit être **equals** et, dans le champ de saisie, saisissez **MONTANA WIND JACKET**.
+Le paramètre de comparaison doit être **equals** et, dans le champ de saisie, saisissez **iPhone 15 Pro**.
 
 ![Segmentation](./images/pv.png)
 
-Chaque fois que vous ajoutez un élément au créateur de segments, vous pouvez cliquer sur le bouton **Actualiser l’estimation** pour obtenir une nouvelle estimation de la population de votre segment.
+Chaque fois que vous ajoutez un élément au créateur d’audiences, vous pouvez cliquer sur le bouton **Actualiser l’estimation** pour obtenir une nouvelle estimation de la population de votre audience.
 
-Jusqu’à présent, vous avez uniquement utilisé l’interface utilisateur pour créer votre segment, mais il existe également une option de code pour créer un segment.
+Jusqu’à présent, vous avez uniquement utilisé l’interface utilisateur pour créer votre audience, mais il existe également une option de code pour créer une audience.
 
-Lors de la création d’un segment, vous composez en fait une requête Profile Query Language (PQL). Pour visualiser le code PQL, vous pouvez cliquer sur le sélecteur **Affichage du code** dans le coin supérieur droit du créateur de segments.
+Lors de la création d’une audience, vous composez en fait une requête Profile Query Language (PQL). Pour visualiser le code PQL, vous pouvez cliquer sur le sélecteur **Affichage du code** dans le coin supérieur droit du créateur d’audiences.
 
 ![Segmentation](./images/codeview.png)
 
 Vous pouvez maintenant voir l’instruction PQL complète :
 
 ```sql
-person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("MONTANA WIND JACKET", false)))])
+person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("iPhone 15 Pro", false)))])
 ```
 
-Vous pouvez également prévisualiser un exemple des profils client qui font partie de ce segment, en cliquant sur **Afficher les profils**.
-
-![Segmentation](./images/previewprofiles.png)
+Vous pouvez également prévisualiser un exemple des profils de clients qui font partie de cette audience en cliquant sur **Afficher les profils**.
 
 ![Segmentation](./images/previewprofilesdtl.png)
 
-Enfin, attribuons un nom à votre segment et enregistrez-le.
+Enfin, donnez un nom à votre audience,
+définissez la **méthode d&#39;évaluation** sur **Streaming** et cliquez sur **Publish**.
 
 Pour définir une convention d’affectation des noms, utilisez :
 
-- `--aepUserLdap-- - Male customers with interest in Montana Wind Jacket`
+- `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`
 
 ![Segmentation](./images/segmentname.png)
 
-Cliquez ensuite sur le bouton **Enregistrer et fermer** pour enregistrer votre segment, puis revenez à la page d’aperçu du segment.
+Vous serez redirigé vers la page d’aperçu de l’audience.
 
 ![Segmentation](./images/savedsegment.png)
 
-Vous pouvez maintenant poursuivre l’exercice suivant et créer un segment via l’API.
-
-Étape suivante : [2.1.5 Création d’un segment - API](./ex5.md)
+Étape suivante : [2.1.5 Reportez-vous à votre profil client en temps réel en action dans le centre d’appels](./ex5.md)
 
 [Revenir au module 2.1](./real-time-customer-profile.md)
 

@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation - Profil client en temps réel
 
-**Auteur : [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-Dans ce module, nous allons approfondir nos connaissances des fonctionnalités Real-time Customer Profile et Identity Service de Adobe Experience Platform. Vous découvrirez comment les audiences peuvent être définies, le rôle du service d’identité et de l’ID Experience Cloud, ainsi que comment définir des requêtes du créateur de segments pour définir vos propres segments.
+Dans ce module, vous allez approfondir vos connaissances des fonctionnalités Real-time Customer Profile et Identity Service de Adobe Experience Platform. Vous découvrirez comment les audiences peuvent être définies, le rôle du service d’identité et de l’ID Experience Cloud, ainsi que comment définir des requêtes du créateur de segments pour définir vos propres segments.
 
 ## Objectifs d’apprentissage
 
 - Découvrez comment visualiser le profil client en temps réel d’un client via l’interface utilisateur de Adobe Experience Platform
 - Découvrez comment créer un segment à l’aide du créateur de segments Adobe Experience Platform
-- Découvrez comment créer un segment et stocker les résultats du segment dans un jeu de données à l’aide des API Adobe Experience Platform
 - Découvrez l’impact d’un accès à un profil client complet, y compris le comportement en temps réel, dans les environnements hors ligne.
 
 ## Conditions préalables
@@ -54,11 +51,7 @@ Au cours de cet exercice, vous utiliserez Postman et Adobe I/O pour afficher vot
 
 Dans cet exercice, vous allez créer un segment à l’aide du créateur de segments de Adobe Experience Platform.
 
-[2.1.5 Création d’un segment - API](./ex5.md)
-
-Au cours de cet exercice, vous utiliserez Postman et Adobe I/O pour créer un segment et stocker les résultats de ce segment sous la forme d’un jeu de données, à l’aide des API Adobe Experience Platform.
-
-[2.1.6 Voir votre profil client en temps réel en action dans le centre d’appels](./ex6.md)
+[2.1.5 Consultez votre profil client en temps réel en action dans le centre d’appels](./ex5.md)
 
 Dans cet exercice, vous emprunterez l’identité d’un employé du centre d’appels qui reçoit un appel d’un client. Pour réellement avoir un impact sur l’expérience de ce client, vous aurez besoin d’accéder à toutes les informations disponibles en temps réel.
 
