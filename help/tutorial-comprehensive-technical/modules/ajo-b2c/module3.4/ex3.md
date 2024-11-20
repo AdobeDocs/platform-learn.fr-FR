@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer - Appliquer la personnalisation à un email
 description: Cet exercice explique comment utiliser la personnalisation de segment dans un contenu d’email.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 10%
+source-wordcount: '483'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +17,7 @@ Connectez-vous à Adobe Experience Cloud en vous rendant à [Adobe Experience Cl
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepTenantId--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran.
+Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepTenantId--``.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

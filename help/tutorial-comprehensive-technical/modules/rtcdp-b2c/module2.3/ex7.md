@@ -4,9 +4,9 @@ description: CDP en temps réel - SDK Destinations
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1098'
 ht-degree: 6%
 
 ---
@@ -23,11 +23,13 @@ Au cours de cet exercice, vous utiliserez à nouveau Postman pour interroger les
 
 ## Définition du point de fin et du format
 
-Pour cet exercice, vous aurez besoin d’un point de terminaison afin que, lorsqu’un segment est admissible, l’événement de qualification puisse être diffusé en continu vers ce point de terminaison. Dans cet exercice, vous utiliserez un exemple de point de terminaison à l’aide de [https://webhook.site/](https://webhook.site/). Accédez à [https://webhook.site/](https://webhook.site/), où vous trouverez quelque chose de similaire. Cliquez sur **Copier dans le presse-papiers** pour copier l’URL. Vous devrez spécifier cette URL lors de l’exercice suivant. L’URL dans cet exemple est `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`.
+Pour cet exercice, vous aurez besoin d’un point de terminaison afin que, lorsqu’une audience est admissible, l’événement de qualification puisse être diffusé en continu vers ce point de terminaison. Dans cet exercice, vous utiliserez un exemple de point de terminaison à l’aide de [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Accédez à [https://pipedream.com/requestbin](https://pipedream.com/requestbin), créez un compte, puis créez un espace de travail. Une fois l’espace de travail créé, vous verrez quelque chose de similaire.
+
+Cliquez sur **copy** pour copier l’URL. Vous devrez spécifier cette URL lors de l’exercice suivant. L’URL dans cet exemple est `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![Ingestion des données](./images/webhook1.png)
 
-En ce qui concerne le format, nous utiliserons un modèle standard qui diffusera les qualifications ou les qualifications de segments avec des métadonnées telles que les identifiants de client. Les modèles peuvent être personnalisés pour répondre aux attentes de points de terminaison spécifiques, mais dans cet exercice, nous réutiliserons un modèle standard, ce qui entraînera une payload comme celle-ci, qui sera diffusée en continu vers le point de terminaison .
+En ce qui concerne le format, nous utiliserons un modèle standard qui diffusera les qualifications ou les qualifications des audiences avec des métadonnées telles que les identifiants de client. Les modèles peuvent être personnalisés pour répondre aux attentes de points de terminaison spécifiques, mais dans cet exercice, nous réutiliserons un modèle standard, ce qui entraînera une payload comme celle-ci, qui sera diffusée en continu vers le point de terminaison .
 
 ```json
 {
@@ -52,9 +54,15 @@ En ce qui concerne le format, nous utiliserons un modèle standard qui diffusera
 
 ## Créer une configuration de serveur et de modèle
 
-La première étape de la création de votre propre destination dans Adobe Experience Platform consiste à créer une configuration de serveur et de modèle.
+La première étape de la création de votre propre destination dans Adobe Experience Platform consiste à créer une configuration de serveur et de modèle à l’aide de Postman.
 
-Pour ce faire, accédez à **API de création de destination**, à **Serveurs et modèles de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de serveur de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
+Pour ce faire, ouvrez votre application Postman et accédez à **API de création de destination**, à **Serveurs et modèles de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de serveur de destination**.
+
+>[!NOTE]
+>
+>Si vous ne disposez pas de cette collection Postman, revenez à l’ [exercice 3 dans le module 2.1](../module2.1/ex3.md) et suivez les instructions pour configurer Postman avec les collections Postman fournies.
+
+Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
 
 ![Ingestion des données](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci
 }
 ```
 
-Après avoir collé le code ci-dessus, vous devez mettre à jour manuellement le champ **urlBasedDestination.url.value** et vous devez le définir sur l’URL du webhook que vous avez créé à l’étape précédente, `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` dans cet exemple.
+Après avoir collé le code ci-dessus, vous devez mettre à jour manuellement le champ **urlBasedDestination.url.value** et vous devez le définir sur l’URL du webhook que vous avez créé à l’étape précédente, `https://eodts05snjmjz67.m.pipedream.net` dans cet exemple.
 
 ![Ingestion des données](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ Après la mise à jour du champ **urlBasedDestiantion.url.value**, il doit resse
 
 ![Ingestion des données](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>N’oubliez pas qu’avant d’envoyer une demande à Adobe I/O, vous devez disposer d’un `access_token` valide. Pour obtenir un `access_token` valide, exécutez la requête **POST - Get Access Token** dans la collection **Adobe IO - OAuth**.
+
 Après avoir cliqué sur **Envoyer**, votre modèle de serveur est créé. Dans le cadre de la réponse, un champ nommé **instanceId** s’affiche. Notez-le, car vous en aurez besoin à l’étape suivante. Dans cet exemple, **instanceId** est
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`.
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
 
 ![Ingestion des données](./images/sdkpm6.png)
 
 ## Création de votre configuration de destination
 
-Dans Postman, sous **API de création de destination**, accédez à **Configurations de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}**.
+Dans Postman, sous **API de création de destination**, accédez à **Configurations de destination** et cliquez pour ouvrir la requête **POST - Créer une configuration de destination**. Vous verrez alors ceci. Sous **Headers**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}** et remplacez-la par `--aepSandboxName--`.
 
 ![Ingestion des données](./images/sdkpm7.png)
-
-Remplacez-le par `--aepSandboxName--`.
-
-![Ingestion des données](./images/sdkpm8.png)
 
 Ensuite, accédez à **Body**. sélectionnez l’espace réservé **{{body}}**.
 
@@ -183,7 +191,7 @@ Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci
 
 ![Ingestion des données](./images/sdkpm11.png)
 
-Après avoir collé le code ci-dessus, vous devez mettre à jour manuellement le champ **destinationDelivery. destinationServerId** et vous devez le définir sur l’ **instanceId** du modèle de serveur de destination que vous avez créé à l’étape précédente, qui était `eb0f436f-dcf5-4993-a82d-0fcc09a6b36c` dans cet exemple. Cliquez ensuite sur **Send**.
+Après avoir collé le code ci-dessus, vous devez mettre à jour manuellement le champ **destinationDelivery. destinationServerId** et vous devez le définir sur l’ **instanceId** du modèle de serveur de destination que vous avez créé à l’étape précédente, qui était `52482c90-8a1e-42fc-b729-7f0252e5cebd` dans cet exemple. Cliquez ensuite sur **Send**.
 
 ![Ingestion des données](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ Dans le menu de gauche, accédez à **Destinations**, cliquez sur **Catalogue** 
 
 ![Ingestion des données](./images/destsdk1.png)
 
-## Lier votre segment à votre destination
+## Lier votre audience à votre destination
 
-Dans **Destinations** > **Catalogue**, cliquez sur **Configurer** sur votre destination pour commencer à ajouter des segments à votre nouvelle destination.
+Dans **Destinations** > **Catalogue**, cliquez sur **Configurer** sur votre destination pour commencer à ajouter des audiences à votre nouvelle destination.
 
 ![Ingestion des données](./images/destsdk2.png)
 
-Saisissez un jeton de support factice, tel que **1234**. Cliquez sur **Se connecter à la destination**.
+Saisissez une valeur aléatoire pour le **jeton porteur**, telle que **1234**. Cliquez sur **Se connecter à la destination**.
 
 ![Ingestion des données](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ Vous pouvez éventuellement sélectionner une stratégie de gouvernance des donn
 
 ![Ingestion des données](./images/destsdk5.png)
 
-Sélectionnez le segment que vous avez créé précédemment, nommé `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Cliquez sur **Suivant**.
+Sélectionnez l’audience que vous avez créée précédemment, qui s’appelle `--aepUserLdap-- - Interest in Galaxy S24`. Cliquez sur **Suivant**.
 
 ![Ingestion des données](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ Cliquez sur **Terminer**.
 
 ![Ingestion des données](./images/destsdk8.png)
 
-Votre destination est maintenant en ligne. De nouvelles qualifications de segment seront diffusées à votre webhook personnalisé.
+Votre destination est maintenant en ligne. De nouvelles qualifications d’audience seront diffusées à votre webhook personnalisé maintenant.
 
 ![Ingestion des données](./images/destsdk9.png)
 
-## Test de votre activation de segment
+## Tester l’activation de votre audience
 
-Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **...** dans le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Vous pouvez maintenant suivre le flux ci-dessous pour accéder au site web. Cliquez sur **Intégrations**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-Sur la page **Intégrations**, vous devez sélectionner la propriété de collecte de données qui a été créée dans l’exercice 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
@@ -269,23 +269,24 @@ Sélectionnez le type de compte et procédez à la connexion.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque démonstration, vous devez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
+Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque exercice, vous devrez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-Sur la page d’accueil **Luma**, accédez à **Men** et cliquez sur le produit **PROTEUS FITNESS JACKSHIRT**.
+Dans cet exemple, vous souhaitez répondre à un client spécifique qui consulte un produit spécifique.
+Sur la page d&#39;accueil de **Citi Signal**, accédez à **Phones &amp; devices** et cliquez sur le produit **Galaxy S24**.
 
-![Ingestion des données](./images/homenadia.png)
+![Ingestion des données](./images/homegalaxy.png)
 
-Vous avez maintenant consulté la page du produit pour **PROTEUS FITNESS JACKSHIRT**, ce qui signifie que vous serez désormais admissible pour le segment que vous avez créé précédemment dans cet exercice.
+La page produit de Galaxy S24 a été visualisée. Votre audience sera donc admissible pour votre profil dans les minutes qui suivent.
 
-![Ingestion des données](./images/homenadiapp.png)
+![Ingestion des données](./images/homegalaxy1.png)
 
-Lorsque vous ouvrez la visionneuse de profils et accédez à **Segments**, vous verrez que le segment est admissible.
+Lorsque vous ouvrez la visionneuse de profils et accédez à **Audiences**, vous verrez que l’audience est admissible.
 
-![Ingestion des données](./images/homenadiapppb.png)
+![Ingestion des données](./images/homegalaxydsdk.png)
 
-Revenez maintenant à votre webhook ouvert sur [https://webhook.site/](https://webhook.site/), où une nouvelle requête entrante doit apparaître, qui provient de Adobe Experience Platform et qui contient l’événement de qualification de segment.
+Revenez maintenant à votre webhook ouvert sur [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), où une nouvelle requête entrante doit apparaître, qui provient de Adobe Experience Platform et qui contient l’événement de qualification de l’audience.
 
 ![Ingestion des données](./images/destsdk10.png)
 

@@ -5,9 +5,9 @@ user-guide-description: Tutoriel pratique couvrant de nombreux aspects de Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 4%
       + [2.1.1 Visite du site web](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex1.md)
       + [2.1.2 Visualiser votre propre profil client en temps réel - interface utilisateur](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3 Visualiser votre propre profil client en temps réel - API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
-      + [2.1.4 Création d’un segment - IU](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
+      + [2.1.4 Création d’une audience - IU](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
       + [2.1.5 Voir votre profil client en temps réel en action dans le centre d’appels](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2 Intelligent Services {#module22}
@@ -67,23 +67,23 @@ ht-degree: 4%
       + [2.2.2 Customer AI : création d’une instance (configuration)](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex2.md)
       + [2.2.3 Customer AI : tableau de bord de notation et segmentation (prévision et action)](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex3.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/summary.md)
-   + 2.3 Real-Time CDP : créer un segment et agir ! {#module23}
+   + 2.3 Real-Time CDP : créez une audience et prenez des mesures ! {#module23}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
-      + [2.3.1 Création d’un segment et activation de la segmentation par flux](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
+      + [2.3.1 Création d’une audience](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
       + [2.3.2 Découvrez comment configurer une destination DV360 à l’aide de destinations](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex2.md)
-      + [2.3.3 Action : envoyez votre segment à DV360](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
-      + [2.3.4 Action : envoyez votre segment à une destination S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
-      + [2.3.5 Action : envoyez votre segment à Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
+      + [2.3.3 Action : envoyez votre audience à DV360](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
+      + [2.3.4 Action à effectuer : envoyez votre audience vers une destination S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
+      + [2.3.5 Action : envoyez votre audience à Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 Audiences externes](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
       + [SDK de destinations 2.3.7](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
-   + 2.4 Real-Time CDP : activation du segment vers Microsoft Azure Event Hub {#module24}
+   + 2.4 Real-Time CDP : Audience Activation à Microsoft Azure Event Hub {#module24}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
       + [2.4.0 Configuration de votre environnement](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
       + [2.4.1 Configuration de votre environnement Microsoft Azure EventHub](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
       + [2.4.2 Configuration de votre destination Azure Event Hub dans Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3 Création de segments en flux continu](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4 Activation du segment](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.3 Création d’audiences](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4 Activation de l’audience](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
       + [2.4.5 Création de votre projet Microsoft Azure](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
       + [2.4.6 Scénario de bout en bout](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)

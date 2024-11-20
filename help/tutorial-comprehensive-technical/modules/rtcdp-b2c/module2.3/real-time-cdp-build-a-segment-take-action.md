@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 CDP en temps réel - Création d’un segment et action
-
-**Auteur : [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 Dans ce module, vous allez configurer un segment en continu et activer le segment vers plusieurs destinations.
 
@@ -38,25 +36,25 @@ Dans ce module, vous allez configurer un segment en continu et activer le segmen
 
 ## Exercices
 
-[2.3.1 Création d’un segment](./ex1.md)
+[2.3.1 Création d’une audience](./ex1.md)
 
-Découvrez comment créer un segment.
+Découvrez comment créer une audience.
 
 [2.3.2 Découvrez comment configurer une destination DV360 à l’aide de destinations](./ex2.md)
 
 Découvrez comment configurer une destination publicitaire à l’aide de l’interface utilisateur de Real-Time CDP.
 
-[2.3.3 Action : envoyez votre segment à DV360](./ex3.md)
+[2.3.3 Action : envoyez votre audience à DV360](./ex3.md)
 
-Connectez le segment que vous avez créé dans l’exercice 6.1 au DV360 de destination.
+Connectez l’audience que vous avez créée à la destination DV360.
 
-[2.3.4 Action : envoyez votre segment à une destination S3](./ex4.md)
+[2.3.4 Action à effectuer : envoyez votre audience vers une destination S3](./ex4.md)
 
-Utilisez le segment que vous avez créé dans l’exercice 6.1 et envoyez-le à une destination S3, généralement utilisée pour les destinations de marketing par e-mail.
+Utilisez l’audience que vous avez créée et envoyez-la à une destination S3, généralement utilisée pour les destinations de marketing par e-mail.
 
-[2.3.5 Action : envoyez votre segment à Adobe Target](./ex5.md)
+[2.3.5 Action : envoyez votre audience à Adobe Target](./ex5.md)
 
-Utilisez le segment que vous avez créé dans l’exercice 6.1 pour configurer une activité de ciblage d’expérience dans Adobe Target.
+Utilisez l’audience que vous avez créée pour configurer une activité de ciblage d’expérience dans Adobe Target.
 
 [2.3.6 Audiences externes](./ex6.md)
 

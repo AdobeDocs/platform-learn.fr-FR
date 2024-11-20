@@ -3,10 +3,11 @@ title: Activation de segment vers Microsoft Azure Event Hub - Activation de segm
 description: Activation de segment vers Microsoft Azure Event Hub - Activation de segment
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 2%
+source-wordcount: '328'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +23,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 

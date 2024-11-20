@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données - Configuration des jeux de donn
 kt: 5342
 doc-type: tutorial
 exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '552'
 ht-degree: 8%
 
 ---
@@ -32,7 +32,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./images/home.png)
 
-Avant de continuer, vous devez sélectionner un **[!UICONTROL sandbox]**. L’environnement de test à sélectionner est nommé ``--module2sandbox--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **[!UICONTROL sandbox]**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./images/sb1.png)
 

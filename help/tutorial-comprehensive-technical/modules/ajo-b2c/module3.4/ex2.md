@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Configuration d’un parcours basé sur les lot
 description: Dans cette section, vous allez configurer un parcours de messagerie par lots pour envoyer une newsletter.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 8%
 
 ---
@@ -22,7 +23,7 @@ Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord
 
 ## 3.4.2.1 Création d’un parcours de newsletter
 
-Vous allez maintenant créer un parcours basé sur les lots. Contrairement à l’parcours basé sur les événements de l’exercice précédent qui repose sur les événements d’expérience entrants, les entrées de segment ou les sorties pour déclencher un parcours pour 1 client spécifique, les parcours basés sur des lots ciblent un segment entier une fois avec un contenu unique comme les newsletters, les promotions ponctuelles ou les informations génériques ou avec des contenus similaires envoyés régulièrement, comme par exemple des campagnes d’anniversaire et des rappels.
+Vous allez maintenant créer un parcours basé sur les lots. Contrairement au parcours basé sur les événements de l’exercice précédent qui s’appuie sur les événements d’expérience entrants, les entrées ou les sorties d’audience pour déclencher un parcours pour 1 client spécifique, les parcours basés sur des lots ciblent une audience entière avec un contenu unique comme les newsletters, les promotions ponctuelles ou les informations génériques ou avec un contenu similaire envoyé régulièrement, comme par exemple les campagnes d’anniversaire et les rappels.
 
 Dans le menu, accédez à **Parcours** et cliquez sur **Créer un Parcours**.
 
@@ -37,11 +38,11 @@ Cliquez sur **OK**.
 
 ![Journey Optimizer](./images/batchj2.png)
 
-Sous **Orchestration**, placez **Lecture de segment** sur la zone de travail. Cela signifie qu’une fois publié, le parcours commence par récupérer l’audience de segment entière, qui devient ensuite l’audience cible du parcours et du message. Cliquez sur **Sélectionner un segment**.
+Sous **Orchestration**, placez **Lecture d’audience** sur la zone de travail. Cela signifie qu’une fois publié, le parcours commence par récupérer l’audience entière, qui devient ensuite l’audience cible du parcours et du message. Cliquez sur **Sélectionner une audience**.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-Dans la fenêtre contextuelle **Choisir un segment**, recherchez votre LDAP et sélectionnez le segment que vous avez créé dans [Module 2.3 - CDP en temps réel - Créer un segment et entreprendre l’action ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) nommée `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. par exemple : vangeluw - Intérêt pour PROTEUS FITNESS JACKSHIRT. Cliquez sur **Enregistrer**.
+Dans la fenêtre contextuelle **Choisir une audience**, recherchez votre LDAP et sélectionnez l’audience que vous avez créée dans [Module 2.3 - CDP en temps réel - Créer une audience et entreprendre l’action ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) nommée `--aepUserLdap-- - Interest in Galaxy S24`. Cliquez sur **Enregistrer**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

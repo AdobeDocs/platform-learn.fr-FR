@@ -3,9 +3,10 @@ title: Ingestion et analyse de données Google Analytics dans Adobe Experience P
 description: Ingestion et analyse de données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Connectez GCP et BigQuery à Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86b04b4e-0439-4491-b700-5b0591c493b7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1757'
 ht-degree: 1%
 
 ---
@@ -305,7 +306,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 

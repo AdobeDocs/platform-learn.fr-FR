@@ -3,9 +3,10 @@ title: Query Service - Prise en main
 description: Query Service - Prise en main
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--module7sandbox--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 

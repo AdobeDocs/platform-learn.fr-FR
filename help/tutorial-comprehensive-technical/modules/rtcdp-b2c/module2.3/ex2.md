@@ -1,11 +1,12 @@
 ---
-title: CDP en temps réel - Création d’un segment et action - Configuration d’une destination Advertising telle que Google DV360
-description: CDP en temps réel - Création d’un segment et action - Configuration d’une destination Advertising telle que Google DV360
+title: CDP en temps réel - Création d’une audience et action - Configuration d’une destination Advertising telle que Google DV360
+description: CDP en temps réel - Création d’une audience et action - Configuration d’une destination Advertising telle que Google DV360
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Le contenu ci-dessous est conçu comme FYI : vous ne devez **PAS** configurer une nouvelle destination pour DV360. La destination a déjà été créée et vous pouvez l’utiliser dans l’exercice suivant.
+>Le contenu ci-dessous est partiellement prévu comme FYI : si une telle destination existe déjà dans votre instance, vous ne devez pas **NOT** configurer une nouvelle destination pour DV360. La destination a déjà été créée dans ce cas et vous pouvez l’utiliser dans l’exercice suivant.
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ Après avoir créé la destination, vous verrez ceci. Vous pouvez éventuellemen
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 Une liste des destinations disponibles s’affiche alors.
-Au cours de l’exercice suivant, vous allez connecter le segment que vous avez créé lors de l’exercice précédent à la destination Google DV360.
+Au cours de l’exercice suivant, vous allez connecter l’audience que vous avez créée lors de l’exercice précédent à la destination Google DV360.
 
-Étape suivante : [2.3.3 Agir : envoyez votre segment à DV360](./ex3.md)
+Étape suivante : [2.3.3 Agissez : envoyez votre audience à DV360](./ex3.md)
 
 [Revenir au module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

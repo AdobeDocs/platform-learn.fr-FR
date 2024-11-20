@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - De inconnu à connu sur l
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Sélectionnez le type de compte et procédez à la connexion.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque démonstration, vous devez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
+Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque exercice, vous devrez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

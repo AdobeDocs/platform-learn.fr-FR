@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 4%
@@ -92,9 +93,9 @@ Vous verrez maintenant tous les champs de l’emplacement :
 
 ## 3.3.1.4 Règles de décision
 
-Une règle (également appelée règle d’éligibilité) est l’équivalent d’un **segment**. Une règle est en fait un segment lui-même avec la seule différence qu’une règle peut être utilisée avec une offre pour fournir la meilleure offre à un profil dans Adobe Experience Platform.
+Une règle (également appelée règle d’éligibilité) est l’équivalent d’une **audience**. Une règle est en fait une audience elle-même avec la seule différence qu’une règle peut être utilisée avec une offre pour fournir la meilleure offre à un profil dans Adobe Experience Platform.
 
-Comme vous savez déjà comment définir des segments en fonction des modules d’activation précédents, revenons rapidement à l’environnement de segmentation :
+Comme vous savez déjà comment définir des audiences en fonction des modules d’activation précédents, revenons rapidement à l’environnement de segmentation :
 
 Accédez à **Rules**. Cliquez sur **+ Créer une règle**.
 
@@ -106,7 +107,7 @@ L’environnement Segmentation de Adobe Experience Platform s’affiche alors.
 
 Vous pouvez désormais accéder à tous les champs qui font partie du schéma d’union pour Real-time Customer Profile et créer n’importe quelle règle.
 
-Il est également intéressant de savoir que vous pouvez simplement réutiliser des segments déjà définis dans Adobe Experience Platform en accédant à **Audiences** > ``--aepTenantId--``.
+Il est également intéressant de savoir que vous pouvez simplement réutiliser des audiences déjà définies dans Adobe Experience Platform, en accédant à **Audiences** > ``--aepTenantId--``.
 
 ![Règle de décision](./images/decisionruleaud.png)
 

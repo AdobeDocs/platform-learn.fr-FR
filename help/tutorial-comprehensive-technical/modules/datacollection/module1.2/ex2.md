@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données - Configuration des schémas et 
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3127'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](./images/sb1.png)
 
@@ -301,7 +301,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./images/home.png)
 
-Avant de continuer, vous devez sélectionner un **[!UICONTROL sandbox]**. L’ [!UICONTROL environnement de test] à sélectionner est nommé ``--module2sandbox--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **[!UICONTROL sandbox]**. L’ [!UICONTROL environnement de test] à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](./images/sb1.png)
 

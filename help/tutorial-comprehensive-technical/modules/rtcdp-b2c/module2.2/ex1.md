@@ -3,10 +3,11 @@ title: Intelligent Services - Préparation des données Customer AI (Ingérer)
 description: Customer AI - Préparation de données (ingestion)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 4%
+source-wordcount: '753'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 4%
 Pour que les services intelligents découvrent des informations à partir de vos données d’événements marketing, les données doivent être enrichies sémantiquement et conservées dans une structure standard. Pour ce faire, les services intelligents utilisent les schémas XDM (Experience Data Model) d’Adobe.
 En particulier, tous les jeux de données utilisés dans Intelligent Services doivent être conformes au schéma XDM **Consumer Experience Event**.
 
-## 2.2.1.1 Création d’un schéma
+## Créer un schéma
 
 Au cours de cet exercice, vous allez créer un schéma qui contient le **mixin Événement d’expérience client**, qui est requis par le service intelligent **Customer AI**.
 
@@ -25,37 +26,40 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](../../datacollection/module1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--module10sandbox--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’environnement de test approprié, l’écran change et vous êtes désormais dans votre environnement de test dédié.
 
 ![Ingestion des données](../../datacollection/module1.2/images/sb1.png)
 
 Dans le menu de gauche, cliquez sur **Schémas** et accédez à **Parcourir**. Cliquez sur **Créer un schéma**.
 
-![Créer un schéma](./images/create-schema-button.png)
+![Créer un schéma](./images/createschemabutton.png)
 
-Dans la fenêtre contextuelle, sélectionnez **XDM ExperienceEvent**.
+Dans la fenêtre contextuelle, sélectionnez **Manuel** et cliquez sur **Sélectionner**.
+
+![Créer un schéma](./images/schmanual.png)
+
+Sélectionnez ensuite **Experience Event** et cliquez sur **Next**.
 
 ![Créer un schéma](./images/xdmee.png)
 
-Vous verrez alors ceci.
+Vous devez maintenant fournir un nom pour votre schéma. Pour le nom de notre schéma, utilisez : `--aepUserLdap-- - Demo System - Customer Experience Event` et cliquez sur **Terminer**.
+
+![Créer un schéma](./images/schname.png)
+
+Vous verrez alors ceci. Cliquez sur **+ Ajouter** sous Groupes de champs.
 
 ![Créer un schéma](./images/xdmee1.png)
 
-Recherchez et sélectionnez les **Mixins** suivants à ajouter à ce schéma :
+Recherchez et sélectionnez les **groupes de champs** suivants à ajouter à ce schéma :
 
 - Événement d’expérience du consommateur
-
-  ![Nouveau schéma CEE](./images/cee.png)
-
 - Informations sur l’identifiant de l’utilisateur final
-
-  ![Nouveau schéma CEE](./images/identitymap.png)
 
 Cliquez sur **Ajouter des groupes de champs**.
 
-![Définition de la clé d’identité](./images/addmixin.png)
+![Nouveau schéma CEE](./images/cee.png)
 
-Vous verrez alors ceci. Sélectionnez le mixin **End User ID Details**.
+Vous verrez alors ceci. Cliquez sur le groupe de champs **Détails de l’ID utilisateur final**.
 
 ![Créer un schéma](./images/eui1.png)
 
@@ -63,7 +67,7 @@ Accédez au champ **endUserIDs._experience.email.id**.
 
 ![Créer un schéma](./images/eui2.png)
 
-Dans le menu de droite pour le champ **endUserIDs._experience.emailid.id**, faites défiler l’écran vers le bas et cochez la case correspondant à **Identité**, cochez la case correspondant à **Identité de Principal** et sélectionnez l’ **espace de noms d’identité** de **Adresse électronique**.
+Dans le menu de droite pour le champ **endUserIDs._experience.emailid.id**, faites défiler l’écran vers le bas et cochez la case correspondant à **Identité**, cochez la case correspondant à **Identité de Principal** et sélectionnez l’ **espace de noms d’identité** de **Adresse électronique**. Cliquez sur **Appliquer**.
 
 ![Créer un schéma](./images/eui3.png)
 
@@ -71,21 +75,7 @@ Accédez au champ **endUserIDs._experience.mcid.id**. Cochez la case corresponda
 
 ![Créer un schéma](./images/eui4.png)
 
-Donnez un nom à votre schéma maintenant.
-
-Pour le nom de notre schéma, vous utiliserez ceci :
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-Par exemple, pour ldap **vangeluw**, il doit s’agir du nom du schéma :
-
-- **vangeluw - Système de démonstration - Événement d’expérience client**
-
-Ça devrait vous donner quelque chose comme ça. Cliquez sur le bouton **+ Ajouter** pour ajouter de nouveaux **Mixins**.
-
-![Créer un schéma](./images/xdmee2.png)
-
-Sélectionnez le nom de votre schéma. Vous devez maintenant activer votre schéma pour **Profile** en cliquant sur le bouton d’activation/désactivation **Profile** .
+Vous aurez alors ceci. Sélectionnez ensuite le nom de votre schéma. Vous devez maintenant activer votre schéma pour **Profile** en cliquant sur le bouton d’activation/désactivation **Profile** .
 
 ![Créer un schéma](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ Vous devriez maintenant avoir ceci. Cliquez sur **Enregistrer** pour enregistrer
 
 ![Créer un schéma](./images/xdmee5.png)
 
-## 2.2.1.2 Création d’un jeu de données
+## Créer un jeu de données
 
 Dans le menu de gauche, cliquez sur **Jeux de données** et accédez à **Parcourir**. Cliquez sur **Créer un jeu de données**.
 
@@ -129,7 +119,7 @@ Vous devez maintenant disposer des éléments suivants :
 
 Vous êtes maintenant prêt à commencer à ingérer des données d’événement d’expérience client et à utiliser le service Customer AI.
 
-## 2.2.1.3 Téléchargement des données de test de l’événement d’expérience
+## Téléchargement des données de test d’événement d’expérience
 
 Une fois que le **schéma** et le **jeu de données** sont configurés, vous êtes prêt à ingérer les données d’événement d’expérience. Comme Customer AI nécessite des données sur **2 trimestres au moins**, vous devrez ingérer des données préparées en externe.
 
@@ -145,7 +135,7 @@ Vous avez maintenant téléchargé un fichier nommé **retail-v1-dec2020-xl.json
 
 ![Jeu de données](./images/ingest.png)
 
-## 2.2.1.4 Ingestion des données de test d’événement d’expérience
+## Ingestion des données de test d’événement d’expérience
 
 Dans Adobe Experience Platform, accédez à **Jeux de données** et ouvrez votre jeu de données, appelé **[!UICONTROL ldap - Demo System - Customer Experience Event Dataset]**.
 

@@ -3,27 +3,28 @@ title: CDP en temps réel - Audiences externes
 description: CDP en temps réel - Audiences externes
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
 
 # 2.3.6 Audiences externes
 
-Dans de nombreux cas, votre entreprise peut vouloir utiliser des segments existants provenant d’autres applications pour enrichir le profil client dans Adobe Experience Platform.
+Dans de nombreux cas, votre entreprise peut vouloir utiliser les audiences existantes d’autres applications pour enrichir le profil client dans Adobe Experience Platform.
 Ces audiences externes peuvent avoir été définies en fonction d’un modèle de science des données ou à l’aide de plateformes de données externes.
 
-La fonctionnalité d&#39;audiences externes de Adobe Experience Platform vous permet de vous concentrer sur l&#39;ingestion des audiences externes et leur activation sans avoir à redéfinir en détail la définition de segment correspondante dans Adobe Experience Platform.
+La fonctionnalité d&#39;audiences externes de Adobe Experience Platform vous permet de vous concentrer sur l&#39;ingestion des audiences externes et leur activation sans avoir à redéfinir en détail la définition de l&#39;audience correspondante dans Adobe Experience Platform.
 
 Le processus global se divise en trois grandes étapes :
 
 - Importez les métadonnées d’audience externe : cette étape est destinée à ingérer les métadonnées d’audience externe, telles que le nom de l’audience, dans Adobe Experience Platform.
-- Affectez l’appartenance d’audience externe au profil client : cette étape est destinée à enrichir le profil client avec l’attribut d’appartenance au segment externe.
-- Créer les segments dans Adobe Experience Platform : cette étape est destinée à créer des segments exploitables en fonction de l’appartenance aux audiences externes.
+- Affectez l’appartenance à l’audience externe au profil client : cette étape est destinée à enrichir le profil client avec l’attribut d’appartenance aux audiences externes.
+- Créer les audiences dans Adobe Experience Platform : cette étape est destinée à créer des audiences exploitables basées sur l’appartenance aux audiences externes.
 
-## Métadonnées 2.3.6.1
+## Métadonnées
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
@@ -31,13 +32,13 @@ Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). 
 
 >[!IMPORTANT]
 >
->L’environnement de test à utiliser pour cet exercice est ``--module2sandbox--`` !
+>L’environnement de test à utiliser pour cet exercice est ``--aepSandboxName--`` !
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--module2sandbox--``. Pour ce faire, cliquez sur le texte **[!UICONTROL Production Prod]** dans la ligne bleue en haut de votre écran. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
 
 ![Ingestion des données](./images/sb1.png)
 
-Tandis que les données de segment définissent la condition pour qu’un profil fasse partie d’un segment, les métadonnées du segment sont des informations sur le segment telles que le nom, la description et l’état du segment. Les métadonnées d’audience externe étant stockées dans Adobe Experience Platform, vous devez utiliser un espace de noms d’identité pour ingérer les métadonnées dans Adobe Experience Platform.
+Bien que les données d’audience définissent la condition pour qu’un profil fasse partie d’une audience, les métadonnées d’audience sont des informations sur l’audience telles que le nom, la description et l’état de l’audience. Les métadonnées d’audience externe étant stockées dans Adobe Experience Platform, vous devez utiliser un espace de noms d’identité pour ingérer les métadonnées dans Adobe Experience Platform.
 
 ## 2.3.6.1.1 Espace de noms d’identité pour les audiences externes
 
@@ -47,19 +48,19 @@ Pour afficher l’identité qui a déjà été créée, accédez à **Identités
 Remarque :
 
 - Le symbole d’identité **externalaudiences** sera utilisé dans les étapes suivantes pour faire référence à l’identité des audiences externes.
-- Le type **Identifiant de non-personne** est utilisé pour cet espace de noms d’identité, car cet espace de noms n’est pas destiné à identifier les profils de client mais les segments.
+- Le type **Identifiant de non-personne** est utilisé pour cet espace de noms d’identité, car cet espace de noms n’est pas destiné à identifier les profils de client mais les audiences.
 
 ![Identité d’audiences externes](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 Création du schéma de métadonnées Audiences externes
 
-Les métadonnées d’audiences externes sont basées sur le **schéma de définition de segment**. Vous trouverez plus d’informations dans le [référentiel XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+Les métadonnées d’audiences externes sont basées sur le **schéma de définition d’audience**. Vous trouverez plus d’informations dans le [référentiel XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
 
 Dans le menu de gauche, accédez à Schémas. Cliquez sur **+ Créer un schéma**, puis sur **Parcourir**.
 
 ![ Schéma de métadonnées d’audiences externes 1](images/extAudMDXDM1.png)
 
-Pour attribuer une classe, recherchez **définition de segment**. Sélectionnez la classe **Définition de segment** et cliquez sur **Attribuer une classe**.
+Pour attribuer une classe, recherchez **définition d’audience**. Sélectionnez la classe **Définition de l’audience** et cliquez sur **Attribuer une classe**.
 
 ![ Schéma de métadonnées d’audiences externes 2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ Dans les résultats de la requête, vous verrez les métadonnées de l’audienc
 
 ![Métadonnées d’audiences externes str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2 Appartenance au segment
+## Appartenance à une audience
 
-Les métadonnées d’audience externe étant disponibles, vous pouvez désormais ingérer l’adhésion au segment pour un profil client spécifique.
+Les métadonnées d’audience externe étant disponibles, vous pouvez désormais ingérer l’appartenance à l’audience pour un profil client spécifique.
 
-Vous devez maintenant préparer un jeu de données de profil enrichi par rapport au schéma d’adhésion au segment. Vous trouverez plus d’informations dans le [référentiel XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
+Vous devez maintenant préparer un jeu de données de profil enrichi par rapport au schéma d’appartenance à l’audience. Vous trouverez plus d’informations dans le [référentiel XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
 
-## 2.3.6.2.1 Création du schéma d’adhésion des audiences externes
+### Création du schéma d’adhésion aux audiences externes
 
 Dans le menu de droite, accédez à **Schémas**. Cliquez sur **Créer un schéma**, puis sur **XDM Individual Profile**.
 
@@ -237,7 +238,7 @@ Ensuite, activez le bouton d’activation/désactivation **Profile** et confirme
 
 ![ Schéma de profil d’audiences externes 5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2 Création du jeu de données d’adhésion aux audiences externes
+### Création du jeu de données d’adhésion aux audiences externes
 
 Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--aepUserLdap-- - External Audiences Membership` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
 
@@ -251,7 +252,7 @@ Vous verrez alors ceci. N’oubliez pas d’activer la bascule **Profile** .
 
 ![Métadonnées d’audiences externes DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 Création d’une connexion Source d’API HTTP
+### Création d’une connexion Source d’API HTTP
 
 
 Ensuite, vous devez configurer l’API HTTP Source Connector que vous utiliserez pour ingérer les métadonnées dans le jeu de données.
@@ -294,7 +295,7 @@ Vous verrez alors ceci.
 
 ![Métadonnées d’audiences externes http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 Ingestion des données d’adhésion d’audiences externes
+### Ingestion des données d’adhésion d’audiences externes
 
 Dans l’onglet de présentation de Source Connector, cliquez sur **...**, puis sur **Copier la payload du schéma**.
 
@@ -346,7 +347,7 @@ Actualisez l’écran du connecteur HTTP API Source où, au bout de quelques min
 
 ![Métadonnées d’audiences externes str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 Validation de l’ingestion des membres d’audiences externes
+### Validation de l’ingestion des membres d’audiences externes
 
 Une fois le traitement terminé, vous pouvez vérifier la disponibilité des données dans le jeu de données à l’aide de Query Service.
 
@@ -368,7 +369,7 @@ Dans les résultats de la requête, vous verrez les métadonnées de l’audienc
 
 ![Métadonnées d’audiences externes str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3 Création d’un segment
+## Création d’un segment
 
 Vous êtes maintenant prêt à agir sur les audiences externes.
 Dans Adobe Experience Platform, l’action est réalisée en créant des segments, en renseignant les audiences respectives et en partageant ces audiences vers les destinations.
@@ -396,7 +397,7 @@ Vous verrez alors ceci. Vous remarquerez également que le profil pour lequel vo
 
 Votre segment est maintenant prêt et peut être envoyé vers une destination pour activation.
 
-## 2.3.6.4 Visualisation du profil client
+## Visualiser votre profil client
 
 Vous pouvez désormais également visualiser la qualification du segment sur votre profil client. Accédez à **Profils**, utilisez l’espace de noms d’identité **Demo System - CRMID** et fournissez l’identité `--aepUserLdap---profile-test-01`, que vous avez utilisée dans le cadre de l’exercice 6.6.2.4, puis cliquez sur **Afficher**. Cliquez ensuite sur l’ **ID de profil** pour ouvrir le profil.
 

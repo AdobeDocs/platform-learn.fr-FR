@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Événements commerciaux
 description: Cette section explique comment utiliser la fonctionnalité d’événements professionnels pour réaliser un cas pratique "article en stock".
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 8%
 
 ---
@@ -44,7 +45,7 @@ Pour le schéma, sélectionnez **Demo System - Event Schema for JO Business Even
 
 ![Journey Optimizer](./images/evdes.png)
 
-Procédez de la façon suivante :
+Procédez comme suit :
 
 Cliquez sur l&#39;icône **crayon** dans le champ où il est indiqué **1 champ sélectionné**.
 
@@ -56,7 +57,7 @@ Sélectionnez tous les champs disponibles dans le schéma, puis cliquez sur **OK
 
 Pour la condition : vous devez spécifier les enregistrements de ce schéma qui déclencheront l’événement d’entreprise.
 
-Procédez de la façon suivante :
+Procédez comme suit :
 
 Cliquez sur l&#39;icône **crayon** dans le champ où il est indiqué **Ajouter une condition**.
 
@@ -98,14 +99,14 @@ Dans le menu de gauche, sous **Events**, recherchez votre ldap. Vous trouverez l
 
 ![Journey Optimizer](./images/bej12.png)
 
-Comme vous pouvez le constater, une activité **Lecture de segment** a été automatiquement ajoutée à la zone de travail. Cela est dû au fait que les événements professionnels envoient uniquement un déclencheur pour que le parcours lise un segment spécifique, qui récupère ensuite la liste des profils pour ce parcours.
+Comme vous pouvez le constater, une activité **Lecture d’audience** a été automatiquement ajoutée à la zone de travail. Cela est dû au fait que les événements métier n’envoient qu’un déclencheur pour que le parcours lise une audience spécifique, qui récupère ensuite la liste des profils pour ce parcours.
 
-Cliquez sur l’activité **Lecture de segment** .
-La configuration **Lecture de segment** exige que vous sélectionniez le segment que vous souhaitez avertir de l’événement commercial qui vient d’avoir lieu. Cliquez sur le champ **Sélectionner un segment** .
+Cliquez sur l’activité **Lecture d’audience** .
+La configuration **Lecture d’audience** exige que vous sélectionniez l’audience que vous souhaitez avertir de l’événement commercial qui vient d’avoir lieu. Cliquez sur le champ **Sélectionner une audience** .
 
 ![Journey Optimizer](./images/bej13.png)
 
-Dans la fenêtre contextuelle **Choisir un segment**, recherchez votre LDAP et sélectionnez le segment que vous avez créé dans [Module 2.3 - CDP en temps réel - Créer un segment et entreprendre l’action ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) nommée `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. par exemple : vangeluw - Intérêt pour PROTEUS FITNESS JACKSHIRT. Cliquez sur **Enregistrer**.
+Dans la fenêtre contextuelle **Choisir une audience**, recherchez votre LDAP et sélectionnez l’audience que vous avez créée dans [Module 2.3 - CDP en temps réel - Créer une audience et entreprendre l’action ](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) nommée `--aepUserLdap-- - Interest in Galaxy S24`. Cliquez sur **Enregistrer**.
 
 ![Journey Optimizer](./images/bej14.png)
 

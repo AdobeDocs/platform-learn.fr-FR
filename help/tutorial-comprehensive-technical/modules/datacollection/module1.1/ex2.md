@@ -4,7 +4,7 @@ description: Foundation - Configuration de la collecte de données Adobe Experie
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Pour ce flux de données...
 - Toutes les données d’événement d’expérience sont collectées par défaut dans le jeu de données **Demo System - Event Dataset for Website (Global v1.1)**
 - Toutes les données Profile seront collectées par défaut dans le jeu de données **Demo System - Profile Dataset for Website (Global v1.1)** (l’ingestion de données de profil en mode natif avec le SDK Web n’est actuellement pas encore prise en charge par le SDK Web)
 - Si vous souhaitez utiliser le service d’application **Offer decisioning** pour cette banque de données, vous devez cocher la case pour l’Offer decisioning. (Cela fera partie du [module 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
-- **La segmentation Edge** est activée par défaut, ce qui signifie que les segments admissibles seront évalués à la périphérie, lors de l’ingestion du trafic entrant.
+- **La segmentation Edge** est activée par défaut, ce qui signifie que les audiences admissibles seront évaluées à la périphérie, lors de l’ingestion du trafic entrant.
 - Si vous souhaitez utiliser les **destinations Personalization**, vous devez cocher la case correspondant aux destinations Personalization.
 - 
    - Si vous souhaitez utiliser les fonctionnalités de **Adobe Journey Optimizer** dans ce flux de données, vous devez cocher la case correspondant à Adobe Journey Optimizer.

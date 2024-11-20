@@ -1,19 +1,19 @@
 ---
-title: Foundation - Profil client en temps réel - Création d’un segment - interface utilisateur
-description: Foundation - Profil client en temps réel - Création d’un segment - interface utilisateur
+title: Foundation - Profil client en temps réel - Création d’une audience - interface utilisateur
+description: Foundation - Profil client en temps réel - Création d’une audience - interface utilisateur
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 Création d’un segment - IU
+# 2.1.4 Création d’une audience - IU
 
-Dans cet exercice, vous allez créer un segment à l’aide du créateur de segments de Adobe Experience Platform.
+Au cours de cet exercice, vous allez créer une audience en utilisant le créateur d’audiences Adobe Experience Platform.
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement d
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Dans le menu de gauche, accédez à **Audiences**. Sur cette page, vous pouvez voir un aperçu de tous les segments existants. Cliquez sur le bouton **+ Créer une audience** pour commencer à créer un segment.
+Dans le menu de gauche, accédez à **Audiences**. Sur cette page, vous pouvez voir un aperçu de toutes les audiences existantes. Cliquez sur le bouton **+ Créer une audience** pour commencer à créer une audience.
 
 ![Segmentation](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ Sélectionnez **Créer la règle** et cliquez sur **Créer**.
 
 ![Segmentation](./images/menusegbr.png)
 
-Une fois que vous êtes dans le nouveau créateur de segments, vous remarquez immédiatement l’option de menu **Attributs** et la référence **XDM Individual Profile**.
+Une fois que vous êtes dans le nouveau créateur d’audiences, vous remarquez immédiatement l’option de menu **Attributs** et la référence **XDM Individual Profile**.
 
 ![Segmentation](./images/segmentationui.png)
 

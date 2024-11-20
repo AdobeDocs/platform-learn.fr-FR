@@ -4,7 +4,7 @@ description: Point de départ des ingénieurs de données, des analystes de donn
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 2%
@@ -84,7 +84,7 @@ Vous trouverez de nombreuses vidéos intéressantes de nos événements de l’a
 - **Description :** Dans ce module de base, vous allez ingérer des données du site web dans Platform.
 - **Investissement dans le temps :** 120 minutes
 
-[1.3 Federated Audience Composition](./modules/datacollection/module1.3/fac.md)
+[1.3 Composition du public fédéré](./modules/datacollection/module1.3/fac.md)
 
 - **Audience :** Analyste de données, ingénieur de données, architecte de données
 - **Conditions préalables :** accès à Adobe Experience Platform
