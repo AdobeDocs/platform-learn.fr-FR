@@ -4,9 +4,9 @@ description: Point de départ des ingénieurs de données, des analystes de donn
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1511'
 ht-degree: 2%
 
 ---
@@ -42,22 +42,22 @@ Après avoir terminé les exercices de ce tutoriel, vous serez en mesure de :
 - Diffusion de données en continu dans Adobe Experience Platform en temps réel à l’aide de la collecte de données Adobe Experience Platform
 - Ingestion par lots de données dans Adobe Experience Platform à l’aide d’un workflow ou d’une application d’extraction, de transformation et de chargement (ETL)
 - Visualisation et utilisation du profil client en temps réel dans Adobe Experience Platform
-- Créer des segments
+- Créer des audiences
 - Utilisation de plusieurs API Adobe Experience Platform
 - Utiliser SQL pour interroger vos données dans Adobe Experience Platform
 - Configuration et exécution de parcours en temps réel basés sur un déclencheur
-- Utiliser la plateforme de données clients en temps réel pour agir en activant un segment vers différentes destinations
+- Utiliser la plateforme de données clients en temps réel pour agir en activant une audience vers différentes destinations
 - Utilisez Customer Journey Analytics pour créer des rapports sur les données clients omnicanal provenant de diverses sources, y compris Google BigQuery
 
 ## Conditions préalables
 
 - Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Accès à la collecte de données Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accès au système de démonstration : [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Accès au système de démonstration : [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Vidéos
 
-Vous trouverez de nombreuses vidéos intéressantes de nos événements de l’académie des technologies, de Bootcamps et plus encore sur notre [ canal YouTube de la communauté Experience Makers](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+Vous trouverez de nombreuses vidéos intéressantes de nos webinaires de l’académie de technologie, de bootcamps et plus encore sur notre [ canal YouTube de la communauté Experience Makers](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Contenu
 
@@ -109,19 +109,19 @@ Vous trouverez de nombreuses vidéos intéressantes de nos événements de l’a
 - **Description :** Dans ce module, vous apprendrez à configurer, configurer et utiliser les services intelligents Adobe Experience Platform.
 - **Investissement dans le temps :** 60 minutes
 
-[2.3 Real-Time CDP - Création d’un segment et action](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP - Création d’une audience et action](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **Audience :** Architecte de données, ingénieur d’orchestration, marketeur
 - **Conditions préalables :** accès à Adobe Experience Platform, à la plateforme de données clients en temps réel, à Adobe Audience Manager, à Adobe Target, à AWS S3
-- **Description :** Dans ce module, vous allez configurer un segment, l’activer pour la segmentation par flux et activer le segment vers plusieurs destinations, y compris Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target et des destinations S3 telles que Salesforce Marketing Cloud.
+- **Description :** Dans ce module, vous allez configurer une audience et activer l’audience vers plusieurs destinations, y compris Google DV360, Adobe Target et AWS S3.
 - **Investissement dans le temps :** 90 minutes
 
-[2.4 Real-Time CDP : activation de segments vers Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP : Audience Activation à Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **Audience :** Ingénieur de données, architecte de données, analyste de données
 - **Conditions préalables :** accès à Adobe Experience Platform, à la plateforme de données clients en temps réel et à Microsoft Azure
-- **Description :** Dans ce module, vous allez configurer une destination Microsoft Azure EventHub en tant que destination en temps réel pour la plateforme de données clients en temps réel de Adobe Experience Platform. Vous allez également configurer et déployer une fonction Azure qui sera déclenchée en temps réel chaque fois que Adobe Experience Platform envoie une charge utile de segment à votre destination Azure EventHub. La fonction Azure que vous allez déclencher affichera le mécanisme des fonctionnalités d’activation de la plateforme de données clients en temps réel de Adobe Experience Platform.
-Dans le cadre de ce module, vous comprendrez également ce qui déclenche la diffusion d’une charge utile en temps réel sur une destination spécifiée par la plateforme CDP en temps réel. Nous discuterons également de l’état d’une qualification de segment et de sa relation avec l’activation.
+- **Description :** Dans ce module, vous allez configurer une destination Microsoft Azure EventHub en tant que destination en temps réel pour la plateforme de données clients en temps réel de Adobe Experience Platform. Vous allez également configurer et déployer une fonction Azure qui sera déclenchée en temps réel chaque fois que Adobe Experience Platform envoie une charge utile d’audience à votre destination Azure EventHub. La fonction Azure que vous allez déclencher affichera le mécanisme des fonctionnalités d’activation de la plateforme de données clients en temps réel de Adobe Experience Platform.
+Dans le cadre de ce module, vous comprendrez également ce qui déclenche la diffusion d’une charge utile en temps réel sur une destination spécifiée par la plateforme CDP en temps réel. Nous discuterons également de l’état d’une qualification d’audience et de sa relation avec l’activation.
 - **Investissement dans le temps :** 90 minutes
 
 [2.5 Connexions Real-Time CDP : Transfert d’événement](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
