@@ -4,16 +4,14 @@ description: Dans ce module, vous utiliserez les jeux de données, les schémas 
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Connexions Real-Time CDP : Transfert d’événement
-
-**Auteur : [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clément Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 Dans ce module, vous utiliserez les jeux de données, schémas et propriété client de collecte de données Adobe Experience Platform configurés précédemment pour collecter des données, puis vous transmettrez ces données côté serveur à un point de terminaison de votre choix.
 
@@ -23,10 +21,6 @@ Dans ce module, vous allez :
 - Installation et utilisation de l’extension Adobe Cloud Connector dans la collecte de données Adobe Experience Platform
 - Création d’un point d’entrée de fonction Google et diffusion de données vers ce point
 - Création d’un point de terminaison AWS et diffusion de données vers ce point
-
-Regardez cette vidéo pour comprendre la valeur, le parcours client et le processus de configuration :
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Objectifs d’apprentissage
 

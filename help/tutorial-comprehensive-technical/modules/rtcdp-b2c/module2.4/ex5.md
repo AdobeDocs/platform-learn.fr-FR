@@ -4,7 +4,7 @@ description: Audience Activation à Microsoft Azure Event Hub - Activation d’A
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 ## Ajout d’audience à la destination Azure Event Hub
 
-Dans cet exercice, vous allez ajouter votre audience `--aepUserLdap-- - Interest in Equipment` à votre destination `--aepUserLdap---aep-enablement` Azure Event Hub.
+Dans cet exercice, vous allez ajouter votre audience `--aepUserLdap-- - Interest in Plans` à votre destination `--aepUserLdap---aep-enablement` Azure Event Hub.
 
 Connectez-vous à Adobe Experience Platform en accédant à cette URL : [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

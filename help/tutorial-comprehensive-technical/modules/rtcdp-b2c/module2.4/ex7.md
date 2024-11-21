@@ -3,7 +3,8 @@ title: Audience Activation à Microsoft Azure Event Hub - Action
 description: Audience Activation à Microsoft Azure Event Hub - Action
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ Pour vérifier, ouvrez le panneau Visionneuse de profils . Vous devez maintenant
 
 Revenez à Visual Studio Code et regardez votre onglet **TERMINAL** , vous devriez voir une liste d’audiences pour votre **ECID** spécifique. Cette payload d’activation est diffusée vers votre centre d’événements dès que vous êtes admissible pour l’audience `--aepUserLdap-- - Interest in Plans`.
 
+![6-06-vsc-activation-realized.png](./images/cs3.png)
+
 Lorsque vous regardez de plus près la charge utile de l’audience, vous pouvez voir que `--aepUserLdap-- - Interest in Plans` est en état **réalisé**.
 
-Un état d’audience de **réalisé** signifie que votre profil fait partie de l’audience, tandis que l’état **exited** signifie que notre profil a été supprimé de l’audience.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-realized.png](./images/cs3.png)
+Un état d’audience de **réalisé** signifie que votre profil fait partie de l’audience, tandis que l’état **exited** signifie que notre profil a été supprimé de l’audience.
 
 Étape suivante : [Résumé et avantages](./summary.md)
 

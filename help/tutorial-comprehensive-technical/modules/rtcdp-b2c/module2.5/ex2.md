@@ -3,9 +3,10 @@ title: Collecte de données Adobe Experience Platform et transfert côté serveu
 description: Mettez à jour votre flux de données pour rendre les données disponibles pour la propriété du serveur de collecte de données Adobe Experience Platform.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1 Mise à jour de la matrice de données
 
-Dans l&#39; [exercice 0.2](./../../gettingstarted/gettingstarted/ex2.md), vous avez créé votre propre **[!UICONTROL Datastream]**. Vous avez ensuite utilisé le nom `--aepUserLdap-- - Demo System Datastream`.
+Dans [Prise en main](./../../gettingstarted/gettingstarted/ex2.md), vous avez créé votre propre **[!UICONTROL Datastream]**. Vous avez ensuite utilisé le nom `--aepUserLdap-- - Demo System Datastream`.
 
-Dans cet exercice, vous devez configurer cet **[!UICONTROL Datastream]** pour qu’il fonctionne avec votre **[!DNL Data Collection Server property]**.
+Dans cet exercice, vous devez configurer cet **[!UICONTROL entrepôt de données]** pour qu’il fonctionne avec votre **propriété du serveur de collecte de données**.
 
 Pour ce faire, accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Vous verrez alors ceci. Dans le menu de gauche, cliquez sur **[!UICONTROL Datastreams]**.
 
