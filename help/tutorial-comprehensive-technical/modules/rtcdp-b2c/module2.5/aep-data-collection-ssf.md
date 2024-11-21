@@ -4,9 +4,9 @@ description: Dans ce module, vous utiliserez les jeux de données, les schémas 
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ Au cours de cet exercice, vous allez mettre à jour votre flux de données exist
 
 Dans cet exercice, vous allez créer et configurer un webhook personnalisé. Vous allez commencer à transférer les données collectées par le SDK Web vers ce webhook personnalisé.
 
-[2.5.4 Création et configuration d’une fonction cloud Google](./ex4.md)
+[2.5.4 Transfert d’événements vers le sous-site/public GCP](./ex4.md)
 
 Au cours de cet exercice, vous allez créer et configurer une fonction cloud Google et vous allez commencer à transférer les données collectées par le SDK Web vers Google.
 
-[2.5.5 Transfert d’événements vers l’écosystème AWS](./ex5.md)
+[2.5.5 Transfert d’événements vers AWS Kinesis et AWS S3](./ex5.md)
 
-Dans cet exercice, vous allez configurer votre environnement AWS à l’aide de la passerelle API AWS, d’AWS Kinesis, d’AWS Firehose et d’AWS S3, après quoi vous allez commencer à transférer les données d’événement collectées par le SDK Web.
+Dans cet exercice, vous allez configurer votre environnement AWS à l’aide d’AWS IAM, d’AWS Kinesis, d’AWS Firehose et d’AWS S3, après quoi vous allez commencer à transférer les données d’événement collectées par le SDK Web.
 
 [Résumé et avantages](./summary.md)
 

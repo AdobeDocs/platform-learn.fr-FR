@@ -5,7 +5,7 @@ user-guide-description: Tutoriel pratique couvrant de nombreux aspects de Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
+source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -92,8 +92,8 @@ ht-degree: 4%
       + [2.5.1 Création d’une propriété Transfert d’événement de collecte de données Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex1.md)
       + [2.5.2 Mise à jour de la matrice de données pour rendre les données disponibles pour la propriété du serveur de collecte de données Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
       + [2.5.3 Création et configuration d’un webhook personnalisé](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
-      + [2.5.4 Création et configuration d’une fonction cloud Google](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
-      + [2.5.5 Transfert d’événements vers l’écosystème AWS](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
+      + [2.5.4 Transfert d’événements vers le sous-site/public GCP](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
+      + [2.5.5 Transfert d’événements vers AWS Kinesis et AWS S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
    + 2.6 Diffusion de données en continu d’Apache Kafka vers Real-Time CDP {#module26}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)

@@ -3,215 +3,89 @@ title: Collecte de données et transfert côté serveur en temps réel - Créati
 description: Création et configuration d’une fonction Google Cloud
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 0%
+source-wordcount: '1184'
+ht-degree: 1%
 
 ---
 
-# 2.5.4 Création et configuration d’une fonction cloud Google
+# 2.5.4 Transfert d’événements vers le sous-site/public GCP
 
-## 2.5.4.1 Création de la fonction Cloud Google
+>[!NOTE]
+>
+>Pour cet exercice, vous devez accéder à un environnement Google Cloud Platform. Si vous n’avez pas encore accès à GCP, créez un compte à l’aide de votre adresse électronique personnelle.
 
-Accédez à [https://console.cloud.google.com/](https://console.cloud.google.com/). Accédez à **Cloud Functions**.
+## Création de la rubrique Pub/sous-rubrique Google Cloud
+
+Accédez à [https://console.cloud.google.com/](https://console.cloud.google.com/). Dans la barre de recherche, saisissez `pub/sub`. Cliquez sur le résultat de la recherche **Pub/Sub - Global real-time messaging**.
 
 ![GCP](./images/gcp1.png)
 
-Vous verrez alors ceci. Cliquez sur **CREATE FUNCTION**.
+Vous verrez alors ceci. Cliquez sur **CRÉER LA RUBRIQUE**.
 
 ![GCP](./images/gcp2.png)
 
-Vous verrez alors ceci.
+Vous verrez alors ceci. Pour votre ID de rubrique, utilisez `--aepUserLdap---event-forwarding`. Cliquez sur **Créer**.
 
 ![GCP](./images/gcp6.png)
 
-Effectuez les choix suivants :
-
-- **Nom de fonction** : `--aepUserLdap---event-forwarding`
-- **Région** : sélectionnez une région
-- **Type de déclencheur** : sélectionnez **HTTP**
-- **Authentification** : sélectionnez **Autoriser les appels non authentifiés**
-
-Vous devriez maintenant avoir ceci. Cliquez sur **SAVE**.
+Votre rubrique est maintenant créée. Cliquez sur l’ **ID d’abonnement** de la rubrique.
 
 ![GCP](./images/gcp7.png)
 
-Cliquez sur **NEXT**.
+Vous verrez alors ceci. Copiez le **nom de la rubrique** dans le presse-papiers et stockez-le, comme vous en aurez besoin dans les exercices suivants.
 
 ![GCP](./images/gcp8.png)
 
-Vous verrez alors :
+Accédez à Transfert d’événement de collecte de données Adobe Experience Platform maintenant pour mettre à jour la propriété Transfert d’événement afin de commencer le transfert des événements vers Pub/Sub.
 
-![GCP](./images/gcp9.png)
 
-Effectuez les choix suivants :
+## Mettez à jour la propriété Event Forwarting : Secrets
 
-- **Runtime** : sélectionnez **Node.js 16** (ou plus récent)
-- **Point d’entrée** : saisissez **helloAEP**
+**Secrets** dans les propriétés de transfert d’événement sont utilisées pour stocker les informations d’identification qui seront utilisées pour s’authentifier contre les API externes. Dans cet exemple, vous devez configurer un secret pour stocker votre jeton OAuth Google Cloud Platform, qui sera utilisé pour l’authentification lors de l’utilisation de Pub/Sub pour diffuser des données vers GCP.
 
-Cliquez sur **ENABLE API** pour activer l’ **API Cloud Build**. Vous verrez alors une nouvelle fenêtre. Dans cette nouvelle fenêtre, cliquez de nouveau sur **ENABLE**.
+Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) et à **Secrets**. Cliquez sur **Créer un nouveau secret**.
 
-![GCP](./images/gcp10.png)
+![Adobe Experience Platform Data Collection SSF](./images/secret1.png)
 
-Vous verrez alors ceci. Cliquez sur **Activer**.
+Vous verrez alors ceci. Suivez les instructions suivantes :
 
-![GCP](./images/gcp11.png)
+- Nom : use `--aepUserLdap---gcp-secret`
+- Environnement cible : sélectionnez **Développement**
+- Type : **Google OAuth 2**
+- Cochez la case pour **Pub/Sub**
 
-Une fois que l’ **API Cloud Build** a été activée, vous verrez ceci.
+Cliquez sur **Créer un secret**.
 
-![GCP](./images/gcp12.png)
+![Adobe Experience Platform Data Collection SSF](./images/secret2.png)
 
-Revenez à la **fonction cloud**.
-Dans votre éditeur en ligne de fonction Cloud, assurez-vous que vous y avez le code suivant :
+Après avoir cliqué sur **Créer un secret**, une fenêtre contextuelle s’affiche pour configurer l’authentification entre le secret de la propriété Transfert d’événement et Google. Cliquez sur **Créer et autoriser le secret `--aepUserLdap---gcp-secret` avec Google**.
 
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
+![Adobe Experience Platform Data Collection SSF](./images/secret3.png)
 
-Cliquez ensuite sur **DEPLOY**.
+Cliquez sur pour sélectionner votre compte Google.
 
-![GCP](./images/gcp13.png)
+![Adobe Experience Platform Data Collection SSF](./images/secret4.png)
 
-Vous verrez alors ceci. Votre fonction cloud est en cours de création. Cela peut prendre quelques minutes.
+Cliquez sur **Continuer**.
 
-![GCP](./images/gcp14.png)
+>[!NOTE]
+>
+>Votre message contextuel peut varier. Veuillez autoriser/autoriser l’accès demandé pour poursuivre l’exercice.
 
-Une fois votre fonction créée et en cours d’exécution, vous verrez ceci. Cliquez sur le nom de la fonction pour l’ouvrir.
+![Adobe Experience Platform Data Collection SSF](./images/secret5.png)
 
-![GCP](./images/gcp15.png)
+Une fois l’authentification réussie, vous verrez ceci.
 
-Vous verrez alors ceci. Accédez à **TRIGGER**. Vous verrez ensuite l’ **URL de déclenchement** qui est ce que vous utiliserez pour définir le point de terminaison dans Launch côté serveur.
+![Adobe Experience Platform Data Collection SSF](./images/secret6.png)
 
-![GCP](./images/gcp16.png)
+Votre secret est maintenant correctement configuré et peut être utilisé dans un élément de données.
 
-Copiez l&#39;URL du déclencheur, qui ressemble à ceci : **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**.
+## Mettez à jour la propriété Event Forwarting : élément de données
 
-Dans les étapes suivantes, vous allez configurer le serveur de collecte de données Adobe Experience Platform pour diffuser des informations spécifiques sur les **pages vues** vers votre fonction cloud Google. Au lieu de transférer uniquement la charge utile complète en l’état, vous enverrez uniquement des éléments tels que **ECID**, **horodatage** et **Nom de page** à votre fonction cloud Google.
-
-Voici un exemple de payload que vous devez analyser pour filtrer les variables mentionnées ci-dessus :
-
-```json
-{
-  "events": [
-    {
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC",
-            "name": "vangeluw-OCUC",
-            "viewName": "vangeluw-OCUC",
-            "pageViews": {
-              "value": 1
-            }
-          },
-          "webReferrer": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/equipment"
-          }
-        },
-        "device": {
-          "screenHeight": 1080,
-          "screenWidth": 1920,
-          "screenOrientation": "landscape"
-        },
-        "environment": {
-          "type": "browser",
-          "browserDetails": {
-            "viewportWidth": 1920,
-            "viewportHeight": 451
-          }
-        },
-        "placeContext": {
-          "localTime": "2022-02-23T06:51:07.140+01:00",
-          "localTimezoneOffset": -60
-        },
-        "timestamp": "2022-02-23T05:51:07.140Z",
-        "implementationDetails": {
-          "name": "https://ns.adobe.com/experience/alloy/reactor",
-          "version": "2.8.0+2.9.0",
-          "environment": "browser"
-        },
-        "_experienceplatform": {
-          "identification": {
-            "core": {
-              "ecid": "08346969856929444850590365495949561249"
-            }
-          },
-          "demoEnvironment": {
-            "brandName": "vangeluw-OCUC"
-          },
-          "interactionDetails": {
-            "core": {
-              "channel": "web"
-            }
-          }
-        }
-      },
-      "query": {
-        "personalization": {
-          "schemas": [
-            "https://ns.adobe.com/personalization/html-content-item",
-            "https://ns.adobe.com/personalization/json-content-item",
-            "https://ns.adobe.com/personalization/redirect-item",
-            "https://ns.adobe.com/personalization/dom-action"
-          ],
-          "decisionScopes": [
-            "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0YzA1MjM4MmUxYjY1MDUiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRiZjA5ZGM0MTkwZWJiYSJ9",
-            "__view__"
-          ]
-        }
-      }
-    }
-  ],
-  "query": {
-    "identity": {
-      "fetch": [
-        "ECID"
-      ]
-    }
-  },
-  "meta": {
-    "state": {
-      "domain": "adobedemo.com",
-      "cookiesEnabled": true,
-      "entries": [
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_identity",
-          "value": "CiYwODM0Njk2OTg1NjkyOTQ0NDg1MDU5MDM2NTQ5NTk0OTU2MTI0OVIPCPn66KfyLxgBKgRJUkwx8AH5-uin8i8="
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent_check",
-          "value": "1"
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent",
-          "value": "general=in"
-        }
-      ]
-    }
-  }
-}
-```
-
-Il s’agit des champs qui contiennent les informations qui doivent être analysées :
-
-- ECID : **events.xdm._experienceplatform.identification.core.ecid**
-- timestamp : **timestamp**
-- Nom de page : **events.xdm.web.webPageDetails.name**
-
-Allons maintenant sur le serveur de collecte de données Adobe Experience Platform pour configurer les éléments de données afin de rendre cela possible.
-
-## 2.5.4.2 Mise à jour de la propriété Event Forwarting : Data Elements
+Pour utiliser votre secret dans votre propriété Event Forwarding, vous devez créer un élément de données qui stockera la valeur du secret.
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) et à **Transfert d’événement**. Recherchez la propriété Event Forwarding et cliquez dessus pour l’ouvrir.
 
@@ -221,70 +95,44 @@ Dans le menu de gauche, accédez à **Data Elements**. Cliquez sur **Ajouter un 
 
 ![Adobe Experience Platform Data Collection SSF](./images/de1gcp.png)
 
-Un nouvel élément de données à configurer s’affiche.
+Configurez votre élément de données comme suit :
 
-![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
+- Nom : **Secret GCP**
+- Extension : **Core**
+- Type d’élément de données : **Secret**
+- Secret de développement : sélectionnez le secret que vous avez créé, nommé `--aepUserLdap---gcp-secret`
 
-Effectuez la sélection suivante :
+Cliquez sur **Enregistrer**.
 
-- En tant que **Nom**, saisissez **customerECID**.
-- En tant que **Extension**, sélectionnez **Core**.
-- En tant que **Type d’élément de données**, sélectionnez **Chemin**.
-- En tant que **Chemin**, saisissez `arc.event.xdm.--aepTenantId--.identification.core.ecid`. En entrant ce chemin, vous allez filtrer le champ **ecid** de la payload d’événement envoyée par le site web ou l’application mobile dans Adobe Edge.
+![Adobe Experience Platform Data Collection SSF](./images/secret7.png)
 
->[!NOTE]
->
->Dans les chemins ci-dessus et au-dessous, une référence est faite à **arc**. **arc** signifie Adobe Resource Context et **arc** signifie toujours l’objet disponible le plus élevé disponible dans le contexte côté serveur. Des enrichissements et des transformations peuvent être ajoutés à cet objet **arc** à l’aide des fonctions du serveur de collecte de données Adobe Experience Platform.
->
->Dans les chemins ci-dessus et ci-dessous, une référence est faite à **event**. **event** correspond à un événement unique et le serveur de collecte de données Adobe Experience Platform évalue toujours chaque événement individuellement. Parfois, vous pouvez voir une référence à **events** dans la payload envoyée par le SDK Web côté client, mais dans le serveur de collecte de données Adobe Experience Platform, chaque événement est évalué individuellement.
+## Mettez à jour la propriété Event Forwarting : Extension
 
-Vous allez maintenant avoir ceci. Cliquez sur **Enregistrer**.
+Une fois votre secret et votre élément de données configurés, vous pouvez configurer l’extension pour Google Cloud Platform dans votre propriété Event Forwarding.
 
-![Adobe Experience Platform Data Collection SSF](./images/gcdpde1.png)
+Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), accédez à **Event Forwarding** et ouvrez votre propriété Event Forwarding.
 
-Cliquez sur **Ajouter un élément de données**.
+![Adobe Experience Platform Data Collection SSF](./images/prop1.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/addde.png)
+Ensuite, accédez à **Extensions**, à **Catalogue**. Cliquez sur l’extension **Google Cloud Platform** et cliquez sur **Installer**.
 
-Un nouvel élément de données à configurer s’affiche.
+![Adobe Experience Platform Data Collection SSF](./images/gext2.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
+Vous verrez alors ceci. Cliquez sur l’icône Élément de données .
 
-Effectuez la sélection suivante :
+![Adobe Experience Platform Data Collection SSF](./images/gext3.png)
 
-- En tant que **Name**, saisissez **eventTimestamp**.
-- En tant que **Extension**, sélectionnez **Core**.
-- En tant que **Type d’élément de données**, sélectionnez **Chemin**.
-- En tant que **Chemin**, saisissez **arc.event.xdm.timestamp**. En entrant ce chemin, vous allez filtrer le champ **horodatage** de la payload d’événement envoyée par le site web ou l’application mobile dans Adobe Edge.
+Sélectionnez l’élément de données que vous avez créé lors de l’exercice précédent, nommé **Secret GCP**. Cliquez sur **Sélectionner**.
 
-Vous allez maintenant avoir ceci. Cliquez sur **Enregistrer**.
+![Adobe Experience Platform Data Collection SSF](./images/gext4.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/gcdpde2.png)
+Vous verrez alors ceci. Cliquez sur **Enregistrer**.
 
-Cliquez sur **Ajouter un élément de données**.
+![Adobe Experience Platform Data Collection SSF](./images/gext5.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/addde.png)
+## Mettre à jour la propriété Event Forwarting : Mettre à jour une règle
 
-Un nouvel élément de données à configurer s’affiche.
-
-![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
-
-Effectuez la sélection suivante :
-
-- En tant que **Nom**, saisissez **pageName**.
-- En tant que **Extension**, sélectionnez **Core**.
-- En tant que **Type d’élément de données**, sélectionnez **Chemin**.
-- En tant que **Chemin**, saisissez **arc.event.xdm.web.webPageDetails.name**. En entrant ce chemin, vous allez filtrer le champ **name** de la payload d’événement envoyée par le site web ou l’application mobile dans Adobe Edge.
-
-Vous allez maintenant avoir ceci. Cliquez sur **Enregistrer**.
-
-![Adobe Experience Platform Data Collection SSF](./images/gcdpde3.png)
-
-Ces éléments de données sont maintenant créés :
-
-![Adobe Experience Platform Data Collection SSF](./images/de3gcp.png)
-
-## 2.5.4.3 Mise à jour de la propriété Event Forwarting : mise à jour d’une règle
+Maintenant que votre extension Google Cloud Platform est configurée, vous pouvez définir une règle pour commencer à transférer les données d’événement vers votre rubrique Pub/Sous-rubrique. Pour ce faire, vous devez mettre à jour la règle **Toutes les pages** que vous avez créée dans l’un des exercices précédents.
 
 Dans le menu de gauche, accédez à **Règles**. Dans l’exercice précédent, vous avez créé la règle **Toutes les pages**. Cliquez sur cette règle pour l’ouvrir.
 
@@ -294,49 +142,44 @@ Vous ferez alors ceci. Cliquez sur l’icône **+** sous **Actions** pour ajoute
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl2gcp.png)
 
-Vous verrez alors ceci.
+Vous verrez alors ceci. Effectuez la sélection suivante :
 
-![Adobe Experience Platform Data Collection SSF](./images/rl4gcp.png)
+- Sélectionnez l’ **extension** : **Google Cloud Platform**.
+- Sélectionnez le **Type d’action** : **Envoyer des données au Cloud Pub/Sub**.
 
-Effectuez la sélection suivante :
-
-- Sélectionnez l’ **extension** : **Adobe Cloud Connector**.
-- Sélectionnez le **Type d’action** : **Lancer l’appel de récupération**.
-
-Cela devrait vous donner ce **Nom** : **Connecteur Adobe Cloud - Lancer l’appel de récupération**. Vous devriez maintenant voir ceci :
+Cela devrait vous donner ce **Nom** : **Plateforme cloud Google - Envoyer des données au Cloud Pub/Sub**. Vous devriez maintenant voir ceci :
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl5gcp.png)
 
-Configurez ensuite les éléments suivants :
+Vous devez maintenant configurer la rubrique Pub/Sous-rubrique que vous avez créée précédemment.
 
-- Modifiez le protocole de requête de GET en **POST**
-- Saisissez l’URL de la fonction cloud Google que vous avez créée lors de l’une des étapes précédentes qui ressemble à ceci : **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**
+Vous pouvez trouver le **nom de la rubrique** ici, le copier.
 
-Vous devriez maintenant avoir ceci. Ensuite, accédez à **Body**.
+![GCP](./images/gcp8.png)
+
+Collez le **nom de la rubrique** dans votre configuration de règle. Cliquez ensuite sur l’icône de l’élément de données en regard du champ **Données (obligatoire)** .
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl6gcp.png)
 
-Vous verrez alors ceci. Cliquez sur le bouton radio pour **JSON**.
+Sélectionnez **XDM Event** et cliquez sur **Select**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl7gcp.png)
 
-Configurez **Body** comme suit :
-
-| CLÉ | VALEUR |
-|--- |--- |
-| customerECID | {{customerECID}} |
-| pageName | {{pageName}} |
-| eventTimestamp | {{eventTimestamp}} |
-
 Vous verrez alors ceci. Cliquez sur **Conserver les modifications**.
+
+![Adobe Experience Platform Data Collection SSF](./images/rl8gcp.png)
+
+Cliquez sur **Enregistrer**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl9gcp.png)
 
-Vous verrez alors ceci. Cliquez sur **Enregistrer**.
+Vous verrez alors ceci.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl10gcp.png)
 
-Vous avez maintenant mis à jour votre règle existante dans une propriété de serveur de collecte de données Adobe Experience Platform. Accédez à **Flux de publication** pour publier vos modifications. Ouvrez votre bibliothèque de développement **Main** en cliquant sur **Modifier** comme indiqué.
+## Publier vos modifications
+
+Votre configuration est maintenant terminée. Accédez à **Flux de publication** pour publier vos modifications. Ouvrez votre bibliothèque de développement **Main** en cliquant sur **Modifier** comme indiqué.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl12gcp.png)
 
@@ -348,19 +191,11 @@ Au bout de quelques minutes, vous verrez que le déploiement est terminé et pr�
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl14.png)
 
-## 2.5.3.4 Test de votre configuration
+## Tester votre configuration
 
-Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **...** dans le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Vous pouvez maintenant suivre le flux ci-dessous pour accéder au site web. Cliquez sur **Intégrations**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-Sur la page **Intégrations**, vous devez sélectionner la propriété de collecte de données qui a été créée dans l’exercice 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
@@ -378,65 +213,19 @@ Sélectionnez le type de compte et procédez à la connexion.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque démonstration, vous devez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
+Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque exercice, vous devrez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-Lorsque vous ouvrez la vue Développeur de votre navigateur, vous pouvez examiner les demandes réseau comme indiqué ci-dessous. Lorsque vous utilisez le filtre **interagit**, vous verrez les requêtes réseau envoyées par le client de collecte de données Adobe Experience Platform à Adobe Edge.
-
-![Configuration de la collecte de données Adobe Experience Platform](./images/hook1.png)
-
-Basculez votre vue vers votre fonction de cloud Google et accédez à **LOGS**. Vous devriez maintenant avoir une vue similaire à celle-ci, avec plusieurs entrées de journal affichées. Chaque fois que vous voyez **L’exécution de fonction démarrée**, cela signifie que le trafic entrant a été reçu dans votre fonction cloud Google.
+Basculez votre vue vers votre sous-page/service cloud Google et accédez à **MESSAGES**. Cliquez sur **PULL** et, au bout de quelques secondes, certains messages s’affichent dans la liste. Cliquez sur un message pour visualiser son contenu.
 
 ![Configuration de la collecte de données Adobe Experience Platform](./images/hook3gcp.png)
 
-Mettons un peu à jour votre fonction pour qu’elle fonctionne avec les données entrantes et affiche les informations reçues du serveur de collecte de données Adobe Experience Platform. Accédez à **SOURCE** et cliquez sur **EDIT**.
+Vous pouvez désormais voir la charge utile XDM de votre événement dans Google Pub/Sub. Vous avez maintenant envoyé avec succès des données collectées par la collecte de données Adobe Experience Platform, en temps réel, à un point de terminaison Pub/Sub de Google Cloud. À partir de là, ces données peuvent être utilisées par n’importe quelle application Google Cloud Platform, comme BigQuery pour le stockage et la création de rapports, ou pour des cas pratiques d’apprentissage automatique.
 
 ![Configuration de la collecte de données Adobe Experience Platform](./images/hook4gcp.png)
 
-Dans l’écran suivant, cliquez sur **NEXT**.
-
-![Configuration de la collecte de données Adobe Experience Platform](./images/gcf1.png)
-
-Mettez à jour votre code comme suit :
-
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  console.log('>>>>> Function has started. The following information was received from Event Forwarding:');
-  console.log(req.body);
-
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
-
-Vous aurez alors ceci. Cliquez sur **DEPLOY**.
-
-![Configuration de la collecte de données Adobe Experience Platform](./images/gcf2.png)
-
-Au bout de quelques minutes, votre fonction sera de nouveau déployée. Cliquez sur le nom de votre fonction pour l’ouvrir.
-
-![Configuration de la collecte de données Adobe Experience Platform](./images/gcf3.png)
-
-Sur votre site web de démonstration, accédez à un produit, par exemple **DEIRDRE RELAXED-FIT CAPRI**.
-
-![Configuration de la collecte de données Adobe Experience Platform](./images/gcf3a.png)
-
-Basculez votre vue vers votre fonction de cloud Google et accédez à **LOGS**. Vous devriez maintenant avoir une vue similaire à celle-ci, avec plusieurs entrées de journal affichées.
-
-Pour chaque page vue de votre site web de démonstration, une nouvelle entrée de journal s’affiche dans les journaux de votre fonction Cloud Google, qui affiche les informations reçues.
-
-![Configuration de la collecte de données Adobe Experience Platform](./images/gcf4.png)
-
-Vous avez maintenant envoyé avec succès des données collectées par la collecte de données Adobe Experience Platform, en temps réel, à un point de terminaison de fonction Google Cloud. À partir de là, ces données peuvent être utilisées par n’importe quelle application Google Cloud Platform, comme BigQuery pour le stockage et la création de rapports, ou pour des cas pratiques d’apprentissage automatique.
-
-Étape suivante : [2.5.5 Événements de transfert vers l’écosystème AWS](./ex5.md)
+Étape suivante : [2.5.5 Forward events to AWS Kinesis &amp; AWS S3](./ex5.md)
 
 [Revenir au module 2.5](./aep-data-collection-ssf.md)
 

@@ -4,7 +4,7 @@ description: Création et configuration d’un webhook personnalisé
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Si vous sélectionnez la charge utile brute, accédez à [https://jsonformatter.
 
 ![Configuration de la collecte de données Adobe Experience Platform](./images/hook2.png)
 
-Basculez votre vue vers votre webhook personnalisé [https://webhook.site/](https://webhook.site/) que vous avez utilisé lors de l’une des étapes précédentes. Vous devriez maintenant avoir une vue similaire à celle-ci, avec les requêtes réseau affichées dans le menu de gauche. Vous voyez la charge utile **xdm** qui a été filtrée hors de la requête réseau qui a été affichée ci-dessus.
+Basculez votre vue vers votre webhook personnalisé [https://pipedream.com/requestbin](https://pipedream.com/requestbin) que vous avez utilisé lors de l’une des étapes précédentes. Vous devriez maintenant avoir une vue similaire à celle-ci, avec les requêtes réseau affichées dans le menu de gauche. Vous voyez la charge utile **xdm** qui a été filtrée hors de la requête réseau qui a été affichée ci-dessus.
 
 ![Configuration de la collecte de données Adobe Experience Platform](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Si vous parcourez désormais le site web, d’autres requêtes réseau seront di
 
 ![Configuration de la collecte de données Adobe Experience Platform](./images/hook5.png)
 
-Vous avez maintenant configuré le transfert côté serveur des événements des payloads Web SDK/XDM vers un webhook personnalisé externe. Dans les exercices suivants, vous allez configurer une approche similaire, et vous enverrez ces mêmes données vers les environnements Google et AWS.
+Vous avez maintenant configuré le transfert côté serveur des événements des payloads Web SDK/XDM vers un webhook personnalisé externe. Dans les exercices suivants, vous allez configurer une approche similaire, et vous enverrez ces mêmes données vers Google Cloud Platform et AWS.
 
-Étape suivante : [2.5.4 Création et configuration d’une fonction cloud Google](./ex4.md)
+Étape suivante : [2.5.4 Forward events to GCP Pub/Sub](./ex4.md)
 
 [Revenir au module 2.5](./aep-data-collection-ssf.md)
 
