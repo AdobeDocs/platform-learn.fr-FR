@@ -4,7 +4,7 @@ description: Création et configuration d’une fonction Google Cloud
 kt: 5342
 doc-type: tutorial
 exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: c0537545e4a5d1f1ca21a13d934eb965a4f3aa66
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 1%
@@ -230,3 +230,4 @@ Vous pouvez désormais voir la charge utile XDM de votre événement dans Google
 [Revenir au module 2.5](./aep-data-collection-ssf.md)
 
 [Revenir à tous les modules](./../../../overview.md)
+
