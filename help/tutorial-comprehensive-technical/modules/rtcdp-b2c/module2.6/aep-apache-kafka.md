@@ -4,16 +4,14 @@ description: Dans ce module, vous apprendrez à configurer votre propre grappe A
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6 Diffusion de données en continu d’Apache Kafka vers Adobe Experience Platform
-
-**Auteurs : [Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/), [Nipun Nair](https://www.linkedin.com/in/nipunnair/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Dans ce module, vous apprendrez à configurer votre propre grappe Apache Kafka, à définir des rubriques, des producteurs et des consommateurs et à diffuser des données dans Adobe Experience Platform à l’aide de Adobe Experience Platform Sink Connector via Kafka Connect.
 
@@ -27,7 +25,7 @@ Dans ce module, vous apprendrez à configurer votre propre grappe Apache Kafka, 
 
 ## Conditions préalables
 
-- Java JDK11 ou version ultérieure doit être installé sur votre ordinateur. Vous pouvez télécharger ce JDK ici : [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 ou version ultérieure doit être installé sur votre ordinateur. Vous pouvez télécharger ce JDK ici : [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Accès à Adobe Experience Platform
 
 >[!NOTE]

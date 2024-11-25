@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2 Installation et configuration de votre grappe Kafka
 
-## 2.6.2.1 Téléchargement d’Apache Kafka
+## Télécharger Apache Kafka
 
-Accédez à [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) et téléchargez la dernière version publiée. Sélectionnez la dernière version binaire, ici **Scala 2.13**.
+Accédez à [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) et téléchargez la dernière version publiée. Sélectionnez la dernière version binaire, ici **3.9.0**. Votre téléchargement commencera.
 
 ![Kafka](./images/kafka1.png)
-
-Vous êtes alors amené sur un site miroir. Cliquez sur le lien proposé pour télécharger Kafka.
-
-![Kafka](./images/kafka2.png)
 
 Créez un dossier nommé **Kafka_AEP** sur votre bureau et placez le fichier téléchargé dans ce répertoire.
 
@@ -35,7 +31,7 @@ Ouvrez une fenêtre **Terminal** en cliquant avec le bouton droit de la souris s
 
 Exécutez cette commande dans la fenêtre Terminal pour décompresser le fichier téléchargé :
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ Et dans ce répertoire, vous verrez ces sous-répertoires :
 
 Revenez à la fenêtre de votre terminal. Saisissez la commande suivante :
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ Saisissez ensuite la commande `bin/kafka-topics.sh`.
 
 ![Kafka](./images/kafka10a.png)
 
-Vous devriez alors voir cette réponse. Cela signifie que Kafka est correctement installé et que Java fonctionne correctement. (Rappel : pour que cela fonctionne, Java 8 JDK ou Java 11 JDK doit être installé. Vous pouvez voir quelle version Java vous avez installée à l’aide de la commande `java -version`.)
+Vous devriez alors voir cette réponse. Cela signifie que Kafka est correctement installé et que Java fonctionne correctement. (Rappel : pour que cela fonctionne, Java 23 JDK doit être installé. Vous pouvez voir quelle version Java vous avez installée à l’aide de la commande `java -version`.)
 
 ![Kafka](./images/kafka10.png)
 
-## 2.6.2.2 Kafka de démarrage
+## Démarrer Kafka
 
 Pour démarrer Kafka, vous devez démarrer Kafka Zookeeper et Kafka, dans cet ordre.
 
-Ouvrez une fenêtre **Terminal** en cliquant avec le bouton droit de la souris sur votre dossier **kafka_2.13-3.1.0** et en cliquant sur **Nouveau terminal dans le dossier**.
+Ouvrez une fenêtre **Terminal** en cliquant avec le bouton droit de la souris sur votre dossier **kafka_2.13-3.9.0** et en cliquant sur **Nouveau terminal dans le dossier**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ Vous verrez alors :
 
 Gardez cette fenêtre ouverte pendant que vous passez par ces exercices !
 
-Ouvrez une autre nouvelle fenêtre **Terminal** en cliquant avec le bouton droit de la souris sur votre dossier **kafka_2.13-3.1.0** et en cliquant sur **Nouveau terminal dans le dossier**.
+Ouvrez une autre nouvelle fenêtre **Terminal** en cliquant avec le bouton droit de la souris sur votre dossier **kafka_2.13-3.9.0** et en cliquant sur **Nouveau terminal dans le dossier**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ Vous verrez alors :
 
 Gardez cette fenêtre ouverte pendant que vous passez par ces exercices !
 
-## 2.6.2.3 Création d’une rubrique Kafka
+## Création d’une rubrique Kafka
 
-Ouvrez une fenêtre **Terminal** en cliquant avec le bouton droit de la souris sur votre dossier **kafka_2.13-3.1.0** et en cliquant sur **Nouveau terminal dans le dossier**.
+Ouvrez une fenêtre **Terminal** en cliquant avec le bouton droit de la souris sur votre dossier **kafka_2.13-3.9.0** et en cliquant sur **Nouveau terminal dans le dossier**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ Saisissez cette commande pour créer une nouvelle rubrique Kafka nommée **aepte
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16a.png)
-
-Une confirmation similaire s’affiche alors :
+Une confirmation s’affiche alors :
 
 ![Kafka](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ Saisissez cette commande pour créer une nouvelle rubrique Kafka nommée **aep**
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16.png)
-
 Une confirmation similaire s’affiche alors :
 
 ![Kafka](./images/kafka17.png)
 
-## 2.6.2.4 Générer des événements
+## Générer des événements
 
 Revenez à la fenêtre Terminal dans laquelle vous avez créé votre première rubrique Kafka et saisissez la commande suivante :
 
@@ -163,7 +155,7 @@ Sur votre clavier, cliquez simultanément sur `Control` et `C` pour fermer votre
 
 ![Kafka](./images/kafka22.png)
 
-## 2.6.2.4 Consommer des événements
+## Consommer des événements
 
 Dans la fenêtre Terminal que vous utilisiez pour générer des événements, saisissez la commande suivante :
 

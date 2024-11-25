@@ -4,10 +4,10 @@ description: Configuration du point d’entrée de l’API HTTP dans Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 8%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement d
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Dans le menu de gauche, accédez à **Sources** et faites défiler l’écran vers le bas dans le **Catalogue de sources** jusqu’à ce que l’ **API HTTP** s’affiche. Cliquez sur **Ajouter des données**.
+Dans le menu de gauche, accédez à **Sources** et faites défiler l’écran vers le bas dans le **Catalogue de sources** jusqu’à ce que l’ **API HTTP** s’affiche. Cliquez sur **Configuration**.
 
 ![Ingestion des données](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ Vous verrez alors ceci, cliquez sur **Suivant**.
 
 Sélectionnez **Jeu de données existant**, ouvrez le menu déroulant. Recherchez et sélectionnez le jeu de données **Demo System - Event Dataset for Call Center (Global v1.1)**.
 
+Cliquez sur **Suivant**.
+
 ![Ingestion des données](./images/kaep4.png)
-
-Cliquez sur **Suivant**.
-
-![Ingestion des données](./images/kaep6.png)
-
-Cliquez sur **Suivant**.
-
-![Ingestion des données](./images/kaep7.png)
 
 Cliquez sur **Terminer**.
 
@@ -55,11 +49,11 @@ Cliquez sur **Terminer**.
 
 Vous verrez ensuite un aperçu du connecteur Source de l’API HTTP que vous venez de créer.
 
-![Ingestion des données](./images/kaep9.png)
-
 Vous devrez copier l’URL **Point d’entrée de diffusion en continu**, qui ressemble à celle ci-dessous, comme vous en aurez besoin dans l’exercice suivant.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![Ingestion des données](./images/kaep9.png)
 
 Vous avez terminé cet exercice.
 
