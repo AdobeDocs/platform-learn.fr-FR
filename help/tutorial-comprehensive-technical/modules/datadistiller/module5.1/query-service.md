@@ -1,19 +1,17 @@
 ---
-title: Query Service
-description: Query Service
+title: Service de requête
+description: Service de requête
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
 # 5.1 Query Service
-
-**Auteurs : [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Dans ce module, vous obtiendrez un aperçu pratique de Adobe Experience Platform Query Service. Query Service vous permet d’exécuter des requêtes omnicanal sur toutes les données d’application Adobe Experience Cloud, de joindre et d’analyser des données dans Adobe Campaign, Analytics, Audience Manager, Target et Advertising Cloud, ainsi que d’autres données client chargées/insérées dans Adobe Experience Platform.
 
@@ -45,35 +43,35 @@ Nous utiliserons les données qui ont été injectées dans la plateforme à l�
 
 ## Exercices
 
-[5.1.0 Conditions préalables](./ex0.md)
+[5.1.1 Conditions préalables](./ex1.md)
 
 Vous devrez installer PSQL pour exécuter les requêtes dans cet exercice d’activation. Selon votre système d’exploitation, vous devrez installer Microsoft Power BI ou Tableau. Les utilisateurs de Windows peuvent choisir entre Power BI ou Tableau. Les utilisateurs de Mac doivent installer Tableau.
 
-[5.1.1 Prise en main](./ex1.md)
+[5.1.2 Prise en main](./ex2.md)
 
 Dans cet exercice, vous allez explorer l’interface utilisateur de Adobe Experience Platform Query Service, en apprendre davantage sur les jeux de données, trouver vos requêtes et enfin configurer une connexion à partir de PSQL.
 
-[5.1.2 Utilisation de Query Service](./ex2.md)
+[5.1.3 Utilisation de Query Service](./ex3.md)
 
 Au cours de cet exercice, vous en apprendrez davantage sur la syntaxe de base de Query Service et vous pourrez identifier les attributs du schéma XDM dans votre requête.
 
-[5.1.3 Requêtes, requêtes, requêtes.. et analyse de perte de clientèle](./ex3.md)
+[5.1.4 Requêtes, requêtes, requêtes.. et analyse de perte de clientèle](./ex4.md)
 
 Au cours de cet exercice, vous allez effectuer des requêtes. Vous allez découvrir les fonctions définies par l’Adobe tout en effectuant une analyse de perte de clientèle. À la fin de cette opération, vous allez écrire une requête pour préparer un jeu de données à utiliser dans Microsoft Power BI.
 
-[5.1.4 Génération d’un jeu de données à partir d’une requête](./ex4.md)
+[5.1.5 Génération d’un jeu de données à partir d’une requête](./ex5.md)
 
 Dans cet exercice, vous allez générer un jeu de données à partir d’une requête exécutée dans le précédent et vous utiliserez ce jeu de données dans les exercices suivants.
 
-[5.1.5 Query Service et Power BI](./ex5.md)
+[5.1.6 Query Service et Power BI](./ex6.md)
 
 Dans cet exercice, vous allez connecter Power BI à Adobe Experience Platform et Query Service pour effectuer l’analyse de l’interaction Callcenter.
 
-[5.1.6 Query Service et Tableau](./ex6.md)
+[5.1.7 Query Service et Tableau](./ex7.md)
 
 Dans cet exercice, vous allez connecter Tableau à Adobe Experience Platform et Query Service pour effectuer l’analyse de l’interaction Callcenter.
 
-[5.1.7 API Query Service](./ex7.md)
+[5.1.8 API Query Service](./ex8.md)
 
 Dans cet exercice, vous utiliserez l’API Query Service pour gérer les modèles de requête et les plannings de requête.
 

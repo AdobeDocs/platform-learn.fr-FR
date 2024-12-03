@@ -1,76 +1,85 @@
 ---
-title: Query Service - Exploration du jeu de données avec Power BI
-description: Query Service - Exploration du jeu de données avec Power BI
+title: Query Service - Power BI/Tableau
+description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 5.1.5 Query Service et Power BI
+# 5.1.5 Génération d’un jeu de données à partir d’une requête
 
-Ouvrez Microsoft Power BI Desktop.
+## Objectif
 
-![start-power-bi.png](./images/start-power-bi.png)
+Découvrez comment générer des jeux de données à partir de résultats de requête
+Connecter directement Microsoft Power BI Desktop/Tableau à Query Service
+Création d’un rapport dans Microsoft Power BI Desktop/Tableau Desktop
 
-Cliquez sur **Obtenir des données**.
+## Contexte de la leçon
 
-![power-bi-get-data.png](./images/power-bi-get-data.png)
+Une interface de ligne de commande pour interroger les données est passionnante, mais elle ne présente pas bien. Dans cette leçon, nous vous guiderons tout au long d’un processus recommandé pour savoir comment utiliser Microsoft Power BI Desktop/Tableau directement dans Query Service afin de créer des rapports visuels pour vos parties prenantes.
 
-Recherchez **postgres** (1), sélectionnez **Postgres** (2) dans la liste et **Connect** (3).
+## Création d’un jeu de données à partir d’une requête SQL
 
-![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
+La complexité de votre requête aura un impact sur le temps nécessaire à Query Service pour renvoyer les résultats. En outre, lors de l’interrogation directement à partir de la ligne de commande ou d’autres solutions telles que Microsoft Power BI/Tableau, Query Service est configuré avec un délai d’attente de 5 minutes (600 secondes). Et dans certains cas, ces solutions seront configurées avec des délais d’expiration plus courts. Pour exécuter des requêtes plus volumineuses et charger le temps nécessaire pour renvoyer les résultats, nous proposons une fonctionnalité de génération d’un jeu de données à partir des résultats de la requête. Cette fonctionnalité utilise la fonctionnalité SQL standard appelée Create Table As Select (CTAS). Il est disponible dans l’interface utilisateur de Platform à partir de la liste de requêtes et peut également être exécuté directement à partir de la ligne de commande avec PSQL.
 
-Accédez à Adobe Experience Platform, à **Requêtes** et à **Credentials**.
+Dans la précédente, vous avez remplacé **par votre propre ldap avant de l’exécuter dans PSQL.**
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-Sur la page **Credentials** dans Adobe Experience Platform, copiez l’**hôte** et collez-le dans le champ **Server**, copiez la **base de données** et collez-la dans le champ **Database** de PowerBI, puis cliquez sur OK (2).
+Accédez à l’interface utilisateur de Adobe Experience Platform - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->Veillez à inclure le port **:80** à la fin de la valeur Server, car Query Service n’utilise actuellement pas le port PostgreSQL par défaut de 5432.
+Vous recherchez l’instruction exécutée dans l’interface utilisateur de requête de Adobe Experience Platform en saisissant votre LDAP dans le champ de recherche :
 
-![power-bi-connect-server.png](./images/power-bi-connect-server.png)
+Sélectionnez **Requêtes**, accédez à **Journal** et saisissez votre LDAP dans le champ de recherche.
 
-Dans la boîte de dialogue suivante, renseignez le nom d’utilisateur et le mot de passe avec le nom d’utilisateur et le mot de passe trouvés dans les **informations d’identification** des requêtes dans Adobe Experience Platform.
+![search-query-for-ctas.png](./images/search-query-for-ctas.png)
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+Sélectionnez votre requête et cliquez sur **Jeu de données de sortie**.
 
-Dans la boîte de dialogue Navigateur, placez votre **LDAP** dans le champ de recherche (1) pour localiser vos jeux de données CTAS et cochez la case en regard de chaque (2). Cliquez ensuite sur Charger (3).
+![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
+Saisissez `--aepUserLdap-- Callcenter Interaction Analysis` comme nom et description du jeu de données et appuyez sur le bouton **Exécuter la requête**
 
-Assurez-vous que l&#39;onglet **Rapport** (1) est sélectionné.
+![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 
-![power-bi-report-tab.png](./images/power-bi-report-tab.png)
+Par conséquent, une nouvelle requête avec le statut **Envoyé** s’affiche.
 
-Sélectionnez la carte (1) et une fois qu’elle a été ajoutée à la zone de travail de création de rapports, agrandissez la carte (2).
+![ctas-query-submit.png](./images/ctas-query-submitted.png)
 
-![power-bi-select-map.png](./images/power-bi-select-map.png)
+Une fois l’opération terminée, vous verrez une nouvelle entrée pour **Jeu de données créé** (vous devrez peut-être actualiser la page).
 
-Ensuite, nous devons définir les mesures et les dimensions. Pour ce faire, faites glisser les champs de la section **fields** sur les espaces réservés correspondants (situés sous **visualisations**) comme indiqué ci-dessous :
+![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
+Dès que votre jeu de données est créé (ce qui peut prendre entre 5 et 10 minutes), vous pouvez poursuivre l’exercice.
 
-À titre de mesure, nous utiliserons un nombre de **customerId**. Faites glisser le champ **crmid** de la section **fields** vers l’espace réservé **Size** :
+Étape suivante - Option A : [5.1.6 Query Service et Power BI](./ex6.md)
 
-![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
-
-Enfin, pour effectuer une analyse **callTopic**, faites glisser le champ **callTopic** vers l’espace réservé **Filtres de niveau page** (vous devrez peut-être faire défiler la section **visualisations**) ;
-
-![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
-
-Sélectionnez/désélectionnez **calltopics** pour enquêter :
-
-![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
-
-Vous avez maintenant terminé cet exercice.
-
-Étape suivante : [5.1.7 Query Service API](./ex7.md)
+Étape suivante - Option B : [5.1.7 Query Service et Tableau](./ex7.md)
 
 [Revenir au module 5.1](./query-service.md)
 

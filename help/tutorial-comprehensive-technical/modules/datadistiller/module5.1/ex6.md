@@ -1,62 +1,77 @@
 ---
-title: Query Service - Explorer le jeu de données avec Tableau
-description: Query Service - Explorer le jeu de données avec Tableau
+title: Query Service - Exploration du jeu de données avec Power BI
+description: Query Service - Exploration du jeu de données avec Power BI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# 5.1.6 Query Service et Tableau
+# 5.1.6 Query Service et Power BI
 
-Ouvrez Tableau.
+Ouvrez Microsoft Power BI Desktop.
 
-![start-tableau.png](./images/start-tableau.png)
+![start-power-bi.png](./images/start-power-bi.png)
 
-Dans **Se connecter à un serveur**, sélectionnez **PostgreSQL** :
+Cliquez sur **Obtenir des données**.
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![power-bi-get-data.png](./images/power-bi-get-data.png)
+
+Recherchez **postgres** (1), sélectionnez **Postgres** (2) dans la liste et **Connect** (3).
+
+![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
 Accédez à Adobe Experience Platform, à **Requêtes** et à **Credentials**.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-Sur la page **Credentials** dans Adobe Experience Platform, copiez l’ **hôte** et collez-le dans le champ **Serveur**, copiez la **base de données** et collez-la dans le champ **Base de données** de Tableau, copiez le **port** et collez-le dans le champ **port** dans Tableau, faites de même **pour effectuer la même opération  14}Nom d’utilisateur** et **Mot de passe**. Cliquez ensuite sur **Se connecter**.
+Sur la page **Credentials** dans Adobe Experience Platform, copiez l’**hôte** et collez-le dans le champ **Server**, copiez la **base de données** et collez-la dans le champ **Database** de PowerBI, puis cliquez sur OK (2).
 
-Connexion :
+>[!IMPORTANT]
+>
+>Veillez à inclure le port **:80** à la fin de la valeur Server, car Query Service n’utilise actuellement pas le port PostgreSQL par défaut de 5432.
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
-Cliquez sur Rechercher (1) et entrez votre **ldap** dans le champ de recherche, identifiez votre tableau à partir du jeu de résultats et faites-le glisser (3) sur l’emplacement nommé **Faire glisser les tables ici**. Lorsque vous avez terminé, cliquez sur **Feuille 1** (3).
+Dans la boîte de dialogue suivante, renseignez le nom d’utilisateur et le mot de passe avec le nom d’utilisateur et le mot de passe trouvés dans les **informations d’identification** des requêtes dans Adobe Experience Platform.
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-Pour visualiser nos données sur la carte, nous devons convertir la longitude et la latitude en dimensions. Dans **Mesures**, sélectionnez **Latitude** (1), ouvrez la liste déroulante du champ et sélectionnez **Convertir en Dimension** (2). Faites de même pour la mesure **Longitude**.
+Dans la boîte de dialogue Navigateur, placez votre **LDAP** dans le champ de recherche (1) pour localiser vos jeux de données CTAS et cochez la case en regard de chaque (2). Cliquez ensuite sur Charger (3).
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-Faites glisser la mesure **Longitude** vers les **Colonnes** et la **Latitude** vers **Lignes**. La carte de **Belgique** apparaîtra automatiquement avec des petits points représentant les villes dans l&#39;ensemble de données.
+Assurez-vous que l&#39;onglet **Rapport** (1) est sélectionné.
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 
-Sélectionnez **Mesurer les noms** (1), ouvrez la liste déroulante et sélectionnez **Ajouter à la feuille** (2) :
+Sélectionnez la carte (1) et une fois qu’elle a été ajoutée à la zone de travail de création de rapports, agrandissez la carte (2).
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-Vous disposez désormais d’une carte, avec des points de différentes tailles. La taille indique le nombre d’interactions du centre d’appels pour cette ville spécifique. Pour varier la taille des points, accédez au panneau de droite et ouvrez **Mesure des valeurs** (à l’aide de l’icône déroulante). Dans la liste déroulante, sélectionnez **Modifier les tailles**. Jouez avec des tailles différentes.
+Ensuite, nous devons définir les mesures et les dimensions. Pour ce faire, faites glisser les champs de la section **fields** sur les espaces réservés correspondants (situés sous **visualisations**) comme indiqué ci-dessous :
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 
-Pour afficher davantage les données par **rubrique d’appel**, faites glisser (1) la dimension **rubrique d’appel** sur **Pages**. Parcourez les différentes **rubriques d’appel** à l’aide de la **rubrique d’appel** (2) sur le côté droit de l’écran :
+À titre de mesure, nous utiliserons un nombre de **customerId**. Faites glisser le champ **crmid** de la section **fields** vers l’espace réservé **Size** :
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
+
+Enfin, pour effectuer une analyse **callTopic**, faites glisser le champ **callTopic** vers l’espace réservé **Filtres de niveau page** (vous devrez peut-être faire défiler la section **visualisations**) ;
+
+![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
+
+Sélectionnez/désélectionnez **calltopics** pour enquêter :
+
+![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
 Vous avez maintenant terminé cet exercice.
 
-Étape suivante : [5.1.7 Query Service API](./ex7.md)
+Étape suivante : [5.1.8 Query Service API](./ex8.md)
 
 [Revenir au module 5.1](./query-service.md)
 

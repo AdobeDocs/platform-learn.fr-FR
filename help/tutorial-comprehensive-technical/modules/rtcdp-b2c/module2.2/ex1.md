@@ -4,10 +4,10 @@ description: Customer AI - Préparation de données (ingestion)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 5%
+source-wordcount: '698'
+ht-degree: 4%
 
 ---
 
@@ -53,33 +53,20 @@ Vous verrez alors ceci. Cliquez sur **+ Ajouter** sous Groupes de champs.
 Recherchez et sélectionnez les **groupes de champs** suivants à ajouter à ce schéma :
 
 - Événement d’expérience du consommateur
-- Informations sur l’identifiant de l’utilisateur final
+
+![Nouveau schéma CEE](./images/cee1.png)
+
+- IdentityMap
 
 Cliquez sur **Ajouter des groupes de champs**.
 
-![Nouveau schéma CEE](./images/cee.png)
+![Nouveau schéma CEE](./images/cee2.png)
 
-Vous verrez alors ceci. Cliquez sur le groupe de champs **Détails de l’ID utilisateur final**.
-
-![Créer un schéma](./images/eui1.png)
-
-Accédez au champ **endUserIDs._experience.email.id**.
-
-![Créer un schéma](./images/eui2.png)
-
-Dans le menu de droite pour le champ **endUserIDs._experience.emailid.id**, faites défiler l’écran vers le bas et cochez la case correspondant à **Identité**, cochez la case correspondant à **Identité de Principal** et sélectionnez l’ **espace de noms d’identité** de **Adresse électronique**. Cliquez sur **Appliquer**.
-
-![Créer un schéma](./images/eui3.png)
-
-Accédez au champ **endUserIDs._experience.mcid.id**. Cochez la case correspondant à **Identity** et sélectionnez l’ **espace de noms d’identité** de **ECID**. Cliquez sur **Appliquer**.
-
-![Créer un schéma](./images/eui4.png)
-
-Vous aurez alors ceci. Sélectionnez ensuite le nom de votre schéma. Vous devez maintenant activer votre schéma pour **Profile** en cliquant sur le bouton d’activation/désactivation **Profile** .
+Vous verrez alors ceci. Sélectionnez ensuite le nom de votre schéma. Vous devez maintenant activer votre schéma pour **Profile** en cliquant sur le bouton d’activation/désactivation **Profile** .
 
 ![Créer un schéma](./images/xdmee3.png)
 
-Vous verrez alors ceci. Cliquez sur **Activer**.
+Vous verrez alors ceci. Cochez la case correspondant à **Les données de ce schéma contiendront une identité principale dans le champ identityMap .**. Cliquez sur **Activer**.
 
 ![Créer un schéma](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ Vous êtes maintenant prêt à commencer à ingérer des données d’événemen
 
 ## Téléchargement des données de test d’événement d’expérience
 
-Une fois que le **schéma** et le **jeu de données** sont configurés, vous êtes prêt à ingérer les données d’événement d’expérience. Comme Customer AI nécessite des données sur **2 trimestres au moins**, vous devrez ingérer des données préparées en externe.
+Une fois que le **schéma** et le **jeu de données** sont configurés, vous êtes prêt à ingérer les données d’événement d’expérience. Comme Customer AI nécessite des exigences de données spécifiques, vous devrez ingérer des données préparées en externe.
 
-Les données préparées pour les événements d’expérience doivent être conformes aux exigences et au schéma du [mixin XDM de l’événement d’expérience client](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
+Les données préparées pour les événements d’expérience de cet exercice doivent être conformes aux exigences et au schéma du [groupe de champs XDM des événements d’expérience client](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Téléchargez le fichier contenant des exemples de données à partir de cet emplacement : [https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Cliquez sur le bouton **Télécharger** .
+Téléchargez le fichier zip avec les données de démonstration de cet emplacement : [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![Jeu de données](./images/dsn1.png)
-
-Si vous ne pouvez pas accéder au lien ci-dessus, vous pouvez également télécharger le fichier à partir de cet emplacement : [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-Vous avez maintenant téléchargé un fichier nommé **retail-v1-dec2020-xl.json.zip**. Placez le fichier sur le bureau de votre ordinateur et décompressez-le, après quoi vous verrez un fichier nommé **retail-v1.json**. Vous aurez besoin de ce fichier lors de l’exercice suivant.
+Vous avez maintenant téléchargé un fichier nommé **CUSTOM-CAI-EVENTS-WEB.zip**. Placez le fichier sur le bureau de votre ordinateur et décompressez-le, après quoi vous verrez un dossier nommé **CUSTOM-CAI-EVENTS-WEB**.
 
 ![Jeu de données](./images/ingest.png)
+
+Dans ce dossier, vous trouverez plusieurs fichiers json séquencés, qui doivent tous être ingérés lors de l’exercice suivant.
+
+![Jeu de données](./images/ingest1a.png)
 
 ## Ingestion des données de test d’événement d’expérience
 
@@ -145,9 +132,11 @@ Dans votre jeu de données, cliquez sur **Choisir les fichiers** pour ajouter de
 
 ![Jeu de données](./images/ingest2.png)
 
-Dans la fenêtre contextuelle, sélectionnez le fichier **retail-v1.json** et cliquez sur **Ouvrir**.
+Dans la fenêtre contextuelle, sélectionnez les fichiers **WEBSITE-EE-1.json** jusqu’à **WEBSITE-EE-5.json** et cliquez sur **Ouvrir**.
 
 ![Jeu de données](./images/ingest3.png)
+
+Répétez cette procédure d’ingestion pour les fichiers **WEBSITE-EE-6.json** et **WEBSITE-EE-7.json**.
 
 Vous verrez ensuite les données importées et un nouveau lot est créé à l’état **Chargement**. Ne quittez pas cette page tant que le fichier n’a pas été chargé.
 
@@ -159,11 +148,9 @@ Une fois le fichier téléchargé, l’état du lot passe de **Chargement** à *
 
 L’ingestion et le traitement des données peuvent prendre entre 10 et 20 minutes.
 
-Une fois l’ingestion des données réussie, l’état du lot passe à **Success**.
+Une fois l’ingestion des données réussie, l’état du lot des différents chargements passe à **Success**.
 
 ![Jeu de données](./images/ingest7.png)
-
-![Jeu de données](./images/ingest8.png)
 
 Étape suivante : [2.2.2 Customer AI - Créer une instance (configurer)](./ex2.md)
 
