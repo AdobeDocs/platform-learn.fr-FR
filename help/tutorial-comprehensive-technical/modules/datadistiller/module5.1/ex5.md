@@ -4,9 +4,9 @@ description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Découvrez comment générer des jeux de données à partir de résultats de req
 Connecter directement Microsoft Power BI Desktop/Tableau à Query Service
 Création d’un rapport dans Microsoft Power BI Desktop/Tableau Desktop
 
-## Contexte de la leçon
+## Contexte
 
 Une interface de ligne de commande pour interroger les données est passionnante, mais elle ne présente pas bien. Dans cette leçon, nous vous guiderons tout au long d’un processus recommandé pour savoir comment utiliser Microsoft Power BI Desktop/Tableau directement dans Query Service afin de créer des rapports visuels pour vos parties prenantes.
 
@@ -41,11 +41,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -57,23 +57,23 @@ Vous recherchez l’instruction exécutée dans l’interface utilisateur de req
 
 Sélectionnez **Requêtes**, accédez à **Journal** et saisissez votre LDAP dans le champ de recherche.
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-Sélectionnez votre requête et cliquez sur **Jeu de données de sortie**.
+Sélectionnez votre requête et cliquez sur **Exécuter en tant que CTAS**.
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
-Saisissez `--aepUserLdap-- Callcenter Interaction Analysis` comme nom et description du jeu de données et appuyez sur le bouton **Exécuter la requête**
+Saisissez `--aepUserLdap-- Callcenter Interaction Analysis` comme nom et description du jeu de données, puis cliquez sur **Exécuter en tant que CTAS**.
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
+![create-ctas-dataset.png](./images/createctasdataset.png)
 
 Par conséquent, une nouvelle requête avec le statut **Envoyé** s’affiche.
 
-![ctas-query-submit.png](./images/ctas-query-submitted.png)
+![ctas-query-submit.png](./images/ctasquerysubmitted.png)
 
 Une fois l’opération terminée, vous verrez une nouvelle entrée pour **Jeu de données créé** (vous devrez peut-être actualiser la page).
 
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
+![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
 Dès que votre jeu de données est créé (ce qui peut prendre entre 5 et 10 minutes), vous pouvez poursuivre l’exercice.
 
