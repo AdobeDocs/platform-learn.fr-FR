@@ -2,9 +2,9 @@
 title: Envoi de paramètres - Migration de Target d’at.js 2.x vers le SDK Web
 description: Découvrez comment envoyer des paramètres de mbox, de profil et d’entité à Adobe Target à l’aide du SDK Web Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 Les informations d’achat sont transmises à Target lorsque `purchases.value` est défini sur `1` pour le groupe de champs `commerce`. L’identifiant de commande et le total de la commande sont automatiquement mappés à partir de l’objet `order`. Si le tableau `productListItems` est présent, les valeurs `SKU` sont utilisées pour `productPurchasedId`.
 
-Exemples de SDK Web Platform à l’aide de la commande `sendEvent` :
+Exemple de SDK Web Platform utilisant `sendEvent` :
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB Balises]
 
-Dans les balises, utilisez d’abord un élément de données [!UICONTROL objet XDM] pour mapper les données aux champs XDM :
+Dans les balises, utilisez d’abord un élément de données [!UICONTROL objet XDM] pour mapper les champs XDM requis (voir l’exemple JavaScript) et une portée personnalisée facultative :
 
 ![Mappage à un champ XDM dans un élément de données d’objet XDM](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ Ensuite, incluez votre [!UICONTROL objet XDM] dans votre [!UICONTROL événement
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> `_experience.decisioning.propositionEventType` doit être défini avec `display: 1` pour que l’appel soit utilisé pour incrémenter une mesure Target.
+
+>[!NOTE]
+>
+> Si vous souhaitez utiliser un emplacement/nom de mbox personnalisé dans votre définition de mesure Target, par exemple `orderConfirmPage`, renseignez le tableau `_experience.decisioning.propositions` avec une portée personnalisée comme dans l’exemple ci-dessus.
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ Dans le service Adobe Target de votre banque de données, veillez à définir l�
 ![Définition de l’espace de noms des identifiants tiers Target dans la zone de données](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobe recommande d’envoyer des espaces de noms représentant une personne, tels que les identités authentifiées, comme identité principale.
+
+
 
 ## Exemple de SDK Web Platform
 
@@ -458,7 +482,8 @@ Maintenant que vous comprenez comment les différents paramètres Target sont ma
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ Maintenant que vous comprenez comment les différents paramètres Target sont ma
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ Maintenant que vous comprenez comment les différents paramètres Target sont ma
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>

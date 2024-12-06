@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
+source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '947'
 ht-degree: 20%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 20%
 + [Importation de données d’exemple dans Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
-   + [Utilisation des sandbox](/help/platform/admin/use-sandboxes.md)
+   + [Utiliser des sandbox](/help/platform/admin/use-sandboxes.md)
    + [Copie de modules entre des environnements de test](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Partage de packages sur les organisations IMS](/help/platform/admin/share-packages-across-orgs.md)
    + [Ajouter des utilisateurs](/help/platform/admin/add-users.md)
@@ -50,6 +50,7 @@ ht-degree: 20%
    + [Vue d’ensemble](/help/platform/ai-assistant/overview.md)
    + [Configuration de l’accès](/help/platform/ai-assistant/access.md)
    + [Nettoyage des audiences](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Intégration avec un nouveau produit](/help/platform/ai-assistant/onboard.md)
 + Audiences et segmentation {#audiences}
    + [Présentation d’Audience Portal et de la composition](audiences/introduction-to-audience-portal-and-composition.md)
    + [Chargement d’audiences](audiences/upload-audiences.md)
