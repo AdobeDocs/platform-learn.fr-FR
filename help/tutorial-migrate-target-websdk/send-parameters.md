@@ -2,9 +2,9 @@
 title: Envoi de paramètres - Migration de Target d’at.js 2.x vers le SDK Web
 description: Découvrez comment envoyer des paramètres de mbox, de profil et d’entité à Adobe Target à l’aide du SDK Web Experience Platform.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ Ensuite, incluez votre [!UICONTROL objet XDM] dans votre [!UICONTROL événement
 
 Target permet la synchronisation des profils entre appareils et systèmes à l’aide d’un seul ID de client. Avec at.js, cette variable peut être définie comme `mbox3rdPartyId` dans la requête Target ou comme premier ID de client envoyé à l’Experience Cloud Identity Service. Contrairement à at.js, une implémentation du SDK Web Platform vous permet de spécifier l’ID de client à utiliser comme `mbox3rdPartyId` s’il en existe plusieurs. Par exemple, si votre entreprise possède un ID de client global et des ID de client distincts pour différents secteurs d’activité, vous pouvez configurer l’ID que Target doit utiliser.
 
-Il existe quelques étapes pour configurer la synchronisation des identifiants pour les cas d’utilisation de Target sur plusieurs appareils et des attributs du client :
+Il existe quelques étapes pour configurer la synchronisation des identifiants pour les cas d’utilisation des attributs du client et multi-appareils :
 
 1. Créez un **[!UICONTROL espace de noms d’identité]** pour l’ID de client dans l’écran **[!UICONTROL Identités]** de la collecte de données ou de la plateforme
 1. Assurez-vous que l’ **[!UICONTROL alias]** dans les attributs du client correspond au **[!UICONTROL symbole d’identité]** de votre espace de noms
