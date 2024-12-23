@@ -1,5 +1,5 @@
 ---
-title: Créer une propriété de balise
+title: Création d’une propriété de balise
 description: Découvrez comment créer les propriétés de balise pour gérer les balises marketing sur votre site Web.
 feature: Tags
 level: Beginner
@@ -7,15 +7,16 @@ duration: 321
 last-substantial-update: 2023-12-15T00:00:00Z
 jira: KT-3524
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: f1e71afb159af1a99ce574e3e9de451e0d703800
+source-git-commit: 1c62792460795ff992a8ab3e7d23a4b1dfa8824d
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 34%
 
 ---
 
-# Créer une propriété de balise
+# Création d’une propriété de balise
 
-Découvrez comment créer des propriétés de balise pour gérer les balises marketing sur votre site web. Pour plus d’informations, voir la documentation [properties](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=fr) .
+Découvrez comment créer des propriétés de balise pour gérer les balises marketing sur votre site web. Pour plus d’informations, consultez la documentation [propriétés](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
+
