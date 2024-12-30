@@ -1,130 +1,120 @@
 ---
-title: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. - Déclenchez votre Parcours client orchestré
-description: Adobe Journey Optimizer - API météorologique externe, action SMS, etc. - Déclenchez votre Parcours client orchestré
+title: Adobe Journey Optimizer - Sources de données externes et actions personnalisées
+description: Adobe Journey Optimizer - Sources de données externes et actions personnalisées
 kt: 5342
 doc-type: tutorial
 exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 1%
+source-wordcount: '624'
+ht-degree: 0%
 
 ---
 
-# 3.2.5 Déclencher votre parcours
+# 3.2.5 Déclenchement du parcours
 
 Dans cet exercice, vous allez tester et déclencher le parcours que vous avez configuré dans ce module.
 
-## 3.2.5.1 Mise à jour de la configuration des événements de géobarrière
+## 3.2.5.1 Mettre à jour la configuration de l’événement de limite géographique
 
-Accédez à [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) et sélectionnez **Balises**.
+Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/launch/) puis sélectionnez **Balises**.
 
 Il s’agit de la page Propriétés de la collecte de données Adobe Experience Platform que vous avez déjà vue.
 
 ![Page Propriétés](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-Dans le module 0, Demo System a créé deux propriétés Client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en recherchant `--aepUserLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
+Dans **Prise en main**, le système de démonstration a créé deux propriétés client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en `--aepUserLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
 
 ![Zone de recherche](./../../../modules/datacollection/module1.1/images/property6.png)
 
-Vous verrez alors ceci.
+Tu verras ça.
 
 ![Configuration de Launch](./images/rule1.png)
 
-Dans le menu de gauche, accédez à **Rules** et recherchez la règle **Geofence event**. Cliquez sur la règle **Evénement de géolocalisation** pour l’ouvrir.
+Dans le menu de gauche, accédez à **Règles** et recherchez la règle **Événement de limite géographique**. Cliquez sur la règle **Événement de limite géographique** pour l’ouvrir.
 
 ![Configuration de Launch](./images/rule2.png)
 
-Vous verrez alors les détails de cette règle. Cliquez pour ouvrir l’action **Envoyer un événement de géobence à AEP - déclencher JO**.
+Vous verrez alors les détails de cette règle. Cliquez pour ouvrir l’action **Adobe Experience Platform Web SDK - Envoyer l’événement**.
 
 ![Configuration de Launch](./images/rule3.png)
 
-Vous verrez ensuite que lorsque cette action est déclenchée, un élément de données spécifique est utilisé pour définir la structure de données XDM. Vous devez mettre à jour cet élément de données et définir l’**ID d’événement** de l’événement que vous avez configuré dans l’ [exercice 8.1](./ex1.md).
+Vous constaterez ensuite que lorsque cette action est déclenchée, un élément de données spécifique est utilisé pour définir la structure de données XDM. Vous devez mettre à jour cet élément de données et définir l’**identifiant d’événement** de l’événement que vous avez configuré dans [Exercice 3.2.1](./ex1.md).
 
 ![Configuration de Launch](./images/rule4.png)
 
-Vous devez maintenant mettre à jour l’élément de données **XDM - Événement de géofence**. Pour ce faire, accédez à **Data Elements**. Recherchez **XDM - Événement de géo-barrière** et cliquez pour ouvrir cet élément de données.
+Vous devez maintenant mettre à jour l’élément de données **XDM - Événement de limite géographique**. Pour ce faire, accédez à **Éléments de données**. Recherchez **XDM - Événement de limite géographique** et cliquez pour ouvrir cet élément de données.
 
 ![Configuration de Launch](./images/rule5.png)
 
-Vous verrez alors :
+Vous verrez alors ceci :
 
 ![Configuration de Launch](./images/rule6.png)
 
-Accédez au champ `_experience.campaign.orchestration.eventID`. Supprimez la valeur actuelle et collez-y votre eventID.
+Accédez au `_experience.campaign.orchestration.eventID` de champs . Supprimez la valeur actuelle et collez-y votre eventID.
 
-Pour rappel, l’ID d’événement se trouve dans Adobe Journey Optimizer sous **Configurations > Événements** et vous trouverez l’ID d’événement dans l’exemple de charge utile de votre événement, qui ressemble à ceci : `"eventID": "fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934"`.
+Pour rappel, l’identifiant d’événement se trouve dans Adobe Journey Optimizer sous **Configurations > Événements** et vous trouverez l’identifiant d’événement dans l’exemple de payload de votre événement, qui se présente comme suit : `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`.
 
-![ACOP](./images/payloadeventID.png)
+![ACOP ](./images/payloadeventID.png)
 
-Vous devez ensuite définir votre ville dans cet élément de données. Accédez à **placeContext > geo > city** et saisissez une ville de votre choix. Cliquez ensuite sur **Enregistrer** ou **Enregistrer dans la bibliothèque**.
+Définissez ensuite votre ville dans cet élément de données. Accédez à **placeContext > geo > city** et saisissez la ville de votre choix. Cliquez ensuite sur **Enregistrer** ou **Enregistrer dans la bibliothèque**.
 
-![ACOP](./images/payloadeventIDgeo.png)
+![ACOP ](./images/payloadeventIDgeo.png)
 
-Enfin, vous devez publier vos modifications. Accédez à **Flux de publication** dans le menu de gauche.
+Enfin, vous devez publier vos modifications. Accédez à **Flux de publication** dans le menu de gauche, puis cliquez sur **Man** pour ouvrir votre bibliothèque.
 
 ![Configuration de Launch](./images/rule8.png)
 
-Cliquez sur **Ajouter toutes les ressources modifiées**, puis sur **Enregistrer et créer dans le développement**.
+Cliquez sur **Ajouter toutes les ressources modifiées** puis sur **Enregistrer et créer dans le développement**.
 
 ![Configuration de Launch](./images/rule9.png)
 
 ## 3.2.5.2 Déclencher votre parcours
 
-Accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN ](./../../datacollection/module1.1/images/web8.png)
 
-Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
+Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web3.png)
 
-Ouvrez une nouvelle fenêtre de navigateur incognito.
+Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web4.png)
 
-Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Vous serez alors invité à vous connecter à l’aide de votre Adobe ID.
+Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web5.png)
 
-Sélectionnez le type de compte et procédez à la connexion.
+Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque démonstration, vous devez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
+Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
-Cliquez sur l’icône représentant un logo d’Adobe dans le coin supérieur gauche de votre écran pour ouvrir la visionneuse de profils.
+Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écran pour ouvrir la visionneuse de profils.
 
 ![Démonstration](./../../../modules/datacollection/module1.2/images/pv1.png)
 
-Consultez le panneau Visionneuse de profils et Real-time Customer Profile avec l’**identifiant Experience Cloud** comme identifiant principal pour ce client actuellement inconnu.
+Ouvrez le panneau Visionneuse de profils et accédez au profil client en temps réel. Dans le panneau Visionneuse de profil, toutes vos données personnelles doivent s’afficher, comme vos nouveaux identifiants d’e-mail et de téléphone ajoutés.
 
-![Démonstration](./../../../modules/datacollection/module1.2/images/pv2.png)
+![Démonstration](./images/pv2.png)
 
-Accédez à la page Enregistrer/Connexion . Cliquez sur **CRÉER UN COMPTE**.
+Dans le panneau Visionneuse de profils, cliquez sur **UTILITAIRES**. Saisissez `geofenceevent` et cliquez sur **Envoyer**.
 
-![Démonstration](./../../../modules/datacollection/module1.2/images/pv9.png)
+>[!NOTE]
+>
+>Si vous ne disposez pas de la possibilité d’envoyer un événement d’appel direct dans le panneau de la visionneuse de profil, vous pouvez en envoyer un manuellement en ouvrant la vue Développeur de votre navigateur et en accédant à **Console**, puis coller et envoyer cette commande : `_satellite.track('geofenceevent')`.
 
-Renseignez vos détails et cliquez sur **Enregistrer** après quoi vous serez redirigé vers la page précédente.
-
-![Démonstration](./../../../modules/datacollection/module1.2/images/pv10.png)
-
-Ouvrez le panneau Visionneuse de profils et accédez à Real-time Customer Profile. Dans le panneau Visionneuse de profils, toutes vos données personnelles doivent s’afficher, comme les identifiants de téléphone et d’adresse électronique que vous venez d’ajouter.
-
-![Démonstration](./../../../modules/datacollection/module1.2/images/pv11.png)
-
-Dans le panneau Visionneuse de profils, cliquez sur **UTILITIES**. Saisissez `geofenceevent` et cliquez sur **Send**.
-
-![Démonstration](./images/smsdemo1.png)
-
-Quelques secondes plus tard, vous recevrez un SMS de Adobe Journey Optimizer.
+Quelques secondes plus tard, le message de Adobe Journey Optimizer s’affichera dans le canal du Slack.
 
 ![Démonstration](./images/smsdemo4.png)
 
 Étape suivante : [Résumé et avantages](./summary.md)
 
-[Revenir au module 3.2](journey-orchestration-external-weather-api-sms.md)
+[Retour au module 3.2](journey-orchestration-external-weather-api-sms.md)
 
 [Revenir à tous les modules](../../../overview.md)
