@@ -4,23 +4,21 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 3%
 
 ---
 
-# Adobe Journey Optimizer 3.1 : Orchestration
+# 3.1 Adobe Journey Optimizer : Orchestration
 
-**Auteurs : [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-Dans ce module, nous allons passer en revue les étapes d’utilisation de Adobe Journey Optimizer. Vous aurez accès à Adobe Journey Optimizer et pourrez configurer des événements et des Parcours qui commencent en fonction d’un déclencheur à partir d’un événement d’expérience envoyé à Platform.
+Dans ce module, nous vous guiderons à travers les étapes pour utiliser Adobe Journey Optimizer. Vous allez configurer les événements et les parcours qui démarrent en fonction d’un déclencheur d’un événement d’expérience envoyé à AEP.
 
 ## Objectifs d’apprentissage
 
 - Découvrez comment configurer des événements, des parcours et des actions Adobe Journey Optimizer
-- Découvrez comment créer vos propres emails à l’aide de Adobe Journey Optimizer
+- Découvrez comment créer votre propre e-mail à l’aide de Adobe Journey Optimizer.
 
 ## Conditions préalables
 
@@ -29,21 +27,25 @@ Dans ce module, nous allons passer en revue les étapes d’utilisation de Adobe
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
-[3.1.1 Création de votre événement](./ex1.md)
+[3.1.1 Créer votre événement](./ex1.md)
 
 Dans cet exercice, vous apprendrez à configurer un événement.
 
-[3.1.2 Création de votre parcours et de votre message électronique](./ex2.md)
+[3.1.2 Création de fragments à utiliser dans votre message](./ex2.md)
 
-Dans cet exercice, vous apprendrez à configurer un message électronique.
+Dans cet exercice, vous apprendrez à configurer des fragments réutilisables que vous utiliserez lors de la création de votre e-mail.
 
-[3.1.3 Mise à jour de la propriété Collecte de données et test de votre parcours](./ex3.md)
+[3.1.3 Création de votre parcours et de votre e-mail](./ex3.md)
 
-Cela vous guidera tout au long de la configuration de Launch pour déclencher votre événement et fournir la payload appropriée. Enfin, vous pourrez vous envoyer un email.
+Dans cet exercice, vous apprendrez à configurer un e-mail.
+
+[3.1.3 Mettre à jour la propriété de collecte de données et tester le parcours](./ex4.md)
+
+Cela vous guidera tout au long de la configuration de Launch afin de déclencher votre événement et de fournir la payload appropriée. Enfin, vous pourrez vous envoyer un e-mail.
 
 [Résumé et avantages](./summary.md)
 
@@ -51,6 +53,6 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->Merci d’investir votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager les commentaires généraux d’avoir des suggestions sur le contenu futur, contactez directement les initiés de technologie, en envoyant un email à **techinsiders@adobe.com**.
+>Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

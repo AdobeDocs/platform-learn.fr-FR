@@ -1,259 +1,241 @@
 ---
-title: Journey Optimizer Créer votre parcours et votre message électronique
-description: Journey Optimizer Créer votre email
+title: Journey Optimizer - Création de fragments
+description: Journey Optimizer - Création de fragments
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 81810b3a-7eca-436f-a5dc-48c46cb33980
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 6%
+source-wordcount: '1056'
+ht-degree: 8%
 
 ---
 
-# 3.1.2 Création de votre parcours et de votre message électronique
+# 3.1.2 Création de fragments à utiliser dans votre message
 
-Dans cet exercice, vous allez configurer le parcours et le message qui doivent être déclenchés lorsqu’une personne crée un compte sur le site web de démonstration.
+Dans cet exercice, vous allez configurer 2 fragments, 1 pour un en-tête réutilisable et 1 pour un pied de page réutilisable.
 
-Connectez-vous à Adobe Journey Optimizer en vous rendant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
+Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP](./images/acophome.png)
+![ACOP ](./images/acophome.png)
 
-Vous serez redirigé vers la vue **Home** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser l’environnement de test approprié. L’environnement de test à utiliser s’appelle `--aepSandboxName--`. Pour passer d’un environnement de test à un autre, cliquez sur **Production Prod (VA7)** et sélectionnez l’environnement de test dans la liste. Dans cet exemple, l’environnement de test est nommé **AEP Enablement FY22**. Vous serez alors dans la vue **Home** de votre environnement de test `--aepSandboxName--`.
+Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`.
 
-![ACOP](./images/acoptriglp.png)
+![ACOP ](./images/acoptriglp.png)
 
-## 3.1.2.1 Création de votre parcours
+## 3.1.2.1 Créer un fragment d’en-tête
 
-Dans le menu de gauche, cliquez sur **Parcours**. Cliquez ensuite sur **Créer un Parcours** pour créer un parcours.
+Dans le menu de gauche, cliquez sur **Fragments**. Un fragment est un composant réutilisable dans Journey Optimizer, ce qui évite la duplication et facilite les modifications futures qui devraient avoir un impact sur tous les messages, telles que les modifications apportées à un en-tête ou à un pied de page dans un e-mail.
 
-![ACOP](./images/createjourney.png)
+Cliquez sur **Créer un fragment**.
 
-Vous verrez alors un écran de parcours vide.
+![ACOP ](./images/fragm1.png)
 
-![ACOP](./images/journeyempty.png)
+Saisissez le `--aepUserLdap-- - CitiSignal - Header` de nom et sélectionnez le **Type : fragment visuel**. Cliquez sur **Créer**.
 
-Dans l’exercice précédent, vous avez créé un **événement**. Vous l’avez appelé comme suit `ldapAccountCreationEvent` et remplacé `ldap` par votre ldap. Il s’agit du résultat de la création de l’événement :
+![ACOP ](./images/fragm2.png)
 
-![ACOP](./images/eventdone.png)
+Tu verras ça. Dans le menu de gauche, vous trouverez les composants de structure que vous pouvez utiliser pour définir la structure de l’e-mail (lignes et colonnes).
 
-Vous devez maintenant considérer cet événement comme le début de ce Parcours. Pour ce faire, accédez au côté gauche de l’écran et recherchez votre événement dans la liste des événements.
+Faites glisser et déposez une colonne **1:1** du menu vers la zone de travail. Il s’agira de l’espace réservé pour l’image du logo.
 
-![ACOP](./images/eventlist.png)
+![Journey Optimizer](./images/fragm3.png)
 
-Sélectionnez votre événement, faites-le glisser et déposez-le sur le canevas de Parcours. Votre Parcours ressemble maintenant à ceci :
+Vous pouvez ensuite utiliser les composants de contenu pour ajouter du contenu à l’intérieur de ces blocs. Faites glisser et déposez un composant **Image** dans la première cellule de la première ligne. Cliquez sur **Parcourir**.
 
-![ACOP](./images/journeyevent.png)
+![Journey Optimizer](./images/fragm4.png)
 
-Pour la deuxième étape du parcours, vous devez ajouter une étape **Wait** courte. Accédez à la section **Orchestration** sur le côté gauche de votre écran pour trouver ceci. Vous utiliserez les attributs de profil et devez vous assurer qu’ils sont renseignés dans le profil client en temps réel.
+Une fenêtre contextuelle s’affiche alors pour vous montrer votre Media Library AEM Assets. Accédez au dossier **citi-signal-images**, cliquez pour sélectionner l’image **CitiSignal-Logo-White.png**, puis cliquez sur **Sélectionner**.
 
-![ACOP](./images/journeywait.png)
+>[!NOTE]
+>
+>Si vous ne voyez pas les images Citi Signal dans votre bibliothèque AEM Assets, vous pouvez les trouver [ici](../../../assets/ajo/CitiSignal-images.zip). Téléchargez-les sur votre bureau, créez le dossier **citi-signal-images** et chargez toutes les images de ce dossier.
 
-Votre parcours ressemble maintenant à ceci. Dans la partie droite de l’écran, vous devez configurer le temps d’attente. Définissez-le sur 1 minute. Cela donnera beaucoup de temps aux attributs de profil qui seront disponibles après le déclenchement de l’événement.
+![Journey Optimizer](./images/fragm5.png)
 
-![ACOP](./images/journeywait1.png)
+Tu verras ça. Votre image est blanche et ne s’affiche pas encore. Vous devez maintenant définir une couleur d’arrière-plan pour que l’image s’affiche correctement. Cliquez sur **Styles**, puis sur la zone **Couleur d’arrière-plan**.
 
-Cliquez sur **Ok** pour enregistrer vos modifications.
+![Journey Optimizer](./images/fragm6.png)
 
-Comme troisième étape du parcours, vous devez ajouter une action **Email**. Accédez au côté gauche de votre écran à **Actions**, sélectionnez l’action **Email**, puis faites-la glisser sur le deuxième noeud de votre parcours. Vous voyez maintenant ceci.
+Dans la fenêtre contextuelle, modifiez le code couleur **Hex** en **#8821F4** puis changez la sélection en cliquant dans le champ **100 %**. La nouvelle couleur appliquée à l’image s’affiche.
 
-![ACOP](./images/journeyactions.png)
+![Journey Optimizer](./images/fragm7.png)
 
-Définissez la **catégorie** sur **Marketing** et sélectionnez une surface d&#39;email qui vous permet d&#39;envoyer des emails. Dans ce cas, la surface de l&#39;email à sélectionner est **Email**. Assurez-vous que les cases à cocher des **clics sur l’email** et des **ouvertures d’email** sont toutes deux activées.
+L&#39;image est aussi un peu trop grande en ce moment. Changeons la largeur en faisant glisser le sélecteur **Largeur** à **40 %**.
 
-![ACOP](./images/journeyactions1.png)
+![Journey Optimizer](./images/fragm8.png)
 
-L’étape suivante consiste à créer votre message. Pour ce faire, cliquez sur **Modifier le contenu**.
+Votre fragment d’en-tête est maintenant prêt. Cliquez sur **Enregistrer** puis sur la flèche pour revenir à l’écran précédent.
 
-![ACOP](./images/journeyactions2.png)
+![Journey Optimizer](./images/fragm9.png)
 
-## 3.1.2.2 Créer votre message
+Votre fragment doit être publié avant de pouvoir être utilisé. Cliquez sur **Publier**.
 
-Pour créer votre message, cliquez sur **Modifier le contenu**.
+![Journey Optimizer](./images/fragm10.png)
 
-![ACOP](./images/journeyactions2.png)
+Au bout de quelques minutes, vous verrez que le statut de votre fragment est passé à **Actif**.
+Vous devez ensuite créer un fragment pour le pied de page de vos e-mails. Cliquez sur **Créer un fragment**.
 
-Vous voyez maintenant ceci.
+![Journey Optimizer](./images/fragm11.png)
 
-![ACOP](./images/journeyactions3.png)
+## 3.1.2.1 Créer le fragment de pied de page
 
-Cliquez sur le champ de texte **Objet** .
+Cliquez sur **Créer un fragment**.
 
-![Journey Optimizer](./images/msg5.png)
+![Journey Optimizer](./images/fragm11.png)
 
-Dans la zone de texte, commencez à écrire **Hi**
+Saisissez le `--aepUserLdap-- - CitiSignal - Footer` de nom et sélectionnez le **Type : fragment visuel**. Cliquez sur **Créer**.
 
-![Journey Optimizer](./images/msg6.png)
+![Journey Optimizer](./images/fragm12.png)
 
-L’objet n’est pas encore terminé. Vous devez ensuite importer le jeton de personnalisation pour le champ **Prénom** stocké sous `profile.person.name.firstName`. Dans le menu de gauche, faites défiler l’écran vers le bas pour trouver l’élément **Person** et cliquez sur la flèche pour aller plus loin.
+Tu verras ça. Dans le menu de gauche, vous trouverez les composants de structure que vous pouvez utiliser pour définir la structure de l’e-mail (lignes et colonnes).
 
-![Journey Optimizer](./images/msg7.png)
+Faites glisser et déposez une colonne **1:1** du menu vers la zone de travail. Il s’agira de l’espace réservé pour le contenu du pied de page.
 
-Recherchez maintenant l’élément **Nom complet** et cliquez sur la flèche pour aller plus loin.
+![Journey Optimizer](./images/fragm13.png)
 
-![Journey Optimizer](./images/msg8.png)
+Vous pouvez ensuite utiliser les composants de contenu pour ajouter du contenu à l’intérieur de ces blocs. Effectuez un glisser-déposer d’un composant **HTML** dans la première cellule de la première ligne. Cliquez sur le composant pour le sélectionner, puis sur l’icône **&lt;/>** pour modifier le code source HTML.
 
-Enfin, recherchez le champ **Prénom** et cliquez sur le signe **+** situé à côté. Le jeton de personnalisation apparaît alors dans le champ de texte.
+![Journey Optimizer](./images/fragm14.png)
 
-![Journey Optimizer](./images/msg9.png)
+Tu verras ça.
 
-Ajoutez ensuite le texte **, merci de vous être inscrit !**. Cliquez sur **Enregistrer**.
+![Journey Optimizer](./images/fragm15.png)
 
-![Journey Optimizer](./images/msg10.png)
+Copiez le fragment de code d’HTML ci-dessous et collez-le dans la fenêtre **Modifier l’HTML** de Journey Optimizer.
 
-Vous serez alors de retour ici. Cliquez sur **Email Designer** pour créer le contenu de l’email.
+```html
+<!--[if mso]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td style="text-align: center;" ><![endif]-->
+<table style="width: auto; display: inline-block;">
+  <tbody>
+    <tr class="component-social-container">
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.facebook.com" data-component-social-icon-id="facebook">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://x.com" data-component-social-icon-id="twitter">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.instagram.com" data-component-social-icon-id="instagram">
+         
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+```
 
-![Journey Optimizer](./images/msg11.png)
+Tu auras alors ceci. Aux lignes 7, 12 et 17, vous devez maintenant insérer un fichier image à l’aide des ressources de votre bibliothèque AEM Assets.
 
-Dans l’écran suivant, vous serez invité à utiliser 3 méthodes différentes pour fournir le contenu de l’email :
+![Journey Optimizer](./images/fragm16.png)
 
-- **Conception à partir de zéro** : commencez par un canevas vierge et utilisez l’éditeur WYSIWYG pour faire glisser et déposer la structure et les composants de contenu afin de créer visuellement le contenu de l’email.
-- **Codez votre propre** : créez votre propre modèle d&#39;email en le codant à l&#39;aide de HTML
-- **Importer un HTML** : importez un modèle d’HTML existant que vous pourrez modifier.
+Assurez-vous que votre curseur se trouve à la ligne 7, puis cliquez sur **Assets** dans le menu de gauche. Cliquez sur **Ouvrir le sélecteur de ressources** pour sélectionner votre image.
 
-Cliquez sur **Conception à partir de zéro**.
+![Journey Optimizer](./images/fragm17.png)
 
-![Journey Optimizer](./images/msg12.png)
+Ouvrez le dossier **citi-signal-images** et cliquez pour sélectionner l’image **Icon_Facebook.png**. Cliquez sur **Sélectionner**.
 
-Dans le menu de gauche, vous trouverez les composants de structure que vous pouvez utiliser pour définir la structure de l&#39;email (lignes et colonnes).
+![Journey Optimizer](./images/fragm18.png)
 
-![Journey Optimizer](./images/msg13.png)
+Assurez-vous que le curseur se trouve à la ligne 12, puis cliquez sur **Ouvrir le sélecteur de ressources** pour sélectionner votre image.
 
-Faites glisser et déposez une colonne **1:2 Left** du menu dans la zone de travail. Il s’agit de l’espace réservé de l’image du logo.
+![Journey Optimizer](./images/fragm19.png)
 
-![Journey Optimizer](./images/msg14.png)
+Ouvrez le dossier **citi-signal-images** et cliquez pour sélectionner l’image **Icon_X.png**. Cliquez sur **Sélectionner**.
 
-Faites glisser et déposez une **colonne 1:1** sous le composant précédent. Ce sera le bloc de bannière.
+![Journey Optimizer](./images/fragm20.png)
 
-![Journey Optimizer](./images/msg15.png)
+Assurez-vous que le curseur se trouve à la ligne 17, puis cliquez sur **Ouvrir le sélecteur de ressources** pour sélectionner votre image.
 
-Faites glisser et déposez une colonne **1:2 Left** sous le composant précédent. Il s’agit du contenu réel avec une image sur le côté gauche et du texte sur le côté droit.
+![Journey Optimizer](./images/fragm21.png)
 
-![Journey Optimizer](./images/msg16.png)
+Ouvrez le dossier **citi-signal-images** et cliquez pour sélectionner l’image **Icon_Instagram.png**. Cliquez sur **Sélectionner**.
 
-Faites ensuite glisser et déposez une **colonne 1:1** sous le composant précédent. Il s’agit du pied de page de l’email. Votre zone de travail doit maintenant ressembler à ceci :
+![Journey Optimizer](./images/fragm22.png)
 
-![Journey Optimizer](./images/msg17.png)
+Tu verras ça. Cliquez sur **Enregistrer**.
 
-Utilisons ensuite les composants de contenu pour ajouter du contenu à l’intérieur de ces blocs. Cliquez sur l’option de menu **Composants du contenu**
+![Journey Optimizer](./images/fragm23.png)
 
-![Journey Optimizer](./images/msg18.png)
+Vous serez alors de retour dans l&#39;éditeur. Vos icônes ne sont pas encore visibles car l’arrière-plan et les fichiers image sont tous en blanc. Pour modifier la couleur d’arrière-plan, accédez à **Styles**, puis cochez la case **Couleur d’arrière-plan**.
 
-Faites glisser et déposez un composant **Image** dans la première cellule de la première ligne. Cliquez sur **Parcourir**.
+![Journey Optimizer](./images/fragm24.png)
 
-![Journey Optimizer](./images/msg19.png)
+Remplacez le code couleur **Hex** par **#000000**.
 
-Vous verrez alors ceci. Accédez au dossier **enablement-assets** et sélectionnez le fichier **luma-logo.png**. Cliquez sur **Sélectionner**.
+![Journey Optimizer](./images/fragm25.png)
 
-![Journey Optimizer](./images/msg21.png)
+Modifiez l&#39;alignement pour qu&#39;il soit centré.
 
-Vous êtes maintenant de retour ici :
+![Journey Optimizer](./images/fragm26.png)
 
-![Journey Optimizer](./images/msg25.png)
+Ajoutons d’autres parties au pied de page. Faites glisser et déposez un composant **Image** au-dessus du composant d’HTML que vous venez de créer. Cliquez sur **Parcourir**.
 
-Accédez à **Composants du contenu** et faites glisser et déposez un composant **Image** dans la première cellule de la première ligne. Cliquez sur **Parcourir**.
+![Journey Optimizer](./images/fragm27.png)
 
-![Journey Optimizer](./images/msg26.png)
+Cliquez pour sélectionner le fichier image **`CitiSignal_Footer_Logo.png`** et cliquez sur **Sélectionner**.
 
-Dans la fenêtre contextuelle **Assets**, accédez au dossier **enablement-assets**. Dans ce dossier, vous trouverez toutes les ressources précédemment préparées et chargées par l’équipe créative. Sélectionnez **module23-thankyou-new.png** et cliquez sur **Sélectionner**.
+![Journey Optimizer](./images/fragm28.png)
 
-![Journey Optimizer](./images/msg28.png)
+Accédez à **Styles** et cochez la case **Couleur d’arrière-plan**, nous allons à nouveau la modifier en noir. Remplacez le code couleur **Hex** par **#000000**.
 
-Vous obtiendrez alors ce qui suit :
+![Journey Optimizer](./images/fragm29.png)
 
-![Journey Optimizer](./images/msg30.png)
+Remplacez la largeur par **20 %** et vérifiez que l&#39;alignement est centré.
 
-Sélectionnez votre image et, dans le menu de droite, faites défiler l’écran vers le bas jusqu’à ce que le composant de curseur de largeur **Size** s’affiche. Utilisez le curseur pour définir la largeur sur f.i. **60%**.
+![Journey Optimizer](./images/fragm30.png)
 
-![Journey Optimizer](./images/msg31.png)
+Ensuite, faites glisser et déposez un composant **Texte** sous le composant HTML que vous avez créé. Cliquez sur **Parcourir**.
 
-Ensuite, accédez à **Composants du contenu** et faites glisser et déposez un composant **Texte** dans le composant de structure sur la quatrième ligne.
+![Journey Optimizer](./images/fragm31.png)
 
-![Journey Optimizer](./images/msg33.png)
+Copiez et collez le texte ci-dessous en remplaçant le texte d’espace réservé.
 
-Sélectionnez le texte par défaut **Veuillez saisir votre texte ici.** comme vous le feriez avec tout éditeur de texte. Écrivez **Cher** à la place. La barre d’outils de texte s’affiche lorsque vous êtes en mode texte.
+```
+1234 N. South Street, Anywhere, US 12345
 
-![Journey Optimizer](./images/msg34.png)
+Unsubscribe
 
-Dans la barre d’outils, cliquez sur l’icône **Ajouter une personnalisation** .
+©2024 CitiSignal, Inc and its affiliates. All rights reserved.
+```
 
-![Journey Optimizer](./images/msg35.png)
+Définissez l’**Alignement du texte** à centrer.
 
-Ensuite, vous devez importer le jeton de personnalisation **Prénom** stocké sous `profile.person.name.firstName`. Dans le menu, recherchez l’élément **Person** , recherchez l’élément **Full Name** , puis cliquez sur l’icône **+** pour ajouter le champ First Name à l’éditeur d’expression.
+![Journey Optimizer](./images/fragm32.png)
 
-Cliquez sur **Enregistrer**.
+Remplacez la **Couleur de police** par le blanc, **#FFFFFF**.
 
-![Journey Optimizer](./images/msg36.png)
+![Journey Optimizer](./images/fragm33.png)
 
-Vous remarquerez maintenant comment le champ de personnalisation a été ajouté à votre texte.
+Remplacez **Couleur d’arrière-plan** par le noir, **#000000**.
 
-![Journey Optimizer](./images/msg37.png)
+![Journey Optimizer](./images/fragm34.png)
 
-Dans le même champ de texte, appuyez deux fois sur **Entrée** pour ajouter deux lignes et écrivez **Merci d’avoir créé votre compte avec Luma !**.
+Sélectionnez le texte **Se désabonner** dans le pied de page, puis cliquez sur l’icône **Lien** dans la barre de menus. Définissez le **Type** sur **Désinscription/opt-out externe** et définissez l’URL sur **https://aepdemo.net/unsubscribe.html** (le lien de désinscription ne peut pas contenir d’URL vide).
 
-![Journey Optimizer](./images/msg38.png)
+![Journey Optimizer](./images/fragm35.png)
 
-La dernière vérification à effectuer pour vous assurer que votre email est prêt est de le prévisualiser, cliquez sur le bouton **Simuler le contenu** .
+Tu auras alors ceci. Votre pied de page est maintenant prêt. Cliquez sur **Enregistrer** puis sur la flèche pour revenir à la page précédente.
 
-![Journey Optimizer](./images/msg50.png)
+![Journey Optimizer](./images/fragm36.png)
 
-Commencez par identifier le profil que vous souhaitez utiliser pour la prévisualisation. Sélectionnez l’espace de noms **email** en cliquant sur l’icône en regard du champ **Entrer l’espace de noms d’identité** .
+Cliquez sur **Publish** pour publier votre pied de page afin de l&#39;utiliser dans un e-mail.
 
-Dans la liste des espaces de noms d’identité, sélectionnez l’espace de noms **Email**.
+![Journey Optimizer](./images/fragm37.png)
 
-Dans le champ **Valeur d’identité**, saisissez l’adresse électronique d’un précédent profil de démonstration qui est déjà stocké dans Real-time Customer Profile. Par exemple, **woutervangeluwe+06022022-01@gmail.com** et cliquez sur le bouton **Rechercher un profil de test**
+Au bout de quelques minutes, vous verrez que le statut de votre pied de page est passé à **Actif**.
 
-![Journey Optimizer](./images/msg53.png)
-
-Une fois votre profil affiché dans le tableau, cliquez sur l’onglet **Aperçu** pour accéder à l’écran de prévisualisation.
-
-Lorsque l’aperçu est prêt, vérifiez que la personnalisation est correcte dans la ligne d’objet. Le texte du corps ainsi que le lien de désinscription sont mis en surbrillance sous la forme d’un lien hypertexte.
-
-Cliquez sur **Fermer** pour fermer l’aperçu.
-
-![Journey Optimizer](./images/msg54.png)
-
-Cliquez sur **Enregistrer** pour enregistrer votre message.
-
-![Journey Optimizer](./images/msg55.png)
-
-Revenez au tableau de bord des messages en cliquant sur la **flèche** en regard de l’objet du texte dans le coin supérieur gauche.
-
-![Journey Optimizer](./images/msg56.png)
-
-Vous avez maintenant terminé de créer votre email d’enregistrement. Cliquez sur la flèche dans le coin supérieur gauche pour revenir à votre parcours.
-
-![Journey Optimizer](./images/msg57.png)
-
-Cliquez sur **OK**.
-
-![Journey Optimizer](./images/msg57a.png)
-
-## 3.1.2.3 Publish votre parcours
-
-Vous devez toujours donner un nom à votre parcours. Pour ce faire, cliquez sur l’icône **Propriétés** dans le coin supérieur droit de votre écran.
-
-![ACOP](./images/journeyname.png)
-
-Vous pouvez ensuite y saisir le nom du parcours. Veuillez utiliser `--aepUserLdap-- - Account Creation Journey`. Cliquez sur **OK** pour enregistrer vos modifications.
-
-![ACOP](./images/journeyname1.png)
-
-Vous pouvez maintenant publier votre parcours en cliquant sur **Publish**.
-
-![ACOP](./images/publishjourney.png)
-
-Cliquez de nouveau sur **Publish**.
-
-![ACOP](./images/publish1.png)
-
-Une barre de confirmation verte s’affiche alors, indiquant que votre parcours est désormais Publié.
-
-![ACOP](./images/published.png)
+![Journey Optimizer](./images/fragm38.png)
 
 Vous avez maintenant terminé cet exercice.
 
-Étape suivante : [3.1.3 Mettre à jour votre propriété de collecte de données et tester votre parcours](./ex3.md)
+Étape suivante : [3.1.3 Création de votre parcours et de votre e-mail](./ex3.md)
 
-[Revenir au module 3.1](./journey-orchestration-create-account.md)
+[Retour au module 3.1](./journey-orchestration-create-account.md)
 
 [Revenir à tous les modules](../../../overview.md)
