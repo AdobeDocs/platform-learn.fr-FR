@@ -5,9 +5,9 @@ user-guide-description: Tutoriel pratique couvrant de nombreux aspects de Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
+source-git-commit: c8f9d5258d530ef12905113dd2aea4e179d0cca9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '915'
 ht-degree: 4%
 
 ---
@@ -132,10 +132,9 @@ ht-degree: 4%
    + 3.4 Adobe Journey Optimizer : Parcours basés sur des événements {#module34}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/journeyoptimizer.md)
       + [3.4.1 Configuration d’un parcours basé sur un déclencheur - Confirmation de commande](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex1.md)
-      + [3.4.2 Configuration d’un parcours de newsletter par lots](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
-      + [3.4.3 Appliquer une personnalisation dans un e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
+      + [3.4.2 Configuration d’une campagne](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
+      + [3.4.3 Appliquer une personnalisation basée sur les segments dans un e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 Configuration et utilisation des notifications push](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
-      + [3.4.5 Création d’un parcours d’événement métier](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex5.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 {#cjab2c} B2C Customer Journey Analytics

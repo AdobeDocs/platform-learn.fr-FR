@@ -4,9 +4,9 @@ description: Dans cette section, vous allez configurer un parcours basé sur un 
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1919'
 ht-degree: 8%
 
 ---
@@ -136,7 +136,7 @@ Effectuez un glisser-déposer 8 fois par colonne **1:1** sur la zone de travail,
 
 ![Journey Optimizer](./images/oc9.png)
 
-Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans l’exercice 3.2.2 sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans l’exercice 3.2.2 sur le dernier composant de la zone de travail.
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1](./../module3.1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../module3.1/ex2.md) [exercice) sur le dernier composant de la zone de travail.
 
 ![Journey Optimizer](./images/fragm1.png)
 

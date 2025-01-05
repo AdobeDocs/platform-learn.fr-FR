@@ -4,151 +4,191 @@ description: Dans cette section, vous allez configurer un parcours d’e-mail pa
 kt: 5342
 doc-type: tutorial
 exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 8%
+source-wordcount: '878'
+ht-degree: 7%
 
 ---
 
-# 3.4.2 Configuration d’un parcours de newsletter par lots
+# 3.4.2 Configuration d’une campagne
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
 ![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Pour passer d’un sandbox à un autre, cliquez sur **PRODUCTION Prod (VA7)** et sélectionnez le sandbox dans la liste. Dans cet exemple, le sandbox est nommé **Activation AEP FY22**. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
+Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
 ![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-## 3.4.2.1 Créer un parcours de newsletter
 
-Vous allez à présent créer un parcours basé sur des lots. Contrairement au parcours basé sur un événement de l’exercice précédent, qui repose sur les événements d’expérience entrants, les entrées ou les sorties d’audience pour déclencher un parcours pour un client spécifique, les parcours par lots ciblent une audience entière une fois avec un contenu unique tel que des newsletters, des promotions ponctuelles ou des informations génériques, ou périodiquement avec un contenu similaire envoyé régulièrement, par exemple des campagnes d’anniversaire et des rappels.
+## 3.4.2.1 Créer une audience
 
-Dans le menu, accédez à **Parcours** puis cliquez sur **Créer un Parcours**.
+Avant de créer votre campagne, vous devez définir l’audience qui doit recevoir la campagne. Pour créer une audience, accédez à **Audiences** dans le menu de gauche. Toutes les audiences créées précédemment s’affichent à cet endroit.
+
+Cliquez sur **+ Créer une audience**.
+
+![Journey Optimizer](./images/audcampaign1.png)
+
+Sélectionnez **Créer une règle** puis cliquez sur **Créer**.
+
+![Journey Optimizer](./images/audcampaign2.png)
+
+Sélectionnez le champ **Profil individuel XDM > E-mail personnel > Adresse** et ajoutez-le à la zone de travail. Définissez la condition de règle sur **existe**.
+
+Pour éviter d’envoyer des e-mails à d’autres utilisateurs dans votre environnement de formation partagé, vous pouvez également ajouter un filtre tel que **Prénom égal à -votre prénom-**.
+
+Définissez le nom de votre audience sur `--aepUserLdap-- - All customers with email` et cliquez sur **Publish**.
+
+![Journey Optimizer](./images/audcampaign3.png)
+
+Votre audience est maintenant publiée et peut être utilisée dans une campagne.
+
+## 3.4.2.2 Créer une campagne de newsletter
+
+Vous allez maintenant créer une campagne. Contrairement au parcours basé sur un événement de l’exercice précédent, qui repose sur les événements d’expérience entrants, les entrées ou les sorties d’audience pour déclencher un parcours pour un client spécifique, les campagnes ciblent une audience entière une fois avec du contenu unique tel que des newsletters, des promotions ponctuelles ou des informations génériques, ou périodiquement avec du contenu similaire envoyé régulièrement, par exemple des campagnes d’anniversaire et des rappels.
+
+Dans le menu, accédez à **Campagnes** et cliquez sur **Créer une campagne**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-Sur la droite, vous verrez un formulaire dans lequel vous devez spécifier le nom et la description du parcours. Saisissez les valeurs suivantes :
+Sélectionnez **Planifié - Marketing** et cliquez sur **Créer**.
 
-- **Nom** : `--aepUserLdap-- - Newsletter Journey`. Par exemple : **vangeluw - Newsletter Parcours**.
+![Journey Optimizer](./images/campaign1.png)
+
+Dans l’écran de création de la campagne, configurez les éléments suivants :
+
+- **Nom** : `--aepUserLdap-- - CitiSignal Newsletter`.
 - **Description** : Newsletter Mensuelle
+- **Type d’identité** : remplacez par E-mail .
 
-Cliquez sur **OK**.
+Cliquez sur **Sélectionner une audience**.
 
-![Journey Optimizer](./images/batchj2.png)
+![Journey Optimizer](./images/campaign2.png)
 
-Sous **Orchestration**, effectuez un glisser-déposer **Lecture d’audience** sur la zone de travail. Cela signifie qu’une fois publié, le parcours commencera par récupérer l’ensemble de l’audience, qui devient alors l’audience cible du parcours et du message. Cliquez sur **Sélectionner une audience**.
+Pour l’**Audience**, sélectionnez l’audience que vous avez créée à l’étape précédente, `--aepUserLdap-- - All customers with email`. Cliquez sur **Enregistrer**.
 
-![Journey Optimizer](./images/batchj3.png)
+![Journey Optimizer](./images/campaign2a.png)
 
-Dans la fenêtre contextuelle **Sélection d’une audience**, recherchez votre ldap et sélectionnez l’audience que vous avez créée dans [Module 2.3 - Real-time CDP - Création d’une audience et effectuez une action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) appelée `--aepUserLdap-- - Interest in Galaxy S24`. Cliquez sur **Enregistrer**.
+Pour l’**Action**, sélectionnez **E-mail** et sélectionnez une **Configuration d’e-mail** existante. Vous allez modifier le contenu dans quelques minutes.
 
-![Journey Optimizer](./images/batchj5.png)
+![Journey Optimizer](./images/campaign3.png)
 
-Cliquez sur **OK**.
+Pour le **Planning**, choisissez **À une date et une heure spécifiques** puis définissez l’heure de votre choix.
 
-![Journey Optimizer](./images/batchj6.png)
+![Journey Optimizer](./images/campaign4.png)
 
-Dans le menu de gauche, recherchez la section **Actions** et effectuez un glisser-déposer d’une action **E-mail** sur la zone de travail.
+Vous pouvez maintenant commencer à créer l’e-mail lui-même. Faites défiler l’écran vers le haut, puis cliquez sur **Modifier le contenu**.
 
-![Journey Optimizer](./images/batchj7.png)
+![Journey Optimizer](./images/campaign5.png)
 
-Définissez la **Catégorie** sur **Marketing** et sélectionnez une surface d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la surface d’e-mail à sélectionner est **Email**. Assurez-vous que les cases à cocher **Clics sur l’e-mail** et **Ouvertures d’e-mail** sont activées.
+Tu verras ça. Pour l’**Objet**, utilisez la commande suivante : `Your monthly CitiSignal update has arrived.`. Cliquez ensuite sur **Modifier le corps de l’e-mail**.
 
-![ACOP ](./images/journeyactions1eee.png)
+![Journey Optimizer](./images/campaign6.png)
 
-L’étape suivante consiste à créer votre message. Pour ce faire, cliquez sur **Modifier le contenu**.
+Choisissez **Créer en partant de zéro**.
 
-![ACOP ](./images/journeyactions2.png)
+![Journey Optimizer](./images/campaign7.png)
 
-Vous voyez maintenant ceci. Cliquez sur le champ de texte **Objet**.
+Tu verras ça. Dans le menu de gauche, vous trouverez les composants de structure que vous pouvez utiliser pour définir la structure de l’e-mail (lignes et colonnes).
 
-![Journey Optimizer](./images/batch4.png)
+Effectuez un glisser-déposer 3 fois par colonne **1:1** sur la zone de travail, 1 fois par colonne 1:2 à gauche et 1 fois par colonne 2:1 à droite, ce qui devrait vous donner cette structure :
 
-Saisissez le texte suivant pour l&#39;objet : `Luma Newsletter - your monthly update has arrived.`. Cliquez sur **Enregistrer**.
+![Journey Optimizer](./images/campaign8.png)
 
-![Journey Optimizer](./images/batch5.png)
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1](./../module3.1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../module3.1/ex2.md) [exercice) sur le dernier composant de la zone de travail.
 
-Tu seras de retour ici. Cliquez sur **Email Designer** pour commencer à créer le contenu de l’e-mail.
+![Journey Optimizer](./images/campaign9.png)
 
-![Journey Optimizer](./images/batch6.png)
+Cliquez sur l’icône **+** dans le menu de gauche. Accédez à **Contenu** pour commencer à ajouter du contenu sur la zone de travail.
 
-Tu verras ça. Cliquez sur **Importer l’HTML**.
+![Journey Optimizer](./images/campaign10.png)
 
-![Journey Optimizer](./images/batch7.png)
+Faites glisser et déposez un composant **Texte** sur la deuxième ligne.
 
-Dans l’écran pop-up, vous devez faire un glisser-déposer du fichier d’HTML de l’e-mail. Le modèle HTML est disponible [ici](./../../../assets/html/ajo-newsletter.html.zip). Téléchargez le fichier zip avec le modèle HTML sur votre ordinateur local et décompressez-le sur votre bureau.
+![Journey Optimizer](./images/campaign11.png)
 
-![Journey Optimizer](./images/html1.png)
+Sélectionnez le texte par défaut dans ce composant **Veuillez saisir votre texte ici.**-le et remplacez-le par le texte ci-dessous. Remplacez l’alignement par **Alignement centré**.
 
-Effectuez un glisser-déposer du fichier **ajo-newsletter.html** pour le charger dans Journey Optimizer. Cliquez sur **Importer**.
+```javascript
+Hi {{profile.person.name.firstName}}
 
-![Journey Optimizer](./images/batch8.png)
+As a CitiSignal member, you're part of a dynamic community that's constantly evolving to meet your needs. We're committed to delivering innovative solutions that enhance your digital lifestyle and keep you ahead of the curve.
 
-Ce contenu d’e-mail est prêt à l’emploi, car il dispose de toute la personnalisation, des images et du texte attendus. Seul l’espace réservé de l’offre reste vide.
+Stay connected.
+```
 
-Il se peut que vous receviez un message d’erreur : **Erreur lors de la tentative de récupération de ressources**. Il est lié à l’image dans l’e-mail.
+![Journey Optimizer](./images/campaign12.png)
 
-![Journey Optimizer](./images/errorfetch.png)
+Faites glisser et déposez un composant **Image** sur la 3e et la 4e ligne. Cliquez sur **Parcourir** sur la 3e ligne.
 
-Si vous obtenez cette erreur, sélectionnez l’image et cliquez sur le bouton **Modifier l’image**.
+![Journey Optimizer](./images/campaign13.png)
 
-![Journey Optimizer](./images/errorfetch1.png)
+Ouvrez le dossier **citi-signal-images**, cliquez pour sélectionner l’image **Offer_AirPods.jpg**, puis cliquez sur **Sélectionner**.
 
-Cliquez sur **Assets Essentials** pour revenir à votre bibliothèque AEM Assets Essentials.
+![Journey Optimizer](./images/campaign14.png)
 
-![Journey Optimizer](./images/errorfetch2.png)
+Cliquez sur **Parcourir** dans l’espace réservé de l’image sur la 4e ligne.
 
-Vous verrez alors cette fenêtre contextuelle. Accédez au dossier **enablement-assets** et sélectionnez l’image **luma-newsletterContent.png**. Cliquez sur **Sélectionner**.
+![Journey Optimizer](./images/campaign15.png)
 
-![Journey Optimizer](./images/errorfetch3.png)
+Ouvrez le dossier **citi-signal-images**, cliquez pour sélectionner l’image **Offer_Phone.jpg**, puis cliquez sur **Sélectionner**.
+
+![Journey Optimizer](./images/campaign16.png)
+
+Faites glisser et déposez un composant **Texte** sur la 3e et la 4e ligne.
+
+![Journey Optimizer](./images/campaign17.png)
+
+Sélectionnez le texte par défaut dans le composant de la 3e ligne **Veuillez saisir votre texte ici.**-le et remplacez-le par le texte ci-dessous.
+
+```javascript
+Get AirPods for free:
+
+Experience seamless connectivity like never before with CitiSignal. Sign up for select premium plans and receive a complimentary pair of Apple AirPods. Stay connected in style with our unbeatable offer.
+```
+
+Sélectionnez le texte par défaut dans le composant sur la 4e ligne **Veuillez saisir votre texte ici.**-le et remplacez-le par le texte ci-dessous.
+
+```javascript
+We'll pay off your phone:
+
+Make the switch to CitiSignal and say goodbye to phone payments! Switching to CitiSignal has never been more rewarding. Say farewell to hefty phone bills as we help pay off your phone, up to 800$!
+```
+
+![Journey Optimizer](./images/campaign18.png)
 
 Votre e-mail de newsletter de base est maintenant prêt. Cliquez sur **Enregistrer**.
 
 ![Journey Optimizer](./images/ready.png)
 
-Revenez au tableau de bord des messages en cliquant sur la **flèche** en regard du texte de l’objet dans le coin supérieur gauche.
+Revenez au tableau de bord de la campagne en cliquant sur la **flèche** en regard du texte de l’objet dans le coin supérieur gauche.
 
-![Journey Optimizer](./images/batch9.png)
+![Journey Optimizer](./images/campaign19.png)
 
-Cliquez sur la flèche dans le coin supérieur gauche pour revenir au parcours.
+Cliquez sur **Vérifier pour activer**.
 
-![Journey Optimizer](./images/oc79aeee.png)
+![Journey Optimizer](./images/campaign20.png)
 
-Cliquez sur **Ok** pour fermer l’action de l’e-mail.
+Il se peut que vous obteniez cette erreur. Si c’est le cas, vous devrez peut-être attendre jusqu’à 24 heures avant que l’audience ait été évaluée, puis essayer d’activer à nouveau votre campagne. Vous devrez peut-être également mettre à jour le planning de votre campagne pour l’exécuter ultérieurement.
 
-![Journey Optimizer](./images/oc79beee.png)
+Cliquez sur **Activer**.
 
-Votre parcours de newsletter est maintenant prêt à être publié. Avant de procéder, notez la section **Planifier** dans laquelle vous pouvez passer de ce parcours ponctuel à une campagne récurrente. Cliquez sur le bouton **Planifier**.
+![Journey Optimizer](./images/campaign21.png)
 
-![Journey Optimizer](./images/batchj12.png)
+Une fois activée, votre campagne sera planifiée pour s’exécuter.
 
-Tu verras ça. Sélectionnez **Une Fois**.
+![Journey Optimizer](./images/campaign22.png)
 
-![Journey Optimizer](./images/sch1.png)
+Votre campagne est maintenant activée. Votre newsletter sera envoyée par e-mail comme vous l’avez définie dans votre planning, et votre campagne s’arrêtera dès que le dernier e-mail aura été envoyé.
 
-Sélectionnez une date et une heure au cours de l’heure suivante afin de pouvoir tester votre parcours. Cliquez sur **OK**.
+Vous devriez également recevoir l’e-mail à l’adresse e-mail que vous avez utilisée pour le profil de démonstration que vous avez créé précédemment.
 
->[!NOTE]
->
->La date et l’heure d’envoi du message doivent être comprises dans plus d’une heure.
-
-Cliquez sur **Publier**.
-
-![Journey Optimizer](./images/batchj13.png)
-
-Cliquez de nouveau sur **Publish**.
-
-![Journey Optimizer](./images/batchj14.png)
-
-Votre parcours de newsletter de base est maintenant publié. Votre newsletter sera envoyée par e-mail comme vous l’avez définie dans votre planning, et votre parcours s’arrêtera dès que le dernier e-mail aura été envoyé.
-
-![Journey Optimizer](./images/batchj14eee.png)
+![Journey Optimizer](./images/campaign23.png)
 
 Vous avez terminé cet exercice.
 
-Étape suivante : [3.4.3 Appliquer la personnalisation dans un e-mail](./ex3.md)
+Étape suivante : [3.4.3 Appliquer une personnalisation basée sur les segments dans un e-mail](./ex3.md)
 
 [Retour au module 3.4](./journeyoptimizer.md)
 
