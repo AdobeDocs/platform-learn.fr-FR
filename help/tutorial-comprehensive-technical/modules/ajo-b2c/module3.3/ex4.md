@@ -1,103 +1,98 @@
 ---
-title: 'Offer decisioning : testez votre décision à l’aide du site web de démonstration.'
-description: Test de votre décision à l’aide du site web de démonstration
+title: Offer decisioning - Testez votre décision à l’aide du site web de démonstration
+description: Testez votre décision à l’aide du site web de démonstration
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5cc9f134-1434-4e76-9d26-9d73dbf6c0be
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 3.3.4 Combinaison d’Adobe Target et d’Offer Decisioning
+# 3.3.4 Combiner Adobe Target et Offer decisioning
 
-## 3.3.4.1 Collecte du lien partageable de votre projet de démonstration
+## 3.3.4.1 Collecter le lien partageable de votre projet de démonstration
 
 Pour charger le projet de site web de démonstration dans Adobe Target, vous devez d’abord collecter un lien spécial qui permettra à Adobe Target de charger votre projet de site web de démonstration.
 
-Pour ce faire, accédez à [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur le projet de votre site web pour l’ouvrir.
+Pour ce faire, accédez à [https://dsn.adobe.com/projects](https://builder.adobedemo.com/projects). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le projet de votre site web pour l’ouvrir.
 
-![RTCDP](./images/builder1.png)
+![ RTCDP ](./images/builder1.png)
 
-Vous allez maintenant voir ceci. Cliquez sur **Partager**.
+Vous allez voir ceci. Accédez à **Partager**. Cliquez sur **Générer le lien** puis copiez le lien dans le presse-papiers.
 
-![RTCDP](./images/builder2.png)
+![ RTCDP ](./images/builder2.png)
 
-Cliquez sur **Générer le lien**, puis copiez le lien dans le presse-papiers.
+Accédez à [https://bitly.com](https://bitly.com), collez le lien que vous avez copié et cliquez sur **Créer votre lien**.
 
-![RTCDP](./images/builder3.png)
+![ RTCDP ](./images/builder4.png)
 
-Accédez à [https://bitly.com](https://bitly.com), collez le lien que vous avez copié et cliquez sur **Raccourcir**. Vous obtiendrez désormais un lien raccourci, qui ressemble à ceci : `https://bit.ly/3JxN7aG`. Vous aurez besoin de ce lien dans le prochain exercice.
+Vous obtiendrez désormais un lien raccourci, qui ressemble à ceci : `https://adobe.ly/3PpGcFk`. Vous aurez besoin de ce lien dans l’exercice suivant.
 
-![RTCDP](./images/builder4.png)
+![ RTCDP ](./images/builder5.png)
 
-## 3.3.4.2 Collecte
+## 3.3.4.2 Collecter
 
-Accédez maintenant à la page d’accueil de Adobe Experience Cloud en vous rendant à l’adresse [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Cliquez sur **Target**.
+Accédez maintenant à la page d’accueil de Adobe Experience Cloud en accédant à [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Cliquez sur **Cible**.
 
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
+![ RTCDP ](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
 
-Sur la page d’accueil **Adobe Target**, vous verrez toutes les activités existantes.
+Sur la page d’accueil **Adobe Target**, toutes les activités existantes s’affichent. Cliquez sur **Créer une activité** puis sur **Ciblage d’expérience**.
 
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
+![ RTCDP ](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
 
-Cliquez sur **+ Créer une activité** pour créer une activité.
+Sélectionnez maintenant **Visuel** et collez votre lien raccourci dans le champ **Saisir l’URL de l’activité**. Cliquez sur **Créer**.
 
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatcr.png)
+![ RTCDP ](./images/exclatcrxt1.png)
 
-Sélectionnez **Ciblage d’expérience**.
+Votre projet de site web de démonstration sera ensuite chargé dans le compositeur d’expérience visuelle.
 
-![RTCDP](./images/exclatcrxt.png)
+>[!NOTE]
+>
+>Si votre site web ne se charge pas correctement, installez et activez cette extension Chrome : **Adobe Target VEC Helper** à partir du magasin web Chrome, puis réessayez.
 
-Sélectionnez maintenant **Visuel** et collez votre lien raccourci dans le champ **Entrer dans l’URL d’activité**. Cliquez sur **Suivant**.
+![ RTCDP ](./images/vec1.png)
 
-![RTCDP](./images/exclatcrxt1.png)
+Cliquez sur la zone qui contient l’offre Disney+. Veillez à sélectionner le **Conteneur** complet. Cliquez sur **Insérer avant** puis sélectionnez **Décision d’offre**.
 
-Votre projet de site web de démonstration sera alors chargé dans le compositeur d’expérience visuelle.
+![ RTCDP ](./images/vec3.png)
 
-![RTCDP](./images/vec1.png)
+Vous verrez alors cette fenêtre contextuelle. Sélectionnez votre `--aepSandboxName--` sandbox, puis sélectionnez l’emplacement **Web - Image**.
 
-Accédez au mode **Parcourir** pour cliquer sur **Autoriser tout** dans la fenêtre contextuelle de consentement des cookies.
+![ RTCDP ](./images/vec4.png)
 
-![RTCDP](./images/vec2.png)
+Sélectionnez ensuite votre `--aepUserLdap-- - CitiSignal Decision` de décision. Cliquez sur **Enregistrer**.
 
-Cliquez sur la zone contenant le texte **Catégories en vedette**. Cliquez sur **Insérer avant**, puis sélectionnez **Offer Decision**.
+![ RTCDP ](./images/vec5.png)
 
-![RTCDP](./images/vec3.png)
+Tu verras ça. Cliquez sur **Vérifier la règle**.
 
-Vous verrez alors cette fenêtre contextuelle. Sélectionnez votre environnement de test `--aepSandboxName--`, puis sélectionnez l’emplacement **Web - Image**.
+![ RTCDP ](./images/vec5a.png)
 
-![RTCDP](./images/vec4.png)
+Assurez-vous que la règle de modèle supplémentaire **URL** **contient** **nom-de-votre-projet** a été ajoutée. Cliquez sur **Enregistrer**.
 
-Sélectionnez ensuite votre décision `--aepUserLdap-- - Luma Decision`. Cliquez sur **Enregistrer**.
+![ RTCDP ](./images/vec6.png)
 
-![RTCDP](./images/vec5.png)
+Tu verras ça. Cliquez sur **Suivant**.
 
-Vous verrez alors ceci. Veillez à ajouter une règle de modèle supplémentaire **URL** **contient** **votre-nom-projet**. Cliquez sur **Enregistrer**.
+![ RTCDP ](./images/vec7.png)
 
-![RTCDP](./images/vec6.png)
+Saisissez un nom pour votre offre. Utilisez le nom suivant : `--aepUserLdap-- - XT with Offers (VEC)`. Cliquez sur **Suivant**.
 
-Vous verrez alors ceci. Cliquez sur **Suivant**.
+![ RTCDP ](./images/vec8.png)
 
-![RTCDP](./images/vec7.png)
+Tu verras ça. Définissez votre **mesure d’objectif** comme indiqué. Cliquez sur **Enregistrer et fermer**.
 
-Saisissez un nom pour votre offre. Utilisez ce nom : `--aepUserLdap-- - XT with Offers (VEC)`. Cliquez sur **Suivant**.
+![ RTCDP ](./images/vec9.png)
 
-![RTCDP](./images/vec8.png)
+Votre offre est maintenant créée et est en cours de publication. Une fois votre offre publiée, vous pouvez l’activer.
 
-Vous verrez alors ceci. Définissez la **mesure de l’objectif** comme indiqué. Cliquez sur **Enregistrer et fermer**.
+![ RTCDP ](./images/vec11.png)
 
-![RTCDP](./images/vec9.png)
+Étape suivante : [3.3.5 Utilisez votre décision dans un e-mail et un sms](./ex5.md)
 
-Votre offre est maintenant créée et en cours de publication.
-
-![RTCDP](./images/vec10.png)
-
-Une fois votre offre publiée, vous pouvez l’activer.
-
-Étape suivante : [3.3.5 Utilisez votre décision dans un email et un sms](./ex5.md)
-
-[Revenir au module 3.3](./offer-decisioning.md)
+[Retour au module 3.3](./offer-decisioning.md)
 
 [Revenir à tous les modules](./../../../overview.md)

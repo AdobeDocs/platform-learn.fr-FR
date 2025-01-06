@@ -4,10 +4,10 @@ description: Offer decisioning - Tester votre décision
 kt: 5342
 doc-type: tutorial
 exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 ## 3.3.3.1 Mettre à jour votre flux de données
 
-Dans [Exercice 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), vous avez créé votre propre **[!UICONTROL flux de données]**. Vous avez ensuite utilisé le nom `--aepUserLdap-- - Demo System Datastream`.
+Dans [Prise en main](./../../../modules/gettingstarted/gettingstarted/ex2.md), vous avez créé votre propre **flux de données**. Vous avez ensuite utilisé le nom `--aepUserLdap-- - Demo System Datastream`.
 
-Dans cet exercice, vous devez configurer ce **[!UICONTROL flux de données]** pour l’utiliser avec **[!DNL Offer Decisioning]**.
+Dans cet exercice, vous devez configurer ce **flux de données** pour qu’il fonctionne avec l’Offer decisioning ****.
 
-Pour ce faire, accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Tu verras ça. Cliquez sur **[!UICONTROL Flux de données]** ou **[!UICONTROL Flux de données (Beta)]**.
+Pour ce faire, accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Tu verras ça. Cliquez sur **Flux de données**.
 
 Dans le coin supérieur droit de l’écran, sélectionnez le nom du sandbox, qui doit être `--aepSandboxName--`.
 
 ![Cliquez sur l’icône Configuration Edge dans le volet de navigation de gauche](./images/edgeconfig1b.png)
 
-Recherchez votre **[!UICONTROL Flux de données]**, qui est nommé `--aepUserLdap-- - Demo System Datastream`. Cliquez sur votre **[!UICONTROL flux de données]** pour l’ouvrir.
+Recherchez votre **Flux de données**, qui est nommé `--aepUserLdap-- - Demo System Datastream`. Cliquez sur votre **flux de données** pour l’ouvrir.
 
 ![WebSDK](./images/websdk1.png)
 
@@ -33,50 +33,50 @@ Tu verras ça. Cliquez sur **...** en regard de **Adobe Experience Platform** pu
 
 ![WebSDK](./images/websdk3.png)
 
-Pour **[!DNL Offer Decisioning]** activer, cochez la case correspondant à **[!DNL Offer Decisioning]**. Cliquez sur **Enregistrer**.
+Pour activer l&#39;Offer decisioning ****, cochez la case correspondant à l&#39;Offer decisioning ****. Cliquez sur **Enregistrer**.
 
 ![WebSDK](./images/websdk5.png)
 
-Votre **[!UICONTROL flux de données]** est maintenant prêt à fonctionner avec **[!DNL Offer Decisioning]**.
+Votre **flux de données** est maintenant prêt à fonctionner avec **Offer decisioning**.
 
 ![WebSDK](./images/websdk4.png)
 
 ## 3.3.3.2 Configurer la propriété Client de la collecte de données Adobe Experience Platform pour demander des offres personnalisées
 
-Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), à **[!UICONTROL Client]**. Recherchez vos propriétés de collecte de données, qui sont nommées `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Ouvrez la propriété cliente de collecte de données pour le Web.
+Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), à **Balises**. Recherchez vos propriétés de collecte de données, qui sont nommées `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Ouvrez la propriété cliente de collecte de données pour le Web.
 
 ![WebSDK](./images/launch1.png)
 
-Dans votre propriété, accédez à **[!UICONTROL Règles]** et ouvrez la règle **[!UICONTROL Page vue]**.
+Dans votre propriété, accédez à **Règles** et ouvrez la règle **Page vue**.
 
 ![WebSDK](./images/launch2.png)
 
-Cliquez pour ouvrir le [!UICONTROL Action] **[!UICONTROL SDK Web AEP - Envoyer l’événement]**.
+Cliquez pour ouvrir l’action **Envoyer un événement d’expérience « Page vue »**.
 
 ![WebSDK](./images/launch3.png)
 
-Tu verras ça. Vous remarquerez l’option de menu pour **[!UICONTROL Portées de décision]**.
+Tu verras ça. Sous **Personalization**, vous remarquerez l&#39;option pour **Portées**.
 
 ![WebSDK](./images/launch4.png)
 
-Pour chaque requête envoyée à Edge et à Adobe Experience Platform, il est possible de fournir une ou plusieurs **[!UICONTROL portées de décision]**. Une **[!UICONTROL portée de décision]** est une combinaison de deux éléments :
+Pour chaque requête envoyée à Edge et à Adobe Experience Platform, il est possible de fournir une ou plusieurs **portées de décision**. Une **portée de décision** est une combinaison de deux éléments :
 
-- [!UICONTROL ID de décision]
-- [!UICONTROL ID d’emplacement]
+- ID de décision
+- Identifiant d’emplacement
 
 Voyons d&#39;abord où vous pouvez trouver ces deux éléments.
 
-### 3.3.3.2.1 Récupérer votre [!UICONTROL identifiant d’emplacement]
+### 3.3.3.2.1 Récupération de l’identifiant d’emplacement
 
-L’[!UICONTROL ID d’emplacement] identifie l’emplacement et le type de ressource requis. Par exemple, l’image principale sur la page d’accueil du site web Luma correspond à l’[!UICONTROL ID d’emplacement] pour [!UICONTROL Web - Image].
+L’identifiant d’emplacement identifie l’emplacement et le type de ressource requis. Par exemple, l&#39;image principale sur la page d&#39;accueil du site CitiSignal correspond à l&#39;identifiant d&#39;emplacement Web - Image.
 
 >[!NOTE]
 >
->Dans le cadre du module 6, vous avez déjà configuré une activité de ciblage d’expérience Adobe Target qui modifiera l’image de l’emplacement principal sur la page d’accueil, comme vous pouvez le voir dans la capture d’écran. Pour les besoins de l’exercice, vous allez maintenant faire apparaître vos offres sur l’image sous l’image principale, comme indiqué dans la capture d’écran.
+>Dans le cadre de l’exercice 2.3.5, vous avez déjà configuré une activité de ciblage d’expérience Adobe Target qui modifiera l’image de l’emplacement principal sur la page d’accueil, comme vous pouvez le voir dans la capture d’écran. Pour cet exercice, vous allez maintenant faire apparaître vos offres sur l’image sous l’image principale, comme indiqué dans la capture d’écran.
 
 ![WebSDK](./images/launch5.png)
 
-Pour rechercher l’[!UICONTROL ID d’emplacement] pour [!UICONTROL Web - Image] accédez à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
+Pour trouver l&#39;ID d&#39;emplacement pour Web - Image, accédez à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
 ![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
@@ -84,64 +84,52 @@ Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’ab
 
 ![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-Accédez ensuite à [!UICONTROL Composants] puis à [!UICONTROL Emplacements]. Cliquez sur l&#39;emplacement [!UICONTROL Web - Image] pour en afficher les détails.
+Accédez ensuite à Composants , puis à Emplacements . Cliquez sur l&#39;emplacement **Web - Image** pour en afficher les détails.
 
 ![WebSDK](./images/launch6.png)
 
-Comme vous pouvez le voir dans l’image ci-dessus, dans cet exemple, l’[!UICONTROL identifiant d’emplacement] est `xcore:offer-placement:14bf09dc4190ebba`. Notez l’[!UICONTROL ID d’emplacement] de votre emplacement pour [!UICONTROL Web - Image], car vous en aurez besoin dans l’exercice suivant.
+Comme vous pouvez le voir dans l’image ci-dessus, dans cet exemple, l’identifiant d’emplacement est `dps:offer-placement:1a08a14ccfe533b6`. Notez l’ID d’emplacement de votre emplacement pour Web - Image, car vous en aurez besoin dans l’exercice suivant.
 
-### 3.3.3.2.2 Récupérer votre [!UICONTROL ID de décision]
+### 3.3.3.2.2 Récupérer l’identifiant de votre décision d’offre
 
-L’[!UICONTROL ID de décision] identifie la combinaison d’offres personnalisées et d’offres de secours que vous souhaitez utiliser. Dans l’exercice précédent, vous avez créé votre propre [!UICONTROL Décision] et l’avez nommée `--aepUserLdap-- - Luma Decision`.
+L’**ID de décision d’offre** identifie la combinaison d’offres personnalisées et d’offres de secours que vous souhaitez utiliser. Dans l’exercice précédent, vous avez créé votre propre décision et l’avez nommée `--aepUserLdap-- - CitiSignal Decision`.
 
-Pour trouver l’[!UICONTROL ID de décision] pour votre `--aepUserLdap-- - Luma Decision`, accédez à [https://platform.adobe.com](https://platform.adobe.com).
-
-Ensuite, accédez à [!UICONTROL Offres] puis à [!UICONTROL Décisions]. Cliquez pour sélectionner votre [!UICONTROL Décision], qui porte le nom `--aepUserLdap-- - Luma Decision`.
+Pour trouver l’identifiant de décision d’offre pour votre `--aepUserLdap-- - CitiSignal Decision`, accédez à Offres , puis à Décisions . Cliquez pour sélectionner votre décision, qui est nommée `--aepUserLdap-- - CitiSignal Decision`.
 
 ![WebSDK](./images/launch7.png)
 
-Comme vous pouvez le voir dans l’image ci-dessus, dans cet exemple, l’[!UICONTROL ID de décision] est `xcore:offer-activity:14c052382e1b6505`. Notez l’[!UICONTROL ID de décision] de votre `--aepUserLdap-- - Luma Decision` de décision, car vous en aurez besoin lors de l’exercice suivant.
+Comme vous pouvez le voir dans l’image ci-dessus, dans cet exemple, l’ID de décision est `dps:offer-activity:1a08ba4b529b2fb2`. Notez l’identifiant de décision d’offre pour votre `--aepUserLdap-- - CitiSignal Decision` de décision, car vous en aurez besoin dans l’exercice suivant.
 
-Maintenant que vous avez récupéré les deux éléments dont vous avez besoin pour créer une **[!UICONTROL Portées de décision]**, vous pouvez passer à l’étape suivante, qui consiste à coder la portée de décision.
+Maintenant que vous avez récupéré les deux éléments dont vous avez besoin pour créer une **Portées de décision**, vous pouvez passer à l’étape suivante, qui consiste à coder la portée de décision.
 
 ### Encodage BASE64 3.3.3.2.3
 
-La **[!UICONTROL Portée de décision]** que vous devez saisir est une chaîne codée en BASE64. Cette chaîne codée en BASE64 est une combinaison de l’[!UICONTROL identifiant d’emplacement] et de l’[!UICONTROL identifiant de décision], comme vous pouvez le voir ci-dessous.
+La **Portée de décision** que vous devez saisir est une chaîne codée en BASE64. Cette chaîne codée en BASE64 est une combinaison de l’identifiant d’emplacement et de l’identifiant de décision comme vous pouvez le voir ci-dessous :
 
 ```json
 {
-  "activityId":"xcore:offer-activity:14c052382e1b6505",
-  "placementId":"xcore:offer-placement:14bf09dc4190ebba"
+  "xdm:activityId": "dps:offer-activity:1a08ba4b529b2fb2",
+  "xdm:placementId": "dps:offer-placement:1a08a14ccfe533b6"
 }
 ```
 
-La **[!UICONTROL portée de décision]** peut être générée de deux manières :
+Vous pouvez récupérer la chaîne codée en BASE64 à partir de Adobe Experience Platform. Accédez à Décisions et cliquez pour ouvrir votre décision, qui est nommée `--aepUserLdap-- - CitiSignal Decision`.
 
-- Utilisez un service public tel que [https://www.base64encode.org/](https://www.base64encode.org/). Saisissez le code JSON comme mentionné ci-dessus, cliquez sur **[!UICONTROL Coder]** et vous obtiendrez votre chaîne codée en BASE64 ci-dessous.
+![WebSDK](./images/launch9.png)
 
-  ![WebSDK](./images/launch8.png)
+Après l&#39;ouverture de `--aepUserLdap-- - CitiSignal Decision`, vous verrez ceci. Recherchez l&#39;emplacement Web - Image et cliquez sur le bouton **Copier**. Cliquez ensuite sur **Portée de décision codée**. La **Portée de décision** est maintenant copiée dans votre presse-papiers.
 
-- Récupérez la chaîne codée en BASE64 à partir de Adobe Experience Platform. Accédez à [!UICONTROL Décisions] et cliquez pour ouvrir votre [!UICONTROL Décision], qui est nommée `--aepUserLdap-- - Luma Decision`.
+![WebSDK](./images/launch10.png)
 
-  ![WebSDK](./images/launch9.png)
-
-  Après l&#39;ouverture de `--aepUserLdap-- - Luma Decision`, vous verrez ceci. Localisez l&#39;emplacement [!UICONTROL Web - Image] et cliquez sur le bouton **[!UICONTROL Copier]**. Cliquez ensuite sur **[!UICONTROL Portée de décision codée]**. La **[!UICONTROL Portée de décision]** est maintenant copiée dans votre presse-papiers.
-
-  ![WebSDK](./images/launch10.png)
-
-Ensuite, revenez à Launch, à votre action **[!UICONTROL AEP Web SDK - Envoyer l’événement]**.
+Ensuite, revenez à Launch, à votre action **AEP Web SDK - Envoyer l’événement**.
 
 ![WebSDK](./images/launch4.png)
 
-Collez la portée de décision codée dans le champ de saisie.
+Collez la portée de décision codée dans le champ de saisie. Enregistrez vos modifications dans l’action **AEP Web SDK - Envoyer l’événement** en cliquant sur **[!UICONTROL Conserver les modifications]**.
 
 ![WebSDK](./images/launch11.png)
 
-Enregistrez vos modifications dans l’action **[!UICONTROL AEP Web SDK - Envoyer l’événement]** en cliquant sur **[!UICONTROL Conserver les modifications]**.
-
-![WebSDK](./images/keepchanges.png)
-
-Cliquez ensuite sur **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer dans la bibliothèque]**
+Cliquez ensuite sur **[!UICONTROL Enregistrer]**.
 
 ![WebSDK](./images/launch12.png)
 
@@ -157,15 +145,11 @@ Accédez à [https://experience.adobe.com/#/data-collection/](https://experience
 
 ![WebSDK](./images/launch1.png)
 
-Dans votre propriété, accédez à **[!UICONTROL Règles]**.
-
-![WebSDK](./images/decrec1.png)
-
-Recherchez et ouvrez la règle **Décision reçue**.
+Dans votre propriété, accédez à **Règles**. Recherchez et ouvrez la règle **Afficher l’offre (Offer decisioning)**.
 
 ![WebSDK](./images/decrec2.png)
 
-Tu verras ça. Ouvrez l’action **Placez l’offre sur la page**.
+Tu verras ça. Ouvrez l&#39;action **Afficher l&#39;offre sur la page**.
 
 ![WebSDK](./images/decrec6a.png)
 
@@ -176,41 +160,31 @@ Cliquez sur **[!UICONTROL Ouvrir l’éditeur]**
 Remplacez le code en collant le code ci-dessous dans l’éditeur.
 
 ```javascript
-if(!Array.isArray(event.decisions)) {
-  console.log('No decisions returned')
+if (!Array.isArray(event.decisions)) {
+  console.log("No personalization decisions");
   return;
 }
-console.log("decision",event.decisions)
 
-event.decisions.forEach(function(payload) {
-  payload.items.forEach(function(item){
-    console.log("Response from Offer Decisioning ", item.data.content);
-   
-    var element = document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div");
-    if(!element){
-      console.log("Offer Placement Area Selector not found")
+console.log("Received response from Offer Decisioning", event.decisions);
+
+event.decisions.forEach(function (payload) {
+  payload.items.forEach(function (item) {
+    console.log("Offer", item.data.deliveryURL);
+
+    if (!item.data || item.data?.deliveryURL==null) {
       return;
     }
-    if(!item.data){
-      return
-    }
-    //check if offer already exists
-    var offer = document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div");
-    if(!offer){ 
-      element.insertAdjacentHTML('afterbegin', item.data.content) 
-    }
-    else { 
-      console.log("item.data.deliveryURL: " + item.data.deliveryURL)
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.background="url('"+item.data.deliveryURL+"')";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundRepeat="no-repeat";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundPosition="center center";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundSize = "contain";
-    }  
-  })
+    console.log("item.data.deliveryURL", item.data.deliveryURL)
+    //document.querySelector(".TopRibbon").innerHTML = item.data.content;
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2)").innerHTML = "<img style='max-width:100%;' src='"+item.data.deliveryURL+"'/>";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundRepeat="no-repeat";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundPosition="center center";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundSize = "contain";
+  });
 });
 ```
 
-Les lignes 26-27-28-29 s’appliquent à l’image renvoyée par Offer decisioning au site web. Cliquez sur **[!UICONTROL Enregistrer]**.
+La ligne 17 s’applique à l’image renvoyée par Offer decisioning au site web. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ![WebSDK](./images/decrec7.png)
 
@@ -218,7 +192,7 @@ Cliquez sur **[!UICONTROL Conserver les modifications]**.
 
 ![WebSDK](./images/keepchanges1dd.png)
 
-Cliquez ensuite sur **[!UICONTROL Enregistrer]** ou **[!UICONTROL Enregistrer dans la bibliothèque]**
+Cliquez ensuite sur **[!UICONTROL Enregistrer]**.
 
 ![WebSDK](./images/decrec8.png)
 
@@ -228,21 +202,13 @@ Dans la collecte de données Adobe Experience Platform, accédez à **[!UICONTRO
 
 Grâce à cette modification, cette règle de la collecte de données Adobe Experience Platform écoute désormais la réponse de l’Offer decisioning qui fait partie de la réponse de Web SDK. Lorsque la réponse est reçue, l’image de l’offre s’affiche sur la page d’accueil.
 
-En consultant le site web de démonstration, vous verrez que cette image sera remplacée maintenant :
-
->[!NOTE]
->
->Dans le cadre du module 6, vous avez déjà configuré une activité de ciblage d’expérience Adobe Target qui modifiera l’image de l’emplacement principal sur la page d’accueil, comme vous pouvez le voir dans la capture d’écran. Pour les besoins de l’exercice, vous allez maintenant faire apparaître vos offres sur l’image sous l’image principale, comme indiqué dans la capture d’écran.
-
-![WebSDK](./images/launch5.png)
-
-Et au lieu des images du site web Luma par défaut, vous verrez désormais une offre comme celle-ci. Dans ce cas, l&#39;offre de secours s&#39;affiche.
+En regardant le site web de démonstration, vous verrez que cette image sera remplacée maintenant. Au lieu des images par défaut du site CitiSignal, vous verrez maintenant une offre comme celle-ci. Dans ce cas, l&#39;offre de secours s&#39;affiche.
 
 ![WebSDK](./images/decrec10.png)
 
 Vous avez maintenant configuré 2 types de personnalisation :
 
-- 1 activité de ciblage d’expérience utilisant Adobe Target dans le module 6
+- 1 activité Ciblage d’expérience à l’aide d’Adobe Target dans l’exercice 2.3.5
 - 1 Offer decisioning d’implémentation à l’aide de votre propriété Data Collection
 
 Dans l’exercice suivant, vous allez découvrir comment combiner vos offres et décisions créées dans Adobe Journey Optimizer avec une activité de ciblage d’expérience Adobe Target.

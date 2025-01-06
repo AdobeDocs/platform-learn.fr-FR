@@ -2,10 +2,11 @@
 title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
-source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
+exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +28,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [2.6 Diffusion de données depuis Apache Kafka vers Real-Time CDP](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md) | 25/11/2024 | Oui | - |
 | [3.1 Adobe Journey Optimizer : Orchestration](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md) | 30/12/2024 | Oui | - |
 | [3.2 Adobe Journey Optimizer : sources de données externes et actions personnalisées](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | Oui | - |
-| [3.3 Adobe Journey Optimizer : Offer decisioning ](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 05/01/2025 | Pas encore | Contenu en attente de mise à jour |
+| [3.3 Adobe Journey Optimizer : Offer decisioning ](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Oui | - |
 | [3.4 Adobe Journey Optimizer : Parcours basés sur un événement](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Oui | - |
 | [4.1 Customer Journey Analytics : créez un tableau de bord à l’aide d’Analysis Workspace en plus de Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | - | Non | Contenu en attente de mise à jour |
 | [4.2 Customer Journey Analytics : ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | - | Non | Contenu en attente de mise à jour |
