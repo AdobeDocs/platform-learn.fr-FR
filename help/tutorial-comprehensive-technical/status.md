@@ -3,10 +3,10 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 11%
+source-wordcount: '231'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +31,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [3.3 Adobe Journey Optimizer : Offer decisioning ](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Oui | - |
 | [3.4 Adobe Journey Optimizer : Parcours basés sur un événement](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Oui | - |
 | [4.1 Customer Journey Analytics : créez un tableau de bord à l’aide d’Analysis Workspace en plus de Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | Oui | - |
-| [4.2 Customer Journey Analytics : ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | Oui | - |
+| [4.2 Customer Journey Analytics : ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | Non | Il y a un problème avec la modélisation de la préparation des données pour les données sources. Ceci est en attente d&#39;un correctif. |
 | [5.1 Query Service](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | Oui | - |
 
 {style="table-layout:auto"}

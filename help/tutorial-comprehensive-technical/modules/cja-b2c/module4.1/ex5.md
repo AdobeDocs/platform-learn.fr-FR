@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Visualisation à l’aide de Customer 
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ La dimension **Jour** sera automatiquement ajoutée pour créer votre premier ta
 
 ![demo](./images/pro3.png)
 
-Cliquez ensuite avec le bouton droit de la souris sur le résumé des mesures.
+Cliquez ensuite avec le bouton droit de la souris sur le résumé des mesures. Cliquez sur **Visualiser**.
 
 ![demo](./images/pro4.png)
 
-Cliquez sur **Visualiser** puis sélectionnez **Ligne** comme visualisation.
+Cliquez sur **Ligne**.
 
 ![demo](./images/pro5.png)
 
-Vos produits sont consultés chaque jour.
+Vos produits sont affichés en fonction de l’heure.
 
 ![demo](./images/pro6.png)
 
@@ -90,7 +90,7 @@ Commençons par trouver les 5 produits les plus consultés. Dans le menu de gauc
 
 Effectuez maintenant un glisser-déposer **Nom du produit** pour remplacer la dimension **Jour** :
 
-Ce sera le résultat
+Ce sera le résultat. Sélectionnez les 4 noms de produit pour afficher la mise à jour de la visualisation.
 
 ![demo](./images/pro10a.png)
 
@@ -110,13 +110,9 @@ Enfin, vous pouvez ajouter d’autres visualisations. Sur le côté gauche, sous
 
 ![demo](./images/pro18.png)
 
-Ensuite, dans le tableau , sélectionnez les 5 premières lignes **Agent utilisateur** de la répartition que nous avons effectuée sous **Google Pixel XL 32 Go Black Smartphone** > **Signal Citi**. Lors de la sélection des 3 lignes, maintenez le bouton **Ctrl** (sous Windows) ou le bouton **Commande** (sous Mac) enfoncé.
+Ensuite, dans le tableau , sélectionnez les 5 premières lignes **Agent utilisateur** de la répartition que nous avons effectuée sous **Google Pixel XL 32 Go Black Smartphone** > **Signal Citi**. Lors de la sélection des 3 lignes, maintenez le bouton **Ctrl** (sous Windows) ou le bouton **Commande** (sous Mac) enfoncé. Le graphique en anneau est mis à jour.
 
 ![demo](./images/pro20.png)
-
-Le graphique en anneau a été modifié :
-
-![demo](./images/pro21.png)
 
 Vous pouvez même adapter la conception pour qu’elle soit plus lisible, en réduisant légèrement le graphique **Ligne** et le graphique **Anneau** afin qu’ils puissent s’adapter l’un à l’autre :
 
@@ -156,13 +152,9 @@ Tu verras ça.
 
 ![demo](./images/prodatefa.png)
 
-Recherchez la dimension **Type d’événement** sous les composants sur le côté gauche :
+Recherchez la dimension **Type d’événement** sous les composants sur le côté gauche. Cliquez sur la flèche pour ouvrir la dimension.
 
 ![demo](./images/pro26.png)
-
-Cliquez sur la flèche pour ouvrir la dimension :
-
-![demo](./images/pro27.png)
 
 Tous les types d’événements disponibles s’affichent.
 
@@ -176,7 +168,7 @@ Faites de même avec **commerce.productListAdds** et **commerce.purchases** et d
 
 ![demo](./images/props1.png)
 
-On peut faire beaucoup de choses ici. Quelques exemples : comparer au fil du temps, comparer chaque étape par appareil ou comparer par fidélité. Cependant, si nous voulons analyser des éléments intéressants, comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article dans leur panier, nous pouvons utiliser le meilleur outil de CJA : un clic droit.
+On peut faire beaucoup de choses ici. Quelques exemples : comparer au fil du temps, comparer chaque étape par appareil ou comparer par fidélité. Cependant, si vous souhaitez analyser des éléments intéressants, comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article dans leur panier, nous pouvons utiliser le meilleur outil de CJA : un clic droit.
 
 Cliquez avec le bouton droit sur le point de contact **commerce.productListAdds**. Cliquez ensuite sur **Répartir les abandons à ce point de contact**.
 
@@ -194,36 +186,24 @@ Modifiez le **Type d’événement** par **Nom de page**, dans le nouveau tablea
 
 Encore une fois, il existe de nombreuses façons d’effectuer cette analyse. Utilisons l’analyse de flux pour commencer la partie de découverte.
 
-Fermez le panneau actuel en cliquant ici :
+Fermez le panneau actuel en cliquant ici, puis ajoutez un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
 
 ![demo](./images/pro0.png)
-
-Ajoutez maintenant un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
-
-![demo](./images/pro0a.png)
 
 Cliquez sur la visualisation **Flux**.
 
 ![demo](./images/pro35.png)
 
-Vous verrez alors ceci :
-
-![demo](./images/pro351.png)
-
-Sélectionnez la même période que dans l’exercice précédent.
+Tu verras ça. Sélectionnez la même période que dans l’exercice précédent. Cliquez sur **Appliquer**.
 
 ![demo](./images/pro0b.png)
 
-Recherchez la dimension **Nom de la page** sous les composants sur le côté gauche :
+Recherchez la dimension **Nom de la page** sous les composants sur le côté gauche et cliquez sur la flèche pour ouvrir la dimension.
 
 ![demo](./images/pro36.png)
 
-Cliquez sur la flèche pour ouvrir la dimension :
-
-![demo](./images/pro37.png)
-
 Toutes les pages sont consultées. Recherchez le nom de la page : **Annuler le service**.
-Faites glisser et déposez **Annuler le service** dans la visualisation de flux sur le champ central :
+Effectuez un glisser-déposer **Annuler le service** dans la visualisation de flux du champ central. Cliquez sur **Créer**.
 
 ![demo](./images/pro38.png)
 
@@ -274,23 +254,15 @@ Sélectionnez maintenant **positif** comme valeur du filtre.
 
 ![demo](./images/pro49.png)
 
-Modifiez la portée pour qu’elle soit de niveau **Personne**.
+Modifiez la portée pour qu’elle soit de niveau **Personne**. Cliquez sur **Enregistrer**.
 
 ![demo](./images/pro50.png)
 
-Pour terminer, cliquez simplement sur **Enregistrer**.
-
-![demo](./images/pro51.png)
-
-Tu seras de retour ici. Si ce n’est pas encore fait, fermez le panneau précédent.
+Tu seras de retour ici. Si ce n’est pas encore fait, fermez le panneau précédent et ajoutez un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
 
 ![demo](./images/pro0c.png)
 
-Ajoutez maintenant un nouveau panneau vierge en cliquant sur **+ Ajouter un panneau vierge**.
-
-![demo](./images/pro24c.png)
-
-Sélectionnez la même période que dans l’exercice précédent.
+Sélectionnez la même période que dans l’exercice précédent. Cliquez sur **Appliquer**.
 
 ![demo](./images/pro24d.png)
 

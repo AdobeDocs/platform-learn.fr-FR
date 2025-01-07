@@ -4,9 +4,9 @@ description: Ingestion et analyse des données des Google Analytics dans Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ Cliquez sur **Enregistrer et continuer**.
 
 ![demo](./images/22.png)
 
+Cliquez sur **Enregistrer**.
+
+![demo](./images/22a.png)
+
 Vous pouvez désormais ajouter des composants à votre vue de données. Comme vous pouvez le constater, certaines mesures et dimensions sont ajoutées automatiquement.
 
 ![demo](./images/24.png)
 
-Ajoutez les composants suivants à la vue de données :
+Ajoutez les composants ci-dessous à la vue de données. Veillez également à mettre à jour les noms de champ vers des noms conviviaux. Pour ce faire, sélectionnez la mesure ou la dimension et mettez à jour le champ **Nom du composant** dans le menu de droite.
 
-| Nom du composant | Type de composant | Chemin du composant |
-| -----------------|-----------------|-----------------|
-| niveau | Dimension | _experienceplatform.loyaltyDetails.level |
-| points | Mesure | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | Mesure | commerce.checkouts.value |
-| commerce.productListRemovals.value | Mesure | commerce.productListRemovals.value |
-| commerce.productListAdds | Mesure | commerce.productListAdds |
-| commerce.productViews.value | Mesure | commerce.productViews.value |
-| commerce.purchases.value | Mesure | commerce.purchases.value |
-| web.webPageDetails.pageViews | Mesure | web.webPageDetails.pageViews |
-| Identifiant de transaction | Dimension | commerce.order.payments.transactionID |
-| channel.mediaType | Dimension | channel.mediaType |
-| channel.typeAtSource | Dimension | channel.typeAtSource |
-| Code de suivi | Dimension | marketing.trackingCode |
-| gaid | Dimension | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | Dimension | web.webPageDetails.name |
-| Type d’événement | Dimension | eventType |
-| Fournisseur | Dimension | environment.browserDetails.vendor |
-| Identifiant | Dimension | _id |
-| Date et heure | Dimension | date et heure |
-| Type | Dimension | device.type |
-| loyaltyId | Dimension | _experienceplatform.identification.core.loyaltyId |
-
-Voici ce que vous obtiendrez :
-
-![demo](./images/25.png)
-
-Ensuite, vous devez modifier le nom convivial de certaines des mesures et dimensions ci-dessus afin de pouvoir les utiliser facilement lors de la création de votre analyse. Pour ce faire, sélectionnez la mesure ou la dimension et mettez à jour le champ **Nom** comme indiqué dans l’image ci-dessous.
-
-![demo](./images/25a.png)
-
-| Nom d’origine du composant | Nom d’affichage |
-| -----------------|-----------------|
-| niveau | Niveau de fidélité |
-| points | Points de fidélité |
-| commerce.checkouts.value | Passages en caisse |
-| commerce.productListRemovals.value | Retraits du panier |
-| commerce.productListAdds | Ajouts au panier |
-| commerce.productViews.value | Consultations produits |
-| commerce.purchases.value | Achats |
-| web.webPageDetails.pageViews | Pages vues |
-| channel.mediaType | Medium de trafic |
-| channel.typeAtSource | Source de trafic |
-| Code de suivi | Canal marketing |
-| gaid | ID GOOGLE ANALYTICS |
-| Nom | Titre de la page |
-| Fournisseur | Navigateur |
-| Type | Type d’appareil |
-| loyaltyId | ID de fidélité |
+| Type de composant | Nom d’origine du composant | Nom d’affichage | Chemin du composant |
+| -----------------| -----------------|-----------------|-----------------|
+| Mesure | commerce.checkouts.value | Passages en caisse | `commerce.checkouts.value` |
+| Mesure | commerce.productListRemovals.value | Retraits du panier | `commerce.productListRemovals.value` |
+| Mesure | commerce.productListAdds | Ajouts au panier | `commerce.productListAdds` |
+| Mesure | commerce.productViews.value | Consultations produits | `commerce.productViews.value` |
+| Mesure | commerce.purchases.value | Achats | `commerce.purchases.value` |
+| Mesure | web.webPageDetails.pageViews | Pages vues | `web.webPageDetails.pageViews` |
+| Mesure | points | Points de fidélité | `_experienceplatform.loyaltyDetails.points` |
+| Dimension | niveau | Niveau de fidélité | `_experienceplatform.loyaltyDetails.level` |
+| Dimension | channel.mediaType | Medium de trafic | `channel.mediaType` |
+| Dimension | channel.typeAtSource | Source de trafic | `channel.typeAtSource` |
+| Dimension | Code de suivi | Canal marketing | `marketing.trackingCode` |
+| Dimension | gaid | ID GOOGLE ANALYTICS | `_experienceplatform.identification.core.gaid` |
+| Dimension | web.webPageDetails.name | Titre de la page | `web.webPageDetails.name` |
+| Dimension | Fournisseur | Navigateur | `environment.browserDetails.vendor` |
+| Dimension | Type | Type d’appareil | `device.type` |
+| Dimension | loyaltyId | ID de fidélité | `_experienceplatform.identification.core.loyaltyId` |
+| Dimension | commerce.order.payments.transactionID | Identifiant de transaction | `commerce.order.payments.transactionID` |
+| Dimension | eventType | Type d’événement | `eventType` |
+| Dimension | date et heure | Date et heure | `timestamp` |
+| Dimension | `_id` | Identifiant | `_id` |
 
 Vous aurez alors quelque chose comme ceci :
 
 ![demo](./images/25b.png)
 
-Vous devez ensuite apporter des modifications au contexte Personne et Session pour certains de ces composants en modifiant les **Paramètres d’attribution**.
-
-![demo](./images/25c.png)
+Ensuite, vous devez apporter des modifications au contexte Personne et Session pour certains de ces composants en modifiant les **Paramètres d’attribution ou de persistance**.
 
 Modifiez les **Paramètres d’attribution** pour les composants ci-dessous :
 
@@ -193,39 +168,32 @@ Modifiez les **Paramètres d’attribution** pour les composants ci-dessous :
 | Medium de trafic |
 | Type d’appareil |
 | ID GOOGLE ANALYTICS |
-| ID de fidélité |
-| Niveau de fidélité |
-| Points de fidélité |
 
-Pour ce faire, sélectionnez le composant, cliquez sur **Utiliser un modèle d’attribution personnalisé** et définissez le **Modèle** sur **Dernière touche**, puis le **Expiration** sur **Personne (fenêtre de création de rapports)**. Répétez cette opération pour tous les composants mentionnés ci-dessus.
+Pour ce faire, sélectionnez le composant, cliquez sur **Utiliser un modèle d’attribution personnalisé** et définissez le **Modèle** sur **Le plus récent**, puis le **Expiration** sur **Fenêtre de création de rapports de personne**. Répétez cette opération pour tous les composants mentionnés ci-dessus.
 
 ![demo](./images/27a.png)
 
-Après avoir apporté les modifications aux paramètres d’attribution pour tous les composants mentionnés ci-dessus, vous devriez disposer de cette vue :
+Après avoir apporté les modifications aux paramètres d’attribution pour tous les composants mentionnés ci-dessus, vous devriez alors disposer de cette vue. Cliquez sur **Enregistrer et continuer**.
 
 ![demo](./images/27.png)
 
-Votre vue de données est maintenant configurée. Cliquez sur **Enregistrer**.
+Aucune modification n’est requise sur l’écran **Paramètres**. Cliquez sur **Enregistrer et terminer**.
 
-![demo](./images/30.png)
+![demo](./images/27b.png)
 
 Vous êtes maintenant prêt à analyser les données des Google Analytics dans Adobe Analytics Analysis Workspace. Passons au prochain exercice.
 
 ## 4.2.5.3 Créer votre projet
 
-En Customer Journey Analytics, accédez à **Projets**.
+Dans Customer Journey Analytics, accédez à **Workspace**. Cliquez sur **Créer un projet**
 
 ![demo](./images/pro1.png)
 
-Vous verrez alors ceci :
+Sélectionnez **Projet Workspace vierge** puis cliquez sur **Créer**.
 
 ![demo](./images/pro2.png)
 
-Créez un projet en cliquant sur **Créer un projet**.
-
-![demo](./images/pro3.png)
-
-Vous disposez désormais d’un projet vierge :
+Vous disposez maintenant d’un projet vierge :
 
 ![demo](./images/pro4.png)
 
@@ -236,27 +204,21 @@ Tout d’abord, enregistrez votre projet et donnez-lui un nom. Vous pouvez utili
 | Windows | Ctrl+S |
 | Mac | Commande + S |
 
-Cette fenêtre contextuelle s’affiche :
-
-![demo](./images/prsave.png)
-
-Veuillez utiliser cette convention de nommage :
+Vous verrez cette fenêtre contextuelle. Veuillez utiliser cette convention de nommage :
 
 | Nom | Description |
 | ----------------- |-------------| 
-| ldap - GA + Workspace de fidélité | ldap - GA + Workspace de fidélité |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-Cliquez ensuite sur **Enregistrer le projet**.
+Cliquez ensuite sur **Enregistrer**.
 
-![demo](./images/prsave2.png)
+![demo](./images/prsave.png)
 
-Ensuite, veillez à sélectionner la vue de données appropriée dans le coin supérieur droit de votre écran. Il s’agit de la vue de données que vous avez créée dans l’exercice précédent, avec la convention de nommage `ldap - GA + Loyalty Data View`. Dans cet exemple, la Vue de données à sélectionner est `ldap - GA + Loyalty Data View`.
+Ensuite, veillez à sélectionner la vue de données appropriée dans le coin supérieur droit de votre écran. Il s’agit de la vue de données que vous avez créée dans l’exercice précédent, avec la convention de nommage `--aepUserLdap-- - GA + Loyalty Data View`.
 
 ![demo](./images/prdvlist.png)
 
-![demo](./images/prdv.png)
-
-### Tableaux à structure libre 12.5.3.1
+### 4.2.5.3.1 Tableaux à structure libre
 
 Les tableaux à structure libre fonctionnent plus ou moins comme des tableaux croisés dynamiques dans Excel. Vous choisissez un élément dans la barre de gauche, puis vous le faites glisser et le déposez dans la structure libre pour obtenir un rapport tabulaire.
 
@@ -270,13 +232,9 @@ Découvrez deux exemples dans lesquels vous devez utiliser SQL, BigQuery et du t
 
 Répondons à ces questions et à d’autres avec Analysis Workspace dans CJA.
 
-Sélectionnez tout d’abord la période appropriée (**53 dernières semaines complètes**) sur le côté droit du panneau.
+Sélectionnez tout d’abord la période appropriée (**Aujourd’hui**) sur le côté droit du panneau. Cliquez sur **Appliquer**.
 
 ![demo](./images/pro11.png)
-
-Cliquez ensuite sur **Appliquer** pour appliquer la période. Mémorisez cette étape pour les exercices suivants.
-
-![demo](./images/apply.png)
 
 >[!NOTE]
 >
@@ -296,9 +254,13 @@ Avant de pouvoir procéder, vous devez créer la mesure calculée **taux de conv
 
 ![demo](./images/procalc1.png)
 
-Pour nommer la mesure calculée, utilisez **Taux de conversion**. Faites ensuite glisser les mesures **achat** et **sessions** sur la zone de travail. Définissez **Format** sur **Pourcentage** et **Nombre de décimales** sur **2**. Enfin, cliquez sur **Enregistrer**.
+Pour nommer la mesure calculée, utilisez **Taux de conversion** et **taux de conversion** pour **ID externe**. Faites ensuite glisser les mesures **achat** et **sessions** sur la zone de travail. Définissez **Format** sur **Pourcentage** et **Nombre de décimales** sur **2**. Enfin, cliquez sur **Enregistrer**.
 
 ![demo](./images/procalc2.png)
+
+Cliquez sur **Enregistrer**.
+
+![demo](./images/procalc2a.png)
 
 Ensuite, pour utiliser toutes ces mesures dans le **Tableau à structure libre**, faites-les glisser une par une sur le **Tableau à structure libre**. Voir l’exemple ci-dessous.
 

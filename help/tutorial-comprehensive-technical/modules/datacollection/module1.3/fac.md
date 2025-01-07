@@ -1,44 +1,42 @@
 ---
-title: Collection de données - Composition de l’audience fédérée
-description: Collection de données - Composition de l’audience fédérée
+title: Collecte de données - Composition de l’audience fédérée
+description: Collecte de données - Composition de l’audience fédérée
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# 1.3 Composition du public fédéré
+# 1.3 Composition De L’Audience Fédérée
 
-**Auteur : [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+Dans ce module, l’objectif est de tout savoir sur la création d’audiences à l’aide de la composition d’audiences fédérées.
 
-Dans ce module, l’objectif est d’en savoir plus sur la création d’audiences à l’aide de la composition d’audiences fédérées.
+La Federated Audience Composition (FAC) dans Experience Platform vous permet d’accéder aux audiences et d’en créer avec des attributs à forte valeur correspondants provenant d’entrepôts de données d’entreprise, ce qui enrichit et complète le profil client en temps réel et les audiences dans Experience Platform pour améliorer la segmentation, le ciblage, l’activation et la diffusion d’expériences client percutantes. Grâce à la composition d’audiences fédérées, une base de données virtuelle est créée en liant les bases de données distantes par le biais de métadonnées. Cette approche simplifie l’accès, réduit la duplication et améliore l’expérience de l’utilisateur final. Les équipes peuvent ingérer directement des jeux de données dans l’Experience Platform ou accéder à des jeux de données résidant dans des entrepôts de données lors de l’assemblage des audiences pour les workflows d’engagement. Cette approche tire parti des investissements et des ressources dans l’entrepôt de données pour compléter Real-Time CDP et Journey Optimizer. La composition de l’audience fédérée permet aux clients d’utiliser et de combiner des fonctionnalités par lots et en temps réel selon de nouveaux modèles de cas d’utilisation critiques :
 
-La composition d’audiences fédérées (FAC) en Experience Platform vous permet d’accéder et de créer des audiences avec les attributs à forte valeur ajoutée correspondants à partir des entrepôts de données d’entreprise, ce qui enrichit et complète le profil client en temps réel et les audiences dans Experience Platform pour améliorer la segmentation, le ciblage, l’activation et la diffusion d’expériences client percutantes. Avec Federated Audience Composition, une base de données virtuelle est créée en liant des bases de données distantes par le biais de métadonnées. Cette approche simplifie l’accès, réduit la duplication et améliore l’expérience de l’utilisateur final. Les équipes ont la possibilité d’ingérer des jeux de données directement dans un Experience Platform ou d’accéder à des jeux de données résidant dans des entrepôts de données lors de l’assemblage d’audiences pour les workflows d’engagement. Cette méthode tire parti des investissements et des ressources de l’entrepôt de données pour compléter Real-Time CDP et Journey Optimizer. La composition d’audiences fédérées permet aux clients d’utiliser et de combiner des fonctionnalités en temps réel et par lots à travers de nouveaux modèles de cas d’utilisation critiques :
+- Segmentation des audiences fédérées : une équipe peut créer une audience à l’aide de l’interface utilisateur de composition d’audiences par glisser-déposer conviviale pour les spécialistes du marketing dans Real-Time CDP et Journey Optimizer, mais avec une requête transmise à l’entrepôt de données, ce qui laisse les données sous-jacentes sensibles dans l’entrepôt sans duplication et offre un accès flexible aux jeux de données essentiels.
+- Enrichissement de l’audience : les audiences créées dans Real-Time CDP et Journey Optimizer peuvent être enrichies avec des données d’entreprise supplémentaires afin d’améliorer le ciblage et la personnalisation avec des jeux de données supplémentaires, basés ou non sur les profils, qui ne seront pas conservés dans Adobe Experience Platform. Par exemple, une marque de vente au détail peut compléter une audience d’acheteurs en ligne récents avec une liste des principaux emplacements physiques pour créer une audience pour une promotion cross-canal en ligne et en magasin.
+- Enrichissement du profil : les équipes peuvent sélectionner des attributs de profil à partir de l’entrepôt de données qui sont essentiels pour que les expériences du moment soient conservées dans les profils clients exploitables résidant dans Real-Time CDP et accessibles via Journey Optimizer. Ces points de données supplémentaires sont ensuite disponibles pour la segmentation et la personnalisation en aval déclenchées par des comportements d’événement en fonction de l’action de l’utilisateur et du cas d’utilisation du client. Cela permet aux attributs apportés avec les audiences fédérées d’être disponibles pour la segmentation et la personnalisation instantanées, ainsi que d’autres attributs et signaux comportementaux conservés dans un profil client.
 
-- Segmentation d’audience fédérée : une équipe peut créer une audience à l’aide de l’interface utilisateur de composition d’audience par glisser-déposer conviviale pour les marketeurs dans Real-Time CDP et Journey Optimizer, mais avec une requête envoyée à l’entrepôt de données, en conservant les données sous-jacentes sensibles dans l’entrepôt sans duplication et en fournissant un accès flexible aux jeux de données essentiels.
-- Enrichissement de l’audience : les audiences créées dans Real-Time CDP et Journey Optimizer peuvent être enrichies de données d’entreprise supplémentaires afin d’améliorer le ciblage et la personnalisation grâce à des jeux de données basés sur des profils et non basés sur des profils supplémentaires qui ne persisteront pas dans Adobe Experience Platform. Par exemple, une marque de vente au détail peut compléter une audience de clients en ligne récents avec une liste d’emplacements standard pour créer une audience pour une promotion cross-canal en ligne et en magasin.
-- Enrichissement de profil : les équipes peuvent sélectionner, à partir de l’entrepôt de données, des attributs de profil essentiels pour que les expériences en cours soient conservées dans des profils clients exploitables résidant dans Real-Time CDP et accessibles via Journey Optimizer. Ces points de données supplémentaires sont ensuite disponibles pour la segmentation et la personnalisation en aval déclenchées par les comportements d’événement selon l’action de l’utilisateur et le cas d’utilisation client. Cela permet aux attributs apportés avec les audiences fédérées d’être disponibles pour la segmentation et la personnalisation instantanées, avec d’autres attributs et signaux comportementaux conservés dans un profil client.
-
-La composition d’audiences fédérées offre aux clients Real-Time CDP et Journey Optimizer la possibilité de décider quelles données ils souhaitent utiliser lorsqu’ils le souhaitent et permet d’éviter les jeux de données ou les modèles d’intégration inutilement dupliqués. Il s’agit d’une combinaison unique d’une approche fédérée de l’utilisation des données d’entreprise pour traiter les audiences et les attributs à forte valeur ajoutée, combinée à un système optimisé pour l’engagement cross-canal en temps réel. Cela se traduit par moins de mouvements de données, mais offre également de nouvelles opportunités d’utiliser des audiences et des attributs à forte valeur ajoutée pour une activation cohérente à faible latence sur tous les canaux.
+La composition de l’audience fédérée offre aux clients de Real-Time CDP et de Journey Optimizer la possibilité de décider quelles données ils souhaitent utiliser à quel moment. Elle permet également d’éviter la duplication inutile de jeux de données ou de modèles d’intégration. Il s’agit d’une combinaison unique d’une approche fédérée de l’utilisation des données d’entreprise pour traiter les audiences et les attributs à forte valeur ajoutée, combinée à un système optimisé pour l’engagement cross-canal en temps réel. Cela permet de réduire le déplacement des données, mais aussi d’utiliser de nouvelles audiences et de nouveaux attributs à forte valeur ajoutée pour une activation cohérente à faible latence sur l’ensemble des canaux.
 
 ## Objectifs d’apprentissage
 
 - Découvrez comment connecter Snowflake à Adobe Experience Platform
 - Découvrez comment créer un modèle de données pour vos données fédérées dans Adobe Experience Platform
-- Découvrez comment créer des compositions d’audience fédérées dans Adobe Experience Platform
+- Découvrez comment créer des compositions d’audiences fédérées dans Adobe Experience Platform
 
 ## Conditions préalables
 
 - Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accès à un entrepôt de données de Snowflake
+- Accès à un entrepôt de données Snowflake
 
 ## Exercices
 
-[1.3.1 Configuration de votre compte de Snowflake](./ex1.md)
+[1.3.1 Configuration de l’environnement de votre Snowflake](./ex1.md)
 
 Dans cet exercice, vous allez configurer votre compte d’évaluation de Snowflake et le connecter à Adobe Experience Platform
 
@@ -46,7 +44,7 @@ Dans cet exercice, vous allez configurer votre compte d’évaluation de Snowfla
 
 Dans cet exercice, vous allez configurer votre modèle de données dans AEP pour les données fédérées.
 
-[1.3.3 Création d’une composition fédérée](./ex3.md)
+[1.3.3 Créer une composition fédérée](./ex3.md)
 
 Dans cet exercice, vous allez configurer votre modèle de données dans AEP pour les données fédérées.
 
@@ -56,6 +54,6 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->Merci d’investir votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager les commentaires généraux d’avoir des suggestions sur le contenu futur, contactez directement les initiés de technologie, en envoyant un email à **techinsiders@adobe.com**.
+>Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)
