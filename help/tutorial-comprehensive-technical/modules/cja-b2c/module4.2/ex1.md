@@ -1,133 +1,120 @@
 ---
-title: Ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Création de votre compte Google Cloud Platform
-description: Ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Création de votre compte Google Cloud Platform
+title: Ingestion et analyse des données Google Analytics dans Adobe Experience Platform à l’aide du connecteur Source BigQuery - Création de votre compte Google Cloud Platform
+description: Ingestion et analyse des données Google Analytics dans Adobe Experience Platform à l’aide du connecteur Source BigQuery - Création de votre compte Google Cloud Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6dbfb5a3-adc2-4818-8f79-bbb00e56fbdf
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 1%
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
-# 4.2.1 Création de votre compte Google Cloud Platform
+# 4.2.1 Commencer à utiliser Google Cloud Platform
 
-## Objectifs
-
-- Création de votre compte Google Cloud Platform
-- Familiarisez-vous avec la console Google Cloud Platform
-- Créer et préparer votre projet BigQuery
+>[!NOTE]
+>
+>Pour cet exercice, vous devez accéder à un environnement Google Cloud Platform. Si vous n&#39;avez pas encore accès à GCP, créez un compte en utilisant votre adresse e-mail personnelle.
 
 ## 4.2.1.1 Pourquoi connecter Google BigQuery à Adobe Experience Platform pour obtenir des données Google Analytics
 
-Google Cloud Platform (GCP) est une suite de services de cloud computing publics proposés par Google. Google Cloud Platform comprend un éventail de services hébergés pour le développement d’ordinateurs, de stockage et d’applications qui s’exécutent sur du matériel Google.
+Google Cloud Platform (GCP) est une suite de services de cloud computing public proposés par Google. La plateforme cloud Google comprend toute une gamme de services hébergés pour le développement informatique, de stockage et d’applications qui s’exécutent sur du matériel Google.
 
-BigQuery est l’un de ces services et il est toujours inclus avec Google Analytics 360. Les données Google Analytics sont fréquemment échantillonnées lorsque nous tentons d’en obtenir directement (API par exemple). C’est pourquoi Google inclut BigQuery pour obtenir des données non échantillonnées, de sorte que les marques puissent effectuer des analyses avancées à l’aide de SQL et bénéficier de la puissance de GCP.
+BigQuery est l’un de ces services et il est toujours inclus dans Google Analytics 360. Les données des Google Analytics sont fréquemment échantillonnées lorsque nous tentons d’obtenir des données directement à partir de celles-ci (API par exemple). C’est pourquoi Google inclut BigQuery pour obtenir des données non échantillonnées, afin que les marques puissent effectuer des analyses avancées à l’aide de SQL et bénéficier de la puissance de GCP.
 
 Les données Google Analytics sont chargées quotidiennement dans BigQuery à l’aide d’un mécanisme par lots. Par conséquent, il n’est pas logique d’utiliser cette intégration GCP/BigQuery pour les cas d’utilisation de la personnalisation et de l’activation en temps réel.
 
-Si une marque souhaite proposer des cas d’utilisation de personnalisation en temps réel basés sur des données de Google Analytics, elle peut collecter ces données sur le site web à l’aide de Google Tag Manager, puis les diffuser en temps réel vers Adobe Experience Platform.
+Si une marque souhaite diffuser des cas d’utilisation de personnalisation en temps réel basés sur les données de Google Analytics, elle peut collecter ces données sur le site web avec Google Tag Manager, puis les diffuser sur Adobe Experience Platform en temps réel.
 
-Le connecteur GCP/BigQuery Source doit être utilisé pour...
+Le connecteur Source GCP/BigQuery doit être utilisé pour...
 
-- effectuez le suivi de tous les comportements des clients sur le site web et chargez ces données dans Adobe Experience Platform pour les cas d’utilisation d’analyse, de science des données et de personnalisation qui ne nécessitent pas d’activation en temps réel.
-- charger des données historiques Google Analytics dans Adobe Experience Platform, à nouveau pour des cas d’utilisation d’analyse et de science des données ;
+- suivez tous les comportements des clients sur le site web et chargez ces données dans Adobe Experience Platform pour des cas d’utilisation d’analyse, de science des données et de personnalisation qui ne nécessitent pas d’activation en temps réel.
+- chargement des données historiques des Google Analytics dans Adobe Experience Platform, toujours pour des cas d’utilisation d’analyse et de science des données
 
-## 4.2.1.2 Création de votre compte Google
+## 4.2.1.2 votre compte Google
 
-Pour obtenir un compte Google Cloud Platform, vous avez besoin d’un compte Google.
+>[!NOTE]
+>
+>Pour cet exercice, vous devez accéder à un environnement Google Cloud Platform. Si vous n&#39;avez pas encore accès à GCP, créez un compte en utilisant votre adresse e-mail personnelle.
 
-## 4.2.1.3 Activation de votre compte Google Cloud Platform
+## 4.2.1.3 Sélectionner ou créer un projet
 
-Maintenant que vous disposez de votre compte Google, vous pouvez créer un environnement Google Cloud Platform. Pour ce faire, accédez à [https://console.cloud.google.com/](https://console.cloud.google.com/).
+Accédez à [https://console.cloud.google.com/](https://console.cloud.google.com/).
 
-Sur la page suivante, acceptez les conditions générales.
+Cliquez ensuite sur **Sélectionner un projet** ou sur un projet existant.
 
-![demo](./images/ex1/1.png)
+![demo](./images/ex12.png)
 
-Cliquez ensuite sur **Sélectionner un projet**.
+Si vous n’avez pas encore de projet, cliquez sur **NOUVEAU PROJET**. Si vous disposez déjà d’un projet, vous pouvez choisir de le sélectionner et de passer à l’étape suivante.
 
-![demo](./images/ex1/2.png)
+![demo](./images/ex1createproject.png)
 
-Cliquez sur **NEW PROJECT**.
+Nommez votre projet selon cette convention de nommage. Cliquez sur **CRÉER**.
 
-![demo](./images/ex1/createproject.png)
+| Convention |
+| ----------------- |
+| `--aepUserLdap---googlecloud` |
 
-Nommez votre projet selon cette convention d’affectation des noms :
+![demo](./images/ex13.png)
 
-| Convention | Exemple |
-| ----------------- |-------------| 
-| `--aepUserLdap---googlecloud` | delaiglecloud |
+Patientez jusqu’à ce que la notification en haut à droite de l’écran vous indique que la création est terminée. Cliquez ensuite sur **SÉLECTIONNER UN PROJET**.
 
-![demo](./images/ex1/3.png)
-
-Cliquez sur **Créer**.
-
-![demo](./images/ex1/3-1.png)
-
-Patientez jusqu’à ce que la notification située en haut à droite de l’écran vous indique que la création est terminée. Cliquez ensuite sur **Afficher le projet**.
-
-![demo](./images/ex1/4.png)
+![demo](./images/ex14.png)
 
 Ensuite, accédez à la barre de recherche en haut de l’écran et saisissez **BigQuery**. Sélectionnez le premier résultat.
 
-![demo](./images/ex1/7.png)
+![demo](./images/ex17.png)
 
-Vous serez alors redirigé vers la console BigQuery et un message contextuel s’affichera.
+L’objectif de ce module est d’obtenir des données Google Analytics dans Adobe Experience Platform. Pour ce faire, vous avez besoin de données factices dans un jeu de données Google Analytics pour commencer.
 
-**Cliquez sur Terminé**.
+Cliquez sur **+ Ajouter** puis sur **Jeux de données publics** dans le menu de droite.
 
-![demo](./images/ex1/5.png)
-
-L’objectif de ce module est d’obtenir des données Google Analytics dans Adobe Experience Platform. Pour ce faire, nous avons besoin de données factices dans un jeu de données Google Analytics pour commencer.
-
-Cliquez sur **Ajouter des données** dans le menu de gauche, puis sur **Explorer les jeux de données publics**.
-
-![demo](./images/ex1/18.png)
+![demo](./images/ex118.png)
 
 Vous verrez alors cette fenêtre :
 
-![demo](./images/ex1/19.png)
+![demo](./images/ex119.png)
 
-Saisissez le terme de recherche **Google Analytics Sample** dans la barre de recherche et sélectionnez le premier résultat.
+Saisissez le terme de recherche **Exemple de Google Analytics** dans la barre de recherche, puis cliquez sur le premier résultat de la recherche.
 
-![demo](./images/ex1/20.png)
+![demo](./images/ex120.png)
 
 L’écran suivant contient une description du jeu de données. Cliquez sur **AFFICHER LE JEU DE DONNÉES**.
 
-![demo](./images/ex1/21.png)
+![demo](./images/ex121.png)
 
-Vous serez ensuite redirigé vers BigQuery où vous verrez ce jeu de données **bigquery-public-data** sous **Explorateur**.
+Vous serez ensuite redirigé vers BigQuery, où vous verrez ce jeu de données **bigquery-public-data** sous **Explorer**.
 
-![demo](./images/ex1/22a.png)
+![demo](./images/ex122a.png)
 
-Dans **Explorateur**, vous devriez maintenant voir plusieurs tables. N&#39;hésitez pas à les explorer. Accédez à `google_analytics_sample`.
+Dans **l’Explorateur**, vous devriez maintenant voir un certain nombre de tableaux. N’hésitez pas à les explorer. Accédez à `google_analytics_sample`.
 
-![demo](./images/ex1/22.png)
+![demo](./images/ex122.png)
 
-Cliquez pour ouvrir la table `ga_sessions`.
+Cliquez pour ouvrir le tableau `ga_sessions`.
 
-![demo](./images/ex1/23.png)
+![demo](./images/ex123.png)
 
-Avant de poursuivre l’exercice suivant, écrivez les éléments suivants dans un fichier texte distinct sur votre ordinateur :
+Avant de passer à l&#39;exercice suivant, notez les éléments suivants dans un fichier texte séparé sur votre ordinateur :
 
 | Informations d’identification | Attribution d&#39;un nom | Exemple |
 | ----------------- |-------------| -------------|
 | Nom du projet | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
-| Identifiant de projet | random | composé-tâche-306413 |
+| ID de projet | random | possible-bee-447102-h3 |
 
-Vous pouvez trouver votre nom de projet et votre ID de projet en cliquant sur le **nom du projet** dans la barre de menu supérieure :
+Vous pouvez trouver votre nom de projet et votre ID de projet en cliquant sur votre **nom du projet** dans la barre de menu supérieure :
 
-![demo](./images/ex1/projectMenu.png)
+![demo](./images/ex1projectMenu.png)
 
 Votre ID de projet s’affiche alors sur le côté droit :
 
-![demo](./images/ex1/projetcselection.png)
+![demo](./images/ex1projetcselection.png)
 
-Vous pouvez maintenant passer à l’exercice 12.2 où vous allez vous salir les mains en interrogeant des données Google Analytics.
+Vous pouvez maintenant passer à l’exercice suivant dans lequel vous vous salissez les mains en interrogeant des données de Google Analytics.
 
-Étape suivante : [4.2.2 Créez votre première requête dans BigQuery](./ex2.md)
+Étape suivante : [4.2.2 Créer votre première requête dans BigQuery](./ex2.md)
 
-[Revenir au module 4.2](./customer-journey-analytics-bigquery-gcp.md)
+[Retour au module 4.2](./customer-journey-analytics-bigquery-gcp.md)
 
 [Revenir à tous les modules](./../../../overview.md)

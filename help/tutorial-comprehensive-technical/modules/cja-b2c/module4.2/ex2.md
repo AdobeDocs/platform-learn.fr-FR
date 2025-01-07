@@ -1,11 +1,12 @@
 ---
-title: Ingérer et analyser les données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Créez votre première requête dans BigQuery
-description: Ingérer et analyser les données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Créez votre première requête dans BigQuery
+title: Ingestion et analyse des données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Création de votre première requête dans BigQuery
+description: Ingestion et analyse des données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery - Création de votre première requête dans BigQuery
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
@@ -14,56 +15,54 @@ ht-degree: 1%
 
 ## Objectifs
 
-- Exploration de l’interface utilisateur de BigQuery
-- Création d’une requête SQL dans BigQuery
+- Explorer l’interface utilisateur de BigQuery
+- Créer une requête SQL dans BigQuery
 - Enregistrer les résultats de votre requête SQL dans un jeu de données dans BigQuery
 
 ## Contexte
 
-Lorsque les données Google Analytics se trouvent dans BigQuery, les dimensions, les mesures et d’autres variables sont toutes imbriquées. En outre, les données Google Analytics sont chargées quotidiennement dans différentes tables. Cela signifie que tenter de connecter directement des tables Google Analytics dans BigQuery à Adobe Experience Platform est très difficile et pas une bonne idée.
+Lorsque les données Google Analytics se trouvent dans BigQuery, les dimensions, mesures et autres variables sont toutes imbriquées. En outre, les données des Google Analytics sont chargées quotidiennement dans différentes tables. Cela signifie qu’essayer de connecter directement des tables de Google Analytics au sein de BigQuery à Adobe Experience Platform est très difficile et n’est pas une bonne idée.
 
-La solution à ce problème consiste à transformer les données Google Analytics en un format lisible pour faciliter l’ingestion dans Adobe Experience Platform.
+La solution à ce problème consiste à transformer les données des Google Analytics en un format lisible pour faciliter l’ingestion dans Adobe Experience Platform.
 
-## 4.2.2.1 Création d’un jeu de données pour enregistrer de nouveaux tableaux BigQuery
+## 4.2.2.1 Créer un jeu de données pour enregistrer de nouveaux tableaux BigQuery
 
 Accédez à la [console BigQuery](https://console.cloud.google.com/bigquery).
 
-![demo](./images/ex3/1.png)
+![demo](./images/ex31.png)
 
 Dans **Explorateur**, votre ID de projet s’affiche. Cliquez sur votre ID de projet (ne cliquez pas sur le jeu de données **bigquery-public-data**).
 
-![demo](./images/ex3/2.png)
+![demo](./images/ex32.png)
 
-Vous pouvez voir qu&#39;il n&#39;y a pas encore de jeu de données, alors créons-en un maintenant.
-Cliquez sur **CRÉER UN JEU DE DONNÉES**.
+Comme vous pouvez le constater, il n’y a pas encore de jeu de données. Créons-en un maintenant.
+Cliquez sur la **3...**, puis sur **CRÉER UN JEU DE DONNÉES**.
 
-![demo](./images/ex3/4.png)
+![demo](./images/ex34.png)
 
 Sur le côté droit de l’écran, le menu **Créer un jeu de données** s’affiche.
 
-![demo](./images/ex3/5.png)
+![demo](./images/ex35.png)
 
-Pour l’ **identifiant du jeu de données**, utilisez la convention d’affectation des noms ci-dessous. Pour les autres champs, conservez les paramètres par défaut.
+Pour l’**ID du jeu de données**, utilisez la convention de nommage ci-dessous. Pour les autres champs, veuillez conserver les paramètres par défaut.
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
-![demo](./images/ex3/6.png)
+Cliquez sur **CRÉER UN JEU DE DONNÉES**.
 
-Cliquez ensuite sur **Créer un jeu de données**.
+![demo](./images/ex36.png)
 
-![demo](./images/ex3/7.png)
+Vous serez ensuite de retour dans la console BigQuery avec votre jeu de données créé.
 
-Vous serez alors de retour dans la console BigQuery avec votre jeu de données créé.
+![demo](./images/ex38.png)
 
-![demo](./images/ex3/8.png)
+## 4.2.2.2 Créer votre première requête SQL BigQuery
 
-## 4.2.2.2 Création de votre première requête SQL BigQuery
+Ensuite, vous allez créer votre première requête dans BigQuery. L’objectif de cette requête est de prendre les données d’exemple des Google Analytics et de les transformer afin qu’elles puissent être ingérées dans Adobe Experience Platform. Accédez à l’onglet **Requête sans titre**.
 
-Vous allez ensuite créer votre première requête dans BigQuery. L’objectif de cette requête est de prendre les exemples de données des Google Analytics et de les transformer afin qu’ils puissent être ingérés dans Adobe Experience Platform. Accédez à l’onglet **EDITOR**.
-
-![demo](./images/ex3/9.png)
+![demo](./images/ex39.png)
 
 Copiez la requête SQL suivante et collez-la dans cet éditeur de requêtes. N’hésitez pas à lire la requête et à comprendre la syntaxe BigQuery Google Analytics.
 
@@ -232,48 +231,48 @@ GROUP BY
 
 Lorsque vous êtes prêt, cliquez sur **Exécuter** pour exécuter la requête :
 
-![demo](./images/ex3/10.png)
+![demo](./images/ex310.png)
 
 L’exécution de la requête peut prendre quelques minutes.
 
-Une fois la requête en cours d’exécution terminée, vous verrez la sortie ci-dessous dans le **Résultats de la requête**.
+Une fois l’exécution de la requête terminée, la sortie ci-dessous s’affiche dans les **Résultats de la requête**.
 
-![demo](./images/ex3/12.png)
+![demo](./images/ex312.png)
 
-## 4.2.2.3 Enregistrer les résultats de votre requête BigQuery SQL
+## 4.2.2.3 Enregistrer les résultats de votre requête SQL BigQuery
 
-L’étape suivante consiste à enregistrer la sortie de votre requête en cliquant sur le bouton **ENREGISTRER LES RÉSULTATS** .
+L’étape suivante consiste à enregistrer la sortie de votre requête en cliquant sur le bouton **ENREGISTRER LES RÉSULTATS**.
 
-![demo](./images/ex3/13.png)
+![demo](./images/ex313.png)
 
-Pour l’emplacement de votre sortie, sélectionnez **BigQuery table**.
+Sélectionnez **Tableau BigQuery** comme emplacement de sortie.
 
-![demo](./images/ex3/14.png)
+![demo](./images/ex314.png)
 
-Une nouvelle fenêtre contextuelle s’affiche alors, dans laquelle votre **nom du projet** et le **nom du jeu de données** sont prérenseignés. Le nom du jeu de données doit être le jeu de données que vous avez créé au début de cet exercice, avec cette convention d’affectation des noms :
+Une nouvelle fenêtre contextuelle s’affiche, dans laquelle vos **Nom du projet** et **Nom du jeu de données** sont pré-renseignés. Le nom du jeu de données doit correspondre au jeu de données que vous avez créé au début de cet exercice, avec cette convention d’affectation de nom :
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
-Vous devez maintenant saisir un nom de tableau. Utilisez cette convention d’affectation des noms :
+Vous devez maintenant saisir un nom de table. Veuillez utiliser cette convention de nommage :
 
 | Attribution d&#39;un nom | Exemple |
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
-![demo](./images/ex3/16.png)
+Cliquez sur **ENREGISTRER**.
 
-Cliquez sur **SAVE**.
+![demo](./images/ex316.png)
 
-Il peut s’écouler un certain temps avant que les données ne soient prêtes dans le tableau que vous avez créé. Au bout de quelques minutes, actualisez le navigateur. Vous devriez ensuite voir dans votre jeu de données la table `--aepUserLdap--_GAdataTableBigquery` sous **Explorateur** dans votre projet BigQuery.
+Cela peut prendre un certain temps avant que les données ne soient prêtes dans le tableau que vous avez créé. Au bout de quelques minutes, actualisez le navigateur. Vous devriez ensuite voir dans votre jeu de données la table `--aepUserLdap--_GAdataTableBigquery` sous **Explorer** dans votre projet BigQuery.
 
-![demo](./images/ex3/19.png)
+![demo](./images/ex319.png)
 
-Vous pouvez maintenant poursuivre l’exercice suivant, où vous connecterez ce tableau à Adobe Experience Platform.
+Vous pouvez maintenant passer à l’exercice suivant, au cours duquel vous allez connecter ce tableau à Adobe Experience Platform.
 
-Étape suivante : [4.2.3 Connexion de GCP et BigQuery à Adobe Experience Platform](./ex3.md)
+Étape suivante : [4.2.3 Connecter GCP et BigQuery à Adobe Experience Platform](./ex3.md)
 
-[Revenir au module 4.2](./customer-journey-analytics-bigquery-gcp.md)
+[Retour au module 4.2](./customer-journey-analytics-bigquery-gcp.md)
 
 [Revenir à tous les modules](./../../../overview.md)

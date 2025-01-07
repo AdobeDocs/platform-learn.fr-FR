@@ -3,60 +3,61 @@ title: Customer Journey Analytics - Visualisation à l’aide de Customer Journe
 description: Customer Journey Analytics - Visualisation à l’aide de Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
 
-# 4.1.5 Visualisation avec Customer Journey Analytics
+# 4.1.5 Visualisation à l’aide de Customer Journey Analytics
 
 ## Objectifs
 
 - Présentation de l’interface utilisateur d’Analysis Workspace
 - Découvrez certaines fonctionnalités qui rendent Analysis Workspace si différent.
-- Découvrez comment analyser dans CJA à l’aide d’Analysis Workspace
+- Découvrez comment effectuer des analyses dans CJA à l’aide d’Analysis Workspace
 
 ## Contexte
 
-Dans ces exercices, vous utiliserez Analysis Workspace dans CJA pour analyser les vues de produits, les entonnoirs de produits, la perte de clientèle, etc.
+Dans ces exercices, vous utiliserez Analysis Workspace dans CJA pour analyser les consultations de produits, les entonnoirs de produits, l’attrition, etc.
 
-Nous allons passer en revue certaines des requêtes effectuées dans le module 7 - Query Service afin que vous puissiez voir à quel point il est facile d’exécuter les mêmes requêtes, et plus encore, mais sans utiliser SQL et en vous reposant uniquement sur la philosophie glisser-déposer d’Analysis Workspace.
+Nous allons couvrir certaines des requêtes effectuées dans Module 7 - Query Service afin que vous puissiez voir à quel point il est facile d’exécuter les mêmes requêtes et plus encore, mais sans utiliser SQL et en ne vous fiant qu’à la philosophie de glisser-déposer d’Analysis Workspace.
 
-Utilisons le projet que vous avez créé dans [11.4 Data Preparation dans Analysis Workspace](./ex4.md), alors allez à [https://analytics.adobe.com](https://analytics.adobe.com).
+Nous allons utiliser le projet que vous avez créé dans [4.1.4 Préparation des données dans Analysis Workspace](./ex4.md), accédez donc à [https://analytics.adobe.com](https://analytics.adobe.com).
+
+Cliquez pour ouvrir le `--aepUserLdap-- - Omnichannel Analysis` de votre projet.
 
 ![demo](./images/prohome.png)
 
-Ouvrez votre projet `--aepUserLdap-- - Omnichannel Analysis`.
-
-Une fois votre projet ouvert et la vue de données `--aepUserLdap-- - Omnichannel Analysis` sélectionnée, vous êtes prêt à commencer à créer vos premières visualisations.
+Une fois votre projet ouvert et la Vue de données `--aepUserLdap-- - Omnichannel Analysis` sélectionnée, vous êtes prêt à commencer à créer vos premières visualisations.
 
 ![demo](./images/prodataView1.png)
 
-## Combien de consultations de produits y a-t-il quotidiennement ?
+## Combien de consultations de produits avons-nous par jour ?
 
-Tout d&#39;abord, nous devons sélectionner les dates appropriées pour analyser les données. Accédez au menu déroulant du calendrier sur le côté droit de la zone de travail. Cliquez dessus et sélectionnez la période applicable.
+Tout d’abord, vous devez sélectionner les dates appropriées pour analyser les données. Accédez à la liste déroulante Calendrier sur le côté droit de la zone de travail. Cliquez dessus et sélectionnez la période applicable.
 
 ![demo](./images/pro1.png)
 
-Dans le menu de gauche (zone de composants), recherchez la mesure calculée **Consultations de produit**. Sélectionnez-la et faites-la glisser sur la zone de travail, en haut à droite du tableau à structure libre.
+Dans le menu de gauche (zone Composants), recherchez la Mesure calculée **Vues des produits**. Sélectionnez-la et faites-la glisser et déposez-la dans la zone de travail, en haut à droite dans le tableau à structure libre.
 
 ![demo](./images/pro2.png)
 
-La dimension **Jour** sera automatiquement ajoutée pour créer votre première table. Maintenant, vous pouvez voir que votre question a reçu une réponse instantanément.
+La dimension **Jour** sera automatiquement ajoutée pour créer votre premier tableau. Vous pouvez maintenant voir la réponse à votre question à la volée.
 
 ![demo](./images/pro3.png)
 
-Cliquez ensuite avec le bouton droit sur le résumé de la mesure.
+Cliquez ensuite avec le bouton droit de la souris sur le résumé des mesures.
 
 ![demo](./images/pro4.png)
 
-Cliquez sur **Visualiser**, puis sélectionnez **Ligne** comme visualisation.
+Cliquez sur **Visualiser** puis sélectionnez **Ligne** comme visualisation.
 
 ![demo](./images/pro5.png)
 
-Vous verrez vos consultations de produits par jour.
+Vos produits sont consultés chaque jour.
 
 ![demo](./images/pro6.png)
 
@@ -64,7 +65,7 @@ Vous pouvez modifier la portée temporelle au jour le jour en cliquant sur **Par
 
 ![demo](./images/pro7.png)
 
-Cliquez sur le point en regard de **Line** pour **Gérer le Source de données**.
+Cliquez sur le point en regard de **Ligne** pour **Gérer la Source de données**.
 
 ![demo](./images/pro7a.png)
 
@@ -72,57 +73,57 @@ Cliquez ensuite sur **Verrouiller la sélection** et sélectionnez **Éléments 
 
 ![demo](./images/pro7b.png)
 
-## Les 5 produits les plus consultés
+## Top 5 des produits consultés
 
-Quels sont les 5 premiers produits consultés ?
+Quels sont les 5 produits les plus consultés ?
 
-N’oubliez pas d’enregistrer le projet de temps à autre.
+N’oubliez pas d’enregistrer le projet de temps en temps.
 
-| SE | Couper court |
+| SE | Raccourci |
 | ----------------- |-------------| 
-| Windows | Ctrl + S |
+| Windows | Ctrl+S |
 | Mac | Commande + S |
 
-Commençons à trouver les 5 premiers produits consultés. Dans le menu de gauche, recherchez la Dimension **Nom du produit** -
+Commençons par trouver les 5 produits les plus consultés. Dans le menu de gauche, recherchez la Dimension **Nom du produit** - .
 
 ![demo](./images/pro8.png)
 
-Déplacez maintenant **Nom du produit** pour remplacer la dimension **Jour** :
+Effectuez maintenant un glisser-déposer **Nom du produit** pour remplacer la dimension **Jour** :
 
-Cela sera le résultat
+Ce sera le résultat
 
 ![demo](./images/pro10a.png)
 
-Essayez ensuite de ventiler l’un des produits par nom de marque. Recherchez **brandName** et faites-le glisser sous le premier nom de produit.
+Ensuite, essayez de ventiler l’un des produits par nom de marque. Recherchez **brandName** et faites-le glisser sous le premier nom de produit.
 
 ![demo](./images/pro13.png)
 
-Effectuez ensuite une ventilation à l’aide de l’agent utilisateur. Recherchez **User Agent** et faites-le glisser sous le nom de la marque.
+Procédez ensuite à une répartition à l’aide de l’agent utilisateur. Recherchez **Agent utilisateur** et faites-le glisser sous le nom de la marque.
 
 ![demo](./images/pro15.png)
 
-Vous verrez alors :
+Vous verrez alors ceci :
 
 ![demo](./images/pro15a.png)
 
-Enfin, vous pouvez ajouter d’autres visualisations. Sur le côté gauche, sous Visualisations, recherchez `Donut`. Prenez `Donut`, faites-le glisser sur la zone de travail sous la visualisation **Ligne**.
+Enfin, vous pouvez ajouter d’autres visualisations. Sur le côté gauche, sous visualisations, recherchez `Donut`. Prenez `Donut`, faites-le glisser et déposez-le sur la zone de travail sous la visualisation **Ligne**.
 
 ![demo](./images/pro18.png)
 
-Ensuite, dans le tableau, sélectionnez les 5 premières lignes **User Agent** de la ventilation que nous avons effectuée sous **Google Pixel XL 32 Go Black Smartphone** > **Citi Signal**. Lors de la sélection des 3 lignes, maintenez le bouton **CTRL** (sous Windows) ou le bouton **Commande** (sous Mac) enfoncé.
+Ensuite, dans le tableau , sélectionnez les 5 premières lignes **Agent utilisateur** de la répartition que nous avons effectuée sous **Google Pixel XL 32 Go Black Smartphone** > **Signal Citi**. Lors de la sélection des 3 lignes, maintenez le bouton **Ctrl** (sous Windows) ou le bouton **Commande** (sous Mac) enfoncé.
 
 ![demo](./images/pro20.png)
 
-Le graphique en anneau est alors modifié :
+Le graphique en anneau a été modifié :
 
 ![demo](./images/pro21.png)
 
-Vous pouvez même adapter la conception pour la rendre plus lisible, en réduisant un peu le graphique **Line** et le graphique **Donut** afin qu’ils puissent s’adapter les uns aux autres :
+Vous pouvez même adapter la conception pour qu’elle soit plus lisible, en réduisant légèrement le graphique **Ligne** et le graphique **Anneau** afin qu’ils puissent s’adapter l’un à l’autre :
 
 ![demo](./images/pro22.png)
 
-Cliquez sur le point en regard de **Anneau** pour **Gérer le Source de données**.
-Cliquez ensuite sur **Verrouiller la sélection** pour verrouiller cette visualisation afin qu’elle affiche toujours une chronologie des consultations de produit.
+Cliquez sur le point en regard de **Anneau** pour **Gérer la Source de données**.
+Cliquez ensuite sur **Verrouiller la sélection** pour verrouiller cette visualisation afin qu’elle affiche toujours une chronologie des consultations de produits.
 
 ![demo](./images/pro22b.png)
 
@@ -131,9 +132,9 @@ Pour en savoir plus sur les visualisations à l’aide d’Analysis Workspace, c
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Entonnoir d’interaction de produit, de l’affichage à l’achat
+## Entonnoir d’interaction du produit, de la consultation à l’achat
 
-Il y a de nombreuses façons de résoudre cette question. L’une d’elles consiste à utiliser le type d’interaction du produit et à l’utiliser sur un tableau à structure libre. Une autre méthode consiste à utiliser une **visualisation Abandons**. Utilisons la dernière comme nous voulons visualiser et analyser en même temps.
+Il existe de nombreuses façons de résoudre cette question. L’une d’elles consiste à utiliser le type d’interaction de produit et à l’utiliser sur un tableau à structure libre. Vous pouvez également utiliser une **visualisation des abandons**. Utilisons le dernier exemple, car nous voulons visualiser et analyser en même temps.
 
 Fermez le panneau actuel en cliquant ici :
 
@@ -151,7 +152,7 @@ Sélectionnez la même période que dans l’exercice précédent.
 
 ![demo](./images/prodatef.png)
 
-Vous verrez alors ceci.
+Tu verras ça.
 
 ![demo](./images/prodatefa.png)
 
@@ -163,35 +164,35 @@ Cliquez sur la flèche pour ouvrir la dimension :
 
 ![demo](./images/pro27.png)
 
-Vous verrez tous les types d’événement disponibles.
+Tous les types d’événements disponibles s’affichent.
 
 ![demo](./images/pro28.png)
 
-Sélectionnez l’élément **commerce.productViews** et faites-le glisser sur le champ **Ajouter un point de contact** dans la **visualisation des abandons**.
+Sélectionnez l’élément **commerce.productViews** et glissez-déposez-le sur le champ **Ajouter un point de contact** à l’intérieur de la **Visualisation des abandons**.
 
 ![demo](./images/pro29.png)
 
-Faites de même avec **commerce.productListAdds** et **commerce.achats** et déposez-les dans le champ **Ajouter un point de contact** à l’intérieur de la **visualisation des abandons**. Votre visualisation se présente désormais comme suit :
+Faites de même avec **commerce.productListAdds** et **commerce.purchases** et déposez-les dans le champ **Ajouter un point de contact** à l’intérieur de la **Visualisation des abandons**. Voici à quoi ressemblera désormais votre visualisation :
 
 ![demo](./images/props1.png)
 
-Vous pouvez faire beaucoup de choses ici. Voici quelques exemples : comparez au fil du temps, comparez chaque étape par appareil ou comparez-la par fidélité. Cependant, si nous voulons analyser des éléments intéressants comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article à leur panier, nous pouvons utiliser le meilleur outil dans CJA : cliquez avec le bouton droit de la souris.
+On peut faire beaucoup de choses ici. Quelques exemples : comparer au fil du temps, comparer chaque étape par appareil ou comparer par fidélité. Cependant, si nous voulons analyser des éléments intéressants, comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article dans leur panier, nous pouvons utiliser le meilleur outil de CJA : un clic droit.
 
-Cliquez avec le bouton droit sur le point de contact **commerce.productListAdds**. Cliquez ensuite sur **Ventiler les abandons à ce point de contact**.
+Cliquez avec le bouton droit sur le point de contact **commerce.productListAdds**. Cliquez ensuite sur **Répartir les abandons à ce point de contact**.
 
 ![demo](./images/pro32.png)
 
-Un nouveau tableau à structure libre sera créé pour analyser les actions des personnes qui n’ont pas effectué d’achat.
+Un nouveau tableau à structure libre sera créé pour analyser ce que les personnes ont fait si elles n’ont pas acheté.
 
 ![demo](./images/pro33.png)
 
-Modifiez le **Type d’événement** par **Nom de page**, dans le nouveau tableau à structure libre, pour afficher les pages qu’il consultent au lieu de la page de confirmation d’achat.
+Modifiez le **Type d’événement** par **Nom de page**, dans le nouveau tableau à structure libre, pour voir les pages vers lesquelles ils se dirigent au lieu de la page de confirmation d’achat.
 
 ![demo](./images/pro34.png)
 
-## Que font les visiteurs sur le site avant d’accéder à la page Annuler le service ?
+## Que font les visiteurs sur le site avant d&#39;accéder à la page Annuler le service ?
 
-Encore une fois, il existe de nombreuses façons d’effectuer cette analyse. Utilisons l’analyse de flux pour commencer la partie découverte.
+Encore une fois, il existe de nombreuses façons d’effectuer cette analyse. Utilisons l’analyse de flux pour commencer la partie de découverte.
 
 Fermez le panneau actuel en cliquant ici :
 
@@ -205,7 +206,7 @@ Cliquez sur la visualisation **Flux**.
 
 ![demo](./images/pro35.png)
 
-Vous verrez alors :
+Vous verrez alors ceci :
 
 ![demo](./images/pro351.png)
 
@@ -213,7 +214,7 @@ Sélectionnez la même période que dans l’exercice précédent.
 
 ![demo](./images/pro0b.png)
 
-Recherchez la dimension **Nom de page** sous les composants sur le côté gauche :
+Recherchez la dimension **Nom de la page** sous les composants sur le côté gauche :
 
 ![demo](./images/pro36.png)
 
@@ -221,55 +222,55 @@ Cliquez sur la flèche pour ouvrir la dimension :
 
 ![demo](./images/pro37.png)
 
-Vous trouverez toutes les pages consultées. Recherchez le nom de la page : **Annuler le service**.
-Faites glisser **Annuler le service** et déposez-le dans le champ Visualisation du flux au milieu :
+Toutes les pages sont consultées. Recherchez le nom de la page : **Annuler le service**.
+Faites glisser et déposez **Annuler le service** dans la visualisation de flux sur le champ central :
 
 ![demo](./images/pro38.png)
 
-Vous verrez alors :
+Vous verrez alors ceci :
 
 ![demo](./images/pro40.png)
 
-Analysons maintenant si les clients qui ont consulté la page **Annuler le service** sur le site web ont également appelé callcenter et quel en a été le résultat.
+Examinons maintenant si les clients qui ont visité la page **Annuler le service** sur le site web ont également appelé le centre d’appel et quel en a été le résultat.
 
-Sous les dimensions, revenez en arrière, puis recherchez **Type d’interaction d’appel**.
-Faites glisser **Type d’interaction d’appel** pour remplacer la première interaction à droite dans la **Visualisation de flux**.
+Sous les dimensions, revenez en arrière et recherchez **Type d’interaction d’appel**.
+Effectuez un glisser-déposer **Type d’interaction d’appel** pour remplacer la première interaction à droite dans la **Visualisation de flux**.
 
 ![demo](./images/pro43.png)
 
-Vous voyez maintenant le ticket d’assistance des clients qui ont appelé le centre d’appel après avoir visité la page **Annuler le service**.
+Le ticket d’assistance des clients qui ont appelé le centre d’appel s’affiche maintenant après avoir consulté la page **Annuler le service**.
 
 ![demo](./images/pro44.png)
 
-Ensuite, sous les dimensions, recherchez **Appel de ressenti**.  Faites-la glisser et déposez-la pour remplacer la première interaction à droite dans la **visualisation Flux**.
+Ensuite, sous les dimensions, recherchez **Sentiment d’appel**.  Faites-la glisser pour remplacer la première interaction à droite dans la **Visualisation de flux**.
 
 ![demo](./images/pro46.png)
 
-Vous verrez alors :
+Vous verrez alors ceci :
 
 ![demo](./images/flow.png)
 
-Comme vous pouvez le voir, nous avons exécuté une analyse omnicanal à l’aide de la visualisation Flux. Grâce à cela, nous avons trouvé que certains clients qui pensaient annuler leur service, avaient un sentiment positif après avoir appelé le centre d&#39;appel. Avons-nous peut-être changé d&#39;avis avec une promotion ?
+Comme vous pouvez le constater, nous avons exécuté une analyse omnicanale à l’aide de la visualisation des flux . Grâce à cela, nous avons constaté que certains clients qui envisageaient d&#39;annuler leur service avaient un sentiment positif après avoir appelé le centre d&#39;appels. Avons-nous peut-être changé d&#39;avis avec une promotion?
 
-## Comment les clients avec un contact Callcenter positif se comportent-ils par rapport aux indicateurs clés de performance principaux ?
+## Comment les clients disposant d’un contact Callcenter positif se comportent-ils par rapport aux principaux indicateurs de performance clés ?
 
-Commençons par segmenter les données pour obtenir uniquement les utilisateurs avec des appels **positifs**. Dans CJA, les segments sont appelés filtres. Accédez aux filtres dans la zone de composant (à gauche) et cliquez sur **+**.
+Segmentons d’abord les données pour n’obtenir que les utilisateurs qui ont des appels **positifs**. Dans CJA, les segments sont appelés Filtres. Accédez à Filtres dans la zone des composants (sur le côté gauche) et cliquez sur **+**.
 
 ![demo](./images/pro58.png)
 
-Dans le créateur de filtres, attribuez un nom au filtre.
+Dans le créateur de filtres, attribuez un nom au filtre
 
 | Nom | Description |
 | ----------------- |-------------| 
-| Sentiment d’appel - positif | Sentiment d’appel - positif |
+| Sensation d’appel - Positif | Sensation d’appel - Positif |
 
 ![demo](./images/pro47.png)
 
-Sous les composants (dans le Créateur de filtres), recherchez **Raisonnement des appels** et faites-le glisser dans la définition du Créateur de filtres.
+Sous les composants (dans le Créateur de filtres), recherchez **Sentiment d’appel** et glissez-déposez-le dans la Définition du Créateur de filtres.
 
 ![demo](./images/pro48.png)
 
-Sélectionnez maintenant **positive** comme valeur pour le filtre.
+Sélectionnez maintenant **positif** comme valeur du filtre.
 
 ![demo](./images/pro49.png)
 
@@ -281,7 +282,7 @@ Pour terminer, cliquez simplement sur **Enregistrer**.
 
 ![demo](./images/pro51.png)
 
-Vous serez alors de retour ici. Si ce n’est pas encore fait, fermez le panneau précédent.
+Tu seras de retour ici. Si ce n’est pas encore fait, fermez le panneau précédent.
 
 ![demo](./images/pro0c.png)
 
@@ -293,15 +294,15 @@ Sélectionnez la même période que dans l’exercice précédent.
 
 ![demo](./images/pro24d.png)
 
-Cliquez sur **Table à structure libre**.
+Cliquez sur **Tableau à structure libre**.
 
 ![demo](./images/pro52.png)
 
-Déposez maintenant le filtre que vous venez de créer.
+Maintenant, glissez-déposez le filtre que vous venez de créer.
 
 ![demo](./images/pro53.png)
 
-Temps nécessaire pour ajouter certaines mesures. Commencez par **Consultations produits**. Effectuez un glisser-déposer dans le tableau à structure libre. Vous pouvez également supprimer la mesure **Events**.
+Il est temps d’ajouter des mesures. Commencez par **Consultations produits**. Effectuez un glisser-déposer dans le tableau à structure libre. Vous pouvez également supprimer la mesure **Événements**.
 
 ![demo](./images/pro54.png)
 
@@ -309,15 +310,15 @@ Faites de même avec **Personnes**, **Ajouter au panier** et **Achats**. Vous fi
 
 ![demo](./images/pro55.png)
 
-Grâce à la première analyse de flux, une nouvelle question est venue à l&#39;esprit. Nous avons donc décidé de créer ce tableau et de vérifier certains indicateurs de performance clés par rapport à un segment pour répondre à cette question. Comme vous pouvez le constater, le temps d’accès aux informations est beaucoup plus rapide que l’utilisation de SQL ou d’autres solutions de BI.
+Grâce à la première analyse de flux, une nouvelle question est venue à l&#39;esprit. Nous avons donc décidé de créer ce tableau et de comparer certains indicateurs de performance clés à un segment pour répondre à cette question. Comme vous pouvez le constater, le délai d’obtention des informations est beaucoup plus court que si vous utilisiez SQL ou d’autres solutions de BI.
 
-## Customer Journey Analytics et Analysis Workspace recap
+## Récapitulatif de Customer Journey Analytics et Analysis Workspace
 
-Comme vous l’avez appris dans ce laboratoire, Analysis Workspace assemble les données de tous les canaux afin d’analyser l’ensemble du parcours client. N’oubliez pas également que vous pouvez importer des données dans le même espace de travail qui n’est pas assemblé au parcours.
-Il peut être très utile d’importer des données déconnectées dans votre analyse pour donner un contexte au parcours. Certains exemples incluent des données NPS, des enquêtes, des événements Facebook Ads ou des interactions hors ligne (non identifiées).
+Comme vous l’avez appris dans cet atelier, Analysis Workspace regroupe les données de tous les canaux pour analyser l’ensemble du parcours client. En outre, n’oubliez pas que vous pouvez importer les données dans le même espace de travail qui n’est pas assemblé au parcours.
+Il peut s’avérer très utile d’importer des données déconnectées dans votre analyse pour donner un contexte au parcours. Par exemple, les données NPS, les questionnaires, les événements Facebook Ads ou les interactions hors ligne (non identifiées).
 
 Étape suivante : [Résumé et avantages](./summary.md)
 
-[Revenir au module 4.1](./customer-journey-analytics-build-a-dashboard.md)
+[Retour au module 4.1](./customer-journey-analytics-build-a-dashboard.md)
 
 [Revenir à tous les modules](./../../../overview.md)

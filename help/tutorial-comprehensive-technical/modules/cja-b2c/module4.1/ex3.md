@@ -1,11 +1,12 @@
 ---
-title: 'Customer Journey Analytics : création d’une vue de données'
-description: 'Customer Journey Analytics : création d’une vue de données'
+title: Customer Journey Analytics - Création d’une vue de données
+description: Customer Journey Analytics - Création d’une vue de données
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7dc6e169-3bf7-4f9b-a74d-e410b7ce2da7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1591'
 ht-degree: 3%
 
 ---
@@ -14,197 +15,188 @@ ht-degree: 3%
 
 ## Objectifs
 
-- Présentation de l’interface utilisateur de la vue de données
-- Présentation des paramètres de base de la définition de visite
-- Présentation de l’attribution et de la persistance dans une vue de données
+- Présentation de l’interface utilisateur des vues de données
+- Comprendre les paramètres de base de la définition de visite
+- Comprendre l’attribution et la persistance dans une vue de données
 
-## 4.1.3.1 Affichage des données
+## Vue de données 4.1.3.1
 
-Une fois votre connexion établie, vous pouvez maintenant influencer la visualisation. Une différence entre Adobe Analytics et CJA réside dans le fait que CJA a besoin d’une vue de données afin de nettoyer et de préparer les données avant la visualisation.
+Une fois la connexion établie, vous pouvez passer à l’influence de la visualisation. Une différence entre Adobe Analytics et CJA réside dans le fait que CJA a besoin d’une Vue de données pour nettoyer et préparer les données avant la visualisation.
 
-Une vue de données est similaire au concept de suites de rapports virtuelles dans Adobe Analytics, où vous définissez des définitions de visite basées sur le contexte, le filtrage, ainsi que la manière dont les composants sont appelés.
+Une vue de données est similaire au concept des suites de rapports virtuelles dans Adobe Analytics, où vous définissez des définitions de visite adaptées au contexte, un filtrage et également la manière dont les composants sont appelés.
 
-Vous aurez besoin d’au moins une vue de données par connexion. Cependant, dans certains cas d’utilisation, il est conseillé d’avoir plusieurs vues de données pour la même connexion, dans le but de fournir des informations différentes à différentes équipes.
-Si vous souhaitez que votre entreprise soit axée sur les données, vous devez adapter la manière dont les données sont vues dans chaque équipe. Quelques exemples :
+Vous aurez besoin d’au moins une vue de données par connexion. Cependant, pour certains cas d’utilisation, il est préférable d’avoir plusieurs vues de données pour la même connexion, dans le but de donner des informations différentes à différentes équipes.
+Si vous souhaitez que votre entreprise devienne axée sur les données, vous devez adapter la manière dont les données sont vues dans chaque équipe. Voici quelques exemples :
 
-- Mesures UX uniquement pour l’équipe de conception de l’expérience utilisateur
-- Utilisez les mêmes noms pour les indicateurs de performance clés et les mesures pour les Google Analytics que pour les Customer Journey Analytics afin que l’équipe d’analyse numérique ne parle qu’une seule langue.
-- Vue des données filtrée afin d’afficher, par exemple, les données d’un seul marché ou d’une seule marque, ou uniquement pour les périphériques mobiles.
+- Mesures UX uniquement pour l’équipe de conception UX
+- Utilisez les mêmes noms pour les indicateurs clés de performance et les mesures pour les Google Analytics que pour le Customer Journey Analytics afin que l’équipe d’analyse numérique ne puisse parler qu’une seule langue.
+- Vue de données filtrée pour afficher, par exemple, les données d’un seul marché, d’une seule marque ou uniquement pour les appareils mobiles.
 
-Sur l’écran **Connexions**, cochez la case en regard de la connexion que vous venez de créer. Cliquez sur **Créer une vue de données**.
+Dans l’écran **Connexions**, cochez la case en regard de la connexion que vous venez de créer. Cliquez sur **Créer une vue de données**.
 
 ![demo](./images/exta.png)
 
 Vous serez redirigé vers le workflow **Créer une vue de données**.
 
-![demo](./images/0-v2.png)
+![demo](./images/0v2.png)
 
-## 4.1.3.2 Définition de la vue des données
+## Définition de la vue de données 4.1.3.2
 
-Vous pouvez maintenant configurer les définitions de base de votre vue de données.
+Vous pouvez maintenant configurer les définitions de base pour votre vue de données.
 
-![demo](./images/0-v2.png)
+![demo](./images/0v2.png)
 
-La **connexion** que vous avez créée dans l’exercice précédent est déjà sélectionnée. Votre connexion est nommée `--aepUserLdap-- – Omnichannel Data Connection`.
+Le **Connexion** créé dans l’exercice précédent est déjà sélectionné. Votre connexion est nommée `--aepUserLdap-- – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Attribuez ensuite un nom à votre vue de données en suivant cette convention d’affectation des noms : `--aepUserLdap-- – Omnichannel Data View`.
+Attribuez ensuite un nom à votre vue de données en suivant cette convention d’affectation de nom : `--aepUserLdap-- – Omnichannel Data View`.
 
 Saisissez la même valeur pour la description : `--aepUserLdap-- – Omnichannel Data View`.
 
-| Nom | Description |
-| ----------------- |-------------| 
-| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
+| Nom | Description | Identifiant externe |
+| ----------------- |-------------|-------------| 
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
-![demo](./images/1-v2.png)
+![demo](./images/1v2.png)
 
-Pour le **fuseau horaire**, sélectionnez le fuseau horaire **Heure moyenne de Greenwich ; Monrovia, Casablanca [GMT]**. C&#39;est un cadre vraiment intéressant car certaines entreprises opèrent dans différents pays et régions. Allouer le bon fuseau horaire pour chaque pays évitera les erreurs de données typiques, comme par exemple croire qu&#39;au Pérou, la majorité des gens achètent des T-shirts à 4 heures du matin.
+Pour le **fuseau horaire**, sélectionnez le fuseau horaire **heure de Greenwich ; Monrovia, Casablanca [GMT]**. C&#39;est un contexte très intéressant, car certaines entreprises opèrent dans des pays et des zones géographiques différents. Attribuer le bon fuseau horaire pour chaque pays évitera les erreurs de données habituelles telles que croire qu&#39;au Pérou, par exemple, la majorité de la population achète des t-shirts à 4 heures du matin.
 
 ![demo](./images/ext7.png)
 
-Vous pouvez également modifier le nom des mesures principales (Personne, Session et Événement). Cela n’est pas obligatoire, mais certains clients aiment utiliser Personnes, Visites et Accès au lieu de Personne, Session et Événements (convention de dénomination par défaut de Customer Journey Analytics).
+Vous pouvez également modifier le nom des mesures principales (Personne, Session et Événement). Cela n’est pas obligatoire, mais certains clients préfèrent utiliser Personnes, Visites et Accès au lieu de Personne, Session et Événements (convention de nommage par défaut de Customer Journey Analytics).
 
 Les paramètres suivants doivent maintenant être configurés :
 
-![demo](./images/1-v2.png)
+![demo](./images/1v2.png)
 
 Cliquez sur **Enregistrer et continuer**.
 
-![demo](./images/12-v2.png)
+![demo](./images/12v2.png)
 
-## 4.1.3.3 Composants de la vue de données
+Cliquez sur **Enregistrer**.
+
+![demo](./images/12v2a.png)
+
+## 4.1.3.3 des composants de vue de données
 
 Dans cet exercice, vous allez configurer les composants dont vous avez besoin pour analyser les données et les visualiser à l’aide d’Analysis Workspace. Dans cette interface utilisateur, il existe trois zones principales :
 
-- Côté gauche : composants disponibles des jeux de données sélectionnés
-- Milieu : ajout de composants à la vue de données
+- Côté gauche : composants disponibles à partir des jeux de données sélectionnés
+- Milieu : composants ajoutés à la vue de données
 - Côté droit : paramètres des composants
 
-![demo](./images/2-v2.png)
+![demo](./images/2v2.png)
 
->[!IMPORTANT]
->
->Si vous ne trouvez pas de mesure ou de dimension spécifique, vérifiez si le champ `Contains data` est supprimé de votre vue de données. Dans le cas contraire, supprimez ce champ.
->
->![demo](./images/2-v2a.png)
+Vous devez maintenant faire glisser et déposer les composants dont vous avez besoin pour l’analyse dans le **Composants ajoutés**. Pour ce faire, vous devez sélectionner les composants dans le menu de gauche, puis les faire glisser et les déposer sur la zone de travail au milieu.
 
-Vous devez maintenant faire glisser les composants dont vous avez besoin pour l’analyse vers les **Composants ajoutés**. Pour ce faire, vous devez sélectionner les composants dans le menu de gauche et les faire glisser sur la zone de travail au milieu.
+Commençons par le premier composant : **Name (web.webPageDetails.name)**. Recherchez ce composant, puis faites-le glisser et déposez-le sur la zone de travail.
 
-Commençons par le premier composant : **Name (web.webPageDetails.name)**. Recherchez ce composant, puis faites-le glisser sur la zone de travail.
+![demo](./images/3v2.png)
 
-![demo](./images/3-v2.png)
+Ce composant est le nom de la page, comme vous pouvez le déduire à la lecture des `(web.webPageDetails.name)` du champ de schéma.
 
-Ce composant est le nom de page, car vous pouvez dériver de la lecture du champ de schéma `(web.webPageDetails.name)`.
+Toutefois, l’utilisation du nom **Name** n’est pas la meilleure convention de nommage pour qu’un utilisateur chargé de la conception de parcours puisse rapidement comprendre cette dimension.
 
-Cependant, l’utilisation de **Name** comme nom n’est pas la meilleure convention d’affectation des noms pour un utilisateur chargé de la conception de entreprise afin de comprendre rapidement cette dimension.
+Changeons le nom en **Nom de la page**. Cliquez sur le composant et renommez-le dans la zone **Paramètres des composants**.
 
-Modifions le nom en **Nom de page**. Cliquez sur le composant et renommez-le dans la zone **Paramètres du composant**.
+![demo](./images/30v2.png)
 
-![demo](./images/3-0-v2.png)
+Les **paramètres de persistance** sont très importants. Le concept des evars et des prop n’existe pas dans CJA, mais les paramètres de persistance rendent possible un comportement similaire.
 
-Les **paramètres de persistance** comptent vraiment. Le concept d’evars et de prop n’existe pas dans CJA, mais les paramètres de persistance rendent possible un comportement similaire.
+![demo](./images/30v21.png)
 
-![demo](./images/3-0-v21.png)
-
-Si vous ne modifiez pas ces paramètres, CJA interprète la dimension comme **Prop** (niveau accès). Nous pouvons également modifier la Persistance pour que la dimension soit **eVar** (conserver la valeur sur l’ensemble du parcours).
+Si vous ne modifiez pas ces paramètres, CJA interprétera la dimension en tant que **Prop** (niveau d’accès). Nous pouvons également modifier la Persistance pour que la dimension devienne **eVar** (conservez la valeur dans le parcours).
 
 Si vous ne connaissez pas les eVars et les props, vous pouvez [en savoir plus à leur sujet dans la documentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
-Laissez le Nom de page comme Prop. Par conséquent, vous n’avez pas besoin de modifier les **paramètres de persistance**.
+Laissons le Nom de page en tant que prop. Par conséquent, vous n’avez pas besoin de modifier les **paramètres de persistance**.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
 | Nom (web.webPageDetails.name) | Nom de la page |          |
 
-Ensuite, sélectionnez la dimension **phoneNumber** et déposez-la sur la zone de travail. Le nouveau nom doit être **Numéro de téléphone**.
+Sélectionnez ensuite la dimension **phoneNumber** et déposez-la sur la zone de travail. Le nouveau nom doit être **Numéro de téléphone**.
 
-![demo](./images/3-1-v2.png)
+![demo](./images/31v2.png)
 
-Enfin, changeons les paramètres de persistance, car le numéro de mobile doit persister au niveau de l’utilisateur.
+Enfin, modifions les paramètres de persistance, car le numéro de mobile doit persister au niveau de l’utilisateur.
 
 Pour modifier la Persistance, faites défiler l’écran vers le bas dans le menu de droite et ouvrez l’onglet **Persistance** :
 
-![demo](./images/5-v2.png)
+![demo](./images/5v2.png)
 
-Cochez la case pour modifier les paramètres de persistance. Sélectionnez **Le plus récent** et la portée **Personne (fenêtre de création de rapports)**, car nous nous soucions uniquement du dernier numéro de mobile de cette personne. Si le client ne remplit pas le mobile lors de futures visites, cette valeur sera toujours renseignée.
-
-![demo](./images/6-v2.png)
+Cochez la case pour modifier les paramètres de persistance. Sélectionnez **Le dernier** et la portée **Personne (intervalle du compte rendu des performances)** car nous nous préoccupons uniquement du dernier numéro de mobile de cette personne. Si le client ne renseigne pas le mobile lors de prochaines visites, cette valeur sera toujours renseignée.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
-| phoneNumber | Numéro de téléphone | Le plus récent, Personne (fenêtre de reporting) |
+| phoneNumber | Numéro de téléphone | Fenêtre De Compte Rendu Des Performances Des Personnes La Plus Récente |
+
+![demo](./images/6v2.png)
 
 Le composant suivant est `web.webPageDetails.pageViews.value`.
 
-Dans le menu de gauche, recherchez `web.webPageDetails.pageViews.value`. Faites glisser cette mesure et déposez-la sur la zone de travail.
+Dans le menu de gauche, recherchez `web.webPageDetails.pageViews.value`. Effectuez un glisser-déposer de cette mesure sur la zone de travail.
 
-Modifiez le nom en **Pages vues** sous les **paramètres de composant**.
+Remplacez le nom par **Pages vues** sous **Paramètres des composants**.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
 | ----------------- |-------------| --------------------| 
 | web.webPageDetails.pageViews.value | Pages vues |         |
 
-![demo](./images/7-v2.png)
+![demo](./images/7v2.png)
 
-Pour les paramètres d’attribution, laissez ce champ vide.
+Pour les paramètres d’attribution, vous n’avez rien à modifier.
 
-Remarque : les paramètres de persistance des mesures peuvent également être modifiés dans Analysis Workspace. Dans certains cas, vous pouvez choisir de le définir ici pour éviter que les utilisateurs professionnels n’aient à penser quel est le meilleur modèle de persistance.
+Remarque : les paramètres de persistance sur les mesures peuvent également être modifiés dans Analysis Workspace. Dans certains cas, vous pouvez choisir de le définir ici pour éviter aux utilisateurs professionnels d’avoir à réfléchir au meilleur modèle de persistance.
 
-Vous devrez ensuite configurer de nombreuses Dimensions et mesures, comme indiqué dans le tableau ci-dessous.
+Ensuite, vous devrez configurer de nombreuses Dimensions et mesures, comme indiqué dans le tableau ci-dessous.
 
 ### DIMENSIONS
 
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
 | ----------------- |-------------| --------------------| 
-| brandName | Nom de la marque | Session la plus récente |
-| callentiment | Raisonnement des appels |          |
-| ID d’appel | Type d’interaction d’appel |          |
-| callTopic | Rubrique d’appel | Session la plus récente |
-| ecid | ECID | Le plus récent, Personne (fenêtre de reporting) |
-| adresse e-mail | Email ID | Le plus récent, Personne (fenêtre de reporting) |
+| brandName | Nom de la marque | La Plus Récente, Session |
+| sentiment d&#39;appel | Sentiment D’Appel |          |
+| identifiant de l&#39;appel | Type d’interaction d’appel |          |
+| callTopic | Rubrique d&#39;appel | La Plus Récente, Session |
+| ecid | ECID | Fenêtre De Compte Rendu Des Performances Des Personnes La Plus Récente |
+| E-mail | ID d’e-mail | Fenêtre De Compte Rendu Des Performances Des Personnes La Plus Récente |
 | Type de paiement | Type de paiement |          |
-| Méthode d’ajout du produit | Méthode d’ajout du produit | Session la plus récente |
+| Méthode d’ajout du produit | Méthode d’ajout du produit | La Plus Récente, Session |
 | Type d’événement | Type d’événement |         |
 | Nom (productListItems.name) | Nom du produit |         |
-| SKU | SKU (session) | Session la plus récente |
+| SKU | SKU (session) | La Plus Récente, Session |
 | Identifiant de transaction | Identifiant de transaction |         |
 | URL (web.webPageDetails.URL) | URL |         |
-| Agent utilisateur | Agent utilisateur | Session la plus récente |
+| Agent utilisateur | Agent utilisateur | La Plus Récente, Session |
 
 ### MESURES
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
 | ----------------- |-------------| --------------------| 
 | Quantité | Quantité |          |
-| commerce.order.priceTotal | Recettes |         |
+| commerce.order.priceTotal | Chiffre d’affaires |         |
 
-Votre configuration doit alors se présenter comme suit :
+Votre configuration doit alors ressembler à ceci. N’oubliez pas d’**Enregistrer** votre vue de données. Cliquez donc sur **Enregistrer** maintenant.
 
-![demo](./images/11-v2.png)
+![demo](./images/11v2.png)
 
-N’oubliez pas de **Enregistrer** votre vue de données. Cliquez maintenant sur **Enregistrer**.
-
-![demo](./images/12-v2s.png)
-
-## 4.1.3.4 Mesures calculées
+## 4.1.3.4 des mesures calculées
 
 
-Bien que nous ayons organisé tous les composants dans la vue de données, vous devez tout de même en adapter certains, afin que les utilisateurs professionnels soient prêts à commencer leur analyse.
+Bien que vous ayez organisé tous les composants dans la vue de données, vous devez encore en adapter certains, afin que les utilisateurs professionnels soient prêts à commencer leur analyse.
 
-Si vous vous souvenez, nous n’avons pas incorporé de mesures spécifiques telles que Ajout au panier, Consultation produit ou Achats dans la Vue des données.
-Cependant, nous avons une dimension appelée : **Type d’événement**. Dériver ces types d’interactions en créant 3 mesures calculées.
+Souvenez-vous que vous n’avez pas spécifiquement intégré de mesures telles que Ajouter au panier, consultation de produit ou achats dans la vue de données.
+Cependant, vous disposez d’une dimension appelée : **Type d’événement**. Vous pouvez donc dériver ces types d’interaction en créant 3 mesures calculées.
 
-Commençons par la première mesure : **Consultations produits**.
+Commençons par la première mesure : **consultations de produits**.
 
-Sur le côté gauche, recherchez **Type d’événement** et sélectionnez la dimension. Faites ensuite glisser et déposez-le dans le canevas **Composants inclus**.
-
-![demo](./images/calcmetr1.png)
-
+Sur le côté gauche, recherchez **Type d’événement** et sélectionnez la dimension. Faites-la ensuite glisser dans la zone de travail **Composants inclus**.
 Cliquez pour sélectionner la nouvelle mesure **Type d’événement**.
 
-![demo](./images/calcmetr2.png)
+![demo](./images/calcmetr1.png)
 
 Remplacez maintenant le nom et la description du composant par les valeurs suivantes :
 
@@ -214,31 +206,31 @@ Remplacez maintenant le nom et la description du composant par les valeurs suiva
 
 ![demo](./images/calcmetr3.png)
 
-Désormais, comptabilise uniquement les événements **Consultations produits**. Pour ce faire, faites défiler l’écran vers le bas jusqu’à ce que vous voyiez **Inclure les valeurs d’exclusion**. **** Veillez à activer l’option **Définir les valeurs d’inclusion/exclusion**.
+Maintenant, permet de compter uniquement les événements **Vues des produits**. Pour ce faire, faites défiler l’écran vers le bas sur le **Paramètres des composants** jusqu’à afficher **Inclure/Exclure les valeurs**. Veillez à activer l’option **Définir les valeurs d’inclusion/exclusion**.
 
 ![demo](./images/calcmetr4.png)
 
-Puisque nous ne voulons compter que **Consultations de produit**, spécifiez **commerce.productViews** sous les critères.
+Comme vous souhaitez uniquement comptabiliser les **vues de produits**, spécifiez **commerce.productViews** sous les critères.
 
 ![demo](./images/calcmetr5.png)
 
-Votre mesure calculée est maintenant prête !
+Votre mesure calculée est maintenant prête.
 
-Répétez ensuite le même processus pour les événements **Ajouter au panier** et **Achat** .
+Répétez ensuite le même processus pour les événements **Ajouter au panier** et **Achat**.
 
 ### Ajouter au panier
 
-Faites d’abord glisser et déposez la même dimension **Type d’événement**.
+Effectuez d’abord un glisser-déposer de la même dimension **Type d’événement**.
 
 ![demo](./images/calcmetr1.png)
 
-Une alerte contextuelle d’un champ dupliqué s’affiche, car nous utilisons la même variable. Veuillez cliquer sur **Ajouter tout** :
+Une fenêtre contextuelle s’affiche pour signaler un champ dupliqué, car nous utilisons la même variable. Cliquez sur **Ajouter quand même** :
 
 ![demo](./images/calcmetr6.png)
 
-Suivez maintenant la même procédure que pour la mesure Consultations produits :
+Suivez à présent le même processus que pour les consultations de produits liées à la mesure :
 - Modifiez d’abord le nom et la description.
-- Ajoutez enfin **commerce.productListAdds** comme critère pour ne comptabiliser que l’ajout au panier.
+- Enfin, ajoutez **commerce.productListAdds** comme critère pour comptabiliser uniquement les ajouts au panier.
 
 | Nom | Description | Critères |
 | ----------------- |-------------| -------------|
@@ -248,17 +240,17 @@ Suivez maintenant la même procédure que pour la mesure Consultations produits 
 
 ### Achats
 
-Faites d’abord glisser et déposez la même dimension **Type d’événement** que pour les deux mesures précédentes.
+Effectuez d’abord un glisser-déposer de la même dimension **Type d’événement** que pour les deux mesures précédentes.
 
 ![demo](./images/calcmetr1.png)
 
-Une alerte contextuelle d’un champ dupliqué s’affiche, car nous utilisons la même variable. Veuillez cliquer sur **Ajouter tout** :
+Une fenêtre contextuelle s’affiche pour signaler un champ dupliqué, car nous utilisons la même variable. Cliquez sur **Ajouter quand même** :
 
-![demo](./images/calcmetr7.png)
+![demo](./images/calcmetr6.png)
 
-Suivez maintenant la même procédure que pour les mesures Consultations produits et Ajouter au panier :
+À présent, suivez le même processus que pour les mesures Consultations de produit et Ajout au panier :
 - Modifiez d’abord le nom et la description.
-- Ajoutez enfin **commerce.purchase** comme critère pour ne comptabiliser que l’ajout au panier.
+- Enfin, ajoutez **commerce.purchases** comme critères pour comptabiliser uniquement les ajouts aux paniers
 
 | Nom | Description | Critères |
 | ----------------- |-------------| -------------|
@@ -266,36 +258,36 @@ Suivez maintenant la même procédure que pour les mesures Consultations produit
 
 ![demo](./images/calcmetr7a.png)
 
-Votre configuration finale doit alors ressembler à celle-ci. Cliquez sur **Enregistrer et continuer**.
+Votre configuration finale devrait alors ressembler à ceci. Cliquez sur **Enregistrer et continuer**.
 
 ![demo](./images/calcmetr8.png)
 
-## 4.1.3.5 Paramètres de vue des données
+## Paramètres de la vue de données 4.1.3.5
 
-Vous devez être redirigé vers cet écran :
+Vous devriez être redirigé vers cet écran :
 
-![demo](./images/8-v2.png)
+![demo](./images/8v2.png)
 
-Dans cet onglet, vous pouvez modifier certains paramètres importants afin de modifier le mode de traitement des données. Commençons par définir le **délai d’expiration de la session** sur 30 minutes. Grâce à l’horodatage de chaque événement d’expérience, vous pouvez étendre le concept de session sur tous les canaux. Par exemple, que se passe-t-il si un client appelle le centre d’appel après avoir visité le site web ? L’utilisation de délais d’expiration de session personnalisés offre beaucoup de flexibilité pour décider ce qu’est une session et comment cette session fusionnera les données.
+Dans cet onglet, vous pouvez modifier certains paramètres importants pour modifier la manière dont les données sont traitées. Commençons par définir le **délai d’expiration de la session** sur 30 minutes. Grâce à la date et à l’heure de chaque événement d’expérience, vous pouvez étendre le concept d’une session sur tous les canaux. Par exemple, que se passe-t-il si un client appelle le centre d’appels après avoir consulté le site Web ? L’utilisation de temporisations de session personnalisées offre une grande flexibilité dans le choix d’une session et de la manière dont cette session fusionnera les données.
 
 ![demo](./images/ext8.png)
 
-Dans cet onglet, vous pouvez modifier d’autres éléments tels que le filtrage des données à l’aide d’un segment/filtre. Vous n&#39;aurez pas besoin de le faire dans cet exercice.
+Dans cet onglet, vous pouvez modifier d’autres éléments, tels que le filtrage des données à l’aide d’un segment/filtre. Vous n&#39;aurez pas besoin de faire cela dans cet exercice.
 
-![demo](./images/10-v2.png)
+![demo](./images/10v2.png)
 
 Une fois que vous avez terminé, cliquez sur **Enregistrer et terminer**.
 
-![demo](./images/13-v2.png)
+![demo](./images/13v2.png)
 
 >[!NOTE]
 >
->Vous pouvez revenir à cette vue de données par la suite et modifier les paramètres et les composants à tout moment. Les modifications affectent la manière dont les données historiques sont affichées.
+>Vous pouvez revenir à cette vue de données par la suite et modifier les paramètres et les composants à tout moment. Les modifications auront une incidence sur l’affichage des données historiques.
 
-Vous pouvez maintenant poursuivre la partie Visualisation et analyse !
+Vous pouvez maintenant passer à la partie visualisation et analyse !
 
-Étape suivante : [4.1.4 Préparation des données en Customer Journey Analytics](./ex4.md)
+Étape suivante : [4.1.4 Préparation des données en Customer Journey Analytics ](./ex4.md)
 
-[Revenir au module 4.1](./customer-journey-analytics-build-a-dashboard.md)
+[Retour au module 4.1](./customer-journey-analytics-build-a-dashboard.md)
 
 [Revenir à tous les modules](./../../../overview.md)

@@ -3,10 +3,10 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '214'
+ht-degree: 11%
 
 ---
 
@@ -30,8 +30,8 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [3.2 Adobe Journey Optimizer : sources de données externes et actions personnalisées](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | Oui | - |
 | [3.3 Adobe Journey Optimizer : Offer decisioning ](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Oui | - |
 | [3.4 Adobe Journey Optimizer : Parcours basés sur un événement](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Oui | - |
-| [4.1 Customer Journey Analytics : créez un tableau de bord à l’aide d’Analysis Workspace en plus de Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | - | Non | Contenu en attente de mise à jour |
-| [4.2 Customer Journey Analytics : ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | - | Non | Contenu en attente de mise à jour |
+| [4.1 Customer Journey Analytics : créez un tableau de bord à l’aide d’Analysis Workspace en plus de Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | Oui | - |
+| [4.2 Customer Journey Analytics : ingestion et analyse de données de Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | Oui | - |
 | [5.1 Query Service](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | Oui | - |
 
 {style="table-layout:auto"}
