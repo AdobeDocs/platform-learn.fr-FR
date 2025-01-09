@@ -4,9 +4,9 @@ description: Prise en main des services Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1114'
 ht-degree: 1%
 
 ---
@@ -119,13 +119,13 @@ Ouvrez **Conteneurs Blob**, puis cliquez sur le conteneur que vous avez créé d
 
 ![ Stockage Azure ](./images/az18.png)
 
-## 1.1.2.4 Chargement manuel du fichier et utilisation d’un fichier de gradient comme référence de style
+## 1.1.2.4 Chargement manuel du fichier et utilisation d’un fichier image comme référence de style
 
-Vous devez maintenant charger un fichier de dégradé de votre choix dans votre conteneur. Vous pouvez utiliser n’importe quel fichier de gradient de votre choix ou utiliser [ce fichier](./images/gradient.jpg) en le téléchargeant sur votre ordinateur.
+Vous devez maintenant charger un fichier image de votre choix dans votre conteneur. Vous pouvez utiliser n’importe quel fichier image de votre choix ou [ce fichier](./images/gradient.jpg) en le téléchargeant sur votre ordinateur.
 
 ![ Stockage Azure ](./images/gradient.jpg)
 
-Déposez le fichier de gradient dans votre conteneur dans l’explorateur de stockage Azure.
+Déposez le fichier image dans votre conteneur dans l’explorateur de stockage Azure.
 
 Une fois le chargement effectué, il s’affiche dans votre conteneur :
 
@@ -147,7 +147,7 @@ Revenez à Postman. Ouvrez la demande **POST - Firefly - T2I (styleref) V3**. Vo
 
 ![ Stockage Azure ](./images/az23.png)
 
-Remplacez l’URL de l’espace réservé par l’URL prédéfinie de votre fichier gradient, que vous avez copiée à partir de l’explorateur de stockage Azure. Tu auras alors ceci. Cliquez sur **Envoyer**.
+Remplacez l’URL de l’espace réservé par l’URL présignée de votre fichier image, que vous avez copiée à partir de l’explorateur de stockage Azure. Tu auras alors ceci. Cliquez sur **Envoyer**.
 
 ![ Stockage Azure ](./images/az24.png)
 
@@ -155,7 +155,7 @@ Vous obtiendrez ensuite une réponse des services de Firefly, avec une nouvelle 
 
 ![ Stockage Azure ](./images/az25.png)
 
-Vous verrez ensuite une autre image avec `horses in a field`, mais cette fois, le style sera similaire au fichier de dégradés que vous avez fourni comme référence de style.
+Vous verrez ensuite une autre image avec `horses in a field`, mais cette fois, le style sera similaire au fichier image que vous avez fourni comme référence de style.
 
 ![ Stockage Azure ](./images/az26.png)
 
@@ -195,7 +195,7 @@ Cliquez ensuite sur **Corps**.
 
 ![ Stockage Azure ](./images/az31.png)
 
-Vous devez maintenant sélectionner un fichier sur votre ordinateur local. Vous pouvez utiliser un nouveau fichier image de votre choix ou un autre fichier de dégradés que vous pouvez trouver [ici](./images/gradient2-p.jpg).
+Vous devez maintenant sélectionner un fichier sur votre ordinateur local. Vous pouvez utiliser un nouveau fichier image de votre choix ou un autre fichier image que vous pouvez trouver [ici](./images/gradient2-p.jpg).
 
 ![Fichier de dégradé](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ Le nom de fichier à utiliser est `gradient2-p.jpg`, ce qui signifie que l’URL
 
 Accédez ensuite à **En-têtes** où vous devez ajouter manuellement un nouvel en-tête. Utilisez la commande suivante :
 
-BlockBlob de type x-ms-blob
+| Clé | Valeur |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![ Stockage Azure ](./images/az35.png)
 
@@ -238,6 +241,27 @@ Cette réponse vide s’affiche alors dans Postman, ce qui signifie que votre ch
 Si vous revenez ensuite à l’Explorateur de stockage Azure et actualisez le contenu de votre dossier, le fichier nouvellement chargé s’y trouve désormais.
 
 ![ Stockage Azure ](./images/az38.png)
+
+## 1.1.2.5 Utilisation des fichiers par programmation
+
+Pour utiliser la lecture par programmation de fichiers à partir de comptes de stockage Azure, vous devez créer un jeton **Signature d’accès partagé (SAS)**, avec des autorisations qui vous permettent de lire un fichier. Techniquement, vous pouvez utiliser le jeton SAS que vous avez créé dans l’exercice précédent, mais il est recommandé de disposer d’un jeton distinct avec uniquement des autorisations de **lecture**.
+
+Pour ce faire, revenez à l’Explorateur de stockage Azure. Cliquez avec le bouton droit sur votre conteneur, puis cliquez sur **Obtenir la signature d&#39;accès partagé**.
+
+![ Stockage Azure ](./images/az27.png)
+
+Sous **Autorisations**, les autorisations suivantes sont requises :
+
+- **Lecture**
+- **Ajouter**
+- **Create**
+- **Write**
+- **Liste**
+
+Cliquez sur **Créer**.
+
+![ Stockage Azure ](./images/az28.png)
+
 
 Étape Suivante : [1.1.3 ...](./ex3.md)
 
