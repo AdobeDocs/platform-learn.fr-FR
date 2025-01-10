@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobes, du Cr
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
+source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 8%
+source-wordcount: '129'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 8%
 + 2 {#csc} de la chaîne logistique du contenu
    + 2.1 {#module21} du Cloud Service Adobe Experience Manager
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
-      + [2.1.1 Prise en main d’AEM CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.1 Création de votre programme Cloud Manager](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.2 Configuration de votre environnement AEM CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 {#module22} Workfront
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
