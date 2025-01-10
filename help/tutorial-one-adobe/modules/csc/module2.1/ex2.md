@@ -3,10 +3,10 @@ title: Création de votre programme Cloud Manager
 description: Création de votre programme Cloud Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
@@ -307,9 +307,38 @@ Votre site web s’ouvre alors dans l’**éditeur universel**.
 
 ![ AEMCS ](./images/aemcssetup45.png)
 
-Vous pouvez désormais également accéder à votre site web en accédant à `main--citisignal--woutervangeluwe.aem.live/us/en`
+Vous pourrez désormais accéder à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en` et/ou `main--citisignal--XXX.aem.live/us/en`, après avoir remplacé XXX par votre compte utilisateur GitHub, qui est `woutervangeluwe` dans cet exemple.
 
+Dans cet exemple, l’URL complète devient :
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`
 
+Cela peut prendre un certain temps avant que toutes les ressources ne s’affichent correctement, car elles doivent d’abord être publiées.
+
+Vous verrez alors ceci :
+
+![ AEMCS ](./images/aemcssetup46.png)
+
+Au bout de quelques minutes, les ressources se chargeront toutes correctement.
+
+![ AEMCS ](./images/aemcssetup47.png)
+
+## Performances de la page de test 2.1.2.7
+
+Accédez à [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Saisissez votre URL et cliquez sur **Analyser**.
+
+![ AEMCS ](./images/aemcssetup48.png)
+
+Votre site web obtient un score élevé dans les visualisations pour appareils mobiles et pour ordinateurs de bureau :
+
+**Mobile** :
+
+![ AEMCS ](./images/aemcssetup49.png)
+
+**Ordinateur de bureau** :
+
+![ AEMCS ](./images/aemcssetup50.png)
+
+Étape suivante : [2.1.3 Configurer un bloc personnalisé](./ex3.md)
 
 [Retour au module 2.1](./aemcs.md)
 
