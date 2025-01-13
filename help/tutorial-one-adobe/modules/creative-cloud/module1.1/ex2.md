@@ -4,9 +4,9 @@ description: Prise en main des services Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ Si vous revenez ensuite à l’Explorateur de stockage Azure et actualisez le co
 
 ## 1.1.2.5 Utilisation des fichiers par programmation
 
-Pour utiliser la lecture par programmation de fichiers à partir de comptes de stockage Azure, vous devez créer un jeton **Signature d’accès partagé (SAS)**, avec des autorisations qui vous permettent de lire un fichier. Techniquement, vous pouvez utiliser le jeton SAS que vous avez créé dans l’exercice précédent, mais il est recommandé de disposer d’un jeton distinct avec uniquement des autorisations de **lecture**.
+Pour utiliser à long terme la lecture par programmation de fichiers à partir des comptes de stockage Azure, vous devez créer un jeton **Signature d’accès partagé (SAS)**, avec des autorisations qui vous permettent de lire un fichier. Techniquement, vous pouvez utiliser le jeton SAS que vous avez créé dans l’exercice précédent, mais il est recommandé d’utiliser un jeton distinct avec uniquement des autorisations **Lecture** et un jeton distinct avec uniquement des autorisations **Écriture**.
+
+### Jeton SAS de lecture à long terme
 
 Pour ce faire, revenez à l’Explorateur de stockage Azure. Cliquez avec le bouton droit sur votre conteneur, puis cliquez sur **Obtenir la signature d&#39;accès partagé**.
 
@@ -253,17 +255,113 @@ Pour ce faire, revenez à l’Explorateur de stockage Azure. Cliquez avec le bou
 Sous **Autorisations**, les autorisations suivantes sont requises :
 
 - **Lecture**
-- **Ajouter**
-- **Create**
-- **Write**
 - **Liste**
+
+Définissez la variable **Délai d’expiration** sur 1 an à partir de maintenant.
 
 Cliquez sur **Créer**.
 
-![ Stockage Azure ](./images/az28.png)
+![ Stockage Azure ](./images/az100.png)
 
+Vous obtiendrez ensuite votre jeton SAS à long terme avec des autorisations de lecture. Copiez l’URL et notez-la dans un fichier sur votre ordinateur.
 
-Étape Suivante : [1.1.3 ...](./ex3.md)
+![ Stockage Azure ](./images/az101.png)
+
+Votre URL ressemblera à ceci :
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+Vous pouvez dériver quelques valeurs de l’URL ci-dessus :
+
+- `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER` : `vangeluw`
+- `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### Jeton SAS d’écriture à long terme
+
+Pour ce faire, revenez à l’Explorateur de stockage Azure. Cliquez avec le bouton droit sur votre conteneur, puis cliquez sur **Obtenir la signature d&#39;accès partagé**.
+
+![ Stockage Azure ](./images/az27.png)
+
+Sous **Autorisations**, les autorisations suivantes sont requises :
+
+- **Ajouter**
+- **Create**
+- **Write**
+
+Définissez la variable **Délai d’expiration** sur 1 an à partir de maintenant.
+
+Cliquez sur **Créer**.
+
+![ Stockage Azure ](./images/az102.png)
+
+Vous obtiendrez ensuite votre jeton SAS à long terme avec des autorisations de lecture. Copiez l’URL et notez-la dans un fichier sur votre ordinateur.
+
+![ Stockage Azure ](./images/az103.png)
+
+Votre URL ressemblera à ceci :
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Vous pouvez à nouveau dériver quelques valeurs de l’URL ci-dessus :
+
+- `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER` : `vangeluw`
+- `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE` : `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variables dans Postman
+
+Comme vous pouvez le voir dans la section ci-dessus, il existe des variables communes dans les jetons Lecture et Écriture .
+
+Vous devez maintenant créer des variables dans Postman qui stockeront les différents éléments des jetons SAS ci-dessus.
+Certaines valeurs sont identiques dans les deux URL :
+
+- `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER` : `vangeluw`
+- `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE` : `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Pour les interactions d’API futures, la principale chose qui changera sera le nom de la ressource, tandis que les variables ci-dessus resteront les mêmes. Dans ce cas, il est logique de créer des variables dans Postman afin de ne pas avoir à les spécifier manuellement à chaque fois.
+
+Pour ce faire, ouvrez Postman. Cliquez sur l’icône **Environnements**, ouvrez le menu **Toutes les variables** et cliquez sur **Environnement**.
+
+![ Stockage Azure ](./images/az104.png)
+
+Vous voyez alors ceci. Créez ces 4 variables dans le tableau qui s’affiche. Pour les colonnes **Valeur initiale** et **Valeur actuelle**, saisissez vos valeurs personnelles spécifiques.
+
+- `AZURE_STORAGE_URL` : votre url
+- `AZURE_STORAGE_CONTAINER` : nom de votre conteneur
+- `AZURE_STORAGE_SAS_READ` : votre jeton de lecture SAS
+- `AZURE_STORAGE_SAS_WRITE` : votre jeton d’écriture SAS
+
+Cliquez sur **Enregistrer**.
+
+![ Stockage Azure ](./images/az105.png)
+
+Dans l’un des exercices précédents, le **Corps** de votre requête **Firefly - T2I (styleref) V3** ressemblait à ceci :
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![ Stockage Azure ](./images/az24.png)
+
+Vous pouvez maintenant modifier l’URL en :
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+Cliquez sur **Envoyer** pour tester les modifications que vous avez apportées.
+
+![ Stockage Azure ](./images/az106.png)
+
+Si les variables ont été configurées correctement, une URL d’image s’affiche alors renvoyée.
+
+![ Stockage Azure ](./images/az107.png)
+
+Ouvrez l’URL de l’image pour vérifier votre image.
+
+![ Stockage Azure ](./images/az108.png)
+
+Étape suivante : [1.1.3 Adobe Firefly et Adobe Photoshop](./ex3.md)
 
 [Retour au module 1.1](./firefly-services.md)
 

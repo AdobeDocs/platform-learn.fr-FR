@@ -4,9 +4,9 @@ description: Création de votre programme Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '223'
 ht-degree: 4%
 
 ---
@@ -31,11 +31,13 @@ Cliquez sur **Créer**.
 
 ![ AEMCS ](./images/aemcs3.png)
 
-La création de vos environnements prendra du temps.
+La création de vos environnements prendra du temps, entre 10 et 20 minutes.
 
 ![ AEMCS ](./images/aemcs4.png)
 
-Une fois les environnements créés et prêts à l’emploi, vous recevrez un e-mail de confirmation.
+Pendant que vous patientez, vous pouvez déjà commencer par l’exercice [2.1.2 Créer votre site web basé sur des documents](./ex2.md).
+
+Une fois les environnements créés et prêts à l’emploi, vous recevrez un e-mail de confirmation avant de revenir ici.
 
 ![ AEMCS ](./images/aemcs5.png)
 
@@ -61,7 +63,7 @@ Vous verrez ensuite les détails de votre environnement, y compris l’URL de vo
 
 Une fois l’exécution du pipeline terminée, vous pouvez passer à l’exercice suivant.
 
-Étape suivante : [2.1.2 Configurer votre environnement AEM CS](./ex2.md)
+Étape suivante : [2.1.2 Créez votre site web basé sur les documents](./ex2.md)
 
 [Retour au module 2.1](./aemcs.md)
 

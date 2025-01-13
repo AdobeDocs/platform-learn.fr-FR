@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobes, du Cr
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 7%
+source-wordcount: '145'
+ht-degree: 6%
 
 ---
 
@@ -23,15 +23,16 @@ ht-degree: 7%
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Prise en main des services Firefly](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3.](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Adobe Firefly et Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2 {#csc} de la chaîne logistique du contenu
    + 2.1 {#module21} du Cloud Service Adobe Experience Manager
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [2.1.1 Création de votre programme Cloud Manager](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
-      + [2.1.2 Configuration de votre environnement AEM CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
-      + [2.1.3 Développement d’un bloc personnalisé](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
+      + [2.1.2 Création de votre site web basé sur des documents](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
+      + [2.1.3 Configuration de votre environnement AEM CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
+      + [2.1.4 Développement d’un bloc personnalisé](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 {#module22} Workfront
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
