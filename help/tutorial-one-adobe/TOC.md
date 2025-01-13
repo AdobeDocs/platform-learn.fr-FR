@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobes, du Cr
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '180'
 ht-degree: 6%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 6%
       + [1.1.2 Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly et Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
+   + 1.2 Automatisation des services d&#39;Adobe Firefly {#module21}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
+      + [1.2.1 Prise en main des services Firefly](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
+      + [1.2.2...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+      + [1.2.3...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+      + [Résumé et avantages](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2 {#csc} de la chaîne logistique du contenu
    + 2.1 {#module21} du Cloud Service Adobe Experience Manager
