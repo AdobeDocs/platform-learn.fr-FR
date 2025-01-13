@@ -4,7 +4,7 @@ description: Prise en main des services Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ Si vous revenez ensuite à l’Explorateur de stockage Azure et actualisez le co
 
 ![ Stockage Azure ](./images/az38.png)
 
-## 1.1.2.5 Utilisation des fichiers par programmation
+## 1.1.2.6 Utilisation des fichiers par programmation
 
 Pour utiliser à long terme la lecture par programmation de fichiers à partir des comptes de stockage Azure, vous devez créer un jeton **Signature d’accès partagé (SAS)**, avec des autorisations qui vous permettent de lire un fichier. Techniquement, vous pouvez utiliser le jeton SAS que vous avez créé dans l’exercice précédent, mais il est recommandé d’utiliser un jeton distinct avec uniquement des autorisations **Lecture** et un jeton distinct avec uniquement des autorisations **Écriture**.
 
@@ -359,7 +359,7 @@ Si les variables ont été configurées correctement, une URL d’image s’affi
 
 Ouvrez l’URL de l’image pour vérifier votre image.
 
-![ Stockage Azure ](./images/az108.png)
+![ Stockage Azure ](./images/az108.jpg)
 
 Étape suivante : [1.1.3 Adobe Firefly et Adobe Photoshop](./ex3.md)
 

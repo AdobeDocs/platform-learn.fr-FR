@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobes, du Cr
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '160'
 ht-degree: 6%
 
 ---
@@ -41,8 +41,10 @@ ht-degree: 6%
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3 {#uce} unifiées de l’expérience client
-   + 3.1 {#module31} Adobe Real-Time CDP
-      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/uce/module3.1/rtcdp.md)
-      + [3.1.1 Créer votre événement](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+   + 3.1 {#module31} De Composition De L’Audience Fédérée
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
+      + [3.1.1 Configuration de l’environnement de votre Snowflake](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+      + [3.1.2 Création de schémas, de modèles de données et de liens](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+      + [3.1.3 Créer une composition fédérée](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 
