@@ -4,9 +4,9 @@ description: Prise en main des services Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '1759'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,227 @@ Tu devrais avoir ça.
 
 ![WF Fusion](./images/wffusion74.png)
 
-Étape Suivante : [1.2.3 ...](./ex3.md)
+Cliquez sur **Exécuter une fois**.
+
+![WF Fusion](./images/wffusion75.png)
+
+Cliquez sur l’icône **rechercher** sur le nœud **Modifier le texte de Photoshop** pour afficher la réponse. Vous devriez avoir une réponse qui ressemble à ceci, avec un lien vers un fichier de statut.
+
+![WF Fusion](./images/wffusion76.png)
+
+Avant de poursuivre les interactions avec l’API Photoshop, désactivons l’itinéraire vers le nœud T2I **du Firefly** pour ne pas envoyer d’appels d’API inutiles à ce point d’entrée de l’API. Cliquez sur l’icône **clé à molette**, puis sélectionnez **Désactiver l’itinéraire**.
+
+![WF Fusion](./images/wffusion77.png)
+
+Tu devrais avoir ça.
+
+![WF Fusion](./images/wffusion78.png)
+
+Ajoutez ensuite un autre nœud **Définir plusieurs variables**.
+
+![WF Fusion](./images/wffusion79.png)
+
+Placez-le après le nœud **Texte de modification de Photoshop**.
+
+![WF Fusion](./images/wffusion80.png)
+
+Cliquez sur le nœud **Définir plusieurs variables**, puis sélectionnez **Ajouter un élément**. Sélectionnez la valeur de la variable dans la réponse de la requête précédente.
+
+| Nom de la variable | Valeur de variable |
+|:-------------:| :---------------:| 
+| `psdStatusUrl` | `data > _links > self > href` |
+
+Cliquez sur **Ajouter**.
+
+![WF Fusion](./images/wffusion81.png)
+
+Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion82.png)
+
+Cliquez avec le bouton droit sur le nœud **Modifier le texte de Photoshop** et sélectionnez **Cloner**.
+
+![WF Fusion](./images/wffusion83.png)
+
+Faites glisser la requête HTTP clonée après le nœud **Définir plusieurs variables** que vous venez de créer.
+
+![WF Fusion](./images/wffusion83.png)
+
+Cliquez avec le bouton droit sur la requête HTTP clonée, sélectionnez **Renommer** et remplacez le nom par **Statut de vérification de Photoshop**.
+
+![WF Fusion](./images/wffusion84.png)
+
+Cliquez pour ouvrir la requête HTTP. Modifiez l’URL afin qu’elle référence la variable que vous avez créée à l’étape précédente, puis définissez la **Méthode** sur **GET**.
+
+![WF Fusion](./images/wffusion85.png)
+
+Supprimez le **Corps** en sélectionnant l’option vide.
+
+![WF Fusion](./images/wffusion86.png)
+
+Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion87.png)
+
+Cliquez sur **Exécuter une fois**.
+
+![WF Fusion](./images/wffusion88.png)
+
+Vous devez ensuite obtenir une réponse qui contient le champ **status**, avec le statut défini sur **running**. Photoshop met quelques secondes pour terminer le processus.
+
+![WF Fusion](./images/wffusion89.png)
+
+Maintenant que vous savez que la réponse a besoin d’un peu plus de temps pour être terminée, il peut être judicieux d’ajouter un minuteur devant cette requête HTTP afin qu’elle ne s’exécute pas immédiatement.
+
+Cliquez sur le nœud **Outils**, puis sélectionnez **Veille**.
+
+![WF Fusion](./images/wffusion90.png)
+
+Placez le nœud **Sleep** entre **Set multiple variables** et **Photoshop Check Status**. Définissez le paramètre **Délai** sur **5 secondes**. Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion91.png)
+
+Tu auras alors ceci. Le problème avec la configuration ci-dessous est que 5 secondes d’attente peuvent être suffisantes, mais peut-être pas suffisantes. En réalité, il serait préférable d’avoir une solution plus intelligente comme une boucle do...while qui vérifie l’état toutes les 5 secondes jusqu’à ce que l’état soit égal à **réussi**. Vous allez à présent mettre en œuvre une telle tactique dans les prochaines étapes.
+
+![WF Fusion](./images/wffusion92.png)
+
+Cliquez sur l’icône **clé à molette** entre **Définir plusieurs variables** et **Mettre en veille**. Sélectionnez **Ajouter un module**.
+
+![WF Fusion](./images/wffusion93.png)
+
+Recherchez `flow` puis sélectionnez **Contrôle de flux**.
+
+![WF Fusion](./images/wffusion94.png)
+
+Sélectionnez **Répéteur**.
+
+![WF Fusion](./images/wffusion95.png)
+
+Définissez la **Répétitions** sur **20**. Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion96.png)
+
+Cliquez ensuite sur **+** sur le statut de vérification de Photoshop **** pour ajouter un autre module.
+
+![WF Fusion](./images/wffusion97.png)
+
+Recherchez **flow** et sélectionnez **Flow Control**.
+
+![WF Fusion](./images/wffusion98.png)
+
+Sélectionnez **Agrégateur de tableaux**.
+
+![WF Fusion](./images/wffusion99.png)
+
+Définissez **Module Source** sur **Répéteur**. Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion100.png)
+
+Voici ce que vous devriez avoir :
+
+![WF Fusion](./images/wffusion101.png)
+
+Cliquez sur l’icône **clé à molette** et sélectionnez **Ajouter un module**.
+
+![WF Fusion](./images/wffusion102.png)
+
+Recherchez **outils** et sélectionnez **Outils**.
+
+![WF Fusion](./images/wffusion103.png)
+
+Sélectionnez **Obtenir plusieurs variables**.
+
+![WF Fusion](./images/wffusion104.png)
+
+Cliquez sur **+ Ajouter un élément** puis définissez le **Nom de variable** sur `done`.
+
+![WF Fusion](./images/wffusion105.png)
+
+Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion106.png)
+
+Cliquez sur le nœud **Définir plusieurs variables** que vous avez configuré précédemment. Pour initialiser la variable **done**, vous devez la définir sur `false` ici. Cliquez sur **+ Ajouter un élément**.
+
+![WF Fusion](./images/wffusion107.png)
+
+Pour le **Nom de variable**, utilisez `done`. Pour définir le statut, une valeur booléenne est nécessaire. Pour trouver la valeur booléenne, cliquez sur l’icône **engrenage** puis sélectionnez `false`. Cliquez sur **Ajouter**.
+
+![WF Fusion](./images/wffusion108.png)
+
+Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion109.png)
+
+Cliquez ensuite sur l’icône **clé à molette** après le nœud **Obtenir plusieurs variables** que vous avez configuré.
+
+![WF Fusion](./images/wffusion110.png)
+
+Sélectionnez **Configurer un filtre**. Vous devez maintenant vérifier la valeur de la variable **done**. Si cette valeur est définie sur **false**, la partie suivante de la boucle doit être exécutée. Si la valeur est définie sur **true**, cela signifie que le processus s’est déjà terminé avec succès, de sorte qu’il n’est pas nécessaire de poursuivre avec la partie suivante de la boucle.
+
+![WF Fusion](./images/wffusion111.png)
+
+Pour l’étiquette, utilisez **Avons-nous terminé ?**. Définissez la **Condition** à l’aide de la variable déjà existante **done**, l’opérateur doit être défini sur **Égal à** et la valeur doit être la variable booléenne `false`. Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion112.png)
+
+Ensuite, faites de l’espace entre les nœuds **Statut de vérification de Photoshop** et **Agrégateur de tableau**. Cliquez ensuite sur l’icône **clé à molette** et sélectionnez **Ajouter un routeur**. Vous effectuez cette opération, car après avoir vérifié le statut du fichier Photoshop, il doit y avoir 2 chemins d’accès. Si le statut est `succeeded`, la variable de **done** doit être définie sur `true`. Si le statut n’est pas égal à `succeeded`, la boucle doit continuer. Le routeur va permettre de vérifier et de régler cela.
+
+![WF Fusion](./images/wffusion113.png)
+
+Après avoir ajouté le routeur, cliquez sur l’icône **clé à molette** et sélectionnez **Configurer un filtre**.
+
+![WF Fusion](./images/wffusion114.png)
+
+Pour l’étiquette, utilisez **Nous avons terminé**. Définissez la **Condition** à l’aide de la réponse du nœud **Statut de la vérification Photoshop** en choisissant le champ de réponse **data.output[].status**. L’opérateur doit être défini sur **Égal à** et la valeur doit être `succeeded`. Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion115.png)
+
+Cliquez ensuite sur le nœud vide avec le point d’interrogation et recherchez **outils**. Sélectionnez ensuite **Outils**.
+
+![WF Fusion](./images/wffusion116.png)
+
+Sélectionnez **Définir plusieurs variables**.
+
+![WF Fusion](./images/wffusion117.png)
+
+Lorsque cette branche du routeur est utilisée, cela signifie que le statut de la création du fichier Photoshop est terminé avec succès. Cela signifie que la boucle do...while n’a plus besoin de continuer à vérifier le statut dans Photoshop. Vous devez donc définir la variable `done` sur `true`.
+
+Pour le **Nom de variable**, utilisez `done`. Pour la **Valeur de variable**, vous devez utiliser la valeur booléenne `true`. Cliquez sur l’icône **engrenage**, puis sélectionnez `true`. Cliquez sur **Ajouter**.
+
+![WF Fusion](./images/wffusion118.png)
+
+Cliquez sur **OK**.
+
+![WF Fusion](./images/wffusion119.png)
+
+Cliquez ensuite avec le bouton droit sur le nœud **Définir plusieurs variables** que vous venez de créer et sélectionnez **Cloner**.
+
+![WF Fusion](./images/wffusion120.png)
+
+Faites glisser le nœud cloné afin qu’il se connecte à l’**agrégateur de tableau**. Cliquez ensuite avec le bouton droit sur le nœud et sélectionnez **Renommer**, puis remplacez le nom par `Placeholder End`.
+
+![WF Fusion](./images/wffusion122.png)
+
+Supprimez la variable existante et cliquez sur **+ Ajouter un élément**. Pour l’**Nom de variable**, utilisez `placeholder`. Pour l’**Valeur de variable**, utilisez `end`. Cliquez sur **Ajouter** puis sur **OK**.
+
+![WF Fusion](./images/wffusion123.png)
+
+Cliquez sur **Enregistrer** pour enregistrer votre scénario. Cliquez ensuite sur **Exécuter une fois**.
+
+![WF Fusion](./images/wffusion124.png)
+
+Votre scénario sera ensuite exécuté et doit se terminer correctement. Vous remarquerez que la boucle do... while que vous avez configurée a fonctionné correctement. Dans l’exécution ci-dessous, vous pouvez constater que le **Répéteur** s’est exécuté 20 fois en fonction de la bulle sur le nœud **Outils > Obtenir plusieurs variables**. Après ce nœud, vous avez configuré un filtre qui vérifiait le statut et les nœuds suivants ont été exécutés uniquement si le statut n’était pas égal à **réussi**. Dans cette exécution, la partie suivant le filtre ne s’est exécutée qu’une seule fois, car le statut était déjà **réussi** lors de la première exécution.
+
+![WF Fusion](./images/wffusion125.png)
+
+Vous pouvez vérifier le statut de la création de votre nouveau fichier Photoshop en cliquant sur la bulle dans la requête HTTP **Vérification du statut de Photoshop** et en accédant au champ **statut**.
+
+![WF Fusion](./images/wffusion126.png)
+
+Vous avez maintenant configuré la version de base d’un scénario répétable qui automatise un certain nombre d’étapes. Dans l’exercice suivant, vous allez en reparler en ajoutant de la complexité.
+
+Étape suivante : [1.2.3 Automatisation des processus avec Workfront Fusion](./ex3.md)
 
 [Retour au module 1.2](./automation.md)
 
