@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: eb3d3fce216b7665e53a125d0141bef53e742799
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 9%
@@ -16,7 +16,6 @@ ht-degree: 9%
 
 # Créer des jeux de données et ingérer des données
 
-Cette vidéo montre comment créer des jeux de données et ingérer des données dans l’interface de Adobe Experience Platform. Pour plus d’informations sur le produit, voir [ingestion de données par lots à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=fr) et [création d’un jeu de données à l’aide d’API](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Pour plus d’informations, consultez la [documentation sur Data Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr).
+Cette vidéo montre comment créer des jeux de données et ingérer des données dans l’interface de Adobe Experience Platform. Pour consulter une documentation plus détaillée du produit, voir [ingestion de données par lot à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=fr) et [création d’un jeu de données à l’aide d’API](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). Pour plus d’informations, consultez la [documentation sur l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
-
