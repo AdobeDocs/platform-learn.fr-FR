@@ -4,7 +4,7 @@ description: Services de l'Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 2%
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 Dans cet exercice, explorez les services de Firefly et découvrez leurs fonctionnalités.
 
-[1.1.2 Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées](./ex2.md)
+[1.1.2 Optimiser les processus de votre Firefly avec Microsoft Azure et les URL prédéfinies](./ex2.md)
 
 Dans cet exercice, explorez les services de Firefly et découvrez leurs fonctionnalités.
 
