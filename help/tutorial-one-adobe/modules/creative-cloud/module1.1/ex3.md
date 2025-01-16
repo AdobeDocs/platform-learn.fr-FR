@@ -1,17 +1,17 @@
 ---
-title: Prise en main des services Firefly
-description: Prise en main des services Firefly
+title: Utilisation des API Photoshop
+description: Utilisation des API Photoshop
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 1%
 
 ---
 
-# 1.1.3 Adobe Firefly et Adobe Photoshop
+# 1.1.3 Utilisation des API Photoshop
 
 ## 1.1.3.1 Mettre à jour votre intégration Adobe I/O
 
@@ -73,6 +73,8 @@ Vous disposez alors d’un jeton d’accès valide pour interagir avec les API P
 
 ![ Stockage Azure ](./images/ps9.png)
 
+### API Photoshop 1.1.3.2.1 - Bonjour le monde
+
 Ensuite, disons bonjour aux API Photoshop pour tester si toutes les autorisations et tous les accès sont correctement définis. Dans la collection **Photoshop**, ouvrez la requête nommée **Photoshop Hello (Test d’authentification).**. Cliquez sur **Envoyer**.
 
 ![ Stockage Azure ](./images/ps10.png)
@@ -82,6 +84,8 @@ Vous devriez alors recevoir la réponse suivante : **Bienvenue dans l’API Phot
 ![ Stockage Azure ](./images/ps11.png)
 
 Ensuite, pour interagir par programmation avec le fichier de PSD **citisignal-fibre.psd**, vous devez le charger sur votre compte de stockage . Vous pouvez le faire manuellement, en le faisant glisser et en le déposant dans votre conteneur à l’aide de l’explorateur de stockage Azure, mais cette fois, vous devez le faire via l’API.
+
+### 1.1.3.2.2 Charger le PSD sur Azure
 
 Dans Postman, ouvrez la requête **Charger le PSD sur le compte de stockage Azure**. Dans l’exercice précédent, vous avez configuré ces variables d’environnement dans Postman, que vous allez maintenant utiliser :
 
@@ -109,6 +113,8 @@ Vous devriez ensuite obtenir cette réponse vide d’Azure, ce qui signifie que 
 Si vous utilisez Azure Storage Explorer pour jeter un coup d’œil, votre fichier s’affichera après l’actualisation de votre dossier.
 
 ![ Stockage Azure ](./images/ps16.png)
+
+### API Photoshop 1.1.3.2.3 - Obtenir le manifeste
 
 Ensuite, vous devez obtenir le fichier manifeste de votre fichier de PSD. Dans Postman, ouvrez la requête **Photoshop - Obtenir le manifeste de PSD**. Accédez à **Corps**.
 
@@ -155,6 +161,8 @@ Lorsque la réponse est disponible, un fichier json contenant des informations s
 Par exemple, recherchez le `2048x2048-cta` de texte . Vous devriez alors voir ceci.
 
 ![ Stockage Azure ](./images/ps21.png)
+
+### API Photoshop 1.1.3.2.4 - Modifier le texte
 
 Vous devez ensuite modifier le texte de l’appel à l’action à l’aide des API. Dans Postman, ouvrez la requête **Photoshop - Modifier le texte** et accédez à **Corps**.
 

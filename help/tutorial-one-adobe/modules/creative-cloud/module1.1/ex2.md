@@ -1,12 +1,12 @@
 ---
-title: Prise en main des services Firefly
-description: Prise en main des services Firefly
+title: Optimisez le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies
+description: Optimisez le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1510'
 ht-degree: 1%
 
 ---

@@ -1,37 +1,29 @@
 ---
-title: 3.1 Adobe Real-Time CDP
-description: Adobe Real-Time CDP
+title: Foundation - AEC - Résumé
+description: Foundation - AEC - Résumé
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cab61d74-9e16-4eda-b704-e103ab5350e2
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '53'
+ht-degree: 1%
 
 ---
 
-# 3.1 Adobe Real-Time CDP
+# Résumé et avantages
 
-## Objectifs d’apprentissage
+Félicitations et merci d’avoir investi votre temps dans l’apprentissage de Adobe Experience Platform !
 
-- Découvrez comment utiliser Adobe Real-Time CDP de différentes manières.
+## Avantages
 
-## Conditions préalables
+Examinons les avantages des fonctionnalités d’ingestion de données de la composition d’audiences fédérées dans Adobe Experience Platform :
 
-- Accès à Adobe Real-Time CDP
 
-## Exercices
 
-[3.1.1 Real-Time CDP](./ex1.md)
+## Consulter ceci
 
-Dans cet exercice, ...
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
->[!NOTE]
->
->Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+[Retour au module 3.1](./fac.md)
 
 [Revenir à tous les modules](../../../overview.md)
