@@ -3,10 +3,11 @@ title: Services de traduction Adobe Journey Optimizer
 description: Services de traduction Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
+source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +33,7 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+>![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

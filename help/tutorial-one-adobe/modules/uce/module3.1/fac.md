@@ -3,9 +3,10 @@ title: Collecte de données - Composition de l’audience fédérée
 description: Collecte de données - Composition de l’audience fédérée
 kt: 5342
 doc-type: tutorial
-source-git-commit: dc86e52b659d7b428aca03fdb041e7410901e1fd
+exl-id: cc2ac85e-e902-4bb7-ab54-aa39980f97aa
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -53,6 +54,7 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+>![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

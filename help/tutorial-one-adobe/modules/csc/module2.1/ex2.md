@@ -4,7 +4,7 @@ description: Création de votre programme Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2 Création de votre site web basé sur des documents
 
-En attendant la création de votre programme Cloud Manager, vous disposez de suffisamment de temps pour configurer votre premier site web de création documentaire. L’exercice ci-dessous est basé sur le tutoriel du développeur [aem.live](https://www.aem.live/developer/tutorial). Suivez les étapes ci-dessous pour commencer.
+En attendant la création de votre programme Cloud Manager, vous disposez de suffisamment de temps pour configurer votre premier site web de création documentaire. L’exercice ci-dessous est basé sur le tutoriel du développeur [aem.live](https://www.aem.live/developer/tutorial){target="_blank"}. Suivez les étapes ci-dessous pour commencer.
 
 ## 2.1.2.1 Configurer votre lecteur Google
 
-Accédez à [https://drive.google.com](https://drive.google.com). Cliquez sur **+ Nouveau** puis sur **Nouveau dossier**.
+Accédez à [https://drive.google.com](https://drive.google.com){target="_blank"}. Cliquez sur **+ Nouveau** puis sur **Nouveau dossier**.
 
 ![ AEMCS ](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ Nommez votre dossier `aemdocb-test`. Cliquez sur **Créer**.
 
 ![ AEMCS ](./images/googledrive2.png)
 
-Téléchargez le fichier [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) et extrayez-le sur votre ordinateur.
+Téléchargez le fichier [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"} et extrayez-le sur votre ordinateur.
 
 ![ AEMCS ](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ Vous devez supprimer le paramètre de chaîne de requête `?usp=drive_link` pour
 
 ## 2.1.2.2 Configurer votre référentiel GitHub
 
-Accédez à [https://github.com](https://github.com). Cliquez sur **Se connecter**.
+Accédez à [https://github.com](https://github.com){target="_blank"}. Cliquez sur **Se connecter**.
 
 ![ AEMCS ](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ Une fois connecté, votre tableau de bord GitHub s’affiche.
 
 ![ AEMCS ](./images/aemcssetup3.png)
 
-Accédez à [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate). Tu verras ça. Cliquez sur **Utiliser ce modèle** puis sur **Créer un référentiel**.
+Accédez à [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}. Tu verras ça. Cliquez sur **Utiliser ce modèle** puis sur **Créer un référentiel**.
 
 ![ AEMCS ](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ Au bout de quelques secondes, votre référentiel sera alors créé.
 
 ![ AEMCS ](./images/aemdocbcssetup6.png)
 
-Ensuite, accédez à [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Cliquez sur **Configurer**.
+Ensuite, accédez à [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Cliquez sur **Configurer**.
 
 ![ AEMCS ](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ Cliquez sur **Valider les modifications**.
 
 ## Extension 2.1.2.4 Install AEM Sidekick
 
-Accédez à [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo). Cliquez sur **Ajouter à Chrome**.
+Accédez à [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}. Cliquez sur **Ajouter à Chrome**.
 
 ![ AEMCS ](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ Vous verrez alors la version en direct de votre site web.
 
 L’exercice ci-dessus était un bon moyen de commencer et de découvrir vous-même la création basée sur des documents. Vous pouvez maintenant passer à l’exercice suivant, au cours duquel vous allez configurer votre propre site web de démonstration à l’aide de CitiSignal en tant que marque de démonstration.
 
-Étape suivante : [2.1.3 Configurer votre environnement AEM CS](./ex3.md)
+Étape suivante : [2.1.3 Configurer votre environnement AEM CS](./ex3.md){target="_blank"}
 
-[Retour au module 2.1](./aemcs.md)
+[Retour au module 2.1](./aemcs.md){target="_blank"}
 
-[Revenir à tous les modules](./../../../overview.md)
+[Revenir à tous les modules](./../../../overview.md){target="_blank"}
