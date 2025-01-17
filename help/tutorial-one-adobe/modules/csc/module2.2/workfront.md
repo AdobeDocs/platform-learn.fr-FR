@@ -4,7 +4,7 @@ description: Gestion des workflows avec Adobe Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 3%
@@ -35,9 +35,9 @@ Dans cet exercice, vous allez configurer et commencer à utiliser le plug-in qui
 
 Résumé de ce module et aperçu des avantages.
 
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

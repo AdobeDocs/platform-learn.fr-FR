@@ -3,10 +3,11 @@ title: Prise en main - Résumé
 description: Prise en main - Résumé
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -47,8 +48,10 @@ Dans cet exercice, vous allez configurer le site web afin de pouvoir l’utilise
 
 Dans cet exercice, vous allez configurer l’application mobile afin de pouvoir l’utiliser pour des démonstrations et l’activation.
 
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
->Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

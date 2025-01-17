@@ -3,7 +3,7 @@ title: Présentation - Tutoriel technique complet - Un Adobe
 description: Tutoriel technique complet - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -94,8 +94,8 @@ Dans ce module, vous utiliserez Adobe Journey Optimizer pour configurer et utili
 
 Dans ce module, vous utiliserez Adobe Journey Optimizer avec les services offer decisioning de manière pratique pour configurer des offres personnalisées et votre propre décision.
 
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
