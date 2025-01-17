@@ -4,9 +4,9 @@ description: Utilisation des API Photoshop
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -229,7 +229,7 @@ Enfin, vous pouvez également voir ce fichier dans votre conteneur à l’aide d
 
 Vous avez maintenant terminé cet exercice.
 
-Étape suivante : [Résumé et avantages](./summary.md)
+Étape Suivante : [Modèles Personnalisés Firefly 1.1.4](./ex4.md)
 
 [Retour au module 1.1](./firefly-services.md)
 

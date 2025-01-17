@@ -4,9 +4,9 @@ description: Optimisez le processus de votre Firefly à l’aide de Microsoft Az
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ Une fois authentifié, un message comme celui-ci s’affiche.
 ![ Stockage Azure ](./images/az15.png)
 
 Revenez à l’application Explorateur de stockage Azure Microsoft. Sélectionnez votre abonnement et cliquez sur **Ouvrir l’explorateur**.
+
+>[!NOTE]
+>
+>Si votre compte n’apparaît pas, cliquez sur l’icône **engrenage** en regard de votre adresse e-mail et sélectionnez **Annuler le filtrage**.
 
 ![ Stockage Azure ](./images/az16.png)
 
