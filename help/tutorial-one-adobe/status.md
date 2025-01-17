@@ -2,10 +2,11 @@
 title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
-source-git-commit: 24153b07074c053e0623a4167507d4a6aa37f212
+exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '142'
+ht-degree: 10%
 
 ---
 
@@ -25,5 +26,11 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [3.3 Adobe Journey Optimizer : Offer decisioning ](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024 | Oui | - |
 
 {style="table-layout:auto"}
+
+>[!NOTE]
+>
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+>
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](./overview.md)

@@ -6,7 +6,7 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: d52ec3c8-8628-4a52-9107-471342118a53
-source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 2%
@@ -66,7 +66,8 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

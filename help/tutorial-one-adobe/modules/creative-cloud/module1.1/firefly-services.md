@@ -4,7 +4,7 @@ description: Services de l'Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 18fee60ed4c92af84b6866e1b2cce6eb496b912e
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
@@ -45,7 +45,8 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}

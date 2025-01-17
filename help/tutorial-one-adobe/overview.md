@@ -3,7 +3,7 @@ title: Présentation - Tutoriel technique complet - Un Adobe
 description: Tutoriel technique complet - Un Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Tutoriel technique complet - Un Adobe
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="center"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -96,5 +96,6 @@ Dans ce module, vous utiliserez Adobe Journey Optimizer avec les services offer 
 
 >[!NOTE]
 >
->![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="center"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.

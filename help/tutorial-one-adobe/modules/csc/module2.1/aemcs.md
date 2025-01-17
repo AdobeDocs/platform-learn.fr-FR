@@ -4,7 +4,7 @@ description: Cloud Service et Edge Delivery Services Adobe Experience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
@@ -45,7 +45,8 @@ Résumé de ce module et aperçu des avantages.
 
 >[!NOTE]
 >
->![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}
