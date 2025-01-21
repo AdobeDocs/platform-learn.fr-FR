@@ -1,17 +1,18 @@
 ---
-title: Migration de l’extension Adobe Analytics Tags vers l’extension Web SDK Tags
+title: Migration d’Adobe Analytics vers Web SDK à l’aide de balises
 description: Découvrez les étapes à suivre lors de la migration vers Web SDK, ainsi que les décisions qui devront être prises en cours de route.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
-source-git-commit: d360ed9f8c0378625c6b885d71d892362d3a6d69
+exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
 
-# Migration de l’extension Adobe Analytics Tags vers l’extension Web SDK Tags
+# Migration d’Adobe Analytics vers Web SDK à l’aide de balises
 
 Découvrez les étapes de migration d’une implémentation d’Adobe Analytics à l’aide de l’extension Analytics dans Balises Experience Platform (anciennement Launch) vers Web SDK, à l’aide de l’extension Web SDK également dans Balises. Lorsque l’extension Adobe Analytics est utilisée dans les balises, le code « AppMeasurement.js » est utilisé en arrière-plan. Par conséquent, vous pouvez considérer ce tutoriel comme une migration d’AppMeasurement vers Web SDK, mais il se trouve entièrement dans Balises et ne couvre PAS le déplacement vers ou depuis une implémentation de JavaScript (à l’exception du code JavaScript utilisé dans l’interface utilisateur des balises). Pour la migration des implémentations de JavaScript, consultez la [documentation](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
@@ -69,4 +70,3 @@ Le processus de migration implique les étapes clés suivantes :
 
 
 ### REMARQUE À L’INTENTION DE DOUG - Après les tests du tutoriel, insérez ici un lien vers un article de la communauté où les clients peuvent poser des questions sur le tutoriel et sur la migration vers Web SDK.
-

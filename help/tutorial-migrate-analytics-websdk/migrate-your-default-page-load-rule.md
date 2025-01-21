@@ -4,13 +4,13 @@ description: Dans cet exercice, vous apprendrez à migrer une règle de chargeme
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # Migration de votre règle de chargement de page par défaut
 
@@ -18,7 +18,7 @@ Dans cet exercice, vous apprendrez à migrer une règle de chargement de page pa
 
 ## Vue d’ensemble
 
-Reculons un peu. Il est probable qu’une règle dans Balises (anciennement appelée « Launch ») soit déclenchée sur chaque page, c’est-à-dire qu’elle définit une ou plusieurs variables par défaut, puis déclenche une balise ou un accès dans Adobe Analytics. Cette règle utilise actuellement des « actions » dans l’extension Adobe Analytics pour effectuer ces opérations. À mesure que nous migrons notre implémentation vers Web SDK, nous devons être en mesure de supprimer toutes les références (comme les actions) à l’extension Analytics et de les remplacer par des actions appartenant à Web SDK. Dans les étapes ci-dessous, nous supposons ce qui précède ; c’est-à-dire que vous disposez d’une règle de chargement de page par défaut qui définit des variables et envoie une balise de suivi à Analytics.
+Reculons un peu. Il est probable que vous disposiez d’une règle dans les balises qui se déclenche sur chaque page. Cette règle définit une ou plusieurs variables par défaut, puis déclenche une balise ou un accès dans Adobe Analytics. Cette règle utilise actuellement des « actions » dans l’extension Adobe Analytics pour effectuer ces opérations. À mesure que nous migrons notre implémentation vers Web SDK, nous devons être en mesure de supprimer toutes les références (comme les actions) à l’extension Analytics et de les remplacer par des actions appartenant à Web SDK. Dans les étapes ci-dessous, nous supposons ce qui précède ; c’est-à-dire que vous disposez d’une règle de chargement de page par défaut qui définit des variables et envoie une balise de suivi à Analytics.
 
 ## Migration de l’action Définir des variables
 

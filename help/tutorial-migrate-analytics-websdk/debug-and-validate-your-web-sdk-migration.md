@@ -4,15 +4,15 @@ description: Découvrez comment déboguer et valider vos données lors de la mig
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
-
-# Débogage et validation de la migration de Web SDK
+# Déboguer et valider la migration de Web SDK
 
 Dans cet exercice, vous apprendrez à déboguer et à valider vos données lors de la migration vers le SDK Web. Nous souhaitons encourager deux activités de validation différentes qui peuvent vous aider à vous assurer que tout fonctionne correctement :
 
@@ -70,7 +70,7 @@ Il y a peut-être plusieurs façons d&#39;établir ces comparaisons, mais je vai
 1. Création d’un projet dans Analysis Workspace et ajout de deux panneaux
 1. Définissez la suite de rapports du panneau 1 sur votre suite de rapports de production Adobe Analytics actuelle
 1. Définissez la suite de rapports du panneau 2 sur votre nouvelle suite de rapports de développement Web SDK
-1. Placez le même rapport dans les deux panneaux, en utilisant une période dans le calendrier lorsque les données circulaient dans Analytics à l’aide des deux extensions
+1. Placez le même rapport dans les deux panneaux, en utilisant une période qui inclut des jours complets uniquement où les données ont été envoyées aux deux suites de rapports
 1. Comparer les données
 
 Voici à quoi cela pourrait ressembler (étant entendu qu’il n’existe aucune donnée dans ces suites de rapports de démonstration vides) :

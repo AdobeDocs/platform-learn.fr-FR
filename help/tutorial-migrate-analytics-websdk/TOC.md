@@ -1,7 +1,7 @@
 ---
-user-guide-title: Migration de l’extension Adobe Analytics Tags vers l’extension Web SDK Tags
-breadcrumb-title: Migration de l’extension Adobe Analytics Tags vers l’extension Web SDK Tags
-user-guide-description: Tutoriel pratique à l’intention des clients Analytics expliquant comment migrer de l’extension Adobe Analytics Tags vers l’extension Web SDK Tags
+user-guide-title: Adobe Analytics vers Web SDK à l’aide de balises
+breadcrumb-title: Adobe Analytics vers Web SDK à l’aide de balises
+user-guide-description: Tutoriel pratique destiné aux clients Analytics et expliquant comment migrer avec succès Adobe Analytics vers Web SDK à l’aide de balises Adobe Experience Platform
 solution: Analytics,Data Collection,Experience Platform
 feature-set: Analytics,Experience Platform
 feature: Web SDK
@@ -11,15 +11,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
 index: false
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '116'
 ht-degree: 1%
 
 ---
 
 
-# Migration de l’extension Adobe Analytics Tags vers l’extension Web SDK Tags {#migrate-analytics-to-websdk}
+# Migration d’Adobe Analytics vers Web SDK à l’aide de balises {#migrate-analytics-to-websdk}
 
 + [Présentation de la migration](migration-to-websdk-overview.md)
 
