@@ -4,7 +4,7 @@ description: Prise en main - Installez l’extension Chrome pour la documentatio
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -136,7 +136,7 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4).
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 

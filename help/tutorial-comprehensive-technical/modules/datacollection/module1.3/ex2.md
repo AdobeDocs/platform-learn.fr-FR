@@ -4,7 +4,7 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 5%
@@ -130,6 +130,8 @@ Sélectionnez vos schémas et cliquez sur **Ajouter**.
 
 Tu verras ça. Cliquez sur **Enregistrer**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 Vous pouvez maintenant commencer à définir des liens entre les schémas. Pour commencer à définir un lien, vous devez cliquer sur **Créer des liens**.
 
 ![AAAA](./images/fdb16.png)
@@ -140,6 +142,9 @@ Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb17.png)
@@ -147,6 +152,8 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 Définissons ensuite le lien entre le `CK_HOUSEHOLDS` de la table et `CK_PERSONS`.
 
 ![AAAA](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
@@ -156,6 +163,9 @@ Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MONTHLY_DATA
 
 ![AAAA](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb22.png)
@@ -163,6 +173,8 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_HOUSEHOLDS`.
 
 ![AAAA](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
