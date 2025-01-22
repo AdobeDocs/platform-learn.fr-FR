@@ -3,9 +3,10 @@ title: Prise en main - Utilisation du site web
 description: Prise en main - Utilisation du site web
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Sur la page **Intégrations**, vous devez sélectionner la propriété Collecte 
 
 ![DSN ](./images/web2.png)
 
-Cliquez sur **Sélectionner** sur la propriété Collecte de données qui a été créée à l’étape précédente, qui est nommée `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`.
+Cliquez sur **Sélectionner** sur la propriété Collecte de données qui a été créée à l’étape précédente, qui est nommée `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`. Cliquez sur **Enregistrer**.
 
 ![DSN ](./images/web2a.png)
 

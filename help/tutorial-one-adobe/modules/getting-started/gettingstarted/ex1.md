@@ -3,9 +3,10 @@ title: Prise en main - Installez l’extension Chrome pour la documentation de l
 description: Prise en main - Installez l’extension Chrome pour la documentation de l’Experience League.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ Pour rendre la documentation réutilisable, les **variables d’environnement** 
 
 Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs ne peuvent pas encore être utilisées, mais dès que vous installez et activez l’extension Chrome, ces variables sont transformées en texte normal que vous pouvez copier et réutiliser.
 
-| Nom | Clé |
-|:-------------:| :---------------:|
-| ID d’organisation IMS AEP | `--aepImsOrgId--` |
-| ID de client AEP | `--aepTenantId--` |
-| Nom du sandbox AEP | `--aepSandboxName--` |
-| Learner Profile LDAP | `--aepUserLdap--` |
+| Nom | Clé | Exemple |
+|:-------------:| :---------------:| :---------------:|
+| ID d’organisation IMS AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nom de l’organisation IMS AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID de client AEP | `--aepTenantId--` | `_experienceplatform` |
+| Nom du sandbox AEP | `--aepSandboxName--` | `one-adobe` |
+| Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
 
-Par exemple, dans la capture d’écran ci-dessous, vous pouvez voir une référence à `aepTenantId`.
+Par exemple, dans la capture d’écran ci-dessous, vous pouvez voir une référence à `aepSandboxName`.
 
 ![DSN ](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ Avant de prendre le nom du sandbox à partir de l’URL, vous devez vous assurer
 
 ![DSN ](./images/aepsandboxsw.png)
 
-Dans cet exemple, le nom du sandbox AEP est **tech-insiders**.
+Dans cet exemple, le nom du sandbox AEP est **one-adobe**.
 
 ![DSN ](./images/aepsname.png)
 
@@ -123,7 +125,6 @@ Enfin, cliquez sur **Créer**.
 
 ![DSN ](./images/c8a.png)
 
-
 Dans le menu de gauche de l’extension, une nouvelle icône contenant les initiales de votre environnement s’affiche. Cliquez dessus. Le mappage entre les **variables d’environnement** et les valeurs de votre instance Adobe Experience Platform s’affiche alors. Cliquez sur **Activer la configuration**.
 
 ![DSN ](./images/c9.png)
@@ -134,11 +135,11 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
 
-Vous devriez maintenant voir que toutes les **variables d’environnement** ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
+Vous devriez maintenant voir que toutes les **variables d’environnement** de cette page ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
-Vous devriez maintenant disposer d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepTenantId` a été remplacée par votre véritable ID de client AEP, qui est dans ce cas **_experienceplatform**.
+Vous devriez maintenant disposer d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepSandboxName` a été remplacée par votre vrai nom de sandbox AEP, qui est dans ce cas **one-adobe**.
 
 ![DSN ](./images/mod7.png)
 

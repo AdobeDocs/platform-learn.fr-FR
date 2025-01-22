@@ -3,7 +3,8 @@ title: Prise en main - Utilisation de l’application mobile
 description: Prise en main - Utilisation de l’application mobile
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -60,7 +61,7 @@ Sur la page **Intégrations**, vous devez sélectionner la propriété Collecte 
 
 ![DSN ](./images/web8aa.png)
 
-Cliquez sur **Sélectionner** sur la propriété Collecte de données qui a été créée à l’étape précédente, qui est nommée `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Cliquez ensuite sur **Enregistrer**.
+Cliquez sur **Sélectionner** sur la propriété Collecte de données qui a été créée à l’étape précédente, qui est nommée `--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)`. Cliquez ensuite sur **Enregistrer**.
 
 ![DSN ](./images/web8b.png)
 

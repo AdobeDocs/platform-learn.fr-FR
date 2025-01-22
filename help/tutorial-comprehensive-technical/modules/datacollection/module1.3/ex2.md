@@ -4,9 +4,9 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 5%
 
 ---
@@ -152,7 +152,7 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 
 ![AAAA](./images/fdb20.png)
 
-Définissons ensuite le lien entre le `CK_MONTHLY_DATA_USAGE` de la table et `CK_USERS`.
+Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MONTHLY_DATA_USAGE`.
 
 ![AAAA](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_HOUSEHOLDS`.
 
 ![AAAA](./images/fdb23.png)
 
-Tu seras de retour ici. Cliquez sur **Enregistrer**.
+Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
+
 ![AAAA](./images/fdb24.png)
+
+Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MOBILE_DATA_USAGE`.
+
+![AAAA](./images/fdb25.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Enregistrer**.
+
+![AAAA](./images/fdb26.png)
 
 Votre configuration dans AEP est maintenant terminée. Vous pouvez maintenant commencer à utiliser vos données fédérées dans une composition d’audience fédérée.
 

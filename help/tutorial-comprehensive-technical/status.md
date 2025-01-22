@@ -3,10 +3,10 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 9%
+source-wordcount: '228'
+ht-degree: 10%
 
 ---
 
@@ -19,7 +19,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [0. Prise en main ](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Oui | - |
 | [1.1 Foundation - Configuration de la collecte de données Adobe Experience Platform et de Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | Oui | - |
 | [1.2 Foundation - Ingestion de données](./modules/datacollection/module1.2/data-ingestion.md) | 18/11/2024 | Oui | - |
-| [1.3 Composition de l’audience fédérée](./modules/datacollection/module1.3/fac.md) | 07/01/2025 | Oui, 95 % | Les fichiers de données d’exemple sont en attente, le contenu est à 95 % terminé et testé |
+| [1.3 Composition de l’audience fédérée](./modules/datacollection/module1.3/fac.md) | 07/01/2025 | Oui | - |
 | [2.1 Foundation - Profil client en temps réel](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md) | 19/11/2024 | Oui | - |
 | [2.2 Services intelligents](./modules/rtcdp-b2c/module2.2/intelligent-services.md) | 03/12/2024 | Oui | - |
 | [2.3 Real-Time CDP - Créez une audience et prenez des mesures](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) | 20/11/2024 | Oui | - |

@@ -3,7 +3,8 @@ title: Prise en main - Utilisez le système de démonstration en regard de votre
 description: Prise en main - Utilisez le système de démonstration en regard de votre propriété Launch
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Cliquez ensuite sur **Démarrer**.
 
 ![DSN ](./images/dsn2.png)
 
-Dans la fenêtre contextuelle, saisissez un nom pour vos propriétés de collecte de données et vos projets Experience Builder. Utilisez la convention de nommage suivante : **Système de démonstration (JJ/MM/AAAA)**. Pour information : votre LDAP sera ajouté automatiquement, vous n&#39;avez pas besoin de l&#39;ajouter vous-même.
+Dans la fenêtre contextuelle, saisissez un nom pour vos propriétés de collecte de données et vos projets Experience Builder. Utilisez la convention de nommage suivante : **Un Adobe (JJ/MM/AAAA)**. Pour information : votre LDAP sera ajouté automatiquement, vous n&#39;avez pas besoin de l&#39;ajouter vous-même.
 
 Cliquez sur **Démarrer**.
 
