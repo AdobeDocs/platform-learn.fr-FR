@@ -4,16 +4,16 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
+source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 5%
 
 ---
 
 # 1.3.2 Création de schémas, de modèles de données et de liens
 
-Vous pouvez maintenant configurer votre base de données fédérée dans AEP.
+Vous pouvez désormais configurer votre base de données fédérée dans Adobe Experience Platform.
 
 Connectez-vous à Adobe Experience Platform en accédant à cette URL : [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

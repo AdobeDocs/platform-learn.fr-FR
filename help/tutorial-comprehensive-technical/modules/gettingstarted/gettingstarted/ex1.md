@@ -4,9 +4,9 @@ description: Prise en main - Installez l’extension Chrome pour la documentatio
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ L’ID d’organisation IMS est l’identifiant unique de votre instance Adobe E
 
 La recherche de votre identifiant de l’organisation IMS peut être effectuée de plusieurs façons. Si vous n’êtes pas sûr, contactez l’un des administrateurs système de votre instance pour trouver l’identifiant.
 
-Vous pouvez le retrouver en accédant à [Admin Console ](https://https://adminconsole.adobe.com/), où vous pouvez le retrouver dans l&#39;URL.
+Vous pouvez le retrouver en accédant à [Admin Console ](https://adminconsole.adobe.com/), où vous pouvez le retrouver dans l&#39;URL.
 
 ![DSN ](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ Votre identifiant client est l’identifiant unique de l’instance AEP de votre
 
 ![DSN ](./images/aeptenantid.png)
 
-Lorsque vous la saisissez dans l’extension Chrome, vous devez vous assurer qu’un trait de soulignement est ajouté sous forme de préfixe, de sorte que dans cet exemple **experienceplatform** devienne **_experienceplatform**.
+Lorsque vous la saisissez dans l’extension Chrome, vous devez vous assurer qu’un trait de soulignement est ajouté sous forme de préfixe, de sorte que dans cet exemple **experienceplatform** devienne **_experienceplatform**. Veillez également à supprimer le symbole **@** lors de la copie à partir de l’URL.
 
 **Nom du sandbox AEP**
 
