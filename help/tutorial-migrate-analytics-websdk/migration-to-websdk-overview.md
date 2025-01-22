@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 10982e1d5fa61d2f13ec7686f251a4c7cf6a3565
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,6 @@ Le processus de migration implique les étapes clés suivantes :
 1. Après avoir apporté toutes les modifications, poussez la bibliothèque vers l’évaluation, puis vers la production.
 1. Une fois tout terminé, effectuez un nouveau test. Cette action est nécessaire car vous avez apporté des modifications en supprimant les références à l’ancien code Analytics et vous souhaitez vous assurer que tout fonctionne toujours correctement.
 
-
-### REMARQUE À L’INTENTION DE DOUG - Après les tests du tutoriel, insérez ici un lien vers un article de la communauté où les clients peuvent poser des questions sur le tutoriel et sur la migration vers Web SDK.
+>[!NOTE]
+>
+>Nous nous engageons à vous aider à réussir la migration d’Analytics vers Web SDK. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
