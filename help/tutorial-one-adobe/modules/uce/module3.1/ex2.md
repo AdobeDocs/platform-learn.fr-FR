@@ -3,16 +3,17 @@ title: Collecte de données - AEC - Création de schémas, de modèles de donné
 description: Foundation - AEC - Création de schémas, de modèles de données et de liens
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 5%
 
 ---
 
 # 3.1.2 Création de schémas, de modèles de données et de liens
 
-Vous pouvez maintenant configurer votre base de données fédérée dans AEP.
+Vous pouvez désormais configurer votre base de données fédérée dans Adobe Experience Platform.
 
 Connectez-vous à Adobe Experience Platform en accédant à cette URL : [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -129,6 +130,8 @@ Sélectionnez vos schémas et cliquez sur **Ajouter**.
 
 Tu verras ça. Cliquez sur **Enregistrer**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 Vous pouvez maintenant commencer à définir des liens entre les schémas. Pour commencer à définir un lien, vous devez cliquer sur **Créer des liens**.
 
 ![AAAA](./images/fdb16.png)
@@ -139,6 +142,9 @@ Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb17.png)
@@ -147,13 +153,18 @@ Définissons ensuite le lien entre le `CK_HOUSEHOLDS` de la table et `CK_PERSONS
 
 ![AAAA](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb20.png)
 
-Définissons ensuite le lien entre le `CK_MONTHLY_DATA_USAGE` de la table et `CK_USERS`.
+Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MONTHLY_DATA_USAGE`.
 
 ![AAAA](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
@@ -163,8 +174,19 @@ Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_HOUSEHOLDS`.
 
 ![AAAA](./images/fdb23.png)
 
-Tu seras de retour ici. Cliquez sur **Enregistrer**.
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
+
 ![AAAA](./images/fdb24.png)
+
+Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MOBILE_DATA_USAGE`.
+
+![AAAA](./images/fdb25.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Enregistrer**.
+
+![AAAA](./images/fdb26.png)
 
 Votre configuration dans AEP est maintenant terminée. Vous pouvez maintenant commencer à utiliser vos données fédérées dans une composition d’audience fédérée.
 

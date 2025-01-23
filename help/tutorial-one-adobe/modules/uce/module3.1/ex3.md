@@ -3,9 +3,10 @@ title: Collecte de données - AEC - Créer une composition fédérée
 description: Foundation - AEC - Créer une composition fédérée
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ Votre composition est maintenant terminée. Cliquez sur **Démarrer** pour l’e
 La requête sera désormais transmise à Snowflake, qui y interrogera les données sources. Les résultats seront redirigés vers AEP, mais les données sources restent en Snowflake.
 
 L’audience est maintenant renseignée et peut être ciblée à partir de l’écosystème AEP.
+
+![AAAA](./images/fedcomp22.png)
 
 Étape suivante : [Résumé et avantages](./summary.md)
 
