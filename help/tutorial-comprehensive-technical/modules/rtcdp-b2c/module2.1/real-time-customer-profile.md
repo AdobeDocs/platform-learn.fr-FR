@@ -5,22 +5,22 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
 # 2.1 Foundation - Profil client en temps réel
 
-Dans ce module, vous allez approfondir vos connaissances des fonctionnalités Real-time Customer Profile et Identity Service de Adobe Experience Platform. Vous découvrirez comment les audiences peuvent être définies, le rôle du service d’identité et de l’ID Experience Cloud, ainsi que comment définir des requêtes du créateur de segments pour définir vos propres segments.
+Dans ce module, vous allez découvrir en détail les fonctionnalités de profil client en temps réel et d’identité de Adobe Experience Platform. Vous découvrirez comment les audiences peuvent être définies, le rôle du service d’identités et de l’ID d’Experience Cloud, ainsi que la manière de définir des requêtes de créateur de segments pour définir vos propres segments.
 
 ## Objectifs d’apprentissage
 
 - Découvrez comment visualiser le profil client en temps réel d’un client via l’interface utilisateur de Adobe Experience Platform
-- Découvrez comment créer un segment à l’aide du créateur de segments Adobe Experience Platform
-- Découvrez l’impact d’un accès à un profil client complet, y compris le comportement en temps réel, dans les environnements hors ligne.
+- Découvrez comment créer un segment à l’aide du créateur de segments de Adobe Experience Platform
+- Découvrez l’impact de l’accès à un profil client complet, y compris le comportement en temps réel, dans les environnements hors ligne
 
 ## Conditions préalables
 
@@ -30,21 +30,21 @@ Dans ce module, vous allez approfondir vos connaissances des fonctionnalités Re
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
-[2.1.1 Visite du site web](./ex1.md)
+[2.1.1 Visiter le site Web](./ex1.md)
 
 Dans cet exercice, vous allez suivre un script et parcourir le site web.
 
-[2.1.2 Visualiser votre propre profil client en temps réel - interface utilisateur](./ex2.md)
+[2.1.2 Visualiser votre propre profil client en temps réel - Interface utilisateur](./ex2.md)
 
-Au cours de cet exercice, vous vous connecterez à Adobe Experience Platform et vous verrez votre propre profil client en temps réel dans l’interface utilisateur.
+Dans cet exercice, vous allez vous connecter à Adobe Experience Platform et afficher votre propre profil client en temps réel dans l’interface utilisateur.
 
 [2.1.3 Visualiser votre propre profil client en temps réel - API](./ex3.md)
 
-Au cours de cet exercice, vous utiliserez Postman et Adobe I/O pour afficher votre propre profil client en temps réel, en utilisant les API Adobe Experience Platform.
+Dans cet exercice, vous allez utiliser Postman et Adobe I/O pour afficher votre propre profil client en temps réel à l’aide des API de Adobe Experience Platform.
 
 [2.1.4 Création d’un segment - IU](./ex4.md)
 
@@ -52,14 +52,16 @@ Dans cet exercice, vous allez créer un segment à l’aide du créateur de segm
 
 [2.1.5 Consultez votre profil client en temps réel en action dans le centre d’appels](./ex5.md)
 
-Dans cet exercice, vous emprunterez l’identité d’un employé du centre d’appels qui reçoit un appel d’un client. Pour réellement avoir un impact sur l’expérience de ce client, vous aurez besoin d’accéder à toutes les informations disponibles en temps réel.
+Dans cet exercice, vous allez emprunter l’identité d’un employé de centre d’appels qui reçoit un appel d’un client. Afin d&#39;avoir un impact réel sur l&#39;expérience de ce client, vous devez avoir accès à toutes les informations disponibles en temps réel.
 
 [Résumé et avantages](./summary.md)
 
 Résumé de ce module et aperçu des avantages.
 
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
->Merci d’investir votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager les commentaires généraux d’avoir des suggestions sur le contenu futur, contactez directement les initiés de technologie, en envoyant un email à **techinsiders@adobe.com**.
+>Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

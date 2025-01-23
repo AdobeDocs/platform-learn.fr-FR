@@ -3,14 +3,16 @@ title: Vue d’ensemble
 description: Point de départ pour les ingénieurs de données, les analystes de données, les architectes de données, les spécialistes des données, les ingénieurs d’orchestration et les marketeurs afin de mieux comprendre la valeur commerciale de Adobe Experience Platform et de tous ses services applicatifs.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Tutoriel technique complet d’Adobe Experience Platform
+
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -182,3 +184,9 @@ Dans ce module, vous allez configurer votre propre instance de Google Cloud Plat
 Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Service.
 
 **Time Investment :** 90 minutes
+
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.

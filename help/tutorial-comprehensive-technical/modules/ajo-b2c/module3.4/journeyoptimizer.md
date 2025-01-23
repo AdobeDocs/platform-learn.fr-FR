@@ -4,10 +4,10 @@ description: Dans ce module, vous apprendrez tout ce qu’il y a à savoir sur J
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 2%
 
 ---
 
@@ -53,6 +53,8 @@ Dans cet exercice, vous allez installer une application mobile sur votre apparei
 [Résumé et avantages](./summary.md)
 
 Résumé de ce module et aperçu des avantages.
+
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

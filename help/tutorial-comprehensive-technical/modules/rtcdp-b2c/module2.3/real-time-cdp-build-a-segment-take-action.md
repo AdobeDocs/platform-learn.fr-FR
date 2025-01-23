@@ -1,28 +1,28 @@
 ---
-title: 'CDP en temps réel : créez un segment et prenez des mesures'
-description: 'CDP en temps réel : créez un segment et prenez des mesures'
+title: 'Real-Time CDP : créez un segment et effectuez une action'
+description: 'Real-Time CDP : créez un segment et effectuez une action'
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
 
-# 2.3 CDP en temps réel - Création d’un segment et action
+# 2.3 Real-Time CDP : créez un segment et effectuez une action
 
-Dans ce module, vous allez configurer un segment en continu et activer le segment vers plusieurs destinations.
+Dans ce module, vous allez configurer un segment de diffusion en continu et activer le segment vers plusieurs destinations.
 
 ## Objectifs d’apprentissage
 
 - Découvrez comment créer un segment et l’activer pour la diffusion en continu.
 - Découvrez comment configurer une destination publicitaire à l’aide de l’interface utilisateur de Adobe Experience Platform.
 - Découvrez comment connecter un segment à une destination et l’activer.
-- Découvrez comment utiliser les segments Adobe Experience Platform dans Adobe Audience Manager et comment utiliser les segments Adobe Audience Manager dans Adobe Experience Platform, grâce au partage bidirectionnel de segments.
+- Découvrez comment utiliser les segments Adobe Experience Platform dans Adobe Audience Manager et comment utiliser les segments Adobe Audience Manager dans Adobe Experience Platform, grâce au partage de segments bidirectionnel.
 
 ## Conditions préalables
 
@@ -32,7 +32,7 @@ Dans ce module, vous allez configurer un segment en continu et activer le segmen
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
@@ -40,36 +40,38 @@ Dans ce module, vous allez configurer un segment en continu et activer le segmen
 
 Découvrez comment créer une audience.
 
-[2.3.2 Découvrez comment configurer une destination DV360 à l’aide de destinations](./ex2.md)
+[2.3.2 Examiner comment configurer DV360 destination à l’aide des destinations](./ex2.md)
 
 Découvrez comment configurer une destination publicitaire à l’aide de l’interface utilisateur de Real-Time CDP.
 
-[2.3.3 Action : envoyez votre audience à DV360](./ex3.md)
+[2.3.3 Agir : envoyez votre audience à DV360](./ex3.md)
 
-Connectez l’audience que vous avez créée à la destination DV360.
+Connectez l’audience que vous avez créée au DV360 de destination.
 
-[2.3.4 Action à effectuer : envoyez votre audience vers une destination S3](./ex4.md)
+[2.3.4 Prendre des mesures : envoyer votre audience vers une destination S3](./ex4.md)
 
 Utilisez l’audience que vous avez créée et envoyez-la à une destination S3, généralement utilisée pour les destinations de marketing par e-mail.
 
-[2.3.5 Action : envoyez votre audience à Adobe Target](./ex5.md)
+[2.3.5 Agir : envoyez votre audience à Adobe Target](./ex5.md)
 
 Utilisez l’audience que vous avez créée pour configurer une activité de ciblage d’expérience dans Adobe Target.
 
-[2.3.6 Audiences externes](./ex6.md)
+[2.3.6 Audiences Externes](./ex6.md)
 
-Importation d’audiences d’un système source externe dans Adobe Experience Platform.
+Importez les audiences d’un système source externe dans Adobe Experience Platform.
 
-[SDK de destinations 2.3.7](./ex7.md)
+[2.3.7 Destinations SDK](./ex7.md)
 
-Configurez votre propre destination à l’aide du SDK Destinations .
+Configurez votre propre destination à l’aide de Destinations SDK.
 
 [Résumé et avantages](./summary.md)
 
 Résumé de ce module et aperçu des avantages.
 
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
->Merci d’investir votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager les commentaires généraux d’avoir des suggestions sur le contenu futur, contactez directement les initiés de technologie, en envoyant un email à **techinsiders@adobe.com**.
+>Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)

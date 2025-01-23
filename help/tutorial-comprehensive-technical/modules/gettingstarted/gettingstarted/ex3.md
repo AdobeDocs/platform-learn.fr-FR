@@ -4,7 +4,7 @@ description: Prise en main - Création de votre flux de données
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 1%
@@ -73,7 +73,7 @@ Cliquez d’abord sur l’extension Adobe Experience Platform Web SDK, puis sur 
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig12.png)
 
-Tu verras ça. Jetez un coup d’œil au menu **Flux de données** et assurez-vous que le bon sandbox est sélectionné, ce qui, dans votre cas, doit être `--aepSandboxName--`.
+Tu verras ça. Consultez le menu **Flux de données** et assurez-vous que le bon sandbox est sélectionné, ce qui, dans votre cas, doit être `--aepSandboxName--`.
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig12a.png)
 

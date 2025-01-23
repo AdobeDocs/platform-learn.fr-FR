@@ -4,22 +4,22 @@ description: Intelligent Services
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 9%
 
 ---
 
-# 2.2 Intelligent Services
+# 2.2 Services intelligents
 
-Dans ce module, vous apprendrez à configurer et à utiliser les services intelligents Adobe Experience Platform.
+Dans ce module, vous apprendrez à configurer et à utiliser les services intelligents de Adobe Experience Platform.
 
 ## Objectifs d’apprentissage
 
-- Familiariser avec Adobe Experience Platform
-- Configuration d’un schéma/d’un jeu de données à utiliser avec Intelligent Services
-- Création d’une instance Customer AI
+- Se familiariser avec Adobe Experience Platform
+- Configuration d’un schéma/jeu de données à utiliser avec les services intelligents
+- Créer une instance IA dédiée aux clients
 - Tableau de bord de notation et segmentation
 
 ## Conditions préalables
@@ -28,24 +28,26 @@ Dans ce module, vous apprendrez à configurer et à utiliser les services intell
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome comme référencé dans [Installation de l’extension Chrome pour la documentation Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League ](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
-[2.2.1 Customer AI - Préparation des données (ingestion)](./ex1.md)
+[2.2.1 IA dédiée aux clients - Préparation des données (ingestion)](./ex1.md)
 
-Les données clients sont assimilées et transformées avec le modèle de données d’expérience (XDM) sur Adobe Experience Platform. En particulier, tous les jeux de données utilisés dans Intelligent Services doivent être conformes au schéma XDM Consumer ExperienceEvent (CEE).
+Les données clients sont assimilées et transformées avec le modèle de données d’expérience (XDM) sur Adobe Experience Platform. Plus précisément, tous les jeux de données utilisés dans les services intelligents doivent être conformes au schéma XDM Consumer ExperienceEvent (CEE).
 
-[2.2.2 Customer AI - Création d’une instance (configuration)](./ex2.md)
+[2.2.2 IA dédiée aux clients - Créer une instance (configurer)](./ex2.md)
 
-L’analyste marketing configure les prédictions souhaitées en spécifiant les règles de fonctionnement et en identifiant les données pertinentes. Après avoir configuré le modèle, planifiez les exécutions et les scores de révision.
+L’analyste marketing configure les prédictions souhaitées en spécifiant les règles métier et en identifiant les données pertinentes. Après avoir configuré le modèle, planifiez les exécutions et passez en revue les scores.
 
-[2.2.3 Customer AI - Tableau de bord de notation et segmentation (prévoir et prendre des mesures)](./ex3.md)
+[2.2.3 IA dédiée aux clients - Tableau de bord de notation et segmentation (prévoir et prendre des mesures)](./ex3.md)
 
-Une fois la formation et la notation des modèles terminées, les scores sont réécrits dans Platform. Vous pouvez décider des actions à entreprendre avec les prédictions, telles que la définition de segments, la création de tableaux de bord personnalisés, etc.
+Une fois la formation et la notation des modèles terminées, les scores sont réécrits dans Platform. Les prédictions permettent de décider des actions à prendre, comme définir des segments, créer des tableaux de bord personnalisés, etc.
+
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Merci d’investir votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager les commentaires généraux d’avoir des suggestions sur le contenu futur, contactez directement les initiés de technologie, en envoyant un email à **techinsiders@adobe.com**.
+>Merci d’avoir consacré votre temps à apprendre tout ce qu’il y a à savoir sur Adobe Experience Platform et ses applications. Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](../../../overview.md)
