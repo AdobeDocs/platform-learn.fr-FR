@@ -4,9 +4,9 @@ description: Développement d’un bloc personnalisé
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ Votre référentiel GitHub sera alors ouvert dans le bureau GitHub. N’hésitez
 
 ![Bloquer](./images/block3.png)
 
-Un restaurant local
+Un dossier local va maintenant être créé.
+
+![Bloquer](./images/block4.png)
+
+Ouvrez Visual Studio Code. Accédez à **Fichier** > **Ouvrir le dossier**.
+
+![Bloquer](./images/block5.png)
+
+
+
+![Bloquer](./images/block6.png)
+
+
+
+![Bloquer](./images/block7.png)
 
 
 [Retour au module 2.1](./aemcs.md){target="_blank"}

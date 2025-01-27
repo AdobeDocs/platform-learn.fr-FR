@@ -1,12 +1,12 @@
 ---
-title: Prise en main - Résumé
-description: Prise en main - Résumé
+title: Prise en main - Un Adobe
+description: Prise en main - Un Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '230'
 ht-degree: 3%
 
 ---

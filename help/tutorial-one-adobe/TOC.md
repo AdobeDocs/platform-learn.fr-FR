@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobes, du Cr
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [Vue d’ensemble du tutoriel](/help/tutorial-one-adobe/overview.md)
 + [Statut du contenu](/help/tutorial-one-adobe/status.md)
-+ [Prétravail](/help/tutorial-one-adobe/prework.md)
 
 + Prise en main {#gettingstarted}
    + Prise en main {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [Créer votre flux de données](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [Utiliser le site web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Utilisation de l’application mobile](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [Prétravail](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 {#creativecloud} ADOBE CREATIVE CLOUD
    + 1.1 Services de l&#39;Adobe Firefly {#module11}
