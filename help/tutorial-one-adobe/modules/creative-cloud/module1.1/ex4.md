@@ -1,22 +1,26 @@
 ---
-title: Utilisation des API Photoshop
-description: Utilisation des API Photoshop
-kt: 5342
-doc-type: tutorial
+title: API Firefly Custom Models
+description: Utilisation de l’API des modèles personnalisés du Firefly
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 56320edcdf2fe588fe644072fe442547b1836f86
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '44'
+ht-degree: 4%
 
 ---
 
-# API des modèles personnalisés de Firefly 1.1.4
+# API Firefly Custom Models
 
 Ce contenu sera publié ultérieurement.
 
-Étape suivante : [Résumé et avantages](./summary.md){target="_blank"}
+## Étapes suivantes
 
-[Retour au module 1.1](./firefly-services.md){target="_blank"}
+Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
 
-[Revenir à tous les modules](./../../../overview.md){target="_blank"}
+Revenez à [ Utilisation des API Photoshop ](./ex3.md){target="_blank"}
+
+Revenir à [Présentation des services d’Adobe Firefly ](./firefly-services.md){target="_blank"}

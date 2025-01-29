@@ -1,63 +1,65 @@
 ---
 title: Prise en main de Workfront Fusion
-description: Prise en main de Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Découvrez comment utiliser Workfront Fusion et Adobe I/O pour interroger les API Adobe Firefly Services
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 3%
+source-wordcount: '694'
+ht-degree: 1%
 
 ---
 
-# 1.2.1 Prise en main de Workfront Fusion
+# Prise en main de Workfront Fusion
 
-Dans cet exercice, vous allez utiliser Workfront Fusion et Adobe I/O pour interroger les API Adobe Firefly Services.
+Découvrez comment utiliser Workfront Fusion et Adobe I/O pour interroger les API Adobe Firefly Services.
 
-## 1.2.1.1 Créer un nouveau scénario
+## Créer un nouveau scénario
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Cliquez pour ouvrir **Workfront Fusion**.
+1. Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Ouvrez **Workfront Fusion**.
 
-![WF Fusion](./images/wffusion1.png)
+   ![WF Fusion](./images/wffusion1.png)
 
-Vous devriez alors voir ceci. Accédez à **Scénarios**.
+1. Accédez à **Scénarios**.
 
-![WF Fusion](./images/wffusion2.png)
+   ![WF Fusion](./images/wffusion2.png)
 
-Cliquez sur l’icône **+** pour créer un dossier.
+1. Sélectionnez **Créer un scénario**.
 
-![WF Fusion](./images/wffusion2a.png)
+   ![WF Fusion](./images/wffusion2a.png)
 
-Pour le nom du dossier, utilisez : `--aepUserLdap--`. Cliquez sur **Enregistrer**.
+1. Nommez le dossier `--aepUserLdap--` et sélectionnez **Enregistrer**.
 
-![WF Fusion](./images/wffusion2b.png)
+   ![WF Fusion](./images/wffusion2b.png)
 
-Sélectionnez votre dossier, puis cliquez sur **Créer un nouveau scénario**.
+1. Sélectionnez votre dossier, puis sélectionnez **Créer un scénario**.
 
-![WF Fusion](./images/wffusion3.png)
+   ![WF Fusion](./images/wffusion3.png)
 
-Un scénario vide s’affiche alors. Cliquez sur l’icône **outils** et sélectionnez **Définir plusieurs variables**.
+1. Un scénario vide s’affiche, sélectionnez **outils** puis **Définir plusieurs variables**.
 
-![WF Fusion](./images/wffusion4.png)
+   ![WF Fusion](./images/wffusion4.png)
 
-Vous devez maintenant déplacer l’icône **horloge** sur le nouveau **Définir plusieurs variables** ajouté.
+1. Déplacez l’icône **horloge** sur le nouveau composant **Définir plusieurs variables**.
 
-![WF Fusion](./images/wffusion5.png)
+   ![WF Fusion](./images/wffusion5.png)
 
-Tu verras ça.
+   Votre écran devrait ressembler à ceci.
 
-![WF Fusion](./images/wffusion6.png)
+   ![WF Fusion](./images/wffusion6.png)
 
-Cliquez ensuite avec le bouton droit sur le point d’interrogation et sélectionnez **Supprimer le module**.
+1. Cliquez avec le bouton droit sur le point d’interrogation et sélectionnez **Supprimer le module**.
 
-![WF Fusion](./images/wffusion7.png)
+   ![WF Fusion](./images/wffusion7.png)
 
-Cliquez ensuite avec le bouton droit de la souris sur l’objet **Définir plusieurs variables** et sélectionnez **Paramètres**.
+1. Cliquez ensuite avec le bouton droit de la souris sur **Définir plusieurs variables** et sélectionnez **Paramètres**.
 
-![WF Fusion](./images/wffusion8.png)
+   ![WF Fusion](./images/wffusion8.png)
 
-## 1.2.1.2 Configurer l’authentification d’Adobe I/O
+## Configurer l’authentification d’Adobe I/O
 
 Vous devez maintenant configurer les variables nécessaires pour vous authentifier en cas d’Adobe I/O. Dans l’exercice précédent, vous avez créé un projet Adobe I/O. Les variables de ce projet d’Adobe I/O doivent maintenant être définies dans Workfront Fusion.
 
@@ -69,175 +71,177 @@ Les variables suivantes doivent être définies :
 | `CONST_client_secret` | votre secret client de projet Adobe I/O |
 | `CONST_scope` | votre projet d’Adobe I/O Portée |
 
-Vous pouvez retrouver ces variables en accédant à [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) et en ouvrant votre projet d’Adobe I/O nommé `--aepUserLdap-- Firefly`.
+1. Recherchez ces variables en accédant à [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) et en ouvrant votre projet d’Adobe I/O nommé `--aepUserLdap-- Firefly`.
 
-![WF Fusion](./images/wffusion9.png)
+   ![WF Fusion](./images/wffusion9.png)
 
-Dans votre projet, cliquez sur **Serveur OAuth** pour afficher les valeurs des clés ci-dessus.
+1. Dans votre projet, sélectionnez **Serveur OAuth** pour afficher les valeurs des clés ci-dessus.
 
-![WF Fusion](./images/wffusion10.png)
+   ![WF Fusion](./images/wffusion10.png)
 
-Avec les clés et valeurs ci-dessus, vous pouvez configurer l’objet **Définir plusieurs variables**. Cliquez sur **Ajouter un élément**.
+1. À l’aide des clés et valeurs ci-dessus, vous pouvez configurer l’objet **Définir plusieurs variables**. Sélectionnez **Ajouter un élément**.
 
-![WF Fusion](./images/wffusion11.png)
+   ![WF Fusion](./images/wffusion11.png)
 
-Saisissez le **Nom de la variable** : **CONST_client_id** et sa **Valeur de la variable**, puis cliquez sur **Ajouter**.
+1. Saisissez le **Nom de la variable** : **CONST_client_id** et sa **Valeur de la variable**, puis sélectionnez **Ajouter**.
 
-![WF Fusion](./images/wffusion12.png)
+   ![WF Fusion](./images/wffusion12.png)
 
-Cliquez sur **Ajouter un élément**.
+1. Sélectionnez **Ajouter un élément**.
 
-![WF Fusion](./images/wffusion13.png)
+   ![WF Fusion](./images/wffusion13.png)
 
-Saisissez le **Nom de la variable** : **CONST_client_secret** et sa **Valeur de la variable**, puis cliquez sur **Ajouter**.
+1. Saisissez **Nom de la variable** : **CONST_client_secret** et sa **Valeur de la variable**, sélectionnez **Ajouter**.
 
-![WF Fusion](./images/wffusion14.png)
+   ![WF Fusion](./images/wffusion14.png)
 
-Cliquez sur **Ajouter un élément**.
+1. Sélectionnez **Ajouter un élément**.
 
-![WF Fusion](./images/wffusion15.png)
+   ![WF Fusion](./images/wffusion15.png)
 
-Saisissez le **Nom de la variable** : **CONST_scope** et sa **Valeur de la variable**, puis cliquez sur **Ajouter**.
+1. Saisissez **Nom de la variable** : **CONST_scope** et sa **Valeur de la variable**, sélectionnez **Ajouter**.
 
-![WF Fusion](./images/wffusion16.png)
+   ![WF Fusion](./images/wffusion16.png)
 
-Cliquez sur **OK**.
+1. Sélectionnez **OK**.
 
-![WF Fusion](./images/wffusion17.png)
+   ![WF Fusion](./images/wffusion17.png)
 
-Pointez sur votre objet **Définir plusieurs variables** et cliquez sur la grande icône **+** pour ajouter un autre module.
+1. Pointez sur **Définir plusieurs variables** et sélectionnez la grande icône **+** pour ajouter un autre module.
 
-![WF Fusion](./images/wffusion18.png)
+   ![WF Fusion](./images/wffusion18.png)
 
-Vous devriez alors voir ceci.
+   Votre écran devrait ressembler à ceci.
 
-![WF Fusion](./images/wffusion19.png)
+   ![WF Fusion](./images/wffusion19.png)
 
-Dans la barre de recherche, saisissez **http**. Sélectionnez **HTTP** pour l’ouvrir.
+1. Dans la barre de recherche, saisissez **http**. Sélectionnez **HTTP** pour l’ouvrir.
 
-![WF Fusion](./images/wffusion21.png)
+   ![WF Fusion](./images/wffusion21.png)
 
-puis sélectionnez **Effectuer une requête**.
+1. Sélectionnez **Effectuer une requête**.
 
-![WF Fusion](./images/wffusion20.png)
+   ![WF Fusion](./images/wffusion20.png)
 
-| Clé | Valeur |
-|:-------------:| :---------------:| 
-| `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
-| `Method` | `POST` |
-| `Body Type` | `x-www-form-urlencoded` |
+   | Clé | Valeur |
+   |:-------------:| :---------------:| 
+   | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
+   | `Method` | `POST` |
+   | `Body Type` | `x-www-form-urlencoded` |
 
-Cliquez sur **Ajouter un élément**.
+1. Sélectionnez **Ajouter un élément**.
 
-![WF Fusion](./images/wffusion22.png)
+   ![WF Fusion](./images/wffusion22.png)
 
-Ajoutez des éléments pour chacune des valeurs ci-dessous :
+1. Ajoutez des éléments pour chacune des valeurs ci-dessous :
 
-| Clé | Valeur |
-|:-------------:| :---------------:| 
-| `client_id` | votre variable prédéfinie pour `CONST_client_id` |
-| `client_secret` | votre variable prédéfinie pour `CONST_client_secret` |
-| `scope` | votre variable prédéfinie pour `CONST_scope` |
-| `grant_type` | `client_credentials` |
+   | Clé | Valeur |
+   |:-------------:| :---------------:| 
+   | `client_id` | votre variable prédéfinie pour `CONST_client_id` |
+   | `client_secret` | votre variable prédéfinie pour `CONST_client_secret` |
+   | `scope` | votre variable prédéfinie pour `CONST_scope` |
+   | `grant_type` | `client_credentials` |
 
-Configuration pour `client_id`.
+1. Configuration pour `client_id` :
 
-![WF Fusion](./images/wffusion23.png)
+   ![WF Fusion](./images/wffusion23.png)
 
-Configuration pour `client_secret`.
+1. Configuration pour `client_secret`.
 
-![WF Fusion](./images/wffusion25.png)
+   ![WF Fusion](./images/wffusion25.png)
 
-Configuration pour `scope`.
+1. Configuration pour `scope`.
 
-![WF Fusion](./images/wffusion26.png)
+   ![WF Fusion](./images/wffusion26.png)
 
-Configuration pour `grant_type`.
+1. Configuration pour `grant_type`.
 
-![WF Fusion](./images/wffusion28.png)
+   ![WF Fusion](./images/wffusion28.png)
 
-Présentation de la configuration. Faites défiler vers le bas et cochez la case **Analyser la réponse**. Cliquez sur **OK**.
+1. Faites défiler vers le bas et cochez la case **Analyse de la réponse**. Sélectionnez **OK**.
 
-![WF Fusion](./images/wffusion27.png)
+   ![WF Fusion](./images/wffusion27.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Exécuter une fois**.
+1. Votre écran devrait ressembler à ceci. Sélectionnez **Exécuter une fois**.
 
-![WF Fusion](./images/wffusion29.png)
+   ![WF Fusion](./images/wffusion29.png)
 
-Une fois le scénario exécuté, vous devriez voir ceci.
+   Une fois le scénario exécuté, l’écran doit se présenter comme suit :
 
-![WF Fusion](./images/wffusion30.png)
+   ![WF Fusion](./images/wffusion30.png)
 
-Cliquez sur l’icône **point d’interrogation** de l’objet **Définir plusieurs variables** pour voir ce qui s’est passé lorsque cet objet a été exécuté.
+1. Sélectionnez l’icône **point d’interrogation** sur l’objet **Définir plusieurs variables** pour voir ce qui s’est passé lorsque cet objet s’est exécuté.
 
-![WF Fusion](./images/wffusion31.png)
+   ![WF Fusion](./images/wffusion31.png)
 
-Cliquez sur l’icône **point d’interrogation** de l’objet **HTTP - Effectuer une requête** pour voir ce qui s’est passé lorsque cet objet a été exécuté. Dans l’**OUTPUT**, le **access_token** est renvoyé par Adobe I/O.
+1. Sélectionnez l’icône **point d’interrogation** sur l’objet **HTTP - Effectuer une requête** pour voir ce qui s’est passé lorsque cet objet s’est exécuté. Dans l’**OUTPUT**, consultez le **access_token** renvoyé par Adobe I/O.
 
-![WF Fusion](./images/wffusion32.png)
+   ![WF Fusion](./images/wffusion32.png)
 
-Pointez sur l’objet **HTTP - Effectuer une requête** et cliquez sur l’icône **+** pour ajouter un autre module.
+1. Pointez sur **HTTP - Effectuez une requête** puis sélectionnez l’icône **+** pour ajouter un autre module.
 
-![WF Fusion](./images/wffusion33.png)
+   ![WF Fusion](./images/wffusion33.png)
 
-Dans la barre de recherche, recherchez `tools`. Sélectionnez **Outils**.
+1. Dans la barre de recherche, recherchez `tools`. Sélectionnez **Outils**.
 
-![WF Fusion](./images/wffusion34.png)
+   ![WF Fusion](./images/wffusion34.png)
 
-Sélectionnez **Définir plusieurs variables**.
+1. Sélectionnez **Définir plusieurs variables**.
 
-![WF Fusion](./images/wffusion35.png)
+   ![WF Fusion](./images/wffusion35.png)
 
-Sélectionnez **Ajouter un élément**.
+1. Sélectionnez **Ajouter un élément**.
 
-![WF Fusion](./images/wffusion36.png)
+   ![WF Fusion](./images/wffusion36.png)
 
-Définissez le **Nom de variable** sur `bearer_token`. Sélectionnez `access_token` comme **valeur de variable** dynamique. Cliquez sur **Ajouter**.
+1. Définissez **Nom de la variable** sur `bearer_token`. Sélectionnez `access_token` comme **valeur de variable** dynamique. Sélectionnez **Ajouter**.
 
-![WF Fusion](./images/wffusion37.png)
+   ![WF Fusion](./images/wffusion37.png)
 
-Tu devrais avoir ça. Cliquez sur **OK**.
+1. Votre écran devrait ressembler à ceci. Sélectionnez **OK**.
 
-![WF Fusion](./images/wffusion38.png)
+   ![WF Fusion](./images/wffusion38.png)
 
-Cliquez de nouveau sur **Exécuter**.
+1. Sélectionnez **Exécuter une fois** à nouveau.
 
-![WF Fusion](./images/wffusion39.png)
+   ![WF Fusion](./images/wffusion39.png)
 
-Une fois le scénario exécuté, cliquez sur l’icône **point d’interrogation** sur le dernier objet **Définir plusieurs variables**. Vous devriez alors voir que le jeton access_token est stocké dans la variable `bearer_token`.
+1. Une fois le scénario exécuté, sélectionnez l’icône **point d’interrogation** sur le dernier objet **Définir plusieurs variables**. Vous devriez voir que le jeton access_token est stocké dans la variable `bearer_token`.
 
-![WF Fusion](./images/wffusion40.png)
+   ![WF Fusion](./images/wffusion40.png)
 
-Cliquez ensuite avec le bouton droit de la souris sur le premier objet **Définir plusieurs valeurs** et sélectionnez **Renommer**.
+1. Cliquez ensuite avec le bouton droit de la souris sur le premier objet **Définir plusieurs valeurs** et sélectionnez **Renommer**.
 
-![WF Fusion](./images/wffusion41.png)
+   ![WF Fusion](./images/wffusion41.png)
 
-Définissez le nom sur **Initialiser les constantes**. Cliquez sur **OK**.
+1. Définissez le nom sur **Initialiser les constantes**. Sélectionnez **OK**.
 
-![WF Fusion](./images/wffusion42.png)
+   ![WF Fusion](./images/wffusion42.png)
 
-Renommez le second objet et définissez son nom sur **Authentification en Adobe I/O**. Cliquez sur **OK**.
+1. Renommez le deuxième objet en **Authentifier pour Adobe I/O**. Sélectionnez **OK**.
 
-![WF Fusion](./images/wffusion43.png)
+   ![WF Fusion](./images/wffusion43.png)
 
-Renommez le troisième objet et définissez le nom en **Définir le jeton du porteur**. Cliquez sur **OK**.
+1. Renommez le troisième objet en **Définir le jeton du porteur**. Sélectionnez **OK**.
 
-![WF Fusion](./images/wffusion44.png)
+   ![WF Fusion](./images/wffusion44.png)
 
-Tu devrais avoir ça.
+   Votre écran doit ressembler à ceci :
 
-![WF Fusion](./images/wffusion45.png)
+   ![WF Fusion](./images/wffusion45.png)
 
-Ensuite, remplacez le nom de votre scénario par `--aepUSerLdap-- - Adobe I/O Authentication`.
+1. Ensuite, remplacez le nom de votre scénario par `--aepUSerLdap-- - Adobe I/O Authentication`.
 
-![WF Fusion](./images/wffusion46.png)
+   ![WF Fusion](./images/wffusion46.png)
 
-Cliquez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
-![WF Fusion](./images/wffusion47.png)
+   ![WF Fusion](./images/wffusion47.png)
 
-Étape suivante : [1.2.2 Utilisation d’API Adobes dans Workfront Fusion](./ex2.md)
+## Étapes suivantes
 
-[Retour au module 1.2](./automation.md)
+Accédez à [ Utilisation d’API Adobes dans Workfront Fusion ](./ex2.md){target="_blank"}
 
-[Revenir à tous les modules](./../../../overview.md)
+Revenez à [Automatisation des services d’Adobe Firefly ](./automation.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
