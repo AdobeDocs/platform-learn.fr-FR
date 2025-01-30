@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # Migration d’Adobe Analytics vers Web SDK à l’aide de balises
 
 Découvrez les étapes de migration d’une implémentation d’Adobe Analytics à l’aide de l’extension Analytics dans Balises Experience Platform (anciennement Launch) vers Web SDK, à l’aide de l’extension Web SDK également dans Balises. Lorsque l’extension Adobe Analytics est utilisée dans les balises, le code « AppMeasurement.js » est utilisé en arrière-plan. Par conséquent, vous pouvez considérer ce tutoriel comme une migration d’AppMeasurement vers Web SDK, mais il se trouve entièrement dans Balises et ne couvre PAS le déplacement vers ou depuis une implémentation de JavaScript (à l’exception du code JavaScript utilisé dans l’interface utilisateur des balises). Pour la migration des implémentations de JavaScript, consultez la [documentation](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+
+>[!NOTE]
+>
+>Des tutoriels de migration similaires sont disponibles pour :
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Étant donné que Platform Web SDK prend en charge plusieurs applications d’Adobe, toutes les bibliothèques d’Adobe d’une page donnée doivent être migrées en même temps. Par exemple, une implémentation mixte de Web SDK for Target et d’AppMeasurement for Analytics sur une seule page _n’est pas prise en charge_. Cependant, une implémentation mixte sur différentes pages est prise en charge ; par exemple, Web SDK sur la page A et at.js avec l’AppMeasurement sur la page B.
 
 ## Résultats de ce tutoriel
 
