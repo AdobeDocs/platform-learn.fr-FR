@@ -4,7 +4,7 @@ description: Prise en main - Résumé
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Dans cet exercice, vous allez installer et configurer l’extension Chrome afin 
 
 Dans cet exercice, vous allez utiliser le système de démonstration Suivant pour configurer vos propriétés Launch pour le Web et les appareils mobiles.
 
-[Créer votre flux de données](./ex3.md)
+[Création de votre flux de données](./ex3.md)
 
 Dans cet exercice, vous allez utiliser le système de démonstration Suivant pour configurer vos propriétés Launch pour le Web et les appareils mobiles.
 

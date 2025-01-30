@@ -1,67 +1,67 @@
 ---
-title: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Explication de la collecte de données Adobe Experience Platform
-description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension du SDK Web - Explication de la collecte de données Adobe Experience Platform
+title: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension Web SDK - Explication de la collecte de données Adobe Experience Platform
+description: Foundation - Configuration de la collecte de données Adobe Experience Platform et de l’extension Web SDK - Explication de la collecte de données Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 3%
 
 ---
 
-# 1.1.1 Présentation de la collecte de données Adobe Experience Platform
+# 1.1.1 Comprendre la collecte de données Adobe Experience Platform
 
 ## Contexte
 
-La collecte de données Adobe Experience Platform est utilisée par les marques pour plusieurs cas d’utilisation. Il s’agit d’un système Tag Management de nouvelle génération (TMS) qui offre aux clients un moyen simple de déployer et de gérer toutes les solutions d’analyse, de marketing et de publicité nécessaires pour proposer des expériences client pertinentes. La collecte de données Adobe Experience Platform n’entraîne aucuns frais supplémentaires et est disponible pour tous les clients Adobe Experience Cloud. Une marque peut utiliser la collecte de données Adobe Experience Platform pour :
+Les marques utilisent la collecte de données Adobe Experience Platform pour un certain nombre de cas d’utilisation. Il s’agit d’un système Tag Management de nouvelle génération (TMS) qui offre aux clients un moyen simple de déployer et de gérer toutes les solutions d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. La collecte de données Adobe Experience Platform n’entraîne aucun frais supplémentaire et est disponible pour tout client Adobe Experience Cloud. Une marque peut utiliser la collecte de données Adobe Experience Platform pour :
 
-- Implémentez des applications Adobe Experience Cloud ainsi que Adobe Experience Platform.
-- Gérez les différentes exigences des différentes parties de l’organisation en fournissant à chacune d’elles sa propre **propriété** à gérer.
-- Autoriser le test et la gestion du cycle de vie.
-- Injectez des balises JavaScript personnalisées et tierces, toutes gérées à un seul endroit.
+- Mettez en œuvre des applications Adobe Experience Cloud ainsi que Adobe Experience Platform.
+- Gérez les différentes exigences des différentes parties de l’organisation en fournissant à chacune d’elles ses propres **Propriétés** à gérer.
+- Permet les tests et la gestion du cycle de vie.
+- Injectez des balises JavaScript et tierces personnalisées, toutes gérées en un seul endroit.
 
 ## Explorer l’interface utilisateur
 
-Accédez à [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/).
+Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/#/data-collection/).
 
-Accédez à **Balises**. Vous voyez maintenant la vue **[!UICONTROL Propriétés]**. Les propriétés répertoriées ici sont pour la gestion des tutoriels. Ces propriétés représentent...
+Accédez à **Balises**. La vue **[!UICONTROL Propriétés]** s’affiche maintenant. Les propriétés répertoriées ici servent à la gestion de tutoriels. Ces propriétés représentent :
 
 - Propriétés d’application et web
-- Différents sites web qui servent les clients de différentes manières. Par exemple, Luma Retail aurait une propriété, Luma Travel en aurait une autre.
-- Anciens et sites web actuels
+- Différents sites web qui proposent des services aux clients de différentes manières. Par exemple, Luma Retail aurait une propriété, Luma Travel en aurait une autre.
+- Sites web hérités et actuels
 - Une conception Adobe Analytics spécifique commune à plusieurs sites web différents
-- Pages intranet internes et sites externes
+- Pages intranet internes à côté de sites externes
 
-![Vue Propriétés du lancement](./images/launch1.png)
+![Vue Propriétés de Launch](./images/launch1.png)
 
 Maintenant, regardez le rail de gauche.
 
-![Rail de gauche de lancement](./images/launch2.png)
+![Lancer le rail de gauche](./images/launch2.png)
 
-- **[!UICONTROL Balises]** donne un aperçu de toutes les propriétés côté client.
-- **[!UICONTROL App Surfaces]** donne un aperçu de toutes les configurations d’application pour activer les notifications push (qui sont utilisées/activées conjointement avec Project Sierra).
-- **[!UICONTROL Les flux de données]** sont explorés dans l’ [exercice suivant](./ex2.md)
-- **[!UICONTROL Transfert d’événement]** donne un aperçu de toutes les propriétés côté serveur explorées dans [Module 2.5 - Connexions Real-Time CDP : Transfert d’événement](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
-- **[!UICONTROL Surveillance]** donne un aperçu du trafic d’événement entrant et sortant par le biais du transfert d’événement.
-- **[!UICONTROL Assurance]** donne accès au débogage d’une implémentation à l’aide de l’Adobe Debugger
-- **[!UICONTROL Places]** permet d’accéder à la gestion des points ciblés qui deviennent accessibles pour la personnalisation en fonction de l’emplacement dans les applications mobiles.
-- **[!UICONTROL Schémas]** donne accès à l’éditeur de schémas Adobe Experience Platform
-- **[!UICONTROL Identités]** donne accès à la configuration Adobe Experience Platform Identity Graph
+- **[!UICONTROL Balises]** donne un aperçu de toutes les propriétés côté client
+- **[!UICONTROL Surfaces d’application]** donne un aperçu de toutes les configurations d’application pour activer les notifications push (qui est utilisée/activée en combinaison avec Project Sierra).
+- Les **[!UICONTROL flux de données]** sont détaillés dans l’exercice [suivant](./ex2.md)
+- **[!UICONTROL Transfert d’événement]** donne un aperçu de toutes les propriétés côté serveur qui sont explorées dans [Module 2.5 - Connexions Real-Time CDP : transfert d’événement](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- La section **[!UICONTROL Surveillance]** donne un aperçu du trafic d’événement entrant et sortant via le transfert d’événement
+- **[!UICONTROL Assurance]** permet d’accéder au débogage d’une implémentation à l’aide de l’Adobe Debugger
+- **[!UICONTROL Places]** permet d’accéder à la gestion des points d’intérêt qui deviennent accessibles pour la personnalisation basée sur l’emplacement dans les applications mobiles
+- **[!UICONTROL Schémas]** permet d’accéder à l’éditeur de schémas de Adobe Experience Platform
+- **[!UICONTROL Identités]** permet d’accéder à la configuration du graphique d’identités Adobe Experience Platform
 
 ## Informations supplémentaires
 
-La collecte de données Adobe Experience Platform est un outil très avancé qui a une portée au-delà d’un tutoriel Adobe Experience Platform. Les organisations peuvent ne pas utiliser la collecte de données Adobe Experience Platform pour leurs fonctionnalités de gestion des balises et utiliser à la place des solutions de gestion des balises non-Adobes pour l’injection de code et la gestion des balises. L’utilisation d’une solution de gestion des balises non-Adobe est prise en charge par Adobe et Adobe Professional Services.
-Vous trouverez ci-dessous quelques lectures supplémentaires pour ceux qui souhaitent mieux comprendre la collecte de données Adobe Experience Platform.
+La collecte de données Adobe Experience Platform est un outil très avancé qui a une portée dépassant le tutoriel de Adobe Experience Platform. Les entreprises peuvent ne pas utiliser la collecte de données Adobe Experience Platform pour ses fonctionnalités de gestion des balises et utiliser plutôt des solutions de gestion des balises non Adobes pour injecter du code et gérer les balises. L’utilisation d’une solution de gestion des balises non Adobe est prise en charge par Adobe et Adobe Professional Services.
+Vous trouverez ci-dessous quelques informations supplémentaires pour ceux qui souhaitent en savoir plus sur la collecte de données Adobe Experience Platform.
 
-- [Guide de l’utilisateur de la collecte de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
+- [Guide De L’Utilisateur De La Collecte De Données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
 - [Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr)
-- [Configuration des autorisations utilisateur](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr)
+- [Configurer les autorisations utilisateur](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr)
 - [Documentation des API](https://developer.adobelaunch.com/api/)
 
 Étape suivante : [1.1.2 Edge Network, flux de données et collecte de données côté serveur](./ex2.md)
 
-[Revenir au module 1.1](./data-ingestion-launch-web-sdk.md)
+[Retour au module 1.1](./data-ingestion-launch-web-sdk.md)
 
 [Revenir à tous les modules](./../../../overview.md)

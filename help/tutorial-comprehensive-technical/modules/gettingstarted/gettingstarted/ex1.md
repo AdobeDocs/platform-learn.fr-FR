@@ -4,9 +4,9 @@ description: Prise en main - Installez l’extension Chrome pour la documentatio
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Saisissez les valeurs comme indiqué ci-dessous, qui sont toutes liées à votre
 
 Si vous ne savez pas exactement quelles valeurs saisir pour ces champs, suivez les conseils ci-dessous.
 
-**Nom de l’organisation IMS AEP**
+**Nom de l’organisation IMS Adobe Experience Platform**
 
 Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), le nom de votre instance s’affiche dans le coin supérieur droit de l’écran.
 
 ![DSN ](./images/aepname.png)
 
-**ID d’organisation IMS AEP**
+**ID d’organisation IMS Adobe Experience Platform**
 
 L’ID d’organisation IMS est l’identifiant unique de votre instance Adobe Experience Cloud et est référencé à plusieurs endroits tout au long de ce tutoriel.
 
@@ -88,29 +88,29 @@ Vous pouvez le retrouver en accédant à [Admin Console ](https://adminconsole.a
 
 ![DSN ](./images/aepid1.png)
 
-Vous pouvez également le trouver en accédant à **Gestion des données > Requêtes** dans votre menu AEP, où vous pouvez le trouver sous **Nom d’utilisateur**.
+Vous pouvez également le retrouver en accédant à **Gestion des données > Requêtes** dans le menu Adobe Experience Platform, où vous pouvez le trouver sous **Nom d’utilisateur**.
 
 ![DSN ](./images/aepid2.png)
 
 Veillez à copier et coller la partie **@AdobeOrg** avec l&#39;ID.
 
-**ID de client AEP**
+**ID de client Adobe Experience Platform**
 
-Votre identifiant client est l’identifiant unique de l’instance AEP de votre organisation. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
+Votre identifiant client est l’identifiant unique de l’instance Adobe Experience Platform de votre organisation. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
 
 ![DSN ](./images/aeptenantid.png)
 
 Lorsque vous la saisissez dans l’extension Chrome, vous devez vous assurer qu’un trait de soulignement est ajouté sous forme de préfixe, de sorte que dans cet exemple **experienceplatform** devienne **_experienceplatform**. Veillez également à supprimer le symbole **@** lors de la copie à partir de l’URL.
 
-**Nom du sandbox AEP**
+**Nom Du Sandbox Adobe Experience Platform**
 
-Le nom de votre sandbox est le nom de l’environnement que vous utiliserez dans votre instance AEP. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
+Le nom de votre sandbox est le nom de l’environnement que vous utiliserez dans votre instance Adobe Experience Platform. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
 
 Avant de prendre le nom du sandbox à partir de l’URL, vous devez vous assurer que vous vous trouvez dans le sandbox que vous devez utiliser pour ce tutoriel. Vous pouvez passer au sandbox de droite en cliquant sur le menu de sélection des sandbox dans le coin supérieur droit de l’écran.
 
 ![DSN ](./images/aepsandboxsw.png)
 
-Dans cet exemple, le nom du sandbox AEP est **tech-insiders**.
+Dans cet exemple, le nom du sandbox Adobe Experience Platform est **tech-insiders**.
 
 ![DSN ](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
-Vous devriez maintenant disposer d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepTenantId` a été remplacée par votre véritable ID de client AEP, qui est dans ce cas **_experienceplatform**.
+Vous devriez maintenant bénéficier d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepTenantId` a été remplacée par votre véritable ID de client Adobe Experience Platform, qui est dans ce cas **_experienceplatform**.
 
 ![DSN ](./images/mod7.png)
 

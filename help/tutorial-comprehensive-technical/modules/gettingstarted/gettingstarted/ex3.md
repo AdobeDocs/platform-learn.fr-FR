@@ -4,14 +4,14 @@ description: Prise en main - Création de votre flux de données
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
 
-# Créer votre flux de données
+# Création de votre flux de données
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
@@ -25,7 +25,7 @@ Ces propriétés sont presque prêtes à être utilisées, mais avant de pouvoir
 
 Pour l’instant, procédez comme suit.
 
-## Créer un flux de données pour le web
+## Créer un flux de données pour la collecte de données web
 
 Cliquez sur **[!UICONTROL Flux de données]**.
 
@@ -101,7 +101,7 @@ Vos modifications sont maintenant publiées et seront prêtes dans quelques minu
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig17a.png)
 
-## Créer votre flux de données pour Mobile
+## Créer un flux de données pour la collecte de données mobile
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
