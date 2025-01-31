@@ -1,414 +1,297 @@
 ---
-title: CDP en temps réel - Audiences externes
-description: CDP en temps réel - Audiences externes
+title: Real-time CDP - Destinations SDK
+description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
-exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 1%
+source-wordcount: '1098'
+ht-degree: 6%
 
 ---
 
-# 2.3.6 Audiences externes
+# 2.3.6 Destinations SDK
 
-Dans de nombreux cas, votre entreprise peut vouloir utiliser les audiences existantes d’autres applications pour enrichir le profil client dans Adobe Experience Platform.
-Ces audiences externes peuvent avoir été définies en fonction d’un modèle de science des données ou à l’aide de plateformes de données externes.
+## Configurer votre projet d’Adobe I/O
 
-La fonctionnalité d&#39;audiences externes de Adobe Experience Platform vous permet de vous concentrer sur l&#39;ingestion des audiences externes et leur activation sans avoir à redéfinir en détail la définition de l&#39;audience correspondante dans Adobe Experience Platform.
+Dans cet exercice, vous utiliserez à nouveau l’Adobe I/O pour interroger les API Adobe Experience Platform. Si vous n’avez pas encore configuré votre projet d’Adobe I/O, revenez à l’[exercice 3 du module 2.1](../module2.1/ex3.md) et suivez les instructions qui s’y trouvent.
 
-Le processus global se divise en trois grandes étapes :
+## Authentification Postman à l’Adobe I/O
 
-- Importez les métadonnées d’audience externe : cette étape est destinée à ingérer les métadonnées d’audience externe, telles que le nom de l’audience, dans Adobe Experience Platform.
-- Affectez l’appartenance à l’audience externe au profil client : cette étape est destinée à enrichir le profil client avec l’attribut d’appartenance aux audiences externes.
-- Créer les audiences dans Adobe Experience Platform : cette étape est destinée à créer des audiences exploitables basées sur l’appartenance aux audiences externes.
+Dans cet exercice, vous utiliserez à nouveau Postman pour interroger les API Adobe Experience Platform. Si vous n’avez pas encore configuré votre application Postman, revenez à l’[exercice 3 du module 2.1](../module2.1/ex3.md) et suivez les instructions qui s’y trouvent.
 
-## Métadonnées
+## Définir le point d’entrée et le format
+
+Pour cet exercice, vous avez besoin d’un point d’entrée à configurer afin que lorsqu’une audience se qualifie, l’événement de qualification puisse être diffusé en continu vers ce point d’entrée. Dans cet exercice, vous allez utiliser un exemple de point d’entrée à l’aide de [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Accédez à [https://pipedream.com/requestbin](https://pipedream.com/requestbin), créez un compte, puis un espace de travail. Une fois l’espace de travail créé, un élément similaire s’affiche.
+
+Cliquez sur **copier** pour copier l’URL. Vous devrez spécifier cette URL dans l’exercice suivant. Dans cet exemple, l’URL est `https://eodts05snjmjz67.m.pipedream.net`.
+
+![Ingestion des données](./images/webhook1.png)
+
+En ce qui concerne le format, nous utiliserons un modèle standard qui diffusera les qualifications ou les disqualifications d’audience, ainsi que des métadonnées telles que les identifiants de client. Les modèles peuvent être personnalisés pour répondre aux attentes de points d’entrée spécifiques, mais dans cet exercice, nous réutiliserons un modèle standard, ce qui se traduira par une payload comme celle-ci qui sera diffusée en continu au point d’entrée.
+
+```json
+{
+  "profiles": [
+    {
+      "identities": [
+        {
+          "type": "ecid",
+          "id": "64626768309422151580190219823409897678"
+        }
+      ],
+      "AdobeExperiencePlatformSegments": {
+        "add": [
+          "f58c723c-f1e5-40dd-8c79-7bb4ab47f041"
+        ],
+        "remove": []
+      }
+    }
+  ]
+}
+```
+
+## Créer une configuration de serveur et de modèle
+
+La première étape pour créer votre propre destination dans Adobe Experience Platform consiste à créer une configuration de serveur et de modèle à l’aide de Postman.
+
+Pour ce faire, ouvrez votre application Postman, accédez à **API de création de destination**, à **Serveurs de destination et modèles**, puis cliquez pour ouvrir le POST de requête **Création d’une configuration de serveur de destination**.
+
+>[!NOTE]
+>
+>Si vous ne disposez pas de cette collection Postman, revenez à l’[exercice 3 du module 2.1](../module2.1/ex3.md) et suivez les instructions pour configurer Postman avec les collections Postman fournies.
+
+Tu verras ça. Sous **En-têtes**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez l’**{{SANDBOX_NAME}}** de valeur.
+
+![Ingestion des données](./images/sdkpm1.png)
+
+Remplacez-le par `--aepSandboxName--`.
+
+![Ingestion des données](./images/sdkpm2.png)
+
+Ensuite, allez à **Corps**. sélectionnez l’espace réservé **{{body}}**.
+
+![Ingestion des données](./images/sdkpm3.png)
+
+Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci-dessous :
+
+```json
+{
+    "name": "Custom HTTP Destination",
+    "destinationServerType": "URL_BASED",
+    "urlBasedDestination": {
+        "url": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "yourURL"
+        }
+    },
+    "httpTemplate": {
+        "httpMethod": "POST",
+        "requestBody": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "{\n    \"profiles\": [\n    {%- for profile in input.profiles %}\n        {\n            \"identities\": [\n            {%- for idMapEntry in profile.identityMap -%}\n            {%- set namespace = idMapEntry.key -%}\n                {%- for identity in idMapEntry.value %}\n                {\n                    \"type\": \"{{ namespace }}\",\n                    \"id\": \"{{ identity.id }}\"\n                }{%- if not loop.last -%},{%- endif -%}\n                {%- endfor -%}{%- if not loop.last -%},{%- endif -%}\n            {% endfor %}\n            ],\n            \"AdobeExperiencePlatformSegments\": {\n                \"add\": [\n                {%- for segment in profile.segmentMembership.ups | added %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ],\n                \"remove\": [\n                {#- Alternative syntax for filtering segments by status: -#}\n                {% for segment in removedSegments(profile.segmentMembership.ups) %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ]\n            }\n        }{%- if not loop.last -%},{%- endif -%}\n    {% endfor %}\n    ]\n}"
+        },
+        "contentType": "application/json"
+    }
+}
+```
+
+Après avoir collé le code ci-dessus, vous devez mettre à jour manuellement le champ **urlBasedDestination.url.value** et le définir sur l’URL du webhook que vous avez créé à l’étape précédente, qui a été `https://eodts05snjmjz67.m.pipedream.net` dans cet exemple.
+
+![Ingestion des données](./images/sdkpm4.png)
+
+Après la mise à jour du champ **urlBasedDestination.url.value**, il doit ressembler à ceci. Cliquez sur **Envoyer**.
+
+![Ingestion des données](./images/sdkpm5.png)
+
+>[!NOTE]
+>
+>N’oubliez pas qu’avant d’envoyer une demande à l’Adobe I/O, vous devez disposer d’une `access_token` valide. Pour obtenir un `access_token` valide, exécutez la requête **POST - Obtenir le jeton d’accès** dans la collection **Adobe IO - OAuth**.
+
+Après avoir cliqué sur **Envoyer**, votre modèle de serveur est créé et, dans le cadre de la réponse, un champ nommé **instanceId** s’affiche. Notez-le, car vous en aurez besoin à l&#39;étape suivante. Dans cet exemple, le **instanceId** est
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
+
+![Ingestion des données](./images/sdkpm6.png)
+
+## Création de la configuration de destination
+
+Dans Postman, sous **API de création de destination**, accédez à **Configurations de destination** et cliquez pour ouvrir le POST **Requête - Création d’une configuration de destination**. Tu verras ça. Sous **En-têtes**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}** et remplacez-la par `--aepSandboxName--`.
+
+![Ingestion des données](./images/sdkpm7.png)
+
+Ensuite, allez à **Corps**. sélectionnez l’espace réservé **{{body}}**.
+
+![Ingestion des données](./images/sdkpm9.png)
+
+Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci-dessous :
+
+```json
+{
+    "name": "--aepUserLdap-- - Webhook",
+    "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
+    "status": "TEST",
+    "customerAuthenticationConfigurations": [
+        {
+            "authType": "BEARER"
+        }
+    ],
+    "customerDataFields": [
+        {
+            "name": "endpointsInstance",
+            "type": "string",
+            "title": "Select Endpoint",
+            "description": "We could manage several instances across the globe for REST endpoints that our customers are provisioned for. Select your endpoint in the dropdown list.",
+            "isRequired": true,
+            "enum": [
+                "US",
+                "EU",
+                "APAC",
+                "NZ"
+            ]
+        }
+    ],
+    "uiAttributes": {
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "category": "streaming",
+        "connectionType": "Server-to-server",
+        "frequency": "Streaming"
+    },
+    "identityNamespaces": {
+        "ecid": {
+            "acceptsAttributes": true,
+            "acceptsCustomNamespaces": false
+        }
+    },
+    "segmentMappingConfig": {
+        "mapExperiencePlatformSegmentName": true,
+        "mapExperiencePlatformSegmentId": true,
+        "mapUserInput": false
+    },
+    "aggregation": {
+        "aggregationType": "BEST_EFFORT",
+        "bestEffortAggregation": {
+            "maxUsersPerRequest": "1000",
+            "splitUserById": false
+        }
+    },
+    "schemaConfig": {
+        "profileRequired": false,
+        "segmentRequired": true,
+        "identityRequired": true
+    },
+    "destinationDelivery": [
+        {
+            "authenticationRule": "NONE",
+            "destinationServerId": "yourTemplateInstanceID"
+        }
+    ]
+}
+```
+
+![Ingestion des données](./images/sdkpm11.png)
+
+Après avoir collé le code ci-dessus, vous devez mettre à jour manuellement le champ **destinationDelivery. destinationServerId**, et vous devez le définir sur **instanceId** du modèle de serveur de destination que vous avez créé à l’étape précédente, qui a été `52482c90-8a1e-42fc-b729-7f0252e5cebd` dans cet exemple. Cliquez ensuite sur **Envoyer**.
+
+![Ingestion des données](./images/sdkpm10.png)
+
+Vous verrez alors cette réponse.
+
+![Ingestion des données](./images/sdkpm12.png)
+
+Votre destination est maintenant créée dans Adobe Experience Platform. Allons voir ça.
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/home.png)
 
->[!IMPORTANT]
->
->L’environnement de test à utiliser pour cet exercice est ``--aepSandboxName--`` !
+Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné la [!UICONTROL sandbox] appropriée, la modification d’écran s’affiche et vous êtes maintenant dans votre [!UICONTROL sandbox] dédié.
 
-Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement de test à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné l’[!UICONTROL sandbox] approprié, vous verrez le changement d’écran et vous êtes désormais dans votre [!UICONTROL sandbox] dédié.
+![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-![Ingestion des données](./images/sb1.png)
+Dans le menu de gauche, accédez à **Destinations**, cliquez sur **Catalogue** et faites défiler l’écran jusqu’à la catégorie **Diffusion en continu**. Votre destination est disponible sur ce site.
 
-Bien que les données d’audience définissent la condition pour qu’un profil fasse partie d’une audience, les métadonnées d’audience sont des informations sur l’audience telles que le nom, la description et l’état de l’audience. Les métadonnées d’audience externe étant stockées dans Adobe Experience Platform, vous devez utiliser un espace de noms d’identité pour ingérer les métadonnées dans Adobe Experience Platform.
+![Ingestion des données](./images/destsdk1.png)
 
-## 2.3.6.1.1 Espace de noms d’identité pour les audiences externes
+## Lier votre audience à la destination
 
-Un espace de noms d’identité a déjà été créé pour l’utilisation avec **Audiences externes**.
-Pour afficher l’identité qui a déjà été créée, accédez à **Identités** et recherchez **Externe**. Cliquez sur l’élément &quot;Audiences externes&quot;.
+Dans **Destinations** > **Catalogue**, cliquez sur **Configurer** sur la destination pour commencer à ajouter des audiences à la nouvelle destination.
 
-Remarque :
+![Ingestion des données](./images/destsdk2.png)
 
-- Le symbole d’identité **externalaudiences** sera utilisé dans les étapes suivantes pour faire référence à l’identité des audiences externes.
-- Le type **Identifiant de non-personne** est utilisé pour cet espace de noms d’identité, car cet espace de noms n’est pas destiné à identifier les profils de client mais les audiences.
+Saisissez une valeur aléatoire pour le **jeton du porteur**, par exemple **1234**. Cliquez sur **Se connecter à la destination**.
 
-![Identité d’audiences externes](images/extAudIdNS.png)
+![Ingestion des données](./images/destsdk3.png)
 
-## 2.3.6.1.2 Création du schéma de métadonnées Audiences externes
+Tu verras ça. Utilisez `--aepUserLdap-- - Webhook` comme nom de destination. Sélectionnez un point d’entrée de choix, dans cet exemple **EU**. Cliquez sur **Suivant**.
 
-Les métadonnées d’audiences externes sont basées sur le **schéma de définition d’audience**. Vous trouverez plus d’informations dans le [référentiel XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+![Ingestion des données](./images/destsdk4.png)
 
-Dans le menu de gauche, accédez à Schémas. Cliquez sur **+ Créer un schéma**, puis sur **Parcourir**.
+Vous pouvez éventuellement sélectionner une politique de gouvernance des données. Cliquez sur **Suivant**.
 
-![ Schéma de métadonnées d’audiences externes 1](images/extAudMDXDM1.png)
+![Ingestion des données](./images/destsdk5.png)
 
-Pour attribuer une classe, recherchez **définition d’audience**. Sélectionnez la classe **Définition de l’audience** et cliquez sur **Attribuer une classe**.
+Sélectionnez l’audience que vous avez créée précédemment et qui est nommée `--aepUserLdap-- - Interest in Galaxy S24`. Cliquez sur **Suivant**.
 
-![ Schéma de métadonnées d’audiences externes 2](images/extAudMDXDM2.png)
+![Ingestion des données](./images/destsdk6.png)
 
-Vous verrez alors ceci. Cliquez sur **Annuler**.
+Tu verras ça. Veillez à mapper le champ **SOURCE** `--aepTenantId--.identification.core.ecid` au champ `Identity: ecid`. Cliquez sur **Suivant**.
 
-![ Schéma de métadonnées d’audiences externes 3](images/extAudMDXDM3.png)
+![Ingestion des données](./images/destsdk7.png)
 
-Vous verrez alors ceci. Sélectionnez le champ **_id**. Dans le menu de droite, faites défiler l’écran vers le bas et activez les cases à cocher **Identité** et **Identité par Principal** . Sélectionnez l’espace de noms d’identité **Audiences externes** . Cliquez sur **Appliquer**.
+Cliquez sur **Terminer**.
 
-![ Schéma de métadonnées d’audiences externes 4](images/extAudMDXDM4.png)
+![Ingestion des données](./images/destsdk8.png)
 
-Sélectionnez ensuite le nom du schéma **Schéma sans titre**. Modifiez le nom en `--aepUserLdap-- - External Audiences Metadata`.
+Votre destination est maintenant en ligne. Les nouvelles qualifications d’audience seront diffusées en continu sur votre webhook personnalisé maintenant.
 
-![ Schéma de métadonnées d’audiences externes 5](images/extAudMDXDM5.png)
+![Ingestion des données](./images/destsdk9.png)
 
-Activez le bouton bascule **Profile** et confirmez. Enfin, cliquez sur **Enregistrer**.
+## Tester l’activation de votre audience
 
-![ Schéma de métadonnées d’audiences externes 5](images/extAudMDXDM6.png)
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-## 2.3.6.1.3 Création du jeu de données de métadonnées Audiences externes
+![DSN ](./../../datacollection/module1.1/images/web8.png)
 
-Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--aepUserLdap-- - External Audiences Metadata` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
+Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![Métadonnées d’audiences externes DS 1](images/extAudMDDS1.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web3.png)
 
-Pour le champ **Name**, saisissez `--aepUserLdap-- - External Audience Metadata`. Cliquez sur **Créer un jeu de données**.
+Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![Métadonnées d’audiences externes DS 2](images/extAudMDDS2.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web4.png)
 
-Vous verrez alors ceci. N’oubliez pas d’activer la bascule **Profile** .
+Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![Métadonnées d’audiences externes DS 3](images/extAudMDDS3.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web5.png)
 
-## 2.3.6.1.4 Création d’une connexion Source d’API HTTP
+Sélectionnez votre type de compte et terminez le processus de connexion.
 
-Ensuite, vous devez configurer l’API HTTP Source Connector que vous utiliserez pour ingérer les métadonnées dans le jeu de données.
+![DSN ](../../gettingstarted/gettingstarted/images/web6.png)
 
-Accédez à **Sources**. Dans le champ de recherche, saisissez **HTTP**. Cliquez sur **Ajouter des données**.
+Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![Métadonnées d’audiences externes http 1](images/extAudMDhttp1.png)
+![DSN ](../../gettingstarted/gettingstarted/images/web7.png)
 
-Renseignez les informations suivantes :
+Dans cet exemple, vous souhaitez répondre à un client spécifique qui consulte un produit spécifique.
+Sur la page d&#39;accueil de **Citi Signal**, accédez à **Téléphones et appareils**, puis cliquez sur le produit **Galaxy S24**.
 
-- **Type de compte** : sélectionnez **Nouveau compte**
-- **Nom du compte** : saisissez `--aepUserLdap-- - External Audience Metadata`
-- Cochez la case **Case compatible XDM**
+![Ingestion des données](./images/homegalaxy.png)
 
-Cliquez ensuite sur **Se connecter à la source**.
+La page produit pour Galaxy S24 a été consultée, votre audience sera donc qualifiée pour votre profil dans les minutes qui suivent.
 
-![Métadonnées d’audiences externes http 2](images/extAudMDhttp2.png)
+![Ingestion des données](./images/homegalaxy1.png)
 
-Vous verrez alors ceci. Cliquez sur **Suivant**.
+Lorsque vous ouvrez la visionneuse de profils et accédez à **Audiences**, l’audience est qualifiée.
 
-![Métadonnées d’audiences externes http 2](images/extAudMDhttp2a.png)
+![Ingestion des données](./images/homegalaxydsdk.png)
 
-Sélectionnez **Jeu de données existant** et dans le menu déroulant, recherchez et sélectionnez le jeu de données `--aepUserLdap-- - External Audience Metadata`.
+Revenez maintenant à votre webhook ouvert sur [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), où vous devriez voir une nouvelle requête entrante, qui provient de Adobe Experience Platform et qui contient l’événement de qualification de l’audience.
 
-Vérifiez les **détails du flux de données**, puis cliquez sur **Suivant**.
+![Ingestion des données](./images/destsdk10.png)
 
-![Métadonnées d’audiences externes http 3](images/extAudMDhttp3.png)
+Étape suivante : [Résumé et avantages](./summary.md)
 
-Vous verrez alors ceci.
-
-L’étape **Mapping** de l’assistant est vide car vous ingérez une payload compatible XDM dans le connecteur Source de l’API HTTP. Aucun mappage n’est donc nécessaire. Cliquez sur **Suivant**.
-
-![Métadonnées d’audiences externes http 3](images/extAudMDhttp3a.png)
-
-À l’étape **Réviser**, vous pouvez éventuellement passer en revue les détails de connexion et de mappage. Cliquez sur **Terminer**.
-
-![Métadonnées d’audiences externes http 4](images/extAudMDhttp4.png)
-
-Vous verrez alors ceci.
-
-![Métadonnées d’audiences externes http 4](images/extAudMDhttp4a.png)
-
-## 2.3.6.1.5 Ingestion des métadonnées d’audience externe
-
-Dans l’onglet de présentation de Source Connector, cliquez sur **...**, puis sur **Copier la payload du schéma**.
-
-![Métadonnées d’audiences externes str 1](images/extAudMDstr1a.png)
-
-Ouvrez l’application de l’éditeur de texte sur votre ordinateur et collez la charge utile que vous venez de copier, qui ressemble à ceci. Ensuite, vous devez mettre à jour l’objet **xdmEntity** dans cette payload.
-
-![Métadonnées d’audiences externes str 1](images/extAudMDstr1b.png)
-
-L’objet **xdmEntity** doit être remplacé par le code ci-dessous. Copiez le code ci-dessous et collez-le dans votre fichier texte en remplaçant l’objet **xdmEntity** dans l’éditeur de texte.
-
-```
-"xdmEntity": {
-    "_id": "--aepUserLdap---extaudience-01",
-    "description": "--aepUserLdap---extaudience-01 description",
-    "segmentIdentity": {
-      "_id": "--aepUserLdap---extaudience-01",
-      "namespace": {
-        "code": "externalaudiences"
-      }
-    },
-    "segmentName": "--aepUserLdap---extaudience-01 name",
-    "segmentStatus": "ACTIVE",
-    "version": "1.0"
-  }
-```
-
-Vous devriez alors voir ceci :
-
-![Métadonnées d’audiences externes str 1](images/extAudMDstr1.png)
-
-Ouvrez ensuite une nouvelle fenêtre **Terminal**. Copiez tout le texte de votre éditeur de texte et collez-le dans la fenêtre du terminal.
-
-![Métadonnées d’audiences externes str 1](images/extAudMDstr1d.png)
-
-Ensuite, appuyez sur **Entrée**.
-
-Une confirmation de l’ingestion des données s’affiche alors dans la fenêtre Terminal :
-
-![Métadonnées d’audiences externes str 1](images/extAudMDstr1e.png)
-
-Actualisez l’écran du connecteur HTTP API Source, où vous verrez maintenant que les données sont en cours de traitement :
-
-![Métadonnées d’audiences externes str 2](images/extAudMDstr2.png)
-
-## 2.3.6.1.6 Validation de l’ingestion des métadonnées des audiences externes
-
-Une fois le traitement terminé, vous pouvez vérifier la disponibilité des données dans le jeu de données à l’aide de Query Service.
-
-Dans le menu de droite, accédez à **Jeux de données** et sélectionnez le jeu de données `--aepUserLdap-- - External Audience Metadata` que vous avez créé précédemment.
-
-![Métadonnées d’audiences externes str 3](images/extAudMDstr3.png)
-
-Dans le menu de droite, accédez à Requêtes et cliquez sur **Créer une requête**.
-
-![Métadonnées d’audiences externes str 4](images/extAudMDstr4.png)
-
-Saisissez le code suivant, puis appuyez sur **Maj + ENTER** :
-
-```
-select * from --aepUserLdap--_external_audience_metadata
-```
-
-Dans les résultats de la requête, vous verrez les métadonnées de l’audience externe que vous avez ingérées.
-
-![Métadonnées d’audiences externes str 5](images/extAudMDstr5.png)
-
-## Appartenance à une audience
-
-Les métadonnées d’audience externe étant disponibles, vous pouvez désormais ingérer l’appartenance à l’audience pour un profil client spécifique.
-
-Vous devez maintenant préparer un jeu de données de profil enrichi par rapport au schéma d’appartenance à l’audience. Vous trouverez plus d’informations dans le [référentiel XDM Github](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
-
-### Création du schéma d’adhésion aux audiences externes
-
-Dans le menu de droite, accédez à **Schémas**. Cliquez sur **Créer un schéma**, puis sur **XDM Individual Profile**.
-
-![ Schéma de profil d’audiences externes 1](images/extAudPrXDM1.png)
-
-Dans la fenêtre contextuelle **Ajouter des groupes de champs**, recherchez **Profile Core**. Sélectionnez le groupe de champs **Profile Core v2** .
-
-![ Schéma de profil d’audiences externes 2](images/extAudPrXDM2.png)
-
-Ensuite, dans la fenêtre contextuelle **Ajouter des groupes de champs**, recherchez **Appartenance au segment**. Sélectionnez le groupe de champs **Détails de l’appartenance au segment** . Cliquez ensuite sur **Ajouter des groupes de champs**.
-
-![ Schéma de profil d’audiences externes 3](images/extAudPrXDM3.png)
-
-Vous verrez alors ceci. Accédez au champ `--aepTenantId--.identification.core`. Cliquez sur le champ **crmId** . Dans le menu de droite, faites défiler l’écran vers le bas et cochez les cases **Identité** et **Identité par Principal** . Pour l’**espace de noms d’identité**, sélectionnez **Demo System - CRMID**.
-
-Cliquez sur **Appliquer**.
-
-![ Schéma de profil d’audiences externes 4](images/extAudPrXDM4.png)
-
-Sélectionnez ensuite le nom du schéma **Schéma sans titre**. Dans le champ du nom d&#39;affichage, saisissez `--aepUserLdap-- - External Audiences Membership`.
-
-![ Schéma de profil d’audiences externes 5](images/extAudPrXDM5a.png)
-
-Ensuite, activez le bouton d’activation/désactivation **Profile** et confirmez. Cliquez sur **Enregistrer**.
-
-![ Schéma de profil d’audiences externes 5](images/extAudPrXDM5.png)
-
-### Création du jeu de données d’adhésion aux audiences externes
-
-Dans **Schémas**, accédez à **Parcourir**. Recherchez et cliquez sur le schéma `--aepUserLdap-- - External Audiences Membership` que vous avez créé à l’étape précédente. Cliquez ensuite sur **Créer un jeu de données à partir d’un schéma**.
-
-![Métadonnées d’audiences externes DS 1](images/extAudPrDS1.png)
-
-Pour le champ **Name**, saisissez `--aepUserLdap-- - External Audiences Membership`. Cliquez sur **Créer un jeu de données**.
-
-![Métadonnées d’audiences externes DS 2](images/extAudPrDS2.png)
-
-Vous verrez alors ceci. N’oubliez pas d’activer la bascule **Profile** .
-
-![Métadonnées d’audiences externes DS 3](images/extAudPrDS3.png)
-
-### Création d’une connexion Source d’API HTTP
-
-
-Ensuite, vous devez configurer l’API HTTP Source Connector que vous utiliserez pour ingérer les métadonnées dans le jeu de données.
-
-Accédez à **Sources**. Dans le champ de recherche, saisissez **HTTP**. Cliquez sur **Ajouter des données**.
-
-![Métadonnées d’audiences externes http 1](images/extAudMDhttp1.png)
-
-Renseignez les informations suivantes :
-
-- **Type de compte** : sélectionnez **Nouveau compte**
-- **Nom du compte** : saisissez `--aepUserLdap-- - External Audience Membership`
-- Cochez la case **Case compatible XDM**
-
-Cliquez ensuite sur **Se connecter à la source**.
-
-![Métadonnées d’audiences externes http 2](images/extAudPrhttp2.png)
-
-Vous verrez alors ceci. Cliquez sur **Suivant**.
-
-![Métadonnées d’audiences externes http 2](images/extAudPrhttp2a.png)
-
-Sélectionnez **Jeu de données existant** et dans le menu déroulant, recherchez et sélectionnez le jeu de données `--aepUserLdap-- - External Audiences Membership`.
-
-Vérifiez les **détails du flux de données**, puis cliquez sur **Suivant**.
-
-![Métadonnées d’audiences externes http 3](images/extAudPrhttp3.png)
-
-Vous verrez alors ceci.
-
-L’étape **Mapping** de l’assistant est vide car vous ingérez une payload compatible XDM dans le connecteur Source de l’API HTTP. Aucun mappage n’est donc nécessaire. Cliquez sur **Suivant**.
-
-![Métadonnées d’audiences externes http 3](images/extAudPrhttp3a.png)
-
-À l’étape **Réviser**, vous pouvez éventuellement passer en revue les détails de connexion et de mappage. Cliquez sur **Terminer**.
-
-![Métadonnées d’audiences externes http 4](images/extAudPrhttp4.png)
-
-Vous verrez alors ceci.
-
-![Métadonnées d’audiences externes http 4](images/extAudPrhttp4a.png)
-
-### Ingestion des données d’adhésion d’audiences externes
-
-Dans l’onglet de présentation de Source Connector, cliquez sur **...**, puis sur **Copier la payload du schéma**.
-
-![Métadonnées d’audiences externes str 1](./images/extAudPrstr1a.png)
-
-Ouvrez l’application de l’éditeur de texte sur votre ordinateur et collez la charge utile que vous venez de copier, qui ressemble à ceci. Ensuite, vous devez mettre à jour l’objet **xdmEntity** dans cette payload.
-
-![Métadonnées d’audiences externes str 1](images/extAudPrstr1b.png)
-
-L’objet **xdmEntity** doit être remplacé par le code ci-dessous. Copiez le code ci-dessous et collez-le dans votre fichier texte en remplaçant l’objet **xdmEntity** dans l’éditeur de texte.
-
-```
-  "xdmEntity": {
-    "_id": "--aepUserLdap---profile-test-01",
-    "_experienceplatform": {
-      "identification": {
-        "core": {
-          "crmId": "--aepUserLdap---profile-test-01"
-        }
-      }
-    },
-    "personID": "--aepUserLdap---profile-test-01",
-    "segmentMembership": {
-      "externalaudiences": {
-        "--aepUserLdap---extaudience-01": {
-          "status": "realized",
-          "lastQualificationTime": "2022-03-05T00:00:00Z"
-        }
-      }
-    }
-  }
-```
-
-Vous devriez alors voir ceci :
-
-![Métadonnées d’audiences externes str 1](images/extAudPrstr1.png)
-
-Ouvrez ensuite une nouvelle fenêtre **Terminal**. Copiez tout le texte de votre éditeur de texte et collez-le dans la fenêtre du terminal.
-
-![Métadonnées d’audiences externes str 1](images/extAudPrstr1d.png)
-
-Ensuite, appuyez sur **Entrée**.
-
-Une confirmation de l’ingestion des données s’affiche alors dans la fenêtre Terminal :
-
-![Métadonnées d’audiences externes str 1](images/extAudPrstr1e.png)
-
-Actualisez l’écran du connecteur HTTP API Source où, au bout de quelques minutes, vous verrez que les données sont en cours de traitement :
-
-![Métadonnées d’audiences externes str 2](images/extAudPrstr2.png)
-
-### Validation de l’ingestion des membres d’audiences externes
-
-Une fois le traitement terminé, vous pouvez vérifier la disponibilité des données dans le jeu de données à l’aide de Query Service.
-
-Dans le menu de droite, accédez à **Jeux de données** et sélectionnez le jeu de données `--aepUserLdap-- - External Audiences Membership ` que vous avez créé précédemment.
-
-![Métadonnées d’audiences externes str 3](images/extAudPrstr3.png)
-
-Dans le menu de droite, accédez à Requêtes et cliquez sur **Créer une requête**.
-
-![Métadonnées d’audiences externes str 4](images/extAudPrstr4.png)
-
-Saisissez le code suivant, puis appuyez sur **Maj + ENTER** :
-
-```
-select * from --aepUserLdap--_external_audiences_membership
-```
-
-Dans les résultats de la requête, vous verrez les métadonnées de l’audience externe que vous avez ingérées.
-
-![Métadonnées d’audiences externes str 5](images/extAudPrstr5.png)
-
-## Création d’un segment
-
-Vous êtes maintenant prêt à agir sur les audiences externes.
-Dans Adobe Experience Platform, l’action est réalisée en créant des segments, en renseignant les audiences respectives et en partageant ces audiences vers les destinations.
-Vous allez maintenant créer un segment à l’aide de l’audience externe que vous venez de créer.
-
-Dans le menu de gauche, accédez à **Segments** et cliquez sur **Créer un segment**.
-
-![ Audiences externes SegBuilder 1](images/extAudSegUI2.png)
-
-Accédez à **Audiences**. Vous verrez alors ceci. Cliquez sur **Audiences externes**.
-
-![ Audiences externes SegBuilder 1](images/extAudSegUI2a.png)
-
-Sélectionnez l’audience externe que vous avez créée précédemment, appelée `--aepUserLdap---extaudience-01`. Faites glisser l’audience sur la zone de travail.
-
-![ Audiences externes SegBuilder 1](images/extAudSegUI2b.png)
-
-Attribuez un nom à votre segment, utilisez `--aepUserLdap-- - extaudience-01`. Cliquez sur **Enregistrer et fermer**.
-
-![ Audiences externes SegBuilder 1](images/extAudSegUI1.png)
-
-Vous verrez alors ceci. Vous remarquerez également que le profil pour lequel vous avez ingéré l’adhésion au segment s’affiche désormais dans la liste de **Sample Profiles**.
-
-![ Audiences externes SegBuilder 1](images/extAudSegUI3.png)
-
-Votre segment est maintenant prêt et peut être envoyé vers une destination pour activation.
-
-## Visualiser votre profil client
-
-Vous pouvez désormais également visualiser la qualification du segment sur votre profil client. Accédez à **Profils**, utilisez l’espace de noms d’identité **Demo System - CRMID** et fournissez l’identité `--aepUserLdap---profile-test-01`, que vous avez utilisée dans le cadre de l’exercice 6.6.2.4, puis cliquez sur **Afficher**. Cliquez ensuite sur l’ **ID de profil** pour ouvrir le profil.
-
-![ Audiences externes SegBuilder 1](images/extAudProfileUI1.png)
-
-Accédez à **Appartenance au segment**, où s’affiche votre audience externe.
-
-![ Audiences externes SegBuilder 1](images/extAudProfileUI2.png)
-
-Étape suivante : [2.3.7 Destinations SDK](./ex7.md)
-
-[Revenir au module 2.3](./real-time-cdp-build-a-segment-take-action.md)
+[Retour au module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 
 [Revenir à tous les modules](../../../overview.md)
