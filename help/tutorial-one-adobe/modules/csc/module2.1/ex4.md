@@ -4,7 +4,7 @@ description: AEM CS - Bloc personnalisé de base
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: e075ac0cf4a9132eb78524b50447aa564e82fff6
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
@@ -283,8 +283,6 @@ Vous devriez alors voir ceci. Cliquez sur **Fibre**.
 Voici votre bloc personnalisé de base, mais désormais rendu sur le site web.
 
 ![ AEMCS ](./images/nav7.png)
-
-
 
 Étape Suivante : Bloc Personnalisé Avancé [2.1.5](./ex5.md){target="_blank"}
 

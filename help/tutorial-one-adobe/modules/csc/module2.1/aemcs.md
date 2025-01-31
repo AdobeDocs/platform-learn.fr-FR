@@ -4,10 +4,10 @@ description: Cloud Service et Edge Delivery Services Adobe Experience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ Dans cet exercice, vous allez développer un bloc personnalisé de base pour vot
 Bloc personnalisé avancé [2.1.5](./ex5.md){target="_blank"}
 
 Dans cet exercice, vous allez développer un bloc personnalisé avancé pour votre site web.
+
+[2.1.6 Plug-in AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
+
+Dans cet exercice, vous allez mettre en œuvre le plug-in AEM MarTech. Le plug-in AEM MarTech permet de configurer rapidement une pile MarTech complète pour votre projet AEM.
 
 [Résumé et avantages](./summary.md){target="_blank"}
 

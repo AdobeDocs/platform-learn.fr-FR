@@ -3,9 +3,10 @@ title: AEM CS - Bloc personnalisé avancé
 description: AEM CS - Bloc personnalisé avancé
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Enregistrez vos modifications.
 
 Vous avez apporté plusieurs modifications à votre projet qui doivent être validées dans votre référentiel GitHub. Pour ce faire, ouvrez **GitHub Desktop**.
 
-Vous devriez alors voir les 3 fichiers que vous venez de modifier sous **Modifications**. Vérifiez vos modifications.
+Vous devriez alors voir les 2 fichiers que vous venez de modifier sous **Modifications**. Vérifiez vos modifications.
 
 Saisissez un nom pour votre requête de tirage, `js css`. Cliquez sur **Valider dans la ressource principale**.
 
@@ -344,7 +345,7 @@ Vous devriez alors voir ceci.
 
 ![Bloquer](./images/blockadv20.png)
 
-Étape suivante : [Résumé et avantages](./summary.md){target="_blank"}
+Étape suivante : plug-in [2.1.6 AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
 
 [Retour au module 2.1](./aemcs.md){target="_blank"}
 

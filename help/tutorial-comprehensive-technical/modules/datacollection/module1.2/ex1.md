@@ -1,81 +1,85 @@
 ---
-title: Foundation - Ingestion de données - Inconnu ou connu sur le site web
-description: Foundation - Ingestion de données - Inconnu ou connu sur le site web
+title: Foundation - Ingestion des données - De l’inconnu au connu sur le site web
+description: Foundation - Ingestion des données - De l’inconnu au connu sur le site web
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 De inconnu à connu sur le site web
+# 1.2.1 De l&#39;inconnu au connu sur le site
 
 ## Contexte
 
-Le parcours de l’inconnu au connu est l’un des sujets les plus importants parmi les marques de nos jours, tout comme le parcours client de l’acquisition à la rétention.
+Le parcours de l&#39;inconnu au connu est l&#39;un des sujets les plus importants parmi les marques de nos jours, tout comme le parcours client de l&#39;acquisition à la rétention.
 
-Adobe Experience Platform joue un rôle énorme dans ce parcours. Platform est le cerveau de la communication, le système d&#39;enregistrement de l&#39;expérience.
+Adobe Experience Platform joue un rôle considérable dans ce parcours. La plateforme est le cerveau de la communication, le système d&#39;expérience d&#39;enregistrement.
 
-Platform est un environnement dans lequel le mot **customer** est plus large que le simple **known**-clients. C&#39;est une chose très importante à mentionner lorsque vous parlez aux marques : un visiteur inconnu sur le site web est également un client du point de vue de Platform et, en tant que tel, tout le comportement en tant que visiteur inconnu est également envoyé à Platform. Grâce à cette approche, lorsque ce client devient un client connu, une marque peut également visualiser ce qui s’est passé avant ce moment. Cela s’avère utile du point de vue de l’attribution et de l’optimisation de l’expérience.
+Platform est un environnement dans lequel le mot **client** est plus large que les **clients connus**. Il est très important de le mentionner lorsque vous vous adressez à des marques : un visiteur inconnu sur le site web est également un client du point de vue de Platform et, par conséquent, tout le comportement en tant que visiteur inconnu est également envoyé à Platform. Grâce à cette approche, lorsque ce client devient finalement un client connu, une marque peut également visualiser ce qui s&#39;est passé avant ce moment. Cela est utile du point de vue de l’attribution et de l’optimisation de l’expérience.
 
-## Que vas-tu faire ?
+## Qu&#39;allez-vous faire ?
 
-Vous allez désormais ingérer des données dans Adobe Experience Platform et ces données seront liées à des identifiants tels que des ECID et des adresses électroniques. L’objectif est de comprendre le contexte commercial de ce que vous êtes sur le point de faire du point de vue de la configuration. Au cours de l’exercice suivant, vous allez commencer à configurer tout ce dont vous avez besoin pour rendre possible l’ingestion de données dans votre propre environnement de test.
+Vous allez désormais ingérer des données dans Adobe Experience Platform qui seront liées à des identifiants tels que des ECID et des adresses e-mail. L’objectif est de comprendre le contexte commercial de ce que vous êtes sur le point de faire du point de vue de la configuration. Dans l’exercice suivant, vous allez commencer à configurer tout ce dont vous avez besoin pour rendre possible toute cette ingestion de données dans votre propre environnement sandbox.
 
 ### Flux de Parcours client
 
-Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Une fois connecté avec votre Adobe ID, vous verrez ceci. Cliquez sur les 3 points **...** dans le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
+Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN](./../../datacollection/module1.1/images/web8.png)
+![DSN ](./../../datacollection/module1.1/images/web8.png)
 
-Vous verrez alors votre site web de démonstration ouvert. Sélectionnez l’URL et copiez-la dans le presse-papiers.
+Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web3.png)
+![DSN ](./../../gettingstarted/gettingstarted/images/web3.png)
 
-Ouvrez une nouvelle fenêtre de navigateur incognito.
+Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web4.png)
+![DSN ](./../../gettingstarted/gettingstarted/images/web4.png)
 
-Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Vous serez alors invité à vous connecter à l’aide de votre Adobe ID.
+Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-Sélectionnez le type de compte et procédez à la connexion.
+Sélectionnez votre type de compte et terminez le processus de connexion.
 
-Votre site web est alors chargé dans une fenêtre de navigateur incognito. Pour chaque démonstration, vous devez utiliser une fenêtre de navigateur incognito actualisée pour charger l’URL de votre site web de démonstration.
+Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque démonstration, vous devez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-Cliquez sur l’icône représentant un logo d’Adobe dans le coin supérieur gauche de votre écran pour ouvrir la visionneuse de profils.
+Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écran pour ouvrir la visionneuse de profils.
 
 ![Démonstration](./images/pv1.png)
 
-Consultez le panneau Visionneuse de profils et Real-time Customer Profile avec l’**identifiant Experience Cloud** comme identifiant principal pour ce client actuellement inconnu.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’ID **Experience Cloud** comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](./images/pv2.png)
 
-Vous pouvez également voir tous les événements d’expérience collectés en fonction du comportement du client. La liste est actuellement vide, mais elle va bientôt changer.
+Vous pouvez également afficher tous les événements d’expérience qui ont été collectés en fonction du comportement du client ou de la cliente. La liste est actuellement vide, mais cela va bientôt changer.
 
 ![Démonstration](./images/pv3.png)
 
-Accédez à la catégorie de produits **Phones &amp; devices** . Cliquez ensuite sur le produit **iPhone 15 Pro**.
+Accédez à la catégorie de produits **Téléphones et appareils**. Cliquez ensuite sur le produit **iPhone 15 Pro**.
 
 ![Démonstration](./images/pv4.png)
 
-Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Consultation produit** a maintenant été envoyé à Adobe Experience Platform à l’aide de l’implémentation du SDK Web que vous avez examinée dans le module précédent.
+Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Vue du produit** a été envoyé à Adobe Experience Platform à l’aide de l’implémentation de Web SDK que vous avez examinée dans le module précédent.
 
 ![Démonstration](./images/pv5.png)
 
-Ouvrez le panneau Fournisseur de la visionneuse et observez vos **Événements d’expérience**.
+Ouvrez le panneau Visionneuse de profil et jetez un coup d’œil à vos **Événements d’expérience**.
+
+>[!NOTE]
+>
+>Si l’événement ne s’affiche pas immédiatement, actualisez la page.
 
 ![Démonstration](./images/pv6.png)
 
-Revenez à la page de catégorie **Téléphone et appareils** et cliquez sur un autre produit. Un autre événement d’expérience a été envoyé à Adobe Experience Platform.
+Revenez à la page de catégorie **Téléphones et appareils**, puis cliquez sur un autre produit. Un autre événement d’expérience a été envoyé à Adobe Experience Platform.
 
-Ouvrez le panneau Visionneuse de profils . Vous verrez désormais 2 événements d’expérience de type **Consultation produit**. Bien que le comportement soit anonyme, avec le consentement approprié en place, nous pouvons suivre chaque clic et le stocker dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tout comportement anonyme avec le profil de connaissance.
+Ouvrez le panneau Visionneuse de profils. Vous verrez désormais 2 événements d’expérience de type **consultation du produit**. Bien que le comportement soit anonyme, avec le consentement approprié en place, nous sommes en mesure de suivre chaque clic et de le stocker dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tous les comportements anonymes au profil connu.
 
 ![Démonstration](./images/pv7.png)
 
-Cliquez sur **Se connecter** pour accéder à la page S’inscrire/Se connecter.
+Cliquez sur **Se connecter** pour accéder à la page d’inscription/de connexion.
 
 ![Démonstration](./images/pv8.png)
 
@@ -83,22 +87,22 @@ Cliquez sur **Créer un compte**.
 
 ![Démonstration](./images/pv9.png)
 
-Renseignez vos détails et cliquez sur **Enregistrer** après quoi vous serez redirigé vers la page précédente.
+Renseignez vos informations et cliquez sur **S’inscrire** après quoi vous serez redirigé vers la page précédente.
 
 ![Démonstration](./images/pv10.png)
 
-Ouvrez le panneau Visionneuse de profils et accédez à Real-time Customer Profile. Dans le panneau Visionneuse de profils, toutes vos données personnelles doivent s’afficher, comme les identifiants de téléphone et d’adresse électronique que vous venez d’ajouter.
+Ouvrez le panneau Visionneuse de profils et accédez au profil client en temps réel. Dans le panneau Visionneuse de profil, toutes vos données personnelles doivent s’afficher, comme vos nouveaux identifiants d’e-mail et de téléphone ajoutés.
 
 ![Démonstration](./images/pv11.png)
 
-Dans le panneau Visionneuse de profils, accédez à Événements d’expérience. Vous verrez les 2 produits que vous avez déjà consultés dans le panneau Visionneuse de profils . Ces deux événements sont désormais également connectés à votre profil &quot;connu&quot;.
+Dans le panneau Visionneuse de profil, accédez à Événements d’expérience. Vous verrez les 2 produits que vous avez consultés précédemment dans le panneau Visionneuse de profils. Ces deux événements sont désormais également liés à votre profil « connu ».
 
 ![Démonstration](./images/pv12.png)
 
-Vous avez désormais ingéré des données dans Adobe Experience Platform et vous les avez liées à des identifiants tels que des ECID et des adresses électroniques. Le but est de comprendre le contexte commercial de ce que vous êtes sur le point de faire. Dans l’exercice suivant, vous allez commencer à configurer tout ce dont vous avez besoin pour rendre possible l’ingestion de données.
+Vous avez maintenant ingéré des données dans Adobe Experience Platform et vous les avez liées à des identifiants tels que des ECID et des adresses e-mail. L’objectif est de comprendre le contexte commercial de ce que vous êtes sur le point de faire. Dans l’exercice suivant, vous allez commencer à configurer tout ce dont vous avez besoin pour rendre possible toute cette ingestion de données.
 
-Étape suivante : [1.2.2 Configuration des schémas et définition des identifiants](./ex2.md)
+Étape suivante : [1.2.2 Configurer des schémas et définir des identifiants](./ex2.md)
 
-[Revenir au module 1.2](./data-ingestion.md)
+[Retour au module 1.2](./data-ingestion.md)
 
 [Revenir à tous les modules](../../../overview.md)
