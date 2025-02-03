@@ -3,10 +3,10 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 9%
 
 ---
 
@@ -35,5 +35,11 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [5.1 Query Service](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | Oui | - |
 
 {style="table-layout:auto"}
+
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
 [Revenir à tous les modules](./overview.md)
