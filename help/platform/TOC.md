@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 20%
+source-wordcount: '873'
+ht-degree: 21%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 20%
    + [Tutoriels sur Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=fr){target="_blank"}
 + {#data-lifecycle} du cycle de vie des données
    + [Expiration des jeux de données](/help/platform/data-lifecycle/expire-datasets.md)
-+ Espace de travail de science des données {#data-science-workspace}
-   + [Vue d’ensemble](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [Architecture](data-science-workspace/architecture-overview.md)
-   + [Créer le schéma de cours et le jeu de données](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [Chargement des données dans les notebooks JupyterLab](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [Interroger et découvrir des données dans les notebooks JupyterLab](data-science-workspace/dsw-query-service.md)
-   + [Analyse exploratoire des données](data-science-workspace/eda.md)
-   + [Présentation des recettes, des modèles et des services](data-science-workspace/recipes-models-services-overview.md)
-   + [Créer un modèle à l’aide du modèle de créateur de recettes](data-science-workspace/recipe-builder-template.md)
-   + [Analyse des performances du modèle](data-science-workspace/analyze-model-performance.md)
-   + [Créer et publier un modèle formé (interface utilisateur)](data-science-workspace/create-model-ui.md)
-   + [Planification de la formation et de la notation automatisées d’un service](data-science-workspace/schedule-training-scoring.md)
-   + [Enrichir les profils clients en temps réel avec des informations de machine learning](data-science-workspace/dsw-profile-segmentation.md)
-   + [Regrouper les fichiers sources dans une recette](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [Importer une recette empaquetée (interface utilisateur)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [Importer une recette empaquetée (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinations {#destinations}
    + [Présentation des destinations](/help/platform/destinations/understanding-destinations.md)
    + [Connexion aux destinations](/help/platform/destinations/connecting-to-destinations.md)
