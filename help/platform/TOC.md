@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 21%
+source-wordcount: '881'
+ht-degree: 22%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 21%
    + [Valider les réponses](/help/platform/ai-assistant/validate-responses.md)
    + [Panneau de visibilité](/help/platform/ai-assistant/discoverability-panel.md)
    + [Rechercher des audiences inutilisées](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Informations opérationnelles](/help/platform/ai-assistant/operational-insights.md)
    + [Analyse d&#39;impact](/help/platform/ai-assistant/impact-analysis.md)
    + [Présentation de la sécurité](/help/platform/ai-assistant/security-overview.md)
 + Audiences et {#audiences} de segmentation
@@ -141,6 +142,8 @@ ht-degree: 21%
    + [Présentation des graphiques d’identités et d’identités](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Étiqueter, ingérer et vérifier des données d’identité](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Affichage des graphiques d’identités](/help/platform/identities/view-identity-graphs.md)
+   + Règles de liaison des graphiques d’identités {#graph-linking-rules}
+      + [Simulation de graphique](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [Vue d’ensemble](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Présentation d’Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
