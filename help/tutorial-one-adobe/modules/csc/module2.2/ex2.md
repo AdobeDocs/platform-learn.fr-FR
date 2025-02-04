@@ -3,7 +3,8 @@ title: Relecture avec Workfront
 description: Relecture avec Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -202,7 +203,7 @@ Saisissez votre description. Les paramètres de votre épreuve et de votre docum
 
 ## 2.2.2.5 Afficher votre fichier dans AEM Assets
 
-Accédez à votre dossier dans AEM Assets, qui s’appelle `--aepUserLdap - Workfront Assets`.
+Accédez à votre dossier dans AEM Assets, qui s’appelle `--aepUserLdap-- - Workfront Assets`.
 
 ![WF](./images/wfppaem1.png)
 

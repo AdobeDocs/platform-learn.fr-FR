@@ -3,7 +3,7 @@ title: Completion
 description: Comment l’achèvement est-il mesuré ?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Vous trouverez ci-dessous les preuves d’accomplissement attendues pour chaque 
 
 Le justificatif d’achèvement attendu pour le module **Prise en main** est l’identifiant du projet de système de démonstration pour le web que vous avez créé.
 
-L’identifiant du projet Système de démonstration pour le format web ressemble à ceci : `--demoProfileLdap-- - QIMU`.
+L’identifiant du projet Système de démonstration pour le format web ressemble à ceci : `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ L’identifiant du modèle de données fédéré ressemble à ceci : **DMO5110**
 
 ## 2.1 Profil client en temps réel
 
-Le justificatif d’accomplissement attendu pour le module **Profil client en temps réel** est l’**ID d’audience** de l’audience que vous avez créée via l’interface utilisateur, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`.
+Le justificatif d’accomplissement attendu pour le module **Profil client en temps réel** est l’**ID d’audience** de l’audience que vous avez créée via l’interface utilisateur, `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`.
 
 L’ID d’audience ressemble à ceci : **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ L’ID d’audience ressemble à ceci : **81a9acbe-12e6-424b-b658-abba3a435c83**
 
 ## 2.2 Services intelligents
 
-Le justificatif d’accomplissement attendu pour le module **Services intelligents** est l’**ID d’audience** de l’audience que vous avez créée via l’interface utilisateur, `--demoProfileLdap-- - Customer AI High Propensity`.
+Le justificatif d’accomplissement attendu pour le module **Services intelligents** est l’**ID d’audience** de l’audience que vous avez créée via l’interface utilisateur, `--aepUserLdap-- - Customer AI High Propensity`.
 
 L’ID d’audience ressemble à ceci : **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ Vous trouverez l’identifiant de propriété de transfert d’événement **Eve
 
 ## 2.6 Diffuser des données d’Apache Kafka vers Real-Time CDP
 
-Le justificatif d’achèvement attendu pour le module **Diffuser des données d’Apache Kafka vers Real-Time CDP** est l’identifiant de votre `--demoProfileLdap-- - Kafka` de connecteur source.
+Le justificatif d’achèvement attendu pour le module **Diffuser des données d’Apache Kafka vers Real-Time CDP** est l’identifiant de votre `--aepUserLdap-- - Kafka` de connecteur source.
 
 L’identifiant ressemble à ceci **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, et vous pouvez le trouver ici :
 
@@ -132,7 +132,7 @@ L’identifiant du parcours ressemble à ceci : **5f5efc7e-49f7-44c1-85df-b23482
 
 ## 4.1 Customer Journey Analytics : créer un tableau de bord à l’aide d’Analysis Workspace
 
-Le justificatif d&#39;accomplissement attendu pour le module **Customer Journey Analytics : créer un tableau de bord à l&#39;aide d&#39;Analysis Workspace** est l&#39;identifiant du `--demoProfileLdap-- - Omnichannel Analysis` de votre projet.
+Le justificatif d&#39;accomplissement attendu pour le module **Customer Journey Analytics : créer un tableau de bord à l&#39;aide d&#39;Analysis Workspace** est l&#39;identifiant du `--aepUserLdap-- - Omnichannel Analysis` de votre projet.
 
 Le format est le suivant : **677bcb247064db3c7de2a0e4**. Vous pouvez le trouver dans l’URL lorsque vous avez ouvert votre projet.
 
@@ -148,7 +148,7 @@ Vous pouvez trouver l’identifiant de connexion **BigQuery**, qui ressemble à 
 
 ## 5.1 Query Service
 
-Le justificatif d’achèvement attendu pour le module **Query Service** est l’identifiant du jeu de données pour votre `--demoProfileLdap--_callcenter_interaction_analysis` - jeu de données que vous obtenez après avoir terminé le module.
+Le justificatif d’achèvement attendu pour le module **Query Service** est l’identifiant du jeu de données pour votre `--aepUserLdap--_callcenter_interaction_analysis` - jeu de données que vous obtenez après avoir terminé le module.
 
 L’ID ressemble à ceci : **675033c903fb3b2aefed8a0a**.
 
