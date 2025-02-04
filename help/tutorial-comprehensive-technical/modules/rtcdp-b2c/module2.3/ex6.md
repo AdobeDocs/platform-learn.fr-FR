@@ -4,10 +4,10 @@ description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 6%
+source-wordcount: '1123'
+ht-degree: 5%
 
 ---
 
@@ -17,9 +17,17 @@ ht-degree: 6%
 
 Dans cet exercice, vous utiliserez à nouveau l’Adobe I/O pour interroger les API Adobe Experience Platform. Si vous n’avez pas encore configuré votre projet d’Adobe I/O, revenez à l’[exercice 3 du module 2.1](../module2.1/ex3.md) et suivez les instructions qui s’y trouvent.
 
-## Authentification Postman à l’Adobe I/O
+>[!IMPORTANT]
+>
+>Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
+
+## Authentification en Adobe I/O
 
 Dans cet exercice, vous utiliserez à nouveau Postman pour interroger les API Adobe Experience Platform. Si vous n’avez pas encore configuré votre application Postman, revenez à l’[exercice 3 du module 2.1](../module2.1/ex3.md) et suivez les instructions qui s’y trouvent.
+
+>[!IMPORTANT]
+>
+>Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
 
 ## Définir le point d’entrée et le format
 

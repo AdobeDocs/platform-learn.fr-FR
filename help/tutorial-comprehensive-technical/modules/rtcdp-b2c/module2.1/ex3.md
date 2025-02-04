@@ -1,70 +1,70 @@
 ---
-title: Foundation - Real-time Customer Profile - Visualisez votre propre profil client en temps réel - API
-description: Foundation - Real-time Customer Profile - Visualisez votre propre profil client en temps réel - API
+title: Foundation - Profil client en temps réel - Visualiser votre propre profil client en temps réel - API
+description: Foundation - Profil client en temps réel - Visualiser votre propre profil client en temps réel - API
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 2%
 
 ---
 
 # 2.1.3 Visualiser votre propre profil client en temps réel - API
 
-Au cours de cet exercice, vous utiliserez Postman et Adobe I/O pour interroger les API de Adobe Experience Platform afin d’afficher votre propre profil client en temps réel.
+Dans cet exercice, vous allez utiliser Postman et Adobe I/O pour interroger les API de Adobe Experience Platform afin d’afficher votre propre profil client en temps réel.
 
 ## Contexte
 
-Dans Real-time Customer Profile, toutes les données de profil s’affichent avec les données d’événement, ainsi que les appartenances à l’audience existantes. Les données affichées peuvent provenir de n’importe où, des applications d’Adobe et des solutions externes. Il s’agit de la vue la plus puissante de Adobe Experience Platform, le système d’enregistrement d’expérience.
+Dans le profil client en temps réel, toutes les données de profil s’affichent avec les données d’événement, ainsi que les appartenances existantes à l’audience. Les données affichées peuvent provenir de n’importe où, des applications d’Adobe aux solutions externes. Il s’agit de la vue la plus puissante de Adobe Experience Platform, le système d’expérience d’enregistrement.
 
-Le profil client en temps réel peut être utilisé par toutes les applications d’Adobe, mais également par des solutions externes comme les centres d’appels ou les applications client en magasin. Pour ce faire, connectez ces solutions externes aux API Adobe Experience Platform.
+Le profil client en temps réel peut être utilisé par toutes les applications d’Adobe, mais également par des solutions externes telles que les centres d’appels ou les applications de clienteling en magasin. Pour ce faire, connectez ces solutions externes aux API Adobe Experience Platform.
 
-## Vos identifiants
+## Vos Identifiants
 
 Dans le panneau Visionneuse de profils du site web, vous pouvez trouver plusieurs identités. Chaque identité est liée à un espace de noms.
 
 ![Profil client](./images/identities.png)
 
-Dans le panneau des rayons X, nous pouvons voir 4 combinaisons différentes d’identifiants et d’espaces de noms :
+Sur le panneau Rayons X, nous pouvons voir 4 combinaisons différentes d’identifiants et d’espaces de noms :
 
 | Identité | Espace de noms |
 |:-------------:| :---------------:|
-| Identifiant Experience Cloud (ECID) | 79943948563923140522865572770524243489 |
-| Identifiant Experience Cloud (ECID) | 70559351147248820114888181867542007989 |
-| Email ID | woutervangeluwe+18112024-01@gmail.com |
-| Identifiant du numéro de mobile | +32473622044+18112024-01 |
+| ID Experience Cloud (ECID) | 79943948563923140522865572770524243489 |
+| ID Experience Cloud (ECID) | 70559351147248820114888181867542007989 |
+| ID d’e-mail | woutervangeluwe+18112024-01@gmail.com |
+| ID du numéro de mobile | +32473622044+18112024-01 |
 
-N’oubliez pas ces identifiants pour l’étape suivante.
+Mémorisez ces identifiants pour l’étape suivante.
 
-## Configuration de votre projet Adobe I/O
+## Configuration de votre projet d’Adobe I/O
 
-Dans cet exercice, vous utiliserez l’Adobe I/O de manière très intensive pour effectuer des requêtes sur les API de Platform. Suivez les étapes ci-dessous pour configurer l’Adobe I/O.
+Dans cet exercice, vous utiliserez Adobe I/O de manière assez intensive pour effectuer des requêtes sur les API de Platform. Pour configurer l’Adobe I/O, procédez comme suit.
 
 Accédez à [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
 
-![Adobe I/O d’une nouvelle intégration](./images/iohome.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/iohome.png)
 
-Veillez à sélectionner l’instance Adobe Experience Platform appropriée dans le coin supérieur droit de votre écran. Votre instance est `--aepImsOrgName--`. Cliquez sur **Créer un projet**.
+Veillez à sélectionner l’instance Adobe Experience Platform appropriée dans le coin supérieur droit de l’écran. Votre instance est `--aepImsOrgName--`. Cliquez sur **Créer un projet**.
 
-![Adobe I/O d’une nouvelle intégration](./images/iocomp.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/iocomp.png)
 
-Sélectionnez **+ Ajouter au projet** et sélectionnez **API**.
+Sélectionnez **+ Ajouter au projet** puis **API**.
 
-![Adobe I/O d’une nouvelle intégration](./images/adobe_io_access_api.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/adobe_io_access_api.png)
 
-Vous verrez alors :
+Vous verrez alors ceci :
 
-![Adobe I/O d’une nouvelle intégration](./images/api1.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api1.png)
 
-Sélectionnez **API Experience Platform** et cliquez sur **Suivant**.
+Sélectionnez **API Experience Platform** puis cliquez sur **Suivant**.
 
-![Adobe I/O d’une nouvelle intégration](./images/api3.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api3.png)
 
-Vous allez maintenant voir ceci. Attribuez un nom à vos informations d’identification : `--aepUserLdap-- - OAuth credential`. Cliquez sur **Suivant**.
+Vous allez voir ceci. Attribuez un nom à vos informations d’identification : `--aepUserLdap-- - OAuth credential`. Cliquez sur **Suivant**.
 
-![Adobe I/O d’une nouvelle intégration](./images/api4.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api4.png)
 
 Ensuite, vous devez sélectionner un profil de produit qui définira les autorisations disponibles pour cette intégration.
 
@@ -72,51 +72,51 @@ Sélectionnez les profils de produit requis.
 
 >[!NOTE]
 >
-> Les noms des profils de produit varient selon l’instance Adobe Experience Platform. Vous devez sélectionner au moins un profil de produit avec les droits d’accès appropriés, qui sont configurés dans Adobe Admin Console et l’interface utilisateur des autorisations AEP.
+> Les noms de profils de produit varient dans votre instance Adobe Experience Platform, car ils sont spécifiques à l’instance. Vous devez sélectionner au moins un profil de produit avec les droits d’accès appropriés, configurés dans le Adobe Admin Console et l’interface utilisateur des autorisations AEP.
 
 Cliquez sur **Enregistrer l’API configurée**.
 
-![Adobe I/O d’une nouvelle intégration](./images/api9.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api9.png)
 
-Votre intégration d’Adobe I/O est maintenant prête.
+Votre intégration Adobe I/O est maintenant prête.
 
-![Adobe I/O d’une nouvelle intégration](./images/api11.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api11.png)
 
-Cliquez sur le bouton **Télécharger pour Postman** , puis sur **OAuth Server-to-Server** pour télécharger un environnement Postman (attendez que l’environnement soit téléchargé, ce qui peut prendre quelques secondes).
+Cliquez sur le bouton **Télécharger pour Postman** puis sur **OAuth de serveur à serveur** pour télécharger un environnement Postman (patientez jusqu’à ce que l’environnement soit téléchargé, ce qui peut prendre quelques secondes).
 
-![Adobe I/O d’une nouvelle intégration](./images/iopm.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/iopm.png)
 
-Votre projet d’E/S a actuellement un nom générique. Vous devez donner un nom convivial à votre intégration. Cliquez sur **Projet X** (ou un nom similaire) comme indiqué
+Votre projet d&#39;E/S porte actuellement un nom générique. Vous devez donner un nom convivial à votre intégration. Cliquez sur **Projet X** (ou un nom similaire) comme indiqué
 
-![Adobe I/O d’une nouvelle intégration](./images/api13.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api13.png)
 
 Cliquez sur **Modifier le projet**.
 
-![Adobe I/O d’une nouvelle intégration](./images/api14.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api14.png)
 
 Saisissez un Nom et une Description pour votre intégration : `--aepUserLdap-- AEP Tutorial`.
 
 Cliquez sur **Enregistrer**.
 
-![Adobe I/O d’une nouvelle intégration](./images/api15.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api15.png)
 
-L’intégration de votre Adobe I/O est maintenant terminée.
+Votre intégration d’Adobe I/O est maintenant terminée.
 
-![Adobe I/O d’une nouvelle intégration](./images/api16.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/api16.png)
 
 >[!NOTE]
 >
->Il existe une étape supplémentaire pour s’assurer que ce projet Adobe I/O a accès aux paramètres d’autorisation Adobe Experience Platform. Les informations d’identification d’API de votre projet doivent être ajoutées dans l’interface utilisateur Autorisations de Adobe Experience Platform, pour laquelle des droits d’accès d’administrateur système sont requis. Les étapes sont décrites ci-dessous, mais vous devrez peut-être contacter votre administrateur système pour que cela soit traité pour vous si vous ne disposez pas des droits d’accès requis.
+>Une étape supplémentaire est nécessaire pour s’assurer que ce projet d’Adobe I/O a accès aux paramètres d’autorisation de Adobe Experience Platform. Les informations d’identification d’API de votre projet doivent être ajoutées à l’interface utilisateur Autorisations de Adobe Experience Platform, pour laquelle les droits d’accès d’administrateur système sont requis. Les étapes sont décrites ci-dessous, mais vous devrez peut-être contacter votre administrateur système pour que ce dossier soit traité pour vous, au cas où vous ne disposeriez pas des droits d’accès requis.
 
 ## Autorisations AEP pour les informations d’identification d’API
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 
-Accédez à **Permissions**, à **Roles**, puis cliquez sur le profil de produit approprié.
+Accédez à **Autorisations**, à **Rôles**, puis cliquez sur le profil de produit approprié.
 
 >[!NOTE]
 >
-> Les noms des profils de produit varient selon l’instance Adobe Experience Platform. Vous devez sélectionner au moins un profil de produit avec les droits d’accès appropriés, qui sont configurés dans Adobe Admin Console et l’interface utilisateur des autorisations AEP.
+> Les noms de profils de produit varient dans votre instance Adobe Experience Platform, car ils sont spécifiques à l’instance. Vous devez sélectionner au moins un profil de produit avec les droits d’accès appropriés, configurés dans le Adobe Admin Console et l’interface utilisateur des autorisations AEP.
 
 ![Autorisations](./images/perm1.png)
 
@@ -124,7 +124,7 @@ Cliquez sur **Informations d’identification de l’API**.
 
 ![Autorisations](./images/perm2.png)
 
-Cliquez sur **+ Ajouter les informations d’identification d’API**.
+Cliquez sur **+ Ajouter des informations d’identification d’API**.
 
 ![Autorisations](./images/perm3.png)
 
@@ -132,24 +132,28 @@ Sélectionnez le projet d’Adobe I/O nouvellement créé et cliquez sur **Enreg
 
 ![Autorisations](./images/perm4.png)
 
-## Authentification Postman à Adobe I/O
+## Authentification en Adobe I/O
+
+>[!IMPORTANT]
+>
+>Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
 
 Accédez à [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
 
-Téléchargez et installez la version appropriée de Postman pour votre système d’exploitation.
+Téléchargez et installez la version de Postman appropriée à votre système d’exploitation.
 
-![Adobe I/O d’une nouvelle intégration](./images/getstarted.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/getstarted.png)
 
 Après l’installation de Postman, démarrez l’application.
 
-Dans Postman, il existe deux concepts : Environnements et Collections.
+Dans Postman, il existe 2 concepts : Environnements et Collections.
 
-- L’environnement contient toutes vos variables d’environnement qui sont plus ou moins cohérentes. Dans l’environnement, vous trouverez des éléments tels que l’IMSOrg de notre environnement Platform, ainsi que des informations d’identification de sécurité telles que votre clé privée et d’autres. Le fichier d’environnement est celui que vous avez téléchargé lors de la configuration de l’Adobe I/O dans l’exercice précédent. Il s’appelle comme suit : **`oauth_server_to_server.postman_environment.json`**.
+- L’environnement contient toutes vos variables d’environnement qui sont plus ou moins cohérentes. Dans l’environnement , vous trouverez des éléments tels que l’IMSOrg de notre environnement Platform, ainsi que des informations d’identification de sécurité telles que votre clé privée et d’autres. Le fichier d’environnement est celui que vous avez téléchargé lors de la configuration de l’Adobe I/O dans l’exercice précédent. Son nom est le suivant : **`oauth_server_to_server.postman_environment.json`**.
 
 - La collection contient un certain nombre de requêtes d’API que vous pouvez utiliser. Nous utiliserons 2 collections
-   - 1 collection pour l’authentification à Adobe I/O
+   - 1 collection pour l’authentification à l’Adobe I/O
    - 1 Collection pour les exercices de ce module
-   - 1 collection pour les exercices dans le module Real-Time CDP, pour la création de destination
+   - 1 collection pour les exercices dans le module Real-Time CDP, pour la création de destinations
 
 Téléchargez le fichier [postman.zip](./../../../assets/postman/postman_profile.zip) sur votre bureau local.
 
@@ -159,43 +163,43 @@ Dans ce fichier **postman.zip**, vous trouverez les fichiers suivants :
 - `AEP Tutorial.postman_collection.json`
 - `Destination_Authoring_API.json`
 
-Décompressez le fichier **postman.zip** et stockez ces 3 fichiers dans un dossier sur votre bureau, ainsi que dans l’environnement Postman téléchargé depuis Adobe I/O. Ce dossier doit contenir les 4 fichiers suivants :
+Décompressez le fichier **postman.zip** et stockez ces 3 fichiers dans un dossier sur votre bureau, avec l’environnement Postman téléchargé à partir d’Adobe I/O. Vous devez avoir ces 4 fichiers dans ce dossier :
 
-![Adobe I/O d’une nouvelle intégration](./images/pmfolder.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/pmfolder.png)
 
 Revenez à Postman. Cliquez sur **Importer**.
 
-![Adobe I/O d’une nouvelle intégration](./images/postmanui.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/postmanui.png)
 
-Cliquez sur **files**.
+Cliquez sur **fichiers**.
 
-![Adobe I/O d’une nouvelle intégration](./images/choosefiles.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/choosefiles.png)
 
-Accédez au dossier de votre bureau dans lequel vous avez extrait les 4 fichiers téléchargés. Sélectionnez ces 4 fichiers en même temps et cliquez sur **Ouvrir**.
+Accédez au dossier sur votre bureau dans lequel vous avez extrait les 4 fichiers téléchargés. Sélectionnez ces 4 fichiers simultanément et cliquez sur **Ouvrir**.
 
-![Adobe I/O d’une nouvelle intégration](./images/selectfiles.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/selectfiles.png)
 
 Après avoir cliqué sur **Ouvrir**, Postman vous présente un aperçu de l’environnement et des collections que vous êtes sur le point d’importer. Cliquez sur **Importer**.
 
-![Adobe I/O d’une nouvelle intégration](./images/impconfirm.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/impconfirm.png)
 
-Vous avez désormais tout ce dont vous avez besoin dans Postman pour commencer à interagir avec Adobe Experience Platform par le biais des API.
+Vous disposez désormais de tout ce dont vous avez besoin dans Postman pour commencer à interagir avec Adobe Experience Platform par le biais des API.
 
 La première chose à faire est de vous assurer que vous êtes correctement authentifié. Pour être authentifié, vous devez demander un jeton d’accès.
 
-Assurez-vous que l’environnement approprié est sélectionné avant d’exécuter une requête. Vous pouvez vérifier l’environnement actuellement sélectionné en vérifiant la liste déroulante Environnement dans le coin supérieur droit.
+Assurez-vous que l’environnement approprié est sélectionné avant d’exécuter toute requête. Vous pouvez vérifier l’environnement actuellement sélectionné en vérifiant la liste déroulante Environnement dans le coin supérieur droit.
 
-L’environnement sélectionné doit avoir un nom similaire à celui-ci, `--aepUserLdap-- OAuth Credential`.
+L’environnement sélectionné doit porter un nom similaire à celui-ci, `--aepUserLdap-- OAuth Credential`.
 
 ![Postman](./images/envselemea.png)
 
-Votre environnement et vos collections Postman sont maintenant configurés et fonctionnent. Vous pouvez désormais vous authentifier de Postman vers Adobe I/O.
+Votre environnement et vos collections Postman sont maintenant configurés et fonctionnent. Vous pouvez désormais vous authentifier de Postman à Adobe I/O.
 
-Dans la collection **Adobe IO - OAuth**, sélectionnez la requête avec le nom **POST - Obtenir le jeton d’accès**. Cliquez sur **Envoyer**.
+Dans la collection **Adobe IO - OAuth**, sélectionnez la requête nommée **POST - Obtenir le jeton d’accès**. Cliquez sur **Envoyer**.
 
 ![Postman](./images/ioauth.png)
 
-Au bout de quelques secondes, une réponse devrait s’afficher dans la section **Body** de Postman :
+Au bout de quelques secondes, une réponse devrait s’afficher dans la section **Corps** de Postman :
 
 ![Postman](./images/ioauthresp.png)
 
@@ -203,11 +207,11 @@ Si votre configuration a réussi, vous devriez voir une réponse similaire conte
 
 | Clé | Valeur |
 |:-------------:| :---------------:| 
-| token_type | **bearer** |
+| token_type | **porteur** |
 | access_token | **eyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in | **86399** |
 
-Adobe I/O vous a donné un jeton **porteur**, avec une valeur spécifique (le très long access_token) et une fenêtre d&#39;expiration.
+L’Adobe I/O vous a donné un **bearer**-token, avec une valeur spécifique (le très long access_token) et une fenêtre d’expiration.
 
 Le jeton que nous avons reçu est maintenant valide pendant 24 heures. Cela signifie qu’au bout de 24 heures, si vous souhaitez utiliser Postman pour vous authentifier sur Adobe I/O, vous devrez générer un nouveau jeton en exécutant à nouveau cette requête.
 
@@ -219,7 +223,7 @@ Dans Postman, recherchez la collection **Tutoriel AEP**.
 
 ![Postman](./images/coll_enablement.png)
 
-Dans **1. Unified Profile Service**, cliquez sur la première requête avec le nom **UPS - GET Profile by Entity ID &amp; NS**.
+Dans **1. Service de profil unifié** cliquez sur la première demande nommée **UPS - Profil de GET par ID d’entité et NS**.
 
 ![Postman](./images/upscall.png)
 
@@ -227,9 +231,9 @@ Pour cette requête, trois variables sont requises :
 
 | Clé | Valeur | Définition |
 |:-------------:| :---------------:| :---------------:| 
-| entityId | **identifiant** | l’ID de client spécifique ; |
-| entityIdNS | **espace de noms** | l’espace de noms spécifique qui s’applique à l’ID ; |
-| schema.name | **_xdm.context.profile** | le schéma spécifique pour lequel vous souhaitez recevoir des informations ; |
+| entityId | **identifiant** | l’ID de client spécifique |
+| entityIdNS | **espace de noms** | l’espace de noms spécifique applicable à l’identifiant |
+| schema.name | **_xdm.context.profile** | schéma spécifique pour lequel vous souhaitez recevoir des informations |
 
 Ainsi, si vous souhaitez demander aux API Adobe Experience Platform de vous renvoyer toutes les informations de profil pour votre propre ECID, vous devez configurer la requête comme suit :
 
@@ -241,13 +245,13 @@ Ainsi, si vous souhaitez demander aux API Adobe Experience Platform de vous renv
 
 ![Postman](./images/callecid.png)
 
-Vous devez également vérifier les champs **Header** - de votre requête. Accédez à **En-têtes**. Vous verrez alors :
+Vous devez également vérifier les champs **En-tête** - de votre requête. Accédez à **En-têtes**. Vous verrez alors ceci :
 
 ![Postman](./images/callecidheaders.png)
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
+>Vous devez spécifier le nom du sandbox Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 | Clé | Valeur |
 | ----------- | ----------- |
@@ -255,9 +259,9 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 
 
-Une fois que vous avez coché le nom de l’environnement de test, cliquez sur **Envoyer** pour envoyer votre demande à Platform.
+Une fois que vous avez vérifié le nom du sandbox, cliquez sur **Envoyer** pour envoyer votre requête à Platform.
 
-Vous devriez obtenir une réponse immédiate de Platform, qui vous montre quelque chose comme ceci :
+Vous devriez obtenir une réponse immédiate de Platform, vous montrant quelque chose comme ceci :
 
 ![Postman](./images/callecidresponse.png)
 
@@ -383,66 +387,66 @@ Voici la réponse complète de Platform :
 
 Il s’agit actuellement de toutes les données de profil disponibles dans Platform pour cet ECID.
 
-Vous n’êtes pas tenu d’utiliser l’ECID pour demander des données de profil auprès du profil client en temps réel de Platform. Vous pouvez utiliser n’importe quel identifiant dans n’importe quel espace de noms pour demander ces données.
+Vous n’êtes pas tenu d’utiliser l’ECID pour demander des données de profil au profil client en temps réel de Platform. Vous pouvez utiliser n’importe quel identifiant dans n’importe quel espace de noms pour demander ces données.
 
-Revenons à Postman et prétendons que nous sommes le centre d’appel, et envoyons une demande à Platform spécifiant l’espace de noms **Phone** et votre numéro de mobile.
+Revenons à Postman et faisons semblant d’être le centre d’appel. Envoyons une requête à Platform spécifiant l’espace de noms de **Phone** et votre numéro de mobile.
 
 Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour un téléphone spécifique, vous devez configurer la requête comme suit :
 
 | Clé | Valeur |
 |:-------------:| :---------------:| 
 | entityId | **votre numéro de téléphone** |
-| entityIdNS | **phone** (remplacez ecid par phone) |
+| entityIdNS | **téléphone** (remplacez ecid par téléphone) |
 | schema.name | **_xdm.context.profile** |
 
-Si votre numéro de téléphone contient des symboles spéciaux tels que **+**, vous devez sélectionner votre numéro de téléphone complet, cliquer avec le bouton droit de la souris et cliquer sur **EncodeURIComponent**.
+Si votre numéro de téléphone contient des symboles spéciaux tels que **+**, vous devez sélectionner votre numéro de téléphone complet, faire un clic droit et cliquer sur **EncodeURIComponent**.
 
 ![Postman](./images/encodephone.png)
 
-Vous obtiendrez alors ce qui suit :
+Voici ce que vous obtiendrez :
 
 ![Postman](./images/callmobilenr.png)
 
-Vous devez également vérifier les champs **Header** - de votre requête. Accédez à **En-têtes**. Vous verrez alors :
+Vous devez également vérifier les champs **En-tête** - de votre requête. Accédez à **En-têtes**. Vous verrez alors ceci :
 
 ![Postman](./images/callecidheaders.png)
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
+>Vous devez spécifier le nom du sandbox Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 | Clé | Valeur |
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 
 
-Cliquez sur **Envoyer** et vérifiez la réponse. Vous constaterez qu’elle est identique à celle d’avant lorsque vous utilisiez l’ECID comme identité.
+Cliquez sur **Envoyer** et vérifiez que la réponse est identique à ce qu’elle était lorsque vous utilisiez l’ECID en tant qu’identité.
 
 ![Postman](./images/callmobilenrresponse.png)
 
-Faisons la même chose pour votre adresse électronique en spécifiant l’espace de noms **email** et votre adresse électronique.
+Faisons la même chose pour votre adresse e-mail en spécifiant l’espace de noms de **e-mail** et votre adresse e-mail.
 
-Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour une adresse électronique spécifique, vous devez configurer la requête comme suit :
+Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour une adresse e-mail spécifique, vous devez configurer la requête comme suit :
 
 | Clé | Valeur |
 |:-------------:| :---------------:| 
 | entityId | **youremail** |
-| entityIdNS | **email** (remplacer Téléphone par email) |
+| entityIdNS | **e-mail** (remplacez Téléphone par e-mail) |
 | schema.name | **_xdm.context.profile** |
 
-Si votre adresse électronique contient des symboles spéciaux tels que **+**, vous devez sélectionner votre adresse électronique complète, cliquer avec le bouton droit de la souris et cliquer sur **EncodeURIComponent**.
+Si votre adresse e-mail contient des symboles spéciaux tels que **+**, vous devez sélectionner votre adresse e-mail complète, faire un clic droit et cliquer sur **EncodeURIComponent**.
 
 ![Postman](./images/encodeemail.png)
 
-Vous obtiendrez alors ce qui suit :
+Voici ce que vous obtiendrez :
 
 ![Postman](./images/callemail.png)
 
-Vous devez également vérifier les champs **Header** - de votre requête. Accédez à **En-têtes**. Vous verrez alors :
+Vous devez également vérifier les champs **En-tête** - de votre requête. Accédez à **En-têtes**. Vous verrez alors ceci :
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
+>Vous devez spécifier le nom du sandbox Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 ![Postman](./images/callecidheaders.png)
 
@@ -450,40 +454,40 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 
-Cliquez sur **Envoyer** et vérifiez la réponse. Vous verrez à nouveau que c’est la même chose qu’auparavant avec l’ECID et le numéro de téléphone.
+Cliquez sur **Envoyer** et vérifiez la réponse. Vous verrez à nouveau qu’elle est identique à la précédente avec l’ECID et le numéro de téléphone.
 
 ![Postman](./images/callemailresponse.png)
 
-C&#39;est un type de flexibilité très important qui est offert aux marques. Cela signifie que tout environnement peut envoyer une requête à Platform, à l’aide de son propre ID et de son propre espace de noms, sans avoir à comprendre la complexité de plusieurs espaces de noms et ID.
+C&#39;est un type de flexibilité très important qui est offert aux marques. Cela signifie que tout environnement peut envoyer une requête à Platform, à l’aide de son propre identifiant et de son propre espace de noms, sans avoir à comprendre la complexité de plusieurs espaces de noms et identifiants.
 
-Par exemple :
+À titre d’exemple :
 
-- Le centre d’appels peut demander des données à Platform à l’aide de l’espace de noms **phone**
-- Loyalty System peut demander des données à Platform à l’aide de l’espace de noms **email**
+- le centre d’appel peut demander des données à Platform à l’aide de l’espace de noms **téléphone**
+- Le système de fidélité peut demander des données à Platform à l’aide de l’espace de noms **e-mail**
 - les applications en ligne peuvent utiliser l’espace de noms **ecid**
 
-Le centre d’appels ne sait pas nécessairement quel type d’identifiant est utilisé dans le système de fidélité et le système de fidélité ne sait pas nécessairement quel type d’identifiant est utilisé par les applications en ligne. Chaque système peut utiliser les informations qu&#39;il a et qu&#39;il comprend pour obtenir les informations dont il a besoin, quand il en a besoin.
+Le centre d&#39;appels ne sait pas nécessairement quel type d&#39;identifiant est utilisé dans le système de fidélité et le système de fidélité ne sait pas nécessairement quel type d&#39;identifiant est utilisé par les applications en ligne. Chaque système peut utiliser l&#39;information qu&#39;il possède et comprend pour obtenir l&#39;information dont il a besoin, au moment où il en a besoin.
 
-## API Real-time Customer Profile, schéma : Profile et ExperienceEvent
+## API Real-time Customer Profile, schéma : Profil et ExperienceEvent
 
-Après avoir interrogé les API de Platform avec succès pour les données de profil, faisons maintenant de même avec les données ExperienceEvent.
+Après avoir interrogé les API de Platform pour obtenir des données de profil, faisons maintenant de même avec les données ExperienceEvent.
 
 Dans Postman, recherchez la collection **Tutoriel AEP**.
 
 ![Postman](./images/coll_enablement.png)
 
-Dans **1. Unified Profile Service**, sélectionnez la seconde requête avec le nom **UPS - GET Profile &amp; EE par Entity ID &amp; NS**.
+Dans **1. Unified Profile Service**, sélectionnez la deuxième demande nommée **UPS - GET Profile &amp; EE par ID d’entité et NS**.
 
 ![Postman](./images/upseecall.png)
 
-Pour cette requête, il existe quatre variables requises :
+Pour cette requête, quatre variables sont requises :
 
 | Clé | Valeur | Définition |
 |:-------------:| :---------------:|  :---------------:| 
-| schema.name | **_xdm.context.experienceevent** | le schéma spécifique pour lequel vous souhaitez recevoir des informations. Dans ce cas, nous recherchons des données mappées sur le schéma ExperienceEvent. |
-| relatedSchema.name | **_xdm.context.profile** | Lors de la recherche de données mappées sur le schéma ExperienceEvent, nous devons spécifier une identité pour laquelle nous voulons recevoir ces données. Le schéma qui a accès à l’identité est le schéma-profil, de sorte que le schéma-associé ici est le schéma-profil. |
-| relatedEntityId | **identifiant** | ID de client spécifique |
-| relatedEntityIdNS | **espace de noms** | l’espace de noms spécifique qui s’applique à l’ID ; |
+| schema.name | **_xdm.context.experienceevent** | schéma spécifique pour lequel vous souhaitez recevoir des informations. Dans ce cas, nous recherchons des données qui sont mappées par rapport au schéma ExperienceEvent . |
+| relatedSchema.name | **_xdm.context.profile** | Pendant que nous recherchons des données mappées par rapport au schéma ExperienceEvent, nous devons spécifier une identité pour laquelle nous voulons recevoir ces données. Le schéma qui a accès à l’identité est le Profile-schema. Par conséquent, le relatedSchema ici est le Profile-schema. |
+| relatedEntityId | **identifiant** | l’identifiant client spécifique |
+| relatedEntityIdNS | **espace de noms** | l’espace de noms spécifique applicable à l’identifiant |
 
 Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour votre propre ecid, vous devez configurer la requête comme suit :
 
@@ -496,13 +500,13 @@ Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes le
 
 ![Postman](./images/eecallecid.png)
 
-Vous devez également vérifier les champs **Header** - de votre requête. Accédez à **En-têtes**. Vous verrez alors :
+Vous devez également vérifier les champs **En-tête** - de votre requête. Accédez à **En-têtes**. Vous verrez alors ceci :
 
 ![Postman](./images/eecallecidheaders.png)
 
 >[!NOTE]
 >
->Vous devez spécifier le nom de l’environnement de test Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
+>Vous devez spécifier le nom du sandbox Adobe Experience Platform que vous utilisez. Votre x-sandbox-name doit être `--aepSandboxName--`.
 
 | Clé | Valeur |
 | ----------- | ----------- |
@@ -510,13 +514,13 @@ Vous devez également vérifier les champs **Header** - de votre requête. Accé
 
 Cliquez sur **Envoyer** pour envoyer votre demande à Platform.
 
-Vous devriez obtenir une réponse immédiate de Platform, qui vous montre quelque chose comme ceci :
+Vous devriez obtenir une réponse immédiate de Platform, vous montrant quelque chose comme ceci :
 
 ![Postman](./images/eecallecidresponse.png)
 
-Vous trouverez ci-dessous la réponse complète de Platform. Dans cet exemple, huit ExperienceEvent sont liés à l’ECID de ce client. Consultez les variables ci-dessous pour afficher les différentes variables sur la requête, car ce que vous voyez ci-dessous est la conséquence directe de votre configuration dans Launch dans les exercices précédents.
+Vous trouverez ci-dessous la réponse complète de Platform. Dans cet exemple, il existe huit événements d’expérience liés à l’ECID de ce client. Jetez un coup d’œil au tableau ci-dessous pour voir les différentes variables de la requête, car ce que vous voyez ci-dessous est la conséquence directe de votre configuration dans Launch dans les exercices précédents.
 
-En outre, lorsque le panneau de rayons X affiche des informations ExperienceEvent, il utilise la payload ci-dessous pour analyser et récupérer les informations telles que Nom du produit (rechercher productName dans la payload ci-dessous) et URL de l’image du produit (rechercher productImageUrl dans la payload ci-dessous).
+En outre, lorsque le panneau de radiographie affiche des informations ExperienceEvent, il utilise la payload ci-dessous pour analyser et récupérer les informations telles que le nom du produit (recherchez productName dans la payload ci-dessous) et l’URL de l’image du produit (recherchez productImageUrl dans la payload ci-dessous).
 
 ```javascript
 {
@@ -627,10 +631,10 @@ En outre, lorsque le panneau de rayons X affiche des informations ExperienceEven
 
 Il s’agit actuellement de toutes les données ExperienceEvent disponibles dans Platform pour cet ECID.
 
-Vous n’avez pas besoin d’utiliser l’ECID pour demander des données ExperienceEvent à Adobe Experience Platform Real-time Profile. Vous pouvez utiliser n’importe quel identifiant dans n’importe quel espace de noms pour demander ces données.
+Vous n’êtes pas tenu d’utiliser l’ECID pour demander des données ExperienceEvent au profil en temps réel Adobe Experience Platform. Vous pouvez utiliser n’importe quel identifiant dans n’importe quel espace de noms pour demander ces données.
 
 Étape suivante : [2.1.4 Création d’une audience - IU](./ex4.md)
 
-[Revenir au module 2.1](./real-time-customer-profile.md)
+[Retour au module 2.1](./real-time-customer-profile.md)
 
 [Revenir à tous les modules](../../../overview.md)

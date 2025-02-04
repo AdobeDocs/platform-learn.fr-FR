@@ -4,7 +4,7 @@ description: Real-time CDP - Créez une audience et effectuez une action - Envoy
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à séle
 
 ## Vérifier le flux de données
 
-La destination Adobe Target dans Real-Time CDP est connectée au flux de données utilisé pour ingérer des données dans le réseau Edge d’Adobe. Si vous souhaitez configurer votre destination Adobe Target, vous devez d’abord vérifier si votre flux de données est déjà activé pour Adobe Target. Votre flux de données a été configuré dans [Exercice 0.2 : créer votre flux de données](./../../../modules/gettingstarted/gettingstarted/ex2.md) et a été nommé `--aepUserLdap-- - Demo System Datastream`.
+La destination Adobe Target dans Real-Time CDP est connectée au flux de données utilisé pour ingérer des données dans le réseau Adobe Edge. Si vous souhaitez configurer votre destination Adobe Target, vous devez d’abord vérifier si votre flux de données est déjà activé pour Adobe Target. Votre flux de données a été configuré dans [Exercice 0.2 : créer votre flux de données](./../../../modules/gettingstarted/gettingstarted/ex2.md) et a été nommé `--aepUserLdap-- - Demo System Datastream`.
 
 Dans le menu de gauche, faites défiler l’écran vers le bas et cliquez sur **Flux de données**. Dans Flux de données, recherchez le flux de données nommé `--aepUserLdap-- - Demo System Datastream`. Cliquez sur votre flux de données pour l’ouvrir.
 
@@ -159,11 +159,16 @@ Vous devez ensuite ajouter un jeton de personnalisation à partir des attributs 
 
 Avant de cliquer sur le bouton **Ajouter**, assurez-vous d&#39;aller à la ligne où vous voyez `... > h1").innerHTML="Hi there ";` et de mettre votre curseur à l&#39;intérieur des crochets après le mot `there`, comme suit :
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 Cliquez ensuite sur le bouton **Ajouter** qui doit alors ajouter le jeton, ce qui mettra à jour le code comme suit :
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 Cliquez sur **Suivant**.
 

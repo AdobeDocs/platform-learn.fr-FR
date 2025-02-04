@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-Time CDP : créez un segment et effectuez une action
+# 2.3 Real-time CDP - Créez une audience et prenez des mesures
 
-Dans ce module, vous allez configurer un segment de diffusion en continu et activer le segment vers plusieurs destinations.
+Dans ce module, vous allez configurer un segment de diffusion en continu et activer l’audience vers plusieurs destinations.
 
 ## Objectifs d’apprentissage
 
-- Découvrez comment créer un segment et l’activer pour la diffusion en continu.
+- Découvrez comment créer une audience et l’activer pour la diffusion en continu.
 - Découvrez comment configurer une destination publicitaire à l’aide de l’interface utilisateur de Adobe Experience Platform.
-- Découvrez comment connecter un segment à une destination et l’activer.
-- Découvrez comment utiliser les segments Adobe Experience Platform dans Adobe Audience Manager et comment utiliser les segments Adobe Audience Manager dans Adobe Experience Platform, grâce au partage de segments bidirectionnel.
+- Découvrez comment connecter une audience à une destination et l’activer.
 
 ## Conditions préalables
 
