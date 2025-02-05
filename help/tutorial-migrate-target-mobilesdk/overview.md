@@ -3,10 +3,10 @@ title: Migration d’Adobe Target vers Adobe Journey Optimizer - Extension mobil
 description: Découvrez comment migrer l’implémentation de votre application mobile d’Adobe Target vers l’extension Adobe Journey Optimizer - Decisioning
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK optimise l&#39;engagement de bout en bout d
 
 ## Avantages clés
 
-Voici quelques-uns des avantages de l’extension Decisioning :
+Voici quelques-uns des avantages de l’extension Adobe Journey Optimizer Decisioning par rapport à l’extension Target :
 
 * Partage plus rapide des audiences depuis [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=fr)
 * Intégration de Target à Journey Optimizer pour prendre en charge la diffusion en Offer decisioning [](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
@@ -26,21 +26,6 @@ Voici quelques-uns des avantages de l’extension Decisioning :
 * Flexibilité d’implémentation supplémentaire pour les développeurs
 
 L’avantage le plus important de la migration pour les clients Target est sans doute l’intégration à Real-Time Customer Data Platform. Real-Time CDP offre d’énormes fonctionnalités de création d’audiences basées sur l’ensemble des données ingérées dans Experience Platform et sa fonctionnalité de profil client en temps réel. Un cadre de gouvernance des données intégré automatise l’utilisation responsable de ces données. L’IA dédiée aux clients vous permet d’utiliser facilement des modèles de machine learning pour construire des modèles de propension et d’attrition dont la sortie peut être partagée avec Adobe Target. Enfin, les clients des modules complémentaires facultatifs Healthcare et Privacy &amp; Security Shield peuvent utiliser la fonctionnalité d’application du consentement pour appliquer facilement les préférences de consentement des clients individuels. Platform Mobile SDK et l’extension Decisioning sont nécessaires pour utiliser ces fonctionnalités Real-Time CDP dans votre canal mobile.
-
-## Objectifs d’apprentissage
-
-À la fin de cette leçon, vous serez à même d’effectuer les actions suivantes :
-
-* Puce 1
-* Puce 2
-
-
-## Conditions préalables
-
-Pour suivre ce tutoriel, vous devez d’abord :
-
-* Puce 1
-* Puce 2
 
 
 >[!NOTE]
