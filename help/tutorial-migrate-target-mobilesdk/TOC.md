@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '80'
 ht-degree: 3%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 3%
 
 + [Présentation du tutoriel](overview.md)
 
-+ [Planifier la migration](plan-migration.md)
-
-+ [Comparaison de l’extension Target à l’extension Decisioning](detailed-comparison.md)
++ [Comparer les extensions](detailed-comparison.md)
 
 + [Exécution de la configuration initiale](initial-setup.md)
 
