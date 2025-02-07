@@ -1,11 +1,11 @@
 ---
-title: Vue d’ensemble
+title: Présentation - Tutoriel technique complet pour AEP et les applications
 description: Point de départ pour les ingénieurs de données, les analystes de données, les architectes de données, les spécialistes des données, les ingénieurs d’orchestration et les marketeurs afin de mieux comprendre la valeur commerciale de Adobe Experience Platform et de tous ses services applicatifs.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Vous trouverez de nombreuses vidéos intéressantes de nos webinaires de la Tech
 
 ## Accomplissement et certification
 
-Ce tutoriel fait partie d’un cours de certification Adobe. Vous pouvez vous inscrire au cours en même temps que ce tutoriel en accédant à [https://certification.adobe.com](https://certification.adobe.com).
+Ce tutoriel fait partie d’un cours de certification Adobe. Vous pouvez vous inscrire au cours en même temps que ce tutoriel en accédant à [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
 
 Pour chaque module que vous suivez à l’aide du tutoriel ci-dessous, vous devez soumettre un justificatif d’accomplissement comme indiqué [ici](./completion.md).
 

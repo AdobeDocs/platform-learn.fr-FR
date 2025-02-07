@@ -1,18 +1,20 @@
 ---
-title: Completion
+title: Achèvement - Tutoriel technique complet pour Adobe Experience Platform
 description: Comment l’achèvement est-il mesuré ?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # Comment l’achèvement est-il mesuré ?
 
-Accédez à [https://certification.adobe.com](https://certification.adobe.com) puis au cours **XXX**.
+Accédez à [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
+
+![3](./assets/images/certcourse.png)
 
 Pour terminer un module, vous devez fournir une preuve d&#39;accomplissement.
 

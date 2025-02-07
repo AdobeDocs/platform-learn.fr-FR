@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
 
-# Prise en main de Workfront Fusion
+# 1.2.1 Prise en main de Workfront Fusion
 
 Découvrez comment utiliser Workfront Fusion et Adobe I/O pour interroger les API Adobe Firefly Services.
 
-## Créer un nouveau scénario
+## 1.2.1.1 Créer un nouveau scénario
 
 1. Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Ouvrez **Workfront Fusion**.
 
@@ -59,7 +59,7 @@ Découvrez comment utiliser Workfront Fusion et Adobe I/O pour interroger les AP
 
    ![WF Fusion](./images/wffusion8.png)
 
-## Configurer l’authentification d’Adobe I/O
+## 1.2.1.2 Configurer l’authentification d’Adobe I/O
 
 Vous devez maintenant configurer les variables nécessaires pour vous authentifier en cas d’Adobe I/O. Dans l’exercice précédent, vous avez créé un projet Adobe I/O. Les variables de ce projet d’Adobe I/O doivent maintenant être définies dans Workfront Fusion.
 

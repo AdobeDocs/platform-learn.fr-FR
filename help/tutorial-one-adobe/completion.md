@@ -1,10 +1,11 @@
 ---
-title: Completion
+title: Achèvement - Tutoriel Sur Un Adobe
 description: Comment l’achèvement est-il mesuré ?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ Vous trouverez ci-dessous les preuves d’accomplissement attendues pour chaque 
 
 Le justificatif d’achèvement attendu pour le module **Prise en main** est l’identifiant du projet de système de démonstration pour le web que vous avez créé.
 
-L’identifiant du projet Système de démonstration pour le format web ressemble à ceci : `--demoProfileLdap-- - 8ERG`.
+L’identifiant du projet Système de démonstration pour le format web ressemble à ceci : `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -79,7 +80,7 @@ Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Opt
 
 Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Optimizer : Offer decisioning** est l&#39;identifiant de la **décision** que vous avez créée.
 
-Vous trouverez le **ID de décision**, qui ressemble à ceci **dps:offer-activity:1a08ba4b529b2fb2**, ici :
+Vous trouverez le **ID de décision** qui ressemble à ce **`dps:offer-activity:1a08ba4b529b2fb2`** ici :
 
 ![14](./assets/images/offers.png)
 

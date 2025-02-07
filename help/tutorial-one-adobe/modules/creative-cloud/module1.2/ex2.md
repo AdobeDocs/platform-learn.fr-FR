@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
 
-# Utilisation d’API Adobe dans Workfront Fusion
+# 1.2.2 Utilisation d’API Adobes dans Workfront Fusion
 
 Découvrez comment utiliser les API Adobe dans Workfront Fusion.
 
-## Utilisation de l’API Texte en image du Firefly avec Workfront Fusion
+## 1.2.2.1 utiliser l’API Firefly Text To Image avec Workfront Fusion
 
 1. Pointez sur le deuxième nœud **Définir plusieurs variables** et sélectionnez **+** pour ajouter un autre module.
 
@@ -115,7 +115,7 @@ Votre écran devrait ressembler à ceci.
 
 ![WF Fusion](./images/wffusion61.png)
 
-## Utilisation de l’API Photoshop avec Workfront Fusion
+## 1.2.2.2 utiliser l’API Photoshop avec Workfront Fusion
 
 1. Sélectionnez **clé à molette** entre les nœuds **Définir le jeton du porteur** et **T2I Firefly**. Sélectionnez **Ajouter un routeur**.
 

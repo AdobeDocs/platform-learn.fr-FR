@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
-# Automatisation des processus avec Workfront Fusion
+# 1.2.3 Automatisation des processus avec Workfront Fusion
 
 Découvrez comment traiter l’automatisation avec Workfront Fusion.
 
-## Itération sur plusieurs valeurs
+## 1.2.3.1 Itération sur plusieurs valeurs
 
 Votre scénario doit se présenter comme suit :
 
@@ -93,7 +93,7 @@ Jusqu’à présent, vous avez modifié le texte d’un fichier Photoshop par un
 
    ![WF Fusion](./images/wffusion215.png)
 
-## Activez votre scénario à l’aide d’un webhook
+## 1.2.3.2 Activer le scénario à l’aide d’un webhook
 
 Jusqu’à présent, vous avez exécuté votre scénario manuellement pour le tester. Mettons maintenant à jour votre scénario avec un webhook, afin qu’il puisse être activé à partir d’un environnement externe.
 

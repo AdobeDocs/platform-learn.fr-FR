@@ -1,368 +1,378 @@
 ---
-title: Optimize your Firefly Process using Microsoft Azure and Presigned URLs
-description: Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs
+title: Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées
+description: Découvrez comment optimiser le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
+workflow-type: tm+mt
+source-wordcount: '1386'
+ht-degree: 1%
+
 ---
-# Optimize your Firefly process using Microsoft Azure and presigned URLs
 
-Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs.
+# 1.1.2 Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées
 
-## Create an Azure Subscription
+Découvrez comment optimiser le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies.
 
->[!NOTE]
->
->If you already have an existing Azure Subscription, you can skip this step. Please proceed with the next exercise in that case.
-
-1. Go to [https://portal.azure.com](https://portal.azure.com){target="_blank"} and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
-
-    ![Azure Storage](./images/02azureportalemail.png)
-
-    After successful login you should see the following screen:
-
-    ![Azure Storage](./images/03azureloggedin.png)
-
-1. On the left menu select **All Resources**, the Azure subscription screen appears if you are not yet subscribed. 
-
-1. If you are not subscribed, select **Start with an Azure free Trial**. 
-
-    ![Azure Storage](./images/04azurestartsubscribe.png)
-
-1. Fill in the Azure subscription form and provide your mobile phone and credit card for activation (you will have a free tier for 30 days and you will not be charged, unless you upgrade).
-
-    When the subscription process is finished you are good to go.
-
-    ![Azure Storage](./images/06azuresubscriptionok.png)
-
-## Create Azure Storage Account
-
-1. Search for `storage account` and then select **Storage accounts**.
-
-    ![Azure Storage](./images/azs1.png)
-
-1. Select **+ Create**.
-
- ![Azure Storage](./images/azs2.png)
-
-1. Select your **Subscription** and select (or create) a **Resource group**.
-
-1. Under **Storage account name** use `--aepUserLdap--`.
-
-1. Select **Review + create**.
-
-    ![Azure Storage](./images/azs3.png)
-
-1. Select **Create**.
-
-    ![Azure Storage](./images/azs4.png)
-
-1. After confirmation select **Go to resource**.
-
-        ![Azure Storage](./images/azs5.png)
-
-Your Azure Storage Account is now ready to be used.
-
-    ![Azure Storage](./images/azs6.png)
-
-1. Select **Data Storage**, and then go to **Containers**. Select **+ Container**.
-
-    ![Azure Storage](./images/azs7.png)
-
-1. Use `--aepUserLdap--`for the name and select **Create**.
-
-    ![Azure Storage](./images/azs8.png)
-
-    Your container is now ready to be used.
-
-    ![Azure Storage](./images/azs9.png)
-
-## 1.1.2.3 Install Azure Storage Explorer
-
-1. [Download Microsoft Azure Storage Explorer to manage your files](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Select the correct version for your specific OS, download and install it.
-
-    ![Azure Storage](./images/az10.png)
-
-1. Open the application and select **Sign in with Azure**.
-
-    ![Azure Storage](./images/az11.png)
-
-1. Select **Subscription**.
-
-    ![Azure Storage](./images/az12.png)
-
-1. Select **Azure** and then **Next**.
-
-    ![Azure Storage](./images/az13.png)
-
-1. Select your Microsoft Azure account and complete the authentication process.
-
-    ![Azure Storage](./images/az14.png)
-
-    After authentication, this message appears.
-
-    ![Azure Storage](./images/az15.png)
-
-1. Back in the Microsoft Azure Storage Explorer app, select your subscription and choose **Open Explorer**.
+## 1.1.2.1 Créer un abonnement Azure
 
 >[!NOTE]
 >
->If your account isn't shown, click the **gear** icon next to your email address and select **Un-filter**.
+>Si vous disposez déjà d’un abonnement Azure, vous pouvez ignorer cette étape. Dans ce cas, veuillez procéder au prochain exercice.
 
-    ![Azure Storage](./images/az16.png)
+1. Accédez à [https://portal.azure.com](https://portal.azure.com){target="_blank"} et connectez-vous avec votre compte Azure. Si vous n’en avez pas, veuillez utiliser votre adresse e-mail personnelle pour créer votre compte Azure.
 
-   Your storage account appears under **Storage Accounts**.
+   ![ Stockage Azure ](./images/02azureportalemail.png)
 
-    ![Azure Storage](./images/az17.png)
+   Une fois la connexion établie, l’écran suivant s’affiche :
 
-1. Open **Blob Containers** and then select the container you created in the previous exercise.
+   ![ Stockage Azure ](./images/03azureloggedin.png)
 
-    ![Azure Storage](./images/az18.png)
+1. Dans le menu de gauche, sélectionnez **Toutes les ressources**, l’écran d’abonnement Azure s’affiche si vous n’êtes pas encore abonné.
 
-## Manual file upload and using an image file as style reference
+1. Si vous n’êtes pas abonné, sélectionnez **Commencer avec une version d’évaluation gratuite d’Azure**.
 
-1. Upload a image file of your choice or [this file](./images/gradient.jpg){target="_blank"} into the container.
+   ![ Stockage Azure ](./images/04azurestartsubscribe.png)
 
-    ![Azure Storage](./images/gradient.jpg)
+1. Remplissez le formulaire d&#39;abonnement Azure et fournissez votre téléphone mobile et votre carte de crédit pour l&#39;activation (vous aurez un niveau gratuit pendant 30 jours et vous ne serez pas facturé, sauf si vous effectuez une mise à niveau).
 
-    Once uploaded, you can see it in your container:
+   Une fois le processus d’abonnement terminé, tout est prêt.
 
-    ![Azure Storage](./images/az19.png)
+   ![ Stockage Azure ](./images/06azuresubscriptionok.png)
 
-1. Right-click on `gradient.jpg` and then select **Get Shared Access Signature**.
+## 1.1.2.2 Créer Un Compte De Stockage Azure
 
-    ![Azure Storage](./images/az20.png)
+1. Recherchez `storage account` puis sélectionnez **Comptes de stockage**.
 
-1. Under **Permissions**, only **Read** is required. Select **Create**.
+   ![ Stockage Azure ](./images/azs1.png)
 
-    ![Azure Storage](./images/az21.png)
+1. Sélectionnez **+ Créer**.
 
-1. Copy your presigned URL for this image file for the next API request to Firefly.
+![ Stockage Azure ](./images/azs2.png)
 
-    ![Azure Storage](./images/az22.png)
+1. Sélectionnez votre **Abonnement** et sélectionnez (ou créez) un **Groupe de ressources**.
 
-1. Back in Postman open the request **POST - Firefly - T2I (styleref) V3**. 
-    This appearsin **Body**.    
+1. Sous **Nom du compte de stockage** utilisez `--aepUserLdap--`.
 
-    ![Azure Storage](./images/az23.png)
+1. Sélectionnez **Réviser + créer**.
 
-1. Replace the placeholder URL with the presigned URL for your image file and select **Send**.
+   ![ Stockage Azure ](./images/azs3.png)
 
-    ![Azure Storage](./images/az24.png)
+1. Sélectionnez **Créer**.
 
-1. Open the response Firefly Services new image in your browser.
+   ![ Stockage Azure ](./images/azs4.png)
 
-    ![Azure Storage](./images/az25.png)
+1. Après confirmation, sélectionnez **Accéder à la ressource**.
 
-    Another image appears with `horses in a field`, but this time the style is similar to the image file that you provided as style reference.
+       ![Stockage Azure](./images/azs5.png)
+   
+Votre compte de stockage Azure est maintenant prêt à être utilisé.
 
-    ![Azure Storage](./images/az26.png)
+    ![Stockage Azure](./images/azs6.png)
 
-## Programmatic file upload 
+1. Sélectionnez **Stockage de données**, puis accédez à **Conteneurs**. Sélectionnez Conteneur **+**.
 
-In order to use programmatic file upload with Azure Storage Accounts, you need to create a new **Shared Access Signature (SAS)** token with permissions that allow you to write a file.
+   ![ Stockage Azure ](./images/azs7.png)
 
-1. In Azure Storage Explorer, right-click your container, and select **Get Shared Access Signature**.
+1. Utilisez `--aepUserLdap--`pour le nom et sélectionnez **Créer**.
 
-    ![Azure Storage](./images/az27.png)
+   ![ Stockage Azure ](./images/azs8.png)
 
-1. Under **Permissions**, select the following required permissions:
+   Votre conteneur est maintenant prêt à être utilisé.
 
-    - **Read**
-    - **Add**
-    - **Create**
-    - **Write**
-    - **List**
+   ![ Stockage Azure ](./images/azs9.png)
 
-1. Select **Create**.
+## 1.1.2.3 Installer l’explorateur de stockage Azure
 
-    ![Azure Storage](./images/az28.png)
+1. [Téléchargez l’explorateur de stockage Azure Microsoft pour gérer vos fichiers](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Sélectionnez la version appropriée pour votre système d’exploitation spécifique, téléchargez-la et installez-la.
 
-1. After receiving your **SAS-token**, select **Copy**.
+   ![ Stockage Azure ](./images/az10.png)
 
-    ![Azure Storage](./images/az29.png)
+1. Ouvrez l’application et sélectionnez **Se connecter avec Azure**.
 
-     Use the **SAS-token** to upload a file into your Azure Storage Account. 
+   ![ Stockage Azure ](./images/az11.png)
 
-1. Back in Postman, select the folder **FF - Firefly Services Tech Insiders**, then select **...** on the **Firefly** folder, and then select **Add request**.
+1. Sélectionnez **Abonnement**.
 
-    ![Azure Storage](./images/az30.png)
+   ![ Stockage Azure ](./images/az12.png)
 
-1. Change the name of the empty request to **Upload file to Azure Storage Account**, change the **Request Type** to **PUT** and paste the SAS-token URL in the URL section, then select **Body**.
+1. Sélectionnez **Azure** puis **Suivant**.
 
-    ![Azure Storage](./images/az31.png)
+   ![ Stockage Azure ](./images/az13.png)
 
-1. Next, select a file from your local machine or use another image file located [here](./images/gradient2-p.jpg){target="_blank"}.
+1. Sélectionnez votre compte Microsoft Azure et terminez le processus d’authentification.
 
-    ![Gradient file](./images/gradient2-p.jpg)
+   ![ Stockage Azure ](./images/az14.png)
 
-1. In **Body**, select **binary** then **Select file**, then select **+ New file from local machine**.
+   Une fois l’authentification terminée, ce message s’affiche.
 
-    ![Azure Storage](./images/az32.png)
+   ![ Stockage Azure ](./images/az15.png)
 
-1. Select your file of choice and select **Open**.  
+1. De retour dans l’application Microsoft Azure Storage Explorer, sélectionnez votre abonnement et choisissez **Ouvrir l’explorateur**.
 
-    ![Azure Storage](./images/az33.png)
+>[!NOTE]
+>
+>Si votre compte n’apparaît pas, cliquez sur l’icône **engrenage** en regard de votre adresse e-mail et sélectionnez **Annuler le filtrage**.
 
-1. Next specify the file name to be used in your Azure Storage Account by placing your cursor in front of the question mark **?** in the URL like this:
+    ![Stockage Azure](./images/az16.png)
 
-    ![Azure Storage](./images/az34.png)
+Votre compte de stockage apparaît sous **Comptes de stockage**.
 
-    The URL currently looks like this, but needs to be changed. 
+    ![Stockage Azure](./images/az17.png)
 
-    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03...`
+1. Ouvrez **Conteneurs Blob** puis sélectionnez le conteneur que vous avez créé dans l’exercice précédent.
 
-1. Change the file name to `gradient2-p.jpg`, and change the URL to include the filename like this:
+   ![ Stockage Azure ](./images/az18.png)
 
-    `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
+## 1.1.2.4 Chargement manuel du fichier et utilisation d’un fichier image comme référence de style
 
-    ![Azure Storage](./images/az34a.png)
+1. Chargez un fichier image de votre choix ou [ce fichier](./images/gradient.jpg){target="_blank"} dans le conteneur.
 
-1. Next, go to **Headers** to add a new header manually like this:
+   ![ Stockage Azure ](./images/gradient.jpg)
 
-    | Key     | Value     | 
-    |:-------------:| :---------------:| 
-    | `x-ms-blob-type`          | `BlockBlob` |
+   Une fois le chargement effectué, vous pouvez le voir dans votre conteneur :
 
+   ![ Stockage Azure ](./images/az19.png)
 
-    ![Azure Storage](./images/az35.png)
+1. Cliquez avec le bouton droit sur `gradient.jpg`, puis sélectionnez **Obtenir la signature d’accès partagé**.
 
-1. Go to **Authorization** and set the **Auth Type** to **No Auth**, and select **Send**.
+   ![ Stockage Azure ](./images/az20.png)
 
-    ![Azure Storage](./images/az36.png)
+1. Sous **Autorisations**, seule la mention **Lecture** est requise. Sélectionnez **Créer**.
 
-1. Next, this empty response appears in Postman, which means that your file upload is fine.
+   ![ Stockage Azure ](./images/az21.png)
 
-    ![Azure Storage](./images/az37.png)
+1. Copiez l’URL prédéfinie de ce fichier image pour la prochaine demande d’API dans Firefly.
 
-1. Back in Azure Storage Explorer refresh the content of your folder, and the newly uploaded file appears.
+   ![ Stockage Azure ](./images/az22.png)
 
-    ![Azure Storage](./images/az38.png)
+1. De retour dans Postman, ouvrez la demande **POST - Firefly - T2I (styleref) V3**.
+Il apparaît dans **Corps**.
 
-## Programmatic file usage
+   ![ Stockage Azure ](./images/az23.png)
 
-To programmatically read files from Azure Storage Accounts in the long term, you need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. Technically you could use the SAS-token created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions and separate token with only **Write** permissions.
+1. Remplacez l’URL de l’espace réservé par l’URL présignée pour votre fichier image et sélectionnez **Envoyer**.
 
-### Long-term Read SAS token
+   ![ Stockage Azure ](./images/az24.png)
 
-1. Go back to Azure Storage Explorer, right-click your container and then select **Get Shared Access Signature**.
+1. Ouvrez la nouvelle image Services du Firefly de réponse dans votre navigateur.
 
-    ![Azure Storage](./images/az27.png)
+   ![ Stockage Azure ](./images/az25.png)
 
-1. Under **Permissions**, select the following required permissions:
+   Une autre image apparaît avec `horses in a field`, mais cette fois, le style est similaire au fichier image que vous avez fourni comme référence de style.
 
-    - **Read**
-    - **List**
+   ![ Stockage Azure ](./images/az26.png)
 
-1. Set **Expiry Time** to 1 year from now.
+## 1.1.2.5 Chargement de fichier par programmation
 
-1. Select **Create**.
+Pour utiliser le chargement de fichiers par programmation avec des comptes de stockage Azure, vous devez créer un jeton **Signature d’accès partagé (SAS)** avec des autorisations qui vous permettent d’écrire un fichier.
 
-    ![Azure Storage](./images/az100.png)
+1. Dans l’explorateur de stockage Azure, cliquez avec le bouton droit sur votre conteneur, puis sélectionnez **Obtenir la signature d’accès partagé**.
 
-1. Copy the URL and write it down in a file on your computer to get your long-term SAS-token with Read permissions. 
+   ![ Stockage Azure ](./images/az27.png)
 
-    ![Azure Storage](./images/az101.png)
+1. Sous **Autorisations**, sélectionnez les autorisations requises suivantes :
 
-    Your URL should look like this:
+   - **Lecture**
+   - **Ajouter**
+   - **Create**
+   - **Write**
+   - **Liste**
 
-    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+1. Sélectionnez **Créer**.
 
-    You can derive a couple of values out of the above URL:
+   ![ Stockage Azure ](./images/az28.png)
 
-    - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-    - `AZURE_STORAGE_CONTAINER`: `vangeluw`
-    - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+1. Après avoir reçu votre **jeton SAS**, sélectionnez **Copier**.
 
-### Long-term Write SAS token
+   ![ Stockage Azure ](./images/az29.png)
 
-1. Go back to Azure Storage Explorer, right-click your container and select **Get Shared Access Signature**.
+   Utilisez le **jeton SAS** pour charger un fichier dans votre compte de stockage Azure.
 
-    ![Azure Storage](./images/az27.png)
+1. De retour dans Postman, sélectionnez le dossier **FF - Firefly Services Tech Insiders**, puis sélectionnez **...** dans le dossier **Firefly** et enfin sélectionnez **Ajouter une requête**.
 
-1. Under **Permissions**, select the following required permissions:
+   ![ Stockage Azure ](./images/az30.png)
 
-    - **Add**
-    - **Create**
-    - **Write**
+1. Modifiez le nom de la requête vide en **Télécharger le fichier sur le compte de stockage Azure**, modifiez le **Type de requête** en **PUT** et collez l’URL du jeton SAS dans la section URL, puis sélectionnez **Corps**.
 
-1. Set the **Expiry Time** to 1 year from now.
+   ![ Stockage Azure ](./images/az31.png)
 
-1. Select **Create**.
+1. Sélectionnez ensuite un fichier sur votre ordinateur local ou utilisez un autre fichier image situé [ici](./images/gradient2-p.jpg){target="_blank"}.
 
-    ![Azure Storage](./images/az102.png)
+   ![Fichier de dégradé](./images/gradient2-p.jpg)
 
-1. Copy the URL and write it down in a file on your computer to get your long-term SAS-token with Read permissions.
+1. Dans **Corps**, sélectionnez **binaire** puis **Sélectionner un fichier**, puis sélectionnez **+ Nouveau fichier à partir de l’ordinateur local**.
 
-    ![Azure Storage](./images/az103.png)
+   ![ Stockage Azure ](./images/az32.png)
 
-   Your URL should look like this:
+1. Sélectionnez le fichier de votre choix et sélectionnez **Ouvrir**.
 
-    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+   ![ Stockage Azure ](./images/az33.png)
 
-You can derive a couple of values out of the above URL:
+1. Indiquez ensuite le nom du fichier à utiliser dans votre compte de stockage Azure en plaçant votre curseur devant le point d’interrogation **?** dans l’URL comme suit :
 
-    - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-    - `AZURE_STORAGE_CONTAINER`: `vangeluw`
-    - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-    - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+   ![ Stockage Azure ](./images/az34.png)
 
-### Variables in Postman
+   L’URL ressemble actuellement à ceci, mais doit être modifiée.
 
-As you can see in the above section, there are some common variables in both the Read and the Write token.
+   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03...`
 
-Next you need to create variables in Postman that store the various elements of the above SAS-tokens. There are some values that are the same in both URLs:
+1. Remplacez le nom du fichier par `gradient2-p.jpg`, puis modifiez l’URL afin d’inclure le nom du fichier comme suit :
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+   `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-For future API interactions, the main thing that changes is the asset name, while the above variables remain the same. In that case, it makes sense to create variables in Postman so that you don't need to specify them manually every time..
+   ![ Stockage Azure ](./images/az34a.png)
 
-1. In Postman, select **Environments**, open **All variables** and select **Environment**.
+1. Accédez ensuite à **En-têtes** pour ajouter manuellement un nouvel en-tête comme celui-ci :
 
-    ![Azure Storage](./images/az104.png)
+   | Clé | Valeur |
+   |:-------------:| :---------------:| 
+   | `x-ms-blob-type` | `BlockBlob` |
 
-1. Create these 4 variables in the table that is shown and for the columns **Initial value** and **Current value**, enter your specific personal values.
 
-    - `AZURE_STORAGE_URL`: your url
-    - `AZURE_STORAGE_CONTAINER`: your container name
-    - `AZURE_STORAGE_SAS_READ`: your SAS Read token
-    - `AZURE_STORAGE_SAS_WRITE`: your SAS Write token
+   ![ Stockage Azure ](./images/az35.png)
 
-1. Select **Save**.
+1. Accédez à **Autorisation** et définissez le **Type d’authentification** sur **Aucune authentification**, puis sélectionnez **Envoyer**.
 
-    ![Azure Storage](./images/az105.png)
+   ![ Stockage Azure ](./images/az36.png)
 
-    In one of the previous exercises, the **Body** of your the request **Firefly - T2I (styleref) V3** looked like this:
+1. Ensuite, cette réponse vide s’affiche dans Postman, ce qui signifie que votre chargement de fichier est correct.
 
-    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+   ![ Stockage Azure ](./images/az37.png)
 
-    ![Azure Storage](./images/az24.png)
+1. De retour dans l’explorateur de stockage Azure, actualisez le contenu de votre dossier pour faire apparaître le fichier nouvellement chargé.
 
-1. Change the URL to:
+   ![ Stockage Azure ](./images/az38.png)
 
-    `"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+## 1.1.2.6 Utilisation des fichiers par programmation
 
-1. Select **Send** to test the changes you made.
+Pour lire par programmation les fichiers des comptes de stockage Azure à long terme, vous devez créer un jeton **Signature d’accès partagé (SAS)** avec des autorisations qui vous permettent de lire un fichier. Techniquement, vous pouvez utiliser le jeton SAS créé dans l’exercice précédent, mais il est recommandé d’avoir un jeton distinct avec uniquement des autorisations **Lecture** et un jeton distinct avec uniquement des autorisations **Écriture**.
 
-    ![Azure Storage](./images/az106.png)
+### Jeton SAS de lecture à long terme
 
-    If the variables were configured correctly, an image URL is returned.
+1. Revenez à l’Explorateur de stockage Azure, cliquez avec le bouton droit sur votre conteneur, puis sélectionnez **Obtenir la signature d’accès partagé**.
 
-    ![Azure Storage](./images/az107.png)
+   ![ Stockage Azure ](./images/az27.png)
 
-1. Open the image URL to verify your image.
+1. Sous **Autorisations**, sélectionnez les autorisations requises suivantes :
 
-    ![Azure Storage](./images/az108.jpg)
+   - **Lecture**
+   - **Liste**
 
-## Next Steps
+1. Définissez **Délai d’expiration** sur 1 an à partir de maintenant.
 
-Go to [Adobe Firefly & Adobe Photoshop APIs](./ex3.md){target="_blank"}
+1. Sélectionnez **Créer**.
 
-Go back to [Overview of Adobe Firefly Services](./firefly-services.md){target="_blank"}
+   ![ Stockage Azure ](./images/az100.png)
 
-Go back to [All Modules](./../../../overview.md){target="_blank"}
+1. Copiez l’URL et écrivez-la dans un fichier sur votre ordinateur pour obtenir votre jeton SAS à long terme avec les autorisations de lecture.
+
+   ![ Stockage Azure ](./images/az101.png)
+
+   Votre URL doit se présenter comme suit :
+
+   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+   Vous pouvez dériver quelques valeurs de l’URL ci-dessus :
+
+   - `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+   - `AZURE_STORAGE_CONTAINER` : `vangeluw`
+   - `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### Jeton SAS d’écriture à long terme
+
+1. Revenez à l’Explorateur de stockage Azure, cliquez avec le bouton droit sur votre conteneur et sélectionnez **Obtenir la signature d’accès partagé**.
+
+   ![ Stockage Azure ](./images/az27.png)
+
+1. Sous **Autorisations**, sélectionnez les autorisations requises suivantes :
+
+   - **Ajouter**
+   - **Create**
+   - **Write**
+
+1. Définissez la variable **Délai d’expiration** sur 1 an à partir de maintenant.
+
+1. Sélectionnez **Créer**.
+
+   ![ Stockage Azure ](./images/az102.png)
+
+1. Copiez l’URL et écrivez-la dans un fichier sur votre ordinateur pour obtenir votre jeton SAS à long terme avec les autorisations de lecture.
+
+   ![ Stockage Azure ](./images/az103.png)
+
+   Votre URL doit se présenter comme suit :
+
+   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Vous pouvez dériver quelques valeurs de l’URL ci-dessus :
+
+    - `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+    - `AZURE_STORAGE_CONTAINER` : `vangeluw`
+    - `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&amp;st=2025-01-13T07%3A36%3A35Z&amp;se=2026-01-14T07%3A36%3A00Z&amp;sr=c&amp;sp=rl&amp;sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag_SAS%3D`
+    - AZURE `?sv=2023-01-03&amp;st=2025-01-13T07%3A38%3A59Z&amp;se=2026-01-14T07%3A38%3A00Z&amp;sr=c&amp;sp=acw&amp;sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variables dans Postman
+
+>[!IMPORTANT]
+>
+>Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
+
+Comme vous pouvez le voir dans la section ci-dessus, il existe des variables communes dans les jetons Lecture et Écriture .
+
+Vous devez ensuite créer des variables dans Postman qui stockent les différents éléments des jetons SAS ci-dessus. Certaines valeurs sont identiques dans les deux URL :
+
+- `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER` : `vangeluw`
+- `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE` : `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Pour les interactions d’API futures, la principale chose qui change est le nom de la ressource, tandis que les variables ci-dessus restent les mêmes. Dans ce cas, il est logique de créer des variables dans Postman afin de ne pas avoir à les spécifier manuellement à chaque fois.
+
+1. Dans Postman, sélectionnez **Environnements**, ouvrez **Toutes les variables** et sélectionnez **Environnement**.
+
+   ![ Stockage Azure ](./images/az104.png)
+
+1. Créez ces 4 variables dans le tableau qui s’affiche. Pour les colonnes **Valeur initiale** et **Valeur actuelle**, saisissez vos valeurs personnelles spécifiques.
+
+   - `AZURE_STORAGE_URL` : votre url
+   - `AZURE_STORAGE_CONTAINER` : nom de votre conteneur
+   - `AZURE_STORAGE_SAS_READ` : votre jeton de lecture SAS
+   - `AZURE_STORAGE_SAS_WRITE` : votre jeton d’écriture SAS
+
+1. Sélectionnez **Enregistrer**.
+
+   ![ Stockage Azure ](./images/az105.png)
+
+   Dans l’un des exercices précédents, le **Corps** de votre requête **Firefly - T2I (styleref) V3** ressemblait à ceci :
+
+   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+   ![ Stockage Azure ](./images/az24.png)
+
+1. Modifiez l’URL en :
+
+   `"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+1. Sélectionnez **Envoyer** pour tester les modifications que vous avez apportées.
+
+   ![ Stockage Azure ](./images/az106.png)
+
+   Si les variables ont été configurées correctement, une URL d’image est renvoyée.
+
+   ![ Stockage Azure ](./images/az107.png)
+
+1. Ouvrez l’URL de l’image pour vérifier votre image.
+
+   ![ Stockage Azure ](./images/az108.jpg)
+
+## Étapes suivantes
+
+Accédez à [ Utilisation des API Photoshop ](./ex3.md){target="_blank"}
+
+Revenir à [Présentation des services d’Adobe Firefly ](./firefly-services.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
