@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: e6a549441d425801f2a554da9af803dca646009e
+source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -21,23 +21,23 @@ Découvrez comment utiliser les API et les services de Firefly Photoshop.
 
 1. Accédez à [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/iohome.png)
+![Adobe I/O d&#39;une nouvelle intégration](./images/iohome.png){zoomable="yes"}
 
 1. Accédez à **Projets** et sélectionnez le projet que vous avez créé dans l’exercice précédent, appelé `--aepUserLdap-- Firefly`.
 
-![ Stockage Azure ](./images/ps1.png)
+![ Stockage Azure ](./images/ps1.png){zoomable="yes"}
 
 1. Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
-![ Stockage Azure ](./images/ps2.png)
+![ Stockage Azure ](./images/ps2.png){zoomable="yes"}
 
 1. Sélectionnez **Creative Cloud** puis **Photoshop - Services de Firefly**. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/ps3.png)
+![ Stockage Azure ](./images/ps3.png){zoomable="yes"}
 
 1. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/ps4.png)
+![ Stockage Azure ](./images/ps4.png){zoomable="yes"}
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
@@ -45,11 +45,11 @@ Ensuite, vous devez sélectionner un profil de produit qui définit les autorisa
 
 1. Sélectionnez **Enregistrer l’API configurée**.
 
-![ Stockage Azure ](./images/ps5.png)
+![ Stockage Azure ](./images/ps5.png){zoomable="yes"}
 
 Votre projet Adobe I/O est maintenant mis à jour pour fonctionner avec les API Photoshop et Firefly Services.
 
-![ Stockage Azure ](./images/ps6.png)
+![ Stockage Azure ](./images/ps6.png){zoomable="yes"}
 
 ## 1.1.3.2 Interagir par programmation avec un fichier de PSD
 
@@ -61,7 +61,7 @@ Votre projet Adobe I/O est maintenant mis à jour pour fonctionner avec les API 
 
 1. Ouvrez **citisignal-fibre.psd** dans Photoshop.
 
-![ Stockage Azure ](./images/ps7.png)
+![ Stockage Azure ](./images/ps7.png){zoomable="yes"}
 
 Dans le volet **Calques**, le concepteur du fichier a attribué un nom unique à chaque calque. Vous pouvez afficher les informations sur le calque en ouvrant le fichier de PSD dans Photoshop, mais vous pouvez également le faire par programmation.
 
@@ -75,11 +75,11 @@ Envoyons votre première requête d’API aux API Photoshop.
 
 1. Sélectionnez **Envoyer**.
 
-![ Stockage Azure ](./images/ps8.png)
+![ Stockage Azure ](./images/ps8.png){zoomable="yes"}
 
 Vous disposez désormais d’un jeton d’accès valide pour interagir avec les API Photoshop.
 
-![ Stockage Azure ](./images/ps9.png)
+![ Stockage Azure ](./images/ps9.png){zoomable="yes"}
 
 ### API Photoshop - Bonjour le monde
 
@@ -87,11 +87,11 @@ Ensuite, disons bonjour aux API Photoshop pour tester si toutes les autorisation
 
 1. Dans la collection **Photoshop**, ouvrez la requête **Photoshop Hello (Tester l’authentification).**. Sélectionnez **Envoyer**.
 
-![ Stockage Azure ](./images/ps10.png)
+![ Stockage Azure ](./images/ps10.png){zoomable="yes"}
 
 Vous devriez recevoir la réponse **Bienvenue dans l’API Photoshop !**.
 
-![ Stockage Azure ](./images/ps11.png)
+![ Stockage Azure ](./images/ps11.png){zoomable="yes"}
 
 Ensuite, pour interagir par programmation avec le fichier de PSD **citisignal-fibre.psd**, vous devez le charger sur votre compte de stockage . Vous pouvez le faire manuellement, en le faisant glisser et en le déposant dans votre conteneur à l’aide de l’explorateur de stockage Azure, mais cette fois, vous devez le faire via l’API.
 
@@ -106,23 +106,23 @@ Ensuite, pour interagir par programmation avec le fichier de PSD **citisignal-fi
 
 Comme vous pouvez le voir dans la requête **Charger le PSD vers le compte de stockage Azure**, l’URL est configurée pour utiliser ces variables.
 
-![ Stockage Azure ](./images/ps12.png)
+![ Stockage Azure ](./images/ps12.png){zoomable="yes"}
 
 1. Dans **Body**, sélectionnez le fichier **citisignal-fibre.psd**.
 
-![ Stockage Azure ](./images/ps13.png)
+![ Stockage Azure ](./images/ps13.png){zoomable="yes"}
 
 1. Votre écran devrait ressembler à ceci. Sélectionnez **Envoyer**.
 
-![ Stockage Azure ](./images/ps14.png)
+![ Stockage Azure ](./images/ps14.png){zoomable="yes"}
 
 Vous devriez obtenir cette réponse vide en retour d’Azure, ce qui signifie que votre fichier est stocké dans votre conteneur dans votre compte de stockage Azure.
 
-![ Stockage Azure ](./images/ps15.png)
+![ Stockage Azure ](./images/ps15.png){zoomable="yes"}
 
 Si vous utilisez Azure Storage Explorer pour consulter votre fichier, veillez à actualiser votre dossier.
 
-![ Stockage Azure ](./images/ps16.png)
+![ Stockage Azure ](./images/ps16.png){zoomable="yes"}
 
 ### API Photoshop - Obtenir le manifeste
 
@@ -152,25 +152,25 @@ Le corps doit ressembler à ceci :
 
 Un lien s’affiche désormais dans la réponse. Les opérations dans Photoshop pouvant parfois prendre un certain temps, Photoshop fournit un fichier de statut en réponse à la plupart des requêtes entrantes. Pour comprendre ce qui se passe avec votre requête, vous devez lire le fichier de statut.
 
-![ Stockage Azure ](./images/ps17.png)
+![ Stockage Azure ](./images/ps17.png){zoomable="yes"}
 
 1. Pour lire le fichier de statut, ouvrez la requête **Photoshop - Obtenir le statut PS**. Vous pouvez constater que cette requête utilise une variable comme URL, qui est une variable définie par la requête précédente que vous avez envoyée, **Photoshop - Get PSD Manifest**. Les variables sont définies dans les **Scripts** de chaque requête. Sélectionnez **Envoyer**.
 
-![ Stockage Azure ](./images/ps18.png)
+![ Stockage Azure ](./images/ps18.png){zoomable="yes"}
 
 Votre écran devrait ressembler à ceci. Actuellement, le statut est défini sur **en attente**, ce qui signifie que le processus n’est pas encore terminé.
 
-![ Stockage Azure ](./images/ps19.png)
+![ Stockage Azure ](./images/ps19.png){zoomable="yes"}
 
 1. Sélectionnez Envoyer plusieurs fois de plus sur **Photoshop - Obtenir le statut PS**, jusqu&#39;à ce que le statut passe à **réussi**. Cela peut prendre quelques minutes.
 
 Lorsque la réponse est disponible, le fichier json contient des informations sur tous les calques du fichier de PSD. Il s’agit d’informations utiles, car des éléments tels que le nom ou l’identifiant du calque peuvent être identifiés.
 
-![ Stockage Azure ](./images/ps20.png)
+![ Stockage Azure ](./images/ps20.png){zoomable="yes"}
 
 Par exemple, recherchez le `2048x2048-cta` de texte . Votre écran doit ressembler à ceci :
 
-![ Stockage Azure ](./images/ps21.png)
+![ Stockage Azure ](./images/ps21.png){zoomable="yes"}
 
 ### API Photoshop - Modifier le texte
 
@@ -217,25 +217,25 @@ Le fichier de sortie porte un nom différent, car vous ne souhaitez pas remplace
 
 1. Sélectionnez **Envoyer**.
 
-![ Stockage Azure ](./images/ps23.png)
+![ Stockage Azure ](./images/ps23.png){zoomable="yes"}
 
 Comme auparavant, la réponse contient un lien pointant vers le fichier de statut qui effectue le suivi de la progression.
 
-![ Stockage Azure ](./images/ps22.png)
+![ Stockage Azure ](./images/ps22.png){zoomable="yes"}
 
 1. Pour lire le fichier de statut, ouvrez la requête **Photoshop - Obtenir le statut PS** et sélectionnez **Envoyer**. Si le statut n’est pas défini sur **réussi** attendez immédiatement quelques secondes, puis sélectionnez à nouveau **Envoyer**.
 
 1. Sélectionnez l’URL pour télécharger le fichier de sortie.
 
-![ Stockage Azure ](./images/ps24.png)
+![ Stockage Azure ](./images/ps24.png){zoomable="yes"}
 
 1. Ouvrez **citisignal-fibre-changed-text.psd** après avoir téléchargé le fichier sur votre ordinateur. Vous devriez voir que l’espace réservé pour l’appel à l’action a été remplacé par le texte **Get Fiber now !**.
 
-![ Stockage Azure ](./images/ps25.png)
+![ Stockage Azure ](./images/ps25.png){zoomable="yes"}
 
 Vous pouvez également voir ce fichier dans votre conteneur à l’aide de l’explorateur de stockage Azure.
 
-![ Stockage Azure ](./images/ps26.png)
+![ Stockage Azure ](./images/ps26.png){zoomable="yes"}
 
 ## Étapes suivantes
 

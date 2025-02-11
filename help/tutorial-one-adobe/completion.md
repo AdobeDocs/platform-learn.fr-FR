@@ -3,9 +3,9 @@ title: Achèvement - Tutoriel Sur Un Adobe
 description: Comment l’achèvement est-il mesuré ?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
+source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,8 @@ Le justificatif d’achèvement attendu pour le module **Prise en main** est l�
 
 L’identifiant du projet Système de démonstration pour le format web ressemble à ceci : `--aepUserLdap-- - 8ERG`.
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
+
 
 ## 1.1 Services de l&#39;Adobe Firefly
 
@@ -32,7 +33,7 @@ Le justificatif d’accomplissement attendu pour le module **Services d’Adobe 
 
 L’URL ressemble à ceci : `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
-![3](./assets/images/ps24.png)
+![3](./assets/images/ps24.png){zoomable="yes"}
 
 ## 1.2 Automatisation des workflows créatifs avec Workfront Fusion
 
@@ -40,7 +41,7 @@ Le justificatif d’achèvement attendu pour le module **Automatisation des work
 
 L’URL ressemble à ceci : `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
-![3](./assets/images/wff.png)
+![3](./assets/images/wff.png){zoomable="yes"}
 
 ## 2.1 Cloud Service et Edge Delivery Services Adobe Experience Manager
 
@@ -48,7 +49,7 @@ Le justificatif d&#39;accomplissement attendu pour le module **Adobe Experience 
 
 L’URL ressemble à ceci : `https://main--citisignal--xxx.aem.page/us/en`.
 
-![3](./assets/images/aemcsweb.png)
+![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Gestion des workflows avec Adobe Workfront
 
@@ -56,13 +57,13 @@ Le justificatif d&#39;achèvement attendu pour le module **Gestion des workflows
 
 Pour obtenir l’URL, cliquez sur **Partager le lien** sur l’image chargée dans AEM Assets.
 
-![12](./assets/images/wflink1.png)
+![12](./assets/images/wflink1.png){zoomable="yes"}
 
 Copiez l’URL en cliquant sur l’icône **copier**.
 
 L’URL ressemble à ceci : `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`.
 
-![12](./assets/images/wflink2.png)
+![12](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1 Composition De L’Audience Fédérée
 
@@ -70,11 +71,15 @@ Le justificatif d’accomplissement attendu pour le module **Composition d’aud
 
 L’identifiant du modèle de données fédéré ressemble à ceci : **DMO5110** et peut être obtenu à partir de l’URL comme indiqué dans l’image ci-dessous.
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer : Services de traduction
 
-Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Optimizer : services de traduction** est ...
+Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Optimizer : services de traduction** est l&#39;**identifiant de version de campagne** de votre campagne CitiSignal Fiber.
+
+L’identifiant de version de campagne du modèle de données fédérées ressemble à ceci : **b11c998b-a345-4f8e-afb1-6285547eb693** et peut être copié à partir de l’écran Aperçu de la campagne, comme indiqué dans l’image ci-dessous.
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer : Offer decisioning
 
@@ -82,7 +87,7 @@ Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Opt
 
 Vous trouverez le **ID de décision** qui ressemble à ce **`dps:offer-activity:1a08ba4b529b2fb2`** ici :
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >

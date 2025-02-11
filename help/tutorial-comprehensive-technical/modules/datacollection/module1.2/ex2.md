@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données - Configuration des schémas et 
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Vous avez maintenant mis en place cette structure de schéma.
 ![Ingestion des données](./images/schemastructurem.png)
 
 Votre nouveau [!UICONTROL Groupe de champs] est toujours vide. Vous devez donc maintenant ajouter des champs à ce [!UICONTROL Groupe de champs].
-Dans la liste [!UICONTROL Groupe de champs], cliquez sur votre [!UICONTROL Groupe de champs] personnalisé, puis cliquez sur **Parcourir**.
+Dans la liste [!UICONTROL Groupe de champs], cliquez sur votre [!UICONTROL Groupe de champs] personnalisé.
 
 ![Ingestion des données](./images/schemastructurem.png)
 
@@ -165,7 +165,7 @@ Cliquez sur **Appliquer**.
 
 ![Ingestion des données](./images/tenantfielddef.png)
 
-Un nouvel objet s’affiche désormais dans votre schéma, qui représente un **[!UICONTROL objet]** personnalisé dans le schéma et qui est nommé en fonction de votre identifiant client Adobe Experience Platform. Votre identifiant de client Adobe Experience Platform est `--aepTenantId--` et est unique pour chaque instance AEP.
+Un nouvel objet s’affiche désormais dans votre schéma, qui représente un **[!UICONTROL objet]** personnalisé dans le schéma et qui est nommé en fonction de votre identifiant client Adobe Experience Platform. Votre identifiant de client Adobe Experience Platform est `--aepTenantId--` et il est unique pour chaque instance AEP.
 
 ![Ingestion des données](./images/tenant.png)
 
@@ -176,26 +176,26 @@ Vous allez maintenant ajouter un 3 nouvel objet fields sous ce client, dans l’
 Utilisez les informations ci-dessous pour créer ces 3 nouveaux champs sous l’objet **[!UICONTROL identification]** :
 
 - ecid :
-   - Nom du champ : **[!UICONTROL ecid]**
-   - Nom d’affichage : **[!UICONTROL ecid]**
+   - Nom du champ : **`--aepUserLdap--_ecid`**
+   - Nom d’affichage : **`--aepUserLdap--ecid`**
    - Type : **[!UICONTROL String]**
    - Groupe de champs : **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - Nom du champ : **[!UICONTROL emailId]**
-   - Nom d’affichage : **[!UICONTROL emailId]**
+   - Nom du champ : **`--aepUserLdap--_emailId`**
+   - Nom d’affichage : **`--aepUserLdap--_emailId`**
    - Type : **[!UICONTROL String]**
    - Groupe de champs : **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobile
-   - Nom du champ : **[!UICONTROL mobilenr]**
-   - Nom d’affichage : **[!UICONTROL mobilenr]**
+   - Nom du champ : **`--aepUserLdap--_mobilenr`**
+   - Nom d’affichage : **`--aepUserLdap--_mobilenr`**
    - Type : **[!UICONTROL String]**
    - Groupe de champs : **`--aepUserLdap-- - Profile Identification Field Group`**
 
 Voici à quoi chaque champ doit ressembler après votre configuration initiale de champ.
 
-- mobile
+- `--aepUserLdap--_mobilenr`
 
 ![Ingestion des données](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Pour enregistrer votre champ, faites défiler l’écran vers le bas dans la **[
 
 ![Ingestion des données](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![Ingestion des données](./images/ecidfield.png)
 
 N’oubliez pas de faire défiler l’écran vers le bas et de cliquer sur **Appliquer**.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![Ingestion des données](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ Vos 3 champs doivent maintenant être définis comme des champs **[!UICONTROL Id
 
 Pour commencer à définir ces champs en tant que champs **[!UICONTROL d]** identité), procédez comme suit :
 
-- Sélectionnez le champ **[!UICONTROL emailId]**.
+- Sélectionnez l’**`--aepUserLdap--_emailId`** du champ.
 - Sur le côté droit, dans les propriétés du champ, faites défiler l’écran vers le bas jusqu’à afficher **[!UICONTROL Identité]**. Cochez la case **[!UICONTROL Identité]**.
 
 ![Ingestion des données](./images/emailidid.png)
@@ -236,15 +236,15 @@ Pour commencer à définir ces champs en tant que champs **[!UICONTROL d]** iden
 
 ![Ingestion des données](./images/emailidprimidns.png)
 
-Vous devez ensuite définir les autres champs pour **[!UICONTROL ecid]** et **[!UICONTROL mobilenr]** en tant qu’identifiants standard.
+Vous devez ensuite définir les autres champs pour **`--aepUserLdap--_ecid`** et **`--aepUserLdap--_mobilenr`** comme identifiants standard.
 
-Sélectionnez le champ **[!UICONTROL ecid]**. Sur le côté droit, dans les propriétés du champ, faites défiler l’écran vers le bas jusqu’à afficher **[!UICONTROL Identité]**. Cochez la case **[!UICONTROL Identité]**.
+Sélectionnez l’**`--aepUserLdap--_ecid`** du champ. Sur le côté droit, dans les propriétés du champ, faites défiler l’écran vers le bas jusqu’à afficher **[!UICONTROL Identité]**. Cochez la case **[!UICONTROL Identité]**.
 Sélectionnez ensuite l’espace de noms **[!UICONTROL ECID]** dans la liste des **[!UICONTROL Espaces de noms]**.
 Cliquez sur **[!UICONTROL Appliquer]** pour enregistrer vos modifications.
 
 ![Ingestion des données](./images/ecidid.png)
 
-Sélectionnez le champ **[!UICONTROL mobilenr]**. Sur le côté droit, dans les propriétés du champ, faites défiler l’écran vers le bas jusqu’à afficher **[!UICONTROL Identité]**. Cochez la case **[!UICONTROL Identité]**.
+Sélectionnez l’**`--aepUserLdap--_mobilenr`** du champ. Sur le côté droit, dans les propriétés du champ, faites défiler l’écran vers le bas jusqu’à afficher **[!UICONTROL Identité]**. Cochez la case **[!UICONTROL Identité]**.
 Sélectionnez l’espace de noms **[!UICONTROL Téléphone]** dans la liste des **[!UICONTROL Espaces de noms]**.
 Cliquez sur **[!UICONTROL Appliquer]** pour enregistrer vos modifications.
 
@@ -415,12 +415,12 @@ Vous avez maintenant un champ vide. Vous devez configurer le champ ci-dessus com
 
 - ecid :
 
-   - Nom du champ : **[!UICONTROL ecidweb]**
-   - Nom d’affichage : **[!UICONTROL ecidweb]**
+   - Nom du champ : **`--aepUserLdap--_ecidweb`**
+   - Nom d’affichage : **`--aepUserLdap--_ecidweb`**
    - Type : **[!UICONTROL String]**
    - Groupe de champs : `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-Voici à quoi le champ [!UICONTROL ecid] doit répondre lors de la configuration initiale du champ :
+Voici à quoi le champ `--aepUserLdap--_ecidweb` doit ressembler après votre configuration de champ initiale :
 
 ![Ingestion des données](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ Vous disposez désormais d’un nouveau champ, mais ce champ n’a pas encore é
 
 ![Ingestion des données](./images/3fieldsee.png)
 
-Pour commencer à définir ces champs en tant que champs **[!UICONTROL Identité]**, sélectionnez le champ **[!UICONTROL ecid]**.
+Pour commencer à définir ces champs en tant que champs **[!UICONTROL Identité]**, sélectionnez le **`--aepUserLdap--_ecidweb`** de champs.
 Sur le côté droit, dans les propriétés du champ, faites défiler l’écran vers le bas jusqu’à afficher **[!UICONTROL Identité]**. Cochez la case **[!UICONTROL Identité]** et cochez la case **[!UICONTROL Identité du Principal]**.
 Sélectionnez l’espace de noms **[!UICONTROL ECID]** dans la liste des **[!UICONTROL Espaces de noms]**.
 

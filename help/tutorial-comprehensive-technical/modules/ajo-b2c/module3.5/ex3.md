@@ -1,17 +1,17 @@
 ---
-title: Ajout de langues à votre e-mail avec les services de traduction AJO
-description: Ajout de langues à votre e-mail avec les services de traduction AJO
+title: Services de traduction AJO
+description: Services de traduction AJO
 kt: 5342
 doc-type: tutorial
-exl-id: 806e104a-3df9-4711-bc16-026f53b51118
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: e957856f-d6e5-4b39-ac0a-b9249f47eac4
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '318'
 ht-degree: 11%
 
 ---
 
-# 3.2.3 Ajouter des langues à votre e-mail
+# 3.5.3 Ajouter des langues à votre e-mail
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Cliquez sur **Journey Optimizer**.
 
@@ -91,6 +91,6 @@ Vous avez maintenant terminé cet exercice.
 
 Accédez à [ Résumé et avantages ](./summary.md)
 
-Revenir au [module 3.2](./ajotranslationsvcs.md){target="_blank"}
+Revenez au [module 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

@@ -4,9 +4,9 @@ description: Foundation - Profil client en temps réel - Visualiser votre propre
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 2%
 
 ---
@@ -109,6 +109,10 @@ Votre intégration d’Adobe I/O est maintenant terminée.
 >Une étape supplémentaire est nécessaire pour s’assurer que ce projet d’Adobe I/O a accès aux paramètres d’autorisation de Adobe Experience Platform. Les informations d’identification d’API de votre projet doivent être ajoutées à l’interface utilisateur Autorisations de Adobe Experience Platform, pour laquelle les droits d’accès d’administrateur système sont requis. Les étapes sont décrites ci-dessous, mais vous devrez peut-être contacter votre administrateur système pour que ce dossier soit traité pour vous, au cas où vous ne disposeriez pas des droits d’accès requis.
 
 ## Autorisations AEP pour les informations d’identification d’API
+
+>[!IMPORTANT]
+>
+>Si vous ne disposez pas des droits d’accès d’administrateur système, vous ne pourrez pas exécuter cette étape vous-même et vous ne serez pas autorisé à accéder à l’interface utilisateur **Autorisations**. Dans ce cas, contactez votre administrateur système ou posez votre question dans le canal d’assistance de votre entreprise.
 
 Accédez à [Adobe Experience Platform](https://experience.adobe.com/platform). Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Platform.
 

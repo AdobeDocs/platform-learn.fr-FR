@@ -3,15 +3,15 @@ title: Création de votre campagne à l’aide des services de traduction AJO
 description: Création de votre campagne à l’aide des services de traduction AJO
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 9%
 
 ---
 
-# 3.2.2 Création de votre campagne
+# 3.5.2 Création de votre campagne
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Cliquez sur **Journey Optimizer**.
 
@@ -21,7 +21,11 @@ Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’ab
 
 ![ACOP ](./images/ajolp2.png)
 
-## 3.2.2.1 Créer un fragment d’en-tête
+>[!NOTE]
+>
+>Si vous avez déjà créé vos fragments d&#39;en-tête et de pied de page dans le cadre de l&#39;exercice [exercice 3.1.2.1](./../module3.1/ex2.md) et [exercice 3.1.2.2](./../module3.1/ex2.md), veuillez vous lancer dans l&#39;exercice 3.5.2.3 Créer une campagne Fibre. Ne plus créer de fragments d’en-tête et de pied de page.
+
+## 3.5.2.1 Créer un fragment d’en-tête
 
 Dans le menu de gauche, cliquez sur **Fragments**. Un fragment est un composant réutilisable dans Journey Optimizer, ce qui évite la duplication et facilite les modifications futures qui devraient avoir un impact sur tous les messages, telles que les modifications apportées à un en-tête ou à un pied de page dans un e-mail.
 
@@ -76,7 +80,7 @@ Vous devez ensuite créer un fragment pour le pied de page de vos e-mails. Cliqu
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 Créer le fragment de pied de page
+## 3.5.2.2 Créer le fragment de pied de page
 
 Cliquez sur **Créer un fragment**.
 
@@ -230,7 +234,7 @@ Au bout de quelques minutes, vous verrez que le statut de votre pied de page est
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 Créer une campagne Fibre
+## 3.5.2.3 Créer une campagne Fibre
 
 Vous allez maintenant créer une campagne. Contrairement au parcours basé sur un événement de l’exercice précédent, qui repose sur les événements d’expérience entrants, les entrées ou les sorties d’audience pour déclencher un parcours pour un client spécifique, les campagnes ciblent une audience entière une fois avec du contenu unique tel que des newsletters, des promotions ponctuelles ou des informations génériques, ou périodiquement avec du contenu similaire envoyé régulièrement, par exemple des campagnes d’anniversaire et des rappels.
 
@@ -262,7 +266,7 @@ Faites défiler jusqu’à **Audience**. Cliquez sur **Sélectionner une audienc
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-Pour l’**Audience**, sélectionnez l’audience que vous avez créée à l’étape précédente, `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Cliquez sur **Enregistrer**.
+Pour l’audience **Audience**, sélectionnez l’audience que vous avez créée dans [1.3.3 Création d’une composition fédérée](./../../datacollection/module1.3/ex3.md), qui est nommée `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Cliquez sur **Enregistrer**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Vous avez terminé cet exercice.
 
 ## Étapes suivantes
 
-Accédez à [3.2.3 Ajouter des langues à votre e-mail](./ex3.md)
+Accédez à [3.5.3 Ajouter des langues à votre e-mail](./ex3.md)
 
-Revenir au [module 3.2](./ajotranslationsvcs.md){target="_blank"}
+Revenez au [module 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
