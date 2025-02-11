@@ -5,7 +5,7 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 22%
@@ -15,14 +15,14 @@ ht-degree: 22%
 
 # Tutoriels Adobe Experience Platform {#tutorials}
 
-+ [Tutorials de plateforme](/help/platform/overview.md)
++ [Tutoriels sur Platform](/help/platform/overview.md)
 + Présentation de Platform {#intro-to-platform}
    + [Une expérience utilisateur avec la technologie Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Coulisses : une expérience client proposée par Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Présentation d’Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Fonctionnalités principales](/help/platform/intro-to-platform/key-capabilities.md)
    + [Applications basées sur Platform](/help/platform/intro-to-platform/native-applications.md)
-   + [Intégrations avec des applications Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Intégrations avec les applications Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Cas d’utilisation clés](/help/platform/intro-to-platform/key-use-cases.md)
    + [Architecture de base](/help/platform/intro-to-platform/basic-architecture.md)
    + [Interface utilisateur](/help/platform/intro-to-platform/interface-tour.md)
@@ -35,7 +35,7 @@ ht-degree: 22%
    + [Orchestrer des campagnes avec Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Prise en main : architectes et ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=fr){target="_blank"}
 + [Authentification aux API Experience Platform](/help/platform/authentication/platform-api-authentication.md)
-+ [Importer les données d’exemple dans l’Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ [Importer des données d’exemple dans Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
    + [Utiliser des alertes](/help/platform/admin/use-alerts.md)
    + [Utiliser des sandbox](/help/platform/admin/use-sandboxes.md)
@@ -108,7 +108,7 @@ ht-degree: 22%
    + [Mapper un fichier CSV à XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Présentation des sources](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Ingérer des données à partir d’Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
-   + [ Ingérer des données à partir de l’Audience Manager ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Ingérer des données à partir d’Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Ingérer des données à partir de l’espace de stockage cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=fr)
    + [ Ingérer des données à partir du CRM ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=fr)
    + [Ingérer des données à partir de bases de données](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
@@ -121,7 +121,7 @@ ht-degree: 22%
    + [Expiration des jeux de données](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinations {#destinations}
    + [Présentation des destinations](/help/platform/destinations/understanding-destinations.md)
-   + [Connexion aux destinations](/help/platform/destinations/connecting-to-destinations.md)
+   + [Se connecter aux destinations](/help/platform/destinations/connecting-to-destinations.md)
    + [Création de destinations et activation de données](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Activation de profils et de segments vers une destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [Configurer une destination d’export de jeux de données](/help/platform/destinations/configure-dataset-export-destination.md)
@@ -137,7 +137,7 @@ ht-degree: 22%
       + [Activer les segments et les attributs de profil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Utilisation des segments Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Utilisation des attributs de profil Real-Time CDP dans Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Webinaire Activer des données vers des applications non Adobes](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [Webinaire Activer des données vers des applications non Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identités {#identities}
    + [Présentation des graphiques d’identités et d’identités](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [Étiqueter, ingérer et vérifier des données d’identité](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -147,7 +147,7 @@ ht-degree: 22%
 + Intelligent Services {#intelligent-services}
    + [Vue d’ensemble](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Présentation d’Attribution AI](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [valeur Attribution AI](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Valeur IA dédiée à l’attribution](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [Configuration d’Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
    + [Utiliser les scores et les informations d’Attribution AI](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
    + [Présentation de Customer AI](/help/platform/intelligent-services/introduction-to-customer-ai.md)
@@ -193,7 +193,7 @@ ht-degree: 22%
    + [API Query Service](/help/platform/queries/query-service-api.md)
    + [Explorer les données](/help/platform/queries/explore-data.md)
    + [Préparer les données](/help/platform/queries/prepare-data.md)
-   + [Fonctions définies par l’Adobe](/help/platform/queries/adobe-defined-functions.md)
+   + [Fonctions définies par Adobe](/help/platform/queries/adobe-defined-functions.md)
    + [Modèles d’utilisation des données](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Exécuter des requêtes](/help/platform/queries/run-queries.md)
    + [Générer des jeux de données à partir des résultats de la requête](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
@@ -221,7 +221,7 @@ ht-degree: 22%
 + Sources {#sources}
    + [Vue d’ensemble](/help/platform/sources/overview.md)
    + [Ingérer des données à partir d’Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
-   + [Ingérer des données depuis l’Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
+   + [Ingérer des données à partir d’Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Ingérer des données à partir de Marketo](/help/platform/sources/ingest-data-from-marketo.md)
    + [Ingérer des données à partir de l’espace de stockage dans le cloud](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [Ingérer des données à partir du CRM](/help/platform/sources/ingest-data-from-crm.md)
@@ -233,11 +233,11 @@ ht-degree: 22%
    + [Vue d’ensemble](/help/platform/use-case-playbooks/overview.md)
    + [Configuration d’un sandbox de playbook](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Créer et publier une instance de playbook](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Intégrations Experience Cloud {#experience-cloud}
++ {#experience-cloud} des intégrations Experience Cloud
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=fr)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
-   + [Marketo Engage ](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
    + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Tendances du secteur {#industry}
    + [L&#39;avenir de la gestion des données et l&#39;évolution de l&#39;environnement](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
