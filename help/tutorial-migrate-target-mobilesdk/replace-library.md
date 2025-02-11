@@ -2,26 +2,36 @@
 title: Remplacez l’extension SDK - Migration d’Adobe Target vers l’extension Adobe Journey Optimizer - Prise de décision mobile .
 description: Découvrez comment remplacer le SDK lors de la migration d’Adobe Target vers l’extension Adobe Journey Optimizer - Prise de décision pour mobile.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# Remplacez l’extension Target par l’extension Decisioning
+# Remplacer le SDK cible par le SDK d’optimisation
 
-Découvrez comment remplacer votre implémentation Adobe Target sur la page pour migrer d’at.js vers Platform Web SDK. Un remplacement de base comprend les étapes suivantes :
+Découvrez comment remplacer les SDK Adobe Target par les SDK Optimize dans votre implémentation mobile. Un remplacement de base comprend les étapes suivantes :
 
+* Mettre à jour les dépendances dans votre fichier Podfile ou `build.gradle`
+* Mettre à jour les imports
+* Mettre à jour le code de l’application
 
-## Intégration de l’extension Decisioning (Optimisation de SDK) dans votre application mobile
+>[!INFO]
+>
+>Dans l’écosystème Adobe Experience Platform Mobile SDK, les extensions sont implémentées par des SDK importés dans vos applications, qui peuvent porter des noms différents :
+>
+> * **Target SDK** met en œuvre l’extension **Adobe Target**
+> * **Optimiser SDK** implémente l’extension **Adobe Journey Optimizer - Decisioning**
+
+## Mettre à jour les dépendances
 
 
 >[!BEGINTABS]
 
->[!TAB Dépendances d’application pour l’extension Decisioning-Android]
+>[!TAB Dépendances d’application pour l’optimisation de SDK-Android]
 
-`build.gradle` dépendances
+`build.gradle` des dépendances après la migration
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Dépendances d’application pour l’extension Decisioning-iOS]
+>[!TAB Dépendances d’application pour l’optimisation de SDK-iOS]
 
-`Podfile` dépendances
+`Podfile` des dépendances après la migration
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB Dépendances d’application pour l’extension Target-Android]
+>[!TAB Dépendances d’application pour Target SDK-Android]
 
-`build.gradle` dépendances
+`build.gradle` les dépendances avant la migration
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Dépendances d’application pour l’extension Target-iOS]
+>[!TAB Dépendances d’application pour Target SDK-iOS]
 
-`Podfile` dépendances
+`Podfile` les dépendances avant la migration
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## Mettre à jour l’approche de masquage préalable du contenu
+## Mise à jour des imports et du code
 
 >[!BEGINTABS]
 
->[!TAB Extension Decisioning-Android]
+>[!TAB Optimiser SDK-Android]
 
-Code d’initialisation Java
+Code d’initialisation Java après la migration
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Extension Decisioning-iOS]
+>[!TAB Optimiser SDK-iOS]
 
-Code d’initialisation Swift
+Code d’initialisation rapide après la migration
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Extension cible-Android]
+>[!TAB Target SDK-Android]
 
-Code d’initialisation Java
+Code d’initialisation Java avant la migration
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Extension cible-iOS]
+>[!TAB Target SDK-iOS]
 
-Code d’initialisation Swift
+Code d’initialisation rapide avant la migration
 
 ```Swift
 import AEPCore
