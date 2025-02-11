@@ -1,38 +1,41 @@
 ---
-title: Suivi des événements - Migration d’Adobe Target vers l’extension Adobe Journey Optimizer - Decisioning Mobile
-description: Découvrez comment suivre les événements de conversion Adobe Target à l’aide de l’extension Adobe Journey Optimizer - Decisioning Mobile
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Suivi des événements - Migration d’Adobe Target vers Adobe Journey Optimizer - Extension mobile Decisioning
+description: Découvrez comment effectuer le suivi des événements de conversion Adobe Target à l’aide de l’extension Adobe Journey Optimizer - Decisioning Mobile
+exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '199'
 ht-degree: 1%
 
 ---
 
 # Suivi des événements de conversion Target à l’aide de l’extension Adobe Journey Optimizer - Decisioning Mobile
 
-Les événements de conversion pour Target peuvent être suivis avec... Les événements de conversion se répartissent généralement dans les catégories suivantes :
+Pour plus d’informations sur le contenu, consultez cette page : https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
 
-* Suivi automatique des événements qui ne nécessitent aucune configuration
-* Événements de conversion d’achat qui doivent être ajustés en fonction d’une mise en oeuvre recommandée du SDK Web Platform
-* Événements de conversion hors achat nécessitant des mises à jour du code
+Les événements de conversion pour Target peuvent être suivis avec... Les événements de conversion sont généralement classés dans les catégories suivantes :
 
-## Comparaison des objectifs
+* Événements suivis automatiquement qui ne nécessitent aucune configuration
+* Achat d’événements de conversion qui doivent être ajustés pour une implémentation d’extension de prise de décision conforme aux bonnes pratiques
+* Événements de conversion hors achat qui nécessitent des mises à jour de code
 
-Le tableau suivant compare la manière dont at.js et le SDK Web Platform effectuent le suivi des événements de conversion.
+## Comparaison du suivi des objectifs
+
+Le tableau suivant compare la manière dont at.js et Platform Web SDK effectuent le suivi des événements de conversion
 
 | Objectif de l’activité | Target at.js 2.x | SDK Web de Platform |
 |---|---|---|
 | | | |
 
 
-## Événements automatiquement suivis
+## Événements suivis automatiquement
 
-Les objectifs de conversion suivants ne nécessitent aucun ajustement spécifique à votre mise en oeuvre :
+Les objectifs de conversion suivants ne nécessitent aucun ajustement spécifique à votre implémentation :
 
 
 
-Apprenez ensuite à [activer le partage d’ID inter-domaines](cross-domain.md) pour des profils de visiteurs cohérents.
+Découvrez ensuite comment [activer le partage d’identifiants entre domaines](webview.md) pour des profils de visiteurs cohérents.
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target mobile de l’extension Target vers l’extension de prise de décision. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
