@@ -4,7 +4,7 @@ description: Plug-in AEM CS - MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Accédez au dossier que vous utilisez pour votre référentiel GitHub **citisign
 Tu verras ça. Collez la commande suivante et appuyez sur **entrée**.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 Vous devriez alors voir ceci.
@@ -171,7 +171,7 @@ Dans le menu de gauche, accédez à **Environnements** puis cliquez sur l’icô
 
 ![ AEMCS ](./images/scriptsvar4.png){zoomable="yes"}
 
-Vous trouverez ensuite l’URL dont vous avez besoin, mais elle se trouve dans une balise `<script></script>` HTML. Vous ne devez copier que la pièce commençant à `https` jusqu&#39;à `.min.js`.
+Vous trouverez ensuite l’URL dont vous avez besoin, mais elle se trouve dans une balise HTML `<script></script>`. Vous ne devez copier que la pièce commençant à `https` jusqu&#39;à `.min.js`.
 
 ![ AEMCS ](./images/scriptsvar5.png){zoomable="yes"}
 
@@ -323,7 +323,7 @@ Accédez à [https://experience.adobe.com/#/data-collection/](https://experience
 
 ![ AEMCS ](./images/acdl3.png){zoomable="yes"}
 
-Accédez à **Extensions**, à **Catalogue**. Cliquez sur l’extension **Adobe Client Data Layer** puis sur **Installer**.
+Accédez à **Extensions**, à **Catalogue**. Cliquez sur l’extension **Couche de données client Adobe** puis sur **Installer**.
 
 ![ AEMCS ](./images/acdl4.png){zoomable="yes"}
 

@@ -1,21 +1,21 @@
 ---
-title: Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées
-description: Découvrez comment optimiser le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies
+title: Optimisez votre processus Firefly à l’aide de Microsoft Azure et des URL présignées
+description: Découvrez comment optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
 
 ---
 
-# 1.1.2 Optimisation du processus de Firefly à l’aide de Microsoft Azure et des URL présignées
+# 1.1.2 Optimisez votre processus Firefly à l’aide de Microsoft Azure et des URL présignées.
 
-Découvrez comment optimiser le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies.
+Découvrez comment optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies.
 
 ## 1.1.2.1 Créer un abonnement Azure
 
@@ -77,7 +77,7 @@ Découvrez comment optimiser le processus de votre Firefly à l’aide de Micros
 
    ![ Stockage Azure ](./images/azs7.png){zoomable="yes"}
 
-1. Utilisez `--aepUserLdap--`pour le nom et sélectionnez **Créer**.
+1. Utilisez `--aepUserLdap--` pour le nom et sélectionnez **Créer**.
 
    ![ Stockage Azure ](./images/azs8.png){zoomable="yes"}
 
@@ -149,7 +149,7 @@ Découvrez comment optimiser le processus de votre Firefly à l’aide de Micros
 
    ![ Stockage Azure ](./images/az22.png){zoomable="yes"}
 
-1. De retour dans Postman, ouvrez la demande **POST - Firefly - T2I (styleref) V3**.
+1. De retour dans Postman, ouvrez la requête **POST - Firefly - T2I (styleref) V3**.
 Il apparaît dans **Corps**.
 
    ![ Stockage Azure ](./images/az23.png){zoomable="yes"}
@@ -158,7 +158,7 @@ Il apparaît dans **Corps**.
 
    ![ Stockage Azure ](./images/az24.png){zoomable="yes"}
 
-1. Ouvrez la nouvelle image Services du Firefly de réponse dans votre navigateur.
+1. Ouvrez la nouvelle image des services Firefly de réponse dans votre navigateur.
 
    ![ Stockage Azure ](./images/az25.png){zoomable="yes"}
 
@@ -319,7 +319,7 @@ Pour lire par programmation les fichiers des comptes de stockage Azure à long t
 
 >[!IMPORTANT]
 >
->Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
+>Si vous êtes un employé d&#39;Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
 
 Comme vous pouvez le voir dans la section ci-dessus, il existe des variables communes dans les jetons Lecture et Écriture .
 
@@ -373,6 +373,6 @@ Pour les interactions d’API futures, la principale chose qui change est le nom
 
 Accédez à [ Utilisation des API Photoshop ](./ex3.md){target="_blank"}
 
-Revenir à [Présentation des services d’Adobe Firefly ](./firefly-services.md){target="_blank"}
+Revenez à [ Présentation des services Adobe Firefly ](./firefly-services.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
