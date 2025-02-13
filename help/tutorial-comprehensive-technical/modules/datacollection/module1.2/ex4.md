@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données - Ingestion de données à parti
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 6%
 
 ---
@@ -53,6 +53,10 @@ Sur le modèle, vous remarquerez les champs suivants :
 - country_code
 - ville
 - pays
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 Tous ces champs ont été définis pour produire des données compatibles avec Platform.
 
@@ -68,7 +72,9 @@ Une fois votre fichier CSV prêt, vous pouvez procéder à l’ingestion dans AE
 
 ### Vérifier le jeu de données
 
-Ouvrez [Adobe Experience Platform](https://experience.adobe.com/platform) et accédez à **[!UICONTROL Jeux de données]**.
+Accédez à [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+![Ingestion des données](./images/home.png)
 
 Avant de continuer, vous devez sélectionner un **[!UICONTROL sandbox]**. Le sandbox à sélectionner est nommé ``--aepSandboxName--``.
 
@@ -115,8 +121,6 @@ Un descripteur principal personnalisé doit être défini pour chaque schéma. D
 Vous pouvez également constater que notre identité principale se trouve dans `--aepTenantId--.identification.core.crmId`, liée à l’[!UICONTROL espace de noms] de **[!UICONTROL système de démonstration - CRMID]**.
 
 ![Ingestion des données](./images/schema_descriptor.png)
-
-
 
 Chaque schéma et, par conséquent, chaque jeu de données à utiliser dans le [!UICONTROL profil client en temps réel] doivent avoir un identifiant de [!UICONTROL Principal ]. Cet identifiant de Principal  est l&#39;identifiant utilisé par la marque pour un client dans ce jeu de données. Dans le cas d’un jeu de données CRM, il peut s’agir de l’adresse e-mail ou de l’identifiant CRM, dans le cas d’un jeu de données Call Center, il peut s’agir du numéro de mobile d’un client.
 
@@ -229,6 +233,24 @@ Le champ Schéma Source **id** doit être lié au champ cible **_id**.
 Le champ Schéma Source **last_name** doit être lié au champ cible **person.name.lastName**.
 
 ![Ingestion des données](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Le champ Schéma Source **nom_famille** doit être lié au champ cible **consentements.marketing.email.val**.
+
+![Ingestion des données](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Le champ Schéma Source **nom_famille** doit être lié au champ cible **consentements.marketing.commercialEmail.val**.
+
+![Ingestion des données](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Le champ Schéma Source **nom_famille** doit être lié au champ cible **consentements.marketing.any.val**.
+
+![Ingestion des données](./images/cons3.png)
 
 Vous devriez maintenant avoir ceci. Cliquez sur **Terminer**.
 
