@@ -4,7 +4,7 @@ description: Configuration de votre environnement AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -186,7 +186,7 @@ Au bout de quelques minutes, votre package sera alors installé.
 Vous pouvez maintenant fermer cette fenêtre.
 
 
-## 2.1.3.4 de ressources CitiSignal Publish
+## 2.1.3.4 Publication de ressources CitiSignal
 
 Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Cliquez sur votre **Programme** pour l’ouvrir.
 
@@ -200,7 +200,7 @@ Cliquez sur **Se connecter avec Adobe**.
 
 ![ AEMCS ](./images/aemcssetup19.png){zoomable="yes"}
 
-Votre environnement de création s’affiche alors. Cliquez sur **Sites**.
+Votre environnement de création s’affiche alors. Cliquez sur **Assets**.
 
 ![ AEMCS ](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ Actualisez votre écran au bout de quelques minutes, vous verrez alors votre nou
 
 ![ AEMCS ](./images/aemcssetup38.png){zoomable="yes"}
 
-## Site web 2.1.3.6 Publish CitiSignal
+## 2.1.3.6 Publier le site web de CitiSignal
 
 Ensuite, cliquez sur la case à cocher devant **CitiSignal**. Cliquez ensuite sur **Gérer la publication**.
 
