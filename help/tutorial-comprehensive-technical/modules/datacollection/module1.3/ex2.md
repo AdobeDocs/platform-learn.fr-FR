@@ -4,9 +4,9 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 5%
 
 ---
@@ -51,7 +51,7 @@ Tu verras ça. Copiez l’**URL actuelle** et collez-la dans le champ **Serveur*
 **Mot de passe** : mot de passe que vous avez créé précédemment, dans l’exercice 1.3.1.1
 **Base de données** : utilisez **CITISIGNAL**
 
-Donc, finalement, vous devriez avoir ceci. Cliquez sur **Tester la connexion**. Si le test réussit, cliquez sur **Déployer les fonctions**, ce qui créera des fonctions dans le Snowflake, nécessaires au moteur de workflow.
+Donc, finalement, vous devriez avoir ceci. Cliquez sur **Tester la connexion**. Si le test réussit, cliquez sur **Déployer les fonctions**, ce qui créera des fonctions côté Snowflake qui sont nécessaires au moteur de workflow.
 
 Une fois la connexion testée avec succès et les fonctions déployées, votre configuration sera stockée.
 
@@ -71,13 +71,13 @@ Sélectionnez votre base de données fédérée et cliquez sur **+ Ajouter des t
 
 ![AAAA](./images/fdb6.png)
 
-Tu verras ça. Sélectionnez les 5 tables que vous avez créées dans Snowflake précédemment :
+Tu verras ça. Sélectionnez les 5 tables que vous avez créées précédemment dans Snowflake :
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Cliquez sur **Ajouter**.
 
@@ -98,11 +98,11 @@ Cliquez sur **Créer**.
 
 ![AAAA](./images/fdb8.png)
 
-Tu verras ça. Vous pouvez cliquer sur n’importe quel schéma et consulter les informations. Par exemple, cliquez sur **CK_PERSON**.
+Tu verras ça. Vous pouvez cliquer sur n’importe quel schéma et consulter les informations. Par exemple, cliquez sur **—aepUserLdap—_PERSON**.
 
 ![AAAA](./images/fdb9.png)
 
-Vous verrez alors ceci, avec la possibilité de modifier la configuration. Cliquez sur **Données** pour afficher un exemple des données contenues dans la base de données du Snowflake.
+Vous verrez alors ceci, avec la possibilité de modifier la configuration. Cliquez sur **Données** pour afficher un exemple des données contenues dans la base de données Snowflake.
 
 ![AAAA](./images/fdb10.png)
 
@@ -130,57 +130,58 @@ Sélectionnez vos schémas et cliquez sur **Ajouter**.
 
 Tu verras ça. Cliquez sur **Enregistrer**.
 
-### `CK_USERS` - `CK_PERSONS`
+![AAAA](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
 
 Vous pouvez maintenant commencer à définir des liens entre les schémas. Pour commencer à définir un lien, vous devez cliquer sur **Créer des liens**.
 
 ![AAAA](./images/fdb16.png)
 
-Tout d’abord, définissons le lien entre le `CK_USERS` de la table et `CK_PERSONS`.
+Tout d’abord, définissons le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_PERSONS`.
 
 Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb18.png)
 
-
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb17.png)
 
-Définissons ensuite le lien entre le `CK_HOUSEHOLDS` de la table et `CK_PERSONS`.
+Définissons ensuite le lien entre le `--aepUserLdap--_HOUSEHOLDS` de la table et `--aepUserLdap--_PERSONS`.
 
 ![AAAA](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb20.png)
 
-Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MONTHLY_DATA_USAGE`.
+Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_MONTHLY_DATA_USAGE`.
 
 ![AAAA](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb22.png)
 
-Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_HOUSEHOLDS`.
+Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_HOUSEHOLDS`.
 
 ![AAAA](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
 ![AAAA](./images/fdb24.png)
 
-Définissons ensuite le lien entre le `CK_USERS` de la table et `CK_MOBILE_DATA_USAGE`.
+Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_MOBILE_DATA_USAGE`.
 
 ![AAAA](./images/fdb25.png)
 

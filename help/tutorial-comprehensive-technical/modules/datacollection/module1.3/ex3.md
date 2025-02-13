@@ -4,9 +4,9 @@ description: Foundation - AEC - Créer une composition fédérée
 kt: 5342
 doc-type: tutorial
 exl-id: 293bf825-d0d6-48cf-9cbf-69f622597678
-source-git-commit: d0469a38e2bef6031f796ed0946caba52c424e8c
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ Tu verras ça. Sélectionnez **Créer une audience**. Cliquez sur l’icône **r
 
 ![AAAA](./images/fedcomp5.png)
 
-Sélectionnez le schéma **CK_HOUSEHOLDS**. Cliquez sur **Confirmer**.
+Sélectionnez le schéma **—aepUserLdap—_HOUSEHOLDS**. Cliquez sur **Confirmer**.
 
 ![AAAA](./images/fedcomp6.png)
 
@@ -63,7 +63,7 @@ Sélectionnez l’attribut **ISELIGIBLEFORFIBER** puis cliquez sur **Confirmer**
 
 ![AAAA](./images/fedcomp9.png)
 
-Tu verras ça. Définissez le champ **Valeur** sur **Vrai**. Cliquez sur **Calculer** pour pousser la requête vers le Snowflake et obtenir une estimation des profils qui remplissent désormais les critères.
+Tu verras ça. Définissez le champ **Valeur** sur **Vrai**. Cliquez sur **Calculer** pour pousser la requête vers Snowflake et obtenir une estimation des profils qui remplissent désormais les critères.
 
 ![AAAA](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ Ensuite, cliquez de nouveau sur l’icône **+** et cliquez de nouveau sur **Con
 
 ![AAAA](./images/fedcomp11.png)
 
-La deuxième condition à ajouter est : `Is the user an existing CitiSignal Mobile subscriber?`. La réponse à cette question consiste à utiliser la relation entre le ménage et le client principal du ménage, qui est définie dans un autre tableau, **CK_PERSON**. Vous pouvez effectuer une analyse plus approfondie dans le menu d’attributs à l’aide du lien **household2person**.
+La deuxième condition à ajouter est : `Is the user an existing CitiSignal Mobile subscriber?`. La réponse à cette question consiste à utiliser la relation entre le ménage et le client principal du ménage, qui est définie dans une autre table, **—aepUserLdap—_PERSON**. Vous pouvez effectuer une analyse plus approfondie dans le menu d’attributs à l’aide du lien **household2person**.
 
 ![AAAA](./images/fedcomp12.png)
 
@@ -129,7 +129,7 @@ Sélectionnez le champ **E-MAIL**. Cliquez sur **Confirmer**.
 
 ![AAAA](./images/fedcomp20c.png)
 
-Tu verras ça. Vous devez maintenant définir le champ d’identité du Principal ****, définissez-le sur **Household2person_EMAIL**.
+Tu verras ça. Vous devez maintenant définir le champ d’identité du Principal ****, définissez-le sur **Household2person_EMAIL**. Définissez **Espace de noms d’identité** sur **E-mail**.
 
 Cliquez sur **Enregistrer**.
 
@@ -137,7 +137,9 @@ Cliquez sur **Enregistrer**.
 
 Votre composition est maintenant terminée. Cliquez sur **Démarrer** pour l’exécuter.
 
-La requête sera désormais transmise à Snowflake, qui y interrogera les données sources. Les résultats seront redirigés vers AEP, mais les données sources restent en Snowflake.
+![AAAA](./images/fedcomp21a.png)
+
+La requête sera désormais transmise à Snowflake, qui y interrogera les données sources. Les résultats seront redirigés vers AEP, mais les données sources restent dans Snowflake.
 
 L’audience est maintenant renseignée et peut être ciblée à partir de l’écosystème AEP.
 
