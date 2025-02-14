@@ -10,40 +10,40 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
+source-git-commit: 4fc3d8815c2f0f5bed7bb0d1fe8cfcd9b1599762
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 5%
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
 
 # Migration d’Adobe Analytics vers Web SDK à l’aide de balises {#migrate-analytics-to-websdk}
 
-+ [Présentation de la migration](migration-to-websdk-overview.md)
++ [1. Présentation de la migration](migration-to-websdk-overview.md)
 
-+ [Création d’une suite de rapports de validation](create-a-validation-report-suite.md)
++ [2. Créer une suite de rapports de validation](create-a-validation-report-suite.md)
 
-+ [Création dʼun flux de données](create-and-configure-the-analytics-datastream.md)
++ [3. Créer un flux de données](create-and-configure-the-analytics-datastream.md)
 
-+ [Ajouter l’extension Web SDK](add-and-configure-the-web-sdk-extension.md)
++ [4. Ajouter l’extension Web SDK](add-and-configure-the-web-sdk-extension.md)
 
-+ [Créer un élément de données Variable](create-a-variable-data-element.md)
++ [5. Créer un élément de données Variable](create-a-variable-data-element.md)
 
-+ [Migration de votre règle de chargement de page par défaut](migrate-your-default-page-load-rule.md)
++ [6. Migrer votre règle de chargement de page par défaut](migrate-your-default-page-load-rule.md)
 
-+ [Migration du code personnalisé](migrate-custom-code-to-the-web-sdk.md)
++ [7. Migration du code personnalisé](migrate-custom-code-to-the-web-sdk.md)
 
-+ [Créer une bibliothèque de développement](build-the-implementation-changes.md)
++ [8. Créer une bibliothèque de développement](build-the-implementation-changes.md)
 
-+ [Déboguer et valider](debug-and-validate-your-web-sdk-migration.md)
++ [9. Déboguer et valider](debug-and-validate-your-web-sdk-migration.md)
 
-+ [Migrer les règles de page supplémentaires](migrate-additional-page-rules.md)
++ [10. Migration de règles de page supplémentaires](migrate-additional-page-rules.md)
 
-+ [Migration des règles de lien personnalisées](migrate-custom-link-rules.md)
++ [11. Migration des règles de lien personnalisées](migrate-custom-link-rules.md)
 
-+ [Migration des variables globales](migrate-global-variables.md)
++ [12. Migration des variables globales](migrate-global-variables.md)
 
-+ [Suppression de l’extension Analytics](delete-analytics-extension-items.md)
++ [13. Supprimez l’extension Analytics](delete-analytics-extension-items.md)
 
-+ [Publish vers les environnements d’évaluation et de production](publish-the-migration.md)
++ [14. Publier en évaluation et en production](publish-the-migration.md)
