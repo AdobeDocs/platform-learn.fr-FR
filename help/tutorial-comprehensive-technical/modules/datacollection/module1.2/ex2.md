@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données - Configuration des schémas et 
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à séle
 
 ![Ingestion des données](./images/sb1.png)
 
-Dans Adobe Experience Platform, cliquez sur **[!UICONTROL Schémas]** dans le menu situé dans la partie gauche de l’écran. La liste des [!UICONTROL schémas] disponibles s’affiche.
+Dans Adobe Experience Platform, cliquez sur **[!UICONTROL Schémas]** dans le menu situé dans la partie gauche de l’écran. La liste des [!UICONTROL schémas] disponibles s’affiche. Vous devez créer un schéma. Pour créer un schéma, cliquez sur **[!UICONTROL + Créer un schéma]**.
 
 ![Ingestion des données](./images/menuschemas.png)
-
-Vous devez créer un schéma. Pour créer un schéma, cliquez sur **[!UICONTROL + Créer un schéma]**.
-
-![Ingestion des données](./images/createschema.png)
 
 Sélectionnez **Manuel** puis cliquez sur **Sélectionner**.
 
@@ -156,8 +152,8 @@ Après avoir cliqué sur le bouton **[!UICONTROL + Ajouter un champ]** , un nouv
 
 Vous devez maintenant saisir les informations de ce nouveau champ, en utilisant ces définitions d’objet :
 
-- Nom du champ : **[!UICONTROL identification]**
-- Nom d’affichage : **[!UICONTROL identification]**
+- Nom du champ : **`--aepUserLdap--_identification`**
+- Nom d’affichage : **`--aepUserLdap--_identification`**
 - Type : **[!UICONTROL objet]**
 - Groupe de champs : **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Votre schéma est maintenant configuré pour faire partie du [!UICONTROL profil 
 
 ![Ingestion des données](./images/sureyps.png)
 
-### Que fait un client ?
+## Que fait ce client ?
 
 Capturer la réponse à la question **Que fait ce client ?** pour votre organisation est effectuée par le biais, par exemple, d’une consultation produit sur une page produit.
 
@@ -291,7 +287,7 @@ Ainsi, lorsque vous créez un [!UICONTROL schéma XDM] pour capturer la réponse
 
 Pour spécifier le type de réponses qui peuvent être données à cette question, vous devez définir [!UICONTROL  Groupe de champs ]. Les [!UICONTROL groupes de champs] sont des extensions de la classe [!UICONTROL ExperienceEvent] et possèdent des configurations très spécifiques. Par exemple, les informations sur le type de produits qu’un client a consultés ou ajoutés à son panier font partie des [!UICONTROL Détails du groupe de champs] **Commerce**.
 
-Ensuite, votre entreprise doit décider de la manière dont vous identifierez le comportement de ce client. Puisque nous parlons d’interactions sur un site web, il est possible que votre organisation connaisse le client, mais il est également possible qu’un visiteur inconnu et anonyme soit actif sur le site web. Nous ne pouvons donc pas utiliser un identifiant tel que l’adresse e-mail. Dans ce cas, votre organisation décidera probablement d’utiliser l’identifiant [!UICONTROL Experience Cloud ID (ECID)] comme identifiant principal.
+Ensuite, votre entreprise doit décider de la manière dont vous identifierez le comportement de ce client. Puisque nous parlons d’interactions sur un site web, il est possible que votre organisation connaisse le client, mais il est également possible qu’un visiteur inconnu et anonyme soit actif sur le site web. Nous ne pouvons donc pas utiliser un identifiant tel que l’adresse e-mail. Dans ce cas, votre organisation décidera probablement d’utiliser l’Experience Cloud ID  (ECID) comme identifiant principal.
 
 Enfin, il est important de distinguer le canal sur lequel les données ont été capturées. Dans ce cas, nous parlerons des interactions du site web et du schéma qui doit être défini doit refléter **où** données d’interaction ont été capturées. Le canal jouera également un rôle important dans l’influence des données capturées. Par conséquent, il est recommandé de définir des schémas pour chaque combinaison de canal, d’identifiant principal et de type de données collectées.
 
@@ -305,13 +301,9 @@ Avant de continuer, vous devez sélectionner un **[!UICONTROL sandbox]**. Le [!U
 
 ![Ingestion des données](./images/sb1.png)
 
-Dans Adobe Experience Platform, cliquez sur **[!UICONTROL Schémas]** dans le menu sur le côté gauche de l’écran et accédez à **Parcourir**.
+Dans Adobe Experience Platform, cliquez sur **[!UICONTROL Schémas]** dans le menu sur le côté gauche de l’écran et accédez à **Parcourir**. Vous devez créer un schéma. Pour créer un schéma, cliquez sur le bouton **[!UICONTROL + Créer un schéma]**.
 
 ![Ingestion des données](./images/menuschemas.png)
-
-Dans [!UICONTROL Schémas], vous verrez tous les schémas existants. Vous devez créer un schéma. Pour créer un schéma, cliquez sur le bouton **[!UICONTROL + Créer un schéma]**.
-
-![Ingestion des données](./images/schemasee.png)
 
 Sélectionnez **Manuel** puis cliquez sur **Sélectionner**.
 
@@ -390,8 +382,8 @@ Après avoir cliqué sur le bouton **+**, un nouveau champ sans titre s’affich
 
 Utilisez ceci pour définir votre nouveau champ :
 
-- Nom du champ : **[!UICONTROL identification]**
-- Nom d’affichage : **[!UICONTROL identification]**
+- Nom du champ : **`--aepUserLdap--_identification`**
+- Nom d’affichage : **`--aepUserLdap--_identification`**
 - Type : **[!UICONTROL objet]**
 - Groupe de champs : `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 

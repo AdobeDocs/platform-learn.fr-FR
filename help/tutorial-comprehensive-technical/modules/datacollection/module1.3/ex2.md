@@ -4,9 +4,9 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 5%
 
 ---
@@ -132,7 +132,7 @@ Tu verras ça. Cliquez sur **Enregistrer**.
 
 ![AAAA](./images/fdb16.png)
 
-### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
+### PERSONNES - UTILISATEURS
 
 Vous pouvez maintenant commencer à définir des liens entre les schémas. Pour commencer à définir un lien, vous devez cliquer sur **Créer des liens**.
 
@@ -144,7 +144,7 @@ Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb18.png)
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### MÉNAGES - PERSONNES
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
@@ -154,7 +154,7 @@ Définissons ensuite le lien entre le `--aepUserLdap--_HOUSEHOLDS` de la table e
 
 ![AAAA](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### UTILISATEURS - MONTHLY_DATA_USAGE
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
@@ -165,7 +165,7 @@ Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--
 ![AAAA](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### UTILISATEURS - FOYERS
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
@@ -175,7 +175,7 @@ Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--
 
 ![AAAA](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### UTILISATEURS - MOBILE_DATA_USAGE
 
 Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre lien.
 
