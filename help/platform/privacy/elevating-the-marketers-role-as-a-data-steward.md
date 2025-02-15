@@ -1,6 +1,6 @@
 ---
-title: Élever le rôle du marketeur en tant que responsable des données
-description: Les forces de marché volatiles et les exigences disparates en matière de protection de la vie privée des consommateurs peuvent constituer des scénarios intimidants pour le spécialiste du marketing numérique. Pour maintenir les campagnes du bon côté des réglementations, les équipes marketing ont besoin de leurs homologues informatiques pour disposer d’un processus rationalisé de contrôle futur du processus de gouvernance des données, qui permet idéalement à chacun de suivre et d’appliquer des règles d’utilisation responsable des données des consommateurs. Écoutez les témoignages d’Adobe et de Scotiabank Digital sur les principales considérations à prendre en compte pour une gestion des données responsable.
+title: Amélioration du rôle du professionnel du marketing en tant que gestionnaire de données
+description: Les forces de marché volatiles et les exigences disparates en matière de protection de la vie privée des consommateurs peuvent constituer des scénarios intimidants pour le spécialiste du marketing numérique. Pour que les campagnes respectent les réglementations, les équipes marketing ont besoin que leurs homologues informatiques disposent d’un processus rationalisé pour garantir la pérennité du processus de gouvernance des données. Idéalement, ce processus doit permettre à tous les utilisateurs de suivre et d’appliquer des règles d’utilisation responsable des données des clients. Écoutez les témoignages d’Adobe et de Scotiabank Digital sur les principales considérations à prendre en compte pour une gestion des données responsable.
 feature: Privacy
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
@@ -9,19 +9,19 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%
 
 ---
 
-# Élever le rôle du marketeur en tant que responsable des données
+# Amélioration du rôle du professionnel du marketing en tant que gestionnaire de données
 
-Le rôle du &quot;gestionnaire de données&quot; englobe toutes les disciplines et est devenu une responsabilité supplémentaire pour le spécialiste du marketing. Dans ce webinaire, des experts feront part de leurs expériences :
+Le rôle du « gestionnaire de données » s’étend sur plusieurs disciplines et est devenu une responsabilité supplémentaire pour le professionnel du marketing. Dans ce webinaire, les experts partageront les informations suivantes :
 
 * Exemples de gouvernance des données client dans un contexte marketing de collecte, de segmentation et d’activation d’audience
-* Comment intégrer des stratégies basées sur le consentement qui favorisent la confiance des consommateurs et s’intègrent de manière transparente au parcours des consommateurs
-* Les responsabilités du gestionnaire de données dans le rôle du marketeur avec efficacité et confiance
+* Comment intégrer des stratégies basées sur le consentement qui suscitent la confiance des consommateurs et s’intègrent de manière transparente au parcours des consommateurs
+* Responsabilités du gestionnaire de données au sein du rôle du professionnel du marketing, avec efficacité et confiance
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on&enablevpops)

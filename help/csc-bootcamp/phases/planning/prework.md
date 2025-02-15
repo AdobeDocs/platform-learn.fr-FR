@@ -1,85 +1,85 @@
 ---
-title: Le camp d'entraînement du CSC - Autres travaux préliminaires
-description: Le camp d'entraînement du CSC - Autres travaux préliminaires
+title: Camp d'entraînement du SCC - Autres travaux préalables
+description: Camp d'entraînement du SCC - Autres travaux préalables
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# Autres prétâches
+# Autres travaux préalables
 
-## Sélection de Brand Assets
+## Sélectionner Brand Assets
 
-Comme décrit dans le dossier créatif, il y a des ressources nécessaires pour lancer efficacement notre campagne. Ces ressources de marque seront ajoutées à la campagne dans Workfront afin que nous y ayons accès de manière centralisée.
+Comme indiqué dans le dossier de création, certaines ressources seront nécessaires pour lancer efficacement notre campagne. Ces ressources de marque seront ajoutées à la campagne dans Workfront afin que nous y ayons accès de manière centralisée.
 
-- Développez la tâche 1, &quot;TÂCHES INITIALES&quot;, puis ouvrez la tâche &quot;Sélectionner 5 ressources de marque (avant, arrière, etc.)&quot; en cliquant dessus.
+- Développez la tâche 1, « TÂCHES INITIALES », puis ouvrez la tâche « Sélectionner 5 ressources de marque (au premier plan, à l’arrière, etc.) » en cliquant dessus.
 
-![Ouvrir la tâche de ressources](./images/wf-open-assets-task.png)
+![tâche ouvrir les ressources](./images/wf-open-assets-task.png)
 
-- Cliquez sur &quot;Documents&quot;, puis sur &quot;Ajouter nouveau :
+- Cliquez sur &#39;Documents&#39; puis sur &#39;Ajouter nouveau :
 
-![ajouter un document](./images/wf-add-new-doc.png)
+![ajouter document](./images/wf-add-new-doc.png)
 
-- Sélectionnez &quot;Expérience-manager&quot;. Cela nous permettra de sélectionner des ressources de marque déjà disponibles sur AEM Assets :
+- Sélectionnez « Depuis experience-manager » ; cela nous permettra de sélectionner les ressources de marque déjà disponibles sur AEM Assets :
 
-![de experience-manager](./images/wf-from-aem.png)
+![from experience-manager](./images/wf-from-aem.png)
 
-- Une fois la hiérarchie AEM Dossier affichée, accédez au chemin suivant : experience-manager > Adobe Assets > Blocs de vélo Sélectionnez 5 ressources, puis cliquez sur &quot;Lien&quot;.
+- Une fois que la hiérarchie des dossiers AEM s’affiche, accédez au chemin suivant : experience-manager > Adobe Bike Assets > Vélos Sélectionnez 5 ressources, puis cliquez sur « Lien ».
 
-![ressources sélectionnées](./images/selected-assets.png)
+![ ressources sélectionnées ](./images/selected-assets.png)
 
-- Nous avons maintenant nos ressources de marque sur notre tâche. Cela signifie que nous pouvons définir la tâche 2 comme 100 % terminée :
+- Nous avons désormais nos ressources de marque à notre disposition. Cela signifie que nous pouvons définir la tâche 2 comme 100 % terminée :
 
 ![terminer la tâche](./images/wf-task-2-complete.png)
 
 
 ## Démonstration d’Adobe Commerce
 
-Adobe Commerce est l’un des nombreux produits de Adobe Experience Cloud qui peuvent vous aider à offrir les meilleures expériences numériques à vos clients. Cependant, il y avait tout simplement trop peu de temps pour tout faire ensemble pendant le bootcamp.
+Adobe Commerce est l’un des nombreux produits de Adobe Experience Cloud qui peuvent vous aider à offrir les meilleures expériences digitales à vos clients. Cependant, il y avait tout simplement trop peu de temps pour tout faire ensemble pendant le camp d&#39;entraînement.
 
-Cette vidéo vous fait connaitre Adobe Commerce et montre le produit que nous avons créé pour l’utiliser pendant le bootcamp. Dans un scénario réel, vous téléchargerez les ressources de marque sélectionnées précédemment dans Adobe Commerce vers la configuration du produit.
+Cette vidéo vous familiarise avec Adobe Commerce et présente le produit que nous avons créé pour être utilisé pendant le bootcamp. Dans un scénario réel, vous pouvez charger les ressources de marque sélectionnées précédemment dans Adobe Commerce vers la configuration du produit.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
-Une fois cette tâche terminée, vous pouvez marquer la tâche 3 comme étant 100 % terminée dans Workfront.
+Une fois cette tâche terminée, vous pouvez marquer la tâche 3 comme 100 % terminée dans Workfront.
 
-## Des campagnes flexibles sont une condition préalable
+## Des campagnes flexibles sont indispensables
 
-Lors de la révision de notre plan de travail, nous avons remarqué un petit problème : notre responsable produit (le demandeur) a mis à jour une demande qu’il a oubliée pour une &quot;bannière de page d’accueil du produit&quot;.  Nous l&#39;ajouterons à notre plan de projet.
+Lors de l’examen de notre plan de travail, nous avons remarqué un petit problème : notre chef de produit (le demandeur) a mis à jour une mise à jour qu’il a oublié de demander pour une « bannière de page d’accueil du produit ».  Nous l’ajouterons à notre plan de projet.
 
-- Accédez à la liste Tâches et ajoutez notre tâche &quot;Créer une bannière de page d’accueil de produit&quot; juste sous la tâche 4 &quot;PRODUCTION&quot;. Pour ce faire, sélectionnez la tâche &quot;Préparer le contenu de l’application mobile&quot; et cliquez sur &quot;Ajouter la tâche au-dessus de l’icône&quot; :
+- Accédez à la liste Tâches et ajoutez notre tâche « Créer une bannière de page d’accueil de produit » juste en dessous de la tâche 4 « PRODUCTION ». Pour ce faire, sélectionnez la tâche « Préparer le contenu de l’application mobile » et cliquez sur l’icône « Ajouter une tâche au-dessus de » :
 
-![ajouter une tâche au-dessus](./images/wf-add-task-above.png)
+![ajouter une tâche ci-dessus](./images/wf-add-task-above.png)
 
-- Attribuez à la tâche ajoutée un nom significatif, tel que &quot;Créer une bannière de page d’accueil de produit&quot;.
+- Donnez un nom explicite à la tâche ajoutée, comme « Créer une bannière de page d’accueil de produit ».
 
-![créer la tâche](./images/wf-create-banner.png)
+![créer une tâche](./images/wf-create-banner.png)
 
-- Maintenant que nous avons créé la tâche, ajoutons du contenu à la tâche. Cliquez sur les trois points à droite du titre de votre projet et sélectionnez &quot;Joindre un modèle&quot; :
+- Maintenant que nous avons créé la tâche, nous allons lui ajouter du contenu. Cliquez sur les trois points à droite du titre de votre projet et sélectionnez « Joindre un modèle » :
 
 ![joindre un modèle](./images/wf-attach-template.png)
 
-- Sélectionnez &quot;Créer une bannière de page d’accueil de produit&quot; et cliquez sur &quot;Personnaliser et joindre&quot; :
+- Sélectionnez « Créer une bannière de page d’accueil de produit » et cliquez sur « Personnaliser et joindre » :
 
 ![créer une bannière de page d’accueil de produit](./images/wf-homepage-banner.png)
 
-- Dans l’écran de personnalisation, veillez à mentionner la tâche &quot;Créer une bannière de page d’accueil de produit&quot; en tant que parent :
+- Dans l’écran de personnalisation, veillez à mentionner la tâche « Créer une bannière de page d’accueil de produit » comme parent :
 
-![add parent](./images/wf-create-banner-parent.png)
+![ajouter un parent](./images/wf-create-banner-parent.png)
 
-- Enfin, veillez à marquer la tâche parent &quot;Créer une page d’accueil de produit&quot; avec un prédécesseur de la tâche 3, car aucune production ne peut être lancée tant que le produit n’a pas été créé dans Adobe Commerce :
+- Enfin, veillez à marquer la tâche parent « Créer la page d’accueil du produit » avec un prédécesseur de la tâche 3, car aucune production ne peut être démarrée tant que le produit n’a pas été créé dans Adobe Commerce :
 
-![ajouter le prédécesseur correct](./images/wf-predecessor.png)
+![ajouter le prédécesseur approprié](./images/wf-predecessor.png)
 
-Nous avons maintenant une campagne qui est terminée et planifiée, ce qui signifie que nous pouvons maintenant commencer par la production et la diffusion de notre campagne !
+Nous disposons désormais d’une campagne terminée et planifiée, ce qui signifie que nous pouvons maintenant commencer la production et la diffusion de notre campagne !
 
 
 Étape suivante : [Phase 2 - Production : créer une bannière de page d’accueil de produit](../production/banner.md)
 
-[Revenir à la phase 1 - Planification](./planning.md)
+[Revenir à la phase 1 - Planification : Planification](./planning.md)
 
 [Revenir à tous les modules](../../overview.md)

@@ -1,13 +1,13 @@
 ---
 title: Création d’audiences d’entités multiples
-description: Cette vidéo vous explique comment créer des audiences d’entités multiples dans le créateur de règles d’audience de Adobe Experience Platform.  La segmentation d’entités multiples, ou segmentation entre différentes classes, vous permet de créer des audiences en combinant des données basées sur plusieurs classes XDM.
+description: Cette vidéo vous explique comment créer des audiences à entités multiples dans le créateur de règles d’audience Adobe Experience Platform.  La segmentation d’entités multiples, ou segmentation entre les classes, vous permet de créer des audiences combinant des données basées sur plusieurs classes XDM.
 feature: Segments
 role: User
 level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 # Création d’audiences d’entités multiples
 
-Cette vidéo vous explique comment créer des audiences d’entités multiples dans le créateur de règles d’audience de Adobe Experience Platform.  La segmentation d’entités multiples, ou segmentation entre différentes classes, vous permet de créer des audiences en combinant des données basées sur plusieurs classes XDM. Par exemple, vous pouvez créer un jeu de données basé sur la classe XDM ExperienceEvent qui capture les identifiants de produit lorsque les clients effectuent un achat et un autre jeu de données basé sur une classe de produit personnalisée, contenant les détails du catalogue de chaque ID de produit (par exemple, couleur, taille, catégorie, etc.). Si vous établissez une relation entre les schémas, vous pouvez ensuite créer des audiences basées sur les champs existant dans les deux schémas (par exemple, les personnes qui ont acheté des vestes). Pour plus d’informations, consultez la [documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).
+Cette vidéo vous explique comment créer des audiences à entités multiples dans le créateur de règles d’audience Adobe Experience Platform.  La segmentation d’entités multiples, ou segmentation entre les classes, vous permet de créer des audiences combinant des données basées sur plusieurs classes XDM. Par exemple, vous pouvez créer un jeu de données basé sur la classe XDM ExperienceEvent qui capture les identifiants de produit lorsque les clients effectuent un achat et un autre jeu de données créé sur une classe de produit personnalisée, contenant les détails du catalogue de chaque identifiant de produit (par exemple, couleur, taille, catégorie, etc.). Si vous établissez une relation entre les schémas, vous pouvez ensuite créer des audiences en fonction des champs existants dans les deux schémas (par exemple, les personnes qui ont acheté des vestes). Pour plus d’informations, consultez la [documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.-->
 
 >[!NOTE]
 >
-> &quot;[!UICONTROL Segments]&quot; ont été renommés &quot;[!UICONTROL Audiences]&quot; dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour entrer dans le créateur de règles présenté dans cette vidéo.
+> « [!UICONTROL Segments] » a été renommé « [!UICONTROL Audiences] » dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour accéder au créateur de règles présenté dans cette vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on&enablevpops)

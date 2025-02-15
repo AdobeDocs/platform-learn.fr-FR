@@ -1,5 +1,5 @@
 ---
-title: Ajout et configuration d’extensions de balise
+title: Ajout et configuration d’extensions de balises
 description: Découvrez comment ajouter et configurer des extensions dans votre propriété de balise.
 feature: Tags
 level: Beginner
@@ -7,15 +7,15 @@ duration: 370
 last-substantial-update: 2024-02-23T00:00:00Z
 jira: KT-3528
 exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
-source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 15%
 
 ---
 
-# Ajout et configuration d’extensions de balise
+# Ajout et configuration d’extensions de balises
 
-Découvrez comment ajouter et configurer des extensions dans votre propriété de balise. Les extensions sont des &quot;applications&quot; prédéfinies que vous installez sur votre site pour vous donner le suivi, la personnalisation ou d’autres fonctionnalités dont vous avez besoin. Le marché de l’extension est toujours en croissance, car Adobe, partenaires et clients créent des extensions pour les cas d’utilisation plus performants. Pour plus d’informations, voir la documentation [extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=fr) .
+Découvrez comment ajouter et configurer des extensions dans votre propriété de balise. Les extensions sont des « applications » préconfigurées que vous installez sur votre site pour vous offrir les fonctionnalités de suivi, de personnalisation ou autres dont vous avez besoin. Le marché des extensions ne cesse de se développer, à mesure qu’Adobe, les partenaires et les clients créent des extensions pour optimiser les cas d’utilisation. Pour plus d’informations, voir la documentation [extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)

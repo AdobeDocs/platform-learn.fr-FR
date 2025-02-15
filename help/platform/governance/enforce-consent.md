@@ -1,5 +1,5 @@
 ---
-title: Exiger le consentement
+title: Appliquer le consentement
 description: Découvrez comment appliquer le consentement
 feature: Consent
 role: User, Developer, Data Architect, Admin
@@ -7,18 +7,18 @@ level: Beginner
 jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 2%
 
 ---
 
-# Exiger le consentement
+# Appliquer le consentement
 
-Découvrez comment créer des stratégies pour appliquer les préférences de consentement du client. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=fr).
+Découvrez comment créer des politiques pour appliquer les préférences de consentement du client ou de la cliente. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

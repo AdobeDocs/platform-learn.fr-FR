@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Préparation des données dans Analysi
 kt: 5342
 doc-type: tutorial
 exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 3%
@@ -25,11 +25,11 @@ Analysis Workspace supprime toutes les limitations standard d’un seul rapport 
 
 Customer Journey Analytics ajoute cette solution aux données de Platform. Nous vous recommandons vivement de regarder cette vidéo de présentation de quatre minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Si vous n’avez encore jamais utilisé Analysis Workspace, nous vous recommandons vivement de regarder cette vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Création De Votre Projet
 
@@ -121,11 +121,11 @@ Cliquez de nouveau sur **Enregistrer**.
 
 ![demo](./images/calcbuildercr6a.png)
 
-## 4.1.4.3 Dimensions calculées : filtres (segmentation) et périodes
+## 4.1.4.3 dimensions calculées : filtres (segmentation) et périodes
 
-### Filtres : Dimensions calculées
+### Filtres : dimensions calculées
 
-Les calculs ne sont pas destinés aux seules mesures . Avant de commencer toute analyse, il est également intéressant de créer des **Dimensions calculées**. Cela signifiait essentiellement **segments** de retour dans Adobe Analytics. En Customer Journey Analytics, ces segments sont appelés **Filtres**.
+Les calculs ne sont pas destinés aux seules mesures . Avant de commencer toute analyse, il est également intéressant de créer des **dimensions calculées**. Cela signifiait essentiellement **segments** de retour dans Adobe Analytics. Dans Customer Journey Analytics, ces segments sont appelés **Filtres**.
 
 ![demo](./images/prfilters.png)
 
@@ -137,11 +137,11 @@ La création de filtres aidera les utilisateurs professionnels à commencer l’
 
 Ces filtres peuvent être créés avant ou pendant la partie analyse (ce que vous ferez dans l&#39;exercice suivant).
 
-### Périodes : Dimensions de temps calculées
+### Périodes : dimensions de temps calculé
 
-Les Dimensions temporelles constituent un autre type de dimensions calculées. Certaines sont déjà en cours de création, mais vous pouvez également créer vos propres Dimensions de temps personnalisées lors de la phase de préparation des données.
+Les dimensions Temps constituent un autre type de dimensions calculées. Certaines sont déjà créées, mais vous avez également la possibilité de créer vos propres dimensions temporelles personnalisées lors de la phase de préparation des données.
 
-Ces Dimensions de temps calculées aideront les analystes et les utilisateurs professionnels à mémoriser les dates importantes et à les utiliser pour filtrer et modifier l’heure de création de rapports. Les questions et les doutes typiques qui nous viennent à l’esprit lorsque nous effectuons une analyse :
+Ces dimensions de temps calculé nous aideront les analystes et les utilisateurs professionnels à mémoriser les dates importantes et à les utiliser pour filtrer et modifier l’heure de création de rapports. Les questions et les doutes typiques qui nous viennent à l’esprit lorsque nous effectuons une analyse :
 
 - Quand était le Black Friday l&#39;année dernière ? Du 21 au 29 ?
 - Quand avons-nous mené cette campagne télévisée en décembre?

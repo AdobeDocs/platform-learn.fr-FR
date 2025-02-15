@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 62%
@@ -18,10 +18,10 @@ ht-degree: 62%
 
 # Démonstration du SDK Web Adobe Experience Platform et du réseau Edge
 
-Voir SDK Web Adobe Experience Platform et Edge Network en action, avec un seul appel pour Adobe de l’envoi de données à l’Experience Platform, à Analytics, à l’Audience Manager et à Target. Pour plus d’informations, consultez la [documentation du SDK Web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr).
+Regardez Adobe Experience Platform Web SDK et Edge Network en action, avec un seul appel à Adobe pour envoyer des données à Experience Platform, Analytics, Audience Manager et Target. Pour plus d’informations, consultez la documentation de Adobe Experience Platform Web SDK [](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Cette vidéo est un extrait de la session Adobe Summit 2020 *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Cette vidéo est un extrait de la session Adobe Summit 2020 *[Rencontrer Alloy.js et ne plus jamais baliser pour une eVar ou une mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.

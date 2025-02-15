@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-10191
 thumbnail: 342115.jpeg
 exl-id: d39d4bc5-550f-4cb2-875d-2e81a6f4c2b8
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 30%
@@ -18,4 +18,4 @@ ht-degree: 30%
 
 Découvrez comment utiliser Adobe Experience Platform Query Service avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de clientèle. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)
