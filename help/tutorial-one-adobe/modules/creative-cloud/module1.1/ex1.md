@@ -1,103 +1,99 @@
 ---
 title: Prise en main des services Firefly
-description: Découvrez comment utiliser Postman et Adobe I/O pour interroger les API Adobe Firefly Services
+description: Découvrez comment utiliser Postman et Adobe I/O pour interroger les API des services Adobe Firefly
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '819'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Prise en main des services Firefly
 
-Découvrez comment utiliser Postman et Adobe I/O pour interroger les API des services d’Adobe Firefly.
+Découvrez comment utiliser Postman et Adobe I/O pour interroger les API Adobe Firefly Services.
 
-## 1.1.1.1 Configurer votre projet d’Adobe I/O
+## 1.1.1.1 Configurer votre projet Adobe I/O
 
-Dans cet exercice, l’Adobe I/O est utilisé pour effectuer des requêtes sur les API Firefly Services. Pour configurer l’Adobe I/O, procédez comme suit.
+Dans cet exercice, Adobe I/O est utilisé pour effectuer des requêtes sur les API Firefly Services. Pour configurer Adobe I/O, procédez comme suit.
 
 1. Accédez à [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/iohome.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 1. Veillez à sélectionner l’instance appropriée dans le coin supérieur droit de l’écran. Votre instance est `--aepImsOrgName--`. Sélectionnez ensuite **Créer un projet**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/iocomp.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
 1. Sélectionnez **+ Ajouter au projet** et choisissez **API**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/adobe_io_access_api.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/adobe_io_access_api.png){zoomable="yes"}
 
 Votre écran devrait ressembler à ceci.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api1.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api1.png){zoomable="yes"}
 
-1. Sélectionnez **Creative Cloud** puis choisissez **Firefly - Services Firefly**, puis sélectionnez **Suivant**.
+1. Sélectionnez **Creative Cloud** puis **Firefly - Services Firefly**, puis sélectionnez **Suivant**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api3.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api3.png){zoomable="yes"}
 
 1. Attribuez un nom à vos informations d’identification : `--aepUserLdap-- - Firefly Services OAuth credential`, puis sélectionnez **Suivant**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api4.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api4.png){zoomable="yes"}
 
-1. Sélectionnez le profil par défaut **Configuration des services de Firefly par défaut** et sélectionnez **Enregistrer l’API configurée**.
+1. Sélectionnez le profil par défaut **Configuration par défaut des services Firefly** et sélectionnez **Enregistrer l’API configurée**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api9.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api9.png){zoomable="yes"}
 
 Votre intégration Adobe I/O est maintenant prête.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api11.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api11.png){zoomable="yes"}
 
 ## 1.1.1.2 Télécharger l’environnement Postman
 
 1. Sélectionnez **Télécharger pour Postman**, puis choisissez **OAuth serveur à serveur** pour télécharger un environnement Postman.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/iopm.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/iopm.png){zoomable="yes"}
 
 1. Sélectionnez le nom du projet.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api13.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api13.png){zoomable="yes"}
 
 1. Sélectionnez **Modifier le projet**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api14.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api14.png){zoomable="yes"}
 
 1. Saisissez un nom convivial pour votre intégration : `--aepUserLdap-- Firefly`et sélectionnez **Enregistrer**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api15.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api15.png){zoomable="yes"}
 
 La configuration de votre intégration Adobe I/O est maintenant terminée.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/api16.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api16.png){zoomable="yes"}
 
-## 1.1.1.3 l’authentification Postman à l’Adobe I/O
-
->[!IMPORTANT]
->
->Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
+## 1.1.1.3 de l’authentification Postman à Adobe I/O
 
 1. Téléchargez et installez la version de Postman appropriée à votre système d’exploitation sur [Postman Downloads](https://www.postman.com/downloads/){target="_blank"}.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/getstarted.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/getstarted.png){zoomable="yes"}
 
 1. Démarrez l’application.
 
 Dans Postman, il existe 2 concepts : Environnements et Collections.
 
-- Le fichier d’environnement contient toutes vos variables d’environnement qui sont plus ou moins cohérentes. Dans l’environnement , vous trouverez des éléments tels que l’IMSOrg de votre environnement d’Adobe, ainsi que des informations d’identification de sécurité telles que votre identifiant client et d’autres. Vous avez téléchargé le fichier d’environnement lors de la configuration d’Adobe I/O précédente et il est nommé **`oauth_server_to_server.postman_environment.json`**.
+- Le fichier d’environnement contient toutes vos variables d’environnement qui sont plus ou moins cohérentes. Dans l’environnement , vous trouverez des éléments tels que l’IMSOrg de votre environnement Adobe, ainsi que des informations d’identification de sécurité telles que votre identifiant client et d’autres. Vous avez téléchargé le fichier d’environnement lors de la configuration précédente d’Adobe I/O et il est nommé **`oauth_server_to_server.postman_environment.json`**.
 
 - La collection contient un certain nombre de requêtes d’API que vous pouvez utiliser. Nous utiliserons 2 collections
-   - 1 collection pour l’authentification à l’Adobe I/O
+   - 1 collection pour l’authentification à Adobe I/O
    - 1 Collection pour les exercices de ce module
 
 1. Téléchargez [postman-ff.zip](./../../../assets/postman/postman-ff.zip) sur votre bureau local.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/pmfolder.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/pmfolder.png){zoomable="yes"}
 
 Dans le fichier **postman.zip** se trouvent les fichiers suivants :
 
@@ -106,26 +102,26 @@ Dans le fichier **postman.zip** se trouvent les fichiers suivants :
 
 1. Décompressez **postman-ff.zip** et stockez les 2 fichiers suivants dans un dossier sur votre bureau :
 - Adobe IO - OAuth.postman_collection.json
-- FF - Insiders techniques des services Firefly.postman_collection.json
+- FF - Firefly Services Tech Insiders.postman_collection.json
 - oauth_server_to_server.postman_environment.json
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/pmfolder1.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/pmfolder1.png){zoomable="yes"}
 
 1. Dans Postman, sélectionnez **Importer**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/postmanui.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/postmanui.png){zoomable="yes"}
 
 1. Sélectionnez **Fichiers**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/choosefiles.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/choosefiles.png){zoomable="yes"}
 
 1. Sélectionnez les trois fichiers dans le dossier, puis sélectionnez **Ouvrir** et **Importer**.
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/selectfiles.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/selectfiles.png){zoomable="yes"}
 
-![Adobe I/O d&#39;une nouvelle intégration](./images/impconfirm.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/impconfirm.png){zoomable="yes"}
 
-Vous disposez désormais de tout ce dont vous avez besoin dans Postman pour commencer à interagir avec les services de Firefly via les API.
+Vous disposez désormais de tout ce dont vous avez besoin dans Postman pour commencer à interagir avec les services Firefly par le biais des API.
 
 ## 1.1.1.4 Demander un jeton d’accès
 
@@ -139,7 +135,7 @@ L’environnement sélectionné doit porter un nom similaire à celui-ci, `--aep
 
 ![Postman](./images/envselemea.png){zoomable="yes"}
 
-Maintenant que votre environnement et vos collections Postman sont configurés et fonctionnent, vous pouvez vous authentifier de Postman à Adobe I/O.
+Maintenant que votre environnement Postman et vos collections sont configurés et fonctionnent, vous pouvez vous authentifier de Postman à Adobe I/O.
 
 1. Dans la collection **Adobe IO - OAuth**, sélectionnez la requête nommée **POST - Obtenir le jeton d’accès** et sélectionnez **Envoyer**.
 
@@ -160,30 +156,30 @@ Vous devriez voir une réponse similaire contenant les informations suivantes :
 | access_token | **eyJhbGciOiJSU..** |
 | expires_in | **86399** |
 
-L’Adobe I/O **bearer-token** a une valeur spécifique (le très long access_token) et une fenêtre d’expiration et est désormais valide pendant 24 heures. Cela signifie qu’au bout de 24 heures, si vous souhaitez utiliser Postman pour vous authentifier sur Adobe I/O, vous devrez générer un nouveau jeton en exécutant à nouveau cette requête.
+L’Adobe I/O **bearer-token** a une valeur spécifique (le très long access_token) et une fenêtre d’expiration et est désormais valide pendant 24 heures. Cela signifie qu’au bout de 24 heures, si vous souhaitez utiliser Postman pour vous authentifier auprès d’Adobe I/O, vous devrez générer un nouveau jeton en exécutant à nouveau cette requête.
 
-## API 1.1.1.5 Firefly Services, image Texte 2
+## 1.1.1.5 API Firefly Services, Texte 2 Image
 
-Vous êtes maintenant prêt à envoyer votre première requête aux API des services de Firefly.
+Vous êtes maintenant prêt à envoyer votre première requête aux API Firefly Services.
 
-1. Sélectionnez la requête nommée **POST - Firefly - T2I V3** dans la collection **FF - Services de Firefly Tech Insiders**.
+1. Sélectionnez la requête nommée **POST - Firefly - T2I V3** dans la collection **FF - Firefly Services Tech Insiders**.
 
-![Firefly ](./images/ff1.png){zoomable="yes"}
+![Firefly](./images/ff1.png){zoomable="yes"}
 
 1. Copiez l’URL de l’image à partir de la réponse et ouvrez-la dans votre navigateur web pour afficher l’image.
 
-![Firefly ](./images/ff2.png){zoomable="yes"}
+![Firefly](./images/ff2.png){zoomable="yes"}
 
 Vous devriez voir une belle image représentant `horses in a field`.
 
-![Firefly ](./images/ff3.png){zoomable="yes"}
+![Firefly](./images/ff3.png){zoomable="yes"}
 
 N’hésitez pas à lire la requête API avant de passer à l’exercice suivant.
 
 ## Étapes suivantes
 
-Accédez à [Optimiser le processus de votre Firefly à l’aide de Microsoft Azure et des URL prédéfinies](./ex2.md){target="_blank"}
+Accédez à [Optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies](./ex2.md){target="_blank"}
 
-Revenir à [Présentation des services d’Adobe Firefly ](./firefly-services.md){target="_blank"}
+Revenez à [ Présentation des services Adobe Firefly ](./firefly-services.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

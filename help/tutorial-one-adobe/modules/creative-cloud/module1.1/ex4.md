@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -135,10 +135,6 @@ Le **ID de compte technique** devrait maintenant pouvoir accéder au modèle per
 ![Modèles personnalisés Firefly](./images/ffcm22.png){zoomable="yes"}
 
 ## 1.1.4.4 Interaction avec l’API des modèles personnalisés des services Firefly
-
->[!IMPORTANT]
->
->Si vous êtes un employé d&#39;Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
 
 Dans l’exercice 1.1.1, Prise en main des services Firefly, vous avez téléchargé le fichier suivant : [postman-ff.zip](./../../../assets/postman/postman-ff.zip) sur votre bureau local, puis vous avez importé cette collection dans Postman.
 

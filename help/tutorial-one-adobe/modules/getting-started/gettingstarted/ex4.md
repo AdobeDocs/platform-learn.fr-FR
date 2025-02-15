@@ -4,9 +4,9 @@ description: Prise en main - Utilisation du site web
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -101,8 +101,10 @@ Votre site web est alors chargé dans une fenêtre de navigateur en mode privé.
 
 ![DSN ](./images/web7.png)
 
-Étape suivante : [Utilisation de l’application mobile](./ex5.md)
+## Étapes suivantes
 
-[Revenir à la prise en main](./getting-started.md)
+Accédez à [ Utiliser l’application mobile ](./ex5.md)
 
-[Revenir à tous les modules](./../../../overview.md)
+Revenir à [Prise en main](./getting-started.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

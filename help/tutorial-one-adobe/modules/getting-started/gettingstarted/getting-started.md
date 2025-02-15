@@ -1,13 +1,13 @@
 ---
-title: Prise en main - Un Adobe
-description: Prise en main - Un Adobe
+title: Prise en main - One Adobe
+description: Prise en main - One Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Dans ce module, vous allez tout configurer pour pouvoir collecter des données, 
 
 ## Exercices
 
-[Installation de l’extension Chrome pour la documentation de l’Experience League](./ex1.md)
+[Installation de l’extension Chrome pour la documentation Experience League](./ex1.md)
 
 Dans cet exercice, vous allez installer et configurer l’extension Chrome afin de pouvoir l’utiliser pour personnaliser le contenu du tutoriel.
 
@@ -47,6 +47,26 @@ Dans cet exercice, vous allez configurer le site web afin de pouvoir l’utilise
 [Utilisation de l’application mobile](./ex5.md)
 
 Dans cet exercice, vous allez configurer l’application mobile afin de pouvoir l’utiliser pour des démonstrations et l’activation.
+
+[Configuration de votre projet Adobe I/O](./ex6.md)
+
+Dans cet exercice, vous allez configurer votre projet Adobe I/O qui sera utilisé pour interagir avec divers points d’entrée de l’API Adobe.
+
+[Option 1 : configuration de Postman](./ex7.md)
+
+>[!NOTE]
+>
+>Si vous n’êtes pas employé d’Adobe, suivez les instructions d’installation de Postman.
+
+Dans cet exercice, vous allez préparer votre environnement Postman à interagir avec différents points d’entrée de l’API Adobe
+
+[Option 2 : configuration de PostBuster](./ex8.md)
+
+>[!NOTE]
+>
+>Si vous êtes un employé d’Adobe, suivez les instructions pour installer PostBuster !
+
+Dans cet exercice, vous allez préparer votre environnement PostBuster à interagir avec divers points d’entrée de l’API Adobe
 
 ![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

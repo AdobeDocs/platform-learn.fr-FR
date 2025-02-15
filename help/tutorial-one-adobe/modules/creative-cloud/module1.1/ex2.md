@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
@@ -316,10 +316,6 @@ Pour lire par programmation les fichiers des comptes de stockage Azure à long t
    - `AZURE_STORAGE_SAS_WRITE` : `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Variables dans Postman
-
->[!IMPORTANT]
->
->Si vous êtes un employé d&#39;Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
 
 Comme vous pouvez le voir dans la section ci-dessus, il existe des variables communes dans les jetons Lecture et Écriture .
 

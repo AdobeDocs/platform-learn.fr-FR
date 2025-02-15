@@ -4,7 +4,7 @@ description: Foundation - Ingestion de données - Ingestion de données à parti
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 6%
@@ -236,19 +236,19 @@ Le champ Schéma Source **last_name** doit être lié au champ cible **person.na
 
 #### consents.marketing.email.val
 
-Le champ Schéma Source **nom_famille** doit être lié au champ cible **consentements.marketing.email.val**.
+Le champ Schéma Source **consentement.email** doit être lié au champ cible **consentements.marketing.email.val**.
 
 ![Ingestion des données](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-Le champ Schéma Source **nom_famille** doit être lié au champ cible **consentements.marketing.commercialEmail.val**.
+Le champ Schéma Source **consentement.commercialEmail** doit être lié au champ cible **consentements.marketing.commercialEmail.val**.
 
 ![Ingestion des données](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-Le champ Schéma Source **nom_famille** doit être lié au champ cible **consentements.marketing.any.val**.
+Le champ Schéma Source **consentement.any** doit être lié au champ cible **consentements.marketing.any.val**.
 
 ![Ingestion des données](./images/cons3.png)
 

@@ -4,10 +4,10 @@ description: Prise en main - Création de votre flux de données
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
+source-wordcount: '827'
+ht-degree: 2%
 
 ---
 
@@ -173,8 +173,10 @@ Vos modifications sont maintenant publiées et seront prêtes dans quelques minu
 
 ![Nommez la configuration Edge et enregistrez](./images/edgeconfig17ma.png)
 
-Étape suivante : [Utiliser le site web](./ex4.md)
+## Étapes suivantes
 
-[Revenir à la prise en main](./getting-started.md)
+Accédez à [ Utiliser le site web ](./ex4.md)
 
-[Revenir à tous les modules](./../../../overview.md)
+Revenir à [Prise en main](./getting-started.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

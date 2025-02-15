@@ -1,17 +1,17 @@
 ---
-title: Prise en main - Installez l’extension Chrome pour la documentation de l’Experience League.
-description: Prise en main - Installez l’extension Chrome pour la documentation de l’Experience League.
+title: Prise en main - Installez l’extension Chrome pour la documentation Experience League.
+description: Prise en main - Installez l’extension Chrome pour la documentation Experience League.
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Installation de l’extension Chrome pour la documentation de l’Experience League
+# Installation de l’extension Chrome pour la documentation Experience League
 
 ## À propos de l’extension Chrome
 
@@ -84,7 +84,7 @@ L’ID d’organisation IMS est l’identifiant unique de votre instance Adobe E
 
 La recherche de votre identifiant de l’organisation IMS peut être effectuée de plusieurs façons. Si vous n’êtes pas sûr, contactez l’un des administrateurs système de votre instance pour trouver l’identifiant.
 
-Vous pouvez le retrouver en accédant à [Admin Console ](https://https://adminconsole.adobe.com/), où vous pouvez le retrouver dans l&#39;URL.
+Vous pouvez le retrouver en accédant à [Admin Console](https://https://adminconsole.adobe.com/), où vous pouvez le retrouver dans l’URL.
 
 ![DSN ](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ Vous devriez maintenant disposer d’une vue similaire à celle ci-dessous, où 
 
 ![DSN ](./images/mod7.png)
 
-Étape suivante : [Utiliser le système de démonstration Suivant pour configurer la propriété de votre client de collecte de données Adobe Experience Platform](./ex2.md)
+## Étapes suivantes
 
-[Revenir à la prise en main](./getting-started.md)
+Accédez à [Utiliser le système de démonstration à côté de pour configurer la propriété cliente de collecte de données Adobe Experience Platform](./ex2.md)
 
-[Revenir à tous les modules](./../../../overview.md)
+Revenir à [Prise en main](./getting-started.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

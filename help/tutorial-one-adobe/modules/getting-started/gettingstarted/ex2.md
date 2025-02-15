@@ -4,16 +4,16 @@ description: Prise en main - Utilisez le système de démonstration en regard de
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
 # Utilisez le système de démonstration suivant pour configurer la propriété de votre client de collecte de données Adobe Experience Platform
 
-Afin de visualiser les enseignements de ce tutoriel et de vous permettre de tester votre configuration dans un environnement sûr, ce tutoriel utilise les outils Adobe Demo System Next. Pour tirer le meilleur parti de ce tutoriel, votre instance AEP doit être configurée pour être intégrée à Demo System Next.
+Afin de visualiser les enseignements de ce tutoriel et de vous permettre de tester votre configuration dans un environnement sûr, ce tutoriel utilise les outils Adobe Demo System Next . Pour tirer le meilleur parti de ce tutoriel, votre instance AEP doit être configurée pour être intégrée à Demo System Next.
 
 Une fois que vous avez accès à Demo System Next, procédez comme suit.
 
@@ -33,7 +33,7 @@ Cliquez ensuite sur **Démarrer**.
 
 ![DSN ](./images/dsn2.png)
 
-Dans la fenêtre contextuelle, saisissez un nom pour vos propriétés de collecte de données et vos projets Experience Builder. Utilisez la convention de nommage suivante : **Un Adobe (JJ/MM/AAAA)**. Pour information : votre LDAP sera ajouté automatiquement, vous n&#39;avez pas besoin de l&#39;ajouter vous-même.
+Dans la fenêtre contextuelle, saisissez un nom pour vos propriétés de collecte de données et vos projets Experience Builder. Utilisez la convention de nommage suivante : **Une Adobe (JJ/MM/AAAA)**. Pour information : votre LDAP sera ajouté automatiquement, vous n&#39;avez pas besoin de l&#39;ajouter vous-même.
 
 Cliquez sur **Démarrer**.
 
@@ -55,8 +55,10 @@ Une fois le processus de configuration rapide terminé, vous aurez :
 
 Gardez cet écran ouvert car vous en aurez besoin lors des étapes suivantes.
 
-Étape suivante : [ Créer votre flux de données ](./ex3.md)
+## Étapes suivantes
 
-[Revenir à la prise en main](./getting-started.md)
+Accédez à [ Créer votre flux de données ](./ex3.md)
 
-[Revenir à tous les modules](./../../../overview.md)
+Revenir à [Prise en main](./getting-started.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

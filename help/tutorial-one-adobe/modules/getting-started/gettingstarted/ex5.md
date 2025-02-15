@@ -4,10 +4,10 @@ description: Prise en main - Utilisation de l’application mobile
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 1%
 
 ---
 
@@ -81,8 +81,10 @@ Maintenant, revenez à **Accueil** dans l’application. Votre application est m
 
 ![DSN ](./images/mobileappn8.png)
 
-Vous avez maintenant terminé le module Prise en main et vous êtes prêt à commencer les prochains exercices.
+## Étapes suivantes
 
-[Revenir à la prise en main](./getting-started.md)
+Accédez à [Configurer votre projet Adobe I/O](./ex6.md)
 
-[Revenir à tous les modules](./../../../overview.md)
+Revenir à [Prise en main](./getting-started.md){target="_blank"}
+
+Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
