@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ Pour lire par programmation les fichiers des comptes de stockage Azure à long t
 
 1. Sous **Autorisations**, sélectionnez les autorisations requises suivantes :
 
+   - **Lecture**
+   - **Liste**
    - **Ajouter**
    - **Create**
    - **Write**
@@ -343,11 +345,36 @@ Pour les interactions d’API futures, la principale chose qui change est le nom
 
    ![ Stockage Azure ](./images/az105.png){zoomable="yes"}
 
-   Dans l’un des exercices précédents, le **Corps** de votre requête **Firefly - T2I (styleref) V3** ressemblait à ceci :
+### Variables dans PostBuster
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+Comme vous pouvez le voir dans la section ci-dessus, il existe des variables communes dans les jetons Lecture et Écriture .
 
-   ![ Stockage Azure ](./images/az24.png){zoomable="yes"}
+Vous devez ensuite créer des variables dans PostBuster qui stockent les différents éléments des jetons SAS ci-dessus. Certaines valeurs sont identiques dans les deux URL :
+
+- `AZURE_STORAGE_URL` : `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER` : `vangeluw`
+- `AZURE_STORAGE_SAS_READ` : `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE` : `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Ouvrez PostBuster. Sélectionnez **Environnement de base** puis cliquez sur l’icône **Modifier** pour ouvrir l’environnement de base.
+
+![ Stockage Azure ](./images/pbbe1.png)
+
+Vous verrez alors 4 variables vides. Saisissez les détails de votre compte de stockage Azure ici.
+
+![ Stockage Azure ](./images/pbbe2.png)
+
+Votre fichier d’environnement de base doit maintenant se présenter comme suit : Cliquez sur **Fermer**.
+
+![ Stockage Azure ](./images/pbbe3.png)
+
+### Tester votre configuration
+
+Dans l’un des exercices précédents, le **Corps** de votre requête **Firefly - T2I (styleref) V3** ressemblait à ceci :
+
+    `« url »: « https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D« `
+    
+     ![Stockage Azure](./images/az24.png){zoomable="yes"}
 
 1. Modifiez l’URL en :
 
