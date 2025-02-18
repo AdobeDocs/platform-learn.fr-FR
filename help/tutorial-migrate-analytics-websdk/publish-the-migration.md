@@ -1,18 +1,18 @@
 ---
-title: Publish de la migration vers l’évaluation et la production
+title: Publiez la migration vers les environnements d’évaluation et de production
 description: Une fois tous les développements terminés pour la migration et validés, effectuez la génération vers l’évaluation, puis publiez en production lorsque vous êtes prêt.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish de la migration vers l’évaluation et la production
+# Publiez la migration vers les environnements d’évaluation et de production
 
 Une fois tous les développements terminés pour la migration et validés, effectuez la génération vers l’évaluation, puis publiez en production lorsque vous êtes prêt.
 
@@ -51,6 +51,6 @@ Je vais ajouter une remarque importante que nous avons eue au début de ce tutor
 
 >[!IMPORTANT]
 >
->Il est important de noter que l’une des principales raisons pour lesquelles vous effectuez cette migration de votre implémentation est de vous préparer à utiliser les applications Adobe Experience Platform, telles que Customer Journey Analytics, Real-Time CDP ou Journey Optimizer (comme indiqué dans #3 ci-dessus). L’utilisation des données de votre site web à cette fin inclura des étapes supplémentaires qui ne sont pas incluses dans ce tutoriel, mais ce tutoriel sera certainement un prérequis pour cette progression ultérieure de votre implémentation. Par conséquent, suivez ce tutoriel, puis vous pourrez suivre les étapes nécessaires pour envoyer également ces mêmes données de site web à l’Experience Platform.
+>Il est important de noter que l’une des principales raisons pour lesquelles vous effectuez cette migration de votre implémentation est de vous préparer à utiliser les applications Adobe Experience Platform, telles que Customer Journey Analytics, Real-Time CDP ou Journey Optimizer. L’utilisation des données de votre site web à cette fin inclura des étapes supplémentaires qui ne sont pas incluses dans ce tutoriel, mais ce tutoriel sera certainement un prérequis pour cette progression ultérieure de votre implémentation. Maintenant que vous avez terminé ce tutoriel, vous êtes prêt à effectuer les étapes nécessaires pour envoyer également ces mêmes données de site web à Experience Platform.
 
 Bonne chance sur votre parcours avec les analyses et autres efforts de contenu et de marketing !
