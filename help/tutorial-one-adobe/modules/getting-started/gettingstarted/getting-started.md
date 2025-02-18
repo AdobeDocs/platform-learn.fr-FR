@@ -4,9 +4,9 @@ description: Prise en main - One Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '319'
 ht-degree: 2%
 
 ---
@@ -23,8 +23,8 @@ Dans ce module, vous allez tout configurer pour pouvoir collecter des données, 
 ## Conditions préalables
 
 - Accès à Adobe Experience Platform : [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Accès aux balises Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Accès au système de démonstration Suivant : [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Accès à la collecte de données Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Accès au système de démonstration Suivant : [https://dsn.adobe.com](https://dsn.adobe.com)
 
 ## Exercices
 

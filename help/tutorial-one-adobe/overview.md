@@ -3,9 +3,9 @@ title: Présentation - Tutoriel technique complet - One Adobe
 description: Tutoriel technique complet - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
-
-Ce tutoriel est le point de départ idéal pour
 
 Ce tutoriel est très diversifié et offre des informations claires sur les applications suivantes :
 
@@ -50,25 +48,21 @@ Si vous souhaitez suivre ce tutoriel à l’aide de votre propre instance de Ado
 - Collecte De Données Adobe Experience Platform : [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Accès au système de démonstration : [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## Prétravail
-
-Vérifiez les applications requises qui doivent être installées sur votre ordinateur [ici](./prework.md){target="_blank"}.
-
 ## Accomplissement et certification
 
 Ce tutoriel fait partie d’un cours de certification Adobe. Vous pouvez vous inscrire au cours en même temps que ce tutoriel en accédant à [https://certification.adobe.com](https://certification.adobe.com).
 
 Pour chaque module que vous suivez à l’aide du tutoriel ci-dessous, vous devez soumettre un justificatif d’accomplissement comme indiqué [ici](./completion.md).
 
-## Contenu
+## Statut du contenu
 
 Pour vérifier le statut du contenu ci-dessous, accédez à la page [statut](./status.md){target="_blank"}.
 
-### Commencer
+### Prise en main
 
 [Prise en main](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-Dans ce module de base, vous allez tout configurer pour pouvoir accéder à l’environnement de démonstration et l’utiliser.
+Dans ce module de base, vous allez tout préparer pour pouvoir accéder à l’environnement de démonstration et l’utiliser.
 
 ### 1. Workflow et planification
 
