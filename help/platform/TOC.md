@@ -5,10 +5,10 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
+source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 22%
+ht-degree: 21%
 
 ---
 
@@ -166,7 +166,7 @@ Campaigns
    + [Présentation des destinations](/help/platform/destinations/understanding-destinations.md)
    + [Se connecter aux destinations](/help/platform/destinations/connecting-to-destinations.md)
    + [Création de destinations et activation de données](/help/platform/destinations/create-destinations-and-activate-data.md)
-   + [Activation de profils et de segments vers une destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [Activer des profils et des audiences vers une destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [Configurer une destination d’export de jeux de données](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Intégration à Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurer la destination Azure Blob](/help/platform/destinations/configure-the-azure-blob-destination.md)
