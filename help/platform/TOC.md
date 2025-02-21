@@ -5,7 +5,7 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 21%
@@ -103,19 +103,19 @@ Campaigns
 + Audiences et {#audiences} de segmentation
    + [Présentation du portail et de la composition de l’audience](audiences/introduction-to-audience-portal-and-composition.md)
    + [Chargement des audiences](audiences/upload-audiences.md)
-   + [Présentation de la composition de l’audience fédérée](audiences/overview-of-federated-audience-composition.md)
-   + [Connexion et configuration de la composition d’audiences fédérées](audiences/connect-and-configure-federated-audience-composition.md)
-   + [Création d’une composition d’audience fédérée](audiences/create-a-federated-audience-composition.md)
-   + [Présentation du créateur de règles d’audience](audiences/audience-rule-builder-overview.md)
-   + [Créer des audiences](audiences/create-audiences.md)
-   + [Utiliser les contraintes de temps](audiences/time-constraints.md)
-   + [Créer des audiences basées sur le contenu](audiences/create-content-based-audiences.md)
-   + [Création d’audiences de conversion](audiences/create-conversion-audiences.md)
-   + [Créer des audiences à partir d’audiences existantes](audiences/create-audiences-from-existing-audiences.md)
-   + [Créer des audiences séquentielles](audiences/create-sequential-audiences.md)
-   + [Créer des audiences dynamiques](audiences/create-dynamic-audiences.md)
-   + [Création d’audiences d’entités multiples](audiences/create-multi-entity-audiences.md)
-   + [Créer et activer des audiences de compte (B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [Présentation de la composition de l’audience fédérée](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Connexion et configuration de la composition d’audiences fédérées](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [Création d’une composition d’audience fédérée](audiences/fac/create-a-federated-audience-composition.md)
+   + [Présentation du créateur de règles d’audience](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [Créer des audiences](audiences/audience-builder/create-audiences.md)
+   + [Utiliser les contraintes de temps](audiences/audience-builder/time-constraints.md)
+   + [Créer des audiences basées sur le contenu](audiences/audience-builder/create-content-based-audiences.md)
+   + [Création d’audiences de conversion](audiences/audience-builder/create-conversion-audiences.md)
+   + [Créer des audiences à partir d’audiences existantes](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [Créer des audiences séquentielles](audiences/audience-builder/create-sequential-audiences.md)
+   + [Créer des audiences dynamiques](audiences/audience-builder/create-dynamic-audiences.md)
+   + [Création d’audiences d’entités multiples](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [Créer et activer des audiences de compte (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Démonstration de la segmentation en flux continu](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Évaluation d’une règle d’audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Créer un jeu de données pour exporter des données](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
