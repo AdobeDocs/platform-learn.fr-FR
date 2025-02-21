@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3 Automatisation des processus avec Workfront Fusion
 
-Découvrez comment traiter l’automatisation avec Workfront Fusion.
+Découvrez comment automatiser les processus avec Workfront Fusion.
 
 ## 1.2.3.1 Itération sur plusieurs valeurs
 
@@ -200,7 +200,7 @@ Jusqu’à présent, vous avez exécuté votre scénario manuellement pour le te
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages de l’automatisation des services Firefly ](./summary.md){target="_blank"}
+Accédez à Automatisation [1.2.4 à l’aide de connecteurs](./ex4.md){target="_blank"}
 
 Revenez à [Automatisation des services Adobe Firefly](./automation.md){target="_blank"}.
 
