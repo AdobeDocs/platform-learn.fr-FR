@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
+source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 21%
 
 ---
@@ -137,6 +137,7 @@ Campaigns
    + [Appliquer le consentement](/help/platform/governance/enforce-consent.md)
    + [Intégrer à IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + {#data-hygiene} d’hygiène des données
+   + [Vue d’ensemble](/help/platform/data-hygiene/overview.md)
    + [Préparation des données pour l’hygiène des données](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Supprimer les jeux de données et les lots](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Expiration des jeux de données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
