@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
+source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 21%
 
 ---
@@ -189,6 +189,7 @@ Campaigns
    + [Étiqueter, ingérer et vérifier des données d’identité](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [Affichage des graphiques d’identités](/help/platform/identities/view-identity-graphs.md)
    + Règles de liaison des graphiques d’identités {#graph-linking-rules}
+      + [Vue d’ensemble](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [Simulation de graphique](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [Vue d’ensemble](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
