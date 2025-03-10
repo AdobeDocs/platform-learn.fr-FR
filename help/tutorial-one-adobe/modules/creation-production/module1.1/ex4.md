@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 1%
 
 ---
@@ -112,9 +112,9 @@ Cliquez sur le **de 3 points...**, puis sur **Partager**.
 
 ![Modèles personnalisés Firefly](./images/ffcm20.png){zoomable="yes"}
 
-Pour accéder à un modèle personnalisé Firefly, ce dernier doit être partagé avec l’**ID de compte technique** de votre projet Adobe I/O.
+Pour accéder à un modèle personnalisé Firefly, celui-ci doit être partagé avec l’e-mail **compte technique** de votre projet Adobe I/O.
 
-Pour récupérer votre **Identifiant de compte technique**, rendez-vous sur [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Cliquez pour ouvrir votre projet, qui s’appelle `--aepUserLdap-- Firefly`.
+Pour récupérer l’e-mail de votre **compte technique**, rendez-vous sur [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Cliquez pour ouvrir votre projet, qui s’appelle `--aepUserLdap-- One Adobe tutorial`.
 
 ![Modèles personnalisés Firefly](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,15 +122,15 @@ Cliquez sur **OAuth de serveur à serveur**.
 
 ![Modèles personnalisés Firefly](./images/ffcm25.png){zoomable="yes"}
 
-Cliquez pour copier votre **Identifiant de compte technique**.
+Cliquez pour copier l’e-mail **compte technique**.
 
 ![Modèles personnalisés Firefly](./images/ffcm23.png){zoomable="yes"}
 
-Collez votre **ID de compte technique** et cliquez sur **Inviter à modifier**.
+Collez l’e-mail **compte technique** et cliquez sur **Inviter à modifier**.
 
 ![Modèles personnalisés Firefly](./images/ffcm21.png){zoomable="yes"}
 
-Le **ID de compte technique** devrait maintenant pouvoir accéder au modèle personnalisé.
+L’e-mail **compte technique** doit maintenant pouvoir accéder au modèle personnalisé.
 
 ![Modèles personnalisés Firefly](./images/ffcm22.png){zoomable="yes"}
 

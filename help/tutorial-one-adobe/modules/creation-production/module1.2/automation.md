@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,10 @@ Dans cet exercice, continuez à affiner votre parcours pour automatiser le proce
 [1.2.4 Automatisation à l’aide de connecteurs](./ex4.md){target="_blank"}
 
 Dans cet exercice, continuez à affiner votre parcours pour automatiser le processus de création d’images.
+
+[1.2.5 Frame I/O et Workfront Fusion](./ex5.md){target="_blank"}
+
+Dans cet exercice, vous allez connecter Frame I/O à votre scénario Workfront Fusion.
 
 [Résumé et avantages](./summary.md){target="_blank"}
 
