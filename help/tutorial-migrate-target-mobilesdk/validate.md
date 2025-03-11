@@ -1,63 +1,40 @@
 ---
-title: Validation des mises en oeuvre de Target dans l’extension Adobe Journey Optimizer - Decisioning Mobile
-description: Découvrez comment valider des activités et déboguer une mise en oeuvre Adobe Target à l’aide de l’extension Adobe Journey Optimizer - Decisioning Mobile.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: Valider et résoudre les problèmes liés à l’implémentation de l’extension Decisioning
+description: Découvrez comment valider et résoudre les problèmes liés à une implémentation mobile d’Adobe Target à l’aide de l’extension Decisioning.
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
+source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
-# Validation de la mise en oeuvre de l’extension Adobe Journey Optimizer - Decisioning Mobile
+# Valider et résoudre les problèmes liés à l’implémentation de l’extension Decisioning
 
-Une fois que vous avez migré votre mise en oeuvre Target de l’extension Target vers l’extension de prise de décision, il est important de valider que tout fonctionne correctement avant de publier toute modification dans votre application de production. Adobe recommande ce qui suit, qui est décrit en détail sur cette page :
+Après avoir migré votre implémentation Target de l’extension Target vers l’extension Decisioning, il est important de vérifier que tout fonctionne correctement avant de publier les modifications apportées à votre application de production. Adobe recommande ce qui suit, qui est abordé en détail sur cette page :
 
-* Effectuez une validation technique pour vous assurer que la mise en oeuvre de base et les requêtes et réponses du SDK Mobile Platform sont correctes.
-* Assurez-vous que les activités Target sont diffusées et rendues correctement.
-* Vérifier que le reporting fonctionne correctement
-* Révisez les audiences et les scripts de profil pour vous assurer qu’ils sont compatibles avec le SDK Mobile Platform et l’extension Optime.
-* Assurez-vous que les intégrations avec des applications d’Adobe ou tierces fonctionnent correctement
+* Effectuez une validation technique pour vous assurer que l’implémentation de base et les requêtes et réponses de Platform Mobile SDK sont correctes
+* Assurez-vous que les activités Target sont diffusées et rendues correctement
+* Vérifier le bon fonctionnement des rapports
+* Consultez à nouveau les audiences et les scripts de profil pour vous assurer qu’ils sont compatibles avec Platform Mobile SDK et l’extension Optimisation
+* Assurez-vous que les intégrations à Adobe ou à des applications tierces fonctionnent correctement
 
-Chaque mise en oeuvre de Target est différente selon l’architecture du site et les fonctionnalités utilisées. Vous pouvez utiliser les tableaux ci-dessous comme point de départ et ajouter tout élément unique à votre mise en oeuvre. La [page de débogage](debugging.md) de ce tutoriel présente les outils que vous pouvez utiliser pour faciliter cette validation.
+Chaque implémentation de Target diffère selon l’architecture du site et les fonctionnalités utilisées. Vous pouvez utiliser les tableaux ci-dessous comme point de départ et ajouter des éléments uniques à votre implémentation.
 
-## Validation technique
+## Validation technique et dépannage
 
-| Élément de validation | Notes |
-|---|---|
-| | |
+La validation et le dépannage techniques avec Platform Mobile SDK et l’extension Decisioning sont considérablement améliorés avec Assurance. Consultez les pages de documentation suivantes pour en savoir plus sur cet outil essentiel :
 
+* [Configuration des plug-ins Decisioning dans Assurance](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-## Diffusion et rendu des activités
+* [Validation de la configuration d’Optimize SDK](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
 
-| Élément de validation | Remarques |
-| | |
+* [Examen des requêtes et simulation de différentes expériences](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
-## Création de rapports
+Après avoir effectué les étapes de validation ci-dessus, vous pouvez être sûr que l’implémentation de Platform Mobile SDK avec l’extension Decisioning est prête à passer en production.
 
-| Élément de validation | Remarques |
-| | |
-
-## Audiences et scripts de profil
-
-| Élément de validation | Notes |
-|---|---|
-| | |
-
-## Intégrations aux applications Adobe
-
-| Élément de validation | Remarques |
-| | |
-
-## Intégrations à des applications tierces
-
-| Élément de validation | Notes |
-|---|---|
-| | |
-
-Après avoir effectué les étapes de validation ci-dessus, vous pouvez vous assurer que l’implémentation du SDK Mobile Platform avec l’extension de prise de décision est prête à passer en production.
-
-Ensuite, découvrez comment [ résoudre les problèmes liés à une mise en oeuvre de Target à l’aide du SDK Web Platform ](debugging.md).
+Félicitations, vous avez atteint la fin du tutoriel. Bonne chance pour la migration de votre implémentation Adobe Target vers l’extension Decisioning !
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target mobile de l’extension Target vers l’extension de prise de décision. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
