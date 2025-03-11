@@ -2,9 +2,9 @@
 title: Récupération des activités Target - Migration de l’implémentation Adobe Target dans votre application mobile vers l’extension Adobe Journey Optimizer - Decisioning
 description: Découvrez comment récupérer les activités Adobe Target lors de la migration d’Adobe Target vers l’extension Adobe Journey Optimizer - Prise de décision pour mobile.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Veillez toujours à inclure la gestion des erreurs pour afficher les expérience
 
 
 ## Demander et appliquer du contenu à la demande
+
+>[!IMPORTANT]
+>
+>Après avoir appliqué du contenu à l’application, il est impératif de déclencher `displayed` API pour informer Target que le visiteur a vu le contenu secondaire ou par défaut spécifié dans l’activité. Consultez la page [Suivi des événements de conversion Target](track-events.md) pour plus d’informations.
+
 
 +++ Exemple Android
 
