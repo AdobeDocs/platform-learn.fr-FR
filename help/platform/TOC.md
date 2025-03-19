@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
+source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '897'
 ht-degree: 21%
 
 ---
@@ -67,7 +67,7 @@ Campaigns
    + [Intégrations avec les applications Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Cas d’utilisation clés](/help/platform/intro-to-platform/key-use-cases.md)
    + [Architecture de base](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Interface utilisateur](/help/platform/intro-to-platform/interface-tour.md)
+   + [Interface d’utilisation](/help/platform/intro-to-platform/interface-tour.md)
    + [Rôles et phases du projet](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Présentation de Real-Time CDP {#rtcdp}
    + [Vue d’ensemble](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -127,7 +127,11 @@ Campaigns
 + [Journaux d’audit](/help/platform/governance/audit-logs.md)
 + [Collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + {#collaboration} Collaboration
-   + [Présentation de Real-Time CDP Collaboration](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
+   + [Présentation de Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
+   + [Définition des autorisations](collaboration/set-permissions-for-collaboration.md)
+   + [Configuration d’un compte d’annonceur](collaboration/set-up-an-advertiser-account.md)
+   + [Référencer des audiences en tant qu’annonceur](collaboration/reference-audiences-as-an-advertiser.md)
+   + [Connexion aux éditeurs](collaboration/connect-with-publishers.md)
 + {#dashboards} des tableaux de bord
    + [Création d’un tableau de bord](/help/platform/dashboards/create-a-dashboard.md)
 + Gouvernance des données {#data-governance}
