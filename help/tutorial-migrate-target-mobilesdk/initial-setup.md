@@ -2,9 +2,9 @@
 title: 'Configuration initiale : migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Adobe Journey Optimizer - Decisioning'
 description: Découvrez et configurez les éléments fondamentaux importants requis pour l’implémentation de Platform Web SDK
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ L’extension cible comporte des [ paramètres configurables ](https://developer
 | Code client | S.O. | Défini automatiquement par Edge à l’aide des détails de l’organisation IMS |
 | Identifiant de l’environnement | Identifiant de l’environnement Target | Configuré dans le flux de données |
 | Propriété Workspace de Target | Jeton de propriété | Configuré dans le flux de données |
-| Temporisation | Non configurable | Le délai d’expiration de l’extension Decisioning est de 10 secondes |
+| Temporisation | Temporisation | Configurable dans l’extension Decisioning et dans le SDK d’optimisation. Le délai d’expiration par défaut est de 10 secondes. |
 | Server Domain (Domaine du serveur) | domaine Edge Network | Défini dans l’extension Adobe Experience Platform Edge Network |
 
 Découvrez ensuite comment [remplacer le SDK Target](replace-sdk.md).

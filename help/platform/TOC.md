@@ -5,9 +5,9 @@ user-guide-description: Découvrez les nombreux composants d’Experience Platfo
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
+source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 21%
 
 ---
@@ -117,6 +117,7 @@ Campaigns
    + [Création d’audiences d’entités multiples](audiences/audience-builder/create-multi-entity-audiences.md)
    + [Créer et activer des audiences de compte (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Démonstration de la segmentation en flux continu](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [Évaluer les audiences par lots à la demande](/help/platform/audiences/evaluate-audiences-on-demand.md)
    + [Évaluation d’une règle d’audience](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Créer un jeu de données pour exporter des données](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Configuration de la connexion à Correspondance de segments](/help/platform/segments/segment-match-connection-setup.md)
