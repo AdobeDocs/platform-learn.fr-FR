@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 28%
+source-wordcount: '199'
+ht-degree: 27%
 
 ---
 
@@ -27,26 +27,28 @@ ht-degree: 28%
    + [Créer des règles](tags/build-rules.md)
    + [Règles de pile](tags/stack-rules.md)
    + [Créer et publier une bibliothèque](tags/build-and-publish-a-library.md)
-   + [Implémentation sur des sites web avec Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr){target="_blank"}
+   + [Implémentation sur des sites web avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Implémentation sur des sites web avec des SDK de solution](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=fr){target="_blank"}
-   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr){target="_blank"}
+   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + SDK Web{#web-sdk}
    + [Vue d’ensemble](web-sdk/overview.md)
    + [Démonstration](web-sdk/demo.md)
-   + [Tutoriel d’implémentation (avec balises)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr){target="_blank"}
-   + [ Tutoriel sur la migration de Target ](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
-   + [ Tutoriel sur la migration d’Analytics ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [Tutoriel d’implémentation (avec balises)](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
+   + [ Tutoriel sur la migration de Target ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [ Tutoriel sur la migration d’Analytics ](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consentement {#consent}
       + [Vue d’ensemble](web-sdk/consent/overview.md)
-      + [Définir les valeurs de consentement à l’aide de la norme d’Adobe](web-sdk/consent/set-consent-adobe.md)
+      + [Définir les valeurs de consentement à l’aide de la norme Adobe](web-sdk/consent/set-consent-adobe.md)
       + [Définir les valeurs de consentement à l’aide de la norme IAB TCF 2.0](web-sdk/consent/set-consent-iab.md)
-      + [Inspect et validation des données de consentement](web-sdk/consent/inspect.md)
+      + [Inspecter et valider les données de consentement](web-sdk/consent/inspect.md)
       + [Tutoriel complet sur le traitement du consentement](web-sdk/consent/tutorial.md)
 + SDK Mobile{#mobile-sdk}
    + [Vue d’ensemble](mobile-sdk/overview.md)
    + [Création de propriétés mobiles](mobile-sdk/create-mobile-properties.md)
    + [Utiliser les gestionnaires des dépendances](mobile-sdk/use-dependency-managers.md)
-   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr){target="_blank"}
+   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+
+   + [ Tutoriel sur la migration de Target ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + API du serveur {#server-api}
    + [Vue d’ensemble](server-api/overview.md)
    + [Principes de base des API](server-api/introduction.md)
@@ -62,7 +64,7 @@ ht-degree: 28%
    + [Déplacer les balises côté client](event-forwarding/consider-moving-tags.md)
    + [Configurer des conversions améliorées de Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Extension Adobe pour Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
-+ Flux de données et Edge Network {#edge-network}
++ Flux de données et Edge Network{#edge-network}
    + [Configurer les flux de données](edge/configure-datastreams.md)
    + [Préparation des données](edge/data-prep.md)
    + [Gestion des données sensibles](edge/manage-sensitive-data-in-datastreams.md)

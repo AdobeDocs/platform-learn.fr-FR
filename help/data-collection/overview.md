@@ -3,10 +3,10 @@ title: Tutoriels sur la collecte de données
 description: Vidéos pratiques et tutoriels pour vous aider à utiliser efficacement la collecte de données
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 24%
+source-wordcount: '263'
+ht-degree: 22%
 
 ---
 
@@ -28,11 +28,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migration de Target vers Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migration d’Adobe Target vers Web SDK</strong>
     </a>
     </div>
@@ -41,16 +41,16 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
       <img alt="Implémenter dʼAdobe Experience Cloud avec le SDK web" src="assets/thumb_analyticsWebSdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
     <strong>Migration d’Adobe Analytics vers Web SDK dans les balises</strong>
     </a>
     </div>
     <p>
-    <em>Remplacez AppMeasurement.js par le SDK Web avec les balises</em>
+    <em>Remplacez AppMeasurement.js par Web SDK avec des balises</em>
     <p>
   </td>
   <td>
@@ -64,6 +64,25 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
 </tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="Migration de Target vers Mobile SDK sur Edge Network" src="assets/thumb_targetMobileSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>Migration d’Adobe Target vers Mobile SDK sur Edge Network</strong>
+    </a>
+    </div>
+    <p>
+    <em>Remplacez l’extension Target par l’extension Journey Optimizer - Decisioning</em>
+    <p>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  </tr>
 </table>
 
 ## Guides de mise en œuvre
@@ -76,7 +95,7 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr" target="_blank">
-    <strong>Implémentation de l’Experience Cloud avec Web SDK</strong>
+    <strong>Mise en œuvre d’Experience Cloud avec Web SDK</strong>
     </a>
     </div>
     <p>
@@ -89,7 +108,7 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr" target="_blank">
-    <strong>Implémenter l’Experience Cloud dans les applications mobiles</strong>
+    <strong>Implémenter Experience Cloud dans les applications mobiles</strong>
     </a>
     </div>
     <p>
@@ -106,7 +125,7 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     </a>
     </div>
     <p>
-    <em>Utiliser les balises pour implémenter les anciennes bibliothèques Analytics, Target et Audience Manager </em>
+    <em>Utiliser les balises pour implémenter les anciennes bibliothèques Analytics, Target et Audience Manager</em>
     <p>
   </td>
 </tr>
