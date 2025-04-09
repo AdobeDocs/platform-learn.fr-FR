@@ -3,7 +3,7 @@ title: Tutoriels sur la collecte de données
 description: Vidéos pratiques et tutoriels pour vous aider à utiliser efficacement la collecte de données
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 22%
@@ -90,11 +90,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr" target="_blank">
+    <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview" target="_blank">
       <img alt="Implémenter dʼAdobe Experience Cloud avec le SDK web" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr" target="_blank">
+      <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview" target="_blank">
     <strong>Mise en œuvre d’Experience Cloud avec Web SDK</strong>
     </a>
     </div>
@@ -103,11 +103,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implémentation dans les applications mobiles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=fr" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implémenter Experience Cloud dans les applications mobiles</strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migration de Target vers Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Implémenter des bibliothèques héritées avec des balises</strong>
     </a>
     </div>
