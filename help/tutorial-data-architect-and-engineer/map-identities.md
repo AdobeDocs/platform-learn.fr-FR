@@ -8,9 +8,9 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 6%
 
 ---
@@ -148,7 +148,7 @@ Répétez le processus pour certains de vos autres schémas :
 >
 >Les données collectées avec le SDK Web constituent une exception à la pratique courante consistant à libeller les champs d’identité dans le schéma . Web SDK utilise le mappage d’identités pour libeller les identités *côté implémentation* et ainsi nous déterminerons les identités de l’`Luma Web Events Schema` lorsque nous implémentons Web SDK sur le site Web Luma. Dans cette leçon ultérieure, nous allons collecter l’identifiant visiteur Experience Cloud (ECID) en tant qu’identifiant principal et crmId en tant qu’identifiant secondaire.
 
-Avec notre sélection d’identités principales, il est clair de voir comment les `Luma CRM Schema` peuvent se connecter à l’`Luma Offline Purchase Events Schema`, puisqu’ils utilisent tous deux `loyaltyId` comme identifiant. Mais comment relier nos achats hors ligne au comportement en ligne ? Comment classer les produits achetés avec notre catalogue de produits ? Nous utiliserons d’autres champs d’identité et relations de schéma.
+Avec notre sélection d’identités principales, il est clair que `Luma Loyalty Schema` pouvez vous connecter à l’`Luma Offline Purchase Events Schema`, car ils utilisent tous deux loyaltyId comme identifiant. Mais comment le CRM peut-il se connecter aux événements d’achat hors ligne ? Comment relier nos achats hors ligne au comportement en ligne ? Et comment classer les produits achetés avec notre catalogue de produits ? Nous utiliserons d’autres champs d’identité et relations de schéma.
 
 <!--use a visual-->
 
