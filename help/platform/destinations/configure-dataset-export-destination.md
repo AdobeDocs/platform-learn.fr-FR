@@ -1,23 +1,25 @@
 ---
-title: Configurez une destination d’exportation de jeu de données dans  [!DNL Experience Platform]
-description: Découvrez la configuration, le workflow et les cas d’utilisation pour exporter des jeux de données depuis  [!DNL Adobe Experience Platform]  vers un emplacement d’espace de stockage à l’aide d’une connexion à la destination.
+title: Exporter des jeux de données à l’aide d’une destination d’espace de stockage
+description: Découvrez comment configurer une connexion et utiliser le workflow pour les exportations de jeux de données à l’aide d’une destination de service cloud.
 solution: Real-Time Customer Data Platform, Experience Platform
 feature: Destinations
 role: User, Admin
 level: Beginner
 jira: KT-13945
 thumbnail: 3424392.jpg
-last-substantial-update: 2023-09-27T00:00:00Z
+last-substantial-update: 2025-04-09T00:00:00Z
 exl-id: 139fc1e5-8866-4be4-b921-85443036e506
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 35%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
-# Configurer une destination d’exportation de jeu de données dans [!DNL Experience Platform]
+# Exporter des jeux de données à l’aide d’une destination d’espace de stockage
 
-Découvrez la configuration, le workflow et les cas d’utilisation pour exporter des jeux de données de [!DNL Adobe Experience Platform] vers un emplacement d’espace de stockage à l’aide d’une connexion de destination. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=fr).
+Découvrez comment configurer une connexion et utiliser le workflow pour les exportations de jeux de données à l’aide d’une destination de service cloud. Les avantages et les cas d’utilisation de cette fonctionnalité sont également abordés.
+
+Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
