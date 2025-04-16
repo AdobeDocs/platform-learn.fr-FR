@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: 7d4970479ff1a7dcb3ebb1f46660f418ba768da3
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -346,8 +347,8 @@ Quelques minutes plus tard, un nouveau fichier PSD a été généré avec un nou
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages de l’automatisation des services Firefly ](./summary.md){target="_blank"}
+Accédez à [1.2.5 Frame I/O et Workfront Fusion](./ex5.md){target="_blank"}
 
-Revenez à [Automatisation des services Adobe Firefly](./automation.md){target="_blank"}.
+Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
