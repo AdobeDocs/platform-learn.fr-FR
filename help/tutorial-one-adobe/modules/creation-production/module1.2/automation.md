@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -39,13 +39,13 @@ Dans cet exercice, continuez à affiner votre parcours pour automatiser le proce
 
 Dans cet exercice, continuez à affiner votre parcours pour automatiser le processus de création d’images.
 
-[1.2.5 Frame I/O et Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.5 Frame.io et Workfront Fusion](./ex5.md){target="_blank"}
 
-Dans cet exercice, vous allez connecter Frame I/O à votre scénario Workfront Fusion.
+Dans cet exercice, vous allez connecter Frame.io à votre scénario Workfront Fusion.
 
-[1.2.6 Frame I/O vers Workfront Fusion vers AEM Assets](./ex6.md){target="_blank"}
+[1.2.6 Frame.io vers Workfront Fusion vers AEM Assets](./ex6.md){target="_blank"}
 
-Dans cet exercice, vous allez affiner davantage votre configuration, de sorte que la ressource approuvée dans Frame I/O utilise un scénario Workfront Fusion pour exporter ensuite un rendu PNG de la ressource vers AEM Assets.
+Dans cet exercice, vous allez affiner davantage votre configuration, de sorte que la ressource approuvée dans Frame.io utilise un scénario Workfront Fusion pour exporter ensuite un rendu PNG de la ressource vers AEM Assets.
 
 [Résumé et avantages](./summary.md){target="_blank"}
 

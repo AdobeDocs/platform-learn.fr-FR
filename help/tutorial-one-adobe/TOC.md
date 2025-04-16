@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobe, de Cre
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1146'
 ht-degree: 3%
 
 ---
@@ -48,8 +48,8 @@ ht-degree: 3%
       + [1.2.2 Utilisation des API Adobe dans Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Automatisation des processus avec Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 Automatisation à l&#39;aide de connecteurs](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5 Frame I/O et Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.6 Frame I/O vers Workfront Fusion vers AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.5 Frame.io et Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.6 Frame.io vers Workfront Fusion vers AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 Adobe Express et Adobe Experience Cloud {#crpr3}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
