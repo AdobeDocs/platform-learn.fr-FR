@@ -4,7 +4,7 @@ description: Prise en main - Installez l’extension Chrome pour la documentatio
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs n
 
 | Nom | Clé | Exemple |
 |:-------------:| :---------------:| :---------------:|
-| ID d’organisation IMS AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Identifiant de l’organisation AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
 | Nom de l’organisation IMS AEP | `--aepImsOrgName--` | `Experience Platform International` |
 | ID de client AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nom du sandbox AEP | `--aepSandboxName--` | `one-adobe` |
@@ -72,13 +72,13 @@ Saisissez les valeurs comme indiqué ci-dessous, qui sont toutes liées à votre
 
 Si vous ne savez pas exactement quelles valeurs saisir pour ces champs, suivez les conseils ci-dessous.
 
-**Nom de l’organisation IMS AEP**
+**Nom de l’organisation AEP IMS**
 
 Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), le nom de votre instance s’affiche dans le coin supérieur droit de l’écran.
 
 ![DSN ](./images/aepname.png)
 
-**ID d’organisation IMS AEP**
+**Identifiant de l’organisation AEP IMS**
 
 L’ID d’organisation IMS est l’identifiant unique de votre instance Adobe Experience Cloud et est référencé à plusieurs endroits tout au long de ce tutoriel.
 
@@ -88,7 +88,7 @@ Vous pouvez le retrouver en accédant à [Admin Console](https://https://adminco
 
 ![DSN ](./images/aepid1.png)
 
-Vous pouvez également le trouver en accédant à **Gestion des données > Requêtes** dans votre menu AEP, où vous pouvez le trouver sous **Nom d’utilisateur**.
+Vous pouvez également le retrouver en accédant à **Gestion des données > Requêtes** dans votre menu AEP, où vous pouvez le retrouver sous **Nom d’utilisateur**.
 
 ![DSN ](./images/aepid2.png)
 
@@ -102,7 +102,7 @@ Votre identifiant client est l’identifiant unique de l’instance AEP de votre
 
 Lorsque vous la saisissez dans l’extension Chrome, vous devez vous assurer qu’un trait de soulignement est ajouté sous forme de préfixe, de sorte que dans cet exemple **experienceplatform** devienne **_experienceplatform**.
 
-**Nom du sandbox AEP**
+**Nom Du Sandbox AEP**
 
 Le nom de votre sandbox est le nom de l’environnement que vous utiliserez dans votre instance AEP. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
 
@@ -135,11 +135,11 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** de cette page ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
-Vous devriez maintenant disposer d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepSandboxName` a été remplacée par votre vrai nom de sandbox AEP, qui est dans ce cas **one-adobe**.
+Vous devriez maintenant bénéficier d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepSandboxName` a été remplacée par votre véritable nom de sandbox AEP, qui est dans ce cas **one-adobe**.
 
 ![DSN ](./images/mod7.png)
 
