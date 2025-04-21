@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Dans l’exercice précédent, vous avez configuré le `--aepUserLdap-- - Firefl
 
 ## 1.2.5.1 Accès à Frame.io
 
-Accédez à [https://app.frame.io/projects](https://app.frame.io/projects).
+Accédez à [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
 
 Cliquez sur l’icône **+** créer votre propre projet dans Frame.io.
 
@@ -42,7 +42,7 @@ Dans l’un des exercices précédents, vous avez téléchargé [citisignal-fibr
 
 Dans l’exercice précédent, vous avez créé l’`--aepUserLdap-- - Firefly + Photoshop` de scénario, qui a commencé par un webhook personnalisé et s’est terminé par une réponse webhook. L’utilisation des webhooks a ensuite été testée à l’aide de Postman, mais il est évident que le but d’un tel scénario est d’être appelé par une application externe. Comme indiqué précédemment, Frame.io sera cet exercice, mais entre Frame.io et le `--aepUserLdap-- - Firefly + Photoshop`, un autre scénario Workfront Fusion est nécessaire. vous allez à présent configurer ce scénario.
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Ouvrez **Workfront Fusion**.
+Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ Vous devriez alors voir ceci. Laissez cet écran ouvert et intact car vous en au
 
 ![E/S de trame](./images/frame10.png)
 
-Accédez à [https://developer.frame.io/](https://developer.frame.io/). Cliquez sur **OUTILS DE DÉVELOPPEMENT** puis choisissez **Actions personnalisées**.
+Accédez à [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Cliquez sur **OUTILS DE DÉVELOPPEMENT** puis choisissez **Actions personnalisées**.
 
 ![E/S de trame](./images/frame11.png)
 
@@ -98,7 +98,7 @@ Vous devriez alors voir ceci.
 
 ![E/S de trame](./images/frame14.png)
 
-Revenez à [https://app.frame.io/projects](https://app.frame.io/projects). Actualisez la page.
+Revenez à [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Actualisez la page.
 
 ![E/S de trame](./images/frame16.png)
 
@@ -298,7 +298,7 @@ Sélectionnez **Clé API Frame.io** et saisissez le nom `--aepUserLdap-- - Frame
 
 ![E/S de trame](./images/frame49.png)
 
-Pour obtenir un jeton API, rendez-vous sur [https://developer.frame.io/](https://developer.frame.io/). Cliquez sur **OUTILS DE DÉVELOPPEMENT** puis choisissez **Jetons**.
+Pour obtenir un jeton API, rendez-vous sur [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Cliquez sur **OUTILS DE DÉVELOPPEMENT** puis choisissez **Jetons**.
 
 ![E/S de trame](./images/frame50.png)
 

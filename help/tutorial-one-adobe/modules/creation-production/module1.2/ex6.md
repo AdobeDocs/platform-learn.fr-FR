@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Toutefois, les équipes commerciales n’ont pas besoin d’un fichier PSD, mais
 
 ## 1.2.6.1 Créer un nouveau scénario
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Ouvrez **Workfront Fusion**.
+Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ Vous devriez alors voir ceci. Cliquez sur **Copier l’adresse dans le presse-pa
 
 ## 1.2.6.2 Configurer le Webhook dans Frame.io
 
-Accédez à [https://developer.frame.io/](https://developer.frame.io/). Cliquez sur **OUTILS DE DÉVELOPPEMENT** puis choisissez **Actions personnalisées**.
+Accédez à [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Cliquez sur **OUTILS DE DÉVELOPPEMENT** puis choisissez **Actions personnalisées**.
 
 ![E/S de trame](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ Vous devriez alors voir ceci.
 
 ![E/S de trame](./images/aemf11.png)
 
-Accédez à [https://app.frame.io/projects](https://app.frame.io/projects) puis au dossier que vous avez créé précédemment et qui doit être nommé `--aepUserLdap--`. Double-cliquez pour ouvrir la ressource créée dans l’exercice précédent.
+Accédez à [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} puis au dossier que vous avez créé précédemment et qui doit être nommé `--aepUserLdap--`. Double-cliquez pour ouvrir la ressource créée dans l’exercice précédent.
 
 ![E/S de trame](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ Votre connexion sera ensuite validée et, en cas de réussite, elle sera automat
 
 ![E/S de trame](./images/aemf51.png)
 
-Pour créer un dossier dédié, accédez à [https://experience.adobe.com](https://experience.adobe.com/). Assurez-vous que la bonne instance Experience Cloud est sélectionnée, ce qui doit être `--aepImsOrgName--`. Cliquez ensuite sur **Experience Manager Assets**.
+Pour créer un dossier dédié, accédez à [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Assurez-vous que la bonne instance Experience Cloud est sélectionnée, ce qui doit être `--aepImsOrgName--`. Cliquez ensuite sur **Experience Manager Assets**.
 
 ![E/S de trame](./images/aemf52.png)
 

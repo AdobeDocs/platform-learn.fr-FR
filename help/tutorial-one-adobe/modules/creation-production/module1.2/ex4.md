@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Vous allez maintenant commencer à utiliser les connecteurs prêts à l’emploi
 
 ## 1.2.4.1 Dupliquer et préparer votre scénario
 
-Dans le menu de gauche, accédez à **Scénarios** et sélectionnez votre dossier `--aepUserLdap--`. Vous devriez ensuite voir le scénario que vous avez créé précédemment, qui est nommé `--aepUSerLdap-- - Adobe I/O Authentication`.
+Dans le menu de gauche, accédez à **Scénarios** et sélectionnez votre dossier `--aepUserLdap--`. Vous devriez ensuite voir le scénario que vous avez créé précédemment, qui est nommé `--aepUserLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Renseignez les champs suivants :
 - **ID client** : copiez le **ID client** de votre projet Adobe I/O nommé `--aepUserLdap-- - One Adobe tutorial`.
 - **Secret client** : copiez le **Secret client** de votre projet Adobe I/O nommé `--aepUserLdap-- - One Adobe tutorial`.
 
-Vous trouverez les **ID client** et **Secret client** de votre projet Adobe I/O [ici](https://developer.adobe.com/console/projects.).
+Vous trouverez les **ID client** et **Secret client** de votre projet Adobe I/O [ici](https://developer.adobe.com/console/projects.){target="_blank"}.
 
 ![WF Fusion](./images/wffc20.png)
 

@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobe, de Cre
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1154'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
       + [1.3.1 Prise en main d’Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Animation et vidéo dans Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Création en bloc d’Assets dans Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + Gestion des ressources {#assetmgmt}

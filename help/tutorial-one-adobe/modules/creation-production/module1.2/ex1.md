@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Découvrez comment utiliser Workfront Fusion et Adobe I/O pour interroger les AP
 
 ## 1.2.1.1 Créer un nouveau scénario
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Ouvrez **Workfront Fusion**.
+Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -71,7 +71,7 @@ Les variables suivantes doivent être définies :
 | `CONST_client_secret` | votre secret client de projet Adobe I/O |
 | `CONST_scope` | la portée de votre projet Adobe I/O ; |
 
-Recherchez ces variables en accédant à [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) et en ouvrant votre projet Adobe I/O nommé `--aepUserLdap-- One Adobe tutorial`.
+Recherchez ces variables en accédant à [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"} et en ouvrant votre projet Adobe I/O nommé `--aepUserLdap-- One Adobe tutorial`.
 
 ![WF Fusion](./images/wffusion9.png)
 
