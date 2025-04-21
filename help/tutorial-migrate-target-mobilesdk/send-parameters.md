@@ -2,7 +2,7 @@
 title: 'Envoyer des paramètres : migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Adobe Journey Optimizer - Decisioning.'
 description: Découvrez comment envoyer des paramètres de mbox, de profil et d’entité à Adobe Target à l’aide d’Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target permet de synchroniser les profils sur plusieurs appareils et systèmes �
 
 | Exemple de paramètre at.js | Option de Platform Web SDK | Notes |
 | --- | --- | --- |
-| `at_property` | S/O | Les jetons de propriété sont configurés dans le [flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) et ne peuvent pas être définis dans l’appel `sendEvent`. |
+| `at_property` | S/O | Les jetons de propriété sont configurés dans le [flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) et ne peuvent pas être définis dans l’appel `sendEvent`. |
 | `pageName` | `xdm.web.webPageDetails.name` ou <br>. `data.__adobe.target.pageName` | Les paramètres de mbox cible peuvent être transmis dans le cadre de l’objet `xdm` ou de l’objet `data.__adobe.target`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Tous les paramètres de profil Target doivent être transmis dans le cadre de l’objet `data` et précédés du préfixe `profile.` pour être mappés correctement. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Paramètre réservé utilisé pour la fonction Affinité catégorielle de Target qui doit être transmis dans le cadre de l’objet `data`. |

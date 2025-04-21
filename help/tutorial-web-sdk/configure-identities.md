@@ -4,7 +4,7 @@ description: Découvrez comment configurer des espaces de noms d’identité à 
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Avant de commencer les exercices, regardez cette courte vidéo pour en savoir pl
 
 Créez maintenant un espace de noms pour l’identifiant CRM de Luma :
 
-1. Ouvrez l’interface [Collecte de données](https://launch.adobe.com/){target="_blank"}
+1. Ouvrez l’interface [Collecte de données](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Sélectionnez le sandbox que vous utilisez pour le tutoriel
 
    >[!NOTE]

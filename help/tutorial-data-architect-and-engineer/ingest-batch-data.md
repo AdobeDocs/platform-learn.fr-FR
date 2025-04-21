@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -335,8 +335,6 @@ Recherchez à nouveau le profil avec la valeur `5625458` dans l’espace de noms
 Adobe s’associe à plusieurs fournisseurs ETL pour prendre en charge l’ingestion de données dans Experience Platform. En raison de la variété des fournisseurs tiers, ETL n’est pas traité dans ce tutoriel, bien que vous puissiez consulter certaines de ces ressources :
 
 * [Développement d’intégrations ETL pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Page du connecteur Adobe Experience Platform Informatica sur Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Documentation Informatica du connecteur Adobe Experience Platform](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Pack Snap Adobe Experience Platform](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Ressources supplémentaires
