@@ -2,7 +2,8 @@
 title: Prise en main - Applications à installer
 description: Prise en main - Applications à installer
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 2%
@@ -15,7 +16,7 @@ Vous trouverez ci-dessous un aperçu du prétravail nécessaire avant de rejoind
 
 ## Adobe Creative Cloud
 
-Accédez à [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud).
+Accédez à [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
 
 ![Nouvelle intégration Adobe I/O](./images/cc.png)
 

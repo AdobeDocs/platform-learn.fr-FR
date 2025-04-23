@@ -4,9 +4,9 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 6%
 
 ---
@@ -21,7 +21,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./../dc1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné la sandbox appropriée, la modification d’écran s’affiche et vous êtes maintenant dans votre sandbox dédiée.
+Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé `--aepSandboxName--`. Après avoir sélectionné la sandbox appropriée, la modification d’écran s’affiche et vous êtes maintenant dans votre sandbox dédiée.
 
 ![Ingestion des données](./../dc1.2/images/sb1.png)
 
@@ -61,7 +61,7 @@ Lorsque vous revenez ensuite au menu **Bases de données fédérées**, votre co
 
 ![AAAA](./images/fdb4.png)
 
-## 1.3.2.2 Créer des schémas dans AEP
+## 1.3.2.2 Création de schémas dans AEP
 
 Dans le menu de gauche, cliquez sur **Modèles** puis accédez à **Schémas**. Cliquez sur **Créer un schéma**.
 
@@ -98,7 +98,7 @@ Cliquez sur **Créer**.
 
 ![AAAA](./images/fdb8.png)
 
-Tu verras ça. Vous pouvez cliquer sur n’importe quel schéma et consulter les informations. Par exemple, cliquez sur **—aepUserLdap—_PERSON**.
+Tu verras ça. Vous pouvez cliquer sur n’importe quel schéma et consulter les informations. Par exemple, cliquez sur **`--aepUserLdap--_PERSONS`**.
 
 ![AAAA](./images/fdb9.png)
 
@@ -110,7 +110,7 @@ Vous verrez ensuite un échantillon des données.
 
 ![AAAA](./images/fdb11.png)
 
-## 1.3.2.3 Créer un modèle dans AEP
+## 1.3.2.3 Création d’un modèle dans AEP
 
 Dans le menu de gauche, accédez à **Modèles** puis à **Modèle de données**. Cliquez sur **Créer un modèle de données**.
 

@@ -6,16 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Prise en main d’Adobe Express
 
-Ouvrez une nouvelle fenêtre de navigateur en mode privé et accédez à [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Connectez-vous à l’aide de votre **compte d’entreprise ou d’école** puis sélectionnez le **de compte (aepImsOrgName)**.
+## 1.3.1.1 Connexion à Adobe Express
+
+Ouvrez une nouvelle fenêtre de navigateur en mode privé et accédez à [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Connectez-vous à l’aide de votre **compte d’entreprise ou d’école** puis sélectionnez l’**`--aepImsOrgName--`** du compte.
 
 ![Adobe Express](./images/express1.png)
 
@@ -37,7 +39,7 @@ Vous êtes maintenant connecté à **Adobe Express**.
 
 ![Adobe Express](./images/express5.png)
 
-## 1.3.1.1 Prise en main à partir d’un modèle de marque
+## 1.3.1.2 Prise en main à partir d’un modèle de marque
 
 Dans Adobe Express, accédez à **Marques**. Votre bibliothèque de modèles de marque est probablement vide pour le moment. CitiSignal a précédemment défini un modèle de marque, et vous devriez maintenant réutiliser ce modèle existant.
 

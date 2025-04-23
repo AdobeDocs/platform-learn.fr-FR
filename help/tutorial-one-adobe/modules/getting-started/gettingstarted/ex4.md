@@ -4,7 +4,7 @@ description: Prise en main - Utilisation du site web
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Votre site web est alors chargé dans une fenêtre de navigateur en mode privé.
 
 ## Option 2 : commencer avec une nouvelle fenêtre de navigateur incognito
 
-Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour les sessions suivantes, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com/](https://dsn.adobe.com/). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Modifier**.
+Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour les sessions suivantes, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}. Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Modifier**.
 
 ![DSN ](./images/web8.png)
 
@@ -103,7 +103,7 @@ Votre site web est alors chargé dans une fenêtre de navigateur en mode privé.
 
 ## Étapes suivantes
 
-Accédez à [ Utiliser l’application mobile ](./ex5.md)
+Accédez à [ Utiliser l’application mobile ](./ex5.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

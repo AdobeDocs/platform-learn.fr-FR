@@ -4,16 +4,16 @@ description: Foundation - AEC - Créer une composition fédérée
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
 
 # 1.3.3 Créer une composition fédérée
 
-Vous pouvez désormais configurer la composition de votre audience fédérée dans AEP.
+Vous pouvez maintenant configurer la composition de votre audience fédérée dans AEP.
 
 Connectez-vous à Adobe Experience Platform en accédant à cette URL : [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -21,7 +21,7 @@ Une fois connecté, vous accédez à la page d’accueil de Adobe Experience Pla
 
 ![Ingestion des données](./../dc1.2/images/home.png)
 
-Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé ``--aepSandboxName--``. Après avoir sélectionné la sandbox appropriée, la modification d’écran s’affiche et vous êtes maintenant dans votre sandbox dédiée.
+Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé `--aepSandboxName--`. Après avoir sélectionné la sandbox appropriée, la modification d’écran s’affiche et vous êtes maintenant dans votre sandbox dédiée.
 
 ![Ingestion des données](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ Tu verras ça. Sélectionnez **Créer une audience**. Cliquez sur l’icône **r
 
 ![AAAA](./images/fedcomp5.png)
 
-Sélectionnez le schéma **—aepUserLdap—_HOUSEHOLDS**. Cliquez sur **Confirmer**.
+Sélectionnez l’**`--aepUserLdap--_HOUSEHOLDS`** de schéma . Cliquez sur **Confirmer**.
 
 ![AAAA](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ Ensuite, cliquez de nouveau sur l’icône **+** et cliquez de nouveau sur **Con
 
 ![AAAA](./images/fedcomp11.png)
 
-La deuxième condition à ajouter est : `Is the user an existing CitiSignal Mobile subscriber?`. La réponse à cette question consiste à utiliser la relation entre le ménage et le client principal du ménage, qui est définie dans une autre table, **—aepUserLdap—_PERSON**. Vous pouvez effectuer une analyse plus approfondie dans le menu d’attributs à l’aide du lien **household2person**.
+La deuxième condition à ajouter est : `Is the user an existing CitiSignal Mobile subscriber?`. Pour répondre à cette question, il faut utiliser la relation entre le ménage et le client principal du ménage, qui est définie dans un autre tableau, **`--aepUserLdap--_PERSONS`**. Vous pouvez effectuer une analyse plus approfondie dans le menu d’attributs à l’aide du lien **household2person**.
 
 ![AAAA](./images/fedcomp12.png)
 

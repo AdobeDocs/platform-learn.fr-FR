@@ -4,7 +4,7 @@ description: Prise en main - Création de votre flux de données
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Créer votre flux de données
 
-Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![DSN ](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ Vos modifications sont maintenant publiées et seront prêtes dans quelques minu
 
 ## Créer votre flux de données pour Mobile
 
-Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 Cliquez sur **[!UICONTROL Flux de données]**.
 
@@ -175,7 +175,7 @@ Vos modifications sont maintenant publiées et seront prêtes dans quelques minu
 
 ## Étapes suivantes
 
-Accédez à [ Utiliser le site web ](./ex4.md)
+Accédez à [ Utiliser le site web ](./ex4.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

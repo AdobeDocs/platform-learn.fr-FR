@@ -4,7 +4,7 @@ description: Prise en main - Installez l’extension Chrome pour la documentatio
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Une fois l’extension installée, le même texte est automatiquement modifié p
 
 ## Installation de l’extension Chrome
 
-Pour installer cette extension Chrome, ouvrez votre navigateur Chrome et accédez à : [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Tu verras ça.
+Pour installer cette extension Chrome, ouvrez votre navigateur Chrome et accédez à : [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. Tu verras ça.
 
 Cliquez sur **Ajouter à Chrome**.
 
@@ -58,7 +58,7 @@ Dans le menu **extensions**, cliquez sur l’icône **puzzle** et épinglez l’
 
 ## Configuration de l’extension Chrome
 
-Accédez à [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) puis cliquez sur l’icône de l’extension pour l’ouvrir.
+Accédez à [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
 
 ![DSN ](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Si vous ne savez pas exactement quelles valeurs saisir pour ces champs, suivez l
 
 **Nom de l’organisation AEP IMS**
 
-Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), le nom de votre instance s’affiche dans le coin supérieur droit de l’écran.
+Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, le nom de votre instance s’affiche dans le coin supérieur droit de l’écran.
 
 ![DSN ](./images/aepname.png)
 
@@ -84,7 +84,7 @@ L’ID d’organisation IMS est l’identifiant unique de votre instance Adobe E
 
 La recherche de votre identifiant de l’organisation IMS peut être effectuée de plusieurs façons. Si vous n’êtes pas sûr, contactez l’un des administrateurs système de votre instance pour trouver l’identifiant.
 
-Vous pouvez le retrouver en accédant à [Admin Console](https://https://adminconsole.adobe.com/), où vous pouvez le retrouver dans l’URL.
+Vous pouvez le retrouver en accédant à [Admin Console](https://adminconsole.adobe.com/){target="_blank"}, où vous pouvez le retrouver dans l’URL.
 
 ![DSN ](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ Veillez à copier et coller la partie **@AdobeOrg** avec l&#39;ID.
 
 **ID de client AEP**
 
-Votre identifiant client est l’identifiant unique de l’instance AEP de votre organisation. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
+Votre identifiant client est l’identifiant unique de l’instance AEP de votre organisation. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, l’identifiant du client s’affiche dans l’URL.
 
 ![DSN ](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Lorsque vous la saisissez dans l’extension Chrome, vous devez vous assurer qu�
 
 **Nom Du Sandbox AEP**
 
-Le nom de votre sandbox est le nom de l’environnement que vous utiliserez dans votre instance AEP. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/), l’identifiant du client s’affiche dans l’URL.
+Le nom de votre sandbox est le nom de l’environnement que vous utiliserez dans votre instance AEP. Lorsque vous vous connectez à votre instance Adobe Experience Platform sur [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, l’identifiant du client s’affiche dans l’URL.
 
 Avant de prendre le nom du sandbox à partir de l’URL, vous devez vous assurer que vous vous trouvez dans le sandbox que vous devez utiliser pour ce tutoriel. Vous pouvez passer au sandbox de droite en cliquant sur le menu de sélection des sandbox dans le coin supérieur droit de l’écran.
 
@@ -135,7 +135,7 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** de cette page ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
@@ -145,7 +145,7 @@ Vous devriez maintenant bénéficier d’une vue similaire à celle ci-dessous, 
 
 ## Étapes suivantes
 
-Accédez à [Utiliser le système de démonstration à côté de pour configurer la propriété cliente de collecte de données Adobe Experience Platform](./ex2.md)
+Accédez à [Utiliser le système de démonstration à côté de pour configurer la propriété cliente de collecte de données Adobe Experience Platform](./ex2.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

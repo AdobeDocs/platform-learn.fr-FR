@@ -4,7 +4,7 @@ description: Prise en main - Utilisez le système de démonstration en regard de
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Afin de visualiser les enseignements de ce tutoriel et de vous permettre de test
 
 Une fois que vous avez accès à Demo System Next, procédez comme suit.
 
-Accédez à [https://dsn.adobe.com/](https://dsn.adobe.com/) puis à **Configuration**.
+Accédez à [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} puis à **Configuration**.
 
 ![DSN ](./images/dsnsetup.png)
 
@@ -57,7 +57,7 @@ Gardez cet écran ouvert car vous en aurez besoin lors des étapes suivantes.
 
 ## Étapes suivantes
 
-Accédez à [ Créer votre flux de données ](./ex3.md)
+Accédez à [ Créer votre flux de données ](./ex3.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

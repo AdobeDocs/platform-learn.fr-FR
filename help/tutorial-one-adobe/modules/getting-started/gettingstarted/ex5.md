@@ -4,7 +4,7 @@ description: Prise en main - Utilisation de l’application mobile
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Télécharger l’application
 
-Accédez à [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) sur votre ordinateur. Tu verras ça.
+Accédez à [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} sur votre ordinateur. Tu verras ça.
 
 ![DSN ](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ Après l’exercice précédent, vous avez obtenu le résultat suivant. Cliquez 
 
 ![DSN ](./images/dsn5b.png)
 
-Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour des sessions de démonstration ou d’activation ultérieures, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de points de suspension...** dans votre projet d’application mobile, puis cliquez sur **Modifier**.
+Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour des sessions de démonstration ou d’activation ultérieures, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"}. Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de points de suspension...** dans votre projet d’application mobile, puis cliquez sur **Modifier**.
 
 ![DSN ](./images/web8a.png)
 
@@ -83,7 +83,7 @@ Maintenant, revenez à **Accueil** dans l’application. Votre application est m
 
 ## Étapes suivantes
 
-Accédez à [Configurer votre projet Adobe I/O](./ex6.md)
+Accédez à [Configurer votre projet Adobe I/O](./ex6.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: ebf183d1eb4382ab0e6ccf3c7bb32229ffa269db
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 Avant de commencer cet exercice, téléchargez les ressources requises à partir de [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} et décompressez-les sur votre bureau.
 
 ![Adobe Express](./images/expressassets.png)
+
+## 1.3.3.1 Créer une ressource de base
 
 Accédez à [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}. Cliquez sur l’icône **+** pour créer une **image**.
 
@@ -92,6 +94,8 @@ Saisissez le `Shop now` de texte dans la nouvelle zone de texte et modifiez l’
 Vous devriez alors voir ceci.
 
 ![Adobe Express](./images/expressbc17.png)
+
+## Création en bloc de 1.3.3.2 dans Adobe Express
 
 Cliquez ensuite sur **Création en bloc**.
 

@@ -3,7 +3,8 @@ title: Prise en main - Configuration de Postman
 description: Prise en main - Configuration de Postman
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Si vous êtes employé d’Adobe, suivez les instructions pour [installer PostBuster](./ex8.md) !
+>Si vous êtes employé d’Adobe, suivez les instructions pour [installer PostBuster](./ex8.md){target="_blank"} !
 
 ## Téléchargement de l’environnement Postman
 
@@ -43,7 +44,7 @@ La collection contient un certain nombre de requêtes d’API que vous pouvez ut
 - 1 collection pour l’authentification à Adobe I/O
 - 1 Collection pour les exercices de ce module
 
-Téléchargez [postman-ff.zip](./../../../assets/postman/postman-ff.zip) sur votre bureau local.
+Téléchargez [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} sur votre bureau local.
 
 ![Nouvelle intégration Adobe I/O](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Sélectionnez les trois fichiers dans le dossier, puis sélectionnez **Ouvrir** 
 
 ![Nouvelle intégration Adobe I/O](./images/impconfirm.png){zoomable="yes"}
 
-Vous disposez désormais de tout ce dont vous avez besoin dans Postman pour commencer à interagir avec les services Firefly par le biais des API.
+Vous disposez désormais de tout ce dont vous avez besoin dans Postman pour commencer à interagir avec Firefly Services par le biais des API.
 
 ## Demander un jeton d’accès
 
