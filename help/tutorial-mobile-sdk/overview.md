@@ -4,10 +4,10 @@ description: Découvrez comment implémenter les applications mobiles Adobe Expe
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -45,7 +45,7 @@ Après avoir terminé ce tutoriel, vous serez en mesure de :
    * [Messagerie push avec Journey Optimizer](journey-optimizer-push.md)
    * [Messagerie in-app avec Journey Optimizer](journey-optimizer-inapp.md)
    * [Gestion des décisions avec Journey Optimizer](journey-optimizer-offers.md)
-   * [Target](target.md)
+   * [Cible](target.md)
 
 
 >[!NOTE]
@@ -59,7 +59,7 @@ Dans ces leçons, nous supposons que vous disposez d’un Adobe Id et des autori
 * Dans la collecte de données, vous devez disposer des éléments suivants :
    * **[!UICONTROL Plateformes]**—élément d&#39;autorisation **[!UICONTROL Mobile]**
    * **[!UICONTROL Droits de propriété]** : éléments d’autorisation pour **[!UICONTROL Développer]**, **[!UICONTROL Approuver]**, **[!UICONTROL Publier]**, **[!UICONTROL Gérer les extensions]** et **[!UICONTROL Gérer les environnements]**.
-   * **[!UICONTROL Droits d’entreprise]** : éléments d’autorisation pour **[!UICONTROL Gérer les propriétés]** et, si vous suivez la leçon facultative sur la messagerie push, **[!UICONTROL Gérer les configurations d’application]**
+   * **[!UICONTROL Droits d’entreprise]**—éléments d’autorisation pour **[!UICONTROL Gérer les propriétés]**
 
      Pour plus d’informations sur les autorisations des balises, voir [ Autorisations d’utilisateur pour les balises ](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr){target="_blank"} dans la documentation du produit.
 * Dans Experience Platform, vous devez disposer des éléments suivants :
