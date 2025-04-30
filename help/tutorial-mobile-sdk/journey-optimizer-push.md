@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 6%
 
 ---
@@ -75,9 +75,9 @@ Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont
 1. Sélectionnez **[!UICONTROL Continuer]**.
    ![configurer une nouvelle clé](assets/mobile-push-apple-dev-config-key.png)
 1. Vérifiez la configuration et sélectionnez **[!UICONTROL S’inscrire]**.
-1. Téléchargez la clé privée `.p8`. Il est utilisé dans la configuration du canal Journey Optimizer dans l’exercice suivant.
-1. Notez l’identifiant **[!UICONTROL Key]**. Il est utilisé dans la configuration du canal Journey Optimizer.
-1. Notez l’identifiant **[!UICONTROL d’équipe]**. Il est utilisé dans la configuration du canal Journey Optimizer.
+1. Téléchargez la clé privée `.p8`. Il est utilisé dans l’exercice suivant lorsque vous configurez vos informations d’identification push Journey Optimizer.
+1. Notez l’identifiant **[!UICONTROL Key]**. Il est utilisé dans l’exercice suivant lorsque vous configurez vos informations d’identification push Journey Optimizer.
+1. Notez l’identifiant **[!UICONTROL d’équipe]**. Il est utilisé dans l’exercice suivant lorsque vous configurez vos informations d’identification push Journey Optimizer.
    ![Détails clés ](assets/push-apple-dev-key-details.png)
 
 Une documentation supplémentaire est disponible [ici](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -96,19 +96,17 @@ L&#39;enregistrement des informations d&#39;identification push de l&#39;applica
 
    ![Création d’une configuration d’informations d’identification push dans Journey Optimizer](assets/add-push-credential-ios.png)
 
-1. Dans la liste déroulante **[!UICONTROL Platform]**, sélectionnez le système d’exploitation **iOS** :
+1. Dans la liste déroulante **[!UICONTROL Platform]**, sélectionnez le système d’exploitation **iOS**.
 
+1. Saisissez l’ID de bundle de l’application mobile dans le champ **[!UICONTROL ID de l’application]** (ID de bundle iOS) . Par exemple, com.adobe.luma.tutorial.swiftui.
 
-   1. Saisissez l’ID de bundle de l’application mobile dans le champ **[!UICONTROL ID de l’application]** (ID de bundle iOS) . Par exemple, com.adobe.luma.tutorial.swiftui.
+1. Activez l’option **[!UICONTROL Appliquer à tous les sandbox]** pour mettre ces informations d’identification push à disposition dans tous les sandbox. Si un sandbox spécifique possède ses propres informations d’identification pour la même paire d’identifiants de plateforme et d’application, ces informations d’identification spécifiques au sandbox sont prioritaires.
 
-   1. Activez l’option **[!UICONTROL Appliquer à tous les sandbox]** pour mettre ces informations d’identification push à disposition dans tous les sandbox. Si un sandbox spécifique possède ses propres informations d’identification pour la même paire d’identifiants de plateforme et d’application, ces informations d’identification spécifiques au sandbox sont prioritaires.
+1. Effectuez un glisser-déposer de votre fichier .p8 **Clé d’authentification de notification push Apple** obtenu à partir de l’exercice précédent.
 
+1. Fournissez la **[!UICONTROL Identifiant de clé]**, une chaîne de 10 caractères attribuée lors de la création de `p8` clé d’authentification. Elle se trouve sous l’onglet **[!UICONTROL Clés]** de la page **Certificats, identifiants et profils** du portail Apple Developer. (Vous auriez dû le noter au cours de l’exercice précédent.)
 
-   1. Effectuez un glisser-déposer de votre fichier .p8 **Clé d’authentification de notification push Apple** obtenu à partir de l’exercice précédent.
-
-   1. Fournissez la **[!UICONTROL Identifiant de clé]**, une chaîne de 10 caractères attribuée lors de la création de `p8` clé d’authentification. Elle se trouve sous l’onglet **[!UICONTROL Clés]** de la page **Certificats, identifiants et profils** du portail Apple Developer. (Vous auriez dû le noter au cours de l’exercice précédent.)
-
-   1. Indiquez l&#39;**[!UICONTROL identifiant d&#39;équipe]**. L’ID d’équipe est une valeur qui se trouve sous l’onglet **Abonnement** ou en haut de la page du portail Apple Developer. (Vous auriez dû le noter au cours de l’exercice précédent.)
+1. Indiquez l&#39;**[!UICONTROL identifiant d&#39;équipe]**. L’ID d’équipe est une valeur qui se trouve sous l’onglet **Abonnement** ou en haut de la page du portail Apple Developer. (Vous auriez dû le noter au cours de l’exercice précédent.)
 
    ![Configuration des informations d’identification des notifications push dans Journey Optimizer](assets/add-app-config-ios.png)
 
