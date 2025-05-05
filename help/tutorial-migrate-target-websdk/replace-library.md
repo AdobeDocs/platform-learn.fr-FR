@@ -65,7 +65,7 @@ Prenons l’exemple d’une mise en oeuvre simple de Target avec at.js :
 * Fragment de prémasquage pour atténuer le scintillement
 * La bibliothèque at.js de Target se charge de manière asynchrone avec les paramètres par défaut pour demander et générer automatiquement les activités :
 
-Exemple d’implémentation d’+++at.js sur une page d’HTML
++++Exemple d’implémentation d’at.js sur une page d’HTML
 
 ```HTML
 <!doctype html>
@@ -225,7 +225,7 @@ Le SDK Web Platform doit être configuré à chaque chargement de page. L’exem
 
 >[!TAB JavaScript]
 
-La commande `configure` doit toujours être la première commande de SDK appelée. Le `edgeConfigId` est l’ [!UICONTROL  ID de flux de données]
+La commande `configure` doit toujours être la première commande de SDK appelée. Le `edgeConfigId` est l’ [!UICONTROL &#x200B; ID de flux de données]
 
 ```JavaScript
 alloy("configure", {

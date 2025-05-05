@@ -29,10 +29,13 @@ L’automatisation du contenu apporte à Experience Manager Assets la puissance 
 
 - Les éléments suivants vous intéressent :
    - Adobe Banner Dark : crée une bannière Adobe avec une superposition sombre, en fonction de la ressource sélectionnée.
+
      ![Bannière sombre](./images/prod-banner-dark.jpg)
    - Bannière Adobe Light : crée une bannière Adobe avec une superposition légère, en fonction de la ressource sélectionnée.
+
      ![Bannière lumineuse](./images/prod-banner-light.jpg)
    - Bannière Adobe Banner Green : crée une bannière Adobe avec une superposition verte, en fonction de la ressource sélectionnée.
+
      ![bannière verte](./images/prod-banner-green.jpg)
 
 - Une fois que vous avez choisi le type de bannière à créer, sélectionnez ce profil de traitement, puis sélectionnez &quot;Appliquer le profil au(x) dossier(s)&quot;.
@@ -144,7 +147,7 @@ Si vous avez besoin d’un processus de révision et d’approbation formel et a
 
    - Sélectionnez votre ressource mise à jour (si aucune modification n’est nécessaire dans le scénario bootcamp, téléchargez à nouveau la même ressource) et cliquez sur &quot;Lier&quot; :
 
-  ![ {link asset](./images/wf-link-new-asset.png)
+  ![ &lbrace;link asset](./images/wf-link-new-asset.png)
 
    - Cliquez ensuite sur &quot;créer un BAT&quot; sur la droite.
 

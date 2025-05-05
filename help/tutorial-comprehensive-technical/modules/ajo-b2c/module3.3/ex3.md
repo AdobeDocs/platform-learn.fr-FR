@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Dans [Prise en main](./../../../modules/gettingstarted/gettingstarted/ex2.md), vous avez créé votre propre **flux de données**. Vous avez ensuite utilisé le nom `--aepUserLdap-- - Demo System Datastream`.
 
-Dans cet exercice, vous devez configurer ce **flux de données** pour qu’il fonctionne avec l’Offer decisioning ****.
+Dans cet exercice, vous devez configurer ce **flux de données** pour qu’il fonctionne avec l’Offer decisioning **&#x200B;**.
 
 Pour ce faire, accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Tu verras ça. Cliquez sur **Flux de données**.
 
@@ -33,7 +33,7 @@ Tu verras ça. Cliquez sur **...** en regard de **Adobe Experience Platform** pu
 
 ![WebSDK](./images/websdk3.png)
 
-Pour activer l&#39;Offer decisioning ****, cochez la case correspondant à l&#39;Offer decisioning ****. Cliquez sur **Enregistrer**.
+Pour activer l&#39;Offer decisioning **&#x200B;**, cochez la case correspondant à l&#39;Offer decisioning **&#x200B;**. Cliquez sur **Enregistrer**.
 
 ![WebSDK](./images/websdk5.png)
 

@@ -103,7 +103,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension****]**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension**&#x200B;**]**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, puis **[!UICONTROL Mettre à jour la variable]**
 
@@ -349,7 +349,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension****]**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension**&#x200B;**]**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 

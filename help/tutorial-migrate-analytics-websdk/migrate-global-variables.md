@@ -54,6 +54,7 @@ Si vous n’avez pas besoin d’étapes définies, faites-le et vous en avez ter
    1. Le **type d’événement** peut être Prêt pour DOM, selon votre implémentation
    1. Développez le **Options avancées**
    1. Définissez la variable **Ordre** sur un nombre inférieur à celui de vos autres règles, de sorte qu’elle s’exécute en premier.
+
       ![Configurer l’événement de variable global](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >

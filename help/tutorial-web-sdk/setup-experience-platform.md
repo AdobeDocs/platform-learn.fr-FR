@@ -184,7 +184,7 @@ Pour les clients de Real-Time Customer Data Platform et Journey Optimizer, l’�
 
 1. Confirmez que vous souhaitez **[!UICONTROL activer]** le jeu de données
 
-   ![ {Profile Enable Toggle](assets/setup-experience-platform-profile-enable.png)
+   ![ &lbrace;Profile Enable Toggle](assets/setup-experience-platform-profile-enable.png)
 
 **Pour activer le schéma :**
 
@@ -203,7 +203,7 @@ Pour les clients de Real-Time Customer Data Platform et Journey Optimizer, l’�
 
 1. Sélectionnez **[!UICONTROL Activer]**
 
-   ![ {Profile Enable Toggle](assets/setup-experience-platform-profile-schema-enable.png)
+   ![ &lbrace;Profile Enable Toggle](assets/setup-experience-platform-profile-schema-enable.png)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer le schéma mis à jour.
 

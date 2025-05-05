@@ -66,7 +66,7 @@ Pour vous assurer que les données envoyées de votre application mobile à Plat
 1. Dans l’écran **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, assurez-vous que **[!UICONTROL Offer decisioning]**, **[!UICONTROL Segmentation Edge]** et **[!UICONTROL Adobe Journey Optimizer]** sont sélectionnés. Si vous souhaitez suivre la leçon sur Target, sélectionnez également **[!UICONTROL Destinations Personalization]**. Voir [Paramètres Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) pour plus d’informations.
 1. Pour enregistrer votre configuration de flux de données, sélectionnez **[!UICONTROL Enregistrer]** .
 
-   ![ {configuration de flux de données AEP](assets/datastream-aep-configuration-offers.png)
+   ![ &lbrace;configuration de flux de données AEP](assets/datastream-aep-configuration-offers.png)
 
 
 
@@ -134,6 +134,7 @@ Pour créer l’emplacement JSON mobile :
 1. À l&#39;étape **[!UICONTROL Détails]** de **[!UICONTROL Créer une offre personnalisée]** :
    1. Saisissez un **[!UICONTROL nom]** pour l’offre, par exemple `Luma - Juno Jacket`, et saisissez une **[!UICONTROL date et heure de début]** et une **[!UICONTROL date et heure de fin]**. En dehors de ces dates, l’offre ne sera pas sélectionnée par le moteur de décision.
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Offres - Détails](assets/ajo-offers-details.png)
 
 1. À l’étape **[!UICONTROL Ajouter des représentations]** de **[!UICONTROL Créer une offre personnalisée]** :
@@ -152,14 +153,17 @@ Pour créer l’emplacement JSON mobile :
          ```
 
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
          ![Offres - Contenu personnalisé](assets/ajo-offers-customcontent.png)
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Représentations d’offre](assets/ajo-offers-representations.png)
 
 1. À l’étape **[!UICONTROL Ajouter des contraintes]** de l’étape **[!UICONTROL Créer une offre personnalisée]** :
    1. Définissez **[!UICONTROL Priority]** sur `10`.
    1. Désactivez l’option **[!UICONTROL Inclusion capping]**.
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Offres - Contraintes](assets/ajo-offers-constraints.png)
 
 1. À l’étape **[!UICONTROL Réviser]** de **[!UICONTROL Créer une offre personnalisée]** :
@@ -253,9 +257,11 @@ Reportez-vous à la section [Étapes clés de création et de gestion des offres
    1. Dans la mosaïque **[!UICONTROL Critères d&#39;évaluation]**, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]**.
       1. Dans la boîte de dialogue **[!UICONTROL Ajouter une collection d’offres]**, sélectionnez votre collection d’offres. Par exemple : **[!DNL Luma - Mobile App Collection]**.
       1. Sélectionnez **[!UICONTROL Ajouter]**.
+
          ![Décision - Sélectionner la collection](assets/ajo-decision-selectcollection.png)
    1. Assurez-vous que **[!UICONTROL Aucun]** est sélectionné pour **[!UICONTROL Eligibilité]**, et que **[!UICONTROL La priorité des offres]** est sélectionnée comme **[!UICONTROL Méthode de classement]**.
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Portées de décision](assets/ajo-decision-scopes.png).
 1. À l’étape **[!UICONTROL Ajouter une offre de secours]** de **[!UICONTROL Créer une décision d’offre]** :
    1. Sélectionnez votre offre de secours, par exemple **[!DNL Luma - Fallback offer]**.

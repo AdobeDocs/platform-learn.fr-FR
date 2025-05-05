@@ -134,7 +134,7 @@ Le code ci-dessus effectue les opérations suivantes :
 
 1. Enregistre les extensions requises.
 1. Configure MobileCore et d’autres extensions pour utiliser la configuration de propriété de balise.
-1. Active la journalisation du débogage. Vous trouverez plus d’informations et d’options dans la documentation de Adobe Experience Platform Mobile SDK [](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. Active la journalisation du débogage. Vous trouverez plus d’informations et d’options dans la documentation de Adobe Experience Platform Mobile SDK [&#128279;](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 1. Démarre la surveillance du cycle de vie. Voir l’étape [Cycle de vie](lifecycle-data.md) du tutoriel pour plus d’informations.
 1. Définit le consentement par défaut sur inconnu. Voir l’étape [Consentement](consent.md) du tutoriel pour plus d’informations.
 

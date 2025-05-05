@@ -56,7 +56,7 @@ alloy("sendEvent", {
 
 >[!TAB Balises]
 
-Dans les balises, utilisez le type d’action [!UICONTROL Envoyer l’événement] avec l’option [!UICONTROL  Rendre les décisions de personnalisation visuelle ] sélectionnée :
+Dans les balises, utilisez le type d’action [!UICONTROL Envoyer l’événement] avec l’option [!UICONTROL &#x200B; Rendre les décisions de personnalisation visuelle &#x200B;] sélectionnée :
 
 ![Envoyez un événement avec les décisions de personnalisation visuelle de rendu sélectionnées dans les balises](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 

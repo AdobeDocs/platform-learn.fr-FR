@@ -77,7 +77,7 @@ Revenez à la page d’accueil de l’application et d’autres fonctionnalités
 
 ![DSN](./../uc3/images/app17.png)
 
-Accédez à **Products**. Cliquez sur n&#39;importe quel produit, dans cet exemple **Café à consommer}.**
+Accédez à **Products**. Cliquez sur n&#39;importe quel produit, dans cet exemple **Café à consommer&rbrace;.**
 
 ![DSN](./images/app19.png)
 

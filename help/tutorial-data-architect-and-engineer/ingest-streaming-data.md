@@ -398,7 +398,7 @@ Si vous vous souvenez, j’ai mentionné que nous utiliserions l’ECID et l’I
 Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de données :
 
 1. Dans l’interface des balises, ajoutez un élément de données nommé `CRM Id`
-1. Sélectionnez **[!UICONTROL Variable JavaScript comme**[!UICONTROL  Type d’élément de données ]**]**
+1. Sélectionnez **[!UICONTROL Variable JavaScript comme**&#x200B;[!UICONTROL &#x200B; Type d’élément de données &#x200B;]&#x200B;**]**
 1. Comme nom de variable **[!UICONTROL JavaScript]**, saisissez `digitalData.user.0.profile.0.attributes.username`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter un élément de données pour l’ID CRM](assets/websdk-property-dataElement-crmId.png)
@@ -408,7 +408,7 @@ Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de don
 Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’associer à un type d’élément de données spécial appelé l’élément de données [!UICONTROL Identity Map] :
 
 1. Ajoutez un élément de données nommé `Identities`
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension****]**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension**&#x200B;**]**
 1. Sélectionnez **[!UICONTROL Type d’élément de données]**, **[!UICONTROL Mappage d’identités]**
 1. En tant que **[!UICONTROL Espace de noms]**, saisissez `Luma CRM Id`, qui est l’[!UICONTROL espace de noms] que nous avons créé dans une leçon précédente
 

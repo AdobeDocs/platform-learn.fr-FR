@@ -29,8 +29,8 @@ ht-degree: 4%
       + [Utilisation de l’application mobile](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
    + [PostBuster](/help/tutorial-comprehensive-technical/postbuster.md)
 
-+ 1 {#datacollection} de collecte de données
-   + 1.1 Collecte de données Adobe Experience Platform et {#module11} de Web SDK
++ 1 de collecte de données {#datacollection}
+   + 1.1 Collecte de données Adobe Experience Platform et de Web SDK {#module11}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Comprendre la collecte de données Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2 Collecte de données Edge Network, de flux de données et côté serveur](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -40,7 +40,7 @@ ht-degree: 4%
       + [1.1.6 Mise en œuvre d’Adobe Target](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [1.1.7 Exigences relatives aux schémas XDM dans Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 {#module12} d’ingestion de données
+   + 1.2 d’ingestion de données {#module12}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1 Explorer le site Web](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2 Configuration des schémas et définition des identifiants](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -48,15 +48,15 @@ ht-degree: 4%
       + [1.2.4 Ingestion de données à partir de sources hors ligne](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)
       + [1.2.5 Zone D’Atterrissage Des Données](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-   + 1.3 {#module13} De Composition De L’Audience Fédérée
+   + 1.3 De Composition De L’Audience Fédérée {#module13}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
       + [1.3.1 Configuration de l’environnement de votre Snowflake](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 Création de schémas, de modèles de données et de liens](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
       + [1.3.3 Créer une composition fédérée](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
 
-+ 2 {#rtcdpb2c} B2C Real-Time CDP
-   + 2.1 {#module21} du profil client en temps réel
++ 2 B2C Real-Time CDP {#rtcdpb2c}
+   + 2.1 du profil client en temps réel {#module21}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/real-time-customer-profile.md)
       + [2.1.1 Visiter le site Web](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex1.md)
       + [2.1.2 Visualiser votre propre profil client en temps réel - Interface utilisateur](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
@@ -64,7 +64,7 @@ ht-degree: 4%
       + [2.1.4 Création d’une audience - interface utilisateur](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
       + [2.1.5 Consultez votre profil client en temps réel en action dans le centre d’appels](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
-   + 2.2 {#module22} des services intelligents
+   + 2.2 des services intelligents {#module22}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/intelligent-services.md)
       + [2.2.1 IA dédiée aux clients : préparation des données (ingestion)](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex1.md)
       + [2.2.2 IA dédiée aux clients : créer une instance (configurer)](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex2.md)
@@ -105,7 +105,7 @@ ht-degree: 4%
       + [2.6.4 Installation et configuration de Kafka Connect et du connecteur de récepteur Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/ex4.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/summary.md)
 
-+ 3 {#ajob2c} B2C Adobe Journey Optimizer
++ 3 B2C Adobe Journey Optimizer {#ajob2c}
    + 3.1 Adobe Journey Optimizer : Orchestration {#module31}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1 Créer votre événement](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
@@ -113,7 +113,7 @@ ht-degree: 4%
       + [3.1.3 Création de votre parcours et de votre e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
       + [3.1.4 Mettre à jour la propriété de collecte de données et tester le Parcours](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
-   + 3.2 Adobe Journey Optimizer : sources de données externes et {#module32} d’actions personnalisées
+   + 3.2 Adobe Journey Optimizer : sources de données externes et d’actions personnalisées {#module32}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
       + [3.2.1 Définir un événement](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/ex1.md)
       + [3.2.2 Définir une source de données externe](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/ex2.md)
@@ -137,14 +137,14 @@ ht-degree: 4%
       + [3.4.3 Appliquer une personnalisation basée sur les segments dans un e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 Configuration et utilisation des notifications push](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
-   + 3.5 Adobe Journey Optimizer : {#module35} des services de traduction
+   + 3.5 Adobe Journey Optimizer : des services de traduction {#module35}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
       + [3.5.1 Fournisseur De Traductions](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex1.md)
       + [3.5.2 Création de votre campagne](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex2.md)
       + [3.5.3 Ajouter des langues à votre e-mail](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex3.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
-+ 4 {#cjab2c} B2C Customer Journey Analytics
++ 4 B2C Customer Journey Analytics {#cjab2c}
    + 4.1 Customer Journey Analytics : créer un tableau de bord à l’aide d’Analysis Workspace {#module41}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
@@ -162,8 +162,8 @@ ht-degree: 4%
       + [4.2.5 Analyse des données des Google Analytics à l’aide de Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex5.md)
       + [Résumé et avantages](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/summary.md)
 
-+ 5 {#datadistiller} de Distiller de données
-   + 5.1 {#module51} de Query Service
++ 5 de Distiller de données {#datadistiller}
+   + 5.1 de Query Service {#module51}
       + [Vue d’ensemble](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
       + [5.1.1 Conditions préalables](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
       + [5.1.2 Prise en main](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)

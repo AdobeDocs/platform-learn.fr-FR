@@ -129,7 +129,7 @@ Sélectionnez le champ **E-MAIL**. Cliquez sur **Confirmer**.
 
 ![AAAA](./images/fedcomp20c.png)
 
-Tu verras ça. Vous devez maintenant définir le champ d’identité du Principal ****, définissez-le sur **Household2person_EMAIL**. Définissez **Espace de noms d’identité** sur **E-mail**.
+Tu verras ça. Vous devez maintenant définir le champ d’identité du Principal **&#x200B;**, définissez-le sur **Household2person_EMAIL**. Définissez **Espace de noms d’identité** sur **E-mail**.
 
 Cliquez sur **Enregistrer**.
 

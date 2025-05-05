@@ -221,7 +221,7 @@ Remplacez maintenant le nom et la description du composant par les valeurs suiva
 
 ![demo](./images/calcmetr3.png)
 
-Désormais, comptabilise uniquement les événements **Consultations produits**. Pour ce faire, faites défiler l’écran vers le bas jusqu’à ce que vous voyiez **Inclure les valeurs d’exclusion**. **** Veillez à activer l’option **Définir les valeurs d’inclusion/exclusion**.
+Désormais, comptabilise uniquement les événements **Consultations produits**. Pour ce faire, faites défiler l’écran vers le bas jusqu’à ce que vous voyiez **Inclure les valeurs d’exclusion**. **&#x200B;**&#x200B;Veillez à activer l’option **Définir les valeurs d’inclusion/exclusion**.
 
 ![demo](./images/calcmetr4.png)
 

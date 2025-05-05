@@ -144,8 +144,10 @@ Le nouveau groupe de champs vide est ajouté à votre schéma. Les boutons **[!U
    1. **[!UICONTROL Nom d’affichage]** : `System Identifier`
    1. **[!UICONTROL Type]** : **[!UICONTROL Objet]**
    1. Dans la liste déroulante **[!UICONTROL Groupe de champs]** sélectionnez le **groupe de champs Profil d’identité Luma** que nous avons créé.
+
       ![Ajouter un nouveau groupe de champs](assets/schemas-loyalty-addSystemIdentifier.png)
    1. Sélectionnez **[!UICONTROL Appliquer]**
+
       ![Application de nouvelles propriétés de champ](assets/schemas-loyalty-applySystemIdentifier.png)
 
 Ajoutez maintenant deux champs sous l’objet `systemIdentifier` :

@@ -33,6 +33,7 @@ Dans cette activité, nous allons créer une action Web SDK qui est l’équival
 
    ![Adobe Analytics - Définition De Variables](assets/aa-set-variables.jpg)
    1. Notez les variables définies dans cette règle
+
       ![Variables définies](assets/aa-vars-set.jpg)
 
 1. En haut de la page, modifiez le bouton radio en **Fournir un fichier JSON** et une vue du code des variables définies s’affiche. Cet affichage du code et l’affichage de l’interface utilisateur sont interchangeables. Lorsque vous définissez une valeur dans une interface utilisateur, elle est également mise à jour dans l’autre interface utilisateur.

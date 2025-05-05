@@ -138,7 +138,7 @@ Pour créer votre vue de données :
 
         ![CJA Dataview 2a](assets/cja-dataview-2a.png)
 
-      - Parcourez jusqu’au champ de schéma dans ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Par exemple, ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événement]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![ ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)}
+      - Parcourez jusqu’au champ de schéma dans ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Par exemple, ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événement]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **&#x200B;**&#x200B;![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![ ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)&rbrace;
 
         ![CJA Dataview 2a](assets/cja-dataview-2b.png)
 
@@ -275,7 +275,7 @@ Pour créer un rapport sur les écrans affichés dans l’application :
 
 1. Sélectionnez **[!UICONTROL Tout afficher]** sous la liste **[!UICONTROL MESURES]**.
 
-1. Faites glisser et déposez le composant **[!UICONTROL Vues d’écran]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
+1. Faites glisser et déposez le composant **[!UICONTROL Vues d’écran]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
    ![Projets CJA 7](assets/cja-projects-7.png)
 Votre tableau à structure libre affiche désormais les vues d’écran pour chaque jour pendant la période sélectionnée. Cependant, vous souhaitez afficher le nombre de vues d’écran pour chacun des différents écrans utilisés dans l’application.
 
@@ -305,7 +305,7 @@ Ensuite, vous allez créer un tableau à structure libre qui présentera la mani
 
 1. Renommez **[!UICONTROL Table à structure libre (2)]** en `App Interactions`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Interactions de l’application]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
+1. Faites glisser et déposez la mesure **[!UICONTROL Interactions de l’application]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la dimension **[!UICONTROL Nom de l’interaction de l’application]** sur l’en-tête **[!UICONTROL Jour]** pour remplacer cette dimension.
 
@@ -337,7 +337,7 @@ Vous souhaitez maintenant créer un rapport, dans un panneau distinct, sur les �
 
 1. Renommez **[!UICONTROL Table à structure libre]** en `Commerce Events`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Consultations produits]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
+1. Faites glisser et déposez la mesure **[!UICONTROL Consultations produits]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la mesure **[!UICONTROL Product Add To List]** à droite de la colonne **[!UICONTROL Product Views]** pour insérer cette colonne dans le tableau à structure libre. Assurez-vous que **[!UICONTROL + Ajouter]** (en bleu) s’affiche lors de l’insertion de la colonne.
    ![Projets CJA 15](assets/cja-projects-15.png)
@@ -390,7 +390,7 @@ Vous souhaitez créer un rapport sur le nombre d’offres et les offres affiché
 
 1. Renommez la **[!UICONTROL table à structure libre]** en `Monthly Overview`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Display]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
+1. Faites glisser et déposez la mesure **[!UICONTROL Display]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la dimension **[!UICONTROL Mois]** sur la colonne **[!UICONTROL Jour]** pour remplacer la dimension.
 
@@ -411,7 +411,7 @@ Vous souhaitez également disposer d’un rapport indiquant les offres qui ont �
 
 1. Renommez **[!UICONTROL Table à structure libre (2)]** en `People`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Personnes]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
+1. Faites glisser et déposez la mesure **[!UICONTROL Personnes]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez le **[!UICONTROL Nom de l’activité]** dans la colonne **[!UICONTROL Jour]** pour remplacer la dimension.
 
@@ -443,7 +443,7 @@ Enfin, vous souhaitez créer des rapports sur les visites de magasin.
 
 1. Renommez **[!UICONTROL Table à structure libre]** en `Store Entries / Exits Across Cities`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Événements d’emplacement]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)]. Le rapport présente désormais une vue d’ensemble quotidienne de tous les événements d’emplacement qui se sont produits dans l’application. N’oubliez pas comment vous avez spécifiquement configuré cette dimension dans le cadre de votre [vue de données](#create-a-data-view).
+1. Faites glisser et déposez la mesure **[!UICONTROL Événements d’emplacement]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)]. Le rapport présente désormais une vue d’ensemble quotidienne de tous les événements d’emplacement qui se sont produits dans l’application. N’oubliez pas comment vous avez spécifiquement configuré cette dimension dans le cadre de votre [vue de données](#create-a-data-view).
 
 1. Faites glisser et déposez la dimension **[!UICONTROL Ville]** dans l’en-tête de colonne **[!UICONTROL Jour]** pour remplacer la dimension. Le rapport présente maintenant les villes pour les événements de localisation.
 

@@ -114,7 +114,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
    ![Nom du schéma et révision](assets/schema-wizard-name-and-review.png)
 
 
-1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **** en regard de **[!UICONTROL Groupes de champs]**.
+1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **&#x200B;**&#x200B;en regard de **[!UICONTROL Groupes de champs]**.
 
    ![Ajout d’un groupe de champs.](assets/add-field-group.png)
 
@@ -136,7 +136,7 @@ Dans un scénario réel, le processus de conception de schéma peut se présente
 >
 >Gardez à l’esprit que vous n’avez pas à utiliser tous les champs d’un groupe. Vous pouvez également supprimer des champs pour que le schéma reste concis et compréhensible. Si cela s’avère utile, vous pouvez considérer un schéma comme une couche de données vide. Dans votre application, vous renseignez les valeurs appropriées au moment approprié.
 
-Le groupe de champs [!UICONTROL  Consumer Experience Event] a un type de données appelé [!UICONTROL Web information], qui décrit des événements tels que des pages vues et des clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
+Le groupe de champs [!UICONTROL &#x200B; Consumer Experience Event] a un type de données appelé [!UICONTROL Web information], qui décrit des événements tels que des pages vues et des clics sur les liens. Au moment de la rédaction de cet article, il n’existe pas de parité d’application mobile pour cette fonctionnalité. Vous allez donc créer la vôtre.
 
 ## Créer un type de données personnalisé
 
@@ -201,7 +201,7 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 
 1. Ouvrez le schéma que vous avez créé précédemment dans cette leçon.
 
-1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **** en regard de **[!UICONTROL Groupes de champs]**.
+1. Sélectionnez ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **&#x200B;**&#x200B;en regard de **[!UICONTROL Groupes de champs]**.
 
    ![Ajout d’un nouveau groupe de champs](assets/schema-fieldgroup-add.png)
 

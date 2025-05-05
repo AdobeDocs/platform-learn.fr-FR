@@ -96,7 +96,7 @@ Effectuez un glisser-déposer 3 fois par colonne **1:1** sur la zone de travail,
 
 ![Journey Optimizer](./images/campaign8.png)
 
-Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1](./../module3.1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../module3.1/ex2.md) [exercice) sur le dernier composant de la zone de travail.
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1[&#128279;](./../module3.1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../module3.1/ex2.md) exercice) sur le dernier composant de la zone de travail.
 
 ![Journey Optimizer](./images/campaign9.png)
 

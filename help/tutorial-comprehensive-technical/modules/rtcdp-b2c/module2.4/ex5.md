@@ -27,7 +27,7 @@ Avant de continuer, vous devez sélectionner un **sandbox**. L’environnement d
 
 ![Ingestion des données](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Accédez à **Destinations**, puis cliquez sur **Parcourir**. Vous verrez alors toutes les destinations disponibles. Recherchez votre destination et cliquez sur les 3 points**...** comme indiqué ci-dessous, puis cliquez sur **Activer les audiences**.
+Accédez à **Destinations**, puis cliquez sur **Parcourir**. Vous verrez alors toutes les destinations disponibles. Recherchez votre destination et cliquez sur les 3 points&#x200B;**...** comme indiqué ci-dessous, puis cliquez sur **Activer les audiences**.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

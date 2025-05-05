@@ -129,7 +129,7 @@ Faites glisser et déposez l’objet cloné à proximité de l’objet **Router*
 
 ![WF Fusion](./images/wffusion65.png)
 
-Vous disposez désormais d’une copie identique basée sur la requête HTTP T2I **** Firefly. Certains des paramètres de la requête HTTP T2I **** Firefly sont similaires à ce dont vous avez besoin pour interagir avec l’API **Photoshop**, ce qui vous permet de gagner du temps. Désormais, il vous suffit de modifier les variables qui ne sont pas les mêmes, comme l’URL de requête et la payload.
+Vous disposez désormais d’une copie identique basée sur la requête HTTP T2I **&#x200B;**&#x200B;Firefly. Certains des paramètres de la requête HTTP T2I **&#x200B;**&#x200B;Firefly sont similaires à ce dont vous avez besoin pour interagir avec l’API **Photoshop**, ce qui vous permet de gagner du temps. Désormais, il vous suffit de modifier les variables qui ne sont pas les mêmes, comme l’URL de requête et la payload.
 
 Remplacez **URL** par `https://image.adobe.io/pie/psdService/text`.
 
@@ -322,7 +322,7 @@ Définissez **les répétitions** sur **20**. Sélectionnez **OK**.
 
 ![WF Fusion](./images/wffusion96.png)
 
-Ensuite, sélectionnez **+** sur le Photoshop vérifier l’état **** pour ajouter un autre module.
+Ensuite, sélectionnez **+** sur le Photoshop vérifier l’état **&#x200B;**&#x200B;pour ajouter un autre module.
 
 ![WF Fusion](./images/wffusion97.png)
 

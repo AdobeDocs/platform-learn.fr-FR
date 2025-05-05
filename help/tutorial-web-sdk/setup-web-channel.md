@@ -330,7 +330,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge ****. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
+1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge **&#x200B;**. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
 <!--
    ![ADD SCREENSHOT](#)
 -->

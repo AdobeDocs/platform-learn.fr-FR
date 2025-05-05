@@ -97,7 +97,7 @@ Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écra
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv1.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu. Cliquez sur **Se connecter**.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu. Cliquez sur **Se connecter**.
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 

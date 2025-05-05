@@ -55,7 +55,7 @@ Avant de passer aux configurations de balise, découvrez la plateforme de gestio
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
 -->
-    >[!REMARQUE]
+    >[ !REMARQUE]
     >
     >En règle générale, les étapes mentionnées ci-dessus sont effectuées et prises en charge par l’équipe ou la personne responsable de la gestion de la CMP, telle que OneTrustArc.
 
@@ -69,7 +69,7 @@ Avant de passer aux configurations de balise, découvrez la plateforme de gestio
 Maintenant, une fois les configurations de Klaro terminées, créez des règles de balise avec les configurations suivantes :
 
 * [!UICONTROL Nom] : `all pages - library load - Klaro`
-* [!UICONTROL Événement] : [!UICONTROL  bibliothèque chargée (haut de page)] avec [!UICONTROL Options avancées] > [!UICONTROL Ordre] défini sur 1
+* [!UICONTROL Événement] : [!UICONTROL &#x200B; bibliothèque chargée (haut de page)] avec [!UICONTROL Options avancées] > [!UICONTROL Ordre] défini sur 1
 * [!UICONTROL Action] : [!UICONTROL Code personnalisé], [!UICONTROL Langue] : HTML pour charger le script de CMP.
 
 ![Inject CMP Rule](assets/consent-cmp-inject-rule-1.png)

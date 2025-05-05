@@ -146,6 +146,7 @@ Dans votre navigateur :
 
    1. Sélectionnez **[!UICONTROL Copier le lien]**.
    1. Copiez le lien profond à l’aide de ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) et utilisez le lien profond pour ouvrir l’application avec Safari dans le simulateur.
+
       ![Lien de copie d’assurance](assets/assurance-copy-link.png)
 
 1. Au chargement de l’application, une boîte de dialogue modale vous demande de saisir le code PIN affiché à l’étape 7.

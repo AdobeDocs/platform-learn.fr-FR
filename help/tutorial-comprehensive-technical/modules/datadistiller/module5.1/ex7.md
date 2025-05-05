@@ -41,7 +41,7 @@ Accédez à Adobe Experience Platform, à **Requêtes** et à **Credentials**.
 
 ![query-service-credentials.png](./images/queryservicecredentials.png)
 
-Sur la page **Credentials** dans Adobe Experience Platform, copiez l’ **hôte** et collez-le dans le champ **Serveur**, copiez la **base de données** et collez-la dans le champ **Base de données** de Tableau, copiez le **port** et collez-le dans le champ **port** dans Tableau, faites de même **pour effectuer la même opération  14}Nom d’utilisateur** et **Mot de passe**. Cliquez ensuite sur **Se connecter**.
+Sur la page **Credentials** dans Adobe Experience Platform, copiez l’ **hôte** et collez-le dans le champ **Serveur**, copiez la **base de données** et collez-la dans le champ **Base de données** de Tableau, copiez le **port** et collez-le dans le champ **port** dans Tableau, faites de même **pour effectuer la même opération  14&rbrace;Nom d’utilisateur** et **Mot de passe**. Cliquez ensuite sur **Se connecter**.
 
 ![tableau-connection-dialog.png](./images/tableauconnectiondialog.png)
 

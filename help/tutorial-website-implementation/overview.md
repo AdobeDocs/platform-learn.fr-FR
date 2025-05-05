@@ -130,7 +130,7 @@ Dans ces leçons, vous allez mettre en œuvre Adobe Experience Cloud dans un f
    </html>
    ```
 
-+++
+   +++
 
 1. Utilisez un éditeur de texte dans lequel vous pouvez modifier la page HTML d’exemple. (Si vous n’en avez pas, nous vous recommandons d’essayer [Brackets](https://brackets.io/)).
 1. Ajoutez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) à vos favoris.

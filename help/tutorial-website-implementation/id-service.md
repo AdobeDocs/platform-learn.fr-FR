@@ -90,6 +90,7 @@ L’extension Identity Service est l’une des rares extensions de balise qui é
    1. Développez l’élément `Cookies` sur la gauche
    1. Cliquez sur le domaine `https://luma.enablementadobe.com`
    1. Recherchez le cookie AMCV_ sur la droite. Vous pouvez en voir plusieurs puisque le site Luma a été chargé à l’aide de sa propriété de balise codée en dur et mappée sur la vôtre.
+
       ![Vérifiez le cookie AMCV_](images/idservice-AMCVCookie.png)
 
 Vous avez terminé. Vous avez ajouté votre première extension ! Pour plus d’informations sur les options de configuration du service d’identités, consultez [la documentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=fr).

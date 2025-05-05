@@ -49,7 +49,7 @@ Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écra
 
 ![Démonstration](./images/pv1.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](./images/pv2.png)
 

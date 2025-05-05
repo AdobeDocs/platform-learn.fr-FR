@@ -19,8 +19,10 @@ Pour ajouter et configurer l’extension, procédez comme suit :
 
 1. Accédez à Collecte de données Experience Platform. Vous pouvez le faire de deux façons :
    1. Accédez à l’interface de [Adobe Experience Platform](https://platform.adobe.com/) puis sélectionnez **[!UICONTROL Balises]** près du bas du volet de navigation de gauche.
+
       ![Accéder aux balises 1](assets/access-tags-1.jpg)
    1. Si vous n’avez pas accès à Platform, vous pouvez utiliser le sélecteur d’applications (9 points) en haut à droite de la fenêtre et sélectionner Collecte de données (après vous être connecté à Experience.Adobe.com).
+
       ![Accéder aux balises 2](assets/access-tags-2.jpg)
 1. Recherchez et sélectionnez la propriété de balise que vous migrez vers le SDK Web.
 1. Dans le volet de navigation de gauche de la propriété de balise, sélectionnez **[!UICONTROL Extensions]**.

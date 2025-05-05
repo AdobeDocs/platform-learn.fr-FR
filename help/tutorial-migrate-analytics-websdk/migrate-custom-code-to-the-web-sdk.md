@@ -112,7 +112,7 @@ Eh bien, encore une fois, tout ce qui apparaît dans la fenêtre de code n’est
 **Deuxièmement** il existe une fenêtre de code dans la configuration de l’extension Web SDK dans laquelle vous pouvez placer tout (ou partie) de votre code, SI vous souhaitez que ce code s’exécute juste avant que les événements ne soient envoyés à Adobe Analytics. Les étapes permettant de trouver cette fenêtre de code sont les suivantes :
 
 1. En supposant que vous ayez déjà ajouté l’extension Web SDK à votre propriété, accédez à **Extensions** et sélectionnez l’onglet **Installé**
-1. Sélectionnez l’extension Adobe Experience Platform Web SDK **** et ouvrez-la en cliquant sur **Configurer** dans le rail de droite.
+1. Sélectionnez l’extension Adobe Experience Platform Web SDK **&#x200B;**&#x200B;et ouvrez-la en cliquant sur **Configurer** dans le rail de droite.
 
    ![Configurer l’extension Web SDK](assets/configure-websdk-extension.jpg)
 
@@ -128,12 +128,12 @@ La **bonne nouvelle** est que cela doit s’exécuter **à tout moment** vous ef
 
 Eh bien, oui et non. Oui, vous devez modifier quelques petites choses, mais non, vous n’aurez pas besoin de modifier la majeure partie de votre code tant que vous modifiez ces petites choses :
 
-_**Modification de code 1:**_
+_&#x200B;**Modification de code 1:**&#x200B;_
 Après (ou avant) avoir collé votre code « plug-in » dans la fenêtre de code de l&#39;extension Web SDK, **supprimez** les lignes « doPlugin » de votre code. Vous n’en aurez pas besoin et ils provoqueront une erreur, car ils font partie d’appMeasurement.js, mais pas du code Web SDK.
 
 ![Supprimer les lignes de code doPlugins](assets/remove-doplugins.jpg)
 
-_**Changement de code 2:**_
+_&#x200B;**Changement de code 2:**&#x200B;_
 L’autre modification que vous devrez effectuer consiste à ajouter du code afin que l’objet « s » soit défini, de manière très similaire à ce qui est décrit ci-dessus concernant le code dans les actions de règle. Dans ce cas, nous devrons définir le code un peu différemment, en ajoutant un nœud « data » déjà défini dans l’action de la règle, mais pas ici.
 Cette définition doit être placée en haut de la fenêtre de code. Le code qui doit être copié dans (lors du placement du code dans l’extension Web SDK) est le suivant :
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**Avec les deux modifications de code :**_
+_&#x200B;**Avec les deux modifications de code :**&#x200B;_
 Voici le code répertorié ci-dessus, mais avec les deux modifications dont nous venons de discuter :
 
 ![Code mis à jour ](assets/update-code.jpg)

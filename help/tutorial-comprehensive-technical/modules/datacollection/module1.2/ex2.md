@@ -285,7 +285,7 @@ Du point de vue du schéma, nous considérons cela comme une **[!UICONTROL class
 
 Ainsi, lorsque vous créez un [!UICONTROL schéma XDM] pour capturer la réponse à **Que fait ce client ?**, tout d’abord, vous devez créer et définir 1 schéma qui référence la classe **[!UICONTROL ExperienceEvent]**.
 
-Pour spécifier le type de réponses qui peuvent être données à cette question, vous devez définir [!UICONTROL  Groupe de champs ]. Les [!UICONTROL groupes de champs] sont des extensions de la classe [!UICONTROL ExperienceEvent] et possèdent des configurations très spécifiques. Par exemple, les informations sur le type de produits qu’un client a consultés ou ajoutés à son panier font partie des [!UICONTROL Détails du groupe de champs] **Commerce**.
+Pour spécifier le type de réponses qui peuvent être données à cette question, vous devez définir [!UICONTROL &#x200B; Groupe de champs &#x200B;]. Les [!UICONTROL groupes de champs] sont des extensions de la classe [!UICONTROL ExperienceEvent] et possèdent des configurations très spécifiques. Par exemple, les informations sur le type de produits qu’un client a consultés ou ajoutés à son panier font partie des [!UICONTROL Détails du groupe de champs] **Commerce**.
 
 Ensuite, votre entreprise doit décider de la manière dont vous identifierez le comportement de ce client. Puisque nous parlons d’interactions sur un site web, il est possible que votre organisation connaisse le client, mais il est également possible qu’un visiteur inconnu et anonyme soit actif sur le site web. Nous ne pouvons donc pas utiliser un identifiant tel que l’adresse e-mail. Dans ce cas, votre organisation décidera probablement d’utiliser l’Experience Cloud ID  (ECID) comme identifiant principal.
 

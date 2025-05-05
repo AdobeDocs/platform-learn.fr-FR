@@ -37,6 +37,7 @@ Dans cette leçon, vous allez :
 1. Créez une nouvelle propriété de balise mobile dans l’interface de collecte de données :
    1. Sélectionnez **[!UICONTROL Balises]** dans le volet de navigation de gauche.
    1. Sélectionnez **[!UICONTROL Nouvelle propriété]**
+
       ![ Créez une propriété de balise ](assets/tags-new-property.png).
    1. Pour le **[!UICONTROL nom]**, saisissez `Luma Mobile App Tutorial`.
    1. Pour la **[!UICONTROL Plateforme]**, sélectionnez **[!UICONTROL Mobile]**.
@@ -65,6 +66,7 @@ Dans cette leçon, vous allez :
       ![Créer la bibliothèque](assets/tags-save-library.png)
 
    1. Enfin, sélectionnez **[!UICONTROL Version initiale]** comme bibliothèque de travail dans le menu **[!UICONTROL Sélectionner une bibliothèque de travail]**.
+
       ![Sélectionner comme bibliothèque de travail](assets/tags-working-library.png)
 1. Vérifier les extensions :
 

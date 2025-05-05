@@ -84,7 +84,7 @@ Pour vous assurer que les données envoyées de votre application mobile à l’
 1. Dans l’écran **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, assurez-vous que **[!UICONTROL Offer decisioning]**, **[!UICONTROL Segmentation Edge]** et **[!UICONTROL Destinations Personalization]** sont sélectionnés. Si vous suivez également les leçons Journey Optimizer, vous sélectionnez **[!UICONTROL Adobe Journey Optimizer]**. Voir [Paramètres Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) pour plus d’informations.
 1. Pour enregistrer votre configuration de flux de données, sélectionnez **[!UICONTROL Enregistrer]** .
 
-   ![ {configuration de flux de données AEP](assets/datastream-aep-configuration-target.png)
+   ![ &lbrace;configuration de flux de données AEP](assets/datastream-aep-configuration-target.png)
 
 
 ### Installer Adobe Journey Optimizer - Extension des balises de prise de décision

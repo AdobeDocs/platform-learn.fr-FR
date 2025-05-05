@@ -136,7 +136,7 @@ Effectuez un glisser-déposer 8 fois par colonne **1:1** sur la zone de travail,
 
 ![Journey Optimizer](./images/oc9.png)
 
-Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1](./../ajob2c-1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../ajob2c-1/ex2.md) [exercice) sur le dernier composant de la zone de travail.
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1[&#128279;](./../ajob2c-1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../ajob2c-1/ex2.md) exercice) sur le dernier composant de la zone de travail.
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -399,7 +399,7 @@ Votre site web est alors chargé dans une fenêtre de navigateur en mode privé.
 
 ![DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 

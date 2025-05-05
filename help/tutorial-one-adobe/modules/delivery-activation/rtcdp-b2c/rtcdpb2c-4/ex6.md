@@ -19,10 +19,12 @@ Les fonctions Azure vous permettent d’exécuter de petits éléments de code (
 Une fonction est **déclenchée** par un type d’événement spécifique. Les déclencheurs pris en charge incluent la réponse aux modifications de données, la réponse aux messages (par exemple, Event Hubs), l’exécution selon un planning ou à la suite d’une requête HTTP.
 Azure Functions est un service de calcul sans serveur qui vous permet d’exécuter du code déclenché par un événement sans avoir à configurer ou gérer explicitement l’infrastructure.
 Azure Event Hubs s&#39;intègre à Azure Functions pour une architecture sans serveur.
+
 ## Ouvrez Visual Studio Code et connectez-vous à Azure
 
 Visual Studio Code facilite la...
 - définir et lier des fonctions Azure à Event Hubs- test local- déployer sur Azure- exécution de la fonction de journal à distance
+
 ### Ouvrir Visual Studio Code
 
 ### Connexion à Azure
@@ -36,6 +38,7 @@ Lorsque l’écran suivant s’affiche dans votre navigateur, vous êtes connect
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 Revenez à Visual Code Studio (vous verrez le nom de votre abonnement Azure, par exemple **abonnement Azure 1**) :
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## Créer un projet Azure
 
 Cliquez sur **Créer un projet de fonction...** :
@@ -65,6 +68,7 @@ Vous pourriez alors recevoir un message comme celui-ci. Dans ce cas, cliquez sur
 Une fois le projet créé, ouvrez le fichier `--aepUserLdap---aep-event-hub-trigger.js` dans l’éditeur :
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 La payload envoyée par Adobe Experience Platform à votre hub d&#39;événements ressemblera à ceci :
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ La payload envoyée par Adobe Experience Platform à votre hub d&#39;événement
 
 Mettez à jour le code dans le `--aepUserLdap---aep-event-hub-trigger.js` de votre Visual Studio Code avec le code ci-dessous. Ce code sera exécuté chaque fois que Real-Time CDP envoie les qualifications d’audience à votre destination Event Hub. Dans cet exemple, le code se contente d’afficher la payload entrante, mais vous pouvez imaginer tout type de fonction supplémentaire pour traiter les qualifications d’audience en temps réel et les utiliser plus bas dans votre écosystème de pipeline de données.
 La ligne 11 de votre `--aepUserLdap---aep-event-hub-trigger.js` de fichier affiche actuellement ceci :
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 Modifiez la ligne 11 dans `--aepUserLdap---aep-event-hub-trigger.js` pour qu’elle ressemble à ceci :
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 La payload totale doit alors être du type :
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,6 +132,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 Le résultat doit ressembler à ceci :
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## Exécuter un projet Azure
 
 Il est maintenant temps d’exécuter votre projet. À ce stade, nous ne déploierons pas le projet sur Azure. Nous l’exécuterons localement en mode de débogage. Sélectionnez l’icône Exécuter , puis cliquez sur la flèche verte.
@@ -135,10 +143,12 @@ puis sélectionnez le compte de stockage que vous avez créé précédemment et 
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 Votre projet est maintenant opérationnel et répertorie les événements dans le centre d’événements. Dans l’exercice suivant, vous allez démontrer le comportement sur le site web de démonstration de CitiSignal qui vous qualifiera pour les audiences. Par conséquent, vous recevrez une payload de qualification d’audience dans le terminal de votre fonction de déclenchement Event Hub.
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## Arrêter le projet Azure
 
 Pour arrêter votre projet, accédez au menu **PILE D’APPELS** dans VSC, cliquez sur la flèche de votre projet en cours, puis cliquez sur **Arrêter**.
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## Étapes suivantes
 
 Accédez au scénario de bout en bout [2.4.7](./ex7.md){target="_blank"}

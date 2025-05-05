@@ -87,12 +87,13 @@ L’exercice précédent distribue les événements de premier plan et d’arri�
 1. Sélectionnez **[!UICONTROL Créer une règle]**.
    ![Créer une règle](assets/rules-create-new.png)
 1. Dans l’écran **[!UICONTROL Créer une règle]**, saisissez `Application Status` pour **[!UICONTROL Nom]**.
-1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **** sous **[!UICONTROL EVENTS]**.
+1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **&#x200B;**&#x200B;sous **[!UICONTROL EVENTS]**.
    ![Boîte de dialogue Créer une règle](assets/rule-create-name.png)
 1. À l’étape **[!UICONTROL Event Configuration]** :
    1. Sélectionnez **[!UICONTROL Mobile Core]** comme **[!UICONTROL Extension]**.
    1. Sélectionnez **[!UICONTROL Foreground]** comme **[!UICONTROL Type d’événement]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Configuration d’événement de règle](assets/rule-event-configuration.png)
 1. De retour dans l’écran **[!UICONTROL Créer une règle]**, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** en regard de **[!UICONTROL Mobile Core - Premier plan]**.
    ![Configuration de l’événement suivant](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ L’exercice précédent distribue les événements de premier plan et d’arri�
    1. Sélectionnez **[!UICONTROL Mobile Core]** comme **[!UICONTROL Extension]**.
    1. Sélectionnez **[!UICONTROL Arrière-plan]** comme **[!UICONTROL Type d’événement]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Configuration d’événement de règle](assets/rule-event-configuration-background.png)
 1. De retour dans l’écran **[!UICONTROL Créer une règle]**, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** sous **[!UICONTROL ACTIONS]**.
    ![Règle Ajouter une action](assets/rule-action-button.png)
@@ -107,6 +109,7 @@ L’exercice précédent distribue les événements de premier plan et d’arri�
    1. Sélectionnez **[!UICONTROL Adobe d’Experience Edge Network]** comme **[!UICONTROL extension]**.
    1. Sélectionnez **[!UICONTROL Forward event to Edge Network]** comme **[!UICONTROL Type d’action]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Configuration de l’action de règle](assets/rule-action-configuration.png)
 1. Sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
    ![Règle - Enregistrer dans la bibliothèque](assets/rule-save-to-library.png)

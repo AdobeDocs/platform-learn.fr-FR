@@ -180,6 +180,7 @@ Le hub d’événements SDK publie et reçoit des données d’événement prove
 1. Sur l’écran **[!UICONTROL Créer une campagne]** :
    1. Sélectionnez **[!UICONTROL Message in-app]** et sélectionnez une surface d’application dans la liste **[!UICONTROL Surface d’application]** par exemple **[!DNL Luma Mobile App]**.
    1. Sélectionnez **[!UICONTROL Créer]**
+
       ![Propriétés de la campagne](assets/ajo-campaign-properties.png)
 1. Dans l’écran de définition de la campagne, à l’adresse **[!UICONTROL Propriétés]**, saisissez un **[!UICONTROL Nom]** pour la campagne, par exemple `Luma - In-App Messaging Campaign`, ainsi qu’un **[!UICONTROL Description]** par exemple `In-app messaging campaign for Luma app`.
    ![ Nom de la campagne ](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ Le hub d’événements SDK publie et reçoit des données d’événement prove
    4. Saisissez **[!UICONTROL Ignorer]** comme texte de #1 de bouton **[!UICONTROL (principal)]**.
    5. Notez la manière dont l’aperçu est mis à jour.
    6. Sélectionnez **[!UICONTROL Vérifier pour activer]**.
+
       ![ Éditeur in-app ](assets/ajo-in-app-editor.png)
 1. Dans l’écran **[!UICONTROL Vérifier pour activer (Luma - Campagne de messagerie In-App)]**, sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) dans la mosaïque **[!UICONTROL Planifier]**.
    ![Vérifier le planning, sélectionner Planning](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ Le hub d’événements SDK publie et reçoit des données d’événement prove
    1. Pour supprimer **[!UICONTROL Événement de lancement de l’application]**, sélectionnez ![Fermer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
    1. Utilisez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter une condition]** à plusieurs reprises pour créer la logique suivante pour **[!UICONTROL Afficher le message si]**.
    1. Cliquez sur **[!UICONTROL Terminé]**.
+
       ![Logique de déclenchement](assets/ajo-trigger-logic.png)
 
    Vous avez défini une action de suivi, où l’**[!UICONTROL Action]** est égal à `in-app` et l’**[!UICONTROL Données contextuelles]** avec l’action est une paire clé-valeur de `"showMessage" : "true"`.

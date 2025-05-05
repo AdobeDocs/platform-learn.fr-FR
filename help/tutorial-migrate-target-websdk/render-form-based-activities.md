@@ -106,7 +106,7 @@ Pour obtenir des exemples et des options de rendu supplémentaires, reportez-vou
 
 L’exemple de page ci-dessous s’appuie sur l’implémentation décrite dans la section précédente. Il ajoute uniquement des portées supplémentaires à la commande `sendEvent`.
 
-Exemple de SDK Web +++Platform avec plusieurs portées
++++Exemple de SDK Web Platform avec plusieurs portées
 
 ```HTML
 <!doctype html>

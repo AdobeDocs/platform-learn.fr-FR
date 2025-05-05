@@ -122,7 +122,7 @@ Vous pouvez également constater que notre identité principale se trouve dans `
 
 ![Ingestion des données](./images/schema_descriptor.png)
 
-Chaque schéma et, par conséquent, chaque jeu de données à utiliser dans le [!UICONTROL profil client en temps réel] doivent avoir un identifiant de [!UICONTROL Principal ]. Cet identifiant de Principal  est l&#39;identifiant utilisé par la marque pour un client dans ce jeu de données. Dans le cas d’un jeu de données CRM, il peut s’agir de l’adresse e-mail ou de l’identifiant CRM, dans le cas d’un jeu de données Call Center, il peut s’agir du numéro de mobile d’un client.
+Chaque schéma et, par conséquent, chaque jeu de données à utiliser dans le [!UICONTROL profil client en temps réel] doivent avoir un identifiant de [!UICONTROL Principal &#x200B;]. Cet identifiant de Principal  est l&#39;identifiant utilisé par la marque pour un client dans ce jeu de données. Dans le cas d’un jeu de données CRM, il peut s’agir de l’adresse e-mail ou de l’identifiant CRM, dans le cas d’un jeu de données Call Center, il peut s’agir du numéro de mobile d’un client.
 
 Il est recommandé de créer un schéma distinct et spécifique pour chaque jeu de données et de définir le descripteur de chaque jeu de données spécifiquement pour correspondre au fonctionnement des solutions actuelles utilisées par la marque.
 

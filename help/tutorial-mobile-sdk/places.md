@@ -80,6 +80,7 @@ Vous définissez certains points ciblés dans le service Places.
    1. Sélectionnez **[!DNL Luma]** dans la liste **[!UICONTROL Sélectionner une bibliothèque]**.
    1. Vérifiez que vous avez sélectionné votre bibliothèque de travail, par exemple **[!UICONTROL Initial Build]**.
    1. Sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]** depuis **[!UICONTROL Enregistrer dans la bibliothèque]**.
+
       ![Installer l’extension Places](assets/places-install-extension.png).
 
 1. Votre bibliothèque est reconstruite.
@@ -139,6 +140,7 @@ Vous allez ensuite définir des règles pour travailler avec ces éléments de d
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sous **[!UICONTROL EVENTS]**.
    1. Sélectionnez **[!UICONTROL Places]** dans la liste **[!UICONTROL Extension]** et **[!UICONTROL Entrer sur le point ciblé]** dans la liste **[!UICONTROL Type d’événement]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Événement de balise](assets/tags-event-mobile-core.png).
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sous **[!UICONTROL ACTIONS]**.
    1. Sélectionnez **[!UICONTROL Mobile Core]** dans la liste **[!UICONTROL Extension]**, puis **[!UICONTROL Joindre des données]** dans la liste **[!UICONTROL Type d’action]**. Cette action associe des données de payload.
@@ -169,6 +171,7 @@ Vous allez ensuite définir des règles pour travailler avec ces éléments de d
       Vous pouvez également insérer des valeurs d’espace réservé d’élément de données `{%% ... %%}` dans le fichier JSON en sélectionnant les ![Données](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Une boîte de dialogue contextuelle vous permet de sélectionner un élément de données que vous avez créé.
 
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Action Balises](assets/tags-action-mobile-core.png)
 
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de l’action **[!UICONTROL Mobile Core - Attach Data]** .

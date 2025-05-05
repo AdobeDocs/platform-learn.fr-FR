@@ -84,6 +84,7 @@ Maintenant que nous avons une idée de ce dont notre contenu devrait exister, no
 - Dans le modal qui s’ouvre, vous verrez que certains champs ne sont pas encore modifiables. C’est logique : en fonction de l’endroit où nous créons notre fragment, différents modèles seront disponibles.
   ![créer un fragment de contenu](./images/prod-app-create-cf-details.png)
    - Tout d’abord, sélectionnez l’emplacement où nous allons créer le fragment en cliquant sur l’icône de dossier en regard du champ &quot;Emplacement&quot;. Développez l’arborescence de contenu en cliquant sur les dossiers &quot;adobike&quot; \> &quot;en&quot; \> &quot;mobile-app&quot;, puis confirmez votre sélection en cliquant sur le bouton &quot;Choisir&quot;.
+
      ![sélectionnez l’emplacement correct](./images/prod-app-folder.png)
    - Vous remarquerez que le champ &quot;Modèle de fragment de contenu&quot; est désormais modifiable. Cliquez sur la flèche en regard du champ pour ouvrir la liste déroulante et sélectionnez le modèle de contenu que nous avons examiné précédemment : &quot;Page d’accueil de l’application mobile&quot;.
    - Donnez ensuite un titre significatif à votre fragment de contenu (astuce : indiquez votre numéro d’équipe pour retrouver facilement votre contenu). Vous remarquerez que le champ &quot;Nom&quot; est automatiquement renseigné. Il s’agit du nom que le système utilise pour identifier votre fragment et qui ne doit pas être modifié.
@@ -94,6 +95,7 @@ Maintenant que nous avons une idée de ce dont notre contenu devrait exister, no
    - Pour sélectionner des ressources d’image, cliquez sur l’icône de dossier pour rechercher la bonne image dans AEM Assets.
    - Pour le produit présenté, cliquez sur l’icône de recherche de produit afin de sélectionner facilement notre produit Commerce &quot;Adobe 1&quot;, de sorte que les détails liés au commerce soient chargés dans l’application.
    - Veillez à cliquer sur le bouton &quot;Enregistrer&quot; lorsque vous avez terminé d’enregistrer tout le contenu créé et de publier vos modifications.
+
      ![publier les modifications](./images/prod-app-publish.png)
 
 Maintenant que nous avons prévu l’application mobile avec du contenu, nous sommes prêts à diffuser notre campagne.
