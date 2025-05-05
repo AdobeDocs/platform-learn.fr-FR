@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Activer des profils et des audiences vers une destination
 
-Découvrez comment activer des profils et des audiences vers des destinations dans Real-Time CDP.  Démarrez ce workflow dans l’interface utilisateur des destinations ou des audiences. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview).
+Découvrez comment activer des profils et des audiences vers des destinations dans Real-Time CDP.  Démarrez ce workflow dans l’interface utilisateur des destinations ou des audiences. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activation-overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
 

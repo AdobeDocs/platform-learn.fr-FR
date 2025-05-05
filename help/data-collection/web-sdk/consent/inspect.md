@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inspecter et valider les signaux de consentement
 
-Découvrez comment vérifier que les paramètres de consentement sont correctement appliqués à vos données dans Adobe Experience Platform. Pour plus d’informations sur le [test de votre implémentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation), consultez la documentation sur le consentement .
+Découvrez comment vérifier que les paramètres de consentement sont correctement appliqués à vos données dans Adobe Experience Platform. Pour plus d’informations sur le [test de votre implémentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=fr#test-implementation), consultez la documentation sur le consentement .
 
 >[!NOTE]
 >

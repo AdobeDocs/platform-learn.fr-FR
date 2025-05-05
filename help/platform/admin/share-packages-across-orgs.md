@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Partage de packages entre les organisations IMS
 
-Découvrez comment copier des configurations Experience Platform entre les organisations IMS à l’aide de packages. Répliquez facilement des schémas, des jeux de données, des parcours et bien plus encore sur plusieurs organisations IMS afin de prendre en charge les processus de publication et les déploiements multi-régions/multi-marques. Pour plus d’informations, voir la [documentation sur les outils Sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
+Découvrez comment copier des configurations Experience Platform entre les organisations IMS à l’aide de packages. Répliquez facilement des schémas, des jeux de données, des parcours et bien plus encore sur plusieurs organisations IMS afin de prendre en charge les processus de publication et les déploiements multi-régions/multi-marques. Pour plus d’informations, voir la [documentation sur les outils Sandbox](https://experienceleague.adobe.com/fr/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)

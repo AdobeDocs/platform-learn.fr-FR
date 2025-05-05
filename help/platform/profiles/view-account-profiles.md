@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Affichage des profils de compte
 
-Découvrez comment afficher les profils et les opportunités de compte dans Real-Time Customer Data Platform, B2B edition et Adobe Experience Platform. Pour plus d’informations, consultez la [documentation sur les profils](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Découvrez comment afficher les profils et les opportunités de compte dans Real-Time Customer Data Platform, B2B edition et Adobe Experience Platform. Pour plus d’informations, consultez la [documentation sur les profils](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on&enablevpops)
 

@@ -19,11 +19,11 @@ Vous savez désormais que les données XDM circulent dans Platform. Vous découv
 
 ## Mappage de variables dans Analytics
 
-Le [!DNL Web SDK] Adobe Experience Platform mappe automatiquement certaines valeurs, ce qui permet une nouvelle implémentation d’Analytics via le SDK web aussi rapide que possible. Les variables mappées automatiquement sont répertoriées [ici](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
+Le [!DNL Web SDK] Adobe Experience Platform mappe automatiquement certaines valeurs, ce qui permet une nouvelle implémentation d’Analytics via le SDK web aussi rapide que possible. Les variables mappées automatiquement sont répertoriées [ici](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=fr#data-collection).
 
-Pour les données XDM qui ne sont pas automatiquement mappées à Adobe Analytics, vous pouvez utiliser des [données contextuelles](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=fr) pour correspondre à votre [schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr). Il peut ensuite être mappé à Analytics à l’aide de [règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) pour renseigner les variables Analytics. Les données contextuelles et les règles de traitement seront des concepts familiers pour ceux qui ont travaillé avec Analytics par le passé, mais ne vous inquiétez pas pour les détails s’il s’agit de nouveaux concepts.
+Pour les données XDM qui ne sont pas automatiquement mappées à Adobe Analytics, vous pouvez utiliser des [données contextuelles](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=fr) pour correspondre à votre [schéma](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr). Il peut ensuite être mappé à Analytics à l’aide de [règles de traitement](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=fr) pour renseigner les variables Analytics. Les données contextuelles et les règles de traitement seront des concepts familiers pour ceux qui ont travaillé avec Analytics par le passé, mais ne vous inquiétez pas pour les détails s’il s’agit de nouveaux concepts.
 
-Vous pouvez également utiliser un ensemble d’actions et de listes de produits par défaut pour envoyer ou récupérer des données avec le SDK Web AEP. Pour ce faire, voir [Produits](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
+Vous pouvez également utiliser un ensemble d’actions et de listes de produits par défaut pour envoyer ou récupérer des données avec le SDK Web AEP. Pour ce faire, voir [Produits](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=fr#data-collection).
 
 ### Données contextuelles
 
@@ -54,7 +54,7 @@ Pour être utilisées par Analytics, les données XDM sont aplaties à l’aide 
 
 ### Règles de traitement
 
-Toutes les données collectées par Edge Network sont accessibles via [ règles de traitement ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). Dans Analytics, vous pouvez utiliser des règles de traitement pour incorporer des données contextuelles dans les variables Analytics.
+Toutes les données collectées par Edge Network sont accessibles via [ règles de traitement ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=fr). Dans Analytics, vous pouvez utiliser des règles de traitement pour incorporer des données contextuelles dans les variables Analytics.
 
 ## Audience Manager sur Experience Platform Edge Network
 

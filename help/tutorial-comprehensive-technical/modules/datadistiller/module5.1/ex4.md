@@ -179,7 +179,7 @@ La majeure partie de la logique commerciale nécessite de rassembler les points 
 
 ### Fonctions définies par Adobe
 
-Adobe a ajouté un ensemble de **fonctions définies par l’Adobe** à la syntaxe SQL standard qui vous permet de mieux comprendre vos données d’expérience. Dans les deux requêtes suivantes, vous découvrirez ces fonctions ADF. Vous trouverez plus d&#39;informations et la liste complète [dans la documentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+Adobe a ajouté un ensemble de **fonctions définies par l’Adobe** à la syntaxe SQL standard qui vous permet de mieux comprendre vos données d’expérience. Dans les deux requêtes suivantes, vous découvrirez ces fonctions ADF. Vous trouverez plus d&#39;informations et la liste complète [dans la documentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=fr).
 
 ### Que font les visiteurs sur le site avant d’atteindre la page &quot;Annuler le service&quot; en tant que troisième page d’une session ?
 

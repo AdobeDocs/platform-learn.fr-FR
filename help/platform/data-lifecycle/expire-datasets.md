@@ -26,4 +26,4 @@ La suppression de jeux de données permet aux gestionnaires de données et aux i
 
 >[!NOTE]
 >
-> Tous les clients Platform peuvent [supprimer des jeux de données à la demande](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). La planification des suppressions de jeux de données est actuellement disponible uniquement pour les clients de Healthcare Shield ou de Privacy and Security Shield.
+> Tous les clients Platform peuvent [supprimer des jeux de données à la demande](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr#delete). La planification des suppressions de jeux de données est actuellement disponible uniquement pour les clients de Healthcare Shield ou de Privacy and Security Shield.

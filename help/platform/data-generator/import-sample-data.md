@@ -33,7 +33,7 @@ Ce tutoriel se concentre sur une marque fictive de vente au détail appelée Lum
 
 * Vous avez accès aux API Experience Platform et savez comment vous authentifier. Si ce n&#39;est pas le cas, consultez ce [tutoriel](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=fr).
 * Vous avez accès à un environnement de test de développement Experience Platform.
-* Vous connaissez votre identifiant de client Experience Platform. Vous pouvez l’obtenir en effectuant une [requête API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) authentifiée
+* Vous connaissez votre identifiant de client Experience Platform. Vous pouvez l’obtenir en effectuant une [requête API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=fr#know-your-tenant_id) authentifiée
 ou en l’extrayant de l’URL lorsque vous vous connectez à votre compte Platform. Par exemple, dans l’URL suivante, le client est &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Utilisation de [!DNL Postman] {#postman}
@@ -187,7 +187,7 @@ En parcourant les données des onglets **[!UICONTROL Attributs]** et **[!UICONTR
 
 Si vous souhaitez en savoir plus sur Adobe Journey Optimizer, cet environnement de test contient tout ce dont vous avez besoin pour relever les [défis de Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=fr)
 
-Si vous souhaitez en savoir plus sur les stratégies de fusion, la gouvernance des données, le service de requête et le créateur de segments, passez à la [leçon 11 dans le tutoriel Prise en main des architectes de données et des ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). Les leçons précédentes de cet autre tutoriel vous ont permis de créer manuellement tous les éléments qui venaient d’être renseignés par ces collections Postman.
+Si vous souhaitez en savoir plus sur les stratégies de fusion, la gouvernance des données, le service de requête et le créateur de segments, passez à la [leçon 11 dans le tutoriel Prise en main des architectes de données et des ingénieurs de données](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=fr). Les leçons précédentes de cet autre tutoriel vous ont permis de créer manuellement tous les éléments qui venaient d’être renseignés par ces collections Postman.
 
 Si vous souhaitez créer un exemple de mise en oeuvre du SDK Web pour créer un lien vers cet environnement de test, accédez à la section
 [Tutoriel de mise en oeuvre de Adobe Experience Cloud avec SDK Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr). Après avoir configuré les leçons &quot;Configuration initiale&quot;, &quot;Configuration des balises&quot; et &quot;Configuration Experience Platform&quot; du tutoriel du SDK Web, connectez-vous au site web Luma à l’aide des dix premières adresses électroniques du fichier `luma-crm.json` à l’aide du mot de passe `test` pour voir les fragments de profil fusionner avec les données chargées dans ce tutoriel.
@@ -199,4 +199,4 @@ Si vous souhaitez créer un exemple de mise en oeuvre du SDK Mobile pour créer 
 
 La réinitialisation d’un sandbox hors production supprime toutes les ressources associées à ce sandbox (schémas, jeux de données, etc.) tout en conservant le nom et les autorisations associés du sandbox. Ce sandbox « propre » reste disponible avec le même nom auprès des utilisateurs qui y ont accès.
 
-Suivez les étapes [ici](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) pour réinitialiser un environnement de test.
+Suivez les étapes [ici](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=fr#reset-a-sandbox) pour réinitialiser un environnement de test.

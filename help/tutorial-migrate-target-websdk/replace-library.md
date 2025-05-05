@@ -20,7 +20,7 @@ Découvrez comment remplacer votre implémentation Adobe Target sur la page pour
 
 >[!NOTE]
 >
->Les exemples fournis sont fournis à titre d’illustration et votre mise en oeuvre réelle de Target peut varier. Si votre mise en oeuvre Target existante utilise le gestionnaire de balises de collecte de données d’Adobe, vous pouvez également vous reporter au [tutoriel de mise en oeuvre du SDK Web Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) pour plus d’informations.
+>Les exemples fournis sont fournis à titre d’illustration et votre mise en oeuvre réelle de Target peut varier. Si votre mise en oeuvre Target existante utilise le gestionnaire de balises de collecte de données d’Adobe, vous pouvez également vous reporter au [tutoriel de mise en oeuvre du SDK Web Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=fr) pour plus d’informations.
 
 
 ## Vérification des paramètres d’administration de Target
@@ -52,7 +52,7 @@ Le SDK Web Platform utilise une configuration de flux de données qui vous perme
 >
 >Si aucun ID d’environnement n’est spécifié dans la configuration du flux de données, Target utilise le mappage domaine-environnement comme indiqué dans la section **Hôtes** .
 
-Pour plus d’informations, reportez-vous au guide [configuration du flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) et à la documentation de Target [Hôtes](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=fr).
+Pour plus d’informations, reportez-vous au guide [configuration du flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#target) et à la documentation de Target [Hôtes](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=fr).
 
 ## Déploiement du SDK Web de Platform
 
@@ -213,9 +213,9 @@ Le comportement de masquage préalable est contrôlé par deux configurations à
 
 Adobe recommande de mettre en oeuvre le SDK Web de Platform de manière asynchrone pour optimiser les performances globales de la page. Cependant, si la bibliothèque alloy.js ou le code incorporé des balises est chargé de manière synchrone, le fragment de code de masquage préalable n’est pas requis. Le style de masquage préalable est spécifié dans la configuration du SDK Web Platform.
 
-Le style de prémasquage pour les implémentations synchrones peut être configuré à l’aide de l’option [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) . La configuration du SDK Web Platform est traitée dans la section suivante.
+Le style de prémasquage pour les implémentations synchrones peut être configuré à l’aide de l’option [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr#prehidingStyle) . La configuration du SDK Web Platform est traitée dans la section suivante.
 
-Pour en savoir plus sur la façon dont le SDK Web Platform peut gérer le scintillement, consultez la section du guide : [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
+Pour en savoir plus sur la façon dont le SDK Web Platform peut gérer le scintillement, consultez la section du guide : [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=fr)
 
 ## Configuration du SDK Web de Platform
 
@@ -274,7 +274,7 @@ Les options de configuration dignes d’intérêt liées à Target sont décrite
 | `thirdPartyCookiesEnabled` | Active le paramètre des cookies tiers Adobe. Le SDK peut conserver l’identifiant visiteur dans un contexte tiers afin de permettre l’utilisation du même identifiant visiteur sur plusieurs sites. Utilisez cette option si vous disposez de plusieurs sites. Toutefois, cette option n’est parfois pas souhaitée pour des raisons de confidentialité. | `true` |
 | `prehidingStyle` | Permet de créer une définition de style CSS qui masque les zones de contenu de votre page web pendant le chargement du contenu personnalisé à partir du serveur. Il n’est utilisé qu’avec les déploiements synchrones du SDK. | `body { opacity: 0 !important }` |
 
-Pour obtenir la liste complète des options, reportez-vous au guide [Configuration du SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) .
+Pour obtenir la liste complète des options, reportez-vous au guide [Configuration du SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr) .
 
 ## Exemple d’implémentation
 
@@ -400,4 +400,4 @@ Ensuite, découvrez comment [demander et appliquer des activités basées sur le
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).

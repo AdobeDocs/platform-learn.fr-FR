@@ -21,7 +21,7 @@ Dans cet exercice, vous apprendrez à déboguer et à valider vos données lors 
 
 ## L&#39;Adobe Experience Platform Debugger
 
-Ce débogueur est une extension de navigateur disponible sur le magasin Chrome. Il existe un [ tutoriel vidéo](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview) qui explique comment télécharger et utiliser le débogueur, et il est recommandé de le parcourir d’abord pour en connaître l’utilisation de base.
+Ce débogueur est une extension de navigateur disponible sur le magasin Chrome. Il existe un [ tutoriel vidéo](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/debugger/overview) qui explique comment télécharger et utiliser le débogueur, et il est recommandé de le parcourir d’abord pour en connaître l’utilisation de base.
 
 Une fois le débogueur opérationnel, vous pouvez l’utiliser pour vous assurer que les données circulent correctement depuis votre site et via l’Edge Network. Ce tutoriel sera utilisé de manière assez basique, mais veuillez utiliser le débogueur à sa pleine capacité pour vérifier vos données.
 

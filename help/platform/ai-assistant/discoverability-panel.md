@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Utiliser le panneau de visibilité dans l’assistant d’IA
 
-Découvrez comment utiliser le panneau de visibilité dans l’assistant AI. Pour plus d’informations, consultez le guide de l’interface utilisateur de l’assistant [AI](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
+Découvrez comment utiliser le panneau de visibilité dans l’assistant AI. Pour plus d’informations, consultez le guide de l’interface utilisateur de l’assistant [AI](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)

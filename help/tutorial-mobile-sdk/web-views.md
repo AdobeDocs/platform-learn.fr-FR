@@ -27,7 +27,7 @@ Dans cette leçon, vous allez :
 
 ## Problèmes de suivi potentiels
 
-Si vous envoyez des données à partir de la partie native de l’application et d’une vue WebView au sein de l’application, chacune génère son propre identifiant Experience Cloud (ECID), ce qui entraîne des accès déconnectés et une augmentation des données de visite/visiteur. Vous trouverez plus d’informations sur l’ECID dans la [présentation d’ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Si vous envoyez des données à partir de la partie native de l’application et d’une vue WebView au sein de l’application, chacune génère son propre identifiant Experience Cloud (ECID), ce qui entraîne des accès déconnectés et une augmentation des données de visite/visiteur. Vous trouverez plus d’informations sur l’ECID dans la [présentation d’ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=fr).
 
 Pour résoudre cette situation indésirable, il est important de transmettre l’ECID de l’utilisateur de la partie native de votre application à un WebView que vous souhaitez peut-être utiliser dans votre application.
 
@@ -102,6 +102,6 @@ Malheureusement, le débogage de la session web est limité. Par exemple, vous n
 >
 >Vous avez maintenant configuré votre application pour afficher le contenu basé sur une URL dans un affichage web à l’aide du même ECID que celui déjà émis par le SDK Adobe Experience Platform Mobile.
 >
->Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
 
 Suivant : **[Identity](identity.md)**

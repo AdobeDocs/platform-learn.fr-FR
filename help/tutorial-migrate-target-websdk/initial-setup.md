@@ -13,11 +13,11 @@ ht-degree: 0%
 
 La migration d’at.js vers le SDK Web Platform nécessite une configuration initiale pour permettre la capture de données, les fonctionnalités et les fonctions appropriées du SDK Web Platform. Les étapes suivantes du [tutoriel de mise en oeuvre du SDK Web Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr) doivent être effectuées avant toute modification de mise en oeuvre de site Web :
 
-- [Configurez les autorisations appropriées](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} dans Adobe Admin Console pour la collecte de données
-- [Configuration d’un schéma XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} pour transmettre des données structurées à l’Edge Network
-- [Configuration d’un espace de noms d’identité](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} pour la personnalisation sur plusieurs appareils et la fonctionnalité mbox3rdPartyId
-- [Créez un flux de données](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} pour activer le transfert de données à partir d’un Edge Network.
-- [Configurez la banque de données](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"} pour activer le transfert de données vers Adobe Target
+- [Configurez les autorisations appropriées](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} dans Adobe Admin Console pour la collecte de données
+- [Configuration d’un schéma XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html?lang=fr){target="_blank"} pour transmettre des données structurées à l’Edge Network
+- [Configuration d’un espace de noms d’identité](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html?lang=fr){target="_blank"} pour la personnalisation sur plusieurs appareils et la fonctionnalité mbox3rdPartyId
+- [Créez un flux de données](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=fr){target="_blank"} pour activer le transfert de données à partir d’un Edge Network.
+- [Configurez la banque de données](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=fr#configure-the-datastream){target="_blank"} pour activer le transfert de données vers Adobe Target
 
 >[!CAUTION]
 >
@@ -29,4 +29,4 @@ Ensuite, découvrez comment [remplacer la bibliothèque at.js et configurer une 
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).

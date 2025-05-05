@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Recherche d’audiences inutilisées avec l’assistant AI
 
-Découvrez comment identifier les audiences inutilisées avec l’assistant AI afin de les supprimer et de rendre vos opérations marketing plus efficaces. Pour plus d’informations sur l’interrogation de l’assistant AI, consultez le guide [Question pour l’assistant AI](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Découvrez comment identifier les audiences inutilisées avec l’assistant AI afin de les supprimer et de rendre vos opérations marketing plus efficaces. Pour plus d’informations sur l’interrogation de l’assistant AI, consultez le guide [Question pour l’assistant AI](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)

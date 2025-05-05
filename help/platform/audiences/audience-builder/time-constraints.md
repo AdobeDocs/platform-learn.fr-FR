@@ -18,6 +18,6 @@ ht-degree: 18%
 
 # Utiliser des contraintes de temps dans les définitions de segment
 
-Découvrez comment utiliser les différentes options de date et d’heure dans l’interface du créateur d’audiences de Adobe Experience Platform. Utilisez des dates dans les attributs de profil pour créer des audiences pour les personnes dont c’est l’anniversaire. Utilisez les dates dans les événements pour créer des audiences pour les personnes qui ont effectué plusieurs achats au cours d’une certaine période ou qui n’ont pas effectué d’action au cours d’une certaine période. Pour plus d’informations, consultez le [guide de l’interface utilisateur du créateur de segments](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder).
+Découvrez comment utiliser les différentes options de date et d’heure dans l’interface du créateur d’audiences de Adobe Experience Platform. Utilisez des dates dans les attributs de profil pour créer des audiences pour les personnes dont c’est l’anniversaire. Utilisez les dates dans les événements pour créer des audiences pour les personnes qui ont effectué plusieurs achats au cours d’une certaine période ou qui n’ont pas effectué d’action au cours d’une certaine période. Pour plus d’informations, consultez le [guide de l’interface utilisateur du créateur de segments](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/segment-builder).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on&enablevpops)

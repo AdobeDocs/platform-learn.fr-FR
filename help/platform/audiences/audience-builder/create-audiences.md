@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # Créer des audiences
 
-Découvrez comment créer des audiences dans Adobe Experience Platform. Créez des règles d’audience et appliquez-les à vos profils clients en temps réel afin de produire les audiences qui alimenteront les expériences client. Pour consulter la documentation détaillée du produit, voir [création d’un segment dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) et [création d’un segment avec l’API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
+Découvrez comment créer des audiences dans Adobe Experience Platform. Créez des règles d’audience et appliquez-les à vos profils clients en temps réel afin de produire les audiences qui alimenteront les expériences client. Pour consulter la documentation détaillée du produit, voir [création d’un segment dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=fr) et [création d’un segment avec l’API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=fr).
 
 >[!NOTE]
 >

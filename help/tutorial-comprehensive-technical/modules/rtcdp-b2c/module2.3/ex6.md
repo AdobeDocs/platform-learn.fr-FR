@@ -160,7 +160,7 @@ Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=fr",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

@@ -58,7 +58,7 @@ Dans le menu **extensions**, cliquez sur l’icône **puzzle** et épinglez l’
 
 ## Configuration de l’extension Chrome
 
-Accédez à [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) puis cliquez sur l’icône de l’extension pour l’ouvrir.
+Accédez à [https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview) puis cliquez sur l’icône de l’extension pour l’ouvrir.
 
 ![DSN ](./images/tuthome.png)
 
@@ -136,7 +136,7 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4).
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4).
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 

@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # Création d’une propriété de transfert d’événement
 
-Découvrez comment créer une propriété de transfert d’événement dans la collecte de données. Pour plus d’informations, consultez la documentation [Créer une propriété de transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
+Découvrez comment créer une propriété de transfert d’événement dans la collecte de données. Pour plus d’informations, consultez la documentation [Créer une propriété de transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=fr#create-an-event-forwarding-property).
 
 >[!NOTE]
 >

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Connexion aux éditeurs dans Real-Time CDP Collaboration
 
-En tant qu’annonceur, apprenez à établir une connexion avec un éditeur afin de collaborer avec lui. Pour obtenir une documentation détaillée, voir [Connexion aux annonceurs ou aux éditeurs](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
+En tant qu’annonceur, apprenez à établir une connexion avec un éditeur afin de collaborer avec lui. Pour obtenir une documentation détaillée, voir [Connexion aux annonceurs ou aux éditeurs](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452218/?learn=on&enablevpops)

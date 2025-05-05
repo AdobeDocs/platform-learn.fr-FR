@@ -35,7 +35,7 @@ Dans cette leçon, vous allez :
 
 ## Confirmer l’accès
 
-Vérifiez que votre entreprise a accès à Assurance. En tant qu’utilisateur, vous devez être ajouté au profil pour Adobe Experience Platform. Pour plus d’informations, voir [Accès des utilisateurs](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) dans le guide d’assurance.
+Vérifiez que votre entreprise a accès à Assurance. En tant qu’utilisateur, vous devez être ajouté au profil pour Adobe Experience Platform. Pour plus d’informations, voir [Accès des utilisateurs](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=fr) dans le guide d’assurance.
 
 ## Implémenter
 
@@ -203,7 +203,7 @@ Pour vérifier si votre application utilise les extensions les plus récentes :
 >
 >Vous avez maintenant configuré votre application pour utiliser Assurance pour le reste du tutoriel.
 >
->Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
 
 
 Suivant : **[Implémentation du consentement](consent.md)**

@@ -17,6 +17,6 @@ ht-degree: 36%
 
 # Empilage des règles de balises
 
-Découvrez comment empiler des règles d’une propriété de balise. L’empilement de règles utilise la fonctionnalité `order` dans les événements de règle de balise pour séquencer les règles afin que vous puissiez gérer les implémentations de balises évolutives. Définissez certaines variables dans une règle globale, ajoutez et remplacez des variables dans une règle spécifique à une page, puis envoyez les données à l’application marketing souhaitée. Pour plus d’informations sur l’ordre des règles, consultez la documentation [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering) .
+Découvrez comment empiler des règles d’une propriété de balise. L’empilement de règles utilise la fonctionnalité `order` dans les événements de règle de balise pour séquencer les règles afin que vous puissiez gérer les implémentations de balises évolutives. Définissez certaines variables dans une règle globale, ajoutez et remplacez des variables dans une règle spécifique à une page, puis envoyez les données à l’application marketing souhaitée. Pour plus d’informations sur l’ordre des règles, consultez la documentation [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=fr#rule-ordering) .
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)

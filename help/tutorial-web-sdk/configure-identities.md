@@ -17,7 +17,7 @@ Découvrez comment configurer les espaces de noms d’identité à utiliser avec
 
 Le [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/fr/docs/id-service/using/home) définit un identifiant visiteur commun (ECID) entre les applications Adobe basées sur SDK afin d’alimenter les fonctionnalités d’Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au Service pour activer le ciblage inter-appareils et les intégrations à d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
 
-Le service d’identités [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (oui, il y en a deux !) utilise les ECID et les ID client pour générer des graphiques d’identités, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
+Le service d’identités [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) (oui, il y en a deux !) utilise les ECID et les ID client pour générer des graphiques d’identités, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Vous devez avoir déjà terminé les leçons précédentes :
 >
 >L’extension [Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) n’est pas nécessaire lors de l’implémentation de Adobe Experience Platform Web SDK, car la bibliothèque Web SDK JavaScript contient la fonctionnalité du service d’identification des visiteurs.
 >
-> Si votre site web utilise déjà le service Experience Cloud ID sur votre site web, par le biais de l’API visiteur ou de l’extension de balise du service Experience Cloud ID, et que vous souhaitez continuer à l’utiliser lors de la migration vers Adobe Experience Platform Web SDK, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service Experience Cloud ID. Pour plus d’informations, consultez [ Migration des ID ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) .
+> Si votre site web utilise déjà le service Experience Cloud ID sur votre site web, par le biais de l’API visiteur ou de l’extension de balise du service Experience Cloud ID, et que vous souhaitez continuer à l’utiliser lors de la migration vers Adobe Experience Platform Web SDK, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service Experience Cloud ID. Pour plus d’informations, consultez [ Migration des ID ](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/identity/overview) .
 
 ## Création d’un espace de noms d’identité
 
@@ -100,4 +100,4 @@ Maintenant que les identités sont en place, le flux de données peut être conf
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)

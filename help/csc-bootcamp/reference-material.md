@@ -39,17 +39,17 @@ Adobe souhaite également que les clients puissent facilement commander leur vé
 
 ### Adobe Experience Manager
 
-- [Présentation de l’automatisation de contenu avec les services de Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
-- [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
-- [Présentation de Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
+- [Présentation de l’automatisation de contenu avec les services de Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=fr)
+- [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=fr)
+- [Présentation de Adobe Experience Manager as a Headless CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=fr)
 
 ### Adobe Express
 
-- [Prise en main des modèles d’Adobe Express](https://helpx.adobe.com/express/using/work-with-templates.html)
+- [Prise en main des modèles d’Adobe Express](https://helpx.adobe.com/fr/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
-- [Documentation produit Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=en)
+- [Documentation produit Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=fr)
 - [Workfront pour AEM Assets](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 

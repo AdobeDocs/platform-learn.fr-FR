@@ -169,6 +169,6 @@ Les spécialistes du marketing et de l’analyse peuvent en faire bien plus avec
 
 >[!SUCCESS]
 >
->Vous avez maintenant configuré votre application pour envoyer des données non seulement à l’Edge Network, mais également à Adobe Experience Platform.<br>Merci d’investir votre temps dans l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous avez maintenant configuré votre application pour envoyer des données non seulement à l’Edge Network, mais également à Adobe Experience Platform.<br>Merci d’investir votre temps dans l’apprentissage du SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 
 Suivant : **[Créer et envoyer des notifications push](journey-optimizer-push.md)**

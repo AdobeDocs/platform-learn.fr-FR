@@ -40,7 +40,7 @@ L’Adobe Experience Platform Debugger peut être installé dans les navigateurs
 
 Une fois que vous avez installé l’extension Chrome ou le module complémentaire Firefox, une icône (![](assets/start-icon.jpg)) est ajoutée à la barre d’extension. Sélectionnez cette icône pour ouvrir l’extension.
 
-Reportez-vous au guide dédié pour plus d’informations sur l’ [extension Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) et sur la façon de déboguer toutes les applications web Adobe.
+Reportez-vous au guide dédié pour plus d’informations sur l’ [extension Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=fr) et sur la façon de déboguer toutes les applications web Adobe.
 
 ## Prévisualisation des activités Target avec des URL AQ
 
@@ -52,7 +52,7 @@ Les URL AQ de Target fonctionnent en demandant à at.js ou au SDK Web de Platfor
 >
 >La fonctionnalité du mode AQ de Target est prise en charge par le SDK Web Platform version 2.13.0 ou ultérieure. Le mode AQ de Target est activé en fonction de la valeur `xdm.web.webPageDetails.URL` transmise dans l’appel `sendEvent`. Toute modification de cette valeur, telle que la mise en minuscule de tous les caractères, peut empêcher le mode AQ de Target de fonctionner correctement.
 
-Reportez-vous au guide dédié pour plus d’informations sur l’ [AQ d’activité Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+Reportez-vous au guide dédié pour plus d’informations sur l’ [AQ d’activité Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=fr).
 
 ## Implémentation de Debug Target
 
@@ -130,7 +130,7 @@ Après avoir sélectionné **[!UICONTROL Vue]**, une superposition s’affiche p
 - Détails de la requête
 - Instantané du profil
 
-Pour plus d’informations sur les traces de Target, reportez-vous au guide dédié à l’[débogage de la diffusion de contenu Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) .
+Pour plus d’informations sur les traces de Target, reportez-vous au guide dédié à l’[débogage de la diffusion de contenu Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=fr) .
 
 ### Résolution des problèmes liés à Assurance
 
@@ -181,4 +181,4 @@ Félicitations, vous avez atteint la fin du tutoriel ! Bonne chance pour migrer 
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).

@@ -35,5 +35,5 @@ Découvrez comment configurer le connecteur source pour Marketo à l’aide du w
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 Pour plus d’informations, consultez la documentation suivante :
-* [Documentation du connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Créer un flux de données de sources à l’aide de modèles dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Documentation du connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=fr).
+* [Créer un flux de données de sources à l’aide de modèles dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=fr#)

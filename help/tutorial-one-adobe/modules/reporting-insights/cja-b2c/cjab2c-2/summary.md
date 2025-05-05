@@ -36,7 +36,7 @@ Vous pouvez maintenant :
 
 ## Consulter ceci
 
-- Centre d’aide : [Connecteurs Source - Connecteur BigQuery Google](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
+- Centre d’aide : [Connecteurs Source - Connecteur BigQuery Google](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=fr)
 - Documentation Experience Platform : [Customer Journey Analytics - Documentation Du Produit](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr)
 
 ## Étapes suivantes

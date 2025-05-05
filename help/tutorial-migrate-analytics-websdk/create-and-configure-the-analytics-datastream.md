@@ -35,7 +35,7 @@ Dans cette leçon, vous apprendrez à créer et à configurer le système afin q
 
    >[!NOTE]
    >
-   >Il vous suffit de sélectionner un schéma si vous utilisez la fonctionnalité [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep), ce que nous ne ferons pas dans ce tutoriel. Consultez le lien pour en savoir plus.
+   >Il vous suffit de sélectionner un schéma si vous utilisez la fonctionnalité [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/edge-network/data-prep), ce que nous ne ferons pas dans ce tutoriel. Consultez le lien pour en savoir plus.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 

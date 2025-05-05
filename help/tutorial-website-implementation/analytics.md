@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Ajout d’Adobe Analytics
 
-Dans cette leçon, vous allez implémenter l’[extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) et créer des règles pour envoyer des données à Adobe Analytics.
+Dans cette leçon, vous allez implémenter l’[extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr) et créer des règles pour envoyer des données à Adobe Analytics.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr) est une solution de pointe qui vous permet de comprendre vos clients en tant que personnes et d’orienter votre activité grâce aux renseignements sur vos clients.
 
@@ -426,7 +426,7 @@ Vous allez en fait appeler deux plug-ins dans ce code, mais l’un d’eux est i
 
 Ce plug-in a pour objectif d’éviter que les valeurs ne soient incorrectement dupliquées dans le code lorsqu’un visiteur actualise une page ou utilise le bouton Précédent du navigateur pour revenir à une page sur laquelle une valeur a été définie. Dans cette leçon, vous l’utiliserez pour empêcher la duplication de l’événement `clickthrough`.
 
-Le code de ce plug-in est disponible dans la [documentation d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), mais il est inclus ici pour faciliter le copier-coller.
+Le code de ce plug-in est disponible dans la [documentation d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=fr), mais il est inclus ici pour faciliter le copier-coller.
 
 1. Copiez le code suivant.
 

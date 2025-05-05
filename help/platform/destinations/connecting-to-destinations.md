@@ -22,4 +22,4 @@ Avant de pouvoir envoyer des données aux partenaires de destination à partir d
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
 
-Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).
+Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/connect-destination).

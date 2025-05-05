@@ -17,7 +17,7 @@ ht-degree: 19%
 
 # Configurer les clés gérées par le client (CMK)
 
-Gérez le chiffrement des données au repos à l’aide de vos propres clés de chiffrement. Pour plus d’informations, consultez la [documentation sur les clés gérées par le client](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+Gérez le chiffrement des données au repos à l’aide de vos propres clés de chiffrement. Pour plus d’informations, consultez la [documentation sur les clés gérées par le client](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 

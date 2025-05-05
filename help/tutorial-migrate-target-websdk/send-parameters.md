@@ -113,7 +113,7 @@ Le tableau ci-dessous décrit comment les exemples de paramètres seraient mapp�
 
 | Exemple de paramètre at.js | Option SDK Web Platform | Notes |
 | --- | --- | --- |
-| `at_property` | S/O | Les jetons de propriété sont configurés dans le [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) et ne peuvent pas être définis dans l’appel `sendEvent`. |
+| `at_property` | S/O | Les jetons de propriété sont configurés dans le [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#target) et ne peuvent pas être définis dans l’appel `sendEvent`. |
 | `pageName` | `xdm.web.webPageDetails.name` | Tous les paramètres de mbox Target doivent être transmis dans le cadre de l’objet `xdm` et conformes à un schéma à l’aide de la classe XDM ExperienceEvent. Les paramètres de mbox ne peuvent pas être transmis dans le cadre de l’objet `data`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Tous les paramètres de profil Target doivent être transmis dans le cadre de l’objet `data` et précédés du préfixe `profile.` pour être mappés correctement. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Paramètre réservé utilisé pour la fonctionnalité Affinité catégorielle de Target qui doit être transmis dans le cadre de l’objet `data`. |
@@ -122,11 +122,11 @@ Le tableau ci-dessous décrit comment les exemples de paramètres seraient mapp�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Les paramètres d’entité personnalisés sont utilisés pour la mise à jour du catalogue de produits Recommendations. Ces paramètres personnalisés doivent être transmis dans le cadre de l’objet `data`. |
 | `cartIds` | `data.__adobe.target.cartIds` | Utilisé pour les algorithmes de recommandations basés sur le panier de Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Utilisé pour empêcher le renvoi d’ID d’entité spécifiques dans une conception de recommandations. |
-| `mbox3rdPartyId` | Défini dans l’objet `xdm.identityMap` | Utilisé pour synchroniser les profils Target sur les appareils et les attributs du client. L’espace de noms à utiliser pour l’ID de client doit être spécifié dans la configuration [Target de la banque de données](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | Défini dans l’objet `xdm.identityMap` | Utilisé pour synchroniser les profils Target sur les appareils et les attributs du client. L’espace de noms à utiliser pour l’ID de client doit être spécifié dans la configuration [Target de la banque de données](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=fr). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Utilisé pour identifier une commande unique pour le suivi de conversion de Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Utilisé pour le suivi des totaux des commandes pour les objectifs de conversion et d’optimisation de Target. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Utilisé pour le suivi des conversions Target et les algorithmes de recommandations. Pour plus d’informations, reportez-vous à la section [paramètres d’entité](#entity-parameters) ci-dessous. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilisé pour l’objectif de l’activité [score personnalisé](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html). |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilisé pour l’objectif de l’activité [score personnalisé](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=fr). |
 
 {style="table-layout:auto"}
 
@@ -169,7 +169,7 @@ Dans les balises, utilisez d’abord un élément de données [!UICONTROL objet 
 
 ![Mappage à un champ XDM dans un élément de données d’objet XDM](assets/params-tags-pageName.png){zoomable="yes"}
 
-Ensuite, incluez votre [!UICONTROL objet XDM] dans votre [!UICONTROL événement d’envoi] [!UICONTROL action] (plusieurs [!UICONTROL objets XDM] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)) :
+Ensuite, incluez votre [!UICONTROL objet XDM] dans votre [!UICONTROL événement d’envoi] [!UICONTROL action] (plusieurs [!UICONTROL objets XDM] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=fr#merged-objects)) :
 
 ![Inclusion d’un élément de données d’objet XDM dans un événement Send](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ Dans les balises , créez d’abord un élément de données pour définir l’o
 
 ![Définir votre objet de données dans un élément de données](assets/params-tags-dataObject.png){zoomable="yes"}
 
-Ensuite, incluez votre objet de données dans votre [!UICONTROL Envoyer l’événement] [!UICONTROL action] (plusieurs [!UICONTROL objets] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)) :
+Ensuite, incluez votre objet de données dans votre [!UICONTROL Envoyer l’événement] [!UICONTROL action] (plusieurs [!UICONTROL objets] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=fr#merged-objects)) :
 
 ![Inclusion d’un objet de données dans un événement Send](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -231,7 +231,7 @@ Ensuite, incluez votre objet de données dans votre [!UICONTROL Envoyer l’év�
 
 ## Paramètres d’entité
 
-Les paramètres d’entité sont utilisés pour transmettre des données comportementales et des informations de catalogue supplémentaires pour Target Recommendations. Tous les [paramètres d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) pris en charge par at.js sont également pris en charge par le SDK Web Platform. Tout comme les paramètres de profil, tous les paramètres d’entité doivent être transmis sous l’objet `data.__adobe.target` dans la payload de commande du SDK Web Platform `sendEvent`.
+Les paramètres d’entité sont utilisés pour transmettre des données comportementales et des informations de catalogue supplémentaires pour Target Recommendations. Tous les [paramètres d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=fr) pris en charge par at.js sont également pris en charge par le SDK Web Platform. Tout comme les paramètres de profil, tous les paramètres d’entité doivent être transmis sous l’objet `data.__adobe.target` dans la payload de commande du SDK Web Platform `sendEvent`.
 
 Les paramètres d’entité d’un élément spécifique doivent comporter le préfixe `entity.` pour une capture de données correcte. Les paramètres réservés `cartIds` et `excludedIds` pour les algorithmes de recommandations ne doivent pas être précédés d’un préfixe et la valeur de chacun d’eux doit contenir une liste séparée par des virgules d’identifiants d’entité.
 
@@ -277,7 +277,7 @@ Dans les balises , créez d’abord un élément de données pour définir l’o
 
 ![Définir votre objet de données dans un élément de données](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-Ensuite, incluez votre objet de données dans votre [!UICONTROL Envoyer l’événement] [!UICONTROL action] (plusieurs [!UICONTROL objets] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)) :
+Ensuite, incluez votre objet de données dans votre [!UICONTROL Envoyer l’événement] [!UICONTROL action] (plusieurs [!UICONTROL objets] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=fr#merged-objects)) :
 
 ![Inclusion d’un objet de données dans un événement Send](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ Dans les balises, utilisez d’abord un élément de données [!UICONTROL objet 
 
 ![Mappage à un champ XDM dans un élément de données d’objet XDM](assets/params-tags-purchase.png){zoomable="yes"}
 
-Ensuite, incluez votre [!UICONTROL objet XDM] dans votre [!UICONTROL événement d’envoi] [!UICONTROL action] (plusieurs [!UICONTROL objets XDM] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)) :
+Ensuite, incluez votre [!UICONTROL objet XDM] dans votre [!UICONTROL événement d’envoi] [!UICONTROL action] (plusieurs [!UICONTROL objets XDM] peuvent être [fusionnés](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=fr#merged-objects)) :
 
 ![Inclusion d’un élément de données d’objet XDM dans un événement Send](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
@@ -604,4 +604,4 @@ Ensuite, découvrez comment [suivre les événements de conversion Target](track
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).

@@ -35,5 +35,5 @@ Selon la taille et la complexité de votre implémentation Analytics, la migrati
 
 >[!TIP]
 >
->Pour une présentation vidéo sur la création de suites de rapports, voir [Comprendre et créer des suites de rapports](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
+>Pour une présentation vidéo sur la création de suites de rapports, voir [Comprendre et créer des suites de rapports](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
 

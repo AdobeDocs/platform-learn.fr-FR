@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Définition du consentement à l’aide de la norme Adobe
 
-Découvrez comment utiliser Adobe Experience Platform Web SDK pour définir les valeurs de consentement conformément aux normes Adobe 1.0 et 2.0. Consultez la documentation relative au [traitement du consentement dans Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) pour plus d’informations sur l’utilisation de la norme Adobe.
+Découvrez comment utiliser Adobe Experience Platform Web SDK pour définir les valeurs de consentement conformément aux normes Adobe 1.0 et 2.0. Consultez la documentation relative au [traitement du consentement dans Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=fr) pour plus d’informations sur l’utilisation de la norme Adobe.
 
 >[!NOTE]
 >

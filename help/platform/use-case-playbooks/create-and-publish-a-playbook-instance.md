@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Création et publication d’instances de playbook
 
-Découvrez comment découvrir, créer, publier et résoudre les problèmes d’une instance d’un playbook de cas d’utilisation à partir de cette vidéo de démonstration de bout en bout. Pour plus d’informations, voir [Création, partage et réutilisation d’instances de playbook](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+Découvrez comment découvrir, créer, publier et résoudre les problèmes d’une instance d’un playbook de cas d’utilisation à partir de cette vidéo de démonstration de bout en bout. Pour plus d’informations, voir [Création, partage et réutilisation d’instances de playbook](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

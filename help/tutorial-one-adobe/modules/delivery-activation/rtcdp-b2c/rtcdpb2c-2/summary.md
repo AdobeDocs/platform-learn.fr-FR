@@ -39,7 +39,7 @@ Donnez aux spécialistes marketing les moyens de commencer immédiatement à uti
 
 ## Consulter ceci
 
-- Présentation Des Services Intelligents : [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Présentation Des Services Intelligents : [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=fr](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=fr)
 
 ## Étapes suivantes
 

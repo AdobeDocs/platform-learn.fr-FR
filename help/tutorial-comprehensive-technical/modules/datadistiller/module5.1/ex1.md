@@ -16,7 +16,7 @@ ht-degree: 0%
 ## Installation de l’utilitaire de ligne de commande PSQL
 
 Suivez les instructions décrites dans la documentation Adobe Experience Platform pour installer le client psql :
-[Guide d’installation PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+[Guide d’installation PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=fr)
 
 Une fois que vous avez installé PSQL, vous devrez peut-être mettre à jour votre **PATH** en exécutant la commande ci-dessous dans une fenêtre de terminal :
 
@@ -28,7 +28,7 @@ Pour macOS (remplacez XX dans la commande ci-dessous par le numéro de version d
 
 Uniquement pour les utilisateurs Windows
 
-[Installer Microsoft Power BI](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html)
+[Installer Microsoft Power BI](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=fr)
 
 Assurez-vous d’installer la version exacte de **npgsql** comme indiqué dans le document, sinon vous ne pourrez pas connecter Power BI à Adobe Experience Platform Query Service.
 
@@ -36,7 +36,7 @@ Assurez-vous d’installer la version exacte de **npgsql** comme indiqué dans l
 
 Pour les utilisateurs de Windows ou Mac
 
-[Installez Tableau Desktop](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) conformément à la documentation.
+[Installez Tableau Desktop](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=fr) conformément à la documentation.
 
 Tableau vous donne automatiquement une période d’évaluation de 14 jours.
 

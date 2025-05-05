@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Présentation d’Attribution AI
 
-Présentation générale de la manière dont les spécialistes du marketing et les analystes peuvent utiliser l’IA dédiée à l’attribution pour comprendre l’impact de leurs canaux et campagnes marketing. Pour plus d’informations, consultez la [documentation sur l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Présentation générale de la manière dont les spécialistes du marketing et les analystes peuvent utiliser l’IA dédiée à l’attribution pour comprendre l’impact de leurs canaux et campagnes marketing. Pour plus d’informations, consultez la [documentation sur l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)

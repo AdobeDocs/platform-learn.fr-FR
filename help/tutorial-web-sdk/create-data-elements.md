@@ -54,7 +54,7 @@ Il existe plusieurs façons de mapper les données de votre couche de données �
 
 ### Mise en oeuvre de XDM dans la couche de données
 
-Cette approche implique l’utilisation de l’objet XDM entièrement défini comme structure pour votre couche de données. Ensuite, vous mappez l’ensemble de la couche de données à un élément de données d’objet XDM dans des balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut s’avérer idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la [commande XDM sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé qui capture l’ensemble de la couche de données en tant qu’objet JSON de transfert vers XDM. Ensuite, vous mappez le JSON de transfert au champ d’objet XDM dans l’action Envoyer l’événement.
+Cette approche implique l’utilisation de l’objet XDM entièrement défini comme structure pour votre couche de données. Ensuite, vous mappez l’ensemble de la couche de données à un élément de données d’objet XDM dans des balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut s’avérer idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la [commande XDM sendEvent](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé qui capture l’ensemble de la couche de données en tant qu’objet JSON de transfert vers XDM. Ensuite, vous mappez le JSON de transfert au champ d’objet XDM dans l’action Envoyer l’événement.
 
 Vous trouverez ci-dessous un exemple de l’apparence de la couche de données à l’aide du format de couche de données client Adobe :
 
@@ -129,17 +129,17 @@ Cette approche implique le mappage de variables de couche de données individuel
 >
 > Couche de données Google
 > 
-> Si votre entreprise utilise déjà des Google Analytics et possède l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser l’ [extension de la couche de données Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) dans les balises . Cela vous permet de déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
+> Si votre entreprise utilise déjà des Google Analytics et possède l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser l’ [extension de la couche de données Google](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/google-data-layer/overview) dans les balises . Cela vous permet de déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
 
 ### Mappage à XDM dans le flux de données
 
-Cette approche utilise une fonctionnalité intégrée à la configuration de la chaîne de données appelée [Préparation de données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) et ignore le mappage des variables de couche de données sur XDM dans les balises .
+Cette approche utilise une fonctionnalité intégrée à la configuration de la chaîne de données appelée [Préparation de données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) et ignore le mappage des variables de couche de données sur XDM dans les balises .
 
 #### Avantages
 
 * Flexibilité, car vous pouvez mapper des variables individuelles à XDM
-* Possibilité de [calculer de nouvelles valeurs](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou de [transformer les types de données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) à partir d’une couche de données avant qu’elle ne passe à XDM
-* Tirez parti d’une [interface utilisateur de mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) pour mapper les champs de vos données sources à XDM avec une interface utilisateur pointer-cliquer
+* Possibilité de [calculer de nouvelles valeurs](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/functions) ou de [transformer les types de données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling) à partir d’une couche de données avant qu’elle ne passe à XDM
+* Tirez parti d’une [interface utilisateur de mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep#create-mapping) pour mapper les champs de vos données sources à XDM avec une interface utilisateur pointer-cliquer
 
 #### Inconvénients
 
@@ -312,4 +312,4 @@ Une fois ces éléments de données en place, vous êtes prêt à commencer à e
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)

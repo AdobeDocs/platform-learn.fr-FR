@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Pour plus d’informations et de bonnes pratiques, reportez-vous à la documentation dédiée sur [les scripts de profil](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Pour plus d’informations et de bonnes pratiques, reportez-vous à la documentation dédiée sur [les scripts de profil](https://experienceleague.adobe.com/fr/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Mise à jour des jetons de paramètre pour le contenu dynamique
 
-Si vous migrez les paramètres de mbox vers l’objet `xdm` et que vous disposez d’offres, de conceptions de recommandations ou d’activités qui utilisent le [remplacement de contenu dynamique](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), ils doivent peut-être être mis à jour en conséquence pour tenir compte des nouveaux noms de paramètre XDM.
+Si vous migrez les paramètres de mbox vers l’objet `xdm` et que vous disposez d’offres, de conceptions de recommandations ou d’activités qui utilisent le [remplacement de contenu dynamique](https://experienceleague.adobe.com/fr/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), ils doivent peut-être être mis à jour en conséquence pour tenir compte des nouveaux noms de paramètre XDM.
 
 Selon la manière dont vous utilisez le remplacement de jeton pour les paramètres de mbox, vous pouvez améliorer votre configuration existante pour tenir compte des anciens et des nouveaux noms de paramètre. Cependant, dans les cas où le code JavaScript personnalisé n’est pas possible, comme dans les offres JSON, vous devez créer des copies et effectuer des mises à jour une fois la migration terminée et active sur votre site de production.
 
@@ -88,4 +88,4 @@ Découvrez ensuite comment [valider l’implémentation de Target](validate.md).
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).

@@ -23,8 +23,8 @@ Les points saillants seront mentionnés lorsque cet exercice sera publié.
 
 ## Consulter ceci
 
-- Documentation du produit : [Glossaire Offer Decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- Documentation du produit : [Web SDK - Présentation d’Offer Decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
+- Documentation du produit : [Glossaire Offer Decisioning](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=fr)
+- Documentation du produit : [Web SDK - Présentation d’Offer Decisioning](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=fr)
 
 ## Étapes suivantes
 

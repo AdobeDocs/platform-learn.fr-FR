@@ -288,4 +288,4 @@ Ensuite, découvrez comment [demander et effectuer le rendu des activités](retr
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration Target mobile de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles lors de votre migration ou si vous avez l’impression qu’il manque des informations critiques dans ce guide, veuillez nous le faire savoir en publiant dans [cette discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) communautaire.
+>Nous nous engageons à vous aider à réussir votre migration Target mobile de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles lors de votre migration ou si vous avez l’impression qu’il manque des informations critiques dans ce guide, veuillez nous le faire savoir en publiant dans [cette discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=fr#M625) communautaire.

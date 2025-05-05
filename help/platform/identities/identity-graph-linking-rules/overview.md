@@ -22,6 +22,6 @@ ht-degree: 0%
 >
 >Les règles de liaison de graphiques d’identités sont actuellement en disponibilité limitée. Contactez l’équipe de votre compte Adobe pour plus d’informations sur l’accès à la fonctionnalité dans les sandbox de développement.
 
-Découvrez comment les règles de liaison de graphiques d’identités aident les architectes de données à maintenir des profils client précis et à éviter la réduction du graphique. Pour plus d’informations, consultez la documentation [règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Découvrez comment les règles de liaison de graphiques d’identités aident les architectes de données à maintenir des profils client précis et à éviter la réduction du graphique. Pour plus d’informations, consultez la documentation [règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)

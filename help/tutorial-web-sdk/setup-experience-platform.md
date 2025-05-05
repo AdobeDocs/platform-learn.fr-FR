@@ -160,7 +160,7 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 >[!INFO]
 >
->  Pour plus d’informations sur le service de requête Adobe Experience Platform, voir [Explorer les données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) dans la section des tutoriels Platform.
+>  Pour plus d’informations sur le service de requête Adobe Experience Platform, voir [Explorer les données](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/queries/explore-data) dans la section des tutoriels Platform.
 
 
 ## Activation du jeu de données et du schéma pour Real-time Customer Profile
@@ -309,4 +309,4 @@ Comme il s’agit d’une audience très simple, nous pouvons utiliser la métho
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)

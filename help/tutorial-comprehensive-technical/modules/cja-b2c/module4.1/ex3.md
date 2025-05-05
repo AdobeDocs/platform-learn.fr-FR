@@ -108,7 +108,7 @@ Les **paramètres de persistance** sont très importants. Le concept des evars e
 
 Si vous ne modifiez pas ces paramètres, CJA interprétera la dimension en tant que **Prop** (niveau d’accès). Nous pouvons également modifier la Persistance pour que la dimension devienne **eVar** (conservez la valeur dans le parcours).
 
-Si vous ne connaissez pas les eVars et les props, vous pouvez [en savoir plus à leur sujet dans la documentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Si vous ne connaissez pas les eVars et les props, vous pouvez [en savoir plus à leur sujet dans la documentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=fr).
 
 Laissons le Nom de page en tant que prop. Par conséquent, vous n’avez pas besoin de modifier les **paramètres de persistance**.
 

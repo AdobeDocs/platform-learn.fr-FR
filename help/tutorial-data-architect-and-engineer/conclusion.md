@@ -49,6 +49,6 @@ Les ressources clés :
 
 * [Tutoriels Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=fr)
 * [Documentation Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)
-* [Cours Experience League](https://experienceleague.adobe.com/?lang=fr/#dashboard/learning)
+* [Cours Experience League](https://experienceleague.adobe.com/fr?lang=fr/#dashboard/learning)
 
 Merci pour vos efforts et bonne chance pour votre parcours avec Adobe Experience Platform !

@@ -21,7 +21,7 @@ Cette vidéo explique comment diffuser des données vers Adobe Experience Plat
 
 ## Informations supplémentaires
 
-* [Créer une connexion en continu à l’aide de la documentation de l’API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [Documentation sur les données d’enregistrement en flux continu à l’aide des API d’ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [Documentation sur la diffusion des données de série temporelle à l’aide des API d’ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [Envoyer plusieurs messages dans une seule documentation sur les requêtes HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [Créer une connexion en continu à l’aide de la documentation de l’API](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=fr).
+* [Documentation sur les données d’enregistrement en flux continu à l’aide des API d’ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=fr)
+* [Documentation sur la diffusion des données de série temporelle à l’aide des API d’ingestion en flux continu](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=fr)
+* [Envoyer plusieurs messages dans une seule documentation sur les requêtes HTTP](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=fr)

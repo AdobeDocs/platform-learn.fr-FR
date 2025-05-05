@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Présentation du consentement
 
-Découvrez comment la gestion du consentement dans Adobe Experience Platform Web SDK vous aide à respecter les exigences légales en matière de confidentialité et à respecter les préférences de vos clients. Pour plus d’informations, consultez la présentation de la [gouvernance, confidentialité et sécurité dans Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent).
+Découvrez comment la gestion du consentement dans Adobe Experience Platform Web SDK vous aide à respecter les exigences légales en matière de confidentialité et à respecter les préférences de vos clients. Pour plus d’informations, consultez la présentation de la [gouvernance, confidentialité et sécurité dans Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=fr#consent).
 
 >[!NOTE]
 >

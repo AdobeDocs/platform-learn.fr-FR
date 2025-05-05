@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # Migration d’Adobe Analytics vers Web SDK à l’aide de balises
 
-Découvrez les étapes de migration d’une implémentation d’Adobe Analytics à l’aide de l’extension Analytics dans Balises Experience Platform (anciennement Launch) vers Web SDK, à l’aide de l’extension Web SDK également dans Balises. Lorsque l’extension Adobe Analytics est utilisée dans les balises, le code « AppMeasurement.js » est utilisé en arrière-plan. Par conséquent, vous pouvez considérer ce tutoriel comme une migration d’AppMeasurement vers Web SDK, mais il se trouve entièrement dans Balises et ne couvre PAS le déplacement vers ou depuis une implémentation de JavaScript (à l’exception du code JavaScript utilisé dans l’interface utilisateur des balises). Pour la migration des implémentations de JavaScript, consultez la [documentation](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+Découvrez les étapes de migration d’une implémentation d’Adobe Analytics à l’aide de l’extension Analytics dans Balises Experience Platform (anciennement Launch) vers Web SDK, à l’aide de l’extension Web SDK également dans Balises. Lorsque l’extension Adobe Analytics est utilisée dans les balises, le code « AppMeasurement.js » est utilisé en arrière-plan. Par conséquent, vous pouvez considérer ce tutoriel comme une migration d’AppMeasurement vers Web SDK, mais il se trouve entièrement dans Balises et ne couvre PAS le déplacement vers ou depuis une implémentation de JavaScript (à l’exception du code JavaScript utilisé dans l’interface utilisateur des balises). Pour la migration des implémentations de JavaScript, consultez la [documentation](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
 >[!NOTE]
 >
 >Des tutoriels de migration similaires sont disponibles pour :
 >
 > * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
-> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/fr/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ Il existe probablement de nombreuses façons d’effectuer ce processus de migra
 Au fur et à mesure que vous passez en revue les étapes, quelques mises en garde sont importantes à comprendre :
 
 1. Tout d’abord, il se peut que vous ayez besoin de toutes ces étapes. Par exemple, il existe une leçon concernant la migration du code personnalisé. Si vous disposez d’une implémentation de balises qui n’utilise pas de code personnalisé (y compris l’utilisation de plug-ins), vous n’aurez pas besoin de cette leçon. Nous avons essayé d’inclure les leçons dont tout le monde aurait besoin, alors lisez au moins les leçons pour voir si vous devez apporter des ajustements à votre site au cours de votre migration.
-1. En outre, il n’est tout simplement pas possible de créer un tutoriel de migration qui couvrira 100 % des cas d’utilisation que tout le monde utilise. Comme indiqué au point précédent, nous avons essayé d’inclure les leçons dont la plupart des personnes auront besoin, et qui couvriront la plupart des principaux cas d’utilisation. Cependant, il y aura sans aucun doute des cas d’utilisation qui ne sont pas abordés dans ce tutoriel. Dans ce cas, vérifiez si les leçons incluses vous donnent une bonne idée de la manière dont vous devez migrer pour votre cas d’utilisation. Vous pouvez également demander la collecte de données à vos pairs de la communauté des Experience League [&#128279;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community).
+1. En outre, il n’est tout simplement pas possible de créer un tutoriel de migration qui couvrira 100 % des cas d’utilisation que tout le monde utilise. Comme indiqué au point précédent, nous avons essayé d’inclure les leçons dont la plupart des personnes auront besoin, et qui couvriront la plupart des principaux cas d’utilisation. Cependant, il y aura sans aucun doute des cas d’utilisation qui ne sont pas abordés dans ce tutoriel. Dans ce cas, vérifiez si les leçons incluses vous donnent une bonne idée de la manière dont vous devez migrer pour votre cas d’utilisation. Vous pouvez également demander la collecte de données à vos pairs de la communauté des Experience League [&#128279;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=fr).
 
 Le processus de migration implique les étapes clés suivantes :
 
@@ -81,5 +81,5 @@ Le processus de migration implique les étapes clés suivantes :
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration d’Analytics vers Web SDK. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
+>Nous nous engageons à vous aider à réussir la migration d’Analytics vers Web SDK. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=fr#M604){target="_blank"}.
 

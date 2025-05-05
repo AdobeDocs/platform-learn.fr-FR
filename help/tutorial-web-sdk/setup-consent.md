@@ -217,13 +217,13 @@ Une fois cette règle en place, la collecte des événements doit commencer lors
 ![Consent Post Visitor Optin](assets/consent-post-user-optin.png)
 
 
-Pour plus d’informations sur le consentement dans le SDK Web, voir [Prise en charge des préférences de consentement du client](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Pour plus d’informations sur le consentement dans le SDK Web, voir [Prise en charge des préférences de consentement du client](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Pour plus d&#39;informations sur l&#39;action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Pour plus d&#39;informations sur l&#39;action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Suivant : ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)

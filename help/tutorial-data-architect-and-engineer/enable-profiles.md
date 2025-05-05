@@ -26,7 +26,7 @@ Le profil client en temps réel offre une vue d’ensemble de chaque client qui 
 
 Aussi incroyable que cela puisse paraître, vous n’avez pas besoin d’activer *toutes vos données* pour le profil. En fait, vous devez activer uniquement les données dont vous avez besoin pour les cas d’utilisation d’activation. Activez les données que vous souhaitez utiliser pour les cas d’utilisation marketing, les intégrations de centres d’appels, etc., où vous avez besoin d’un accès rapide à un profil client robuste. Si vous téléchargez des données uniquement à des fins d’analyse, elles ne devraient probablement pas être activées pour le profil.
 
-Il existe d’importants [mécanismes de sécurisation pour les données du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que vous devez consulter lorsque vous décidez laquelle de vos propres données vous devez activer pour le profil.
+Il existe d’importants [mécanismes de sécurisation pour les données du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr) que vous devez consulter lorsque vous décidez laquelle de vos propres données vous devez activer pour le profil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

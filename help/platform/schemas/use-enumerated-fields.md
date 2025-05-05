@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # Utiliser des champs énumérés et des valeurs suggérées
 
-Découvrez comment utiliser des champs énumérés et des valeurs suggérées pour créer des menus déroulants conviviaux dans l’interface du créateur de segments. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html).
+Découvrez comment utiliser des champs énumérés et des valeurs suggérées pour créer des menus déroulants conviviaux dans l’interface du créateur de segments. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

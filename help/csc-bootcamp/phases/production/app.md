@@ -41,7 +41,7 @@ AEM as a Cloud Service est un outil flexible pour le modèle d’implémentation
 1. API de contenu pour la diffusion
    - L’API GraphQL d’AEM prend en charge la diffusion de fragments de contenu.
    - L’API REST AEM Assets prend en charge les opérations CRUD de fragment de contenu.
-   - La diffusion directe de contenu est également possible avec l’ [exportation JSON du composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en).
+   - La diffusion directe de contenu est également possible avec l’ [exportation JSON du composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr).
 
 ## Exercice
 

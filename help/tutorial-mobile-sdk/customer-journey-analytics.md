@@ -18,7 +18,7 @@ Les données d’événement d’application mobile, que vous avez collectées e
 
 Contrairement à Adobe Analytics, Customer Journey Analytics *utilise des données* de jeux de données créés dans Experience Platform. Les données ne sont pas directement envoyées à Customer Journey Analytics à l’aide du SDK Adobe Experience Platform Mobile, mais elles sont envoyées aux jeux de données. Les connexions sont ensuite configurées dans Customer Journey Analytics pour sélectionner les jeux de données que vous utiliserez dans vos projets de création de rapports et d’analyse.
 
-Cette leçon du tutoriel porte sur la création de rapports et l’analyse des données capturées à partir de l’application de tutoriel Luma. L’une des fonctionnalités uniques de Customer Journey Analytics consiste à combiner des données provenant de plusieurs sources (CRM, point de vente, application de fidélité, centre d’appel) et canaux (web, mobile, hors ligne) afin d’obtenir des informations détaillées sur les parcours client. Cette capacité dépasse le cadre de cette leçon. Pour plus d’informations, voir [Présentation du Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) .
+Cette leçon du tutoriel porte sur la création de rapports et l’analyse des données capturées à partir de l’application de tutoriel Luma. L’une des fonctionnalités uniques de Customer Journey Analytics consiste à combiner des données provenant de plusieurs sources (CRM, point de vente, application de fidélité, centre d’appel) et canaux (web, mobile, hors ligne) afin d’obtenir des informations détaillées sur les parcours client. Cette capacité dépasse le cadre de cette leçon. Pour plus d’informations, voir [Présentation du Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview) .
 
 
 ## Conditions préalables
@@ -113,7 +113,7 @@ Une fois les enregistrements ajoutés des jeux de données à Customer Journey A
 
 Une vue de données est un conteneur spécifique au Customer Journey Analytics qui vous permet de déterminer comment interpréter les données d’une connexion. Vous pouvez configurer des champs standard et de schéma à partir des jeux de données que vous avez définis dans votre connexion en tant que composants (dimensions, mesures) dans Analysis Workspace.
 
-Une vue de données dans Customer Journey Analytics offre une flexibilité énorme pour configurer et définir correctement les données de votre connexion. Dans ce tutoriel, vous utilisez uniquement les fonctionnalités requises pour vos rapports et analyses. Voir [Vues de données](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) pour plus d’informations.
+Une vue de données dans Customer Journey Analytics offre une flexibilité énorme pour configurer et définir correctement les données de votre connexion. Dans ce tutoriel, vous utilisez uniquement les fonctionnalités requises pour vos rapports et analyses. Voir [Vues de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/data-views) pour plus d’informations.
 
 
 Pour créer votre vue de données :
@@ -213,7 +213,7 @@ Vous avez défini votre vue de données et tout est en place pour commencer à c
 
 ## Création d’un projet
 
-Les projets Workspace sont utilisés dans Customer Journey Analytics pour créer des rapports et des visualisations. Il existe de nombreuses possibilités pour créer des rapports complets et des visualisations attrayantes, mais cela ne fait pas partie du cadre de ce tutoriel. Pour plus d’informations, voir [Présentation de Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) et [Création d’un projet](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) .
+Les projets Workspace sont utilisés dans Customer Journey Analytics pour créer des rapports et des visualisations. Il existe de nombreuses possibilités pour créer des rapports complets et des visualisations attrayantes, mais cela ne fait pas partie du cadre de ce tutoriel. Pour plus d’informations, voir [Présentation de Workspace](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) et [Création d’un projet](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) .
 
 Dans cette section de la leçon, vous créez un projet qui affiche des rapports et des visualisations sur :
 
@@ -468,6 +468,6 @@ Vous devez à présent avoir une compréhension de base de la manière de créer
 >[!SUCCESS]
 >
 >
->Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Merci d’investir votre temps à apprendre sur le SDK Adobe Experience Platform Mobile. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 
 Suivant : **[Conclusion et étapes suivantes](conclusion.md)**

@@ -89,7 +89,7 @@ Comme mentionné, vous pouvez définir différents ID de personne pour chaque je
 
 Le nom du champ ID de personne n’est pas important tant que la valeur des champs ID de personne correspond. Par exemple, si l’ID de personne est `email` dans un jeu de données et `emailAddress` dans un autre et que `dnb-bootcamp@adobe.com` est la même valeur pour le champ ID de personne dans les deux jeux de données, CJA sera en mesure de regrouper les données.
 
-Il existe actuellement d&#39;autres limitations telles que l&#39;assemblage du comportement anonyme à connu. Consultez les questions fréquentes ici : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Il existe actuellement d&#39;autres limitations telles que l&#39;assemblage du comportement anonyme à connu. Consultez les questions fréquentes ici : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
 
 ### Assemblage des données à l’aide de l’ID de personne
 

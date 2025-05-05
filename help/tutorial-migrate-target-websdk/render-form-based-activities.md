@@ -100,7 +100,7 @@ Le SDK Web Platform offre un meilleur contrôle pour appliquer des activités d�
 | `replaceHtml` | Supprimer le conteneur et le remplacer par l’offre | Non | Oui |
 | `appendHtml` | Ajoute l’offre après le sélecteur spécifié | Non | Oui |
 
-Pour obtenir des exemples et des options de rendu supplémentaires, reportez-vous à la [documentation dédiée](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) sur le rendu de contenu à l’aide du SDK Web Platform.
+Pour obtenir des exemples et des options de rendu supplémentaires, reportez-vous à la [documentation dédiée](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=fr) sur le rendu de contenu à l’aide du SDK Web Platform.
 
 ## Exemple d’implémentation
 
@@ -201,4 +201,4 @@ Ensuite, découvrez comment [transférer des paramètres Target à l’aide du S
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).

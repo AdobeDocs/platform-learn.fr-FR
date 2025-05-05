@@ -31,7 +31,7 @@ Grâce à la collecte de données Adobe Experience Platform, vous en tant que ma
 
 - Blog technique : [résolution des problèmes d’implémentation avec Adobe Experience Platform Web SDK et Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Blog technique : [amélioration des performances des sites web avec Adobe Experience Platform Web SDK et Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- Documentation : [Présentation de la collecte de données Adobe Experience Platform côté serveur](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- Documentation : [Présentation de la collecte de données Adobe Experience Platform côté serveur](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr#server-side-info)
 - Vidéo : [Implémentation d’Edge et du serveur de collecte de données Adobe Experience Platform à l’aide d’une solution Tag Management non Adobe](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 ## Étapes suivantes

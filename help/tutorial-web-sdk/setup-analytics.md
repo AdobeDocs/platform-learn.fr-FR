@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Configuration d’Adobe Analytics avec le SDK Web de Adobe Experience Platform
 
-Découvrez comment configurer Adobe Analytics à l’aide du [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), créer des règles de balises pour envoyer des données à Adobe Analytics et vérifier qu’Analytics capture les données comme prévu.
+Découvrez comment configurer Adobe Analytics à l’aide du [SDK Web Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/web-sdk/overview), créer des règles de balises pour envoyer des données à Adobe Analytics et vérifier qu’Analytics capture les données comme prévu.
 
 [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics) est une application de pointe qui vous permet de comprendre vos clients en tant que personnes et d’orienter votre activité grâce aux renseignements sur vos clients.
 
@@ -35,7 +35,7 @@ Pour terminer cette leçon, vous devez d’abord :
 
 * Familiarisez-vous avec Adobe Analytics et accédez-y.
 
-* posséder au moins un identifiant de suite de rapports de test/développement. Si vous ne disposez pas d’une suite de rapports de test/développement que vous pouvez utiliser pour ce tutoriel, [créez-en une](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* posséder au moins un identifiant de suite de rapports de test/développement. Si vous ne disposez pas d’une suite de rapports de test/développement que vous pouvez utiliser pour ce tutoriel, [créez-en une](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Suivez les leçons des sections Configuration initiale et Configuration des balises de ce tutoriel.
 
@@ -78,7 +78,7 @@ Depuis mai 2024, vous n’avez plus besoin de créer un schéma XDM pour mettre 
 
 ### Champs mappés automatiquement
 
-De nombreux champs XDM sont automatiquement mappés aux variables Analytics. Pour obtenir la liste des mappages la plus récente, reportez-vous à la section [Mappage des variables Analytics dans Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+De nombreux champs XDM sont automatiquement mappés aux variables Analytics. Pour obtenir la liste des mappages la plus récente, reportez-vous à la section [Mappage des variables Analytics dans Adobe Experience Edge](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Cela se produit si _même si vous n’avez pas défini de schéma personnalisé_. Le SDK Web Experience Platform collecte automatiquement certaines données et les envoie à Platform Edge Network en tant que champs XDM. Par exemple, le SDK Web lit l’URL de la page active et l’envoie en tant que champ XDM `web.webPageDetails.URL`. Ce champ est transféré à Adobe Analytics et renseigne automatiquement les rapports URL de page dans Adobe Analytics.
 
@@ -481,4 +481,4 @@ Félicitations ! Tu l&#39;as fait ! C’est la fin de la leçon et vous êtes m
 
 >[!NOTE]
 >
->Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir consacré du temps à l’apprentissage du SDK Web Adobe Experience Platform. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu à venir, partagez-les sur cet [post de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)

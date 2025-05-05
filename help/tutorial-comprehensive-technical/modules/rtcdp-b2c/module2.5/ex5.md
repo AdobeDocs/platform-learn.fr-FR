@@ -20,7 +20,7 @@ ht-degree: 3%
 ## Bon à savoir
 
 Adobe Experience Platform prend en charge divers services Amazon en tant que destination.
-Kinesis et S3 sont toutes deux [des destinations d’exportation de profil](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) et peuvent être utilisées dans le cadre de Adobe Experience Platform Real-Time CDP.
+Kinesis et S3 sont toutes deux [des destinations d’exportation de profil](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=fr) et peuvent être utilisées dans le cadre de Adobe Experience Platform Real-Time CDP.
 Vous pouvez facilement alimenter vos systèmes de choix en événements de segment à valeur élevée et en attributs de profil associés.
 
 Au cours de cet exercice, vous allez apprendre à configurer votre propre flux Amazon Kinesis pour diffuser en continu des données d’événement provenant de l’écosystème Adobe Experience Platform Edge vers une destination de stockage dans le cloud, telle qu’Amazon S3. Cela s’avère utile si vous souhaitez collecter des événements d’expérience à partir de propriétés web et mobiles et les envoyer dans votre lac de données pour analyse et création de rapports opérationnels. En règle générale, les jeux de données ingèrent les données par lots avec de grands imports de fichiers quotidiens. Ils n’exposent pas le point de terminaison http public qui peut être utilisé avec le transfert d’événement.

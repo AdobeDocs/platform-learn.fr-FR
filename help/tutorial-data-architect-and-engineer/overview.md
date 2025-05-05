@@ -48,7 +48,7 @@ Adobe Experience Platform est une plateforme technique conçue pour vous aider �
 
 ## Prérequis
 
-* Vous avez visionné la [playlist Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) sur Experience League et connaissez les fonctionnalités de Platform.
+* Vous avez visionné la [playlist Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/fr/playlists/experience-platform-introduction) sur Experience League et connaissez les fonctionnalités de Platform.
 * Vous avez accès à un compte configuré avec Adobe Experience Platform (ou à une application basée sur une plateforme telle que Real-Time CDP ou Journey Optimizer) et la collecte de données (anciennement Launch).
 * Vous êtes un administrateur système de ce compte ou vous pouvez disposer d’une [configuration des autorisations utilisateur](configure-permissions.md) pour vous.
 
@@ -58,7 +58,7 @@ Ce tutoriel combine des tâches pour les ingénieurs de données et les architec
 
 Lorsque vous créez divers éléments Platform au cours de ce tutoriel, essayez de vous en tenir aux noms que je recommande autant que possible. Cependant, il existe quelques noms d’éléments de haut niveau que vous pouvez personnaliser au cas où plusieurs personnes de votre entreprise suivraient ce tutoriel simultanément. Par exemple, vous pouvez nommer l’environnement de test Platform &quot;Plateforme de tutoriel Luma - Ignatius J Reilly&quot; au lieu de simplement &quot;Plateforme de tutoriel Luma&quot;.
 
-Si vous êtes bloqué, essayez d&#39;abord de relire les instructions, puis utilisez le lien ![Log an issue](https://experienceleague.adobe.com/assets/img/feedback.svg) (Soumettre un problème) sur la barre latérale de chaque page pour me contacter.
+Si vous êtes bloqué, essayez d&#39;abord de relire les instructions, puis utilisez le lien ![Log an issue](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=fr) (Soumettre un problème) sur la barre latérale de chaque page pour me contacter.
 
 ## Notes techniques
 

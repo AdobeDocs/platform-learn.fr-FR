@@ -17,7 +17,7 @@ ht-degree: 37%
 
 # Création d’un tableau de bord
 
-Découvrez comment créer un tableau de bord dans Adobe Experience Platform. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html).
+Découvrez comment créer un tableau de bord dans Adobe Experience Platform. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=fr).
 
 >[!IMPORTANT]
 >

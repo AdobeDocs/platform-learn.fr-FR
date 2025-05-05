@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Configurer des conversions améliorées de Google Ads
 
-Améliorez les données de conversion Google avec des données hachées propriétaires à l’aide du transfert d’événement et de l’API Google Ads. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)
+Améliorez les données de conversion Google avec des données hachées propriétaires à l’aide du transfert d’événement et de l’API Google Ads. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=fr)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

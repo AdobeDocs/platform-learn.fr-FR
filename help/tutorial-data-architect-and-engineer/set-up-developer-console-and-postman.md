@@ -189,7 +189,7 @@ Faisons maintenant notre premier appel API :
 1. Importer dans [!DNL Postman]
 1. Ouvrez **API Schema Registry > Schémas > Schémas de liste**
 1. Examinez les onglets **Params** et **Headers** et notez comment ils incluent certaines des variables d’environnement que nous avons saisies précédemment.
-1. Notez que le **champ En-têtes > Valeur d’acceptation** est défini sur `application/vnd.adobe.xed-id+json`. Les API Schema Registry nécessitent l’une de ces [valeurs d’en-tête Accept spécifiées](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) qui fournissent différents formats dans la réponse.
+1. Notez que le **champ En-têtes > Valeur d’acceptation** est défini sur `application/vnd.adobe.xed-id+json`. Les API Schema Registry nécessitent l’une de ces [valeurs d’en-tête Accept spécifiées](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=fr#accept) qui fournissent différents formats dans la réponse.
 1. Sélectionnez **Send** pour effectuer votre premier appel API Platform !
 
 Espérons que vous obteniez une réponse `200 OK` réussie contenant une liste des schémas XDM fournis par l’Adobe dans votre environnement de test, comme illustré ci-dessous.

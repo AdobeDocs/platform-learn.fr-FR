@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # Configuration d’Attribution AI
 
-Découvrez comment créer une instance d’Attribution AI pour comprendre l’impact de vos canaux et campagnes marketing. Pour plus d’informations, consultez la [documentation sur l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Découvrez comment créer une instance d’Attribution AI pour comprendre l’impact de vos canaux et campagnes marketing. Pour plus d’informations, consultez la [documentation sur l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)
