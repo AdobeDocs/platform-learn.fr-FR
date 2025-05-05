@@ -19,4 +19,4 @@ ht-degree: 21%
 Cette vidéo montre comment exécuter des requêtes dans l’interface de Adobe Experience Platform et dans un client PSQL. En outre, l’utilisation de propriétés individuelles dans un objet XDM, l’utilisation de fonctions définies par Adobe et l’utilisation de CREATE TABLE AS SELECT (CTAS) sont illustrées. Pour consulter la documentation détaillée du produit, voir le [Guide de l’interface utilisateur de Query Editor](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=fr).
 Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32943?learn=on&enablevpops&captions=fre_fr)

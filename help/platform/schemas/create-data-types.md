@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo montre comment créer vos propres types de données dans Adobe Experience Platform en vue de les utiliser dans les schémas de modèle de données d’expérience (XDM). Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333537?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413616?learn=on&enablevpops&captions=fre_fr)

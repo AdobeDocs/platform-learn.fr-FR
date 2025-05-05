@@ -23,4 +23,4 @@ Découvrez comment créer un tableau de bord dans Adobe Experience Platform. Pou
 >
 >La fonctionnalité des tableaux de bord définis par l’utilisateur est en version bêta. Les fonctionnalités et la documentation peuvent faire l’objet de changements.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413781/?learn=on&enablevpops&captions=fre_fr)

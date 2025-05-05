@@ -25,4 +25,4 @@ Découvrez comment créer une règle de transfert d’événement dans la collec
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410372?learn=on&enablevpops&captions=fre_fr)

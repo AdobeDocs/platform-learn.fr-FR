@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Découvrez comment ajouter des attributs de partenaire à vos profils propriétaires pour étendre la portée via des canaux supplémentaires dans [!DNL Real-Time CDP]. Pour plus d’informations, consultez la documentation [Compléter les profils propriétaires avec les attributs fournis par le partenaire](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452451/?learn=on&enablevpops&captions=fre_fr)

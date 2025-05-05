@@ -16,4 +16,4 @@ ht-degree: 1%
 
 Découvrez les cas d’utilisation et les fonctionnalités du transfert d’événement dans Adobe Experience Platform, comme la gestion des appels d’API de conversion vers des destinations tierces et l’envoi de données d’événement à votre entrepôt de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3456497?learn=on&enablevpops&captions=fre_fr)

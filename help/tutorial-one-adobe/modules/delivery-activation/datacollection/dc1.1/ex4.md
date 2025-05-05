@@ -25,7 +25,7 @@ Experience Platform Debugger est une extension disponible pour les navigateurs C
 
 Si vous n’avez jamais utilisé le débogueur auparavant (et que celui-ci est différent du débogueur Adobe Experience Cloud précédent), vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36025?quality=12&learn=on&captions=fre_fr)
 
 Étant donné que vous allez charger le site web de démonstration en mode incognito, vous devez vous assurer que le débogueur Experience Platform est également disponible en mode incognito. Pour ce faire, accédez à **chrome://extensions** dans votre navigateur et ouvrez l’extension Experience Platform Debugger.
 

@@ -20,4 +20,4 @@ Découvrez comment créer une propriété de balise mobile dans la collecte de d
 >
 > Le lancement est maintenant **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40315/?learn=on&enablevpops&captions=fre_fr)

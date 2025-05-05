@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Découvrez comment créer des schémas pour vos données commerciales avec Real-Time Customer Data Platform, B2B edition. Découvrez les classes d’entreprise, les groupes de champs et les espaces de noms d’identité, ainsi que leur création automatique dans votre compte à l’aide de l’utilitaire Postman. Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453393?learn=on&enablevpops&captions=fre_fr)

@@ -19,5 +19,5 @@ ht-degree: 1%
 
 Cette vidéo montre comment l’IA dédiée aux clients enrichit les profils clients avec des propensions basées sur l’IA et renforce la segmentation et le ciblage des clients. Pour plus d’informations, consultez la [documentation sur l’IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328475?learn=on&enablevpops&captions=fre_fr)
 

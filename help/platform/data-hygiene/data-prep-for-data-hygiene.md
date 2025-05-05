@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Découvrez comment prendre en charge les principes de minimisation des données avec la fonction de préparation des données d’Experience Platform. Découvrez comment ingérer uniquement les champs dont vous avez besoin et les données de hachage lors de l’ingestion.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449277/?learn=on&enablevpops&captions=fre_fr)

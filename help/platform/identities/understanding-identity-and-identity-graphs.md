@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Découvrez les principales fonctionnalités de résolution d’identité dans Adobe Experience Platform : la collecte d’identités, les graphiques d’identités et les API. Découvrez comment Identity Service lie les identités déconnectées pour offrir une expérience connectée cohérente en créant un profil unifié. Pour plus d’informations, consultez la [documentation sur le service d’identités](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422771?learn=on&enablevpops&captions=fre_fr)
 
 ## Configuration des identités
 
@@ -32,7 +32,7 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Étiqueter, ingérer et vérifier des données d’identité" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Étiqueter, ingérer et vérifier des données d’identité"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31637?format=jpeg&nocache=1740414775790&captions=fre_fr" alt="Étiqueter, ingérer et vérifier des données d’identité"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -65,7 +65,7 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Règles de liaison des graphiques d’identités - Simulation de graphique" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444045/?format=jpeg&nocache=1740414776009&captions=fre_fr" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,7 +98,7 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="Afficher les graphiques d’identités" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="Afficher les graphiques d’identités"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345654?format=jpeg&nocache=1740414776113&captions=fre_fr" alt="Afficher les graphiques d’identités"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

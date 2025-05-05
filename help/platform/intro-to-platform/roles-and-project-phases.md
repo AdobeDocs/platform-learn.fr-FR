@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Découvrez les rôles, les phases et les principaux résultats impliqués dans la réussite d’un projet Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430451?learn=on&enablevpops&captions=fre_fr)
 

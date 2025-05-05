@@ -22,6 +22,6 @@ Découvrez comment la fonction de segmentation en flux continu de Adobe Experien
 >
 > « [!UICONTROL Segments] » a été renommé « [!UICONTROL Audiences] » dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour accéder au créateur de règles présenté dans cette vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/36184?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40062?learn=on&enablevpops&captions=fre_fr)
 
 

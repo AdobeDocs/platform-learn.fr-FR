@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo donne un aperçu de l’ingestion de données par lots dans Adobe Experience Platform et montre comment ingérer des données par lots à l’aide de l’API. Pour plus d’informations, consultez la [documentation sur l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345661?learn=on&enablevpops&captions=fre_fr)

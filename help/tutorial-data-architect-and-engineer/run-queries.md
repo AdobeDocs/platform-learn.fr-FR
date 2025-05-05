@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service vous aide à donner du sens à vos donn�
 **Architectes de données** et **Ingénieurs de données** devront utiliser Query Service en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Query Service :
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33589?learn=on&enablevpops&captions=fre_fr)
 
 ## Autorisations requises
 

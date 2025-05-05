@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Découvrez comment utiliser des fonctions définies par Adobe dans Adobe Experience Platform Query Service pour effectuer des tâches courantes liées à l’entreprise sur les données d’événement d’expérience. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414049?learn=on&enablevpops&captions=fre_fr)

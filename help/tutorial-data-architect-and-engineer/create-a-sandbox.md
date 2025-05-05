@@ -26,7 +26,7 @@ Les sandbox fournissent des environnements isolés où vous pouvez tester les fo
 **Architectes de données** et **Ingénieurs de données** devront créer des sandbox en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les sandbox :
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430301/?learn=on&enablevpops&captions=fre_fr)
 
 ## Autorisations requises
 

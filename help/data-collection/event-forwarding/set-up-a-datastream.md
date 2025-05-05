@@ -26,4 +26,4 @@ Découvrez comment configurer un flux de données pour le transfert d’événem
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410360?learn=on&enablevpops&captions=fre_fr)

@@ -20,4 +20,4 @@ ht-degree: 37%
 
 Les forces de marché volatiles et les exigences disparates en matière de protection de la vie privée des consommateurs peuvent constituer des scénarios intimidants pour le spécialiste du marketing numérique. Pour que les campagnes respectent les réglementations, les équipes marketing ont besoin que leurs homologues informatiques disposent d’un processus rationalisé pour garantir la pérennité du processus de gouvernance des données. Idéalement, ce processus doit permettre à tous les utilisateurs de suivre et d’appliquer des règles d’utilisation responsable des données des clients. Écoutez les témoignages d’Adobe et de Scotiabank Digital sur les principales considérations à prendre en compte pour une gestion des données responsable.
 
->[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457046/?learn=on&enablevpops&captions=fre_fr)

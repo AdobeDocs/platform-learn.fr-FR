@@ -25,4 +25,4 @@ Découvrez comment ajouter une extension de transfert d’événement dans la co
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410378?learn=on&enablevpops&captions=fre_fr)

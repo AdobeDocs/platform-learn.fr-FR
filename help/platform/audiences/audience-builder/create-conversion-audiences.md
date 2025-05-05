@@ -22,5 +22,5 @@ Dans cette vidéo, découvrez comment utiliser le créateur de règles d’audie
 >
 > « [!UICONTROL Segments] » a été renommé « [!UICONTROL Audiences] » dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour accéder au créateur de règles présenté dans cette vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/333303/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413319/?learn=on&enablevpops&captions=fre_fr)
 

@@ -22,7 +22,7 @@ Découvrez comment planifier des suppressions de jeux de données à l’aide de
 La suppression de jeux de données permet aux gestionnaires de données et aux ingénieurs de données de définir une date d’expiration pour un jeu de données. Pour plus d’informations, consultez la [documentation sur l’hygiène des données](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=fr).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430312?learn=on&enablevpops&captions=fre_fr)
 
 >[!NOTE]
 >

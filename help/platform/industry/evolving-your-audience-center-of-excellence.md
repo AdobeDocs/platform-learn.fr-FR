@@ -18,5 +18,5 @@ ht-degree: 0%
 
 À mesure que les plateformes qui facilitent la gestion des données des clients, les audiences et les programmes d&#39;activation doivent également évoluer. Il en va de même pour les personnes et les processus qui soutiennent ces plateformes. Un modèle de centre d’excellence pour les audiences est depuis longtemps considéré comme le moyen optimal de prendre en charge les plateformes de gestion des données (DMP). Pour compléter cette vidéo, vous pouvez également [télécharger un livre blanc](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf).
 
->[!VIDEO](https://video.tv.adobe.com/v/336938/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457358/?learn=on&enablevpops&captions=fre_fr)
 

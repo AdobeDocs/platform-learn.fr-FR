@@ -20,4 +20,4 @@ Découvrez comment vérifier que les paramètres de consentement sont correcteme
 >
 > Le lancement est maintenant **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443786/?learn=on&enablevpops&captions=fre_fr)

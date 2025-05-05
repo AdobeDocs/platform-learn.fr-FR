@@ -22,4 +22,4 @@ Découvrez comment configurer des paramètres d’expiration pour les profils ps
 Ces paramètres permettent aux gestionnaires de données de définir des dates d’expiration pour les profils non authentifiés et les événements associés. Cela permet de garder le [!DNL Profile Service] pertinent pour vos cas d’utilisation marketing et publicitaire. Pour plus d’informations, consultez la documentation [Expiration des événements d’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/event-expirations) et [Expiration des données de profils pseudonymes](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/event-expirations).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449854?learn=on&enablevpops&captions=fre_fr)

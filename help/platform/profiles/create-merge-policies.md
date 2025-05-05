@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Cette vidéo montre comment créer des politiques de fusion dans Adobe Experience Platform. Les politiques de fusion sont les règles utilisées par Platform pour déterminer quelles données seront utilisées et hiérarchisées lors de la combinaison de jeux de données provenant de sources disparates, afin de créer des profils client. Pour plus d’informations, consultez la documentation [politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345076?learn=on&enablevpops&captions=fre_fr)

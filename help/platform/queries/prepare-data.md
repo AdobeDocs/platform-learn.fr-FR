@@ -18,4 +18,4 @@ ht-degree: 6%
 
 Découvrez comment nettoyer, préparer et combiner des données provenant de plusieurs jeux de données afin de créer un jeu de données à l’aide des fonctions CTAS (Create Table AS) et Spark SQL pour la création de rapports et de tableaux de bord. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414067?learn=on&enablevpops&captions=fre_fr)

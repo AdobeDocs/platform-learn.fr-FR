@@ -19,4 +19,4 @@ ht-degree: 43%
 
 Découvrez comment vous abonner et administrer des alertes dans Adobe Experience Platform. Grâce aux alertes , surveillez divers processus pour vous assurer que votre implémentation de Platform s’exécute correctement. Pour plus d’informations, consultez la [documentation sur les alertes](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336218?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423919?learn=on&enablevpops&captions=fre_fr)

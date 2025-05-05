@@ -21,4 +21,4 @@ ht-degree: 1%
 
 Le connecteur Source Adobe Analytics vous permet de diffuser, de mapper et de filtrer facilement des données d’Adobe Analytics vers le profil client en temps réel Adobe Experience Platform et le lac de données Experience. Découvrez comment utiliser les fonctionnalités de préparation de données pour créer des champs sémantiques et calculés afin d’améliorer l’expérience utilisateur dans le créateur de segments et les applications Platform. Les suites de rapports interrégionales sont prises en charge pour ce connecteur. Pour consulter une documentation plus détaillée du produit, voir [Créer un connecteur source Adobe Analytics dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430255?learn=on&enablevpops&captions=fre_fr)

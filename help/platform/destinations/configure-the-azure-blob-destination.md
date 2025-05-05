@@ -22,5 +22,5 @@ Découvrez comment configurer une connexion et envoyer des données à la destin
 
 Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346817/?learn=on&enablevpops&captions=fre_fr)
 

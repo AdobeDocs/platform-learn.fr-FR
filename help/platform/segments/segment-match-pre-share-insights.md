@@ -18,4 +18,4 @@ ht-degree: 53%
 
 Lorsque vous décidez avec un partenaire stratégique de partager des données, il est important de savoir comment vos clients l’accueilleront, afin que vous puissiez connaître l’utilité de ce partage de données. Correspondance de segments vous permet de voir le chevauchement avec les partenaires de données potentiels avant de partager des données. Pour plus d’informations, consultez la [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346344/?learn=on&enablevpops&captions=fre_fr)

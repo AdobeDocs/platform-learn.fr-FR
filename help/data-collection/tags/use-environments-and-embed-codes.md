@@ -18,4 +18,4 @@ ht-degree: 34%
 
 Découvrez comment utiliser les environnements de développement, d’évaluation et de production ainsi que les codes incorporés pour développer et valider votre propriété de balise. Pour plus d’informations, consultez la documentation [environnements](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430486/?learn=on&enablevpops&captions=fre_fr)

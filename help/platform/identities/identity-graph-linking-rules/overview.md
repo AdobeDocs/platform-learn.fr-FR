@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Découvrez comment les règles de liaison de graphiques d’identités aident les architectes de données à maintenir des profils client précis et à éviter la réduction du graphique. Pour plus d’informations, consultez la documentation [règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448274/?learn=on&enablevpops&captions=fre_fr)

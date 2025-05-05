@@ -20,7 +20,7 @@ ht-degree: 42%
 
 Découvrez comment le SDK web Adobe Experience Platform et le réseau Edge permettent aux clients d’utiliser une seule bibliothèque JavaScript et une seule balise pour envoyer des données aux applications Adobe et aux destinations tierces.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37259?learn=on&enablevpops&captions=fre_fr)
 
 >[!NOTE]
 >

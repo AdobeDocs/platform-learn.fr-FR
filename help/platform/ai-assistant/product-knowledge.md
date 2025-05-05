@@ -21,4 +21,4 @@ ht-degree: 2%
 
 Découvrez les applications Adobe Experience Platform à partir de l’assistant AI. Pour plus d’informations, consultez la documentation de l’assistant [AI](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441026/?learn=on&enablevpops&captions=fre_fr)

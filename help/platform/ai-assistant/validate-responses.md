@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez comment vérifier et valider les réponses fournies par l’assistant AI dans Adobe Experience Platform. Pour plus d’informations, consultez le guide de l’interface utilisateur de l’assistant [AI](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441740/?learn=on&enablevpops&captions=fre_fr)

@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Découvrez comment écrire et exécuter des requêtes, créer des requêtes de planning et créer un modèle de requête à l’aide de l’API Query Service de Adobe Experience Platform. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414085?learn=on&enablevpops&captions=fre_fr)

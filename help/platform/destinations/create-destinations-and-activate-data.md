@@ -20,5 +20,5 @@ ht-degree: 0%
 
 Découvrez comment créer des destinations et activer des données dans Adobe Real-Time Customer Data Platform. Pour consulter une documentation plus détaillée du produit, voir [activer des profils et des segments vers une destination](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html?lang=fr), [comment connecter une destination](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html?lang=fr) et [se connecter à des destinations de diffusion en streaming et activer des données avec l’API](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29710?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33168?learn=on&enablevpops&captions=fre_fr)
 

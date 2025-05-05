@@ -18,5 +18,5 @@ ht-degree: 80%
 
 Découvrez les fonctionnalités clés d’Experience Platform et comment elles apportent de la valeur à votre entreprise.
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428506?learn=on&enablevpops&captions=fre_fr)
 

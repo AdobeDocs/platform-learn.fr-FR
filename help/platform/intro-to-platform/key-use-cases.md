@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Obtenez un aperçu des cinq cas d’utilisation clés d’Experience Platform : réengagement intelligent, campagnes « ne perdez pas », optimisation de la conversion des clients, reconnaissance contextuelle et valeur unique pour la durée de vie.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430457?learn=on&enablevpops&captions=fre_fr)
 

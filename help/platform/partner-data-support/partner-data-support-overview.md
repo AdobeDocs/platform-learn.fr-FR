@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Découvrez comment [!DNL Real-Time Customer Data Platform] prend en charge le marketing full-entonnoir à l’aide de données de partenaire pour l’enrichissement des données propriétaires et les cas d’utilisation de la prospection, car les cookies tiers continuent d’être obsolètes. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449691/?learn=on&enablevpops&captions=fre_fr)

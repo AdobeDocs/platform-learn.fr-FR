@@ -18,5 +18,5 @@ ht-degree: 9%
 
 Cette vidéo montre comment créer des jeux de données et ingérer des données dans l’interface de Adobe Experience Platform. Pour consulter une documentation plus détaillée du produit, voir [ingestion de données par lot à l’aide de l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=fr) et [création d’un jeu de données à l’aide d’API](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html?lang=fr). Pour plus d’informations, consultez la [documentation sur l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34369?learn=on&enablevpops&captions=fre_fr)
 

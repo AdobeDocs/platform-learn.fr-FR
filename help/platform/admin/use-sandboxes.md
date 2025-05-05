@@ -20,6 +20,6 @@ ht-degree: 100%
 
 Découvrez comment les sandbox Experience Platform fournissent des environnements isolés pour tester des fonctionnalités nouvelles ou existantes et travailler selon une approche de type « fail fast » (échec rapide). Découvrez comment réinitialiser et redémarrer les environnements de développement et utiliser les sandbox avec des appels API. Pour plus d’informations, consultez le [guide d’utilisation sur les sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430301/?learn=on&enablevpops&captions=fre_fr)
 
 

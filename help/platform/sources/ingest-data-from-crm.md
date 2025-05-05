@@ -23,13 +23,13 @@ Découvrez comment ingérer facilement des données par lots à partir de source
 
 Découvrez comment configurer le connecteur source pour Salesforce CRM à l’aide du workflow standard. Le workflow standard nécessite la création initiale de schémas et d’espaces de noms d’identité. Les autres connecteurs source CRM ne peuvent prendre en charge que le workflow standard.
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33160?learn=on&enablevpops&captions=fre_fr)
 
 ## Workflow de modèle (Salesforce)
 
 Découvrez comment configurer le connecteur source pour Salesforce CRM à l’aide du workflow de modèle. Ce workflow génère automatiquement les ressources nécessaires à l’ingestion des données de Salesforce en fonction de modèles. Cela vous permet de gagner du temps en amont et les ressources peuvent être personnalisées en fonction de vos besoins. Ce workflow n’est pas pris en charge pour tous les connecteurs source CRM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453325?learn=on&enablevpops&captions=fre_fr)
 
 Pour plus d’informations, consultez la documentation suivante :
 * [Création d&#39;une documentation de connexion par Salesforce](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=fr).

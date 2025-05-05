@@ -31,20 +31,20 @@ La fonctionnalité [Adobe Developer Console](https://developer.adobe.com/console
 >
 > Après avoir créé vos informations d’identification API, un administrateur système doit les associer à un rôle dans Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31635/?learn=on&enablevpops&captions=fre_fr)
 
 ## Générer un jeton d’accès avec Postman{#generate-an-access-token-with-postman}
 
 Utilisez les [API Adobe Identity Management Service](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) pour obtenir un jeton d’accès afin d’accéder aux API Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33190/?learn=on&enablevpops&captions=fre_fr)
 
 
 ## Interaction avec les API Experience Platform à l’aide de Postman
 
 Explorez l’interaction avec les API Adobe Experience Platform à l’aide des [collections Postman de l’API Experience Platform fournies par Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), en vous appuyant sur les [variables d’environnement Adobe Developer Console](#export-integration-details-to-postman) et le [jeton d’accès généré](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33189/?learn=on&enablevpops&captions=fre_fr)
 
 
 ## Ressources référencées dans ces vidéos

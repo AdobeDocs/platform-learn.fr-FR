@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Découvrez comment Adobe repense les audiences dans Adobe Experience Platform, notamment comment importer, créer et gérer des audiences. Pour plus d’informations, consultez la [documentation du créateur de segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423365/?learn=on&enablevpops&captions=fre_fr)

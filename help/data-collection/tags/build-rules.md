@@ -18,4 +18,4 @@ ht-degree: 37%
 
 Découvrez comment créer des règles afin d’exécuter des commandes dans des balises. Les événements et les conditions déterminent *quand* effectuer des tâches tandis que les actions déterminent *quoi* faire. Pour plus d’informations, consultez la documentation [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430490/?learn=on&enablevpops&captions=fre_fr)

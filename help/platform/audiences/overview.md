@@ -29,7 +29,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Présentation du portail et de la composition de l’audience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Présentation du portail et de la composition de l’audience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423365/?format=jpeg&nocache=1740173577252&captions=fre_fr" alt="Présentation du portail et de la composition de l’audience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Chargement d’audiences dans Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Chargement d’audiences dans Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423356/?format=jpeg&nocache=1740173577237&captions=fre_fr" alt="Chargement d’audiences dans Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="Créer des audiences" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="Créer des audiences"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31638?format=jpeg&nocache=1740173578323&captions=fre_fr" alt="Créer des audiences"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/audience-rule-builder-overview.md" title="Présentation du créateur de règles d’audience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333301/?format=jpeg&nocache=1740173578357" alt="Présentation du créateur de règles d’audience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413321/?format=jpeg&nocache=1740173578357&captions=fre_fr" alt="Présentation du créateur de règles d’audience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,7 +140,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-content-based-audiences.md" title="Créer des audiences basées sur le contenu" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333302/?format=jpeg&nocache=1740173578346" alt="Créer des audiences basées sur le contenu"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413322/?format=jpeg&nocache=1740173578346&captions=fre_fr" alt="Créer des audiences basées sur le contenu"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-conversion-audiences.md" title="Création d’audiences de conversion" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333303/?format=jpeg&nocache=1740173578309" alt="Création d’audiences de conversion"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413319/?format=jpeg&nocache=1740173578309&captions=fre_fr" alt="Création d’audiences de conversion"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="Créer des audiences dynamiques" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="Créer des audiences dynamiques"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34367?format=jpeg&nocache=1740173578383&captions=fre_fr" alt="Créer des audiences dynamiques"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="Création d’audiences d’entités multiples" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="Création d’audiences d’entités multiples"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345107?format=jpeg&nocache=1740173578335&captions=fre_fr" alt="Création d’audiences d’entités multiples"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-sequential-audiences.md" title="Créer des audiences séquentielles" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333305/?format=jpeg&nocache=1740173578395" alt="Créer des audiences séquentielles"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413323/?format=jpeg&nocache=1740173578395&captions=fre_fr" alt="Créer des audiences séquentielles"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="Création d’une composition d’audience fédérée" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="Création d’une composition d’audience fédérée"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448580/?format=jpeg&nocache=1740173579467&captions=fre_fr" alt="Création d’une composition d’audience fédérée"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -369,7 +369,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="Démo de segmentation en flux continu" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="Démo de segmentation en flux continu"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40062?format=jpeg&nocache=1740173579663&captions=fre_fr" alt="Démo de segmentation en flux continu"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -406,7 +406,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="Flux de configuration de Correspondance de segments" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="Flux de configuration de Correspondance de segments"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346705/?format=jpeg&nocache=1740173579850&captions=fre_fr" alt="Flux de configuration de Correspondance de segments"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -429,7 +429,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="Configuration de la connexion à Correspondance de segments" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="Configuration de la connexion à Correspondance de segments"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346351/?format=jpeg&nocache=1740173579840&captions=fre_fr" alt="Configuration de la connexion à Correspondance de segments"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -452,7 +452,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="Gouvernance des données de Correspondance de segments" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="Gouvernance des données de Correspondance de segments"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346358/?format=jpeg&nocache=1740173579862&captions=fre_fr" alt="Gouvernance des données de Correspondance de segments"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -475,7 +475,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="Informations sur le prépartage de Correspondance de segments" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="Informations sur le prépartage de Correspondance de segments"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346344/?format=jpeg&nocache=1740173579872&captions=fre_fr" alt="Informations sur le prépartage de Correspondance de segments"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -498,7 +498,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="Correspondance de segments recevant des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="Correspondance de segments recevant des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411140/?format=jpeg&nocache=1740173579825&captions=fre_fr" alt="Correspondance de segments recevant des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

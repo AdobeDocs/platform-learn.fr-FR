@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Découvrez comment utiliser la bibliothèque JavaScript de confidentialité pour rassembler les identités des clients dans votre application avant de les envoyer à Privacy Service. Par exemple, découvrez comment configurer l’extension de balise dans la collecte de données (anciennement Launch). Pour plus d’informations, consultez la [documentation relative aux services de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452077?learn=on&enablevpops&captions=fre_fr)

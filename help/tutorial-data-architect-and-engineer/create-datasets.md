@@ -26,7 +26,7 @@ Toutes les données correctement ingérées par Adobe Experience Platform sont c
 **Architectes de données** devront créer des jeux de données en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les jeux de données :
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34369?learn=on&enablevpops&captions=fre_fr)
 
 ## Autorisations requises
 

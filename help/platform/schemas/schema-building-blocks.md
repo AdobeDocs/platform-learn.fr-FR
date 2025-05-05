@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo passe en revue les éléments de base clés des schémas de modèle de données d’expérience (XDM), y compris les champs, les types de données, les groupes de champs de schéma, les classes et le comportement. Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413657?learn=on&enablevpops&captions=fre_fr)

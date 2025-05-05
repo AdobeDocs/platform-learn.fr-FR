@@ -19,4 +19,4 @@ ht-degree: 26%
 
 Découvrez comment gérer les données sensibles dans les flux de données.  Pour plus d’informations, voir [documentation sur les flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413102/?learn=on&enablevpops&captions=fre_fr)

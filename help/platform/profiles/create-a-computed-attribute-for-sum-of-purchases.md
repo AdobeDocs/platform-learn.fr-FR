@@ -18,4 +18,4 @@ ht-degree: 16%
 
 Découvrez comment utiliser des attributs calculés pour additionner les montants des achats effectués par un utilisateur sur plusieurs canaux de vente. Un seul client peut acheter sur votre site web, dans votre application mobile et dans votre boutique physique. Grâce à la fonctionnalité d’attributs calculés, vous pouvez additionner les montants des achats effectués par un client sur ces canaux et utiliser cette somme pour définir des audiences et pour d’autres personnalisations. Pour plus d’informations, consultez le [guide de l’interface utilisateur des attributs calculés](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=fr&).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443553?learn=on&enablevpops&captions=fre_fr)

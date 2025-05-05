@@ -17,5 +17,5 @@ ht-degree: 42%
 
 Découvrez comment la fonctionnalité des journaux d’audit peut vous aider à répondre à vos exigences de conformité et à résoudre les problèmes liés à votre implémentation Adobe Experience Platform. Pour plus d’informations, consultez la [documentation sur les journaux d’audit](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=fr) ou la [référence de l’API](https://developer.adobe.com/experience-platform-apis/references/audit-query/).
 
->[!VIDEO](https://video.tv.adobe.com/v/341450?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344646?learn=on&enablevpops&captions=fre_fr)
 

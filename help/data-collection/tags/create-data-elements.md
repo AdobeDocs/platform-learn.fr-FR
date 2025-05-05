@@ -18,4 +18,4 @@ ht-degree: 39%
 
 Découvrez comment créer des éléments de données pour stocker les valeurs extraites de votre couche de données et les rendre disponibles pour les règles et extensions dans votre propriété de balise. Pour plus d’informations, voir la documentation [éléments de données](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430478/?learn=on&enablevpops&captions=fre_fr)

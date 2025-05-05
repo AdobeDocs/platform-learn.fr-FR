@@ -17,7 +17,7 @@ ht-degree: 42%
 
 Cette vidéo explique comment diffuser des données vers Adobe Experience Platform en temps réel à l’aide du point d’entrée de l’API HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410928?learn=on&enablevpops&captions=fre_fr)
 
 ## Informations supplémentaires
 

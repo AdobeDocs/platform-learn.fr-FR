@@ -20,5 +20,5 @@ Découvrez comment la gestion du consentement dans Adobe Experience Platform Web
 >
 > Le lancement est maintenant **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437790/?learn=on&enablevpops&captions=fre_fr)
 

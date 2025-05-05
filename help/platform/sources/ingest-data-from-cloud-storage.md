@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo montre comment ingérer facilement des données par lots à partir des services d’espace de stockage dans le cloud vers le lac de données et le profil client en temps réel de Adobe Experience Platform, de manière transparente et évolutive. Pour consulter la documentation plus détaillée du produit, voir [Espace de stockage](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr#cloud-storage) sur la page Présentation des connecteurs Source ou la [documentation du connecteur source Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33156?learn=on&enablevpops&captions=fre_fr)

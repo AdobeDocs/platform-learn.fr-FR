@@ -18,4 +18,4 @@ ht-degree: 15%
 
 Découvrez comment ajouter votre couche de données à un nouveau flux de données dans la collecte de données. Découvrez également comment effectuer des fonctions de mappage de base à l’aide de la fonctionnalité Préparation des données pour la collecte de données . Pour plus d’informations, consultez la documentation [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr#data-prep).
 
->[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345564/?learn=on&enablevpops&captions=fre_fr)

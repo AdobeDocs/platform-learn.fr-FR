@@ -18,4 +18,4 @@ ht-degree: 15%
 
 Découvrez comment ajouter et configurer des extensions dans votre propriété de balise. Les extensions sont des « applications » préconfigurées que vous installez sur votre site pour vous offrir les fonctionnalités de suivi, de personnalisation ou autres dont vous avez besoin. Le marché des extensions ne cesse de se développer, à mesure qu’Adobe, les partenaires et les clients créent des extensions pour optimiser les cas d’utilisation. Pour plus d’informations, voir la documentation [extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428584/?learn=on&enablevpops&captions=fre_fr)

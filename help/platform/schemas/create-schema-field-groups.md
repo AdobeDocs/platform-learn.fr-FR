@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo montre comment créer des groupes de champs de schéma dans Adobe Experience Platform. Les groupes de champs de schéma sont des composants réutilisables qui définissent la plupart des champs dans les schémas de modèle de données d’expérience (XDM). Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/27013?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413606?learn=on&enablevpops&captions=fre_fr)

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Lors de l’envoi de profils de segment à vos partenaires d’activation, il est impératif de consulter les informations concernant le succès de ce transfert de données, en particulier afin que vous puissiez résoudre les problèmes éventuels. Cette vidéo présente deux méthodes principales pour surveiller le flux de vos segments vers les destinations. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3409722/?learn=on&enablevpops&captions=fre_fr)
 

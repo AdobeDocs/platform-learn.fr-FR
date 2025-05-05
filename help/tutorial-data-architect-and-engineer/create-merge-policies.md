@@ -31,7 +31,7 @@ Nous nous en tiendrons à l’interface utilisateur pour cette leçon, mais il e
 **Architectes de données** devront créer des politiques de fusion en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les politiques de fusion :
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345076?learn=on&enablevpops&captions=fre_fr)
 
 ## Autorisations requises
 

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Dans cette vidéo, nous allons examiner comment l’assistant AI dans Adobe Experience Platform peut vous aider à être plus efficace avec l’analyse d’impact. Les modifications apportées aux objets partagés tels que les attributs et les audiences peuvent perturber les workflows des autres équipes, compliquer les processus et risquer d’importants efforts marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441682/?learn=on&enablevpops&captions=fre_fr)

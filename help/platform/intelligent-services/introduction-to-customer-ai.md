@@ -19,4 +19,4 @@ ht-degree: 2%
 
 Présentation générale de la manière dont les professionnels du marketing peuvent utiliser l’IA dédiée aux clients pour générer des prédictions client. Pour plus d’informations, consultez la [documentation sur l’IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36471?learn=on&enablevpops&captions=fre_fr)

@@ -22,5 +22,5 @@ Le créateur de règles d’audience d’Experience Platform vous permet d’uti
 >
 > « [!UICONTROL Segments] » a été renommé « [!UICONTROL Audiences] » dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour accéder au créateur de règles présenté dans cette vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413320/?learn=on&enablevpops&captions=fre_fr)
 

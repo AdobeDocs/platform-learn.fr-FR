@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Découvrez comment ajouter des administrateurs de produit pour Adobe Experience Platform. Les administrateurs et administratrices produit gèrent le contrôle d’accès pour les applications basées sur Platform telles que Real-Time Customer Data Platform et Journey Optimizer. Ils peuvent créer des utilisateurs, des développeurs et d’autres administrateurs dans Admin Console, puis leur accorder des autorisations (et des informations d’identification d’API) dans la plateforme ou l’interface Journey Optimizer. Pour plus d’informations, consultez la [documentation sur le contrôle d’accès](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423934?learn=on&enablevpops&captions=fre_fr)
 
 >[!TIP]
 >

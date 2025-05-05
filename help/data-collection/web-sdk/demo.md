@@ -20,7 +20,7 @@ ht-degree: 62%
 
 Regardez Adobe Experience Platform Web SDK et Edge Network en action, avec un seul appel à Adobe pour envoyer des données à Experience Platform, Analytics, Audience Manager et Target. Pour plus d’informations, consultez la documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413665?learn=on&enablevpops&captions=fre_fr)
 
 >[!NOTE]
 >

@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo présente les étapes à suivre avant de commencer à créer vos schémas dans Adobe Experience Platform. Documentez vos cas d’utilisation professionnels, comprenez votre licence Platform, connaissez les mécanismes de sécurisation du produit et identifiez les données à ingérer avant de finaliser votre modèle de données. Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413630?learn=on&enablevpops&captions=fre_fr)

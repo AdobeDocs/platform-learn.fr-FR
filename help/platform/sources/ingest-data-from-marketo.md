@@ -26,13 +26,13 @@ Découvrez comment ingérer facilement des données à partir de Marketo Engage
 
 Découvrez comment configurer le connecteur source pour Marketo à l’aide du workflow de modèle. Ce workflow génère automatiquement les ressources nécessaires à l’ingestion des données de Marketo en fonction de modèles. Cela vous permet de gagner du temps en amont et les ressources peuvent être personnalisées en fonction de vos besoins.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451862?learn=on&enablevpops&captions=fre_fr)
 
 ## Workflow standard
 
 Découvrez comment configurer le connecteur source pour Marketo à l’aide du workflow standard. Le workflow standard nécessite la création initiale de schémas et d’espaces de noms d’identité.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452903?learn=on&enablevpops&captions=fre_fr)
 
 Pour plus d’informations, consultez la documentation suivante :
 * [Documentation du connecteur source Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=fr).

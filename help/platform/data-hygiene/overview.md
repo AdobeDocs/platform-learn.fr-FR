@@ -47,7 +47,7 @@ La fonctionnalité de préparation des données vous permet d’ingérer uniquem
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Préparation des données pour l’hygiène des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Préparation des données pour l’hygiène des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449277/?format=jpeg&nocache=1740251397387&captions=fre_fr" alt="Préparation des données pour l’hygiène des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Planifier des suppressions de jeux de données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Planifier des suppressions de jeux de données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430312?format=jpeg&nocache=1740251397716&captions=fre_fr" alt="Planifier des suppressions de jeux de données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Expirations de profils pseudonymes et d’événements d’expérience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Expirations de profils pseudonymes et d’événements d’expérience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449854?format=jpeg&nocache=1740251397705&captions=fre_fr" alt="Expirations de profils pseudonymes et d’événements d’expérience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443443/?format=jpeg&nocache=1740251398874&captions=fre_fr" alt="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

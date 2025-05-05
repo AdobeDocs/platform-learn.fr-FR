@@ -20,4 +20,4 @@ Découvrez comment utiliser CocoaPods et Gradle pour gérer les extensions et d�
 >
 > Le lancement est maintenant **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/40319/?learn=on&enablevpops&captions=fre_fr)

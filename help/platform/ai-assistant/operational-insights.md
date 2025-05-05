@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez comment utiliser l’assistant AI pour obtenir des informations opérationnelles sur les objets métier tels que les audiences, les jeux de données, les schémas, les destinations et les parcours dans Adobe Experience Platform
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444034/?learn=on&enablevpops&captions=fre_fr)

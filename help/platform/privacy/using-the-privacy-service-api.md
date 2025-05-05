@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Découvrez comment effectuer des appels vers des points d’entrée de l’API, y compris des listes et des recherches, la création d’une requête de tâche et la création d’une demande de consentement. Pour plus d’informations, consultez la [documentation relative aux services de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448875?learn=on&enablevpops&captions=fre_fr)

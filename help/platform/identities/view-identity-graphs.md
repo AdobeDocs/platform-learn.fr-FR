@@ -18,6 +18,6 @@ ht-degree: 1%
 
 Découvrez comment utiliser la fonctionnalité de visionneuse de graphiques d’identités pour rechercher, explorer et filtrer des graphiques d’identités à des fins de validation et de débogage. Pour plus d’informations, consultez la [documentation sur la visionneuse de graphiques d’identité](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345654?learn=on&enablevpops&captions=fre_fr)
 
 

@@ -18,4 +18,4 @@ ht-degree: 48%
 
 Découvrez comment créer et gérer des politiques d’utilisation des données dans l’interface utilisateur de Adobe Experience Platform. Les politiques d’utilisation des données vous permettent de restreindre l’utilisation des données à des fins spécifiques en fonction des libellés des données. Pour découvrir l’approche basée sur les API, voir [Créer des politiques d’utilisation des données avec l’API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/32977?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37130?learn=on&enablevpops&captions=fre_fr)

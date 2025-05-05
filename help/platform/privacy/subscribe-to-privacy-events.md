@@ -19,5 +19,5 @@ ht-degree: 21%
 
 Découvrez comment vous abonner à des événements de confidentialité pour automatiser les workflows basés sur le statut des tâches. Pour plus d’informations, consultez la [documentation relative aux services de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448174?learn=on&enablevpops&captions=fre_fr)
 

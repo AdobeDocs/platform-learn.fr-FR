@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo montre comment les architectes des données peuvent prendre leur modèle de données transactionnelles existant et le convertir en modèle de données d’expérience. Elle montre la différence dans les approches de modélisation utilisant des diagrammes entité-relation. Pour plus d’informations, consultez la [documentation sur les bonnes pratiques pour la modélisation des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413644?learn=on&enablevpops&captions=fre_fr)

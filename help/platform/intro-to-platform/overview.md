@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Obtenez un aperçu d’Experience Platform et des défis commerciaux qu’il résout.
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428494?learn=on&enablevpops&captions=fre_fr)
 
 

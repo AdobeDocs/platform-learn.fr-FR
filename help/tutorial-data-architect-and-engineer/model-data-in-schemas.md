@@ -43,7 +43,7 @@ Key terms:
 **Architectes de données** devront créer des schémas en dehors de ce tutoriel, mais **Ingénieurs de données** travailleront en étroite collaboration avec les schémas créés par l’architecte de données.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les schémas et le modèle de données d’expérience (XDM) :
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38503?learn=on&enablevpops&captions=fre_fr)
 
 >[!TIP]
 >

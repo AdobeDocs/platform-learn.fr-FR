@@ -24,4 +24,4 @@ Cette vidéo vous explique comment créer des audiences à entités multiples da
 >
 > « [!UICONTROL Segments] » a été renommé « [!UICONTROL Audiences] » dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour accéder au créateur de règles présenté dans cette vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345107?learn=on&enablevpops&captions=fre_fr)

@@ -22,4 +22,4 @@ Cette vidéo montre comment copier un schéma d’un sandbox vers un autre dans 
 >
 >Un processus beaucoup plus facile et centré sur l’interface pour déplacer des schémas et d’autres objets entre des sandbox a été introduit fin 2023. Nous vous recommandons d’utiliser à la place. Voir [Copie d’objets entre des sandbox](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413595?learn=on&enablevpops&captions=fre_fr)

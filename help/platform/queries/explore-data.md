@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Découvrez comment valider les données ingérées, prévisualiser les données et explorer les propriétés statistiques et analytiques des données à l’aide de fonctions SQL. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414055?learn=on&enablevpops&captions=fre_fr)

@@ -25,7 +25,7 @@ Une fois que vous disposez de profils clients en temps réel, vous pouvez créer
 Les **architectes des données** devront créer des segments en dehors de ce tutoriel et aider leurs collègues dans cette tâche.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur la création de segments :
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31638?learn=on&enablevpops&captions=fre_fr)
 
 
 ## Autorisations requises

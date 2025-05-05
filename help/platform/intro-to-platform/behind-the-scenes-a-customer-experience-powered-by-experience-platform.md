@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Dans la vidéo précédente, nous avons vu comment une marque exemplaire, Luma, a pu créer une expérience client riche, enrichissante et pertinente. Cette vidéo explique comment Adobe Experience Platform est utilisé pour accomplir ce parcours.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36632?learn=on&enablevpops&captions=fre_fr)
 

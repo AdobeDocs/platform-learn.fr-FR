@@ -22,5 +22,5 @@ Découvrez les principes de base de la création d’une audience d’affinité 
 >
 > « [!UICONTROL Segments] » a été renommé « [!UICONTROL Audiences] » dans l’interface de Platform. Sélectionnez **[!UICONTROL Créer une audience]** > **[!UICONTROL Créer une règle]** pour accéder au créateur de règles présenté dans cette vidéo.
 
->[!VIDEO](https://video.tv.adobe.com/v/333302/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413322/?learn=on&enablevpops&captions=fre_fr)
 

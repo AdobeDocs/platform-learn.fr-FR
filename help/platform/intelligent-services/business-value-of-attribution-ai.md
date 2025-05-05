@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Cette vidéo montre comment les professionnels du marketing peuvent mesurer et optimiser les dépenses publicitaires et marketing en comprenant l’impact de chaque interaction client sur chaque phase des parcours des clients avec Attribution AI. Pour plus d’informations, consultez la [documentation sur l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328466?learn=on&enablevpops&captions=fre_fr)
 
 

@@ -24,9 +24,9 @@ Dans cette leçon, vous allez appliquer le cadre de gouvernance des données aux
 La gouvernance des données d’Adobe Experience Platform vous permet de gérer les données clients et de garantir la conformité aux réglementations, aux restrictions et aux politiques applicables à l’utilisation des données. Elle joue un rôle essentiel dans Experience Platform à différents niveaux, notamment dans le contrôle de l’utilisation des données.
 
 Avant de commencer les exercices, regardez ces courtes vidéos sur la gouvernance des données :
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41319?learn=on&enablevpops&captions=fre_fr)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33154?learn=on&enablevpops&captions=fre_fr)
 
 <!--
 ## Permissions required

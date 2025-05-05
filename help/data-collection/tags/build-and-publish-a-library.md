@@ -18,4 +18,4 @@ ht-degree: 25%
 
 Découvrez comment créer une bibliothèque dans votre propriété de balise et transmettre les modifications par l’intermédiaire de vos environnements de développement, d’évaluation et de production. Découvrez comment utiliser plusieurs environnements de développement pour aider plusieurs équipes à mettre à jour la propriété dans des flux de travail parallèles. Pour plus d’informations, consultez la documentation [publication](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33400/?learn=on&enablevpops&captions=fre_fr)

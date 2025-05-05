@@ -17,4 +17,4 @@ ht-degree: 31%
 
 Découvrez comment surveiller le transfert d’événement dans l’interface de collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411267?learn=on&enablevpops&captions=fre_fr)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Découvrez comment ajouter des utilisateurs et gérer les autorisations pour les fonctionnalités de collecte de données de Adobe Experience Platform afin que les employés de votre société disposent de l’accès dont ils ont besoin pour faire leur travail.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33399/?learn=on&enablevpops&captions=fre_fr)

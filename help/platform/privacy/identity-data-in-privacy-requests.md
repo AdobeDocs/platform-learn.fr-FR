@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Découvrez les principaux concepts et décisions liés à l’audit des données personnelles et à la préparation en fonction des besoins de l’entreprise en matière de confidentialité. Pour plus d’informations, consultez la [documentation relative aux services de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447650?learn=on&enablevpops&captions=fre_fr)

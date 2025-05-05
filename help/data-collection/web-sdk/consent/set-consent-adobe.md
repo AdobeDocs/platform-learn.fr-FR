@@ -20,4 +20,4 @@ Découvrez comment utiliser Adobe Experience Platform Web SDK pour définir les 
 >
 > Le lancement est maintenant **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332694/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448798/?learn=on&enablevpops&captions=fre_fr)

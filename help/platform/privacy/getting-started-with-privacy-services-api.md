@@ -18,4 +18,4 @@ ht-degree: 2%
 
 Découvrez comment configurer et authentifier l’API Privacy Service. Pour plus d’informations, consultez la [documentation relative aux services de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447178?learn=on&enablevpops&captions=fre_fr)

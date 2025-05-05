@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service vous permet de mieux connaître vos c
 **Architectes de données** devront mapper les identités en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’identité dans Adobe Experience Platform :
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422771?learn=on&enablevpops&captions=fre_fr)
 
 >[!NOTE]
 >

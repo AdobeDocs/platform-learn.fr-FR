@@ -22,4 +22,4 @@ Découvrez comment configurer une connexion et utiliser le workflow pour les exp
 
 Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448820/?learn=on&enablevpops&captions=fre_fr)

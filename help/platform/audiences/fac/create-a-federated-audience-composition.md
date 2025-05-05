@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Découvrez comment créer une composition d’audience fédérée et comment créer la requête dans l’interface utilisateur qui atteindra votre entrepôt de données et sélectionnera les données appropriées. Pour plus d’informations, consultez la [documentation sur la composition d’audiences fédérées](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448580/?learn=on&enablevpops&captions=fre_fr)
