@@ -2,24 +2,24 @@
 title: 'Configuration initiale : migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Adobe Journey Optimizer - Decisioning'
 description: Découvrez et configurez les éléments fondamentaux importants requis pour l’implémentation de Platform Web SDK
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: cc2c72ec0a339254c49867c3616eb43c7c16aafa
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '380'
 ht-degree: 6%
 
 ---
 
 # Configurer la collecte de données initiale
 
-La migration de Target SDK vers Optimize SDK nécessite une configuration initiale pour permettre la capture de données, les fonctionnalités et les fonctions appropriées d’Optimize SDK. Les étapes suivantes doivent être effectuées avant toute modification de l’implémentation du site web :
+La migration de Target SDK vers Optimize SDK nécessite une configuration initiale pour permettre la capture de données, les fonctionnalités et les fonctions appropriées d’Optimize SDK. Les étapes suivantes doivent être effectuées avant toute modification de l’implémentation des applications mobiles :
 
-- [Configurez les autorisations appropriées](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} dans Adobe Admin Console pour la collecte de données
-- [Configurer un schéma XDM](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} pour transmettre des données structurées à Edge Network
-- [Configurer le schéma](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} pour recevoir les données Adobe Target
-- [Configurer un espace de noms d’identité](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} pour la personnalisation inter-appareils et la fonctionnalité mbox3rdPartyId
-- [Création d’un flux de données](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} pour activer le transfert des données d’Edge Network
-- [Configurer le flux de données](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} pour activer le transfert des données vers Adobe Target
-- [Configurer la propriété de balise](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} pour l’extension Decisioning
+- [Configurez les autorisations appropriées](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} dans Adobe Admin Console pour la collecte de données
+- [Configurer un schéma XDM](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} pour transmettre des données structurées à Edge Network
+- [Configurer le schéma](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} pour recevoir les données Adobe Target
+- [Configurer un espace de noms d’identité](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} pour la personnalisation inter-appareils et la fonctionnalité mbox3rdPartyId
+- [Création d’un flux de données](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"} pour activer le transfert des données d’Edge Network
+- [Configurer le flux de données](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} pour activer le transfert des données vers Adobe Target
+- [Configurer la propriété de balise](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} pour l’extension Decisioning
 
 ## Configuration d’extension
 
@@ -68,4 +68,4 @@ Découvrez ensuite comment [remplacer le SDK Target](replace-sdk.md).
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=fr#M625).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
