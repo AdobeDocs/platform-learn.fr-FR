@@ -4,9 +4,9 @@ description: Prise en main - Utilisation de l’application mobile
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Télécharger l’application
 
-Accédez à [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} sur votre ordinateur. Tu verras ça.
+Accédez à [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} sur votre ordinateur. Connectez-vous à l’aide de votre Adobe ID, vous verrez ceci.
 
 ![DSN ](./images/mobileapp.png)
 

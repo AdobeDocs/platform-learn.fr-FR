@@ -3,9 +3,10 @@ title: Prise en main - Adobe I/O
 description: Prise en main - Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 4%
 
 ---
@@ -21,11 +22,16 @@ Accédez à [https://developer.adobe.com/console/home](https://developer.adobe.c
 ![Nouvelle intégration Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 Veillez à sélectionner l’instance appropriée dans le coin supérieur droit de l’écran. Votre instance est `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> La capture d’écran ci-dessous montre une organisation spécifique sélectionnée. Lorsque vous parcourez ce tutoriel, il est très probable que votre organisation porte un nom différent. Lorsque vous vous êtes inscrit à ce tutoriel, les détails de l’environnement à utiliser vous ont été fournis. Veuillez suivre ces instructions.
+
 Sélectionnez ensuite **Créer un projet**.
 
 ![Nouvelle intégration Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
-### API Firefly Services
+### API FIREFLY SERVICES
 
 Vous devriez alors voir ceci. Sélectionnez **+ Ajouter au projet** et choisissez **API**.
 
@@ -35,7 +41,7 @@ Votre écran devrait ressembler à ceci.
 
 ![Nouvelle intégration Adobe I/O](./images/api1.png){zoomable="yes"}
 
-Sélectionnez **Creative Cloud** puis **Firefly - Services Firefly**, puis sélectionnez **Suivant**.
+Sélectionnez **Creative Cloud** puis choisissez **Firefly - Firefly Services**, puis sélectionnez **Suivant**.
 
 ![Nouvelle intégration Adobe I/O](./images/api3.png){zoomable="yes"}
 
@@ -43,7 +49,7 @@ Attribuez un nom à vos informations d’identification : `--aepUserLdap-- - One
 
 ![Nouvelle intégration Adobe I/O](./images/api4.png){zoomable="yes"}
 
-Sélectionnez le profil par défaut **Configuration par défaut des services Firefly** et sélectionnez **Enregistrer l’API configurée**.
+Sélectionnez le profil par défaut **Configuration Firefly Services par défaut** et sélectionnez **Enregistrer l’API configurée**.
 
 ![Nouvelle intégration Adobe I/O](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
 ![ Stockage Azure ](./images/ps2.png){zoomable="yes"}
 
-Sélectionnez **Creative Cloud** puis **Photoshop - Services Firefly**. Sélectionnez **Suivant**.
+Sélectionnez **Creative Cloud** puis **Photoshop - Firefly Services**. Sélectionnez **Suivant**.
 
 ![ Stockage Azure ](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ Sélectionnez **Suivant**.
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
-Sélectionnez **Configuration des services Firefly par défaut** et **Configuration des services Creative Cloud Automation par défaut**.
+Sélectionnez **Configuration Firefly Services par défaut** et **Configuration des services d’automatisation de Creative Cloud par défaut**.
 
 Sélectionnez **Enregistrer l’API configurée**.
 

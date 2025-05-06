@@ -4,10 +4,10 @@ description: Prise en main - Installez l’extension Chrome pour la documentatio
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## À propos de l’extension Chrome
 
-La documentation a été rendue générique afin qu’elle puisse être facilement réutilisée par n’importe qui, à l’aide de n’importe quelle instance Adobe Experience Platform.
-Pour rendre la documentation réutilisable, les **variables d’environnement** ont été introduites dans la documentation, ce qui signifie que vous trouverez les **espaces réservés** ci-dessous dans la documentation. Chaque espace réservé est une variable spécifique pour un environnement spécifique, et l’extension Chrome modifiera cette variable pour vous afin de vous permettre de copier facilement le code et le texte des pages du tutoriel et de les coller dans les différentes interfaces utilisateur que vous utiliserez dans le cadre du tutoriel.
+Ce tutoriel a été rendu générique afin qu’il puisse être facilement réutilisé par n’importe qui, à l’aide de n’importe quelle instance Adobe Experience Cloud.
+
+Pour rendre la documentation réutilisable, les **variables d’environnement** ont été introduites dans le tutoriel, ce qui signifie que vous trouverez les **espaces réservés** ci-dessous dans la documentation. Chaque espace réservé est une variable spécifique pour un environnement spécifique, et l’extension Chrome modifiera cette variable pour vous afin de vous permettre de copier facilement le code et le texte des pages du tutoriel et de les coller dans les différentes interfaces utilisateur que vous utiliserez dans le cadre du tutoriel.
 
 Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs ne peuvent pas encore être utilisées, mais dès que vous installez et activez l’extension Chrome, ces variables sont transformées en texte normal que vous pouvez copier et réutiliser.
 
 | Nom | Clé | Exemple |
 |:-------------:| :---------------:| :---------------:|
-| Identifiant de l’organisation AEP IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nom de l’organisation IMS AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| Identifiant de l’organisation IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nom de l’organisation IMS | `--aepImsOrgName--` | `Experience Platform International` |
 | ID de client AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nom du sandbox AEP | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ Dans le menu **extensions**, cliquez sur l’icône **puzzle** et épinglez l’
 
 ## Configuration de l’extension Chrome
 
-Accédez à [https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
+Accédez à [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
 
 ![DSN ](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** de cette page ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
