@@ -171,7 +171,7 @@ Notez ce qui suit dans le mappage Analytics :
 
 ## Mappage avec les données contextuelles
 
-Les données XDM transférées à Analytics sont converties en [données contextuelles](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en), y compris les champs standard et personnalisés.
+Les données XDM transférées à Analytics sont converties en [données contextuelles](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=fr), y compris les champs standard et personnalisés.
 
 La clé de données contextuelles est construite selon la syntaxe suivante :
 
