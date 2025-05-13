@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Cliquez sur la flèche pour ouvrir le menu déroulant et sélectionnez **Cloner*
 ![WF Fusion](./images/wffc2.png)
 
 Définissez le **Nom** du scénario cloné sur `--aepUserLdap-- - Firefly + Photoshop` et sélectionnez l’équipe **cible** appropriée. Cliquez sur **Ajouter** pour ajouter un nouveau webhook.
+
+>[!NOTE]
+>
+>Il se peut que l’option permettant de sélectionner une **équipe cible** ne s’affiche pas. Cette option s’affiche uniquement si vous êtes un utilisateur de plus d’une équipe dans Workfront Fusion. Si vous ne voyez pas cette option, cela signifie simplement que vous n’avez été ajouté qu’à une seule équipe. Par conséquent, aucun choix n’est nécessaire.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Collez le nom **2048x2048-background** dans la boîte de dialogue Workfront Fusi
 
 Faites défiler vers le bas jusqu’à afficher **Entrée**. Vous devez maintenant définir ce qui doit être inséré dans le calque d’arrière-plan. Dans ce cas, vous devez sélectionner la sortie du module **Adobe Firefly**, qui contient l&#39;image générée dynamiquement.
 
-Pour **Storage**, sélectionnez **External**. Pour **Emplacement du fichier**, copiez et collez la variable `{{XX.details[].url}}` à partir de la sortie du module **Adobe Firefly**. Remplacez **XX** dans la variable par le numéro de séquence du module **Adobe Firefly**, qui est dans cet exemple **22**.
+Pour **Storage**, sélectionnez **External**. Pour **Emplacement du fichier**, vous devez copier et coller la variable `{{XX.details[].url}}` à partir de la sortie du module **Adobe Firefly**, mais vous devez remplacer **XX** dans la variable par le numéro de séquence du module **Adobe Firefly**, qui dans cet exemple est **22**.
 
 ![WF Fusion](./images/wffc28.png)
 

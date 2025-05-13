@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -250,7 +250,7 @@ Vous devriez maintenant voir une invite dans Frame.io. Ne remplissez pas encore 
 
 ![E/S de trame](./images/frame38.png)
 
-Revenez à Workfront Fusion et cliquez sur la bulle dans le module **Réponse Webhook**. Sous **SORTIE**, vous verrez le corps contenant la payload JSON pour le formulaire. Cliquez de nouveau sur **Exécuter**.
+Revenez à Workfront Fusion et cliquez sur la bulle dans le module **Réponse Webhook**. Sous **ENTRÉE**, vous verrez le corps contenant la payload JSON pour le formulaire. Cliquez de nouveau sur **Exécuter**.
 
 ![E/S de trame](./images/frame40.png)
 
