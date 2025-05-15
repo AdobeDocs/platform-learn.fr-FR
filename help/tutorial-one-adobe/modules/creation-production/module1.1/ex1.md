@@ -53,7 +53,7 @@ Remplacez le type de police par une police de votre choix. Dans ce cas, le type 
 
 ![Postman](./images/ill5.png)
 
-Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points ****.
+Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points **&#x200B;**.
 
 ![Postman](./images/ill6.png)
 
