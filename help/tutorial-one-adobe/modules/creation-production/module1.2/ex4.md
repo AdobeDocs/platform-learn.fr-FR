@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Une fois tous les champs remplis, cliquez sur **Continuer**. Votre connexion ser
 
 ![WF Fusion](./images/wffcff6.png)
 
-Sélectionnez ensuite la variable **invite** fournie au scénario par le **Webhook personnalisé** entrant. Cliquez sur **OK**.
+Sélectionnez ensuite la variable **invite** fournie au scénario par le **Webhook personnalisé** entrant.
 
 ![WF Fusion](./images/wffcff7.png)
+
+Définissez ensuite la **Version du modèle** **invite** sur **image4 standard**. Cliquez sur **OK**.
+
+![WF Fusion](./images/wffcff7b.png)
 
 Avant de continuer, vous devez désactiver l&#39;ancien itinéraire dans le scénario car pour cet exercice, vous n&#39;utiliserez que le nouvel itinéraire que vous êtes en train de configurer. Pour ce faire, cliquez sur l’icône **clé à molette** entre le module **Router** et le module **Iterator**, puis sélectionnez **Désactiver l’itinéraire**.
 
@@ -261,8 +265,6 @@ Vous pouvez maintenant constater qu’un nouveau fichier PSD a été généré e
 
 ## 1.2.4.3 Modifier les calques de texte du fichier PSD
 
-### Texte De L’Appel À L’Action
-
 Ensuite, passez la souris sur le module **Adobe Photoshop - Apply PSD edits** et cliquez sur l’icône **+**.
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Sélectionnez **Modifier les calques de texte**.
 
 Vous devriez alors voir ceci. Tout d’abord, sélectionnez votre connexion Adobe Photoshop déjà configurée, qui doit être nommée `--aepUserLdap-- Adobe IO`.
 
-Vous devez maintenant définir l’emplacement du fichier **Input**, qui est la sortie de l’étape précédente. Sous **Calques**, vous devez saisir le **Nom** du calque de texte à modifier.
+Vous devez maintenant définir l’emplacement du fichier **Input**, qui est la sortie de l’étape précédente. Sous **Calques**, vous devez cliquer sur **+ Ajouter un élément** pour chaque calque pour lequel le texte doit être modifié.
 
 ![WF Fusion](./images/wffc37.png)
 
-Pour le **Fichier d’entrée**, sélectionnez **Azure** pour le **Stockage de fichier d’entrée** et veillez à sélectionner la sortie de la requête précédente, **Adobe Photoshop - Appliquer les modifications de PSD**, que vous pouvez prendre à partir d’ici : `data[]._links.renditions[].href`
+Pour le **Fichier d’entrée**, sélectionnez **Azure** pour le **Stockage de fichier d’entrée** et veillez à sélectionner la sortie de la requête précédente, **Adobe Photoshop - Appliquer les modifications de PSD**, que vous pouvez définir comme suit : ``{{XX.data[].`_links`.renditions[].href}}`` (remplacez XX par le numéro de séquence du module précédent Adobe Photoshop - Appliquer les modifications de PSD).
+
+Cliquez ensuite sur **+Ajouter un élément** sous **Calques** pour commencer à ajouter les calques de texte à mettre à jour.
 
 ![WF Fusion](./images/wffc37a.png)
 
-Ouvrez le fichier **citisignal-fibre.psd**. Dans le fichier , vous remarquerez que le calque contenant l’appel à l’action est nommé **2048x2048-cta**.
+Il y a 2 modifications à apporter, le texte CTA et le texte du bouton dans le fichier **citisignal-fibre.psd** doivent être mis à jour.
+
+Pour trouver les noms des calques, ouvrez le fichier **citisignal-fibre.psd**. Dans le fichier , vous remarquerez que le calque contenant l’appel à l’action est nommé **2048x2048-cta**.
 
 ![WF Fusion](./images/wffc38.png)
 
-Saisissez le nom **2048x2048-cta** sous **Nom** dans la boîte de dialogue.
+Dans le fichier **citisignal-fibre.psd**, vous remarquerez également que le calque contenant le call to action est nommé **2048x2048-button-text**.
+
+![WF Fusion](./images/wffc44.png)
+
+Vous devez d’abord configurer les modifications qui doivent être apportées à la couche **2048x2048-cta**. Saisissez le nom **2048x2048-cta** sous **Nom** dans la boîte de dialogue.
 
 ![WF Fusion](./images/wffc39.png)
 
-Faites défiler vers le bas jusqu’à afficher **Texte** > **Contenu**. Sélectionnez la variable **cta** dans la payload du Webhook.
+Faites défiler vers le bas jusqu’à afficher **Texte** > **Contenu**. Sélectionnez la variable **cta** dans la payload du Webhook. Cliquez sur **Ajouter**.
 
 ![WF Fusion](./images/wffc40.png)
 
-Faites défiler jusqu’à afficher **Output**. Pour **Stockage**, sélectionnez **Azure**. Pour **Emplacement du fichier**, saisissez l’emplacement ci-dessous. Notez l’ajout de la variable `{{timestamp}}` au nom de fichier. Celle-ci est utilisée pour s’assurer que chaque fichier généré a un nom unique. Définissez également la variable **Type** sur **vnd.adobe.photoshop**. Cliquez sur **OK**.
+Vous devriez alors voir ceci. Cliquez sur **+Ajouter un élément** sous **Calques** pour commencer à ajouter les calques de texte à mettre à jour.
+
+![WF Fusion](./images/wffc40a.png)
+
+Saisissez le nom **2048x2048-button-text** sous **Name** dans la boîte de dialogue.
+
+![WF Fusion](./images/wffc40b.png)
+
+Faites défiler vers le bas jusqu’à afficher **Texte** > **Contenu**. Sélectionnez la variable **button** dans la payload Webhook. Cliquez sur **Ajouter**.
+
+![WF Fusion](./images/wffc40c.png)
+
+Vous devriez alors voir ceci.
+
+![WF Fusion](./images/wffc40d.png)
+
+Faites défiler jusqu’à afficher **Output**. Pour **Stockage**, sélectionnez **Azure**. Pour **Emplacement du fichier**, saisissez l’emplacement ci-dessous. Notez l’ajout de la variable `{{timestamp}}` au nom de fichier. Celle-ci est utilisée pour s’assurer que chaque fichier généré a un nom unique. Définissez également la variable **Type** sur **vnd.adobe.photoshop**.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### Texte du bouton
+Définissez **Type** sur **vnd.adobe.photoshop**. Cliquez sur **OK**.
 
-Cliquez avec le bouton droit sur le module que vous venez de créer et sélectionnez **Cloner**. Un second module similaire sera créé.
-
-![WF Fusion](./images/wffc42.png)
-
-Connectez le module cloné au module **Adobe Photoshop - Modifier les calques de texte** précédent.
-
-![WF Fusion](./images/wffc42a.png)
-
-Vous devriez alors voir ceci. Tout d’abord, sélectionnez votre connexion Adobe Photoshop déjà configurée, qui doit être nommée `--aepUserLdap-- Adobe IO`.
-
-Vous devez maintenant définir l’emplacement du fichier **Input**, qui est la sortie de l’étape précédente. Sous **Calques**, vous devez saisir le **Nom** du calque de texte à modifier.
-
-![WF Fusion](./images/wffc43.png)
-
-Pour le **fichier d’entrée**, sélectionnez **Azure** pour le **stockage de fichier d’entrée** et veillez à sélectionner la sortie de la requête précédente, **Adobe Photoshop - Modifier les calques de texte**, que vous pouvez prendre à partir d’ici : `data[]._links.renditions[].href`
-
-Ouvrez le fichier **citisignal-fibre.psd**. Dans le fichier , vous remarquerez que le calque contenant l’appel à l’action est nommé **2048x2048-button-text**.
-
-![WF Fusion](./images/wffc44.png)
-
-Saisissez le nom **2048x2048-button-text** sous **Name** dans la boîte de dialogue.
-
-![WF Fusion](./images/wffc43.png)
-
-Faites défiler vers le bas jusqu’à afficher **Texte** > **Contenu**. Sélectionnez la variable **button** dans la payload Webhook.
-
-![WF Fusion](./images/wffc45.png)
-
-Faites défiler jusqu’à afficher **Output**. Pour **Stockage**, sélectionnez **Azure**. Pour **Emplacement du fichier**, saisissez l’emplacement ci-dessous. Notez l’ajout de la variable `{{timestamp}}` au nom de fichier. Celle-ci est utilisée pour s’assurer que chaque fichier généré a un nom unique. Définissez également la variable **Type** sur **vnd.adobe.photoshop**. Cliquez sur **OK**.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -369,9 +363,13 @@ Vous devriez alors voir ceci. Collez la payload ci-dessous dans **Body**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Copiez et collez la variable `{{XX.data[]._links.renditions[].href}}` et remplacez **XX** par le numéro de séquence du dernier module **Adobe Photoshop - Modifier les calques de texte**, qui est dans ce cas **25**. Cochez la case **Afficher les paramètres avancés** puis cliquez sur **Ajouter un élément**.
+Copiez et collez la variable `{{XX.data[]._links.renditions[].href}}` et remplacez **XX** par le numéro de séquence du dernier module **Adobe Photoshop - Modifier les calques de texte**, qui est dans ce cas **30**.
 
 ![WF Fusion](./images/wffc52.png)
+
+Cochez la case **Afficher les paramètres avancés** puis cliquez sur **Ajouter un élément**.
+
+![WF Fusion](./images/wffc52b.png)
 
 Dans le champ **Clé**, saisissez `Content-Type`. Dans le champ **Valeur**, saisissez `application/json`. Cliquez sur **Ajouter**.
 
