@@ -24,7 +24,7 @@ ht-degree: 17%
 
 Découvrez comment les règles de liaison de graphiques d’identités aident les architectes de données à maintenir des profils client précis et à éviter la réduction du graphique. Pour plus d’informations, consultez la documentation [règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448274/?learn=on&enablevpops&captions=fre_fr)
 
 ## Configuration
 
@@ -41,7 +41,7 @@ Découvrez comment simuler et appliquer vos règles.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Règles de liaison des graphiques d’identités - Simulation de graphique" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444045/?format=jpeg&nocache=1747355376342&captions=fre_fr" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
