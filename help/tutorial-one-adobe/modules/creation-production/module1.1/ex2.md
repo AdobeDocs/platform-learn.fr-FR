@@ -6,22 +6,58 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1918'
 ht-degree: 1%
 
 ---
 
 # 1.1.2 Optimisez votre processus Firefly à l’aide de Microsoft Azure et des URL présignées.
 
-Découvrez comment optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies.
+Découvrez comment optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL présignées.
 
-## 1.1.2.1 Créer un abonnement Azure
+## 1.1.2.1 Que sont les URL présignées ?
+
+Une URL présignée est une URL qui vous accorde un accès temporaire à un objet spécifique dans un emplacement de stockage. En utilisant l’URL, un utilisateur peut par exemple LIRE l’objet ou ÉCRIRE un objet (ou mettre à jour un objet existant). L’URL contient des paramètres spécifiques définis par votre application.
+
+Dans le contexte de la création de l’automatisation de la chaîne d’approvisionnement du contenu, plusieurs opérations de fichiers doivent souvent se produire pour un cas d’utilisation spécifique. Par exemple, il se peut que l’arrière-plan d’un fichier doive être modifié, que le texte de différents calques doive être modifié, etc. Il n’est pas toujours possible d’effectuer toutes les opérations de fichier en même temps, ce qui rend nécessaire une approche à plusieurs étapes. Après chaque étape intermédiaire, la sortie est alors un fichier temporaire qui est nécessaire pour que l’étape suivante soit exécutée. Une fois cette étape suivante exécutée, le fichier temporaire perd rapidement de la valeur et n’est souvent plus nécessaire, il doit donc être supprimé.
+
+Adobe Firefly Services prend actuellement en charge les domaines suivants :
+
+- Amazon AWS : *.amazonaws.com
+- Microsoft Azure : *.windows.net
+- Dropbox : *.dropboxusercontent.com
+
+La raison pour laquelle des solutions de stockage dans le cloud sont souvent utilisées, c’est que les ressources intermédiaires en cours de création perdent rapidement de la valeur. Le problème résolu par les URL présignées est souvent mieux résolu avec une solution de stockage de ressources, qui est généralement l’un des services cloud ci-dessus.
+
+L’écosystème Adobe comprend également des solutions de stockage, telles que Frame.io, Workfront Fusion et Adobe Experience Manager Assets. Ces solutions prennent également en charge les URL présignées, ce qui fait qu’il s’agit souvent d’un choix à effectuer lors de la mise en œuvre. Le choix est alors souvent basé sur une combinaison d&#39;applications déjà disponibles et de coûts de stockage.
+
+Par conséquent, les URL présignées sont utilisées conjointement avec les opérations Adobe Firefly Services pour les raisons suivantes :
+
+- les entreprises ont souvent besoin de traiter plusieurs modifications apportées à la même image à des étapes intermédiaires, ce qui nécessite un stockage intermédiaire.
+- L’accès à la lecture et à l’écriture à partir des emplacements d’espace de stockage dans le cloud doit être sécurisé. Dans un environnement côté serveur, il n’est pas possible de se connecter manuellement. La sécurité doit donc être directement intégrée à l’URL.
+
+Une URL présignée utilise trois paramètres pour limiter l’accès à l’utilisateur :
+
+- Emplacement de stockage : il peut s’agir d’un emplacement de compartiment AWS S3, d’un emplacement de compte de stockage Microsoft Azure avec conteneur
+- Nom de fichier : le fichier spécifique qui doit être lu, mis à jour, supprimé.
+- Paramètre de chaîne de requête : un paramètre de chaîne de requête commence toujours par un point d’interrogation et est suivi d’une série complexe de paramètres
+
+Exemple :
+
+- **Amazon AWS** : `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure** : `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Créer un abonnement Azure
 
 >[!NOTE]
 >
 >Si vous disposez déjà d’un abonnement Azure, vous pouvez ignorer cette étape. Dans ce cas, veuillez procéder au prochain exercice.
+
+>[!NOTE]
+>
+>Si vous suivez ce tutoriel dans le cadre d’un atelier guidé en personne ou d’une formation guidée à la demande, vous avez probablement déjà accès à un compte de stockage Azure Microsoft. Dans ce cas, vous n’avez pas besoin de créer votre propre compte. Veuillez utiliser le compte qui vous a été fourni dans le cadre de la formation.
 
 Accédez à [https://portal.azure.com](https://portal.azure.com){target="_blank"} et connectez-vous avec votre compte Azure. Si vous n’en avez pas, veuillez utiliser votre adresse e-mail personnelle pour créer votre compte Azure.
 
@@ -43,7 +79,7 @@ Une fois le processus d’abonnement terminé, tout est prêt.
 
 ![ Stockage Azure ](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Créer Un Compte De Stockage Azure
+## 1.1.2.3 Créer Un Compte De Stockage Azure
 
 Recherchez `storage account` puis sélectionnez **Comptes de stockage**.
 
@@ -85,7 +121,7 @@ Votre conteneur est maintenant prêt à être utilisé.
 
 ![ Stockage Azure ](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Installer l’explorateur de stockage Azure
+## 1.1.2.4 Installer l’explorateur de stockage Azure
 
 [Téléchargez l’explorateur de stockage Azure Microsoft pour gérer vos fichiers](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Sélectionnez la version appropriée pour votre système d’exploitation spécifique, téléchargez-la et installez-la.
 
@@ -127,7 +163,7 @@ Ouvrez **Conteneurs Blob** puis sélectionnez le conteneur que vous avez créé 
 
 ![ Stockage Azure ](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 Chargement manuel du fichier et utilisation d’un fichier image comme référence de style
+## 1.1.2.5 Chargement manuel du fichier et utilisation d’un fichier image comme référence de style
 
 Chargez un fichier image de votre choix ou [ce fichier](./images/gradient.jpg){target="_blank"} dans le conteneur.
 
@@ -166,7 +202,7 @@ Une autre image apparaît avec `horses in a field`, mais cette fois, le style es
 
 ![ Stockage Azure ](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5 Chargement de fichier par programmation
+## 1.1.2.6 Chargement de fichier par programmation
 
 Pour utiliser le chargement de fichiers par programmation avec des comptes de stockage Azure, vous devez créer un jeton **Signature d’accès partagé (SAS)** avec des autorisations qui vous permettent d’écrire un fichier.
 
@@ -247,7 +283,7 @@ De retour dans l’explorateur de stockage Azure, actualisez le contenu de votre
 
 ![ Stockage Azure ](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 Utilisation des fichiers par programmation
+## 1.1.2.7 Utilisation des fichiers par programmation
 
 Pour lire par programmation les fichiers des comptes de stockage Azure à long terme, vous devez créer un jeton **Signature d’accès partagé (SAS)** avec des autorisations qui vous permettent de lire un fichier. Techniquement, vous pouvez utiliser le jeton SAS créé dans l’exercice précédent, mais il est recommandé d’avoir un jeton distinct avec uniquement des autorisations **Lecture** et un jeton distinct avec uniquement des autorisations **Écriture**.
 
