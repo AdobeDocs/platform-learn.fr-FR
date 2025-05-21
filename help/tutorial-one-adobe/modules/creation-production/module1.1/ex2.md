@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1942'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,13 @@ Ouvrez **Conteneurs Blob** puis sélectionnez le conteneur que vous avez créé 
 ## 1.1.2.5 Chargement manuel du fichier et utilisation d’un fichier image comme référence de style
 
 Chargez un fichier image de votre choix ou [ce fichier](./images/gradient.jpg){target="_blank"} dans le conteneur.
+
+>[!NOTE]
+>
+>Lorsque vous utilisez des images comme référence de style, référence de composition ou image de masque, les types d’image suivants sont acceptés :
+>- image/jpeg
+>- image/png
+>- image/webp
 
 ![ Stockage Azure ](./images/gradient.jpg)
 

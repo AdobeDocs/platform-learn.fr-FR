@@ -6,16 +6,31 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Prise en main de Firefly Services
 
-Découvrez comment utiliser Postman et Adobe I/O pour interroger les API Adobe Firefly Services.
+Firefly Services comprend **les API Firefly** **les API Lightroom**, **les API Photoshop** **les API InDesign** et **les API de balisage de contenu**.
+
+Ces suites d’API associent la puissance des outils de création d’Adobe tels que Photoshop et Lightroom à des fonctionnalités d’IA/ML de pointe telles que le balisage de contenu, le remplissage génératif, la conversion de texte en image, etc.
+
+Avec Firefly Services, vous ne vous contentez pas de créer : vous automatisez, dimensionnez votre production de contenu et exploitez les dernières technologies d’IA/ML pour booster vos workflows.
+
+Dans cet exercice, vous apprendrez à utiliser Postman et Adobe I/O pour travailler avec les différentes API de Adobe Firefly Services.
+
+Cet exercice se concentre spécifiquement sur les API Firefly, telles que :
+
+- **API Firefly Generate Images** : cette API est utilisée pour générer des images à l’aide de modèles de Firefly
+- **API Firefly Generate similar Images** : cette API est utilisée pour générer des images similaires à une image déjà existante
+- **API Expand Image de Firefly** : cette API est utilisée pour développer une image existante pour obtenir un plus grand format/taille
+- **API Firefly Fill Image** : cette API remplit une zone d’une image existante en fonction des images générées par Firefly en fonction de votre invite. Pour ce faire, utilisez un masque qui définit la zone à remplir.
+- **API Generate Object Composite de Firefly** : cette API vous permet de fournir vous-même une image d’entrée, qui combine ensuite votre image avec des images générées par Firefly pour créer une image composite, ou scène.
+- **API de modèles personnalisés Firefly** : cette API vous permet d’utiliser vos propres modèles personnalisés Firefly afin de générer de nouvelles images en fonction de votre modèle personnalisé Firefly
 
 ## Conditions préalables 1.1.1.1
 
@@ -83,7 +98,7 @@ Remplacez le type de police par une police de votre choix. Dans ce cas, le type 
 
 ![Postman](./images/ill5.png)
 
-Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points **&#x200B;**.
+Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points ****.
 
 ![Postman](./images/ill6.png)
 
@@ -216,7 +231,7 @@ Dans l’exercice suivant, vous ferez des choses similaires avec Firefly Service
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-Dans la collection **Adobe IO - OAuth**, sélectionnez la requête nommée **POST - Obtenir le jeton d’accès** et sélectionnez **Envoyer**. La réponse doit contenir un nouveau **accestoken**.
+Dans la collection **Adobe IO - OAuth**, sélectionnez la requête nommée **POST - Obtenir le jeton d’accès** et sélectionnez **Envoyer**. La réponse doit contenir un nouveau **access_token**.
 
 ![Postman](./images/ioauthresp.png)
 
@@ -224,13 +239,26 @@ Dans la collection **Adobe IO - OAuth**, sélectionnez la requête nommée **POS
 
 Maintenant que vous disposez d’un nouveau jeton d’accès valide, vous êtes prêt à envoyer votre première requête aux API Firefly Services.
 
-Sélectionnez la requête nommée **POST - Firefly - T2I V3** dans la collection **FF - Firefly Services Tech Insiders** . Accédez à la **Corps** et vérifiez l’invite. Cliquez sur **Envoyer**.
-
-La requête que vous utilisez ici est une requête **synchrone** qui vous fournit une réponse contenant l’image demandée en quelques secondes.
+La requête que vous utiliserez ici est une requête **synchrone** qui vous fournit une réponse contenant l’image demandée dans les quelques secondes qui suivent.
 
 >[!NOTE]
 >
 >Avec la publication des versions Firefly Image 4 et Image 4 Ultra, les requêtes synchrones seront abandonnées au profit des requêtes asynchrones. Vous trouverez des exercices sur les requêtes asynchrones plus bas dans ce tutoriel.
+
+Sélectionnez la requête nommée **POST - Firefly - T2I V3** dans la collection **FF - Firefly Services Tech Insiders** . Accédez à **En-têtes** et vérifiez les combinaisons de paire clé/valeur.
+
+| Clé | Valeur |
+|:-------------:| :---------------:| 
+| `x-api-key` | `{{API_KEY}}` |
+| `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
+
+Les deux valeurs de cette requête font référence à des variables d’environnement qui ont été définies au départ. `{{API_KEY}}` fait référence au champ **ID client** de votre projet Adobe I/O. Dans le cadre de la section **Prise en main** de ce tutoriel, vous l’avez configuré dans Postman.
+
+La valeur du champ **Autorisation** est un peu spéciale : `Bearer {{ACCESS_TOKEN}}`. Il contient une référence au **jeton d’accès** que vous avez généré à l’étape précédente. Lorsque vous avez reçu votre **jeton d’accès** à l’aide de la requête **POST - Get Access Token** dans la collection **Adobe IO - OAuth**, un script s’est exécuté dans Postman qui a stocké le champ **access_token** en tant que variable d’environnement, qui est maintenant référencée dans la requête **POST - Firefly - T2I V3**. Veuillez noter l&#39;ajout spécifique du mot **porteur** et d&#39;un espace avant le `{{ACCESS_TOKEN}}`. Le porteur de mot est sensible à la casse et l’espace est requis. Si cette opération n’est pas effectuée correctement, Adobe I/O renvoie une erreur **401 Non autorisé**, car il ne pourra pas traiter correctement votre **jeton d’accès**.
+
+![Firefly](./images/ff0.png)
+
+Ensuite, accédez à la **Corps** et vérifiez l’invite. Cliquez sur **Envoyer**.
 
 ![Firefly](./images/ff1.png)
 
@@ -400,6 +428,30 @@ Vous verrez ensuite le rapport de statut du traitement de génération d’image
 Vous devriez alors voir une image hyperréaliste de **chevaux dans un champ**.
 
 ![Firefly](./images/ffim4_16.png)
+
+### Invitation négative
+
+Si vous souhaitez demander à Firefly de ne pas inclure quelque chose dans l’image qui sera générée, vous pouvez inclure le champ `negativePrompt` lors de l’utilisation de l’API (cette option n’est actuellement pas exposée à l’interface utilisateur). Par exemple, si vous ne souhaitez pas que des fleurs soient incluses lors de l’exécution de l’invite **chevaux dans un champ**, vous pouvez la spécifier dans le **corps** de votre requête API :
+
+```
+"negativePrompt": "no flowers",
+```
+
+Accédez à la requête **POST - Firefly - T2I V4** dans la collection **FF - Firefly Services Tech Insiders** et accédez au **Corps** de la requête. Collez le texte ci-dessus dans le corps de la requête. Cliquez sur **Envoyer**.
+
+![Firefly](./images/ffim4_17.png)
+
+Vous devriez alors voir ceci.
+
+![Firefly](./images/ffim4_18.png)
+
+Pour vérifier le rapport de statut de votre tâche en cours d’exécution, sélectionnez la requête nommée **GET - Firefly - Obtenir le rapport de statut** dans la collection **FF - Firefly Services Tech Insiders**. Cliquez pour l’ouvrir, puis cliquez sur **Envoyer**. Sélectionnez l’URL de l’image générée et ouvrez-la dans votre navigateur.
+
+![Firefly](./images/ffim4_19.png)
+
+Vous verrez alors l’image générée, qui ne devrait pas contenir de fleurs.
+
+![Firefly](./images/ffim4_20.png)
 
 ## Étapes suivantes
 
