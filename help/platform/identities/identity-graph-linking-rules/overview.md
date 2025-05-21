@@ -9,22 +9,18 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 17%
+source-wordcount: '183'
+ht-degree: 20%
 
 ---
 
 # Vue d’ensemble des règles de liaison des graphiques d’identités
 
->[!AVAILABILITY]
->
->Les règles de liaison de graphiques d’identités sont actuellement en disponibilité limitée. Contactez l’équipe de votre compte Adobe pour plus d’informations sur l’accès à la fonctionnalité dans les sandbox de développement.
+Découvrez comment les règles de liaison de graphiques d’identités aident les architectes de données à maintenir des profils client précis et à éviter la réduction du graphique. Pour plus d’informations, consultez la documentation [règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
-Découvrez comment les règles de liaison de graphiques d’identités aident les architectes de données à maintenir des profils client précis et à éviter la réduction du graphique. Pour plus d’informations, consultez la documentation [règles de liaison de graphiques d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
-
->[!VIDEO](https://video.tv.adobe.com/v/3448274/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
 ## Configuration
 
@@ -41,7 +37,7 @@ Découvrez comment simuler et appliquer vos règles.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Règles de liaison des graphiques d’identités - Simulation de graphique" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444045/?format=jpeg&nocache=1747355376342&captions=fre_fr" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
