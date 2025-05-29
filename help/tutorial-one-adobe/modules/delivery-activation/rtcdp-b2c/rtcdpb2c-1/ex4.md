@@ -4,9 +4,9 @@ description: Foundation - Profil client en temps réel - Créer une audience - I
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Sélectionnez **Créer une règle** puis cliquez sur **Créer**.
 
 ![Segmentation](./images/menusegbr.png)
 
-Une fois que vous êtes dans le nouveau créateur d’audiences, vous remarquerez immédiatement l’option de menu **Attributs** et la référence **Profil individuel XDM**.
+Une fois que vous êtes dans le créateur d’audiences, vous remarquez immédiatement l’option de menu **Attributs** et la référence **Profil individuel XDM**.
 
 ![Segmentation](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ Le paramètre de comparaison doit être **égal à** et dans le champ de saisie,
 
 ![Segmentation](./images/pv.png)
 
+Définissez la condition de temps sur votre segment sur **Au cours des dernières 24 heures**.
+
+![Segmentation](./images/pv1.png)
+
 Chaque fois que vous ajoutez un élément au créateur d’audiences, vous pouvez cliquer sur le bouton **Actualiser l’estimation** pour obtenir une nouvelle estimation de la population de votre audience.
 
 Jusqu’à présent, vous n’avez utilisé que l’interface utilisateur pour créer votre audience, mais il existe également une option de code pour créer une audience.
@@ -102,7 +106,7 @@ Vous pouvez également prévisualiser un exemple de profils client qui font part
 ![Segmentation](./images/previewprofilesdtl.png)
 
 Enfin, donnons un nom à votre audience.
-définissez la **Méthode d’évaluation** sur **Diffusion en continu**, puis cliquez sur **Publier**.
+définissez la **Méthode d’évaluation** sur **Edge** puis cliquez sur **Publier**.
 
 Comme convention de nommage, utilisez :
 

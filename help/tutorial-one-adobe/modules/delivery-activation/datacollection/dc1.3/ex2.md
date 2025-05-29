@@ -4,10 +4,10 @@ description: Foundation - AEC - Création de schémas, de modèles de données e
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 6%
+source-wordcount: '683'
+ht-degree: 7%
 
 ---
 
@@ -67,7 +67,7 @@ Dans le menu de gauche, cliquez sur **Modèles** puis accédez à **Schémas**. 
 
 ![AAAA](./images/fdb5.png)
 
-Sélectionnez votre base de données fédérée et cliquez sur **+ Ajouter des tables**.
+Sélectionnez votre base de données fédérée et cliquez sur **Suivant**.
 
 ![AAAA](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Tu verras ça. Sélectionnez les 5 tables que vous avez créées précédemment 
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Cliquez sur **Ajouter**.
+Cliquez sur **Suivant**.
 
 ![AAAA](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Pour chaque tableau, vous pouvez effectuer les actions suivantes :
 
 Pour cet exercice, aucune modification n’est nécessaire.
 
-Cliquez sur **Créer**.
+Cliquez sur **Terminé**.
 
 ![AAAA](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ Vous verrez alors ceci, avec la possibilité de modifier la configuration. Cliqu
 
 ![AAAA](./images/fdb10.png)
 
-Vous verrez ensuite un échantillon des données.
+Vous verrez ensuite un échantillon des données. Ces données sont chargées directement depuis Snowflake et ne sont pas conservées dans AEP.
 
 ![AAAA](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Tu verras ça. Cliquez sur **Enregistrer**.
 
 Vous pouvez maintenant commencer à définir des liens entre les schémas. Pour commencer à définir un lien, vous devez cliquer sur **Créer des liens**.
 
-![AAAA](./images/fdb16.png)
+![AAAA](./images/fdb16a.png)
 
-Tout d’abord, définissons le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_PERSONS`.
+Tout d’abord, vous devez définir le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_PERSONS`.
 
 Cliquez sur **Ajouter**.
 
@@ -150,7 +150,9 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 
 ![AAAA](./images/fdb17.png)
 
-Définissons ensuite le lien entre le `--aepUserLdap--_HOUSEHOLDS` de la table et `--aepUserLdap--_PERSONS`.
+Vous devez ensuite définir le lien entre le `--aepUserLdap--_HOUSEHOLDS` de la table et `--aepUserLdap--_PERSONS`.
+
+Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 
 ![AAAA](./images/fdb20.png)
 
-Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+Vous devez ensuite définir le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+
+Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb21.png)
-
 
 ### UTILISATEURS - FOYERS
 
@@ -171,7 +174,9 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 
 ![AAAA](./images/fdb22.png)
 
-Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_HOUSEHOLDS`.
+Vous devez ensuite définir le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_HOUSEHOLDS`.
+
+Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Tu seras de retour ici. Cliquez sur **Créer des liens** pour créer un autre li
 
 ![AAAA](./images/fdb24.png)
 
-Définissons ensuite le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_MOBILE_DATA_USAGE`.
+Vous devez ensuite définir le lien entre le `--aepUserLdap--_USERS` de la table et `--aepUserLdap--_MOBILE_DATA_USAGE`.
+
+Cliquez sur **Ajouter**.
 
 ![AAAA](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Vous devriez alors voir ceci. Cliquez sur **Enregistrer**.
 
 ![AAAA](./images/fdb26.png)
 
-Votre configuration dans AEP est maintenant terminée. Vous pouvez maintenant commencer à utiliser vos données fédérées dans une composition d’audience fédérée.
+La configuration de votre base de données fédérée dans Adobe Experience Platform est maintenant terminée. Vous pouvez maintenant commencer à utiliser vos données fédérées dans une composition d’audience fédérée.
 
 ## Étapes suivantes
 

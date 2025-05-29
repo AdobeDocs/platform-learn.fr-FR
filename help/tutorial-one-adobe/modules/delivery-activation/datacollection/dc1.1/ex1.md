@@ -4,9 +4,9 @@ description: Foundation - Configuration de la collecte de données Adobe Experie
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,13 @@ Les marques utilisent la collecte de données Adobe Experience Platform pour un 
 
 ## Explorer l’interface utilisateur
 
-Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/#/data-collection/).
+Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/#/data-collection/). Assurez-vous que vous utilisez l’environnement correct, qui doit être `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+>Ce tutoriel est documenté à l’aide de l’environnement **Experience Platform International**. Le nom de votre environnement est probablement différent. Par conséquent, chaque fois que vous voyez le nom **Experience Platform International** dans une capture d’écran, vous devez le remplacer par le nom de votre propre environnement, qui doit être `--aepImsOrgName--`.
+
+![Vue Propriétés de Launch](./images/launch0.png)
 
 Accédez à **Balises**. La vue **[!UICONTROL Propriétés]** s’affiche maintenant. Les propriétés répertoriées ici servent à la gestion de tutoriels. Ces propriétés représentent :
 
