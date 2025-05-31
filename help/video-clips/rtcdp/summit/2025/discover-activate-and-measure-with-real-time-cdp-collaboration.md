@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez les principales fonctionnalités d’Adobe Real-Time CDP Collaboration : découverte d’audiences, activation sécurisée et mesure des performances.
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460168/?learn=on&enablevpops=true&captions=fre_fr)

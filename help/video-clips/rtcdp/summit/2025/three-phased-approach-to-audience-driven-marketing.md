@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez un cadre simple en trois phases pour créer, mettre à l’échelle et optimiser des stratégies d’audience à l’aide de Real-Time CDP.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462992/?learn=on&enablevpops=true&captions=fre_fr)

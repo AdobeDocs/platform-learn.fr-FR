@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment Adobe utilise des informations basées sur les données et AJO pour améliorer l’intégration des membres et stimuler la fidélisation.
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459640/?learn=on&enablevpops=true&captions=fre_fr)

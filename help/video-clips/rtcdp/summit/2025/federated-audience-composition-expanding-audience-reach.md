@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment la composition de l’audience fédérée vous permet de connecter des entrepôts de données externes à Real-Time CDP pour un marketing en temps réel.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459793/?learn=on&enablevpops=true&captions=fre_fr)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez les six phases du processus d’activation de bout en bout des cas d’utilisation d’Adobe, de l’idéation à l’optimisation.
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460244/?learn=on&enablevpops=true&captions=fre_fr)

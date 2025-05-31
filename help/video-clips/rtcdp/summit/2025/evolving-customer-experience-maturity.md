@@ -20,4 +20,4 @@ ht-degree: 0%
 Explorez l’analyse, la marche, le framework d’exécution pour faire progresser la personnalisation des données, de l’audience, du parcours, des mesures et du contenu.
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460169/?learn=on&enablevpops=true&captions=fre_fr)

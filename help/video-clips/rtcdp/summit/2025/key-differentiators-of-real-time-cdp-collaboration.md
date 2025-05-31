@@ -20,4 +20,4 @@ ht-degree: 0%
 Explorez les fonctionnalités uniques d’Adobe Real-Time CDP Collaboration, notamment son interface utilisateur conviviale pour les marketeurs, son interopérabilité et sa conception centrée sur la confidentialité.
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460543/?learn=on&enablevpops=true&captions=fre_fr)

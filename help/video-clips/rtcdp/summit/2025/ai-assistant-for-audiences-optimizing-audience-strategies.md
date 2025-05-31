@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment l’assistant AI pour les audiences permet d’identifier les segments à forte valeur ajoutée, d’optimiser les stratégies d’audience et de gagner du temps.
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459662/?learn=on&enablevpops=true&captions=fre_fr)

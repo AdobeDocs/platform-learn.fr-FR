@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment les fonctionnalités d’IA prédictive d’Adobe dans Real-Time CDP aident les marketeurs à optimiser la segmentation, la personnalisation et les informations sur les audiences.
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459958/?learn=on&enablevpops=true&captions=fre_fr)

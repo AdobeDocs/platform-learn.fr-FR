@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez la prochaine ère d’innovation GenAI avec Adobe Agent Orchestrator, qui offrira des expériences client hyper-personnalisées en temps réel.
 
 <!-- 62_S653_3442539_67_introducing-adobes-agent-orchestrator-for-intelligent-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458205/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460024/?learn=on&enablevpops=true&captions=fre_fr)

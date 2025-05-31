@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment l’assistant AI aide les marketeurs à créer des modèles prédictifs et à créer des audiences hautement ciblées pour les campagnes.
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460189/?learn=on&enablevpops=true&captions=fre_fr)

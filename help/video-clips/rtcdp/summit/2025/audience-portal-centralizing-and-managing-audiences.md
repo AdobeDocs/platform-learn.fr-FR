@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment Audience Portal dans Real-Time CDP permet d’unifier les données client, de gérer les audiences et d’activer l’activation en temps réel.
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459739/?learn=on&enablevpops=true&captions=fre_fr)

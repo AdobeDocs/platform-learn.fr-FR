@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment la composition de l’audience fédérée dans Adobe Real-Time CDP permet une intégration transparente des entrepôts de données externes pour une activation marketing en temps réel.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-unifying-data-for-realtime-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458196/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459892/?learn=on&enablevpops=true&captions=fre_fr)

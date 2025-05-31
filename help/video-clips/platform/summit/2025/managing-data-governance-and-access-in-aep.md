@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment gérer efficacement les données dans Adobe Experience Platform à l’aide de contrôles d’accès basés sur les rôles et sur les attributs.
 
 <!-- 62_S601_3442532_118_managing-data-governance-and-access-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458316/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460532/?learn=on&enablevpops=true&captions=fre_fr)

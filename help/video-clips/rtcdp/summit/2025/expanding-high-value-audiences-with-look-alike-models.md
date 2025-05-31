@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment les modèles d’audience semblables dans Real-Time CDP aident les professionnels du marketing à étendre leur portée en identifiant des clients similaires à forte valeur ajoutée.
 
 <!-- 82_OS512_3442427_58_expanding-highvalue-audiences-with-lookalike-models -->
->[!VIDEO](https://video.tv.adobe.com/v/3458190/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459925/?learn=on&enablevpops=true&captions=fre_fr)

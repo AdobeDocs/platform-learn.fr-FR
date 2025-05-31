@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment passer d’une approche centrée sur la campagne à une approche centrée sur le client afin de stimuler une croissance durable et d’améliorer les expériences client.
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460096/?learn=on&enablevpops=true&captions=fre_fr)
