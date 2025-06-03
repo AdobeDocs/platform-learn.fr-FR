@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobe, de Cre
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1153'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 3%
 + [Vue d’ensemble du tutoriel](/help/tutorial-one-adobe/overview.md)
 + [Statut du contenu](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
-+ [Prétravail](/help/tutorial-one-adobe/prework.md)
 
 + Prise en main {#gettingstarted}
    + Prise en main {#gettingstarted}
@@ -207,7 +206,7 @@ ht-degree: 3%
          + [1.2.4 Chargement de données BigQuery dans Adobe Experience Platform](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex4.md)
          + [1.2.5 Analyse des données Google Analytics à l’aide de Customer Journey Analytics](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex5.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/summary.md)
-   + Data Distiller {#datadistiller}
+   + Data Distiller {#datadistiller}
       + 2.1 Query Service {#dd1}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/query-service.md)
          + [2.1.1 Conditions préalables](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex1.md)

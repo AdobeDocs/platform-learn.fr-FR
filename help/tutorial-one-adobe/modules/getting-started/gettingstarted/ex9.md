@@ -3,16 +3,16 @@ title: Prise en main - Applications à installer
 description: Prise en main - Applications à installer
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 2%
 
 ---
 
 # Applications à installer
 
-Vous trouverez ci-dessous un aperçu du prétravail nécessaire avant de rejoindre un atelier en direct.
+Vous trouverez ci-dessous un aperçu des applications qui devront être installées sur votre ordinateur avant de commencer le tutoriel.
 
 ## Adobe Creative Cloud
 

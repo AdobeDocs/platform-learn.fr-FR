@@ -4,10 +4,10 @@ description: Prise en main - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 3%
+source-wordcount: '661'
+ht-degree: 2%
 
 ---
 
@@ -32,6 +32,10 @@ Sélectionnez ensuite **Créer un projet**.
 ![Nouvelle intégration Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
 ### API FIREFLY SERVICES
+
+>[!IMPORTANT]
+>
+>Selon le parcours d’apprentissage que vous avez sélectionné, vous n’avez peut-être pas accès à l’API Firefly Services. Vous n’aurez accès à l’API Firefly Services que si vous êtes sur le parcours d’apprentissage **Firefly**, **Workfront Fusion**, **ALL** ou lorsque vous participez à un **atelier en personne**. Vous pouvez ignorer cette étape si vous n’êtes pas sur l’un de ces parcours d’apprentissage.
 
 Vous devriez alors voir ceci. Sélectionnez **+ Ajouter au projet** et choisissez **API**.
 
@@ -59,6 +63,10 @@ Vous devriez alors voir ceci.
 
 ### API PHOTOSHOP SERVICES
 
+>[!IMPORTANT]
+>
+>Selon le parcours d’apprentissage que vous avez sélectionné, vous n’avez peut-être pas accès à l’API Photoshop Services. Vous n’aurez accès à l’API Photoshop Services que si vous êtes sur le parcours d’apprentissage **Firefly**, **Workfront Fusion**, **ALL** ou lorsque vous participez à un **atelier en personne**. Vous pouvez ignorer cette étape si vous n’êtes pas sur l’un de ces parcours d’apprentissage.
+
 Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
 ![ Stockage Azure ](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ Vous devriez alors voir ceci.
 ![Nouvelle intégration Adobe I/O](./images/ps7.png){zoomable="yes"}
 
 ### API ADOBE EXPERIENCE PLATFORM
+
+>[!IMPORTANT]
+>
+>Selon le parcours d’apprentissage que vous avez sélectionné, vous n’avez peut-être pas accès à l’API Adobe Experience Platform. Vous n’aurez accès à l’API Adobe Experience Platform que si vous êtes sur le parcours d’apprentissage **AEP + Applications**, **TOUS** ou lorsque vous participez à un **atelier en personne**. Vous pouvez ignorer cette étape si vous n’êtes pas sur l’un de ces parcours d’apprentissage.
 
 Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
