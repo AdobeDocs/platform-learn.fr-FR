@@ -90,6 +90,7 @@ L’extension Service d’identités est l’une des rares extensions de balise 
    1. Développez l’élément `Cookies` sur la gauche
    1. Cliquez sur le domaine `https://luma.enablementadobe.com`
    1. Recherchez le cookie AMCV_ sur la droite. Il se peut que vous en voyiez plusieurs depuis avoir chargé le site Luma à l’aide de sa propriété de balise codée en dur et mappé le vôtre.
+
       ![Vérifiez le cookie AMCV_](images/idservice-AMCVCookie.png)
 
 Vous avez terminé. Vous avez ajouté votre première extension ! Pour plus d’informations sur les options de configuration du service d’identités, consultez [la documentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=fr).
@@ -147,7 +148,7 @@ En connaissant l’état d’authentification de l’utilisateur, vous savez qua
    ![Ajouter un élément de données](images/idservice-addDataElement2.png)
 
 1. Nommez l’élément de données `Email (Hashed)`.
-1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript ****
+1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript **&#x200B;**
 1. Comme nom de variable **[!UICONTROL JavaScript]**, utilisez le pointeur suivant vers une variable dans la couche de données du site Luma : `digitalData.user.0.profile.0.attributes.username`
 1. Conservez tous les autres paramètres à leurs valeurs par défaut.
 1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque]** pour enregistrer l’élément de données

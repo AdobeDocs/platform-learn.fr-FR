@@ -261,11 +261,11 @@ Lorsque des données Web SDK sont ingérées dans Adobe Experience Platform, ell
 Créez le schéma de fidélité :
 
 1. Créer un schéma
-1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL  classe de base]
+1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL &#x200B; classe de base]
 1. Nommez le schéma `Luma Loyalty Schema`
-1. Ajoutez le groupe de champs [!UICONTROL  Détails de fidélité ]
-1. Ajoutez le groupe de champs [!UICONTROL  Détails démographiques ]
-1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal ] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
+1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails de fidélité &#x200B;]
+1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails démographiques &#x200B;]
+1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal &#x200B;] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
 1. Activez le schéma pour [!UICONTROL Profil]. Si vous ne trouvez pas le bouton Profile , essayez de cliquer sur le nom du schéma en haut à gauche.
 1. Enregistrer le schéma
 

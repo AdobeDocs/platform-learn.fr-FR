@@ -403,7 +403,7 @@ Maintenant que vous disposez d’une règle permettant de générer manuellement
    </div>
    ```
 
-1. À l’étape [!UICONTROL  Objectifs et paramètres ], choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
+1. À l’étape [!UICONTROL &#x200B; Objectifs et paramètres &#x200B;], choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
 1. Enregistrement de l’activité
 1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier l’URL de prévisualisation [QA](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Chargez la page d’accueil Luma et vos modifications devraient s’appliquer

@@ -67,7 +67,7 @@ Créez maintenant un espace de noms pour l’identifiant CRM de Luma :
 1. Sélectionnez **[!UICONTROL Identités]** dans le volet de navigation de gauche
 1. Sélectionnez **[!UICONTROL Parcourir]**
 
-   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page. Elle indique leurs noms, symboles d’identité, date de la dernière mise à jour et s’il s’agit d’espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL  l’intensité du graphique d’identités ].
+   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page. Elle indique leurs noms, symboles d’identité, date de la dernière mise à jour et s’il s’agit d’espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL &#x200B; l’intensité du graphique d’identités &#x200B;].
 
 1. Sélectionnez **[!UICONTROL Créer un espace de noms d’identité]**
 

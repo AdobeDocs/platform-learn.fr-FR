@@ -179,7 +179,7 @@ Nous pouvons maintenant charger les données dans le lot :
 
    ![Données chargées](assets/ingestion-crm-uploadFile.png)
 
-À ce stade, si vous examinez votre lot dans l’interface utilisateur de Platform, vous verrez qu’il se trouve dans un statut « [!UICONTROL  Chargement ] :
+À ce stade, si vous examinez votre lot dans l’interface utilisateur de Platform, vous verrez qu’il se trouve dans un statut « [!UICONTROL &#x200B; Chargement &#x200B;] :
 ![Chargement par lots](assets/ingestion-crm-loading.png)
 
 Comme l’API Batch est souvent utilisée pour charger plusieurs fichiers, vous devez informer Platform lorsqu’un lot est terminé, ce que nous ferons à l’étape suivante.

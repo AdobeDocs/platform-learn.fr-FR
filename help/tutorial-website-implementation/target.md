@@ -362,7 +362,7 @@ Voici un exercice facultatif, si vous êtes un client Target Premium et si vous 
 
 1. Accédez à **[!UICONTROL Administration > Propriétés]**
 
-1. Identifiez la propriété que vous souhaitez utiliser et cliquez sur le ]****[!UICONTROL &lt;/>ou créez une propriété
+1. Identifiez la propriété que vous souhaitez utiliser et cliquez sur le **&#x200B;**&lt;/>ou créez une propriété
 
 1. Copiez le fragment de code du `<script></script>` dans le presse-papiers
 
