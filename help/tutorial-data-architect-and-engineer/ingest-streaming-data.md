@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '3272'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Dans l’interface de collecte de données, nous devons effectuer deux tâches p
 
 Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savoir plus sur l’ingestion des données en flux continu et sur le SDK web :
 
->[!VIDEO](https://video.tv.adobe.com/v/31636?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37259?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger est une extension disponible pour les navigateurs C
 
 Si vous n’avez jamais utilisé le débogueur auparavant (et que celui-ci est différent de l’ancien débogueur Adobe Experience Cloud), vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Ouvrir le site web Luma
 
@@ -348,7 +348,7 @@ Nous allons maintenant mapper le nom de notre page au Web SDK.
 >[!IMPORTANT]
 >
 >Pour effectuer cette tâche, nous devons d’abord nous assurer que votre utilisateur a accès au sandbox Prod. Si vous n’avez pas déjà accès au sandbox de production à partir d’un autre profil de produit, ouvrez rapidement votre profil de `Luma Tutorial Platform` et ajoutez l’élément d’autorisation **[!UICONTROL Sandbox]** > **[!UICONTROL Prod]**. Ensuite, effectuez une opération MAJ-Rechargement sur la page Éléments de données pour effacer votre cache
->![Ajoutez le sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
+>>![Ajoutez le sandbox Prod](assets/websdk-property-permissionToLoadSchema.png)
 
 Sur la page **[!UICONTROL Éléments de données]** :
 
@@ -398,7 +398,7 @@ Si vous vous souvenez, j’ai mentionné que nous utiliserions l’ECID et l’I
 Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de données :
 
 1. Dans l’interface des balises, ajoutez un élément de données nommé `CRM Id`
-1. Sélectionnez **[!UICONTROL Variable JavaScript comme**&#x200B;[!UICONTROL &#x200B; Type d’élément de données &#x200B;]&#x200B;**]**
+1. Sélectionnez **[!UICONTROL Variable JavaScript comme**[!UICONTROL  Type d’élément de données ]**]**
 1. Comme nom de variable **[!UICONTROL JavaScript]**, saisissez `digitalData.user.0.profile.0.attributes.username`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter un élément de données pour l’ID CRM](assets/websdk-property-dataElement-crmId.png)
@@ -408,7 +408,7 @@ Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de don
 Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’associer à un type d’élément de données spécial appelé l’élément de données [!UICONTROL Identity Map] :
 
 1. Ajoutez un élément de données nommé `Identities`
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension**&#x200B;**]**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension****]**
 1. Sélectionnez **[!UICONTROL Type d’élément de données]**, **[!UICONTROL Mappage d’identités]**
 1. En tant que **[!UICONTROL Espace de noms]**, saisissez `Luma CRM Id`, qui est l’[!UICONTROL espace de noms] que nous avons créé dans une leçon précédente
 
@@ -422,9 +422,9 @@ Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’asso
 
    >[!TIP]
    >
-   > Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL &#x200B; principale].
+   > Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL  principale].
    >
-   > Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL &#x200B; principale &#x200B;].
+   > Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL  principale ].
 
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter l’ID CRM à l’élément de données Mappage d’identités](assets/websdk-property-dataElement-identityMap.png)
@@ -451,7 +451,7 @@ Pour vérifier que l’identifiant CRM est maintenant envoyé par le SDK Web :
 1. Ouvrez le site web [Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Mappez-le à votre propriété de balise à l’aide du débogueur, conformément aux instructions précédentes
 1. Sélectionnez le lien **Connexion** en haut à droite du site web Luma
-1. Connectez-vous à l’aide des informations d’identification `test@adobe.com`/`test`
+1. Connectez-vous à l’aide des informations d’identification `test@test.com`/`test`
 1. Une fois authentifié, examinez l’appel Experience Platform Web SDK dans Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Requêtes réseau]** > **[!UICONTROL événements]** de la requête la plus récente) et vous devriez voir les `lumaCrmId` :
    ![Valider l’identité dans le débogueur](assets/websdk-debugger-confirmIdentity.png)
 1. Recherchez à nouveau le profil utilisateur à l’aide de l’espace de noms ECID et de la valeur . Dans le profil, vous verrez l’identifiant CRM, ainsi que l’identifiant de fidélité et les détails du profil, tels que le nom et le numéro de téléphone. Toutes les identités et les données ont été regroupées en un seul profil client en temps réel.

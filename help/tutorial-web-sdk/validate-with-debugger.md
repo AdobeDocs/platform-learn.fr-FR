@@ -4,7 +4,7 @@ description: Découvrez comment valider votre implémentation de Platform Web SD
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Experience Platform Debugger est une extension disponible pour les navigateurs C
 
 Si vous n’avez jamais utilisé le débogueur auparavant, vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 Dans cette leçon, vous allez utiliser l’extension [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur le site de démonstration [Luma](https://luma.enablementadobe.com/content/luma/us/en.html) par votre propre propriété.
 
@@ -108,7 +108,7 @@ Vous pouvez utiliser Debugger pour valider les balises côté client déclenché
 
 Vous pouvez également valider les détails de la carte des identités :
 
-1. Connectez-vous au site Luma à l’aide des informations d’identification `test@adobe.com`/`test`
+1. Connectez-vous au site Luma à l’aide des informations d’identification `test@test.com`/`test`
 
 1. Revenez à la [page d’accueil de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
@@ -143,7 +143,7 @@ Ces types de détails de requête sont également visibles dans l’onglet Outil
 
 Comme vous l’avez appris dans la leçon [Configurer un flux de données](configure-datastream.md), Platform Web SDK envoie d’abord les données de votre propriété numérique vers Platform Edge Network. Ensuite, Platform Edge Network effectue des requêtes côté serveur supplémentaires vers les services correspondants activés dans votre flux de données. Vous pouvez valider les requêtes côté serveur effectuées par Platform Edge Network à l’aide d’Edge Trace dans le débogueur.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Activer Edge Trace
@@ -169,4 +169,4 @@ Pour activer Edge Trace :
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

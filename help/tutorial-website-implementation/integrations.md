@@ -1,8 +1,8 @@
 ---
-title: Mise en oeuvre d’intégrations Experience Cloud avec des balises
-description: Découvrez comment valider les intégrations d’Audiences, d’A4T et des attributs du client dans votre mise en œuvre d’Adobe Experience Cloud. Cette leçon fait partie du tutoriel Mise en oeuvre de l’Experience Cloud sur les sites web .
+title: Implémentation des intégrations Experience Cloud avec les balises
+description: Découvrez comment valider les intégrations d’Audiences, d’A4T et des attributs du client dans votre mise en œuvre d’Adobe Experience Cloud. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 85%
@@ -26,10 +26,10 @@ Vous devez suivre les leçons précédentes de ce tutoriel avant de suivre les i
 
 >[!NOTE]
 >
->De nombreuses exigences d’autorisation des utilisateurs, configurations de compte et étapes de configuration sont requises pour utiliser pleinement ces intégrations et dépassent la portée de ce tutoriel. Si vous n’utilisez pas déjà ces intégrations dans votre mise en œuvre actuelle d’Experience Cloud, tenez compte des points suivants :
+>De nombreuses exigences en matière d’autorisations utilisateur, de configurations de compte et d’étapes d’approvisionnement sont requises pour utiliser pleinement ces intégrations et dépassent la portée de ce tutoriel. Si vous n’utilisez pas déjà ces intégrations dans votre mise en œuvre actuelle d’Experience Cloud, tenez compte des points suivants :
 >
->* Examinez toutes les exigences relatives aux [intégrations des services principaux](https://experienceleague.adobe.com/fr/docs/core-services/interface/services/getting-started).
->* Examinez toutes les exigences relatives à l’[intégration Analytics for Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/a4t/before-implement).
+>* Examinez toutes les exigences relatives aux [intégrations des services principaux](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started).
+>* Examinez toutes les exigences relatives à l’[intégration Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement).
 
 ## Audiences
 
@@ -49,13 +49,13 @@ Ces étapes de validation portent sur la partie essentielle visible dans la mise
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise à l’environnement de développement *votre*, comme décrit dans la [leçon précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Accédez à l’onglet Réseau du débogueur.
 
-1. Cliquez sur **[!UICONTROL Effacer toutes les requêtes]** uniquement pour nettoyer des éléments.
+1. Cliquez sur **[!UICONTROL Effacer toutes les demandes]** juste pour nettoyer les choses
 
 1. Chargez à nouveau la page Luma, en veillant à afficher les requêtes Target et Analytics dans le débogueur.
 
@@ -71,7 +71,7 @@ Ces étapes de validation portent sur la partie essentielle visible dans la mise
 
 ## Analytics for Target (A4T)
 
-L’intégration [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) vous permet d’exploiter vos données Analytics en tant que source des mesures de création de rapports dans Target.
+L’intégration [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) vous permet d’exploiter vos données Analytics en tant que source des mesures de création de rapports dans Target.
 
 Les principales exigences pour la mise en œuvre d’A4T (ce que vous avez déjà fait) sont les suivantes :
 
@@ -88,13 +88,13 @@ Le meilleur moyen de valider l’intégration A4T est de créer une activité Ta
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise à l’environnement de développement *votre*, comme décrit dans la [leçon précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Accédez à l’onglet Réseau du débogueur.
 
-1. Cliquez sur **[!UICONTROL Effacer toutes les requêtes]** uniquement pour nettoyer des éléments.
+1. Cliquez sur **[!UICONTROL Effacer toutes les demandes]** juste pour nettoyer les choses
 
 1. Chargez à nouveau la page Luma, en veillant à afficher les requêtes Target et Analytics dans le débogueur.
 
@@ -115,7 +115,7 @@ Les [attributs du client](https://experienceleague.adobe.com/docs/core-services/
 Les principales exigences pour la mise en œuvre des attributs du client ce que vous avez déjà fait sont les suivantes :
 
 1. La mise en œuvre du service d’identités d’Adobe Experience Platform
-1. Définissez les ID de client via le service d’ID *avant que* Target et Analytics ne déclenchent leurs requêtes (ce que vous avez accompli à l’aide de la fonction d’agencement des règles dans les balises).
+1. Définition des ID de client via le service d’ID *avant* Target et Analytics ne déclenchent leurs requêtes (ce que vous avez fait à l’aide de la fonctionnalité de tri des règles dans les balises)
 
 ### Validation de la mise en œuvre des attributs du client
 
@@ -129,11 +129,11 @@ Actuellement, l’ID de client est l’un des rares paramètres qui ne s’affic
 
    ![Ouverture de l’onglet des outils de développement et de filtrage du réseau pour afficher uniquement les requêtes Analytics](images/aam-openTheJSConsole.png)
 
-1. Cliquez sur le lien **[!UICONTROL LOGIN]** dans le coin supérieur droit du site.
+1. Cliquez sur le lien **[!UICONTROL CONNEXION]** dans le coin supérieur droit du site
 
    ![Cliquez sur Connexion en haut à droite](images/idservice-loginNav.png)
 
-1. Saisissez `test@adobe.com` comme nom d’utilisateur.
+1. Saisissez `test@test.com` comme nom d’utilisateur.
 1. Saisissez `test` comme mot de passe.
 1. Cliquez sur le bouton **[!UICONTROL LOGIN]**
 
@@ -149,4 +149,4 @@ Actuellement, l’ID de client est l’un des rares paramètres qui ne s’affic
 
    ![Validation de l’ID de client Analytics](images/integrations-analyticsCustomerIDValidation.png)
 
-[Suite : &quot;Publish your Property&quot; >](publish.md)
+[Suite : « Publication de votre propriété » >](publish.md)

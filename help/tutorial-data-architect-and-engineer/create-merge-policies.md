@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nous nous en tiendrons à l’interface utilisateur pour cette leçon, mais il e
 **Architectes de données** devront créer des politiques de fusion en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les politiques de fusion :
->[!VIDEO](https://video.tv.adobe.com/v/345076?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Autorisations requises
 
@@ -83,7 +83,7 @@ Voyons si la politique de fusion fonctionne comme prévu :
 1. Accédez à l’onglet **[!UICONTROL Parcourir]**
 1. Modifiez la **[!UICONTROL politique de fusion]** en votre nouvelle politique de `Loyalty Prioritized`
 1. Utilisez votre `Luma CRM Id` en tant qu’espace de noms **[!UICONTROL Identity]**
-1. Comme **[!UICONTROL valeur d’identité]** utilisez `112ca06ed53d3db37e4cea49cc45b71e`
+1. Comme **[!UICONTROL valeur d’identité]** utilisez `b642b4217b34b1e8d3bd915fc65c4452`
 1. Sélectionnez le bouton **[!UICONTROL Afficher le profil]**
 1. `Daniel` est de retour !
 
@@ -110,7 +110,7 @@ Examinons maintenant l’effet de cette politique de fusion :
 1. Accédez à l’onglet **[!UICONTROL Parcourir]**
 1. Modifiez la **[!UICONTROL politique de fusion]** en votre nouvelle politique de `Loyalty Only`
 1. Utilisez votre `Luma CRM Id` en tant qu’espace de noms **[!UICONTROL Identity]**
-1. Comme **[!UICONTROL valeur d’identité]** utilisez `112ca06ed53d3db37e4cea49cc45b71e`
+1. Comme **[!UICONTROL valeur d’identité]** utilisez `b642b4217b34b1e8d3bd915fc65c4452`
 1. Sélectionnez le bouton **[!UICONTROL Afficher le profil]**
 1. Vérifiez qu’aucun profil n’a été trouvé :
    ![Fidélité uniquement pas de recherche d’ID CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ Un cas d’utilisation clé des politiques de fusion concerne la gouvernance des
 
 ## Ressources supplémentaires
 
-* [Documentation sur les politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=fr)
+* [Documentation sur les politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Référence de l’API Merge Policies (faisant partie de l’API Real-Time Customer Profile)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passons maintenant au [cadre de gouvernance des données](apply-data-governance-framework.md).
