@@ -53,7 +53,7 @@ Dans cet exercice, vous allez créer un espace de noms d’identité pour le cha
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’identité dans Adobe Experience Platform :
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422771?learn=on&enablevpops&captions=fre_fr)
 
 Créez maintenant un espace de noms pour l’identifiant CRM de Luma :
 

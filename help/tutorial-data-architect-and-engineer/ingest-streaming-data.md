@@ -31,9 +31,9 @@ Dans l’interface de collecte de données, nous devons effectuer deux tâches p
 
 Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savoir plus sur l’ingestion des données en flux continu et sur le SDK web :
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31636?learn=on&enablevpops&captions=fre_fr)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37259?learn=on&enablevpops&captions=fre_fr)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform Debugger est une extension disponible pour les navigateurs C
 
 Si vous n’avez jamais utilisé le débogueur auparavant (et que celui-ci est différent de l’ancien débogueur Adobe Experience Cloud), vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36025?learn=on&enablevpops&captions=fre_fr)
 
 ### Ouvrir le site web Luma
 
