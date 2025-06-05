@@ -140,7 +140,7 @@ Un cas d’utilisation clé des politiques de fusion concerne la gouvernance des
 
 ## Ressources supplémentaires
 
-* [Documentation sur les politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [Documentation sur les politiques de fusion](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=fr)
 * [Référence de l’API Merge Policies (faisant partie de l’API Real-Time Customer Profile)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Passons maintenant au [cadre de gouvernance des données](apply-data-governance-framework.md).

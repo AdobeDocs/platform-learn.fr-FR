@@ -79,8 +79,8 @@ Tout d’abord, obtenez les données d’exemple et personnalisez-les pour votre
 >
 >Plusieurs options, **[!UICONTROL Diagnostics d’erreur]** et **[!UICONTROL Ingestion partielle]**, s’affichent sur différents écrans dans cette leçon. Ces options ne sont pas abordées dans le tutoriel. Quelques infos rapides :
 >
->* L’activation des diagnostics d’erreur génère des données sur l’ingestion de vos données, que vous pouvez ensuite consulter à l’aide de l’API Data Access. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* L’ingestion partielle vous permet d’ingérer des données contenant des erreurs, jusqu’à un certain seuil que vous pouvez spécifier. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* L’activation des diagnostics d’erreur génère des données sur l’ingestion de vos données, que vous pouvez ensuite consulter à l’aide de l’API Data Access. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=fr).
+>* L’ingestion partielle vous permet d’ingérer des données contenant des erreurs, jusqu’à un certain seuil que vous pouvez spécifier. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=fr)
 
 ### Valider les données
 
@@ -115,7 +115,7 @@ Si vous vous êtes abonné aux événements d’ingestion de données dans la le
 
 ![Webhook d’ingestion de données](assets/ingestion-loyalty-webhook.png)
 
-Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) pour plus d’informations sur les notifications.
+Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=fr#available-status-notification-events) pour plus d’informations sur les notifications.
 
 ## Ingestion de données par lots avec l’API Platform
 
@@ -226,7 +226,7 @@ Si vous vous êtes abonné aux événements d’ingestion de données dans la le
 
 ![Webhook d’ingestion de données](assets/ingestion-crm-webhook.png)
 
-Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) pour plus d’informations sur les notifications.
+Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=fr#available-status-notification-events) pour plus d’informations sur les notifications.
 
 ## Ingestion de données avec les workflows
 
@@ -282,7 +282,7 @@ De nombreuses sources ont un workflow de configuration similaire, dans lequel vo
 
 >[!NOTE]
 >
->Les données d’achat hors ligne que nous utiliserons dans cet exercice contiennent des données datetime. Les données Datetime doivent être au format [Chaînes au format ISO 8061](https://www.iso.org/fr/iso-8601-date-and-time-format.html) (« 2018-07-10T15:05:59.000-08:00 ») ou Unix Time au format millisecondes (1531263959000) et sont converties au moment de l’ingestion en type XDM cible. Pour plus d’informations sur la conversion des données et d’autres contraintes, consultez [documentation de l’API Batch Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
+>Les données d’achat hors ligne que nous utiliserons dans cet exercice contiennent des données datetime. Les données Datetime doivent être au format [Chaînes au format ISO 8061](https://www.iso.org/fr/iso-8601-date-and-time-format.html) (« 2018-07-10T15:05:59.000-08:00 ») ou Unix Time au format millisecondes (1531263959000) et sont converties au moment de l’ingestion en type XDM cible. Pour plus d’informations sur la conversion des données et d’autres contraintes, consultez [documentation de l’API Batch Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=fr#types).
 
 ### Téléchargez, préparez et chargez les données vers le fournisseur d’espace de stockage de votre choix
 
@@ -334,12 +334,12 @@ Recherchez à nouveau le profil avec la valeur `5625458` dans l’espace de noms
 
 Adobe s’associe à plusieurs fournisseurs ETL pour prendre en charge l’ingestion de données dans Experience Platform. En raison de la variété des fournisseurs tiers, ETL n’est pas traité dans ce tutoriel, bien que vous puissiez consulter certaines de ces ressources :
 
-* [Développement d’intégrations ETL pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [Développement d’intégrations ETL pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=fr)
 * [[!DNL Snaplogic] Pack Snap Adobe Experience Platform](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Ressources supplémentaires
 
-* [Documentation sur l’ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [Documentation sur l’ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=fr)
 * [Référence de l’API d’ingestion par lots](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Maintenant, nous allons [diffuser des données à l’aide de la SDK web](ingest-streaming-data.md)
