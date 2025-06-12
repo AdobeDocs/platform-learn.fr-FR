@@ -3,10 +3,10 @@ title: Prise en main - Applications à installer
 description: Prise en main - Applications à installer
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -20,9 +20,15 @@ Accédez à [https://creativecloud.adobe.com/apps/download/creative-cloud](https
 
 ![Nouvelle intégration Adobe I/O](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 Ouvrez l’application **Adobe Creative Cloud**, puis accédez à **Applications**. Installez Photoshop sur votre ordinateur.
+
+![Nouvelle intégration Adobe I/O](./images/psd.png)
+
+## Adobe Illustrator
+
+Ouvrez l’application **Adobe Creative Cloud**, puis accédez à **Applications**. Installez Illustrator sur votre ordinateur.
 
 ![Nouvelle intégration Adobe I/O](./images/psd.png)
 

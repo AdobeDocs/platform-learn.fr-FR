@@ -4,9 +4,9 @@ description: Prise en main - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '797'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Dans cet exercice, Adobe I/O est utilisé pour interroger divers points d’entr
 
 Accédez à [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-![Nouvelle intégration Adobe I/O](./images/iohome.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/iohome.png)
 
 Veillez à sélectionner l’instance appropriée dans le coin supérieur droit de l’écran. Votre instance est `--aepImsOrgName--`.
 
@@ -29,7 +29,7 @@ Veillez à sélectionner l’instance appropriée dans le coin supérieur droit 
 
 Sélectionnez ensuite **Créer un projet**.
 
-![Nouvelle intégration Adobe I/O](./images/iocomp.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/iocomp.png)
 
 ### API FIREFLY SERVICES
 
@@ -39,45 +39,45 @@ Sélectionnez ensuite **Créer un projet**.
 
 Vous devriez alors voir ceci. Sélectionnez **+ Ajouter au projet** et choisissez **API**.
 
-![Nouvelle intégration Adobe I/O](./images/adobe_io_access_api.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/adobe_io_access_api.png)
 
 Votre écran devrait ressembler à ceci.
 
-![Nouvelle intégration Adobe I/O](./images/api1.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api1.png)
 
 Sélectionnez **Creative Cloud** puis choisissez **Firefly - Firefly Services**, puis sélectionnez **Suivant**.
 
-![Nouvelle intégration Adobe I/O](./images/api3.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api3.png)
 
 Attribuez un nom à vos informations d’identification : `--aepUserLdap-- - One Adobe OAuth credential` et sélectionnez **Suivant**.
 
-![Nouvelle intégration Adobe I/O](./images/api4.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api4.png)
 
 Sélectionnez le profil par défaut **Configuration Firefly Services par défaut** et sélectionnez **Enregistrer l’API configurée**.
 
-![Nouvelle intégration Adobe I/O](./images/api9.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api9.png)
 
 Vous devriez alors voir ceci.
 
-![Nouvelle intégration Adobe I/O](./images/api10.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/api10.png)
 
 ### API PHOTOSHOP SERVICES
 
 >[!IMPORTANT]
 >
 >Selon le parcours d’apprentissage que vous avez sélectionné, vous n’avez peut-être pas accès à l’API Photoshop Services. Vous n’aurez accès à l’API Photoshop Services que si vous êtes sur le parcours d’apprentissage **Firefly**, **Workfront Fusion**, **ALL** ou lorsque vous participez à un **atelier en personne**. Vous pouvez ignorer cette étape si vous n’êtes pas sur l’un de ces parcours d’apprentissage.
-
+>
 Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
-![ Stockage Azure ](./images/ps2.png){zoomable="yes"}
+![ Stockage Azure ](./images/ps2.png)
 
 Sélectionnez **Creative Cloud** puis **Photoshop - Firefly Services**. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/ps3.png){zoomable="yes"}
+![ Stockage Azure ](./images/ps3.png)
 
 Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/ps4.png){zoomable="yes"}
+![ Stockage Azure ](./images/ps4.png)
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
@@ -85,11 +85,11 @@ Sélectionnez **Configuration Firefly Services par défaut** et **Configuration 
 
 Sélectionnez **Enregistrer l’API configurée**.
 
-![ Stockage Azure ](./images/ps5.png){zoomable="yes"}
+![ Stockage Azure ](./images/ps5.png)
 
 Vous devriez alors voir ceci.
 
-![Nouvelle intégration Adobe I/O](./images/ps7.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/ps7.png)
 
 ### API ADOBE EXPERIENCE PLATFORM
 
@@ -99,15 +99,15 @@ Vous devriez alors voir ceci.
 
 Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
-![ Stockage Azure ](./images/aep1.png){zoomable="yes"}
+![ Stockage Azure ](./images/aep1.png)
 
 Sélectionnez **Adobe Experience Platform** puis **API Experience Platform**. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/aep2.png){zoomable="yes"}
+![ Stockage Azure ](./images/aep2.png)
 
 Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/aep3.png){zoomable="yes"}
+![ Stockage Azure ](./images/aep3.png)
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
@@ -119,11 +119,43 @@ Sélectionnez **Adobe Experience Platform - Tous les utilisateurs - PROD**.
 
 Sélectionnez **Enregistrer l’API configurée**.
 
-![ Stockage Azure ](./images/aep4.png){zoomable="yes"}
+![ Stockage Azure ](./images/aep4.png)
 
 Vous devriez alors voir ceci.
 
-![Nouvelle intégration Adobe I/O](./images/aep5.png){zoomable="yes"}
+![Nouvelle intégration Adobe I/O](./images/aep5.png)
+
+### API Frame.io
+
+>[!IMPORTANT]
+>
+>Selon le parcours d’apprentissage que vous avez sélectionné, vous n’avez peut-être pas accès à l’API Frame.io. Vous n’aurez accès à l’API Frame.io que si vous êtes sur le parcours d’apprentissage **Workfront Fusion**, **ALL** ou lorsque vous participez à un **atelier en personne**. Vous pouvez ignorer cette étape si vous n’êtes pas sur l’un de ces parcours d’apprentissage.
+
+Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
+
+![ Stockage Azure ](./images/fiops2.png)
+
+Sélectionnez **Creative Cloud** puis choisissez **API Frame.io**. Sélectionnez **Suivant**.
+
+![ Stockage Azure ](./images/fiops3.png)
+
+Sélectionnez **Authentification de serveur à serveur** puis cliquez sur **Suivant**.
+
+![ Stockage Azure ](./images/fiops4.png)
+
+Sélectionnez **OAuth de serveur à serveur** puis cliquez sur **Suivant**.
+
+![ Stockage Azure ](./images/fiops5.png)
+
+Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
+
+Sélectionnez **Default Frame.io Enterprise - Prime Configuration** et cliquez sur **Enregistrer l’API configurée**.
+
+![ Stockage Azure ](./images/fiops6.png)
+
+Vous devriez alors voir ceci.
+
+![Nouvelle intégration Adobe I/O](./images/fiops7.png)
 
 ### Nom du projet
 

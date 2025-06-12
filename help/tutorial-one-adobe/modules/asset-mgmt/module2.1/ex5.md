@@ -4,9 +4,9 @@ description: AEM CS - Bloc personnalisé avancé
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -106,10 +106,10 @@ Dans votre navigateur, accédez à votre compte GitHub et au référentiel que v
 
 ![Bloquer](./images/blockadv12.png){zoomable="yes"}
 
-Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en` et/ou `main--citisignal--XXX.aem.live/us/en`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
+Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
 Dans cet exemple, l’URL complète devient :
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`
 
 Vous devriez alors voir ceci, avec la mise en forme appliquée à votre page.
 
@@ -336,10 +336,10 @@ Cliquez ensuite sur **Origine push**.
 
 ![Bloquer](./images/blockadv19.png){zoomable="yes"}
 
-Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en` et/ou `main--citisignal--XXX.aem.live/us/en`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
+Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
 Dans cet exemple, l’URL complète devient :
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`
 
 Vous devriez alors voir ceci.
 

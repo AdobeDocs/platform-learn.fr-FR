@@ -4,9 +4,9 @@ description: Configuration de votre environnement AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -308,10 +308,10 @@ Votre site web s’ouvre alors dans l’**éditeur universel**.
 
 ![ AEMCS ](./images/aemcssetup45.png){zoomable="yes"}
 
-Vous pourrez désormais accéder à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en` et/ou `main--citisignal--XXX.aem.live/us/en`, après avoir remplacé XXX par votre compte utilisateur GitHub, qui est `woutervangeluwe` dans cet exemple.
+Vous pourrez désormais accéder à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, qui est `woutervangeluwe` dans cet exemple.
 
 Dans cet exemple, l’URL complète devient :
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`
 
 Cela peut prendre un certain temps avant que toutes les ressources ne s’affichent correctement, car elles doivent d’abord être publiées.
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
 
 ---
@@ -233,7 +233,7 @@ Après avoir reçu votre **Signature d’accès partagé**, sélectionnez **Copi
 
 ![ Stockage Azure ](./images/az29.png){zoomable="yes"}
 
-Utilisez le **jeton SAS** pour charger un fichier dans votre compte de stockage Azure.
+Utilisez l’**URL du jeton SAS** pour charger un fichier dans votre compte de stockage Azure.
 
 De retour dans Postman, sélectionnez le dossier **FF - Firefly Services Tech Insiders**, puis sélectionnez **...** dans le dossier **Firefly** et enfin sélectionnez **Ajouter une requête**.
 
@@ -345,7 +345,7 @@ Sélectionnez **Créer**.
 
 ![ Stockage Azure ](./images/az102.png){zoomable="yes"}
 
-Copiez l’URL et écrivez-la dans un fichier sur votre ordinateur pour obtenir votre jeton SAS à long terme avec les autorisations de lecture.
+Copiez l’URL et écrivez-la dans un fichier sur votre ordinateur pour obtenir votre jeton SAS à long terme avec les autorisations de lecture/écriture.
 
 ![ Stockage Azure ](./images/az103.png){zoomable="yes"}
 

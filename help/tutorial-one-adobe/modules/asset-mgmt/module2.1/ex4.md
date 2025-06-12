@@ -4,9 +4,9 @@ description: AEM CS - Bloc personnalisé de base
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -259,7 +259,7 @@ Ajoutez une option de menu au menu de navigation avec le `Fiber` texte. Sélecti
 
 ![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Saisissez ceci pour le `/us/en/citisignal-fiber` **URL** et cliquez sur l’icône **V** pour confirmer.
+Saisissez ceci pour le `/us/en//citisignal-fiber` **URL** et cliquez sur l’icône **V** pour confirmer.
 
 ![ AEMCS ](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Cliquez de nouveau sur **Publier**.
 
 ![ AEMCS ](./images/nav5.png){zoomable="yes"}
 
-Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en` et/ou `main--citisignal--XXX.aem.live/us/en`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
+Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
 Dans cet exemple, l’URL complète devient :
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`
 
 Vous devriez alors voir ceci. Cliquez sur **Fibre**.
 

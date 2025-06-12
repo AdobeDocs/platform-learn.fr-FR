@@ -1,11 +1,11 @@
 ---
-title: Achèvement - Tutoriel Sur Un Adobe
+title: Achèvement - Un Tutoriel Adobe
 description: Comment l’achèvement est-il mesuré ?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -27,33 +27,33 @@ L’identifiant du projet Système de démonstration pour le format web ressembl
 ![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 
-## 1.1 Services de l&#39;Adobe Firefly
+## 1.1 Adobe Firefly Services
 
-Le justificatif d’accomplissement attendu pour le module **Services d’Adobe Firefly** est l’**URL** du fichier de PSD qui a été généré à la fin de l’exercice 1.1.3, après avoir suivi l’étape **API Photoshop - Modifier le texte**.
+Le justificatif d&#39;accomplissement attendu pour le module **Adobe Firefly Services** est l&#39;**URL** du fichier PSD qui a été généré à la fin de l&#39;exercice 1.1.3, après avoir suivi l&#39;étape **API Photoshop - Modifier le texte**.
 
 L’URL ressemble à ceci : `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
 ![3](./assets/images/ps24.png){zoomable="yes"}
 
-## 1.2 Automatisation des workflows créatifs avec Workfront Fusion
+## 1.2 Automatisation des workflows Creative avec Workfront Fusion
 
-Le justificatif d’achèvement attendu pour le module **Automatisation des workflows créatifs avec Workfront Fusion** est l’**URL** du webhook créé dans l’exercice 1.2.3, après avoir suivi l’étape **Activer votre scénario à l’aide d’un webhook**.
+Le justificatif d’achèvement attendu pour le module **Automatisation des workflows Creative avec Workfront Fusion** est l’**URL** du webhook créé dans l’exercice 1.2.3, après avoir suivi l’étape **Activer votre scénario à l’aide d’un webhook**.
 
 L’URL ressemble à ceci : `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
 ![3](./assets/images/wff.png){zoomable="yes"}
 
-## 2.1 Cloud Service et Edge Delivery Services Adobe Experience Manager
+## 2.1 Adobe Experience Manager Cloud Service et Edge Delivery Services
 
 Le justificatif d&#39;accomplissement attendu pour le module **Adobe Experience Manager Cloud Service &amp; Edge Delivery Services** est l&#39;**URL** du site web qui a été créé.
 
-L’URL ressemble à ceci : `https://main--citisignal--xxx.aem.page/us/en`.
+L’URL ressemble à ceci : `https://main--citisignal--xxx.aem.page/us/en/`.
 
 ![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Gestion des workflows avec Adobe Workfront
 
-Le justificatif d&#39;achèvement attendu pour le module **Gestion des workflows avec Adobe Workfront** est l&#39;**URL** de l&#39;image qui a été chargée dans AEM Assets dans le cadre de l&#39;exercice **2.2.2.5 Afficher votre fichier dans AEM Assets**.
+Le justificatif d&#39;achèvement attendu pour le module **Gestion des workflows avec Adobe Workfront** est l&#39;**URL** de l&#39;image qui a été chargée dans AEM Assets dans le cadre de l&#39;exercice **2.2.2.5Afficher votre fichier dans AEM Assets**.
 
 Pour obtenir l’URL, cliquez sur **Partager le lien** sur l’image chargée dans AEM Assets.
 
@@ -81,9 +81,9 @@ L’identifiant de version de campagne du modèle de données fédérées ressem
 
 ![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
-## 3.3 Adobe Journey Optimizer : Offer decisioning
+## 3.3 Adobe Journey Optimizer : Offer Decisioning
 
-Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Optimizer : Offer decisioning** est l&#39;identifiant de la **décision** que vous avez créée.
+Le justificatif d&#39;accomplissement attendu pour le module **Adobe Journey Optimizer : Offer Decisioning** est l&#39;identifiant de la **décision** que vous avez créée.
 
 Vous trouverez le **ID de décision** qui ressemble à ce **`dps:offer-activity:1a08ba4b529b2fb2`** ici :
 
