@@ -3,9 +3,9 @@ title: Présentation - Tutoriel technique complet - One Adobe
 description: Tutoriel technique complet - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -65,9 +65,13 @@ Dans ce module, vous utiliserez les API Adobe Firefly Services, Photoshop et les
 
 [1.2 Automatisation des workflows Creative avec Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-Dans ce module de base, vous utiliserez Adobe Workfront Fusion pour automatiser et mettre à l’échelle vos workflows de création de contenu.
+Dans ce module, vous utiliserez Adobe Workfront Fusion pour automatiser et mettre à l’échelle vos workflows de création de contenu.
 
-[1.3 Adobe Express et Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+Dans ce module, vous allez utiliser Adobe GenStudio for Performance Marketing, une application de workflow de bout en bout basée sur l’IA dédiée à la génération, pour que les équipes marketing et créatives puissent créer, activer et optimiser le contenu omnicanal avec la gouvernance d’entreprise pour les campagnes de marketing numérique.
+
+[1.4 Adobe Express et Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 Dans ce module de base, vous utiliserez Adobe Express pour créer des images et des vidéos, et vous partagerez ces ressources avec l’écosystème Adobe Experience Cloud au sens large.
 
