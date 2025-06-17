@@ -29,7 +29,7 @@ Pour plus d’informations, voir la [documentation](https://experienceleague.ado
 
 Découvrez Adobe Real-Time Collaboration, une application de collaboration sur les données conçue spécialement pour vous permettre de découvrir et d’activer des audiences à forte valeur ajoutée et d’utiliser des fonctionnalités de mesure pour générer des résultats tangibles.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446803?learn=on&enablevpops&captions=fre_fr)
 
 
 ## Configuration
@@ -47,7 +47,7 @@ Découvrez Adobe Real-Time Collaboration, une application de collaboration sur l
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Définition des autorisations pour Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1750198179177" alt="Définition des autorisations pour Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452232/?format=jpeg&nocache=1750198179177&captions=fre_fr" alt="Définition des autorisations pour Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
