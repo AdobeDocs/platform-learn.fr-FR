@@ -22,4 +22,4 @@ Découvrez les principes de base de la création de projets dans Collaboration, 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
 
-Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
+Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
