@@ -5,14 +5,21 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 5%
+source-wordcount: '548'
+ht-degree: 4%
 
 ---
 
 # 1.3.1 Configuration : marque
+
+Une marque distingue une organisation, un produit, un service ou un concept des autres. Certains aspects d&#39;une marque sont objectifs, comme un logo, tandis que d&#39;autres sont subjectifs, comme le ton de la voix.
+
+GenStudio for Performance Marketing utilise la richesse des informations de marque de votre marque, les associe aux informations sur les produits et les personas, et crée une identité de marque complète. Cette identité de marque est utilisée pour informer la création de contenu sur la marque à l’aide de la technologie d’IA générative d’Adobe.
+
+Pour commencer à créer votre propre marque, procédez comme suit.
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **GenStudio**.
 

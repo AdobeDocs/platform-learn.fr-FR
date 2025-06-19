@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
 
 # 1.3.2 Configuration : personnages, produits et modèles
 
+Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **GenStudio**.
+
+![GSPeM](./images/gspem1.png)
+
 ## Produits 1.3.2.1
 
-Cliquez sur le **de 3 points...**, puis sélectionnez **Produits**.
+Les produits GenStudio for Performance Marketing bénéficient d’une compréhension approfondie des spécifications, des avantages et des facteurs de différenciation des produits afin de générer un contenu percutant.
+
+Les produits englobent tous les éléments d’un produit spécifique, tels que les images, les descriptions et les propositions de valeur, afin de créer une représentation cohérente de la marque. Tirez parti de la technologie d’IA avancée d’Adobe et des directives de GenStudio for Performance Marketing (marques, produits et personnes concernées) pour générer un contenu attrayant qui met en avant les points forts de vos produits et assure la cohérence de l’ensemble des messages.
+
+Pour commencer à créer vos propres produits, cliquez sur le **de 3 points...**, puis sélectionnez **Produits**.
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Vous devriez alors voir les 2 produits que vous avez configurés.
 
 ## 1.3.2.2 Personas
 
-Cliquez sur le **de 3 points...**, puis sélectionnez **Personnages**.
+Les personas fournissent une représentation authentique de vos segments de clients, englobant leurs informations, intérêts, points faibles, préférences et caractéristiques comportementales.
+
+GenStudio for Performance Marketing tire parti de la puissance des directives (marques, produits et personnes concernées) et de la technologie d’IA générative d’Adobe pour organiser le contenu marketing personnalisé pour vos clients cibles&#x200B;
+
+Pour commencer à créer vos personnages, cliquez sur le **de 3 points...**, puis sélectionnez **Personnages**.
 
 ![GSPeM](./images/gspem111.png)
 
@@ -214,6 +227,10 @@ Vous devriez alors voir les 3 personnages que vous avez configurés.
 
 ## 1.3.2.3 modèles
 
+GenStudio for Performance Marketing permet aux créateurs de contenu de produire rapidement du contenu marketing cohérent sur la marque à l’aide de modèles. Un modèle réduit considérablement le temps et les efforts requis pour générer un nouveau contenu en fournissant un point de départ qui inclut des dispositions et des éléments de conception préconfigurés.
+
+Bien que GenStudio for Performance Marketing ne prenne pas en charge la création directe de modèles dans l’application, vous pouvez facilement concevoir et préparer des modèles à l’aide d’outils de conception courants, tels qu’Adobe InDesign, Illustrator ou Express. Une fois la conception terminée, vous pouvez l’adapter pour l’utiliser dans GenStudio for Performance Marketing. Dans cet exercice, vous allez importer un certain nombre de modèles prédéfinis dans GenStudio for Performance Marketing.
+
 Dans l’exercice précédent, vous avez téléchargé le fichier [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) sur votre bureau et l’avez décompressé. Ce dossier contient 4 exemples de modèles que vous devez maintenant importer dans GenStudio.
 
 ![GSPeM](./images/gspem17.png)
@@ -268,7 +285,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem136.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem137.png)
 
@@ -297,7 +314,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem143.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem144.png)
 
@@ -326,7 +343,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem150.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem151.png)
 
