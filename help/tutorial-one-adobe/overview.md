@@ -3,7 +3,7 @@ title: Présentation - Tutoriel technique complet - One Adobe
 description: Tutoriel technique complet - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 2%
@@ -41,9 +41,9 @@ Ce tutoriel ne se concentre pas uniquement sur les applications Adobe, mais pren
 Après avoir terminé certains des modules de ce tutoriel, vous pouvez passer un examen Adobe Credential pour recevoir un badge **Qualifié Adobe**.
 
 - Lorsque vous avez terminé le module [Présentation de Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, vous êtes prêt à passer l’examen **Qualifié Adobe** **AD2-E901** :
-  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
-- Lorsque vous avez terminé le module [Automatisation des workflows Creative avec Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, vous êtes prêt à passer l’examen **Qualifié Adobe** **XXX** :
-  [À CONFIRMER](https://certification.adobe.com/certification/services-qualified-credential).
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- Lorsque vous avez terminé le module [Automatisation des workflows Creative avec Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, vous êtes prêt à passer l’examen **Qualifié Adobe** **AD2-E902** :
+  [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Statut du contenu
 

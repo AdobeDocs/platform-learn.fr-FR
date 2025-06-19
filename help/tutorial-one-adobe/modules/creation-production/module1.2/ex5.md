@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: badef353b0df7b678e05d2e89280393b56fd65b6
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3352'
 ht-degree: 1%
 
 ---
@@ -524,14 +524,12 @@ Votre connexion Frame.io sera automatiquement sélectionnée.
 
 Pour configurer le module **Frame.io - Effectuer un appel API personnalisé**, utilisez l’URL : `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`.
 
-Vous devez remplacer XXX dans l’URL ci-dessus par l’ID du dossier
-
 >[!NOTE]
 >
 >Comme indiqué précédemment, les variables dans Workfront Fusion peuvent être spécifiées manuellement à l’aide de la syntaxe suivante : `{{1.account_id}}` et `{{4.body.data.parent_id}}`. Le nombre dans la variable fait référence au module dans le scénario.
->&#x200B;>Dans cet exemple, vous pouvez constater que le premier module du scénario est appelé **Webhooks** et qu’il possède un numéro de séquence de **1**. Cela signifie que la variable `{{1.account_id}}` accédera à ce champ à partir du module portant le numéro de séquence 1.
->&#x200B;>Dans cet exemple, vous pouvez constater que le quatrième module du scénario s’appelle **Frame.io - Effectuer un appel API personnalisé** et possède un numéro de séquence **4**. Cela signifie que la variable `{{4.body.data.parent_id}}` accédera à ce champ à partir du module portant le numéro de séquence 4.
->&#x200B;>Si les numéros de séquence de vos modules sont différents, vous devrez mettre à jour les variables dans l’URL ci-dessus pour être lié au module correct.
+>>Dans cet exemple, vous pouvez constater que le premier module du scénario est appelé **Webhooks** et qu’il possède un numéro de séquence de **1**. Cela signifie que la variable `{{1.account_id}}` accédera à ce champ à partir du module portant le numéro de séquence 1.
+>>Dans cet exemple, vous pouvez constater que le quatrième module du scénario s’appelle **Frame.io - Effectuer un appel API personnalisé** et possède un numéro de séquence **4**. Cela signifie que la variable `{{4.body.data.parent_id}}` accédera à ce champ à partir du module portant le numéro de séquence 4.
+>>Si les numéros de séquence de vos modules sont différents, vous devrez mettre à jour les variables dans l’URL ci-dessus pour être lié au module correct.
 
 ![E/S de trame](./images/frame78.png)
 
@@ -551,7 +549,7 @@ Copiez et collez le fragment de code JSON ci-dessous dans le champ **Corps**.
 >[!NOTE]
 >
 >Les variables dans Workfront Fusion peuvent être spécifiées manuellement à l’aide de la syntaxe suivante : `{{6.data.newPsdTemplate}}`. Le nombre dans la variable fait référence au module dans le scénario. Dans cet exemple, vous pouvez constater que le sixième module du scénario s’appelle **HTTP - Effectuer une requête** et possède un numéro de séquence de **6**. Cela signifie que la variable `{{6.data.newPsdTemplate}}` accédera au champ **data.newPsdTemplate** à partir du module portant le numéro de séquence 6.
->&#x200B;>Si les numéros de séquence de votre module sont différents, vous devrez mettre à jour la variable dans l’URL ci-dessus pour être lié au module correct.
+>>Si les numéros de séquence de votre module sont différents, vous devrez mettre à jour la variable dans l’URL ci-dessus pour être lié au module correct.
 
 Cliquez sur **OK**.
 
