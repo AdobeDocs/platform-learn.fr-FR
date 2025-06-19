@@ -268,7 +268,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem136.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 ****. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem137.png)
 
@@ -297,7 +297,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem143.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 ****. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 **&#x200B;**. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem144.png)
 
@@ -326,7 +326,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem150.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 ****. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem151.png)
 
