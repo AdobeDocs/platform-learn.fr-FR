@@ -1,23 +1,21 @@
 ---
-title: Prise en main d’Adobe Express
-description: Prise en main d’Adobe Express
+title: Modèles de produits de rôles de configuration de GenStudio for Performance Marketing
+description: Modèles de produits de rôles de configuration de GenStudio for Performance Marketing
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 2%
+source-wordcount: '961'
+ht-degree: 1%
 
 ---
 
 # 1.3.2 Configuration : personnages, produits et modèles
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **GenStudio**.
-
-![GSPeM](./images/gspem1.png)
+Dans cet exercice, vous allez configurer des rôles, des produits et des modèles dans GenStudio for Performance Marketing.
 
 ## Produits 1.3.2.1
 
@@ -285,7 +283,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem136.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem137.png)
 
@@ -314,7 +312,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem143.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem144.png)
 
@@ -343,7 +341,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem150.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem151.png)
 
