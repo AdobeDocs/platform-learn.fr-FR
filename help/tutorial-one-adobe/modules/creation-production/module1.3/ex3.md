@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 0%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Pour effectuer cet exercice, vous devez avoir accès à un environnement de création AEM Assets CS fonctionnel dans lequel AEM Content Hub est activé. Si vous suivez l’exercice [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} vous aurez accès à un tel environnement.
+
+>[!IMPORTANT]
+>
+>Pour exécuter toutes les étapes de cet exercice, vous devez avoir accès à un environnement Adobe Workfront existant et, dans cet environnement, vous devez avoir créé un projet et un workflow d’approbation. Si vous suivez l’exercice [Gestion des workflows avec Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} la configuration requise sera disponible.
 
 >[!IMPORTANT]
 >
@@ -169,7 +173,7 @@ Accédez à **Logos** et cliquez sur le logo **blanc** Citisignal pour le dépos
 
 ![GSPeM](./images/gsasset5.png)
 
-Positionnez le logo CitiSignal dans le coin supérieur gauche.
+Positionnez le logo CitiSignal en haut de votre image, pas trop loin du milieu.
 
 ![GSPeM](./images/gsasset6.png)
 
@@ -223,7 +227,124 @@ Revenez à GenStudio for Performance Marketing. Dans le menu de gauche, accédez
 
 ## 1.3.3.4 Créer et approuver une méta-annonce
 
+Dans le menu de gauche, accédez à **Créer**. Sélectionnez **Méta**.
+
+![GSPeM](./images/gsad1.png)
+
+Sélectionnez le modèle **Méta-annonce** que vous avez importé précédemment et qui est nommé `--aepUserLdap---citisignal-meta-ad`. Cliquez sur **Utiliser**.
+
+![GSPeM](./images/gsad2.png)
+
+Vous devriez alors voir ceci. Remplacez le nom de votre publicité par `--aepUserLdap-- - Meta Ad Fiber Max`.
+
+Sous **Paramètres**, sélectionnez les options suivantes :
+
+- **Marque** : `--aepUserLdap-- - CitiSignal`
+- **Langue** : `English (US)`
+- **Persona** : `--aepUserLdap-- - Smart Home Families`
+- **Produit** : `--aepUserLdap-- - CitiSignal Fiber Max`
+
+Cliquez sur **Sélectionner à partir du contenu**.
+
+![GSPeM](./images/gsad3.png)
+
+Sélectionnez l’`--aepUserLdap-- - neon rabbit.png` de la ressource. Cliquez sur **Utiliser**.
+
+![GSPeM](./images/gsad4.png)
+
+Saisissez le `focus on lightning fast internet for big families` d’invite et cliquez sur **Générer**.
+
+![GSPeM](./images/gsad5.png)
+
+Vous devriez alors voir quelque chose comme ça. Vos annonces sont maintenant prêtes à être examinées et approuvées. Pour ce faire, cliquez sur **Demander une approbation**, qui se connectera à Adobe Workfront.
+
+![GSPeM](./images/gsad6.png)
+
+Sélectionnez votre projet Adobe Workfront, qui doit être nommé `--aepUserLdap-- - CitiSignal Fiber Launch`. Saisissez votre propre adresse e-mail sous **Inviter des personnes** et assurez-vous que le rôle est défini sur **Approbateur**.
+
+![GSPeM](./images/gsad7.png)
+
+Vous pouvez également utiliser un workflow d’approbation existant dans Adobe Workfront. Pour ce faire, cliquez sur **Utiliser le modèle** et sélectionnez le modèle `--aepuserLdap-- - Approval Workflow`. Cliquez sur **Envoyer**.
+
+![GSPeM](./images/gsad8.png)
+
+Cliquez sur **Afficher les commentaires dans Workfront**. Vous serez désormais envoyé à l’interface utilisateur de l’épreuve Adobe Workfront.
+
+![GSPeM](./images/gsad9.png)
+
+Dans l’interface utilisateur d’Adobe Workfront Proof, cliquez sur **Prendre une décision**.
+
+![GSPeM](./images/gsad10.png)
+
+Sélectionnez **Approuvé** et cliquez sur **Prendre une décision**.
+
+![GSPeM](./images/gsad11.png)
+
+Cliquez sur **Publier**.
+
+![GSPeM](./images/gsad12.png)
+
+Sélectionnez votre `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` Campaign et cliquez sur **Publier**.
+
+![GSPeM](./images/gsad13.png)
+
+Cliquez sur **Ouvrir dans le contenu**.
+
+![GSPeM](./images/gsad14.png)
+
+Les 4 méta-annonces sont désormais disponibles sous **Contenu** > **Expériences**.
+
+![GSPeM](./images/gsad15.png)
+
 ## 1.3.3.5 Publier l’annonce publicitaire dans Meta
+
+Sélectionnez l’une des publicités, puis cliquez sur **Activer**.
+
+![GSPeM](./images/gsmetaad1.png)
+
+Choisissez un **Call to action** à partir de la liste et saisissez un exemple d&#39;URL. Cliquez sur **Suivant**.
+
+![GSPeM](./images/gsmetaad3.png)
+
+Sélectionnez le compte Meta , la page Facebook associée, la Meta Campaign et la Meta Ad Set.
+
+Donnez un nom à votre ajout, puis utilisez `--aepUserLdap-- Fiber Max Ad`.
+
+Cliquez sur **Suivant**.
+
+![GSPeM](./images/gsmetaad4.png)
+
+Cliquez sur **Publier**.
+
+![GSPeM](./images/gsmetaad5.png)
+
+Cliquez sur **OK**.
+
+![GSPeM](./images/gsmetaad6.png)
+
+Le statut de votre publicité est maintenant défini sur **Publication**, ce qui peut prendre quelques minutes.
+
+![GSPeM](./images/gsmetaad7.png)
+
+Au bout de quelques minutes, le statut de la publicité passe à **Publiée**. Cela signifie que la publicité a été envoyée de GenStudio for Performance Marketing à Meta. Cela ne veut pas dire que la publicité est déjà publiée dans Meta ! Il reste encore un certain nombre de mesures à prendre dans le Meta Business Account pour prendre l&#39;annonce et la publier afin qu&#39;elle puisse être vue par les utilisateurs sur les différentes plateformes Meta.
+
+Cliquez sur **Afficher les détails**.
+
+![GSPeM](./images/gsmetaad8.png)
+
+Cliquez sur **Ouvrir** pour accéder à votre compte Meta Business.
+
+>[!IMPORTANT]
+>
+>Si vous n’avez pas accès au compte professionnel Meta connecté à votre environnement, vous ne pourrez pas visualiser cette annonce dans Meta.
+
+![GSPeM](./images/gsmetaad9.png)
+
+Voici un aperçu de l&#39;annonce que vous venez de créer, mais maintenant dans Meta.
+
+![GSPeM](./images/gsmetaad10.png)
+
+Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
 
