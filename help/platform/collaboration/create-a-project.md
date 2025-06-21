@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Découvrez les principes de base de la création de projets dans Collaboration, notamment un bref aperçu de la découverte, de l’activation et de la mesure.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464036/?learn=on&enablevpops&captions=fre_fr)
 
 Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
