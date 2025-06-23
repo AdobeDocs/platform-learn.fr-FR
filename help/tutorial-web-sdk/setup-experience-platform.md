@@ -3,9 +3,9 @@ title: Diffusion de données vers Adobe Experience Platform avec Platform Web SD
 description: Découvrez comment diffuser des données web vers Adobe Experience Platform avec Web SDK. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2307'
 ht-degree: 7%
 
 ---
@@ -160,14 +160,14 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 >[!INFO]
 >
->  Pour plus d’informations sur le service de requête de Adobe Experience Platform, consultez [Exploration des données](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels sur Platform.
+>  Pour plus d’informations sur le service de requête de Adobe Experience Platform, consultez [Exploration des données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels sur Platform.
 
 
 ## Activez le jeu de données et le schéma pour le profil client en temps réel
 
 Pour les clients Real-Time Customer Data Platform et Journey Optimizer, l’étape suivante consiste à activer le jeu de données et le schéma pour le profil client en temps réel. La diffusion de données en continu à partir de Web SDK est l’une des nombreuses sources de données qui entrent dans Platform. Vous souhaitez associer vos données web à d’autres sources de données pour créer des profils client à 360 degrés. Pour en savoir plus sur le profil client en temps réel, regardez cette courte vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/31639?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -252,20 +252,24 @@ Vous devez d’abord générer plus de données d’exemple. Répétez les étap
 
 Vous avez maintenant activé Platform Web SDK pour Experience Platform (et Real-Time CDP ! Et Journey Optimizer ! Et Customer Journey Analytics !).
 
+## Création d’une audience évaluée par Edge
+
+Il est recommandé de terminer cet exercice pour les clients de Real-Time Customer Data Platform et de Journey Optimizer.
+
+Lorsque des données Web SDK sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par d’autres sources de données que vous avez ingérées dans Platform. Par exemple, lorsqu’un utilisateur se connecte au site Luma, un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour le profil peuvent éventuellement être réunis pour créer des profils clients en temps réel. Pour voir cela en action, vous allez rapidement créer un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin de pouvoir utiliser les profils clients en temps réel avec Real-Time Customer Data Platform et Journey Optimizer. Vous allez ensuite créer une audience basée sur ces données.
+
 ### Création d’un schéma de fidélité et ingestion de données d’exemple
 
-La fin de cet exercice est attendue pour les clients de Real-Time Customer Data Platform et de Journey Optimizer.
-
-Lorsque des données Web SDK sont ingérées dans Adobe Experience Platform, elles peuvent être enrichies par d’autres sources de données que vous avez ingérées dans Platform. Par exemple, lorsqu’un utilisateur se connecte au site Luma, un graphique d’identités est créé dans Experience Platform et tous les autres jeux de données activés pour le profil peuvent éventuellement être réunis pour créer des profils clients en temps réel. Pour voir cela en action, créez rapidement un autre jeu de données dans Adobe Experience Platform avec des exemples de données de fidélité afin de pouvoir utiliser les profils clients en temps réel avec Real-Time Customer Data Platform et Journey Optimizer. Puisque vous avez déjà fait des exercices similaires, les instructions seront brèves.
+Puisque vous avez déjà fait des exercices similaires, les instructions seront brèves.
 
 Créez le schéma de fidélité :
 
 1. Créer un schéma
-1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL &#x200B; classe de base]
+1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL  classe de base]
 1. Nommez le schéma `Luma Loyalty Schema`
-1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails de fidélité &#x200B;]
-1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails démographiques &#x200B;]
-1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal &#x200B;] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
+1. Ajoutez le groupe de champs [!UICONTROL  Détails de fidélité ]
+1. Ajoutez le groupe de champs [!UICONTROL  Détails démographiques ]
+1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal ] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
 1. Activez le schéma pour [!UICONTROL Profil]. Si vous ne trouvez pas le bouton Profile , essayez de cliquer sur le nom du schéma en haut à gauche.
 1. Enregistrer le schéma
 
@@ -282,9 +286,33 @@ Pour créer le jeu de données et ingérer les données d’exemple :
 
    ![ Schéma de fidélité ](assets/web-channel-loyalty-dataset.png)
 
+
+### Définition d’une politique de fusion Active-on-Edge
+
+Toutes les audiences sont créées avec une politique de fusion. Les politiques de fusion créent différentes « vues » d’un profil, peuvent contenir un sous-ensemble de jeux de données et prescrire un ordre de priorité lorsque différents jeux de données contribuent aux mêmes attributs de profil. Pour être évaluée sur le serveur Edge, une audience doit utiliser une politique de fusion avec le paramètre **[!UICONTROL Politique de fusion Active-On-Edge]**.
+
+
+>[!IMPORTANT]
+>
+>Une seule politique de fusion par sandbox peut avoir le paramètre **[!UICONTROL Politique de fusion Active-On-Edge]**
+
+
+1. Ouvrez l’interface d’Experience Platform ou de Journey Optimizer et assurez-vous que vous vous trouvez dans l’environnement de développement utilisé pour le tutoriel.
+1. Accédez à la page **[!UICONTROL Client]** > **[!UICONTROL Profils]** > **[!UICONTROL Politiques de fusion]**
+1. Ouvrez la **[!UICONTROL Politique de fusion par défaut]** (probablement nommée `Default Timebased`).
+   ![Création d’une audience](assets/merge-policy-open-default.png)
+1. Activez le paramètre **[!UICONTROL Politique de fusion Active-On-Edge]**
+1. Sélectionnez **[!UICONTROL Suivant]**
+
+   ![Création d’une audience](assets/merge-policy-set-active-on-edge.png)
+1. Continuez à sélectionner **[!UICONTROL Suivant]** pour passer aux autres étapes du workflow et sélectionnez **[!UICONTROL Terminer]** pour enregistrer vos paramètres
+   ![Création d’une audience](assets/merge-policy-finish.png)
+
+Vous pouvez maintenant créer des audiences qui seront évaluées sur Edge.
+
 ### Créer une audience
 
-Les audiences regroupent les profils autour de caractéristiques communes. Créez une audience rapide que vous pouvez utiliser dans votre campagne web :
+Les audiences regroupent les profils autour de caractéristiques communes. Créez une audience simple que vous pouvez utiliser dans Real-Time CDP ou Journey Optimizer :
 
 1. Dans l’interface Experience Platform ou Journey Optimizer, accédez à **[!UICONTROL Client]** > **[!UICONTROL Audiences]** dans le volet de navigation de gauche
 1. Sélectionnez **[!UICONTROL Créer une audience]**
@@ -302,6 +330,11 @@ Les audiences regroupent les profils autour de caractéristiques communes. Crée
 
    ![Définition de l’audience](assets/web-campaign-define-audience.png)
 
+>[!NOTE]
+>
+> Comme nous avons défini la politique de fusion par défaut **[!UICONTROL Active-On-Edge Merge Policy]** l’audience que vous avez créée est automatiquement associée à cette politique de fusion.
+
+
 Comme il s’agit d’une audience très simple, nous pouvons utiliser la méthode d’évaluation Edge. Les audiences Edge sont évaluées sur le serveur Edge. Ainsi, dans la même requête que celle envoyée par Web SDK à Platform Edge Network, nous pouvons évaluer la définition de l’audience et confirmer immédiatement si l’utilisateur sera qualifié.
 
 
@@ -309,4 +342,4 @@ Comme il s’agit d’une audience très simple, nous pouvons utiliser la métho
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

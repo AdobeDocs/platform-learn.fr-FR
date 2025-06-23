@@ -4,16 +4,16 @@ description: Découvrez comment configurer Adobe Analytics à l’aide d’Exper
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Configuration d’Adobe Analytics avec Adobe Experience Platform Web SDK
 
-Découvrez comment configurer Adobe Analytics à l’aide de [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/web-sdk/overview), créer des règles de balise pour envoyer des données à Adobe Analytics et vérifier qu’Analytics capture les données comme prévu.
+Découvrez comment configurer Adobe Analytics à l’aide de [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), créer des règles de balise pour envoyer des données à Adobe Analytics et vérifier qu’Analytics capture les données comme prévu.
 
 [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics) est une application de pointe qui vous permet de comprendre vos clients en tant que personnes et d’orienter votre activité grâce aux renseignements sur vos clients.
 
@@ -35,7 +35,7 @@ Pour suivre cette leçon, vous devez d’abord :
 
 * être familiarisé avec Adobe Analytics et y avoir accès ;
 
-* Disposer d’au moins un identifiant de suite de rapports de test/développement. Si vous ne disposez pas d’une suite de rapports de test/développement que vous pouvez utiliser pour ce tutoriel, [veuillez en créer une](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Disposer d’au moins un identifiant de suite de rapports de test/développement. Si vous ne disposez pas d’une suite de rapports de test/développement que vous pouvez utiliser pour ce tutoriel, [veuillez en créer une](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Suivez les leçons précédentes des sections Configuration initiale et Configuration des balises de ce tutoriel.
 
@@ -78,7 +78,7 @@ Depuis mai 2024, il n’est plus nécessaire de créer un schéma XDM pour impl�
 
 ### Champs mappés automatiquement
 
-De nombreux champs XDM sont automatiquement mappés à des variables Analytics. Pour obtenir la liste la plus récente des mappages, reportez-vous à la section [Mappage des variables Analytics dans Adobe Experience Edge](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+De nombreux champs XDM sont automatiquement mappés à des variables Analytics. Pour obtenir la liste la plus récente des mappages, reportez-vous à la section [Mappage des variables Analytics dans Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Cela se produit si _même si vous n’avez pas défini de schéma personnalisé_. Experience Platform Web SDK collecte automatiquement certaines données et les envoie vers Platform Edge Network sous forme de champs XDM. Par exemple, Web SDK lit l’URL de la page active et l’envoie en tant que `web.webPageDetails.URL` de champ XDM. Ce champ est transféré vers Adobe Analytics et renseigne automatiquement les rapports URL de la page dans Adobe Analytics.
 
@@ -106,8 +106,8 @@ Les sections individuelles de la chaîne de produit Analytics sont définies par
 >[!NOTE]
 >
 >Depuis le 18 août 2022, `productListItems[].SKU` a la priorité pour le mappage au nom du produit dans la variable s.products.
->&#x200B;>La valeur définie sur `productListItems[].name` n’est mappée au nom du produit que si `productListItems[].SKU` n’existe pas. Sinon, elle n’est pas mappée et est disponible dans les données contextuelles.
->&#x200B;>Ne définissez pas une chaîne vide ou une valeur nulle sur `productListItems[].SKU`. Cela a pour effet indésirable de mapper au nom du produit dans la variable s.products.
+>>La valeur définie sur `productListItems[].name` n’est mappée au nom du produit que si `productListItems[].SKU` n’existe pas. Sinon, elle n’est pas mappée et est disponible dans les données contextuelles.
+>>Ne définissez pas une chaîne vide ou une valeur nulle sur `productListItems[].SKU`. Cela a pour effet indésirable de mapper au nom du produit dans la variable s.products.
 
 
 ### Définition de variables dans l’objet de données
@@ -266,7 +266,7 @@ Créons une règle pour envoyer un appel de page vue supplémentaire à une autr
 
 1. Sous **[!UICONTROL Actions]** sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension**&#x200B;**]**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension****]**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 
@@ -366,6 +366,10 @@ Accédez à une page produit comme la page produit [Didi Sport Watch](https://lu
 1. Cherchez des `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Faites défiler la page vers le bas pour afficher la variable `[!UICONTROL gn]` . Il s’agit de la syntaxe dynamique Analytics de la variable `[!UICONTROL s.pageName]`. Il capture le nom de la page à partir de la couche de données.
 
+   >[!NOTE]
+   >
+   > La valeur `gn` peut être `test` si vous avez remplacé l’objet `xdm` par l’objet `data` dans l’exercice précédent.
+
    ![chaîne de produit Analytics](assets/analytics-debugger-edge-page-view.png)
 
 ### Validation des chaînes de produit et des événements e-commerce
@@ -389,7 +393,7 @@ Puisque vous êtes déjà sur une page de produit, cet exercice continue d’uti
 
    >[!TIP]
    >
-   > La règle `ecommerce - pdp library loaded - AA (order 20)` remplace la valeur de `eventType` définie par la règle `all pages global content variables - library loaded - AA (order 1)`, car elle est définie pour se déclencher plus tard dans la séquence
+   > La règle `ecommerce - library loaded - set product details variables - 20` remplace la valeur de `eventType` définie par la règle `all pages - library loaded - set global variables - 1`, car elle est définie pour se déclencher plus tard dans la séquence
 
 
    ![Vue du produit Analytics](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ Faites ensuite défiler jusqu’à **[!UICONTROL mcvisId]** pour vérifier que l
 ### Validation des pages vues du contenu
 
 À l’aide de la même balise, vérifiez que les pages vues de contenu sont mappées à la variable Adobe Analytics appropriée.
-Faites défiler jusqu’à **[!UICONTROL pageName]** pour vérifier que le `Page Name` est correctement capturé
-![Validation du nom de page avec Assurance](assets/assurance-hitdebugger-content-pagename.png)
+Faites défiler jusqu’à **[!UICONTROL pageName]** pour vérifier que le `Page Name` est correctement capturé :
+
+
+    >[!NOTE]
+    >
+    > La valeur « pageName » peut être « test » si vous avez remplacé l’objet « xdm » par l’objet « data » dans l’exercice précédent.
+    
+    ![Validation du nom de page avec Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Validation des chaînes de produit et des événements e-commerce
 
@@ -481,4 +491,4 @@ Félicitations ! Tu l&#39;as fait ! La leçon est terminée. Vous êtes mainten
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
