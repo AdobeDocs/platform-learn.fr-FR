@@ -4,9 +4,9 @@ description: Journey Optimizer - Création de fragments
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 9%
 
 ---
@@ -49,7 +49,7 @@ Une fenêtre contextuelle s’affiche alors pour vous montrer votre bibliothèqu
 
 >[!NOTE]
 >
->Si vous ne voyez pas les images Citi Signal dans votre bibliothèque AEM Assets, vous pouvez les trouver [ici](./../../../../assets/ajo/CitiSignal-images.zip). Téléchargez-les sur votre bureau, créez le dossier **citi-signal-images** et chargez toutes les images de ce dossier.
+>Si vous ne voyez pas les images CitiSignal dans votre bibliothèque AEM Assets, vous pouvez les trouver [ici](./../../../../assets/ajo/CitiSignal-images.zip). Téléchargez-les sur votre bureau, créez le dossier **citi-signal-images** et chargez toutes les images de ce dossier.
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -231,8 +231,6 @@ Cliquez sur **Publier** pour publier votre pied de page afin de l’utiliser dan
 Au bout de quelques minutes, vous verrez que le statut de votre pied de page est passé à **Actif**.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
 

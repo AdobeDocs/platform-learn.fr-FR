@@ -4,7 +4,7 @@ description: Prise en main - Utilisez le système de démonstration en regard de
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Afin de visualiser les enseignements de ce tutoriel et de vous permettre de test
 
 Une fois que vous avez accès à Demo System Next, procédez comme suit.
 
-Accédez à [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} puis à **Configuration**.
+Accédez à [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} puis à **Configuration**.
 
 ![DSN ](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ Dans le menu déroulant **Environnement**, sélectionnez votre instance et votre
 
 ![DSN ](./images/dsnh1.png)
 
-Sélectionnez ensuite le paramètre prédéfini **Utilisateur du tutoriel AEP**.
+Sélectionnez ensuite le paramètre prédéfini **un tutoriel Adobe**.
 
 ![DSN ](./images/dsnhome.png)
 

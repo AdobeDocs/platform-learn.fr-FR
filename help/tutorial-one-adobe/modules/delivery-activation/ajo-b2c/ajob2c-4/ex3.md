@@ -4,9 +4,9 @@ description: Cet exercice explique comment utiliser la personnalisation de segme
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '395'
 ht-degree: 10%
 
 ---
@@ -71,12 +71,12 @@ Sélectionnez la `--aepUserLdap-- - Interest in Plans` du segment et cliquez sur
 
 Vous devez ensuite laisser la première ligne telle quelle et remplacer les lignes 2 et 3 par ce code :
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Tu auras alors ceci. Cliquez sur **Enregistrer**.
 
@@ -108,7 +108,7 @@ Vous avez terminé cet exercice.
 
 ## Étapes suivantes
 
-Accédez à [3.4.4 Configuration et utilisez les notifications push pour iOS](./ex4.md){target="_blank"}
+Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
 
 Revenir à [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

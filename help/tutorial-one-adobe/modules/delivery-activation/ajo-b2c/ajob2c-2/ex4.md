@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer - Configuration du parcours et du message
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 5%
+source-wordcount: '1484'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +43,7 @@ Comme nom pour le parcours, utilisez `--aepUserLdap-- - Geofence Entry Journey`.
 
 ![Démonstration](./images/joname.png)
 
-Sur le côté gauche de l’écran, regardez **Événements**. L’événement que vous avez créé précédemment devrait s’afficher dans cette liste. Sélectionnez-la, puis faites-la glisser et déposez-la sur la zone de travail du parcours. Votre parcours ressemble alors à ceci. Cliquez sur **Enregistrer**.
+Sur le côté gauche de l’écran, regardez **Événements**. Vous devriez voir votre événement créé précédemment dans cette liste, qui est nommée `--aepUserLdap--GeofenceEntry`. Sélectionnez-la, puis faites-la glisser et déposez-la sur la zone de travail du parcours. Votre parcours ressemble alors à ceci.
 
 ![Démonstration](./images/joevents.png)
 
@@ -201,7 +201,7 @@ Dans le menu de gauche, revenez à **Actions**, sélectionnez l’`--aepUserLdap
 
 ![Démonstration](./images/joa18.png)
 
-Accédez à **Paramètres d’action** et cliquez sur l’icône **Modifier** du `textToSlack` de paramètre.
+Faites défiler jusqu’à **Paramètres de requête** et cliquez sur l’icône **Modifier** pour le `textToSlack` de paramètre.
 
 ![Démonstration](./images/joa19.png)
 
@@ -215,7 +215,7 @@ Sélectionnez le code ci-dessous, copiez-le et collez-le dans l’**Éditeur de 
 
 ![Démonstration](./images/joa21.png)
 
-L’action terminée s’affiche. Cliquez sur **Enregistrer**.
+L’action terminée s’affiche. Faites défiler vers le haut et cliquez sur **Enregistrer**.
 
 ![Démonstration](./images/joa22.png)
 
@@ -233,7 +233,7 @@ Dans le menu de gauche, revenez à **Actions**, sélectionnez l’`--aepUserLdap
 
 ![Démonstration](./images/jop18.png)
 
-Accédez à **Paramètres d’action** et cliquez sur l’icône **Modifier** du `textToSlack` de paramètre.
+Faites défiler jusqu’à **Paramètres de requête** et cliquez sur l’icône **Modifier** pour le `textToSlack` de paramètre.
 
 ![Démonstration](./images/joa19z.png)
 
@@ -247,7 +247,7 @@ Sélectionnez le code ci-dessous, copiez-le et collez-le dans l’**Éditeur de 
 
 ![Démonstration](./images/jop21.png)
 
-L’action terminée s’affiche. Cliquez sur **OK**.
+L’action terminée s’affiche. Faites défiler vers le haut et cliquez sur **Enregistrer**.
 
 ![Démonstration](./images/jop22.png)
 
@@ -265,7 +265,7 @@ Dans le menu de gauche, revenez à **Actions**, sélectionnez l’`--aepUserLdap
 
 ![Démonstration](./images/jod18.png)
 
-Accédez à **Paramètres d’action** et cliquez sur l’icône **Modifier** du `textToSlack` de paramètre.
+Faites défiler jusqu’à **Paramètres de requête** et cliquez sur l’icône **Modifier** pour le `textToSlack` de paramètre.
 
 ![Démonstration](./images/joa19zzz.png)
 

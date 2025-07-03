@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique complet pour les applications Adobe, de Cre
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1217'
 ht-degree: 3%
 
 ---
@@ -171,21 +171,17 @@ ht-degree: 3%
          + [3.2.4 Création de parcours et de messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5 Déclenchement du parcours](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-      + 3.3 Adobe Journey Optimizer : Offer Decisioning {#ajo33}
-         + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
-         + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-         + [3.3.2 Configurer vos offres et décisions](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-         + [3.3.3 Préparez la propriété du client de collecte de données Adobe Experience Platform et la configuration de Web SDK pour Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-         + [3.3.4 Combiner Adobe Target et Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
-         + [3.3.5 Utiliser votre décision dans un e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
-         + [3.3.6 Tester votre décision à l’aide de l’API](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
+      + 3.3 Adobe Journey Optimizer : messages push et in-app {#ajo33}
+         + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
+         + [3.3.1 Prise en main des notifications push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+         + [3.3.2 Configuration d’un parcours avec des messages push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+         + [3.3.3 Configurer une campagne avec des messages in-app](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
-      + 3.4 Adobe Journey Optimizer : Parcours basés sur un événement {#ajo34}
+      + 3.4 Adobe Journey Optimizer : parcours et campagnes de confirmation de commande {#ajo34}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1 Configuration d’un parcours basé sur un déclencheur - Confirmation de commande](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2 Configuration d’une campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
          + [3.4.3 Appliquer une personnalisation basée sur les segments dans un e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-         + [3.4.4 Configuration et utilisation des notifications push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex4.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
       + 3.5 Adobe Journey Optimizer : services de traduction {#ajo35}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
@@ -193,6 +189,22 @@ ht-degree: 3%
          + [3.5.2 Création de votre campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3 Ajouter des langues à votre e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
+      + 3.6 Adobe Journey Optimizer : gestion de contenu  {#ajo36}
+         + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+         + [3.6.1 Cartes de contenu](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
+         + [3.6.2 Pages de destination](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
+         + [3.6.3 AJO et GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
+         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
+      + 3.7 Adobe Journey Optimizer : Experience Decisioning {#ajo37}
+         + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+         + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
+         + [3.7.2 Configuration de vos offres et de votre décision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
+         + [3.7.3 Configuration de Web SDK pour Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
+         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
+      + 3.8 Adobe Journey Optimizer : Campagnes {#ajo38}
+         + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+         + [3.8.1 Prise en main des campagnes](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
 + Rapports et informations {#reporting}
    + Customer Journey Analytics  {#cjab2c}

@@ -4,9 +4,9 @@ description: Mettre à jour votre ID de configuration et tester votre Parcours
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ## 3.1.3.1 Mettre à jour la propriété de la collecte de données
 
-Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/launch/) puis sélectionnez **Balises**.
+Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/data-collection/home) puis sélectionnez **Balises**.
 
 ![Page Propriétés](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-Dans **Prise en main**, le système de démonstration a créé deux propriétés client pour vous : une pour le site web et une pour l’application mobile. Recherchez-les en `--aepUserLdap--` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
+Dans **Prise en main**, Système de démonstration a ensuite créé quelques propriétés de balises pour vous, dont une pour le site web et une pour l’application mobile. Recherchez-les en `--aepUserLdap-- - One Adobe` dans la zone **[!UICONTROL Rechercher]**. Cliquez pour ouvrir la propriété **Web**.
 
 ![Zone de recherche](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -49,7 +49,7 @@ Vous verrez alors ceci :
 
 Accédez au `_experience.campaign.orchestration.eventID` de champs . Supprimez la valeur actuelle et collez-y votre eventID.
 
-Pour rappel, l’identifiant d’événement se trouve dans Adobe Journey Optimizer sous **Configurations > Événements** et vous trouverez l’identifiant d’événement dans l’exemple de payload de votre événement, qui se présente comme suit : `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`.
+Pour rappel, l’identifiant d’événement se trouve dans Adobe Journey Optimizer sous **Configurations > Événements** et vous trouverez l’identifiant d’événement dans l’exemple de payload de votre événement, qui se présente comme suit : `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`.
 
 ![ACOP ](./images/payloadeventID.png)
 
@@ -97,7 +97,7 @@ Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écra
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv1.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu. Cliquez sur **Se connecter**.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu. Cliquez sur **Se connecter**.
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 

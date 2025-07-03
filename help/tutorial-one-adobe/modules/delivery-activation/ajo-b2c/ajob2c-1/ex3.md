@@ -4,14 +4,14 @@ description: Journey Optimizer Création de votre e-mail
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 5%
 
 ---
 
-# 3.1.3 Création de votre Parcours, fragments et message
+# 3.1.3 Création de votre parcours et de votre e-mail
 
 Dans cet exercice, vous allez configurer le parcours et le message qui doit être déclenché lorsqu’une personne crée un compte sur le site web de démonstration.
 
@@ -33,7 +33,7 @@ Un écran de parcours vide s’affiche alors.
 
 ![ACOP ](./images/journeyempty.png)
 
-Dans l’exercice précédent, vous avez créé un **Événement**. Vous l&#39;avez nommé comme suit `--aepUserLdap--AccountCreationEvent` et remplacé `ldap` par votre ldap. Résultat de la création de l’événement :
+Dans l’exercice précédent, vous avez créé un **Événement**. Vous l&#39;avez nommé comme ceci `--aepUserLdap--AccountCreationEvent`. Résultat de la création de l’événement :
 
 ![ACOP ](./images/eventdone.png)
 
@@ -41,7 +41,7 @@ Vous devez maintenant prendre cet événement comme point de départ de ce Parco
 
 ![ACOP ](./images/eventlist.png)
 
-Sélectionnez votre événement, faites-le glisser et déposez-le sur la zone de travail du Parcours. Votre Parcours ressemble désormais à ceci :
+Sélectionnez votre événement, faites-le glisser et déposez-le sur la zone de travail du parcours. Votre parcours ressemble désormais à ceci :
 
 ![ACOP ](./images/journeyevent.png)
 
@@ -57,7 +57,7 @@ Comme troisième étape du parcours, vous devez ajouter une action **E-mail**. A
 
 ![ACOP ](./images/journeyactions.png)
 
-Définissez la **Catégorie** sur **Marketing** et sélectionnez une configuration d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la configuration d&#39;email à sélectionner est **Email**. Assurez-vous que les cases à cocher **Clics sur l’e-mail** et **Ouvertures d’e-mail** sont activées.
+Définissez la **Catégorie** sur **Marketing** et sélectionnez une configuration d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la configuration d’e-mail à sélectionner est **Email-TI**.
 
 ![ACOP ](./images/journeyactions1.png)
 

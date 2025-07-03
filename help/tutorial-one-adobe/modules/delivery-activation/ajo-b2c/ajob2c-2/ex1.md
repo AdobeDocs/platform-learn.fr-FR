@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - API de météo externe, action SMS et plu
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Assurez-vous que le **Type** est défini sur **Unitaire** et, pour la sélection
 
 ![Démonstration](./images/evname.png)
 
-Vous devez ensuite sélectionner un schéma. Tous les schémas affichés ici sont des schémas Adobe Experience Platform.
+Vous devez ensuite sélectionner un schéma.
 
 ![Démonstration](./images/evschema.png)
 
@@ -109,7 +109,7 @@ Cliquez sur l’icône **Afficher la payload** pour ouvrir un exemple de payload
 
 Notez le `eventID` comme vous en aurez besoin lors du dernier test de votre configuration.
 
-Dans cet exemple, la `eventID` est `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
+Dans cet exemple, la `eventID` est `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`.
 
 Vous avez maintenant défini l’événement qui déclenchera le parcours que nous sommes en train de créer. Une fois le parcours déclenché, les champs de limite géographique comme Ville, et tous les autres que vous avez pu choisir (comme Pays, Latitude et Longitude) seront mis à la disposition du parcours.
 
