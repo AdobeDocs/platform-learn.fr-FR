@@ -71,12 +71,12 @@ Sélectionnez la `--aepUserLdap-- - Interest in Plans` du segment et cliquez sur
 
 Vous devez ensuite laisser la première ligne telle quelle et remplacer les lignes 2 et 3 par ce code :
 
-``
+&grave;&grave;
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-``
+&grave;&grave;
 
 Tu auras alors ceci. Cliquez sur **Enregistrer**.
 
