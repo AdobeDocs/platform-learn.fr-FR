@@ -25,7 +25,7 @@ Vous implémenterez le SDK Web sur le navigateur dans l’exercice suivant. Vous
 
 Dans [Prise en main](./../../../../modules/getting-started/gettingstarted/ex2.md) vous avez déjà créé un flux de données, mais nous n’avons pas discuté de l’arrière-plan ni de la raison pour laquelle vous l’avez créé.
 
-Un [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) indique aux serveurs Edge Network où envoyer les données une fois qu’elles ont été collectées par le SDK Web. Consultez la documentation relative à l’[ajout de services à un flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) pour obtenir des détails complets sur l’endroit où vous pouvez envoyer vos données par le biais du flux de données.
+Un [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) indique aux serveurs Edge Network où envoyer les données une fois qu’elles ont été collectées par le SDK Web. Consultez la documentation relative à l’[ajout de services à un flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure#add-services) pour obtenir des détails complets sur l’endroit où vous pouvez envoyer vos données par le biais du flux de données.
 
 Les flux de données sont gérés dans l’interface utilisateur de la collecte de données Experience Platform et sont essentiels à la collecte de données avec Web SDK, que vous implémentiez ou non Web SDK via la collecte de données Adobe Experience Platform.
 
@@ -61,7 +61,7 @@ Pour ce flux de données...
 - Toutes les données d’événement d’expérience sont collectées par défaut dans le jeu de données **Système de démonstration - Jeu de données d’événement pour le site web (global v1.1)**
 - Toutes les données de profil seront collectées par défaut dans le jeu de données **Système de démonstration - Jeu de données de profil pour le site web (global v1.1)** (l’ingestion de données de profil en mode natif avec Web SDK n’est actuellement pas encore prise en charge par Web SDK)
 - **La segmentation Edge** est activée par défaut, ce qui signifie que les audiences qualifiées seront évaluées à l’edge, lors de l’ingestion du trafic entrant
-- Si vous souhaitez utiliser des [destinations de personnalisation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), cochez la case **Destinations Personalization**.
+- Si vous souhaitez utiliser des [destinations de personnalisation](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/personalization/overview), cochez la case **Destinations Personalization**.
 - Si vous souhaitez utiliser les fonctionnalités de **Adobe Journey Optimizer** dans ce flux de données, vous devez cocher la case **Adobe Journey Optimizer**.
 
 Pour l’instant, aucune autre configuration n’est nécessaire pour votre flux de données.
