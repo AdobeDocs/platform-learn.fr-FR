@@ -86,7 +86,7 @@ Vous verrez alors que votre flux de données pour mobile est lié ici. Cliquez e
 
 ![Collecte de données dʼAdobe Experience Platform](./images/launchprop2.png)
 
-Tu reviendras ensuite ici. L’extension s’affiche pour **AEP Assurance**. AEP Assurance vous permet de contrôler, de tester, de simuler et de valider la manière dont vous collectez les données ou dont les expériences sont diffusées dans votre application mobile. Vous pouvez en savoir plus sur AEP Assurance ici : [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home).
+Tu reviendras ensuite ici. L’extension s’affiche pour **AEP Assurance**. AEP Assurance vous permet de contrôler, de tester, de simuler et de valider la manière dont vous collectez les données ou dont les expériences sont diffusées dans votre application mobile. Vous pouvez en savoir plus sur AEP Assurance ici : [https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home).
 
 ![Collecte de données dʼAdobe Experience Platform](./images/launchprop8.png)
 
