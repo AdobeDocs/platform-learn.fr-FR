@@ -4,9 +4,9 @@ description: Prise en main - Utilisation de l’application mobile
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 53f21d39caa047170811a063ff9d01d57e456626
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -15,39 +15,39 @@ ht-degree: 1%
 
 ## Télécharger l’application
 
-Accédez à [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} sur votre ordinateur. Connectez-vous à l’aide de votre Adobe ID, vous verrez ceci.
+Accédez à [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} sur votre ordinateur, puis à **Version de Beta**. Connectez-vous à l’aide de votre Adobe ID, vous verrez ceci.
 
 ![DSN ](./images/mobileapp.png)
 
-Utilisez l&#39;application **Camera** sur votre smartphone pour installer l&#39;application mobile correspondant au système d&#39;exploitation de votre appareil. Pour cette activation, vous devez installer la **version 2.x** qui utilise le SDK mobile Adobe Experience Platform.
+Utilisez l&#39;application **Camera** sur votre smartphone pour installer l&#39;application mobile correspondant au système d&#39;exploitation de votre appareil. Pour cette activation, vous devez installer la version **0.6.1** (ou ultérieure) qui utilise le SDK Mobile Adobe Experience Platform.
 
 >[!NOTE]
 >
 >Après la première installation de l’application sur un appareil iOS, il se peut que vous receviez un message d’erreur lors de l’ouverture de l’application indiquant : **Développeur d’entreprise non approuvé**. Pour résoudre ce problème, vous devez accéder à **Paramètres > Général > Gestion des VPN et des appareils > Adobe Systems Inc.** et cliquer sur **Faire confiance à Adobe Systems Inc.**.
 
+Après avoir analysé le code QR, sélectionnez **Installer**.
+
+![DSN ](./images/mobileappn0.png)
+
 Une fois l&#39;application installée, vous la trouverez sur l&#39;écran d&#39;accueil de votre appareil. Cliquez sur l’icône pour ouvrir l’application.
 
 ![DSN ](./images/mobileappn1.png)
 
-Lorsque vous utilisez l’application pour la première fois, il vous sera demandé de vous connecter à l’aide de votre Adobe ID. Terminez le processus de connexion.
+Après vous être connecté, une notification s’affichera pour vous demander l’autorisation d’envoyer des notifications. Nous enverrons des notifications dans le cadre du tutoriel. Cliquez donc sur **Autoriser**.
 
 ![DSN ](./images/mobileappn2.png)
 
-Après vous être connecté, une notification s’affichera pour vous demander l’autorisation d’envoyer des notifications. Nous enverrons des notifications dans le cadre du tutoriel. Cliquez donc sur **Autoriser**.
+Vous verrez alors la page d’accueil de l’application. Accédez à **Paramètres**.
 
 ![DSN ](./images/mobileappn3.png)
 
-Vous verrez alors la page d’accueil de l’application. Accédez à **Paramètres**.
+Dans les paramètres, vous verrez qu’un **Projet public** est actuellement chargé dans l’application. Cliquez sur **Projet personnalisé**.
 
 ![DSN ](./images/mobileappn4.png)
 
-Dans les paramètres, vous verrez qu’un **Projet public** est actuellement chargé dans l’application. Cliquez sur **Projet personnalisé**.
-
-![DSN ](./images/mobileappn5.png)
-
 Vous pouvez désormais charger un projet personnalisé. Cliquez sur le code QR pour charger facilement votre projet.
 
-![DSN ](./images/mobileappn6.png)
+![DSN ](./images/mobileappn5.png)
 
 Après l’exercice précédent, vous avez obtenu le résultat suivant. Cliquez pour ouvrir le **projet Mobile Edge Telco** qui a été créé pour vous.
 
@@ -73,11 +73,11 @@ Vous verrez ensuite cette fenêtre contextuelle, qui contient un code QR. Scanne
 
 ![DSN ](./images/web8c.png)
 
-Votre ID de projet s’affichera alors dans l’application, après quoi vous pourrez cliquer sur **Enregistrer**.
+Votre ID de projet est alors chargé dans l’application, après quoi vous pouvez cliquer sur **Basculer**.
 
 ![DSN ](./images/mobileappn7.png)
 
-Maintenant, revenez à **Accueil** dans l’application. Votre application est maintenant prête à être utilisée.
+Vous devriez alors voir la marque de démonstration **CitiSignal** chargée. Votre application est maintenant prête à être utilisée.
 
 ![DSN ](./images/mobileappn8.png)
 

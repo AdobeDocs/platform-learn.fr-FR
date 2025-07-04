@@ -3,19 +3,27 @@ title: Configuration d’un parcours avec des messages push
 description: Configuration d’un parcours avec des messages push
 kt: 5342
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '770'
 ht-degree: 3%
 
 ---
 
 # 3.3.2 Configuration d’un parcours avec des messages push
 
+Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-## 3.4.4.6 Créer un événement
+![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Accédez à **Journey Optimizer**. Dans le menu de gauche, accédez à **Configurations**, puis cliquez sur **Gérer** sous **Événements**.
+Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
+
+![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 3.3.2.1 Créer un événement
+
+Dans le menu de gauche, accédez à **Configurations**, puis cliquez sur **Gérer** sous **Événements**.
 
 ![ACOP ](./images/acopmenu.png)
 
@@ -32,7 +40,7 @@ La sélection suivante est **Type d’identifiant d’événement**. Sélectionn
 
 Vient ensuite la sélection du schéma . Un schéma a été préparé pour cet exercice. Veuillez utiliser le `Demo System - Event Schema for Mobile App (Global v1.1) v.1` de schéma.
 
-Après avoir sélectionné le schéma, vous verrez un certain nombre de champs sélectionnés dans la section **Payload**. Votre événement est maintenant entièrement configuré.
+Après avoir sélectionné le schéma, vous verrez un certain nombre de champs sélectionnés dans la section **Payload**. Vérifiez que le champ **Espace de noms** est défini sur **ECID**. Votre événement est maintenant entièrement configuré.
 
 Cliquez sur **Enregistrer**.
 
@@ -50,20 +58,24 @@ Un exemple de la payload attendue s’affiche maintenant.
 
 Votre événement possède un eventID d’orchestration unique, que vous pouvez trouver en faisant défiler cette payload jusqu’à ce que vous voyiez `_experience.campaign.orchestration.eventID`.
 
+L’identifiant d’événement est ce qui doit être envoyé à Adobe Experience Platform afin de déclencher le Parcours que vous allez créer à l’étape suivante. Notez cet eventID, car vous en aurez besoin à l’étape suivante.
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+Cliquez sur **OK**.
+
 ![ACOP ](./images/payloadeventID.png)
 
-L’identifiant d’événement est ce qui doit être envoyé à Adobe Experience Platform afin de déclencher le Parcours que vous allez créer à l’étape suivante. Notez cet eventID, car vous en aurez besoin à l’étape suivante.
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+Cliquez sur **Annuler**.
 
-Cliquez sur **Ok**, puis sur **Annuler**.
+![ACOP ](./images/payloadeventIDa.png)
 
-## 3.4.4.7 Créer un parcours
+## 3.3.2.2 Créer un parcours
 
-Dans le menu, accédez à **Parcours** puis cliquez sur **Créer un Parcours**.
+Dans le menu de gauche, accédez à **Parcours** puis cliquez sur **Créer un Parcours**.
 
 ![DSN ](./images/sjourney1.png)
 
-Tu verras ça. Donnez un nom à votre parcours. Utilisez `--aepUserLdap-- - Store Entry journey`. Cliquez sur **Enregistrer**.
+Tu verras ça. Donnez un nom à votre parcours : `--aepUserLdap-- - Store Entry journey`. Cliquez sur **Enregistrer**.
 
 ![DSN ](./images/sjourney3.png)
 
@@ -129,23 +141,61 @@ Votre parcours est maintenant publié.
 
 ![DSN ](./images/sjourney11.png)
 
-## 3.4.4.8 Tester votre parcours et votre message push
+## 3.3.2.3 Mettre à jour la propriété de collecte de données pour mobile
 
-Dans votre application mobile DX Demo 2.0, accédez à l’écran **Paramètres**. Cliquez sur le bouton **Entrée de la boutique**.
+Dans **Prise en main**, le système de démonstration a ensuite créé pour vous des propriétés de balises : une pour le site web et une pour l’application mobile. Recherchez-les en `--aepUserLdap--` dans la zone **Rechercher**. Cliquez pour ouvrir la propriété **Mobile**.
 
->[!NOTE]
->
->Le bouton **Entrée de magasin** est en cours d’implémentation. Vous ne le trouverez pas encore dans l’application.
+![DSN ](./images/pushpoi1.png)
 
-![DSN ](./images/demo1b.png)
+Vous devriez alors voir ceci.
 
-Veillez à fermer l’application immédiatement après avoir cliqué sur l’icône **Entrée de la boutique**, sinon le message push ne s’affichera pas.
+![DSN ](./images/pushpoi2.png)
 
-Au bout de quelques secondes, le message s’affiche.
+Dans le menu de gauche, accédez à **Règles** et cliquez pour ouvrir la règle **Entrée d’emplacement**.
 
-![DSN ](./images/demo2.png)
+![DSN ](./images/pushpoi3.png)
 
-Vous avez terminé cet exercice.
+Vous devriez alors voir ceci. Cliquez sur l’action **Mobile Core - Joindre des données**.
+
+![DSN ](./images/pushpoi4.png)
+
+Vous devriez alors voir ceci.
+
+![DSN ](./images/pushpoi5.png)
+
+Collez l’eventID de votre `--aepUserLdap--StoreEntryEvent` d’événement dans la fenêtre **Payload JSON**. Cliquez sur **Conserver les modifications**.
+
+![DSN ](./images/pushpoi6.png)
+
+Cliquez sur **Enregistrer** ou **Enregistrer dans la bibliothèque**.
+
+![DSN ](./images/pushpoi7.png)
+
+Accédez à **Flux de publication** et cliquez pour ouvrir la bibliothèque **Principal**.
+
+![DSN ](./images/pushpoi8.png)
+
+Cliquez sur **Ajouter toutes les ressources modifiées** puis sur **Enregistrer et créer dans le développement**.
+
+![DSN ](./images/pushpoi9.png)
+
+## 3.3.2.4 Tester votre parcours et votre message push
+
+Ouvrez l&#39;application **DSN Mobile**.
+
+![DSN ](./images/dxdemo1.png)
+
+Accédez à la page **Localisateur de magasin**.
+
+![DSN ](./images/dxdemo2.png)
+
+Cliquez sur **Simuler une entrée de point d’intérêt**.
+
+![DSN ](./images/dxdemo3.png)
+
+Au bout de quelques secondes, la notification push s’affiche.
+
+![DSN ](./images/dxdemo4.png)
 
 ## Étapes suivantes
 

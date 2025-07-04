@@ -4,9 +4,9 @@ description: Foundation - Profil client en temps réel - De l’inconnu au connu
 kt: 5342
 doc-type: tutorial
 exl-id: f33a7448-e1b9-47e7-97c7-509ad36cf991
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2264f26a0778c2570c36abe1bae4d6a1dc3a465c
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écra
 
 ![Démonstration](../../datacollection/dc1.2/images/pv1.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv2.png)
 
@@ -59,41 +59,39 @@ Vous pouvez également afficher tous les événements d’expérience qui ont é
 
 ![Démonstration](../../datacollection/dc1.2/images/pv3.png)
 
-Accédez à la catégorie de produits **Téléphones et appareils**. Cliquez ensuite sur le produit **iPhone 15 Pro**.
+Accédez à la catégorie de produits **Téléphones et appareils**. Cliquez ensuite sur le produit **iPhone 16 Pro**.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv4.png)
 
-Vous verrez ensuite la page des détails du produit. Un événement d’expérience de type **Vue du produit** a été envoyé à Adobe Experience Platform à l’aide de l’implémentation de Web SDK que vous avez examinée dans le module 1.
+Vous verrez ensuite la page des détails du produit. Un événement de type **Vue du produit** a été envoyé à Adobe Experience Platform à l’aide de l’implémentation de Web SDK que vous avez examinée dans le module 1.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv5.png)
 
-Ouvrez le panneau Visionneuse de profil et jetez un coup d’œil à vos **Événements d’expérience**.
+Ouvrez le panneau Visionneuse de profil et jetez un coup d’œil à vos **Événements**.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv6.png)
 
-Revenez à la page de catégorie **Téléphones et appareils**, puis cliquez sur un autre produit. Un autre événement d’expérience a été envoyé à Adobe Experience Platform. Ouvrez le panneau Visionneuse de profils. Vous verrez désormais 2 événements d’expérience de type **consultation du produit**. Bien que le comportement soit anonyme, avec le consentement approprié en place, vous pouvez suivre chaque clic et le stocker dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tous les comportements anonymes au profil connu.
+Revenez à la page de catégorie **Téléphones et appareils**, puis cliquez sur un autre produit. Un autre événement d’expérience a été envoyé à Adobe Experience Platform. Ouvrez le panneau Visionneuse de profils. Vous verrez désormais 2 événements de type **consultation du produit**. Bien que le comportement soit anonyme, avec le consentement approprié en place, vous pouvez suivre chaque clic et le stocker dans Adobe Experience Platform. Une fois que le client anonyme sera connu, nous pourrons fusionner automatiquement tous les comportements anonymes au profil connu.
+
+Cliquez sur **Se connecter**.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv7.png)
 
-Accédez à la page Enregistrement/Connexion . Cliquez sur **Se connecter**.
+Cliquez sur **Créer un compte**.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv8.png)
 
-Cliquez sur **Créer un compte**.
+Renseignez vos informations et cliquez sur **S’inscrire** après quoi vous serez redirigé vers la page précédente.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv9.png)
 
-Renseignez vos informations et cliquez sur **S’inscrire** après quoi vous serez redirigé vers la page précédente.
+Ouvrez le panneau Visionneuse de profils et accédez au profil client en temps réel. Dans le panneau Visionneuse de profil, toutes vos données personnelles doivent s’afficher, comme vos nouveaux identifiants d’e-mail et de téléphone ajoutés.
 
 ![Démonstration](../../datacollection/dc1.2/images/pv10.png)
 
-Ouvrez le panneau Visionneuse de profils et accédez au profil client en temps réel. Dans le panneau Visionneuse de profil, toutes vos données personnelles doivent s’afficher, comme vos nouveaux identifiants d’e-mail et de téléphone ajoutés.
-
-![Démonstration](../../datacollection/dc1.2/images/pv11.png)
-
 Dans le panneau Visionneuse de profil, accédez à Événements d’expérience. Vous verrez les 2 produits que vous avez consultés précédemment dans le panneau Visionneuse de profils. Ces deux événements sont désormais également liés à votre profil « connu ».
 
-![Démonstration](../../datacollection/dc1.2/images/pv12.png)
+![Démonstration](../../datacollection/dc1.2/images/pv11.png)
 
 Vous avez maintenant ingéré des données dans Adobe Experience Platform et vous les avez liées à des identifiants tels que des ECID et des adresses e-mail. L’objectif est de comprendre le contexte commercial de ce que vous êtes sur le point de faire. Dans l’exercice suivant, vous allez commencer à configurer tout ce dont vous avez besoin pour rendre possible toute cette ingestion de données.
 
@@ -105,21 +103,33 @@ Si l&#39;application n&#39;est plus installée, ou si vous ne vous souvenez plus
 
 Après avoir installé l&#39;application comme indiqué, vous verrez la page de destination de l&#39;application avec la marque Citi Signal chargée. Cliquez sur l’icône de compte dans la partie supérieure gauche de votre écran.
 
-![Démonstration](./images/app_hp1.png)
+![Démonstration](./images/app_hpz.png)
 
 Sur l’écran de connexion, connectez-vous avec l’adresse e-mail que vous avez utilisée sur le site Web de l’ordinateur de bureau. Cliquez sur **Connexion**.
 
 ![Démonstration](./images/app_acc.png)
 
-Accédez à l’écran d’accueil de l’application et cliquez pour ouvrir n’importe quel produit.
+Vous obtiendrez alors une confirmation de votre connexion.
 
-![Démonstration](./images/app_hp.png)
+![Démonstration](./images/app_acc1.png)
+
+Accédez à l’écran d’accueil de l’application et à la page **Téléphones et appareils**.
+
+![Démonstration](./images/app_hp1.png)
+
+Cliquez sur un produit de la page.
+
+![Démonstration](./images/app_hp2.png)
 
 Vous verrez ensuite la page des détails du produit.
 
 ![Démonstration](./images/app_galaxy.png)
 
-Accédez à l’écran d’accueil de l’application et balayez vers la gauche de l’écran pour afficher le panneau Visionneuse de profil. Vous verrez ensuite le produit que vous venez de consulter dans la section **Événements d’expérience**, ainsi que toutes les consultations de produits de la session de site web précédente.
+Accédez à l’écran d’accueil dans l’application, puis cliquez sur l’icône Adobe pour afficher le panneau Visionneuse de profils. Vous verrez ensuite la vue **Attributs de profil**, qui affiche désormais une vue combinée de votre activité web et de votre application mobile. Accédez à **Événements**
+
+![Démonstration](./images/app_hp3.png)
+
+Vous verrez ensuite le produit que vous venez de consulter dans la section **Événements d’expérience**, ainsi que toutes les consultations de produits de la session de site web précédente.
 
 >[!NOTE]
 >
