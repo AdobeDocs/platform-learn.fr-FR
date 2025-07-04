@@ -395,7 +395,7 @@ Votre site web est alors chargé dans une fenêtre de navigateur en mode privé.
 
 ![DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
