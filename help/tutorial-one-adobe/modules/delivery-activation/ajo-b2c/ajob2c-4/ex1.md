@@ -4,9 +4,9 @@ description: Dans cette section, vous allez configurer un parcours basé sur un 
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 8%
 
 ---
@@ -40,7 +40,7 @@ Pour **Type d’identifiant d’événement**, sélectionnez **Généré par le 
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-Vient ensuite la sélection du schéma . Un schéma a été préparé pour cet exercice. Veuillez utiliser le `Demo System - Event Schema for Website (Global v1.1) v.1` de schéma.
+Vient ensuite la sélection du schéma. Un schéma a été préparé pour cet exercice. Veuillez utiliser le `Demo System - Event Schema for Website (Global v1.1) v.1` de schéma.
 
 Après avoir sélectionné le schéma, vous verrez un certain nombre de champs sélectionnés dans la section **Payload**. Cliquez sur l’icône **Modifier/Crayon** pour ajouter des champs supplémentaires à cet événement.
 
@@ -78,7 +78,7 @@ Un exemple de la payload attendue s’affiche maintenant. Votre événement poss
 ![Journey Optimizer](./images/oc42.png)
 
 L’identifiant d’événement est ce qui doit être envoyé à Adobe Journey Optimizer afin de déclencher le parcours que vous allez créer à l’étape suivante. Notez cet eventID, car vous en aurez besoin lors de l’une des étapes suivantes.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Cliquez sur **Ok**, puis sur **Annuler**.
 
@@ -102,19 +102,15 @@ Ensuite, sous **Actions**, recherchez l’action **E-mail** et ajoutez-la à la 
 
 ![Journey Optimizer](./images/oc47.png)
 
-Définissez la **Catégorie** sur **Marketing** et sélectionnez une surface d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la surface d’e-mail à sélectionner est **Email**. Assurez-vous que les cases à cocher **Clics sur l’e-mail** et **Ouvertures d’e-mail** sont activées.
+Définissez la **Catégorie** sur **Marketing** et sélectionnez une surface d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la surface d’e-mail à sélectionner est **Email**. L’étape suivante consiste à créer votre message. Pour ce faire, cliquez sur **Modifier le contenu**.
 
 ![ACOP ](./images/journeyactions1.png)
-
-L’étape suivante consiste à créer votre message. Pour ce faire, cliquez sur **Modifier le contenu**.
-
-![ACOP ](./images/journeyactions2.png)
 
 Vous voyez maintenant ceci. Cliquez sur le champ de texte **Objet**.
 
 ![ACOP ](./images/journeyactions3.png)
 
-Dans la zone de texte, commencez à écrire **Merci pour votre commande** puis cliquez sur l’icône **Personalization**.
+Dans la zone de texte, commencez à écrire des `Thanks for your order, ` et cliquez sur l’icône **Personalization**.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -136,7 +132,7 @@ Effectuez un glisser-déposer 8 fois par colonne **1:1** sur la zone de travail,
 
 ![Journey Optimizer](./images/oc9.png)
 
-Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le 3.1.2.1[&#128279;](./../ajob2c-1/ex2.md) [exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le 3.1.2.2](./../ajob2c-1/ex2.md) exercice) sur le dernier composant de la zone de travail.
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le [ 3.1.2.1](./../ajob2c-1/ex2.md)exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le [ 3.1.2.2](./../ajob2c-1/ex2.md)exercice) sur le dernier composant de la zone de travail.
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -349,7 +345,7 @@ Votre parcours est maintenant publié.
 
 Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/launch/) puis sélectionnez **Balises**.
 
-Il s’agit de la page Propriétés de la collecte de données Adobe Experience Platform que vous avez déjà vue.
+Il s’agit de la page des propriétés de la collecte de données Adobe Experience Platform que vous avez déjà vue.
 
 ![Page Propriétés](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
@@ -399,19 +395,15 @@ Votre site web est alors chargé dans une fenêtre de navigateur en mode privé.
 
 ![DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
-Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu.
+Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **** comme identifiant principal pour ce client actuellement inconnu.
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Accédez à la page Enregistrement/Connexion . Cliquez sur **CRÉER UN COMPTE**.
+Accédez à la page **Connexion**, cliquez sur **CRÉER UN COMPTE** et renseignez ces champs. Cliquez sur **S’inscrire** après quoi vous serez redirigé vers la page précédente.
 
 ![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-Renseignez vos informations et cliquez sur **S’inscrire** après quoi vous serez redirigé vers la page précédente.
-
-![Démonstration](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Ajouter un produit au panier
+Ajoutez n’importe quel produit à votre panier.
 
 ![Journey Optimizer](./images/cart1a.png)
 
