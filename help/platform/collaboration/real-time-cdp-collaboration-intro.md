@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez Adobe Real-Time CDP Collaboration, une application de collaboration sur les données conçue spécialement pour vous permettre de découvrir et d’activer des audiences à forte valeur ajoutée et d’utiliser des fonctionnalités de mesure pour générer des résultats tangibles.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446803/?learn=on&enablevpops&captions=fre_fr)
