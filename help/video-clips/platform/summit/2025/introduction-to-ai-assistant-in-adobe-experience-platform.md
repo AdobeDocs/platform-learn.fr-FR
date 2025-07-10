@@ -19,4 +19,4 @@ ht-degree: 0%
 Découvrez comment l’assistant AI dans Adobe Experience Platform accompagne la productivité en aidant les utilisateurs à résoudre les problèmes, à rechercher et à optimiser les workflows.
 
 <!--  -->
->[!VIDEO](https://video.tv.adobe.com/v/3459306?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462055?learn=on&enablevpops=true&captions=fre_fr)
