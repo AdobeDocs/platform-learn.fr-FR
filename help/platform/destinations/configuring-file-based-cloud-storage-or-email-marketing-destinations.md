@@ -22,4 +22,4 @@ Obtenez des conseils lors d’une présentation pas à pas de la configuration d
 * [Activer les données d’audience vers des destinations d’exportation de profils par lots](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=fr) pour obtenir des instructions sur l’activation des données vers des destinations de marketing par lots ou par e-mail à l’aide de l’interface utilisateur Experience Platform
 * [Connexion aux destinations par lots et activation des données à l’aide de l’API Flow Service](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=fr) pour obtenir des instructions sur l’activation des données vers les destinations de marketing par lots ou par e-mail à l’aide de l’API Flow Service
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/340718/?learn=on&enablevpops&captions=fre_fr)
