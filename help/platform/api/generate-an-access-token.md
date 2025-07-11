@@ -20,5 +20,5 @@ ht-degree: 2%
 
 Utilisez les [API Adobe Identity Management Service](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) pour obtenir un jeton d’accès afin d’accéder aux API Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33190/?learn=on&enablevpops&captions=fre_fr)
 
