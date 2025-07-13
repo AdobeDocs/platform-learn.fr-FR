@@ -26,14 +26,14 @@ La fonctionnalité [Adobe Developer Console](https://developer.adobe.com/console
 
 >[!IMPORTANT]
 >
->Pour accéder au [Adobe Developer Console](https://developer.adobe.com/console/home), vous devez être soit un [administrateur système](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) soit un [développeur](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) dans le [Adobe Admin Console](https://adminconsole.adobe.com).
+>Pour accéder au [Adobe Developer Console](https://developer.adobe.com/console/home), vous devez être soit un [administrateur système](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) soit un [développeur](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) dans le [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Après avoir créé vos informations d’identification API, un administrateur système doit les associer à un rôle dans Experience Platform.
 >
 >Pour obtenir des instructions détaillées, consultez le tutoriel [Ajout de développeurs et octroi d’autorisations aux informations d’identification d’API ](../admin/add-developers.md).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/31635/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ La fonctionnalité [Adobe Developer Console](https://developer.adobe.com/console
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Générer un jeton d’accès à l’API Experience Platform avec Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33190/?format=jpeg&nocache=1752259602830&captions=fre_fr" alt="Générer un jeton d’accès à l’API Experience Platform avec Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Générer un jeton d’accès à l’API Experience Platform avec Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ La fonctionnalité [Adobe Developer Console](https://developer.adobe.com/console
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Utilisation des API Experience Platform avec Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33189/?format=jpeg&nocache=1752259602844&captions=fre_fr" alt="Utilisation des API Experience Platform avec Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Utilisation des API Experience Platform avec Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
