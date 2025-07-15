@@ -134,6 +134,7 @@ Pour créer l’emplacement JSON mobile :
 1. À l’étape **[!UICONTROL Détails]** de **[!UICONTROL Créer une offre personnalisée]** :
    1. Saisissez un **[!UICONTROL Nom]** pour l’offre, par exemple `Luma - Juno Jacket`, ainsi qu’un **[!UICONTROL Date et heure de début]** et un **[!UICONTROL Date et heure de fin]**. En dehors de ces dates, l’offre ne sera pas sélectionnée par le moteur de décision.
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![ Offres - Détails ](assets/ajo-offers-details.png)
 
 1. À l&#39;étape **[!UICONTROL Ajouter des représentations]** de **[!UICONTROL Créer une offre personnalisée]** :
@@ -152,14 +153,17 @@ Pour créer l’emplacement JSON mobile :
          ```
 
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
          ![Offres - Contenu personnalisé](assets/ajo-offers-customcontent.png)
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Représentations des offres](assets/ajo-offers-representations.png)
 
 1. À l&#39;étape **[!UICONTROL Ajouter des contraintes]** de l&#39;**[!UICONTROL Créer une offre personnalisée]** :
    1. Définissez **[!UICONTROL Priorité]** sur `10`.
    1. Désactivez le bouton (bascule) **[!UICONTROL Inclure la limitation]**.
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Offres - Contraintes](assets/ajo-offers-constraints.png)
 
 1. À l’étape **[!UICONTROL Révision]** de l’**[!UICONTROL Création d’une offre personnalisée]** :
@@ -253,9 +257,11 @@ Consultez la section [Étapes clés de création et de gestion des offres](https
    1. Dans la mosaïque **[!UICONTROL Critères d’évaluation]**, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]**.
       1. Dans la boîte de dialogue **[!UICONTROL Ajouter une collection d’offres]**, sélectionnez votre collection d’offres. Par exemple : **[!DNL Luma - Mobile App Collection]**.
       1. Sélectionnez **[!UICONTROL Ajouter]**.
+
          ![Décision - Sélectionner une collection](assets/ajo-decision-selectcollection.png)
    1. Assurez-vous que **[!UICONTROL Aucun]** est sélectionné pour **[!UICONTROL Éligibilité]** et **[!UICONTROL Priorité des offres]** est sélectionné en tant que **[!UICONTROL Méthode de classement]**.
    1. Sélectionnez **[!UICONTROL Suivant]**.
+
       ![Portées des décisions](assets/ajo-decision-scopes.png).
 1. À l&#39;étape **[!UICONTROL Ajouter une offre de secours]** de **[!UICONTROL Créer une nouvelle décision d&#39;offre]** :
    1. Sélectionnez votre offre de secours, par exemple la **[!DNL Luma - Fallback offer]**.

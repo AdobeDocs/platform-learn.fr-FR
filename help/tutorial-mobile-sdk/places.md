@@ -80,6 +80,7 @@ Vous définissez certains points d’intérêt dans le service Places.
    1. Sélectionnez **[!DNL Luma]** dans la liste **[!UICONTROL Sélectionner une bibliothèque]**.
    1. Assurez-vous d’avoir choisi votre bibliothèque de travail, par exemple **[!UICONTROL Version initiale]**.
    1. Sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]** dans **[!UICONTROL Enregistrer dans la bibliothèque]**.
+
       ![Installer l’extension Places](assets/places-install-extension.png).
 
 1. Votre bibliothèque est reconstruite.
@@ -139,6 +140,7 @@ Vous allez maintenant définir des règles pour travailler avec ces éléments d
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sous **[!UICONTROL ÉVÉNEMENTS]**.
    1. Sélectionnez **[!UICONTROL Places]** dans la liste **[!UICONTROL Extension]** et sélectionnez **[!UICONTROL Saisir un point d’intérêt]** dans la liste **[!UICONTROL Type d’événement]**.
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Événement de balise](assets/tags-event-mobile-core.png).
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) sous **[!UICONTROL ACTIONS]**.
    1. Sélectionnez **[!UICONTROL Mobile Core]** dans la liste **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Joindre les données]** dans **[!UICONTROL Type d’action]**. Cette action joint des données de payload.
@@ -169,6 +171,7 @@ Vous allez maintenant définir des règles pour travailler avec ces éléments d
       Vous pouvez également insérer `{%% ... %%}` valeurs d’espace réservé d’élément de données dans le fichier JSON en sélectionnant le ![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Une boîte de dialogue contextuelle vous permet de sélectionner n’importe quel élément de données que vous avez créé.
 
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
+
       ![Action des balises](assets/tags-action-mobile-core.png)
 
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) en regard de l’action **[!UICONTROL Mobile Core - Joindre des données]**.
