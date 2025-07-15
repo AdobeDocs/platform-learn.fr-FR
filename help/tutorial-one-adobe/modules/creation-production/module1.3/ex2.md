@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '1038'
+ht-degree: 2%
 
 ---
 
@@ -233,6 +233,8 @@ Dans l’exercice précédent, vous avez téléchargé le fichier [CitiSignal-GS
 
 ![GSPeM](./images/gspem17.png)
 
+### Métamodèle
+
 Accédez à **Contenu** > **Modèles**. Cliquez sur **+ Ajouter un modèle**.
 
 ![GSPeM](./images/gspem125.png)
@@ -262,6 +264,8 @@ Votre modèle a maintenant été enregistré et est disponible dans la biblioth�
 
 ![GSPeM](./images/gspem131.png)
 
+### Afficher les modèles de bannière publicitaire
+
 Cliquez sur **+ Ajouter un modèle**.
 
 ![GSPeM](./images/gspem132.png)
@@ -283,7 +287,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem136.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 250 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem137.png)
 
@@ -312,7 +316,7 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem143.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-300x600` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 300 x 600 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem144.png)
 
@@ -341,13 +345,46 @@ Cliquez sur **Suivant**.
 ![GSPeM](./images/gspem150.png)
 
 Utilisez ceci pour le champ **Nom du modèle** :
-`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 **&#x200B;**. Cliquez sur **Publier le modèle**.
+`--aepUserLdap---citisignal-displaytemplate-970x250` et définissez les valeurs **Largeur de l’annonce** et **Hauteur de l’annonce** sur 970 x 250 ****. Cliquez sur **Publier le modèle**.
 
 ![GSPeM](./images/gspem151.png)
 
 Votre modèle a maintenant été enregistré et est disponible dans la bibliothèque de modèles.
 
 ![GSPeM](./images/gspem152.png)
+
+### Modèle d’e-mail
+
+Cliquez sur **+ Ajouter un modèle**.
+
+![GSPeM](./images/gspem153.png)
+
+Sélectionnez **E-mail** puis cliquez sur **Parcourir**.
+
+![GSPeM](./images/gspem154.png)
+
+Dans le dossier contenant les fichiers **CitiSignal-GSPeM-assets** téléchargés, accédez au dossier **templates**. Sélectionnez le fichier **citisignal-email-template.html** et cliquez sur **Ouvrir**.
+
+![GSPeM](./images/gspem155.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Suivant**.
+
+![GSPeM](./images/gspem156.png)
+
+Cliquez sur **Suivant**.
+
+![GSPeM](./images/gspem157.png)
+
+Utilisez ceci pour le champ **Nom du modèle** :
+`--aepUserLdap---citisignal-email-template`.
+
+Cliquez sur **Publier le modèle**.
+
+![GSPeM](./images/gspem158.png)
+
+Votre modèle a maintenant été enregistré et est disponible dans la bibliothèque de modèles.
+
+![GSPeM](./images/gspem159.png)
 
 Vous avez maintenant configuré les modèles dont vous avez besoin pour l’exercice suivant.
 
