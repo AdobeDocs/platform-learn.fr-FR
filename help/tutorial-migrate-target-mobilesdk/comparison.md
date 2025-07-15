@@ -1,35 +1,35 @@
 ---
-title: Comparaison de l’extension Target à l’extension Decisioning
-description: Découvrez les différences entre l’extension Target et l’extension Decisioning, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
+title: Comparaison entre l’extension Target et les extensions Offer Decisioning et Target
+description: Découvrez les différences entre l’extension Target d’Offer Decisioning et l’extension Target, notamment les fonctionnalités, les fonctions, les paramètres et le flux de données.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '833'
 ht-degree: 3%
 
 ---
 
-# Comparaison de l’extension Target à l’extension Decisioning
+# Comparaison entre l’extension Target et les extensions Offer Decisioning et Target
 
-L’extension Adobe Journey Optimizer - Decisioning diffère de l’extension Adobe Target pour les applications mobiles. Les tableaux suivants servent de référence pour vous aider à évaluer les aspects de votre implémentation sur lesquels vous devrez peut-être vous concentrer au cours du processus de migration.
+L’extension Offer Decisioning and Target diffère de l’extension Adobe Target pour les applications mobiles. Les tableaux suivants servent de référence pour vous aider à évaluer les aspects de votre implémentation sur lesquels vous devrez peut-être vous concentrer au cours du processus de migration.
 
 Après avoir consulté les informations ci-dessous et évalué votre implémentation technique actuelle de l’extension Target, vous devriez être en mesure de comprendre les éléments suivants :
 
-- Les fonctionnalités de Target prises en charge par Adobe Journey Optimizer - Prise de décision
-- Quelles fonctions d’extension Adobe Target ont des équivalents Adobe Journey Optimizer - Prise de décision
-- Application des paramètres de Target avec Adobe Journey Optimizer - Prise de décision
-- Flux de données à l’aide de l’extension Adobe Journey Optimizer - Decisioning
+- Les fonctionnalités de Target prises en charge par Offer Decisioning et Target
+- Quelles fonctions d’extension Adobe Target ont des équivalents Offer Decisioning et Target ?
+- Application des paramètres de Target avec Offer Decisioning et Target
+- Flux de données à l’aide de l’extension Offer Decisioning et Target
 
 ## Différences opérationnelles
 
-| | Extension Target | Extension Decisioning |
+| | Extension Target | Extension Offer Decisioning and Target |
 |---|---|---|
-| Processus | Les modifications apportées à une implémentation de Target peuvent suivre un processus dont la cadence ou les exigences en matière d’assurance qualité sont différentes de celles d’autres applications telles qu’Analytics. | Les modifications apportées à une implémentation d’extension Decisioning doivent prendre en compte toutes les applications en aval. Le processus d’assurance qualité et de publication doit être adapté en conséquence. |
-| Collaboration | Les données spécifiques à Target peuvent être transmises directement dans les appels de Target. Si la source de création de rapports Target est Adobe Analytics (A4T), les données spécifiques à Target peuvent également être transmises à Adobe Analytics lorsque des méthodes de suivi appropriées dans l’extension Target sont appelées pour l’affichage du contenu de Target et l’interaction. | Les données transmises dans les appels de l’extension Decisioning peuvent être transférées vers Target et Analytics si la source de création de rapports cible est Adobe Analytics (A4T), si Adobe Analytics est activé dans le flux de données et si les méthodes de suivi appropriées dans l’extension Decisioning sont appelées lorsque le contenu Target est affiché et qu’il interagit avec celui-ci. |
+| Processus | Les modifications apportées à une implémentation de Target peuvent suivre un processus dont la cadence ou les exigences en matière d’assurance qualité sont différentes de celles d’autres applications telles qu’Analytics. | Les modifications apportées à une implémentation d’extension Offer Decisioning et Target doivent prendre en compte toutes les applications en aval. Le contrôle qualité et le processus de publication doivent être ajustés en conséquence. |
+| Collaboration | Les données spécifiques à Target peuvent être transmises directement dans les appels de Target. Si la source de création de rapports Target est Adobe Analytics (A4T), les données spécifiques à Target peuvent également être transmises à Adobe Analytics lorsque des méthodes de suivi appropriées dans l’extension Target sont appelées pour l’affichage du contenu de Target et l’interaction. | Les données transmises dans les appels d’extension Offer Decisioning et Target peuvent être transférées vers Target et Analytics si la source de rapports cible est Adobe Analytics (A4T), si Adobe Analytics est activé dans le flux de données et si les méthodes de suivi appropriées dans Offer Decisioning et l’extension Target sont appelées lorsque le contenu Target est affiché et qu’il interagit avec celui-ci. |
 
 ## Différences de base
 
-| | Extension Target | Extension Decisioning |
+| | Extension Target | Extension Offer Decisioning and Target |
 |---|---|---|
 | Dépendances | Dépend uniquement de Mobile Core SDK | Dépend de Mobile Core et Edge Network SDK |
 | Fonctionnalité de bibliothèque | Prend uniquement en charge la récupération de contenu d’Adobe Target | Prise en charge de la récupération de contenu d’Adobe Target et d’Offer Decisioning |
@@ -43,7 +43,7 @@ Après avoir consulté les informations ci-dessous et évalué votre implémenta
 
 ## Comparaison des fonctionnalités
 
-| Fonctionnalité | Extension Target | Extension Decisioning (Target via Edge) |
+| Fonctionnalité | Extension Target | Extension Offer Decisioning and Target (Target via Edge) |
 |---|---|---|
 | Mode de prérécupération | Pris en charge | Pris en charge |
 | Mode d’exécution | Pris en charge | Non pris en charge |
@@ -69,9 +69,9 @@ Après avoir consulté les informations ci-dessous et évalué votre implémenta
 
 >[!NOTE]
 >
->Conservez la configuration et les paramètres des balises d’extension Target même après avoir migré le code de votre application vers l’extension Decisioning. Cela permet de s’assurer que Target continue de fonctionner pour les clients qui n’ont pas encore mis à jour l’application vers la nouvelle version.
+>Conservez la configuration et les paramètres des balises d’extension Target même après avoir migré le code de votre application vers Offer Decisioning et l’extension Target. Cela permet de s’assurer que Target continue de fonctionner pour les clients qui n’ont pas encore mis à jour l’application vers la nouvelle version.
 >
->Si vous utilisez l’intégration Analytics for Target (A4T), veillez également à migrer votre implémentation Analytics avec l’extension Edge Bridge au même moment que vous migrez votre implémentation Target vers l’extension Decisioning.
+>Si vous utilisez l’intégration Analytics for Target (A4T), veillez également à migrer votre implémentation Analytics avec l’extension Edge Bridge au même moment que vous migrez votre implémentation Target vers l’extension Offer Decisioning et Target.
 
 
 
@@ -79,15 +79,15 @@ Après avoir consulté les informations ci-dessous et évalué votre implémenta
 
 >[!IMPORTANT]
 >
-> Conservez les paramètres de l’extension Target même après avoir migré le code de votre application vers l’extension Decisioning. Cela permet de s’assurer que Target continue de fonctionner pour les utilisateurs qui n’ont pas encore mis à jour leur application.
+> Conservez les paramètres d’extension Target même après avoir migré le code de votre application vers Offer Decisioning et l’extension Target. Cela permet de s’assurer que Target continue de fonctionner pour les utilisateurs qui n’ont pas encore mis à jour leur application.
 
-## Diagramme du système d’extension Decisioning
+## Diagramme système de l’extension Offer Decisioning et Target
 
-Le diagramme suivant doit vous aider à comprendre le flux de données à l’aide de l’extension Adobe Journey Optimizer - Prise de décision .
+Le diagramme suivant devrait vous aider à comprendre le flux de données à l’aide de l’extension Offer Decisioning et Target.
 
 ![Prise de décision Adobe Target Edge avec SDK mobile côté client](assets/diagram.png)
 
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=fr#M625).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

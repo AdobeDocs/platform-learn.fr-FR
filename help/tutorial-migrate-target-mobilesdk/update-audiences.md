@@ -1,10 +1,10 @@
 ---
-title: Mise à jour des audiences Target et des scripts de profil - Migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Adobe Journey Optimizer - Decisioning
-description: Découvrez comment mettre à jour les audiences Adobe Target et les scripts de profil pour des raisons de compatibilité avec l’extension Decisioning.
+title: Mise à jour des audiences Target et des scripts de profil - Migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Offer Decisioning et Target
+description: Découvrez comment mettre à jour les audiences Adobe Target et les scripts de profil pour des raisons de compatibilité avec l’extension Offer Decisioning et Target.
 exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 # Mise à jour des audiences Target et des scripts de profil pour la compatibilité des extensions mobiles Decisioning
 
 
-Une fois les mises à jour techniques effectuées pour migrer Target vers l’extension Decisioning, vous devrez peut-être mettre à jour certaines de vos audiences, scripts de profil et activités pour assurer une transition fluide.
+Une fois les mises à jour techniques de migration de Target vers Offer Decisioning et l’extension Target terminées, vous devrez peut-être mettre à jour certaines de vos audiences, scripts de profil et activités pour assurer une transition fluide.
 
 >[!INFO]
 >
@@ -29,9 +29,9 @@ Si vous migrez les paramètres de mbox vers l’objet `xdm`, avant de publier vo
 
 Si vous migrez les paramètres de mbox vers l’objet `xdm`, les audiences qui utilisent des paramètres de mbox personnalisés doivent être mises à jour pour utiliser les nouveaux noms de paramètres XDM. Par exemple, un paramètre personnalisé pour `page_name` serait probablement mappé à `web.webpagedetails.pageName`.
 
-Pour garantir la compatibilité avec les extensions Target et Decisioning, mettez à jour les audiences pertinentes afin que des conditions `OR` soient utilisées, comme illustré ci-dessous :
+Pour garantir la compatibilité avec les extensions Target et Offer Decisioning et Target, une approche consiste à mettre à jour les audiences pertinentes afin que des conditions `OR` soient utilisées, comme illustré ci-dessous :
 
-![Comment afficher et mettre à jour une audience cible pour la compatibilité de l’extension Decisioning ](assets/target-audience-update.png){zoomable="yes"}
+![Affichage de la mise à jour d’une audience cible pour la compatibilité des extensions Offer Decisioning et Target](assets/target-audience-update.png){zoomable="yes"}
 
 ## Modifier les scripts de profil
 
@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Pour plus d’informations et de bonnes pratiques, reportez-vous à la documentation dédiée sur [les scripts de profil](https://experienceleague.adobe.com/fr/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Pour plus d’informations et de bonnes pratiques, reportez-vous à la documentation dédiée sur [les scripts de profil](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Mise à jour des jetons de paramètre pour le contenu dynamique
 
-Si vous migrez les paramètres de mbox vers l’objet `xdm` et que vous disposez d’offres, de conceptions de recommandations ou d’activités qui utilisent le [remplacement de contenu dynamique](https://experienceleague.adobe.com/fr/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), ils doivent peut-être être mis à jour en conséquence pour tenir compte des nouveaux noms de paramètre XDM.
+Si vous migrez les paramètres de mbox vers l’objet `xdm` et que vous disposez d’offres, de conceptions de recommandations ou d’activités qui utilisent le [remplacement de contenu dynamique](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), ils doivent peut-être être mis à jour en conséquence pour tenir compte des nouveaux noms de paramètre XDM.
 
 Selon la manière dont vous utilisez le remplacement de jeton pour les paramètres de mbox, vous pouvez améliorer votre configuration existante pour tenir compte des anciens et des nouveaux noms de paramètre. Cependant, dans les cas où le code JavaScript personnalisé n’est pas possible, comme dans les offres JSON, vous devez créer des copies et effectuer des mises à jour une fois la migration terminée et active sur votre site de production.
 
@@ -88,4 +88,4 @@ Découvrez ensuite comment [valider l’implémentation de Target](validate.md).
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

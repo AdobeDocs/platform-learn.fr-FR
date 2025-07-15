@@ -1,17 +1,17 @@
 ---
-title: Valider et résoudre les problèmes liés à l’implémentation de l’extension Decisioning
-description: Découvrez comment valider et résoudre les problèmes liés à une implémentation mobile d’Adobe Target à l’aide de l’extension Decisioning.
+title: Validation et dépannage de la mise en œuvre de l’extension Offer Decisioning et Target
+description: Découvrez comment valider et résoudre les problèmes liés à une implémentation mobile d’Adobe Target à l’aide de l’extension Offer Decisioning et Target.
 exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
-source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
-# Valider et résoudre les problèmes liés à l’implémentation de l’extension Decisioning
+# Validation et dépannage de la mise en œuvre de l’extension Offer Decisioning et Target
 
-Après avoir migré votre implémentation Target de l’extension Target vers l’extension Decisioning, il est important de vérifier que tout fonctionne correctement avant de publier les modifications apportées à votre application de production. Adobe recommande ce qui suit, qui est abordé en détail sur cette page :
+Après avoir migré votre implémentation Target de l’extension Target vers Offer Decisioning et l’extension Target, il est important de vérifier que tout fonctionne correctement avant de publier les modifications apportées à votre application de production. Adobe recommande ce qui suit, qui est abordé en détail sur cette page :
 
 * Effectuez une validation technique pour vous assurer que l’implémentation de base et les requêtes et réponses de Platform Mobile SDK sont correctes
 * Assurez-vous que les activités Target sont diffusées et rendues correctement
@@ -23,7 +23,7 @@ Chaque implémentation de Target diffère selon l’architecture du site et les 
 
 ## Validation technique et dépannage
 
-La validation et le dépannage techniques avec Platform Mobile SDK et l’extension Decisioning sont considérablement améliorés avec Assurance. Consultez les pages de documentation suivantes pour en savoir plus sur cet outil essentiel :
+La validation et le dépannage techniques avec Platform Mobile SDK et l’extension Offer Decisioning et Target sont considérablement améliorés avec Assurance. Consultez les pages de documentation suivantes pour en savoir plus sur cet outil essentiel :
 
 * [Configuration des plug-ins Decisioning dans Assurance](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
@@ -31,10 +31,10 @@ La validation et le dépannage techniques avec Platform Mobile SDK et l’extens
 
 * [Examen des requêtes et simulation de différentes expériences](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
-Après avoir effectué les étapes de validation ci-dessus, vous pouvez être sûr que l’implémentation de Platform Mobile SDK avec l’extension Decisioning est prête à passer en production.
+Après avoir effectué les étapes de validation ci-dessus, vous pouvez être sûr que l’implémentation de Platform Mobile SDK avec l’extension Offer Decisioning et Target est prête à passer en production.
 
-Félicitations, vous avez atteint la fin du tutoriel. Bonne chance pour la migration de votre implémentation Adobe Target vers l’extension Decisioning !
+Félicitations, vous avez atteint la fin du tutoriel. Bonne chance pour la migration de votre implémentation Adobe Target vers l’extension Offer Decisioning et Target !
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

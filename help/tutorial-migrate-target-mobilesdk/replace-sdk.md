@@ -1,10 +1,10 @@
 ---
-title: Remplacez SDK - Migrez l’implémentation Adobe Target dans votre application mobile vers l’extension Adobe Journey Optimizer - Decisioning .
-description: Découvrez comment remplacer le SDK lors de la migration d’Adobe Target vers l’extension Adobe Journey Optimizer - Prise de décision pour mobile.
+title: Remplacez SDK - Migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Offer Decisioning et Target.
+description: Découvrez comment remplacer SDK lors de la migration d’Adobe Target vers l’extension Offer Decisioning et Target Mobile.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -20,10 +20,10 @@ Découvrez comment remplacer les SDK Adobe Target par les SDK Optimize dans votr
 
 >[!INFO]
 >
->Au sein de l’écosystème SDK Adobe Experience Platform Mobile, les extensions sont implémentées par des SDK importés dans vos applications qui peuvent avoir des noms différents :
+>Dans l’écosystème Adobe Experience Platform Mobile SDK, les extensions sont implémentées par des SDK importés dans vos applications, qui peuvent porter des noms différents :
 >
 > * **Target SDK** met en œuvre l’extension **Adobe Target**
-> * **Optimiser SDK** implémente l’extension **Adobe Journey Optimizer - Decisioning**
+> * **Optimiser SDK** implémente l’extension **Offer Decisioning et Target**
 
 ## Mettre à jour les dépendances
 
@@ -33,7 +33,7 @@ Exemple Android
 
 >[!TAB Optimisation de SDK]
 
-`build.gradle` Dépendances après la migration
+`build.gradle` des dépendances après la migration
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -46,7 +46,7 @@ implementation 'com.adobe.marketing.mobile:optimize'
 
 >[!TAB SDK Target]
 
-`build.gradle` dépendances avant la migration
+`build.gradle` les dépendances avant la migration
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -108,7 +108,7 @@ pod 'AEPUserProfile', '~> 5.0'
 
 >[!BEGINTABS]
 
->[!TAB Optimiser le SDK]
+>[!TAB Optimisation de SDK]
 
 Code d’initialisation Java après la migration
 
@@ -132,7 +132,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -266,16 +266,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## Comparaison des API
 
-De nombreuses API d’extension Target ont une approche équivalente utilisant l’extension Decisioning décrite dans le tableau ci-dessous. Pour plus d’informations sur les [fonctions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), consultez la référence de l’API .
+De nombreuses API d’extension Target ont une approche équivalente utilisant l’extension Offer Decisioning et Target décrite dans le tableau ci-dessous. Pour plus d’informations sur les [fonctions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), consultez la référence de l’API .
 
-| Extension Target | Extension Decisioning | Notes |
+| Extension Target | Extension Offer Decisioning and Target | Notes |
 | --- | --- | --- | 
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | Lors de l’utilisation de l’API `getPropositions`, aucun appel à distance n’est effectué pour récupérer des portées non mises en cache dans le SDK. |
-| [displayLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [Offre -> display()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | En outre, `generateDisplayInteractionXdm` la méthode Offer peut être utilisée pour générer le XDM pour l’affichage d’un article. Par la suite, l’API sendEvent du SDK réseau Edge peut être utilisée pour joindre des données XDM supplémentaires de forme libre et envoyer un événement Experience à la base distante. |
-| [emplacement cliqué](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [Offre -> appuyé()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | En outre, `generateTapInteractionXdm` méthode Offre peut être utilisée pour générer le fichier XDM pour l’appui sur l’élément. Par la suite, l’API sendEvent du SDK réseau Edge peut être utilisée pour joindre des données XDM à structure libre supplémentaires et envoyer un événement d’expérience à l’instance distante. |
+| [displayLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [Offre -> display()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | En outre, `generateDisplayInteractionXdm` méthode Offre peut être utilisée pour générer le XDM pour l’affichage des articles. Par la suite, l’API sendEvent du SDK réseau Edge peut être utilisée pour joindre des données XDM à structure libre supplémentaires et envoyer un événement d’expérience à l’instance distante. |
+| [clickedLocation](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [Offre -> appuyé()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | En outre, `generateTapInteractionXdm` méthode Offre peut être utilisée pour générer le fichier XDM pour l’appui sur l’élément. Par la suite, l’API sendEvent du SDK réseau Edge peut être utilisée pour joindre des données XDM à structure libre supplémentaires et envoyer un événement d’expérience à l’instance distante. |
 | [clearPrefetchCache](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [clearCachedPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} |  |
-| [réinitialisation de l’expérience](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#resetexperience){target=_blank} | S.O. | Utilisez [l’API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity){target=_blank} de l’extension Identity pour le réseau Edge pour le Kit de développement logiciel (SDK) afin d’arrêter d’envoyer l’identifiant visiteur au réseau Edge. Pour plus d’informations, consultez [la documentation](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity) de l’API removeIdentity. <br><br>Remarque : l’API de Mobile Core efface toutes les identités `resetIdentities` stockées dans le SDK, y compris l’ID Experience Cloud (ECID) et doit être utilisée avec parcimonie ! |
+| [resetExperience](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#resetexperience){target=_blank} | S.O. | Utilisez l’API [removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity){target=_blank} de l’extension Identity for Edge Network pour SDK afin de cesser d’envoyer l’identifiant visiteur au réseau Edge. Pour plus d’informations, voir [documentation de l’API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Remarque : l’API `resetIdentities` de Mobile Core efface toutes les identités stockées dans le SDK, y compris l’Experience Cloud ID (ECID), et elle doit être utilisée avec parcimonie ! |
 | [getSessionId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getsessionid){target=_blank} | S.O. | `state:store` handle de réponse transfère les informations relatives à la session. L’extension de réseau Edge permet de le gérer en joignant des éléments de magasin d’état non expirés aux requêtes suivantes. |
 | [setSessionId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setsessionid){target=_blank} | S.O. | `state:store` handle de réponse transfère les informations relatives à la session. L’extension de réseau Edge permet de le gérer en joignant des éléments de magasin d’état non expirés aux requêtes suivantes. |
 | [getThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getthirdpartyid){target=_blank} | S.O. | Utilisez l’API updateIdentities de l’extension Identity for Edge Network pour fournir la valeur de l’ID tiers. Configurez ensuite l’espace de noms d’ID tiers dans le flux de données. Pour plus d’informations, voir [documentation mobile ID tiers de Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
@@ -288,4 +288,4 @@ Ensuite, découvrez comment [demander et effectuer le rendu des activités](retr
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration Target mobile de l’extension Target vers l’extension Decisioning. Si vous rencontrez des obstacles lors de votre migration ou si vous avez l’impression qu’il manque des informations critiques dans ce guide, veuillez nous le faire savoir en publiant dans [cette discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=fr#M625) communautaire.
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
