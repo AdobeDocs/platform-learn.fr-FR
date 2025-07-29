@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Définition des autorisations pour Real-Time CDP Collaboration
 
-Découvrez comment configurer les autorisations nécessaires pour accéder à Real-Time CDP Collaboration et l’utiliser. Pour consulter une documentation détaillée, voir [présentation du contrôle d’accès](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
+Découvrez comment configurer les autorisations nécessaires pour accéder à Real-Time CDP Collaboration et l’utiliser. Pour consulter une documentation détaillée, voir [présentation du contrôle d’accès](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
 
