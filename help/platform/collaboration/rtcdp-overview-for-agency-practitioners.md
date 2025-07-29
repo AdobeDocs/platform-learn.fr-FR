@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Cette vidéo est destinée à donner aux agences ou aux professionnels des médias payants un aperçu général de la valeur de Real-Time CDP, de ce qu’elle est, de son fonctionnement et de son fonctionnement, en mettant l’accent sur les sources de données et les audiences qui alimentent leur cas d’utilisation et leurs workflows Real-Time CDP Collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464660/?learn=on&enablevpops&captions=fre_fr)
