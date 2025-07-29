@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Exécuter des requêtes
 
-Découvrez comment utiliser le Query Editor de Adobe Experience Platform pour créer, exécuter et gérer efficacement des requêtes SQL. Les observateurs apprendront à utiliser des fonctionnalités telles que l’explorateur d’objets, la saisie semi-automatique, les requêtes paramétrées et les outils de planification afin de rationaliser les workflows de données et de générer des informations exploitables dans l’ensemble de leur organisation. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Découvrez comment utiliser le Query Editor de Adobe Experience Platform pour créer, exécuter et gérer efficacement des requêtes SQL. Les observateurs apprendront à utiliser des fonctionnalités telles que l’explorateur d’objets, la saisie semi-automatique, les requêtes paramétrées et les outils de planification afin de rationaliser les workflows de données et de générer des informations exploitables dans l’ensemble de leur organisation. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
