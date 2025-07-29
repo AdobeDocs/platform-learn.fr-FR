@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Découvrez comment vous abonner aux alertes de composition d’audiences fédérées pour recevoir des notifications in-app ou par e-mail pour les exécutions réussies et celles qui ont échoué. Pour ce faire, configurez leurs préférences dans les Paramètres de notification sous le produit Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470056/?learn=on&enablevpops&captions=fre_fr)
 
 
 ## Activation des notifications
