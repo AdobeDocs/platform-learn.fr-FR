@@ -4,9 +4,9 @@ description: Découvrez comment activer un flux de données et configurer des so
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 8%
 
 ---
@@ -65,7 +65,7 @@ Sur l’écran suivant, vous pouvez ajouter des services tels que des applicatio
 
 ## Remplacer un flux de données
 
-[Remplacements de train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
+[Remplacements de train de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
 
 Le remplacement de la configuration des trains de données est un processus en deux étapes :
 
@@ -76,8 +76,6 @@ Dans la leçon [Configurer Adobe Analytics](setup-analytics.md), vous allez remp
 
 Vous êtes maintenant prêt à installer l’extension Platform Web SDK dans votre propriété de balise.
 
-[Suivant : ](install-web-sdk.md)
-
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
