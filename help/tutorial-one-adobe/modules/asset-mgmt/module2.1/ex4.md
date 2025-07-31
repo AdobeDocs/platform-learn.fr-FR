@@ -4,7 +4,7 @@ description: AEM CS - Bloc personnalisé de base
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -259,7 +259,7 @@ Ajoutez une option de menu au menu de navigation avec le `Fiber` texte. Sélecti
 
 ![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Saisissez ceci pour le `/us/en//citisignal-fiber` **URL** et cliquez sur l’icône **V** pour confirmer.
+Saisissez ceci pour le **** URL`/us/en/citisignal-fiber` et cliquez sur l’icône **V** pour confirmer.
 
 ![ AEMCS ](./images/nav3.png){zoomable="yes"}
 
