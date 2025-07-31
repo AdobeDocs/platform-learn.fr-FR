@@ -53,7 +53,7 @@ Les ECID sont définis à l’aide d’une combinaison de cookies propriétaires
 
 >[!IMPORTANT]
 >
->L’extension du service Experience Cloud ID [](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) n’est pas nécessaire lors de l’implémentation de Adobe Experience Platform Web SDK, car la fonctionnalité du service d’ID est intégrée à Platform Web SDK.
+>L’extension du service Experience Cloud ID [&#128279;](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) n’est pas nécessaire lors de l’implémentation de Adobe Experience Platform Web SDK, car la fonctionnalité du service d’ID est intégrée à Platform Web SDK.
 
 ## Identifiant d’appareil interne (FPID)
 
@@ -107,9 +107,9 @@ Pour créer l’élément de données [!UICONTROL Identity Map] :
 
 >[!TIP]
 >
-> Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL  principale].
+> Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL &#x200B; principale].
 >
-> Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL  principale ].
+> Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL &#x200B; principale &#x200B;].
 
 
 

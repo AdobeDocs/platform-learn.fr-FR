@@ -103,7 +103,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, puis **[!UICONTROL Mettre à jour la variable]**
 
@@ -238,7 +238,7 @@ Comparez l’élément de données à la structure `productListItems` (conseil, 
 >[!IMPORTANT]
 >
 >Notez la manière dont les variables numériques sont traduites, avec des valeurs de chaîne dans la couche de données telles que `price` et `qty` reformatées en nombres dans l’élément de données. Ces exigences de format sont importantes pour l’intégrité des données dans Platform et sont déterminées lors de l’étape [configurer les schémas](configure-schemas.md). Dans l’exemple, **[!UICONTROL quantity]** utilise le type de données **[!UICONTROL Integer]**.
->> ![Type de données de schéma XDM](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![Type de données de schéma XDM](assets/set-up-analytics-quantity-integer.png)
 
 Maintenant, mappons notre tableau à l’objet XDM :
 
@@ -342,14 +342,14 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. Utilisez l’extension **[!UICONTROL Core]** et sélectionnez `Library Loaded (Page Top)` comme **[!UICONTROL type d’événement]**.
 
-1. Sélectionnez la liste déroulante **[!UICONTROL Avancé]** et saisissez `50` dans **[!UICONTROL Ordre]**. Cela permet de s’assurer que cette règle se déclenche après toutes les autres règles que vous avez configurées (dont le `1`Ordre`20` était [!UICONTROL  ou ]).
+1. Sélectionnez la liste déroulante **[!UICONTROL Avancé]** et saisissez `50` dans **[!UICONTROL Ordre]**. Cela permet de s’assurer que cette règle se déclenche après toutes les autres règles que vous avez configurées (dont le `1`Ordre`20` était [!UICONTROL &#x200B; ou &#x200B;]).
 
 1. Sélectionnez **[!UICONTROL Conserver les modifications]** pour revenir à l’écran principal des règles
    ![Sélectionner le déclencheur de bibliothèque chargé](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 

@@ -72,7 +72,7 @@ Pour configurer Offer Decisioning dans le flux de données :
 
    ![Sélectionner le flux de données](assets/decisioning-datastream-select.png)
 
-1. Sélectionnez **Modifier** dans le service Adobe Experience Platform ****.
+1. Sélectionnez **Modifier** dans le service Adobe Experience Platform **&#x200B;**.
 
    ![Modifier le service](assets/decisioning-edit-datastream.png)
 
@@ -379,7 +379,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Sur la page web, ouvrez le débogueur Adobe Experience Platform ****.
+1. Sur la page web, ouvrez le débogueur Adobe Experience Platform **&#x200B;**.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -395,7 +395,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Vous pouvez ensuite vous connecter au site avec divers comptes de fidélité Luma et utiliser le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge ****. Toutes ces requêtes doivent être capturées dans **Assurance** pour le suivi des journaux.
+1. Vous pouvez ensuite vous connecter au site avec divers comptes de fidélité Luma et utiliser le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge **&#x200B;**. Toutes ces requêtes doivent être capturées dans **Assurance** pour le suivi des journaux.
 <!--
    ![ADD SCREENSHOT](#)
 -->

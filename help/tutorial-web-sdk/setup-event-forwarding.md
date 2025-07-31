@@ -143,7 +143,7 @@ Dans cet exercice, vous allez transférer la hauteur de la fenêtre d’affichag
 >[!TIP]
 >
 >Vous pouvez également trouver le chemin d’accès de l’objet XDM à l’aide des outils réseau de votre navigateur web, en filtrant les requêtes `/ee`, en ouvrant la balise [!UICONTROL **Payload**] et en analysant en profondeur la variable que vous recherchez. Cliquez ensuite avec le bouton droit de la souris et sélectionnez « Copier le chemin de la propriété ». Voici un exemple pour la Hauteur de la fenêtre d’affichage du navigateur :
->> ![Chemin XDM du transfert d’événement](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![Chemin XDM du transfert d’événement](assets/event-forwarding-xdm-path.png)
 
 1. Accédez à la propriété **[!UICONTROL Transfert d’événement]** que vous avez récemment créée
 

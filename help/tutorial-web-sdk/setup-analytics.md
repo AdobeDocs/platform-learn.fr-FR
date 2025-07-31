@@ -106,8 +106,8 @@ Les sections individuelles de la chaîne de produit Analytics sont définies par
 >[!NOTE]
 >
 >Depuis le 18 août 2022, `productListItems[].SKU` a la priorité pour le mappage au nom du produit dans la variable s.products.
->>La valeur définie sur `productListItems[].name` n’est mappée au nom du produit que si `productListItems[].SKU` n’existe pas. Sinon, elle n’est pas mappée et est disponible dans les données contextuelles.
->>Ne définissez pas une chaîne vide ou une valeur nulle sur `productListItems[].SKU`. Cela a pour effet indésirable de mapper au nom du produit dans la variable s.products.
+>&#x200B;>La valeur définie sur `productListItems[].name` n’est mappée au nom du produit que si `productListItems[].SKU` n’existe pas. Sinon, elle n’est pas mappée et est disponible dans les données contextuelles.
+>&#x200B;>Ne définissez pas une chaîne vide ou une valeur nulle sur `productListItems[].SKU`. Cela a pour effet indésirable de mapper au nom du produit dans la variable s.products.
 
 
 ### Définition de variables dans l’objet de données
@@ -266,7 +266,7 @@ Créons une règle pour envoyer un appel de page vue supplémentaire à une autr
 
 1. Sous **[!UICONTROL Actions]** sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 

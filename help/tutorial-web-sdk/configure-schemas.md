@@ -113,7 +113,7 @@ Lorsque cela est possible, il est recommandé d’utiliser des groupes de champs
 
 >[!TIP]
 > 
->Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ et _**[!UICONTROL Consumer Experience Event]**_.
+>Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ et _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
 >
 
 
@@ -151,7 +151,7 @@ Il s’agit d’un objet obligatoire pour toute collecte de données liée au We
 >
 >
 >Ce paramètre est abordé plus en détail dans la leçon [Configuration d’Experience Platform](setup-experience-platform.md).
->>![Schéma de profil](assets/schema-profile.png)
+>&#x200B;>![Schéma de profil](assets/schema-profile.png)
 
 Pour suivre cette leçon, sélectionnez **[!UICONTROL Enregistrer]** en haut à droite.
 

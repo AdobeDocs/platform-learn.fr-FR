@@ -58,7 +58,7 @@ Cette approche implique l’utilisation de l’objet XDM entièrement défini co
 
 Vous trouverez ci-dessous un exemple d’utilisation de la couche de données client au format Adobe :
 
-Exemple +++XDM dans la couche de données
++++Exemple XDM dans la couche de données
 
 ```JSON
 window.adobeDataLayer.push({
