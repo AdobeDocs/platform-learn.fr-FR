@@ -18,6 +18,6 @@ ht-degree: 19%
 
 # Évaluer les audiences par lots à la demande
 
-Évaluez les audiences par lots à la demande avec la fonctionnalité d’évaluation d’audience flexible de Adobe Experience Platform. Pour plus d’informations et de mécanismes de sécurisation, consultez [le guide d’évaluation d’audience flexible](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
+Évaluez les audiences par lots à la demande avec la fonctionnalité d’évaluation d’audience flexible de Adobe Experience Platform. Pour plus d’informations et de mécanismes de sécurisation, consultez [le guide d’évaluation d’audience flexible](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
