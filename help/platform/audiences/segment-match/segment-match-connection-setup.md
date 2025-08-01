@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Dans cette vidéo, découvrez comment configurer la connexion entre vous et un partenaire afin de partager des audiences. Après avoir configuré cette fonctionnalité de correspondance de segments, vous pourrez partager des données entre vous et votre partenaire de données. Pour plus d’informations, consultez la [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346351/?learn=on&enablevpops&captions=fre_fr)

@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Une fois qu’un segment partagé avec un partenaire de données a été connecté, vous pouvez explorer et commencer à partager des données avec des partenaires. Cette vidéo vous guide tout au long du processus de configuration d’une instance Correspondance de segments pour un partage de données. Pour plus d’informations, consultez la [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346705/?learn=on&enablevpops&captions=fre_fr)

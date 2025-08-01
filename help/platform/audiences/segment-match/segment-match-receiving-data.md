@@ -18,5 +18,5 @@ ht-degree: 90%
 
 Avec la correspondance de segments, vos partenaires stratégiques peuvent vous partager des données. Dans cette vidéo, découvrez comment approuver et recevoir les données, et où vous pouvez les voir et les ajouter à vos propres segments.
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411140/?learn=on&enablevpops&captions=fre_fr)
 
