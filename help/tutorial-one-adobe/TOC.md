@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1271'
 ht-degree: 3%
 
 ---
@@ -75,6 +75,10 @@ ht-degree: 3%
       + [1.4.2 Animation et vidéo dans Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
       + [1.4.3 Création en bloc d’Assets dans Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
+   + 1.5 Rationaliser votre workflow avec Frame.io {#crpr5}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
+      + [1.5.1 Prise en main de Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+      + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + Gestion des ressources {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -243,4 +247,8 @@ ht-degree: 3%
          + [2.1.7 Query Service et Tableau](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex7.md)
          + [2.1.8 API Query Service](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/summary.md)
-
+   + Content Analytics {#contentanalytics}
+      + 3.1 Content Analytics {#ca1}
+         + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
+         + [3.1.1 Prise en main de Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
+         + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)

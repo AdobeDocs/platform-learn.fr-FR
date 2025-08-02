@@ -3,9 +3,9 @@ title: Prise en main - Applications à installer
 description: Prise en main - Applications à installer
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,26 @@ Ouvrez l’application **Adobe Creative Cloud**, puis accédez à **Applications
 Ouvrez l’application **Adobe Creative Cloud**, puis accédez à **Applications**. Installez Illustrator sur votre ordinateur.
 
 ![Nouvelle intégration Adobe I/O](./images/psd.png)
+
+## Adobe Premiere Pro
+
+Installez la version Adobe Premiere Pro Beta sur votre ordinateur à partir de [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![Nouvelle intégration Adobe I/O](./images/prpro.png)
+
+Cliquez sur **Ouvrir l’application de bureau Creative Cloud**.
+
+![Nouvelle intégration Adobe I/O](./images/prpro1.png)
+
+Cliquez sur **Installer** sur la carte de l’application **Premiere Pro (Beta)**.
+
+![Nouvelle intégration Adobe I/O](./images/prpro2.png)
+
+## Application de transfert Frame.io
+
+Accédez à [https://frame.io/transfer](https://frame.io/transfer) puis téléchargez la version correspondant à votre ordinateur.
+
+![Frame.io](./images/frameio11.png)
 
 ## Visual Studio Code
 
