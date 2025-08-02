@@ -3,9 +3,10 @@ title: Prise en main de Workfront Planning
 description: Prise en main de Workfront Planning
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 2%
 
 ---
@@ -196,7 +197,7 @@ Vous devriez alors voir la campagne nouvellement créée dans la vue d’ensembl
 
 ![Planification Workfront](./images/wfpl35.png)
 
-## 1.1.1.7 Créer une automatisation
+## 1.1.1.7 Créer un Portfolio et un formulaire personnalisé
 
 À l’étape suivante, vous allez créer une automatisation qui récupérera les informations de la campagne que vous avez créée dans Workfront Planning et qui les utilisera dans Workfront pour créer un programme. Avant de pouvoir créer l’automatisation, vous devez d’abord configurer 2 éléments dans Workfront : un portfolio et un formulaire personnalisé.
 
@@ -224,7 +225,7 @@ Sélectionnez **Programme** et cliquez sur **Continuer**.
 
 ![Planification Workfront](./images/wfplss6.png)
 
-Remplacez le nom du formulaire par `--aepUserLdap-- Program Information`.
+Remplacez le nom du formulaire par `--aepUserLdap-- - Program Information`.
 
 ![Planification Workfront](./images/wfplss7.png)
 

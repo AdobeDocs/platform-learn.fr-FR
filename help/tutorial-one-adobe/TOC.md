@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 3%
 # Tutoriel technique One Adobe {#tutorial-one-adobe}
 
 + [Vue d’ensemble du tutoriel](/help/tutorial-one-adobe/overview.md)
++ [Activation technique de GenStudio pour la chaîne d’approvisionnement de contenu](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Statut du contenu](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
 
@@ -36,10 +37,11 @@ ht-degree: 3%
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
       + [1.1.1 Prise en main de Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-   + 1.2 Workfront {#wfpl2}
+   + 1.2 Workflow Workfront {#wfpl2}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-      + [1.2.1 Prise en main de Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.1 Intégration des métadonnées Workfront + AEM Assets CS](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
       + [1.2.2 Relecture avec Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.4 Intégration de Workfront + AEM Sites CS](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
       + [1.2.5 Intégration de Workfront + Photoshop](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 

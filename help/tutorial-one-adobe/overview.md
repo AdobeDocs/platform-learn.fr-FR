@@ -3,9 +3,9 @@ title: Présentation - Tutoriel technique complet - One Adobe
 description: Tutoriel technique complet - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 Ce tutoriel est très diversifié et offre des informations claires sur les applications suivantes :
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront, Adobe Workfront Planning et Adobe Workfront Fusion
+- Workflow Adobe Workfront, Adobe Workfront Planning et Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms et Edge Delivery Services
 - AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
@@ -64,7 +64,7 @@ Dans ce module de base, vous allez tout préparer pour pouvoir accéder à l’e
 
 Dans ce module, vous allez configurer et utiliser Adobe Workfront Planning pour créer un espace de travail, définir des types d’enregistrements, gérer des enregistrements, créer un formulaire de demande et utiliser l’assistant d’IA.
 
-[1.2 Gestion des workflows avec Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Gestion des workflows avec Adobe Workfront Workflow](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 Dans ce module, vous allez configurer et utiliser Adobe Workfront pour gérer les flux de validation et vous utiliserez les intégrations à Adobe Experience Manager Assets, l’éditeur universel, Photoshop, etc.
 
