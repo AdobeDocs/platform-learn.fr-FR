@@ -18,6 +18,6 @@ ht-degree: 25%
 
 # Configuration d’un compte d’annonceur dans Real-Time CDP Collaboration
 
-Découvrez comment configurer un compte publicitaire dans Real-Time CDP Collaboration. Pour consulter la documentation détaillée, voir [Intégration et gestion de l’organisation](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
+Découvrez comment configurer un compte publicitaire dans Real-Time CDP Collaboration. Pour consulter la documentation détaillée, voir [Intégration et gestion de l’organisation](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)
