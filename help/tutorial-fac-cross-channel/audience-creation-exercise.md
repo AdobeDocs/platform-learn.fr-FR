@@ -56,7 +56,7 @@ Cet exercice vous guide tout au long de la création d’une audience à partir 
    - **Champ Audience Source :** PRÉNOM
 
 9. Sélectionnez l’identité principale et l’espace de noms à utiliser pour les profils :
-   - Champ d&#39;identité de Principal **** : e-mail
+   - Champ d&#39;identité de Principal **&#x200B;**&#x200B;: e-mail
    - **Espace de noms d’identité :** e-mail
 
 10. Cliquez sur **Enregistrer** puis sur **Démarrer** pour exécuter la requête de la composition que vous venez de créer.

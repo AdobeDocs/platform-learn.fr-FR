@@ -69,7 +69,7 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
