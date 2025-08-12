@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ Dans cet exercice, vous apprendrez à exploiter les attributs d’audience dans 
 
 5. Dans la section **Planification**, conservez tous les paramètres par défaut, puis cliquez sur **Suivant**.
 
-6. À l’étape **Mappage**, assurez-vous que les éléments suivants sont inclus et sélectionnés en tant que **Clé de déduplication**. Cliquez ensuite sur **Suivant** :
-   - `xdm: personalEmail.address`
+6. À l’étape **Mappage**, assurez-vous que `xdm: personalEmail.address` est inclus et sélectionné comme **Clé de déduplication**. Cliquez ensuite sur **Suivant** :
 
    ![clé-déduplication](assets/deduplication-key.png)
 

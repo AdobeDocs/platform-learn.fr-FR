@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -26,19 +26,21 @@ Cet exercice vous guide tout au long de la création d’une audience à partir 
 
    ![create-composition](assets/create-composition.png)
 
-3. Étiquetez votre composition comme `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Cliquez sur **Créer**.
+3. Étiquetez votre composition comme `SecurFinancial Customers - No Loans, Good Credit`. Cliquez sur **Créer**.
 
 4. Cliquez sur le bouton **+** dans la zone de travail et sélectionnez **Créer une audience**. Le rail de droite doit apparaître.
 
 5. Cliquez sur **Sélectionner un schéma** puis sélectionnez le schéma **FSI_CRM** et cliquez sur **Confirmer**.
 
 6. Cliquez sur **Continuer**. Dans la fenêtre du générateur de requêtes, cliquez sur le bouton **+**, puis sur **Condition personnalisée**. Créez les conditions suivantes :
-   - `CURRENTPRODUCTS does not contain loan`
-   - `AND`
-   - `CREDITSCORE greater than or equal to 650`
-   - Nous utilisons les données de préférence marketing pour segmenter les clients qui ont choisi l’e-mail comme canal de communication préféré :
-   - `AND`
-   - `CONSENTSMARKETINGPREFERRED equal to email`
+
+   `CURRENTPRODUCTS does not contain loan`
+   `AND`
+   `CREDITSCORE greater than or equal to 650`
+   `AND`
+   `CONSENTSMARKETINGPREFERRED equal to email`
+
+   *La dernière condition garantit que les données de préférences marketing sont utilisées pour segmenter les clients qui ont choisi l’e-mail comme canal de communication préféré*.
 
    **Remarque :** le champ de valeur respecte la casse.
 
@@ -46,23 +48,23 @@ Cet exercice vous guide tout au long de la création d’une audience à partir 
 
    ![query-builder](assets/query-builder.png)
 
-7. Cliquez sur le bouton **+** suivant, puis sur **Enregistrer l’audience**.
-
-   Étiqueter cette étape comme `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Utilisez la même valeur que le libellé de l’audience.
+7. Cliquez sur le bouton **+** suivant, puis sur **Enregistrer l’audience**. Étiqueter cette étape comme `SecurFinancial Customers - No Loans, Good Credit`. Utilisez la même valeur que le libellé de l’audience.
 
 8. Ajoutez les mappages d’audience suivants :
+
    - **Champ Audience Source :** E-MAIL
    - **Champ d’audience Source :** CURRENTPRODUCTS
    - **Champ Audience Source :** PRÉNOM
 
 9. Sélectionnez l’identité principale et l’espace de noms à utiliser pour les profils :
-   - Champ d&#39;identité de Principal **&#x200B;**&#x200B;: e-mail
+
+   - Champ d&#39;identité de Principal **** : e-mail
    - **Espace de noms d’identité :** e-mail
 
 10. Cliquez sur **Enregistrer** puis sur **Démarrer** pour exécuter la requête de la composition que vous venez de créer.
 
 **Remarque :** nous avons utilisé des informations sur les produits et le crédit pour créer notre audience qui n’a pas déplacé de données sensibles, telles que la cote de crédit, vers des plateformes en aval pour activation.
 
-Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Maintenant que notre audience fédérée a été créée, nous allons procéder au [mappage à un compte S3](map-federated-audience-to-s3.md).

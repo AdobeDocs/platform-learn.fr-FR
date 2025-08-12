@@ -7,15 +7,15 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 5%
+source-wordcount: '293'
+ht-degree: 4%
 
 ---
 
 
-# Composition d’audiences fédérées
+# Enrichissement des audiences Experience Platform avec des données fédérées
 
 La composition de l’audience fédérée vous permet d’enrichir les audiences existantes dans Adobe Experience Platform (AEP) en utilisant les données de l’audience composée qui ont été fédérées à partir de l’entrepôt de données d’entreprise. Ces données ne seront pas conservées dans les profils client Adobe Experience Platform.
 

@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
    ![create-a-parcours ](assets/create-journey.png)
 
-2. Mettez à jour les propriétés du Parcours avec un nouveau nom : `SecurFinancial - Home Loan Offer - [your lab user ID]`.
+2. Mettez à jour les propriétés du Parcours avec un nouveau nom : **`SecurFinancial - Home Loan Offer`**.
 
 3. Cliquez sur **Orchestration**, puis glissez-déposez la mosaïque **Lecture d’audience** sur la zone de travail.
 
 4. Cliquez sur l’icône **crayon** en regard de la zone Audience sur le côté droit de l’écran.
 
-5. Dans la barre de recherche, recherchez `SecureFinancial Customers - No Loans, Good Credit`, puis cliquez sur **Enregistrer**.
+5. Dans la barre de recherche, recherchez **`SecureFinancial Customers - No Loans, Good Credit`**, puis cliquez sur **Enregistrer**.
 
    ![create-a-parcours ](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 2. Dans le menu de droite, cliquez sur **Configuration du canal e-mail** et sélectionnez **Marketing par e-mail**. Cliquez ensuite sur **Modifier le contenu**.
 
-3. Dans l’objet, ajoutez : `Learn more about SecurFinancial Home Loan`. Cliquez ensuite sur **Modifier le corps de l’e-mail**.
+3. Dans l’objet, ajoutez : **`Learn more about SecurFinancial Home Loan`**. Cliquez ensuite sur **Modifier le corps de l’e-mail**.
 
 4. Cliquez sur le bouton **Modèle de contenu** dans le coin supérieur droit. Recherchez et sélectionnez le `SecureFinancial Template`, puis cliquez sur **Confirmer**.
 
@@ -59,7 +59,7 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 6. Vous serez désormais dans le Designer Email. Pointez sur la macro `{profile.person.name.firstName}` et cliquez sur l’avatar **personnalisation**.
 
-7. Dans la fenêtre de personnalisation, analysez le chemin d’accès au dossier suivant : `[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. Dans la fenêtre de personnalisation, analysez le chemin d’accès au dossier suivant : **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Cliquez dans le dossier **lecture d’audience**. Les attributs d’enrichissement de votre audience fédérée se trouvent ici.
 
@@ -69,7 +69,7 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
