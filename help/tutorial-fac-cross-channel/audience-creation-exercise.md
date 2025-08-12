@@ -63,6 +63,6 @@ Cet exercice vous guide tout au long de la création d’une audience à partir 
 
 **Remarque :** nous avons utilisé des informations sur les produits et le crédit pour créer notre audience qui n’a pas déplacé de données sensibles, telles que la cote de crédit, vers des plateformes en aval pour activation.
 
-Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Maintenant que notre audience fédérée a été créée, nous allons procéder au [mappage à un compte S3](map-federated-audience-to-s3.md).

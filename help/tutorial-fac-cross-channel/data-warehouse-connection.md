@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Dans cette leçon, nous configurons une connexion entre Adobe Experience Platform et votre Data Warehouse d’entreprise pour activer la composition d’audiences fédérées. Vous pouvez ainsi interroger les données directement à partir d’entrepôts pris en charge sans réplication. En outre, nous créons des schémas et des modèles de données basés sur les tables Data Warehouse.
 
-Pour ce Lab, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données cloud. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Pour ce Lab, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données cloud. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 
 ## Étapes
