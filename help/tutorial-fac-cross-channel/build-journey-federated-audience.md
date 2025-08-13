@@ -2,22 +2,24 @@
 title: Création d’un parcours avec des données d’audience fédérées
 seo-title: Build a journey with federated audience data | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Création d’un parcours avec des données d’audience fédérées
-description: Dans cette leçon, nous utiliserons une audience fédérée dans un parcours Journey Optimizer.
+description: Dans cet exercice visuel, une audience fédérée est utilisée dans un parcours Journey Optimizer.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 0%
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
-
 # Création d’un Parcours avec des données d’audience fédérées
 
-Dans cette leçon, vous apprendrez comment une audience fédérée peut être utilisée dans des parcours dans Adobe Journey Optimizer (AJO). Cela inclut l’utilisation d’attributs interrogés de la composition d’audiences fédérées pour personnaliser la messagerie. Pour poursuivre l’histoire du client SecurFinancial et traiter le cas d’utilisation du reciblage et de la personnalisation des clients, nous orchestrons un parcours pour les clients préqualifiés. L’objectif est d’envoyer un e-mail personnalisé à partir des attributs fédérés depuis le Data Warehouse de SecurFinancial.
+Les audiences fédérées peuvent être utilisées dans les parcours de Adobe Journey Optimizer (AJO). Cela inclut l’utilisation d’attributs interrogés de la composition d’audiences fédérées pour personnaliser la messagerie.
+
+Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilisation du reciblage et de la personnalisation des clients, nous orchestrons un parcours pour les clients préqualifiés. L’objectif est d’envoyer un e-mail personnalisé à partir des attributs fédérés depuis le Data Warehouse de SecurFinancial.
 
 ## Étapes
 
@@ -27,13 +29,13 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
    ![create-a-parcours ](assets/create-journey.png)
 
-2. Mettez à jour les propriétés du Parcours avec un nouveau nom : **`SecurFinancial - Home Loan Offer`**.
+2. Mettez à jour les propriétés du Parcours avec un nouveau nom. Dans notre exemple : **`SecurFinancial - Home Loan Offer`**.
 
 3. Cliquez sur **Orchestration**, puis glissez-déposez la mosaïque **Lecture d’audience** sur la zone de travail.
 
 4. Cliquez sur l’icône **crayon** en regard de la zone Audience sur le côté droit de l’écran.
 
-5. Dans la barre de recherche, recherchez **`SecureFinancial Customers - No Loans, Good Credit`**, puis cliquez sur **Enregistrer**.
+5. Dans la barre de recherche, recherchez l’audience. Dans notre exemple : **`SecureFinancial Customers - No Loans, Good Credit`**. Cliquez sur **Enregistrer**.
 
    ![create-a-parcours ](assets/select-audience.png)
 
@@ -47,9 +49,9 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 2. Dans le menu de droite, cliquez sur **Configuration du canal e-mail** et sélectionnez **Marketing par e-mail**. Cliquez ensuite sur **Modifier le contenu**.
 
-3. Dans l’objet, ajoutez : **`Learn more about SecurFinancial Home Loan`**. Cliquez ensuite sur **Modifier le corps de l’e-mail**.
+3. Ajoutez une ligne d’objet. Dans notre exemple : **`Learn more about SecurFinancial Home Loan`**. Cliquez ensuite sur **Modifier le corps de l’e-mail**.
 
-4. Cliquez sur le bouton **Modèle de contenu** dans le coin supérieur droit. Recherchez et sélectionnez le `SecureFinancial Template`, puis cliquez sur **Confirmer**.
+4. Cliquez sur le bouton **Modèle de contenu** dans le coin supérieur droit. Recherchez et sélectionnez le modèle approprié. Notre exemple utilise le `SecureFinancial Template` . Cliquez ensuite sur **Confirmer**.
 
    ![parcours-email-config](assets/journey-email-config.png)
 
@@ -59,7 +61,7 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 6. Vous serez désormais dans le Designer Email. Pointez sur la macro `{profile.person.name.firstName}` et cliquez sur l’avatar **personnalisation**.
 
-7. Dans la fenêtre de personnalisation, analysez le chemin d’accès au dossier suivant : **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
+7. Dans la fenêtre de personnalisation, analysez le chemin d’accès au dossier avec l’audience fédérée chargée. Dans notre exemple : **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Cliquez dans le dossier **lecture d’audience**. Les attributs d’enrichissement de votre audience fédérée se trouvent ici.
 
@@ -69,12 +71,12 @@ Dans cette leçon, vous apprendrez comment une audience fédérée peut être ut
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
    ![save-final-parcours ](assets/save-final-journey.png)
 
-Félicitations ! Vous avez créé un parcours dans AJO à l’aide d’une audience fédérée et d’attributs d’enrichissement fédérés.
+Nous avons créé un parcours dans AJO à l’aide d’une audience fédérée et d’attributs d’enrichissement fédérés.
 
-Nous allons maintenant examiner comment [enrichir les audiences existantes](audience-enrichment-demo.md) dans Experience Platform avec les données fédérées de Data Warehouse.
+Nous allons maintenant examiner comment [enrichir les audiences existantes](federated-audience-composition.md) dans Experience Platform avec les données fédérées de Data Warehouse.

@@ -2,29 +2,30 @@
 title: Conclusion
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Conclusion
-description: Dans cette leçon, nous résumons les enseignements et les principaux points à retenir.
+description: En conclusion, nous résumons les leçons apprises et les principaux points à retenir.
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
-
 
 # Conclusion
 
 La composition de l’audience fédérée d’Experience Platform offre de nouveaux chemins et un accès étendu pour créer des audiences à partir d’entrepôts de données d’entreprise afin d’alimenter les expériences initiées par la marque et instantanées.
 
-Ce tutoriel a fourni une introduction pratique à la composition d’audiences fédérées dans Adobe Experience Platform. Vous avez appris à :
+Ce guide visuel présente la composition d’audiences fédérées dans Adobe Experience Platform. Vous avez appris à :
 
-- Connectez un entrepôt de données à Adobe Experience Platform.
-- Créez et enrichissez des audiences à l’aide des données d’entrepôt sans réplication.
-- Exportez des audiences vers Amazon S3 pour une utilisation en aval.
-- Créez des parcours clients personnalisés avec des audiences fédérées.
-- Enrichissez les audiences Experience Platform avec des données fédérées.
+- Connectez Adobe Experience Platform à un entrepôt de données d’entreprise.
+- Créez et gérez des audiences à l’aide de la composition d’audiences fédérées.
+- Mappez les audiences fédérées à des destinations externes telles qu’Amazon S3.
+- Enrichir les audiences existantes avec des données fédérées.
+- Créez des audiences pour piloter la personnalisation « à l’instant ».
+- Créez des parcours client à l’aide des données d’audience fédérées.
 
 ## Points clés
 
