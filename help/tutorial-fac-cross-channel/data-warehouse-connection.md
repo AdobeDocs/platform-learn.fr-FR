@@ -6,9 +6,8 @@ description: Dans cet exercice visuel, nous configurons une connexion entre Adob
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
-hide: true
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 3%
@@ -19,7 +18,7 @@ ht-degree: 3%
 
 Nous allons commencer par configurer une connexion entre Adobe Experience Platform et votre Data Warehouse d’entreprise afin d’activer la composition de l’audience fédérée. Vous pouvez ainsi interroger les données directement à partir d’entrepôts pris en charge sans réplication. En outre, nous créons des schémas et des modèles de données basés sur les tables Data Warehouse.
 
-Pour illustrer notre propos, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données cloud. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Pour illustrer notre propos, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données cloud. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Étapes
 

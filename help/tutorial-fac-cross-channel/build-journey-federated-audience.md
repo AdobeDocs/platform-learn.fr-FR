@@ -6,9 +6,8 @@ description: Dans cet exercice visuel, une audience fédérée est utilisée dan
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -71,7 +70,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
