@@ -1,21 +1,21 @@
 ---
-title: Création d’une audience
-seo-title: Create an audience | Unlock cross-channel insights with Federated Audience Composition
-breadcrumb-title: Création d’une audience
+title: Créer une audience fédérée
+seo-title: Create a federated audience | Unlock cross-channel insights with Federated Audience Composition
+breadcrumb-title: Créer une audience fédérée
 description: Dans cet exercice visuel, nous configurons une connexion entre Adobe Experience Platform et votre Data Warehouse d’entreprise pour activer la composition d’audiences fédérées.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 4%
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 
-# Exercice De Création D’Audience
+# Création d’une audience fédérée
 
 Ensuite, nous vous guiderons tout au long de la création d’une audience à partir de notre Data Warehouse à l’aide de la composition d’audiences fédérées. L’audience est composée de clients de SecurFinancial qui ont une cote de crédit de 650 ou plus et qui n’ont actuellement pas de prêt dans leur portefeuille de SecurFinancial.
 
@@ -56,7 +56,7 @@ Ensuite, nous vous guiderons tout au long de la création d’une audience à pa
 
 9. Sélectionnez l’identité principale et l’espace de noms à utiliser pour les profils. Il s’agit des identités et des champs utilisés pour nos données :
 
-   - Champ d&#39;identité de Principal **&#x200B;**&#x200B;: e-mail
+   - Champ d&#39;identité de Principal **** : e-mail
    - **Espace de noms d’identité :** e-mail
 
 10. Cliquez sur **Enregistrer** puis sur **Démarrer** pour exécuter la requête de la composition.
@@ -65,6 +65,6 @@ Ensuite, nous vous guiderons tout au long de la création d’une audience à pa
 >
 > Dans cet exemple, les informations sur les produits et le crédit ont été utilisées pour créer notre audience par le biais d’un accès direct aux données d’entreprise de Snowflake, sans en faire une copie dans Adobe Experience Platform. Une fois que le système externe traite la requête, seules les valeurs d’e-mail, de produits actuels et de prénom appropriées sont transférées vers la définition d’audience pour l’activation en aval. Cela s’applique à toutes les destinations prises en charge par RTCDP.
 
-Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Maintenant que notre audience fédérée a été créée, nous allons la [mapper à un compte S3](map-federated-audience-to-s3.md).
