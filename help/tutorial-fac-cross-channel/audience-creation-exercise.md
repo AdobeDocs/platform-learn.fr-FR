@@ -65,6 +65,6 @@ Ensuite, nous vous guiderons tout au long de la création d’une audience à pa
 >
 > Dans cet exemple, les informations sur les produits et le crédit ont été utilisées pour créer notre audience par le biais d’un accès direct aux données d’entreprise de Snowflake, sans en faire une copie dans Adobe Experience Platform. Une fois que le système externe traite la requête, seules les valeurs d’e-mail, de produits actuels et de prénom appropriées sont transférées vers la définition d’audience pour l’activation en aval. Cela s’applique à toutes les destinations prises en charge par RTCDP.
 
-Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Maintenant que notre audience fédérée a été créée, nous allons la [mapper à un compte S3](map-federated-audience-to-s3.md).
