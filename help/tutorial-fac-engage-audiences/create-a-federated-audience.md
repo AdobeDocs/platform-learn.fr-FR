@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '342'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ Ensuite, nous vous guiderons tout au long de la création d’une audience à pa
 
 9. Sélectionnez l’identité principale et l’espace de noms à utiliser pour les profils. Il s’agit des identités et des champs utilisés pour nos données :
 
-   - Champ d&#39;identité de Principal **&#x200B;**&#x200B;: e-mail
+   - Champ d&#39;identité de Principal **** : e-mail
    - **Espace de noms d’identité :** e-mail
 
 10. Cliquez sur **Enregistrer** puis sur **Démarrer** pour exécuter la requête de la composition.
@@ -64,6 +64,6 @@ Ensuite, nous vous guiderons tout au long de la création d’une audience à pa
 >
 > Dans cet exemple, les informations sur les produits et le crédit ont été utilisées pour créer notre audience par le biais d’un accès direct aux données d’entreprise de Snowflake, sans en faire une copie dans Adobe Experience Platform. Une fois que le système externe traite la requête, seules les valeurs d’e-mail, de produits actuels et de prénom appropriées sont transférées vers la définition d’audience pour l’activation en aval. Cela s’applique à toutes les destinations prises en charge par RTCDP.
 
-Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Pour plus d’informations sur la composition de l’audience, consultez [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
-Maintenant que notre audience fédérée a été créée, nous allons la [mapper à un compte S3](map-federated-audience-to-s3.md).
+Maintenant que notre audience fédérée a été créée, nous allons la [mapper à une destination S3 dans Experience Platform](map-federated-audience-to-s3.md).

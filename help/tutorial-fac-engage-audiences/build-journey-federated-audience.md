@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
@@ -78,4 +78,4 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 Nous avons créé un parcours dans AJO à l’aide d’une audience fédérée et d’attributs d’enrichissement fédérés.
 
-Nous allons maintenant examiner comment [enrichir les audiences existantes](federated-audience-composition.md) dans Experience Platform avec les données fédérées de Data Warehouse.
+Nous allons maintenant examiner comment [enrichir une audience](federated-audience-composition.md) dans Experience Platform avec les données de l’entrepôt de données.

@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 7%
@@ -34,4 +34,4 @@ Dans cet exercice, nous utilisons l’audience **visiteur de la page de demande 
 
 ![federated-method-1-2](assets/federated-method-1-2.png)
 
-Nous allons examiner un autre exemple d’utilisation des données fédérées pour [prendre en charge la personnalisation « sur le moment »](deliver-in-the-moment-personalization.md) !
+Nous allons examiner un autre exemple d’utilisation de données fédérées pour [offrir une personnalisation « à l’instant »](deliver-in-the-moment-personalization.md) !

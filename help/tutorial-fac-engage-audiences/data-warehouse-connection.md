@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 Nous allons commencer par configurer une connexion entre Adobe Experience Platform et votre Data Warehouse d’entreprise. Nous utilisons des schémas et des modèles de données en fonction de la place des données dans le Data Warehouse pour prendre en charge la création de requêtes.
 
-Pour illustrer notre propos, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Pour illustrer notre propos, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Étapes
 
@@ -78,4 +78,4 @@ Vous trouverez ci-dessous un aperçu du lien créé à la suite des étapes ci-d
 
 ![preview-data-model](assets/preview-data-model.png)
 
-Maintenant, nous sommes prêts à [créer et à cibler](create-a-federated-audience.md).
+Nous sommes maintenant prêts à [créer une audience fédérée](create-a-federated-audience.md).
