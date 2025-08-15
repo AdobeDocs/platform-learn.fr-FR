@@ -1,13 +1,13 @@
 ---
 title: Enrichissement des audiences avec des données d’entrepôt de données
-seo-title: Enrich Audiences with Warehouse Data | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Enrich Audiences with warehouse data | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Enrichissement des audiences avec des données d’entrepôt de données
 description: Dans cet exercice, une audience Experience Platform est enrichie de données d’entrepôt de données.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 7%

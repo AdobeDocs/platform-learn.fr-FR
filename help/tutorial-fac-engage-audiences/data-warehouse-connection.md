@@ -1,24 +1,24 @@
 ---
-title: Connexion Data Warehouse
-seo-title: Configure a Data Warehouse connection | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Connexion Data Warehouse
+title: Connexion à l’entrepôt de données
+seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Connexion à l’entrepôt de données
 description: Dans cet exercice, nous configurons une connexion entre Adobe Experience Platform et votre Data Warehouse d’entreprise pour activer la composition d’audiences fédérées.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 3%
 
 ---
 
-# Connexion Data Warehouse
+# Connexion à l’entrepôt de données
 
 Nous allons commencer par configurer une connexion entre Adobe Experience Platform et votre Data Warehouse d’entreprise. Nous utilisons des schémas et des modèles de données en fonction de la place des données dans le Data Warehouse pour prendre en charge la création de requêtes.
 
-Pour illustrer notre propos, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données cloud. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Pour illustrer notre propos, nous nous connectons à un compte Snowflake. La composition de l’audience fédérée prend en charge une liste croissante de connexions d’entrepôt de données. Voir la [liste mise à jour des intégrations](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Étapes
 

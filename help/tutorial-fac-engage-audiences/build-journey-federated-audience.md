@@ -1,24 +1,24 @@
 ---
-title: Création d’un Parcours avec une audience fédérée
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Création d’un Parcours avec une audience fédérée
+title: Création d’un parcours avec une audience fédérée
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Création d’un parcours avec une audience fédérée
 description: Dans cet exercice, une audience fédérée est utilisée dans un parcours Journey Optimizer.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
 
 ---
 
-# Création d’un Parcours avec une audience fédérée
+# Création d’un parcours avec une audience fédérée
 
 Les audiences fédérées peuvent être utilisées dans les parcours de Adobe Journey Optimizer (AJO). Cela inclut l’utilisation d’attributs interrogés de la composition d’audiences fédérées pour personnaliser la messagerie.
 
-Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilisation du reciblage et de la personnalisation des clients, nous orchestrons un parcours pour les clients préqualifiés. L’objectif est d’envoyer un e-mail personnalisé à partir des attributs fédérés depuis le Data Warehouse de SecurFinancial.
+Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilisation du reciblage et de la personnalisation des clients, nous orchestrons un parcours pour les clients préqualifiés. L&#39;objectif est d&#39;envoyer un e-mail personnalisé basé sur les attributs fédérés depuis l&#39;entrepôt de données de SecurFinancial.
 
 ## Étapes
 
@@ -70,7 +70,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 

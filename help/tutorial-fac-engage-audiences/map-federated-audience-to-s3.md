@@ -1,20 +1,20 @@
 ---
-title: Mapper une audience fédérée à S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Mapper une audience fédérée à S3
+title: Mappage d’une audience fédérée à une destination S3
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Mappage d’une audience fédérée à S3
 description: Dans cet exercice, nous allons mapper une audience fédérée à une destination Real-Time CDP en aval afin de prendre en charge une expérience hors ligne personnalisée.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Mapper l’audience fédérée à S3 pour exploiter les attributs d’audience à des fins d’enrichissement
+# Mappez une audience fédérée à une destination S3 afin d’exploiter les attributs d’audience pour l’enrichissement
 
 Vous pouvez exploiter les attributs d’audience dans votre entrepôt de données pour enrichir l’expérience de votre audience dans les workflows d’activation en aval à l’aide des destinations RTCDP. Pour SecurFinancial, ces attributs fédérés peuvent être utilisés pour améliorer l’expérience de personnalisation hors ligne de l’audience du client. Ci-dessous, l’audience fédérée est mappée à une destination Amazon S3 préconfigurée.
 
@@ -50,6 +50,6 @@ Vous pouvez exploiter les attributs d’audience dans votre entrepôt de donnée
 
 >[**!SUMMARY**]
 >
-> Nous avons créé une audience et l’avons activée facilement vers une destination S3. L’interface conviviale permet aux équipes marketing de créer et d’activer rapidement des audiences sans déplacer les données sous-jacentes.
+> Nous avons créé une audience et l’avons activée facilement vers une destination S3. Toute autre solution peut sélectionner cette audience et l’utiliser immédiatement. L’interface conviviale permet aux équipes marketing de créer et d’activer rapidement des audiences sans déplacer les données sous-jacentes. Les clients qui ont adopté cette approche sont entrés en production avec leur première utilisation depuis environ un mois.
 
 Maintenant, nous allons [construire un parcours ](build-journey-federated-audience.md).
