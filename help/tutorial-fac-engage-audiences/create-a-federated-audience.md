@@ -55,7 +55,7 @@ Ensuite, nous vous guiderons tout au long de la création d’une audience à pa
 
 9. Sélectionnez l’identité principale et l’espace de noms à utiliser pour les profils. Il s’agit des identités et des champs utilisés pour nos données :
 
-   - Champ d&#39;identité de Principal **** : e-mail
+   - Champ d&#39;identité de Principal **&#x200B;**&#x200B;: e-mail
    - **Espace de noms d’identité :** e-mail
 
 10. Cliquez sur **Enregistrer** puis sur **Démarrer** pour exécuter la requête de la composition.
