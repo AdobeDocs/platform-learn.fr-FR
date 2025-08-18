@@ -3,22 +3,31 @@ title: Planification d’Adobe Workfront
 description: Planification d’Adobe Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 # 1.1 Planification d’Adobe Workfront
 
+Cet exercice vous guidera à travers les aspects fondamentaux de Workfront Planning, notamment la création d’espaces de travail, la définition de types d’enregistrements, la gestion des enregistrements et l’utilisation de l’assistant d’IA pour des opérations rationalisées. L’exécution de cet atelier vous permettra de vous familiariser avec cette solution puissante et vous donnera un point de départ pour explorer les fonctionnalités plus tard.
+
 ## Objectifs d’apprentissage
 
-- Découvrez comment utiliser Adobe Workfront Planning.
+Après avoir terminé cet atelier, vous vous familiariserez avec les éléments suivants :
+
+- Découvrez les composants principaux de Workfront Planning : les espaces de travail, les types d’enregistrements et les enregistrements.
+- Créez un nouveau Workspace adapté à un cycle de vie opérationnel spécifique.
+- Définissez et personnalisez les types d’enregistrements dans le Workspace.
+- Gérer les enregistrements, notamment la création, la mise à jour et la suppression d’entrées.
+- Utiliser l’assistant d’IA pour effectuer des actions efficacement.
 
 ## Conditions préalables
 
-- Accès à Workfront Planning.
+- Accès au compte Adobe Workfront avec le package Workfront Planning.
 
 ## Exercices
 

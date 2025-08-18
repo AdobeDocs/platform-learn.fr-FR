@@ -4,10 +4,10 @@ description: Prise en main de Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 2%
+source-wordcount: '1234'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +85,7 @@ Cliquez pour ouvrir le type d&#39;enregistrement **Business Unit** nouvellement 
 
 ![Planification Workfront](./images/wfpl10.png)
 
-Une vue de tableau vide s’affiche maintenant, car aucun champ n’est encore défini pour votre type d’enregistrement nouvellement créé.
+Une vue de table vide s&#39;affiche à présent, car aucun enregistrement d&#39;unité opérationnelle n&#39;est encore défini pour le type d&#39;enregistrement que vous venez de créer.
 
 ![Planification Workfront](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Cliquez sur **Enregistrer**.
 
 ![Planification Workfront](./images/wfpl17.png)
 
-Vous avez maintenant créé un nouveau type d’enregistrement et vous avez tous deux supprimé et créé des champs. Revenez à l’écran de présentation de Workspace en cliquant sur la flèche dans le coin supérieur gauche.
+Cliquez sur le **de 3 points...** du premier enregistrement et sélectionnez **Afficher**.
+
+![Planification Workfront](./images/wfpla1.png)
+
+Définissez le **Nom** sur `Consumer Services`.
+
+Définissez la **Description** sur `Handles residential offerings like mobile plans, internet packages, and customer support.`.
+
+Définissez le **responsable d’unité opérationnelle** sur vous-même.
+
+Une fois que vous avez terminé, cliquez sur la flèche pour revenir à l’écran précédent.
+
+![Planification Workfront](./images/wfpla2.png)
+
+Cliquez sur le **de 3 points...** sur le deuxième enregistrement et sélectionnez **Afficher**.
+
+![Planification Workfront](./images/wfpla3.png)
+
+Définissez le **Nom** sur `Enterprise & Business Solutions`
+
+Définissez la **Description** sur `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+Définissez le **responsable d’unité opérationnelle** sur vous-même.
+
+Une fois que vous avez terminé, cliquez sur la flèche pour revenir à l’écran précédent.
+
+![Planification Workfront](./images/wfpla4.png)
+
+Cliquez sur le **de 3 points...** sur le troisième enregistrement et sélectionnez **Afficher**.
+
+![Planification Workfront](./images/wfpla5.png)
+
+Définissez le **Nom** sur `Sales & Marketing`
+
+Définissez la **Description** sur `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+Définissez le **responsable d’unité opérationnelle** sur vous-même.
+
+Une fois que vous avez terminé, cliquez sur la flèche pour revenir à l’écran précédent.
+
+![Planification Workfront](./images/wfpla6.png)
+
+Vous avez maintenant créé un nouveau type d&#39;enregistrement, vous avez supprimé et créé des champs et vous avez créé 3 unités opérationnelles. Revenez à l’écran de présentation de Workspace en cliquant sur la flèche dans le coin supérieur gauche.
 
 ![Planification Workfront](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Cliquez pour ouvrir **Campagnes**.
 
 ![Planification Workfront](./images/wfpl20.png)
 
-Cliquez sur l’icône **+** pour créer un champ. Sélectionnez **Nouvelle connexion** puis sélectionnez **Personnages**.
+Cliquez sur l’icône **+** pour créer un champ. Sélectionnez **Nouvelle connexion** puis sélectionnez **Unité opérationnelle**.
 
 ![Planification Workfront](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Sur l’écran de présentation des campagnes, cliquez sur le **de 3 points...**
 
 ![Planification Workfront](./images/wfpl25.png)
 
-Remplacez le nom par `Campaign Request Form`. Cliquez sur **Enregistrer**.
+Remplacez le nom par `Campaign Request Form`. Cliquez sur **Créer**.
 
 ![Planification Workfront](./images/wfpl26.png)
 
@@ -186,6 +228,8 @@ Définissez le **résumé de la campagne** sur :
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
+
+Renseignez les autres champs comme vous le souhaitez.
 
 Cliquez sur **Soumettre la demande**.
 
@@ -297,19 +341,15 @@ Au bout de quelques secondes, vous devriez voir une confirmation que l’automat
 
 ![Planification Workfront](./images/wfpl47.png)
 
-Pour vérifier le Programme dans Workfront, ouvrez le menu et cliquez sur **Portfolios**.
+Pour vérifier le programme dans Workfront, faites défiler l’écran vers la droite et cliquez sur le programme dans la colonne **Programme connecté**.
 
 ![Planification Workfront](./images/wfpl48.png)
 
-Ouvrez votre portfolio qui doit être nommé `--aepUserLdap-- - Marketing`.
-
-![Planification Workfront](./images/wfpl49.png)
-
-Accédez à **Programmes** et vous devriez alors voir le programme qui vient d’être créé par l’automatisation que vous avez configurée.
+Vous devriez alors voir le programme qui vient d’être créé par l’automatisation que vous avez configurée.
 
 ![Planification Workfront](./images/wfpl50.png)
 
-Étape suivante : [1.2.2 à déterminer](./ex1.md){target="_blank"}
+Étape suivante : [Résumé et avantages](./summary.md){target="_blank"}
 
 Revenir à [Présentation de Workfront Planning](./wfplanning.md){target="_blank"}
 
