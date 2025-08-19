@@ -4,9 +4,9 @@ description: Prise en main de Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '1099'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,22 @@ ht-degree: 2%
 >[!IMPORTANT]
 >
 >Si vous avez précédemment configuré un programme AEM CS avec un environnement AEM Assets CS, il se peut que votre sandbox AEM CS ait été mis en veille. Étant donné que la réactivation d’un tel sandbox prend entre 10 et 15 minutes, il serait judicieux de lancer le processus de réactivation maintenant afin de ne pas avoir à l’attendre plus tard.
+
+## Terminologie des workflows 1.2.1.1 Workfront
+
+Les principaux objets et concepts de Workfront sont les suivants :
+
+| Nom | Dernière mise à jour |
+| ---------------------- | ------------ | 
+| Portefeuille | Ensemble de projets présentant des caractéristiques unificatrices. Ces projets se disputent généralement les mêmes ressources, le même budget ou le même créneau horaire. |
+| Programme | Sous-ensemble au sein d’un portefeuille, dans lequel des projets similaires peuvent être regroupés afin d’obtenir un bénéfice bien défini. |
+| Projet | Une grande quantité de travail qui doit être achevée dans un délai spécifique et qui doit utiliser un budget et un nombre de ressources spécifiques. Pour le rendre gérable, vous divisez le projet en une série de tâches. Lorsque vous terminez toutes les tâches, le projet est également terminé. |
+| Modèle de projet | Vous pouvez utiliser des modèles de projet pour capturer la plupart des processus, informations et paramètres répétables associés aux projets de votre entreprise. Après avoir créé des modèles, vous pouvez les joindre à des projets existants ou les utiliser pour créer de nouveaux projets. |
+| Tâche | Une activité qui doit être effectuée comme une étape vers l’atteinte d’un objectif final (terminer le projet). Les tâches ne peuvent jamais exister indépendamment. Ils font toujours partie d&#39;un projet. |
+| Affectation | Utilisateur, fonction ou équipe affecté à un événement ou à une tâche. Les projets, portefeuilles ou programmes ne peuvent pas avoir d&#39;affectations. |
+| Document/Version | Tout fichier joint à un objet dans Workfront. Chaque fois qu’un même document est chargé dans le même objet, un numéro de version lui est attribué. Les utilisateurs et utilisatrices peuvent afficher et modifier plusieurs options d’une version précédente d’un document. |
+| Approbation | Un élément de travail donné, tel qu’une tâche, un document ou une feuille de temps, peut nécessiter l’approbation d’un superviseur ou d’un autre utilisateur sur l’élément de travail. Ce processus d’approbation est appelé approbation. |
+
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Cliquez pour ouvrir **Workfront**.
 
