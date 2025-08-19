@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ Vous pouvez exploiter les attributs d’audience dans votre entrepôt de donnée
 
 8. Vérifiez le mappage des audiences et appuyez sur **Terminer**.
 
->[**!SUMMARY**]
->
-> Nous avons créé une audience et l’avons activée facilement vers une destination S3. Toute autre solution peut sélectionner cette audience et l’utiliser immédiatement. L’interface conviviale permet aux équipes marketing de créer et d’activer rapidement des audiences sans déplacer les données sous-jacentes. Les clients qui adoptent cette approche ont mis en ligne leur premier cas d’utilisation depuis environ un mois.
+### RESUME
+
+Nous avons créé une audience et l’avons activée facilement vers une destination S3. Toute autre solution peut sélectionner cette audience et l’utiliser immédiatement. L’interface conviviale permet aux équipes marketing de créer et d’activer rapidement des audiences sans déplacer les données sous-jacentes. Les clients qui adoptent cette approche ont mis en ligne leur premier cas d’utilisation depuis environ un mois.
 
 
 Maintenant, nous allons [construire un parcours ](build-journey-federated-audience.md).
