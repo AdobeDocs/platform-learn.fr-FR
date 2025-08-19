@@ -4,7 +4,7 @@ description: Relecture avec Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -197,7 +197,7 @@ Vous devriez alors voir ceci.
 
 Dans le cadre de cette tâche, vous devez créer une nouvelle image, puis la charger sous forme de document dans Workfront. Vous allez à présent créer cette ressource vous-même à l’aide d’Adobe Express.
 
-## 1.2.2.5 Créer une ressource avec Adobe Firely Services et Adobe Express
+## 1.2.2.5 Créer une ressource avec Adobe Firefly Services et Adobe Express
 
 Accédez à [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Saisissez le `a neon rabbit running very fast through space` d’invite et cliquez sur **Générer**.
 
