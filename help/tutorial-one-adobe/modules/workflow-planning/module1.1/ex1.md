@@ -4,16 +4,20 @@ description: Prise en main de Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Prise en main de Workfront Planning
 
-## 1.1.1.1 Workfront Planning Terminology
+## Résumé de campagne 1.1.1.1 CitiSignal
+
+Pour comprendre le contexte de CitiSignal et ce qu&#39;ils essaient d&#39;accomplir, téléchargez et lisez le résumé de campagne de CitiSignal ici : [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## 1.1.1.2 Workfront Planning Terminology
 
 Les principaux objets et concepts de Workfront Planning sont les suivants :
 
@@ -31,7 +35,7 @@ Les principaux objets et concepts de Workfront Planning sont les suivants :
 
 Vous allez maintenant passer directement à l’action et commencer à créer vous-même certains de ces objets.
 
-## 1.1.1.2 Workspace, type d’enregistrement, champs
+## 1.1.1.3 Workspace, type d’enregistrement, champs
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Cliquez pour ouvrir **Workfront**.
 
@@ -61,7 +65,7 @@ Tu devrais avoir ça.
 
 ![Planification Workfront](./images/wfpl7a.png)
 
-## 1.1.1.3 des taxonomies : type d’enregistrement et champs
+## 1.1.1.4 des taxonomies : type d’enregistrement et champs
 
 Sous **Taxonomies**, cliquez sur **+ Ajouter un type d’enregistrement** puis sélectionnez **Ajouter manuellement**.
 
@@ -165,7 +169,7 @@ Vous devriez alors voir ceci.
 
 ![Planification Workfront](./images/wfpl19.png)
 
-## 1.1.1.4 types d’enregistrements opérationnels : champs
+## 1.1.1.5 types d’enregistrements opérationnels : champs
 
 Cliquez pour ouvrir **Campagnes**.
 
@@ -187,7 +191,7 @@ Votre nouveau champ s’affiche alors en mode Tableau.
 
 ![Planification Workfront](./images/wfpl24.png)
 
-## 1.1.1.5 Créer un formulaire de demande
+## 1.1.1.6 Créer un formulaire de demande
 
 Sur l’écran de présentation des campagnes, cliquez sur le **de 3 points...**, puis sélectionnez **Créer un formulaire de demande**.
 
@@ -209,7 +213,7 @@ Cliquez sur la flèche dans le coin supérieur gauche pour revenir à l’écran
 
 ![Planification Workfront](./images/wfpl29.png)
 
-## 1.1.1.6 Envoyer un nouvel enregistrement à l’aide du formulaire de demande
+## 1.1.1.7 Envoyer un nouvel enregistrement à l’aide du formulaire de demande
 
 Dans l’écran Aperçu des campagnes , cliquez sur **+ Nouvel enregistrement**.
 
@@ -243,7 +247,7 @@ Vous devriez alors voir la campagne nouvellement créée dans la vue d’ensembl
 
 ![Planification Workfront](./images/wfpl35.png)
 
-## 1.1.1.7 Créer un Portfolio et un formulaire personnalisé
+## 1.1.1.8 Créer un Portfolio et un formulaire personnalisé
 
 À l’étape suivante, vous allez créer une automatisation qui récupérera les informations de la campagne que vous avez créée dans Workfront Planning et qui les utilisera dans Workfront pour créer un programme. Avant de pouvoir créer l’automatisation, vous devez d’abord configurer 2 éléments dans Workfront : un portfolio et un formulaire personnalisé.
 
