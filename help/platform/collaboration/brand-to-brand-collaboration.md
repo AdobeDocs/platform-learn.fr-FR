@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez les cas d’utilisation pris en charge par la collaboration de marque à marque et les fonctionnalités spécifiques introduites pour prendre en charge ces workflows.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470938/?learn=on&enablevpops&captions=fre_fr)
