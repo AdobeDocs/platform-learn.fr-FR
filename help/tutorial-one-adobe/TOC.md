@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
+source-git-commit: 10c3f0a3ae1540562f0f46a5936b1556e37a251b
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1337'
 ht-degree: 3%
 
 ---
@@ -85,8 +85,8 @@ ht-degree: 3%
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
       + [1.6.1 Adobe IO et App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
       + [1.6.2 Création de votre compartiment AWS S3](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-      + [1.6.3 Création de votre application de gestion des ressources numériques externe](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-      + [1.6.4 Déployer votre code et publier votre application en privé](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [1.6.3 Créer et déployer votre application de gestion des ressources numériques externe](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 Publier votre application en privé](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Gestion des ressources {#assetmgmt}
