@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Découvrir les chevauchements d’audiences dans les projets Collaboration
 
-Découvrez comment comparer les chevauchements d’audiences dans les projets Real-Time CDP Collaboration. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
+Découvrez comment comparer les chevauchements d’audiences dans les projets Real-Time CDP Collaboration. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
