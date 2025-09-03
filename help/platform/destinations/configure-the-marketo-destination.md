@@ -25,5 +25,5 @@ Découvrez comment la destination [!DNL Marketo Engage] permet une synchronisati
 
 Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440160?learn=on&enablevpops&captions=fre_fr)
 
