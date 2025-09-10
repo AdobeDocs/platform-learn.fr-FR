@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Remplacez le type de police par une police de votre choix. Dans ce cas, le type 
 
 ![Postman](./images/ill5.png)
 
-Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points **&#x200B;**.
+Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points ****.
 
 ![Postman](./images/ill6.png)
 
@@ -166,9 +166,9 @@ Accédez à [https://firefly.adobe.com/generate/image](https://firefly.adobe.com
 
 >[!NOTE]
 >
->Les images Firefly 3 et Image 4 sont disponibles pour tous les utilisateurs de Adobe Firefly Services, tandis que Firefly Image 4 Ultra nécessite une licence Firefly Pro.
+>Firefly Image 3 et Image 4 sont disponibles pour tous les utilisateurs de Adobe Firefly Services, tandis que Firefly Image 4 Ultra nécessite une licence Firefly Pro.
 
-Cliquez pour sélectionner **Image Firefly 3** pour cet exercice.
+Cliquez pour sélectionner **Firefly Image 3** pour cet exercice.
 
 ![Postman](./images/ffui1a.png)
 
@@ -200,7 +200,7 @@ La requête que vous voyez ici est la requête qui est envoyée au serveur princ
 
 ![Postman](./images/ffui7.png)
 
-Jetez à nouveau un coup d’œil à l’interface utilisateur d’. Remplacez **Format** par **Écran large (16:9)**.
+Jetez à nouveau un coup d’œil à l’interface utilisateur d’. Remplacez **Format** par **Écran large (16 :9)**.
 
 ![Postman](./images/ffui8.png)
 
@@ -407,7 +407,7 @@ Avec la version récente de Firefly Image Model 4, plusieurs améliorations ont 
 
 - Firefly Image Model 4 offre une sortie de résolution 2K avec une définition et un détail améliorés.
 - Firefly Image Model 4 offre des améliorations significatives en matière de rendu de texte, pour les humains, les animaux et l’architecture.
-- Firefly Image Model 4 maintient l’engagement d’Adobe en faveur d’une IA générative respectueuse de la propriété intellectuelle et commercialement sûre.
+- Firefly Image Model 4 maintient son engagement d’Adobe en faveur d’une IA générative commercialement sûre et compatible avec la propriété intellectuelle.
 
 Firefly Image Model 4 vous donne des images exceptionnelles de personnes, d&#39;animaux et de scènes détaillées et vous pouvez utiliser Image Model 4 Ultra pour générer des images avec des interactions humaines hyper-réalistes, des éléments architecturaux et des paysages complexes&#x200B;
 
