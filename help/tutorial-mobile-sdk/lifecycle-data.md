@@ -3,7 +3,7 @@ title: Collecter des données de cycle de vie avec Platform Mobile SDK
 description: Découvrez comment collecter des données de cycle de vie dans une application mobile.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Vous pouvez maintenant mettre à jour votre projet pour enregistrer les événem
 
 1. Lorsque l’application entre en arrière-plan, vous devez suspendre la collecte de données de cycle de vie à partir de la fonction `override fun onActivityPaused` de votre application. Ajoutez ce code à `override fun onActivityPaused(activity: Activity)` :
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -150,6 +150,6 @@ Vous devriez voir les événements **[!UICONTROL Fermeture de l’application (a
 >
 >Vous avez maintenant configuré votre application pour envoyer des événements d’état d’application (premier plan, arrière-plan) à Adobe Experience Platform Edge Network et à tous les services que vous avez définis dans votre flux de données.
 >
-> Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
+> Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Suivi des données d’événement](events.md)**
