@@ -25,11 +25,11 @@ Experience Platform utilise des schémas pour décrire la structure des donnée
 
 Avant que les données puissent être ingérées dans Platform, il est nécessaire de composer un schéma pour décrire la structure des données et fournir des contraintes au type de données pouvant être contenues dans chaque champ. Les schémas se composent d’une classe de base et de zéro ou plusieurs groupes de champs.
 
-Pour plus d’informations sur le modèle de composition de schémas, notamment sur les principes de conception et les bonnes pratiques, consultez les [principes de base de la composition de schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) ou la liste de lecture [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+Pour plus d’informations sur le modèle de composition de schémas, notamment sur les principes de conception et les bonnes pratiques, consultez les [principes de base de la composition de schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) ou la liste de lecture [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/fr/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->Si vous connaissez les références de conception de solution (SDR) Analytics, vous pouvez considérer un schéma comme un SDR plus robuste. Pour plus d’informations[ consultez la section ](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)Créer et gérer un document de conception de solution (SDR).
+>Si vous connaissez les références de conception de solution (SDR) Analytics, vous pouvez considérer un schéma comme un SDR plus robuste. Pour plus d’informations[ consultez la section ](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)Créer et gérer un document de conception de solution (SDR).
 
 ## Conditions préalables
 
@@ -70,7 +70,7 @@ Vous êtes maintenant sur la page principale des schémas. La liste des schémas
 * Les **classes** définissent les aspects comportementaux des données que le schéma contient. Par exemple : `XDM ExperienceEvent` capture les séries temporelles et les données d’événement, et `XDM Individual Profile` capture les données d’attribut d’un individu.
 * Les **types de données** sont utilisés comme types de champs de référence dans les classes ou les groupes de champs de la même manière que les champs littéraux de base.
 
-Les descriptions ci-dessus sont un aperçu général. Pour plus d’informations, consultez la vidéo [Blocs de création de schéma](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) ou lisez [Principes de base de la composition des schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) dans la documentation du produit.
+Les descriptions ci-dessus sont un aperçu général. Pour plus d’informations, consultez la vidéo [Blocs de création de schéma](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/schemas/schema-building-blocks) ou lisez [Principes de base de la composition des schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition) dans la documentation du produit.
 
 Dans ce tutoriel, vous allez utiliser le groupe de champs Événement d’expérience client et créer un champ personnalisé pour démontrer le processus.
 
@@ -242,6 +242,6 @@ Ajoutez maintenant un groupe de champs personnalisé à l’aide de votre type d
 >
 >Vous disposez à présent d’un schéma à utiliser pour la suite du tutoriel.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 
 Suivant : **[Créer un [!UICONTROL flux de données]](create-datastream.md)**

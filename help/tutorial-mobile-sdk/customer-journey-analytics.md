@@ -18,7 +18,7 @@ Les données d’événement d’application mobile, que vous avez collectées e
 
 Contrairement à Adobe Analytics, Customer Journey Analytics *utilise* les données des jeux de données créés dans Experience Platform. Les données ne sont pas envoyées directement à Customer Journey Analytics à l’aide de Adobe Experience Platform Mobile SDK, mais sont envoyées aux jeux de données. Les connexions sont ensuite configurées dans Customer Journey Analytics pour sélectionner les jeux de données que vous utiliserez dans vos projets de création de rapports et d’analyse.
 
-Cette leçon du tutoriel porte sur le compte rendu des performances et l’analyse des données capturées à partir de l’application de tutoriel Luma. L’une des fonctionnalités uniques de Customer Journey Analytics consiste à combiner des données provenant de plusieurs sources (CRM, point de vente, application de fidélité, centre d’appel) et canaux (web, mobile, hors ligne) pour obtenir des informations détaillées sur les parcours clients. Cette capacité dépasse le cadre de cette leçon. Voir [Présentation de Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) pour plus d’informations.
+Cette leçon du tutoriel porte sur le compte rendu des performances et l’analyse des données capturées à partir de l’application de tutoriel Luma. L’une des fonctionnalités uniques de Customer Journey Analytics consiste à combiner des données provenant de plusieurs sources (CRM, point de vente, application de fidélité, centre d’appel) et canaux (web, mobile, hors ligne) pour obtenir des informations détaillées sur les parcours clients. Cette capacité dépasse le cadre de cette leçon. Voir [Présentation de Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview) pour plus d’informations.
 
 
 ## Conditions préalables
@@ -213,7 +213,7 @@ Vous avez défini votre vue de données et tout est en place pour commencer à c
 
 ## Créer un projet
 
-Les projets Workspace sont utilisés dans Customer Journey Analytics pour créer des rapports et des visualisations. Il existe de nombreuses possibilités de créer des rapports complets et des visualisations attrayantes, mais cela n’entre pas dans le cadre de ce tutoriel. Voir [Présentation de Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) et [Créer un nouveau projet](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) pour plus d’informations.
+Les projets Workspace sont utilisés dans Customer Journey Analytics pour créer des rapports et des visualisations. Il existe de nombreuses possibilités de créer des rapports complets et des visualisations attrayantes, mais cela n’entre pas dans le cadre de ce tutoriel. Voir [Présentation de Workspace](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) et [Créer un nouveau projet](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) pour plus d’informations.
 
 Dans cette section de la leçon, vous allez créer un projet qui affiche des rapports et des visualisations sur :
 
@@ -468,6 +468,6 @@ Vous devriez maintenant avoir une compréhension de base de la manière de gén�
 >[!SUCCESS]
 >
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 
 Suivant : **[Conclusion et prochaines étapes](conclusion.md)**

@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Découvrez comment configurer une propriété de balise dans l’interface [!UICONTROL Collecte de données].
 
-Les balises dans Adobe Experience Platform Launch représentent la nouvelle génération des fonctionnalités de gestion des balises dʼAdobe. Les balises offrent aux clients un moyen simple de déployer et de gérer les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. En savoir plus sur les [ Balises ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) dans la documentation du produit.
+Les balises dans Adobe Experience Platform Launch représentent la nouvelle génération des fonctionnalités de gestion des balises dʼAdobe. Les balises offrent aux clients un moyen simple de déployer et de gérer les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. En savoir plus sur les [ Balises ](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home) dans la documentation du produit.
 
 ## Conditions préalables
 
@@ -23,7 +23,7 @@ Pour suivre la leçon, vous devez disposer des autorisations nécessaires pour c
 
 >[!NOTE]
 >
-> Platform Launch (côté client) s’appelle désormais [ Balises ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+> Platform Launch (côté client) s’appelle désormais [ Balises ](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)
 
 ## Objectifs d’apprentissage
 
@@ -186,6 +186,6 @@ Si vous connaissez la version web des balises, anciennement Launch, il est impor
 >
 >Vous disposez désormais d’une propriété de balise mobile à utiliser dans la suite de ce tutoriel.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
 
 Suivant : **[Installation des SDK](install-sdks.md)**

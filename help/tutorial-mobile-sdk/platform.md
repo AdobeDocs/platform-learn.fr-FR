@@ -106,7 +106,7 @@ Ouvrez votre jeu de données dans l’interface de Platform. Vous devriez voir l
 Vous devriez également voir des exemples d’enregistrements et de champs utilisant la fonctionnalité **[!UICONTROL Aperçu du jeu de données]** :
 ![valider le cycle de vie envoyé au jeu de données Platform](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-Le [service de requête](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) de Platform est un outil plus robuste pour valider les données.
+Le [service de requête](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/queries/explore-data) de Platform est un outil plus robuste pour valider les données.
 
 ## Activer le profil client en temps réel
 
@@ -169,7 +169,7 @@ Les spécialistes du marketing et de l’analyse peuvent faire beaucoup plus ave
 
 >[!SUCCESS]
 >
->Vous avez maintenant configuré votre application pour envoyer des données non seulement à Edge Network, mais également à Adobe Experience Platform.<br>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Vous avez maintenant configuré votre application pour envoyer des données non seulement à Edge Network, mais également à Adobe Experience Platform.<br>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 >
 
 Suivant : **[Créer et envoyer des notifications push](journey-optimizer-push.md)**

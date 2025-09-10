@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Découvrez comment créer un train de données dans Experience Platform.
 
-Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers Platform Edge Network sont acheminées correctement vers les applications et services Adobe Experience Cloud. Pour plus d’informations, consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) ou cette [vidéo](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams).
+Un flux de données est une configuration côté serveur sur Platform Edge Network. Le flux de données garantit que les données entrantes vers Platform Edge Network sont acheminées correctement vers les applications et services Adobe Experience Cloud. Pour plus d’informations, consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) ou cette [vidéo](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/edge-network/configure-datastreams).
 
 ![Architecture](assets/architecture.png){zoomable="yes"}
 
@@ -110,6 +110,6 @@ Lors de l’implémentation de Platform Mobile SDK dans votre propre application
 >
 >Vous disposez désormais d’un flux de données à utiliser pour la suite du tutoriel.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
 
 Suivant : **[Configurer une propriété de balise](configure-tags.md)**

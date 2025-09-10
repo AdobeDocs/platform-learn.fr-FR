@@ -253,6 +253,6 @@ Veillez à mettre à jour `MobileCore.configureWith(environmentFileId)` avec le 
 >
 >Vous avez maintenant installé les packages nécessaires et mis à jour votre projet afin d’enregistrer les extensions Adobe Experience Platform Mobile SDK requises que vous allez utiliser pour la suite du tutoriel.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
 
 Suivant : **[Configuration d’Assurance](assurance.md)**

@@ -187,6 +187,6 @@ Dans l’exemple ci-dessus, vous consignez simplement le statut du consentement 
 >
 >Vous avez maintenant activé votre application pour inviter l’utilisateur, à son démarrage initial après l’installation (ou la réinstallation), à consentir à l’aide de Adobe Experience Platform Mobile SDK.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
 
 Suivant : **[Collecter des données de cycle de vie](lifecycle-data.md)**
