@@ -419,7 +419,7 @@ Vous devez enregistrer le jeton d’appareil pour les notifications push.
 >[!IMPORTANT]
 >
 >**Pour iOS uniquement** : le `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` détermine si les notifications push utilisent un sandbox APNs ou un serveur de production pour envoyer des notifications push. Lors du test de votre application dans le simulateur ou sur un appareil, assurez-vous que la `messaging.useSandbox` est définie sur `true` afin de recevoir des notifications push. Lors du déploiement de votre application pour production ou test à l’aide d’Apple Testflight, assurez-vous de `messaging.useSandbox` définir sur `false` sinon votre application de production ne pourra pas recevoir de notifications push.<br/><br/>
->>Firebase Cloud Messaging (FCM) ne prend **pas** en charge le concept de sandbox pour les notifications push.
+>&#x200B;>Firebase Cloud Messaging (FCM) ne prend **pas** en charge le concept de sandbox pour les notifications push.
 
 
 ## Créer votre propre notification push
@@ -490,7 +490,7 @@ L’étape suivante consiste à créer le parcours qui déclenche l’envoi de l
 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez **[!UICONTROL Parcours]** dans le rail de gauche.
 1. Sélectionnez **[!UICONTROL Créer un Parcours]**.
-1. Dans le panneau Propriétés du Parcours **** :
+1. Dans le panneau Propriétés du Parcours **&#x200B;**&#x200B;:
 
    1. Saisissez un **[!UICONTROL Nom]** pour le parcours, par exemple `Luma - Test Push Notification Journey`.
    1. Saisissez une **[!UICONTROL Description]** pour le parcours, par exemple `Journey for test push notifications in Luma mobile app`.
@@ -504,7 +504,7 @@ L’étape suivante consiste à créer le parcours qui déclenche l’envoi de l
 
 1. Dans la liste déroulante **[!UICONTROL ACTIONS]**, effectuez un glisser-déposer ![Push](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]** sur le ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) qui apparaît à droite de votre activité **[!DNL LumaTestEvent]**. Dans le volet **[!UICONTROL Actions : Push]** :
 
-   1. Fournissez un **[!UICONTROL Libellé]**, par exemple `Luma Test Push Notification`, fournissez un **[!UICONTROL Description]** par exemple `Test push notification for Luma mobile app`, sélectionnez **[!UICONTROL Transactionnel]** dans la liste **[!UICONTROL Catégorie]** et sélectionnez **[!DNL Luma]** dans la surface **** Push.
+   1. Fournissez un **[!UICONTROL Libellé]**, par exemple `Luma Test Push Notification`, fournissez un **[!UICONTROL Description]** par exemple `Test push notification for Luma mobile app`, sélectionnez **[!UICONTROL Transactionnel]** dans la liste **[!UICONTROL Catégorie]** et sélectionnez **[!DNL Luma]** dans la surface **&#x200B;**&#x200B;Push.
    1. Sélectionnez ![Modifier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Modifier le contenu]** pour commencer à modifier la notification push réelle.
 
       ![Propriétés push](assets/ajo-push-properties.png){zoomable="yes"}
