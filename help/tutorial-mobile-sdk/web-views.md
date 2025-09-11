@@ -3,7 +3,7 @@ title: Gestion des vues web avec Platform Mobile SDK
 description: Découvrez comment gérer la collecte de données avec des vues web dans une application mobile.
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Dans cette leçon, vous allez :
 
 ## Problèmes potentiels de tracking
 
-Des ECID (Experience Cloud Identity) distincts sont générés lorsque vous envoyez des données à partir de la partie native de votre application et d’une vue web dans l’application. Ces ECID distincts génèrent des accès déconnectés et des données de visite et de visiteur exagérées. Vous trouverez plus d’informations sur l’ECID dans la [ présentation de l’ECID ](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/ecid).
+Des ECID (Experience Cloud Identity) distincts sont générés lorsque vous envoyez des données à partir de la partie native de votre application et d’une vue web dans l’application. Ces ECID distincts génèrent des accès déconnectés et des données de visite et de visiteur exagérées. Vous trouverez plus d’informations sur l’ECID dans la [ présentation de l’ECID ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
 
 Pour résoudre les accès déconnectés et les données gonflées, vous devez transmettre l’ECID de l’utilisateur de la partie native de votre application à un WebView que vous souhaitez peut-être utiliser dans votre application.
 
@@ -110,11 +110,11 @@ Pour exécuter le code :
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -151,6 +151,6 @@ Malheureusement, le débogage de la session web est limité. Par exemple, vous n
 >
 >Vous avez maintenant configuré votre application pour afficher le contenu basé sur une URL dans une vue web à l’aide du même ECID que l’ECID déjà émis par Adobe Experience Platform Mobile SDK.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Identité](identity.md)**

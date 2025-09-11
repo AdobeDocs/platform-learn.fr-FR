@@ -3,7 +3,7 @@ title: Utiliser Places avec Platform Mobile SDK
 description: Découvrez comment utiliser le service de géolocalisation Places dans votre application mobile.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 2%
@@ -400,15 +400,15 @@ Pour valider les fonctionnalités de géolocalisation dans votre application :
 
 1. Déplacez (faites glisser) la carte pour vous assurer que le cercle bleu du milieu se trouve au-dessus de l’un de vos points d’intérêt, par exemple Londres.
 
-1. Appuyer <img src="assets/geobutton.png" width="20" /> jusqu’à ce que la catégorie et le nom apparaissent dans l’étiquette à l’emplacement rouge avec l’épingle.
+1. Appuyer <img src="assets/geobutton.png" width="20"> jusqu’à ce que la catégorie et le nom apparaissent dans l’étiquette à l’emplacement rouge avec l’épingle.
 
 1. Appuyez sur l’étiquette du point d’intérêt, ce qui ouvre la feuille **[!UICONTROL Point d’intérêt voisin]**.
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. Appuyez sur les boutons **[!UICONTROL Entrée]** ou **[!UICONTROL Sortie]** pour simuler des événements d’entrée et de sortie de limite géographique à partir de l’application.
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. Vous devriez voir les événements dans l’interface utilisateur d’Assurance. À la fois dans les événements et dans les événements du service Places.
 
@@ -420,12 +420,12 @@ Pour valider les fonctionnalités de géolocalisation dans votre application :
 
 1. Appuyez quelque part dans le cercle rouge qui s’affiche.
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. Appuyez sur les boutons **[!UICONTROL Entrée]** ou **[!UICONTROL Sortie]** pour simuler des événements d’entrée et de sortie de limite géographique à partir de l’application.
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. Vous devriez voir les événements dans l’interface utilisateur d’Assurance.
 
@@ -446,6 +446,6 @@ Cette implémentation de la fonctionnalité de géolocalisation de votre applica
 >
 >Vous avez maintenant activé l’application pour les services de géolocalisation à l’aide de l’extension Places dans Experience Platform Mobile SDK.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Mapper des données à Adobe Analytics](analytics.md)**
