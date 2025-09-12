@@ -3,9 +3,9 @@ title: Collecter des données de profil avec Platform Mobile SDK
 description: Découvrez comment collecter des données de profil dans une application mobile.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Pour plus d’informations, consultez la [référence de l’API](https://develo
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Pour insérer un e-mail et un identifiant client aléatoires, sélectionnez le bouton > .
+1. Pour insérer un e-mail et un ID de client aléatoires, sélectionnez l’**[!UICONTROL A Bouton |]** .
 1. Sélectionnez **[!UICONTROL Connexion]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
@@ -214,6 +214,6 @@ Dans l’interface utilisateur d’Assurance, vous devriez voir un événement *
 >
 >Vous avez maintenant configuré votre application pour mettre à jour les attributs des profils dans Edge Network et (lorsqu’elle est configurée) avec Adobe Experience Platform.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Utiliser des endroits](places.md)**

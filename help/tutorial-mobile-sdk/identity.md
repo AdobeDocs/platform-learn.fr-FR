@@ -4,9 +4,9 @@ description: Découvrez comment collecter des données d’identité dans une ap
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '966'
 ht-degree: 2%
 
 ---
@@ -179,7 +179,7 @@ Vous souhaitez mettre à jour l’identité standard (e-mail) et l’identité p
 
 ## Supprimer une identité
 
-Vous pouvez utiliser l’API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) pour supprimer l’identité du mappage d’identités côté client stocké. L’extension d’identité cesse d’envoyer l’identifiant à Edge Network. L’utilisation de cette API ne supprime pas l’identifiant du graphique d’identités côté serveur. Voir [Afficher les graphiques d’identités](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/identities/view-identity-graphs) pour plus d’informations sur les graphiques d’identités.
+Vous pouvez utiliser l’API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) pour supprimer l’identité du mappage d’identités côté client stocké. L’extension d’identité cesse d’envoyer l’identifiant à Edge Network. L’utilisation de cette API ne supprime pas l’identifiant du graphique d’identités côté serveur. Voir [Afficher les graphiques d’identités](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs) pour plus d’informations sur les graphiques d’identités.
 
 
 >[!BEGINTABS]
@@ -247,6 +247,8 @@ MobileSDK.shared.removeIdentities(
 
 >[!ENDTABS]
 
+Sur l’écran **[!UICONTROL Identités]** :
+
 1. Indiquez une adresse e-mail et un identifiant CRM, ou
 1. Sélectionner **[!UICONTROL A |]** (iOS) ou **[!UICONTROL Générer un e-mail aléatoire]** (Android) pour générer de manière aléatoire un **[!UICONTROL e-mail]** et un **[!UICONTROL identifiant CRM]**.
 1. Sélectionnez **[!UICONTROL Connexion]**.
@@ -290,6 +292,6 @@ Une fois les étapes de la [leçon Experience Platform terminées](platform.md),
 >
 >Vous avez maintenant configuré votre application pour mettre à jour les identités dans Edge Network et (lorsqu’elle est configurée) avec Adobe Experience Platform.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Collecter des données de profil](profile.md)**
