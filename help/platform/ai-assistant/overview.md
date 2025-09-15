@@ -1,5 +1,5 @@
 ---
-title: Assistant IA
+title: Assistant IA
 description: Découvrez toute la puissance de l’assistant IA dans les applications Adobe Experience Platform telles que Real-Time Customer Data Platform, Journey Optimizer et Customer Journey Analytics.
 feature: AI Assistant
 role: Admin, Architect, Data Architect, Data Engineer, Developer, Leader, User
@@ -12,11 +12,11 @@ exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
 source-git-commit: f003a65188c0201030b8ecca0c0838088c814e47
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-# Assistant IA
+# Assistant IA
 
 Découvrez ce que vous pouvez faire avec l’assistant AI dans les applications Adobe Experience Platform telles que Real-Time Customer Data Platform, Journey Optimizer et Customer Journey Analytics. Pour plus d’informations, consultez la documentation de l’assistant [AI](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/home).
 
@@ -51,7 +51,7 @@ Configurez l’assistant AI et découvrez ses fonctionnalités de base.
                     <p class="is-size-6">Découvrez comment configurer l’accès et les autorisations pour l’assistant AI dans Adobe Experience Platform.</p>
                 </div>
                 <a href="access.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@ Configurez l’assistant AI et découvrez ses fonctionnalités de base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="Utiliser le panneau de visibilité dans l’assistant d’IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440964/?format=jpeg&nocache=1748392732984&captions=fre_fr" alt="Utiliser le panneau de visibilité dans l’assistant d’IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="Utiliser le panneau de visibilité dans l’assistant d’IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -74,7 +74,7 @@ Configurez l’assistant AI et découvrez ses fonctionnalités de base.
                     <p class="is-size-6">Découvrez comment utiliser le panneau de visibilité dans l’assistant AI.</p>
                 </div>
                 <a href="discoverability-panel.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@ Configurez l’assistant AI et découvrez ses fonctionnalités de base.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="Valider les réponses de l’assistant AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441740/?format=jpeg&nocache=1748392733006&captions=fre_fr" alt="Valider les réponses de l’assistant AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="Valider les réponses de l’assistant AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,7 +97,7 @@ Configurez l’assistant AI et découvrez ses fonctionnalités de base.
                     <p class="is-size-6">Découvrez comment vérifier et valider les réponses fournies par l’assistant AI dans Adobe Experience Platform.</p>
                 </div>
                 <a href="validate-responses.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -122,7 +122,7 @@ Il existe de nombreux autres cas d’utilisation où l’assistant AI peut vous 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="Obtenez des informations opérationnelles avec l’assistant d’IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444034/?format=jpeg&nocache=1748392734347&captions=fre_fr" alt="Obtenez des informations opérationnelles avec l’assistant d’IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="Obtenez des informations opérationnelles avec l’assistant d’IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ Il existe de nombreux autres cas d’utilisation où l’assistant AI peut vous 
                     <p class="is-size-6">Découvrez comment utiliser l’assistant AI pour obtenir des informations opérationnelles sur les objets métier tels que les audiences, les jeux de données, les schémas, les destinations et les parcours dans Adobe Experience Platform</p>
                 </div>
                 <a href="operational-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -145,7 +145,7 @@ Il existe de nombreux autres cas d’utilisation où l’assistant AI peut vous 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="Assistant AI - Cas d’utilisation de nettoyage d’audience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441989/?format=jpeg&nocache=1748392734324&captions=fre_fr" alt="Assistant AI - Cas d’utilisation de nettoyage d’audience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="Assistant AI - Cas d’utilisation de nettoyage d’audience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -158,7 +158,7 @@ Il existe de nombreux autres cas d’utilisation où l’assistant AI peut vous 
                     <p class="is-size-6">Découvrez comment identifier les audiences inutilisées avec l’assistant AI afin de les supprimer et de rendre vos opérations marketing plus efficaces.</p>
                 </div>
                 <a href="find-unused-audiences.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -168,7 +168,7 @@ Il existe de nombreux autres cas d’utilisation où l’assistant AI peut vous 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="Analyse d’impact avec l’assistant d’IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441682/?format=jpeg&nocache=1748392734336&captions=fre_fr" alt="Analyse d’impact avec l’assistant d’IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="Analyse d’impact avec l’assistant d’IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ Il existe de nombreux autres cas d’utilisation où l’assistant AI peut vous 
                     <p class="is-size-6">Découvrez comment l’assistant AI peut vous aider à détecter des impacts potentiels avant de modifier des objets partagés. Les modifications apportées aux objets partagés tels que les attributs et les audiences peuvent perturber les workflows des autres équipes, compliquer les processus et risquer d’importants efforts marketing.</p>
                 </div>
                 <a href="impact-analysis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -204,7 +204,7 @@ L’assistant d’IA est un outil utile pour apprendre de nouveaux produits ou p
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="Découvrir les applications Experience Platform avec l’assistant AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441026/?format=jpeg&nocache=1748392735046&captions=fre_fr" alt="Découvrir les applications Experience Platform avec l’assistant AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="Découvrir les applications Experience Platform avec l’assistant AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -217,7 +217,7 @@ L’assistant d’IA est un outil utile pour apprendre de nouveaux produits ou p
                     <p class="is-size-6">Découvrez les applications Adobe Experience Platform à partir de l’assistant AI.</p>
                 </div>
                 <a href="product-knowledge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -240,7 +240,7 @@ L’assistant d’IA est un outil utile pour apprendre de nouveaux produits ou p
                     <p class="is-size-6">Découvrez comment utiliser l’assistant d’IA pour développer rapidement de nouvelles fonctionnalités et réduire le temps d’intégration.</p>
                 </div>
                 <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -262,7 +262,7 @@ Dépannage et ouverture des tickets d’assistance clientèle.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="Agent du support technique du produit" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443185/?format=jpeg&nocache=1748392735554&captions=fre_fr" alt="Agent du support technique du produit"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="Agent du support technique du produit"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -275,7 +275,7 @@ Dépannage et ouverture des tickets d’assistance clientèle.
                     <p class="is-size-6">L’agent d’assistance produit peut vous aider à résoudre des problèmes en exploitant une vaste gamme de sources de connaissances sélectionnées par des équipes d’assistance expertes d’Adobe et même vos propres données. Si vous avez besoin d’aide supplémentaire, l’agent du support produit peut maintenant créer un dossier de support avec des informations contextuelles détaillées.</p>
                 </div>
                 <a href="product-support-agent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -297,7 +297,7 @@ Découvrez les fonctionnalités de sécurité de l’assistant AI.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="Présentation de la sécurité de l’assistant AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441082/?format=jpeg&nocache=1748392736016&captions=fre_fr" alt="Présentation de la sécurité de l’assistant AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="Présentation de la sécurité de l’assistant AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -310,7 +310,7 @@ Découvrez les fonctionnalités de sécurité de l’assistant AI.
                     <p class="is-size-6">Voici un aperçu des fonctionnalités de sécurité de l’assistant AI basé sur la fiche d’information sur la sécurité.</p>
                 </div>
                 <a href="security-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
