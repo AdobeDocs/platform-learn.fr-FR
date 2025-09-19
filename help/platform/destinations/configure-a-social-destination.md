@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configurer une destination sociale
 
-Découvrez comment connecter et activer des audiences vers une destination de réseau social. Cette vidéo illustre le workflow à l’aide d’une destination LinkedIn Matched Audiences dans Adobe Real-Time Customer Data Platform.  Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview).
+Découvrez comment connecter et activer des audiences vers une destination de réseau social. Cette vidéo illustre le workflow à l’aide d’une destination LinkedIn Matched Audiences dans Adobe Real-Time Customer Data Platform.  Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/social/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
