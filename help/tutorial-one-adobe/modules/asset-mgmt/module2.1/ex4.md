@@ -4,16 +4,16 @@ description: AEM CS - Bloc personnalisé de base
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
 
-# 1.1.4 Développement d’un bloc personnalisé de base
+# 1.1.3 Développement d’un bloc personnalisé de base
 
-## 1.1.4.1 Configurer votre environnement de développement local
+## 1.1.3.1 Configurer votre environnement de développement local
 
 Accédez à [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, téléchargez et installez **Github Desktop**.
 
@@ -43,7 +43,7 @@ Ce dossier est maintenant ouvert dans Visual Studio Code. Vous êtes maintenant 
 
 ![Bloquer](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Créer un bloc personnalisé de base
+## 1.1.3.2 Créer un bloc personnalisé de base
 
 Adobe vous recommande de développer des blocs selon une approche en trois phases :
 
@@ -145,7 +145,7 @@ Enregistrez vos modifications.
 
 ![Bloquer](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Valider vos modifications
+## 1.1.3.3 Valider vos modifications
 
 Vous avez apporté plusieurs modifications à votre projet qui doivent être validées dans votre référentiel GitHub. Pour ce faire, ouvrez **GitHub Desktop**.
 
@@ -169,7 +169,7 @@ Dans votre navigateur, accédez à votre compte GitHub et au référentiel que v
 
 ![Bloquer](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Ajouter votre bloc à une page
+## 1.1.3.4 Ajouter votre bloc à une page
 
 Maintenant que votre bloc de devis de base est défini et validé dans le projet CitiSignal, vous pouvez ajouter un bloc **fiberoffer** à une page existante.
 
@@ -249,7 +249,7 @@ Cliquez de nouveau sur **Publier**.
 
 Votre nouvelle page a été publiée.
 
-## 1.1.4.5 Ajouter votre nouvelle page au menu de navigation
+## 1.1.3.5 Ajouter votre nouvelle page au menu de navigation
 
 Dans votre présentation AEM Sites, accédez à **CitiSignal** > **Fragments** et cochez la case correspondant à **En-tête**. Cliquez sur **Modifier**.
 
@@ -259,7 +259,7 @@ Ajoutez une option de menu au menu de navigation avec le `Fiber` texte. Sélecti
 
 ![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Saisissez ceci pour le **&#x200B;**&#x200B;URL`/us/en/citisignal-fiber` et cliquez sur l’icône **V** pour confirmer.
+Saisissez ceci pour le **** URL`/us/en/citisignal-fiber` et cliquez sur l’icône **V** pour confirmer.
 
 ![ AEMCS ](./images/nav3.png){zoomable="yes"}
 
@@ -284,7 +284,7 @@ Voici votre bloc personnalisé de base, mais désormais rendu sur le site web.
 
 ![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
-Étape Suivante : Bloc Personnalisé Avancé [1.1.5](./ex5.md){target="_blank"}
+Étape suivante : [bloc personnalisé avancé](./ex5.md){target="_blank"}
 
 Revenir à [Adobe Experience Manager Cloud Service et Edge Delivery Services](./aemcs.md){target="_blank"}
 

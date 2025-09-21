@@ -4,14 +4,14 @@ description: Plug-in AEM CS - MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 1.1.6 Plug-in AEM Edge Delivery Services MarTech
+# Plug-in AEM Edge Delivery Services MarTech 1.1.5
 
 Le plug-in AEM MarTech permet de configurer rapidement une pile MarTech complète pour votre projet AEM.
 
@@ -19,7 +19,7 @@ Le plug-in AEM MarTech permet de configurer rapidement une pile MarTech complèt
 >
 >Ce plug-in est actuellement disponible pour les clients en collaboration avec l’ingénierie AEM dans le cadre de projets de co-innovation. Vous trouverez plus d’informations sur [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-## 1.1.6.1 Ajouter le module externe à votre référentiel
+## 1.1.5.1 Ajouter le module externe à votre référentiel
 
 Accédez au dossier que vous utilisez pour votre référentiel GitHub **citisignal**. Cliquez avec le bouton droit sur le nom du dossier, puis sélectionnez **Nouveau terminal dans le dossier**.
 
@@ -39,7 +39,7 @@ Accédez au dossier que vous utilisez pour votre référentiel **citisignal** Gi
 
 ![ AEMCS ](./images/mtplugin4.png){zoomable="yes"}
 
-## 1.1.6.2 head.html
+## 1.1.5.2 head.html
 
 Dans Visual Studio Code, ouvrez le fichier **head.html**. Copiez le code ci-dessous et collez-le dans le fichier **head.html**.
 
@@ -54,7 +54,7 @@ Enregistrez vos modifications.
 
 ![ AEMCS ](./images/mtplugin5.png){zoomable="yes"}
 
-## 1.1.6.3 scripts.js
+## 1.1.5.3 scripts.js
 
 Dans Visual Studio Code, accédez au dossier **scripts** et ouvrez le fichier **scripts.js**. Copiez le code ci-dessous et collez-le dans le fichier **scripts.js**, sous les scripts d’importation existants.
 
@@ -88,25 +88,25 @@ Sous **const AUDIENCES = {...};** collez le code ci-dessous :
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -315,7 +315,7 @@ Cliquez sur **Pousser l’origine** pour pousser vos modifications vers votre r�
 
 ![ AEMCS ](./images/mtplugin13.png){zoomable="yes"}
 
-## 1.1.6.4 l’extension ACDL dans la propriété Tags
+## 1.1.5.4 l’extension ACDL dans la propriété Tags
 
 Pour que le plug-in AEM Edge Delivery Services MarTech fonctionne correctement, vous devez ajouter l’extension pour .
 
@@ -341,7 +341,7 @@ Accédez à **Flux de publication** et ouvrez votre bibliothèque **principale**
 
 Vos modifications sont maintenant déployées.
 
-## 1.1.6.5 Envoyer des données à Adobe Experience Platform Edge Network
+## 1.1.5.5 Envoyer des données à Adobe Experience Platform Edge Network
 
 Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
@@ -366,7 +366,7 @@ Ouvrez la payload et accédez au `events[0].xdm._experienceplatform.identificati
 
 ![ AEMCS ](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Afficher le profil client dans Adobe Experience Platform
+## 1.1.5.6 Afficher le profil client dans Adobe Experience Platform
 
 Connectez-vous à Adobe Experience Platform en accédant à cette URL : [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

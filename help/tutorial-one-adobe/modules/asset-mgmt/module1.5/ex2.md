@@ -3,9 +3,9 @@ title: Connecter ACCS au storefront AEM Sites CS/EDS
 description: Connecter ACCS au storefront AEM Sites CS/EDS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 38b6b858e0439619c41008b2c38720d7a26e713e
+source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,63 @@ ht-degree: 0%
 >
 >Si vous avez précédemment configuré un programme AEM CS avec un environnement AEM Sites et Assets CS, il se peut que votre sandbox AEM CS ait été mis en veille. Étant donné que la réactivation d’un tel sandbox prend entre 10 et 15 minutes, il serait judicieux de lancer le processus de réactivation maintenant afin de ne pas avoir à l’attendre plus tard.
 
+Dans cet exercice, vous allez lier le storefront AEM Sites CS/EDS au serveur principal ACCS. Pour le moment, lorsque vous ouvrez votre storefront AEM Sites CS/EDS et accédez à la page de liste de produits **Phones**, vous ne voyez aucun produit.
+
+À la fin de cet exercice, vous devriez voir les produits que vous avez configurés dans l’exercice précédent apparaître sur la page de liste de produits **Phones** sur votre storefront AEM Sites CS/EDS.
+
+![ACCS+AEM Sites](./images/accsaemsites0.png)
+
+Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur **Commerce**.
+
 ![ACCS+AEM Sites](./images/accsaemsites1.png)
+
+Cliquez sur l’icône **info** en regard de votre instance ACCS, qui doit être nommée `--aepUserLdap-- - ACCS`.
+
+![ACCS+AEM Sites](./images/accsaemsites2.png)
+
+Vous devriez alors voir ceci. Copiez le point d’entrée **GraphQL**.
+
+![ACCS+AEM Sites](./images/accsaemsites3.png)
+
+Accédez à [https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator](https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator). Vous devez maintenant générer un fichier config.json qui sera utilisé pour lier votre storefront AEM Sites CS à votre serveur principal ACCS.
+
+Sur la page **Générateur de configuration**, collez l’URL du point d’entrée **GraphQL** que vous avez copiée.
+
+Cliquez sur **Générer**.
+
+![ACCS+AEM Sites](./images/accsaemsites4.png)
+
+Copiez la payload JSON générée dans son intégralité.
+
+![ACCS+AEM Sites](./images/accsaemsites5.png)
+
+Accédez au référentiel GitHub créé lors de la configuration de votre environnement AEM Sites CS/EDS. Ce référentiel a été créé dans l’exercice [1.1.2 Configuration de votre environnement AEM CS](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} et doit être nommé **citisignal-aem-accs**.
+
+![ACCS+AEM Sites](./images/accsaemsites6.png)
+
+Dans le répertoire racine, faites défiler l’écran vers le bas et cliquez pour ouvrir le fichier **config.json**.
+
+![ACCS+AEM Sites](./images/accsaemsites7.png)
+
+Cliquez sur l&#39;icône **Edition**.
+
+![ACCS+AEM Sites](./images/accsaemsites8.png)
+
+Supprimez tout le texte actuel et remplacez-le en collant la payload JSON que vous avez copiée sur la page **Générateur de configuration**.
+
+Cliquez sur **Valider les modifications...**.
+
+![ACCS+AEM Sites](./images/accsaemsites9.png)
+
+Cliquez sur **Valider les modifications**.
+
+![ACCS+AEM Sites](./images/accsaemsites10.png)
+
+Le fichier **config.json** a été mis à jour. Vos modifications devraient s’afficher sur le site web dans quelques minutes. Pour vérifier si les modifications ont été récupérées avec succès, accédez à la page du produit **Phones**. Vous devriez maintenant voir l’**iPhone Air** apparaître sur la page.
+
+![ACCS+AEM Sites](./images/accsaemsites11.png)
+
+Bien que le produit s’affiche maintenant avec succès, aucune image n’est encore disponible pour le produit. Vous allez configurer le lien avec AEM Assets CS pour les images de produit dans l’exercice suivant.
 
 Étape suivante : [Connecter ACCS à AEM Assets CS](./ex3.md){target="_blank"}
 

@@ -3,10 +3,10 @@ title: Prise en main d’Adobe Commerce as a Cloud Service
 description: Prise en main d’Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ Cliquez sur **Enregistrer la vue de la boutique**.
 Vous devriez alors voir ce message. Cliquez sur **OK**.
 
 ![AEM Assets](./images/accs15.png)
+
+Tu devrais alors être de retour ici. Cliquez sur le site Web **CitiSignal** pour l&#39;ouvrir.
+
+![AEM Assets](./images/accs16.png)
+
+Cochez la case pour définir ce site Web comme site Web par défaut.
+
+Cliquez sur **Enregistrer le site web**.
+
+![AEM Assets](./images/accs16a.png)
 
 Tu devrais alors être de retour ici.
 
