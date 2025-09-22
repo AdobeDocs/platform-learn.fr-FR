@@ -3,9 +3,9 @@ title: Connexion d’ACCS au serveur de collecte de données AEM Assets
 description: Connexion d’ACCS au serveur de collecte de données AEM Assets
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca895385f5c1f318a7c4d0b338dcfa4e91763005
+source-git-commit: 58448049d54ee6124985159577df0e307896a312
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Si vous avez précédemment configuré un programme AEM CS avec un environnement AEM Sites et Assets CS, il se peut que votre sandbox AEM CS ait été mis en veille. Étant donné que la réactivation d’un tel sandbox prend entre 10 et 15 minutes, il serait judicieux de lancer le processus de réactivation maintenant afin de ne pas avoir à l’attendre plus tard.
+
+Après avoir terminé l’exercice précédent, vous pouviez voir un produit renvoyé par l’ACCS à votre site web, mais il n’avait pas encore d’image. À la fin de cet exercice, vous devriez également voir une image renvoyée.
+
+![ACCS+AEM Sites](./images/accsaemsites11.png)
 
 ## 1.5.3.1 la configuration du pipeline de mise à jour
 
@@ -172,6 +176,10 @@ Cliquez sur **Enregistrer la configuration**.
 
 ![ACCS+AEM Assets](./images/accsaemassets51.png)
 
+Vous devriez alors voir ceci.
+
+![ACCS+AEM Assets](./images/accsaemassets52.png)
+
 ## 1.5.3.3 Update config.json
 
 Accédez au référentiel GitHub créé lors de la configuration de votre environnement AEM Sites CS/EDS. Ce référentiel a été créé dans l’exercice [1.1.2 Configuration de votre environnement AEM CS](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} et doit être nommé **citisignal-aem-accs**.
@@ -252,37 +260,139 @@ Cliquez sur **Télécharger**.
 
 ![ACCS+AEM Assets](./images/accsaemassets41.png)
 
-Vos images seront alors disponibles dans votre dossier.
+Vos images seront alors disponibles dans votre dossier. Pointez sur le produit **iPhone-Air-Light-Gold.png** et cliquez sur l’icône **Propriétés**.
 
 ![ACCS+AEM Assets](./images/accsaemassets42.png)
 
-Cliquez sur la première image du produit pour l’ouvrir.
-
-![ACCS+AEM Assets](./images/accsaemassets43.png)
-
-Définissez le statut de l’image du produit sur **Approuvé**. L’intégration AEM Assets CS - ACCS ne fonctionne que pour les images approuvées.
+Faites défiler vers le bas et définissez le champ **Statut de la révision** sur **Approuvé**. L’intégration AEM Assets CS - ACCS ne fonctionne que pour les images approuvées.
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-Accédez à l’onglet **Commerce**, puis cliquez sur **Ajouter** sous **Sku de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
-Prenez le SKU du produit à partir du nom du fichier image, augmentez la valeur sur 1 et sélectionnez toutes les options dans la liste déroulante **utilisation**.
+Ajoutez les SKU suivants pour ce produit :
 
-![ACCS+AEM Assets](./images/accsaemassets46.png)
+| Clé | Valeur | Utilisation |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
 Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
 
+![ACCS+AEM Assets](./images/accsaemassets46.png)
+
+Pointez sur le produit **iPhone-Air-Space-Black.png** et cliquez sur l’icône **Propriétés**.
+
 ![ACCS+AEM Assets](./images/accsaemassets47.png)
 
-Répétez cette action pour approuver une ressource et définir l’onglet Commerce pour chaque image importée dans ce dossier. Une fois que vous avez terminé, chaque image doit comporter une **icône verte vers le haut** indiquant que la ressource a été approuvée.
+Faites défiler vers le bas et définissez le champ **Statut de la révision** sur **Approuvé**. L’intégration AEM Assets CS - ACCS ne fonctionne que pour les images approuvées.
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
+Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+
+![ACCS+AEM Assets](./images/accsaemassets201.png)
+
+Ajoutez les SKU suivants pour ce produit :
+
+| Clé | Valeur | Utilisation |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
+
+![ACCS+AEM Assets](./images/accsaemassets202.png)
+
+Pointez sur le produit **iPhone-Air-Sky-Blue.png** et cliquez sur l’icône **Propriétés**.
+
+![ACCS+AEM Assets](./images/accsaemassets203.png)
+
+Faites défiler vers le bas et définissez le champ **Statut de la révision** sur **Approuvé**. L’intégration AEM Assets CS - ACCS ne fonctionne que pour les images approuvées.
+
+![ACCS+AEM Assets](./images/accsaemassets204.png)
+
+Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+
+![ACCS+AEM Assets](./images/accsaemassets205.png)
+
+Ajoutez les SKU suivants pour ce produit :
+
+| Clé | Valeur | Utilisation |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
+
+![ACCS+AEM Assets](./images/accsaemassets206.png)
+
+Pointez sur le produit **iPhone-Air-Cloud-White.png** et cliquez sur l’icône **Propriétés**.
+
+![ACCS+AEM Assets](./images/accsaemassets207.png)
+
+Faites défiler vers le bas et définissez le champ **Statut de la révision** sur **Approuvé**. L’intégration AEM Assets CS - ACCS ne fonctionne que pour les images approuvées.
+
+![ACCS+AEM Assets](./images/accsaemassets208.png)
+
+Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+
+![ACCS+AEM Assets](./images/accsaemassets209.png)
+
+Ajoutez les SKU suivants pour ce produit :
+
+| Clé | Valeur | Utilisation |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
+
+![ACCS+AEM Assets](./images/accsaemassets210.png)
+
+Chaque image iPhone Air **** doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
+
+![ACCS+AEM Assets](./images/accsaemassets250.png)
+
 ## 1.5.3.5 Vérifier les images de produit sur le storefront AEM Sites CS/EDS
 
+>[!NOTE]
+>
+>Le déploiement des modifications que vous avez apportées ci-dessus peut prendre jusqu’à 15 minutes. Si votre image ne s’affiche pas encore, patientez 15 minutes, puis réessayez.
 
+Pour vérifier que l&#39;intégration fonctionne, vous devez ouvrir votre site Web CitiSignal.
+
+Pour accéder à votre site web, accédez à `main--citisignal-aem-accs--XXX.aem.page` et/ou `main--citisignal-aem-accs--XXX.aem.live`, après avoir remplacé XXX par votre compte utilisateur GitHub, qui est `woutervangeluwe` dans cet exemple.
+
+Ainsi, dans cet exemple, l’URL complète devient :
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` et/ou `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`
+
+Vous devriez alors voir ceci. Accédez à **Téléphones**.
+
+![ACCS+AEM Assets](./images/accsaemassets150.png)
+
+Vous devriez alors voir une image de produit affichée pour **iPhone Air**. Cliquez sur **iPhone Air**.
+
+![ACCS+AEM Assets](./images/accsaemassets151.png)
+
+Vous devriez alors voir ceci. Modifiez les options de couleur et de stockage pour que les images changent de manière dynamique en fonction des choix que vous avez effectués.
+
+![ACCS+AEM Assets](./images/accsaemassets152.png)
+
+Voici un exemple de modification de la couleur en **Or clair** et de la taille de stockage en **256GB**.
+
+![ACCS+AEM Assets](./images/accsaemassets153.png)
 
 Étape suivante : [Résumé et avantages](./summary.md){target="_blank"}
 
