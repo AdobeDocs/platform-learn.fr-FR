@@ -361,7 +361,7 @@ Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
 
 ![ACCS+AEM Assets](./images/accsaemassets210.png)
 
-Chaque image iPhone Air **** doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
+Chaque image iPhone Air **&#x200B;**&#x200B;doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
