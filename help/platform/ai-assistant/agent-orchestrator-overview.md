@@ -8,17 +8,16 @@ last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19103
 hide: true
 hidefromtoc: true
-source-git-commit: d3e44659526381dc00b8e1c51cf8d6f53e4a0a91
+exl-id: 41040b76-199f-45b9-a347-a9611c60c1e1
+source-git-commit: 12a056d6489d5673b65adc38444f66631506d6c2
 workflow-type: tm+mt
-source-wordcount: '32'
+source-wordcount: '41'
 ht-degree: 0%
 
 ---
 
 # Présentation d’Agent Orchestrator
 
-Agent Orchestrator simplifie les workflows d’expérience client avec des agents intelligents et une interface de conversation.
-
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+Agent Orchestrator simplifie les workflows d’expérience client avec des agents intelligents et une interface de conversation. Pour plus d’informations, consultez la [documentation d’Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator).
 
 >[!SLIDE](agent-orchestrator-overview)
