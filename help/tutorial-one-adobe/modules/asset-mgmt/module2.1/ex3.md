@@ -259,7 +259,7 @@ Ajoutez une option de menu au menu de navigation avec le `Fiber` texte. Sélecti
 
 ![ AEMCS ](./images/nav1.png){zoomable="yes"}
 
-Saisissez ceci pour le **** URL`/us/en/citisignal-fiber` et cliquez sur l’icône **V** pour confirmer.
+Saisissez ceci pour le **&#x200B;**&#x200B;URL`/us/en/citisignal-fiber` et cliquez sur l’icône **V** pour confirmer.
 
 ![ AEMCS ](./images/nav3.png){zoomable="yes"}
 
