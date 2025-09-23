@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Audience Agent rationalise la gestion des audiences avec la création, l’optimisation, les informations et l’intégration sécurisée de conversations dans les applications B2B/B2C.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](audience-agent-overview)
 

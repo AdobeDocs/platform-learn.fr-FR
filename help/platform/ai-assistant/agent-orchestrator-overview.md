@@ -19,6 +19,6 @@ ht-degree: 0%
 
 Agent Orchestrator simplifie les workflows d’expérience client avec des agents intelligents et une interface de conversation.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](agent-orchestrator-overview)

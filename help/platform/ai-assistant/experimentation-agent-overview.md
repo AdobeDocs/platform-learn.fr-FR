@@ -20,5 +20,5 @@ ht-degree: 0%
 
 L’agent d’expérimentation accélère l’optimisation numérique avec des informations, une configuration guidée et des analyses automatisées pour les spécialistes du marketing, les analystes et les administrateurs.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
