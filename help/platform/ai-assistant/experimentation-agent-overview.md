@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Présentation de l’agent d’expérimentation
 
-L’agent d’expérimentation accélère l’optimisation numérique avec des informations, une configuration guidée et des analyses automatisées pour les spécialistes du marketing, les analystes et les administrateurs. Pour plus d’informations, voir la [documentation sur l’accélérateur d’expériences](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
+L’agent d’expérimentation accélère l’optimisation numérique avec des informations, une configuration guidée et des analyses automatisées pour les spécialistes du marketing, les analystes et les administrateurs. Pour plus d’informations, voir la [documentation sur l’accélérateur d’expériences](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator).
 
 >[!SLIDE](experimentation-agent-overview)
