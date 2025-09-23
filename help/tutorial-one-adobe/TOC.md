@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1403'
 ht-degree: 3%
 
 ---
@@ -93,10 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Création de votre programme Cloud Manager](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2 Configuration de votre environnement AEM CS](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.3 Bloc personnalisé de base](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.4 Bloc personnalisé avancé](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [Plug-in AEM Edge Delivery Services MarTech 1.1.5](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2 Configuration de votre environnement AEM CS](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
+      + [1.1.3 Bloc personnalisé de base](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.4 Bloc personnalisé avancé](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [Plug-in AEM Edge Delivery Services MarTech 1.1.5](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
@@ -270,3 +270,11 @@ ht-degree: 3%
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Prise en main de Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
++ [Travaux en cours - IA dédiée aux agents](/help/tutorial-one-adobe/ai.md)
++ Travaux en cours - IA dédiée aux agents {#agenticai}
+   + 1.1 Prise en main des agents et de l’IA {#agenticai1}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
+      + [1.1.1 Prise en main de l’IA dédiée aux agences](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
+   + 1.2 Agent Collaboration {#agenticai2}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
+      + [1.2.1 Prise en main de l’agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)

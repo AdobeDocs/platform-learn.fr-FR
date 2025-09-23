@@ -3,10 +3,10 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 13%
+source-wordcount: '467'
+ht-degree: 14%
 
 ---
 
@@ -77,6 +77,13 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [1.2 Customer Journey Analytics : ingestion et analyse de données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | Non | Il y a un problème avec la modélisation de la préparation des données pour les données sources. Ceci est en attente d&#39;un correctif. |
 | [2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | Oui | - |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | Non | Contenu en cours de développement |
+
+## &#x200B;6. IA dédiée aux agences
+
+| Nom | Dernière mise à jour | Travailler à 100 % | Remarques         |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 IA dédiée aux agences](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | NON | - |
+| [1.2 IA dédiée aux agences](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | NON | - |
 
 {style="table-layout:auto"}
 
