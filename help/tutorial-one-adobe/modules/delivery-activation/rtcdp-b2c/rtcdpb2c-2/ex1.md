@@ -4,10 +4,10 @@ description: IA dédiée aux clients - Préparation des données (ingestion)
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -112,7 +112,7 @@ Une fois les **Schéma** et **Jeu de données** configurés, vous êtes prêt à
 
 Les données préparées pour les événements d’expérience de cet exercice doivent être conformes aux exigences et au schéma du [groupe de champs XDM Événement d’expérience client](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Téléchargez le fichier zip avec les données de démonstration à partir de cet emplacement : [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+Téléchargez le fichier zip avec les données de démonstration à partir de cet emplacement : [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
 Vous avez téléchargé un fichier nommé **CUSTOM-CAI-EVENTS-WEB.zip**. Placez le fichier sur le bureau de votre ordinateur et décompressez-le, après quoi vous verrez un dossier nommé **CUSTOM-CAI-EVENTS-WEB**.
 

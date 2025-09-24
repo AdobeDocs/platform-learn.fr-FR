@@ -4,7 +4,7 @@ description: Création de votre programme Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
@@ -105,7 +105,7 @@ Au bout d’environ 10 minutes, l’activation de **Dynamic Media** est terminé
 
 Une fois l’exécution du pipeline terminée, vous pouvez passer à l’exercice suivant.
 
-Étape suivante : [Configuration de votre environnement AEM CS](./ex3.md){target="_blank"}
+Étape suivante : [Configuration de votre environnement AEM CS](./ex2.md){target="_blank"}
 
 Revenir à [Adobe Experience Manager Cloud Service et Edge Delivery Services](./aemcs.md){target="_blank"}
 

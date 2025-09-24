@@ -2,7 +2,8 @@
 title: Présentation d’Agentic AI Tech Labs
 description: Présentation d’Agentic AI Tech Labs
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Les Agentic AI Tech Labs sont en cours de réalisation et seront publiés en novembre/décembre 2025.
 
-## 1.1 Prise en main des agents et de l’IA
+[1.1 Prise en main des agents et de l’IA](./modules/agentic-ai/module1.1/agenticai.md)
 
 **Objectif**
 
@@ -37,7 +38,7 @@ Quelle est l&#39;architecture derrière un agent ?
 - Serveur MCP, notebook Python
 - API d’Adobe
 
-## 1.2 Agent Collaboration
+[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **Objectif**
 
