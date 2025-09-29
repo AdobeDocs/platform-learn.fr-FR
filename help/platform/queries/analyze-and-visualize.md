@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # Analyse et visualisation des informations omnicanal dans Tableau à l’aide de Query Service
 
-Découvrez comment utiliser Adobe Experience Platform Query Service avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de clientèle. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Découvrez comment utiliser Adobe Experience Platform Query Service avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de clientèle. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)
