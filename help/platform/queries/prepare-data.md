@@ -1,21 +1,21 @@
 ---
-title: Préparer les données
-description: Découvrez comment nettoyer, préparer et combiner des données provenant de plusieurs jeux de données afin de créer un jeu de données à l’aide des fonctions CTAS (Create Table AS) et Spark SQL pour la création de rapports et de tableaux de bord.
+title: Dérivation de données avec Data Distiller
+description: Découvrez comment les ingénieurs de données peuvent utiliser query service pour transformer des données et générer de nouveaux jeux de données. Exécutez ces requêtes selon un planning pour alimenter les tableaux de bord automatisés et la segmentation.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-8005
-thumbnail: 333699.jpg
+last-substantial-update: 2025-09-23T00:00:00Z
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 1712f2b22b8042e0cf96e619ca1a2e99e5368a18
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 6%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
-# Préparer les données
+# Dérivation de données avec Data Distiller
 
-Découvrez comment nettoyer, préparer et combiner des données provenant de plusieurs jeux de données afin de créer un jeu de données à l’aide des fonctions CTAS (Create Table AS) et Spark SQL pour la création de rapports et de tableaux de bord. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
+Découvrez comment les ingénieurs de données peuvent utiliser query service pour transformer des données et générer de nouveaux jeux de données. Exécutez ces requêtes selon un planning pour alimenter les tableaux de bord automatisés et la segmentation. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/3414067?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
