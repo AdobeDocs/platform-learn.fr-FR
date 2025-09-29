@@ -7,15 +7,15 @@ level: Beginner
 jira: KT-7685
 thumbnail: 333701.jpg
 exl-id: 81976285-5cb2-4e0f-94f7-1b408408bf2b
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: f5f3dcc655fffc056fe95c33a3cd7abba24d7f3a
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 1%
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
 # Fonctions définies par Adobe
 
-Découvrez comment utiliser des fonctions définies par Adobe dans Adobe Experience Platform Query Service pour effectuer des tâches courantes liées à l’entreprise sur les données d’événement d’expérience. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
+Découvrez comment utiliser des fonctions définies par Adobe dans Adobe Experience Platform Query Service pour effectuer des tâches courantes liées à l’entreprise sur les données d’événement d’expérience. Pour plus d’informations, consultez [Fonctions SQL définies par Adobe dans Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3414049?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)
