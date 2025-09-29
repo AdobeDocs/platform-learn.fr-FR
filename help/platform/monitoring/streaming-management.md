@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Les tableaux de bord de surveillance de la capacité et du streaming offrent aux entreprises une visibilité et un contrôle sur l’utilisation des plateformes. Ils permettent d’allouer le débit, de détecter les pics ou les sous-utilisations et de fournir des informations en temps réel sur les performances, ce qui permet de prendre des décisions et des alertes proactives afin d’éviter la surcharge et de garantir la stabilité des services critiques.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475275/?learn=on&enablevpops&captions=fre_fr)
