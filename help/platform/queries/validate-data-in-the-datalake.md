@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Découvrez comment vérifier si les données ont bien été ingérées dans le lac de données à l’aide de Adobe Experience Platform Query Service. Pour consulter la documentation détaillée du produit, voir le [Guide de l’interface utilisateur de Query Editor](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445679?learn=on&enablevpops&captions=fre_fr)

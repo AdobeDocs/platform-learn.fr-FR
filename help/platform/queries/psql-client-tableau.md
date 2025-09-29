@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Découvrez comment vous connecter à Query Service à partir de diverses applications de bureau clientes qui prennent en charge le protocole PostgreSQL et comment utiliser les outils et pilotes PostgreSQL pour connecter et écrire des requêtes. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414042?learn=on&enablevpops&captions=fre_fr)

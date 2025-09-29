@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Découvrez comment valider des données ingérées à l’aide de fonctions SQL. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414055?learn=on&enablevpops&captions=fre_fr)
