@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Présentation de Data Insights Agent
 
-L’agent Data Insight exploite les données d’événement, de profil, de parcours et hors ligne, simplifiant la détection et l’activation instantanée des tableaux de bord personnalisés. Pour plus d’informations, consultez la documentation de [Data Insights Agent](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
+L’agent Data Insight exploite les données d’événement, de profil, de parcours et hors ligne, simplifiant la détection et l’activation instantanée des tableaux de bord personnalisés. Pour plus d’informations, consultez la documentation de [Data Insights Agent](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai).
 
 >[!SLIDE](data-insights-agent-overview)
