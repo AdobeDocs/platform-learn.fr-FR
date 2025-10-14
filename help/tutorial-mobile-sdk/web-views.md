@@ -27,7 +27,7 @@ Dans cette leçon, vous allez :
 
 ## Problèmes potentiels de tracking
 
-Des ECID (Experience Cloud Identity) distincts sont générés lorsque vous envoyez des données à partir de la partie native de votre application et d’une vue web dans l’application. Ces ECID distincts génèrent des accès déconnectés et des données de visite et de visiteur exagérées. Vous trouverez plus d’informations sur l’ECID dans la [ présentation de l’ECID ](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/ecid).
+Des ECID (Experience Cloud Identity) distincts sont générés lorsque vous envoyez des données à partir de la partie native de votre application et d’une vue web dans l’application. Ces ECID distincts génèrent des accès déconnectés et des données de visite et de visiteur exagérées. Vous trouverez plus d’informations sur l’ECID dans la [&#x200B; présentation de l’ECID &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/ecid).
 
 Pour résoudre les accès déconnectés et les données gonflées, vous devez transmettre l’ECID de l’utilisateur de la partie native de votre application à un WebView que vous souhaitez peut-être utiliser dans votre application.
 

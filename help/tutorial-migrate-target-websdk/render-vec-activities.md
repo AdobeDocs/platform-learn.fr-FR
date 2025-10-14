@@ -36,7 +36,7 @@ Reportez-vous à la documentation dédiée pour plus d’informations sur l’ [
 
 >[!IMPORTANT]
 >
->La nouvelle [extension Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) remplace l’ancienne [ extension de navigateur Target VEC Helper](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=fr). Si l’ancienne extension d’assistance VEC est installée, elle doit être supprimée ou désactivée avant d’utiliser l’extension Visual Editing Helper.
+>La nouvelle [extension Visual Editing Helper](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) remplace l’ancienne [&#x200B; extension de navigateur Target VEC Helper](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=fr). Si l’ancienne extension d’assistance VEC est installée, elle doit être supprimée ou désactivée avant d’utiliser l’extension Visual Editing Helper.
 
 ## Demander et appliquer automatiquement du contenu
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Il est possible de [ effectuer manuellement le rendu des modifications](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=fr#manually-rendering-content) effectuées dans le compositeur d’expérience visuelle. Le rendu manuel des modifications basées sur VEC n’est pas courant. Vérifiez si votre implémentation at.js utilise la fonction `getOffers()` pour exécuter manuellement une requête Target `pageLoad` sans utiliser `applyOffers()` pour appliquer le contenu à la page.
+>Il est possible de [&#x200B; effectuer manuellement le rendu des modifications](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=fr#manually-rendering-content) effectuées dans le compositeur d’expérience visuelle. Le rendu manuel des modifications basées sur VEC n’est pas courant. Vérifiez si votre implémentation at.js utilise la fonction `getOffers()` pour exécuter manuellement une requête Target `pageLoad` sans utiliser `applyOffers()` pour appliquer le contenu à la page.
 
-Le SDK Web Platform offre aux développeurs une grande flexibilité pour demander et générer du contenu. Reportez-vous à la [ documentation dédiée sur le rendu du contenu personnalisé](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=fr) pour plus d’options et de détails.
+Le SDK Web Platform offre aux développeurs une grande flexibilité pour demander et générer du contenu. Reportez-vous à la [&#x200B; documentation dédiée sur le rendu du contenu personnalisé](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=fr) pour plus d’options et de détails.
 
 ## Exemple d’implémentation
 

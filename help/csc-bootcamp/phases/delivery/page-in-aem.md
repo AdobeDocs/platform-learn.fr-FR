@@ -136,7 +136,7 @@ Mettons ceci immédiatement à profit :
 
 - Enfin, nous pouvons désormais réutiliser cette expérience sur la page d’accueil. Faites glisser et déposez un composant &quot;Fragment d’expérience&quot; sur la page à l’emplacement où vous souhaitez que votre contenu s’affiche. Vous pouvez supprimer le contenu sur lequel nous avons copié, car nous l’utiliserons dans le fragment d’expérience.
 
-![ Faites glisser et déposez un composant xf](./images/delivery-web-xf-on-home.png)
+![&#x200B; Faites glisser et déposez un composant xf](./images/delivery-web-xf-on-home.png)
 
 - Ouvrez la boîte de dialogue de configuration du composant de fragment d’expérience et utilisez le sélecteur de chemin pour sélectionner l’emplacement où vous avez créé votre fragment d’expérience.
 

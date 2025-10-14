@@ -286,7 +286,7 @@ Une fois que vous avez terminé, cliquez sur **Enregistrer et terminer**.
 
 Vous pouvez maintenant passer à la partie visualisation et analyse !
 
-Étape suivante : [4.1.4 Préparation des données en Customer Journey Analytics ](./ex4.md)
+Étape suivante : [4.1.4 Préparation des données en Customer Journey Analytics &#x200B;](./ex4.md)
 
 [Retour au module 4.1](./customer-journey-analytics-build-a-dashboard.md)
 

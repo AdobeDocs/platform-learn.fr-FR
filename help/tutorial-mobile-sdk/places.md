@@ -177,7 +177,7 @@ Vous allez maintenant définir des règles pour travailler avec ces éléments d
 
 1. Pour enregistrer la règle, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
 
-   ![Règle ](assets/tags-rule-poi-entry.png){zoomable="yes"}
+   ![Règle &#x200B;](assets/tags-rule-poi-entry.png){zoomable="yes"}
 
 Créons une autre règle
 
@@ -219,7 +219,7 @@ Créons une autre règle
 
 1. Pour enregistrer la règle, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
 
-   ![Règle ](assets/tags-rule-poi-exit.png){zoomable="yes"}
+   ![Règle &#x200B;](assets/tags-rule-poi-exit.png){zoomable="yes"}
 
 
 Pour vous assurer que toutes les modifications apportées à votre balise sont publiées :

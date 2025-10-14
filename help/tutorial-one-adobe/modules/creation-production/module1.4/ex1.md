@@ -249,7 +249,7 @@ Vos ressources sont maintenant prêtes.
 
 ## Étapes suivantes
 
-Accédez à [ Animation et vidéo dans Adobe Express ](./ex2.md){target="_blank"}
+Accédez à [&#x200B; Animation et vidéo dans Adobe Express &#x200B;](./ex2.md){target="_blank"}
 
 Revenir à [Adobe Express et Adobe Experience Cloud](./express.md){target="_blank"}
 

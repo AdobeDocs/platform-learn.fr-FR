@@ -58,7 +58,7 @@ Dans cet exercice, vous allez emprunter l’identité d’un employé de centre 
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

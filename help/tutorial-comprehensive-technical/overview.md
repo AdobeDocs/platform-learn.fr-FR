@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Tutoriel technique complet d’Adobe Experience Platform
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -191,7 +191,7 @@ Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Serv
 
 **Time Investment :** 90 minutes
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

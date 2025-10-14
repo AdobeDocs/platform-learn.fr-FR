@@ -170,7 +170,7 @@ Le chargement des données peut prendre quelques minutes. En cas de réussite, l
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [Ingestion des données](./data-ingestion.md){target="_blank"}
 

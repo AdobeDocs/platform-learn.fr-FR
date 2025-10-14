@@ -186,7 +186,7 @@ Maintenant que vous avez ajouté l’extension Target v2 et déclenché les acti
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -316,7 +316,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -400,7 +400,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 **Validation du paramètre de jeton de propriété**
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -532,7 +532,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 

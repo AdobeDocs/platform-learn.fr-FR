@@ -25,11 +25,11 @@ Dans le coin supérieur droit de l’écran, sélectionnez le nom du sandbox, qu
 
 Tu verras ça. Pour activer Adobe Target, cliquez sur **Ajouter un service**.
 
-![ Débogueur AEP ](./images/aa2.png)
+![&#x200B; Débogueur AEP &#x200B;](./images/aa2.png)
 
 Tu verras ça. Sélectionnez le service **Adobe Target**, après quoi vous pouvez éventuellement fournir des informations supplémentaires. Cliquez sur **Enregistrer**.
 
-![ Débogueur AEP ](./images/at1.png)
+![&#x200B; Débogueur AEP &#x200B;](./images/at1.png)
 
 ## Étapes suivantes
 

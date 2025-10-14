@@ -19,29 +19,29 @@ Une fois que vous avez accès à Demo System Next, procédez comme suit.
 
 Accédez à [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} puis à **Configuration**.
 
-![DSN ](./images/dsnsetup.png)
+![DSN &#x200B;](./images/dsnsetup.png)
 
 Dans le menu déroulant **Environnement**, sélectionnez votre instance et votre sandbox.
 
-![DSN ](./images/dsnh1.png)
+![DSN &#x200B;](./images/dsnh1.png)
 
 Sélectionnez ensuite le paramètre prédéfini **un tutoriel Adobe**.
 
-![DSN ](./images/dsnhome.png)
+![DSN &#x200B;](./images/dsnhome.png)
 
 Cliquez ensuite sur **Démarrer**.
 
-![DSN ](./images/dsn2.png)
+![DSN &#x200B;](./images/dsn2.png)
 
 Dans la fenêtre contextuelle, saisissez un nom pour vos propriétés de collecte de données et vos projets Experience Builder. Utilisez la convention de nommage suivante : **Une Adobe (JJ/MM/AAAA)**. Pour information : votre LDAP sera ajouté automatiquement, vous n&#39;avez pas besoin de l&#39;ajouter vous-même.
 
 Cliquez sur **Démarrer**.
 
-![DSN ](./images/dsn3.png)
+![DSN &#x200B;](./images/dsn3.png)
 
 Cette fenêtre contextuelle s’affiche, vous montrant la progression de la création des projets de votre site web et de votre application mobile, ainsi que vos propriétés de collecte de données.
 
-![DSN ](./images/dsn4.png)
+![DSN &#x200B;](./images/dsn4.png)
 
 Une fois le processus de configuration rapide terminé, vous aurez :
 
@@ -51,13 +51,13 @@ Une fois le processus de configuration rapide terminé, vous aurez :
 - 1 Propriété de collecte de données pour le web que vous utiliserez pour collecter des données à partir du site web.
 - 1 Propriété de collecte de données pour mobile que vous utiliserez pour collecter des données à partir de l’application mobile.
 
-![DSN ](./images/dsn5.png)
+![DSN &#x200B;](./images/dsn5.png)
 
 Gardez cet écran ouvert car vous en aurez besoin lors des étapes suivantes.
 
 ## Étapes suivantes
 
-Accédez à [ Créer votre flux de données ](./ex3.md){target="_blank"}
+Accédez à [&#x200B; Créer votre flux de données &#x200B;](./ex3.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

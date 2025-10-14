@@ -23,6 +23,6 @@ Examinons les avantages des fonctionnalités d’ingestion de données de la com
 
 ## Étapes suivantes
 
-Revenez à [ Composition d’audience fédérée ](./fac.md){target="_blank"}
+Revenez à [&#x200B; Composition d’audience fédérée &#x200B;](./fac.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

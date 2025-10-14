@@ -34,8 +34,8 @@ ht-degree: 27%
    + [Vue d’ensemble](web-sdk/overview.md)
    + [Démonstration](web-sdk/demo.md)
    + [Tutoriel d’implémentation (avec balises)](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [ Tutoriel sur la migration de Target](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
-   + [ Tutoriel sur la migration d’Analytics](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [&#x200B; Tutoriel sur la migration de Target](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [&#x200B; Tutoriel sur la migration d’Analytics](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consentement {#consent}
       + [Vue d’ensemble](web-sdk/consent/overview.md)
       + [Définir les valeurs de consentement à l’aide de la norme Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -48,7 +48,7 @@ ht-degree: 27%
    + [Utiliser les gestionnaires des dépendances](mobile-sdk/use-dependency-managers.md)
    + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
-   + [ Tutoriel sur la migration de Target](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
+   + [&#x200B; Tutoriel sur la migration de Target](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + API du serveur {#server-api}
    + [Vue d’ensemble](server-api/overview.md)
    + [Principes de base des API](server-api/introduction.md)

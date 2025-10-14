@@ -50,7 +50,7 @@ Accédez au `_experience.campaign.orchestration.eventID` de champs . Supprimez l
 
 Pour rappel, l’identifiant d’événement se trouve dans Adobe Journey Optimizer sous **Configurations > Événements** et vous trouverez l’identifiant d’événement dans l’exemple de payload de votre événement, qui se présente comme suit : `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`.
 
-![ACOP ](./images/payloadeventID.png)
+![ACOP &#x200B;](./images/payloadeventID.png)
 
 Après avoir collé votre eventID, l’écran doit se présenter comme suit : Cliquez ensuite sur **Enregistrer** ou **Enregistrer dans la bibliothèque**.
 
@@ -70,27 +70,27 @@ Votre bibliothèque sera alors mise à jour et, au bout de 1 à 2 minutes, vous 
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN ](./../../datacollection/module1.1/images/web8.png)
+![DSN &#x200B;](./../../datacollection/module1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN ](../../gettingstarted/gettingstarted/images/web3.png)
+![DSN &#x200B;](../../gettingstarted/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN ](../../gettingstarted/gettingstarted/images/web4.png)
+![DSN &#x200B;](../../gettingstarted/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN ](../../gettingstarted/gettingstarted/images/web5.png)
+![DSN &#x200B;](../../gettingstarted/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN ](../../gettingstarted/gettingstarted/images/web6.png)
+![DSN &#x200B;](../../gettingstarted/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN ](../../gettingstarted/gettingstarted/images/web7.png)
+![DSN &#x200B;](../../gettingstarted/gettingstarted/images/web7.png)
 
 Cliquez sur l’icône du logo Adobe dans le coin supérieur gauche de l’écran pour ouvrir la visionneuse de profils.
 

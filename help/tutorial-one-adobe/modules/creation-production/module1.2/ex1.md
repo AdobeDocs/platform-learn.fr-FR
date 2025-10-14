@@ -240,7 +240,7 @@ Sélectionnez **Enregistrer**.
 
 ## Étapes suivantes
 
-Accédez à [ Utilisation des API Adobe dans Workfront Fusion ](./ex2.md){target="_blank"}
+Accédez à [&#x200B; Utilisation des API Adobe dans Workfront Fusion &#x200B;](./ex2.md){target="_blank"}
 
 Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 

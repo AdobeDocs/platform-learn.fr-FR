@@ -92,7 +92,7 @@ Chaque mise en oeuvre de Target est différente selon l’architecture du site e
 
 Après avoir effectué les étapes de validation ci-dessus, vous pouvez vous assurer que l’implémentation du SDK Web de Platform est prête à passer en production.
 
-Ensuite, découvrez comment [ résoudre les problèmes liés à une mise en oeuvre de Target à l’aide du SDK Web Platform ](debugging.md).
+Ensuite, découvrez comment [&#x200B; résoudre les problèmes liés à une mise en oeuvre de Target à l’aide du SDK Web Platform &#x200B;](debugging.md).
 
 >[!NOTE]
 >

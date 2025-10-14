@@ -23,19 +23,19 @@ Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à séle
 
 Dans le menu de gauche, accédez à **Destinations**, puis à **Parcourir**. Vous verrez alors la destination **DV360**. Cliquez sur le **de 3 points...**, puis sur **Activer les audiences**.
 
-![ RTCDP ](./images/rtcdpmenudest.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpmenudest.png)
 
 Dans la liste des audiences disponibles, sélectionnez l’audience que vous avez créée dans l’exercice précédent. Cliquez sur **Suivant**.
 
-![ RTCDP ](./images/rtcdpcreatedest3.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest3.png)
 
 Sur la page **Planification de l’audience**, cliquez sur **Suivant**.
 
-![ RTCDP ](./images/rtcdpcreatedest4.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest4.png)
 
 Enfin, sur la page **Réviser**, cliquez sur **Terminer**.
 
-![ RTCDP ](./images/rtcdpcreatedest5.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpcreatedest5.png)
 
 Votre audience est maintenant liée à Google DV360. Chaque fois qu’un client se qualifie pour cette audience, un signal est envoyé à Google DV360 pour l’inclure dans l’audience côté DV360 Google.
 

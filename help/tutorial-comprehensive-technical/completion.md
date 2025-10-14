@@ -170,7 +170,7 @@ L’ID ressemble à ceci : **675033c903fb3b2aefed8a0a**.
 
 ![12](./assets/images/completemodule7.png)
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

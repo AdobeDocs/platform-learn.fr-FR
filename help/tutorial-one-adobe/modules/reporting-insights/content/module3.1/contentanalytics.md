@@ -28,7 +28,7 @@ Dans cet exercice, explorez Content Analytics et découvrez ses fonctionnalités
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

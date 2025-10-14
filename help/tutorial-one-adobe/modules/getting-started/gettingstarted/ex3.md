@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
-![DSN ](./images/launchprop.png)
+![DSN &#x200B;](./images/launchprop.png)
 
 Avant de poursuivre, assurez-vous d’avoir sélectionné l’environnement approprié à l’aide du sélecteur d’environnement dans le coin supérieur droit de l’écran. L’environnement approprié à utiliser s’appelle `--aepImsOrgName--`.
 
@@ -24,11 +24,11 @@ Avant de poursuivre, assurez-vous d’avoir sélectionné l’environnement appr
 > La capture d’écran ci-dessous montre une organisation spécifique sélectionnée. Lorsque vous parcourez ce tutoriel, il est très probable que votre organisation porte un nom différent. Lorsque vous vous êtes inscrit à ce tutoriel, les détails de l’environnement à utiliser vous ont été fournis. Veuillez suivre ces instructions.
 
 
-![DSN ](./images/org.png)
+![DSN &#x200B;](./images/org.png)
 
 Dans le menu de gauche, cliquez sur **[!UICONTROL Balises]**. Après l’exercice précédent, vous disposez désormais de 3 propriétés de collecte de données : une pour le web, une pour le mobile et une pour l’application CX.
 
-![DSN ](./images/launchprop1.png)
+![DSN &#x200B;](./images/launchprop1.png)
 
 Ces propriétés sont presque prêtes à être utilisées, mais avant de pouvoir commencer à collecter des données à l’aide de ces propriétés, vous devez configurer un flux de données. Vous obtiendrez plus d’informations sur le concept de flux de données et ce qu’il signifie dans un exercice ultérieur du module Collecte de données .
 
@@ -192,7 +192,7 @@ Vos modifications sont maintenant publiées et seront prêtes dans quelques minu
 
 ## Étapes suivantes
 
-Accédez à [ Utiliser le site web ](./ex4.md){target="_blank"}
+Accédez à [&#x200B; Utiliser le site web &#x200B;](./ex4.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

@@ -27,16 +27,16 @@ Dans cet exercice, vous allez créer quatre **Offres personnalisées**. Voici le
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## Étapes suivantes
 
 Accédez à [3.7.3 Configuration de Web SDK pour Experience Decisioning](./ex3.md){target="_blank"}
 
-Revenez à [ Experience Decisioning ](ajo-decisioning.md){target="_blank"}
+Revenez à [&#x200B; Experience Decisioning &#x200B;](ajo-decisioning.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

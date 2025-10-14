@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Accédez à [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
-![DSN ](./images/launchprop.png)
+![DSN &#x200B;](./images/launchprop.png)
 
 Dans le menu de gauche, cliquez sur **[!UICONTROL Balises]**. Après l’exercice précédent, vous disposez désormais de 3 propriétés de collecte de données : une pour le web, une pour le mobile et une pour l’application CX.
 
-![DSN ](./images/launchprop1.png)
+![DSN &#x200B;](./images/launchprop1.png)
 
 Ces propriétés sont presque prêtes à être utilisées, mais avant de pouvoir commencer à collecter des données à l’aide de ces propriétés, vous devez configurer un flux de données. Vous obtiendrez plus d’informations sur le concept de flux de données et ce qu’il signifie dans un exercice ultérieur du module Collecte de données .
 

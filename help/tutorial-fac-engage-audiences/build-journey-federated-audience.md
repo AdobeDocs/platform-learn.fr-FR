@@ -26,7 +26,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 1. Accédez au portail **Parcours** et cliquez sur le bouton **Créer un Parcours**.
 
-   ![create-a-parcours ](assets/create-journey.png)
+   ![create-a-parcours &#x200B;](assets/create-journey.png)
 
 2. Mettez à jour les propriétés du Parcours avec un nouveau nom. Dans notre exemple : **`SecurFinancial - Home Loan Offer`**.
 
@@ -36,7 +36,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 5. Dans la barre de recherche, recherchez l’audience. Dans notre exemple : **`SecureFinancial Customers - No Loans, Good Credit`**. Cliquez sur **Enregistrer**.
 
-   ![create-a-parcours ](assets/select-audience.png)
+   ![create-a-parcours &#x200B;](assets/select-audience.png)
 
 6. Laissez tous les paramètres par défaut dans le menu de droite, puis cliquez sur **Enregistrer**.
 
@@ -74,7 +74,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
-   ![save-final-parcours ](assets/save-final-journey.png)
+   ![save-final-parcours &#x200B;](assets/save-final-journey.png)
 
 Nous avons créé un parcours dans AJO à l’aide d’une audience fédérée et d’attributs d’enrichissement fédérés.
 

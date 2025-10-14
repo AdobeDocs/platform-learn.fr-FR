@@ -16,7 +16,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. Prise en main ](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Oui | - |
+| [0. Prise en main &#x200B;](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | Oui | - |
 | [1.1 Foundation - Configuration de la collecte de données Adobe Experience Platform et de Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | Oui | - |
 | [1.2 Foundation - Ingestion de données](./modules/datacollection/module1.2/data-ingestion.md) | 18/11/2024 | Oui | - |
 | [1.3 Composition de l’audience fédérée](./modules/datacollection/module1.3/fac.md) | 07/01/2025 | Oui | - |
@@ -28,7 +28,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [2.6 Diffusion de données depuis Apache Kafka vers Real-Time CDP](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md) | 25/11/2024 | Oui | - |
 | [3.1 Adobe Journey Optimizer : Orchestration](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md) | 30/12/2024 | Oui | - |
 | [3.2 Adobe Journey Optimizer : sources de données externes et actions personnalisées](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | Oui | - |
-| [3.3 Adobe Journey Optimizer : Offer decisioning ](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Oui | - |
+| [3.3 Adobe Journey Optimizer : Offer decisioning &#x200B;](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | Oui | - |
 | [3.4 Adobe Journey Optimizer : Parcours basés sur un événement](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | Oui | - |
 | [3.5 Adobe Journey Optimizer : services de traduction](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md) | 08/02/2025 | Oui | - |
 | [4.1 Customer Journey Analytics : créez un tableau de bord à l’aide d’Analysis Workspace en plus de Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | Oui | - |
@@ -37,7 +37,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 {style="table-layout:auto"}
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

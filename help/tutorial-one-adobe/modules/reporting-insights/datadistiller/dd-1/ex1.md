@@ -16,7 +16,7 @@ ht-degree: 1%
 ## Installation de l’utilitaire de ligne de commande PSQL
 
 Suivez les instructions décrites dans la documentation de Adobe Experience Platform pour installer le client psql :
-[ Guide d’installation de PSQL ](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=fr)
+[&#x200B; Guide d’installation de PSQL &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=fr)
 
 Une fois que vous avez installé PSQL, vous devrez peut-être mettre à jour votre **PATH** en exécutant la commande ci-dessous dans une fenêtre de terminal :
 

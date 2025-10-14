@@ -253,7 +253,7 @@ Votre vidéo qui a été créée dans Adobe Express est désormais disponible da
 
 ## Étapes suivantes
 
-Accédez à [ Création en bloc d’Assets dans Adobe Express ](./ex3.md){target="_blank"}
+Accédez à [&#x200B; Création en bloc d’Assets dans Adobe Express &#x200B;](./ex3.md){target="_blank"}
 
 Revenir à [Adobe Express et Adobe Experience Cloud](./express.md){target="_blank"}
 

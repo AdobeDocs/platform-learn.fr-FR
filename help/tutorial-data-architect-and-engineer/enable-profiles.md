@@ -125,7 +125,7 @@ Les jeux de données doivent également être activés pour Profile, et le proce
 1. Activez/désactivez le commutateur **[!UICONTROL Profil]**.
 1. Dans la boîte de dialogue modale de confirmation, appuyez sur le bouton **[!UICONTROL Activer]** pour confirmer
 
-   ![ Profile Toggle](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; Profile Toggle](assets/profile-loyalty-enableDataset.png)
 
 Répétez les étapes ci-dessus pour ces autres jeux de données :
 
@@ -187,7 +187,7 @@ Vous pouvez également vérifier que l’interface utilisateur affiche le jeu de
 ## Ressources supplémentaires
 
 * [Documentation sur le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
-* [ Référence de l’API Real-Time Customer Profile ](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [&#x200B; Référence de l’API Real-Time Customer Profile &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
 **Ingénieurs de données** devez continuer à lire la leçon [S’abonner aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md).

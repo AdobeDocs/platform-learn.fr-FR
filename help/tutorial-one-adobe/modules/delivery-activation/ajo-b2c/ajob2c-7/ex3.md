@@ -30,8 +30,8 @@ Dans l’exercice suivant, vous allez découvrir comment combiner vos offres et 
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
-Revenez à [ Experience Decisioning ](ajo-decisioning.md){target="_blank"}
+Revenez à [&#x200B; Experience Decisioning &#x200B;](ajo-decisioning.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

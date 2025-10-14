@@ -65,15 +65,15 @@ Vous devriez alors voir ceci.
 >
 >Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
-![ Stockage Azure ](./images/ps2.png)
+![&#x200B; Stockage Azure &#x200B;](./images/ps2.png)
 
 Sélectionnez **Adobe Firefly Services** puis **Photoshop - Firefly Services**. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/ps3.png)
+![&#x200B; Stockage Azure &#x200B;](./images/ps3.png)
 
 Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/ps4.png)
+![&#x200B; Stockage Azure &#x200B;](./images/ps4.png)
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
@@ -81,7 +81,7 @@ Sélectionnez **Configuration Firefly Services par défaut** et **Configuration 
 
 Sélectionnez **Enregistrer l’API configurée**.
 
-![ Stockage Azure ](./images/ps5.png)
+![&#x200B; Stockage Azure &#x200B;](./images/ps5.png)
 
 Vous devriez alors voir ceci.
 
@@ -95,15 +95,15 @@ Vous devriez alors voir ceci.
 
 Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
-![ Stockage Azure ](./images/aep1.png)
+![&#x200B; Stockage Azure &#x200B;](./images/aep1.png)
 
 Sélectionnez **Adobe Experience Platform** puis **API Experience Platform**. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/aep2.png)
+![&#x200B; Stockage Azure &#x200B;](./images/aep2.png)
 
 Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/aep3.png)
+![&#x200B; Stockage Azure &#x200B;](./images/aep3.png)
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
@@ -115,7 +115,7 @@ Sélectionnez **Adobe Experience Platform - Tous les utilisateurs - PROD**.
 
 Sélectionnez **Enregistrer l’API configurée**.
 
-![ Stockage Azure ](./images/aep4.png)
+![&#x200B; Stockage Azure &#x200B;](./images/aep4.png)
 
 Vous devriez alors voir ceci.
 
@@ -129,25 +129,25 @@ Vous devriez alors voir ceci.
 
 Sélectionnez **+ Ajouter au projet** puis sélectionnez **API**.
 
-![ Stockage Azure ](./images/fiops2.png)
+![&#x200B; Stockage Azure &#x200B;](./images/fiops2.png)
 
 Sélectionnez **Creative Cloud** puis choisissez **API Frame.io**. Sélectionnez **Suivant**.
 
-![ Stockage Azure ](./images/fiops3.png)
+![&#x200B; Stockage Azure &#x200B;](./images/fiops3.png)
 
 Sélectionnez **Authentification de serveur à serveur** puis cliquez sur **Suivant**.
 
-![ Stockage Azure ](./images/fiops4.png)
+![&#x200B; Stockage Azure &#x200B;](./images/fiops4.png)
 
 Sélectionnez **OAuth de serveur à serveur** puis cliquez sur **Suivant**.
 
-![ Stockage Azure ](./images/fiops5.png)
+![&#x200B; Stockage Azure &#x200B;](./images/fiops5.png)
 
 Ensuite, vous devez sélectionner un profil de produit qui définit les autorisations disponibles pour cette intégration.
 
 Sélectionnez **Default Frame.io Enterprise - Prime Configuration** et cliquez sur **Enregistrer l’API configurée**.
 
-![ Stockage Azure ](./images/fiops6.png)
+![&#x200B; Stockage Azure &#x200B;](./images/fiops6.png)
 
 Vous devriez alors voir ceci.
 

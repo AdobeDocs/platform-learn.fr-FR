@@ -39,7 +39,7 @@ Nous utiliserons les données qui ont été injectées dans Platform à l’aide
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
@@ -79,7 +79,7 @@ Dans cet exercice, vous allez utiliser l’API Query Service pour gérer les mod
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

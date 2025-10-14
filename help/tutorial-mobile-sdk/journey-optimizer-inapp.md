@@ -188,7 +188,7 @@ Comme nous l’avons vu dans les leçons précédentes, l’installation d’une
 1. Sélectionnez **[!UICONTROL Messagerie In-App]** dans le volet de navigation de gauche.
 1. Sélectionnez l’onglet **[!UICONTROL Validation]**. Vérifiez que vous n’obtenez aucune erreur.
 
-   ![ Validation In-App ](assets/assurance-in-app-validate.png){zoomable="yes"}
+   ![&#x200B; Validation In-App &#x200B;](assets/assurance-in-app-validate.png){zoomable="yes"}
 
 
 ## Créer votre propre message in-app
@@ -241,7 +241,7 @@ Le hub d’événements SDK publie et reçoit des données d’événement prove
          1. Saisissez `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` pour l’URL **[!UICONTROL Media]**.
          1. Saisissez un **[!UICONTROL En-tête]**, par exemple `Welcome to this Luma In-App Message` et saisissez un **[!UICONTROL Corps]**, par exemple `Triggered by pushing that button in the app...`.
 
-         ![ Contenu du message in-app ](assets/in-app-message-content.png){zoomable="yes"}
+         ![&#x200B; Contenu du message in-app &#x200B;](assets/in-app-message-content.png){zoomable="yes"}
 
       1. Sélectionnez l’onglet **[!UICONTROL Paramètres]**.
          1. Sélectionnez **[!UICONTROL Personnaliser la taille]** dans **[!UICONTROL Message]**.

@@ -23,7 +23,7 @@ Le transfert d’événement est un nouveau type de propriété disponible dans 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
 * [SDK web Adobe Experience Platform](overview.md)
-* [ SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
+* [&#x200B; SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/fr/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -188,7 +188,7 @@ Dans cet exercice, vous allez transférer la hauteur de la fenêtre d’affichag
    >[!TIP]
    >
    >Lorsque vous utilisez votre propre site web, vous pouvez trouver le chemin d’accès à l’objet XDM avec les outils de réseau de votre navigateur web, filtrer les requêtes de `/ee`, ouvrir la balise [!UICONTROL **Payload**] et analyser en profondeur la variable que vous recherchez. Cliquez ensuite avec le bouton droit de la souris et sélectionnez « Copier le chemin de la propriété ». Voici un exemple pour la Hauteur de la fenêtre d’affichage du navigateur :
-   > ![ Chemin XDM du transfert d’événement ](assets/event-forwarding-xdm-path.png)
+   > ![&#x200B; Chemin XDM du transfert d’événement &#x200B;](assets/event-forwarding-xdm-path.png)
 
 ### Installation de l’extension Adobe Cloud Connector
 
@@ -268,7 +268,7 @@ Pour configurer une règle afin de transférer des données vers votre webhook, 
 
 1. Sélectionnez **[!UICONTROL Conserver les modifications]**
 
-   ![Ajouter un paramètre de requête ](assets/event-forwarding-rule-query-parameter.png)
+   ![Ajouter un paramètre de requête &#x200B;](assets/event-forwarding-rule-query-parameter.png)
 
 1. Votre règle doit se présenter comme suit :
 
@@ -304,7 +304,7 @@ Vous pouvez désormais valider votre propriété de transfert d’événement à
 
 1. La requête sur laquelle cibler la validation est celle qui affiche l’URL entièrement construite envoyée par le réseau Edge
 
-   ![ Débogueur de transfert d’événement ](assets/event-forwarding-debugger.png)
+   ![&#x200B; Débogueur de transfert d’événement &#x200B;](assets/event-forwarding-debugger.png)
 
 
 1. Notez les paramètres de chaîne de requête viewPortHeight et ecid

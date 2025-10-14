@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## Configuration du canal des cartes de contenu 3.6.1.1
 
@@ -55,45 +55,45 @@ Votre configuration de canal est maintenant prête à être utilisée.
 
 Dans le menu de gauche, accédez à **Campagnes** puis cliquez sur **Créer une campagne**.
 
-![ InApp ](./images/contentcard7.png)
+![&#x200B; InApp &#x200B;](./images/contentcard7.png)
 
 Sélectionnez **Planifié - Marketing** puis cliquez sur **Créer**.
 
-![ InApp ](./images/contentcard8.png)
+![&#x200B; InApp &#x200B;](./images/contentcard8.png)
 
 Saisissez le nom `--aepUserLdap-- - CitiSignal Fiber Max Content Cards`, puis cliquez sur **Actions**.
 
-![ InApp ](./images/contentcard9.png)
+![&#x200B; InApp &#x200B;](./images/contentcard9.png)
 
 Cliquez sur **+ Ajouter une action** puis sélectionnez **Carte de contenu**.
 
-![ InApp ](./images/contentcard10.png)
+![&#x200B; InApp &#x200B;](./images/contentcard10.png)
 
 Sélectionnez la configuration de canal des cartes de contenu que vous avez créée à l’étape précédente, qui est nommée : `--aepUserLdap--_Content_Cards_Web`.
 
 Cliquez ensuite sur **Modifier les règles**.
 
-![ InApp ](./images/contentcard11.png)
+![&#x200B; InApp &#x200B;](./images/contentcard11.png)
 
 Cliquez sur le **X** pour supprimer la règle actuelle.
 
-![ InApp ](./images/contentcard11b.png)
+![&#x200B; InApp &#x200B;](./images/contentcard11b.png)
 
 Cliquez sur **+ Ajouter une condition**.
 
-![ InApp ](./images/contentcard11c.png)
+![&#x200B; InApp &#x200B;](./images/contentcard11c.png)
 
 Sélectionnez la condition **Données envoyées à Platform**. Cliquez sur **Terminé**
 
-![ InApp ](./images/contentcard11d.png)
+![&#x200B; InApp &#x200B;](./images/contentcard11d.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Modifier le contenu**.
 
-![ InApp ](./images/contentcard11e.png)
+![&#x200B; InApp &#x200B;](./images/contentcard11e.png)
 
 Vous devriez alors voir ceci.
 
-![ InApp ](./images/contentcard12.png)
+![&#x200B; InApp &#x200B;](./images/contentcard12.png)
 
 Configurez les paramètres suivants :
 
@@ -107,15 +107,15 @@ Configurez les paramètres suivants :
 
 Cliquez sur l’icône pour modifier l’URL en sélectionnant une ressource dans AEM Assets.
 
-![ InApp ](./images/contentcard13.png)
+![&#x200B; InApp &#x200B;](./images/contentcard13.png)
 
 Accédez au dossier **citisignal-images** et sélectionnez le fichier **`neon_rabbit_banner.jpg`**. Cliquez sur **Sélectionner**.
 
-![ InApp ](./images/contentcard14.png)
+![&#x200B; InApp &#x200B;](./images/contentcard14.png)
 
 Tu devrais avoir ça. Cliquez sur le bouton **+ Ajouter**.
 
-![ InApp ](./images/contentcard15.png)
+![&#x200B; InApp &#x200B;](./images/contentcard15.png)
 
 Configurez les paramètres suivants pour le bouton :
 
@@ -129,19 +129,19 @@ Configurez les paramètres suivants pour le bouton :
 
 Cliquez sur **Vérifier pour activer**.
 
-![ InApp ](./images/contentcard16.png)
+![&#x200B; InApp &#x200B;](./images/contentcard16.png)
 
 Cliquez sur **Activer**.
 
-![ InApp ](./images/contentcard17.png)
+![&#x200B; InApp &#x200B;](./images/contentcard17.png)
 
 Votre campagne sera alors activée, ce qui peut prendre quelques minutes.
 
-![ InApp ](./images/contentcard18.png)
+![&#x200B; InApp &#x200B;](./images/contentcard18.png)
 
 Au bout de quelques minutes, votre campagne sera en ligne.
 
-![ InApp ](./images/contentcard19.png)
+![&#x200B; InApp &#x200B;](./images/contentcard19.png)
 
 ## 3.6.1.3 Mettre à jour votre site Web DSN
 
@@ -149,35 +149,35 @@ Pour afficher la carte de contenu sur le site Web, vous devez apporter une modif
 
 Accédez à [https://dsn.adobe.com/](https://dsn.adobe.com/). Cliquez sur les points **3** sur votre site web, puis cliquez sur **Modifier**.
 
-![ InApp ](./images/contentcard20.png)
+![&#x200B; InApp &#x200B;](./images/contentcard20.png)
 
 Cliquez pour sélectionner la page **Accueil**. Cliquez sur **Modifier le contenu**.
 
-![ InApp ](./images/contentcard21.png)
+![&#x200B; InApp &#x200B;](./images/contentcard21.png)
 
 Pointez sur l’image principale, puis cliquez sur le bouton **+**.
 
-![ InApp ](./images/contentcard22.png)
+![&#x200B; InApp &#x200B;](./images/contentcard22.png)
 
 Accédez à **Général**, sélectionnez **Bannière** puis cliquez sur **Ajouter**.
 
-![ InApp ](./images/contentcard23.png)
+![&#x200B; InApp &#x200B;](./images/contentcard23.png)
 
 Cliquez pour sélectionner la bannière que vous venez de créer. Accédez à **Style** et saisissez `CitiSignalContentCardContainer` dans le champ **Classes CSS personnalisées**.
 
-![ InApp ](./images/contentcard24.png)
+![&#x200B; InApp &#x200B;](./images/contentcard24.png)
 
 Accédez à **Alignement**. Définissez le champ **Alignement** sur `left` et le champ **Alignement vertical** sur `middle`.
 
 Cliquez sur l’icône **X** pour fermer la boîte de dialogue.
 
-![ InApp ](./images/contentcard25.png)
+![&#x200B; InApp &#x200B;](./images/contentcard25.png)
 
 Les modifications apportées à la conception de votre site web sont maintenant terminées.
 
 Si vous ouvrez maintenant votre site dans une nouvelle fenêtre de navigateur, il devrait ressembler à ceci. la zone grise est la bannière nouvellement créée, mais elle n’a pas encore de contenu.
 
-![ InApp ](./images/contentcard25a.png)
+![&#x200B; InApp &#x200B;](./images/contentcard25a.png)
 
 Pour que le contenu soit chargé dynamiquement dans la bannière nouvellement créée, une modification est nécessaire dans votre propriété Balises de collecte de données.
 
@@ -189,15 +189,15 @@ Vous utilisez déjà ces propriétés de balises de collecte de données dans le
 
 Cliquez pour ouvrir la propriété Collecte de données pour le Web.
 
-![DSN ](./images/launchprop.png)
+![DSN &#x200B;](./images/launchprop.png)
 
 Dans le menu de gauche, accédez à **Règles** et cliquez pour ouvrir la règle **Page vue**.
 
-![ InApp ](./images/contentcard101.png)
+![&#x200B; InApp &#x200B;](./images/contentcard101.png)
 
 Cliquez sur l’action **Envoyer un événement d’expérience « Page vue »**.
 
-![ InApp ](./images/contentcard102.png)
+![&#x200B; InApp &#x200B;](./images/contentcard102.png)
 
 Dans le cadre de la règle **Page vue**, il est nécessaire de demander les instructions de personnalisation à l’Edge pour une surface spécifique. La surface est la bannière que vous avez configurée à l’étape précédente. Pour ce faire, faites défiler l’écran jusqu’à **Personalization** et saisissez `web://dsn.adobe.com/web/--aepUserLdap---XXXX#CitiSignalContentCardContainer` sous **Surfaces**.
 
@@ -207,20 +207,20 @@ Dans le cadre de la règle **Page vue**, il est nécessaire de demander les inst
 
 Cliquez sur **Conserver les modifications**.
 
-![ InApp ](./images/contentcard103.png)
+![&#x200B; InApp &#x200B;](./images/contentcard103.png)
 
 Cliquez sur **Enregistrer** ou **Enregistrer dans la bibliothèque**.
 
-![ InApp ](./images/contentcard104.png)
+![&#x200B; InApp &#x200B;](./images/contentcard104.png)
 
 
 Dans le menu de gauche, accédez à **Règles** et cliquez sur **Ajouter une règle**.
 
-![ InApp ](./images/contentcard26.png)
+![&#x200B; InApp &#x200B;](./images/contentcard26.png)
 
 Saisissez le nom : `Display AJO Content Cards`. Cliquez sur **+ Ajouter** pour ajouter un nouvel événement.
 
-![ InApp ](./images/contentcard27.png)
+![&#x200B; InApp &#x200B;](./images/contentcard27.png)
 
 Sélectionnez l’**extension** : **Adobe Experience Platform Web SDK**, puis sélectionnez le **type d’événement** : **abonner les éléments du jeu de règles**.
 
@@ -234,21 +234,21 @@ Sous **Surfaces**, saisissez `web://dsn.adobe.com/web/--aepUserLdap---XXXX#CitiS
 
 Cliquez sur **Conserver les modifications**.
 
-![ InApp ](./images/contentcard28.png)
+![&#x200B; InApp &#x200B;](./images/contentcard28.png)
 
 Vous devriez alors voir ceci. Cliquez sur **+ Ajouter** pour ajouter une nouvelle action.
 
-![ InApp ](./images/contentcard29.png)
+![&#x200B; InApp &#x200B;](./images/contentcard29.png)
 
 Sélectionnez l’**Extension** : **Core**, puis sélectionnez l’**Type d’action** : **Code personnalisé**.
 
 Activez la case à cocher correspondant à **Langue** : **JavaScript** puis cliquez sur **Ouvrir l’éditeur**.
 
-![ InApp ](./images/contentcard30.png)
+![&#x200B; InApp &#x200B;](./images/contentcard30.png)
 
 Une fenêtre d’éditeur vide devrait alors s’afficher.
 
-![ InApp ](./images/contentcard31.png)
+![&#x200B; InApp &#x200B;](./images/contentcard31.png)
 
 Collez le code ci-dessous dans l’éditeur, puis cliquez sur **Enregistrer**.
 
@@ -285,49 +285,49 @@ event.propositions.forEach(function (payload) {
 });
 ```
 
-![ InApp ](./images/contentcard32.png)
+![&#x200B; InApp &#x200B;](./images/contentcard32.png)
 
 Cliquez sur **Conserver les modifications**.
 
-![ InApp ](./images/contentcard33.png)
+![&#x200B; InApp &#x200B;](./images/contentcard33.png)
 
 Cliquez sur **Enregistrer** ou **Enregistrer dans la bibliothèque**.
 
-![ InApp ](./images/contentcard34.png)
+![&#x200B; InApp &#x200B;](./images/contentcard34.png)
 
 Dans le menu de gauche, accédez à **Flux de publication**, puis cliquez pour ouvrir la bibliothèque **Principal**.
 
-![ InApp ](./images/contentcard35.png)
+![&#x200B; InApp &#x200B;](./images/contentcard35.png)
 
 Cliquez sur **Ajouter toutes les ressources modifiées** puis sur **Enregistrer et créer dans le développement**.
 
-![ InApp ](./images/contentcard36.png)
+![&#x200B; InApp &#x200B;](./images/contentcard36.png)
 
 ## 3.6.1.5 Testez votre carte de contenu sur votre site web
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN ](./../../datacollection/dc1.1/images/web8.png)
+![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Vous devriez maintenant charger le site Web CitiSignal, et la carte de contenu que vous avez configurée devrait maintenant s&#39;afficher au lieu de la zone grise vide que vous aviez là auparavant.
 
-![ InApp ](./images/contentcard37.png)
+![&#x200B; InApp &#x200B;](./images/contentcard37.png)
 
 ## Étapes suivantes
 

@@ -15,11 +15,11 @@ ht-degree: 10%
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## Listes d’abonnements 3.6.2.1
 
@@ -224,7 +224,7 @@ Votre page de destination est maintenant publiée et peut être utilisée dans u
 
 Dans l’exercice 3.1, vous avez créé un parcours appelé `--aepUserLdap-- - Registration Journey`.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/published.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/published.png)
 
 Vous devez maintenant mettre à jour l’e-mail dans ce parcours pour inclure le lien vers la page de destination.
 
@@ -304,27 +304,27 @@ Vos modifications ont maintenant été publiées et vous pouvez tester votre par
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN ](./../../datacollection/dc1.1/images/web8.png)
+![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration. Accédez à **Se connecter**
 
-![DSN ](../../../getting-started/gettingstarted/images/web7.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
 
 Cliquez sur **CRÉER UN COMPTE**. Renseignez vos informations et cliquez sur **S’inscrire**.
 

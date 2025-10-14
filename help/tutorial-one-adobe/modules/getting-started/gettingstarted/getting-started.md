@@ -108,7 +108,7 @@ Dans cet exercice, vous allez préparer votre environnement PostBuster à intera
 
 Dans cet exercice, vous trouverez des instructions sur la façon d&#39;installer toutes les applications que vous devez avoir sur votre ordinateur avant de démarrer le tutoriel.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

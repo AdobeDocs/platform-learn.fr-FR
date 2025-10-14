@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Présentation - Activation technique de GenStudio pour la chaîne d’approvisionnement de contenu
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -76,7 +76,7 @@ Dans ce module de base, vous allez configurer votre programme Adobe Experience M
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

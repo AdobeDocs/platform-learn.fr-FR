@@ -17,7 +17,7 @@ Découvrez comment valider votre implémentation du SDK web d’Adobe Experienc
 
 Experience Platform Debugger est une extension disponible pour les navigateurs Chrome et Firefox, qui vous permet de voir la technologie Adobe mise en œuvre dans vos pages web. Téléchargez la version correspondant au navigateur de votre choix :
 
-* [Extension Firefox ](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
+* [Extension Firefox &#x200B;](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
 * [Extension Chrome](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Si vous n’avez jamais utilisé le débogueur auparavant, vous pouvez regarder cette vidéo de présentation de cinq minutes :

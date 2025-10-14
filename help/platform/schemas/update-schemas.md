@@ -16,6 +16,6 @@ ht-degree: 10%
 
 # mettre à jour les schémas,
 
-Cette vidéo présente certaines des informations de base à connaître lors de la mise à jour des schémas existants dans Adobe Experience Platform. Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
+Cette vidéo présente certaines des informations de base à connaître lors de la mise à jour des schémas existants dans Adobe Experience Platform. Pour plus d’informations, consultez la [&#x200B; documentation sur les schémas &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413636?learn=on&enablevpops&captions=fre_fr)

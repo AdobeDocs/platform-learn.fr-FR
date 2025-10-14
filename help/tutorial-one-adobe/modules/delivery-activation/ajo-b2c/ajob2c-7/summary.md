@@ -22,6 +22,6 @@ Dans ce module, vous avez appris à utiliser le service applicatif Offer Decisio
 
 ## Étapes suivantes
 
-Revenez à [ Experience Decisioning ](ajo-decisioning.md){target="_blank"}
+Revenez à [&#x200B; Experience Decisioning &#x200B;](ajo-decisioning.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

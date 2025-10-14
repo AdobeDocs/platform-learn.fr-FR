@@ -26,7 +26,7 @@ Soulignons les avantages de l’utilisation de Adobe Journey Optimizer et Adobe 
 ## Consultez cette section
 
 - Blog technique : [Adobe Journey Optimizer dans un monde omnicanal](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- Blog technique : [ démonstration de la puissance du nouveau service Adobe Journey Optimizer d’Adobe pour créer des expériences omnicanal personnalisées en temps réel ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
+- Blog technique : [&#x200B; démonstration de la puissance du nouveau service Adobe Journey Optimizer d’Adobe pour créer des expériences omnicanal personnalisées en temps réel &#x200B;](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
 - Tutorials : [Tutorials Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html?lang=fr)
 - Documentation Experience Platform : [Aide de Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html?lang=fr)
 

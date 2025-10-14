@@ -17,59 +17,59 @@ Dans cet exercice, vous allez configurer le parcours et le message qui doit êtr
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./images/acophome.png)
+![ACOP &#x200B;](./images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`.
 
-![ACOP ](./images/acoptriglp.png)
+![ACOP &#x200B;](./images/acoptriglp.png)
 
 ## 3.1.3.1 Créer votre Parcours
 
 Dans le menu de gauche, cliquez sur **Parcours**. Cliquez ensuite sur **Créer un Parcours** pour créer un parcours.
 
-![ACOP ](./images/createjourney.png)
+![ACOP &#x200B;](./images/createjourney.png)
 
 Un écran de parcours vide s’affiche alors.
 
-![ACOP ](./images/journeyempty.png)
+![ACOP &#x200B;](./images/journeyempty.png)
 
 Dans l’exercice précédent, vous avez créé un **Événement**. Vous l&#39;avez nommé comme suit `--aepUserLdap--AccountCreationEvent` et remplacé `ldap` par votre ldap. Résultat de la création de l’événement :
 
-![ACOP ](./images/eventdone.png)
+![ACOP &#x200B;](./images/eventdone.png)
 
 Vous devez maintenant prendre cet événement comme point de départ de ce Parcours. Pour ce faire, accédez au côté gauche de l’écran et recherchez l’événement dans la liste des événements.
 
-![ACOP ](./images/eventlist.png)
+![ACOP &#x200B;](./images/eventlist.png)
 
 Sélectionnez votre événement, faites-le glisser et déposez-le sur la zone de travail du Parcours. Votre Parcours ressemble désormais à ceci :
 
-![ACOP ](./images/journeyevent.png)
+![ACOP &#x200B;](./images/journeyevent.png)
 
 Comme deuxième étape du parcours, vous devez ajouter une courte étape **Attente**. Accédez à la section **Orchestration** située dans la partie gauche de l’écran. Vous utiliserez les attributs de profil et devrez vous assurer qu’ils sont renseignés dans le profil client en temps réel.
 
-![ACOP ](./images/journeywait.png)
+![ACOP &#x200B;](./images/journeywait.png)
 
 Votre parcours ressemble maintenant à ceci. Dans la partie droite de l’écran, vous devez configurer le temps d’attente. Réglez-le sur 1 minute. Vous aurez ainsi suffisamment de temps pour que les attributs de profil soient disponibles après le déclenchement de l’événement . Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
-![ACOP ](./images/journeywait1.png)
+![ACOP &#x200B;](./images/journeywait1.png)
 
 Comme troisième étape du parcours, vous devez ajouter une action **E-mail**. Accédez à la partie gauche de l’écran pour **Actions**, sélectionnez l’action **E-mail**, puis faites-la glisser sur le deuxième nœud du parcours. Vous voyez maintenant ceci.
 
-![ACOP ](./images/journeyactions.png)
+![ACOP &#x200B;](./images/journeyactions.png)
 
 Définissez la **Catégorie** sur **Marketing** et sélectionnez une configuration d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la configuration d&#39;email à sélectionner est **Email**. Assurez-vous que les cases à cocher **Clics sur l’e-mail** et **Ouvertures d’e-mail** sont activées.
 
-![ACOP ](./images/journeyactions1.png)
+![ACOP &#x200B;](./images/journeyactions1.png)
 
 ## 3.1.3.2 Créer votre message
 
 Pour créer votre message, cliquez sur **Modifier le contenu**.
 
-![ACOP ](./images/journeyactions2.png)
+![ACOP &#x200B;](./images/journeyactions2.png)
 
 Vous voyez maintenant ceci.
 
-![ACOP ](./images/journeyactions3.png)
+![ACOP &#x200B;](./images/journeyactions3.png)
 
 Cliquez sur l’icône **Ouvrir la boîte de dialogue de personnalisation**.
 
@@ -202,27 +202,27 @@ Cliquez sur **Enregistrer**.
 
 Vous devez encore donner un nom à votre parcours. Pour ce faire, cliquez sur l’icône **Propriétés** en haut à droite de l’écran.
 
-![ACOP ](./images/journeyname.png)
+![ACOP &#x200B;](./images/journeyname.png)
 
 Vous pouvez ensuite saisir le nom du parcours ici. Veuillez utiliser `--aepUserLdap-- - Registration Journey`. Cliquez sur **Enregistrer**.
 
-![ACOP ](./images/journeyname1.png)
+![ACOP &#x200B;](./images/journeyname1.png)
 
 Vous pouvez maintenant publier votre parcours en cliquant sur **Publish**.
 
-![ACOP ](./images/publishjourney.png)
+![ACOP &#x200B;](./images/publishjourney.png)
 
 Cliquez de nouveau sur **Publish**.
 
-![ACOP ](./images/publish1.png)
+![ACOP &#x200B;](./images/publish1.png)
 
 Au bout de quelques minutes, le statut de votre parcours passera à **En ligne** et vous verrez un tableau de bord en temps réel des performances de votre parcours.
 
-![ACOP ](./images/published.png)
+![ACOP &#x200B;](./images/published.png)
 
 Vous avez maintenant terminé cet exercice.
 
-Étape suivante : [3.1.4 Mettez à jour la propriété de collecte de données et testez le parcours ](./ex4.md)
+Étape suivante : [3.1.4 Mettez à jour la propriété de collecte de données et testez le parcours &#x200B;](./ex4.md)
 
 [Retour au module 3.1](./journey-orchestration-create-account.md)
 

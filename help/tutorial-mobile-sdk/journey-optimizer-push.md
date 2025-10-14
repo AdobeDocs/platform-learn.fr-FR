@@ -88,7 +88,7 @@ Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont
 1. Téléchargez la clé privée `.p8`. Il est utilisé dans l’exercice suivant lorsque vous configurez vos informations d’identification push Journey Optimizer.
 1. Notez l’identifiant **[!UICONTROL Key]**. Il est utilisé dans l’exercice suivant lorsque vous configurez vos informations d’identification push Journey Optimizer.
 1. Notez l’identifiant **[!UICONTROL d’équipe]**. Il est utilisé dans l’exercice suivant lorsque vous configurez vos informations d’identification push Journey Optimizer. L’identifiant de l’équipe se trouve dans le coin supérieur droit de l’écran, en regard de votre nom d’utilisateur.
-   ![Détails clés ](assets/push-apple-dev-key-details.png){zoomable="yes"}
+   ![Détails clés &#x200B;](assets/push-apple-dev-key-details.png){zoomable="yes"}
 
 Une documentation supplémentaire est disponible [ici](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
@@ -119,7 +119,7 @@ Les étapes suivantes ne sont pas spécifiques à Adobe Experience Cloud et sont
          1. Saisissez un **[!UICONTROL surnom de l’application]** facultatif.
          1. Sélectionnez **[!UICONTROL Enregistrer l’application]**.
       1. À l’étape 2, **[!UICONTROL Télécharger puis ajouter le fichier de configuration]**.
-         1. Sélectionnez ![ Télécharger ](/help/assets/icons/Download.svg) **[!UICONTROL Télécharger google-services.json]**. Lorsque vous créez votre propre version de l’application Android, vous devez remplacer le fichier `google-services.json` actuel dans l’exemple de projet Android Studio par la version du fichier générée par cette nouvelle configuration d’application.
+         1. Sélectionnez ![&#x200B; Télécharger &#x200B;](/help/assets/icons/Download.svg) **[!UICONTROL Télécharger google-services.json]**. Lorsque vous créez votre propre version de l’application Android, vous devez remplacer le fichier `google-services.json` actuel dans l’exemple de projet Android Studio par la version du fichier générée par cette nouvelle configuration d’application.
 Les autres étapes sont déjà effectuées dans l’exemple d’application.
 
    Votre écran doit ressembler à ce qui suit :
@@ -186,7 +186,7 @@ Une fois que vous avez créé une configuration d’informations d’identificat
 1. Sélectionnez l’**[!UICONTROL ID d’application]** approprié que vous avez utilisé précédemment pour définir vos informations d’identification push. Par exemple, **[!UICONTROL com.adobe.luma.tutorial.swiftui]** pour iOS et **[!UICONTROL com.adobe.luma.tutorial.android]** pour Android. Le ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) vert indique que des informations d’identification push valides sont associées à une configuration de canal.
 
 
-   ![ Configuration du canal push ](assets/push-config-10.png){zoomable="yes"}
+   ![&#x200B; Configuration du canal push &#x200B;](assets/push-config-10.png){zoomable="yes"}
 
 1. Sélectionnez **[!UICONTROL Envoyer]** pour enregistrer vos modifications.
 
@@ -307,7 +307,7 @@ Pour mettre à jour la signature de votre application :
 
 Vous devriez maintenant avoir une extension de notification push ajoutée à votre application, similaire à l&#39;écran ci-dessous.
 
-![Extension des notifications push ](assets/xcode-signing-capabilities-pushnotifications.png){zoomable="yes"}
+![Extension des notifications push &#x200B;](assets/xcode-signing-capabilities-pushnotifications.png){zoomable="yes"}
 
 >[!TAB Android]
 
@@ -498,7 +498,7 @@ L’étape suivante consiste à créer le parcours qui déclenche l’envoi de l
    1. Cliquez sur **[!UICONTROL OK]**.
       ![Propriétés du parcours](assets/ajo-journey-properties.png){zoomable="yes"}
 
-1. De retour dans la zone de travail de parcours, à partir de l’**[!UICONTROL ÉVÉNEMENTS]**, faites glisser et déposez votre ![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)Événement **[!DNL LumaTestEvent]** sur la zone de travail où elle s’affiche **[!UICONTROL Sélectionnez un événement d’entrée ou une activité de lecture d’audience]**.
+1. De retour dans la zone de travail de parcours, à partir de l’**[!UICONTROL ÉVÉNEMENTS]**, faites glisser et déposez votre ![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)Événement **[!DNL LumaTestEvent]** sur la zone de travail où elle s’affiche **[!UICONTROL Sélectionnez un événement d’entrée ou une activité de lecture d’audience]**.
 
    * Dans le panneau **[!UICONTROL Événements : LumaTestEvent]**, saisissez un **[!UICONTROL Libellé]**, par exemple `Luma Test Event`.
 

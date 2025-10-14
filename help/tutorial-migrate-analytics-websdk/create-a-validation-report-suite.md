@@ -21,7 +21,7 @@ Selon la taille et la complexité de votre implémentation Analytics, la migrati
 
 1. Ouvrez Adobe Analytics et accédez aux paramètres **suite de rapports** dans l’Admin Console
 
-   ![Admin Console ](assets/aa-admin-console.jpg).
+   ![Admin Console &#x200B;](assets/aa-admin-console.jpg).
 
 1. Sélectionnez **[!UICONTROL Ajouter une suite de rapports]**
 

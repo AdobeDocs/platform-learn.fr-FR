@@ -80,7 +80,7 @@ Par conséquent, procédez comme suit pour migrer le code personnalisé :
 1. Collez dans le code que vous avez importé à partir de la fenêtre du code personnalisé Analytics
 1. Placez maintenant les nouvelles lignes de code au milieu du code existant, de sorte qu’il soit au-dessus de la première mention de l’objet , comme dans l’exemple suivant :
 
-![Nouveau code ](assets/new-s-code.jpg)
+![Nouveau code &#x200B;](assets/new-s-code.jpg)
 
 Vous pouvez maintenant enregistrer le code dans la fenêtre Code personnalisé et conserver les modifications dans l’action Mettre à jour les variables. Vous souhaiterez également enregistrer la règle et publier les nouvelles modifications dans la bibliothèque de travail.
 
@@ -146,7 +146,7 @@ const s = content.data.__adobe.analytics;
 _&#x200B;**Avec les deux modifications de code :**&#x200B;_
 Voici le code répertorié ci-dessus, mais avec les deux modifications dont nous venons de discuter :
 
-![Code mis à jour ](assets/update-code.jpg)
+![Code mis à jour &#x200B;](assets/update-code.jpg)
 
 ### Étapes de migration du code d’extension principal vers Web SDK
 

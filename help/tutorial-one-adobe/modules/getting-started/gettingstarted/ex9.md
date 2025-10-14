@@ -80,7 +80,7 @@ Accédez à [https://desktop.github.com/download/](https://desktop.github.com/do
 
 [Téléchargez l’explorateur de stockage Azure Microsoft pour gérer vos fichiers](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Sélectionnez la version appropriée pour votre système d’exploitation spécifique, téléchargez-la et installez-la.
 
-![ Stockage Azure ](./images/az10.png){zoomable="yes"}
+![&#x200B; Stockage Azure &#x200B;](./images/az10.png){zoomable="yes"}
 
 Vous avez maintenant terminé le module Prise en main .
 

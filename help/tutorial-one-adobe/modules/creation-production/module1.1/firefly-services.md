@@ -43,7 +43,7 @@ Dans cet exercice, découvrez comment utiliser l’API Firefly Customer Models.
 
 Découvrez un résumé et les avantages des services Firefly.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

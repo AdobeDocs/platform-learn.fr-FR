@@ -39,7 +39,7 @@ Pour envoyer vos données XDM d’Edge Network vers Adobe Analytics, vous devez 
 
 1. Dans l’interface utilisateur de collecte de données, sélectionnez **[!UICONTROL Flux de données]** et votre flux de données.
 
-1. Sélectionnez ensuite ![ Ajouter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter un service]**.
+1. Sélectionnez ensuite ![&#x200B; Ajouter &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter un service]**.
 
 1. Ajouter **[!UICONTROL Adobe Analytics]** à partir de la liste [!UICONTROL Service],
 
@@ -313,7 +313,7 @@ Si vous avez développé votre application mobile à l’aide de l’extension m
 
 Si vous décidez de migrer pour utiliser Edge Network recommandé, vous disposez des options suivantes :
 
-* Mettez en œuvre l’extension [Edge Network et utilisez ](configure-tags.md#extension-configuration) API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent), comme illustré dans la leçon sur la façon de [suivre les données d’événement](events.md). Ce tutoriel se concentre sur cette implémentation.
+* Mettez en œuvre l’extension [Edge Network et utilisez &#x200B;](configure-tags.md#extension-configuration) API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent), comme illustré dans la leçon sur la façon de [suivre les données d’événement](events.md). Ce tutoriel se concentre sur cette implémentation.
 * Mettez en œuvre l’extension Edge Bridge [&#128279;](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) et continuez à utiliser vos appels d’API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) et [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate). Voir [Implémentation de l’extension Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) pour plus d’informations et pour un tutoriel séparé.
 
 

@@ -113,7 +113,7 @@ L’exercice précédent distribue les événements de premier plan et d’arri�
    ![Créer une règle](assets/rules-create-new.png){zoomable="yes"}
 1. Dans l’écran **[!UICONTROL Créer une règle]**, saisissez `Application Status` pour **[!UICONTROL Nom]**.
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** ci-dessous **[!UICONTROL ÉVÉNEMENTS]**.
-   ![ Boîte de dialogue Créer une règle ](assets/rule-create-name.png){zoomable="yes"}
+   ![&#x200B; Boîte de dialogue Créer une règle &#x200B;](assets/rule-create-name.png){zoomable="yes"}
 1. À l’étape **[!UICONTROL Configuration d’événement]** :
    1. Sélectionnez **[!UICONTROL Mobile Core]** comme **[!UICONTROL Extension]**.
    1. Sélectionnez **[!UICONTROL Premier plan]** comme **[!UICONTROL Type d’événement]**.
@@ -136,7 +136,7 @@ L’exercice précédent distribue les événements de premier plan et d’arri�
    1. Sélectionnez **[!UICONTROL Conserver les modifications]**.
       ![Configuration de l’action de règle](assets/rule-action-configuration.png){zoomable="yes"}
 1. Sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque]**.
-   ![Règle - Enregistrer dans la bibliothèque ](assets/rule-save-to-library.png){zoomable="yes"}
+   ![Règle - Enregistrer dans la bibliothèque &#x200B;](assets/rule-save-to-library.png){zoomable="yes"}
 1. Sélectionnez **[!UICONTROL Créer]** pour recréer la bibliothèque.
    ![Règle - Créer](assets/rule-build.png){zoomable="yes"}
 

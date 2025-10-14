@@ -47,7 +47,7 @@ Dans cet exercice, vous allez mettre en œuvre le plug-in AEM MarTech. Le plug-i
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

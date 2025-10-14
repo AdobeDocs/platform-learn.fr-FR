@@ -215,7 +215,7 @@ Votre application est maintenant prête à être publiée.
 
 ## Étapes suivantes
 
-Accédez à [ Publier votre application en privé ](./ex4.md){target="_blank"}
+Accédez à [&#x200B; Publier votre application en privé &#x200B;](./ex4.md){target="_blank"}
 
 Revenir à [GenStudio for Performance Marketing - Extensibilité](./genstudioext.md){target="_blank"}
 

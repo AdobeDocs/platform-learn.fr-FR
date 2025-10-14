@@ -22,12 +22,12 @@ ht-degree: 0%
 >
 >- [2.1.3 Visualiser votre propre profil client en temps réel - API](./modules/rtcdp-b2c/module2.1/ex3.md)
 >- [2.3.6 Destinations SDK](./modules/rtcdp-b2c/module2.3/ex6.md)
->- [3.3.6 Tester votre décision à l’aide de l’API ](./modules/ajo-b2c/module3.3/ex6.md)
+>- [3.3.6 Tester votre décision à l’aide de l’API &#x200B;](./modules/ajo-b2c/module3.3/ex6.md)
 >- [5.1.8 API Query Service](./modules/datadistiller/module5.1/ex8.md)
 
 ## Installer PostBuster
 
-Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542).
+Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542).
 
 Cliquez pour télécharger la dernière version de **PostBuster**.
 
@@ -113,7 +113,7 @@ Après avoir créé votre projet d’E/S d’Adobe, votre environnement doit se 
 
 >[!NOTE]
 >
->![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

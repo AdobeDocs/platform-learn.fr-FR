@@ -45,11 +45,11 @@ Le tableau de bord de l’IA dédiée aux clients permet de définir des segment
 
 Une définition de segment est créée automatiquement.
 
-![ Règle de segment ](./images/caicreatesegment.png)
+![&#x200B; Règle de segment &#x200B;](./images/caicreatesegment.png)
 
 Attribuez un nom à votre segment en suivant cette convention de nommage : `--aepUserLdap-- - Customer AI High Propensity`. Cliquez sur **Publier**.
 
-![ Règle de segment ](./images/caicreatesegment1.png)
+![&#x200B; Règle de segment &#x200B;](./images/caicreatesegment1.png)
 
 Vous pouvez désormais utiliser ce segment pour le ciblage à l’aide de Real-Time CDP, Journey Optimizer et Adobe Target, par exemple.
 
@@ -61,7 +61,7 @@ Pour vous assurer qu’aucune donnée de démonstration inutile n’est conserv�
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [Services intelligents](./intelligent-services.md){target="_blank"}
 

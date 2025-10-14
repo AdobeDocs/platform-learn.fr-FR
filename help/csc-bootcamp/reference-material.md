@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## Glisser-déposer
 
-Cette documentation peut vous aider à vous familiariser avec le concept de ce bootcamp, ainsi qu’avec une chaîne d’approvisionnement en contenu. Cependant, il y a toujours des choses que nous voulions montrer mais que nous ne pouvions plus inclure. Vous pouvez retrouver ces informations dans le [diaporama suivant](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) et dans notre [Art de la démonstration possible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+Cette documentation peut vous aider à vous familiariser avec le concept de ce bootcamp, ainsi qu’avec une chaîne d’approvisionnement en contenu. Cependant, il y a toujours des choses que nous voulions montrer mais que nous ne pouvions plus inclure. Vous pouvez retrouver ces informations dans le [diaporama suivant](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&csf=1&web=1&e=57aFUU) et dans notre [Art de la démonstration possible](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
 
 ## Rencontrez Adobevélo
 
@@ -35,7 +35,7 @@ Adobe souhaite également que les clients puissent facilement commander leur vé
 
 ### Chaîne d’approvisionnement de contenu
 
-- [Création d’une chaîne d’approvisionnement de contenu à l’échelle ](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
+- [Création d’une chaîne d’approvisionnement de contenu à l’échelle &#x200B;](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
 
 ### Adobe Experience Manager
 

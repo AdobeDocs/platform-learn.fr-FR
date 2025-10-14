@@ -50,7 +50,7 @@ Toutes les données correctement ingérées par Adobe Experience Platform sont c
 
 1. Sélectionnez **[!UICONTROL Jeux de données]** dans le menu de navigation de gauche.
 
-1. Sélectionnez ![ Ajouter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Créer un jeu de données]**.
+1. Sélectionnez ![&#x200B; Ajouter &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Créer un jeu de données]**.
 
 1. Sélectionnez **[!UICONTROL Créer un jeu de données à partir d&#39;un schéma]**.
    ![page de départ jeu de données](assets/dataset-create.png){zoomable="yes"}
@@ -64,7 +64,7 @@ Toutes les données correctement ingérées par Adobe Experience Platform sont c
 1. Fournissez un **[!UICONTROL Nom]**, par exemple `Luma Mobile App Events Dataset` et un **[!UICONTROL Description]**.
 
 1. Sélectionnez **[!UICONTROL Terminer]**.
-   ![ fin du jeu de données ](assets/dataset-finish.png){zoomable="yes"}
+   ![&#x200B; fin du jeu de données &#x200B;](assets/dataset-finish.png){zoomable="yes"}
 
 
 ## Ajouter un service de flux de données Adobe Experience Platform
@@ -77,7 +77,7 @@ Pour envoyer vos données XDM d’Edge Network vers Adobe Experience Platform, a
 
 1. Dans l’interface utilisateur de collecte de données, sélectionnez **[!UICONTROL Flux de données]** et votre flux de données.
 
-1. Sélectionnez ensuite ![ Ajouter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter un service]**.
+1. Sélectionnez ensuite ![&#x200B; Ajouter &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter un service]**.
 
 1. Sélectionnez **[!UICONTROL Adobe Experience Platform]** dans la liste [!UICONTROL Service].
 
@@ -149,7 +149,7 @@ Sur l’écran **[!UICONTROL Détail]**, vous pouvez voir des informations de ba
 
 Sur le **[!UICONTROL Événements]**, vous pouvez voir les événements collectés à partir de l’implémentation de votre application mobile pour cet utilisateur :
 
-![ événements de profil ](assets/platform-profile-events.png){zoomable="yes"}
+![&#x200B; événements de profil &#x200B;](assets/platform-profile-events.png){zoomable="yes"}
 
 
 Dans l’écran des détails du profil :

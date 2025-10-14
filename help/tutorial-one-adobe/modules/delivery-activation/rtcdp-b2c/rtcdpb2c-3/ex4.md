@@ -138,11 +138,11 @@ Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à séle
 
 Dans le menu de gauche, accédez à **Destinations**, puis à **Catalogue**. Vous verrez ensuite le **Catalogue des destinations**.
 
-![ RTCDP ](./images/rtcdpmenudest1.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpmenudest1.png)
 
 Cliquez sur **Espace de stockage**, puis sur le bouton **Configurer** (ou sur **Activer les audiences**, selon votre environnement) sur la vignette **Amazon S3**.
 
-![ RTCDP ](./images/rtcdp2.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdp2.png)
 
 Sélectionnez **Clé d’accès** comme type de compte. Veuillez utiliser les informations d’identification S3 qui vous ont été fournies à l’étape précédente :
 
@@ -152,11 +152,11 @@ Sélectionnez **Clé d’accès** comme type de compte. Veuillez utiliser les in
 
 Cliquez sur **Se connecter à la destination**.
 
-![ RTCDP ](./images/rtcdpsfs3.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpsfs3.png)
 
 Une confirmation visuelle s’affiche alors indiquant que cette destination est désormais connectée.
 
-![ RTCDP ](./images/rtcdpsfs3connected.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpsfs3connected.png)
 
 Vous devez fournir les détails du compartiment S3 afin que Adobe Experience Platform puisse se connecter au compartiment S3.
 
@@ -173,23 +173,23 @@ Sélectionnez **Audiences**.
 
 Pour **Type de fichier**, sélectionnez **CSV** et laissez les paramètres par défaut inchangés.
 
-![ RTCDP ](./images/rtcdpsfs3connect2.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpsfs3connect2.png)
 
 Faites défiler vers le bas. Pour **Format de compression**, sélectionnez **Aucun**. Cliquez sur **Suivant**.
 
-![ RTCDP ](./images/rtcdpsfs3connect3.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpsfs3connect3.png)
 
 Vous pouvez désormais éventuellement joindre une politique de gouvernance des données à votre nouvelle destination. Cliquez sur **Suivant**.
 
-![ RTCDP ](./images/rtcdpsfs3connect2gov.png)
+![&#x200B; RTCDP &#x200B;](./images/rtcdpsfs3connect2gov.png)
 
 Dans la liste des audiences, recherchez l’audience que vous avez créée dans l’exercice précédent, `--aepUserLdap-- - Interest in Galaxy S24` et sélectionnez-la. Cliquez sur **Suivant**.
 
-![ RTCDP ](./images/s3a.png)
+![&#x200B; RTCDP &#x200B;](./images/s3a.png)
 
 Tu verras ça. Si vous le souhaitez, vous pouvez modifier le planning et le nom de fichier en cliquant sur l’icône **crayon**. Cliquez sur **Suivant**.
 
-![ RTCDP ](./images/s3bb.png)
+![&#x200B; RTCDP &#x200B;](./images/s3bb.png)
 
 Vous pouvez désormais sélectionner des attributs de profil pour l’exportation vers AWS S3. Cliquez sur **Ajouter un nouveau champ** et assurez-vous que le `--aepTenantId--.identification.core.ecid` du champ est ajouté et marqué comme **Clé de déduplication**.
 
@@ -197,17 +197,17 @@ Vous pouvez éventuellement ajouter autant d’autres attributs de profil que n�
 
 Une fois tous les champs ajoutés, cliquez sur **Suivant**.
 
-![ RTCDP ](./images/s3c.png)
+![&#x200B; RTCDP &#x200B;](./images/s3c.png)
 
 Vérifiez votre configuration. Cliquez sur **Terminer** pour terminer la configuration.
 
-![ RTCDP ](./images/s3g.png)
+![&#x200B; RTCDP &#x200B;](./images/s3g.png)
 
 Vous revenez alors à l’écran d’activation de la destination et votre audience est ajoutée à cette destination.
 
 Si vous souhaitez ajouter d’autres exportations d’audiences, vous pouvez cliquer sur **Activer les audiences** pour redémarrer le processus et ajouter d’autres audiences.
 
-![ RTCDP ](./images/s3j.png)
+![&#x200B; RTCDP &#x200B;](./images/s3j.png)
 
 ## Étapes suivantes
 

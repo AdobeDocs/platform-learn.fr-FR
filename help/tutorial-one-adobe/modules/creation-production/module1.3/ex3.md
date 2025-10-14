@@ -354,7 +354,7 @@ Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [GenStudio for Performance Marketing](./genstudio.md){target="_blank"}
 

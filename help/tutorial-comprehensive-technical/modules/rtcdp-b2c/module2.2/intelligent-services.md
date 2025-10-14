@@ -28,7 +28,7 @@ Dans ce module, vous apprendrez à configurer et à utiliser les services intell
 
 >[!NOTE]
 >
->N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League ](../../gettingstarted/gettingstarted/ex1.md)
+>N’oubliez pas d’installer, de configurer et d’utiliser l’extension Chrome, comme indiqué dans [Installation de l’extension Chrome pour la documentation de l’Experience League &#x200B;](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercices
 
@@ -44,7 +44,7 @@ L’analyste marketing configure les prédictions souhaitées en spécifiant les
 
 Une fois la formation et la notation des modèles terminées, les scores sont réécrits dans Platform. Les prédictions permettent de décider des actions à prendre, comme définir des segments, créer des tableaux de bord personnalisés, etc.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

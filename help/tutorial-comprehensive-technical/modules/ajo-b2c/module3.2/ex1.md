@@ -15,19 +15,19 @@ ht-degree: 2%
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Dans le menu de gauche, faites défiler l’écran vers le bas et cliquez sur **Configurations**. Cliquez ensuite sur le bouton **Gérer** sous **Événements**.
 
-![ACOP ](./images/acopmenu.png)
+![ACOP &#x200B;](./images/acopmenu.png)
 
 Vous verrez ensuite un aperçu de tous les événements disponibles. Cliquez sur **Créer un événement** pour commencer à créer votre propre événement.
 
-![ACOP ](./images/emptyevent.png)
+![ACOP &#x200B;](./images/emptyevent.png)
 
 Une nouvelle fenêtre d’événement vide s’affiche alors.
 Utilisez `--aepUserLdap--GeofenceEntry` comme nom pour l’événement.

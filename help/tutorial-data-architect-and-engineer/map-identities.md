@@ -113,7 +113,7 @@ Créons l’espace de noms d’identité `Luma CRM Id` :
    ![Espace de noms d’identité](assets/identity-createUsingApi.png)
 
 Si vous revenez à l’interface utilisateur, vous devriez maintenant voir vos trois nouveaux espaces de noms personnalisés :
-![Espace de noms d’identité ](assets/identity-newIdentities.png)
+![Espace de noms d’identité &#x200B;](assets/identity-newIdentities.png)
 
 
 ## Champs d’identité des libellés dans les schémas
@@ -163,7 +163,7 @@ Plusieurs champs d’identité peuvent être ajoutés à un schéma. Les identit
 1. Sélectionnez l’espace de noms `Luma CRM Id` dans le menu déroulant **[!UICONTROL Espaces de noms d’identité]**
 1. Sélectionnez **[!UICONTROL Appliquer]** puis cliquez sur le bouton **[!UICONTROL Enregistrer]** pour enregistrer vos modifications
 
-   ![Identité Secondaire ](assets/identity-loyalty-secondaryId.png)
+   ![Identité Secondaire &#x200B;](assets/identity-loyalty-secondaryId.png)
 
 ## Compléter les relations de schéma
 
@@ -178,7 +178,7 @@ Maintenant que nos champs d’identité sont étiquetés, nous pouvons terminer 
 1. Sélectionnez **[!UICONTROL Appliquer]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
-   ![ Champ de référence ](assets/identity-offlinePurchase-relationship.png)
+   ![&#x200B; Champ de référence &#x200B;](assets/identity-offlinePurchase-relationship.png)
 
 Répétez ce processus pour créer une relation entre le `Luma Web Events Schema` et le `Luma Product Catalog Schema`.
 

@@ -78,7 +78,7 @@ Nous commençons par **la planification** , où nous prenons des centaines de de
 
 Au fur et à mesure que nous passons à la **production** , les demandes approuvées se transforment en projets qui fournissent plus de détails à notre équipe créative — des conseils sur la création, des emplacements web, des exigences promotionnelles, etc. Nos stratèges de contenu collaborent ensuite avec les parties prenantes et les créatifs de Workfront pour passer en revue le contenu et respecter les délais. Parce que nous faisons tout cela dans Workfront, nous avons éliminé les étapes en double, les emails inutiles et les remplissages de formulaires multiples, et nous commençons même à suivre les cycles de production par type de ressource. Cela nous permet d’équilibrer les ressources du personnel et de reclasser les priorités lorsque cela est nécessaire, le tout en examinant de plus près les données du projet.
 
-Et lorsque notre contenu est prêt pour **delivery** , nous [ publions nos offres, ressources et contenu promotionnel ](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) sur Experience Manager Assets. Plus précisément, tout cela se trouve dans notre Hub de marketing interne, où n’importe qui dans l’entreprise peut rapidement trouver le contenu exact dont il a besoin, dès qu’il en a besoin.
+Et lorsque notre contenu est prêt pour **delivery** , nous [&#x200B; publions nos offres, ressources et contenu promotionnel &#x200B;](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) sur Experience Manager Assets. Plus précisément, tout cela se trouve dans notre Hub de marketing interne, où n’importe qui dans l’entreprise peut rapidement trouver le contenu exact dont il a besoin, dès qu’il en a besoin.
 
 Nous avons vu des bénéfices importants de la construction d&#39;une chaîne d&#39;approvisionnement de contenu opérationnelle. Plus précisément, nous avons réduit de moitié notre entrée de données en double en effectuant une migration vers un seul système de gestion du travail. Et même s&#39;il y a toujours de la place pour l&#39;amélioration, nous savons que nous sommes sur la voie d&#39;un processus qui nous aidera à garder une longueur d&#39;avance sur les attentes des clients.
 
@@ -90,7 +90,7 @@ Nous avons vu des bénéfices importants de la construction d&#39;une chaîne d&
 
 La chaîne d&#39;approvisionnement de contenu n&#39;est pas une solution magique à tous vos problèmes. C’est une façon de travailler qui vous permet d’être plus efficace et de gérer toutes les expériences que vous souhaitez apporter à vos clients. Il faut ramper, avant de pouvoir marcher et courir.
 
-![ ](./images/crawl-walk-run.png)
+![&#x200B; &#x200B;](./images/crawl-walk-run.png)
 
 Et une fois que vous êtes enfin opérationnel, il y a une chose supplémentaire que vous pouvez obtenir de votre chaîne d&#39;approvisionnement de contenu de bout en bout : les insights. En effet, au bout d&#39;un certain temps, vous pouvez commencer à explorer comment certaines actions influencent le temps, le budget, ... Nous en parlerons aussi à la fin du bootcamp.
 

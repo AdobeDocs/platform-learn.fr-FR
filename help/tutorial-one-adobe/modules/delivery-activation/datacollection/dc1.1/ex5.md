@@ -54,7 +54,7 @@ Pour être utilisées par Analytics, les données XDM sont aplaties à l’aide 
 
 ### Règles de traitement
 
-Toutes les données collectées par Edge Network sont accessibles via [ règles de traitement ](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=fr). Dans Analytics, vous pouvez utiliser des règles de traitement pour incorporer des données contextuelles dans les variables Analytics.
+Toutes les données collectées par Edge Network sont accessibles via [&#x200B; règles de traitement &#x200B;](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=fr). Dans Analytics, vous pouvez utiliser des règles de traitement pour incorporer des données contextuelles dans les variables Analytics.
 
 ## Audience Manager sur Experience Platform Edge Network
 
@@ -72,21 +72,21 @@ Dans le coin supérieur droit de l’écran, sélectionnez le nom du sandbox, qu
 
 Tu verras ça. Pour activer Adobe Analytics, cliquez sur **Ajouter un service**.
 
-![ Débogueur AEP ](./images/aa2.png)
+![&#x200B; Débogueur AEP &#x200B;](./images/aa2.png)
 
 Tu verras ça. Sélectionnez le service **Adobe Analytics**, après quoi vous devrez ajouter la suite de rapports dans Adobe Analytics pour envoyer des données. Dans ce tutoriel, cela est hors de portée. Cliquez sur **Annuler**.
 
-![ Débogueur AEP ](./images/aa3.png)
+![&#x200B; Débogueur AEP &#x200B;](./images/aa3.png)
 
 ## Vérifier le flux de données pour envoyer des données à Adobe Audience Manager
 
 Tu verras ça. Pour activer Adobe Audience Manager, cliquez sur **Ajouter un service**.
 
-![ Débogueur AEP ](./images/aa2.png)
+![&#x200B; Débogueur AEP &#x200B;](./images/aa2.png)
 
 Tu verras ça. Sélectionnez le service **Adobe Audience Manager** après lequel vous pouvez décider d’activer ou de désactiver les destinations de cookie Adobe Audience Manager et/ou les destinations d’URL. Dans ce tutoriel, cette configuration est hors de portée. Cliquez sur **Annuler**.
 
-![ Débogueur AEP ](./images/aam1.png)
+![&#x200B; Débogueur AEP &#x200B;](./images/aam1.png)
 
 ## Étapes suivantes
 

@@ -27,7 +27,7 @@ Dans cette activité, nous allons créer une action Web SDK qui est l’équival
 1. Dans l’interface utilisateur de collecte de données et dans votre propriété, accédez à l’écran **[!UICONTROL Règles]** en le sélectionnant dans le volet de navigation de gauche.
 1. Sélectionnez la règle correspondant à votre **règle de chargement par défaut d’Analytics**. Si vous ne savez pas quelle règle est votre règle de chargement par défaut, adressez-vous à une personne qui connaît les règles et leur contenu. Là encore, nous recherchons une règle qui s’exécute sur chaque page, définit certaines variables par défaut (par exemple, le nom de la page), puis envoie une balise dans Analytics. Nous apporterons des modifications à cette règle. Le mien s&#39;appelle « All Pages - DOM Ready 50 », mais le vôtre pourrait porter n&#39;importe quel nom.
 
-   ![ Règle de chargement de page par défaut ](assets/default-page-load-rule.jpg)
+   ![&#x200B; Règle de chargement de page par défaut &#x200B;](assets/default-page-load-rule.jpg)
 
 1. Pour migrer les actions en cours de l’extension Analytics vers l’extension Web SDK, nous devons connaître les variables définies. Par conséquent, cliquez sur l’action **Adobe Analytics - Définir les variables** afin de voir quelles variables sont définies (par exemple PageName, props, eVars, événements, etc.).
 

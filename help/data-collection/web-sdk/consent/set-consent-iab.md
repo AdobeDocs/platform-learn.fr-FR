@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Définir le consentement à l’aide de la norme IAB TCF 2.0
 
-Découvrez comment utiliser Adobe Experience Platform Web SDK pour définir les valeurs de consentement conformément à la norme IAB TCF 2.0. Pour plus d’informations, consultez la documentation sur la prise en charge d’[ IAB FCF 2.0 dans Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=fr).
+Découvrez comment utiliser Adobe Experience Platform Web SDK pour définir les valeurs de consentement conformément à la norme IAB TCF 2.0. Pour plus d’informations, consultez la documentation sur la prise en charge d’[&#x200B; IAB FCF 2.0 dans Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html?lang=fr).
 
 >[!NOTE]
 >

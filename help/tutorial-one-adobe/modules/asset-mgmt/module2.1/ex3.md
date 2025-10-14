@@ -175,11 +175,11 @@ Maintenant que votre bloc de devis de base est défini et validé dans le projet
 
 Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Cliquez sur votre **Programme** pour l’ouvrir.
 
-![ AEMCS ](./images/aemcs6.png)
+![&#x200B; AEMCS &#x200B;](./images/aemcs6.png)
 
 Cliquez ensuite sur le **de 3 points...** dans l’onglet **Environnements** et cliquez sur **Afficher les détails**.
 
-![ AEMCS ](./images/aemcs9.png)
+![&#x200B; AEMCS &#x200B;](./images/aemcs9.png)
 
 Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de votre environnement de **création**.
 
@@ -187,19 +187,19 @@ Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de 
 >
 >Il est possible que votre environnement soit mis en veille. Si c’est le cas, vous devrez d’abord réactiver votre environnement.
 
-![ AEMCS ](./images/aemcs10.png)
+![&#x200B; AEMCS &#x200B;](./images/aemcs10.png)
 
 Vous devriez alors voir votre environnement de création AEM. Accédez à **Sites**.
 
-![ AEMCS ](./images/block21.png)
+![&#x200B; AEMCS &#x200B;](./images/block21.png)
 
 Accédez à **CitiSignal**. Cliquez sur **Créer** puis sélectionnez **Page**.
 
-![ AEMCS ](./images/block23.png)
+![&#x200B; AEMCS &#x200B;](./images/block23.png)
 
 Sélectionnez **Page** et cliquez sur **Suivant**.
 
-![ AEMCS ](./images/block24.png)
+![&#x200B; AEMCS &#x200B;](./images/block24.png)
 
 Saisissez les valeurs suivantes :
 
@@ -209,43 +209,43 @@ Saisissez les valeurs suivantes :
 
 Cliquez sur **Créer**.
 
-![ AEMCS ](./images/block25.png)
+![&#x200B; AEMCS &#x200B;](./images/block25.png)
 
 Sélectionnez **Ouvrir**.
 
-![ AEMCS ](./images/block22.png)
+![&#x200B; AEMCS &#x200B;](./images/block22.png)
 
 Vous devriez alors voir ceci.
 
-![ AEMCS ](./images/block26.png)
+![&#x200B; AEMCS &#x200B;](./images/block26.png)
 
 Cliquez dans la zone vierge pour sélectionner le composant **section**. Cliquez ensuite sur l’icône plus **+** dans le menu de droite.
 
-![ AEMCS ](./images/block27.png)
+![&#x200B; AEMCS &#x200B;](./images/block27.png)
 
 Votre bloc personnalisé doit alors s’afficher dans la liste des blocs disponibles. Cliquez pour le sélectionner.
 
-![ AEMCS ](./images/block28.png)
+![&#x200B; AEMCS &#x200B;](./images/block28.png)
 
 Des champs tels que **Texte de l’offre**, **CTA de l’offre** et **Image de l’offre** sont alors ajoutés à l’éditeur. Cliquez sur **+ Ajouter** dans le champ **Image de l’offre** pour sélectionner une image.
 
-![ AEMCS ](./images/block29.png)
+![&#x200B; AEMCS &#x200B;](./images/block29.png)
 
 Vous devriez alors voir ceci. Cliquez pour ouvrir le dossier **citisignal**.
 
-![ AEMCS ](./images/blockpub1.png)
+![&#x200B; AEMCS &#x200B;](./images/blockpub1.png)
 
 Sélectionnez l’image **product-enrichment-1.png**. Cliquez sur **Sélectionner**.
 
-![ AEMCS ](./images/blockpub2.png)
+![&#x200B; AEMCS &#x200B;](./images/blockpub2.png)
 
 Tu devrais avoir ça. Cliquez sur **Publier**.
 
-![ AEMCS ](./images/blockpub3.png)
+![&#x200B; AEMCS &#x200B;](./images/blockpub3.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![ AEMCS ](./images/blockpub4.png)
+![&#x200B; AEMCS &#x200B;](./images/blockpub4.png)
 
 Votre nouvelle page a été publiée.
 
@@ -253,31 +253,31 @@ Votre nouvelle page a été publiée.
 
 Dans votre présentation AEM Sites, accédez à **CitiSignal** et cochez la case du fichier **Header/nav**. Cliquez sur **Modifier**.
 
-![ AEMCS ](./images/nav0.png)
+![&#x200B; AEMCS &#x200B;](./images/nav0.png)
 
 Sélectionnez le champ **Texte** dans l’écran d’aperçu, puis cliquez sur le champ **Texte** sur le côté droit de l’écran pour le modifier.
 
-![ AEMCS ](./images/nav0a.png)
+![&#x200B; AEMCS &#x200B;](./images/nav0a.png)
 
 Ajoutez une option de menu au menu de navigation avec le `Fiber` texte. Sélectionnez le texte **Fibre** et cliquez sur l’icône **lien**.
 
-![ AEMCS ](./images/nav1.png)
+![&#x200B; AEMCS &#x200B;](./images/nav1.png)
 
 Saisissez ceci pour le **&#x200B;**&#x200B;URL`/content/CitiSignal/fiber.html` et cliquez sur l’icône **V** pour confirmer.
 
-![ AEMCS ](./images/nav3.png)
+![&#x200B; AEMCS &#x200B;](./images/nav3.png)
 
 Tu devrais avoir ça. Cliquez sur **Terminé**.
 
-![ AEMCS ](./images/nav4.png)
+![&#x200B; AEMCS &#x200B;](./images/nav4.png)
 
 Tu devrais avoir ça. Cliquez sur **Publier**.
 
-![ AEMCS ](./images/nav4a.png)
+![&#x200B; AEMCS &#x200B;](./images/nav4a.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![ AEMCS ](./images/nav5.png)
+![&#x200B; AEMCS &#x200B;](./images/nav5.png)
 
 Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
@@ -286,11 +286,11 @@ Dans cet exemple, l’URL complète devient :
 
 Vous devriez alors voir ceci. Cliquez sur **Fibre**.
 
-![ AEMCS ](./images/nav6.png)
+![&#x200B; AEMCS &#x200B;](./images/nav6.png)
 
 Voici votre bloc personnalisé de base, mais désormais rendu sur le site web.
 
-![ AEMCS ](./images/nav7.png)
+![&#x200B; AEMCS &#x200B;](./images/nav7.png)
 
 Étape suivante : [bloc personnalisé avancé](./ex4.md){target="_blank"}
 

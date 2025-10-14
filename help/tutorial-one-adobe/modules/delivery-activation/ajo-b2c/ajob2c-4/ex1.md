@@ -15,11 +15,11 @@ ht-degree: 8%
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## 3.4.1.1 Créer votre événement
 
@@ -104,11 +104,11 @@ Ensuite, sous **Actions**, recherchez l’action **E-mail** et ajoutez-la à la 
 
 Définissez la **Catégorie** sur **Marketing** et sélectionnez une surface d’e-mail qui vous permet d’envoyer un e-mail. Dans ce cas, la surface d’e-mail à sélectionner est **Email**. L’étape suivante consiste à créer votre message. Pour ce faire, cliquez sur **Modifier le contenu**.
 
-![ACOP ](./images/journeyactions1.png)
+![ACOP &#x200B;](./images/journeyactions1.png)
 
 Vous voyez maintenant ceci. Cliquez sur le champ de texte **Objet**.
 
-![ACOP ](./images/journeyactions3.png)
+![ACOP &#x200B;](./images/journeyactions3.png)
 
 Dans la zone de texte, commencez à écrire des `Thanks for your order, ` et cliquez sur l’icône **Personalization**.
 
@@ -132,7 +132,7 @@ Effectuez un glisser-déposer 8 fois par colonne **1:1** sur la zone de travail,
 
 ![Journey Optimizer](./images/oc9.png)
 
-Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le [ 3.1.2.1](./../ajob2c-1/ex2.md)exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le [ 3.1.2.2](./../ajob2c-1/ex2.md)exercice) sur le dernier composant de la zone de travail.
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le [&#x200B; 3.1.2.1](./../ajob2c-1/ex2.md)exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le [&#x200B; 3.1.2.2](./../ajob2c-1/ex2.md)exercice) sur le dernier composant de la zone de travail.
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -373,27 +373,27 @@ Testons le parcours mis à jour en achetant un produit sur le site web de démon
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN ](./../../datacollection/dc1.1/images/web8.png)
+![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN ](../../../getting-started/gettingstarted/images/web7.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
 
 Affichez le panneau Visionneuse de profils et le profil client en temps réel avec l’Experience Cloud ID **&#x200B;**&#x200B;comme identifiant principal pour ce client actuellement inconnu.
 

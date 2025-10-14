@@ -48,7 +48,7 @@ Dans cet exercice, vous allez configurer le site web afin de pouvoir l’utilise
 
 Dans cet exercice, vous allez configurer l’application mobile afin de pouvoir l’utiliser pour des démonstrations et l’activation.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

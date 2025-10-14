@@ -147,7 +147,7 @@ Cliquez sur le bouton **Enregistrer et créer pour développement**.
 
 La création de la bibliothèque peut prendre quelques minutes et, lorsqu’elle est terminée, un point vert s’affiche à gauche du nom de la bibliothèque.
 
-![ Bibliothèque de contenu ](./images/publish2.png)
+![&#x200B; Bibliothèque de contenu &#x200B;](./images/publish2.png)
 
 Comme vous pouvez le voir dans l’écran Flux de publication , le processus de publication dans la collecte de données Adobe Experience Platform est beaucoup plus complexe, et dépasse la portée de ce tutoriel. Nous allons simplement utiliser une seule bibliothèque dans notre environnement de développement.
 

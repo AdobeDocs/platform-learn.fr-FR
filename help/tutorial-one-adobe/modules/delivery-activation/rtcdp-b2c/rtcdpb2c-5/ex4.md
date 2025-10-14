@@ -195,27 +195,27 @@ Au bout de quelques minutes, vous verrez que le déploiement est terminé et pr�
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN ](./../../datacollection/dc1.1/images/web8.png)
+![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN ](../../../getting-started/gettingstarted/images/web3.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN ](../../../getting-started/gettingstarted/images/web4.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN ](../../../getting-started/gettingstarted/images/web5.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN ](../../../getting-started/gettingstarted/images/web6.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN ](../../../getting-started/gettingstarted/images/web7.png)
+![DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
 
 Basculez votre vue sur votre Google Cloud Pub/Sub et accédez à **MESSAGES**. Cliquez sur **EXTRAIRE** et au bout de quelques secondes, vous verrez des messages dans la liste. Cliquez sur un message pour visualiser son contenu.
 

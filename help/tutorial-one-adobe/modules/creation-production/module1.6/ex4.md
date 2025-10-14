@@ -81,7 +81,7 @@ Votre application est maintenant approuvée et fonctionnera automatiquement dans
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [GenStudio for Performance Marketing - Extensibilité](./genstudioext.md){target="_blank"}
 

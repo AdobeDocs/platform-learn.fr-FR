@@ -354,7 +354,7 @@ Tout d’abord, nous devons créer un schéma pour le catalogue de produits de L
 1. Sélectionnez le bouton **[!UICONTROL Créer]**.
    ![Créer une classe](assets/schemas-productClass.png)
 1. La **classe de catalogue de produits Luma** que vous avez créée apparaît dans le tableau Classes ci-dessous. Assurez-vous que la classe est sélectionnée, puis sélectionnez **[!UICONTROL Suivant]**.
-   ![ Nouvelle classe ajoutée ](assets/schemas-productClassSelected.png)
+   ![&#x200B; Nouvelle classe ajoutée &#x200B;](assets/schemas-productClassSelected.png)
 1. Nommez le schéma `Luma Product Catalog Schema`.
 1. Créez un nouveau [!UICONTROL groupe de champs] appelé `Luma Product Catalog field group` avec les champs suivants :
    1. productName : nom du produit : chaîne

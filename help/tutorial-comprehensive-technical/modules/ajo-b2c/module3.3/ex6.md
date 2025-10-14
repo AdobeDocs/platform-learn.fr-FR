@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >Si vous êtes un employé Adobe, veuillez suivre les instructions ici pour utiliser [PostBuster](./../../../postbuster.md).
 
-Téléchargez [cette collection Postman pour l’Offer decisioning ](./../../../assets/postman/postman_offer-decisioning.zip) sur votre bureau et décompressez-la. Voici ce que vous obtiendrez :
+Téléchargez [cette collection Postman pour l’Offer decisioning &#x200B;](./../../../assets/postman/postman_offer-decisioning.zip) sur votre bureau et décompressez-la. Voici ce que vous obtiendrez :
 
 API ![OD](./images/unzip.png)
 

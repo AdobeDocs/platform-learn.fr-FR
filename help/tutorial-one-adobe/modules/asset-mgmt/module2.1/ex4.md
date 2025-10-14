@@ -17,7 +17,7 @@ Dans l’exercice précédent, vous avez configuré un bloc personnalisé de bas
 
 Vous pouvez maintenant continuer à travailler sur ce bloc.
 
-![ AEMCS ](./images/nav7.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/nav7.png){zoomable="yes"}
 
 ## 1.1.4.1 Donner un style à votre bloc
 
@@ -25,23 +25,23 @@ Maintenant que vous disposez d’un bloc **fiberoffer** fonctionnel, vous pouvez
 
 Revenez à Visual Studio Code et ouvrez le dossier **blocs**. Vous devriez maintenant voir plusieurs dossiers qui font référence à un bloc spécifique. Pour rendre votre bloc **fiberoffer** plus avancé, vous devez maintenant créer un dossier pour votre bloc personnalisé.
 
-![ AEMCS ](./images/blockadv1.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv1.png){zoomable="yes"}
 
 Sélectionnez le dossier **blocs**, puis cliquez sur l’icône **Créer un dossier**.
 
-![ AEMCS ](./images/blockadv2.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv2.png){zoomable="yes"}
 
 Nommez votre `fiberoffer` de dossier et appuyez sur **entrée**.
 
-![ AEMCS ](./images/blockadv3.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv3.png){zoomable="yes"}
 
 Sélectionnez le nouveau dossier **fiberoffer** et cliquez sur l’icône **Créer un fichier**.
 
-![ AEMCS ](./images/blockadv4.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv4.png){zoomable="yes"}
 
 Un nouveau fichier est maintenant créé. Saisissez le nom **fiberoffer.js** et appuyez sur Entrée.
 
-![ AEMCS ](./images/blockadv5.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv5.png){zoomable="yes"}
 
 Vous pouvez désormais implémenter la décoration de bloc en ajoutant le code JavaScript suivant dans le fichier **fiberoffer.js**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![ AEMCS ](./images/blockadv6.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv6.png){zoomable="yes"}
 
 Sélectionnez le nouveau dossier **fiberoffer** et cliquez de nouveau sur l’icône **Créer un fichier**.
 
-![ AEMCS ](./images/blockadv7.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv7.png){zoomable="yes"}
 
 Un nouveau fichier est maintenant créé. Saisissez le nom **fiberoffer.css** et appuyez sur Entrée.
 
-![ AEMCS ](./images/blockadv8.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv8.png){zoomable="yes"}
 
 Copiez et collez le code CSS suivant dans le fichier nouvellement créé.
 
@@ -88,7 +88,7 @@ Copiez et collez le code CSS suivant dans le fichier nouvellement créé.
 
 Enregistrez vos modifications.
 
-![ AEMCS ](./images/blockadv9.png){zoomable="yes"}
+![&#x200B; AEMCS &#x200B;](./images/blockadv9.png){zoomable="yes"}
 
 Vous avez apporté plusieurs modifications à votre projet qui doivent être validées dans votre référentiel GitHub. Pour ce faire, ouvrez **GitHub Desktop**.
 

@@ -175,7 +175,7 @@ Pour créer l&#39;emplacement, procédez comme suit :
 1. Une fois l&#39;emplacement créé, il s&#39;affiche dans la liste des emplacements.
 1. Sélectionnez la ligne contenant votre nouvel emplacement et notez l’ID d’emplacement, car cela peut être nécessaire pour la configuration dans votre portée de décision.
 
-   ![Voir ID d’emplacement ](assets/decisioning-placement-id.png)
+   ![Voir ID d’emplacement &#x200B;](assets/decisioning-placement-id.png)
 
 ### Règles de décision pour le statut de fidélité
 

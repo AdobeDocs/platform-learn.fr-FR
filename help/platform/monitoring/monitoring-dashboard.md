@@ -16,6 +16,6 @@ ht-degree: 61%
 
 # Surveiller l’ingestion des données
 
-Découvrez comment surveiller et suivre les données qui sont ingérées dans Adobe Experience Platform à l’aide du tableau de bord de surveillance. Ce tableau de bord de surveillance fournit une vue de haut en bas du traitement des données sources via le lac de données vers les services de profil et d’identité, avec des informations exploitables. Pour plus d’informations, consultez la [documentation ](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=fr).
+Découvrez comment surveiller et suivre les données qui sont ingérées dans Adobe Experience Platform à l’aide du tableau de bord de surveillance. Ce tableau de bord de surveillance fournit une vue de haut en bas du traitement des données sources via le lac de données vers les services de profil et d’identité, avec des informations exploitables. Pour plus d’informations, consultez la [documentation &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/347008?learn=on&enablevpops&captions=fre_fr)

@@ -194,7 +194,7 @@ Edge.sendEvent(productViewEvent, null)
 >[!ENDTABS]
 
 
-L’API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) est l’équivalent du SDK Mobile AEP des appels API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) et [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate). Consultez [ Migration de l’extension mobile Analytics vers Adobe Experience Platform Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) pour plus d’informations.
+L’API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) est l’équivalent du SDK Mobile AEP des appels API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) et [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate). Consultez [&#x200B; Migration de l’extension mobile Analytics vers Adobe Experience Platform Edge Network &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) pour plus d’informations.
 
 Vous êtes sur le point d’implémenter ce code dans votre projet.
 Votre application comporte différentes actions liées à des produits commerciaux et vous souhaitez envoyer des événements en fonction de ces actions, telles qu’elles sont effectuées par l’utilisateur :
@@ -610,7 +610,7 @@ Là encore, implémentez ce code dans votre projet.
       * met en place un événement d’expérience à l’aide de la carte,
       * envoie l’événement d’expérience à l’aide de l’API [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent).
 
-1. Accédez à **[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
+1. Accédez à **[!UICONTROL Android]** ![ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B; views &#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
 
    1. Ajoutez le code en surbrillance suivant à l’événement **[!UICONTROL Button]** **[!UICONTROL onClick]** :
 
@@ -640,7 +640,7 @@ Là encore, implémentez ce code dans votre projet.
    1. Sélectionnez un produit.
    1. Sélectionnez ![Cœur](/help/assets/icons/Heart.svg) (iOS) ou ![ThumbUp](/help/assets/icons/ThumbUp.svg) (Android).
    1. Sélectionnez ![ShoppingCartAdd](/help/assets/icons/ShoppingCart.svg).
-   1. Sélectionnez ![ Carte de crédit ](/help/assets/icons/CreditCard.svg).
+   1. Sélectionnez ![&#x200B; Carte de crédit &#x200B;](/help/assets/icons/CreditCard.svg).
 
 >[!BEGINTABS]
 

@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Tutoriel technique complet - One Adobe
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -208,7 +208,7 @@ Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Serv
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -21,11 +21,11 @@ Les applications Adobe Experience Cloud ont traditionnellement généré des coo
 1. Cookies propriétaires définis par un serveur Adobe à l’aide de la configuration CNAME d’un nom de domaine
 1. Cookies propriétaires définis par JavaScript
 
-Les modifications récentes du navigateur limitent la durée de ces types de cookies. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur détenu par le client à l’aide d’un enregistrement DNS A/AAAA plutôt que d’un CNAME DNS. La fonctionnalité [ d’identifiant d’appareil propriétaire (FPID)](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/identity/first-party-device-ids) permet aux clients qui implémentent le SDK Web de Adobe Experience Platform d’utiliser des identifiants d’appareil dans des cookies provenant de serveurs utilisant des enregistrements DNS A/AAAA. Ces identifiants peuvent ensuite être envoyés à Adobe et utilisés comme graines pour générer des identifiants Experience Cloud (ECID), qui reste l’identifiant principal dans les applications Adobe Experience Cloud.
+Les modifications récentes du navigateur limitent la durée de ces types de cookies. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur détenu par le client à l’aide d’un enregistrement DNS A/AAAA plutôt que d’un CNAME DNS. La fonctionnalité [&#x200B; d’identifiant d’appareil propriétaire (FPID)](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/identity/first-party-device-ids) permet aux clients qui implémentent le SDK Web de Adobe Experience Platform d’utiliser des identifiants d’appareil dans des cookies provenant de serveurs utilisant des enregistrements DNS A/AAAA. Ces identifiants peuvent ensuite être envoyés à Adobe et utilisés comme graines pour générer des identifiants Experience Cloud (ECID), qui reste l’identifiant principal dans les applications Adobe Experience Cloud.
 
 Voici un exemple rapide du fonctionnement de cette fonctionnalité :
 
-![ ID d’appareils propriétaires (FPID) et ID Experience Cloud (ECID)](../assets/kt-9728.png)
+![&#x200B; ID d’appareils propriétaires (FPID) et ID Experience Cloud (ECID)](../assets/kt-9728.png)
 
 1. Le navigateur d’un utilisateur final demande une page Web au serveur Web ou au réseau de diffusion de contenu d’un client.
 1. Le client génère un identifiant d’appareil (FPID) sur son serveur web ou CDN (le serveur web doit être associé à l’enregistrement DNS A/AAAA du nom de domaine).

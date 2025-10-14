@@ -15,11 +15,11 @@ ht-degree: 9%
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Cliquez sur **Journey Optimizer**.
 
-![ Traductions ](./images/ajolp1.png)
+![&#x200B; Traductions &#x200B;](./images/ajolp1.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`.
 
-![ACOP ](./images/ajolp2.png)
+![ACOP &#x200B;](./images/ajolp2.png)
 
 >[!NOTE]
 >
@@ -31,11 +31,11 @@ Dans le menu de gauche, cliquez sur **Fragments**. Un fragment est un composant 
 
 Cliquez sur **Créer un fragment**.
 
-![ACOP ](./images/fragm1.png)
+![ACOP &#x200B;](./images/fragm1.png)
 
 Saisissez le `--aepUserLdap-- - CitiSignal - Header` de nom et sélectionnez le **Type : fragment visuel**. Cliquez sur **Créer**.
 
-![ACOP ](./images/fragm2.png)
+![ACOP &#x200B;](./images/fragm2.png)
 
 Tu verras ça. Dans le menu de gauche, vous trouverez les composants de structure que vous pouvez utiliser pour définir la structure de l’e-mail (lignes et colonnes).
 

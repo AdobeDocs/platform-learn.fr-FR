@@ -39,7 +39,7 @@ Dans cet exercice, vous allez configurer un certain nombre de paramètres de bas
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

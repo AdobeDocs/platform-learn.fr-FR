@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations[ voir ](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) Paramètres de flux de données .
+>L’activation de chacun des services utilisés par votre organisation garantit que les données collectées dans l’application mobile peuvent être utilisées partout. Pour plus d’informations[&#x200B; voir &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) Paramètres de flux de données .
 
 Lors de l’implémentation de Platform Mobile SDK dans votre propre application, vous devez créer trois flux de données à mapper à vos trois environnements de balises (développement, évaluation et production). Si vous utilisez Platform Mobile SDK avec des applications basées sur Platform, telles qu’Adobe Real-Time Customer Data Platform ou Adobe Journey Optimizer, vous devez veiller à créer ces flux de données dans les sandbox appropriés.
 

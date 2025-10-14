@@ -250,7 +250,7 @@ Comme vous pouvez le voir sur l’écran [!UICONTROL Flux de publication], le pr
 
 Experience Platform Debugger est une extension disponible pour les navigateurs Chrome et Firefox qui vous permet de voir la technologie Adobe mise en œuvre dans vos pages web. Téléchargez la version correspondant au navigateur de votre choix :
 
-* [Extension Firefox ](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
+* [Extension Firefox &#x200B;](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
 * [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Si vous n’avez jamais utilisé le débogueur auparavant (et que celui-ci est différent de l’ancien débogueur Adobe Experience Cloud), vous pouvez regarder cette vidéo de présentation de cinq minutes :
@@ -473,4 +473,4 @@ Très bon travail ! C’était beaucoup d’informations sur Web SDK et Launch.
 
 Ingénieurs de données, si vous le souhaitez, vous pouvez passer à la leçon [exécuter des requêtes](run-queries.md).
 
-Architectes de données, vous pouvez passer aux [ politiques de fusion ](create-merge-policies.md)
+Architectes de données, vous pouvez passer aux [&#x200B; politiques de fusion &#x200B;](create-merge-policies.md)

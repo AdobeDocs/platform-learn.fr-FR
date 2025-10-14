@@ -217,8 +217,8 @@ Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
-Revenez à [ Utilisation des API Photoshop ](./ex3.md){target="_blank"}
+Revenez à [&#x200B; Utilisation des API Photoshop &#x200B;](./ex3.md){target="_blank"}
 
-Revenez à [ Présentation de Adobe Firefly Services ](./firefly-services.md){target="_blank"}
+Revenez à [&#x200B; Présentation de Adobe Firefly Services &#x200B;](./firefly-services.md){target="_blank"}

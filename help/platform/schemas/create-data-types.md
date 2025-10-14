@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Création de types de données
 
-Cette vidéo montre comment créer vos propres types de données dans Adobe Experience Platform en vue de les utiliser dans les schémas de modèle de données d’expérience (XDM). Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
+Cette vidéo montre comment créer vos propres types de données dans Adobe Experience Platform en vue de les utiliser dans les schémas de modèle de données d’expérience (XDM). Pour plus d’informations, consultez la [&#x200B; documentation sur les schémas &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413616?learn=on&enablevpops&captions=fre_fr)

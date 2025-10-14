@@ -28,11 +28,11 @@ Examinons-les une par une.
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## Jeu de données de notification push 3.3.1.1
 
@@ -76,7 +76,7 @@ Vous utilisez déjà ces propriétés de balises de collecte de données dans le
 
 Cliquez pour ouvrir la propriété Collecte de données pour les appareils mobiles.
 
-![DSN ](./images/launchprop.png)
+![DSN &#x200B;](./images/launchprop.png)
 
 Dans votre propriété Collecte de données, accédez à **Extensions**. Vous verrez ensuite les différentes extensions nécessaires pour l’application mobile. Cliquez pour sélectionner l’extension **Adobe Experience Platform Edge Network** puis sélectionnez **Configurer**.
 
@@ -112,47 +112,47 @@ Vous verrez ensuite la surface d’application configurée pour iOS et Android.
 
 Vous avez déjà installé l’application mobile **DX Demo** dans le cadre du module **Prise en main**. Une fois l&#39;application installée, vous la trouverez sur l&#39;écran d&#39;accueil de votre appareil. Cliquez sur l’icône pour ouvrir l’application.
 
-![DSN ](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
+![DSN &#x200B;](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
 Après vous être connecté, une notification s’affichera pour vous demander l’autorisation d’envoyer des notifications. Nous enverrons des notifications dans le cadre du tutoriel. Cliquez donc sur **Autoriser**.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
 Vous verrez alors la page d’accueil de l’application. Accédez à **Paramètres**.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
 Dans les paramètres, vous verrez qu’un **Projet public** est actuellement chargé dans l’application. Cliquez sur **Projet personnalisé**.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
 Vous pouvez désormais charger un projet personnalisé. Cliquez sur le code QR pour charger facilement votre projet.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
 Après avoir parcouru la section **Prise en main**, vous avez obtenu le résultat suivant. Cliquez pour ouvrir le **Projet de vente au détail mobile** qui a été créé pour vous.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/dsn5b.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/dsn5b.png)
 
 Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour des sessions de démonstration ou d’activation ultérieures, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com/projects](https://dsn.adobe.com/projects). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur votre projet d’application mobile pour l’ouvrir.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/web8a.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/web8a.png)
 
 Cliquez ensuite sur **Exécuter**.
 
-![DSN ](./images/web8b.png)
+![DSN &#x200B;](./images/web8b.png)
 
 Vous verrez ensuite cette fenêtre contextuelle, qui contient un code QR. Scannez ce code QR à partir de l’application mobile.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
 
 Votre ID de projet s’affiche alors dans l’application, après quoi vous pouvez cliquer sur **Basculer**.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
 
 Votre application est maintenant prête à être utilisée.
 
-![DSN ](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
+![DSN &#x200B;](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
 
 Vous devez maintenant scanner un code QR pour connecter votre appareil mobile à votre session Assurance.
 

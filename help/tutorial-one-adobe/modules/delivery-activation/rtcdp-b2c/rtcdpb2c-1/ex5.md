@@ -58,7 +58,7 @@ Vous verrez maintenant les informations qui seraient idéalement affichées dans
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenez au [profil client en temps réel](./real-time-customer-profile.md){target="_blank"}
 

@@ -30,7 +30,7 @@ La fonctionnalité [Adobe Developer Console](https://developer.adobe.com/console
 >
 > Après avoir créé vos informations d’identification API, un administrateur système doit les associer à un rôle dans Experience Platform.
 >
->Pour obtenir des instructions détaillées, consultez le tutoriel [Ajout de développeurs et octroi d’autorisations aux informations d’identification d’API ](../admin/add-developers.md).
+>Pour obtenir des instructions détaillées, consultez le tutoriel [Ajout de développeurs et octroi d’autorisations aux informations d’identification d’API &#x200B;](../admin/add-developers.md).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/31635/?learn=on&enablevpops&captions=fre_fr)

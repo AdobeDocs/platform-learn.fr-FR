@@ -15,11 +15,11 @@ ht-degree: 7%
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## 3.4.2.1 Créer une audience
 
@@ -95,7 +95,7 @@ Effectuez un glisser-déposer 3 fois par colonne **1:1** sur la zone de travail,
 
 ![Journey Optimizer](./images/campaign8.png)
 
-Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le [ 3.1.2.1](./../ajob2c-1/ex2.md)exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le [ 3.1.2.2](./../ajob2c-1/ex2.md)exercice) sur le dernier composant de la zone de travail.
+Dans le menu de gauche, accédez à **Fragments**. Faites glisser l’en-tête que vous avez créé précédemment dans le [&#x200B; 3.1.2.1](./../ajob2c-1/ex2.md)exercice) sur le premier composant de la zone de travail. Faites glisser le pied de page que vous avez créé précédemment dans le [&#x200B; 3.1.2.2](./../ajob2c-1/ex2.md)exercice) sur le dernier composant de la zone de travail.
 
 ![Journey Optimizer](./images/campaign9.png)
 

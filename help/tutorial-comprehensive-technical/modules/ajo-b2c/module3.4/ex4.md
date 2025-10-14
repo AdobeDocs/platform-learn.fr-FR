@@ -27,11 +27,11 @@ Examinons-les une par une.
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## Jeu de données de notification push 3.4.4.1
 
@@ -74,7 +74,7 @@ Vous utilisez déjà ces propriétés du client de collecte de données dans le 
 
 Cliquez pour ouvrir la propriété Collecte de données pour les appareils mobiles.
 
-![DSN ](./images/launchprop.png)
+![DSN &#x200B;](./images/launchprop.png)
 
 Dans votre propriété Collecte de données, accédez à **Extensions**. Vous verrez ensuite les différentes extensions nécessaires pour l’application mobile. Cliquez pour ouvrir l’extension **Adobe Experience Platform Edge Network**.
 
@@ -112,51 +112,51 @@ Vous verrez ensuite la surface d’application configurée pour iOS et Android.
 
 Une fois l&#39;application installée, vous la trouverez sur l&#39;écran d&#39;accueil de votre appareil. Cliquez sur l’icône pour ouvrir l’application.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn1.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn1.png)
 
 Lorsque vous utilisez l’application pour la première fois, il vous sera demandé de vous connecter à l’aide de votre Adobe ID. Terminez le processus de connexion.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn2.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn2.png)
 
 Après vous être connecté, une notification s’affichera pour vous demander l’autorisation d’envoyer des notifications. Nous enverrons des notifications dans le cadre du tutoriel. Cliquez donc sur **Autoriser**.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn3.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn3.png)
 
 Vous verrez alors la page d’accueil de l’application. Accédez à **Paramètres**.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn4.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn4.png)
 
 Dans les paramètres, vous verrez qu’un **Projet public** est actuellement chargé dans l’application. Cliquez sur **Projet personnalisé**.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn5.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn5.png)
 
 Vous pouvez désormais charger un projet personnalisé. Cliquez sur le code QR pour charger facilement votre projet.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
 Après avoir parcouru la section **Prise en main**, vous avez obtenu le résultat suivant. Cliquez pour ouvrir le **Projet de vente au détail mobile** qui a été créé pour vous.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
 Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour des sessions de démonstration ou d’activation ultérieures, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com/projects](https://dsn.adobe.com/projects). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur votre projet d’application mobile pour l’ouvrir.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
 Cliquez ensuite sur **Exécuter**.
 
-![DSN ](./images/web8b.png)
+![DSN &#x200B;](./images/web8b.png)
 
 Vous verrez ensuite cette fenêtre contextuelle, qui contient un code QR. Scannez ce code QR à partir de l’application mobile.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/web8c.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/web8c.png)
 
 Votre ID de projet s’affichera alors dans l’application, après quoi vous pourrez cliquer sur **Enregistrer**.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn7.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn7.png)
 
 Maintenant, revenez à **Accueil** dans l’application. Votre application est maintenant prête à être utilisée.
 
-![DSN ](./../../../modules/gettingstarted/gettingstarted/images/mobileappn8.png)
+![DSN &#x200B;](./../../../modules/gettingstarted/gettingstarted/images/mobileappn8.png)
 
 Vous devez maintenant scanner un code QR pour connecter votre appareil mobile à votre session AEP Assurance.
 
@@ -229,18 +229,18 @@ Si vous avez reçu la notification push, cela signifie que votre configuration e
 
 Accédez à **Journey Optimizer**. Dans le menu de gauche, accédez à **Configurations**, puis cliquez sur **Gérer** sous **Événements**.
 
-![ACOP ](./images/acopmenu.png)
+![ACOP &#x200B;](./images/acopmenu.png)
 
 Sur l’écran **Événements**, une vue similaire à celle-ci s’affiche. Cliquez sur **Créer un événement**.
 
-![ACOP ](./images/add.png)
+![ACOP &#x200B;](./images/add.png)
 
 Une configuration d’événement vide s’affiche alors.
 Tout d’abord, donnez à votre Événement un Nom comme celui-ci : `--aepUserLdap--StoreEntryEvent` et définissez la description sur `Store Entry Event`.
 La sélection suivante est **Type d’événement**. Sélectionnez **Unitaire**.
 La sélection suivante est **Type d’identifiant d’événement**. Sélectionnez **Système généré**.
 
-![ACOP ](./images/eventname.png)
+![ACOP &#x200B;](./images/eventname.png)
 
 Vient ensuite la sélection du schéma . Un schéma a été préparé pour cet exercice. Veuillez utiliser le `Demo System - Event Schema for Mobile App (Global v1.1) v.1` de schéma.
 
@@ -248,21 +248,21 @@ Après avoir sélectionné le schéma, vous verrez un certain nombre de champs s
 
 Cliquez sur **Enregistrer**.
 
-![ACOP ](./images/eventschema.png)
+![ACOP &#x200B;](./images/eventschema.png)
 
 Votre événement est maintenant configuré et enregistré. Cliquez à nouveau sur votre événement pour ouvrir à nouveau l’écran **Modifier l’événement**.
 
-![ACOP ](./images/eventdone.png)
+![ACOP &#x200B;](./images/eventdone.png)
 
 Pointez sur le champ **Payload** et cliquez sur l’icône **Afficher la payload**.
 
-![ACOP ](./images/hover.png)
+![ACOP &#x200B;](./images/hover.png)
 
 Un exemple de la payload attendue s’affiche maintenant.
 
 Votre événement possède un eventID d’orchestration unique, que vous pouvez trouver en faisant défiler cette payload jusqu’à ce que vous voyiez `_experience.campaign.orchestration.eventID`.
 
-![ACOP ](./images/payloadeventID.png)
+![ACOP &#x200B;](./images/payloadeventID.png)
 
 L’identifiant d’événement est ce qui doit être envoyé à Adobe Experience Platform afin de déclencher le Parcours que vous allez créer à l’étape suivante. Notez cet eventID, car vous en aurez besoin à l’étape suivante.
 `"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
@@ -273,15 +273,15 @@ Cliquez sur **Ok**, puis sur **Annuler**.
 
 Dans le menu, accédez à **Parcours** puis cliquez sur **Créer un Parcours**.
 
-![DSN ](./images/sjourney1.png)
+![DSN &#x200B;](./images/sjourney1.png)
 
 Tu verras ça. Donnez un nom à votre parcours. Utilisez `--aepUserLdap-- - Store Entry journey`. Cliquez sur **Enregistrer**.
 
-![DSN ](./images/sjourney3.png)
+![DSN &#x200B;](./images/sjourney3.png)
 
 Tout d’abord, vous devez ajouter votre événement comme point de départ de votre parcours. Recherchez le `--aepUserLdap--StoreEntryEvent` de votre événement et glissez-déposez-le sur la zone de travail. Cliquez sur **Enregistrer**.
 
-![DSN ](./images/sjourney4.png)
+![DSN &#x200B;](./images/sjourney4.png)
 
 Ensuite, sous **Actions**, recherchez l’action **Push**. Faites glisser et déposez l’action **Push** sur la zone de travail.
 
@@ -291,11 +291,11 @@ Définissez la **Catégorie** sur **Marketing** et sélectionnez une surface pus
 >
 >Un canal dans Journey Optimizer utilisant la **surface d’application** comme vérifié précédemment doit exister.
 
-![ACOP ](./images/journeyactions1push.png)
+![ACOP &#x200B;](./images/journeyactions1push.png)
 
 L’étape suivante consiste à créer votre message. Pour ce faire, cliquez sur **Modifier le contenu**.
 
-![ACOP ](./images/journeyactions2push.png)
+![ACOP &#x200B;](./images/journeyactions2push.png)
 
 Tu verras ça. Cliquez sur l’icône **personnalisation** pour le champ **Titre**.
 
@@ -327,19 +327,19 @@ Tu auras alors ceci. Cliquez sur la flèche dans le coin supérieur gauche pour 
 
 Cliquez sur **Enregistrer** pour fermer votre action push.
 
-![DSN ](./images/sjourney8.png)
+![DSN &#x200B;](./images/sjourney8.png)
 
 Cliquez sur **Publier**.
 
-![DSN ](./images/sjourney10.png)
+![DSN &#x200B;](./images/sjourney10.png)
 
 Cliquez de nouveau sur **Publish**.
 
-![DSN ](./images/sjourney10a.png)
+![DSN &#x200B;](./images/sjourney10a.png)
 
 Votre parcours est maintenant publié.
 
-![DSN ](./images/sjourney11.png)
+![DSN &#x200B;](./images/sjourney11.png)
 
 ## 3.4.4.8 Tester votre parcours et votre message push
 
@@ -349,13 +349,13 @@ Dans votre application mobile DX Demo 2.0, accédez à l’écran **Paramètres*
 >
 >Le bouton **Entrée de magasin** est en cours d’implémentation. Vous ne le trouverez pas encore dans l’application.
 
-![DSN ](./images/demo1b.png)
+![DSN &#x200B;](./images/demo1b.png)
 
 Veillez à fermer l’application immédiatement après avoir cliqué sur l’icône **Entrée de la boutique**, sinon le message push ne s’affichera pas.
 
 Au bout de quelques secondes, le message s’affiche.
 
-![DSN ](./images/demo2.png)
+![DSN &#x200B;](./images/demo2.png)
 
 Vous avez terminé cet exercice.
 

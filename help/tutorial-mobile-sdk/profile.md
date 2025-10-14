@@ -167,9 +167,9 @@ Pour plus d’informations, consultez la [référence de l’API](https://develo
 
 1. Sélectionnez **[!DNL Products]** dans la barre d’onglets.
 1. Sélectionnez un produit.
-1. Sélectionnez ![ Cœur ](/help/assets/icons/Heart.svg).
+1. Sélectionnez ![&#x200B; Cœur &#x200B;](/help/assets/icons/Heart.svg).
 1. Sélectionnez ![Panier](/help/assets/icons/ShoppingCart.svg).
-1. Sélectionnez ![ Carte de crédit ](/help/assets/icons/CreditCard.svg).
+1. Sélectionnez ![&#x200B; Carte de crédit &#x200B;](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
@@ -195,7 +195,7 @@ Pour plus d’informations, consultez la [référence de l’API](https://develo
 1. Sélectionnez un produit.
 1. Sélectionnez ![Pouce levé](/help/assets/icons/ThumbUp.svg)
 1. Sélectionnez ![Panier](/help/assets/icons/ShoppingCart.svg).
-1. Sélectionnez ![ Carte de crédit ](/help/assets/icons/CreditCard.svg).
+1. Sélectionnez ![&#x200B; Carte de crédit &#x200B;](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 

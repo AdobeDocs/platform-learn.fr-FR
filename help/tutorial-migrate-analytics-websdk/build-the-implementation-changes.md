@@ -32,7 +32,7 @@ Alors, construisons ce que nous avons fait jusqu&#39;à présent. D’ailleurs, 
 1. Sélectionnez l’environnement **Développement**.
 1. Sélectionnez **Ajouter toutes les ressources modifiées** pour ajouter tous les éléments sur lesquels vous avez travaillé.
 
-   ![Nouvelle bibliothèque ](assets/new-library-websdk-migration.jpg)
+   ![Nouvelle bibliothèque &#x200B;](assets/new-library-websdk-migration.jpg)
 
 1. Enregistrer et créer dans le développement
 
@@ -40,7 +40,7 @@ Alors, construisons ce que nous avons fait jusqu&#39;à présent. D’ailleurs, 
 
 1. Une fois la génération terminée, vous pourrez voir si elle a réussi. Placez le pointeur de la souris sur le point vert à gauche de la nouvelle bibliothèque de votre flux de publication. En fait, si le point vert est présent, il se termine correctement et vous le dira.
 
-   ![ Publication réussie ](assets/successful-publish.jpg)
+   ![&#x200B; Publication réussie &#x200B;](assets/successful-publish.jpg)
 
 ### Sélectionner une bibliothèque de travail
 

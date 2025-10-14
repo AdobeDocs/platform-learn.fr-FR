@@ -57,7 +57,7 @@ Explorons d&#39;abord notre modèle de contenu : c&#39;est le &quot;contrat&quot
 
 - Sur l’écran suivant, vous trouverez un aperçu de tous les sites qui utilisent du contenu sans interface utilisateur. Cela vous permet de maintenir la gouvernance sur plusieurs sites sans interface, sans avoir à craindre qu’ils n’interférent entre eux. Dans notre cas, nous travaillons avec notre site Adobe, alors sélectionnez ce modèle.
 
-![ différents sites sans interface ](./images/prod-app-cfm-folder.png)
+![&#x200B; différents sites sans interface &#x200B;](./images/prod-app-cfm-folder.png)
 
 - Dans ce dossier, nous pouvons voir du contenu technique sans tête que nous utilisons sur le site web d’Adobe. Vous souhaitez en savoir plus ? N&#39;hésitez pas à tendre la main. Pour l&#39;instant, concentrons-nous sur la tâche avant les mains : l&#39;application mobile. Pointez sur la carte Page d’accueil de l’application mobile, puis cliquez sur l’icône représentant un crayon pour ouvrir le modèle de contenu.
 

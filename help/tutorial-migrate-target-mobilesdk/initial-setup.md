@@ -37,7 +37,7 @@ Extensions de balise installées lors de l’utilisation de l’extension Offer 
 1. Identité
 1. AEP Assurance (facultatif, nécessaire pour le débogage)
 
-![ Extensions de balise installées lors de l’utilisation de l’extension Offer Decisioning et Target ](assets/tag-extensions-decisioning.png)
+![&#x200B; Extensions de balise installées lors de l’utilisation de l’extension Offer Decisioning et Target &#x200B;](assets/tag-extensions-decisioning.png)
 
 >[!TAB Extension cible]
 
@@ -48,13 +48,13 @@ Extensions de balise installées lors de l’utilisation de l’extension Target
 1. Profile
 1. Adobe Analytics (facultatif, nécessaire si vous utilisez Adobe Analytics en tant que source de création de rapports pour les activités Adobe Target)
 
-![ Extensions de balise installées lors de l’utilisation de l’extension Target ](assets/tag-extensions-target.png)
+![&#x200B; Extensions de balise installées lors de l’utilisation de l’extension Target &#x200B;](assets/tag-extensions-target.png)
 
 >[!ENDTABS]
 
 ## Configuration du flux de données
 
-L’extension cible comporte des [ paramètres configurables ](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) qui, avec l’extension de décision, sont [ configurés dans le flux de données](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
+L’extension cible comporte des [&#x200B; paramètres configurables &#x200B;](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) qui, avec l’extension de décision, sont [&#x200B; configurés dans le flux de données](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
 
 | Extension Target | Extension Offer Decisioning and Target | Notes |
 | --- | --- | --- | 

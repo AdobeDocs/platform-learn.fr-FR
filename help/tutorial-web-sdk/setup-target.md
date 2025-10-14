@@ -216,7 +216,7 @@ Le paramètre Rendre les décisions de personnalisation visuelle fait que Platfo
 >
 >En règle générale, le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] ne doit être activé que pour une seule action Envoyer l’événement par chargement de page complet. Si ce paramètre est activé pour plusieurs actions d’événement d’envoi, les requêtes de rendu suivantes sont ignorées.
 
-Si vous préférez effectuer vous-même le rendu ou une action sur ces décisions à l’aide de code personnalisé, vous pouvez laisser le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] désactivé. Platform Web SDK est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Vous pouvez consulter le guide pour plus d’informations sur le rendu manuel [ contenu personnalisé ](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/personalization/rendering-personalization-content).
+Si vous préférez effectuer vous-même le rendu ou une action sur ces décisions à l’aide de code personnalisé, vous pouvez laisser le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] désactivé. Platform Web SDK est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Vous pouvez consulter le guide pour plus d’informations sur le rendu manuel [&#x200B; contenu personnalisé &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Configuration d’une activité Target avec le compositeur d’expérience visuelle

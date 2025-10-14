@@ -153,7 +153,7 @@ Maintenant que nous avons soumis notre demande en tant que &quot;Demandeur&quot;
 
 - Dans la section &quot;Marketing - Nouvelles requêtes de campagne&quot;, vous trouverez la requête que vous venez de créer :
 
-![ Requête nouvellement créée](./images/wf-newly-created-request.png)
+![&#x200B; Requête nouvellement créée](./images/wf-newly-created-request.png)
 
 - Cliquez sur le nom de la requête :
 

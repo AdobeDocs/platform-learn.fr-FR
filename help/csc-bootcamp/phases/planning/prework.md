@@ -30,7 +30,7 @@ Comme indiqué dans le dossier de création, certaines ressources seront nécess
 
 - Une fois que la hiérarchie des dossiers AEM s’affiche, accédez au chemin suivant : experience-manager > Adobe Bike Assets > Vélos Sélectionnez 5 ressources, puis cliquez sur « Lien ».
 
-![ ressources sélectionnées ](./images/selected-assets.png)
+![&#x200B; ressources sélectionnées &#x200B;](./images/selected-assets.png)
 
 - Nous avons désormais nos ressources de marque à notre disposition. Cela signifie que nous pouvons définir la tâche 2 comme 100 % terminée :
 

@@ -39,11 +39,11 @@ L’utilisation de l’Offer decisioning nécessite la compréhension des concep
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Dans le menu de gauche, cliquez sur **Offres**. Vous verrez maintenant le menu Offres , qui contient des éléments tels que des offres, des collections et des décisions.
 
@@ -99,11 +99,11 @@ Comme vous savez déjà comment définir des audiences en fonction des modules d
 
 Accédez à **Règles**. Cliquez sur **+ Créer une règle**.
 
-![ Règles de décision ](./images/rules.png)
+![&#x200B; Règles de décision &#x200B;](./images/rules.png)
 
 Vous verrez ensuite l’interface de création d’audiences de Adobe Experience Platform.
 
-![ Règles de décision ](./images/createrule1.png)
+![&#x200B; Règles de décision &#x200B;](./images/createrule1.png)
 
 Vous pouvez désormais accéder à tous les champs qui font partie du schéma d’union pour le profil client en temps réel et créer n’importe quelle règle.
 

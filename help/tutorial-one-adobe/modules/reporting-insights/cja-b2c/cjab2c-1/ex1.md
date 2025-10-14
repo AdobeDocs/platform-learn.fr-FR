@@ -98,7 +98,7 @@ Vous pouvez trouver les identifiants en ouvrant un schéma et en examinant la `-
 
 ![demo](./images/commerce.png)
 
-- Prévisualisez tous les [jeux de données](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) et examinez les données
+- Prévisualisez tous les [jeux de données](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created) et examinez les données
 
 Vous êtes maintenant prêt à utiliser l’interface utilisateur de Customer Journey Analytics.
 

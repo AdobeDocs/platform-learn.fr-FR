@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Intégrer le ciblage client Google
 
-Découvrez comment les fonctionnalités de correspondance client d’Adobe Real-Time Customer Data Platform et de Google aident les marques à interagir avec les clients sur les propriétés détenues et exploitées par Google afin d’adapter leurs campagnes de sensibilisation. Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=fr).
+Découvrez comment les fonctionnalités de correspondance client d’Adobe Real-Time Customer Data Platform et de Google aident les marques à interagir avec les clients sur les propriétés détenues et exploitées par Google afin d’adapter leurs campagnes de sensibilisation. Pour plus d’informations, consultez la [&#x200B; documentation &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/326484?learn=on&enablevpops&captions=fre_fr)

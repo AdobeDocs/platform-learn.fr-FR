@@ -120,7 +120,7 @@ Votre environnement Postman est maintenant configuré et fonctionne.
 
 ## Étapes suivantes
 
-Accédez à [ Applications à installer ](./ex9.md){target="_blank"}
+Accédez à [&#x200B; Applications à installer &#x200B;](./ex9.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

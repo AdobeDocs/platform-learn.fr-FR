@@ -28,11 +28,11 @@ Dans cet exercice, vous allez créer quatre **Offres personnalisées**. Voici le
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Dans le menu de gauche, cliquez sur **Offres** puis accédez à **Offres**. Cliquez sur **+ Créer une offre**.
 
@@ -332,7 +332,7 @@ Enfin, votre décision s’affiche désormais dans la vue d’ensemble :
 
 Vous avez maintenant correctement configuré votre décision. Votre décision est maintenant en ligne et peut être utilisée pour diffuser des offres optimisées et personnalisées à vos clients et clientes, en temps réel.
 
-Étape suivante : [3.3.3 Préparez la propriété du client de collecte de données et la configuration de Web SDK pour l’Offer decisioning ](./ex3.md)
+Étape suivante : [3.3.3 Préparez la propriété du client de collecte de données et la configuration de Web SDK pour l’Offer decisioning &#x200B;](./ex3.md)
 
 [Retour au module 3.3](./offer-decisioning.md)
 

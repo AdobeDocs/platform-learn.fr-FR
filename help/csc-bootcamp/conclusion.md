@@ -32,7 +32,7 @@ Comme vous l&#39;avez remarqué pendant ce bootcamp, la chaîne d&#39;approvisio
 
 Cependant, il est tout aussi important de souligner à nouveau que la chaîne d’approvisionnement de contenu n’est pas une solution magique à tous vos problèmes. C’est une façon de travailler qui vous permet d’être plus efficace et de gérer toutes les expériences que vous souhaitez apporter à vos clients. Il faut ramper, avant de pouvoir marcher et courir.
 
-![ ](./images/crawl-walk-run.png)
+![&#x200B; &#x200B;](./images/crawl-walk-run.png)
 
 
 [Revenir à la phase 4 - Statistiques pour un gestionnaire marketing](./phases/insights/marketing-manager.md)

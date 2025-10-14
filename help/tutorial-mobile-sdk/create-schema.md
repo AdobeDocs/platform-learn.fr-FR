@@ -29,7 +29,7 @@ Pour plus d’informations sur le modèle de composition de schémas, notamment 
 
 >[!TIP]
 >
->Si vous connaissez les références de conception de solution (SDR) Analytics, vous pouvez considérer un schéma comme un SDR plus robuste. Pour plus d’informations[ consultez la section ](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)Créer et gérer un document de conception de solution (SDR).
+>Si vous connaissez les références de conception de solution (SDR) Analytics, vous pouvez considérer un schéma comme un SDR plus robuste. Pour plus d’informations[&#x200B; consultez la section &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)Créer et gérer un document de conception de solution (SDR).
 
 ## Conditions préalables
 

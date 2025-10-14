@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Découvrez comment configurer une propriété de balise dans l’interface [!UICONTROL Collecte de données].
 
-Les balises dans Adobe Experience Platform Launch représentent la nouvelle génération des fonctionnalités de gestion des balises dʼAdobe. Les balises offrent aux clients un moyen simple de déployer et de gérer les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. En savoir plus sur les [ Balises ](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home) dans la documentation du produit.
+Les balises dans Adobe Experience Platform Launch représentent la nouvelle génération des fonctionnalités de gestion des balises dʼAdobe. Les balises offrent aux clients un moyen simple de déployer et de gérer les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. En savoir plus sur les [&#x200B; Balises &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home) dans la documentation du produit.
 
 ## Conditions préalables
 
@@ -23,7 +23,7 @@ Pour suivre la leçon, vous devez disposer des autorisations nécessaires pour c
 
 >[!NOTE]
 >
-> Platform Launch (côté client) s’appelle désormais [ Balises ](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)
+> Platform Launch (côté client) s’appelle désormais [&#x200B; Balises &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)
 
 ## Objectifs d’apprentissage
 
@@ -76,7 +76,7 @@ Dans cette leçon, vous allez :
 
       Les extensions [!UICONTROL Mobile Core] et [!UICONTROL Profile] doivent être préinstallées.
 
-      ![ Balises installées ](assets/tags-installed.png){zoomable="yes"}
+      ![&#x200B; Balises installées &#x200B;](assets/tags-installed.png){zoomable="yes"}
 
 ## Configuration d’extension
 
@@ -117,7 +117,7 @@ Dans cette leçon, vous allez :
 
    1. Dans le menu **[!UICONTROL Enregistrer dans la bibliothèque]**, sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]**.
 
-      ![paramètres réseau edge ](assets/tags-extension-edge.png){zoomable="yes"}
+      ![paramètres réseau edge &#x200B;](assets/tags-extension-edge.png){zoomable="yes"}
 
 Votre bibliothèque est conçue pour les nouvelles extensions et configurations. Une <span style="color:green">●</span> du bouton **[!UICONTROL Version initiale]** a indiqué une version réussie.
 
@@ -140,7 +140,7 @@ Les balises fournissent des instructions et des fragments de code pour installer
 
 1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de CocoaPods. Les CocoaPods sont utilisés pour gérer les versions et les téléchargements de SDK. Pour en savoir plus, consultez la documentation [CocoaPods](https://cocoapods.org/).
 
-   Les [ instructions d’installation ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) constituent un bon point de départ pour la mise en œuvre.
+   Les [&#x200B; instructions d’installation &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) constituent un bon point de départ pour la mise en œuvre.
 
    Pour le reste de ce tutoriel, vous n’utilisez **pas** les instructions CocoaPods . Au lieu de cela, vous utilisez la configuration native basée sur le gestionnaire de packages Swift (SPM).
 
@@ -160,7 +160,7 @@ Les balises fournissent des instructions et des fragments de code pour installer
 1. Dans la boîte de dialogue **[!UICONTROL Instructions d’installation mobile]**, sélectionnez l’onglet **[!UICONTROL Android]**.
 1. Vous pouvez copier ![Copier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) les instructions pour configurer votre projet à l’aide de Gradle. Gradle est utilisé pour gérer les versions et les téléchargements de SDK. Pour en savoir plus, consultez la [documentation Gradle](https://gradle.org/)
 
-   Les [ instructions d’installation ](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) constituent un bon point de départ pour la mise en œuvre.
+   Les [&#x200B; instructions d’installation &#x200B;](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) constituent un bon point de départ pour la mise en œuvre.
 
 1. Ce bloc de code montre comment importer les SDK requis et enregistrer les extensions lors du lancement. Cette importation et cet enregistrement sont traités plus en détail dans la section [Installation des SDK](install-sdks.md).
 

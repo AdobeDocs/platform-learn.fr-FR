@@ -78,11 +78,11 @@ L’identifiant d’emplacement identifie l’emplacement et le type de ressourc
 
 Pour trouver l&#39;ID d&#39;emplacement pour Web - Image, accédez à Adobe Journey Optimizer en accédant à [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`. Vous serez alors dans la vue **Accueil** de votre `--aepSandboxName--` sandbox.
 
-![ACOP ](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Accédez ensuite à Composants , puis à Emplacements . Cliquez sur l&#39;emplacement **Web - Image** pour en afficher les détails.
 
@@ -213,7 +213,7 @@ Vous avez maintenant configuré 2 types de personnalisation :
 
 Dans l’exercice suivant, vous allez découvrir comment combiner vos offres et décisions créées dans Adobe Journey Optimizer avec une activité de ciblage d’expérience Adobe Target.
 
-Étape suivante : [3.3.4 Combiner Adobe Target et Offer decisioning ](./ex4.md)
+Étape suivante : [3.3.4 Combiner Adobe Target et Offer decisioning &#x200B;](./ex4.md)
 
 [Retour au module 3.3](./offer-decisioning.md)
 

@@ -184,7 +184,7 @@ Campaigns
    + [Ingérer des données à partir d’Adobe Analytics](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
    + [Ingérer des données à partir d’Audience Manager](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
    + [Ingérer des données à partir de l’espace de stockage cloud](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage)
-   + [ Ingérer des données à partir du CRM ](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/ingest-data-from-crm)
+   + [&#x200B; Ingérer des données à partir du CRM &#x200B;](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/ingest-data-from-crm)
    + [Ingérer des données à partir de bases de données](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/ingest-data-from-databases)
    + [Présentation de l’ingestion par flux](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Diffuser les données en continu avec l’API HTTP](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
@@ -249,7 +249,7 @@ Campaigns
    + [Création de politiques de fusion](/help/platform/profiles/create-merge-policies.md)
    + [Présentation des schémas d’union](/help/platform/profiles/union-schemas-overview.md)
    + [Création d’un attribut calculé](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
-   + [Expirations de profils pseudonymes (TTL) ](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
+   + [Expirations de profils pseudonymes (TTL) &#x200B;](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [Suppression de profils](/help/platform/profiles/delete-profiles.md)
    + [Mise à jour d’un attribut spécifique à l’aide de l’upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Confidentialité et sécurité {#privacy}

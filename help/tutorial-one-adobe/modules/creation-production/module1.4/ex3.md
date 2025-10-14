@@ -161,7 +161,7 @@ Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [Adobe Express et Adobe Experience Cloud](./express.md){target="_blank"}
 

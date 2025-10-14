@@ -64,7 +64,7 @@ Dans ces leçons, nous supposons que vous disposez d’un Adobe Id et des autori
    * **[!UICONTROL Droits de propriété]** : éléments d’autorisation pour **[!UICONTROL Développer]**, **[!UICONTROL Approuver]**, **[!UICONTROL Publier]**, **[!UICONTROL Gérer les extensions]** et **[!UICONTROL Gérer les environnements]**.
    * **[!UICONTROL Droits d’entreprise]**—éléments d’autorisation pour **[!UICONTROL Gérer les propriétés]**
 
-     Pour plus d’informations sur les autorisations des balises, voir [ Autorisations d’utilisateur pour les balises ](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/admin/user-permissions){target="_blank"} dans la documentation du produit.
+     Pour plus d’informations sur les autorisations des balises, voir [&#x200B; Autorisations d’utilisateur pour les balises &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/admin/user-permissions){target="_blank"} dans la documentation du produit.
 * Dans Experience Platform, vous devez disposer des éléments suivants :
    * **[!UICONTROL Modélisation des données]** : éléments d&#39;autorisation pour gérer et afficher les schémas.
    * **[!UICONTROL Identity Management]**—éléments d&#39;autorisation pour gérer et afficher les espaces de noms d&#39;identité.

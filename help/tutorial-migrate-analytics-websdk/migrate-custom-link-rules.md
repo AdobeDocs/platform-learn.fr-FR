@@ -57,7 +57,7 @@ Ouvrez votre règle de lien personnalisé et déterminez si elle ressemble au sc
    1. Dans la même règle, faites défiler l’écran jusqu’au champ déroulant **Propriété supplémentaire**, puis ajoutez le champ **Nom du lien** en le définissant sur la valeur que vous avez extraite de votre règle Envoyer la balise. Dans l’image ci-dessous, l’exemple définit le nom sur la valeur de chaîne « clic sur le menu ».
    1. Ajoutez également le champ **Type de lien** dans la même liste déroulante, en ajoutant « o » comme valeur (en supposant que votre type de lien dans l’action Envoyer la balise soit « Lien personnalisé »). Cette opération envoie le type de lien « autre », ce qui équivaut à un lien personnalisé. Si votre type de lien était un lien de téléchargement, choisissez « d » pour la valeur de ce champ nouveau type de lien et si votre type de lien était un lien de sortie, choisissez « e » pour la valeur de ce champ nouveau type de lien.
 
-      ![Nom et type du lien ](assets/link-name-and-type.jpg)
+      ![Nom et type du lien &#x200B;](assets/link-name-and-type.jpg)
 
 1. Sous les propriétés supplémentaires, une case à cocher intitulée **Effacer la valeur existante** s’affiche. Si votre règle existante comporte une action **Adobe Analytics - Effacer les variables** (comme indiqué ci-dessus à l’étape 3), il vous suffit de cocher cette case, et vous n’aurez pas besoin d’ajouter une action d’effacement des variables pour le SDK Web.
 
@@ -77,7 +77,7 @@ Ouvrez votre règle de lien personnalisé et déterminez si elle ressemble au sc
 
 * Dans cette leçon, vous avez appris à migrer des règles de lien personnalisées.
 * Dans l’exercice [Migrer votre règle de chargement de page par défaut](migrate-your-default-page-load-rule.md), vous avez appris à migrer les règles qui définissent des variables et envoient également une balise Analytics.
-* Dans la leçon [ Migration de règles de page supplémentaires ](migrate-additional-page-rules.md) , vous avez appris à migrer vos règles qui définissent des variables mais n’envoient pas de balise dans Adobe Analytics.
+* Dans la leçon [&#x200B; Migration de règles de page supplémentaires &#x200B;](migrate-additional-page-rules.md) , vous avez appris à migrer vos règles qui définissent des variables mais n’envoient pas de balise dans Adobe Analytics.
 
 Comme vous pouvez l’imaginer, les mêmes méthodes peuvent être utilisées dans de nombreuses règles différentes pour migrer votre extension Analytics vers Web SDK.
 Dans la plupart des cas, vous mettez simplement **à jour les actions** dans les règles. Vous ne modifiez pas l’événement ni les conditions de déclenchement. Vous ne modifiez ce qui se passe dans la section Actions que lorsque les règles se déclenchent.

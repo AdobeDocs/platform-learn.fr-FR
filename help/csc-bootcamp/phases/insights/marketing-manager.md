@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Dans la colonne de gauche, cliquez sur &quot;Vue hebdomadaire du chef de projet&quot; :
 
-![ chefs de projet vue hebdomadaire ](./images/weekly-view.png)
+![&#x200B; chefs de projet vue hebdomadaire &#x200B;](./images/weekly-view.png)
 
 Cela couvre un large éventail de rapports, toujours cliquables/exploitables pour plus de détails :
 

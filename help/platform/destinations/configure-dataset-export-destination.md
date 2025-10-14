@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Découvrez comment configurer une connexion et utiliser le workflow pour les exportations de jeux de données à l’aide d’une destination de service cloud. Les avantages et les cas d’utilisation de cette fonctionnalité sont également abordés.
 
-Pour plus d’informations, consultez la [ documentation ](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
+Pour plus d’informations, consultez la [&#x200B; documentation &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448820/?learn=on&enablevpops&captions=fre_fr)

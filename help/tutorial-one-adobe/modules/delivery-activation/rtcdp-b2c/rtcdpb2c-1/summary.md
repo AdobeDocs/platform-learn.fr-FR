@@ -27,7 +27,7 @@ Examinons les avantages du profil client en temps réel :
 ## Consulter ceci
 
 - Blog technique : [Le graphique d’identités Adobe Experience Platform est la base du profil unifié](https://medium.com/adobetech/adobe-experience-platform-identity-graph-is-the-foundation-for-the-unified-profile-e8435d26dce7)
-- Blog technique : [Service d’identités de Adobe Experience Platform - Comment résoudre le problème de l’identité du client ](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
+- Blog technique : [Service d’identités de Adobe Experience Platform - Comment résoudre le problème de l’identité du client &#x200B;](https://medium.com/adobetech/adobe-experience-platforms-identity-service-how-to-solve-the-customer-identity-conundrum-f95e22d16ea9)
 
 ## Étapes suivantes
 

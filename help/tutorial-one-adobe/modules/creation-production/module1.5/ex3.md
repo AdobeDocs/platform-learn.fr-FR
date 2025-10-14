@@ -56,7 +56,7 @@ Une fois le plug-in installé, ouvrez Adobe Premiere Pro Beta sur votre ordinate
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenez à [Rationaliser votre workflow avec Frame.io](./frameio.md){target="_blank"}
 

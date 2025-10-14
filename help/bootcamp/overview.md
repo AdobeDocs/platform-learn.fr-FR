@@ -101,7 +101,7 @@ Vous trouverez d’autres vidéos intéressantes [sur notre canal YouTube](https
 
 ## Flux utilisateur
 
-[1. Acquisition ](./uc/uc1/uc1.md)
+[1. Acquisition &#x200B;](./uc/uc1/uc1.md)
 
 Dans ce flux d’utilisateurs, vous comprendrez tous les éléments dont vous avez besoin pour mettre en oeuvre des cas d’utilisation axés sur l’acquisition pour des utilisateurs inconnus et non authentifiés, ainsi que pour des utilisateurs connus et authentifiés à l’aide de Real-Time CDP.
 

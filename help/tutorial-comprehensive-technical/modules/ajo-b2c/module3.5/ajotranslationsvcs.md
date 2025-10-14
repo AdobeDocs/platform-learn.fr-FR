@@ -40,7 +40,7 @@ Dans cet exercice, vous allez ajouter des langues à l’e-mail dans votre campa
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

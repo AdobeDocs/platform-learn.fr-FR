@@ -360,7 +360,7 @@ Pour ce cas d’utilisation, vous souhaitez savoir si les visiteurs font suffisa
 Vous allez maintenant vous assurer que cet accès se déclenche lorsque vous faites défiler l’écran jusqu’à la section Produits présentés de la page d’accueil de notre site. Lorsque vous chargez la page d’accueil pour la première fois, la requête ne doit pas être faite, mais lorsque vous faites défiler la page vers le bas et que la section s’affiche, l’accès doit se déclencher avec les nouvelles valeurs.
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dans votre navigateur Chrome et assurez-vous que vous êtes en haut de la page d’accueil.
-1. Cliquez sur l’ **[!UICONTROL icône du débogueur]** ![ ](images/analytics-debuggerIcon.png) pour ouvrir l’ [!UICONTROL &#x200B; Experience Cloud Debugger &#x200B;]
+1. Cliquez sur l’ **[!UICONTROL icône du débogueur]** ![&#x200B; &#x200B;](images/analytics-debuggerIcon.png) pour ouvrir l’ [!UICONTROL &#x200B; Experience Cloud Debugger &#x200B;]
 1. Cliquez sur l’onglet Analytics.
 1. Développez l’accès à votre suite de rapports.
 1. Notez l’accès normal à la page vue pour la page d’accueil avec le nom de la page, etc. (mais rien dans eVar3 ou prop3).

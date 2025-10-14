@@ -35,7 +35,7 @@ Par exemple, vous pouvez maintenant :
 ## Consultez cette section
 
 - Blog technique : [Journey Orchestration dans un monde omnicanal](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
-- Blog technique : [ démonstration de la puissance du nouveau service Journey Orchestration d’Adobe pour créer des expériences omnicanal personnalisées en temps réel ](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
+- Blog technique : [&#x200B; démonstration de la puissance du nouveau service Journey Orchestration d’Adobe pour créer des expériences omnicanal personnalisées en temps réel &#x200B;](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
 
 [Revenir au module 3.1](./journey-orchestration-create-account.md)
 

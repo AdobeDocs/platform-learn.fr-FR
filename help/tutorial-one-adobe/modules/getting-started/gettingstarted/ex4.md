@@ -15,51 +15,51 @@ ht-degree: 1%
 
 Après l’exercice précédent, vous avez obtenu le résultat suivant. Cliquez pour ouvrir le **projet Web Telco** qui a été créé pour vous.
 
-![DSN ](./images/dsn5a.png)
+![DSN &#x200B;](./images/dsn5a.png)
 
 Si vous avez fermé accidentellement la fenêtre de votre navigateur ou pour les sessions suivantes, vous pouvez également accéder à votre projet de site web en accédant à [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}. Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Modifier**.
 
-![DSN ](./images/web8.png)
+![DSN &#x200B;](./images/web8.png)
 
 Tu verras ça. Cliquez sur **Intégrations**.
 
-![DSN ](./images/web1.png)
+![DSN &#x200B;](./images/web1.png)
 
 Sur la page **Intégrations**, vous devez sélectionner la propriété Collecte de données qui a été créée dans l’exercice précédent. Pour ce faire, cliquez sur **Sélectionner l’environnement**.
 
-![DSN ](./images/web2.png)
+![DSN &#x200B;](./images/web2.png)
 
 Cliquez sur **Sélectionner** sur la propriété Collecte de données qui a été créée à l’étape précédente, qui est nommée `--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)`. Cliquez sur **Enregistrer**.
 
-![DSN ](./images/web2a.png)
+![DSN &#x200B;](./images/web2a.png)
 
 Tu verras ça. Cliquez sur **Exécuter** pour ouvrir le site web de démonstration.
 
-![DSN ](./images/web2b.png)
+![DSN &#x200B;](./images/web2b.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN ](./images/web3.png)
+![DSN &#x200B;](./images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN ](./images/web4.png)
+![DSN &#x200B;](./images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN ](./images/web5.png)
+![DSN &#x200B;](./images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN ](./images/web6.png)
+![DSN &#x200B;](./images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque démonstration, vous devez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN ](./images/web7.png)
+![DSN &#x200B;](./images/web7.png)
 
 ## Étapes suivantes
 
-Accédez à [ Utiliser l’application mobile ](./ex5.md){target="_blank"}
+Accédez à [&#x200B; Utiliser l’application mobile &#x200B;](./ex5.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

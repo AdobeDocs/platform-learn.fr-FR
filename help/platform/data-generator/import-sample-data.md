@@ -166,7 +166,7 @@ Vous pouvez maintenant préparer et importer les données dans votre sandbox Pla
 
 ## Validation
 
-Les exemples de données ont été conçus de sorte que lorsque les collections ont été exécutées, des profils clients en temps réel sont créés pour combiner des données provenant de plusieurs systèmes. Le premier enregistrement des jeux de données de fidélité, de gestion de la relation client et d’achat hors ligne en est un bon exemple. Recherchez ce profil pour confirmer que les données ont été ingérées. Dans l’interface de [Adobe Experience Platform ](https://experience.adobe.com/platform/) :
+Les exemples de données ont été conçus de sorte que lorsque les collections ont été exécutées, des profils clients en temps réel sont créés pour combiner des données provenant de plusieurs systèmes. Le premier enregistrement des jeux de données de fidélité, de gestion de la relation client et d’achat hors ligne en est un bon exemple. Recherchez ce profil pour confirmer que les données ont été ingérées. Dans l’interface de [Adobe Experience Platform &#x200B;](https://experience.adobe.com/platform/) :
 
 1. Accédez à **[!UICONTROL Profils]** > **[!UICONTROL Parcourir]**
 1. Sélectionnez `Luma Loyalty Id` comme **[!UICONTROL Espace de noms d’identité]**

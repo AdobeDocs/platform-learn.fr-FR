@@ -151,7 +151,7 @@ La charge utile de requête et la réponse des appels du SDK Web Platform `sendE
 
 ### Charge utile de requête de contenu
 
-![ Éléments spécifiques à Target de la charge utile SDK Web Platform](assets/target-payload.png){zoomable="yes"}
+![&#x200B; Éléments spécifiques à Target de la charge utile SDK Web Platform](assets/target-payload.png){zoomable="yes"}
 
 - Les paramètres de profil, d’entité et autres non-mbox sont transmis dans le tableau d’événements sous `data.__adobe.target`
 - Les portées de décision se trouvent dans le tableau d’événements sous `query.personalization.decisionScopes`
@@ -159,7 +159,7 @@ La charge utile de requête et la réponse des appels du SDK Web Platform `sendE
 
 ### Corps de réponse au contenu
 
-![ Éléments spécifiques à Target du corps de réponse du SDK Web Platform](assets/target-response.png){zoomable="yes"}
+![&#x200B; Éléments spécifiques à Target du corps de réponse du SDK Web Platform](assets/target-response.png){zoomable="yes"}
 
 - Le SDK Web Platform renvoie des actions pour toutes les applications d’Adobe sous l’objet `handle`.
 - L’action `personalization:decisions` signifie une réponse de Target ou d’un offer decisioning.

@@ -71,7 +71,7 @@ brew install node
 
 ### Windows
 
-Téléchargez le [ Windows Installer ](https://nodejs.org/en/#home-downloadhead) directement sur le site web [nodejs.org](https://nodejs.org/en/).
+Téléchargez le [&#x200B; Windows Installer &#x200B;](https://nodejs.org/en/#home-downloadhead) directement sur le site web [nodejs.org](https://nodejs.org/en/).
 
 ## Vérification de la version node.js
 

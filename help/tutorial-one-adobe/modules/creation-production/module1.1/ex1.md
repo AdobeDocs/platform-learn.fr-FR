@@ -503,6 +503,6 @@ Vous verrez alors l’image générée, qui ne devrait pas contenir de fleurs.
 
 Accédez à [Optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies](./ex2.md){target="_blank"}
 
-Revenez à [ Présentation de Adobe Firefly Services ](./firefly-services.md){target="_blank"}
+Revenez à [&#x200B; Présentation de Adobe Firefly Services &#x200B;](./firefly-services.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

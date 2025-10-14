@@ -17,11 +17,11 @@ Dans cet exercice, vous allez configurer 2 fragments, 1 pour un en-tête réutil
 
 Connectez-vous à Adobe Journey Optimizer en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Journey Optimizer**.
 
-![ACOP ](./images/acophome.png)
+![ACOP &#x200B;](./images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`.
 
-![ACOP ](./images/acoptriglp.png)
+![ACOP &#x200B;](./images/acoptriglp.png)
 
 ## 3.1.2.1 Créer un fragment d’en-tête
 
@@ -29,11 +29,11 @@ Dans le menu de gauche, cliquez sur **Fragments**. Un fragment est un composant 
 
 Cliquez sur **Créer un fragment**.
 
-![ACOP ](./images/fragm1.png)
+![ACOP &#x200B;](./images/fragm1.png)
 
 Saisissez le `--aepUserLdap-- - CitiSignal - Header` de nom et sélectionnez le **Type : fragment visuel**. Cliquez sur **Créer**.
 
-![ACOP ](./images/fragm2.png)
+![ACOP &#x200B;](./images/fragm2.png)
 
 Tu verras ça. Dans le menu de gauche, vous trouverez les composants de structure que vous pouvez utiliser pour définir la structure de l’e-mail (lignes et colonnes).
 

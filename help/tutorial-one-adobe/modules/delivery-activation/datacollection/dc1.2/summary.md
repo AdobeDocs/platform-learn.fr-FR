@@ -28,7 +28,7 @@ Examinons les avantages des fonctionnalités d’ingestion de données de Adobe 
 
 ## Consulter ceci
 
-- Blog Tech : [ Privacy Services et au-delà dans Adobe Experience Platform ](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
+- Blog Tech : [&#x200B; Privacy Services et au-delà dans Adobe Experience Platform &#x200B;](https://medium.com/adobetech/privacy-services-and-beyond-in-adobe-experience-platform-31b8d7e9292)
 
 ## Étapes suivantes
 

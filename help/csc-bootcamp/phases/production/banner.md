@@ -20,7 +20,7 @@ L’automatisation du contenu apporte à Experience Manager Assets la puissance 
 
 - Sur la page d’accueil, accédez à Outils > Assets > Profils de traitement.
 
-![ Outils > Assets > Profils de traitement](./images/prod-processing-profiles.png)
+![&#x200B; Outils > Assets > Profils de traitement](./images/prod-processing-profiles.png)
 
 - Dans l’interface, vous verrez tous les profils de traitement existants. Ils peuvent être utilisés pour activer certaines automatisations.
 
@@ -147,7 +147,7 @@ Si vous avez besoin d’un processus de révision et d’approbation formel et a
 
    - Sélectionnez votre ressource mise à jour (si aucune modification n’est nécessaire dans le scénario bootcamp, téléchargez à nouveau la même ressource) et cliquez sur &quot;Lier&quot; :
 
-  ![ &lbrace;link asset](./images/wf-link-new-asset.png)
+  ![&#x200B; &lbrace;link asset](./images/wf-link-new-asset.png)
 
    - Cliquez ensuite sur &quot;créer un BAT&quot; sur la droite.
 
