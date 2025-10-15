@@ -52,7 +52,7 @@ Comme pour tout ce qui souffre de faux pas et de mauvaise communication, il y a 
 
 Idéalement, votre équipe marketing devrait utiliser une solution de gestion du travail qui permet une collaboration interfonctionnelle et connecte les projets aux résultats planifiés, pilotés par les données. Elle doit également permettre à l’équipe marketing de hiérarchiser stratégiquement le travail et d’annoncer ces priorités à votre équipe créative. A partir de là, le dossier créatif, les versions de contenu et les commentaires doivent être liés au sein de chaque projet afin que votre équipe n’ait pas à rechercher dans les anciens emails ce qu’elle cherche.
 
-Votre équipe créative doit être configurée avec [une excellente gestion des ressources numériques](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [system](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) qui est intégré à vos outils de gestion de la création et du travail. Ainsi, il leur est facile de trouver, d’utiliser, de mettre à jour ou de réutiliser des ressources pertinentes. Grâce à tout cela, vous pouvez améliorer la vitesse de mise sur le marché et simplifier les opérations et processus internes.
+Votre équipe créative doit être configurée avec [une excellente gestion des ressources numériques](https://business.adobe.com/fr/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/fr/products/experience-manager/assets/digital-asset-management.html) [system](https://business.adobe.com/fr/products/experience-manager/assets/digital-asset-management.html) qui est intégré à vos outils de gestion de la création et du travail. Ainsi, il leur est facile de trouver, d’utiliser, de mettre à jour ou de réutiliser des ressources pertinentes. Grâce à tout cela, vous pouvez améliorer la vitesse de mise sur le marché et simplifier les opérations et processus internes.
 
 ### Amélioration de l’efficacité de la production grâce à des workflows homogènes
 
@@ -70,9 +70,9 @@ Pour couronner le tout, une chaîne d’approvisionnement de contenu véritablem
 
 ## En Adobe, nous construisons une chaîne d&#39;approvisionnement de contenu de qualité
 
-Notre propre [entreprise Adobe Experience Cloud](https://business.adobe.com/) est axée sur le suivi des étapes décrites précédemment pour donner vie à nos campagnes et prendre en charge plusieurs segments. Notre vision a été de fournir un contenu convaincant au niveau mondial qui s&#39;aligne sur notre cadre de campagne et notre message.
+Notre propre [entreprise Adobe Experience Cloud](https://business.adobe.com/fr/) est axée sur le suivi des étapes décrites précédemment pour donner vie à nos campagnes et prendre en charge plusieurs segments. Notre vision a été de fournir un contenu convaincant au niveau mondial qui s&#39;aligne sur notre cadre de campagne et notre message.
 
-La clé de notre processus de création de contenu de bout en bout est l’association entre [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) et [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Regardons comment nous avons abordé notre processus avec ces trois mêmes phases de haut niveau.
+La clé de notre processus de création de contenu de bout en bout est l’association entre [Adobe Workfront](https://business.adobe.com/fr/products/workfront/main.html) et [Adobe Experience Manager Assets](https://business.adobe.com/fr/products/experience-manager/assets/aem-assets.html). Regardons comment nous avons abordé notre processus avec ces trois mêmes phases de haut niveau.
 
 Nous commençons par **la planification** , où nous prenons des centaines de demandes de contenu provenant de l’ensemble de l’entreprise, puis nous les priorisons par rapport à nos priorités trimestrielles. Nous utilisons ensuite un tableau de bord de propositions de contenu dans Workfront afin de garantir la transparence, de sorte que nous puissions nous aligner sur les parties prenantes et obtenir rapidement l’approbation de nos équipes marketing, créatives, web et commerciales. Ce faisant, nous créons un enregistrement de ce à quoi nous nous engageons pour le trimestre, et nous donnons également à nos équipes créatives et web une visibilité sur le volume total de demandes afin qu’elles puissent planifier l’approvisionnement. De plus, les gestionnaires peuvent facilement surveiller la charge de travail de leurs équipes.
 
@@ -84,7 +84,7 @@ Nous avons vu des bénéfices importants de la construction d&#39;une chaîne d&
 
 >[!NOTE]
 >
-> Cet article a été initialement publié sur le [_blog Adobe Experience Cloud_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
+> Cet article a été initialement publié sur le [_blog Adobe Experience Cloud_](https://business.adobe.com/fr/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
 
 ## La quatrième phase : Informations
 

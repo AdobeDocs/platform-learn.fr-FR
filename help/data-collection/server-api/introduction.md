@@ -47,7 +47,7 @@ Lorsqu’un utilisateur clique sur un lien, le navigateur envoie une requête à
 
 La plupart des navigateurs ont une &quot;barre d’adresse&quot; qui affiche une partie ou la totalité de l’&quot;adresse&quot; d’une page web. Lorsque le navigateur &quot;récupère&quot; la page du lien sur lequel nous avons cliqué, il affiche &quot;l’adresse&quot; de la page dans cette barre d’adresse. Quelle est donc l&#39;&quot;adresse&quot; d&#39;une page web ?
 
-Le `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` ci-dessus est l&#39;adresse d&#39;une page sur le web, et il s&#39;appelle une URL ou un localisateur de ressource Uniforme. Les URL peuvent faire référence à une page telle que celle-ci, un fichier image, une vidéo ou d’autres types de fichiers.
+Le `https://business.adobe.com/fr/products/experience-platform/adobe-experience-platform.html` ci-dessus est l&#39;adresse d&#39;une page sur le web, et il s&#39;appelle une URL ou un localisateur de ressource Uniforme. Les URL peuvent faire référence à une page telle que celle-ci, un fichier image, une vidéo ou d’autres types de fichiers.
 
 ![Parties d&#39;une URL](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Il est très courant de voir le terme _host_ faire référence à un nom de doma
 
 **Origine**
 
-Origin est un autre terme qui est lié aux parties d’une URL. À un niveau de base, une origine correspond à peu près à `scheme` plus `host` plus `domain` comme `https://business.adobe.com`. Les différentes valeurs représentent souvent des origines différentes comme `https://business.adobe.com` et `http://business.adobe.com` ne sont pas la même origine car elles ont des schémas différents. `https://www.adobe.com` et `https://business.adobe.com` ne sont pas non plus de même origine dans de nombreuses utilisations en raison des différents sous-domaines.
+Origin est un autre terme qui est lié aux parties d’une URL. À un niveau de base, une origine correspond à peu près à `scheme` plus `host` plus `domain` comme `https://business.adobe.com/fr`. Les différentes valeurs représentent souvent des origines différentes comme `https://business.adobe.com/fr` et `http://business.adobe.com/fr` ne sont pas la même origine car elles ont des schémas différents. `https://www.adobe.com` et `https://business.adobe.com/fr` ne sont pas non plus de même origine dans de nombreuses utilisations en raison des différents sous-domaines.
 
 **Chemin**
 
@@ -133,13 +133,13 @@ Il existe plusieurs autres méthodes, mais il s’agit de la liste des méthodes
 
 Maintenant que vous disposez des termes, concepts et étapes de base impliqués dans les API, nous pouvons consulter un exemple de requête d’API en pratique.
 
-La page de notre exemple de navigateur a une URL de `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Lorsque l’utilisateur clique sur le lien Adobe Experience Platform, le navigateur effectue une requête `GET` pour cette page. Puisque nous avons le navigateur pour effectuer le travail pour nous, il nous suffit de cliquer sur , mais si un programmeur souhaite que cette demande se produise dans une application logicielle, il doit fournir tous les détails nécessaires pour que la demande d’API soit satisfaite.
+La page de notre exemple de navigateur a une URL de `https://business.adobe.com/fr/products/experience-platform/adobe-experience-platform.html`. Lorsque l’utilisateur clique sur le lien Adobe Experience Platform, le navigateur effectue une requête `GET` pour cette page. Puisque nous avons le navigateur pour effectuer le travail pour nous, il nous suffit de cliquer sur , mais si un programmeur souhaite que cette demande se produise dans une application logicielle, il doit fournir tous les détails nécessaires pour que la demande d’API soit satisfaite.
 
 Voici à quoi cela peut ressembler dans le code :
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/fr/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:
