@@ -290,7 +290,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Présentation de la composition de l’audience fédérée" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Présentation de la composition de l’audience fédérée"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450882/?captions=fre_fr&format=jpeg&nocache=1740173579477" alt="Présentation de la composition de l’audience fédérée"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ En savoir plus sur les audiences dans Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Connexion et configuration de la composition d’audiences fédérées" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Connexion et configuration de la composition d’audiences fédérées"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451558/?captions=fre_fr&format=jpeg&nocache=1740173579488" alt="Connexion et configuration de la composition d’audiences fédérées"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

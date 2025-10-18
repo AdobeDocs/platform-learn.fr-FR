@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Découvrez le processus d’ajout d’étiquettes de confidentialité des données aux variables Analytics, y compris une répartition de la signification de chaque type d’étiquette et quand les utiliser. Pour plus d’informations, consultez la [documentation relative aux services de confidentialité](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450664?captions=fre_fr&learn=on&enablevpops)

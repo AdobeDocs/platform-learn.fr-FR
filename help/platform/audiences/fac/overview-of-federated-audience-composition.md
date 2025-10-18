@@ -20,4 +20,4 @@ ht-degree: 45%
 
 La composition d’audiences fédérées permet aux utilisateurs et utilisatrices d’Adobe Real-Time CDP et d’Adobe Journey Optimizer de gérer les données de manière flexible et efficace. Grâce à la composition de l’audience fédérée, vous pouvez accéder à votre entrepôt de données d’entreprise à l’aide d’une interface utilisateur conviviale pour les spécialistes du marketing afin de créer des audiences et d’exploiter les jeux de données dans les workflows Adobe Experience Platform sans avoir à importer toutes les données de votre entrepôt de données dans Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450882/?captions=fre_fr&learn=on&enablevpops)

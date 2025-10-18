@@ -60,7 +60,7 @@ Découvrez comment simuler et appliquer vos règles.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="Règles de liaison des graphiques d’identités - Paramètres d’identité" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="Règles de liaison des graphiques d’identités - Paramètres d’identité"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475964/?captions=fre_fr&format=jpeg&nocache=1747355376336" alt="Règles de liaison des graphiques d’identités - Paramètres d’identité"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

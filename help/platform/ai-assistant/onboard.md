@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez comment utiliser l’assistant d’IA pour accélérer rapidement les nouvelles fonctionnalités et réduire le temps d’intégration. Pour plus d’informations, consultez le [guide de questions pour l’assistant d’IA](https://experienceleague.adobe.com/fr/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475932/?captions=fre_fr&learn=on&enablevpops)
