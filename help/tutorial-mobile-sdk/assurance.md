@@ -4,9 +4,9 @@ description: Découvrez comment mettre en œuvre l’extension Assurance dans un
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Dans cette leçon, vous allez :
 
 ## Confirmer l’accès
 
-Vérifiez que votre organisation a accès à Assurance. Vous, en tant qu’utilisateur, devez être ajouté au profil pour Adobe Experience Platform. Voir [Accès utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/user-access) dans le guide Assurance pour plus d’informations.
+Vérifiez que votre organisation a accès à Assurance. Vous, en tant qu’utilisateur, devez être ajouté au profil pour Adobe Experience Platform. Voir [Accès utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) dans le guide Assurance pour plus d’informations.
 
 ## Implémenter
 
@@ -172,7 +172,7 @@ Assurance fonctionne en ouvrant une URL, soit par le biais d’un navigateur, so
 
 Veillez à spécifier un `android:scheme` (par exemple, . `lumatutorialandroid`) et `android:host` (par exemple, `default`) pour définir l’URL de base.
 
-Pour en savoir plus sur les liens profonds dans Android, voir [Création de liens profonds vers le contenu de l’application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Pour en savoir plus sur les liens profonds dans Android, consultez [Création de liens profonds](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} dans la documentation d’Android.
 
 Assurance fonctionne en ouvrant une URL, soit par le biais d’un navigateur, soit par le biais d’un code QR. Cette URL commence par l’URL de base, qui ouvre l’application et contient des paramètres supplémentaires. Ces paramètres uniques sont utilisés pour connecter la session.  Dans l’exemple d’application, le lien profond est `lumatutorialandroid://default`.
 
@@ -388,7 +388,7 @@ Si des extensions obsolètes s’affichent, consultez la [documentation d’Andr
 >
 >Vous avez maintenant configuré votre application de sorte qu’elle utilise Assurance pour la suite du tutoriel.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Suivant : **[Implémenter le consentement](consent.md)**
