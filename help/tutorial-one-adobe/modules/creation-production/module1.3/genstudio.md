@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -34,6 +34,16 @@ Dans ce module, vous apprendrez à effectuer vous-même toutes les étapes ci-de
 - Accès à Adobe Workfront et à Adobe Workfront Planning
 - Accès à un sandbox Adobe Experience Manager Cloud Service avec Content Hub activé
 
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!NOTE]
+>
+>Cette vidéo n&#39;a pas encore d&#39;audio. Une fois que l’audio est disponible, une nouvelle version est chargée.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
+
 ## Exercices
 
 [1.3.1 Configuration : Marques](./ex1.md){target="_blank"}
@@ -44,9 +54,9 @@ Dans cet exercice, vous allez configurer une marque CitiSignal dans GenStudio fo
 
 Dans cet exercice, vous allez configurer des rôles, des produits et des modèles dans GenStudio for Performance Marketing.
 
-[1.3.3 Activation de la campagne vers les métadonnées](./ex3.md){target="_blank"}
+[1.3.3 Activation de Campaign vers Meta](./ex3.md){target="_blank"}
 
-Dans cet exercice, vous allez créer une campagne. Vous allez également configurer une connexion à Meta et passer en revue toutes les étapes nécessaires pour pouvoir créer une annonce, l’approuver à l’aide d’Adobe Workfront et la publier sur Meta.
+Dans cet exercice, vous allez créer une campagne. Vous allez également configurer une connexion à Meta et passer en revue toutes les étapes nécessaires à la création d’une publicité, à l’approbation d’une publicité à l’aide d’Adobe Workfront et à la publication d’une publicité sur Meta.
 
 [1.3.4 Créer une expérience d’e-mail pour AJO](./ex4.md){target="_blank"}
 
@@ -56,7 +66,7 @@ Dans cet exercice, vous allez créer une expérience d’e-mail à l’aide d’
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

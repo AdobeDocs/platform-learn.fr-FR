@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,16 @@ Les modules complémentaires GenStudio for Performance Marketing sont les applic
 - Accès à Adobe GenStudio for Performance Marketing
 - Accès à App Builder
 - Accès à un compartiment Amazon AWS S3
+
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!NOTE]
+>
+>Cette vidéo n&#39;a pas encore d&#39;audio. Une fois que l’audio est disponible, une nouvelle version est chargée.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
 
 ## Exercices
 
@@ -49,7 +59,7 @@ Dans cet exercice, vous allez publier votre application en privé.
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

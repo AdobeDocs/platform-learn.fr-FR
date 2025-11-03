@@ -4,10 +4,10 @@ description: Prise en main - Configuration de Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Si vous êtes employé d’Adobe, suivez les instructions pour [installer PostBuster](./ex8.md){target="_blank"} !
+
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
 
 ## Téléchargement de l’environnement Postman
 
@@ -120,7 +126,7 @@ Votre environnement Postman est maintenant configuré et fonctionne.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Applications à installer &#x200B;](./ex9.md){target="_blank"}
+Accédez à [ Applications à installer ](./ex9.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

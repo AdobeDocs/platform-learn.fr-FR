@@ -4,9 +4,9 @@ description: Prise en main - Configuration de Postman
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,15 @@ ht-degree: 3%
 >
 >Si vous n’êtes pas employé d’Adobe, suivez les instructions pour [installer Postman](./ex7.md){target="_blank"}. Les instructions ci-dessous sont destinées uniquement aux employés d’Adobe.
 
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+
 ## Installer PostBuster
 
-Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Cliquez pour télécharger la dernière version de **PostBuster**.
 
@@ -159,7 +165,7 @@ Votre environnement PostBuster est maintenant configuré et fonctionne. Vous ave
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Applications à installer &#x200B;](./ex9.md){target="_blank"}
+Accédez à [ Applications à installer ](./ex9.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 
