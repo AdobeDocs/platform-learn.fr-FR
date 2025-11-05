@@ -4,9 +4,9 @@ description: Relecture avec Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Pour cet exercice, vous devez télécharger et utiliser la ressource suivante : 
 
 ![WF](./images/timetravelnow.png)
 
-Revenez à l’écran **Détails du projet**. Accédez à **Documents**. Cliquez sur **+ Ajouter** puis sélectionnez **Document**.
+Accédez à **Documents** pour votre tâche. Cliquez sur **+ Ajouter** puis sélectionnez **Document**.
 
 ![WF](./images/wfp10.png)
 
@@ -239,11 +239,11 @@ Sélectionnez **Modifications requises** puis cliquez sur **Prendre une décisio
 
 ![WF](./images/wfp24.png)
 
-Revenez à votre **Tâche** et au **Document**. Le texte **Modifications requises** apparaît également à cet endroit.
+Revenez à votre **Tâche** et au **Document**. Le texte **Modifications requises** s’affiche également à cet endroit.
 
 ![WF](./images/wfp25.png)
 
-Vous devez maintenant apporter des modifications à la conception, ce que vous ferez dans Adobe Express.
+Vous devez maintenant apporter des modifications à la conception et charger une nouvelle version de l’image.
 
 ## 1.2.2.6 Ajouter une nouvelle version de votre document à votre tâche
 
@@ -251,11 +251,11 @@ Pour cet exercice, vous devez télécharger et utiliser la ressource suivante : 
 
 ![WF](./images/getonboard.png)
 
-Dans l’affichage Tâche d’Adobe Workfront, sélectionnez l’ancien fichier image qui n’a pas été approuvé. Cliquez ensuite sur **+ Ajouter nouveau**, sélectionnez **Version**, puis sélectionnez votre référentiel CS AEM Assets, qui doit être nommé `--aepUserLdap-- - CitiSignal`.
+Dans l’affichage Tâche d’Adobe Workfront, sélectionnez l’ancien fichier image qui n’a pas été approuvé. Cliquez ensuite sur **+ Ajouter nouveau**, sélectionnez **Version** puis choisissez **Document**.
 
 ![WF](./images/wfp26.png)
 
-Accédez au `--aepUserLdap-- CitiSignal Fiber Campaign` du dossier et sélectionnez le `CitiSignal - Neon Rabit - Get On Board Now!.png` du fichier. Cliquez sur **Sélectionner**.
+Cliquez pour sélectionner le fichier `getonboardnow.png`. Cliquez sur **Ouvrir**.
 
 ![WF](./images/wfp26a.png)
 
@@ -291,11 +291,11 @@ Vous serez alors de retour dans la vue Tâche avec une ressource approuvée. Cet
 
 ![WF](./images/wfp34.png)
 
-Sélectionnez le document approuvé. Cliquez sur l’icône **flèche de partage** et sélectionnez votre intégration AEM Assets, qui doit être nommée `--aepUserLdap-- - CitiSignal AEM`.
+Sélectionnez le document approuvé. Cliquez sur l’icône **flèche de partage** et sélectionnez votre intégration AEM Assets, qui doit être nommée `--aepUserLdap-- - CitiSignal AEM+ACCS`.
 
 ![WF](./images/wfp35.png)
 
-Double-cliquez sur le dossier que vous avez créé précédemment et qui doit être nommé `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Double-cliquez sur le dossier que vous avez créé précédemment et qui doit être nommé `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfp36.png)
 
@@ -317,7 +317,7 @@ Vous devriez alors voir ceci.
 
 ## 1.2.2.7 Afficher votre fichier dans AEM Assets
 
-Accédez à votre dossier dans AEM Assets CS, qui est nommé `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Accédez à votre dossier dans AEM Assets CS, qui est nommé `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfppaem1.png)
 

@@ -4,7 +4,7 @@ description: Prise en main de Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -109,7 +109,7 @@ Cliquez ensuite sur **Créer un dossier**.
 
 ![WF](./images/wfbaem3a.png)
 
-Nommez votre `--aepUserLdap-- - CitiSignal Fiber Launch Assets` de dossier et cliquez sur **Créer**.
+Nommez votre `--aepUserLdap-- - CitiSignal Fiber Campaign` de dossier et cliquez sur **Créer**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ Sélectionnez ensuite le quatrième champ et cliquez de nouveau sur l’icône *
 
 ![WF](./images/wfbaem11a.png)
 
-Vous verrez alors à nouveau cette fenêtre contextuelle. Dans le champ de recherche, saisissez `wm:document` puis sélectionnez le champ **ID du projet**. Cliquez sur **Sélectionner**.
+Vous verrez alors à nouveau cette fenêtre contextuelle. Dans le champ de recherche, saisissez `wm:document` puis sélectionnez le champ **Statut du document**. Cliquez sur **Sélectionner**.
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ Sélectionnez ensuite le cinquième champ et cliquez de nouveau sur l’icône *
 
 ![WF](./images/wfbaem103.png)
 
-Vous verrez alors à nouveau cette fenêtre contextuelle. Dans le champ de recherche, saisissez `wm:document` puis sélectionnez le champ **ID du projet**. Cliquez sur **Sélectionner**.
+Vous verrez alors à nouveau cette fenêtre contextuelle. Dans le champ de recherche, saisissez `wm:document` puis sélectionnez le champ **Nom du document**. Cliquez sur **Sélectionner**.
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ Ensuite, vous devez affecter le formulaire de métadonnées au dossier que vous 
 
 ![WF](./images/wfbaem15.png)
 
-Sélectionnez votre dossier, qui doit être nommé `--aepUserLdap-- - CitiSignal Fiber Launch Assets`. Cliquez sur **Attribuer**.
+Sélectionnez votre dossier, qui doit être nommé `--aepUserLdap-- - CitiSignal Fiber Campaign`. Cliquez sur **Attribuer**.
 
 ![WF](./images/wfbaem16.png)
 
