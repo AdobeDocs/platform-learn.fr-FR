@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Dans votre projet, sélectionnez **Serveur OAuth** pour afficher les valeurs des
 
 ![WF Fusion](./images/wffusion11.png)
 
-Saisissez le **Nom de la variable** : **CONST_client_id** et sa **Valeur de la variable**, puis sélectionnez **Ajouter**.
+Saisissez le **Nom de la variable** : **`CONST_client_id`** et son **Valeur de la variable**, sélectionnez **Ajouter**.
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ Sélectionnez **Ajouter un élément**.
 
 ![WF Fusion](./images/wffusion13.png)
 
-Saisissez **Nom de la variable** : **CONST_client_secret** et sa **Valeur de la variable**, sélectionnez **Ajouter**.
+Saisissez **Nom de la variable** : **`CONST_client_secret`** et sa **Valeur de la variable**, sélectionnez **Ajouter**.
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ Sélectionnez **Ajouter un élément**.
 
 ![WF Fusion](./images/wffusion15.png)
 
-Saisissez **Nom de la variable** : **CONST_scope** et sa **Valeur de la variable**, sélectionnez **Ajouter**.
+Saisissez **Nom de la variable** : **`CONST_scope`** et sa **Valeur de la variable**, sélectionnez **Ajouter**.
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -230,7 +230,7 @@ Votre écran doit ressembler à ceci :
 
 ![WF Fusion](./images/wffusion45.png)
 
-Ensuite, remplacez le nom de votre scénario par `--aepUserLdap-- - Adobe I/O Authentication`.
+Ensuite, remplacez le nom de votre scénario par `--aepUserLdap-- - Firefly + Photoshop`.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ Sélectionnez **Enregistrer**.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Utilisation des API Adobe dans Workfront Fusion &#x200B;](./ex2.md){target="_blank"}
+Accédez à [ Automatisation à l’aide de connecteurs ](./ex4.md){target="_blank"}
 
 Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 

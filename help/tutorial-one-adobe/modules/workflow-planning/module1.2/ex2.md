@@ -4,9 +4,9 @@ description: Relecture avec Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -197,25 +197,25 @@ Vous devriez alors voir ceci.
 
 Dans le cadre de cette tâche, vous devez créer une nouvelle image, puis la charger sous forme de document dans Workfront. Vous allez à présent créer cette ressource vous-même à l’aide d’Adobe Express.
 
-## 1.2.2.5 Ajouter un nouveau document à votre tâche et lancer le flux d’approbation
+## 1.2.2.5 Ajouter un nouveau document à votre projet et lancer le flux d’approbation
 
 Pour cet exercice, vous devez télécharger et utiliser la ressource suivante : [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-Revenez à l’écran **Détails de la tâche**. Accédez à **Documents**. Cliquez sur **+ Ajouter nouveau** puis sélectionnez votre référentiel CS AEM Assets, qui doit être nommé `--aepUserLdap-- - CitiSignal`.
+Revenez à l’écran **Détails du projet**. Accédez à **Documents**. Cliquez sur **+ Ajouter** puis sélectionnez **Document**.
 
 ![WF](./images/wfp10.png)
 
-Double-cliquez pour ouvrir la `--aepUserLdap-- CitiSignal Fiber Campaign` du dossier.
+Cliquez pour sélectionner le fichier `timetravelnow.png`. Cliquez sur **Ouvrir**.
 
 ![WF](./images/wfp10a.png)
 
-Sélectionnez le fichier que vous avez créé à l’étape précédente, qui s’appelle **CitiSignal - Neon rabbit - Timetravel Now !.png**. Cliquez sur **Sélectionner**.
+Tu devrais avoir ça.
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-Tu devrais avoir ça. Pointez sur le document chargé. Cliquez sur **Créer une épreuve** puis choisissez **Épreuve avancée**.
+Pointez sur le document chargé. Cliquez sur **Créer une épreuve** puis choisissez **Épreuve avancée**.
 
 ![WF](./images/wfp13.png)
 

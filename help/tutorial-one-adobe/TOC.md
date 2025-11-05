@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1388'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 # Tutoriel technique One Adobe {#tutorial-one-adobe}
 
 + [Vue d’ensemble du tutoriel](/help/tutorial-one-adobe/overview.md)
-+ [Activation technique de GenStudio pour la chaîne d’approvisionnement de contenu](/help/tutorial-one-adobe/genstudiocsc.md)
++ [Activation technique de GenStudio for Content Supply chain](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Statut du contenu](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
 
@@ -56,17 +56,15 @@ ht-degree: 3%
    + 1.2 Automatisation des workflows Creative avec Workfront Fusion {#crpr2}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Prise en main de Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-      + [1.2.2 Utilisation des API Adobe dans Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
-      + [1.2.3 Automatisation des processus avec Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
-      + [1.2.4 Automatisation à l&#39;aide de connecteurs](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5 Frame.io et Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.6 Frame.io vers Workfront Fusion vers AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.2 Automatisation à l&#39;aide de connecteurs](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.3 Frame.io et Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.4 Frame.io vers Workfront Fusion vers AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
       + [1.3.1 Configuration : Marques](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Configuration : personnages, produits et modèles](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Activation de Campaign au format Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.3 Activation de Campaign vers Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [1.3.4 Création d’une expérience d’e-mail pour AJO](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express et Adobe Experience Cloud {#crpr4}
