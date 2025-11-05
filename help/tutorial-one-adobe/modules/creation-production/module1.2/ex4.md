@@ -39,7 +39,7 @@ Revenez à votre premier nœud, sélectionnez **Initialiser les constantes** pui
 
 Vous pouvez retrouver vos variables en revenant à Postman, puis en ouvrant votre **Variables d’environnement**.
 
-![ Stockage Azure ](./../module1.1/images/az105.png)
+![&#x200B; Stockage Azure &#x200B;](./../module1.1/images/az105.png)
 
 Copiez ces valeurs dans Workfront Fusion et ajoutez un nouvel élément pour chacune de ces 4 variables.
 
