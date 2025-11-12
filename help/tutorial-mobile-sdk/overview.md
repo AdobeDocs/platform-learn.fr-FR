@@ -64,7 +64,7 @@ Dans ces leçons, nous supposons que vous disposez d’un Adobe Id et des autori
    * **[!UICONTROL Droits de propriété]** : éléments d’autorisation pour **[!UICONTROL Développer]**, **[!UICONTROL Approuver]**, **[!UICONTROL Publier]**, **[!UICONTROL Gérer les extensions]** et **[!UICONTROL Gérer les environnements]**.
    * **[!UICONTROL Droits d’entreprise]**—éléments d’autorisation pour **[!UICONTROL Gérer les propriétés]**
 
-     Pour plus d’informations sur les autorisations des balises, voir [&#x200B; Autorisations d’utilisateur pour les balises &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} dans la documentation du produit.
+     Pour plus d’informations sur les autorisations des balises, voir [&#x200B; Autorisations d’utilisateur pour les balises &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/admin/user-permissions){target="_blank"} dans la documentation du produit.
 * Dans Experience Platform, vous devez disposer des éléments suivants :
    * **[!UICONTROL Modélisation des données]** : éléments d&#39;autorisation pour gérer et afficher les schémas.
    * **[!UICONTROL Identity Management]**—éléments d&#39;autorisation pour gérer et afficher les espaces de noms d&#39;identité.
@@ -74,7 +74,7 @@ Dans ces leçons, nous supposons que vous disposez d’un Adobe Id et des autori
       * **[!UICONTROL Gestion des données]** : éléments d’autorisation pour gérer et afficher les jeux de données.
       * Un **de développement** que vous pouvez utiliser pour ce tutoriel.
 
-   * Pour les leçons Journey Optimizer, vous avez besoin d’autorisations pour configurer le **service de notification push** et pour créer une **surface d’application**, un **parcours**, un **message** et des **préréglages de message**. En outre, pour la gestion des décisions, vous avez besoin des autorisations appropriées pour **gérer les offres** et **les décisions**, comme décrit dans la section [Niveaux d’autorisation](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
+   * Pour les leçons Journey Optimizer, vous avez besoin d’autorisations pour configurer le **service de notification push** et pour créer une **surface d’application**, un **parcours**, un **message** et des **préréglages de message**. En outre, pour la gestion des décisions, vous avez besoin des autorisations appropriées pour **gérer les offres** et **les décisions**, comme décrit dans la section [Niveaux d’autorisation](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 * Pour Adobe Analytics, vous devez savoir quelles **suites de rapports** vous pouvez utiliser pour suivre ce tutoriel.
 
@@ -128,6 +128,6 @@ C’est parti !
 
 >[!SUCCESS]
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 
 Suivant : **[Création d’un schéma XDM](create-schema.md)**
