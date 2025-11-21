@@ -4,7 +4,7 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [Vue d’ensemble du tutoriel](/help/tutorial-one-adobe/overview.md)
 + [Activation technique de GenStudio for Content Supply chain](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Statut du contenu](/help/tutorial-one-adobe/status.md)
-+ [Completion](/help/tutorial-one-adobe/completion.md)
++ [Architecture](/help/tutorial-one-adobe/architecture.md)
 
 + Prise en main {#gettingstarted}
    + Prise en main {#gettingstarted}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Prise en main de Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [Travaux en cours - IA dédiée aux agents](/help/tutorial-one-adobe/ai.md)
-+ Travaux en cours - IA dédiée aux agents {#agenticai}
++ (WIP) IA dédiée aux agences {#agenticai}
+   + [Vue d’ensemble de l’IA dédiée aux agences](/help/tutorial-one-adobe/ai.md)
    + 1.1 Prise en main des agents et de l’IA {#agenticai1}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Prise en main de l’IA dédiée aux agences](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)

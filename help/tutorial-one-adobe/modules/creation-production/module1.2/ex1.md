@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ Une fois le scénario exécuté, l’écran doit se présenter comme suit :
 
 ![WF Fusion](./images/wffusion30.png)
 
-Sélectionnez l’icône **point d’interrogation** sur l’objet **Définir plusieurs variables** pour voir ce qui s’est passé lorsque cet objet s’est exécuté.
+Sélectionnez l’icône **loupe** sur l’objet **Définir plusieurs variables** pour voir ce qui s’est passé lorsque cet objet s’est exécuté.
 
 ![WF Fusion](./images/wffusion31.png)
 
-Sélectionnez l’icône **point d’interrogation** sur l’objet **HTTP - Effectuer une requête** pour voir ce qui s’est passé lorsque cet objet s’est exécuté. Dans le **OUTPUT**, consultez le **access_token** renvoyé par Adobe I/O.
+Sélectionnez l’icône **loupe** sur l’objet **HTTP - Effectuer une requête** pour voir ce qui s’est passé lorsque cet objet s’est exécuté. Dans le **OUTPUT**, consultez le **access_token** renvoyé par Adobe I/O.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ Sélectionnez **Exécuter une fois** à nouveau.
 
 ![WF Fusion](./images/wffusion39.png)
 
-Une fois le scénario exécuté, sélectionnez l’icône **point d’interrogation** sur le dernier objet **Définir plusieurs variables**. Vous devriez voir que le jeton access_token est stocké dans la variable `bearer_token`.
+Une fois le scénario exécuté, sélectionnez l’icône **loupe** dans le dernier objet **Définir plusieurs variables**. Vous devriez voir que le jeton access_token est stocké dans la variable `bearer_token`.
 
 ![WF Fusion](./images/wffusion40.png)
 
@@ -240,7 +240,7 @@ Sélectionnez **Enregistrer**.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Automatisation à l’aide de connecteurs &#x200B;](./ex4.md){target="_blank"}
+Accédez à [ Automatisation à l’aide de connecteurs ](./ex4.md){target="_blank"}
 
 Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Relecture avec Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ Cliquez sur **Continuer**.
 
 ![WF](./images/blueprint3.png)
 
+Remplacez **Nom du modèle de projet** par `--aepUserLdap-- - Integrated Campaign Execution`.
+
 Cliquez sur **Installer en l’état...**.
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ Dans votre programme, accédez à **Projets**. Cliquez sur **+ Nouveau projet** 
 
 ![WF](./images/wfp6.png)
 
-Sélectionnez le modèle **Exécution de campagne intégrée** et cliquez sur **Utiliser le modèle**.
+Sélectionnez la `--aepUserLdap-- - Integrated Campaign Execution` du modèle et cliquez sur **Utiliser le modèle**.
 
 ![WF](./images/wfp6g.png)
 

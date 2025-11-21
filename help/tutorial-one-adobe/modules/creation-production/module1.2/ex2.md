@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Revenez à votre premier nœud, sélectionnez **Initialiser les constantes** pui
 
 Vous pouvez retrouver vos variables en revenant à Postman, puis en ouvrant votre **Variables d’environnement**.
 
-![&#x200B; Stockage Azure &#x200B;](./../module1.1/images/az105.png)
+![ Stockage Azure ](./../module1.1/images/az105.png)
 
 Copiez ces valeurs dans Workfront Fusion et ajoutez un nouvel élément pour chacune de ces 4 variables.
 
@@ -67,7 +67,7 @@ Vous devriez alors voir ceci. Ensuite, faites glisser le point rouge du premier 
 
 ![WF Fusion](./images/wffusion217b.png)
 
-Vous devriez alors voir ceci. Newt, cliquez sur le module **Custom webhook**.
+Vous devriez alors voir ceci. Cliquez ensuite sur le module **Custom webhook**.
 
 ![WF Fusion](./images/wffusion217c.png)
 

@@ -4,7 +4,7 @@ description: AEM CS - Bloc personnalisé avancé
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Dans l’exercice précédent, vous avez configuré un bloc personnalisé de bas
 
 Vous pouvez maintenant continuer à travailler sur ce bloc.
 
-![&#x200B; AEMCS &#x200B;](./images/nav7.png){zoomable="yes"}
+![ AEMCS ](./images/nav7.png){zoomable="yes"}
 
 ## 1.1.4.1 Donner un style à votre bloc
 
@@ -25,23 +25,23 @@ Maintenant que vous disposez d’un bloc **fiberoffer** fonctionnel, vous pouvez
 
 Revenez à Visual Studio Code et ouvrez le dossier **blocs**. Vous devriez maintenant voir plusieurs dossiers qui font référence à un bloc spécifique. Pour rendre votre bloc **fiberoffer** plus avancé, vous devez maintenant créer un dossier pour votre bloc personnalisé.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv1.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv1.png){zoomable="yes"}
 
 Sélectionnez le dossier **blocs**, puis cliquez sur l’icône **Créer un dossier**.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv2.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv2.png){zoomable="yes"}
 
 Nommez votre `fiberoffer` de dossier et appuyez sur **entrée**.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv3.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv3.png){zoomable="yes"}
 
 Sélectionnez le nouveau dossier **fiberoffer** et cliquez sur l’icône **Créer un fichier**.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv4.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv4.png){zoomable="yes"}
 
 Un nouveau fichier est maintenant créé. Saisissez le nom **fiberoffer.js** et appuyez sur Entrée.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv5.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv5.png){zoomable="yes"}
 
 Vous pouvez désormais implémenter la décoration de bloc en ajoutant le code JavaScript suivant dans le fichier **fiberoffer.js**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv6.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv6.png){zoomable="yes"}
 
 Sélectionnez le nouveau dossier **fiberoffer** et cliquez de nouveau sur l’icône **Créer un fichier**.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv7.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv7.png){zoomable="yes"}
 
 Un nouveau fichier est maintenant créé. Saisissez le nom **fiberoffer.css** et appuyez sur Entrée.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv8.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv8.png){zoomable="yes"}
 
 Copiez et collez le code CSS suivant dans le fichier nouvellement créé.
 
@@ -88,7 +88,7 @@ Copiez et collez le code CSS suivant dans le fichier nouvellement créé.
 
 Enregistrez vos modifications.
 
-![&#x200B; AEMCS &#x200B;](./images/blockadv9.png){zoomable="yes"}
+![ AEMCS ](./images/blockadv9.png){zoomable="yes"}
 
 Vous avez apporté plusieurs modifications à votre projet qui doivent être validées dans votre référentiel GitHub. Pour ce faire, ouvrez **GitHub Desktop**.
 
@@ -106,10 +106,10 @@ Dans votre navigateur, accédez à votre compte GitHub et au référentiel que v
 
 ![Bloquer](./images/blockadv12.png){zoomable="yes"}
 
-Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
+Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal-aem-accs--XXX.aem.page` et/ou `main--citisignal-aem-accs--XXX.aem.live`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
 Dans cet exemple, l’URL complète devient :
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` et/ou `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`
 
 Vous devriez alors voir ceci, avec la mise en forme appliquée à votre page.
 
@@ -336,10 +336,10 @@ Cliquez ensuite sur **Origine push**.
 
 ![Bloquer](./images/blockadv19.png){zoomable="yes"}
 
-Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal--XXX.aem.page/us/en/` et/ou `main--citisignal--XXX.aem.live/us/en/`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
+Vous pourrez désormais afficher les modifications apportées à votre site web en accédant à `main--citisignal-aem-accs--XXX.aem.page` et/ou `main--citisignal-aem-accs--XXX.aem.live`, après avoir remplacé XXX par votre compte utilisateur GitHub, ce qui est `woutervangeluwe` dans cet exemple.
 
 Dans cet exemple, l’URL complète devient :
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` et/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` et/ou `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`
 
 Vous devriez alors voir ceci.
 

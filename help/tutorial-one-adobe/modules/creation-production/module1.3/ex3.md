@@ -1,19 +1,19 @@
 ---
-title: Activation de GenStudio for Performance Marketing Campaign au format Meta
-description: Activation de GenStudio for Performance Marketing Campaign au format Meta
+title: Activation de GenStudio for Performance Marketing Campaign vers Meta
+description: Activation de GenStudio for Performance Marketing Campaign vers Meta
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
 
-# 1.3.3 Activation de Campaign au format Meta
+# 1.3.3 Activation de Campaign vers Meta
 
 >[!IMPORTANT]
 >
@@ -103,7 +103,7 @@ Pour le champ **Fin**, définissez-le sur une date dans 1 mois.
 
 Pour le champ **Statut**, définissez-le sur **Actif**.
 
-Pour le champ **Canaux**, définissez-le sur **Méta**, **E-mail**, **Média payant**, **Affichage**.
+Pour le champ **Canaux**, définissez-le sur **Meta**, **E-mail**, **Média payant**, **Affichage**.
 
 Pour le champ **Régions**, sélectionnez une région de votre choix.
 
@@ -131,17 +131,17 @@ Vous devriez alors voir un calendrier des campagnes qui donne une idée plus vis
 
 >[!IMPORTANT]
 >
->Pour configurer votre connexion à Meta, vous devez disposer d’un compte utilisateur Meta et ce compte utilisateur doit être ajouté à un compte Meta Business.
+>Pour configurer votre connexion à Meta, vous devez disposer d’un compte d’utilisateur Meta et ce compte d’utilisateur doit être ajouté à un compte professionnel Meta.
 
 Pour configurer la connexion à Meta, cliquez sur le **de 3 points...** et sélectionnez **Paramètres**.
 
 ![GSPeM](./images/gsconnection1.png)
 
-Cliquez sur **Connexion** pour **Méta-publicités**.
+Cliquez sur **Connexion** pour **Meta Ads**.
 
 ![GSPeM](./images/gsconnection2.png)
 
-Connectez-vous à l’aide de votre compte Meta. Cliquez sur **Continuer**.
+Connectez-vous en utilisant votre compte Meta. Cliquez sur **Continuer**.
 
 ![GSPeM](./images/gsconnection3.png)
 
@@ -153,7 +153,7 @@ Une fois la connexion établie, cliquez sur la ligne indiquant **X compte(s) con
 
 ![GSPeM](./images/gsconnection4.png)
 
-Vous devriez alors voir les détails du compte professionnel Meta qui est connecté à GenStudio for Performance Marketing.
+Vous devriez alors voir les détails du compte professionnel Meta connecté à GenStudio for Performance Marketing.
 
 ![GSPeM](./images/gsconnection6.png)
 
@@ -191,7 +191,7 @@ Sélectionnez **AEM Assets**.
 
 ![GSPeM](./images/gsasset8.png)
 
-Cliquez sur **Sélectionner un dossier**.
+Cliquez sur **Sélectionner un dossier**. Remplacez le nom de la ressource par `--aepUserLdap-- - neon rabbit`.
 
 ![GSPeM](./images/gsasset9.png)
 
@@ -231,13 +231,13 @@ Revenez à GenStudio for Performance Marketing. Dans le menu de gauche, accédez
 
 ![GSPeM](./images/gsasset18.png)
 
-## 1.3.3.4 Créer et approuver une méta-annonce
+## 1.3.3.4 Créer et approuver une publicité Meta
 
-Dans le menu de gauche, accédez à **Créer**. Sélectionnez **Méta**.
+Dans le menu de gauche, accédez à **Créer**. Sélectionnez **Meta**.
 
 ![GSPeM](./images/gsad1.png)
 
-Sélectionnez le modèle **Méta-annonce** que vous avez importé précédemment et qui est nommé `--aepUserLdap---citisignal-meta-ad`. Cliquez sur **Utiliser**.
+Sélectionnez le modèle **Meta ad** que vous avez importé précédemment et qui est nommé `--aepUserLdap---citisignal-meta-ad`. Cliquez sur **Utiliser**.
 
 ![GSPeM](./images/gsad2.png)
 
@@ -298,11 +298,11 @@ Cliquez sur **Ouvrir dans le contenu**.
 
 ![GSPeM](./images/gsad14.png)
 
-Les 4 méta-annonces sont désormais disponibles sous **Contenu** > **Expériences**.
+Les 4 annonces Meta sont désormais disponibles sous **Contenu** > **Expériences**.
 
 ![GSPeM](./images/gsad15.png)
 
-## 1.3.3.5 Publier l’annonce publicitaire dans Meta
+## 1.3.3.5 Publier l’annonce publicitaire sur Meta
 
 Sélectionnez l’une des publicités, puis cliquez sur **Activer**.
 
@@ -312,7 +312,7 @@ Choisissez un **Call to action** à partir de la liste et saisissez un exemple d
 
 ![GSPeM](./images/gsmetaad3.png)
 
-Sélectionnez le compte Meta , la page Facebook associée, la Meta Campaign et la Meta Ad Set.
+Sélectionnez le compte Meta, la page Facebook associée, la campagne Meta et la visionneuse d’annonces Meta.
 
 Donnez un nom à votre ajout, puis utilisez `--aepUserLdap-- Fiber Max Ad`.
 
@@ -332,21 +332,21 @@ Le statut de votre publicité est maintenant défini sur **Publication**, ce qui
 
 ![GSPeM](./images/gsmetaad7.png)
 
-Au bout de quelques minutes, le statut de la publicité passe à **Publiée**. Cela signifie que la publicité a été envoyée de GenStudio for Performance Marketing à Meta. Cela ne veut pas dire que la publicité est déjà publiée dans Meta ! Il reste encore un certain nombre de mesures à prendre dans le Meta Business Account pour prendre l&#39;annonce et la publier afin qu&#39;elle puisse être vue par les utilisateurs sur les différentes plateformes Meta.
+Au bout de quelques minutes, le statut de la publicité passe à **Publiée**. Cela signifie que la publicité a été envoyée de GenStudio for Performance Marketing vers Meta. Cela ne signifie pas que la publicité est déjà publiée dans Meta ! Il reste un certain nombre de mesures à prendre dans le compte professionnel Meta pour prendre la publicité et la publier afin qu’elle soit visible par les utilisateurs sur les différentes plateformes de Meta.
 
 Cliquez sur **Afficher les détails**.
 
 ![GSPeM](./images/gsmetaad8.png)
 
-Cliquez sur **Ouvrir** pour accéder à votre compte Meta Business.
+Cliquez sur **Ouvrir** pour accéder à votre compte professionnel Meta.
 
 >[!IMPORTANT]
 >
->Si vous n’avez pas accès au compte professionnel Meta connecté à votre environnement, vous ne pourrez pas visualiser cette annonce dans Meta.
+>Si vous n’avez pas accès au compte professionnel Meta connecté à votre environnement, vous ne pourrez pas visualiser cette annonce publicitaire dans Meta.
 
 ![GSPeM](./images/gsmetaad9.png)
 
-Voici un aperçu de l&#39;annonce que vous venez de créer, mais maintenant dans Meta.
+Voici un aperçu de l’annonce que vous venez de créer, mais qui se trouve désormais dans Meta.
 
 ![GSPeM](./images/gsmetaad10.png)
 
@@ -354,7 +354,7 @@ Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
+Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
 
 Revenir à [GenStudio for Performance Marketing](./genstudio.md){target="_blank"}
 
