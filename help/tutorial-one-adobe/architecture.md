@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Tutoriel sur One Adobe - Aperçu de l’architecture
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Présentation de l’architecture de GenStudio
 
@@ -25,7 +25,7 @@ Dans cette vidéo, vous découvrirez l’architecture sous-jacente à la partie 
 
 Dans cette vidéo, vous découvrirez l’architecture sous-jacente au tutoriel complet de bout en bout.
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
