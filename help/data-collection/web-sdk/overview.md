@@ -24,7 +24,7 @@ Découvrez comment le SDK web Adobe Experience Platform et le réseau Edge per
 
 >[!NOTE]
 >
->Cette vidéo est un extrait de la session Adobe Summit 2020 *[Rencontrer Alloy.js et ne plus jamais baliser pour une eVar ou une mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Cette vidéo est un extrait de la session Adobe Summit 2020 *[Rencontrer Alloy.js et ne plus jamais baliser pour une eVar ou une mbox](https://business.adobe.com/fr/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
 >La fonctionnalité de transfert côté serveur décrite dans cette vidéo est désormais disponible pour tous les clients disposant d’une licence. Voir la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)
 
