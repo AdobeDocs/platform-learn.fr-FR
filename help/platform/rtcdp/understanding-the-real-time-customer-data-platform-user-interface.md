@@ -1,6 +1,6 @@
 ---
 title: Utilisation de l’interface utilisateur et du workflow Real-Time Customer Data Platform
-description: Apprenez à naviguer dans l’interface utilisateur de Real-time Customer Data Platform (CDP) et découvrez comment ses fonctionnalités agissent de concert pour permettre une activation en temps réel sur le parcours client numérique.
+description: Apprenez à naviguer dans l’interface d’utilisation de Real-time Customer Data Platform (CDP) et découvrez comment ses fonctionnalités agissent de concert pour permettre une activation en temps réel sur le parcours clientèle numérique.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -19,4 +19,4 @@ ht-degree: 31%
 
 Découvrez comment naviguer dans l’interface utilisateur de Real-Time Customer Data Platform (CDP) et découvrir comment ses fonctionnalités s’associent pour fournir une activation en temps réel sur le parcours client numérique. Pour plus d’informations, consultez la documentation de [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/36937?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)
