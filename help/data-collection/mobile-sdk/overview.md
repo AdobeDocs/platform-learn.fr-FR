@@ -20,4 +20,4 @@ Découvrez comment le SDK Mobile Adobe Experience Platform optimise l’engageme
 >
 > Le lancement est maintenant **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33543?captions=fre_fr&learn=on&enablevpops)

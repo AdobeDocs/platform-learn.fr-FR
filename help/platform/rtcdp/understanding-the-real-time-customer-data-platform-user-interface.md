@@ -19,4 +19,4 @@ ht-degree: 31%
 
 Découvrez comment naviguer dans l’interface utilisateur de Real-Time Customer Data Platform (CDP) et découvrir comment ses fonctionnalités s’associent pour fournir une activation en temps réel sur le parcours client numérique. Pour plus d’informations, consultez la documentation de [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36937?captions=fre_fr&learn=on&enablevpops)

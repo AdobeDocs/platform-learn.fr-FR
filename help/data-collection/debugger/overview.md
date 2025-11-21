@@ -19,7 +19,7 @@ ht-degree: 54%
 
 [&#x200B; Découvrez comment l’extension Adobe Experience Platform Debugger &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Chrome et le module complémentaire [Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/) vous aident à déboguer vos implémentations web de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, les balises et plus encore.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36025?captions=fre_fr&learn=on&enablevpops)
 
 ## Ressources supplémentaires
 

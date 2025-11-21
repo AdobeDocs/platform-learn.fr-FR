@@ -18,4 +18,4 @@ ht-degree: 51%
 
 Découvrez comment utiliser la page d’informations IA dédiée à l’attribution pour comprendre le retour sur investissement des canaux et campagnes marketing. Pour plus d’informations, consultez la [documentation sur l’IA dédiée à l’attribution](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345100?captions=fre_fr&learn=on&enablevpops)

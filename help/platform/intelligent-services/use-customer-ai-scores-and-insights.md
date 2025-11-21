@@ -19,5 +19,5 @@ ht-degree: 53%
 
 Découvrez comment utiliser les scores de propension et les informations de Customer AI pour convertir et fidéliser les clients. Pour plus d’informations, consultez la [documentation sur l’IA dédiée aux clients](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36547?captions=fre_fr&learn=on&enablevpops)
 

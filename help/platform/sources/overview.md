@@ -18,7 +18,7 @@ ht-degree: 13%
 
 Découvrez comment utiliser des sources, ou des connecteurs source, dans l’interface de Adobe Experience Platform. Les sources sont des intégrations facilement configurables qui vous permettent d’ingérer des données à partir d’applications Adobe, propriétaires et tierces dans le profil client en temps réel de Platform et le lac de données. Pour plus d’informations, consultez la [documentation relative aux sources](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33166?captions=fre_fr&learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
@@ -38,7 +38,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="Ingestion de données à l’aide des connecteurs CRM Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="Ingestion de données à l’aide des connecteurs CRM Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33160?captions=fre_fr&format=jpeg&nocache=1740415500926" alt="Ingestion de données à l’aide des connecteurs CRM Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="Ingestion de données à l’aide des connecteurs Source de Cloud Storage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="Ingestion de données à l’aide des connecteurs Source de Cloud Storage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33156?captions=fre_fr&format=jpeg&nocache=1740415500914" alt="Ingestion de données à l’aide des connecteurs Source de Cloud Storage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="Ingestion de données à l’aide d’un connecteur source de base de données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="Ingestion de données à l’aide d’un connecteur source de base de données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345121?captions=fre_fr&format=jpeg&nocache=1740415500936" alt="Ingestion de données à l’aide d’un connecteur source de base de données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +107,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="Diffusion de données en continu à l’aide des connecteurs Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="Diffusion de données en continu à l’aide des connecteurs Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410103?captions=fre_fr&format=jpeg&nocache=1740415500903" alt="Diffusion de données en continu à l’aide des connecteurs Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-http-api.md" title="Ingestion de données à l’aide du point d’entrée de l’API HTTP de connexion en flux continu" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740415500889" alt="Ingestion de données à l’aide du point d’entrée de l’API HTTP de connexion en flux continu"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410928?captions=fre_fr&format=jpeg&nocache=1740415500889" alt="Ingestion de données à l’aide du point d’entrée de l’API HTTP de connexion en flux continu"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Ingestion de données à l’aide du connecteur source Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Ingestion de données à l’aide du connecteur source Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430255?captions=fre_fr&format=jpeg&nocache=1740415502122" alt="Ingestion de données à l’aide du connecteur source Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Ingérer des données à partir de Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Ingérer des données à partir de Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451862?captions=fre_fr&format=jpeg&nocache=1740415502109" alt="Ingérer des données à partir de Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +211,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-aam.md" title="Ingestion de données à l’aide du connecteur de données Adobe Audience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740415502093" alt="Ingestion de données à l’aide du connecteur de données Adobe Audience Manager"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346984/?captions=fre_fr&format=jpeg&nocache=1740415502093" alt="Ingestion de données à l’aide du connecteur de données Adobe Audience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ Découvrez comment utiliser des sources, ou des connecteurs source, dans l’int
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="Dépannage - Impossible de se connecter au connecteur source SFTP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="Dépannage - Impossible de se connecter au connecteur source SFTP"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443470?captions=fre_fr&format=jpeg&nocache=1740415502267" alt="Dépannage - Impossible de se connecter au connecteur source SFTP"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

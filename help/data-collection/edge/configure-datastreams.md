@@ -17,4 +17,4 @@ ht-degree: 36%
 
 Découvrez comment créer et configurer des flux de données pour les implémentations de SDK web et mobile. Pour plus d’informations, consultez [documentation sur les flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344992?captions=fre_fr&learn=on&enablevpops)
