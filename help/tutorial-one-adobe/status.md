@@ -3,9 +3,9 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 715b96b7ba92d63ef3ab39b6083ebf4418f67c8a
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '540'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## &#x200B;1. Workflow et planification
 
@@ -82,14 +82,15 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 IA dédiée aux agences](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | Non | Travail en cours | À déterminer |
-| [1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 23/09/2025 | Non | Travail en cours | À déterminer |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | Non | Travail en cours | À déterminer |
+| [1.2 IA dédiée aux agences](./modules/agents/module1.2/agenticai.md){target="_blank"} | 25/11/2025 | Non | Travail en cours | À déterminer |
+| [1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 25/11/2025 | Non | Travail en cours | À déterminer |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

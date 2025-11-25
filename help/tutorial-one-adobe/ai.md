@@ -3,22 +3,35 @@ title: Présentation d’Agentic AI Tech Labs
 description: Présentation d’Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Aperçu - Travail en cours
 
-Les Agentic AI Tech Labs sont en cours de réalisation et seront publiés en novembre/décembre 2025.
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1 Prise en main des agents et de l’IA](./modules/agentic-ai/module1.1/agenticai.md)
+**Objectif**
+
+Découvrez comment utiliser les agents Adobe Experience Platform et Agent Orchestrator pour :
+
+- Analyse des tendances d’achat
+- Identification des audiences à forte propension
+- Validation des performances du parcours
+- Création d&#39;un nouveau parcours pour le déploiement CitiSignal Fiber Max
+
+[1.2 Prise en main des agents et de l’IA](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>Ce module n&#39;a pas encore été publié.
 
 **Objectif**
 
@@ -38,7 +51,11 @@ Quelle est l&#39;architecture derrière un agent ?
 - Serveur MCP, notebook Python
 - API d’Adobe
 
-[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>Ce module n&#39;a pas encore été publié.
 
 **Objectif**
 
@@ -54,7 +71,7 @@ Quelle est l’architecture derrière A2A ?
 
 - Interopérabilité des agents avec le protocole A2A Google
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
@@ -268,11 +268,14 @@ ht-degree: 3%
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Prise en main de Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ (WIP) IA dédiée aux agences {#agenticai}
++ Agents {#agents}
    + [Vue d’ensemble de l’IA dédiée aux agences](/help/tutorial-one-adobe/ai.md)
-   + 1.1 Prise en main des agents et de l’IA {#agenticai1}
-      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
-      + [1.1.1 Prise en main de l’IA dédiée aux agences](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
-   + 1.2 Agent Collaboration {#agenticai2}
-      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
-      + [1.2.1 Prise en main de l’agent Collaboration](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
+   + 1.1 Agent Orchestrator {#agents1}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Prise en main d’Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+   + 1.2 Prise en main des agents et de l’IA {#agents2}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Prise en main de l’IA dédiée aux agences](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.3 Agent Collaboration {#agents3}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
+      + [1.3.1 Prise en main de l’agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
