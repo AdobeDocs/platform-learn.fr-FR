@@ -18,7 +18,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## &#x200B;1. Workflow et planification
 
@@ -90,7 +90,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 >[!NOTE]
 >
->![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
