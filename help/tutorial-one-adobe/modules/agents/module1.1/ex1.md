@@ -3,9 +3,9 @@ title: Prise en main d’Agent Orchestrator
 description: Prise en main d’Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
+source-git-commit: dee5b0855eeeb455bf22f511d11cd13f7e904889
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -34,29 +34,13 @@ Cliquez sur **Définir le contexte**.
 
 ![Agent Orchestrator](./images/ao3.png)
 
->[!NOTE]
->
->Dans cet atelier, vous allez passer d’une analyse à une orchestration et changer de contexte.
-
 ## 1.1.1.2 Commencez par les tendances d’achat globales pour ancrer le contexte et zoomer sur la fibre
 
-**Intention** : prenez une bonne idée de la demande de la catégorie (mobile, fixe, Internet, télévision, fibre optique), en particulier au cours des 60 derniers jours. Cette option définit des niveaux de référence pour la saisonnalité, les effets de promotion et la variance régionale après le déploiement à New York.
+**Intention**
 
-**Réflexion** :
+Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile, fixe, Internet, télévision, fibre optique), en particulier pour les 60 derniers jours. Cela définit des niveaux de référence pour la saisonnalité, les effets de promotion et la variance régionale après le déploiement à New York.
 
-« Est-ce que Fibre gagne des parts postNY ? Est-ce que nous assistons à la cannibalisation de l&#39;Internet cuivre/DSL ? Quelle est la répartition par rapport aux offres groupées TV ? »
-
-« Cela m’aidera à déterminer le public auquel je peux m’adresser à Vienne et à fixer des objectifs réalistes. »
-
-**Le spécialiste marketing s’attend à obtenir des lectures exploitables** :
-
-Graphique à barres empilées/en courbes des achats par catégorie principale (grain quotidien/hebdomadaire).
-
-Pourcentage de part des achats par catégorie par rapport à la période précédente.
-
-Pics notables corrélés aux dates promotionnelles.
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
 Show me purchases by mainCategory over the last 2 months.
@@ -66,13 +50,9 @@ Show me purchases by mainCategory over the last 2 months.
 
 Vous devriez alors voir ceci :
 
->[!NOTE]
->
->Gardez un œil sur l’attribution tardive : les commandes de fibres peuvent être capturées sous « Internet » dans certains schémas hérités. Si tel est le cas, réconciliez la taxonomie avant les décisions.
-
 ![Agent Orchestrator](./images/ao5.png)
 
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 `Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
@@ -86,29 +66,11 @@ Vous devriez ensuite voir ceci, qui examine les tendances spécifiques à la fib
 
 ## 1.1.1.3 Corréler les commandes avec les préférences de contenu
 
-**Intention** : testez l’hypothèse selon laquelle la préférence de contenu (SciFi, Sports, Drama, par exemple) prédit le comportement de mise à niveau du haut débit, en particulier pour les besoins en bande passante élevée.
-
-**Réflexion**
-
-« Les fans de science-fiction regardent souvent la 4K et la diffusion en continu à partir de plusieurs appareils, ce qui est susceptible d&#39;augmenter la faible latence. »
-
-« Quantifions si la science-fiction (et peut-être les sports) sont en corrélation avec les commandes récentes. »
-
-**Résultats escomptés**
-
-Un pivot de Commandes (filtre cumulé sur l’exercice en cours appliqué) divisé par genre préféré, limité à 2 mois.
-
-Classez les genres par taux de conversion d’ordre et AOV (valeur d’ordre moyenne).
-
-Décision : Si SciFi affiche un signal fort, cela devient un pilier créatif principal pour le lancement de Fibre Max à Vienne (par exemple, des messages « plus jamais de tampon », des forfaits premium).
-
 **Intention**
 
-Analysez la conversion par genre (par exemple, science-fiction, sports).
+Testez l’hypothèse selon laquelle la préférence de contenu (science-fiction, sports, théâtre, etc.) prédit le comportement de mise à niveau de la large bande passante, en particulier pour les besoins en bande passante élevée.
 
-**Objectif** Vérifiez si les fans de Sci-Fi surindexent pour les mises à niveau de la technologie Fibre.
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
 Show me ordersYTD by preferredGenre for the last 2 months
@@ -122,33 +84,11 @@ Vous devriez alors voir ceci :
 
 ## 1.1.1.4 Identifier Les Parcours Fibre Existants
 
-Cliquez sur la fenêtre **context**.
+**Intention**
 
-![Agent Orchestrator](./images/ao10.png)
+Découvrez quels parcours actifs ou récemment conclus incluent « Fibre » dans le titre, par exemple, « Fibre Upgrade NYC - Sept », « Fibre Trial - Streaming Bundle ».
 
-Définissez le contexte sur :
-
-- **Documentation Source** : **Adobe Journey Optimizer**
-- **Sandbox** : **Accélérer**
-- **Vue de données** : **Accélérer le B2C 2026**
-
-![Agent Orchestrator](./images/ao11.png)
-
-**Intention** Découvrez quels parcours en cours ou récemment conclus incluent « Fibre » dans le titre, par exemple, « Fibre Upgrade NYC - Sept », « Fibre Trial - Streaming Bundle ».
-
-**Réflexion**
-
-« Lequel de ces parcours a donné de bons résultats et quels en ont été les déclencheurs ? »
-
-« Puis-je réutiliser la logique d’orchestration gagnante pour Vienne ? »
-
-**Résultats escomptés**
-
-Liste des parcours avec le statut (actif, en pause, terminé), les périodes, les segments cibles, les KPI (taux d’ouverture, CTR, conversion).
-
-Prochaine étape : présélectionnez un ou deux parcours de fibre réussis pour le clonage/adaptation.
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
 What journeys exist? 
@@ -164,7 +104,7 @@ Répertorier les parcours actifs ou passés avec messagerie Fibre.
 
 Action : sélectionnez les parcours les plus performants pour le clonage.
 
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -182,46 +122,25 @@ Vous devriez alors voir ceci :
 
 Comprenez la définition de départ du parcours « CitiSignal - Promotion de lancement Fibre Max » : les caractéristiques qui ont motivé le ciblage (par exemple, « Préférence de genre SciFi », « Appareils 4+ », « Diffusion ≥ 300GB/mois »).
 
-**Réflexion**
-
-« Je veux combiner la créativité SciFi éprouvée avec la messagerie de performance Fibre Max. »
-
-« Si l’audience chevauche des téléchargeurs volumineux, nous pouvons cumuler la propension. »
-
-**Résultats escomptés**
-
-Critères d’audience (inclusion/exclusion), taille d’audience, filtres régionaux, récence, seuils de fréquence.
-
->[!NOTE]
->
->Remplacer le contexte par CJA
-
-À partir de là, le marketeur passe en mode Analytics pour garantir un compte rendu des performances correct.
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez ce qui suit **Invite** puis saisissez **+CitiSignal fib** pour activer la saisie automatique. Sélectionnez le parcours **Promotion de lancement CitiSignal - Fibre max**.
 
 ```javascript
-What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+What was the initial audience in the journey named 
 ```
 
 ![Agent Orchestrator](./images/ao16.png)
-Examinez les critères d’audience (habitudes de diffusion en continu, nombre d’appareils).
 
-**Objectif** : comprendre les caractéristiques pour les besoins en bande passante élevée.
+Vous devriez alors voir ceci. Cliquez sur le bouton **envoyer**.
+
+![Agent Orchestrator](./images/ao17.png)
+
+Vous devriez alors voir ceci.
+
+![Agent Orchestrator](./images/ao18.png)
 
 ## 1.1.1.6 Validation des performances du parcours via l’analyse des abandons
 
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
-
-```javascript
-Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
-```
-
->[!NOTE]
->
->Modifier le contexte en (CJA)
-
-**Intention** :
+**Intention**
 
 Création d’un funnel pas à pas dans Customer Journey Analytics
 
@@ -229,99 +148,119 @@ Livré → ouvert → cliqué → Landed → Product View → Add to Cart → Ch
 
 Incluez les vues de SKU associées à Fibre comme branche.
 
-**Réflexion** :
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-« Où perdons-nous des utilisateurs (ouverture d’e-mail, chargement de page de destination, PDP, friction de passage en caisse) ? »
+```javascript
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
+```
 
-« Les utilisateurs de SciFi rebondissent-ils plus ou moins que la moyenne sur le PDP Fibre ? »
+![Agent Orchestrator](./images/ao19.png)
 
-**Résultats escomptés** :
+## 1.1.1.7 Créer une audience
 
-Une visualisation des abandons avec des taux de dépôt à chaque étape.
+**Intention**
 
-Recouvrements de segments (SciFi vs Sports vs Autre).
+Sur la base des résultats ci-dessus, il existe une corrélation entre les clients qui consomment beaucoup de données et qui ont un genre préféré de science-fiction ou de fantaisie. Vous allez maintenant combiner ces attributs dans une audience.
 
-Répartition appareil/navigateur pour le frottement technique.
+Accédez à [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
-**Décisions** :
-
-Si le taux de passage en caisse est élevé, assurez-vous de collaborer avec le produit/l’expérience utilisateur pour corriger le flux de paiement.
-
-Si la sortie PDP est élevée, la clarté de la demande de reprise (vitesses, temps d&#39;installation, valeur du lot).
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 >[!NOTE]
 >
->Remplacer le contexte par JO
-
-Le marketeur passe maintenant à Adobe Journey Optimizer pour les opérations d’orchestration et d’audience.
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+>Veuillez vérifier que le contexte de l’assistant pointe vers le sandbox **Accélérer** et la vue de données **Accélérer 2026 B2C**
 
 ```javascript
-Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey 
+Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
-Visualisation Build funnel : diffusée → ouverte → sur laquelle vous avez cliqué → passer → commande.
+![Agent Orchestrator](./images/ao32.png)
 
-**Action** : identifier les points de dépôt et optimiser la messagerie ou l’expérience utilisateur.
+Examinez le plan. Saisissez `yes` et cliquez sur **Envoyer**.
 
-## 1.1.1.7 Rechercher des audiences existantes alignées sur une utilisation élevée
+![Agent Orchestrator](./images/ao33.png)
 
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Vérifiez l’expression de requête de segment. Saisissez `yes` et cliquez sur le bouton **Envoyer**.
+
+![Agent Orchestrator](./images/ao34.png)
+
+Vérifiez l’estimation de la taille du segment. Saisissez `yes` et cliquez sur le bouton **Envoyer**.
+
+![Agent Orchestrator](./images/ao35.png)
+
+Cliquez sur **Vérifier**.
+
+![Agent Orchestrator](./images/ao36.png)
+
+Examinez la définition de segment. Cliquez sur **Créer**.
+
+![Agent Orchestrator](./images/ao37.png)
+
+Votre audience a maintenant été créée.
+
+![Agent Orchestrator](./images/ao38.png)
+
+>[!NOTE]
+>
+>Lors de la création d’une audience, il faudra 24 heures avant que l’audience ne soit disponible pour l’assistant à des fins d’utilisation.
+
+## 1.1.1.8 Rechercher les audiences existantes alignées sur une utilisation élevée et vérifier si elles sont en cours d’utilisation
+
+**Intention** :
+
+Localisez toute audience dont le nom comporte des « téléchargeurs volumineux », définis par des seuils mensuels d’utilisation des données.
+
+>[!NOTE]
+>
+>À l’étape précédente, vous avez créé une nouvelle audience. Gardez à l’esprit qu’il faudra 24 heures avant que l’audience ne soit disponible pour l’assistant à des fins d’utilisation ultérieure. Vous devez maintenant utiliser une autre audience, déjà existante.
+
+Accédez à [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Vous devriez alors voir ceci. Vérifiez que vous êtes dans l’organisation **Experience Platform International**.
+
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
+
+>[!NOTE]
+>
+>Veuillez vérifier que le contexte de l’assistant pointe vers le sandbox **Accélérer** et la vue de données **Accélérer 2026 B2C**
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
->[!NOTE]
->
->Remplacer le contexte par Adobe Journey Optimizer
+![Agent Orchestrator](./images/ao30.png)
 
-**Intention** :
+Vous devriez alors voir ceci.
 
-Localisez toute audience d’applications d’entreprise nommée avec des « téléchargeurs lourds », probablement définis par des seuils d’utilisation des données mensuels, des heures de diffusion en continu ou la simultanéité des appareils.
+![Agent Orchestrator](./images/ao31.png)
 
-**Réflexion** :
+Il existe déjà certaines audiences pour les « téléchargeurs lourds ». Voyons s’ils sont déjà utilisés.
 
-« Si une audience comme Heavy Downloaders existe, elle est parfaite pour le positionnement Fibre Max : vitesse, fiabilité, niveaux illimités. »
-
-**Résultats escomptés** :
-
-Métadonnées d’audience : critères de définition, taille, dernière actualisation, balises de gouvernance, disponibilité de la région.
-
-Localiser les audiences avec une utilisation élevée des données.
-
-**Objectif** : combiner avec la préférence Sci-Fi pour le ciblage Fibre Max.
-
-## 1.1.1.8 Déterminer si ces audiences sont déjà utilisées
-
-**Intention** :
-
-Vérifiez la liaison entre l’audience et le parcours afin de vous assurer que les messages ne sont pas doublés et qu’ils n’entrent pas en conflit avec les programmes actuels.
-
-**Réflexion** :
-
-« Si Heavy Downloaders est déjà dans un parcours de rétention, nous avons besoin d&#39;une logique de suppression ou d&#39;un capping de la fréquence pour éviter la fatigue. »
-
-**Résultats escomptés** :
-
-Mappages : audience → nom du parcours, statut, politique de contact, dernier envoi, performances.
-
-**Décision** :
-
-Si vous l’utilisez, créez des exclusions ou des suppressions partagées pour le lancement de Vienne.
-
-S&#39;il n&#39;est pas utilisé, autoriser le nouveau parcours.
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
 Which of the above are used in a journey? 
 ```
 
-Veillez à ce qu’il n’y ait aucun chevauchement avec les campagnes actives.
+![Agent Orchestrator](./images/ao50.png)
 
-**Action** : appliquez la suppression si nécessaire.
+Vous devriez alors voir quelque chose de similaire à ceci.
+
+![Agent Orchestrator](./images/ao51.png)
+
+Vous devez maintenant vérifier si ce parcours est actif. Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
+
+```javascript
+Which of the above are used in a journey? 
+```
+
+![Agent Orchestrator](./images/ao52.png)
+
+Vous devriez alors voir quelque chose de similaire à ceci. Ce parcours ne fonctionne pas en ce moment.
+
+![Agent Orchestrator](./images/ao53.png)
+
+Pour le lancement prochain de Fibre Max, vous devez maintenant créer un nouveau parcours.
 
 ## 1.1.1.9 Créer un nouveau Parcours pour Fibre Max Launch
 
@@ -331,87 +270,15 @@ Créez un nouveau parcours ciblant l’audience composée :
 
 Téléchargements lourds ∩ Préférence SciFi (kbaa_5207bf clé d’audience).
 
-**Réflexion** :
-
-« C&#39;est le point d&#39;orgue de Fibre Max : propension élevée + pertinence créative. »
-
-« Nous allons orchestrer une expérience multipoint liée à la disponibilité de Vienne. »
-
-**Conception de Parcours (JO)** :
-
-Critères d’entrée :
-
-Audience : Téléchargeurs lourds - Sci-Fi Preference_kbaa_5207bf
-
-Géographie : Métro de Vienne (liste de codes postaux ou polygone géographique)
-
-Éligibilité : Pas dans la campagne « Fibre Upgrade NYC - Sept » active ; pas un abonné Fibre actuel.
-
-Déclencheur et minutage :
-
-T14 jours avant le lancement de Vienne (janvier 2026) : Prévisualiser l’e-mail—« Fibre Max est à venir. »
-
-Semaine de lancement : e-mail par Principal + bannière in-app + synchronisation de médias achetés (via la destination CDP).
-
-T+3 jours : répartition des comportements : si aucun clic, rebond du SMS ; si l’utilisateur clique mais ne passe pas de commande, reciblage avec un CTA de disponibilité du programme d’installation.
-
-T+10 jours : test de l’offre : installation gratuite contre remise du 1er mois (A/B).
-
-PERSONALIZATION :
-
-Copie dynamique pour les amateurs de SciFi (hooks de streaming latence/4K).
-
-Revendications de vitesse/latence adaptées à la combinaison d’appareils (consoles de jeux, boîtiers de streaming).
-
-Recommandation groupée : Fiber Max + pack de contenu spécial TV.
-
-Gouvernance :
-
-Limite de fréquence : 3 contacts max. par 10 jours.
-
-Supprimez si l&#39;abonné Fibre actuel ou un ticket existe pour l&#39;installation.
-
-Respectez les préférences d’opt-out.
-
-**Plan de mesure (CJA)** :
-
-Suivi : diffusion, ouverture, clic, affichage PDP, début du passage en caisse, fin de la commande.
-
-KPI : Taux de conversion vers Fibre Max, augmentation/contrôle, horaire d&#39;installation.
-
-Diagnostics : rapport sur les abandons par segment d’appareil/de genre.
-
-Comment tout cela s’intègre (modèle mental du professionnel du marketing)
-
-Diagnostiquer la demande (catégories générales → Fibre en particulier).
-
-Démontrer le contenu au signal de conversion (commandes par genre).
-
-Mes parcours réussis (trouvez les parcours FibreName et l&#39;audience de promotion SciFi).
-
-Validez les points de friction (abandon de CJA sur le parcours SciFi).
-
-Activez par rapport aux segments à forte propension (téléchargeurs lourds ∩ SciFi).
-
 Accédez à [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Vérifiez que vous êtes dans l’organisation **Experience Platform International**.
 
-Cliquez sur la fenêtre **context**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-![Agent Orchestrator](./images/ao2.png)
-
-Définissez le contexte sur :
-
-- **Documentation Source** : **Journey Optimizer**
-- **Sandbox** : **Accélérer**
-- **Vue de données** : **Accélérer le B2C 2026**
-
-Cliquez sur **Définir le contexte**.
-
-![Agent Orchestrator](./images/aoea3.png)
-
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+>[!NOTE]
+>
+>Veuillez vérifier que le contexte de l’assistant pointe vers le sandbox **Accélérer** et la vue de données **Accélérer 2026 B2C**
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
@@ -451,27 +318,59 @@ Votre parcours a été créé en mode brouillon.
 
 ![Agent Orchestrator](./images/aocj9.png)
 
-## Expériences 1.1.1.10
+## Gestion des conflits de Parcours 1.1.1.10
 
 Accédez à [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Vérifiez que vous êtes dans l’organisation **Experience Platform International**.
 
-Cliquez sur la fenêtre **context**.
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-![Agent Orchestrator](./images/ao2.png)
+>[!NOTE]
+>
+>Veuillez vérifier que le contexte de l’assistant pointe vers la source de documentation **Journey Optimizer**, le sandbox **Accélérer** et la vue de données **Accélérer 2026 B2C**
 
-Définissez le contexte sur :
+```javascript
+How can I manage journey conflicts?
+```
 
-- **Documentation Source** : **Journey Optimizer**
-- **Sandbox** : **Accélérer**
-- **Vue de données** : **Accélérer le B2C 2026**
+![Agent Orchestrator](./images/aocj80.png)
 
-Cliquez sur **Définir le contexte**.
+Consultez les informations.
 
-![Agent Orchestrator](./images/aoea3.png)
+![Agent Orchestrator](./images/aocj81.png)
 
-Saisissez l’**invite** suivante, puis cliquez sur le bouton **générer**.
+Faites défiler vers le bas et sélectionnez l’**Sources** pour vérifier que les informations proviennent d’Experience League.
+
+![Agent Orchestrator](./images/aocj82.png)
+
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
+
+```javascript
+List any conflicts for "CitiSignal - Fiber Max Launch Promotion" journey
+```
+
+![Agent Orchestrator](./images/aocj70.png)
+
+Consultez les informations de conflit de parcours.
+
+![Agent Orchestrator](./images/aocj71.png)
+
+Faites défiler la page vers le bas pour rechercher plus de détails sur les conflits de parcours.
+
+![Agent Orchestrator](./images/aocj72.png)
+
+## Expériences 1.1.1.11
+
+Accédez à [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Vous devriez alors voir ceci. Vérifiez que vous êtes dans l’organisation **Experience Platform International**.
+
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
+
+>[!NOTE]
+>
+>Veuillez vérifier que le contexte de l’assistant pointe vers le sandbox **Accélérer** et la vue de données **Accélérer 2026 B2C**
 
 ```javascript
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
@@ -483,7 +382,7 @@ Vous devriez alors voir ceci :
 
 ![Agent Orchestrator](./images/aoea1.png)
 
-Cliquez sur la suggestion pour comparer les taux de conversion de chaque traitement, puis cliquez sur **générer**.
+Cliquez sur la suggestion pour comparer les taux de conversion de chaque traitement, puis cliquez sur **envoyer**.
 
 ![Agent Orchestrator](./images/aoea2.png)
 
