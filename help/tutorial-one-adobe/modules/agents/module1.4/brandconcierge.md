@@ -30,7 +30,7 @@ Découvrez comment utiliser les agents Adobe Experience Platform et Brand Concie
 
 Dans cet exercice, vous allez explorer les capacités de Brand Concierge.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

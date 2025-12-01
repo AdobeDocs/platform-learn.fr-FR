@@ -23,7 +23,7 @@ Dans ce module, vous allez créer votre propre agent et explorer les différents
 
 ## Exercices
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
