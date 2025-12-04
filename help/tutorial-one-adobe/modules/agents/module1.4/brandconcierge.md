@@ -21,7 +21,7 @@ Découvrez comment utiliser les agents Adobe Experience Platform et Brand Concie
 ## Conditions préalables
 
 - Accès à Adobe Journey Optimizer et Customer Journey Analytics
-- Connaissance des [concepts de Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
+- Connaissance des [concepts de Brand Concierge](https://experienceleague.adobe.com/fr/docs/brand-concierge/content/home)
 - Accès aux données de démonstration CitiSignal : Achats, Commandes, Audiences, Parcours
 
 ## Exercices
