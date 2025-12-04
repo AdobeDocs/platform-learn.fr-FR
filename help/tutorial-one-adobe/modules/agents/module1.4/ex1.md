@@ -253,7 +253,7 @@ Cliquez sur **Nouveau flux de données**.
 
 ![Brand Concierge](./images/aep3.png)
 
-Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
@@ -269,7 +269,7 @@ L’étape suivante consiste à activer l’API Brand Concierge Configuration Ma
 
 Il s’agit actuellement d’une étape interne d’Adobe qui doit se produire. Cette étape est requise. Dans le cas contraire, la configuration du flux de données n’est pas correcte pour une utilisation par Brand Concierge.
 
-Étape suivante : [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
+Étape suivante : [&#x200B; Implémentation de Brand Concierge sur votre site web &#x200B;](./ex2.md){target="_blank"}
 
 Revenir à [Brand Concierge](./brandconcierge.md){target="_blank"}
 
