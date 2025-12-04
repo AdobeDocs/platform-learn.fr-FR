@@ -3,18 +3,14 @@ title: Prise en main de Brand Concierge
 description: Prise en main de Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Prise en main de Brand Concierge
-
->[!IMPORTANT]
->
->Cet exercice est en cours de réalisation et n&#39;est pas encore terminé.
 
 ## Vidéo
 
@@ -211,6 +207,34 @@ Tu seras de retour ici.
 
 ![Brand Concierge](./images/bc25.png)
 
+Après 10 à 20 minutes, le **Statut** des deux sources de connaissances doit être **Terminé**. Cliquez sur **Accueil**.
+
+![Brand Concierge](./images/bc27.png)
+
+Vous devriez alors voir ceci. Cliquez sur **+ Connexion** sur la carte **Liens de site web**.
+
+![Brand Concierge](./images/bc28.png)
+
+Sélectionnez la source de connaissances **Site Web CitiSignal** et cliquez sur **Enregistrer**.
+
+![Brand Concierge](./images/bc29.png)
+
+Vous devriez alors voir ceci. Cliquez sur **+ Connexion** sur la vignette **Catalogue de produits**.
+
+![Brand Concierge](./images/bc30.png)
+
+Sélectionnez la source de connaissances **Produits CitiSignal** et cliquez sur **Enregistrer**.
+
+![Brand Concierge](./images/bc31.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Aperçu** pour commencer à interagir avec votre Brand Concierge.
+
+![Brand Concierge](./images/bc32.png)
+
+Vous pouvez maintenant commencer à poser des questions relatives aux sources de connaissances fournies.
+
+![Brand Concierge](./images/bc33.png)
+
 ## 1.4.1.3 les étapes d’intégration à AEP
 
 Brand Concierge utilise Adobe Experience Platform pour stocker les données d’interaction des conversations. La connexion entre Brand Concierge et Experience Platform nécessite qu’un flux de données soit configuré et utilisé par Brand Concierge.
@@ -229,7 +253,7 @@ Cliquez sur **Nouveau flux de données**.
 
 ![Brand Concierge](./images/aep3.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
@@ -242,6 +266,10 @@ Votre flux de données est maintenant configuré. Copiez le nom du flux de donn�
 ### API Brand Concierge Configuration Management
 
 L’étape suivante consiste à activer l’API Brand Concierge Configuration Management pour configurer le flux de données que vous venez de créer. Cela est nécessaire pour résoudre des éléments tels que les détails de l’ID d’organisation IMS et du sandbox pendant le traitement de la demande.
+
+Il s’agit actuellement d’une étape interne d’Adobe qui doit se produire. Cette étape est requise. Dans le cas contraire, la configuration du flux de données n’est pas correcte pour une utilisation par Brand Concierge.
+
+Étape suivante : [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
 
 Revenir à [Brand Concierge](./brandconcierge.md){target="_blank"}
 
