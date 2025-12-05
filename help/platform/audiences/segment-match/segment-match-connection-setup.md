@@ -25,4 +25,4 @@ Dans cette vidéo, découvrez comment configurer la connexion entre vous et un p
 > * Pour les clients situés aux États-Unis, au Canada, dans la région EMEA, en Australie et en Nouvelle-Zélande : Adobe recommande aux clients Real-Time CDP Prime et Ultimate de faire passer les cas d’utilisation de collaboration de données de la Segment Match à Real-Time CDP Collaboration. Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/home){target="_blank"} et le [guide de démarrage rapide](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"} pour Real-Time CDP Collaboration et contactez l’équipe de votre compte Adobe pour en savoir plus.
 > * Pour les clients de toutes les autres zones géographiques : la Correspondance de segments est l’option recommandée jusqu’à la publication de Real-Time CDP Collaboration dans ces zones géographiques en 2026.
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346351/?captions=fre_fr&learn=on&enablevpops)
