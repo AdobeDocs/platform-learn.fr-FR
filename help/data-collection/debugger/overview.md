@@ -8,18 +8,18 @@ level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 89a8c57fb50ac02382e4e33d7dcdaac046821867
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 54%
+source-wordcount: '141'
+ht-degree: 51%
 
 ---
 
 # Présentation d’Adobe Experience Platform Debugger
 
-[&#x200B; Découvrez comment l’extension Adobe Experience Platform Debugger &#x200B;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)Chrome et le module complémentaire [Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/) vous aident à déboguer vos implémentations web de Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, les balises et plus encore.
+Découvrez comment l’extension Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) vous aide à déboguer vos implémentations de Adobe Experience Platform Web SDK, AppMeasurement.js et at.js, les bibliothèques qui alimentent Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager,,,, tags et bien d’autres.
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## Ressources supplémentaires
 
