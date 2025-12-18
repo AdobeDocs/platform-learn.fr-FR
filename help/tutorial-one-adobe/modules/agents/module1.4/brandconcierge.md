@@ -40,7 +40,7 @@ Dans cet exercice, vous allez explorer les capacités de Brand Concierge.
 
 Dans cet exercice, vous allez implémenter votre instance Brand Concierge sur votre site web.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

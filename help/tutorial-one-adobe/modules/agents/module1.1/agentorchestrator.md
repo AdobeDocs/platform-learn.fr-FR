@@ -39,7 +39,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -170,11 +170,11 @@ Cliquez sur **Valider les modifications**.
 
 Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Cliquez sur votre **Programme** pour l’ouvrir.
 
-![ AEMCS ](./images/aemcs6.png)
+![&#x200B; AEMCS &#x200B;](./images/aemcs6.png)
 
 Cliquez ensuite sur le **de 3 points...** dans l’onglet **Environnements** et cliquez sur **Afficher les détails**.
 
-![ AEMCS ](./images/aemcs9.png)
+![&#x200B; AEMCS &#x200B;](./images/aemcs9.png)
 
 Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de votre environnement de **création**.
 
@@ -184,19 +184,19 @@ Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
-![ AEMCS ](./images/aemcs10.png)
+![&#x200B; AEMCS &#x200B;](./images/aemcs10.png)
 
 Vous devriez alors voir votre environnement de création AEM. Accédez à **Sites**.
 
-![ AEMCS ](./images/block21.png)
+![&#x200B; AEMCS &#x200B;](./images/block21.png)
 
 Accédez à **CitiSignal**. Cliquez sur **Créer** puis sélectionnez **Page**.
 
-![ AEMCS ](./images/block23.png)
+![&#x200B; AEMCS &#x200B;](./images/block23.png)
 
 Sélectionnez **Page** et cliquez sur **Suivant**.
 
-![ AEMCS ](./images/block24.png)
+![&#x200B; AEMCS &#x200B;](./images/block24.png)
 
 Saisissez les valeurs suivantes :
 
@@ -206,33 +206,33 @@ Saisissez les valeurs suivantes :
 
 Cliquez sur **Créer**.
 
-![ AEMCS ](./images/block25.png)
+![&#x200B; AEMCS &#x200B;](./images/block25.png)
 
 Sélectionnez **Ouvrir**.
 
-![ AEMCS ](./images/block22.png)
+![&#x200B; AEMCS &#x200B;](./images/block22.png)
 
 Vous devriez alors voir ceci.
 
-![ AEMCS ](./images/block26.png)
+![&#x200B; AEMCS &#x200B;](./images/block26.png)
 
 Cliquez dans la zone vierge pour sélectionner le composant **section**. Cliquez ensuite sur l’icône plus **+** dans le menu de droite.
 
-![ AEMCS ](./images/block27.png)
+![&#x200B; AEMCS &#x200B;](./images/block27.png)
 
 Votre bloc personnalisé doit alors s’afficher dans la liste des blocs disponibles. Cliquez pour le sélectionner.
 
-![ AEMCS ](./images/block28.png)
+![&#x200B; AEMCS &#x200B;](./images/block28.png)
 
 Vous devriez alors voir un bloc vide ajouté à cette page. Ce bloc sera chargé dynamiquement à l’aide des bibliothèques JavaScript que vous ajouterez à l’étape suivante.
 
 Cliquez sur **Publier**.
 
-![ AEMCS ](./images/block29.png)
+![&#x200B; AEMCS &#x200B;](./images/block29.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![ AEMCS ](./images/block30.png)
+![&#x200B; AEMCS &#x200B;](./images/block30.png)
 
 Votre nouvelle page est maintenant publiée et peut être ajoutée à l’en-tête de navigation à l’étape suivante.
 
@@ -240,31 +240,31 @@ Votre nouvelle page est maintenant publiée et peut être ajoutée à l’en-tê
 
 Dans votre présentation AEM Sites, accédez à **CitiSignal** et cochez la case du fichier **Header/nav**. Cliquez sur **Modifier**.
 
-![ AEMCS ](./images/nav0.png)
+![&#x200B; AEMCS &#x200B;](./images/nav0.png)
 
 Sélectionnez le champ **Texte** dans l’écran d’aperçu, puis cliquez sur le champ **Texte** sur le côté droit de l’écran pour le modifier.
 
-![ AEMCS ](./images/nav0a.png)
+![&#x200B; AEMCS &#x200B;](./images/nav0a.png)
 
 Créez une nouvelle option de menu dans le menu de navigation avec le `Brand Concierge` texte. Sélectionnez ensuite le texte **Brand Concierge** puis cliquez sur l&#39;icône **lien**.
 
-![ AEMCS ](./images/nav1.png)
+![&#x200B; AEMCS &#x200B;](./images/nav1.png)
 
 Saisissez ceci pour le champ **Chemin ou URL** `/content/CitiSignal/brandconcierge.html` et saisissez `Brand Concierge` pour le champ **Titre**. Cliquez sur **Enregistrer**.
 
-![ AEMCS ](./images/nav3.png)
+![&#x200B; AEMCS &#x200B;](./images/nav3.png)
 
 Tu devrais avoir ça. Cliquez sur **Terminé**.
 
-![ AEMCS ](./images/nav4.png)
+![&#x200B; AEMCS &#x200B;](./images/nav4.png)
 
 Tu devrais avoir ça. Cliquez sur **Publier**.
 
-![ AEMCS ](./images/nav4a.png)
+![&#x200B; AEMCS &#x200B;](./images/nav4a.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![ AEMCS ](./images/nav5.png)
+![&#x200B; AEMCS &#x200B;](./images/nav5.png)
 
 Votre nouvelle page est maintenant ajoutée au menu.
 
