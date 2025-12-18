@@ -4,10 +4,10 @@ description: Adobe Experience Manager Cloud Service et Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 1%
 ## Objectifs d’apprentissage
 
 - Découvrez comment utiliser Adobe Experience Manager Cloud Service de différentes manières.
+
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478142?quality=12&learn=on)
 
 ## Conditions préalables
 
@@ -47,7 +53,7 @@ Dans cet exercice, vous allez mettre en œuvre le plug-in AEM MarTech. Le plug-i
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
