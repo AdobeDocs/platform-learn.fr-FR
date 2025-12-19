@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 0bbc806a4eb41ac8e51a10f6418cfa4795543316
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,10 @@ ht-degree: 2%
 
 Brand Concierge est un compagnon numérique optimisé par l’IA qui transforme la façon dont les marques interagissent avec les visiteurs de leur site web. Contrairement aux chatbots génériques, Brand Concierge offre des expériences de conversation personnalisées et adaptées aux intentions de chaque visiteur. Il permet aux visiteurs de découvrir des produits, de comparer des options, d’obtenir des réponses instantanées et de recevoir des recommandations guidées en temps réel. La plateforme sert à la fois le B2C et le B2B et agit comme une extension intelligente de votre marque sur n’importe quel canal numérique, tout en préservant la voix de votre marque, l’intégrité de votre contenu et la conformité.
 
-Découvrez comment utiliser les agents Adobe Experience Platform et Brand Concierge pour :
+Dans cet exercice, vous apprendrez à :
+
+- Configuration de votre instance Brand Concierge dans votre sandbox Adobe Experience Platform
+- Mise en œuvre de Brand Concierge sur votre site web AEM CS/EDS
 
 ## Vidéo
 
@@ -27,7 +30,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 ## Conditions préalables
 
 - Accès à Adobe Journey Optimizer et Customer Journey Analytics
-- Connaissance des [concepts de Brand Concierge](https://experienceleague.adobe.com/fr/docs/brand-concierge/content/home)
+- Connaissance des [concepts de Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - Accès aux données de démonstration CitiSignal : Achats, Commandes, Audiences, Parcours
 
 ## Exercices
@@ -40,7 +43,7 @@ Dans cet exercice, vous allez explorer les capacités de Brand Concierge.
 
 Dans cet exercice, vous allez implémenter votre instance Brand Concierge sur votre site web.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
