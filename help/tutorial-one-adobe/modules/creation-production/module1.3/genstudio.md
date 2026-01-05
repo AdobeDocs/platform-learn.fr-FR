@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 815bea1378de139f8d19b6f46669f4d53b5775b4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -38,10 +38,6 @@ Dans ce module, vous apprendrez à effectuer vous-même toutes les étapes ci-de
 
 Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
 
->[!NOTE]
->
->Cette vidéo n&#39;a pas encore d&#39;audio. Une fois que l’audio est disponible, une nouvelle version est chargée.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
 ## Exercices
@@ -66,7 +62,7 @@ Dans cet exercice, vous allez créer une expérience d’e-mail à l’aide d’
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
