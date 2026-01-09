@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: fff1930bed3b8b0a059217b67f0a0b00a359a019
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,15 @@ Découvrez comment automatiser les workflows créatifs avec Workfront Fusion.
 
 ## Conditions préalables
 
-- Accès à Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Accès à Adobe Firefly
+- Accès à Adobe Workfront Fusion
+- Accès à Adobe Frame.io
+
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478697?quality=12&learn=on)
 
 ## Exercices
 
@@ -43,7 +51,7 @@ Dans cet exercice, vous allez affiner davantage votre configuration, de sorte qu
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
