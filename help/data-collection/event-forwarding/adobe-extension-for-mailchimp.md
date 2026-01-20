@@ -16,4 +16,4 @@ ht-degree: 0%
 
 Vidéo de présentation de l’extension de transfert d’événement Adobe pour Mailchimp. Pour plus d’informations, consultez la [documentation de l’extension de transfert d’événement Mailchimp](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411291/?captions=fre_fr&learn=on&enablevpops)

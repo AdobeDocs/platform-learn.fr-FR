@@ -24,4 +24,4 @@ Découvrez comment créer une propriété de transfert d’événement dans la c
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410366?captions=fre_fr&learn=on&enablevpops)

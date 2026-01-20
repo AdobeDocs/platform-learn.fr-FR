@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Améliorez les données de conversion Google avec des données hachées propriétaires à l’aide du transfert d’événement et de l’API Google Ads. Pour plus d’informations, voir [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=fr)
 
->[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3416062/?captions=fre_fr&learn=on&enablevpops)
