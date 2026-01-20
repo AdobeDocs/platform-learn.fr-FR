@@ -120,7 +120,7 @@ Pour afficher les traces de Platform Web SDK Target avec Adobe Experience Platfo
 1. Rechargez la page et le journal doit être renseigné avec des informations détaillées sur les interactions du réseau Edge
 1. Concentrez-vous sur les entrées de journal commençant par « Target Traces » dans la description, puis sélectionnez **[!UICONTROL Afficher]** pour afficher les détails de Target Trace
 
-![Comment afficher les traces de Target avec Adobe Experience Platform Debugger ](assets/target-trace-debugger.png){zoomable="yes"}
+![Comment afficher les traces de Target avec Adobe Experience Platform Debugger &#x200B;](assets/target-trace-debugger.png){zoomable="yes"}
 
 Après avoir sélectionné **[!UICONTROL Afficher]**, un recouvrement s’affiche, vous permettant d’afficher les informations suivantes relatives à la requête :
 
@@ -142,7 +142,7 @@ Les informations de Target Trace sont visibles dans l’extension de navigateur 
 1. Sélectionnez une entrée de journal avec le type `com.adobe.target.trace`
 1. Développez les détails de la payload et affichez les informations sous `context > targetTrace`
 
-![Comment afficher les traces de Target avec Assurance ](assets/target-trace-assurance.png){zoomable="yes"}
+![Comment afficher les traces de Target avec Assurance &#x200B;](assets/target-trace-assurance.png){zoomable="yes"}
 
 ## Examiner la requête et la réponse du réseau
 

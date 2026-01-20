@@ -128,7 +128,7 @@ Maintenant que vous avez créé une règle pour envoyer une balise Analytics, vo
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dans votre navigateur Chrome.
 1. Cliquez sur l’icône ![Ouvrir l’Experience Cloud Debugger](images/analytics-debuggerIcon.png) pour ouvrir l’Experience Cloud Debugger **[!UICONTROL Adobe Experience Cloud]**
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
