@@ -4,18 +4,17 @@ description: Découvrez comment ajouter une extension de transfert d’événeme
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6422
-thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 20%
+ht-degree: 19%
 
 ---
 
 # Ajouter une extension de transfert d’événement
 
-Découvrez comment ajouter une extension de transfert d’événement dans la collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr).
+Découvrez comment ajouter une extension de transfert d’événement dans la collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ Découvrez comment ajouter une extension de transfert d’événement dans la co
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410378?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)

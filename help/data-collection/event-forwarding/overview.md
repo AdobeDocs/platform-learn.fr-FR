@@ -4,18 +4,17 @@ description: Découvrez comment le transfert d’événement centralise la colle
 feature: Event Forwarding
 level: Beginner
 jira: KT-6419
-thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 42%
+ht-degree: 41%
 
 ---
 
 # Présentation du transfert dʼévénements
 
-Découvrez comment le transfert d’événement centralise la collecte de données, réduit la quantité de code requise dans vos applications web et mobiles et diffuse les données vers des solutions non Adobe via Adobe Experience Platform Edge Network. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr).
+Découvrez comment le transfert d’événement centralise la collecte de données, réduit la quantité de code requise dans vos applications web et mobiles et diffuse les données vers des solutions non Adobe via Adobe Experience Platform Edge Network. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ Découvrez comment le transfert d’événement centralise la collecte de donné
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410921?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on&enablevpops)

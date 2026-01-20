@@ -4,9 +4,8 @@ description: Découvrez comment créer une règle de transfert d’événement d
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 20%
@@ -25,4 +24,4 @@ Découvrez comment créer une règle de transfert d’événement dans la collec
 > * Platform Launch côté serveur est désormais **[!DNL event forwarding]**
 > * Les configurations Edge sont désormais **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410372?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)
