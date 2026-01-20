@@ -14,7 +14,7 @@ ht-degree: 18%
 
 # Configurer un flux de données pour le transfert d’événement
 
-Découvrez comment configurer un flux de données pour le transfert d’événement. Pour plus d’informations, consultez [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+Découvrez comment configurer un flux de données pour le transfert d’événement. Pour plus d’informations, consultez [documentation sur le transfert d’événement](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=fr#create-a-datastream)
 
 
 >[!NOTE]

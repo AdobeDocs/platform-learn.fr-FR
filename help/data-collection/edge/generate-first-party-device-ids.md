@@ -20,7 +20,7 @@ Les applications Adobe Experience Cloud génèrent traditionnellement des cookie
 1. Cookies propriétaires définis par un serveur Adobe à l’aide de la configuration CNAME d’un nom de domaine
 1. Cookies propriétaires définis par JavaScript
 
-Des modifications récentes apportées au navigateur limitent la durée de ces types de cookies. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur détenu par le client à l’aide d’un enregistrement DNS A/AAAA plutôt que d’un CNAME DNS. La fonctionnalité [Identifiant d’appareil interne (FPID)](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) permet aux clients implémentant Adobe Experience Platform Web SDK d’utiliser les identifiants d’appareil dans les cookies des serveurs à l’aide des enregistrements DNS A/AAAA. Ces identifiants peuvent ensuite être envoyés à Adobe et utilisés comme adresses de contrôle pour générer des identifiants Experience Cloud (ECID), qui restent l’identifiant principal dans les applications Adobe Experience Cloud.
+Des modifications récentes apportées au navigateur limitent la durée de ces types de cookies. Les cookies propriétaires sont plus efficaces lorsqu’ils sont définis à l’aide d’un serveur détenu par le client à l’aide d’un enregistrement DNS A/AAAA plutôt que d’un CNAME DNS. La fonctionnalité [Identifiant d’appareil interne (FPID)](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/identity/first-party-device-ids) permet aux clients implémentant Adobe Experience Platform Web SDK d’utiliser les identifiants d’appareil dans les cookies des serveurs à l’aide des enregistrements DNS A/AAAA. Ces identifiants peuvent ensuite être envoyés à Adobe et utilisés comme adresses de contrôle pour générer des identifiants Experience Cloud (ECID), qui restent l’identifiant principal dans les applications Adobe Experience Cloud.
 
 Voici un exemple rapide de la manière dont cette fonctionnalité fonctionne :
 
@@ -151,4 +151,4 @@ Validez la mise en œuvre en confirmant que le même ECID est généré à parti
 1. Envoyez une autre requête à Platform Edge Network.
 1. Vérifiez que la valeur dans le cookie `AMCV_<IMSORGID@AdobeOrg>` est la même `ECID` que dans le cookie `AMCV_` qui a été supprimé. Si la valeur du cookie est identique pour un FPID donné, le processus d’amorçage de l’ECID a réussi.
 
-Pour plus d’informations sur cette fonctionnalité, consultez [la documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
+Pour plus d’informations sur cette fonctionnalité, consultez [la documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=fr).

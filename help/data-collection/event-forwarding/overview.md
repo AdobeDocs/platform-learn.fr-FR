@@ -14,7 +14,7 @@ ht-degree: 41%
 
 # Présentation du transfert dʼévénements
 
-Découvrez comment le transfert d’événement centralise la collecte de données, réduit la quantité de code requise dans vos applications web et mobiles et diffuse les données vers des solutions non Adobe via Adobe Experience Platform Edge Network. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Découvrez comment le transfert d’événement centralise la collecte de données, réduit la quantité de code requise dans vos applications web et mobiles et diffuse les données vers des solutions non Adobe via Adobe Experience Platform Edge Network. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

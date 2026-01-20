@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Ajouter une extension de transfert d’événement
 
-Découvrez comment ajouter une extension de transfert d’événement dans la collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Découvrez comment ajouter une extension de transfert d’événement dans la collecte de données. Pour plus d’informations, consultez la [documentation sur le transfert d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >
