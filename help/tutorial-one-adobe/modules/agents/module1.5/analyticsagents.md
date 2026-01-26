@@ -35,7 +35,7 @@ Dans cet exercice, vous allez configurer un serveur MCP personnalisé dans Claud
 
 Dans cet exercice, vous allez configurer un serveur MCP personnalisé dans ChatGPT pour connecter directement ChatGPT à Adobe Analytics et vous commencerez à analyser vos données hébergées dans Adobe Analytics (AA) directement depuis ChatGPT.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

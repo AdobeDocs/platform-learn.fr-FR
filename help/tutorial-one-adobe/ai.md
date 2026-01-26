@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Aperçu - Travail en cours
 
@@ -62,7 +62,7 @@ Dans cet exercice, vous apprendrez à :
 - Configuration de votre instance Brand Concierge dans votre sandbox Adobe Experience Platform
 - Mise en œuvre de Brand Concierge sur votre site web AEM CS/EDS
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
