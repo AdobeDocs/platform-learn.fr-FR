@@ -3,14 +3,14 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '545'
 ht-degree: 11%
 
 ---
 
-# Statut
+# État
 
 Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
@@ -18,7 +18,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## &#x200B;1. Workflow et planification
 
@@ -82,16 +82,16 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | Oui | - | 30 min |
-| [1.2 IA dédiée aux agences](./modules/agents/module1.2/agenticai.md){target="_blank"} | 25/11/2025 | Non | Travail en cours | À déterminer |
-| [1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 25/11/2025 | Non | Travail en cours | À déterminer |
-| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 25/11/2025 | Non | Travail en cours | À déterminer |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | Oui | - | 90 min |
+| [1.2 IA dédiée aux agences](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | Non | Contenu en cours de développement | À déterminer |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Oui | - | 90 min |
+| [1.5 Analytics et agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | Non | Contenu en cours de développement | À déterminer |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

@@ -3,14 +3,21 @@ title: Adobe Marketing Agent avec ChatGPT
 description: Adobe Marketing Agent avec ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 0%
+source-wordcount: '1003'
+ht-degree: 4%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent avec ChatGPT
+
+[!BADGE Beta]
+
++++Afficher les détails
+En utilisant le Adobe Marketing Agent avec le Beta ChatGPT, vous reconnaissez par la présente que le Beta est fourni « en l&#39;état » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 >- une version payante du ChatGPT d’OpenAI
 >- utilisant le client web ChatGPT ;
 
-Accédez à https://chatgpt.com/ et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
+Accédez à [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -86,11 +93,11 @@ Pour cet exercice, le contexte doit être défini pour utiliser :
 
 - **Sandbox** : **Prod - Accélérer (VA7)**
 
-Le paramètre Sandbox permet d’identifier le sandbox que l’assistant AI doit examiner lorsqu’il pose des questions.
+Le paramètre Sandbox permet d’identifier le sandbox que le GPT de conversation doit examiner lorsqu’il pose des questions.
 
 - **Vue de données** : **Accélérer le B2C 2026**
 
-Le paramètre Vue de données permet d’identifier l’assistant AI de vue de données à examiner lors de la pose de questions.
+Le paramètre Vue de données permet d’identifier la vue de données que le GPT de conversation doit examiner lors de la pose de questions.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-Une liste similaire des sandbox disponibles devrait s’afficher. Le sandbox actuel de cet exemple est défini sur **prod**.
+Vous devriez alors voir une liste similaire des vues de données disponibles.
 
-Pour le remplacer par le sandbox qui doit être utilisé, saisissez l’**invite** suivante, puis cliquez sur le bouton **envoyer**.
+Pour définir la vue de données à utiliser, saisissez l’**invite** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
 switch to Accelerate 2026 B2C

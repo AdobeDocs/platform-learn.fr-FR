@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Connexion des jeux de données Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Comme mentionné, vous pouvez définir différents ID de personne pour chaque je
 
 Le nom du champ d’ID de personne n’a pas d’importance, à condition que la valeur des champs d’ID de personne corresponde. Supposons que nous ayons `email` dans un jeu de données et `emailAddress` dans un autre jeu de données défini comme ID de personne. Si `delaigle@adobe.com` est la même valeur pour le champ ID de personne sur les deux jeux de données, CJA pourra assembler les données.
 
-Consultez les FAQ CJA ici pour comprendre les nuances avec la combinaison d’identités : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
+Consultez les FAQ sur CJA ici pour comprendre les nuances de la combinaison d’identités : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Assemblage des données à l’aide de l’ID de personne
 
@@ -98,8 +98,8 @@ Une fois que vous avez assemblé les deux jeux de données, vous êtes prêt à 
 
 | Jeu de données | ID de personne |
 | ----------------- |-------------| 
-| Système de démonstration - Jeu de données d’événement pour le site web (Global v1.1) | E-mail |
-| Système de démonstration - Jeu de données d’événement pour le centre d’appels (version globale v1.1) | E-mail |
+| Système de démonstration - Jeu de données d’événement pour le site web (Global v1.1) | e-mail |
+| Système de démonstration - Jeu de données d’événement pour le centre d’appels (version globale v1.1) | e-mail |
 
 Vous devez également vous assurer que, pour les deux jeux de données, ces options sont activées :
 
@@ -128,7 +128,7 @@ Après avoir créé votre **Connexion** il peut s’écouler quelques heures ava
 
 ## Étapes suivantes
 
-Accédez à [1.1.3 Création d’une vue de données](./ex3.md)(./ex2.md){target="_blank"}
+Accédez à [1.1.3 Création d’une vue de données](./ex3.md){target="_blank"}
 
 Revenir à [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 
