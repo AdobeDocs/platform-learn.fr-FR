@@ -226,6 +226,6 @@ Vous devriez ensuite voir un élément semblable à ceci, qui comprend une visua
 
 ![Claude.ai &amp; CJA](./images/claude119.png)
 
-Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
+Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

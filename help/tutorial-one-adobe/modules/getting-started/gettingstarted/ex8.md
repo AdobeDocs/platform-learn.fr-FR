@@ -25,7 +25,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## Installer PostBuster
 
-Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Cliquez pour télécharger la dernière version de **PostBuster**.
 
@@ -169,7 +169,7 @@ Votre environnement PostBuster est maintenant configuré et fonctionne. Vous ave
 
 ## Étapes suivantes
 
-Accédez à [ Applications à installer ](./ex9.md){target="_blank"}
+Accédez à [&#x200B; Applications à installer &#x200B;](./ex9.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

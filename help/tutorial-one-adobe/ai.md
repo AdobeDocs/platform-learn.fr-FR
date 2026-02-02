@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Aperçu - Travail en cours
 
@@ -73,7 +73,7 @@ Dans cet exercice, vous apprendrez à :
 - Connectez ChatGPT et/ou Claude.ai à **Customer Journey Analytics** et effectuez des tâches d&#39;analyse des données
 - Connectez ChatGPT et/ou Claude.ai à **Adobe Analytics** et effectuez des tâches d’analyse des données
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
