@@ -253,6 +253,6 @@ La visualisation de l’analyse des abandons s’affiche maintenant.
 
 Étape suivante : [CJA et Claude.ai avec le serveur MCP](./ex2.md){target="_blank"}
 
-Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
+Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

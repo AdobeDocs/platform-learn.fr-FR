@@ -227,6 +227,6 @@ Vous devriez ensuite voir un élément semblable à ceci, qui comprend une visua
 
 Étape suivante : [Adobe Analytics et Claude.ai avec serveur MCP](./ex3.md){target="_blank"}
 
-Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
+Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

@@ -194,6 +194,6 @@ Vous devriez alors voir quelque chose comme ça.
 
 Vous avez maintenant terminé cet exercice.
 
-Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
+Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
