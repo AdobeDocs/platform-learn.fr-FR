@@ -3,16 +3,16 @@ title: Présentation d’Agentic AI Tech Labs
 description: Présentation d’Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Aperçu - Travail en cours
 
@@ -51,7 +51,7 @@ Quelle est l&#39;architecture derrière un agent ?
 - Serveur MCP, notebook Python
 - API d’Adobe
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **Objectif**
 
@@ -62,7 +62,18 @@ Dans cet exercice, vous apprendrez à :
 - Configuration de votre instance Brand Concierge dans votre sandbox Adobe Experience Platform
 - Mise en œuvre de Brand Concierge sur votre site web AEM CS/EDS
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+[1.5 Analytics et agents](./modules/agents/module1.5/analyticsagents.md)
+
+**Objectif**
+
+En tant qu’analyste de données, développeur d’IA ou architecte d’applications d’IA, vous apprendrez à automatiser les tâches de création de rapports telles que la création de rapports, la planification d’analyses à l’aide d’agents externes. Vous apprendrez à extraire de nouvelles données de campagne, d&#39;audience ou de performances dans vos workflows agentiques.
+
+Dans cet exercice, vous apprendrez à :
+
+- Connectez ChatGPT et/ou Claude.ai à **Customer Journey Analytics** et effectuez des tâches d&#39;analyse des données
+- Connectez ChatGPT et/ou Claude.ai à **Adobe Analytics** et effectuez des tâches d’analyse des données
+
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

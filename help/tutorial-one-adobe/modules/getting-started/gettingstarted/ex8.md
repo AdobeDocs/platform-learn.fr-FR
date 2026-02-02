@@ -4,9 +4,9 @@ description: Prise en main - Configuration de Postman
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '462'
 ht-degree: 3%
 
 ---
@@ -25,15 +25,19 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## Installer PostBuster
 
-Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Accédez à [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Cliquez pour télécharger la dernière version de **PostBuster**.
 
 ![PostBuster](./images/pb1.png)
 
-Téléchargez la version adaptée à votre système d’exploitation.
+Cliquez sur la version appropriée pour votre système d’exploitation.
 
 ![PostBuster](./images/pb2.png)
+
+Téléchargez le fichier .
+
+![PostBuster](./images/pb2a.png)
 
 Une fois le téléchargement terminé et installé, ouvrez PostBuster. Vous devriez alors voir ceci. Cliquez sur **Importer**.
 
@@ -165,7 +169,7 @@ Votre environnement PostBuster est maintenant configuré et fonctionne. Vous ave
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Applications à installer &#x200B;](./ex9.md){target="_blank"}
+Accédez à [ Applications à installer ](./ex9.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

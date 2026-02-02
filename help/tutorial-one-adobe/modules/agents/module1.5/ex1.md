@@ -3,19 +3,21 @@ title: CJA et ChatGPT avec le serveur MCP
 description: CJA et ChatGPT avec le serveur MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca2812e14a22b80b7f00066f9cc482e708b4ac6a
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 1.5.1 CJA et ChatGPT avec le serveur MCP
 
->[!IMPORTANT]
->
->Ce Lab utilise une fonctionnalité qui n&#39;a pas encore été publiée. La fonctionnalité est toujours en cours de développement, elle n’est donc pas encore disponible pour tous.
+[!BADGE Alpha]
 
++++Détails Alpha
+En utilisant le fichier CJA &amp; Claude.ai avec le serveur MCP Alpha, vous reconnaissez que l’Alpha est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Alpha. Il est conseillé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ces Alpha et/ou des éléments qui les accompagnent. Alpha est considéré comme des informations confidentielles d’Adobe. Tout « commentaire » (informations relatives à Alpha, y compris, mais sans s’y limiter, les problèmes ou défauts rencontrés lors de l’utilisation d’Alpha, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ces commentaires.
+
++++
 
 >[!NOTE]
 >
@@ -261,6 +263,6 @@ Sélectionnez **ExécuterRapport**.
 
 ![ChatGPT et CJA](./images/chatgpt124.png)
 
-Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
+Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

@@ -4,9 +4,9 @@ description: Foundation - Configuration de la collecte de données Adobe Experie
 kt: 5342
 doc-type: tutorial
 exl-id: 6ba82c35-1087-45c5-85a3-8bca7408cfec
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,11 @@ ht-degree: 0%
 
 Experience Platform Debugger est une extension disponible pour les navigateurs Chrome et Firefox qui vous permet de voir la technologie Adobe mise en œuvre dans vos pages web. Installez la version correspondant au navigateur de votre choix :
 
-- [Extension Firefox &#x200B;](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
-
 - [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Si vous n’avez jamais utilisé le débogueur auparavant (et que celui-ci est différent du débogueur Adobe Experience Cloud précédent), vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 
 Étant donné que vous allez charger le site web de démonstration en mode incognito, vous devez vous assurer que le débogueur Experience Platform est également disponible en mode incognito. Pour ce faire, accédez à **chrome://extensions** dans votre navigateur et ouvrez l’extension Experience Platform Debugger.
 
@@ -40,27 +38,27 @@ Vérifiez que ces 2 paramètres sont activés :
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN &#x200B;](./images/web8.png)
+![DSN ](./images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN &#x200B;](./../../../getting-started/gettingstarted/images/web3.png)
+![DSN ](./../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN &#x200B;](./../../../getting-started/gettingstarted/images/web4.png)
+![DSN ](./../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN &#x200B;](./../../../getting-started/gettingstarted/images/web5.png)
+![DSN ](./../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN &#x200B;](./../../../getting-started/gettingstarted/images/web6.png)
+![DSN ](./../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque démonstration, vous devez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN &#x200B;](./../../../getting-started/gettingstarted/images/web7.png)
+![DSN ](./../../../getting-started/gettingstarted/images/web7.png)
 
 ### Utilisez Experience Platform Debugger pour afficher les appels allant à Edge
 
@@ -72,29 +70,29 @@ Le débogueur s’ouvre et affiche les détails de l’implémentation créée d
 
 Cliquez sur le bouton **[!UICONTROL Se connecter]** en haut à droite pour vous authentifier. Si un onglet de navigateur est déjà ouvert avec l’interface de collecte de données de Adobe Experience Platform, l’étape d’authentification sera automatique et vous n’aurez pas à saisir à nouveau votre nom d’utilisateur et votre mot de passe.
 
-![&#x200B; Débogueur AEP &#x200B;](./images/validate2.png)
+![AEP Debugger](./images/validate2.png)
 
 Vous serez alors connecté au débogueur.
 
-![&#x200B; Débogueur AEP &#x200B;](./images/validate2ab.png)
+![AEP Debugger](./images/validate2ab.png)
 
 Appuyez sur le bouton recharger de votre site web de démonstration pour connecter le débogueur à cet onglet spécifique.
 
-![&#x200B; Débogueur AEP &#x200B;](./images/validate2a.png)
+![AEP Debugger](./images/validate2a.png)
 
 Vérifiez que le débogueur est **[!UICONTROL connecté à l’accueil]** comme illustré ci-dessus, puis cliquez sur l’icône **[!UICONTROL verrouiller]** pour verrouiller le débogueur sur le site web de démonstration. Si vous ne le faites pas, le débogueur continue de basculer pour exposer les détails d’implémentation de l’onglet du navigateur dans lequel le focus se trouve, ce qui peut prêter à confusion. Une fois le débogueur verrouillé, l’icône devient **Déverrouiller**.
 
-![&#x200B; Débogueur AEP &#x200B;](./images/validate3.png)
+![AEP Debugger](./images/validate3.png)
 
 Ensuite, accédez à n’importe quelle page du site web de démonstration, comme par exemple la page de catégorie **Plans**.
 
-![Extension AEP Debugger Web SDK](./images/validate4.png)
+![Extension AEP Debugger AEP Web SDK](./images/validate4.png)
 
 Cliquez maintenant sur **[!UICONTROL Experience Platform Web SDK]** dans le volet de navigation de gauche, pour afficher le **[!UICONTROL Requêtes réseau]**.
 
 Chaque requête contient une ligne **[!UICONTROL events]**.
 
-![Extension AEP Debugger Web SDK](./images/validate5.png)
+![Extension AEP Debugger AEP Web SDK](./images/validate5.png)
 
 Cliquez pour ouvrir une ligne **[!UICONTROL événements]**. Notez comment vous pouvez voir l’événement **web.webpagedetails.pageViews**, ainsi que d’autres variables prêtes à l’emploi adhérant au format **Web SDK ExperienceEvent XDM**.
 
