@@ -4,9 +4,9 @@ description: Service de requête
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ Nous utiliserons les données qui ont été injectées dans Platform à l’aide
 - Jeux de données (jeu de données utilisé pendant l’atelier, préchargé pour vous)
 - PostgreSQL
 - Tableau ou Microsoft Power BI Desktop
-- **Téléchargez ces ressources** :
-   - [JSON - Exemples de données : interactions de site web](./../../../../assets/json/ee.json)
-   - [JSON - Exemples de données : interactions du centre d’appels](./../../../../assets/json/callcenter.json)
-   - [JSON - Exemples de données : fidélité](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >
@@ -79,7 +75,7 @@ Dans cet exercice, vous allez utiliser l’API Query Service pour gérer les mod
 
 Résumé de ce module et aperçu des avantages.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

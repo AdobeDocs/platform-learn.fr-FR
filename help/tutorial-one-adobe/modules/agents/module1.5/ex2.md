@@ -3,9 +3,9 @@ title: CJA et Claude.ai avec serveur MCP
 description: CJA et Claude.ai avec serveur MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ En utilisant le fichier CJA &amp; Claude.ai avec le serveur MCP Alpha, vous reco
 
 Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479159?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479561?quality=12&learn=on)
 
-## 1.5.1.1 Créer une application personnalisée dans Claude.ai pour CJA
+## 1.5.2.1 Créer une application personnalisée dans Claude.ai pour CJA
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Cliquez sur **Ajouter**.
 
 ![Claude.ai](./images/claude4.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Ajouter**.
+Vous devriez alors voir ceci. Cliquez sur **Connecter**.
 
 ![Claude.ai](./images/claude5.png)
 
@@ -75,8 +75,7 @@ Vous êtes maintenant prêt à commencer votre analyse des données.
 
 ![Claude.ai](./images/claude7.png)
 
-
-## 1.5.1.2 Définir le contexte dans CJA
+## 1.5.2.2 Définir le contexte dans CJA
 
 Avant d’interagir davantage avec CJA via Claude.ai, le contexte doit être défini.
 
@@ -120,7 +119,7 @@ Vous devriez alors voir ceci.
 
 Votre contexte est maintenant correctement défini, vous pouvez donc commencer à envoyer des invites spécifiques.
 
-## 1.5.1.3 Explorer la vue de données
+## 1.5.2.3 Explorer la vue de données
 
 >[!NOTE]
 >
@@ -142,7 +141,7 @@ Vous devriez ensuite voir cette réponse, qui inclut les mesures et dimensions c
 
 ![Claude.ai &amp; CJA](./images/claude102.png)
 
-## Tableau à structure libre 1.5.1.4 - Consultations de produit
+## Tableau à structure libre 1.5.2.4 - Consultations de produit
 
 Vous pouvez maintenant commencer à explorer les données. Commencez par saisir l’invite ci-dessous et cliquez sur **envoyer** pour envoyer votre demande de rapport.
 
@@ -212,7 +211,7 @@ Vous devriez alors voir ceci.
 
 ![Claude.ai &amp; CJA](./images/claude117.png)
 
-## Visualisation des abandons 1.5.1.5
+## Visualisation des abandons 1.5.2.5
 
 Saisissez l’**invite** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -226,6 +225,8 @@ Vous devriez ensuite voir un élément semblable à ceci, qui comprend une visua
 
 ![Claude.ai &amp; CJA](./images/claude119.png)
 
-Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
+Étape suivante : [Adobe Analytics et Claude.ai avec serveur MCP](./ex3.md){target="_blank"}
+
+Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
