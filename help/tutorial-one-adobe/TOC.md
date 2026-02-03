@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1477'
 ht-degree: 3%
 
 ---
@@ -89,6 +89,11 @@ ht-degree: 3%
    + 1.7 Créateur de workflow {#crpr7}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Prise en main du créateur de workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+   + 1.8 Gestion du stockage d’entreprise {#crpr8}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
+      + [1.8.1 Workfront ET ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Frame.io et ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+      + [1.8.3 Adobe Express ET ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
 
 + Gestion des ressources {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}

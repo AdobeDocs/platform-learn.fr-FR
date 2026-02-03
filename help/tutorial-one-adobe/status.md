@@ -3,9 +3,9 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## &#x200B;1. Workflow et planification
 
@@ -37,6 +37,8 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [1.4 Adobe Express et Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | Oui | - | 45 min |
 | [1.5 Rationalisez votre workflow avec Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | Oui | - | 1h |
 | [1.6 GenStudio for Performance Marketing - Extensibilité](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | Oui | - | 1h 30min |
+| [1.7 Créateur de workflow](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | Non | Contenu en développement | - |
+| [1.8 Gestion du stockage d’entreprise](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | Non | Contenu en développement | - |
 
 
 ## &#x200B;3. Gestion des actifs
@@ -82,16 +84,16 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | Oui | - | 90 min |
-| [1.2 IA dédiée aux agences](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | Non | Contenu en cours de développement | À déterminer |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 02/02/2026 | Oui | - | 60 min |
+| [1.2 IA dédiée aux agences](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | Non | Contenu en cours de développement | À déterminer |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Oui | - | 90 min |
-| [1.5 Analytics et agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | Non | Contenu en cours de développement | À déterminer |
+| [1.5 Analytics et agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Oui | - | 45 min |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

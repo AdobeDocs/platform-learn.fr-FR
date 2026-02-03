@@ -3,9 +3,9 @@ title: Adobe Analytics et Claude.ai avec serveur MCP
 description: Adobe Analytics et Claude.ai avec serveur MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -192,8 +192,28 @@ Vous devriez alors voir quelque chose comme ça.
 
 ![Claude.ai &amp; CJA](./images/claudeaa113.png)
 
+Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai &amp; CJA](./images/claudeaa114.png)
+
+Vous devriez ensuite voir un élément similaire, affichant d’abord **Principaux codes de suivi par visites**.
+
+![Claude.ai &amp; CJA](./images/claudeaa115.png)
+
+Vous pouvez ensuite afficher les codes suivi qui ont généré le plus d&#39;achats dans le rapport **Principaux codes suivi par commande (achats)**.
+
+![Claude.ai &amp; CJA](./images/claudeaa116.png)
+
+Vous trouverez ensuite des informations supplémentaires fournies par Claude.ai en fonction des données provenant d’Adobe Analytics.
+
+![Claude.ai &amp; CJA](./images/claudeaa117.png)
+
 Vous avez maintenant terminé cet exercice.
 
-Revenir à [&#x200B; Analytics et agents &#x200B;](./analyticsagents.md){target="_blank"}
+Revenir à [ Analytics et agents ](./analyticsagents.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
