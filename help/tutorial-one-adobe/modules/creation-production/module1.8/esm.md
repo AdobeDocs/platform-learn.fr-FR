@@ -38,7 +38,7 @@ Dans cet exercice, vous allez utiliser Frame.io en combinaison avec Enterprise S
 
 Dans cet exercice, vous allez utiliser Adobe Express conjointement avec la gestion du stockage d’entreprise.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

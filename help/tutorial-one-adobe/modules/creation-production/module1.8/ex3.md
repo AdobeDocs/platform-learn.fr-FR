@@ -16,6 +16,6 @@ ht-degree: 8%
 
 ## Étapes suivantes
 
-Revenez à [ Gestion du stockage d’entreprise ](./esm.md){target="_blank"}
+Revenez à [&#x200B; Gestion du stockage d’entreprise &#x200B;](./esm.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
