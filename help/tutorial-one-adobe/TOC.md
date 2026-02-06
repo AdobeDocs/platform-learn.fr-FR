@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1518'
 ht-degree: 3%
 
 ---
@@ -108,6 +108,9 @@ ht-degree: 3%
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 Prise en main d’AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.4 Adobe Experience Manager Assets et Dynamic Media {#assetm4}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
+      + [1.4.1 Prise en main d’AEM Assets et de Dynamic Media](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
    + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
       + [1.5.1 Prise en main d’Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
@@ -242,7 +245,7 @@ ht-degree: 3%
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
 + Rapports et informations {#reporting}
-   + Customer Journey Analytics  {#cjab2c}
+   + Customer Journey Analytics  {#cjab2c}
       + 1.1 Customer Journey Analytics : créer un tableau de bord à l’aide d’Analysis Workspace {#cja1}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
