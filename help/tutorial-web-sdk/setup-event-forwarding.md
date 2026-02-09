@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Découvrez comment utiliser le transfert d’événement avec les données du SDK web d’Adobe Experience Platform.
 
-Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événement vous permet d’envoyer des données à des fournisseurs tiers non Adobe directement depuis Adobe Experience Platform Edge Network au lieu du navigateur côté client traditionnel. Pour en savoir plus sur les avantages du transfert d’événement, consultez la [présentation du transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événement vous permet d’envoyer des données à des fournisseurs tiers non Adobe directement depuis Adobe Experience Platform Edge Network au lieu du navigateur côté client traditionnel. Pour en savoir plus sur les avantages du transfert d’événement, consultez la [présentation du transfert d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/event-forwarding/overview).
 
 
 >[!WARNING]
@@ -28,7 +28,7 @@ Pour utiliser le transfert d’événement dans Adobe Experience Platform, les d
 
 * [SDK web Adobe Experience Platform](overview.md)
 * [&#x200B; SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/fr/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -327,4 +327,4 @@ Félicitations ! Vous avez configuré le transfert d’événement.
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
