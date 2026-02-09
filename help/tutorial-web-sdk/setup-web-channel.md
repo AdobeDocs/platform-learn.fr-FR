@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2594'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,14 @@ ht-degree: 1%
 
 # Configuration du canal web Journey Optimizer avec Web SDK
 
-Découvrez comment implémenter le Adobe Journey Optimizer [canal web](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/web/get-started-web) à l’aide de Adobe Experience Platform Web SDK. Cette leçon couvre les conditions préalables fondamentales du canal web, les étapes détaillées de configuration et un examen approfondi d’un cas d’utilisation centré sur le statut de fidélité.
+Découvrez comment implémenter le Adobe Journey Optimizer [canal web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) à l’aide de Adobe Experience Platform Web SDK. Cette leçon couvre les conditions préalables fondamentales du canal web, les étapes détaillées de configuration et un examen approfondi d’un cas d’utilisation centré sur le statut de fidélité.
 
 En suivant cette leçon, les utilisateurs de Journey Optimizer sont équipés pour utiliser le canal web pour une personnalisation en ligne avancée à l’aide du concepteur web de Journey Optimizer.
+
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ![Diagramme SDK web et Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -52,7 +57,7 @@ Pour suivre les leçons de cette section, vous devez d’abord :
   > 1. Le site web est intégré à un iframe.
   > 1. Le site d’assurance qualité ou d’évaluation du client n’est pas accessible de l’extérieur (il s’agit d’un site interne).
 
-* Lors de la création d’expériences web et de l’inclusion de contenu de la bibliothèque Adobe Experience Manager Assets Essentials , il est nécessaire de [configurer le sous-domaine pour publier ce contenu](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Lors de la création d’expériences web et de l’inclusion de contenu de la bibliothèque Adobe Experience Manager Assets Essentials , il est nécessaire de [configurer le sous-domaine pour publier ce contenu](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Si vous utilisez la fonctionnalité d’expérimentation de contenu, assurez-vous que votre jeu de données web est également inclus dans votre configuration des rapports.
 * Actuellement, deux types d’implémentation sont pris en charge pour permettre la création et la diffusion de campagnes de canal web sur vos propriétés web :
    * Côté client uniquement : pour modifier votre site web, vous devez implémenter le SDK web Adobe Experience Platform.
@@ -123,7 +128,7 @@ Pour configurer l’option dans la politique de fusion :
 
 Pour utiliser des expériences de contenu dans des campagnes de canal web, vous devez vous assurer que le jeu de données web utilisé est également inclus dans votre configuration des rapports. Le système de rapports Journey Optimizer utilise le jeu de données en lecture seule pour renseigner les rapports d’expérimentation de contenu prêts à l’emploi.
 
-[L’ajout de jeux de données pour le reporting d’expérience de contenu est détaillé dans cette section](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[L’ajout de jeux de données pour le reporting d’expérience de contenu est détaillé dans cette section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Présentation du cas d’utilisation - Récompenses de fidélité
 
@@ -225,7 +230,7 @@ Maintenant, créons l’expérience du canal web. Pour ce faire, utilisez l’**
 
 1. Assurez-vous que l’expérience est correctement suivie pour les clics. Choisissez **[!UICONTROL Clic sur l’élément de suivi]** dans le menu contextuel.
 
-   ![&#x200B; Suivi des clics &#x200B;](assets/web-channel-click-tracking.png)
+   ![ Suivi des clics ](assets/web-channel-click-tracking.png)
 
 1. Utilisez le composant **[!UICONTROL Décision d’offre]** pour insérer des offres dans la page web. Ce composant utilise **[!UICONTROL Gestion des décisions]** pour sélectionner la meilleure offre à proposer aux visiteurs Luma.
 
@@ -270,7 +275,7 @@ Pour simuler l’expérience :
 
 1. Sélectionnez **[!UICONTROL Simuler du contenu]** dans la campagne.
 
-   ![&#x200B; Simuler du contenu &#x200B;](assets/web-channel-simulate-content.png)
+   ![ Simuler du contenu ](assets/web-channel-simulate-content.png)
 
 1. Choisissez un profil de test pour recevoir la simulation. Gardez à l’esprit que le profil de test doit se trouver dans l’audience `Luma Loyalty Rewards – Gold Status` pour recevoir le traitement approprié.
 
@@ -302,7 +307,7 @@ L’extension Adobe Experience Platform Debugger, disponible pour Chrome et Fire
 
 Vous pouvez utiliser le débogueur sur le site Luma pour valider l’expérience du canal web en production. Il s’agit d’une bonne pratique une fois que le cas d’utilisation des récompenses de fidélité est opérationnel, afin de s’assurer que tout est correctement configuré.
 
-[Découvrez comment configurer le débogueur dans votre navigateur à l’aide du guide ici](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/debugger/overview).
+[Découvrez comment configurer le débogueur dans votre navigateur à l’aide du guide ici](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Pour commencer la validation à l’aide du débogueur :
 
@@ -330,11 +335,11 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge **&#x200B;**. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
+1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge ****. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

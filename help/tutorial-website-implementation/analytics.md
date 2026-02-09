@@ -3,16 +3,21 @@ title: Ajout d’Adobe Analytics
 description: Découvrez comment mettre en œuvre Adobe Analytics à l’aide de l’extension de balise Adobe Analytics, envoyer la balise de page vue, ajouter des variables, suivre les événements et ajouter des modules externes. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3859'
 ht-degree: 69%
 
 ---
 
 # Ajout d’Adobe Analytics
 
-Dans cette leçon, vous allez implémenter l’[extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr) et créer des règles pour envoyer des données à Adobe Analytics.
+Dans cette leçon, vous allez implémenter l’[extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) et créer des règles pour envoyer des données à Adobe Analytics.
+
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr) est une solution de pointe qui vous permet de comprendre vos clients en tant que personnes et d’orienter votre activité grâce aux renseignements sur vos clients.
 
@@ -41,7 +46,7 @@ De nombreuses fonctionnalités peuvent être implémentées pour Analytics dans 
 
 Vous devriez avoir déjà terminé les leçons [Configurer les balises](create-a-property.md) et [Ajouter le service d’identités](id-service.md).
 
-En outre, vous aurez besoin d’au moins un identifiant de suite de rapports et de votre serveur de suivi. Si vous ne disposez pas de suite de rapports de test ou de développement que vous pouvez utiliser pour ce tutoriel, créez-en une. Si vous n’êtes pas sûr de la marche à suivre, consultez [la documentation](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Vous pouvez récupérer votre serveur de suivi à partir de votre mise en œuvre actuelle, ou auprès de votre consultant ou de votre représentant de l’Assistance clientèle Adobe.
+En outre, vous aurez besoin d’au moins un identifiant de suite de rapports et de votre serveur de suivi. Si vous ne disposez pas de suite de rapports de test ou de développement que vous pouvez utiliser pour ce tutoriel, créez-en une. Si vous n’êtes pas sûr de la marche à suivre, consultez [la documentation](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Vous pouvez récupérer votre serveur de suivi à partir de votre mise en œuvre actuelle, ou auprès de votre consultant ou de votre représentant de l’Assistance clientèle Adobe.
 
 ## Ajout de l’extension Analytics
 
@@ -128,7 +133,7 @@ Maintenant que vous avez créé une règle pour envoyer une balise Analytics, vo
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) dans votre navigateur Chrome.
 1. Cliquez sur l’icône ![Ouvrir l’Experience Cloud Debugger](images/analytics-debuggerIcon.png) pour ouvrir l’Experience Cloud Debugger **[!UICONTROL Adobe Experience Cloud]**
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -426,7 +431,7 @@ Vous allez en fait appeler deux plug-ins dans ce code, mais l’un d’eux est i
 
 Ce plug-in a pour objectif d’éviter que les valeurs ne soient incorrectement dupliquées dans le code lorsqu’un visiteur actualise une page ou utilise le bouton Précédent du navigateur pour revenir à une page sur laquelle une valeur a été définie. Dans cette leçon, vous l’utiliserez pour empêcher la duplication de l’événement `clickthrough`.
 
-Le code de ce plug-in est disponible dans la [documentation d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=fr), mais il est inclus ici pour faciliter le copier-coller.
+Le code de ce plug-in est disponible dans la [documentation d’Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), mais il est inclus ici pour faciliter le copier-coller.
 
 1. Copiez le code suivant.
 

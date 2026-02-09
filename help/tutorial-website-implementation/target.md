@@ -3,10 +3,10 @@ title: Ajout d’Adobe Target avec des balises
 description: Découvrez comment implémenter Adobe Target à l’aide de balises avec at.js, une requête de chargement de page, des paramètres, une requête de commande et un code d’en-tête/de pied de page personnalisé. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '4245'
-ht-degree: 68%
+source-wordcount: '4277'
+ht-degree: 67%
 
 ---
 
@@ -15,6 +15,11 @@ ht-degree: 68%
 Dans cette leçon, nous allons mettre en œuvre [l’extension Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=fr) avec une requête de chargement de page et des paramètres personnalisés.
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr) est la solution d’Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et d’autres canaux numériques.
+
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 >[!NOTE]
 >
@@ -91,7 +96,7 @@ Rechargez votre page d’exemple. Vous remarquerez que la page sera masquée pen
 * `body {opacity: 0 !important}` spécifie la définition CSS à utiliser pour le masquage préalable jusqu’au chargement de Target. Par défaut, la totalité du corps sera masquée. Si vous disposez d’une structure DOM cohérente avec un élément de conteneur facilement identifiable encapsulant tout le contenu sous votre navigation, par exemple, et que vous ne souhaitez jamais tester ou personnaliser votre navigation, vous pouvez utiliser ce paramètre pour limiter le masquage préalable à cet élément de conteneur.
 * `3000` spécifie le délai d’expiration pour le masquage préalable. Par défaut, si Target ne s’est pas chargé en trois secondes, la page s’affiche. Cette situation devrait être extrêmement rare.
 
-Pour plus d’informations et pour obtenir le fragment de code de masquage préalable complet, voir [Extension Adobe Target avec un déploiement asynchrone](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=fr#adobe-target-extension-with-an-asynchronous-deployment).
+Pour plus d’informations et pour obtenir le fragment de code de masquage préalable complet, voir [Extension Adobe Target avec un déploiement asynchrone](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
 
 ## Ajout de l’extension Target
 
@@ -186,7 +191,7 @@ Maintenant que vous avez ajouté l’extension Target v2 et déclenché les acti
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -208,9 +213,9 @@ Félicitations ! Vous avez mis en œuvre Target !
 
 Le transfert de paramètres dans la requête Target ajoute de grandes possibilités à vos activités de ciblage, de test et de personnalisation. L’extension de balise fournit deux actions pour transmettre des paramètres :
 
-1. `Add Params to Page Load Request` , qui ajoute des paramètres aux requêtes de chargement de page (équivalent à la méthode [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=fr))
+1. `Add Params to Page Load Request` , qui ajoute des paramètres aux requêtes de chargement de page (équivalent à la méthode [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html))
 
-1. `Add Params to All Requests` , qui ajoute des paramètres à toutes les requêtes Target, par exemple la requête de chargement de page plus les requêtes supplémentaires effectuées à partir d’actions de code personnalisé ou codées en dur sur votre site (équivalent à la méthode [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=fr))
+1. `Add Params to All Requests` , qui ajoute des paramètres à toutes les requêtes Target, par exemple la requête de chargement de page plus les requêtes supplémentaires effectuées à partir d’actions de code personnalisé ou codées en dur sur votre site (équivalent à la méthode [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html))
 
 Ces actions peuvent être utilisées *avant* l’action `Load Target` et peuvent définir différents paramètres sur différentes pages en fonction des configurations de vos règles. Utilisez la fonction d’agencement des règles que vous avez utilisée lors de la définition des ID de client avec le service d’identités pour définir des paramètres supplémentaires sur l’événement `Library Loaded` avant la règle qui déclenche la requête de chargement de page.
 >[!TIP]
@@ -277,7 +282,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 ### Paramètres de profil
 
-Comme pour les paramètres de requête, les paramètres de profil sont transmis par le biais de la requête Target. Cependant, les paramètres de profil sont stockés dans la base de données du profil du visiteur Target et sont conservés pendant [toute la durée du profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=fr). Vous pouvez les définir sur une page de votre site et les utiliser dans des activités Target sur une autre page. Voici un exemple issu d’un site web automobile. Lorsqu’un visiteur accède à la page d’un véhicule, vous pouvez transmettre un paramètre de profil « profile.lastViewed=sportscar » pour enregistrer son intérêt pour ce véhicule particulier. Lorsque le visiteur accède à d’autres pages ne se rapportant pas à un véhicule, vous pouvez cibler le contenu en fonction du dernier véhicule qu’il a consulté.  Les paramètres de profil sont idéaux pour les attributs qui changent rarement ou ne sont disponibles que sur certaines pages.
+Comme pour les paramètres de requête, les paramètres de profil sont transmis par le biais de la requête Target. Cependant, les paramètres de profil sont stockés dans la base de données du profil du visiteur Target et sont conservés pendant [toute la durée du profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html). Vous pouvez les définir sur une page de votre site et les utiliser dans des activités Target sur une autre page. Voici un exemple issu d’un site web automobile. Lorsqu’un visiteur accède à la page d’un véhicule, vous pouvez transmettre un paramètre de profil « profile.lastViewed=sportscar » pour enregistrer son intérêt pour ce véhicule particulier. Lorsque le visiteur accède à d’autres pages ne se rapportant pas à un véhicule, vous pouvez cibler le contenu en fonction du dernier véhicule qu’il a consulté.  Les paramètres de profil sont idéaux pour les attributs qui changent rarement ou ne sont disponibles que sur certaines pages.
 
 Vous ne transmettrez aucun paramètre de profil dans ce tutoriel, mais le processus est presque identique à celui que vous avez réalisé au moment de transmettre le paramètre `pageName`. La seule différence est que vous devez attribuer un préfixe `profile.` aux paramètres de nom du profil. Voici à quoi ressemble un paramètre de profil appelé « userType » dans l’action `Add Params to Page Load Request`:
 
@@ -285,7 +290,7 @@ Vous ne transmettrez aucun paramètre de profil dans ce tutoriel, mais le proces
 
 ### Paramètres d’entité
 
-Les paramètres d’entité sont des paramètres spéciaux utilisés dans les [Mises en œuvre des recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=fr) pour trois raisons principales :
+Les paramètres d’entité sont des paramètres spéciaux utilisés dans les [Mises en œuvre des recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html) pour trois raisons principales :
 
 1. Comme clé pour déclencher des recommandations de produit. Par exemple, lorsque vous utilisez un algorithme de recommandations comme « Les personnes qui ont consulté le produit X ont également consulté Y », « X » est la « clé » de la recommandation. Il s’agit généralement du SKU (`entity.id`) ou de la catégorie (`entity.categoryId`) du produit que le visiteur est en train de consulter.
 1. Pour collecter le comportement des visiteurs afin d’alimenter les algorithmes de recommandations, tels que « Produits récemment affichés » ou « Produits les plus consultés ».
@@ -297,7 +302,7 @@ Vous n’avez pas besoin de transmettre de paramètres d’entité dans ce tutor
 
 ### Ajout de paramètres d’ID de client
 
-La collecte des ID de client avec le service dʼidentités Adobe Experience Platform facilite l’importation de données depuis un CRM dans Target à l’aide de la fonctionnalité [Attributs du client](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=fr) d’Adobe Experience Cloud. Elle favorise également [la connexité des visiteurs d’un appareil à l’autre](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=fr), ce qui vous permet de maintenir une expérience utilisateur cohérente lorsque vos clients passent d’un ordinateur portable à leur appareil mobile.
+La collecte des ID de client avec le service dʼidentités Adobe Experience Platform facilite l’importation de données depuis un CRM dans Target à l’aide de la fonctionnalité [Attributs du client](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=fr) d’Adobe Experience Cloud. Elle favorise également [la connexité des visiteurs d’un appareil à l’autre](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), ce qui vous permet de maintenir une expérience utilisateur cohérente lorsque vos clients passent d’un ordinateur portable à leur appareil mobile.
 
 Il est absolument nécessaire de définir l’ID de client dans l’action `Set Customer IDs` du service d’identités avant de déclencher la demande de chargement de page. Pour ce faire, assurez-vous de disposer des fonctionnalités suivantes sur votre site :
 
@@ -316,7 +321,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -334,7 +339,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=fr):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -362,7 +367,7 @@ Voici un exercice facultatif, si vous êtes un client Target Premium et si vous 
 
 1. Accédez à **[!UICONTROL Administration > Propriétés]**
 
-1. Identifiez la propriété que vous souhaitez utiliser et cliquez sur le **&#x200B;**&lt;/>ou créez une propriété
+1. Identifiez la propriété que vous souhaitez utiliser et cliquez sur le ****&lt;/>ou créez une propriété
 
 1. Copiez le fragment de code du `<script></script>` dans le presse-papiers
 
@@ -400,7 +405,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 **Validation du paramètre de jeton de propriété**
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -430,7 +435,7 @@ La requête de confirmation de commande est un type spécial de requête utilis�
 
 La bonne pratique consiste à utiliser une demande de confirmation de commande dans tous les entonnoirs de commande, même sur les sites autres que de vente au détail. Par exemple, les sites de génération de leads comportent généralement des entonnoirs de leads avec un « ID de lead » unique généré à la fin. Ces sites doivent mettre en œuvre une requête de commande à l’aide d’une valeur statique (telle que « 1 ») pour orderTotal.
 
-Les clients et clientes qui utilisent l’intégration Analytics for Target (A4T) pour la plupart de leurs rapports peuvent également vouloir implémenter la demande de commande s’ils ou elles utilisent des activités Automated Personalization qui ne prennent pas en charge A4T. En outre, la demande de commande est un élément essentiel dans les implémentations de Recommendations, alimentant les algorithmes en fonction du comportement d’achat. Pour obtenir les dernières informations sur la prise en charge d’A4T, consultez [la documentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr#section_F487896214BF4803AF78C552EF1669AA).
+Les clients et clientes qui utilisent l’intégration Analytics for Target (A4T) pour la plupart de leurs rapports peuvent également vouloir implémenter la demande de commande s’ils ou elles utilisent des activités Automated Personalization qui ne prennent pas en charge A4T. En outre, la demande de commande est un élément essentiel dans les implémentations de Recommendations, alimentant les algorithmes en fonction du comportement d’achat. Pour obtenir les dernières informations sur la prise en charge d’A4T, consultez [la documentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 La requête de confirmation de commande doit se déclencher à partir d’une règle qui n’est déclenchée que sur la page de confirmation de votre commande ou de votre événement. Il est souvent possible de la combiner avec une règle définissant l’événement d’achat Adobe Analytics. Elle doit être configurée à l’aide de l’action Code personnalisé de l’extension Core, à l’aide des éléments de données appropriés pour définir les paramètres orderId, orderTotal et productPurchasedId.
 
@@ -532,7 +537,7 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -564,11 +569,11 @@ Pour le moment, les paramètres personnalisés transmis avec les requêtes at.js
 
 Il existe de rares instances où vous devez effectuer des requêtes Target autres que le chargement de page et la requête de confirmation de commande. Par exemple, il arrive que les données importantes que vous souhaitez utiliser pour la personnalisation ne soient pas définies sur la page avant les codes incorporés de balise. Il peut s’agir de données codées en dur au bas de la page ou d’une réponse renvoyée par une requête API asynchrone. Ces données peuvent être envoyées à Target à l’aide d’une requête supplémentaire. Toutefois, il ne sera pas optimal d’utiliser cette requête pour la diffusion de contenu, car la page sera déjà visible. Ces données peuvent être utilisées pour enrichir le profil du visiteur en vue d’une utilisation ultérieure (à l’aide des paramètres de profil) ou pour renseigner le catalogue de recommandations.
 
-Dans ces circonstances, utilisez l’action Code personnalisé dans l’extension Core pour déclencher une requête à l’aide des méthodes [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=fr)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=fr) et [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=fr). Ceci est très similaire à ce que vous venez de faire dans l’exercice [Demande de confirmation de commande](#order-confirmation-request), mais vous utiliserez simplement un nom de demande différent et n’utiliserez pas les paramètres de commande spéciaux. Veillez à utiliser l’action **[!UICONTROL Charger Target]** avant d’effectuer des requêtes Target à partir de code personnalisé.
+Dans ces circonstances, utilisez l’action Code personnalisé dans l’extension Core pour déclencher une requête à l’aide des méthodes [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) et [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Ceci est très similaire à ce que vous venez de faire dans l’exercice [Demande de confirmation de commande](#order-confirmation-request), mais vous utiliserez simplement un nom de demande différent et n’utiliserez pas les paramètres de commande spéciaux. Veillez à utiliser l’action **[!UICONTROL Charger Target]** avant d’effectuer des requêtes Target à partir de code personnalisé.
 
 ## En-tête et pied de page de bibliothèque
 
-L’écran Modifier at.js de l’interface utilisateur de Target contient des emplacements dans lesquels vous pouvez coller le code JavaScript personnalisé qui s’exécute immédiatement avant ou après le fichier at.js. L’en-tête de bibliothèque est parfois utilisé pour remplacer les paramètres at.js par le biais de la fonction [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=fr) ou pour transmettre des données provenant de tiers en utilisant la fonction [Fournisseurs de données](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=fr). Le pied de page de la bibliothèque est parfois utilisé pour ajouter des détecteurs [d’événements personnalisés at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=fr).
+L’écran Modifier at.js de l’interface utilisateur de Target contient des emplacements dans lesquels vous pouvez coller le code JavaScript personnalisé qui s’exécute immédiatement avant ou après le fichier at.js. L’en-tête de bibliothèque est parfois utilisé pour remplacer les paramètres at.js par le biais de la fonction [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) ou pour transmettre des données provenant de tiers en utilisant la fonction [Fournisseurs de données](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). Le pied de page de la bibliothèque est parfois utilisé pour ajouter des détecteurs [d’événements personnalisés at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html).
 
 Pour répliquer cette fonctionnalité dans les balises, il vous suffit d’utiliser l’action Code personnalisé dans l’extension Core et de séquencer l’action avant (en-tête de bibliothèque) ou après (pied de bibliothèque) l’action Charger la cible. Cette action peut être effectuée dans la même règle que l’action `Load Target`, comme illustré ci-dessous, ou dans des règles distinctes avec des événements ou des paramètres de commande qui se déclenchent de manière fiable avant ou après la règle contenant `Load Target` :
 
@@ -576,8 +581,8 @@ Pour répliquer cette fonctionnalité dans les balises, il vous suffit d’utili
 
 Pour en savoir plus sur les cas d’utilisation pour les en-têtes et pieds de page personnalisés, consultez les ressources suivantes :
 
-* [Utilisation de dataProviders pour intégrer des données tierces dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=fr)
-* [Implémentation de dataProviders pour intégrer des données tierces dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=fr)
-* [Utilisation de jetons de réponse et d’événements personnalisés at.js avec Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=fr)
+* [Utilisation de dataProviders pour intégrer des données tierces dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [Implémentation de dataProviders pour intégrer des données tierces dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [Utilisation de jetons de réponse et d’événements personnalisés at.js avec Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
 [Suite : « Ajouter Adobe Analytics » >](analytics.md)

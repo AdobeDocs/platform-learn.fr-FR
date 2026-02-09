@@ -4,9 +4,9 @@ description: Découvrez comment envoyer un événement à Platform Edge Network 
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2014'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 2%
 # Création de règles de balises
 
 Découvrez comment envoyer des événements à Adobe Experience Platform Edge Network avec votre objet XDM à l’aide de règles de balises. Une règle de balise est une combinaison d’événements, de conditions et d’actions qui indique à la propriété de balise d’effectuer une opération. Avec Platform Web SDK, les règles sont utilisées pour envoyer des événements à Platform Edge Network avec les données appropriées.
+
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ## Objectifs d’apprentissage
 
@@ -70,7 +75,7 @@ Toutes ces règles seront correctement séquencées à l’aide de l’option «
 
 Cette vidéo donne un aperçu du processus :
 
->[!VIDEO](https://video.tv.adobe.com/v/3454029/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Champs de configuration globale
 
@@ -103,7 +108,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, puis **[!UICONTROL Mettre à jour la variable]**
 
@@ -168,7 +173,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 
 1. Sélectionnez **[!UICONTROL Ajouter une règle]**
 1. Nommez-le [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Core]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bibliothèque chargée (haut de page)]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`. Cette valeur d’ordre garantit que la règle s’exécute _après_ la `all pages - library loaded - set global variables - 1` qui définit la configuration globale.
@@ -238,13 +243,13 @@ Comparez l’élément de données à la structure `productListItems` (conseil, 
 >[!IMPORTANT]
 >
 >Notez la manière dont les variables numériques sont traduites, avec des valeurs de chaîne dans la couche de données telles que `price` et `qty` reformatées en nombres dans l’élément de données. Ces exigences de format sont importantes pour l’intégrité des données dans Platform et sont déterminées lors de l’étape [configurer les schémas](configure-schemas.md). Dans l’exemple, **[!UICONTROL quantity]** utilise le type de données **[!UICONTROL Integer]**.
->&#x200B;> ![Type de données de schéma XDM](assets/set-up-analytics-quantity-integer.png)
+> ![Type de données de schéma XDM](assets/set-up-analytics-quantity-integer.png)
 
 Maintenant, mappons notre tableau à l’objet XDM :
 
 
 1. Créez une règle nommée `ecommerce - library loaded - set shopping cart variables - 20`
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Core]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Bibliothèque chargée (haut de page)]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`
@@ -342,14 +347,14 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. Utilisez l’extension **[!UICONTROL Core]** et sélectionnez `Library Loaded (Page Top)` comme **[!UICONTROL type d’événement]**.
 
-1. Sélectionnez la liste déroulante **[!UICONTROL Avancé]** et saisissez `50` dans **[!UICONTROL Ordre]**. Cela permet de s’assurer que cette règle se déclenche après toutes les autres règles que vous avez configurées (dont le `1`Ordre`20` était [!UICONTROL &#x200B; ou &#x200B;]).
+1. Sélectionnez la liste déroulante **[!UICONTROL Avancé]** et saisissez `50` dans **[!UICONTROL Ordre]**. Cela permet de s’assurer que cette règle se déclenche après toutes les autres règles que vous avez configurées (dont le `1`Ordre`20` était [!UICONTROL  ou ]).
 
 1. Sélectionnez **[!UICONTROL Conserver les modifications]** pour revenir à l’écran principal des règles
    ![Sélectionner le déclencheur de bibliothèque chargé](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 
@@ -395,4 +400,4 @@ Vous êtes maintenant prêt à valider les données de la requête à l’aide d
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

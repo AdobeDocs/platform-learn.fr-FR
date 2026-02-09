@@ -4,16 +4,21 @@ description: Découvrez comment installer et configurer l’extension de balise 
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 11%
+source-wordcount: '638'
+ht-degree: 10%
 
 ---
 
 # Installation de l’extension de balise Adobe Experience Platform Web SDK
 
 Découvrez comment installer et configurer l’extension de balise Adobe Experience Platform Web SDK. Le moyen le plus simple de mettre en œuvre Web SDK consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement appelé Launch). L’extension de balise SDK Web Platform est la _seule extension de balise_ requise pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform et [Journey Optimizer](setup-web-channel.md) !
+
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ## Objectifs d’apprentissage
 
@@ -71,7 +76,7 @@ Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieu
 
    ![Sélection du flux de données](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Pour plus d’informations sur chaque section de l’extension, consultez [Configuration de l’extension Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Pour plus d’informations sur chaque section de l’extension, consultez [Configuration de l’extension Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -85,4 +90,4 @@ Maintenant que vous avez installé Platform Web SDK et que vous l’avez associ�
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

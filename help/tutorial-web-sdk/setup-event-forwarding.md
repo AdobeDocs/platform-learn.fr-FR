@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la propriété de transfert d’événe
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1904'
 ht-degree: 4%
 
 ---
@@ -15,16 +15,20 @@ ht-degree: 4%
 
 Découvrez comment utiliser le transfert d’événement avec les données du SDK web d’Adobe Experience Platform.
 
-Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événement vous permet d’envoyer des données à des fournisseurs tiers non Adobe directement depuis Adobe Experience Platform Edge Network au lieu du navigateur côté client traditionnel. Pour en savoir plus sur les avantages du transfert d’événement, consultez la [présentation du transfert d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/event-forwarding/overview).
+Le transfert d’événement est un nouveau type de propriété disponible dans la collecte de données. Le transfert d’événement vous permet d’envoyer des données à des fournisseurs tiers non Adobe directement depuis Adobe Experience Platform Edge Network au lieu du navigateur côté client traditionnel. Pour en savoir plus sur les avantages du transfert d’événement, consultez la [présentation du transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ![Diagramme de SDK web et de transfert d’événement](assets/dc-websdk-eventforwarding.png)
 
 Pour utiliser le transfert d’événement dans Adobe Experience Platform, les données doivent d’abord être envoyées à Adobe Experience Platform Edge Network à l’aide d’une ou de plusieurs des trois options suivantes :
 
 * [SDK web Adobe Experience Platform](overview.md)
-* [&#x200B; SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/fr/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+* [ SDK Mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -143,7 +147,7 @@ Dans cet exercice, vous allez transférer la hauteur de la fenêtre d’affichag
 >[!TIP]
 >
 >Vous pouvez également trouver le chemin d’accès de l’objet XDM à l’aide des outils réseau de votre navigateur web, en filtrant les requêtes `/ee`, en ouvrant la balise [!UICONTROL **Payload**] et en analysant en profondeur la variable que vous recherchez. Cliquez ensuite avec le bouton droit de la souris et sélectionnez « Copier le chemin de la propriété ». Voici un exemple pour la Hauteur de la fenêtre d’affichage du navigateur :
->&#x200B;> ![Chemin XDM du transfert d’événement](assets/event-forwarding-xdm-path.png)
+> ![Chemin XDM du transfert d’événement](assets/event-forwarding-xdm-path.png)
 
 1. Accédez à la propriété **[!UICONTROL Transfert d’événement]** que vous avez récemment créée
 
@@ -188,7 +192,7 @@ Dans cet exercice, vous allez transférer la hauteur de la fenêtre d’affichag
    >[!TIP]
    >
    >Lorsque vous utilisez votre propre site web, vous pouvez trouver le chemin d’accès à l’objet XDM avec les outils de réseau de votre navigateur web, filtrer les requêtes de `/ee`, ouvrir la balise [!UICONTROL **Payload**] et analyser en profondeur la variable que vous recherchez. Cliquez ensuite avec le bouton droit de la souris et sélectionnez « Copier le chemin de la propriété ». Voici un exemple pour la Hauteur de la fenêtre d’affichage du navigateur :
-   > ![&#x200B; Chemin XDM du transfert d’événement &#x200B;](assets/event-forwarding-xdm-path.png)
+   > ![ Chemin XDM du transfert d’événement ](assets/event-forwarding-xdm-path.png)
 
 ### Installation de l’extension Adobe Cloud Connector
 
@@ -268,7 +272,7 @@ Pour configurer une règle afin de transférer des données vers votre webhook, 
 
 1. Sélectionnez **[!UICONTROL Conserver les modifications]**
 
-   ![Ajouter un paramètre de requête &#x200B;](assets/event-forwarding-rule-query-parameter.png)
+   ![Ajouter un paramètre de requête ](assets/event-forwarding-rule-query-parameter.png)
 
 1. Votre règle doit se présenter comme suit :
 
@@ -304,7 +308,7 @@ Vous pouvez désormais valider votre propriété de transfert d’événement à
 
 1. La requête sur laquelle cibler la validation est celle qui affiche l’URL entièrement construite envoyée par le réseau Edge
 
-   ![&#x200B; Débogueur de transfert d’événement &#x200B;](assets/event-forwarding-debugger.png)
+   ![ Débogueur de transfert d’événement ](assets/event-forwarding-debugger.png)
 
 
 1. Notez les paramètres de chaîne de requête viewPortHeight et ecid
@@ -323,4 +327,4 @@ Félicitations ! Vous avez configuré le transfert d’événement.
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

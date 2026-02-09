@@ -3,18 +3,23 @@ title: Ajout de balises au service Adobe Experience Platform Identity
 description: Découvrez comment ajouter l’extension Service d’identités d’Adobe Experience Platform et utiliser l’action Définition des ID de client pour collecter les ID de client. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 65%
+source-wordcount: '1977'
+ht-degree: 62%
 
 ---
 
 # Ajout du service d’identités d’Adobe Experience Platform
 
-Cette leçon vous guidera tout au long des étapes requises pour mettre en œuvre l’[extension Service d’identités d’Adobe Experience Platforme](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr) et envoyer des ID de client.
+Cette leçon vous guidera tout au long des étapes requises pour mettre en œuvre l’[extension Service d’identités d’Adobe Experience Platforme](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) et envoyer des ID de client.
 
 Le [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr) définit un identifiant visiteur commun à toutes les solutions Adobe afin d’alimenter les fonctionnalités d’Experience Cloud telles que le partage d’audience entre les solutions. Vous pouvez aussi envoyer vos propres ID de client au service pour permettre un ciblage entre appareils et des intégrations supplémentaires avec votre système de gestion de la relation client (CRM).
+
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 >[!NOTE]
 >
@@ -90,14 +95,13 @@ L’extension Service d’identités est l’une des rares extensions de balise 
    1. Développez l’élément `Cookies` sur la gauche
    1. Cliquez sur le domaine `https://luma.enablementadobe.com`
    1. Recherchez le cookie AMCV_ sur la droite. Il se peut que vous en voyiez plusieurs depuis avoir chargé le site Luma à l’aide de sa propriété de balise codée en dur et mappé le vôtre.
-
       ![Vérifiez le cookie AMCV_](images/idservice-AMCVCookie.png)
 
 Vous avez terminé. Vous avez ajouté votre première extension ! Pour plus d’informations sur les options de configuration du service d’identités, consultez [la documentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=fr).
 
 ## Envoi des ID de client
 
-Ensuite, vous enverrez un [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=fr) au service d’identités. Cela vous permet d’[intégrer votre CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) à Experience Cloud et de suivre les visiteurs sur différents appareils.
+Ensuite, vous enverrez un [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) au service d’identités. Cela vous permet d’[intégrer votre CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) à Experience Cloud et de suivre les visiteurs sur différents appareils.
 
 Dans une leçon précédente, [Ajout d’éléments de données, de règles et de bibliothèques](add-data-elements-rules.md), vous avez créé un élément de données et vous l’avez utilisé dans une règle. Maintenant, vous allez utiliser ces mêmes techniques pour envoyer un ID de client lorsque le visiteur est authentifié.
 
@@ -148,7 +152,7 @@ En connaissant l’état d’authentification de l’utilisateur, vous savez qua
    ![Ajouter un élément de données](images/idservice-addDataElement2.png)
 
 1. Nommez l’élément de données `Email (Hashed)`.
-1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript **&#x200B;**
+1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript ****
 1. Comme nom de variable **[!UICONTROL JavaScript]**, utilisez le pointeur suivant vers une variable dans la couche de données du site Luma : `digitalData.user.0.profile.0.attributes.username`
 1. Conservez tous les autres paramètres à leurs valeurs par défaut.
 1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque]** pour enregistrer l’élément de données
@@ -157,7 +161,7 @@ En connaissant l’état d’authentification de l’utilisateur, vous savez qua
 
 ### Ajout d’une règle pour envoyer des ID de client
 
-Le service d’identités d’Adobe Experience Platform transmet les ID de client dans les règles à l’aide d’une action appelée « Définition des ID de client ».  Vous allez maintenant créer une règle pour déclencher cette action lorsque le visiteur est authentifié.
+Le service Adobe Experience Platform Identity transmet les ID de client dans les règles à l’aide d’une action appelée « Définition des ID de client ».  Vous allez maintenant créer une règle pour déclencher cette action lorsque le visiteur est authentifié.
 
 **Ajout d’une règle pour envoyer des ID de client**
 
@@ -170,14 +174,14 @@ Le service d’identités d’Adobe Experience Platform transmet les ID de cli
 
    >[!TIP]
    >
-   >Cette convention d’affectation des noms indique que vous déclenchez cette règle en haut de toutes les pages lorsque l’utilisateur est authentifié et qu’elle est classée par « 10 ». L’utilisation d’une convention d’affectation des noms comme celle-ci au lieu de l’affecter aux solutions déclenchées dans les actions vous permettra de minimiser le nombre total de règles nécessaires à votre mise en œuvre.
+   >Cette convention d’affectation des noms indique que vous déclenchez cette règle en haut de toutes les pages lorsque l’utilisateur est authentifié et qu’elle est classée dans l’ordre « 10 ». L’utilisation d’une convention d’affectation des noms comme celle-ci au lieu de l’affecter aux solutions déclenchées dans les actions vous permettra de minimiser le nombre total de règles nécessaires à votre mise en œuvre.
 
 1. Sous **[!UICONTROL Événements]** cliquez sur **[!UICONTROL Ajouter]**
 
    ![Ajout d’un événement](images/idservice-customerId-addEvent.png)
 
    1. Pour le **[!UICONTROL Type d’événement]** sélectionnez **[!UICONTROL Bibliothèque chargée (haut de page)]**
-   1. Développez la section **[!UICONTROL Options avancées]** et, pour le champ **[!UICONTROL Commande]**, saisissez `10`. La commande contrôle la séquence de règles déclenchées par le même événement. Les règles dont la commande est plus faible se déclenchent avant les règles dont la commande est plus élevée. Dans ce cas, vous souhaitez définir l’ID de client avant de déclencher la requête, ce que vous allez faire lors de la leçon suivante avec une règle dont la commande est de `50`.
+   1. Développez la section **[!UICONTROL Options avancées]** et, pour le champ **[!UICONTROL Commande]**, saisissez `10`. La commande contrôle la séquence de règles déclenchées par le même événement. Les règles dont la commande est plus faible se déclenchent avant les règles dont la commande est plus élevée. Dans ce cas, vous souhaitez définir l’ID de client avant de déclencher la requête Target, ce que vous allez faire lors de la leçon suivante avec une règle dont la commande est de `50`.
    1. Cliquez sur le bouton **[!UICONTROL Conserver les modifications]** pour revenir au Créateur de règles
 
    ![Enregistrement de l’événement](images/idservice-customerId-saveEvent.png)
@@ -196,7 +200,7 @@ Le service d’identités d’Adobe Experience Platform transmet les ID de cli
       ![Définir l’état d’authentification](images/idservice-customerId-authStateCondition.png)
 
 1. Assurez-vous que l’opérateur est `Equals`.
-1. Saisissez « connecté » dans le champ de texte, ce qui entraîne le déclenchement de la règle lorsque l’élément de données « État d’authentification » a la valeur « connecté ».
+1. Saisissez « logged in » dans le champ de texte, ce qui entraîne le déclenchement de la règle chaque fois que l’élément de données « Authentication State » a la valeur « logged in »
 
 1. Cliquez sur **[!UICONTROL Conserver les modifications]**
 
@@ -229,7 +233,7 @@ Pour valider votre travail, vous devez vous connecter au site Luma pour confirme
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 

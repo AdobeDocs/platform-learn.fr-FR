@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2543'
 ht-degree: 3%
 
 ---
@@ -19,6 +19,10 @@ Découvrez comment mettre en œuvre la fonctionnalité de gestion des décisions
 
 En suivant ce tutoriel, les utilisateurs de Journey Optimizer sont équipés pour utiliser les fonctionnalités de gestion des décisions, ce qui améliore la personnalisation et la pertinence de leurs interactions client.
 
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ![Diagramme SDK web et Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -56,7 +60,7 @@ Les offres basées sur un événement ne sont actuellement pas prises en charge 
 
 ## Octroi de l’accès à la gestion des décisions
 
-Pour accorder l’accès à la fonctionnalité de gestion des décisions, vous devez créer un **profil de produit** et attribuer les autorisations correspondantes à vos utilisateurs. [En savoir plus sur la gestion des utilisateurs et des autorisations Journey Optimizer dans cette section](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Pour accorder l’accès à la fonctionnalité de gestion des décisions, vous devez créer un **profil de produit** et attribuer les autorisations correspondantes à vos utilisateurs. [En savoir plus sur la gestion des utilisateurs et des autorisations Journey Optimizer dans cette section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configurer le flux de données
 
@@ -72,7 +76,7 @@ Pour configurer Offer Decisioning dans le flux de données :
 
    ![Sélectionner le flux de données](assets/decisioning-datastream-select.png)
 
-1. Sélectionnez **Modifier** dans le service Adobe Experience Platform **&#x200B;**.
+1. Sélectionnez **Modifier** dans le service Adobe Experience Platform ****.
 
    ![Modifier le service](assets/decisioning-edit-datastream.png)
 
@@ -175,7 +179,7 @@ Pour créer l&#39;emplacement, procédez comme suit :
 1. Une fois l&#39;emplacement créé, il s&#39;affiche dans la liste des emplacements.
 1. Sélectionnez la ligne contenant votre nouvel emplacement et notez l’ID d’emplacement, car cela peut être nécessaire pour la configuration dans votre portée de décision.
 
-   ![Voir ID d’emplacement &#x200B;](assets/decisioning-placement-id.png)
+   ![Voir ID d’emplacement ](assets/decisioning-placement-id.png)
 
 ### Règles de décision pour le statut de fidélité
 
@@ -339,7 +343,7 @@ Pour commencer les tests, sélectionnez l’onglet **Simulations** dans le menu 
 
 ### Test des offres de fidélité
 
-1. Sélectionnez un profil de test à utiliser pour la simulation. Cliquez sur **Gérer le profil**. [Pour créer ou désigner un profil de test pour les tests d’offre, suivez ce guide](https://experienceleague.adobe.com/fr/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Sélectionnez un profil de test à utiliser pour la simulation. Cliquez sur **Gérer le profil**. [Pour créer ou désigner un profil de test pour les tests d’offre, suivez ce guide](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +375,7 @@ L’extension **Adobe Experience Platform Debugger**, disponible pour Chrome et 
 
 Vous pouvez utiliser le débogueur sur le site Luma pour valider la logique de prise de décision en production. Cette validation est une bonne pratique une fois que le cas d’utilisation des récompenses de fidélité est opérationnel, afin de s’assurer que tout est correctement configuré.
 
-[Découvrez comment configurer le débogueur dans votre navigateur à l’aide du guide ici](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/debugger/overview).
+[Découvrez comment configurer le débogueur dans votre navigateur à l’aide du guide ici](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Pour commencer la validation à l’aide du débogueur :
 
@@ -379,7 +383,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Sur la page web, ouvrez le débogueur Adobe Experience Platform **&#x200B;**.
+1. Sur la page web, ouvrez le débogueur Adobe Experience Platform ****.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -395,11 +399,11 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Vous pouvez ensuite vous connecter au site avec divers comptes de fidélité Luma et utiliser le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge **&#x200B;**. Toutes ces requêtes doivent être capturées dans **Assurance** pour le suivi des journaux.
+1. Vous pouvez ensuite vous connecter au site avec divers comptes de fidélité Luma et utiliser le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge ****. Toutes ces requêtes doivent être capturées dans **Assurance** pour le suivi des journaux.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

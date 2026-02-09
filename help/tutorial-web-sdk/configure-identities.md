@@ -4,9 +4,9 @@ description: Découvrez comment configurer des espaces de noms d’identité à 
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '686'
 ht-degree: 12%
 
 ---
@@ -18,6 +18,10 @@ Découvrez comment configurer les espaces de noms d’identité à utiliser avec
 Le [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/fr/docs/id-service/using/home) définit un identifiant visiteur commun (ECID) entre les applications Adobe basées sur SDK afin d’alimenter les fonctionnalités d’Experience Cloud telles que le partage d’audience entre les applications. Vous pouvez également envoyer vos propres ID de client au Service pour activer le ciblage inter-appareils et les intégrations à d’autres systèmes, tels que votre système de gestion de la relation client (CRM).
 
 Le service d’identités [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/home) (oui, il y en a deux !) utilise les ECID et les ID client pour générer des graphiques d’identités, ce qui vous permet de fusionner des attributs et des comportements dans des profils client en temps réel.
+
+>[!WARNING]
+>
+> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 >[!NOTE]
 >
@@ -45,7 +49,7 @@ Vous devez avoir déjà terminé les leçons précédentes :
 >
 >L’extension [Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) n’est pas nécessaire lors de l’implémentation de Adobe Experience Platform Web SDK, car la bibliothèque Web SDK JavaScript contient la fonctionnalité du service d’identification des visiteurs.
 >
-> Si votre site web utilise déjà le service Experience Cloud ID sur votre site web, par le biais de l’API visiteur ou de l’extension de balise du service Experience Cloud ID, et que vous souhaitez continuer à l’utiliser lors de la migration vers Adobe Experience Platform Web SDK, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service Experience Cloud ID. Pour plus d’informations, consultez [&#x200B; Migration des ID &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/identity/overview) .
+> Si votre site web utilise déjà le service Experience Cloud ID sur votre site web, par le biais de l’API visiteur ou de l’extension de balise du service Experience Cloud ID, et que vous souhaitez continuer à l’utiliser lors de la migration vers Adobe Experience Platform Web SDK, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service Experience Cloud ID. Pour plus d’informations, consultez [ Migration des ID ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) .
 
 ## Création d’un espace de noms d’identité
 
@@ -53,7 +57,7 @@ Dans cet exercice, vous allez créer un espace de noms d’identité pour le cha
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’identité dans Adobe Experience Platform :
 
->[!VIDEO](https://video.tv.adobe.com/v/3422771?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Créez maintenant un espace de noms pour l’identifiant CRM de Luma :
 
@@ -67,7 +71,7 @@ Créez maintenant un espace de noms pour l’identifiant CRM de Luma :
 1. Sélectionnez **[!UICONTROL Identités]** dans le volet de navigation de gauche
 1. Sélectionnez **[!UICONTROL Parcourir]**
 
-   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page. Elle indique leurs noms, symboles d’identité, date de la dernière mise à jour et s’il s’agit d’espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL &#x200B; l’intensité du graphique d’identités &#x200B;].
+   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page. Elle indique leurs noms, symboles d’identité, date de la dernière mise à jour et s’il s’agit d’espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL  l’intensité du graphique d’identités ].
 
 1. Sélectionnez **[!UICONTROL Créer un espace de noms d’identité]**
 
@@ -98,4 +102,4 @@ Maintenant que les identités sont en place, le flux de données peut être conf
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
