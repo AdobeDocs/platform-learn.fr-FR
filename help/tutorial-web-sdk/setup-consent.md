@@ -60,7 +60,7 @@ Avant de passer aux configurations des balises, découvrez la plateforme de gest
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
 -->
-    >[!REMARQUE]
+    >[ !REMARQUE]
     >
     >En règle générale, les étapes mentionnées ci-dessus sont effectuées et prises en charge par l’équipe ou la personne responsable de la gestion du CMP, comme OneTrust ou TrustArc.
 

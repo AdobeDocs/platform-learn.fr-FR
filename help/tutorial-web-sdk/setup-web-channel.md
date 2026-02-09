@@ -230,7 +230,7 @@ Maintenant, créons l’expérience du canal web. Pour ce faire, utilisez l’**
 
 1. Assurez-vous que l’expérience est correctement suivie pour les clics. Choisissez **[!UICONTROL Clic sur l’élément de suivi]** dans le menu contextuel.
 
-   ![ Suivi des clics ](assets/web-channel-click-tracking.png)
+   ![&#x200B; Suivi des clics &#x200B;](assets/web-channel-click-tracking.png)
 
 1. Utilisez le composant **[!UICONTROL Décision d’offre]** pour insérer des offres dans la page web. Ce composant utilise **[!UICONTROL Gestion des décisions]** pour sélectionner la meilleure offre à proposer aux visiteurs Luma.
 
@@ -275,7 +275,7 @@ Pour simuler l’expérience :
 
 1. Sélectionnez **[!UICONTROL Simuler du contenu]** dans la campagne.
 
-   ![ Simuler du contenu ](assets/web-channel-simulate-content.png)
+   ![&#x200B; Simuler du contenu &#x200B;](assets/web-channel-simulate-content.png)
 
 1. Choisissez un profil de test pour recevoir la simulation. Gardez à l’esprit que le profil de test doit se trouver dans l’audience `Luma Loyalty Rewards – Gold Status` pour recevoir le traitement approprié.
 
@@ -335,7 +335,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge ****. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
+1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge **&#x200B;**. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
 <!--
    ![ADD SCREENSHOT](#)
 -->

@@ -60,7 +60,7 @@ Dans un scénario réel, l’étape suivante du processus consisterait à demand
 
 **Validation des modifications dans la bibliothèque d’évaluation**
 
-1. Dans la propriété de balise, ouvrez la page [!UICONTROL  Environnements ]
+1. Dans la propriété de balise, ouvrez la page [!UICONTROL &#x200B; Environnements &#x200B;]
 
 1. Sur la ligne [!UICONTROL Évaluation], cliquez sur l’icône Installer ![icône Installer](images/launch-installIcon.png) pour ouvrir le modal.
 

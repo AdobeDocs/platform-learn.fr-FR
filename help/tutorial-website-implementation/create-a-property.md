@@ -69,7 +69,7 @@ Une propriété est essentiellement un conteneur que vous remplissez avec des ex
 1. Développez la section **[!UICONTROL Options avancées]** et cochez la case pour **[!UICONTROL Exécuter les composants de règle en séquence]**
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]**
 
-   ![Création d’une propriété ](images/launch-newProperty.png)
+   ![Création d’une propriété &#x200B;](images/launch-newProperty.png)
 
 Votre nouvelle propriété devrait s’afficher sur la page Propriétés. Notez que si vous cochez la case en regard du nom de la propriété, les options **[!UICONTROL Configurer]** ou **[!UICONTROL Supprimer]** de la propriété s’affichent au-dessus de la liste des propriétés. Cliquez sur le nom de la propriété (par exemple `Luma Tutorial`) pour ouvrir l’écran `Overview`.
 ![Clic sur le nom de la propriété pour l’ouvrir](images/launch-openProperty.png)

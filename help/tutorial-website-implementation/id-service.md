@@ -152,7 +152,7 @@ En connaissant l’état d’authentification de l’utilisateur, vous savez qua
    ![Ajouter un élément de données](images/idservice-addDataElement2.png)
 
 1. Nommez l’élément de données `Email (Hashed)`.
-1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript ****
+1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript **&#x200B;**
 1. Comme nom de variable **[!UICONTROL JavaScript]**, utilisez le pointeur suivant vers une variable dans la couche de données du site Luma : `digitalData.user.0.profile.0.attributes.username`
 1. Conservez tous les autres paramètres à leurs valeurs par défaut.
 1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque]** pour enregistrer l’élément de données
@@ -233,7 +233,7 @@ Pour valider votre travail, vous devez vous connecter au site Luma pour confirme
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
