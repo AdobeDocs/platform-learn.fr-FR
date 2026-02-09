@@ -46,7 +46,7 @@ Dans cet exercice, vous allez utiliser pour parcourir les différentes configura
 
 Dans cet exercice, une nouvelle ressource sera créée à l’aide d’Adobe Express, puis elle sera chargée dans Frame.io, pour lancer le processus de révision et d’approbation.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
