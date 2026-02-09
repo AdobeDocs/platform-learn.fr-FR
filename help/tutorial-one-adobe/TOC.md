@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7 Créateur de workflow {#crpr7}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Prise en main du créateur de workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8 Gestion du stockage d’entreprise {#crpr8}
+   + 1.8 Révision et approbation unifiées avec Workfront, Frame.io et Enterprise Storage Management {#crpr8}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront ET ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io et ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express ET ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Prise en main de Workfront, Frame.io et ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Créer une nouvelle ressource, la réviser et l’approuver](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Gestion des ressources {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -245,7 +244,7 @@ ht-degree: 3%
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
 + Rapports et informations {#reporting}
-   + Customer Journey Analytics  {#cjab2c}
+   + Customer Journey Analytics  {#cjab2c}
       + 1.1 Customer Journey Analytics : créer un tableau de bord à l’aide d’Analysis Workspace {#cja1}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
