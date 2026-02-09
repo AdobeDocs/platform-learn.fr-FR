@@ -172,7 +172,7 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 Pour les clients Real-Time Customer Data Platform et Journey Optimizer, l’étape suivante consiste à activer le jeu de données et le schéma pour le profil client en temps réel. La diffusion de données en continu à partir de Web SDK est l’une des nombreuses sources de données qui entrent dans Platform. Vous souhaitez associer vos données web à d’autres sources de données pour créer des profils client à 360 degrés. Pour en savoir plus sur le profil client en temps réel, regardez cette courte vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
+>[!VIDEO](https://video.tv.adobe.com/v/31639?learn=on&captions=fre_fr)
 
 >[!CAUTION]
 >

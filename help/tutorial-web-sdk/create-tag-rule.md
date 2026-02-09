@@ -75,7 +75,7 @@ Toutes ces règles seront correctement séquencées à l’aide de l’option «
 
 Cette vidéo donne un aperçu du processus :
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454029/?captions=fre_fr&learn=on&enablevpops)
 
 ### Champs de configuration globale
 
