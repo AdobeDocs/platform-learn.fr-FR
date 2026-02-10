@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets et Dynamic Media
 kt: 5342
 doc-type: tutorial
 exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
-source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 2%
 ## Objectifs d’apprentissage
 
 - Découvrez comment utiliser AEM Assets et Dynamic Media de différentes manières.
+
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479788?quality=12&learn=on)
 
 ## Conditions préalables
 
@@ -33,7 +39,7 @@ Dans cet exercice, vous allez utiliser Adobe Photoshop pour créer différentes 
 
 Dans cet exercice, vous allez utiliser le modèle que vous avez créé avec AEM Assets Dynamic Media dans Adobe Journey Optimizer pour hyper-personnaliser les e-mails.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
