@@ -47,7 +47,7 @@ Vous devriez alors voir ceci.
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-Vous devriez maintenant recevoir un e-mail comme celui ci-dessous, qui contient votre mot de passe temporaire. Pour modifier votre mot de passe ou le récupérer si vous n’avez pas reçu d’e-mail, vous devez installer l’application de bureau **Adobe Dynamic Media Classic**. Vous trouverez les instructions d’installation ici : [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+Vous devriez maintenant recevoir un e-mail comme celui ci-dessous, qui contient votre mot de passe temporaire. Pour modifier votre mot de passe ou le récupérer si vous n’avez pas reçu d’e-mail, vous devez installer l’application de bureau **Adobe Dynamic Media Classic**. Vous trouverez les instructions d’installation ici : [https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/fr/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Suivez les instructions qui s&#39;y trouvent et revenez ici une fois l&#39;application installée sur votre système.
 
