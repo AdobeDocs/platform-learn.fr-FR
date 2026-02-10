@@ -33,7 +33,7 @@ Dans cet exercice, vous allez utiliser Adobe Photoshop pour créer différentes 
 
 Dans cet exercice, vous allez utiliser le modèle que vous avez créé avec AEM Assets Dynamic Media dans Adobe Journey Optimizer pour hyper-personnaliser les e-mails.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
