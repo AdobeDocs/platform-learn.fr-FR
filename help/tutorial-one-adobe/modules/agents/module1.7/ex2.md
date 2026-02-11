@@ -106,6 +106,6 @@ Vous devriez alors voir ceci. Avant de poursuivre, assurez-vous que le dossier d
 
 ## Étapes suivantes
 
-Revenez à [ Outils de développement intelligents pour Adobe Commerce ](./aiassisteddev.md){target="_blank"}
+Revenez à [&#x200B; Outils de développement intelligents pour Adobe Commerce &#x200B;](./aiassisteddev.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
