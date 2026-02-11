@@ -31,6 +31,6 @@ Dans l’exercice suivant, vous allez découvrir comment combiner vos offres et 
 
 ## Étapes suivantes
 
-Revenez à [&#x200B; Experience Decisioning &#x200B;](ajo-decisioning.md){target="_blank"}
+Revenez à [ Experience Decisioning ](ajo-decisioning.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

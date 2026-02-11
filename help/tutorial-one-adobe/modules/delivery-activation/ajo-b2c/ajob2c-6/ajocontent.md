@@ -37,7 +37,7 @@ Dans cet exercice, vous allez configurer et utiliser des pages de destination da
 
 Dans cet exercice, vous allez importer un modèle de marque à partir de GenStudio for Performance Marketing et l’utiliser dans Adobe Journey Optimizer. Vous utiliserez l’IA générative dans GenStudio for Performance Marketing pour créer une expérience d’e-mail, que vous utiliserez ensuite dans Adobe Journey Optimizer.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

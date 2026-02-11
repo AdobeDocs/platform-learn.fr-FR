@@ -56,7 +56,7 @@ Dans cet exercice, vous allez accéder au site web et à l’application mobile 
 
 Configurez votre connecteur Source de zone d’atterrissage de données avec le stockage Blob d’Azure.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

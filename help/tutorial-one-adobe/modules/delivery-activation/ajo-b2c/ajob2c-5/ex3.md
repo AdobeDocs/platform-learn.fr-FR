@@ -15,11 +15,11 @@ ht-degree: 11%
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Cliquez sur **Journey Optimizer**.
 
-![&#x200B; Traductions &#x200B;](./images/ajolp1.png)
+![ Traductions ](./images/ajolp1.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`.
 
-![ACOP &#x200B;](./images/ajolp2.png)
+![ACOP ](./images/ajolp2.png)
 
 Accédez à **Campagnes** et cliquez pour ouvrir la campagne que vous venez de créer.
 

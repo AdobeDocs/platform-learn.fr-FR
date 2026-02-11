@@ -36,7 +36,7 @@ Dans cet exercice, vous allez configurer votre fournisseur de traductions à l�
 
 Dans cet exercice, vous allez ajouter des langues à l’e-mail dans votre campagne.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

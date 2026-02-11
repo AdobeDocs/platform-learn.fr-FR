@@ -68,7 +68,7 @@ Dans cet exercice, configurez une activité dans Adobe Target, implémentée via
 
 Pour que le SDK Web puisse ingérer des données dans Adobe Experience Platform, un mixin XDM spécifique doit faire partie du schéma XDM dans Adobe Experience Platform.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

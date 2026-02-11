@@ -50,7 +50,7 @@ Dans cet exercice, vous allez configurer un connecteur Source d’API HTTP dans 
 
 Dans cet exercice, vous utiliserez Kafka Connect pour installer et utiliser le connecteur de récepteur Adobe Experience Platform et vous enverrez manuellement des événements dans Adobe Experience Platform.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -47,7 +47,7 @@ Dans cet exercice, vous apprendrez à configurer un e-mail.
 
 Cela vous guidera tout au long de la configuration de Launch afin de déclencher votre événement et de fournir la payload appropriée. Enfin, vous pourrez vous envoyer un e-mail.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

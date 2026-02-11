@@ -54,7 +54,7 @@ Dans cet exercice, vous allez créer un segment à l’aide du créateur de segm
 
 Dans cet exercice, vous allez emprunter l’identité d’un employé de centre d’appels qui reçoit un appel d’un client. Afin d&#39;avoir un impact réel sur l&#39;expérience de ce client, vous devez avoir accès à toutes les informations disponibles en temps réel.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -59,7 +59,7 @@ Dans cet exercice, vous allez créer et configurer une fonction cloud Google et 
 
 Dans cet exercice, vous allez configurer votre environnement AWS à l’aide d’AWS IAM, d’AWS Kinesis, d’AWS Firehouse et d’AWS S3, après quoi vous commencerez à transférer les données d’événement collectées par Web SDK.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
