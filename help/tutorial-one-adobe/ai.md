@@ -3,7 +3,7 @@ title: Présentation d’Agentic AI Tech Labs
 description: Présentation d’Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Aperçu - Travail en cours
 
@@ -77,9 +77,9 @@ Dans cet exercice, vous apprendrez à :
 
 **Objectif**
 
-Dans ce module, vous utiliserez des outils de développement intelligents tels que Cursor.ai pour développer une extension de votre environnement Adobe Commerce as a Cloud Service. L’objectif de cette extension est de transférer les événements de commande entrants vers un point d’entrée tiers. Le transfert d’événement dans Adobe Commerce as a Cloud Service repose sur Adobe I/O App Builder, Adobe I/O Events et Adobe I/O Runtime. La configuration de tous ces services sera assistée par Cursor.ai.
+Dans ce module, vous utiliserez des outils de développement intelligents tels que Cursor pour développer une extension de votre environnement Adobe Commerce as a Cloud Service. L’objectif de cette extension est de transférer les événements de commande entrants vers un point d’entrée tiers. Le transfert d’événement dans Adobe Commerce as a Cloud Service repose sur Adobe I/O App Builder, Adobe I/O Events et Adobe I/O Runtime. La configuration de tous ces services sera assistée par Cursor.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
