@@ -68,7 +68,7 @@ Dans cet exercice, vous allez créer une fonction Azure qui sera déclenchée en
 
 À ce stade, tout est configuré. Vous pouvez désormais effectuer une navigation sur votre site web de démonstration et obtenir les qualifications d’audience diffusées à votre fonction de déclencheur de hub d’événement d’Azure de Microsoft.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

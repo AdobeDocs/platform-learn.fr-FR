@@ -15,11 +15,11 @@ ht-degree: 10%
 
 Connectez-vous à Adobe Experience Cloud en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Adobe Journey Optimizer**.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé ``--aepTenantId--``.
 
-![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## 3.4.3.1 la personnalisation basée sur les segments
 
@@ -71,12 +71,12 @@ Sélectionnez la `--aepUserLdap-- - Interest in Plans` du segment et cliquez sur
 
 Vous devez ensuite laisser la première ligne telle quelle et remplacer les lignes 2 et 3 par ce code :
 
-``
+&grave;&grave;
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-``
+&grave;&grave;
 
 Tu auras alors ceci. Cliquez sur **Enregistrer**.
 

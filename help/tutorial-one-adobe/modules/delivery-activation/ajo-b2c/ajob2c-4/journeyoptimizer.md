@@ -45,7 +45,7 @@ Dans cet exercice, vous allez configurer une campagne par e-mail traditionnelle.
 
 Dans cet exercice, vous utiliserez l’appartenance à un segment pour définir le contenu à afficher dans un e-mail.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

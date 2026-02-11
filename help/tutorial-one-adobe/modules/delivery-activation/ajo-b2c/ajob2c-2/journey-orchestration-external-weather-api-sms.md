@@ -61,7 +61,7 @@ Combinez des événements, des sources de données et des actions dans un parcou
 
 Déclenchez votre parcours spécifique.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
