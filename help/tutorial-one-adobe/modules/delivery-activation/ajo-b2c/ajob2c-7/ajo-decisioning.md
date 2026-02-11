@@ -1,18 +1,19 @@
 ---
-title: Experience Decisioning
-description: Experience Decisioning
+title: Adobe Journey Optimizer Decisioning
+description: Adobe Journey Optimizer Decisioning
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
 
-# 3.7 Adobe Journey Optimizer : Experience Decisioning
+# 3.7 Adobe Journey Optimizer : prise de décision
 
 Dans ce module, vous obtiendrez une présentation pratique des fonctionnalités de prise de décision d’Experience Platform Adobe Journey Optimizer.
 
@@ -35,7 +36,7 @@ Experience Decisioning vous permet de déterminer la meilleure option à partir 
 
 ## Exercices
 
-[3.7.1 Experience Decisioning 101](./ex1.md)
+[3.7.1 Adobe Journey Optimizer Decisioning 101](./ex1.md)
 
 Au cours de cet exercice, vous allez mieux comprendre tous les concepts d’Offer Decisioning et comment accéder à Offer Decisioning dans Adobe Journey Optimizer.
 
@@ -43,15 +44,11 @@ Au cours de cet exercice, vous allez mieux comprendre tous les concepts d’Offe
 
 Dans cet exercice, vous allez configurer vos propres offres personnalisées et votre propre décision, qui sera ensuite publiée.
 
-[3.7.3 Configuration de Web SDK pour Experience Decisioning](./ex3.md)
+[3.7.3 Configuration de Web SDK pour Adobe Journey Optimizer Decisioning](./ex3.md)
 
 Dans cet exercice, vous utiliserez le site web de démonstration pour tester votre décision.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Dans ce module, vous apprendrez à configurer votre propre cluster 
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -50,11 +50,7 @@ Dans cet exercice, vous allez configurer un connecteur Source d’API HTTP dans 
 
 Dans cet exercice, vous utiliserez Kafka Connect pour installer et utiliser le connecteur de récepteur Adobe Experience Platform et vous enverrez manuellement des événements dans Adobe Experience Platform.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

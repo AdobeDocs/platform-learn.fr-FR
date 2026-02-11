@@ -4,9 +4,9 @@ description: Services de traduction AJO
 kt: 5342
 doc-type: tutorial
 exl-id: fff315ce-88d2-407f-b8c4-c24517688e60
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '317'
 ht-degree: 11%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 11%
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/). Cliquez sur **Journey Optimizer**.
 
-![&#x200B; Traductions &#x200B;](./images/ajolp1.png)
+![ Traductions ](./images/ajolp1.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Tout d’abord, assurez-vous d’utiliser le bon sandbox. Le sandbox à utiliser est appelé `--aepSandboxName--`.
 
-![ACOP &#x200B;](./images/ajolp2.png)
+![ACOP ](./images/ajolp2.png)
 
 Accédez à **Campagnes** et cliquez pour ouvrir la campagne que vous venez de créer.
 
@@ -88,8 +88,6 @@ Vérifiez que votre campagne est à l’état **Arrêtée**.
 Vous avez maintenant terminé cet exercice.
 
 ## Étapes suivantes
-
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md)
 
 Revenez à [Adobe Journey Optimizer : Services de traduction](./ajotranslationsvcs.md){target="_blank"}
 

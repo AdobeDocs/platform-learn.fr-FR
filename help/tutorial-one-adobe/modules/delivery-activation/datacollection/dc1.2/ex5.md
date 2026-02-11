@@ -4,18 +4,18 @@ description: Foundation - Ingestion de données - Ingestion de données à parti
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 4%
 
 ---
 
 # 1.2.5 Zone D’Atterrissage Des Données
 
-Dans cet exercice, l’objectif est de configurer votre connecteur Source Data Landing Zone avec le stockage Azure Blob.
+Dans cet exercice, l’objectif est de configurer votre connecteur Source de zone d’atterrissage de données avec le stockage Blob d’Azure.
 
-Data Landing Zone est une interface de stockage Azure Blob fournie par Adobe Experience Platform. Elle vous permet d’accéder à une fonctionnalité de stockage de fichiers sécurisée basée sur le cloud pour importer des fichiers dans Platform. La zone d’atterrissage de données prend en charge l’authentification SAS et ses données sont protégées par des mécanismes de sécurité de stockage Azure Blob standard au repos et en transit. L’authentification SAS vous permet d’accéder en toute sécurité à votre conteneur Data Landing Zone par le biais d’une connexion Internet publique.
+Data Landing Zone est une interface de stockage Blob d’Azure fournie par Adobe Experience Platform. Elle vous permet d’accéder à une fonctionnalité de stockage de fichiers sécurisée basée sur le cloud pour importer des fichiers dans Platform. La zone d’atterrissage de données prend en charge l’authentification SAS et ses données sont protégées par des mécanismes de sécurité de stockage Blob Azure standard au repos et en transit. L’authentification SAS vous permet d’accéder en toute sécurité à votre conteneur Data Landing Zone par le biais d’une connexion Internet publique.
 
 >[!NOTE]
 >
@@ -64,11 +64,11 @@ Cliquez sur l’icône comme indiqué pour copier le **SASUri**.
 
 ![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
 
-## Copiez votre fichier csv dans votre zone d’atterrissage de données AEP.
+## Copiez votre fichier csv dans votre zone d’atterrissage de données AEP
 
-Vous allez maintenant ingérer des données dans Adobe Experience Platform à l’aide d’outils de ligne de commande Azure à l’aide d’AZCopy.
+Vous allez désormais ingérer des données dans Adobe Experience Platform à l’aide des outils de ligne de commande Azure à l’aide d’AZCopy.
 
-Ouvrez un terminal à l’emplacement de votre installation azcopy et exécutez la commande suivante pour copier un fichier dans la zone d’atterrissage de données d’AEP :
+Ouvrez un terminal à l’emplacement de votre installation azcopy et exécutez la commande suivante pour copier un fichier dans la zone d’atterrissage des données d’AEP :
 
 ``./azcopy copy <your-local-file> <your SASUri>``
 
@@ -114,7 +114,7 @@ Vous êtes maintenant prêt à mapper les données source entrantes de votre fic
 >
 > Peu importe les erreurs potentielles avec le mappage. Vous corrigerez le mappage à l’étape suivante.
 
-## Mapper les champs
+## Champs de mappage
 
 Tout d’abord, cliquez sur le bouton **Effacer tous les mappages**. Vous pouvez ensuite commencer avec un mapping propre.
 
@@ -169,8 +169,6 @@ Le chargement des données peut prendre quelques minutes. En cas de réussite, l
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## Étapes suivantes
-
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [Ingestion des données](./data-ingestion.md){target="_blank"}
 

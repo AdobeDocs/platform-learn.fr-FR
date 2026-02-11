@@ -4,9 +4,9 @@ description: Dans ce module, vous allez utiliser les jeux de données, les sché
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,7 @@ Dans cet exercice, vous allez créer et configurer une fonction cloud Google et 
 
 Dans cet exercice, vous allez configurer votre environnement AWS à l’aide d’AWS IAM, d’AWS Kinesis, d’AWS Firehouse et d’AWS S3, après quoi vous commencerez à transférer les données d’événement collectées par Web SDK.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

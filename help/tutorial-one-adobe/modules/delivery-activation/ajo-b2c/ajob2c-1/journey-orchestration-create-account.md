@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
@@ -47,11 +47,7 @@ Dans cet exercice, vous apprendrez à configurer un e-mail.
 
 Cela vous guidera tout au long de la configuration de Launch afin de déclencher votre événement et de fournir la payload appropriée. Enfin, vous pourrez vous envoyer un e-mail.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

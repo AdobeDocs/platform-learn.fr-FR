@@ -4,9 +4,9 @@ description: Foundation - Ingestion de données
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -54,13 +54,9 @@ Dans cet exercice, vous allez accéder au site web et à l’application mobile 
 
 [1.2.5 Zone D’Atterrissage Des Données](./ex5.md)
 
-Configurez votre connecteur Source de zone d’atterrissage de données avec le stockage Azure Blob.
+Configurez votre connecteur Source de zone d’atterrissage de données avec le stockage Blob d’Azure.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

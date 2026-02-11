@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -54,11 +54,7 @@ Dans cet exercice, vous allez créer un segment à l’aide du créateur de segm
 
 Dans cet exercice, vous allez emprunter l’identité d’un employé de centre d’appels qui reçoit un appel d’un client. Afin d&#39;avoir un impact réel sur l&#39;expérience de ce client, vous devez avoir accès à toutes les informations disponibles en temps réel.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

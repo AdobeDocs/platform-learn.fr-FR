@@ -4,9 +4,9 @@ description: Services de traduction Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## Conditions préalables
 
 - Accès à Adobe Journey Optimizer
-- Accès aux traducteurs Azure Microsoft
+- Accès aux traducteurs Microsoft Azure
 
 ## Exercices
 
@@ -36,11 +36,7 @@ Dans cet exercice, vous allez configurer votre fournisseur de traductions à l�
 
 Dans cet exercice, vous allez ajouter des langues à l’e-mail dans votre campagne.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

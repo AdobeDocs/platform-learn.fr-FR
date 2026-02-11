@@ -4,9 +4,9 @@ description: Transfert d’événements vers l’écosystème AWS
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1566'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 ## Bon à savoir
 
 Adobe Experience Platform prend en charge divers services Amazon en tant que destination.
-Kinesis et S3 sont toutes deux des [destinations d’exportation de profils](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=fr) et peuvent être utilisées dans le cadre de Adobe Experience Platform Real-Time CDP.
+Kinesis et S3 sont toutes deux des [destinations d’exportation de profils](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) et peuvent être utilisées dans le cadre de Adobe Experience Platform Real-Time CDP.
 Vous pouvez facilement alimenter les systèmes de votre choix en événements de segment à forte valeur ajoutée et en attributs de profil associés.
 
 Dans cet exercice, vous apprendrez à configurer votre propre flux Amazon Kinesis pour diffuser des données d’événement provenant de l’écosystème Adobe Experience Platform Edge vers une destination d’espace de stockage, telle qu’Amazon S3. Cela s’avère utile si vous souhaitez collecter des événements d’expérience à partir de propriétés web et mobiles et les intégrer à votre lac de données pour analyse et création de rapports opérationnels. Les jeux de données ingèrent généralement les données par lots avec d’importantes importations de fichiers quotidiennes. Ils n’exposent pas de point d’entrée HTTP public qui peut être utilisé conjointement avec le transfert d’événement.
@@ -301,27 +301,27 @@ Au bout de quelques minutes, vous verrez que le déploiement est terminé et pr�
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
+![DSN ](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
+![DSN ](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
+![DSN ](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
+![DSN ](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
+![DSN ](../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
+![DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
 Basculez votre vue sur **AWS**. En ouvrant votre flux de données et en accédant à l’onglet **Surveillance**, vous verrez désormais le trafic entrant.
 
@@ -344,8 +344,6 @@ Lorsque vous téléchargez un tel fichier et que vous l’ouvrez à l’aide d�
 >Une fois que votre configuration fonctionne comme prévu, n’oubliez pas de désactiver votre flux de données AWS Kinesis et votre pare-feu de données pour éviter d’être chargé !
 
 ## Étapes suivantes
-
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenez à [Connexions Real-Time CDP : transfert d’événement](./aep-data-collection-ssf.md){target="_blank"}
 

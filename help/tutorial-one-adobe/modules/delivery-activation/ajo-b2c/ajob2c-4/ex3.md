@@ -4,9 +4,9 @@ description: Cet exercice explique comment utiliser la personnalisation de segme
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 Connectez-vous à Adobe Experience Cloud en allant sur [Adobe Experience Cloud](https://experience.adobe.com?lang=fr). Cliquez sur **Adobe Journey Optimizer**.
 
-![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Vous serez redirigé vers la vue **Accueil** dans Journey Optimizer. Avant de continuer, vous devez sélectionner un **sandbox**. Le sandbox à sélectionner est nommé ``--aepTenantId--``.
 
-![ACOP &#x200B;](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP ](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 ## 3.4.3.1 la personnalisation basée sur les segments
 
@@ -53,7 +53,7 @@ Ouvrez **Composants de contenu** et faites glisser une colonne **1:1** au-dessus
 
 ![Journey Optimizer](./images/sbp6.png)
 
-Faites glisser et déposez un composant **Texte** dans cette colonne 1:1.
+Faites glisser et déposez un composant **Texte** dans cette colonne :1.
 
 ![Journey Optimizer](./images/sbp6a.png)
 
@@ -71,12 +71,12 @@ Sélectionnez la `--aepUserLdap-- - Interest in Plans` du segment et cliquez sur
 
 Vous devez ensuite laisser la première ligne telle quelle et remplacer les lignes 2 et 3 par ce code :
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Tu auras alors ceci. Cliquez sur **Enregistrer**.
 
@@ -107,8 +107,6 @@ Si vous remplissez les critères pour le segment qui a été utilisé, vous verr
 Vous avez terminé cet exercice.
 
 ## Étapes suivantes
-
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Foundation - AEC - Créer une composition fédérée
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -129,7 +129,7 @@ Sélectionnez le champ **E-MAIL**. Cliquez sur **Confirmer**.
 
 ![AAAA](./images/fedcomp20c.png)
 
-Tu verras ça. Vous devez maintenant définir le champ d’identité du Principal **&#x200B;**, définissez-le sur **Household2person_EMAIL**. Définissez **Espace de noms d’identité** sur **E-mail**.
+Tu verras ça. Vous devez maintenant définir le champ d’identité du Principal ****, définissez-le sur **Household2person_EMAIL**. Définissez **Espace de noms d’identité** sur **E-mail**.
 
 Cliquez sur **Enregistrer**.
 
@@ -147,8 +147,6 @@ L’audience est maintenant renseignée et peut être ciblée à partir de l’�
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
-
-Revenez à [&#x200B; Composition d’audience fédérée &#x200B;](./fac.md){target="_blank"}
+Revenez à [ Composition d’audience fédérée ](./fac.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

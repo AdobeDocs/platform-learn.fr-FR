@@ -1,21 +1,21 @@
 ---
-title: Audience Activation vers Microsoft Azure Event Hub - Action
-description: Audience Activation vers Microsoft Azure Event Hub - Action
+title: Hub d’événements Azure Audience Activation vers Microsoft - Action
+description: Hub d’événements Azure Audience Activation vers Microsoft - Action
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 2.4.7 Scénario de bout en bout
 
-## Démarrer le déclencheur Azure Event Hub
+## Démarrer le déclencheur du hub d’événements Azure
 
-Pour afficher la payload envoyée par Adobe Experience Platform Real-time CDP à notre Azure Event Hub lors de la qualification de l’audience, nous devons démarrer notre simple fonction de déclenchement Azure Event Hub. Cette fonction va simplement « vider » la payload dans la console dans Visual Studio Code. Mais souvenez-vous que cette fonction peut être étendue de quelque manière que ce soit pour s’interfacer avec toutes sortes d’environnements à l’aide d’API et de protocoles dédiés.
+Pour afficher la payload envoyée par la plateforme de données clients en temps réel de Adobe Experience Platform à notre centre d’événements d’Azure lors de la qualification de l’audience, nous devons démarrer notre simple fonction de déclenchement du centre d’événements d’Azure. Cette fonction va simplement « vider » la payload dans la console dans Visual Studio Code. Mais souvenez-vous que cette fonction peut être étendue de quelque manière que ce soit pour s’interfacer avec toutes sortes d’environnements à l’aide d’API et de protocoles dédiés.
 
 ### Lancer Visual Studio Code et démarrer le projet
 
@@ -43,27 +43,27 @@ For detailed output, run func with --verbose flag.
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
+![DSN ](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
+![DSN ](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
+![DSN ](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
+![DSN ](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
+![DSN ](../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
+![DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
 ## Qualifier pour votre audience
 
@@ -110,8 +110,6 @@ Le statut d’audience **réalisé** signifie que votre profil fait partie de l�
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
-
-Revenez à [Real-Time CDP : Audience Activation vers Microsoft Azure Event Hub](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+Revenez à [Real-Time CDP : hub d’événements Audience Activation vers Microsoft Azure](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

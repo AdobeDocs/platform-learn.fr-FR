@@ -3,9 +3,10 @@ title: Offer Decisioning - Tester votre décision
 description: Offer Decisioning - Tester votre décision
 kt: 5342
 doc-type: tutorial
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '148'
 ht-degree: 2%
 
 ---
@@ -30,8 +31,6 @@ Dans l’exercice suivant, vous allez découvrir comment combiner vos offres et 
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
-
-Revenez à [&#x200B; Experience Decisioning &#x200B;](ajo-decisioning.md){target="_blank"}
+Revenez à [ Experience Decisioning ](ajo-decisioning.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

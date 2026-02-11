@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+source-git-commit: 5f3add0f1304d95fdd4da06909dca80151c8a9f1
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1497'
 ht-degree: 3%
 
 ---
@@ -129,7 +129,6 @@ ht-degree: 3%
          + [1.1.5 Mise en œuvre d’Adobe Analytics et de Adobe Audience Manager](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex5.md)
          + [1.1.6 Mise en œuvre d’Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex6.md)
          + [1.1.7 Exigences relatives aux schémas XDM dans Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex7.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/summary.md)
       + 1.2 Ingestion des données {#dc12}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
          + [1.2.1 Explorer le site Web](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
@@ -137,13 +136,11 @@ ht-degree: 3%
          + [1.2.3 Configuration De Jeux De Données](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
          + [1.2.4 Ingestion de données à partir de sources hors ligne](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 Zone D’Atterrissage Des Données](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 Composition De L’Audience Fédérée {#dc13}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1 Configuration de votre environnement Snowflake](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2 Création de schémas, de modèles de données et de liens](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
          + [1.3.3 Créer une composition fédérée](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/summary.md)
    + Real-Time CDP B2C {#rtcdpb2c}
       + 2.1 Profil client en temps réel {#rtcdp21}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
@@ -152,13 +149,11 @@ ht-degree: 3%
          + [2.1.3 Visualiser votre propre profil client en temps réel - API](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)
          + [2.1.4 Création d’une audience - interface utilisateur](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex4.md)
          + [2.1.5 Consultez votre profil client en temps réel en action dans le centre d’appels](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/summary.md)
       + 2.2 Services intelligents {#rtcdp22}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
          + [2.2.1 IA dédiée aux clients : préparation des données (ingestion)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex1.md)
          + [2.2.2 IA dédiée aux clients : créer une instance (configurer)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex2.md)
          + [2.2.3 IA dédiée aux clients : tableau de bord de notation et segmentation (prévoir et prendre des mesures)](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/summary.md)
       + 2.3 Real-Time CDP : Créez une audience et passez à l’action ! {#rtcdp23}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
          + [2.3.1 Création d’une audience](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex1.md)
@@ -167,7 +162,6 @@ ht-degree: 3%
          + [2.3.4 Prendre des mesures : envoyer votre audience vers une destination S3](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex4.md)
          + [2.3.5 Agir : envoyez votre audience à Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex5.md)
          + [2.3.6 Destinations SDK](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex6.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/summary.md)
       + 2.4 Real-Time CDP : Audience Activation vers Microsoft Azure Event Hub {#rtcdp24}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Configuration de votre environnement](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
@@ -177,7 +171,6 @@ ht-degree: 3%
          + [2.4.5 Activer votre audience](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6 Création de votre projet Microsoft Azure](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7 Scénario de bout en bout](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/summary.md)
       + 2.5 Connexions Real-Time CDP : transfert d’événement{#rtcdp25}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
          + [2.5.1 Création d’une propriété Transfert d’événement de la collecte de données Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex1.md)
@@ -185,14 +178,12 @@ ht-degree: 3%
          + [2.5.3 Création et configuration d’un webhook personnalisé](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex3.md)
          + [2.5.4 Transférer les événements au GCP Pub/Sub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex4.md)
          + [2.5.5 Transfert d’événements vers AWS Kinesis et AWS S3](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex5.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/summary.md)
       + 2.6 Diffuser des données d’Apache Kafka vers Real-Time CDP {#rtcdp26}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
          + [2.6.1 Présentation d’Apache Kafka](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex1.md)
          + [2.6.2 Installation et configuration de votre cluster Kafka](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex2.md)
          + [2.6.3 Configuration du point d’entrée de flux continu d’API HTTP dans Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex3.md)
          + [2.6.4 Installation et configuration de Kafka Connect et du connecteur de récepteur Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
       + 3.1 Adobe Journey Optimizer : Orchestration {#ajo31}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
@@ -200,7 +191,6 @@ ht-degree: 3%
          + [3.1.2 Création de fragments à utiliser dans votre message](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
          + [3.1.3 Création de votre parcours et de votre e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4 Mettre à jour la propriété de collecte de données et tester le Parcours](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/summary.md)
       + 3.2 Adobe Journey Optimizer : sources de données externes et actions personnalisées {#ajo32}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
          + [3.2.1 Définir un événement](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
@@ -208,41 +198,35 @@ ht-degree: 3%
          + [3.2.3 Définition d’une action personnalisée](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex3.md)
          + [3.2.4 Création de parcours et de messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5 Déclenchement du parcours](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
       + 3.3 Adobe Journey Optimizer : messages push et in-app {#ajo33}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
          + [3.3.1 Prise en main des notifications push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
          + [3.3.2 Configuration d’un parcours avec des messages push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
          + [3.3.3 Configurer une campagne avec des messages in-app](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
       + 3.4 Adobe Journey Optimizer : parcours et campagnes de confirmation de commande {#ajo34}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1 Configuration d’un parcours basé sur un déclencheur - Confirmation de commande](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2 Configuration d’une campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
          + [3.4.3 Appliquer une personnalisation basée sur les segments dans un e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
       + 3.5 Adobe Journey Optimizer : services de traduction {#ajo35}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
          + [3.5.1 Fournisseur De Traductions](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
          + [3.5.2 Création de votre campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3 Ajouter des langues à votre e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
       + 3.6 Adobe Journey Optimizer : gestion de contenu  {#ajo36}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
          + [3.6.1 Cartes de contenu](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
          + [3.6.2 Pages de destination](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
          + [3.6.3 AJO et GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
       + 3.7 Adobe Journey Optimizer : Experience Decisioning {#ajo37}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
          + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
          + [3.7.2 Configuration de vos offres et de votre décision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
          + [3.7.3 Configuration de Web SDK pour Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
       + 3.8 Adobe Journey Optimizer : Campagnes {#ajo38}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
-         + [3.8.1 Prise en main des campagnes](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
-         + [Résumé et avantages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
+         + [3.8.1 Configurer votre base de données relationnelle](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+         + [3.8.2 Création de votre campagne orchestrée](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex2.md)
 
 + Rapports et informations {#reporting}
    + Customer Journey Analytics  {#cjab2c}

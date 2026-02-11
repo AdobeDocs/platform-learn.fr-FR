@@ -4,9 +4,9 @@ description: Dans ce module, vous apprendrez tout ce qu’il y a à savoir sur J
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '240'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,7 @@ Dans cet exercice, vous allez configurer une campagne par e-mail traditionnelle.
 
 Dans cet exercice, vous utiliserez l’appartenance à un segment pour définir le contenu à afficher dans un e-mail.
 
-[Résumé et avantages](./summary.md)
-
-Résumé de ce module et aperçu des avantages.
-
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

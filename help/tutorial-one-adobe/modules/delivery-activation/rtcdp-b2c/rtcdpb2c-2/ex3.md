@@ -4,9 +4,9 @@ description: Customer AI - Tableau de bord de notation et segmentation (prédire
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -45,23 +45,21 @@ Le tableau de bord de l’IA dédiée aux clients permet de définir des segment
 
 Une définition de segment est créée automatiquement.
 
-![&#x200B; Règle de segment &#x200B;](./images/caicreatesegment.png)
+![ Règle de segment ](./images/caicreatesegment.png)
 
 Attribuez un nom à votre segment en suivant cette convention de nommage : `--aepUserLdap-- - Customer AI High Propensity`. Cliquez sur **Publier**.
 
-![&#x200B; Règle de segment &#x200B;](./images/caicreatesegment1.png)
+![ Règle de segment ](./images/caicreatesegment1.png)
 
 Vous pouvez désormais utiliser ce segment pour le ciblage à l’aide de Real-Time CDP, Journey Optimizer et Adobe Target, par exemple.
 
 ## Nettoyage
 
-Pour vous assurer qu’aucune donnée de démonstration inutile n’est conservée dans votre environnement, veillez à supprimer le jeu de données `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` une fois cet exercice terminé. Si vous ne supprimez pas les données de démonstration, il y aura un impact sur les coûts pour votre instance AEP.
+Pour vous assurer qu’aucune donnée de démonstration inutile n’est conservée dans votre environnement, veillez à supprimer le jeu de données `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` une fois cet exercice terminé. Si vous ne supprimez pas les données de démonstration, votre instance AEP subira un impact sur les coûts.
 
 ![Profile](./images/cleanup.png)
 
 ## Étapes suivantes
-
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenir à [Services intelligents](./intelligent-services.md){target="_blank"}
 
