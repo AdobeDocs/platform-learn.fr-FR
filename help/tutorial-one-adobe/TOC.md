@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5f3add0f1304d95fdd4da06909dca80151c8a9f1
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1505'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 3%
    + 1.1 Présentation de Adobe Firefly Services {#crpr1}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
       + [1.1.1 Prise en main de Firefly Services](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
-      + [1.1.2 Optimiser vos processus Firefly avec Microsoft Azure et les URL prédéfinies](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
+      + [1.1.2 Optimisez vos processus Firefly avec Microsoft Azure et les URL prédéfinies](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3 Utilisation des API Photoshop](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [API des modèles personnalisés Firefly 1.1.4](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
@@ -162,11 +162,11 @@ ht-degree: 3%
          + [2.3.4 Prendre des mesures : envoyer votre audience vers une destination S3](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex4.md)
          + [2.3.5 Agir : envoyez votre audience à Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex5.md)
          + [2.3.6 Destinations SDK](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex6.md)
-      + 2.4 Real-Time CDP : Audience Activation vers Microsoft Azure Event Hub {#rtcdp24}
+      + 2.4 Real-Time CDP : hub d’événements Audience Activation vers Microsoft Azure {#rtcdp24}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Configuration de votre environnement](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2 Configuration de votre environnement Microsoft Azure EventHub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
-         + [2.4.3 Configuration de la destination Azure Event Hub dans Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
+         + [2.4.3 Configuration de la destination du hub d’événements Azure dans Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
          + [2.4.4 Création d’audiences](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex4.md)
          + [2.4.5 Activer votre audience](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6 Création de votre projet Microsoft Azure](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
@@ -289,3 +289,4 @@ ht-degree: 3%
    + 1.7 Outils de développement intelligents pour Adobe Commerce {#agents7}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Configuration de votre environnement de développement](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+      + [1.7.2 Utiliser Cursor.ai pour développer votre projet](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

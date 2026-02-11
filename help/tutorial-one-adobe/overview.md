@@ -3,16 +3,16 @@ title: Présentation - Tutoriel technique complet - One Adobe
 description: Tutoriel technique complet - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
 
 # Tutoriel technique complet - One Adobe
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -72,7 +72,7 @@ Dans ce module, vous allez configurer et utiliser Adobe Workfront pour gérer le
 
 [1.1 Présentation de Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-Dans ce module, vous utiliserez les API Adobe Firefly Services, Photoshop et les services de stockage Azure Microsoft pour générer des images et les stocker par programmation.
+Dans ce module, vous utiliserez les API Adobe Firefly Services, Photoshop et les services de stockage Microsoft Azure pour générer des images et les stocker par programmation.
 
 [1.2 Automatisation des workflows Creative avec Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
@@ -94,6 +94,14 @@ Dans ce module, vous utiliserez Adobe Frame.io en combinaison avec Adobe Premier
 
 Dans ce module, vous allez créer une application personnalisée pour étendre les fonctionnalités de GenStudio for Performance Marketing à l’aide d’Adobe IO et d’App Builder.
 
+[1.7 Créateur de workflow](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+Dans ce module, vous utiliserez le créateur de workflows pour résoudre des cas d’utilisation de conception créative et d’automatisation reproductibles.
+
+[1.8 Révision et approbation unifiées avec Workfront, Frame.io et Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+Dans ce module, vous connecterez directement les fonctionnalités de gestion de projet et de travail de Workfront à l&#39;expérience de révision en temps réel et de collaboration de Frame.io.
+
 ### &#x200B;3. Gestion des actifs et sites
 
 [1.1 Adobe Experience Manager Cloud Service et Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -103,6 +111,10 @@ Dans ce module, vous allez configurer votre programme Adobe Experience Manager C
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 Dans ce module, vous allez explorer AEM Assets.
+
+[1.4 Adobe Experience Manager Assets et Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+Dans ce module, vous allez configurer AEM Assets Dynamic Media et utiliser votre modèle Dynamic Media dans Adobe Journey Optimizer.
 
 [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
@@ -138,7 +150,7 @@ Dans ce module, vous apprendrez à configurer et à utiliser les services intell
 
 Dans ce module, vous allez configurer une audience et l’activer vers plusieurs destinations, notamment Google DV360, Adobe Target et AWS S3.
 
-[2.4 Real-Time CDP : Audience Activation vers Microsoft Azure Event Hub](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP : hub d’événements Audience Activation vers Microsoft Azure](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
 
 Dans ce module, vous allez configurer une destination Microsoft Azure EventHub en tant que destination en temps réel pour Adobe Experience Platform Real-time CDP.
 
@@ -208,7 +220,7 @@ Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Serv
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
