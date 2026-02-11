@@ -59,7 +59,7 @@ Utilisez l’audience que vous avez créée pour configurer une activité de cib
 
 Configurez votre propre destination à l’aide de Destinations SDK.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

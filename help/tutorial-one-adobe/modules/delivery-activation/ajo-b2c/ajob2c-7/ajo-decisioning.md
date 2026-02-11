@@ -48,7 +48,7 @@ Dans cet exercice, vous allez configurer vos propres offres personnalisées et v
 
 Dans cet exercice, vous utiliserez le site web de démonstration pour tester votre décision.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
