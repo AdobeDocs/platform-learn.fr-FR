@@ -44,7 +44,7 @@ Dans cet exercice, vous allez configurer et utiliser des campagnes dans Adobe Jo
 
 Dans cet exercice, vous allez créer votre campagne orchestrée.
 
-![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
