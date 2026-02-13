@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: d5008825c083357b5b1479157cb01f795120d409
+source-git-commit: 4ddfc850f335ad773c89c10e18bb3541e514bf5f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1333'
 ht-degree: 4%
 
 ---
@@ -172,7 +172,7 @@ Après quelques vidéos, vous devriez voir ceci qui montre une vidéo basée sur
 
 ![Workflows personnalisés Firefly](./images/ffcw27.png)
 
-## Échelle de 1.7.1.4
+## Échelle de 1.7.1.5
 
 Vous l’avez maintenant fait pour 1 image. Utilisons maintenant ce workflow, mais pour plusieurs images.
 
@@ -203,9 +203,53 @@ Au bout de quelques minutes, vous devriez voir une sortie similaire, avec 3 imag
 
 ![Workflows personnalisés Firefly](./images/ffcw33.png)
 
-## Étapes suivantes
+## 1.7.1.5 Store dans AEM Assets CS
 
-Accéder à [...](./ex1.md){target="_blank"}
+Dans cet exercice, vous allez stocker les ressources créées dans le cadre de votre workflow personnalisé dans AEM Assets CS.
+
+Vous devez d’abord créer un dossier dans votre environnement AEM Assets CS.
+
+Pour ce faire, accédez à [https://experience.adobe.com](https://experience.adobe.com?lang=fr). Cliquez pour ouvrir **Experience Manager Assets**.
+
+![Workflows personnalisés Firefly](./images/ffcw50.png)
+
+Sélectionnez votre environnement AEM Assets CS, qui doit être nommé `--aepUserLdap-- - CitiSignal AEM + ACCS`.
+
+![Workflows personnalisés Firefly](./images/ffcw51.png)
+
+Accédez à **Assets** puis cliquez sur **Créer un dossier**.
+
+![Workflows personnalisés Firefly](./images/ffcw52.png)
+
+Saisissez le nom : `--aepUserLdap-- - Firefly Custom Workflows`. Cliquez sur **Créer**.
+
+![Workflows personnalisés Firefly](./images/ffcw53.png)
+
+Revenez à votre workflow personnalisé et accédez au nœud **Images de sortie**. Cliquez sur **Par défaut** puis sélectionnez **AEM Assets**.
+
+![Workflows personnalisés Firefly](./images/ffcw57.png)
+
+Vous devriez alors voir cette fenêtre contextuelle. Sélectionnez votre référentiel AEM Assets CS, puis sélectionnez le dossier que vous venez de créer et qui doit être nommé : `--aepUserLdap-- - Firefly Custom Workflows`. Cliquez sur **Sélectionner**.
+
+![Workflows personnalisés Firefly](./images/ffcw54.png)
+
+Accédez au nœud **Vidéo de sortie**. Cliquez sur **Par défaut** puis sélectionnez **AEM Assets**.
+
+![Workflows personnalisés Firefly](./images/ffcw55.png)
+
+Vous devriez alors voir cette fenêtre contextuelle. Sélectionnez votre référentiel AEM Assets CS, puis sélectionnez le dossier que vous venez de créer et qui doit être nommé : `--aepUserLdap-- - Firefly Custom Workflows`. Cliquez sur **Sélectionner**.
+
+![Workflows personnalisés Firefly](./images/ffcw56.png)
+
+Tu devrais avoir ça. Cliquez sur **Exécuter**.
+
+![Workflows personnalisés Firefly](./images/ffcw56a.png)
+
+Au bout de quelques minutes, vous devriez voir les ressources créées devenir disponibles dans le dossier dans AEM Assets CS.
+
+![Workflows personnalisés Firefly](./images/ffcw58.png)
+
+## Étapes suivantes
 
 Revenez au [créateur de workflows](./workflowbuilder.md){target="_blank"}
 

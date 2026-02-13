@@ -3,16 +3,16 @@ title: Présentation - Tutoriel technique complet - One Adobe
 description: Tutoriel technique complet - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
 
 # Tutoriel technique complet - One Adobe
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -94,9 +94,9 @@ Dans ce module, vous utiliserez Adobe Frame.io en combinaison avec Adobe Premier
 
 Dans ce module, vous allez créer une application personnalisée pour étendre les fonctionnalités de GenStudio for Performance Marketing à l’aide d’Adobe IO et d’App Builder.
 
-[1.7 Créateur de workflow](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Workflows personnalisés Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-Dans ce module, vous utiliserez le créateur de workflows pour résoudre des cas d’utilisation de conception créative et d’automatisation reproductibles.
+Dans ce module, vous allez utiliser des workflows personnalisés dans Firefly pour résoudre des cas d’utilisation de conception créative et d’automatisation répétables.
 
 [1.8 Révision et approbation unifiées avec Workfront, Frame.io et Enterprise Storage Management](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
@@ -220,7 +220,7 @@ Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Serv
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
