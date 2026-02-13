@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 3%
 
 ---
@@ -86,9 +86,9 @@ ht-degree: 3%
       + [1.6.3 Créer et déployer votre application de gestion des ressources numériques externe](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Publier votre application en privé](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Résumé et avantages](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Créateur de workflow {#crpr7}
+   + 1.7 Workflows personnalisés Firefly {#crpr7}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Prise en main du créateur de workflows](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Prise en main des workflows personnalisés Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
    + 1.8 Révision et approbation unifiées avec Workfront, Frame.io et Enterprise Storage Management {#crpr8}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Prise en main de Workfront, Frame.io et ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
