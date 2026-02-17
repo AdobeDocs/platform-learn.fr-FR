@@ -3,22 +3,19 @@ title: Adobe Marketing Agent pour ChatGPT Enterprise
 description: Adobe Marketing Agent pour ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
+source-git-commit: 88f0121cd0bf73f2456c349908a7f8193ebddafa
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '988'
 ht-degree: 4%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent pour ChatGPT Enterprise
 
->[!IMPORTANT]
->
->Ce Lab utilise une fonctionnalité qui n&#39;a pas encore été publiée. La fonctionnalité est toujours en cours de développement, elle n’est donc pas encore disponible pour tous.
+[!BADGE Beta]
 
-[!BADGE En développement]
-
-+++Dans les détails du développement
++++Détails du Beta
 En utilisant le Adobe Marketing Agent for ChatGPT Enterprise Beta, vous reconnaissez que le Beta est fourni « en l&#39;état » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
 
 +++

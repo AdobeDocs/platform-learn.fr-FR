@@ -3,18 +3,15 @@ title: Adobe Marketing Agent for Microsoft 365 Copilot
 description: Adobe Marketing Agent pour Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
+source-git-commit: 88f0121cd0bf73f2456c349908a7f8193ebddafa
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '973'
 ht-degree: 5%
 
 ---
 
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
-
->[!IMPORTANT]
->
->Ce Lab utilise une fonctionnalité qui n&#39;a pas encore été publiée. La fonctionnalité est toujours en cours de développement, elle n’est donc pas encore disponible pour tous.
 
 [!BADGE Beta]
 
