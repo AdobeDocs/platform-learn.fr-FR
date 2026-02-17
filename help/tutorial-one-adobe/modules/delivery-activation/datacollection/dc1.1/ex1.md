@@ -4,7 +4,7 @@ description: Foundation - Configuration de la collecte de données Adobe Experie
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
+source-git-commit: f9aab1a556e1d58a3f76f0ca877ecbd5f5e6e12f
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Les marques utilisent la collecte de données Adobe Experience Platform pour un 
 - Permet les tests et la gestion du cycle de vie.
 - Injectez des balises JavaScript et tierces personnalisées, toutes gérées en un seul endroit.
 
-## Explorer l’interface utilisateur
+## Explorer l’interface d’utilisation
 
 Accédez à [Collecte de données Adobe Experience Platform](https://experience.adobe.com/#/data-collection/). Assurez-vous que vous utilisez l’environnement correct, qui doit être `--aepImsOrgName--`.
 
@@ -64,7 +64,7 @@ Vous trouverez ci-dessous quelques informations supplémentaires pour ceux qui s
 - [Guide De L’Utilisateur De La Collecte De Données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
 - [Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr)
 - [Configurer les autorisations utilisateur](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr)
-- [Documentation des API](https://developer.adobelaunch.com/api/)
+- [Documentation des API](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
 
 ## Étapes suivantes
 
