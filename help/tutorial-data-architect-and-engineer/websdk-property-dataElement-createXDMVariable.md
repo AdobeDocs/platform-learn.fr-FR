@@ -41,7 +41,7 @@ Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savo
 
 >[!NOTE]
 >
->Bien que ce tutoriel porte sur l’ingestion par flux à partir de sites Web avec Web SDK, vous pouvez également diffuser des données à l’aide de l’[Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), de l’[API Edge Network Server](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) et de l’[API HTTP](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
+>Bien que ce tutoriel porte sur l’ingestion par flux à partir de sites Web avec Web SDK, vous pouvez également diffuser des données à l’aide de l’[Mobile SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview), de l’[API Edge Network Server](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/server-api/overview) et de l’[API HTTP](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Autorisations requises
 
