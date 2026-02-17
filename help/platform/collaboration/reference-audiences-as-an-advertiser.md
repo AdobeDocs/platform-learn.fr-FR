@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Source audiences en tant qu’annonceur dans Real-Time CDP Collaboration
 
-En tant qu’annonceur, apprenez à approvisionner des audiences en les apportant dans votre interface afin qu’elles puissent être utilisées lorsque vous collaborez avec des partenaires. Pour consulter la documentation détaillée, voir [source et gestion des audiences](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/source-audiences/onboard-audiences){target="_blank"}.
+En tant qu’annonceur, apprenez à approvisionner des audiences en les apportant dans votre interface afin qu’elles puissent être utilisées lorsque vous collaborez avec des partenaires. Pour consulter la documentation détaillée, voir [source et gestion des audiences](https://experienceleague.adobe.com/fr/docs/real-time-cdp-collaboration/using/setup/source-audiences/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)
