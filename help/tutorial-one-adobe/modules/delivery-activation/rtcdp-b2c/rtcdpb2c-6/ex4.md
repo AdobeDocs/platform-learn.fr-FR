@@ -17,22 +17,22 @@ ht-degree: 0%
 
 Accédez à [https://github.com/adobe/experience-platform-streaming-connect/releases](https://github.com/adobe/experience-platform-streaming-connect/releases) et téléchargez la dernière version officielle du connecteur de récepteur Adobe Experience Platform.
 
-![ Kafka ](./images/kc1.png)
+![&#x200B; Kafka &#x200B;](./images/kc1.png)
 
 Téléchargez le fichier **streaming-connect-sink-0.0.27-java-11.jar**.
 
-![ Kafka ](./images/kc1a.png)
+![&#x200B; Kafka &#x200B;](./images/kc1a.png)
 
 Placez le fichier de téléchargement **streaming-connect-sink-0.0.27-java-11.jar** sur votre bureau.
 
-![ Kafka ](./images/kc2.png)
+![&#x200B; Kafka &#x200B;](./images/kc2.png)
 
 ## Configurer Kafka Connect
 
 Accédez au dossier sur votre bureau nommé **Kafka_AEP** et accédez au dossier `kafka_2.13-3.9.0/config`.
 Dans ce dossier, ouvrez le fichier **connect-published.properties** à l’aide d’un éditeur de texte.
 
-![ Kafka ](./images/kc3a.png)
+![&#x200B; Kafka &#x200B;](./images/kc3a.png)
 
 Dans l’éditeur de texte, accédez aux lignes 34 et 35 et veillez à définir les champs `key.converter.schemas.enable` et `value.converter.schemas.enable` sur `false`
 
@@ -43,19 +43,19 @@ value.converter.schemas.enable=false
 
 Enregistrez vos modifications dans ce fichier.
 
-![ Kafka ](./images/kc3.png)
+![&#x200B; Kafka &#x200B;](./images/kc3.png)
 
 Ensuite, revenez à la `kafka_2.13-3.1.0` du dossier et créez manuellement un dossier, puis nommez-le `connectors`.
 
-![ Kafka ](./images/kc4.png)
+![&#x200B; Kafka &#x200B;](./images/kc4.png)
 
 Cliquez avec le bouton droit sur le nouveau dossier et cliquez sur **Nouveau terminal dans Dossier**.
 
-![ Kafka ](./images/kc5.png)
+![&#x200B; Kafka &#x200B;](./images/kc5.png)
 
 Tu verras ça. Saisissez la `pwd` de commande pour récupérer le chemin d’accès complet de ce dossier. Sélectionnez le chemin d’accès complet et copiez-le dans le presse-papiers.
 
-![ Kafka ](./images/kc6.png)
+![&#x200B; Kafka &#x200B;](./images/kc6.png)
 
 Revenez à votre éditeur de texte, au fichier **connect-published.properties** et faites défiler l’écran jusqu’à la dernière ligne (ligne 89 de la capture d’écran). Vous devez supprimer les commentaires de la ligne (supprimer `#`) qui commence par `# plugin.path=` et coller le chemin d’accès complet dans le dossier nommé `connectors`. Le résultat doit ressembler à ceci :
 
@@ -63,61 +63,61 @@ Revenez à votre éditeur de texte, au fichier **connect-published.properties** 
 
 Enregistrez vos modifications dans le fichier **connect-published.properties** et fermez l’éditeur de texte.
 
-![ Kafka ](./images/kc7.png)
+![&#x200B; Kafka &#x200B;](./images/kc7.png)
 
 Copiez ensuite la dernière version officielle du connecteur de récepteur Adobe Experience Platform que vous avez téléchargé dans le dossier nommé `connectors`. Le fichier que vous avez téléchargé précédemment est nommé **streaming-connect-sink-0.0.27-java-11.jar**. Il vous suffit de le déplacer dans le dossier `connectors`.
 
-![ Kafka ](./images/kc8.png)
+![&#x200B; Kafka &#x200B;](./images/kc8.png)
 
 Ouvrez ensuite une nouvelle fenêtre Terminal au niveau du dossier **kafka_2.13-3.9.0**. Cliquez avec le bouton droit sur ce dossier et cliquez sur **Nouveau terminal dans le dossier**.
 
 Dans la fenêtre Terminal , collez la commande suivante : `bin/connect-distributed.sh config/connect-distributed.properties` et cliquez sur **Entrée**. Cette commande démarre Kafka Connect et charge la bibliothèque du connecteur de récepteur Adobe Experience Platform.
 
-![ Kafka ](./images/kc9.png)
+![&#x200B; Kafka &#x200B;](./images/kc9.png)
 
 Au bout de quelques secondes, vous verrez quelque chose comme ceci :
 
-![ Kafka ](./images/kc10.png)
+![&#x200B; Kafka &#x200B;](./images/kc10.png)
 
 ## Création de votre connecteur de récepteur Adobe Experience Platform à l’aide de Postman
 
 Vous pouvez désormais interagir avec Kafka Connect à l’aide de Postman. Pour ce faire, téléchargez [cette collection Postman](./../../../../assets/postman/postman_kafka.zip) et décompressez-la sur votre ordinateur local sur le bureau. Vous obtiendrez alors un fichier appelé `Kafka_AEP.postman_collection.json`.
 
-![ Kafka ](./images/kc11a.png)
+![&#x200B; Kafka &#x200B;](./images/kc11a.png)
 
 Vous devez importer ce fichier dans Postman. Pour ce faire, ouvrez Postman, cliquez sur **Importer**, faites glisser et déposez le fichier `Kafka_AEP.postman_collection.json` dans la fenêtre contextuelle et cliquez sur **Importer**.
 
-![ Kafka ](./images/kc11b.png)
+![&#x200B; Kafka &#x200B;](./images/kc11b.png)
 
 Vous retrouverez ensuite cette collection dans le menu de gauche de Postman. Cliquez sur la première demande, **Connecteurs Kafka Connect disponibles pour GET** pour l&#39;ouvrir.
 
-![ Kafka ](./images/kc11c.png)
+![&#x200B; Kafka &#x200B;](./images/kc11c.png)
 
 Tu verras ça. Cliquez sur le bouton bleu **Envoyer**, après quoi vous devriez voir un `[]` de réponse vide. La réponse vide est due au fait qu&#39;aucun connecteur Kafka Connect n&#39;est actuellement défini.
 
-![ Kafka ](./images/kc11.png)
+![&#x200B; Kafka &#x200B;](./images/kc11.png)
 
 Pour créer un connecteur, cliquez sur pour ouvrir la deuxième requête de la collection Kafka, **POST Créer un connecteur d’évier AEP** et accédez à **Corps**. Tu verras ça. À la ligne 11, où il est indiqué **« aep.endpoint » : « »**, vous devez coller l’URL du point d’entrée de flux continu d’API HTTP que vous avez reçue à la fin de l’un des exercices précédents. L’URL du point d’entrée de flux continu d’API HTTP ressemble à ceci : `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
 
-![ Kafka ](./images/kc12a.png)
+![&#x200B; Kafka &#x200B;](./images/kc12a.png)
 
 Après l’avoir collé, le corps de votre requête doit ressembler à ceci. Cliquez sur le bouton bleu **Envoyer** pour créer votre connecteur. Vous obtiendrez une réponse immédiate à la création de votre connecteur.
 
-![ Kafka ](./images/kc12.png)
+![&#x200B; Kafka &#x200B;](./images/kc12.png)
 
 Cliquez sur la première demande, **Connecteurs Kafka Connect disponibles pour GET** pour l&#39;ouvrir à nouveau et cliquez sur le bouton bleu **Envoyer**. vous verrez maintenant qu&#39;il existe un connecteur Kafka Connect.
 
-![ Kafka ](./images/kc13.png)
+![&#x200B; Kafka &#x200B;](./images/kc13.png)
 
 Ouvrez ensuite la troisième requête de la collection Kafka, **GET Check Kafka Connect Connector Status**. Cliquez sur le bouton bleu **Envoyer**, vous obtiendrez ensuite une réponse similaire à celle ci-dessous, indiquant que le connecteur est en cours d’exécution.
 
-![ Kafka ](./images/kc14.png)
+![&#x200B; Kafka &#x200B;](./images/kc14.png)
 
 ## Génération d’un événement d’expérience
 
 Ouvrez une nouvelle fenêtre **Terminal** en cliquant avec le bouton droit sur votre dossier **kafka_2.13-3.9.0** et en cliquant sur **Nouveau terminal dans le dossier**.
 
-![ Kafka ](./images/kafka11.png)
+![&#x200B; Kafka &#x200B;](./images/kafka11.png)
 
 Saisissez la commande suivante :
 
@@ -125,7 +125,7 @@ Saisissez la commande suivante :
 
 Tu verras ça. Chaque nouvelle ligne suivie du bouton Entrée entraîne l’envoi d’un nouveau message dans la rubrique **aep**.
 
-![ Kafka ](./images/kc16.png)
+![&#x200B; Kafka &#x200B;](./images/kc16.png)
 
 Vous pouvez désormais envoyer un message, qui sera consommé par le connecteur de récepteur Adobe Experience Platform et qui sera ingéré dans Adobe Experience Platform en temps réel.
 
@@ -186,7 +186,7 @@ Vous devez également vérifier et peut-être mettre à jour ces champs :
 
 - **datasetId** : vous devez copier l’ID du jeu de données Système de démonstration - Jeu de données d’événement pour le centre d’appels (global v1.1)
 
-![ Kafka ](./images/kc20ds.png)
+![&#x200B; Kafka &#x200B;](./images/kc20ds.png)
 
 - **imsOrgID** : votre ID d’organisation IMS est `--aepImsOrgId--`
 
@@ -196,29 +196,29 @@ Vous devez également vérifier et peut-être mettre à jour ces champs :
 
 Vous devriez alors disposer de l’élément suivant :
 
-![ Kafka ](./images/kc21.png)
+![&#x200B; Kafka &#x200B;](./images/kc21.png)
 
 Copiez ensuite votre événement d’expérience complet dans le presse-papiers. L’espace blanc de votre payload JSON doit être supprimé et nous utiliserons un outil en ligne pour ce faire. Accédez à [https://jsonviewer.stack.hu/](https://jsonviewer.stack.hu/) pour ce faire.
 
 Collez votre événement d’expérience dans l’éditeur, puis cliquez sur **Supprimer l’espace blanc**.
 
-![ Kafka ](./images/kc22a.png)
+![&#x200B; Kafka &#x200B;](./images/kc22a.png)
 
 Sélectionnez ensuite tout le texte de sortie et copiez-le dans le presse-papiers.
 
-![ Kafka ](./images/kc23.png)
+![&#x200B; Kafka &#x200B;](./images/kc23.png)
 
 Revenez à la fenêtre Terminal.
 
-![ Kafka ](./images/kc16.png)
+![&#x200B; Kafka &#x200B;](./images/kc16.png)
 
 Collez la nouvelle payload sans espaces dans la fenêtre Terminal et cliquez sur **Entrée**.
 
-![ Kafka ](./images/kc23a.png)
+![&#x200B; Kafka &#x200B;](./images/kc23a.png)
 
 Ensuite, revenez à votre site web de démonstration et actualisez la page. Vous devriez maintenant voir un événement d’expérience sur votre profil, sous **Événements d’expérience**, comme celui ci-dessous :
 
-![ Kafka ](./images/kc24.png)
+![&#x200B; Kafka &#x200B;](./images/kc24.png)
 
 >[!NOTE]
 >
@@ -227,7 +227,7 @@ Ensuite, revenez à votre site web de démonstration et actualisez la page. Vous
 >- **Filtre de type d’événement** : callCenterInteractionKafka
 >- **Titre** : `--aepTenantId--.interactionDetails.core.callCenterAgent.callID`
 
-![ Kafka ](./images/kc25.png)
+![&#x200B; Kafka &#x200B;](./images/kc25.png)
 
 Vous avez terminé cet exercice.
 
