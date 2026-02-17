@@ -26,7 +26,7 @@ L’ingestion de données par lots vous permet d’ingérer une grande quantité
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’ingestion de données :
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346831?captions=fre_fr&learn=on&enablevpops)
 
 
 ## Autorisations requises

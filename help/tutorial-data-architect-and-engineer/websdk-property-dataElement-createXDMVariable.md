@@ -35,9 +35,9 @@ Il existe deux tâches principales :
 
 Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savoir plus sur l’ingestion des données en flux continu et sur le SDK web :
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31636?captions=fre_fr&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37259?captions=fre_fr&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Experience Platform Debugger est une extension disponible pour Chrome qui vous a
 
 Si vous n’avez jamais utilisé Debugger auparavant, vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36025?captions=fre_fr&learn=on&enablevpops)
 
 ### Ouvrir le site web Luma
 
