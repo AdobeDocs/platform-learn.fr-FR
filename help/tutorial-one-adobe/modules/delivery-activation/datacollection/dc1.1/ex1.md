@@ -64,7 +64,7 @@ Vous trouverez ci-dessous quelques informations supplémentaires pour ceux qui s
 - [Guide De L’Utilisateur De La Collecte De Données Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
 - [Tutoriel sur lʼimplémentation dʼAdobe Experience Cloud à lʼaide du SDK web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr)
 - [Configurer les autorisations utilisateur](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr)
-- [Documentation des API](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
+- [Documentation des API](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/api/overview)
 
 ## Étapes suivantes
 
