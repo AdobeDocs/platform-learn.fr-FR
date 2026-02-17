@@ -4,10 +4,10 @@ description: Configurer votre base de données relationnelle
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 7%
+source-wordcount: '2051'
+ht-degree: 9%
 
 ---
 
@@ -679,7 +679,59 @@ Au bout de quelques minutes, vous pouvez voir les données ingérées dans votre
 
 ![AJO OC](./images/ajoocdatas21e.png)
 
-Toutes les données sont maintenant ingérées. Dans l’exercice suivant, vous commencerez à utiliser ces données dans le cadre d’une campagne orchestrée.
+Toutes les données sont maintenant ingérées.
+
+## 3.8.1.3 Profile Target Dimension
+
+Grâce aux campagnes orchestrées, vous pouvez concevoir et diffuser des communications ciblées au niveau de l’entité, en exploitant les fonctionnalités de schéma relationnel de Adobe Experience Platform. Experience Platform utilise des schémas pour décrire la structure des données de manière cohérente et réutilisable. Lorsque des données sont ingérées dans Experience Platform, elles sont structurées en fonction d’un schéma XDM.
+
+Bien que la segmentation des campagnes orchestrées s’effectue principalement sur des schémas relationnels, la diffusion réelle des messages se produit toujours au niveau du profil.
+
+Lors de la configuration du ciblage, vous devez définir deux aspects essentiels :
+
+- Schémas cibles : vous spécifiez les schémas relationnels éligibles au ciblage. Par défaut, le schéma appelé Destinataire est utilisé, mais vous pouvez configurer d’autres schémas tels que Visiteurs, Clients, etc.
+
+- Liaison de profil : le système doit comprendre comment le schéma cible est mappé au schéma de profil. Pour ce faire, un champ d’identité partagé, qui existe à la fois dans le schéma cible et le schéma de profil, est configuré comme un espace de noms d’identité.
+
+Vous devez maintenant configurer vos dimensions cibles de profil. Accédez à **Administration** > **Configuration**, puis cliquez sur **Gérer** sous **Dimension cible du profil**.
+
+![AJO OC](./images/ajoocptd1.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Créer**.
+
+![AJO OC](./images/ajoocptd2.png)
+
+Pour le **Schéma**, sélectionnez `--aepUserLdap--_citisignal_accounts`. Pour l’option **Valeur d’identité**, sélectionnez **account_id**.
+
+Cliquez sur **Enregistrer**.
+
+![AJO OC](./images/ajoocptd3.png)
+
+Cliquez de nouveau sur **Créer**.
+
+![AJO OC](./images/ajoocptd4.png)
+
+Pour le **Schéma**, sélectionnez `--aepUserLdap--_citisignal_recipients`. Pour l’option **Valeur d’identité**, sélectionnez **account_id**.
+
+Cliquez sur **Enregistrer**.
+
+![AJO OC](./images/ajoocptd5.png)
+
+Cliquez de nouveau sur **Créer**.
+
+![AJO OC](./images/ajoocptd6.png)
+
+Pour le **Schéma**, sélectionnez `--aepUserLdap--_citisignal_recipients`. Pour l’**Valeur d’identité**, sélectionnez **e-mail**.
+
+Cliquez sur **Enregistrer**.
+
+![AJO OC](./images/ajoocptd7.png)
+
+Tu devrais avoir ça.
+
+![AJO OC](./images/ajoocptd8.png)
+
+Dans l’exercice suivant, vous commencerez à utiliser ces données dans le cadre d’une campagne orchestrée.
 
 ## Étapes suivantes
 
