@@ -325,7 +325,7 @@ Si vous vous souvenez, j’ai mentionné que nous utiliserions l’ECID et l’I
 Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de données :
 
 1. Dans l’interface des balises, ajoutez un élément de données nommé `CRM Id`
-1. Sélectionnez **[!UICONTROL Variable JavaScript comme]** Type d’élément de données ****
+1. Sélectionnez **[!UICONTROL Variable JavaScript comme]** Type d’élément de données **&#x200B;**
 1. Comme nom de variable **[!UICONTROL JavaScript]**, saisissez `adobeDataLayer.0.user.id`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter un élément de données pour l’ID CRM](assets/websdk-property-dataElement-crmId.png)
@@ -335,7 +335,7 @@ Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de don
 Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’associer à un type d’élément de données spécial appelé l’élément de données [!UICONTROL Identity Map] :
 
 1. Ajoutez un élément de données nommé `Identity Map`
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
 1. Sélectionnez **[!UICONTROL Type d’élément de données]**, **[!UICONTROL Mappage d’identités]**
 1. En tant qu’**[!UICONTROL Espace de noms]**, sélectionnez ou saisissez `Luma CRM Id`, qui est l’[!UICONTROL espace de noms] que nous avons créé dans une leçon précédente.
 
@@ -345,9 +345,9 @@ Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’asso
 
    >[!TIP]
    >
-   > Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL  principale].
+   > Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL &#x200B; principale].
    >
-   > Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL  principale ].
+   > Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL &#x200B; principale &#x200B;].
 
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter l’ID CRM à l’élément de données Mappage d’identités](assets/websdk-property-dataElement-identityMap.png)
@@ -400,4 +400,4 @@ Très bon travail ! Il s’agissait de beaucoup d’informations sur Web SDK et
 
 Ingénieurs de données, si vous le souhaitez, vous pouvez passer à la leçon [exécuter des requêtes](run-queries.md).
 
-Architectes de données, vous pouvez passer aux [ politiques de fusion ](create-merge-policies.md)
+Architectes de données, vous pouvez passer aux [&#x200B; politiques de fusion &#x200B;](create-merge-policies.md)

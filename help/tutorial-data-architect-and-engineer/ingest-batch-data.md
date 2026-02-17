@@ -72,7 +72,7 @@ Tout d’abord, obtenez les données d’exemple et personnalisez-les pour votre
 1. Une fois le fichier chargé, une ligne pour le lot s’affiche
 1. Si vous rechargez la page au bout de quelques minutes, vous devriez constater que le lot a été chargé avec succès avec 1 000 enregistrements et 1 000 fragments de profil.
 
-   ![ Ingestion ](assets/ingestion-loyalty-uploadJson.png)
+   ![&#x200B; Ingestion &#x200B;](assets/ingestion-loyalty-uploadJson.png)
    <!--do i need to explain error diagnostics and partial ingestion-->
 
 >[!NOTE]
@@ -179,7 +179,7 @@ Nous pouvons maintenant charger les données dans le lot :
 
    ![Données chargées](assets/ingestion-crm-uploadFile.png)
 
-À ce stade, si vous examinez votre lot dans l’interface utilisateur de Platform, vous verrez qu’il se trouve dans un statut « [!UICONTROL  Chargement ] :
+À ce stade, si vous examinez votre lot dans l’interface utilisateur de Platform, vous verrez qu’il se trouve dans un statut « [!UICONTROL &#x200B; Chargement &#x200B;] :
 ![Chargement par lots](assets/ingestion-crm-loading.png)
 
 Comme l’API Batch est souvent utilisée pour charger plusieurs fichiers, vous devez informer Platform lorsqu’un lot est terminé, ce que nous ferons à l’étape suivante.
@@ -212,13 +212,13 @@ Confirmez ensuite le lot à l’aide du jeu de données Aperçu :
 
 Enfin, confirmez que l’un de vos profils a été créé en recherchant l’un des profils par l’espace de noms `Luma CRM Id`, par exemple `f660ab912ec121d1b1e928a0bb4bc61b`
 
-![ Profil ingéré ](assets/ingestion-crm-profile.png)
+![&#x200B; Profil ingéré &#x200B;](assets/ingestion-crm-profile.png)
 
 Il y a une chose intéressante qui vient de se produire et que je tiens à souligner. Ouvrez ce profil de `Danny Wright`. Le profil possède à la fois un `Lumacrmid` et un `Lumaloyaltyid`. Rappelez-vous que le `Luma Loyalty Schema` contenait deux champs d’identité, Identifiant de fidélité Luma et Identifiant CRM. Maintenant que nous avons chargé les deux jeux de données, ils ont fusionné en un seul profil. Les données de fidélité avaient `Daniel` comme prénom et « New York City » comme adresse du domicile, tandis que les données CRM avaient `Danny` comme prénom et `Portland` comme adresse du domicile du client avec le même Loyalty Id. Nous reviendrons sur la raison pour laquelle le prénom affiche `Danny` dans la leçon sur les politiques de fusion.
 
 Félicitations, vous venez de fusionner des profils.
 
-![Profil fusionné ](assets/ingestion-crm-profileLinkedIdentities.png)
+![Profil fusionné &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Validation avec des événements d’ingestion de données
 
