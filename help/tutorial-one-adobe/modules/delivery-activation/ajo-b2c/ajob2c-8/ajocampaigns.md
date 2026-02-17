@@ -4,9 +4,9 @@ description: Campagnes Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 2e4808654f285b21ea2dcc4570ea879b98a772b0
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 5%
 
 ---
@@ -34,6 +34,12 @@ Adobe Journey Optimizer Campaign Orchestration s’accompagne d’un schéma XDM
 
 - Accès aux campagnes orchestrées par Adobe Journey Optimizer
 
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479938?quality=12&learn=on)
+
 ## Exercices
 
 [3.8.1 Configurer votre base de données relationnelle](./ex1.md)
@@ -44,7 +50,7 @@ Dans cet exercice, vous allez configurer et utiliser des campagnes dans Adobe Jo
 
 Dans cet exercice, vous allez créer votre campagne orchestrée.
 
-![Insiders de la technologie &#x200B;](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

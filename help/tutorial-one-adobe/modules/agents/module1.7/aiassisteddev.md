@@ -4,9 +4,9 @@ description: Outils de développement intelligents pour Adobe Commerce
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,12 @@ Dans ce module, vous utiliserez des outils de développement intelligents tels q
 - Vous auriez dû terminer ce module, car il existe des dépendances : [Adobe Experience Manager Cloud Service et Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md).
 - Vous auriez dû terminer ce module, car il existe des dépendances : [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md).
 
+## Vidéo
+
+Dans cette vidéo, vous obtiendrez une explication et une démonstration de toutes les étapes impliquées dans cet exercice.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
+
 ## Exercices
 
 [1.7.1 Configuration de votre environnement de développement](./ex1.md){target="_blank"}
@@ -36,7 +42,7 @@ Dans cet exercice, vous allez créer votre projet Adobe I/O App Builder et effec
 
 Dans cet exercice, vous allez utiliser le kit de démarrage de l’intégration Adobe qui utilise Adobe Developer App Builder pour améliorer la fiabilité de la connexion en temps réel et réduire le délai de mise sur le marché des intégrations entre Adobe Commerce et d’autres systèmes back-office, tels que les ERP, les CRM et les PIM
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
