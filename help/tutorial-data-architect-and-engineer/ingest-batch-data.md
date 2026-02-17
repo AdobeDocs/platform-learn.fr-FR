@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2445'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ L’ingestion de données par lots vous permet d’ingérer une grande quantité
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’ingestion de données :
 
->[!VIDEO](https://video.tv.adobe.com/v/346831?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Autorisations requises
@@ -72,15 +72,15 @@ Tout d’abord, obtenez les données d’exemple et personnalisez-les pour votre
 1. Une fois le fichier chargé, une ligne pour le lot s’affiche
 1. Si vous rechargez la page au bout de quelques minutes, vous devriez constater que le lot a été chargé avec succès avec 1 000 enregistrements et 1 000 fragments de profil.
 
-   ![&#x200B; Ingestion &#x200B;](assets/ingestion-loyalty-uploadJson.png)
+   ![ Ingestion ](assets/ingestion-loyalty-uploadJson.png)
    <!--do i need to explain error diagnostics and partial ingestion-->
 
 >[!NOTE]
 >
 >Plusieurs options, **[!UICONTROL Diagnostics d’erreur]** et **[!UICONTROL Ingestion partielle]**, s’affichent sur différents écrans dans cette leçon. Ces options ne sont pas abordées dans le tutoriel. Quelques infos rapides :
 >
->* L’activation des diagnostics d’erreur génère des données sur l’ingestion de vos données, que vous pouvez ensuite consulter à l’aide de l’API Data Access. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=fr).
->* L’ingestion partielle vous permet d’ingérer des données contenant des erreurs, jusqu’à un certain seuil que vous pouvez spécifier. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=fr)
+>* L’activation des diagnostics d’erreur génère des données sur l’ingestion de vos données, que vous pouvez ensuite consulter à l’aide de l’API Data Access. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
+>* L’ingestion partielle vous permet d’ingérer des données contenant des erreurs, jusqu’à un certain seuil que vous pouvez spécifier. En savoir plus dans [la documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Valider les données
 
@@ -115,7 +115,7 @@ Si vous vous êtes abonné aux événements d’ingestion de données dans la le
 
 ![Webhook d’ingestion de données](assets/ingestion-loyalty-webhook.png)
 
-Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=fr#available-status-notification-events) pour plus d’informations sur les notifications.
+Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) pour plus d’informations sur les notifications.
 
 ## Ingestion de données par lots avec l’API Platform
 
@@ -179,7 +179,7 @@ Nous pouvons maintenant charger les données dans le lot :
 
    ![Données chargées](assets/ingestion-crm-uploadFile.png)
 
-À ce stade, si vous examinez votre lot dans l’interface utilisateur de Platform, vous verrez qu’il se trouve dans un statut « [!UICONTROL &#x200B; Chargement &#x200B;] :
+À ce stade, si vous examinez votre lot dans l’interface utilisateur de Platform, vous verrez qu’il se trouve dans un statut « [!UICONTROL  Chargement ] :
 ![Chargement par lots](assets/ingestion-crm-loading.png)
 
 Comme l’API Batch est souvent utilisée pour charger plusieurs fichiers, vous devez informer Platform lorsqu’un lot est terminé, ce que nous ferons à l’étape suivante.
@@ -210,15 +210,15 @@ Confirmez ensuite le lot à l’aide du jeu de données Aperçu :
 
 ![Aperçu du lot](assets/ingestion-crm-preview.png)
 
-Enfin, confirmez que l’un de vos profils a été créé en recherchant l’un des profils par l’espace de noms `Luma CRM Id`, par exemple `b642b4217b34b1e8d3bd915fc65c4452`
+Enfin, confirmez que l’un de vos profils a été créé en recherchant l’un des profils par l’espace de noms `Luma CRM Id`, par exemple `f660ab912ec121d1b1e928a0bb4bc61b`
 
-![&#x200B; Profil ingéré &#x200B;](assets/ingestion-crm-profile.png)
+![ Profil ingéré ](assets/ingestion-crm-profile.png)
 
 Il y a une chose intéressante qui vient de se produire et que je tiens à souligner. Ouvrez ce profil de `Danny Wright`. Le profil possède à la fois un `Lumacrmid` et un `Lumaloyaltyid`. Rappelez-vous que le `Luma Loyalty Schema` contenait deux champs d’identité, Identifiant de fidélité Luma et Identifiant CRM. Maintenant que nous avons chargé les deux jeux de données, ils ont fusionné en un seul profil. Les données de fidélité avaient `Daniel` comme prénom et « New York City » comme adresse du domicile, tandis que les données CRM avaient `Danny` comme prénom et `Portland` comme adresse du domicile du client avec le même Loyalty Id. Nous reviendrons sur la raison pour laquelle le prénom affiche `Danny` dans la leçon sur les politiques de fusion.
 
 Félicitations, vous venez de fusionner des profils.
 
-![Profil fusionné &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
+![Profil fusionné ](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Validation avec des événements d’ingestion de données
 
@@ -226,7 +226,7 @@ Si vous vous êtes abonné aux événements d’ingestion de données dans la le
 
 ![Webhook d’ingestion de données](assets/ingestion-crm-webhook.png)
 
-Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=fr#available-status-notification-events) pour plus d’informations sur les notifications.
+Voir la [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) pour plus d’informations sur les notifications.
 
 ## Ingestion de données avec les workflows
 
@@ -237,7 +237,7 @@ Examinons une autre manière de charger des données. La fonctionnalité de work
 1. Vous devriez avoir déjà téléchargé et décompressé [luma-data.zip](assets/luma-data.zip) dans votre dossier `Luma Tutorial Assets`.
 1. Confirmez que vous avez `luma-products.csv`
 
-### Créer un workflow
+### Création dʼun workflow
 
 Maintenant, nous allons configurer le workflow :
 
@@ -282,7 +282,7 @@ De nombreuses sources ont un workflow de configuration similaire, dans lequel vo
 
 >[!NOTE]
 >
->Les données d’achat hors ligne que nous utiliserons dans cet exercice contiennent des données datetime. Les données Datetime doivent être au format [Chaînes au format ISO 8061](https://www.iso.org/fr/iso-8601-date-and-time-format.html) (« 2018-07-10T15:05:59.000-08:00 ») ou Unix Time au format millisecondes (1531263959000) et sont converties au moment de l’ingestion en type XDM cible. Pour plus d’informations sur la conversion des données et d’autres contraintes, consultez [documentation de l’API Batch Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=fr#types).
+>Les données d’achat hors ligne que nous utiliserons dans cet exercice contiennent des données datetime. Les données Datetime doivent être au format [chaînes au format ISO 8061](https://www.iso.org/fr/iso-8601-date-and-time-format.html) (« 2018-07-10T15:05:59.000-08:00 ») ou Unix Time au format millisecondes (1531263959000) et sont converties au moment de l’ingestion en type XDM cible. Pour plus d’informations sur la conversion des données et d’autres contraintes, consultez [documentation de l’API Batch Ingestion](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Téléchargez, préparez et chargez les données vers le fournisseur d’espace de stockage de votre choix
 
@@ -305,7 +305,7 @@ De nombreuses sources ont un workflow de configuration similaire, dans lequel vo
 
 1. À l’étape **[!UICONTROL Sélectionner des données]**, l’interface utilisateur utilisera vos informations d’identification pour ouvrir le dossier sur votre solution de stockage dans le cloud
 1. Sélectionnez les fichiers à ingérer, par exemple `luma-offline-purchases.json`
-1. Sélectionnez `XDM JSON` comme **[!UICONTROL Format des données]**
+1. Sélectionnez **[!UICONTROL comme]** Format des données`XDM JSON`
 1. Vous pouvez ensuite prévisualiser la structure json et les exemples de données dans votre fichier
 1. Sélectionnez le bouton **[!UICONTROL Suivant]**
    ![Sélectionner vos fichiers de données](assets/ingestion-offline-selectData.png)
@@ -334,12 +334,12 @@ Recherchez à nouveau le profil avec la valeur `5625458` dans l’espace de noms
 
 Adobe s’associe à plusieurs fournisseurs ETL pour prendre en charge l’ingestion de données dans Experience Platform. En raison de la variété des fournisseurs tiers, ETL n’est pas traité dans ce tutoriel, bien que vous puissiez consulter certaines de ces ressources :
 
-* [Développement d’intégrations ETL pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=fr)
+* [Développement d’intégrations ETL pour Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Pack Snap Adobe Experience Platform](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Ressources supplémentaires
 
-* [Documentation sur l’ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=fr)
+* [Documentation sur l’ingestion par lots](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Référence de l’API d’ingestion par lots](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Maintenant, nous allons [diffuser des données à l’aide de la SDK web](ingest-streaming-data.md)

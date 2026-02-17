@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,7 @@ Tout d’abord, nous allons configurer le flux de données. Un flux de données 
 
 Pour créer votre [!UICONTROL flux de données] :
 
-1. Connectez-vous à l’interface utilisateur de la collecte de données [Experience Platform](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. Vérifiez que vous êtes toujours dans le sandbox ` Luma Tutorial`
 1. Sélectionnez **[!UICONTROL Flux de données]** dans le volet de navigation de gauche
 1. Sélectionnez le bouton **[!UICONTROL Nouveau flux de données]** dans le coin supérieur droit
 
@@ -105,18 +103,19 @@ Pour créer votre [!UICONTROL flux de données] :
 
    ![Nommez le flux de données et enregistrez](assets/websdk-edgeConfig-name.png)
 
-Dans l’écran suivant, indiquez où vous souhaitez envoyer des données. Pour envoyer des données à Experience Platform :
+Une fois que les données arrivent dans l’Edge, le [!UICONTROL flux de données] les transfère vers les [!UICONTROL services] configurés. Pour envoyer des données à Experience Platform :
 
-1. Activer/désactiver **[!UICONTROL Adobe Experience Platform]** pour afficher des champs supplémentaires
-1. Pour **[!UICONTROL Sandbox]**, sélectionnez `Luma Tutorial`
-1. Pour **[!UICONTROL Jeu de données d’événement]**, sélectionnez `Luma Web Events Dataset`
-1. Si vous utilisez d’autres applications Adobe, n’hésitez pas à explorer les autres sections pour voir quelles informations sont requises dans la configuration Edge de ces autres solutions. Souvenez-vous que Web SDK a été développé non seulement pour diffuser des données dans Experience Platform, mais également pour remplacer toutes les bibliothèques JavaScript précédentes utilisées par d’autres applications Adobe. La configuration d’Edge permet de spécifier les détails du compte de chaque application à laquelle vous souhaitez envoyer les données.
+1. Sélectionnez **[!UICONTROL Ajouter un service]**
+   ![Ajouter un service](assets/websdk-datastream-addService.png)
+
+1. Sélectionner votre `Luma Web Events Dataset`
 1. Sélectionnez **[!UICONTROL Enregistrer]**
-   ![Configurer le flux de données et enregistrer](assets/websdk-edgeConfig-addEnvironment.png)
 
-Une fois la configuration Edge enregistrée, l’écran qui en résulte affiche trois environnements qui ont été créés pour le développement, l’évaluation et la production. D’autres environnements de développement peuvent être ajoutés :
-![Chaque configuration Edge peut comporter plusieurs environnements](assets/websdk-edgeConfig-environments.png)
-Les trois environnements contiennent les détails de Platform que vous venez de saisir. Cependant, ces détails peuvent être configurés différemment par environnement. Par exemple, vous pouvez faire en sorte que chaque environnement envoie des données à un sandbox Platform différent. Dans ce tutoriel, nous n’apporterons aucune personnalisation supplémentaire à notre flux de données.
+   ![Sélectionnez votre jeu de données et enregistrez](assets/websdk-datastream-addPlatformService.png)
+
+Bien qu’il existe une option Jeu de données de profil dans la configuration du train de données, elle ne doit pas être utilisée pour envoyer des données XDM Individual Profile normales à Platform. Ce paramètre ne doit être utilisé que pour envoyer les détails de consentement, de jeton push et de zone géographique de l’activité de l’utilisateur.
+
+Les cases à cocher pour [!UICONTROL Offer Decisioning], [!UICONTROL Segmentation Edge], [!UICONTROL Destinations Personalization] et [!UICONTROL Adobe Journey Optimizer] vous permettent d’activer des données sur Edge, mais ne sont pas utilisées dans ce tutoriel.
 
 ## Installation de l’extension Web SDK
 

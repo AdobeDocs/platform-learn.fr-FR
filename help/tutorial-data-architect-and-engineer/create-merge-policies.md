@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
+source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Nous nous en tiendrons à l’interface utilisateur pour cette leçon, mais il e
 **Architectes de données** devront créer des politiques de fusion en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les politiques de fusion :
->[!VIDEO](https://video.tv.adobe.com/v/345076?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Autorisations requises
 
@@ -74,7 +74,7 @@ Que se passe-t-il si vous n’aimez pas cette politique de fusion par défaut ? 
 1. Assurez-vous que `Luma Loyalty Dataset` est au-dessus en le faisant glisser et en le déposant au-dessus de la `Luma CRM Dataset`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer]**
    <!--do i need to explain Private Graph? Is that GA?-->
-   ![&#x200B; Politique de fusion &#x200B;](assets/mergepolicies-newPolicy.png)
+   ![ Politique de fusion ](assets/mergepolicies-newPolicy.png)
 
 ## Validation de la politique de fusion
 
@@ -83,7 +83,7 @@ Voyons si la politique de fusion fonctionne comme prévu :
 1. Accédez à l’onglet **[!UICONTROL Parcourir]**
 1. Modifiez la **[!UICONTROL politique de fusion]** en votre nouvelle politique de `Loyalty Prioritized`
 1. Utilisez votre **[!UICONTROL en tant qu’espace de noms]** Identity`Luma CRM Id`
-1. Comme **[!UICONTROL valeur d’identité]** utilisez `b642b4217b34b1e8d3bd915fc65c4452`
+1. Comme **[!UICONTROL valeur d’identité]** utilisez `f660ab912ec121d1b1e928a0bb4bc61b`
 1. Sélectionnez le bouton **[!UICONTROL Afficher le profil]**
 1. `Daniel` est de retour !
 
@@ -110,7 +110,7 @@ Examinons maintenant l’effet de cette politique de fusion :
 1. Accédez à l’onglet **[!UICONTROL Parcourir]**
 1. Modifiez la **[!UICONTROL politique de fusion]** en votre nouvelle politique de `Loyalty Only`
 1. Utilisez votre **[!UICONTROL en tant qu’espace de noms]** Identity`Luma CRM Id`
-1. Comme **[!UICONTROL valeur d’identité]** utilisez `b642b4217b34b1e8d3bd915fc65c4452`
+1. Comme **[!UICONTROL valeur d’identité]** utilisez `f660ab912ec121d1b1e928a0bb4bc61b`
 1. Sélectionnez le bouton **[!UICONTROL Afficher le profil]**
 1. Vérifiez qu’aucun profil n’a été trouvé :
    ![Fidélité uniquement pas de recherche d’ID CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
