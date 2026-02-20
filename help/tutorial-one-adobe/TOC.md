@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1509'
 ht-degree: 3%
 
 ---
@@ -285,7 +285,7 @@ ht-degree: 3%
       + [1.5.3 Adobe Analytics et Claude.ai avec serveur MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
    + 1.6 AEM et agents {#agents6}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.1 Prise en main des agents AEM](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
    + 1.7 Outils de développement intelligents pour Adobe Commerce {#agents7}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 Configuration de votre environnement de développement](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)

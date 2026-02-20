@@ -4,18 +4,28 @@ description: Adobe Experience Manager et agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
+source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 8%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
 # 1.6 Adobe Experience Manager et agents
 
+Adobe Experience Manager comprend désormais plusieurs agents spécifiquement conçus, chacun conçu pour assumer un travail qui a toujours exigé des tonnes d&#39;efforts manuels. Il ne s’agit pas d’assistants d’IA génériques, mais d’agents formés au domaine qui connaissent profondément AEM et qui opèrent sur le contenu, le code, les ressources, la gouvernance et l’optimisation.
+
+- **Agent de production Experience**, qui accélère les mises à jour, les modifications de contenu et même les migrations complètes du site.
+- **Agent de gouvernance** applique automatiquement la marque, les droits et les règles de conformité.
+- **Discovery Agent**, prépare le contenu pour la découverte native de l’IA et agit comme un stratège intelligent.
+- **Agent d’optimisation de contenu** crée instantanément des variations de ressources spécifiques à un canal et prêtes pour les performances.
+- **Agent de développement** accélère les développeurs grâce à un dépannage assisté par IA et à l’optimisation des performances.
+
+Ensemble, ces agents font évoluer AEM bien au-delà des fonctionnalités CMS traditionnelles et vers des opérations d’expérience automatisées. Chacun de ces agents est conçu avec des humains aux commandes, assurant précision, confiance et supervision.
+
 ## Objectifs d’apprentissage
 
-TBC
+- Découvrez comment utiliser les différents agents AEM disponibles
 
 ## Conditions préalables
 
@@ -29,11 +39,11 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## Exercices
 
-[1.6.1 Content Production Agent](./ex1.md){target="_blank"}
+[1.6.1 Prise en main des agents AEM](./ex1.md){target="_blank"}
 
-TBC
+Dans cet exercice, vous allez explorer **Agent de découverte** et **Agent de production Experience**.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
