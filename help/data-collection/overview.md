@@ -41,11 +41,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="Implémentation dans les applications mobiles" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>Implémenter Experience Cloud dans les applications mobiles</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/implement-in-websites/overview" target="_blank">
       <img alt="Implémentation de bibliothèques héritées" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/implement-in-websites/overview" target="_blank">
     <strong>Implémenter des bibliothèques héritées avec des balises</strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migration de Target vers Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migration d’Adobe Target vers Web SDK</strong>
     </a>
     </div>
@@ -106,7 +106,7 @@ La collecte de données est la nouvelle génération de fonctionnalités de gest
       <strong>Migration de Adobe Audience Manager vers Web SDK</strong>
     </div>
     <p>
-    <em>Remplacez <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> ou <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">mettez à jour le transfert côté serveur</a></em>
+    <em>Remplacez <a href="https://experienceleague.adobe.com/fr/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> ou <a href="https://experienceleague.adobe.com/fr/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">mettez à jour le transfert côté serveur</a></em>
     <p>
   </td>
 </tr>
