@@ -1,22 +1,22 @@
 ---
-title: Activation technique de GenStudio pour la chaîne d’approvisionnement de contenu
-description: Activation technique de GenStudio pour la chaîne d’approvisionnement de contenu
+title: Activation technique de GenStudio for Content Supply chain
+description: Activation technique de GenStudio for Content Supply chain
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Présentation - Activation technique de GenStudio pour la chaîne d’approvisionnement de contenu
+# Présentation - Activation technique de GenStudio for Content Supply chain
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
-Si vous participez à l’un de nos ateliers en direct sur l’activation technique de GenStudio for Content Supply Chain, voici le point de départ des laboratoires techniques que vous suivrez.
+Si vous participez à l’un de nos ateliers en direct sur l’activation technique de GenStudio for Content Supply chain, c’est le point de départ des laboratoires techniques que vous suivrez.
 
 Dans le cadre de cet atelier d’activation technique, vous découvrirez de manière pratique les applications suivantes dans les laboratoires techniques :
 
@@ -28,7 +28,7 @@ Dans le cadre de cet atelier d’activation technique, vous découvrirez de mani
 
 Les Tech Labs que vous suivrez font partie d’un tutoriel One Adobe plus large, où vous pourrez en savoir plus sur les grandes solutions Adobe Creative Cloud et Adobe Experience Cloud. Si vous souhaitez consulter les informations disponibles, cliquez ici : [Une vue d’ensemble du tutoriel Adobe](./overview.md)
 
-## Laboratoires techniques de GenStudio pour la chaîne d’approvisionnement de contenu
+## Laboratoires techniques de GenStudio for Content Supply chain
 
 Vous trouverez ci-dessous les laboratoires techniques que vous suivrez dans le cadre de cet atelier d’activation technique.
 
@@ -76,7 +76,7 @@ Dans ce module de base, vous allez configurer votre programme Adobe Experience M
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

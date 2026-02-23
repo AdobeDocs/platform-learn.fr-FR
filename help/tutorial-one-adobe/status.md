@@ -3,9 +3,9 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '595'
 ht-degree: 11%
 
 ---
@@ -18,7 +18,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## Workflow et planification
 
@@ -47,6 +47,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service et Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | Oui | - | 1h 30min |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | Oui | - | 30 min |
+| [1.3 Adobe Experience Manager Forms avec Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"} | 23/02/2026 | Oui | - | 60 min |
 | [1.4 Adobe Experience Manager Assets et Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 17/02/2026 | Oui | - | 1h30min |
 | [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | Oui | - | 1h30min |
 
@@ -96,7 +97,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 >[!NOTE]
 >
->![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
