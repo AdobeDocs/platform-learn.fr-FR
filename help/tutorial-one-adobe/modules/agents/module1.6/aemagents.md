@@ -48,7 +48,7 @@ Dans cet exercice, vous allez explorer **Agent de découverte** et **Agent de pr
 Dans cet exercice, vous allez connecter votre environnement Cursor à AEM à l&#39;aide du serveur AEM MCP.
 
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
