@@ -3,7 +3,8 @@ title: Création de votre premier formulaire
 description: Création de votre premier formulaire
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
+exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 10%
@@ -100,7 +101,7 @@ Vérifiez la configuration de votre référentiel Github, en particulier dans le
 
 Une fois ces exigences en place, vous pouvez créer votre premier formulaire.
 
-## 1.3.1.1 Créer un formulaire
+## 1.3.1.2 Créer un formulaire
 
 Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. L’organisation que vous devez sélectionner est `--aepImsOrgName--`. Ouvrez votre environnement.
 
@@ -270,7 +271,7 @@ Après avoir publié votre formulaire, il est désormais également disponible s
 
 ![AEM Forms](./images/aemforms29.png)
 
-## 1.3.1.2 Envoyer le formulaire
+## 1.3.1.3 Envoyer le formulaire
 
 Pour envoyer votre formulaire, 2 éléments sont requis :
 

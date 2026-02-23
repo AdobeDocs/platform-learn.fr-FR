@@ -3,16 +3,16 @@ title: Présentation d’Agentic AI Tech Labs
 description: Présentation d’Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Aperçu - Travail en cours
 
@@ -73,13 +73,27 @@ Dans cet exercice, vous apprendrez à :
 - Connectez ChatGPT et/ou Claude.ai à **Customer Journey Analytics** et effectuez des tâches d&#39;analyse des données
 - Connectez ChatGPT et/ou Claude.ai à **Adobe Analytics** et effectuez des tâches d’analyse des données
 
+[1.6 AEM et agents](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**Objectif**
+
+Adobe Experience Manager comprend désormais plusieurs agents spécifiquement conçus, chacun conçu pour assumer un travail qui a toujours exigé des tonnes d&#39;efforts manuels. Il ne s’agit pas d’assistants d’IA génériques, mais d’agents formés au domaine qui connaissent profondément AEM et qui opèrent sur le contenu, le code, les ressources, la gouvernance et l’optimisation.
+
+- **Agent de production Experience**, qui accélère les mises à jour, les modifications de contenu et même les migrations complètes du site.
+- **Agent de gouvernance** applique automatiquement la marque, les droits et les règles de conformité.
+- **Discovery Agent**, prépare le contenu pour la découverte native de l’IA et agit comme un stratège intelligent.
+- **Agent d’optimisation de contenu** crée instantanément des variations de ressources spécifiques à un canal et prêtes pour les performances.
+- **Agent de développement** accélère les développeurs grâce à un dépannage assisté par IA et à l’optimisation des performances.
+
+Dans cet exercice, vous apprendrez à utiliser ces agents à l’aide de l’assistant AI et du curseur via la configuration personnalisée du serveur MCP.
+
 [1.7 Outils de développement intelligents pour Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 
 **Objectif**
 
 Dans ce module, vous utiliserez des outils de développement intelligents tels que Cursor pour développer une extension de votre environnement Adobe Commerce as a Cloud Service. L’objectif de cette extension est de transférer les événements de commande entrants vers un point d’entrée tiers. Le transfert d’événement dans Adobe Commerce as a Cloud Service repose sur Adobe I/O App Builder, Adobe I/O Events et Adobe I/O Runtime. La configuration de tous ces services sera assistée par Cursor.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
