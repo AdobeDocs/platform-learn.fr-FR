@@ -4,9 +4,9 @@ description: Prise en main des agents AEM
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
+source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -461,7 +461,24 @@ Vous devriez ensuite obtenir une confirmation que les modifications sont publié
 
 ### Mise à jour de contenu - Création de formulaire
 
-La compétence Création de formulaire permet aux utilisateurs de créer des formulaires adaptatifs à l’aide d’invites de langage naturel sans dépendre du développement ou des équipes informatiques. Cette fonctionnalité accélère le développement des formulaires tout en maintenant la cohérence de la marque et en permettant aux utilisateurs professionnels de créer des formulaires sans avoir une connaissance technique approfondie des produits.
+Dans le module [Adobe Experience Manager Forms avec Edge Delivery Services](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} vous trouverez les étapes de création d&#39;un formulaire de manière manuelle.
+
+La compétence Création de formulaire permet désormais aux utilisateurs et utilisatrices de créer des formulaires adaptatifs par le biais d’invites de langage naturel sans dépendre du développement ou des équipes informatiques. Cette fonctionnalité accélère le développement des formulaires tout en maintenant la cohérence de la marque et en permettant aux utilisateurs professionnels de créer des formulaires sans avoir une connaissance technique approfondie des produits.
+
+Accédez à [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
+
+![Agents AEM](./images/aemagentsforms1.png)
+
+Saisissez l’invite suivante et cliquez sur **envoyer**.
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## Étapes suivantes
 

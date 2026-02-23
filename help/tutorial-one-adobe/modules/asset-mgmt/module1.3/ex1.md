@@ -3,9 +3,9 @@ title: Création de votre premier formulaire
 description: Création de votre premier formulaire
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8f59b9fdadc9c5aeadb1d4ecccd75090c339b43e
+source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '1109'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,85 @@ ht-degree: 10%
 >
 >Si vous avez précédemment configuré un programme AEM CS avec un environnement AEM Assets CS, il se peut que votre sandbox AEM CS ait été mis en veille. Étant donné que la réactivation d’un tel sandbox prend entre 10 et 15 minutes, il serait judicieux de lancer le processus de réactivation maintenant afin de ne pas avoir à l’attendre plus tard.
 
-## 1.3.1.1 -
+## Exigences en matière d’environnement 1.3.1.1 pour l’utilisation d’AEM Forms avec Edge Delivery Services
+
+Avant de configurer votre premier formulaire, plusieurs exigences doivent être remplies avant de pouvoir suivre les étapes ci-dessous.
+
+### Configuration du programme
+
+Dans la section **Solutions et modules complémentaires** de votre programme Cloud Manager, **Forms** doit être activé.
+
+![AEM Forms](./images/program.png)
+
+### blocs
+
+Dans votre référentiel Github, les blocs suivants doivent être disponibles :
+
+- **formulaire**
+- **embed-adaptive-form**
+
+![AEM Forms](./images/block.png)
+
+### scripts
+
+Les scripts suivants doivent être disponibles dans votre référentiel Github :
+
+- **form-editor-support.css**
+- **form-editor-support.js**
+
+![AEM Forms](./images/scripts1.png)
+
+En outre, dans le fichier **editor-support.js**, les modifications suivantes doivent être apportées pour activer la modification des formulaires dans l’éditeur universel.
+
+- remplacez la déclaration de fonction **function attachmentEventListners(main)** par **async function attachmentEventListners(main)**
+- ajouter les lignes 152 et 153 :
+
+```
+const module = await import('./form-editor-support.js');
+module.attachEventListners(main);
+```
+
+![AEM Forms](./images/scripts2.png)
+
+En outre, dans le fichier **editor-support.js**, modifiez les lignes 90 à 92 comme suit :
+
+```
+if (block.dataset.aueModel === 'form') {
+        return true;
+      } else if (newBlock) {
+```
+
+![AEM Forms](./images/scripts3.png)
+
+### paths.json
+
+Vérifiez la configuration de votre référentiel Github, en particulier dans le fichier **paths.json**. Ces lignes doivent être présentes dans le fichier :
+
+- Sous les mappages : **« /content/forms/af/:/forms/ »**
+- Sous inclut : **« /content/forms/af/ »**
+
+```json
+{
+  "mappings": [
+    "/content/CitiSignal/:/",
+    "/content/CitiSignal/configuration:/.helix/config.json",
+    "/content/CitiSignal/headers:/.helix/headers.json",
+    "/content/CitiSignal/metadata:/metadata.json",
+    "/content/CitiSignal.resource/enrichment/enrichment.json:/enrichment/enrichment.json",
+    "/content/forms/af/:/forms/"
+  ],
+  "includes": [
+    "/content/CitiSignal/",
+    "/content/forms/af/"
+  ]
+}
+```
+
+![AEM Forms](./images/paths.png)
+
+Une fois ces exigences en place, vous pouvez créer votre premier formulaire.
+
+## 1.3.1.1 Créer un formulaire
 
 Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. L’organisation que vous devez sélectionner est `--aepImsOrgName--`. Ouvrez votre environnement.
 
@@ -186,9 +264,107 @@ Vous pouvez ensuite remplir le formulaire, mais vous ne pouvez pas encore l’en
 
 ![AEM Forms](./images/aemforms28.png)
 
-## Étapes suivantes
+Après avoir publié votre formulaire, il est désormais également disponible sur votre domaine Edge Delivery Services, qui ressemble à ceci :
 
-Étape Suivante : [-](./ex1.md){target="_blank"}
+`https://main--techinsidersXX-citisignal-aem-accs--woutervangeluwe.aem.page/forms/fiber-max-interest-form`
+
+![AEM Forms](./images/aemforms29.png)
+
+## 1.3.1.2 Envoyer le formulaire
+
+Pour envoyer votre formulaire, 2 éléments sont requis :
+
+- un bouton **Envoyer**
+- une action **Envoyer**
+
+En outre, dans cet exercice, vous devez utiliser une feuille de calcul Google pour enregistrer les envois de ce formulaire.
+
+### feuille de calcul Google
+
+Accédez à [https://drive.google.com](https://drive.google.com) puis créez une nouvelle feuille de calcul vierge.
+
+![AEM Forms](./images/sheet1.png)
+
+Nommez votre fichier `citisignal-fiber-max-interest`.
+
+À la ligne 1, dans les cellules A-B-C-D, entrez les noms de champ suivants :
+
+- prénom
+- nom
+- E-mail
+- ville
+
+Cliquez ensuite sur **Partager**.
+
+![AEM Forms](./images/sheet2.png)
+
+Partagez le fichier avec **forms@adobe.com** avec des droits d’accès de niveau **Éditeur**.
+
+Cliquez ensuite sur **Copier le lien**.
+
+Cliquez sur **Envoyer**.
+
+![AEM Forms](./images/sheet3.png)
+
+Vous devrez utiliser le lien copié à l’étape suivante.
+
+### Bouton Envoyer
+
+Pour configurer le bouton **Envoyer**, accédez à **Arborescence de contenu**, sélectionnez **Formulaire adaptatif**, cliquez sur l’icône **+**, puis sélectionnez **Envoyer**.
+
+![AEM Forms](./images/aemforms30.png)
+
+Vous devriez alors voir ceci.
+
+![AEM Forms](./images/aemforms31.png)
+
+### Action Envoyer
+
+Les actions Envoyer font partie d’une extension de l’éditeur universel.
+
+>[!NOTE]
+>
+>Si l’icône **Modifier les propriétés du formulaire** ne s’affiche pas, cela signifie que cette extension n’est pas encore activée pour votre environnement. Pour activer cette extension, accédez à [https://experience.adobe.com/#/aem/extension-manager](https://experience.adobe.com/#/aem/extension-manager) puis activez l’extension **Modifier les propriétés du formulaire**.
+>
+>![AEM Forms](./images/extmgr.png)
+
+Cliquez sur l’icône **Modifier les propriétés du formulaire**.
+
+![AEM Forms](./images/aemforms32.png)
+
+Sélectionnez **Envoyer à la feuille de calcul**. Collez l’URL de la feuille de Google que vous avez créée précédemment.
+
+Cliquez sur **Enregistrer et fermer**.
+
+![AEM Forms](./images/aemforms33.png)
+
+>[!NOTE]
+>
+>Si vous recevez une erreur 401 - Non autorisé, il se peut qu’elle s’affiche. parce que votre environnement n’a pas été activé pour fonctionner avec Google Sheets. Contactez votre représentant Adobe pour que votre environnement soit activé.
+
+Cliquez sur **Publier**.
+
+![AEM Forms](./images/aemforms34.png)
+
+Cliquez de nouveau sur **Publier**.
+
+![AEM Forms](./images/aemforms35.png)
+
+Vous pouvez ensuite actualiser votre site, remplir les formulaires et cliquer sur **Envoyer**.
+
+![AEM Forms](./images/aemforms36.png)
+
+Votre envoi doit alors être réussi.
+
+![AEM Forms](./images/aemforms37.png)
+
+Si vous jetez ensuite un coup d’œil à votre feuille de Google, vous y verrez également l’envoi réussi.
+
+![AEM Forms](./images/aemforms38.png)
+
+Cet exercice est maintenant terminé.
+
+## Étapes suivantes
 
 Revenir à [Adobe Experience Manager Forms avec Edge Delivery Services](./aemforms.md){target="_blank"}
 
