@@ -71,7 +71,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 * **Accès à Adobe Developer Console** : vous devez avoir accès à un rôle d’administrateur système ou de [développeur](../admin/add-developers.md) au sein d’une organisation pour laquelle App Builder est activé.
 
   >[!TIP]
-  > Pour vérifier l’approvisionnement d’App Builder, connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console/){target=_blank}, vérifiez que vous vous trouvez dans l’organisation souhaitée, sélectionnez **[!UICONTROL Créer un projet à partir d’un modèle]**, puis vérifiez que le modèle App Builder est disponible. Si ce n’est pas le cas, consultez la section FAQ d’App Builder « [ Comment obtenir App Builder ](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank} »
+  > Pour vérifier l’approvisionnement d’App Builder, connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console/){target=_blank}, vérifiez que vous vous trouvez dans l’organisation souhaitée, sélectionnez **[!UICONTROL Créer un projet à partir d’un modèle]**, puis vérifiez que le modèle App Builder est disponible. Si ce n’est pas le cas, consultez la section FAQ d’App Builder « [&#x200B; Comment obtenir App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank} »
 
 
 * **Node.js et npm** : ce projet nécessite Node.js, qui inclut NPM (Node Package Manager). NPM est utilisé pour installer l’interface de ligne de commande Adobe et gérer les dépendances de projet.
@@ -83,7 +83,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 * **Configuration de l’application Slack** : une application Slack doit être configurée dans votre espace de travail avec un **Webhook entrant** activé.
 
    * [Créer une application Slack](https://api.slack.com/apps){target=_blank}
-   * [Guide des Webhooks entrants Slack ](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){target=_blank} - Suivez ce guide pour créer votre application et générer l’URL du Webhook (commence par `https://hooks.slack.com/`...).
+   * [Guide des Webhooks entrants Slack &#x200B;](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){target=_blank} - Suivez ce guide pour créer votre application et générer l’URL du Webhook (commence par `https://hooks.slack.com/`...).
 
 ### Étape 1 : créer un projet dans Adobe Developer Console
 
