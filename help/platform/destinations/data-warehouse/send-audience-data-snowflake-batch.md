@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Découvrez comment configurer et utiliser la destination par lots Snowflake dans Adobe Real-Time CDP pour diffuser des instantanés d’audience quotidiens complets actualisés dans votre compte Snowflake. Découvrez le workflow de bout en bout dans Adobe Experience Platform, comment les données apparaissent sous la forme d’un tableau dynamique dans Snowflake, ainsi que les étapes de configuration et les validations essentielles pour garantir une intégration réussie.
 
-Pour plus d’informations, consultez la [&#x200B; documentation &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
+Pour plus d’informations, consultez la [&#x200B; documentation &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
