@@ -4,18 +4,16 @@ description: Découvrez comment recevoir des notifications Experience Platform d
 feature: Monitoring
 role: Developer, Admin
 level: Intermediate
-doc-type: Tutorial
-duration: 0
+duration: 519
 last-substantial-update: 2026-02-24T00:00:00Z
 jira: KT-20339
-thumbnail: KT-20339.jpeg
-source-git-commit: 268df348b1151394acde869ba4814b658a27e8ff
+exl-id: 6d4a072c-9eef-4a38-9459-9e1cbd66bfb5
+source-git-commit: 4ec7a800ef963f9b1257e2f246428abff32e9b94
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1539'
 ht-degree: 0%
 
 ---
-
 
 # Surveillance des événements Experience Platform dans Slack
 
@@ -71,7 +69,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 * **Accès à Adobe Developer Console** : vous devez avoir accès à un rôle d’administrateur système ou de [développeur](../admin/add-developers.md) au sein d’une organisation pour laquelle App Builder est activé.
 
   >[!TIP]
-  > Pour vérifier l’approvisionnement d’App Builder, connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console/){target=_blank}, vérifiez que vous vous trouvez dans l’organisation souhaitée, sélectionnez **[!UICONTROL Créer un projet à partir d’un modèle]**, puis vérifiez que le modèle App Builder est disponible. Si ce n’est pas le cas, consultez la section FAQ d’App Builder « [&#x200B; Comment obtenir App Builder &#x200B;](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank} »
+  > Pour vérifier l’approvisionnement d’App Builder, connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console/){target=_blank}, vérifiez que vous vous trouvez dans l’organisation souhaitée, sélectionnez **[!UICONTROL Créer un projet à partir d’un modèle]**, puis vérifiez que le modèle App Builder est disponible. Si ce n’est pas le cas, consultez la section FAQ d’App Builder « [ Comment obtenir App Builder ](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#how-to-get-app-builder){target=_blank} »
 
 
 * **Node.js et npm** : ce projet nécessite Node.js, qui inclut NPM (Node Package Manager). NPM est utilisé pour installer l’interface de ligne de commande Adobe et gérer les dépendances de projet.
@@ -83,7 +81,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 * **Configuration de l’application Slack** : une application Slack doit être configurée dans votre espace de travail avec un **Webhook entrant** activé.
 
    * [Créer une application Slack](https://api.slack.com/apps){target=_blank}
-   * [Guide des Webhooks entrants Slack &#x200B;](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){target=_blank} - Suivez ce guide pour créer votre application et générer l’URL du Webhook (commence par `https://hooks.slack.com/`...).
+   * [Guide des Webhooks entrants Slack ](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){target=_blank} - Suivez ce guide pour créer votre application et générer l’URL du Webhook (commence par `https://hooks.slack.com/`...).
 
 ### Étape 1 : créer un projet dans Adobe Developer Console
 
@@ -95,7 +93,7 @@ Tout d’abord, créez un projet avec le modèle App Builder dans Adobe Develope
 1. Saisissez un titre de projet, par exemple `Slack webhook integration`
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
-### Étape 2 : initialiser l’environnement d’exécution
+### Initialiser l’environnement d’exécution
 
 Exécutez les commandes suivantes dans votre terminal pour créer la structure du projet :
 
@@ -105,7 +103,7 @@ Exécutez les commandes suivantes dans votre terminal pour créer la structure d
 aio login
 ```
 
-#### Initialiser un nouveau projet App Builder
+#### Étape 2 : initialiser un nouveau projet App Builder
 
 ```
 aio app init slack-webhook-proxy
@@ -143,7 +141,7 @@ aio app add action
 2. Voir l’action **[!UICONTROL publish-events]** dans le tableau présenté ; appuyer sur **Space** pour sélectionner l’action. Si le cercle en regard du nom est plein comme illustré dans le tutoriel vidéo, appuyez sur **Entrée**
 3. Nommez l’action `webhook-proxy`
 
-### Étape 3 : Code De L’Action Proxy
+### Étape 3 : mettre à jour le code d’action du proxy
 
 Dans un IDE ou un éditeur de texte, créez/modifiez le fichier `actions/webhook-proxy/index.js` avec le code suivant. Cette implémentation transfère les événements vers Slack. La vérification des signatures et la gestion des défis sont automatiques lors de l’utilisation de l’enregistrement de l’action d’exécution.
 
@@ -298,7 +296,7 @@ Lorsque vous utilisez une action non web et que vous l’enregistrez via l’opt
 
 Cela signifie que votre code ne doit gérer que la logique commerciale (transfert vers Slack).
 
-### Étape 5 : Variables D’Environnement
+### Étape 4 : mettre à jour les variables d’environnement
 
 Pour gérer les informations d’identification en toute sécurité, nous utilisons des variables d’environnement. Créez/modifiez le fichier `.env` à la racine de votre projet pour ajouter votre URL de webhook Slack. Veillez à afficher les fichiers masqués sur votre système si vous ne voyez pas le fichier `.env` :
 
@@ -308,7 +306,7 @@ Pour gérer les informations d’identification en toute sécurité, nous utilis
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
 ```
 
-### Étape 6 : déployer
+### Étape 5 : déployer l’action
 
 Une fois les variables d’environnement définies, déployez l’action. Assurez-vous d’être à la racine de votre projet, à savoir `slack-webhook-proxy`, lors de l’exécution de cette commande dans le terminal.
 
@@ -318,7 +316,7 @@ aio app deploy
 
 Votre action est déployée sur Adobe I/O Runtime et peut être enregistrée dans Developer Console.
 
-### Étape 7 : Enregistrement final (Adobe Developer Console)
+### Étape 6 : enregistrer l’action dans Adobe Developer Console
 
 Maintenant que votre action est déployée, enregistrez-la en tant que destination des événements Adobe.
 
@@ -328,7 +326,7 @@ Maintenant que votre action est déployée, enregistrez-la en tant que destinati
 1. Sélectionnez **[!UICONTROL Adobe Experience Platform]** comme produit.
 1. Sélectionnez **[!UICONTROL Notifications Platform]** comme type d’événement.
 1. Sélectionnez les événements spécifiques (ou tous) dont vous souhaitez être averti dans Slack et sélectionnez **[!UICONTROL Suivant]**.
-1. Sélectionnez ou [créez vos informations d’identification OAuth](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Sélectionnez ou [créez vos informations d’identification OAuth](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Configurez **[!UICONTROL Détails de l’enregistrement de l’événement]** :
    1. **[!UICONTROL Nom de l’enregistrement]** : attribuez un nom explicite à votre enregistrement.
    1. **[!UICONTROL Description de l’enregistrement]** : assurez-vous que cela est explicite afin que les autres contributeurs ou contributrices puissent savoir ce que cela fait.
@@ -338,9 +336,9 @@ Maintenant que votre action est déployée, enregistrez-la en tant que destinati
 1. Sélectionnez **[!UICONTROL Enregistrer les événements configurés]**.
 
 
-### Étape 8 : valider avec un exemple d’événement
+### Étape 7 : valider avec un exemple d’événement
 
-Vous pouvez tester l’ensemble du flux de bout en bout en cliquant sur le bouton « Envoyer un exemple d’événement » en regard de tout événement configuré.
+Vous pouvez tester l’ensemble du flux de bout en bout en cliquant sur l’icône « Envoyer un exemple d’événement » en regard de n’importe quel événement configuré.
 
 L’exemple d’événement est envoyé sur le canal que vous avez configuré lors de la création de votre application Slack et du webhook. Vous devriez voir un élément similaire à ce qui suit :
 
