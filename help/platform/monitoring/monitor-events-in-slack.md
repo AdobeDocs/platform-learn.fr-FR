@@ -20,7 +20,7 @@ ht-degree: 0%
 Découvrez comment recevoir des notifications Experience Platform dans Slack en intégrant un proxy webhook Adobe App Builder. Les ingénieurs et administrateurs de données peuvent souhaiter recevoir des notifications proactives dans Slack de Adobe Experience Platform pour surveiller l’intégrité de leurs implémentations de Platform. Ce tutoriel décrit l’architecture et les étapes d’implémentation pour connecter Adobe I/O Events à Slack à l’aide d’Adobe App Builder.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480183?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480197?captions=fre_fr&learn=on)
 
 ## Pourquoi utiliser un proxy webhook ?
 
