@@ -326,7 +326,7 @@ Maintenant que votre action est déployée, enregistrez-la en tant que destinati
 1. Sélectionnez **[!UICONTROL Adobe Experience Platform]** comme produit.
 1. Sélectionnez **[!UICONTROL Notifications Platform]** comme type d’événement.
 1. Sélectionnez les événements spécifiques (ou tous) dont vous souhaitez être averti dans Slack et sélectionnez **[!UICONTROL Suivant]**.
-1. Sélectionnez ou [créez vos informations d’identification OAuth](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
+1. Sélectionnez ou [créez vos informations d’identification OAuth](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}.
 1. Configurez **[!UICONTROL Détails de l’enregistrement de l’événement]** :
    1. **[!UICONTROL Nom de l’enregistrement]** : attribuez un nom explicite à votre enregistrement.
    1. **[!UICONTROL Description de l’enregistrement]** : assurez-vous que cela est explicite afin que les autres contributeurs ou contributrices puissent savoir ce que cela fait.
