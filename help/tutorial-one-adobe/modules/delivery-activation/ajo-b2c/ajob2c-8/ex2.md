@@ -4,9 +4,9 @@ description: Création de votre campagne orchestrée
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -578,6 +578,30 @@ Pour la **ligne d’objet**, collez ce qui suit :
 Cliquez sur **Modifier le corps de l’e-mail**.
 
 ![AJO OC](./images/ajooc126.png)
+
+Téléchargez le fichier [family_account_review.zip](./assets/family_account_review.zip) sur votre bureau.
+
+![AJO OC](./images/ajooc127.png)
+
+Cliquez sur **Importer HTML**.
+
+![AJO OC](./images/ajooc128.png)
+
+Cliquez pour sélectionner le fichier.
+
+![AJO OC](./images/ajooc129.png)
+
+Sélectionnez l’**`family_account_review.zip`** du fichier.
+
+![AJO OC](./images/ajooc130.png)
+
+Cliquez sur **Suivant**.
+
+![AJO OC](./images/ajooc131.png)
+
+Vous devriez alors voir ceci.
+
+![AJO OC](./images/ajooc132.png)
 
 ## Étapes suivantes
 
