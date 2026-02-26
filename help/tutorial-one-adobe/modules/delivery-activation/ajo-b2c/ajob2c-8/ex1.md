@@ -4,10 +4,10 @@ description: Configurer votre base de données relationnelle
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
+source-git-commit: defdae3329e1409159f59c4a0ef2aa21c7e3949b
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 9%
+source-wordcount: '2159'
+ht-degree: 8%
 
 ---
 
@@ -730,6 +730,52 @@ Cliquez sur **Enregistrer**.
 Tu devrais avoir ça.
 
 ![AJO OC](./images/ajoocptd8.png)
+
+## Canal e-mail 3.8.1.4
+
+Dans le menu de gauche, accédez à **Canaux**. Cliquez sur **Créer une configuration de canal**.
+
+![AJO OC](./images/ajoocchannel1.png)
+
+Utilisez le nom : `--aepUserLdap---citisignal-email-oc`. Sélectionnez le canal **Email**
+
+![AJO OC](./images/ajoocchannel2.png)
+
+Sélectionnez un **sous-domaine** et **groupe d’adresses IP** disponibles.
+
+![AJO OC](./images/ajoocchannel3.png)
+
+Faites défiler vers le bas et renseignez les **Paramètres d’en-tête**.
+
+- **Nom de l’expéditeur** : `info@techinsiders.org`
+- **Préfixe d’e-mail de l’expéditeur** : `info`
+- **Nom de la réponse** : `info@techinsiders.org`
+- **Répondre à un e-mail** : `info@techinsiders.org`
+- **Préfixe e-mail d’erreur** : `error`
+
+![AJO OC](./images/ajoocchannel4.png)
+
+Faites défiler vers le bas. Accédez à **Campagne orchestrée**. Cochez la case **Activé**. Sélectionnez **Dimension de ciblage**.
+
+![AJO OC](./images/ajoocchannel5.png)
+
+Pour **Profile Target Dimension**, sélectionnez `--aepUserLdap--_citisignal_recipients - email`.
+
+Sélectionnez **Dimension cible** et cliquez sur l’icône **ouvrir le dossier**.
+
+![AJO OC](./images/ajoocchannel6.png)
+
+Cliquez sur `--aepUserLdap--_citisignal_recipients`.
+
+![AJO OC](./images/ajoocchannel7.png)
+
+Sélectionnez le champ **e-mail** et cliquez sur **Sélectionner**.
+
+![AJO OC](./images/ajoocchannel8.png)
+
+Faites défiler vers le haut et cliquez sur **Envoyer**.
+
+![AJO OC](./images/ajoocchannel9.png)
 
 Dans l’exercice suivant, vous commencerez à utiliser ces données dans le cadre d’une campagne orchestrée.
 
