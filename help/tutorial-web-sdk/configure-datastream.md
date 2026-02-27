@@ -4,9 +4,9 @@ description: Découvrez comment activer un flux de données et configurer des so
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '535'
 ht-degree: 8%
 
 ---
@@ -17,9 +17,6 @@ Découvrez comment configurer un flux de données pour le SDK web d’Adobe Exp
 
 [Flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) indiquez à Adobe Experience Platform Edge Network où envoyer les données collectées par Platform Web SDK. Dans la configuration des flux de données, vous activez vos applications Experience Cloud, votre compte Experience Platform et le transfert d’événement.
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ![SDK web, flux de données et diagramme Edge Network](assets/dc-websdk-datastreams.png)
 
@@ -69,7 +66,7 @@ Sur l’écran suivant, vous pouvez ajouter des services tels que des applicatio
 
 ## Remplacer un flux de données
 
-[Remplacements de train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
+[Remplacements de train de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
 
 Le remplacement de la configuration des trains de données est un processus en deux étapes :
 
@@ -82,4 +79,4 @@ Vous êtes maintenant prêt à installer l’extension Platform Web SDK dans vot
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

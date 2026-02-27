@@ -6,7 +6,7 @@ jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1547'
 ht-degree: 3%
 
 ---
@@ -91,6 +91,7 @@ Dans cet exercice, vous allez créer un schéma XDM à l’aide des groupes de c
 1. Sélectionnez le bouton **[!UICONTROL Créer un schéma]** en haut à droite
 
    ![Créer un schéma](assets/schema-xdm-create-schema.png)
+1. Sélectionnez **[!UICONTROL Manuel]** dans l’écran suivant
 1. Sélectionnez **[!UICONTROL Événement d’expérience]** dans l’écran suivant
 1. Sélectionnez **[!UICONTROL Suivant]**
 
@@ -103,7 +104,7 @@ Dans cet exercice, vous allez créer un schéma XDM à l’aide des groupes de c
    >Une convention de nommage courante pour les schémas XDM consiste à nommer le schéma en fonction de la source des données.
 
 
-1. Sélectionner Terminer
+1. Sélectionnez **[!UICONTROL Terminer]**
 
    ![Fin d’événement d’expérience de schéma](assets/schema-name-schema.png)
 

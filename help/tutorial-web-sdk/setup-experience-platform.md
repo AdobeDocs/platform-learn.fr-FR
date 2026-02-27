@@ -3,10 +3,10 @@ title: Diffusion de données vers Adobe Experience Platform avec Platform Web SD
 description: Découvrez comment diffuser des données web vers Adobe Experience Platform avec Web SDK. Cette leçon fait partie du tutoriel Implémentation d’Adobe Experience Cloud avec le SDK web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 7%
+source-wordcount: '2321'
+ht-degree: 6%
 
 ---
 
@@ -17,9 +17,6 @@ Découvrez comment diffuser en continu des données web vers Adobe Experience 
 Experience Platform est la colonne dorsale de toutes les nouvelles applications Experience Cloud, telles qu’Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics et Adobe Journey Optimizer. Ces applications sont conçues pour utiliser Platform Web SDK comme méthode optimale de collecte de données web.
 
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ![Diagramme SDK web et Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -71,7 +68,7 @@ Configurez un jeu de données pour vos données d’événement web Luma :
 
 1. Fournissez un **[!UICONTROL Nom]** et un **[!UICONTROL Description]** facultatif pour le jeu de données. Pour cet exercice, utilisez `Luma Web Event Data`, puis sélectionnez **[!UICONTROL Terminer]**
 
-   ![Nom du jeu de données &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nom du jeu de données ](assets/experience-platform-create-dataset-schema-name.png)
 
 Un jeu de données est maintenant configuré pour commencer à collecter des données à partir de votre implémentation de Platform Web SDK.
 
@@ -79,22 +76,24 @@ Un jeu de données est maintenant configuré pour commencer à collecter des don
 
 Vous pouvez maintenant configurer votre [!UICONTROL flux de données] pour envoyer des données à [!UICONTROL Adobe Experience Platform]. Le flux de données est le lien entre la propriété de balise, la plateforme Edge Network et le jeu de données Experience Platform.
 
-1. Ouvrez l’interface [&#x200B; Collecte de données &#x200B;](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ouvrez l’interface [ Collecte de données ](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Sélectionnez **[!UICONTROL Flux de données]** dans le volet de navigation de gauche
-1. Ouvrez le flux de données que vous avez créé dans la leçon [Configurer un flux de données](configure-datastream.md) , `Luma Web SDK`
+1. Ouvrez le flux de données que vous avez créé dans la leçon [Configurer un flux de données](configure-datastream.md) , `Luma Web SDK: Development Environment`
 
    ![Sélectionnez le flux de données Luma Web SDK](assets/datastream-luma-web-sdk-development.png)
 
 1. Sélectionnez **[!UICONTROL Ajouter un service]**
    ![Ajouter un service au flux de données](assets/experience-platform-addService.png)
 1. Sélectionnez **[!UICONTROL Adobe Experience Platform]** comme **[!UICONTROL Service]**
+1. Sélectionnez **[!UICONTROL Activé]**
 1. Sélectionnez `Luma Web Event Data` comme **[!UICONTROL Jeu de données d’événement]**
+1. Activez **[!UICONTROL La Segmentation Edge]**.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
    ![Configuration du flux de données](assets/experience-platform-datastream-config.png)
 
-Lorsque vous générez du trafic sur le [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) mappé à votre propriété de balise, les données renseignent le jeu de données dans Experience Platform.
+Lorsque vous générez du trafic sur le [site de démonstration Luma](https://newluma.enablementadobe.com) mappé à votre propriété de balise, les données renseignent le jeu de données dans Experience Platform.
 
 ## Validation du jeu de données
 
@@ -108,15 +107,13 @@ Cette étape est essentielle pour s’assurer que les données ont bien atterri 
 
 Ces étapes sont plus ou moins identiques à celles de la leçon [Debugger](validate-with-debugger.md). Cependant, comme les données ne seront envoyées à Platform qu’après l’avoir activées dans le flux de données, vous devez générer d’autres données d’exemple :
 
-1. Ouvrez le site de démonstration [Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et sélectionnez l’icône de l’extension [!UICONTROL Experience Platform Debugger]
+1. Ouvrez le site de démonstration [Luma](https://newluma.enablementadobe.com) et sélectionnez l’icône de l’extension [!UICONTROL Experience Platform Debugger]
 
 1. Configurez le débogueur pour mapper la propriété de balise à *votre* environnement de développement, comme décrit dans la leçon [Valider avec le débogueur](validate-with-debugger.md)
 
    ![Votre environnement de développement Launch affiché dans Debugger](assets/experience-platform-debugger-dev.png)
 
-1. Connectez-vous au site Luma à l’aide des informations d’identification suivantes : `test@test.com`/`test`
-
-1. Revenez à la [page d’accueil de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+1. Connectez-vous au site Luma à l’aide des informations d’identification `test@test.com`/`test` (si vous recevez un message « E-mail ou mot de passe non valide », créez un compte avec ces informations d’identification)
 
 1. Dans les balises réseau Platform Web SDK affichées par le débogueur, sélectionnez la ligne « événements » pour développer les détails dans un pop-up
 
@@ -165,14 +162,14 @@ Pour confirmer que les données ont atterri dans le lac de données de Platform,
 
 >[!INFO]
 >
->  Pour plus d’informations sur le service de requête de Adobe Experience Platform, consultez [Exploration des données](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels sur Platform.
+>  Pour plus d’informations sur le service de requête de Adobe Experience Platform, consultez [Exploration des données](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) dans la section Tutoriels sur Platform.
 
 
 ## Activez le jeu de données et le schéma pour le profil client en temps réel
 
 Pour les clients Real-Time Customer Data Platform et Journey Optimizer, l’étape suivante consiste à activer le jeu de données et le schéma pour le profil client en temps réel. La diffusion de données en continu à partir de Web SDK est l’une des nombreuses sources de données qui entrent dans Platform. Vous souhaitez associer vos données web à d’autres sources de données pour créer des profils client à 360 degrés. Pour en savoir plus sur le profil client en temps réel, regardez cette courte vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/31639?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -236,7 +233,7 @@ Vous devez d’abord générer plus de données d’exemple. Répétez les étap
 1. Dans l’interface [Experience Platform](https://experience.adobe.com/platform/), sélectionnez **[!UICONTROL Client]** > **[!UICONTROL Profils]** dans le volet de navigation de gauche
 
 1. Comme espace de noms d’identité **[!UICONTROL Identity]** utilisez `lumaCRMId`
-1. Copiez et collez la valeur de la `lumaCRMId` transmise dans l’appel que vous avez inspecté dans le débogueur Experience Platform, dans ce cas `b642b4217b34b1e8d3bd915fc65c4452`.
+1. Copiez et collez la valeur de la `lumaCRMId` transmise dans l’appel que vous avez inspecté dans le débogueur Experience Platform, dans ce cas `f660ab912ec121d1b1e928a0bb4bc61b`.
 
    ![Profile](assets/experience-platform-validate-dataset-profile.png)
 
@@ -270,15 +267,15 @@ Puisque vous avez déjà fait des exercices similaires, les instructions seront 
 Créez le schéma de fidélité :
 
 1. Créer un schéma
-1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL &#x200B; classe de base]
+1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL  classe de base]
 1. Nommez le schéma `Luma Loyalty Schema`
-1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails de fidélité &#x200B;]
-1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails démographiques &#x200B;]
-1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal &#x200B;] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
+1. Ajoutez le groupe de champs [!UICONTROL  Détails de fidélité ]
+1. Ajoutez le groupe de champs [!UICONTROL  Détails démographiques ]
+1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal ] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
 1. Activez le schéma pour [!UICONTROL Profil]. Si vous ne trouvez pas le bouton Profile , essayez de cliquer sur le nom du schéma en haut à gauche.
 1. Enregistrer le schéma
 
-   ![&#x200B; Schéma de fidélité &#x200B;](assets/web-channel-loyalty-schema.png)
+   ![ Schéma de fidélité ](assets/web-channel-loyalty-schema.png)
 
 Pour créer le jeu de données et ingérer les données d’exemple :
 
@@ -289,7 +286,7 @@ Pour créer le jeu de données et ingérer les données d’exemple :
 1. Faites glisser le fichier dans votre jeu de données
 1. Confirmer que les données ont bien été ingérées
 
-   ![&#x200B; Schéma de fidélité &#x200B;](assets/web-channel-loyalty-dataset.png)
+   ![ Schéma de fidélité ](assets/web-channel-loyalty-dataset.png)
 
 
 ### Définition d’une politique de fusion Active-on-Edge
@@ -345,4 +342,4 @@ Comme il s’agit d’une audience très simple, nous pouvons utiliser la métho
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

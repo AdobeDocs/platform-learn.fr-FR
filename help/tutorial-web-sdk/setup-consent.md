@@ -4,9 +4,9 @@ description: Découvrez comment configurer les paramètres de confidentialité d
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1605'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 1%
 Découvrez comment configurer les paramètres de confidentialité de l’extension de balise Adobe Experience Platform Web SDK. Définissez le consentement en fonction de l’interaction du visiteur avec une bannière d’une plateforme de gestion du consentement (CMP).
 
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 >[!NOTE]
 > 
@@ -53,14 +50,14 @@ Avant de passer aux configurations des balises, découvrez la plateforme de gest
 1. Accédez à **Privacy Manager** et créez une instance en fonction des instructions.
 1. Utilisez le **Code d’intégration** pour injecter Klaro dans la propriété de balise (les instructions se trouvent dans l’exercice suivant).
 1. Ignorez la section **Numérisation**, car elle détecte la propriété de balise codée en dur sur le site web de démonstration de Luma, et non pas celle que vous avez créée pour ce tutoriel.
-1. Ajoutez un service appelé `aep web sdk` et activez/désactivez l’option **État par défaut du service**. Lorsque cette option est activée, la valeur de consentement par défaut est `true`, sinon elle est `false`. Cette configuration est pratique lorsque vous souhaitez décider de l’état de consentement par défaut (avant le consentement du visiteur) de votre application web. Par exemple :
+1. Ajoutez un service appelé `aep-web-sdk` et activez/désactivez l’option **État par défaut du service**. Lorsque cette option est activée, la valeur de consentement par défaut est `true`, sinon elle est `false`. Cette configuration est pratique lorsque vous souhaitez décider de l’état de consentement par défaut (avant le consentement du visiteur) de votre application web. Par exemple :
    * Pour le CCPA, le consentement par défaut est généralement défini sur `true`. Tout au long de ce tutoriel, vous allez faire référence à ce scénario en tant qu **accord préalable implicite**
    * Pour le RGPD, le consentement par défaut est généralement défini sur `false`. Tout au long de ce tutoriel, vous allez faire référence à ce scénario sous le nom **Désinscription implicite**.
-
+1. Activation de la configuration
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
 -->
-    >[ !REMARQUE]
+    >[!REMARQUE]
     >
     >En règle générale, les étapes mentionnées ci-dessus sont effectuées et prises en charge par l’équipe ou la personne responsable de la gestion du CMP, comme OneTrust ou TrustArc.
 
@@ -111,7 +108,7 @@ L’opt-in implicite signifie que l’entreprise n’a pas besoin d’obtenir le
 
 Vous allez maintenant configurer et implémenter le consentement pour ce scénario :
 
-1. Dans la section **[!UICONTROL Confidentialité]** de l’extension de balise Experience Platform Web SDK, assurez-vous que le paramètre **[!UICONTROL Consentement par défaut]** est défini sur **[!UICONTROL In]** :
+1. Dans la section **[!UICONTROL Consentement]** de l’extension de balise Experience Platform Web SDK, assurez-vous que le paramètre **[!UICONTROL Consentement par défaut]** est défini sur **[!UICONTROL In]** :
 
 
    ![Configuration de la confidentialité de l’extension AEP de consentement](assets/consent-web-sdk-privacy-in.png)
@@ -127,7 +124,7 @@ Vous allez maintenant configurer et implémenter le consentement pour ce scénar
 2. Enregistrez et créez cette modification dans votre bibliothèque de balises
 3. Chargez votre bibliothèque de balises sur le site de démonstration de Luma.
 4. Activez le débogage des balises sur le site Luma et rechargez la page. Dans la Developer Console de votre navigateur, defaultConsent doit être égal à **[!UICONTROL In]**
-5. Avec cette configuration, l’extension Experience Platform Web SDK continue à effectuer des requêtes réseau, sauf si un visiteur décide de refuser les cookies et de se désinscrire :
+5. Avec cette configuration, l’extension Experience Platform Web SDK effectue des requêtes réseau à Platform Edge Network jusqu’à ce qu’un visiteur décide de refuser les cookies et de se désinscrire :
 
    ![Accord Préalable Implicite](assets/consent-Implied-optin-default.png)
 
@@ -161,13 +158,12 @@ Si un visiteur décide de se désinscrire (rejette les cookies de suivi), vous d
 
    ![L’utilisateur de la condition de règle clique sur « Je refuse »](assets/consent-optOut-clickEvent.png)
 
-1. À présent, utilisez le SDK Web Experience Platform, [!UICONTROL Définir le consentement] [!UICONTROL type d’action] pour définir le consentement comme « out » :
+1. En tant que **[!UICONTROL Action]**, utilisez l’extension Experience Platform Web SDK, [!UICONTROL Définir le consentement] [!UICONTROL type d’action] pour définir le consentement comme « out » :
 
    ![Action d’exclusion de la règle de consentement](assets/consent-rule-optout-action.png)
 
-1. Sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]** :
+1. Enregistrer et recréer votre bibliothèque
 
-   ![Enregistrer et créer votre bibliothèque](assets/consent-rule-optout-saveAndBuild.png)
 
 Désormais, lorsqu’un visiteur se désinscrit, la règle configurée de la manière ci-dessus se déclenche et définit le consentement de SDK Web comme **[!UICONTROL Désinscrit]**.
 
@@ -180,13 +176,14 @@ L’exclusion implicite signifie que les visiteurs doivent être traités comme 
 
 Voici comment paramétrer la configuration d&#39;un scénario d&#39;opt-out implicite :
 
-1. Dans Klaro, désactivez le **État par défaut du service** dans votre service `aep web sdk` et enregistrez la configuration mise à jour.
+1. Dans Klaro, désactivez le **État par défaut du service** dans votre service `aep-web-sdk` et enregistrez la configuration mise à jour.
 
-1. Dans la section **[!UICONTROL Confidentialité]** de l’extension Experience Platform Web SDK, définissez le consentement par défaut sur **[!UICONTROL Expiré]** ou **[!UICONTROL En attente]** selon les besoins.
-
-   ![Configuration de la confidentialité de l’extension AEP de consentement](assets/consent-implied-opt-out.png)
+1. Dans la section **[!UICONTROL Consentement]** de l’extension Experience Platform Web SDK, définissez le consentement par défaut sur **[!UICONTROL Expiré]** ou **[!UICONTROL En attente]** selon les besoins.
 
 1. **Enregistrez** la configuration mise à jour dans votre bibliothèque de balises et recréez-la.
+
+   ![Configuration du consentement de l’extension AEP](assets/consent-implied-opt-out.png)
+
 
    Avec cette configuration, Experience Platform Web SDK s’assure qu’aucune requête ne se déclenche à moins que l’autorisation de consentement ne soit modifiée en **[!UICONTROL In]**. Cela peut se produire si un visiteur accepte manuellement les cookies en optant pour cette option.
 
@@ -211,10 +208,6 @@ Si un visiteur décide de s’inscrire (accepte les cookies de suivi), vous deve
 
    Une chose à noter ici est que cette action [!UICONTROL Définir le consentement] sera la première demande qui sera envoyée et qui établira l&#39;identité. Pour cette raison, il peut être important de synchroniser les identités sur la première requête elle-même. Le mappage d’identités peut être ajouté à l’action [!UICONTROL Définir le consentement] en transmettant un élément de données de type identité.
 
-1. Sélectionnez **[!UICONTROL Enregistrer dans la bibliothèque et créer]** :
-
-   ![Désinscription de la règle de consentement](assets/consent-rule-optin-saveAndBuild.png)
-
 1. **[!UICONTROL Enregistrez]** la règle dans votre bibliothèque et recréez-la.
 
 Une fois cette règle en place, la collecte des événements doit commencer lorsqu’un visiteur opt-in.
@@ -222,11 +215,16 @@ Une fois cette règle en place, la collecte des événements doit commencer lors
 ![Option de post-consentement du visiteur](assets/consent-post-user-optin.png)
 
 
-Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en charge des préférences de consentement des clients](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/consent/supporting-consent).
+Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en charge des préférences de consentement des clients](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+
+>[!TIP]
+>
+> Après avoir terminé cette leçon, nous vous recommandons de désactiver les trois nouvelles règles.
 
 
-Pour plus d’informations sur l’action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+
+Pour plus d’informations sur l’action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

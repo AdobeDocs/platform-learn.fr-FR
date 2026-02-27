@@ -4,10 +4,10 @@ description: Découvrez comment installer et configurer l’extension de balise 
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 10%
+source-wordcount: '602'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,6 @@ ht-degree: 10%
 Découvrez comment installer et configurer l’extension de balise Adobe Experience Platform Web SDK. Le moyen le plus simple de mettre en œuvre Web SDK consiste à utiliser le gestionnaire de balises d’Adobe, les balises (anciennement appelé Launch). L’extension de balise SDK Web Platform est la _seule extension de balise_ requise pour envoyer des données à _toutes les applications Adobe Experience Cloud_, y compris [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform et [Journey Optimizer](setup-web-channel.md) !
 
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ## Objectifs d’apprentissage
 
@@ -44,7 +41,7 @@ Créez une propriété de balise pour le tutoriel :
 1. Sélectionnez **[!UICONTROL Balises]** dans le volet de navigation de gauche
 1. Sélectionnez le bouton **[!UICONTROL Nouvelle propriété]**
    ![Ajouter une nouvelle propriété](assets/websdk-property-addNewProperty.png)
-1. Dans le champ **[!UICONTROL Nom]**, saisissez `Web SDK Course` (ajoutez votre nom à la fin, si plusieurs personnes de votre entreprise suivent ce tutoriel)
+1. Dans le champ **[!UICONTROL Nom]**, saisissez `Luma Web SDK Tutorial` (ajoutez votre nom à la fin, si plusieurs personnes de votre entreprise suivent ce tutoriel)
 1. Pour le **[!UICONTROL Domaines]**, saisissez `enablementadobe.com` (expliqué plus loin)
 1. Sélectionnez **[!UICONTROL Enregistrer]**
    ![Détails de la propriété](assets/websdk-property-propertyDetails.png)
@@ -66,17 +63,14 @@ Maintenant que votre schéma XDM, votre flux de données et votre propriété de
 Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieurement, si nécessaire. La seule chose que vous devez faire maintenant est de lier l’extension à votre flux de données :
 
 1. Sous **[!UICONTROL Flux de données]**, sélectionnez la méthode d’entrée **[!UICONTROL Choisir parmi]**
-1. Sélectionnez le sandbox dans lequel vous avez créé le schéma, l’espace de noms d’identité et le flux de données
-1. Sélectionnez le flux de données que vous avez créé précédemment, `Luma Web SDK`
+1. Configurez l’**[!UICONTROL Environnement de production]**. (Les autres environnements de balises de la propriété hériteront des paramètres de production) :
+   1. Sélectionnez le sandbox dans lequel vous avez créé le schéma, l’espace de noms d’identité et le flux de données
+   1. Sélectionnez le flux de données que vous avez créé précédemment, `Luma Web SDK: Development Environment`
 1. Sélectionnez **[!UICONTROL Enregistrer]**
-
-   >[!NOTE]
-   >
-   > Si vous ne trouvez pas votre flux de données, suivez la leçon [Configurer un flux de données](configure-datastream.md) et suivez les étapes pour en créer un
 
    ![Sélection du flux de données](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Pour plus d’informations sur chaque section de l’extension, consultez [Configuration de l’extension Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Pour plus d’informations sur chaque section de l’extension, consultez [Configuration de l’extension Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -90,4 +84,4 @@ Maintenant que vous avez installé Platform Web SDK et que vous l’avez associ�
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

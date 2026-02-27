@@ -4,9 +4,9 @@ description: Découvrez comment mettre en œuvre Adobe Target à l’aide de Pla
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4391'
 ht-degree: 1%
 
 ---
@@ -15,12 +15,9 @@ ht-degree: 1%
 
 Découvrez comment implémenter Adobe Target à l’aide du SDK web d’Adobe Experience Platform. Découvrez comment diffuser des expériences et comment transmettre des paramètres supplémentaires à Target.
 
-[Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/target-home) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
+[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) est l’application Adobe Experience Cloud qui fournit tout ce dont vous avez besoin pour personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications et d’autres canaux numériques.
 
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ![Diagramme SDK web et Adobe Target](assets/dc-websdk-at.png)
 
@@ -47,12 +44,12 @@ Découvrez comment implémenter Adobe Target à l’aide du SDK web d’Adobe�
 Pour suivre les leçons de cette section, vous devez d’abord :
 
 * Suivez toutes les leçons relatives à la configuration initiale de Platform Web SDK, y compris la configuration des éléments de données et des règles.
-* Vérifiez que vous disposez d’un [rôle d’éditeur ou d’approbateur](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) dans Adobe Target.
-* Installez l’extension d’assistance [Visual Experience Composer](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) si vous utilisez le navigateur Chrome Google.
+* Vérifiez que vous disposez d’un [rôle d’éditeur ou d’approbateur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) dans Adobe Target.
+* Installez l’extension d’assistance [Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) si vous utilisez le navigateur Chrome Google.
 * Savoir comment configurer des activités dans Target. Si vous avez besoin d’un rappel, les tutoriels et guides suivants sont utiles pour cette leçon :
-   * [Utilisation de l’extension d’assistance du compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [Utilisation du Compositeur d’expérience visuelle](https://experienceleague.adobe.com/fr/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [Utilisation du compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/fr/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [Utilisation de l’extension d’assistance du compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [Utilisation du Compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [Utilisation du compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
    * [Créer des activités de ciblage d’expérience](https://experienceleague.adobe.com/fr/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## Ajouter la gestion du scintillement
@@ -61,7 +58,7 @@ Avant de commencer, déterminez si une solution supplémentaire de gestion du sc
 
 >[!NOTE]
 >
->Ce tutoriel utilise le site web [Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, qui dispose d’une implémentation asynchrone des balises et de la réduction du scintillement en place. Cette section est destinée à vous aider à comprendre comment fonctionne la réduction du scintillement avec le SDK web de Platform.
+>Ce tutoriel utilise le site web [Luma](https://newluma.enablementadobe.com){target=_blank}, qui dispose d’une implémentation asynchrone des balises et de la réduction du scintillement en place. Cette section est destinée à vous aider à comprendre comment fonctionne la réduction du scintillement avec le SDK web de Platform.
 
 
 ### Implémentation asynchrone
@@ -113,7 +110,7 @@ Le style de pré-masquage pour les implémentations synchrones peut être config
 1. Sélectionnez le bouton **[!UICONTROL Configurer]** pour l’extension SDK Web Platform
 1. Sélectionnez le bouton **[!UICONTROL Modifier le style de pré-masquage]**
 
-   ![Fragment de code de masquage préalable Target pour les implémentations asynchrones](assets/target-flicker-sync.png)
+   ![Fragment de code de masquage préalable Target pour les implémentations synchrones](assets/target-flicker-sync.png)
 
 1. Modifiez le CSS pour inclure les sélecteurs et les méthodes de masquage que vous souhaitez utiliser, par exemple : `body { opacity: 0 !important }` si vous souhaitez pré-masquer l’intégralité du corps de la page.
 1. Enregistrer vos modifications et créer une bibliothèque
@@ -122,7 +119,7 @@ Le style de pré-masquage pour les implémentations synchrones peut être config
 >
 >Le paramètre de style de masquage préalable est destiné uniquement aux implémentations synchrones. Ce style doit être vide ou commenté si vous utilisez une implémentation asynchrone des balises.
 
-Pour en savoir plus sur la manière dont Platform Web SDK peut gérer le scintillement, vous pouvez vous reporter à la section du guide : [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/personalization/manage-flicker).
+Pour en savoir plus sur la manière dont Platform Web SDK peut gérer le scintillement, vous pouvez vous reporter à la section du guide : [gestion du scintillement pour les expériences personnalisées](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker).
 
 
 ## Configurer le flux de données
@@ -147,7 +144,7 @@ Pour configurer Target dans le flux de données :
 
 ### Jeton de propriété
 
-Les clients Target Premium ont la possibilité de gérer les autorisations utilisateur avec les propriétés. Les propriétés de Target vous permettent d’établir des limites autour desquelles les utilisateurs et utilisatrices peuvent exécuter des activités Target. Reportez-vous à la section [Autorisations d’Enterprise](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview) de la documentation de Target pour plus d’informations.
+Les clients Target Premium ont la possibilité de gérer les autorisations utilisateur avec les propriétés. Les propriétés de Target vous permettent d’établir des limites autour desquelles les utilisateurs et utilisatrices peuvent exécuter des activités Target. Reportez-vous à la section [Autorisations d’Enterprise](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview) de la documentation de Target pour plus d’informations.
 
 Pour configurer ou rechercher des jetons de propriété, accédez à **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Propriétés]**. L’icône `</>` affiche le code d’implémentation. La valeur `at_property` est le jeton de propriété que vous utiliseriez dans votre flux de données.
 
@@ -161,9 +158,9 @@ Un seul jeton de propriété peut être spécifié par flux de données, mais le
 
 ### Identifiant de l’environnement cible
 
-[Environnements](https://experienceleague.adobe.com/fr/docs/target/using/administer/environments) dans Target vous aide à gérer la mise en œuvre à toutes les étapes de développement. Ce paramètre facultatif spécifie l’environnement Target que vous allez utiliser avec chaque flux de données.
+[Environnements](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) dans Target vous aide à gérer la mise en œuvre à toutes les étapes de développement. Ce paramètre facultatif spécifie l’environnement Target que vous allez utiliser avec chaque flux de données.
 
-Adobe recommande de définir l’identifiant d’environnement Target différemment pour chacun de vos flux de données de développement, d’évaluation et de production afin de simplifier le processus. Vous pouvez également organiser vos environnements dans l’interface Target à l’aide de la fonctionnalité [hôtes](https://experienceleague.adobe.com/fr/docs/target/using/administer/hosts).
+Adobe recommande de définir l’identifiant d’environnement Target différemment pour chacun de vos flux de données de développement, d’évaluation et de production afin de simplifier le processus. Vous pouvez également organiser vos environnements dans l’interface Target à l’aide de la fonctionnalité [hôtes](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts).
 
 Pour configurer ou rechercher des identifiants d’environnement, accédez à **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Environnements]**.
 
@@ -175,7 +172,7 @@ Pour configurer ou rechercher des identifiants d’environnement, accédez à **
 
 ### Espace de noms de l’identifiant tiers cible
 
-Ce paramètre facultatif vous permet de spécifier le symbole d’identité à utiliser pour l’identifiant tiers cible. Target ne prend en charge la synchronisation des profils que sur un seul espace de noms ou symbole d’identité. Pour plus d’informations, reportez-vous à la section [Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/fr/docs/target/using/audiences/visitor-profiles/3rd-party-id) du guide de Target.
+Ce paramètre facultatif vous permet de spécifier le symbole d’identité à utiliser pour l’identifiant tiers cible. Target ne prend en charge la synchronisation des profils que sur un seul espace de noms ou symbole d’identité. Pour plus d’informations, reportez-vous à la section [Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) du guide de Target.
 
 Les symboles d’identité se trouvent dans la liste des identités sous **Collecte de données** > **[!UICONTROL Client]** > **[!UICONTROL Identités]**.
 
@@ -201,7 +198,7 @@ Les décisions de personnalisation visuelle se rapportent aux expériences cré�
 Les décisions de personnalisation visuelle de Target sont diffusées par Platform Web SDK, si Target est activé dans le flux de données. Toutefois, _ils ne sont pas rendus automatiquement_. Vous devez mettre à jour l’action [!UICONTROL Envoyer l’événement] pour activer le rendu automatique.
 
 1. Dans l’interface [Collecte de données](https://experience.adobe.com/#/data-collection){target="blank"}, ouvrez la propriété de balise que vous utilisez pour ce tutoriel
-1. Ouvrir la règle de `all pages - library loaded - send event - 50`
+1. Ouvrir la règle de `all pages - adobeDataLayer push - send event - 50`
 1. Sélectionner l’action `Adobe Experience Platform Web SDK - Send event`
 1. Activez **[!UICONTROL Rendre les décisions de personnalisation visuelle]** avec la case à cocher
 
@@ -221,7 +218,7 @@ Le paramètre Rendre les décisions de personnalisation visuelle fait que Platfo
 >
 >En règle générale, le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] ne doit être activé que pour une seule action Envoyer l’événement par chargement de page complet. Si ce paramètre est activé pour plusieurs actions d’événement d’envoi, les requêtes de rendu suivantes sont ignorées.
 
-Si vous préférez effectuer vous-même le rendu ou une action sur ces décisions à l’aide de code personnalisé, vous pouvez laisser le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] désactivé. Platform Web SDK est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Vous pouvez consulter le guide pour plus d’informations sur le rendu manuel [&#x200B; contenu personnalisé &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/personalization/rendering-personalization-content).
+Si vous préférez effectuer vous-même le rendu ou une action sur ces décisions à l’aide de code personnalisé, vous pouvez laisser le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] désactivé. Platform Web SDK est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Vous pouvez consulter le guide pour plus d’informations sur le rendu manuel [ contenu personnalisé ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Configuration d’une activité Target avec le compositeur d’expérience visuelle
@@ -230,10 +227,10 @@ Maintenant que la partie implémentation de base est terminée, créez une activ
 
 >[!NOTE]
 >
->Si vous utilisez Google Chrome comme navigateur, l’extension d’assistance [Compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) est nécessaire pour charger correctement le site en vue de le modifier dans le VEC.
+>Si vous utilisez Google Chrome comme navigateur, l’extension d’assistance [Compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) est nécessaire pour charger correctement le site en vue de le modifier dans le VEC.
 
 1. Accéder à l’interface d’Adobe Target
-1. Créez une activité de ciblage d’expérience (XT) à l’aide de la page d’accueil Luma pour l’URL de l’activité
+1. Créez une activité de ciblage d’expérience (XT) à l’aide de la page d’accueil Luma pour l’URL de l’activité et votre espace de travail Target, le cas échéant :
 
    ![Créer une activité XT](assets/target-xt-create-activity.png)
 
@@ -241,7 +238,7 @@ Maintenant que la partie implémentation de base est terminée, créez une activ
 
    ![Modification du VEC cible](assets/target-xt-vec-modification.png)
 
-1. Mettez à jour le nom de l’événement, puis sélectionnez **[!UICONTROL Suivant]**.
+1. Mettez à jour le nom de l’activité, puis sélectionnez **[!UICONTROL Suivant]**.
 
    ![Événement de mise à jour du compositeur d’expérience visuelle Target](assets/target-xt-vec-updateevent.png)
 
@@ -254,9 +251,9 @@ Maintenant que la partie implémentation de base est terminée, créez une activ
    >Si vous n’utilisez pas Adobe Analytics, sélectionnez Target comme source de création de rapports et choisissez plutôt une autre mesure comme **Engagement > Pages vues**. Une mesure d’objectif est requise pour enregistrer et prévisualiser l’activité.
 
 1. Enregistrement de l’activité
-1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier l’URL de prévisualisation [QA](https://experienceleague.adobe.com/fr/docs/target/using/activities/activity-qa/activity-qa).
+1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier l’URL de prévisualisation [QA](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Chargez la page d’accueil Luma et vos modifications devraient s’appliquer
-1. Au bout de quelques heures, vous devriez être en mesure d’afficher les données et les conversions de l’activité Target dans Adobe Analytics. Pour plus d’informations sur les rapports [Analytics for Target (A4T)](https://experienceleague.adobe.com/fr/docs/target/using/integrate/a4t/reporting), consultez le Guide de Target .
+1. Au bout de quelques heures, vous devriez être en mesure d’afficher les données et les conversions de l’activité Target dans Adobe Analytics. Pour plus d’informations sur les rapports [Analytics for Target (A4T)](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting), consultez le Guide de Target .
 
 
 
@@ -266,10 +263,10 @@ Si vous configurez une activité, le contenu doit s’afficher sur la page. Cepe
 
 >[!CAUTION]
 >
->Si vous utilisez Google Chrome et que l’extension d’assistance [Compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) est installée, assurez-vous que le paramètre **Injecter des bibliothèques cibles** est désactivé. L’activation de ce paramètre entraînera des requêtes Target supplémentaires.
+>Si vous utilisez Google Chrome et que l’extension d’assistance [Compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) est installée, assurez-vous que le paramètre **Injecter des bibliothèques cibles** est désactivé. L’activation de ce paramètre entraînera des requêtes Target supplémentaires.
 
 1. Ouvrez l’extension de navigateur Adobe Experience Platform Debugger.
-1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Accédez au [site de démonstration Luma](https://newluma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Recharger la page
 1. Sélectionnez l’outil **[!UICONTROL Network]** dans le débogueur
 1. Filtrer par **[!UICONTROL Experience Platform Web SDK]**
@@ -294,7 +291,7 @@ Les portées de décision personnalisées (anciennement appelées « mbox ») pe
 
 Modifiez la règle de chargement de page pour ajouter une portée de décision personnalisée :
 
-1. Ouvrir la règle de `all pages - library loaded - send event - 50`
+1. Ouvrir la règle de `all pages - adobeDataLayer push - send event - 50`
 1. Sélectionner l’action `Adobe Experience Platform Web SDK - Send Event`
 1. Ajoutez une ou plusieurs portées que vous souhaitez utiliser. Pour cet exemple, utilisez `homepage-hero`.
 
@@ -312,7 +309,7 @@ Maintenant que vous avez configuré Platform Web SDK pour demander du contenu po
 
 1. Créez une règle appelée `homepage - send event complete - render homepage-hero`.
 1. Ajoutez un événement à la règle. Utilisez l’extension **Adobe Experience Platform Web SDK** et le type d’événement **[!UICONTROL Envoi de l’événement terminé]**.
-1. Ajoutez une condition pour restreindre la règle à la page d’accueil Luma (chemin sans chaîne de requête égale à `/content/luma/us/en.html`).
+1. Ajoutez une condition pour restreindre la règle à la page d’accueil Luma (le chemin sans chaîne de requête est égal à `/` ou `/index.html`).
 1. Ajoutez une action à la règle. Utilisez l’extension **Adobe Experience Platform Web SDK** et le type d’action **Appliquer les propositions**.
 
    ![Règle de rendu des pages d’accueil principales](assets/target-rule-render-hero.png)
@@ -352,7 +349,7 @@ Maintenant que vous avez configuré Platform Web SDK pour demander du contenu po
    if (heroProposition !== undefined){
       alloy("sendEvent", {
          xdm: {
-            eventType: "display",
+            eventType: "decisioning.propositionDisplay",
             _experience: {
                decisioning: {
                   propositions: [{
@@ -383,7 +380,6 @@ Maintenant que vous avez configuré Platform Web SDK pour demander du contenu po
 Maintenant que vous disposez d’une règle permettant de générer manuellement une portée de décision personnalisée, vous pouvez créer une autre activité de ciblage d’expérience (XT) dans Target. Utilisez cette fois le compositeur d’expérience d’après les formulaires.
 
 1. Ouvrez [Adobe Target](https://experience.adobe.com/target)
-1. Désactiver l’activité utilisée pour la leçon précédente
 1. Créez une activité de ciblage d’expérience (XT) à l’aide de l’option Compositeur d’expérience d’après les formulaires .
 
    ![Créer une activité XT](assets/target-xt-create-form-activity.png)
@@ -392,25 +388,16 @@ Maintenant que vous disposez d’une règle permettant de générer manuellement
 
    ![Créer une activité XT](assets/target-xt-form-activity.png)
 
-1. Collez le code suivant dans la zone de contenu. Ce code est une bannière principale de base avec une image d’arrière-plan différente :
+1. Collez le code suivant dans la zone de contenu pour apporter une modification au call-to-action du héros :
 
    ```html
-   <div class="we-HeroImage jumbotron" style="background-image: url('/content/luma/us/en/women/_jcr_content/root/hero_image.coreimg.jpeg');">
-      <div class="container cq-dd-image">
-         <div class="we-HeroImage-wrapper">
-            <p class="h3">New Luma Yoga Collection</p>
-            <strong class="we-HeroImage-title h1">Be active with style&nbsp;</strong>
-            <p>
-               <a class="btn btn-primary btn-action" href="/content/luma/us/en/products.html" role="button">Shop Now</a>
-            </p>
-         </div>
-      </div>
-   </div>
+   New collections
    ```
 
-1. À l’étape [!UICONTROL &#x200B; Objectifs et paramètres &#x200B;], choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
+1. Nommer l’activité
+1. À l’étape [!UICONTROL  Objectifs et paramètres ], choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
 1. Enregistrement de l’activité
-1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier l’URL de prévisualisation [QA](https://experienceleague.adobe.com/fr/docs/target/using/activities/activity-qa/activity-qa).
+1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier l’URL de prévisualisation [QA](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Chargez la page d’accueil Luma et vos modifications devraient s’appliquer
 
 >[!NOTE]
@@ -422,7 +409,7 @@ Maintenant que vous disposez d’une règle permettant de générer manuellement
 Si vous avez activé votre activité, votre contenu doit s’afficher sur la page. Cependant, même si aucune activité n’est active, vous pouvez également consulter l’appel réseau [!UICONTROL Envoyer l’événement] pour confirmer que Target demande du contenu pour vos portées personnalisées.
 
 1. Ouvrez l’extension de navigateur Adobe Experience Platform debugger.
-1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Accédez au [site de démonstration Luma](https://newluma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Recharger la page
 1. Sélectionnez l’outil **[!UICONTROL Network]** dans Debugger
 1. Filtrer par **[!UICONTROL Adobe Experience Platform Web SDK]**
@@ -445,7 +432,7 @@ Dans cette section, vous allez transmettre des données spécifiques à Target e
 
 ### Paramètres de page (mbox) et XDM
 
-Tous les champs XDM sont automatiquement transmis à Target en tant que paramètres de [page](https://experienceleague.adobe.com/fr/docs/target-dev/developer/implementation/methods/page-parameters) ou mbox.
+Tous les champs XDM sont automatiquement transmis à Target en tant que paramètres de [page](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) ou mbox.
 
 Certains de ces champs XDM sont mappés à des objets spéciaux dans le serveur principal de Target. Par exemple, `web.webPageDetails.URL` sera automatiquement disponible pour créer des conditions de ciblage basées sur des URL ou comme objet de `page.url` lors de la création de scripts de profil.
 
@@ -453,87 +440,85 @@ Vous pouvez également ajouter des paramètres de page à l’aide de l’objet 
 
 ### Paramètres spéciaux et objet de données
 
-Certains points de données pouvant être utiles à Target ne sont pas mappés à partir de l’objet XDM. Ces paramètres spécifiques à Target sont les suivants :
+Certains paramètres utiles à Target ne sont pas mappés à partir de l’objet XDM. Ces paramètres spécifiques à Target sont les suivants :
 
-* [Attributs de profil](https://experienceleague.adobe.com/fr/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [Attributs d’entité Recommendations](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/entities/entity-attributes)
-* [Paramètres réservés Recommendations](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* Valeurs de catégorie pour [affinité catégorielle](https://experienceleague.adobe.com/fr/docs/target/using/audiences/visitor-profiles/category-affinity)
+* [Attributs de profil](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [Attributs d’entité Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
+* [Paramètres réservés Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* Valeurs de catégorie pour [affinité catégorielle](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
 
 Ces paramètres doivent être envoyés dans l’objet `data` et non dans l’objet `xdm`. En outre, les paramètres de page (ou mbox) peuvent également être inclus dans l’objet `data`.
 
 Pour renseigner l’objet de données, créez l’élément de données suivant, en réutilisant les éléments de données créés dans la leçon [Création d’éléments de données](create-data-elements.md) :
 
-* **`data.content`** à l’aide du code personnalisé suivant :
-
-  ```javascript
-  var data = {
-     __adobe: {
-        target: {
-           "entity.id": _satellite.getVar("product.productInfo.sku"),
-           "entity.name": _satellite.getVar("product.productInfo.title"),
-           "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("product.category")
-        }
-     }
-  }
-  return data;
-  ```
-
-
+1. Ouvrez la règle de balise `product detail pages - adobeDataLayer push - set product details variables - 20`
+1. Ajoutez une nouvelle **[!UICONTROL Action]**
+1. Sélectionner l’extension **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Sélectionnez **[!UICONTROL Type d’action]** comme **[!UICONTROL Variable de mise à jour]**
+1. Sélectionnez `Data Variable` comme **[!UICONTROL Élément de données]**
+1. Sélectionnez l’objet **[!UICONTROL cible]**
+1. Définir `entity.id` comme élément de données `Ecommerce Product Id`
+1. Définir `entity.name` comme élément de données `Ecommerce Product Name`
+1. Définir `user.categoryId` comme élément de données `Ecommerce Product Category`
+1. Sélectionnez **[!UICONTROL Conserver les modifications]**
+1. Sélectionnez **[!UICONTROL Enregistrer]**
 
 ### Mettre à jour la règle de chargement de page
 
 La transmission de données supplémentaires pour Target en dehors de l’objet XDM nécessite la mise à jour des règles applicables. Pour cet exemple, la seule modification que vous devez apporter est d’inclure le nouvel élément de données **data.content** dans la règle de chargement de page générique et la règle d’affichage de page de produit.
 
-1. Ouvrir la règle de `all pages - library loaded - send event - 50`
+1. Ouvrir la règle de `all pages - adobeDataLayer push - send event - 50`
 1. Sélectionner l’action `Adobe Experience Platform Web SDK - Send event`
-1. Ajouter l’élément de données `data.content` au champ Données
+1. Ajoutez l’élément de données `Data Variable` au champ de données, s’il n’est pas déjà ajouté
 
    ![Ajouter des données cible à la règle](assets/target-rule-data.png)
 
 1. Enregistrer vos modifications et les créer dans votre bibliothèque
 
->[!NOTE]
->
->L’exemple ci-dessus utilise un objet `data` qui n’est pas complètement renseigné sur tous les types de page. Les balises gèrent cette situation de manière appropriée et omettent les clés dont la valeur est indéfinie. Par exemple, `entity.id` et `entity.name` ne seront pas transmis sur d’autres pages que les détails du produit.
 
 
 ## Division des requêtes Personalization et Analytics
 
-La couche de données sur le site Luma est entièrement définie avant le code d’intégration des balises. Cela nous permet d’utiliser un seul appel pour récupérer du contenu personnalisé (à partir d’Adobe Target, par exemple) et envoyer des données d’analyse (à Adobe Analytics, par exemple).
+Sur le site Luma, la couche de données se charge rapidement et est entièrement définie avant le déclenchement de l’appel d’événement d’envoi. Cela nous permet d’utiliser un seul appel pour récupérer du contenu personnalisé (à partir d’Adobe Target, par exemple) et envoyer des données d’analyse (à Adobe Analytics, par exemple).
 
-Sur de nombreux sites web, cependant, la couche de données ne peut pas être chargée suffisamment tôt ou assez rapidement pour utiliser un seul appel pour les deux applications. Dans ces situations, vous pouvez utiliser deux actions [!UICONTROL Envoyer l’événement] sur un seul chargement de page et utiliser la première pour la personnalisation et la seconde pour les analyses. Le fait de diviser les événements de cette manière permet à l’événement de personnalisation de se déclencher le plus tôt possible, tout en attendant que la couche de données se charge complètement avant d’envoyer l’événement Analytics. Ceci est similaire à de nombreuses implémentations de SDK antérieures au Web, où Adobe Target déclenchait l’`target-global-mbox` en haut de la page et Adobe Analytics déclenchait l’appel `s.t()` au bas de la page
+Sur de nombreux sites web, cependant, la couche de données ne peut pas être chargée suffisamment tôt ou assez rapidement pour utiliser un seul appel pour les deux applications. Dans ces situations, vous pouvez utiliser deux actions [!UICONTROL Envoyer l’événement] sur un seul chargement de page et utiliser la première pour la personnalisation et la seconde pour les analyses. Le fait de diviser les événements de cette manière permet à l’événement de personnalisation de se déclencher le plus tôt possible, tout en attendant que la couche de données se charge complètement avant d’envoyer l’événement Analytics. Ceci est similaire à de nombreuses implémentations de SDK antérieures au Web, où Adobe Target déclenchait l’`target-global-mbox` en haut de la page et Adobe Analytics déclenchait l’appel `s.t()` au bas de la page.
+
+Le deuxième appel sera également chargé de signaler toutes les vues de contenu personnalisé et de remplacer tous les appels `decisioning.propositionDisplay`.
 
 Pour créer la requête de personnalisation sur le dessus, procédez comme suit :
 
-1. Ouvrir la règle de `all pages - library loaded - send event - 50`
+1. Ouvrir la règle de `all pages - adobeDataLayer push - send event - 50`
 1. Ouvrez l’action **Envoyer l’événement**
 1. Sélectionnez **[!UICONTROL Utiliser des événements guidés]** puis sélectionnez **[!UICONTROL Demander la personnalisation]**
 1. Cela verrouille le **Type** comme **[!UICONTROL Récupération de proposition de prise de décision]**
+1. Sélectionnez **[!UICONTROL Conserver les modifications]**
+1. **[!UICONTROL Enregistrer]** règle
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
 Pour créer la requête Analytics-on-bottom :
 
-1. Créez une règle appelée `all pages - page bottom - send event - 50`
-1. Ajoutez un événement à la règle. Utilisez l’extension **Core** et le type d’événement **[!UICONTROL Page Bottom]**
+1. Créez une règle appelée `all pages - window loaded - send event - 50`
+1. Ajoutez un événement à la règle. Utilisez l’extension **Core** et le type d’événement **[!UICONTROL Window Loaded]**
 1. Ajoutez une action à la règle. Utilisez l’extension **Adobe Experience Platform Web SDK** et le type d’action **Envoyer l’événement**
 1. Sélectionnez **[!UICONTROL Utiliser des événements guidés]** puis sélectionnez **[!UICONTROL Collecter des analyses]**
-1. Cela verrouille la case **[!UICONTROL Inclure les notifications d’affichage en attente]** sélectionnée afin que la notification d’affichage mise en file d’attente de la demande de prise de décision soit envoyée.
+1. Cela verrouille la case **[!UICONTROL Inclure les propositions rendues]** sélectionnée pour que les notifications d’affichage de la demande de prise de décision soient envoyées dans la file d’attente.
+1. Sélectionnez **[!UICONTROL Conserver les modifications]**
+1. **[!UICONTROL Enregistrer]** règle
+1. Mise à jour et reconstruction de votre bibliothèque
 
 ![send_decision_request_alone](assets/target-aa-request-guided.png)
 
 >[!TIP]
 >
->Si l’événement pour lequel vous récupérez une proposition de prise de décision n’est pas suivi d’un événement Adobe Analytics, utilisez la **Style d’événement guidé** **[!UICONTROL Non guidé - Afficher tous les champs]**. Vous devez sélectionner toutes les options manuellement, mais cela déverrouille l’option permettant d’**[!UICONTROL envoyer automatiquement une notification d’affichage]** avec votre demande de récupération.
+>Si l’événement avec lequel vous récupérez une proposition de prise de décision n’est pas suivi d’un événement Adobe Analytics, ne cochez pas la case **[!UICONTROL Utiliser des événements guidés]**. Vous devez sélectionner toutes les options manuellement, mais cela déverrouille l’option pour **[!UICONTROL Inclure les propositions rendues]** avec votre requête de récupération.
 
 
 ### Validation à l’aide du débogueur
 
 Maintenant que les règles sont mises à jour, vous pouvez vérifier si les données sont correctement transmises à l’aide d’Adobe Debugger.
 
-1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et connectez-vous avec le `test@test.com` e-mail et le mot de passe `test`
+1. Accédez au site de démonstration [Luma](https://newluma.enablementadobe.com)
 1. Accès à la page des détails d’un produit
 1. Ouvrez l’extension de navigateur Adobe Experience Platform debugger et [basculez la propriété de balise sur votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Recharger la page
@@ -602,4 +587,4 @@ Maintenant que vous avez terminé cette leçon, vous devriez disposer d’une im
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

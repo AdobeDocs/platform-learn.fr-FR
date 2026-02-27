@@ -4,9 +4,9 @@ description: Découvrez comment valider votre implémentation de Platform Web SD
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1158'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 3%
 Découvrez comment valider votre implémentation du SDK web d’Adobe Experience Platform avec Adobe Experience Platform Debugger.
 
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 Experience Platform Debugger est une extension disponible pour Chrome qui vous aide à voir la technologie Adobe mise en œuvre dans vos pages web :
 
@@ -26,9 +23,9 @@ Experience Platform Debugger est une extension disponible pour Chrome qui vous a
 
 Si vous n’avez jamais utilisé le débogueur auparavant, vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-Dans cette leçon, vous allez utiliser l’extension [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur le site de démonstration [Luma](https://luma.enablementadobe.com/content/luma/us/en.html) par votre propre propriété.
+Dans cette leçon, vous allez utiliser l’extension [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur le site de démonstration [Luma](https://newluma.enablementadobe.com) par votre propre propriété.
 
 Cette technique, appelée commutation d’environnement, s’avérera utile ultérieurement, lorsque vous utiliserez les balises sur votre propre site web. Il vous permet de charger votre site web de production dans votre navigateur, mais avec votre bibliothèque de balises *de développement*. Cette fonctionnalité vous permet d’effectuer et de valider en toute confiance les modifications de balises indépendamment de vos versions de code standard. Après tout, cette séparation entre les versions de balises marketing et les versions de code standard est l’une des principales raisons pour lesquelles les clients utilisent les balises.
 
@@ -42,7 +39,7 @@ Cette technique, appelée commutation d’environnement, s’avérera utile ult�
 
 ## Conditions préalables
 
-Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://newluma.enablementadobe.com/){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
 
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -56,7 +53,7 @@ Vous connaissez les balises de la collecte de données et le site de démonstrat
 
 Experience Platform Debugger dispose d’une fonctionnalité pratique qui vous permet de remplacer une bibliothèque de balises existante par une autre. Cette technique est utile pour la validation et nous permet d’ignorer de nombreuses étapes d’implémentation dans ce tutoriel.
 
-1. Assurez-vous que le site web de démonstration [Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} s’ouvre et sélectionnez l’icône de l’extension Experience Platform Debugger
+1. Assurez-vous que le site web de démonstration [Luma](https://newluma.enablementadobe.com){target="_blank"} s’ouvre et sélectionnez l’icône de l’extension Experience Platform Debugger
 1. Le débogueur s’ouvre et affiche certains détails de l’implémentation en codage en dur (vous devrez peut-être recharger le site Luma après l’ouverture du débogueur)
 1. Vérifiez que le débogueur est « **[!UICONTROL connecté à Luma]** » comme illustré ci-dessous, puis sélectionnez l’icône « **[!UICONTROL verrouiller]** » pour le verrouiller sur le site Luma.
 1. Sélectionnez le bouton **[!UICONTROL Se connecter]** et connectez-vous à Adobe Experience Cloud à l’aide de votre Adobe Id.
@@ -114,7 +111,7 @@ Vous pouvez également valider les détails de la carte des identités :
 
 1. Connectez-vous au site Luma à l’aide des informations d’identification `test@test.com`/`test`
 
-1. Revenez à la [page d’accueil de Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
+1. Revenez à la [page d’accueil de Luma](https://newluma.enablementadobe.com).
 
 1. Ouvrez la section **[!UICONTROL Experience Platform Web SDK]** dans le volet de navigation de gauche
 
@@ -147,7 +144,7 @@ Ces types de détails de requête sont également visibles dans l’onglet Outil
 
 Comme vous l’avez appris dans la leçon [Configurer un flux de données](configure-datastream.md), Platform Web SDK envoie d’abord les données de votre propriété numérique vers Platform Edge Network. Ensuite, Platform Edge Network effectue des requêtes côté serveur supplémentaires vers les services correspondants activés dans votre flux de données. Vous pouvez valider les requêtes côté serveur effectuées par Platform Edge Network à l’aide d’Edge Trace dans le débogueur.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Activer Edge Trace
@@ -163,7 +160,7 @@ Pour activer Edge Trace :
 
    ![Edge Trace connectée](assets/analytics-debugger-edge-connected.png)
 
-1. Actualisez la page d’accueil [Luma](https://luma.enablementadobe.com/) et vérifiez à nouveau **[!UICONTROL Experience Platform Debugger]** pour voir les données passer.
+1. Actualisez la page d’accueil [Luma](https://newluma.enablementadobe.com/) et vérifiez à nouveau **[!UICONTROL Experience Platform Debugger]** pour voir les données passer.
 
    ![Balise Analytics Edge Trace](assets/validate-edge-trace.png)
 
@@ -171,4 +168,4 @@ Pour activer Edge Trace :
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -4,9 +4,9 @@ description: Découvrez comment valider votre implémentation du SDK web de Plat
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 7%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 7%
 Adobe Experience Platform Assurance est une fonctionnalité qui vous permet d’inspecter, de tester, de simuler et de valider la manière dont vous collectez les données ou dont les expériences sont diffusées. En savoir plus sur [Adobe Assurance](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home).
 
 
->[!WARNING]
->
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
 
 ## Objectifs d’apprentissage
 
@@ -29,7 +26,7 @@ Adobe Experience Platform Assurance est une fonctionnalité qui vous permet d’
 
 ## Conditions préalables
 
-Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://newluma.enablementadobe.com){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
 
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -51,7 +48,7 @@ Chaque fois que vous activez Edge Trace dans Adobe Experience Platform Debugger,
 
 En examinant comment nous l’avons fait dans la leçon sur le débogueur :
 
-1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com/content/luma/us/en.html) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Accédez au [site de démonstration Luma](https://newluma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Dans le volet de navigation de gauche de **[!UICONTROL Experience Platform Debugger]** sélectionnez **[!UICONTROL Journaux]**
 1. Sélectionnez l’onglet **[!UICONTROL Edge]**, puis sélectionnez **[!UICONTROL Se connecter]**
 
@@ -70,7 +67,7 @@ En examinant comment nous l’avons fait dans la leçon sur le débogueur :
    ![Créer une session Assurance](assets/assurance-create-session.png)
 1. Sélectionner le début
 1. Attribuez un nom à la session, par exemple `Luma Web SDK validation`
-1. Dans le champ **[!UICONTROL URL de base]** saisissez `https://luma.enablementadobe.com/`
+1. Dans le champ **[!UICONTROL URL de base]** saisissez `https://newluma.enablementadobe.com/`
    ![Nommez la session Assurance](assets/assurance-name-session.png)
 1. Dans l’écran suivant, sélectionnez **[!UICONTROL Copier le lien]**
 1. Sélectionnez l’icône pour copier le lien dans le presse-papiers
@@ -98,4 +95,4 @@ Maintenant qu’un objet XDM se déclenche sur une page et que vous savez commen
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
