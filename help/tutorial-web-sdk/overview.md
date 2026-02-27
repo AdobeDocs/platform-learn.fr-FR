@@ -73,7 +73,7 @@ Dans ces leçons, nous supposons que vous disposez d’un compte Adobe et des au
 
 * Pour la leçon facultative **Adobe Analytics**, vous devez disposer d’un accès administrateur [aux paramètres de la suite de rapports, aux règles de traitement et à Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* Pour la leçon facultative **Adobe Target**, vous devez disposer d’un accès [ Éditeur ou Approbateur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80).
+* Pour la leçon facultative **Adobe Target**, vous devez disposer d’un accès [&#x200B; Éditeur ou Approbateur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80).
 
 * Pour la leçon facultative **Audience Manager**, vous devez avoir accès à la création, à la lecture et à l’écriture de caractéristiques, de segments et de destinations. Pour plus d’informations, consultez le tutoriel sur le contrôle d’accès en fonction du rôle [Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 

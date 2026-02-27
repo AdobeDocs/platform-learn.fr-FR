@@ -38,7 +38,7 @@ Vous comprenez ce qu’est une couche de données et avez suivi les leçons pré
 
 >[!IMPORTANT]
 >
->Les données de cette leçon proviennent de la couche de données `[!UICONTROL adobeDataLayer]` sur le site Luma. Pour afficher la couche de données, ouvrez votre Developer Console et saisissez `[!UICONTROL adobeDataLayer]` pour afficher la couche de données complète disponible.![ couche de données adobeDataLayer ](assets/data-element-data-layer-new.png)
+>Les données de cette leçon proviennent de la couche de données `[!UICONTROL adobeDataLayer]` sur le site Luma. Pour afficher la couche de données, ouvrez votre Developer Console et saisissez `[!UICONTROL adobeDataLayer]` pour afficher la couche de données complète disponible.![&#x200B; couche de données adobeDataLayer &#x200B;](assets/data-element-data-layer-new.png)
 
 
 ## Approches des couches de données

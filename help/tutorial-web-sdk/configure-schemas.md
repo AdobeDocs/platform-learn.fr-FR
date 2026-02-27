@@ -94,7 +94,7 @@ Dans cet exercice, vous allez créer un schéma XDM à l’aide des groupes de c
 1. Sélectionnez **[!UICONTROL Événement d’expérience]** dans l’écran suivant
 1. Sélectionnez **[!UICONTROL Suivant]**
 
-   ![ Événement d’expérience de schéma ](assets/schema-experience-event.png)
+   ![&#x200B; Événement d’expérience de schéma &#x200B;](assets/schema-experience-event.png)
 
 1. Saisissez le nom de votre schéma sous le champ **[!UICONTROL Nom d’affichage du schéma]**, dans ce cas `Luma Web Event Data`
 
@@ -109,13 +109,13 @@ Dans cet exercice, vous allez créer un schéma XDM à l’aide des groupes de c
 
 ## Ajouter des groupes de champs
 
-Comme indiqué précédemment, XDM est le cadre de base qui normalise les données d’expérience client en fournissant des structures et des définitions communes à utiliser dans les services Adobe Experience Platform en aval. En adhérant aux normes XDM, _toutes les données d’expérience client_ peuvent être intégrées dans une représentation commune. Cette approche vous permet d’obtenir des informations précieuses à partir des actions des clients, de définir des audiences de clients par le biais de segments et d’exprimer les attributs du client à des fins de personnalisation à l’aide de données provenant de plusieurs sources. Pour plus d’informations[ voir ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) Bonnes pratiques pour la modélisation des données .
+Comme indiqué précédemment, XDM est le cadre de base qui normalise les données d’expérience client en fournissant des structures et des définitions communes à utiliser dans les services Adobe Experience Platform en aval. En adhérant aux normes XDM, _toutes les données d’expérience client_ peuvent être intégrées dans une représentation commune. Cette approche vous permet d’obtenir des informations précieuses à partir des actions des clients, de définir des audiences de clients par le biais de segments et d’exprimer les attributs du client à des fins de personnalisation à l’aide de données provenant de plusieurs sources. Pour plus d’informations[&#x200B; voir &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) Bonnes pratiques pour la modélisation des données .
 
 Lorsque cela est possible, il est recommandé d’utiliser des groupes de champs existants et de respecter un modèle indépendant du produit ainsi que des conventions de dénomination. Pour toutes les données spécifiques à votre organisation qui ne s’intègrent pas dans les groupes de champs prédéfinis ci-dessus, vous pouvez créer un groupe de champs personnalisé. Voir [Création d’un schéma à l’aide de l’éditeur de schémas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) pour obtenir des instructions plus détaillées sur les schémas personnalisés.
 
 >[!TIP]
 > 
->Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ et _**[!UICONTROL Consumer Experience Event]**_.
+>Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ et _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
 >
 
 
