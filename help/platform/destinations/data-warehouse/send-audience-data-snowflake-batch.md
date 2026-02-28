@@ -24,4 +24,4 @@ Découvrez comment configurer et utiliser la destination par lots Snowflake dans
 Pour plus d’informations, consultez la [&#x200B; documentation &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480186/?captions=fre_fr&learn=on&enablevpops)
