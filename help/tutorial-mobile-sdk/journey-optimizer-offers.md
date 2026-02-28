@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '2882'
 ht-degree: 2%
@@ -35,7 +35,7 @@ La gestion des décisions facilite la personnalisation avec une bibliothèque ce
 
 * Application créée et exécutée avec succès avec les SDK installés et configurés.
 * Configurez l’application pour Adobe Experience Platform.
-* Accès à Journey Optimizer - Gestion des décisions avec les [autorisations appropriées pour gérer les offres et les décisions](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions).
+* Accès à Journey Optimizer - Gestion des décisions avec les [autorisations appropriées pour gérer les offres et les décisions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Objectifs d’apprentissage
@@ -87,7 +87,7 @@ Pour vous assurer que les données envoyées de votre application mobile à Plat
 1. Sélectionnez votre schéma pour l’ouvrir.
 1. Dans l’éditeur de schémas, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** en regard de Groupes de champs .
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter des groupes de champs]**, ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) recherchez des `proposition`, sélectionnez **[!UICONTROL Événement d’expérience - Interactions de proposition]** et sélectionnez **[!UICONTROL Ajouter des groupes de champs]**. Ce groupe de champs collecte les données d’événement d’expérience relatives aux offres, telles que l’offre présentée, dans le cadre de quelle collection, décision et autres paramètres (voir plus loin dans cette leçon) ? Mais qu&#39;en est-il de l&#39;offre ? Est-il affiché, a-t-il interagi avec, a-t-il été ignoré, etc. ?
-   ![Proposition &#x200B;](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
+   ![Proposition ](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées à votre schéma.
 
 
@@ -123,7 +123,7 @@ Pour créer l’emplacement JSON mobile :
 
 
 
-## Créer des offres
+## Création d’offres
 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez ![Offres](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg) **[!UICONTROL Offres]** dans **[!UICONTROL GESTION DES DÉCISIONS]** dans le rail de gauche.
 1. Dans l’écran **[!UICONTROL Offres]**, sélectionnez **[!UICONTROL Parcourir]** pour afficher la liste des offres.
@@ -132,7 +132,7 @@ Pour créer l’emplacement JSON mobile :
 1. À l’étape **[!UICONTROL Détails]** de **[!UICONTROL Créer une offre personnalisée]** :
    1. Saisissez un **[!UICONTROL Nom]** pour l’offre, par exemple `Luma - Juno Jacket`, ainsi qu’un **[!UICONTROL Date et heure de début]** et un **[!UICONTROL Date et heure de fin]**. Seules les offres comprises dans ces dates sont sélectionnées par le moteur de décision.
    1. Sélectionnez **[!UICONTROL Suivant]**.
-      ![&#x200B; Offres - Détails &#x200B;](assets/ajo-offers-details.png){zoomable="yes"}
+      ![ Offres - Détails ](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. À l&#39;étape **[!UICONTROL Ajouter des représentations]** de **[!UICONTROL Créer une offre personnalisée]** :
    1. Sélectionnez ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** dans la liste **[!UICONTROL Canal]**, puis sélectionnez **[!UICONTROL Mobile JSON]** dans la liste **[!UICONTROL Emplacement]**.
@@ -145,7 +145,7 @@ Pour créer l’emplacement JSON mobile :
          { 
              "title": "Juno Jacket",
              "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
+             "image": "https://newluma.enablementadobe.com/images/wj06-purple_main.jpg" 
          }  
          ```
 
@@ -174,10 +174,10 @@ Pour créer l’emplacement JSON mobile :
 
       | Nom de l’offre | Contenu de l’offre au format JSON |
       |---|---|
-      | Luma - Bouteille d&#39;eau Affirm | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
-      | Luma - T-shirt de fitness Désiré | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
-      | Luma - Veste Adrienne Trek | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma - T-shirt de remise en forme quotidienne Aero | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
+      | Luma - Bouteille d&#39;eau Affirm | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://newluma.enablementadobe.com/images/ug06-lb-0.jpg" }` |
+      | Luma - T-shirt de fitness Désiré | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg" }` |
+      | Luma - Veste Adrienne Trek | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://newluma.enablementadobe.com/images/wj08-gray_main.jpg" }` |
+      | Luma - T-shirt de remise en forme quotidienne Aero | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://newluma.enablementadobe.com/images/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
@@ -196,7 +196,7 @@ Pour créer l’emplacement JSON mobile :
          {  
             "title": "Luma",
             "text": "Your store for sports wear and equipment.", 
-            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "image": "https://newluma.enablementadobe.com/images/logo.png" 
          }  
          ```
 
@@ -237,7 +237,7 @@ Un critère d’évaluation est la combinaison des éléments suivants :
 * règles d’éligibilité : par exemple, l’offre est-elle disponible uniquement pour une audience spécifique,
 * une méthode de classement : lorsque plusieurs offres sont disponibles, quelle méthode utilisez-vous pour les classer (par exemple par priorité d’offre, à l’aide d’une formule ou d’un modèle d’IA).
 
-Consultez la section [Étapes clés de création et de gestion des offres](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) si vous souhaitez comprendre comment les emplacements, les règles, les classements, les offres, les représentations, les collections, les décisions, etc. interagissent et sont liés les uns aux autres. Cette leçon se concentre uniquement sur l’utilisation du résultat d’une décision plutôt que sur la flexibilité de la définition des décisions dans Journey Optimizer - Gestion des décisions.
+Consultez la section [Étapes clés de création et de gestion des offres](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) si vous souhaitez comprendre comment les emplacements, les règles, les classements, les offres, les représentations, les collections, les décisions, etc. interagissent et sont liés les uns aux autres. Cette leçon se concentre uniquement sur l’utilisation du résultat d’une décision plutôt que sur la flexibilité de la définition des décisions dans Journey Optimizer - Gestion des décisions.
 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez **[!UICONTROL Offres]** dans le rail de gauche.
 1. Sélectionnez **[!UICONTROL Décisions]** dans la barre supérieure.
@@ -543,6 +543,6 @@ Vous devriez maintenant disposer de tous les outils nécessaires pour commencer 
 >
 >Vous avez activé l’application pour afficher des offres à l’aide de l’extension Offer Decisioning and Target pour Experience Platform Mobile SDK.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Effectuer des tests A/B](target.md)**

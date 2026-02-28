@@ -4,7 +4,7 @@ description: Découvrez comment activer un flux de données et configurer des so
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 8%
@@ -66,7 +66,7 @@ Sur l’écran suivant, vous pouvez ajouter des services tels que des applicatio
 
 ## Remplacer un flux de données
 
-[Remplacements de train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
+[Remplacements de train de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
 
 Le remplacement de la configuration des trains de données est un processus en deux étapes :
 
@@ -79,4 +79,4 @@ Vous êtes maintenant prêt à installer l’extension Platform Web SDK dans vot
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

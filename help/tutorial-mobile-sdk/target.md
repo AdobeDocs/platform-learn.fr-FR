@@ -6,10 +6,10 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '2102'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Découvrez comment optimiser et personnaliser les expériences de vos applications mobiles avec Platform Mobile SDK et Adobe Target.
 
-Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques. Target peut effectuer des tests A/B, multivarier des tests, recommander des produits et du contenu, cibler du contenu, personnaliser automatiquement le contenu avec l’IA, etc. Cette leçon se concentre sur la fonctionnalité de test A/B de Target. [&#x200B; Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/target/using/activities/abtest/test-ab) consultez la présentation du test A/B .
+Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques. Target peut effectuer des tests A/B, multivarier des tests, recommander des produits et du contenu, cibler du contenu, personnaliser automatiquement le contenu avec l’IA, etc. Cette leçon se concentre sur la fonctionnalité de test A/B de Target. [ Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/target/using/activities/abtest/test-ab) consultez la présentation du test A/B .
 
 ![Architecture](assets/architecture-at.png){zoomable="yes"}
 
@@ -31,7 +31,7 @@ Avant d’effectuer des tests A/B avec Target, vous devez vous assurer que les c
 ## Conditions préalables
 
 * Application créée et exécutée avec succès avec les SDK installés et configurés.
-* Accès à Adobe Target avec des [autorisations, rôles, espaces de travail et propriétés correctement configurés](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/property-channel).
+* Accès à Adobe Target avec des [autorisations, rôles, espaces de travail et propriétés correctement configurés](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel).
 
 
 ## Objectifs d’apprentissage
@@ -66,7 +66,7 @@ Pour que les données envoyées de votre application mobile à Experience Platfo
 
    Vos propriétés se trouvent dans l’interface utilisateur de Target, dans **[!UICONTROL Administration]** > **[!UICONTROL Propriétés]**. Sélectionnez ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) pour afficher le jeton de propriété de la propriété que vous souhaitez utiliser. Le format du jeton de propriété est du type `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"` ; vous ne devez entrer que la valeur `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
-   Vous pouvez éventuellement spécifier un identifiant d’environnement cible. Target utilise des environnements pour organiser vos sites et environnements de pré-production afin de faciliter la gestion et la création de rapports séparée. Les environnements prédéfinis comprennent la production, l’évaluation et le développement. Voir [Environnements](https://experienceleague.adobe.com/fr/docs/target/using/administer/environments) et [Identifiant d’environnement Target](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) pour plus d’informations.
+   Vous pouvez éventuellement spécifier un identifiant d’environnement cible. Target utilise des environnements pour organiser vos sites et environnements de pré-production afin de faciliter la gestion et la création de rapports séparée. Les environnements prédéfinis comprennent Production, Test et Développement. Voir [Environnements](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) et [Identifiant d’environnement Target](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) pour plus d’informations.
 
    Vous pouvez éventuellement spécifier un espace de noms d’identifiant tiers cible pour prendre en charge la synchronisation des profils sur un espace de noms d’identité (par exemple, l’identifiant CRM). Voir [Espace de noms d’identifiant tiers cible](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) pour plus d’informations.
 
@@ -108,7 +108,7 @@ Bien que cette leçon porte sur les tests A/B dans Target, le résultat d’un t
 1. Sélectionnez votre schéma pour l’ouvrir.
 1. Dans l’éditeur de schémas, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** en regard de **[!UICONTROL Groupes de champs]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter des groupes de champs]**, recherchez des `proposition`, sélectionnez **[!UICONTROL Événement d’expérience - Interactions de proposition]** et sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
-   ![Proposition &#x200B;](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
+   ![Proposition ](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Pour enregistrer les modifications apportées à votre schéma, sélectionnez **[!UICONTROL Enregistrer]**.
 
 
@@ -142,7 +142,7 @@ Il existe de nombreux types d’activités que vous pouvez créer dans Adobe Tar
       { 
           "title": "Luma Anaolog Watch",
           "text": "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.", 
-          "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/watches/Luma_Analog_Watch.jpg" 
+          "image": "https://newluma.enablementadobe.com/images/Luma_Analog_Watch.jpg" 
       }
       ```
 
@@ -160,14 +160,14 @@ Il existe de nombreux types d’activités que vous pouvez créer dans Adobe Tar
       { 
           "title": "Aim Analog Watch",
           "text": "The flexible, rubberized strap is contoured to conform to the shape of your wrist for a comfortable all-day fit. The face features three illuminated hands, a digital read-out of the current time, and stopwatch functions.", 
-          "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/watches/Aim_Watch.jpg" 
+          "image": "https://newluma.enablementadobe.com/images/Aim_Watch.jpg" 
       }
       ```
 
 
 1. À l’étape **[!DNL Targeting]**, passez en revue la configuration de votre test A/B. Par défaut, les deux offres sont attribuées de manière égale à tous les visiteurs. Sélectionnez **[!UICONTROL Suivant]** pour continuer.
 
-   ![Ciblage &#x200B;](assets/target-targeting.png){zoomable="yes"}
+   ![Ciblage ](assets/target-targeting.png){zoomable="yes"}
 
 1. À l’étape **[!UICONTROL Objectifs et paramètres]** :
 
@@ -399,6 +399,6 @@ Vous devriez maintenant disposer de tous les outils nécessaires pour commencer 
 >
 >Vous avez activé l’application pour les tests A/B et affiché les résultats d’un test A/B avec l’extension Offer Decisioning and Target pour Adobe Experience Platform Mobile SDK.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Conclusion et prochaines étapes](conclusion.md)**

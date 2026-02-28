@@ -4,7 +4,7 @@ description: Découvrez comment configurer les paramètres de confidentialité d
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Avant de passer aux configurations des balises, découvrez la plateforme de gest
 <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
 -->
-    >[ !REMARQUE]
+    >[!REMARQUE]
     >
     >En règle générale, les étapes mentionnées ci-dessus sont effectuées et prises en charge par l’équipe ou la personne responsable de la gestion du CMP, comme OneTrust ou TrustArc.
 
@@ -215,7 +215,7 @@ Une fois cette règle en place, la collecte des événements doit commencer lors
 ![Option de post-consentement du visiteur](assets/consent-post-user-optin.png)
 
 
-Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en charge des préférences de consentement des clients](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/consent/supporting-consent).
+Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en charge des préférences de consentement des clients](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en char
 
 
 
-Pour plus d’informations sur l’action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Pour plus d’informations sur l’action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

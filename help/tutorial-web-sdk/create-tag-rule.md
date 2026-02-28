@@ -4,7 +4,7 @@ description: Découvrez comment envoyer un événement à Platform Edge Network 
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 9b5e7192094e2d3b8eb41cbb4a0f28411e990e8f
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Toutes ces règles seront correctement séquencées à l’aide de l’option «
 
 Cette vidéo donne un aperçu du processus :
 
->[!VIDEO](https://video.tv.adobe.com/v/3454029/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Champs de configuration globale
 
@@ -119,7 +119,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, puis **[!UICONTROL Mettre à jour la variable]**
 
@@ -146,7 +146,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
    > Bien que ni `eventType` défini sur `web.webpagedetails.pageViews` ni `web.webPageDetails.pageViews.value` ne soient nécessaires pour qu’Adobe Analytics traite une balise en tant que page vue, il est utile de disposer d’une méthode standard pour indiquer une page vue pour d’autres applications en aval.
 
 1. Lorsque vous aurez terminé, votre `XDM Variable` ressemblera à ceci. Notez comment les champs remplis et partiellement remplis sont indiqués par les cercles bleus :
-   ![&#x200B; Variable XDM &#x200B;](assets/rule-xdm-variable.png)
+   ![ Variable XDM ](assets/rule-xdm-variable.png)
 1. Sélectionnez **[!UICONTROL Conserver les modifications]** puis **[!UICONTROL Enregistrer]** la règle dans l’écran suivant pour la terminer
 
 
@@ -164,7 +164,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 
 1. Sélectionnez **[!UICONTROL Ajouter une règle]**
 1. Nommez-le [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Couche de données client Adobe]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Données transmises]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`. Cette valeur d’ordre garantit que la règle s’exécute _après_ la règle des variables globales.
@@ -220,7 +220,7 @@ Maintenant, mappons notre tableau à l’objet XDM :
 
 
 1. Créez une règle nommée `cart page - adobeDataLayer push - set cart variables - 20`
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Couche de données client Adobe]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Données transmises]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`. Cette valeur d’ordre garantit que la règle s’exécute _après_ la règle des variables globales.
@@ -317,14 +317,14 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 1. Utilisez l’extension **[!UICONTROL Core]** et sélectionnez `Library Loaded (Page Top)` comme **[!UICONTROL type d’événement]**.
 
-1. Sélectionnez la liste déroulante **[!UICONTROL Avancé]** et saisissez `50` dans **[!UICONTROL Ordre]**. Cela permet de s’assurer que cette règle se déclenche après toutes les autres règles que vous avez configurées (dont le `1`Ordre`20` était [!UICONTROL &#x200B; ou &#x200B;]).
+1. Sélectionnez la liste déroulante **[!UICONTROL Avancé]** et saisissez `50` dans **[!UICONTROL Ordre]**. Cela permet de s’assurer que cette règle se déclenche après toutes les autres règles que vous avez configurées (dont le `1`Ordre`20` était [!UICONTROL  ou ]).
 
 1. Sélectionnez **[!UICONTROL Conserver les modifications]** pour revenir à l’écran principal des règles
    ![Sélectionner le déclencheur de bibliothèque chargé](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 
@@ -370,4 +370,4 @@ Vous êtes maintenant prêt à valider les données de la requête à l’aide d
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
