@@ -14,7 +14,7 @@ ht-degree: 6%
 
 Découvrez comment implémenter des applications Experience Cloud à l’aide du SDK web d’Adobe Experience Platform.
 
-Experience Platform Web SDK est une bibliothèque JavaScript côté client qui permet aux clients de Adobe Experience Cloud d’interagir avec les applications Adobe et les services tiers via Adobe Experience Platform Edge Network. Voir [Présentation de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) pour plus d’informations.
+Experience Platform Web SDK est une bibliothèque JavaScript côté client qui permet aux clients de Adobe Experience Cloud d’interagir avec les applications Adobe et les services tiers via Adobe Experience Platform Edge Network. Voir [Présentation de Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/home) pour plus d’informations.
 
 ![Architecture Experience Platform Web SDK](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ Dans ces leçons, nous supposons que vous disposez d’un compte utilisateur Ado
    * **[!UICONTROL Droits de propriété]**—autorisation d’**[!UICONTROL approuver]**, **[!UICONTROL développer]**, **[!UICONTROL modifier la propriété]**, **[!UICONTROL gérer les environnements]**, **[!UICONTROL gérer les extensions]** et **[!UICONTROL publier]**,
    * **[!UICONTROL Droits d’entreprise]**—autorisation de **[!UICONTROL Gérer les propriétés]**
 
-     Pour plus d’informations sur les autorisations des balises, consultez [la documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     Pour plus d’informations sur les autorisations des balises, consultez [la documentation](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/admin/user-permissions).
 
 * Pour **Experience Platform**, vous devez disposer des éléments suivants :
 
@@ -67,14 +67,14 @@ Dans ces leçons, nous supposons que vous disposez d’un compte utilisateur Ado
 * Pour la leçon facultative **Journey Optimizer**, vous devez disposer des éléments d’autorisation pour **[!UICONTROL Gérer les campagnes]**, **[!UICONTROL Publier les campagnes]** et **[!UICONTROL Afficher le rapport des campagnes]**.
   <!--
   * For the optional **Decisioning** lesson, you must have permission items to **[!UICONTROL Manage decisions]**, **[!UICONTROL View decisions]**, **[!UICONTROL Manage offers]**, **[!UICONTROL Manage ranking strategies]**.
-  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
+  * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
   -->
 
-* Pour la leçon facultative **Adobe Analytics**, vous devez disposer d’un accès administrateur [aux paramètres de la suite de rapports, aux règles de traitement et à Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* Pour la leçon facultative **Adobe Analytics**, vous devez disposer d’un accès administrateur [aux paramètres de la suite de rapports, aux règles de traitement et à Analysis Workspace](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-console/home)
 
-* Pour la leçon facultative **Adobe Target**, vous devez disposer d’un accès [&#x200B; Éditeur ou Approbateur](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80).
+* Pour la leçon facultative **Adobe Target**, vous devez disposer d’un accès [&#x200B; Éditeur ou Approbateur](https://experienceleague.adobe.com/fr/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80).
 
-* Pour la leçon facultative **Audience Manager**, vous devez avoir accès à la création, à la lecture et à l’écriture de caractéristiques, de segments et de destinations. Pour plus d’informations, consultez le tutoriel sur le contrôle d’accès en fonction du rôle [Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* Pour la leçon facultative **Audience Manager**, vous devez avoir accès à la création, à la lecture et à l’écriture de caractéristiques, de segments et de destinations. Pour plus d’informations, consultez le tutoriel sur le contrôle d’accès en fonction du rôle [Audience Manager](https://experienceleague.adobe.com/fr/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]
@@ -98,4 +98,4 @@ Commençons ! Suite : [Créer un schéma XDM pour les données web](configure-sc
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)

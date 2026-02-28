@@ -56,7 +56,7 @@ Il existe plusieurs façons de mapper les données de la couche de données à X
 
 ### Implémentation de XDM dans la couche de données
 
-Cette approche implique l’utilisation de l’objet XDM entièrement défini comme structure de votre couche de données. Vous pouvez ensuite mapper l’intégralité de la couche de données à un élément de données d’objet XDM dans les balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut être idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la commande [XDM sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé capturant l’intégralité de la couche de données en tant qu’objet JSON de transmission au XDM. Ensuite, vous mappez le JSON de transmission au champ d’objet XDM dans l’action Envoyer l’événement.
+Cette approche implique l’utilisation de l’objet XDM entièrement défini comme structure de votre couche de données. Vous pouvez ensuite mapper l’intégralité de la couche de données à un élément de données d’objet XDM dans les balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut être idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la commande [XDM sendEvent](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé capturant l’intégralité de la couche de données en tant qu’objet JSON de transmission au XDM. Ensuite, vous mappez le JSON de transmission au champ d’objet XDM dans l’action Envoyer l’événement.
 
 Vous trouverez ci-dessous un exemple d’utilisation de la couche de données client au format Adobe :
 
@@ -131,17 +131,17 @@ Cette approche implique le mappage de variables de couche de données OU d’obj
 >
 > Couche de données Google
 > 
-> Si votre organisation utilise déjà Google Analytics et dispose de l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser l’extension [Google Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) dans les balises. Vous pouvez ainsi déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
+> Si votre organisation utilise déjà Google Analytics et dispose de l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser l’extension [Google Data Layer](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/google-data-layer/overview) dans les balises. Vous pouvez ainsi déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
 
 ### Mapper à XDM dans le flux de données
 
-Cette approche utilise la fonctionnalité intégrée à la configuration du flux de données appelée [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) et ignore le mappage des variables de couche de données à XDM dans les balises.
+Cette approche utilise la fonctionnalité intégrée à la configuration du flux de données appelée [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) et ignore le mappage des variables de couche de données à XDM dans les balises.
 
 #### Avantages
 
 * Flexible car vous pouvez mapper des variables individuelles à XDM
-* Possibilité de [calculer de nouvelles valeurs](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformer des types de données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) à partir d’une couche de données avant son transfert vers XDM
-* Tirez parti d’une [interface utilisateur de mappage](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) pour mapper les champs de vos données source à XDM à l’aide d’une interface utilisateur par pointer-cliquer
+* Possibilité de [calculer de nouvelles valeurs](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/functions) ou [transformer des types de données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling) à partir d’une couche de données avant son transfert vers XDM
+* Tirez parti d’une [interface utilisateur de mappage](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep#create-mapping) pour mapper les champs de vos données source à XDM à l’aide d’une interface utilisateur par pointer-cliquer
 
 #### Inconvénients
 
@@ -267,4 +267,4 @@ Une fois ces éléments de données en place, vous êtes prêt à commencer à e
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)

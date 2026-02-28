@@ -66,7 +66,7 @@ Sur l’écran suivant, vous pouvez ajouter des services tels que des applicatio
 
 ## Remplacer un flux de données
 
-[Remplacements de train de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
+[Remplacements de train de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overrides) vous permettent de définir des configurations supplémentaires pour votre train de données, puis de remplacer votre configuration par défaut sous certaines conditions.
 
 Le remplacement de la configuration des trains de données est un processus en deux étapes :
 
@@ -79,4 +79,4 @@ Vous êtes maintenant prêt à installer l’extension Platform Web SDK dans vot
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)

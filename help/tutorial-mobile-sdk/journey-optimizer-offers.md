@@ -35,7 +35,7 @@ La gestion des décisions facilite la personnalisation avec une bibliothèque ce
 
 * Application créée et exécutée avec succès avec les SDK installés et configurés.
 * Configurez l’application pour Adobe Experience Platform.
-* Accès à Journey Optimizer - Gestion des décisions avec les [autorisations appropriées pour gérer les offres et les décisions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
+* Accès à Journey Optimizer - Gestion des décisions avec les [autorisations appropriées pour gérer les offres et les décisions](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Objectifs d’apprentissage
@@ -237,7 +237,7 @@ Un critère d’évaluation est la combinaison des éléments suivants :
 * règles d’éligibilité : par exemple, l’offre est-elle disponible uniquement pour une audience spécifique,
 * une méthode de classement : lorsque plusieurs offres sont disponibles, quelle méthode utilisez-vous pour les classer (par exemple par priorité d’offre, à l’aide d’une formule ou d’un modèle d’IA).
 
-Consultez la section [Étapes clés de création et de gestion des offres](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) si vous souhaitez comprendre comment les emplacements, les règles, les classements, les offres, les représentations, les collections, les décisions, etc. interagissent et sont liés les uns aux autres. Cette leçon se concentre uniquement sur l’utilisation du résultat d’une décision plutôt que sur la flexibilité de la définition des décisions dans Journey Optimizer - Gestion des décisions.
+Consultez la section [Étapes clés de création et de gestion des offres](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) si vous souhaitez comprendre comment les emplacements, les règles, les classements, les offres, les représentations, les collections, les décisions, etc. interagissent et sont liés les uns aux autres. Cette leçon se concentre uniquement sur l’utilisation du résultat d’une décision plutôt que sur la flexibilité de la définition des décisions dans Journey Optimizer - Gestion des décisions.
 
 1. Dans l’interface utilisateur de Journey Optimizer, sélectionnez **[!UICONTROL Offres]** dans le rail de gauche.
 1. Sélectionnez **[!UICONTROL Décisions]** dans la barre supérieure.
@@ -543,6 +543,6 @@ Vous devriez maintenant disposer de tous les outils nécessaires pour commencer 
 >
 >Vous avez activé l’application pour afficher des offres à l’aide de l’extension Offer Decisioning and Target pour Experience Platform Mobile SDK.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
 
 Suivant : **[Effectuer des tests A/B](target.md)**
