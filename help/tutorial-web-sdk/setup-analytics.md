@@ -201,7 +201,7 @@ Créons une règle pour envoyer un appel de page vue supplémentaire à une autr
 
 1. Sous **[!UICONTROL Actions]** sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, **[!UICONTROL Envoyer l’événement]**
 
@@ -288,7 +288,7 @@ Vous avez configuré ci-dessus un remplacement de flux de données pour la page 
 
 1. Recherchez une ligne avec **[!UICONTROL Configuration du flux de données après l’application du remplacement]**. Vous trouverez ici la suite de rapports principale et la ou les suites de rapports supplémentaires qui ont été configurées pour les remplacements de la suite de rapports.
 
-   ![ Validation de la liste de remplacement de la suite de rapports Analytics ](assets/aep-debugger-datastream-override.png)
+   ![&#x200B; Validation de la liste de remplacement de la suite de rapports Analytics &#x200B;](assets/aep-debugger-datastream-override.png)
 
 1. Faites défiler jusqu’à la ligne commençant par **[!UICONTROL Mappage automatique Analytics]** et vérifiez que la `[!UICONTROL reportSuiteIds]` affiche la suite de rapports que vous avez spécifiée dans vos configurations de remplacement
 

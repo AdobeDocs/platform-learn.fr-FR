@@ -46,7 +46,7 @@ Vous devez avoir déjà terminé les leçons précédentes :
 >
 >L’extension [Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) n’est pas nécessaire lors de l’implémentation de Adobe Experience Platform Web SDK, car la bibliothèque Web SDK JavaScript contient la fonctionnalité du service d’identification des visiteurs.
 >
-> Si votre site web utilise déjà le service Experience Cloud ID sur votre site web, par le biais de l’API visiteur ou de l’extension de balise du service Experience Cloud ID, et que vous souhaitez continuer à l’utiliser lors de la migration vers Adobe Experience Platform Web SDK, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service Experience Cloud ID. Pour plus d’informations, consultez [ Migration des ID ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) .
+> Si votre site web utilise déjà le service Experience Cloud ID sur votre site web, par le biais de l’API visiteur ou de l’extension de balise du service Experience Cloud ID, et que vous souhaitez continuer à l’utiliser lors de la migration vers Adobe Experience Platform Web SDK, vous devez utiliser la dernière version de l’API visiteur ou l’extension de balise du service Experience Cloud ID. Pour plus d’informations, consultez [&#x200B; Migration des ID &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) .
 
 ## Création d’un espace de noms d’identité
 
@@ -68,7 +68,7 @@ Créez maintenant un espace de noms pour l’identifiant CRM de Luma :
 1. Sélectionnez **[!UICONTROL Identités]** dans le volet de navigation de gauche
 1. Sélectionnez **[!UICONTROL Espaces de noms]**
 
-   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page. Elle indique leurs noms, symboles d’identité, date de la dernière mise à jour et s’il s’agit d’espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL  l’intensité du graphique d’identités ].
+   Une liste d’espaces de noms d’identité s’affiche dans l’interface principale de la page. Elle indique leurs noms, symboles d’identité, date de la dernière mise à jour et s’il s’agit d’espaces de noms standard ou personnalisés. Le rail de droite contient des informations sur [!UICONTROL &#x200B; l’intensité du graphique d’identités &#x200B;].
 
 1. Sélectionnez **[!UICONTROL Créer un espace de noms d’identité]**
 

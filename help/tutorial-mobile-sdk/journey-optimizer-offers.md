@@ -87,7 +87,7 @@ Pour vous assurer que les données envoyées de votre application mobile à Plat
 1. Sélectionnez votre schéma pour l’ouvrir.
 1. Dans l’éditeur de schémas, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** en regard de Groupes de champs .
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter des groupes de champs]**, ![Rechercher](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) recherchez des `proposition`, sélectionnez **[!UICONTROL Événement d’expérience - Interactions de proposition]** et sélectionnez **[!UICONTROL Ajouter des groupes de champs]**. Ce groupe de champs collecte les données d’événement d’expérience relatives aux offres, telles que l’offre présentée, dans le cadre de quelle collection, décision et autres paramètres (voir plus loin dans cette leçon) ? Mais qu&#39;en est-il de l&#39;offre ? Est-il affiché, a-t-il interagi avec, a-t-il été ignoré, etc. ?
-   ![Proposition ](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
+   ![Proposition &#x200B;](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer les modifications apportées à votre schéma.
 
 
@@ -132,7 +132,7 @@ Pour créer l’emplacement JSON mobile :
 1. À l’étape **[!UICONTROL Détails]** de **[!UICONTROL Créer une offre personnalisée]** :
    1. Saisissez un **[!UICONTROL Nom]** pour l’offre, par exemple `Luma - Juno Jacket`, ainsi qu’un **[!UICONTROL Date et heure de début]** et un **[!UICONTROL Date et heure de fin]**. Seules les offres comprises dans ces dates sont sélectionnées par le moteur de décision.
    1. Sélectionnez **[!UICONTROL Suivant]**.
-      ![ Offres - Détails ](assets/ajo-offers-details.png){zoomable="yes"}
+      ![&#x200B; Offres - Détails &#x200B;](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. À l&#39;étape **[!UICONTROL Ajouter des représentations]** de **[!UICONTROL Créer une offre personnalisée]** :
    1. Sélectionnez ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** dans la liste **[!UICONTROL Canal]**, puis sélectionnez **[!UICONTROL Mobile JSON]** dans la liste **[!UICONTROL Emplacement]**.

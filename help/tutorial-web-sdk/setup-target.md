@@ -218,7 +218,7 @@ Le paramètre Rendre les décisions de personnalisation visuelle fait que Platfo
 >
 >En règle générale, le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] ne doit être activé que pour une seule action Envoyer l’événement par chargement de page complet. Si ce paramètre est activé pour plusieurs actions d’événement d’envoi, les requêtes de rendu suivantes sont ignorées.
 
-Si vous préférez effectuer vous-même le rendu ou une action sur ces décisions à l’aide de code personnalisé, vous pouvez laisser le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] désactivé. Platform Web SDK est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Vous pouvez consulter le guide pour plus d’informations sur le rendu manuel [ contenu personnalisé ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
+Si vous préférez effectuer vous-même le rendu ou une action sur ces décisions à l’aide de code personnalisé, vous pouvez laisser le paramètre [!UICONTROL Rendre les décisions de personnalisation visuelle] désactivé. Platform Web SDK est flexible et offre cette fonctionnalité pour vous donner un contrôle total. Vous pouvez consulter le guide pour plus d’informations sur le rendu manuel [&#x200B; contenu personnalisé &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Configuration d’une activité Target avec le compositeur d’expérience visuelle
@@ -395,7 +395,7 @@ Maintenant que vous disposez d’une règle permettant de générer manuellement
    ```
 
 1. Nommer l’activité
-1. À l’étape [!UICONTROL  Objectifs et paramètres ], choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
+1. À l’étape [!UICONTROL &#x200B; Objectifs et paramètres &#x200B;], choisissez Adobe Target comme source de création de rapports et [!UICONTROL Engagement] > [!UICONTROL Pages vues] comme objectif
 1. Enregistrement de l’activité
 1. Si vos modifications vous conviennent, vous pouvez activer votre activité. Sinon, si vous souhaitez prévisualiser l’expérience sans l’activer, vous pouvez copier l’URL de prévisualisation [QA](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa).
 1. Chargez la page d’accueil Luma et vos modifications devraient s’appliquer

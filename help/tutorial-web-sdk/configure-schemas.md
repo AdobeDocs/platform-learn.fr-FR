@@ -94,7 +94,7 @@ Dans cet exercice, vous allez créer un schéma XDM à l’aide des groupes de c
 1. Sélectionnez **[!UICONTROL Événement d’expérience]** dans l’écran suivant
 1. Sélectionnez **[!UICONTROL Suivant]**
 
-   ![ Événement d’expérience de schéma ](assets/schema-experience-event.png)
+   ![&#x200B; Événement d’expérience de schéma &#x200B;](assets/schema-experience-event.png)
 
 1. Saisissez le nom de votre schéma sous le champ **[!UICONTROL Nom d’affichage du schéma]**, dans ce cas `Luma Web Event Data`
 
@@ -115,7 +115,7 @@ Lorsque cela est possible, il est recommandé d’utiliser des groupes de champs
 
 >[!TIP]
 > 
->Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ et _**[!UICONTROL Consumer Experience Event]**_.
+>Dans cet exercice, vous ajoutez les groupes de champs prédéfinis recommandés pour la collecte de données web : _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ et _&#x200B;**[!UICONTROL Consumer Experience Event]**&#x200B;_.
 >
 
 
