@@ -231,7 +231,7 @@ Maintenant, créons l’expérience du canal web. Tout d’abord, installez l’
 
 1. Assurez-vous que l’expérience est correctement suivie pour les clics. Choisissez **[!UICONTROL Clic sur l’élément de suivi]** dans le menu contextuel.
 
-   ![ Suivi des clics ](assets/web-channel-click-tracking.png)
+   ![&#x200B; Suivi des clics &#x200B;](assets/web-channel-click-tracking.png)
 
 De nombreuses options sont disponibles pour personnaliser le message.
 
@@ -362,7 +362,7 @@ Pour commencer la validation à l’aide du débogueur :
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge ****. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
+1. Connectez-vous au site avec différents comptes de fidélité Luma et utilisez le débogueur pour valider les requêtes envoyées au réseau Adobe Experience Platform Edge **&#x200B;**. Toutes ces requêtes doivent être capturées dans **[!UICONTROL Assurance]** pour le suivi des journaux.
 <!--
    ![ADD SCREENSHOT](#)
 -->

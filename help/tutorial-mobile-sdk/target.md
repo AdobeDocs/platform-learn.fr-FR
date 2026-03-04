@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Découvrez comment optimiser et personnaliser les expériences de vos applications mobiles avec Platform Mobile SDK et Adobe Target.
 
-Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques. Target peut effectuer des tests A/B, multivarier des tests, recommander des produits et du contenu, cibler du contenu, personnaliser automatiquement le contenu avec l’IA, etc. Cette leçon se concentre sur la fonctionnalité de test A/B de Target. [ Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/target/using/activities/abtest/test-ab) consultez la présentation du test A/B .
+Target fournit tout ce dont vous avez besoin pour personnaliser les expériences de vos clients. Target vous aide à maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques. Target peut effectuer des tests A/B, multivarier des tests, recommander des produits et du contenu, cibler du contenu, personnaliser automatiquement le contenu avec l’IA, etc. Cette leçon se concentre sur la fonctionnalité de test A/B de Target. [&#x200B; Pour plus d’informations](https://experienceleague.adobe.com/fr/docs/target/using/activities/abtest/test-ab) consultez la présentation du test A/B .
 
 ![Architecture](assets/architecture-at.png){zoomable="yes"}
 
@@ -108,7 +108,7 @@ Bien que cette leçon porte sur les tests A/B dans Target, le résultat d’un t
 1. Sélectionnez votre schéma pour l’ouvrir.
 1. Dans l’éditeur de schémas, sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Ajouter]** en regard de **[!UICONTROL Groupes de champs]**.
 1. Dans la boîte de dialogue **[!UICONTROL Ajouter des groupes de champs]**, recherchez des `proposition`, sélectionnez **[!UICONTROL Événement d’expérience - Interactions de proposition]** et sélectionnez **[!UICONTROL Ajouter des groupes de champs]**.
-   ![Proposition ](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
+   ![Proposition &#x200B;](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Pour enregistrer les modifications apportées à votre schéma, sélectionnez **[!UICONTROL Enregistrer]**.
 
 
@@ -167,7 +167,7 @@ Il existe de nombreux types d’activités que vous pouvez créer dans Adobe Tar
 
 1. À l’étape **[!DNL Targeting]**, passez en revue la configuration de votre test A/B. Par défaut, les deux offres sont attribuées de manière égale à tous les visiteurs. Sélectionnez **[!UICONTROL Suivant]** pour continuer.
 
-   ![Ciblage ](assets/target-targeting.png){zoomable="yes"}
+   ![Ciblage &#x200B;](assets/target-targeting.png){zoomable="yes"}
 
 1. À l’étape **[!UICONTROL Objectifs et paramètres]** :
 

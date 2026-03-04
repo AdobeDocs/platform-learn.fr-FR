@@ -68,7 +68,7 @@ Configurez un jeu de données pour vos données d’événement web Luma :
 
 1. Fournissez un **[!UICONTROL Nom]** et un **[!UICONTROL Description]** facultatif pour le jeu de données. Pour cet exercice, utilisez `Luma Web Event Data`, puis sélectionnez **[!UICONTROL Terminer]**
 
-   ![Nom du jeu de données ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nom du jeu de données &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Un jeu de données est maintenant configuré pour commencer à collecter des données à partir de votre implémentation de Platform Web SDK.
 
@@ -76,7 +76,7 @@ Un jeu de données est maintenant configuré pour commencer à collecter des don
 
 Vous pouvez maintenant configurer votre [!UICONTROL flux de données] pour envoyer des données à [!UICONTROL Adobe Experience Platform]. Le flux de données est le lien entre la propriété de balise, la plateforme Edge Network et le jeu de données Experience Platform.
 
-1. Ouvrez l’interface [ Collecte de données ](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ouvrez l’interface [&#x200B; Collecte de données &#x200B;](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Sélectionnez **[!UICONTROL Flux de données]** dans le volet de navigation de gauche
 1. Ouvrez le flux de données que vous avez créé dans la leçon [Configurer un flux de données](configure-datastream.md) , `Luma Web SDK: Development Environment`
 
@@ -267,15 +267,15 @@ Puisque vous avez déjà fait des exercices similaires, les instructions seront 
 Créez le schéma de fidélité :
 
 1. Créer un schéma
-1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL  classe de base]
+1. Choisissez **[!UICONTROL Profil individuel]** comme [!UICONTROL &#x200B; classe de base]
 1. Nommez le schéma `Luma Loyalty Schema`
-1. Ajoutez le groupe de champs [!UICONTROL  Détails de fidélité ]
-1. Ajoutez le groupe de champs [!UICONTROL  Détails démographiques ]
-1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal ] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
+1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails de fidélité &#x200B;]
+1. Ajoutez le groupe de champs [!UICONTROL &#x200B; Détails démographiques &#x200B;]
+1. Sélectionnez le champ `Person ID` et marquez-le comme [!UICONTROL Identité] et [!UICONTROL Identité de Principal &#x200B;] à l’aide du `Luma CRM Id` [!UICONTROL Espace de noms d’identité].
 1. Activez le schéma pour [!UICONTROL Profil]. Si vous ne trouvez pas le bouton Profile , essayez de cliquer sur le nom du schéma en haut à gauche.
 1. Enregistrer le schéma
 
-   ![ Schéma de fidélité ](assets/web-channel-loyalty-schema.png)
+   ![&#x200B; Schéma de fidélité &#x200B;](assets/web-channel-loyalty-schema.png)
 
 Pour créer le jeu de données et ingérer les données d’exemple :
 
@@ -286,7 +286,7 @@ Pour créer le jeu de données et ingérer les données d’exemple :
 1. Faites glisser le fichier dans votre jeu de données
 1. Confirmer que les données ont bien été ingérées
 
-   ![ Schéma de fidélité ](assets/web-channel-loyalty-dataset.png)
+   ![&#x200B; Schéma de fidélité &#x200B;](assets/web-channel-loyalty-dataset.png)
 
 
 ### Définition d’une politique de fusion Active-on-Edge
