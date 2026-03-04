@@ -4,7 +4,7 @@ description: Découvrez comment valider votre implémentation du SDK web de Plat
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 7%
@@ -26,14 +26,14 @@ Adobe Experience Platform Assurance est une fonctionnalité qui vous permet d’
 
 ## Conditions préalables
 
-Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://newluma.enablementadobe.com){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://luma.enablementadobe.com){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
 
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
 * [Configurer un trains de données](configure-datastream.md)
 * [Extension Web SDK installée dans la propriété de balise](install-web-sdk.md)
 * [Création d’éléments de données](create-data-elements.md)
-* [Création d’identités](create-identities.md)
+* [Capturer des identités](create-identities.md)
 * [Création d’une règle de balise](create-tag-rule.md)
 * [Validation avec Debugger](validate-with-debugger.md)
 
@@ -48,7 +48,7 @@ Chaque fois que vous activez Edge Trace dans Adobe Experience Platform Debugger,
 
 En examinant comment nous l’avons fait dans la leçon sur le débogueur :
 
-1. Accédez au [site de démonstration Luma](https://newluma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Dans le volet de navigation de gauche de **[!UICONTROL Experience Platform Debugger]** sélectionnez **[!UICONTROL Journaux]**
 1. Sélectionnez l’onglet **[!UICONTROL Edge]**, puis sélectionnez **[!UICONTROL Se connecter]**
 
@@ -67,7 +67,7 @@ En examinant comment nous l’avons fait dans la leçon sur le débogueur :
    ![Créer une session Assurance](assets/assurance-create-session.png)
 1. Sélectionner le début
 1. Attribuez un nom à la session, par exemple `Luma Web SDK validation`
-1. Dans le champ **[!UICONTROL URL de base]** saisissez `https://newluma.enablementadobe.com/`
+1. Dans le champ **[!UICONTROL URL de base]** saisissez `https://luma.enablementadobe.com/`
    ![Nommez la session Assurance](assets/assurance-name-session.png)
 1. Dans l’écran suivant, sélectionnez **[!UICONTROL Copier le lien]**
 1. Sélectionnez l’icône pour copier le lien dans le presse-papiers
@@ -95,4 +95,4 @@ Maintenant qu’un objet XDM se déclenche sur une page et que vous savez commen
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

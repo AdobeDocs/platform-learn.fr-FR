@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cecf8a4dcbf41ce23fd6b04c8401ba2dbb824f39
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 31%
@@ -26,7 +26,7 @@ ht-degree: 31%
 + Configuration des balises {#tags-configuration}
    + [Installer l’extension SDK Web](install-web-sdk.md)
    + [Création d’éléments de données](create-data-elements.md)
-   + [Création d’identités](create-identities.md)
+   + [Capturer des identités](create-identities.md)
    + [Création de règles de balises](create-tag-rule.md)
    + [Validation avec Debugger](validate-with-debugger.md)
    + [Valider avec Assurance](validate-with-assurance.md)

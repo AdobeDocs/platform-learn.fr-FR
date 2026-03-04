@@ -4,10 +4,10 @@ description: Découvrez comment installer et configurer l’extension de balise 
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 6e04d7cc2e0bc2b5e080d7501f1d330cdb4edc5f
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 11%
+source-wordcount: '635'
+ht-degree: 10%
 
 ---
 
@@ -33,7 +33,7 @@ Vous devez avoir terminé les leçons précédentes de ce tutoriel :
 
 ### Ajout d’une propriété de balise
 
-Vous devez d’abord disposer d’une propriété de balise. Une propriété est un conteneur de toutes les fonctionnalités, JavaScript, règles et autres, nécessaires pour collecter des détails dans une page web et l’envoyer à différents emplacements.
+Une propriété de balise est un conteneur pour tous les JavaScript, règles et autres fonctionnalités nécessaires à la collecte de détails d’une page web et à leur envoi à différents emplacements.
 
 Créez une propriété de balise pour le tutoriel :
 
@@ -53,6 +53,7 @@ Maintenant que votre schéma XDM, votre flux de données et votre propriété de
 1. Ouvrez votre nouvelle propriété de balise.
 1. Accédez à **[!UICONTROL Extensions]** > **[!UICONTROL Catalogue]**
 1. Rechercher des `Adobe Experience Platform Web SDK`
+1. Sélectionnez l’extension `Adobe Experience Platform Web SDK` pour ouvrir la barre latérale
 1. Sélectionnez **[!UICONTROL Installer]**
 
    ![Installer l’extension Web SDK](assets/extension-platform-web-sdk.png)
@@ -60,7 +61,7 @@ Maintenant que votre schéma XDM, votre flux de données et votre propriété de
 
 ## Lier l’extension à votre flux de données
 
-Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieurement, si nécessaire. La seule chose que vous devez faire maintenant est de lier l’extension à votre flux de données :
+Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieurement, si nécessaire. La seule chose que vous devez faire maintenant est de lier l’extension à votre flux de données. Cela ajoute le flux de données/l’identifiant de configuration correct aux appels réseau effectués à partir du navigateur, de sorte que les appels soient acheminés vers le flux de données correct lorsqu’ils arrivent dans Platform Edge Network :
 
 1. Sous **[!UICONTROL Flux de données]**, sélectionnez la méthode d’entrée **[!UICONTROL Choisir parmi]**
 1. Configurez l’**[!UICONTROL Environnement de production]**. (Les autres environnements de balises de la propriété hériteront des paramètres de production) :
@@ -70,7 +71,7 @@ Conservez la plupart des paramètres par défaut et mettez-les à jour ultérieu
 
    ![Sélection du flux de données](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Pour plus d’informations sur chaque section de l’extension, consultez [Configuration de l’extension Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Pour plus d’informations sur chaque section de l’extension, consultez [Configuration de l’extension Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -84,4 +85,4 @@ Maintenant que vous avez installé Platform Web SDK et que vous l’avez associ�
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
