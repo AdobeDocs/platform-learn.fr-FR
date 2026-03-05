@@ -4,7 +4,7 @@ description: Découvrez comment valider votre implémentation de Platform Web SD
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 2%
@@ -16,16 +16,16 @@ ht-degree: 2%
 Découvrez comment valider votre implémentation du SDK web d’Adobe Experience Platform avec Adobe Experience Platform Debugger.
 
 
-Experience Platform Debugger est une extension Chrome [&#128279;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) qui vous aide à voir la technologie Adobe mise en œuvre dans vos pages web. Experience Platform Debugger et la console de développement de votre navigateur sont les meilleurs moyens de valider et de déboguer les aspects côté navigateur de votre implémentation de Web SDK. Adobe Experience Platform Assurance, dont il sera question dans la leçon suivante, offre la meilleure vue des données lorsqu’elles entrent dans Platform Edge Network et en sortent.
+Experience Platform Debugger est une extension Chrome [](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) qui vous aide à voir la technologie Adobe mise en œuvre dans vos pages web. Experience Platform Debugger et la console de développement de votre navigateur sont les meilleurs moyens de valider et de déboguer les aspects côté navigateur de votre implémentation de Web SDK. Adobe Experience Platform Assurance, dont il sera question dans la leçon suivante, offre la meilleure vue des données lorsqu’elles entrent dans Platform Edge Network et en sortent.
 
 ![Diagramme de validation de Web SDK et Adobe Experience Platform](assets/dc-websdk-validation.png)
 
 
 Si vous n’avez jamais utilisé Debugger auparavant, vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
-Dans cette leçon, vous allez utiliser l’extension [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur le site de démonstration [Luma](https://luma.enablementadobe.com) par votre propre propriété.
+Dans cette leçon, vous allez utiliser l’extension [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour remplacer la propriété de balise codée en dur sur le site web de démonstration [Luma](https://luma.enablementadobe.com) par votre propre propriété.
 
 Cette technique, appelée commutation d’environnement, s’avérera utile ultérieurement, lorsque vous utiliserez les balises sur votre propre site web. Il vous permet de charger votre site web de production dans votre navigateur, mais avec votre bibliothèque de balises *de développement*. Cette fonctionnalité vous permet d’effectuer et de valider en toute confiance les modifications de balises indépendamment de vos versions de code standard. Après tout, cette séparation entre les versions de balises marketing et les versions de code standard est l’une des principales raisons pour lesquelles les clients utilisent les balises.
 
@@ -39,7 +39,7 @@ Cette technique, appelée commutation d’environnement, s’avérera utile ult�
 
 ## Conditions préalables
 
-Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://luma.enablementadobe.com/){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de la collecte de données et le site web de démonstration [Luma](https://luma.enablementadobe.com/){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
 
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -182,4 +182,4 @@ Ensuite, découvrez comment valider ces requêtes réseau lorsqu’elles sont re
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -4,9 +4,9 @@ description: Découvrez comment envoyer un événement à Platform Edge Network 
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: d15ce3b51424dba51b5b621b6d92eff85edd5b27
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Découvrez comment envoyer des événements à Adobe Experience Platform Edge Ne
 
 ## Conditions préalables
 
-Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://luma.enablementadobe.com) et avez terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de la collecte de données et le site web de démonstration [Luma](https://luma.enablementadobe.com) et avez terminé les leçons précédentes du tutoriel :
 
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -91,7 +91,7 @@ Toutes ces règles seront correctement séquencées à l’aide de l’option «
 
 Cette vidéo donne un aperçu du processus :
 
->[!VIDEO](https://video.tv.adobe.com/v/3454029/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Champs de configuration globale
 
@@ -125,7 +125,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
 
 1. Dans la section **[!UICONTROL Actions]**, sélectionnez **[!UICONTROL Ajouter]**
 
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
 
 1. Sélectionnez **[!UICONTROL Type d’action]**, puis **[!UICONTROL Mettre à jour la variable]**
 
@@ -152,7 +152,7 @@ Pour créer une règle de balise pour les champs XDM globaux :
    > La définition de `web.webPageDetails.pageViews.value` fournit un moyen standard d’indiquer une page vue pour d’autres applications en aval. Il n’est pas nécessaire qu’Adobe Analytics traite un appel réseau comme une page vue.
 
 1. Lorsque vous aurez terminé, votre `XDM Variable` ressemblera à ceci. Notez comment les champs remplis et partiellement remplis sont indiqués par les cercles bleus :
-   ![&#x200B; Variable XDM &#x200B;](assets/rule-xdm-variable.png)
+   ![ Variable XDM ](assets/rule-xdm-variable.png)
 1. Sélectionnez **[!UICONTROL Conserver les modifications]** puis **[!UICONTROL Enregistrer]** la règle
 
 
@@ -170,7 +170,7 @@ Commencez par effectuer le suivi des consultations de produit sur la page des d�
 
 1. Sélectionnez **[!UICONTROL Ajouter une règle]**
 1. Nommez-le [!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Couche de données client Adobe]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Données transmises]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`. Cette valeur d’ordre garantit que la règle s’exécute _après_ la règle des variables globales.
@@ -231,7 +231,7 @@ Maintenant, mappons notre tableau à l’objet XDM :
 
 
 1. Créez une règle nommée `cart page - adobeDataLayer push - set cart variables - 20`
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Couche de données client Adobe]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Données transmises]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`. Cette valeur d’ordre garantit que la règle s’exécute _après_ la règle des variables globales.
@@ -268,7 +268,7 @@ Maintenant, mappons notre tableau à l’objet XDM :
 Créez une autre règle pour les événements d’achat :
 
 1. Créez une règle nommée `order confirmation - adobeDataLayer push - set purchase variables -  20`
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Couche de données client Adobe]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Données transmises]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, puis saisissez `20`. Cette valeur d’ordre garantit que la règle s’exécute _après_ la règle des variables globales.
@@ -304,7 +304,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 
 1. Créez une règle nommée `all pages - adobeDataLayer push - send event - 50`
-1. Sélectionnez le symbole ![+ sous Événement &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
+1. Sélectionnez le symbole ![+ sous Événement ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ajouter un nouveau déclencheur
 1. Sous **[!UICONTROL Extension]**, sélectionnez **[!UICONTROL Couche de données client Adobe]**
 1. Sous **[!UICONTROL Type d’événement]**, sélectionnez **[!UICONTROL Données transmises]**
 1. Sélectionnez pour ouvrir **[!UICONTROL Options avancées]**, saisissez `50` (qui est probablement la valeur par défaut). Cette valeur d’ordre garantit que la règle s’exécute _après_ les règles de définition de variables.
@@ -329,7 +329,7 @@ Maintenant que vous avez défini les variables, vous pouvez créer la règle pou
 
 Votre propriété doit comporter les règles suivantes :
 
-    ![Vérifier la liste des règles](assets/create-rule-list-of-rules.png)
+![Vérifier la liste des règles](assets/create-rule-list-of-rules.png)
 
 ## Publication des règles dans une bibliothèque
 
@@ -364,4 +364,4 @@ Vous êtes maintenant prêt à valider les données de la requête à l’aide d
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

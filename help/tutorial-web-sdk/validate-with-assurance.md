@@ -4,7 +4,7 @@ description: Découvrez comment valider votre implémentation du SDK web de Plat
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 5%
@@ -29,7 +29,7 @@ Comme vous l’avez appris dans la leçon [Configurer un flux de données](confi
 
 ## Conditions préalables
 
-Vous connaissez les balises de la collecte de données et le site de démonstration [Luma](https://luma.enablementadobe.com){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
+Vous connaissez les balises de la collecte de données et le site web de démonstration [Luma](https://luma.enablementadobe.com){target="_blank"} et avez terminé les leçons précédentes du tutoriel :
 
 * [Configuration d’un schéma XDM](configure-schemas.md)
 * [Configuration d’un espace de noms d’identité](configure-identities.md)
@@ -50,7 +50,7 @@ Il existe plusieurs façons de démarrer une session Assurance.
 
 Pour activer Edge Trace :
 
-1. Accédez au [site de démonstration Luma](https://luma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Accédez au [site web de démonstration Luma](https://luma.enablementadobe.com) et utilisez le débogueur pour [changer la propriété de balise du site en votre propre propriété de développement](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Assurez-vous d’être connecté au débogueur en indiquant le nom de votre organisation. Si votre nom d&#39;utilisateur s&#39;affiche à la place, déconnectez-vous et essayez de vous reconnecter.
 1. Dans le volet de navigation de gauche de **[!UICONTROL Experience Platform Debugger]** sélectionnez **[!UICONTROL Journaux]**
 1. Sélectionnez l’onglet **[!UICONTROL Edge]**, puis sélectionnez **[!UICONTROL Se connecter]**
@@ -124,4 +124,4 @@ Maintenant qu’un objet XDM se déclenche sur une page et que vous savez commen
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
