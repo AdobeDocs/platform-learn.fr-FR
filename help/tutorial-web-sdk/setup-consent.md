@@ -215,7 +215,7 @@ Une fois cette règle en place, la collecte des événements doit commencer lors
 ![Option de post-consentement du visiteur](assets/consent-post-user-optin.png)
 
 
-Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en charge des préférences de consentement des clients](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en charge des préférences de consentement des clients](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Pour plus d’informations sur le consentement dans Web SDK, voir [Prise en char
 
 
 
-Pour plus d’informations sur l’action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Pour plus d’informations sur l’action [!UICONTROL Définir le consentement], voir [Définir le consentement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
