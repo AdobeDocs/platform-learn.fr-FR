@@ -16,7 +16,7 @@ ht-degree: 2%
 Découvrez comment valider votre implémentation du SDK web d’Adobe Experience Platform avec Adobe Experience Platform Debugger.
 
 
-Experience Platform Debugger est une extension Chrome [](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) qui vous aide à voir la technologie Adobe mise en œuvre dans vos pages web. Experience Platform Debugger et la console de développement de votre navigateur sont les meilleurs moyens de valider et de déboguer les aspects côté navigateur de votre implémentation de Web SDK. Adobe Experience Platform Assurance, dont il sera question dans la leçon suivante, offre la meilleure vue des données lorsqu’elles entrent dans Platform Edge Network et en sortent.
+Experience Platform Debugger est une extension Chrome [&#128279;](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) qui vous aide à voir la technologie Adobe mise en œuvre dans vos pages web. Experience Platform Debugger et la console de développement de votre navigateur sont les meilleurs moyens de valider et de déboguer les aspects côté navigateur de votre implémentation de Web SDK. Adobe Experience Platform Assurance, dont il sera question dans la leçon suivante, offre la meilleure vue des données lorsqu’elles entrent dans Platform Edge Network et en sortent.
 
 ![Diagramme de validation de Web SDK et Adobe Experience Platform](assets/dc-websdk-validation.png)
 

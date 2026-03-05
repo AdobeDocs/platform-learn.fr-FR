@@ -66,7 +66,7 @@ Configurez un jeu de données pour vos données d’événement web Luma :
 
 1. Fournissez un **[!UICONTROL Nom]** et un **[!UICONTROL Description]** facultatif pour le jeu de données. Pour cet exercice, utilisez `Luma Web Event Data`, puis sélectionnez **[!UICONTROL Terminer]**
 
-   ![Nom du jeu de données ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nom du jeu de données &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Un jeu de données est maintenant configuré pour commencer à collecter des données à partir de votre implémentation de Platform Web SDK.
 
@@ -74,7 +74,7 @@ Un jeu de données est maintenant configuré pour commencer à collecter des don
 
 Vous pouvez maintenant configurer votre [!UICONTROL flux de données] pour envoyer des données à [!UICONTROL Adobe Experience Platform]. Le flux de données est le lien entre la propriété de balise, la plateforme Edge Network et le jeu de données Experience Platform.
 
-1. Ouvrez l’interface [ Collecte de données ](https://experience.adobe.com/#/data-collection){target="blank"}
+1. Ouvrez l’interface [&#x200B; Collecte de données &#x200B;](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Sélectionnez **[!UICONTROL Flux de données]** dans le volet de navigation de gauche
 1. Ouvrez le flux de données que vous avez créé dans la leçon [Configurer un flux de données](configure-datastream.md) , `Luma Web SDK: Development Environment`
 
@@ -129,7 +129,7 @@ Puisque nous avons maintenant activé un service dans le flux de données, nous 
 
 1. Ouvrez l’événement **[!UICONTROL generic]** appartenant au fournisseur **[!UICONTROL com.adobe.streaming.validation]**. Cela indique que la requête a été envoyée au jeu de données avec les données XDM associées
 
-   ![ Validation dans Assurance ](assets/platform-assurance-generic.png)
+   ![&#x200B; Validation dans Assurance &#x200B;](assets/platform-assurance-generic.png)
 
 Vous avez validé que la requête a été reçue par Platform Edge Network et transférée au jeu de données Platform.
 
@@ -154,7 +154,7 @@ Maintenant, regardons en fait dans le jeu de données ! Une option rapide consis
 
 1. Une requête s’exécute pour extraire 100 lignes récentes de données de votre jeu de données. Vous pouvez explorer des champs XDM individuels, tels que web.webPageDetails.name :
 
-   ![Aperçu du jeu de données ](assets/experience-platform-dataset-preview.png)
+   ![Aperçu du jeu de données &#x200B;](assets/experience-platform-dataset-preview.png)
 
 
 ### Interroger les données
