@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Présentation de l’ingestion des données en flux continu
 
-Grâce à l’ingestion par flux d’Experience Platform, vous pouvez être sûr que toutes les données envoyées seront disponibles dans le profil client en temps réel. Ces données peuvent être capturées à partir de systèmes CRM et ERP, ou à partir de toute autre source capable de communiquer via HTTP ou une infrastructure de streaming cloud public. Vous pouvez ensuite utiliser ces données pour la segmentation en temps réel et pour activer d’autres processus marketing. Pour plus d’informations, consultez la [documentation sur l’ingestion en flux continu](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview).
+Grâce à l’ingestion par flux d’Experience Platform, vous pouvez être sûr que toutes les données envoyées seront disponibles dans le profil client en temps réel. Ces données peuvent être capturées à partir de systèmes CRM et ERP, ou à partir de toute autre source capable de communiquer via HTTP ou une infrastructure de streaming cloud public. Vous pouvez ensuite utiliser ces données pour la segmentation en temps réel et pour activer d’autres processus marketing. Pour plus d’informations, consultez la [documentation sur l’ingestion en flux continu](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/streaming/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)

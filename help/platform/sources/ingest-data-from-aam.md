@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Ingestion de données à l’aide du connecteur de données Adobe Audience Manager
 
-Dans cette vidéo d’intégration, découvrez comment utiliser le connecteur de données Audience Manager pour importer des caractéristiques et des segments d’AAM dans Platform et les combiner avec d’autres données riches. Pour plus d’informations, consultez la [documentation du connecteur source Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+Dans cette vidéo d’intégration, découvrez comment utiliser le connecteur de données Audience Manager pour importer des caractéristiques et des segments d’AAM dans Platform et les combiner avec d’autres données riches. Pour plus d’informations, consultez la [documentation du connecteur source Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

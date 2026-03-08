@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Prise en charge des cas d’utilisation de prospection hors site à l’aide des données de partenaire dans [!DNL Real-Time CDP]
 
-Découvrez le workflow utilisé pour ingérer de nouveaux prospects provenant de partenaires en [!DNL Real-Time CDP] pour le ciblage préalable à la visite. Pour plus d’informations, consultez la documentation [Engager et acquérir de nouveaux clients par le biais de cas d’utilisation de prospection](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html).
+Découvrez le workflow utilisé pour ingérer de nouveaux prospects provenant de partenaires en [!DNL Real-Time CDP] pour le ciblage préalable à la visite. Pour plus d’informations, consultez la documentation [Engager et acquérir de nouveaux clients par le biais de cas d’utilisation de prospection](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)

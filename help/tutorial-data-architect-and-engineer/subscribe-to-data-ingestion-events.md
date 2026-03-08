@@ -81,7 +81,7 @@ C’est terminé pour l’instant. Vous en apprendrez plus sur ces notifications
 ## Ressources supplémentaires
 
 * [Webhook.site](https://webhook.site/)
-* [Documentation sur les notifications d’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Documentation sur les notifications d’ingestion de données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=fr)
 * [Documentation Prise en main de Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, commençons enfin à [ingérer des données](ingest-batch-data.md) !

@@ -48,7 +48,7 @@ Adobe Experience Platform est une plateforme technique conçue pour vous aider �
 
 ## Prérequis
 
-* Vous avez regardé la [Présentation de la liste de lecture Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) sur Experience League et vous connaissez les fonctionnalités de Platform
+* Vous avez regardé la [Présentation de la liste de lecture Adobe Experience Platform](https://experienceleague.adobe.com/fr/playlists/experience-platform-introduction) sur Experience League et vous connaissez les fonctionnalités de Platform
 * Vous avez accès à un compte configuré avec Adobe Experience Platform (ou une application basée sur Platform telle que Real-Time CDP ou Journey Optimizer) et la collecte de données (anciennement Launch).
 * Vous êtes administrateur système de ce compte ou pouvez disposer d’une autorisation [configurer les utilisateurs](configure-permissions.md) pour vous.
 
@@ -58,7 +58,7 @@ Ce tutoriel combine des tâches pour les ingénieurs de données et les architec
 
 Puisque vous créez divers éléments Platform au cours de ce tutoriel, essayez de vous en tenir autant que possible aux noms que je recommande. Cependant, il existe quelques noms d’éléments généraux que vous pouvez personnaliser au cas où plusieurs personnes de votre entreprise suivraient ce tutoriel simultanément. Par exemple, vous pouvez nommer la sandbox Platform « Plateforme de tutoriels Luma - Ignatius J Reilly » au lieu de simplement « Plateforme de tutoriels Luma ».
 
-Si vous êtes bloqué, essayez d’abord de relire les instructions, puis utilisez le lien ![Enregistrer un problème](https://experienceleague.adobe.com/assets/img/feedback.svg) sur la barre latérale de chaque page pour me contacter.
+Si vous êtes bloqué, essayez d’abord de relire les instructions, puis utilisez le lien ![Enregistrer un problème](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=fr) sur la barre latérale de chaque page pour me contacter.
 
 ## Notes techniques
 

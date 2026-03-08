@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Personnalisation instantanée à l’aide d’Edge Network
 
-La composition de l’audience fédérée vous permet d’enrichir les audiences existantes dans Adobe Experience Platform (AEP) en utilisant les données de l’audience composée qui ont été fédérées à partir de l’entrepôt de données d’entreprise. Ces données ne seront pas conservées dans Adobe Experience Platform, mais vous pouvez utiliser les fonctionnalités de [transfert d’événement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} pour envoyer ces données directement à votre entrepôt de données.
+La composition de l’audience fédérée vous permet d’enrichir les audiences existantes dans Adobe Experience Platform (AEP) en utilisant les données de l’audience composée qui ont été fédérées à partir de l’entrepôt de données d’entreprise. Ces données ne seront pas conservées dans Adobe Experience Platform, mais vous pouvez utiliser les fonctionnalités de [transfert d’événement](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} pour envoyer ces données directement à votre entrepôt de données.
 
 Dans cet exercice, nous utilisons une audience fédérée interrogée avec la cote de crédit et l’activité de prêt pour enrichir l’audience comportementale des visiteurs de la page web de la demande de prêt.
 

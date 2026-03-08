@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Ingestion de données à l’aide du connecteur source de base de données
 
-Cette vidéo explique comment effectuer une ingestion par lots de données à partir d’une source de base de données dans le profil client en temps réel de Adobe Experience Platform et le lac de données Experience, de manière transparente et évolutive. Pour consulter la documentation plus détaillée du produit, voir [base de données](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) sur la page Présentation des connecteurs Source ou la [documentation du connecteur source BigQuery Google](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
+Cette vidéo explique comment effectuer une ingestion par lots de données à partir d’une source de base de données dans le profil client en temps réel de Adobe Experience Platform et le lac de données Experience, de manière transparente et évolutive. Pour consulter la documentation plus détaillée du produit, voir [base de données](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=fr#database) sur la page Présentation des connecteurs Source ou la [documentation du connecteur source BigQuery Google](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=fr).
 
 >[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)
