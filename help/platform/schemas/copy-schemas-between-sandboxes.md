@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Copie de schémas entre des sandbox
 
-Cette vidéo montre comment copier un schéma d’un sandbox vers un autre dans Adobe Experience Platform à l’aide de l’API Export/Import Schema. Créez et testez vos schémas dans les sandbox de développement, puis copiez-les vers les environnements de production. Pour plus d’informations, consultez la [ documentation sur les schémas ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
+Cette vidéo montre comment copier un schéma d’un sandbox vers un autre dans Adobe Experience Platform à l’aide de l’API Export/Import Schema. Créez et testez vos schémas dans les sandbox de développement, puis copiez-les vers les environnements de production. Pour plus d’informations, consultez la [&#x200B; documentation sur les schémas &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
 >[!TIP]
 >

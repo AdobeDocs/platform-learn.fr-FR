@@ -22,11 +22,11 @@ ht-degree: 4%
 Dans cette leçon, vous allez vous abonner aux événements d’ingestion de données en configurant un webhook avec Adobe Developer Console et un outil de développement webhook en ligne. Vous utiliserez ces événements pour surveiller le statut de vos tâches d’ingestion de données dans les leçons suivantes.
 
 **Ingénieurs de données** souhaiteront vous abonner aux événements d’ingestion de données en dehors de ce tutoriel.
-**Architectes de données** _pouvez ignorer cette leçon_ et passer à la [ leçon d’ingestion par lots](ingest-batch-data.md).
+**Architectes de données** _pouvez ignorer cette leçon_ et passer à la [&#x200B; leçon d’ingestion par lots](ingest-batch-data.md).
 
 ## Autorisations requises
 
-Dans la leçon [ Configurer les autorisations ](configure-permissions.md), vous avez configuré tous les contrôles d’accès requis pour suivre cette leçon, notamment :
+Dans la leçon [&#x200B; Configurer les autorisations &#x200B;](configure-permissions.md), vous avez configuré tous les contrôles d’accès requis pour suivre cette leçon, notamment :
 
 <!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
@@ -72,7 +72,7 @@ Dans cet exercice, nous allons créer un webhook à l’aide d’un outil en lig
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer les événements configurés]**
    ![Enregistrer les événements](assets/ioevents-addWebhook.png)
 1. Attendez que votre configuration soit enregistrée et vous devriez voir que votre événement `Platform notifications` est Actif avec vos détails webhook et aucun message d’erreur
-   ![ Configuration enregistrée ](assets/ioevents-webhookConfigured.png)
+   ![&#x200B; Configuration enregistrée &#x200B;](assets/ioevents-webhookConfigured.png)
 1. Revenez à l’onglet webhook.site et vous devriez voir la première requête au webhook, résultant de la validation de votre configuration Developer Console :
    ![Première requête dans webhook.site](assets/ioevents-webhook-firstRequest.png)
 

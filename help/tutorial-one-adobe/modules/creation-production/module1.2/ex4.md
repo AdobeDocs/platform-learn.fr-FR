@@ -385,7 +385,7 @@ Vous avez maintenant terminé cet exercice avec succès.
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages de l’automatisation des workflows Creative avec Workfront Fusion ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages de l’automatisation des workflows Creative avec Workfront Fusion &#x200B;](./summary.md){target="_blank"}
 
 Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 

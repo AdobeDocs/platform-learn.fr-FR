@@ -74,7 +74,7 @@ Que se passe-t-il si vous n’aimez pas cette politique de fusion par défaut ? 
 1. Assurez-vous que `Luma Loyalty Dataset` est au-dessus en le faisant glisser et en le déposant au-dessus de la `Luma CRM Dataset`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer]**
    <!--do i need to explain Private Graph? Is that GA?-->
-   ![ Politique de fusion ](assets/mergepolicies-newPolicy.png)
+   ![&#x200B; Politique de fusion &#x200B;](assets/mergepolicies-newPolicy.png)
 
 ## Validation de la politique de fusion
 

@@ -49,7 +49,7 @@ La plupart des navigateurs disposent d’une « barre d’adresse » qui affiche
 
 Cette `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` ci-dessus correspond à l’adresse d’une page sur le web, appelée URL ou localisateur de ressources uniforme. Les URL peuvent faire référence à une page comme celle-ci, à un fichier image, à une vidéo ou à d’autres types de fichiers.
 
-![ Parties d’une URL ](../assets/api101-url-parts.jpg)
+![&#x200B; Parties d’une URL &#x200B;](../assets/api101-url-parts.jpg)
 
 Cette adresse, l’URL, comporte des parties spécifiques qui sont très pertinentes pour les API web et de navigateur.
 

@@ -240,7 +240,7 @@ Sélectionnez **Enregistrer**.
 
 ## Étapes suivantes
 
-Accédez à [ Automatisation à l’aide de connecteurs ](./ex4.md){target="_blank"}
+Accédez à [&#x200B; Automatisation à l’aide de connecteurs &#x200B;](./ex4.md){target="_blank"}
 
 Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 

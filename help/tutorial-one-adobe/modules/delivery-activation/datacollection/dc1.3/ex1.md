@@ -546,6 +546,6 @@ Vous avez maintenant terminé la configuration dans Snowflake.
 
 Accédez à [1.3.2 Création de schémas, de modèles de données et de liens](./ex2.md){target="_blank"}
 
-Revenez à [ Composition d’audience fédérée ](./fac.md){target="_blank"}
+Revenez à [&#x200B; Composition d’audience fédérée &#x200B;](./fac.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}

@@ -34,7 +34,7 @@ Non interactif signifie qu’une demande d’exécution d’une requête n’ent
 
 ## Exemple de requête
 
-Comme exemple de requête, vous utiliserez la première requête répertoriée dans [4.3 - Requêtes, requêtes, requêtes... et analyse de l’attrition ](./ex3.md) :
+Comme exemple de requête, vous utiliserez la première requête répertoriée dans [4.3 - Requêtes, requêtes, requêtes... et analyse de l’attrition &#x200B;](./ex3.md) :
 
 Combien de consultations de produits avons-nous par jour ?
 
@@ -424,7 +424,7 @@ La réponse de cette requête pointe vers les fichiers du jeu de données :
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenez à [Query Service](./query-service.md){target="_blank"}
 

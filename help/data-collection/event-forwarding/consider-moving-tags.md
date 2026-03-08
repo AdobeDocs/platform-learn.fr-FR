@@ -102,5 +102,5 @@ Il est plus facile d’enquêter et de tester les points d’entrée de l’API 
 Cet article fournit une séquence d’étapes permettant d’évaluer une balise côté client d’un fournisseur et éventuellement de la déplacer côté serveur dans une propriété de transfert d’événement. Pour plus d’informations sur les rubriques connexes, consultez les liens suivants :
 
 - [Gestion des balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) dans Adobe Experience Platform
-- [ Transfert d’événement ](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr) pour le traitement côté serveur
+- [&#x200B; Transfert d’événement &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr) pour le traitement côté serveur
 - [Mises à jour terminologiques](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=fr) dans la collecte de données

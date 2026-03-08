@@ -53,4 +53,4 @@ Vous pouvez exploiter les attributs d’audience dans votre entrepôt de donnée
 Nous avons créé une audience et l’avons activée facilement vers une destination S3. Toute autre solution peut sélectionner cette audience et l’utiliser immédiatement. L’interface conviviale permet aux équipes marketing de créer et d’activer rapidement des audiences sans déplacer les données sous-jacentes. Les clients qui adoptent cette approche ont mis en ligne leur premier cas d’utilisation depuis environ un mois.
 
 
-Maintenant, nous allons [construire un parcours ](build-journey-federated-audience.md).
+Maintenant, nous allons [construire un parcours &#x200B;](build-journey-federated-audience.md).

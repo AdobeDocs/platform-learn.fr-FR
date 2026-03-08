@@ -54,7 +54,7 @@ Sur la page **Espace de noms Hubs d’événements**, cliquez sur **Paramètres 
 
 ### Valeur de la clé SAS
 
-Cliquez ensuite sur la **RootManageSharedAccessKey** pour obtenir la valeur de la clé SAS. Appuyez ensuite sur l’icône **Copier dans le presse-papiers** pour copier la touche de Principal ****, dans ce cas `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`.
+Cliquez ensuite sur la **RootManageSharedAccessKey** pour obtenir la valeur de la clé SAS. Appuyez ensuite sur l’icône **Copier dans le presse-papiers** pour copier la touche de Principal **&#x200B;**, dans ce cas `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`.
 
 ![2-07-sas-key-value.png](./images/207saskeyvalue.png)
 

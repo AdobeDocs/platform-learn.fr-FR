@@ -437,8 +437,8 @@ Ouvrez l’URL de l’image pour vérifier votre image.
 
 ## Étapes suivantes
 
-Accédez à [ Utilisation des API Photoshop ](./ex3.md){target="_blank"}
+Accédez à [&#x200B; Utilisation des API Photoshop &#x200B;](./ex3.md){target="_blank"}
 
-Revenez à [ Présentation de Adobe Firefly Services ](./firefly-services.md){target="_blank"}
+Revenez à [&#x200B; Présentation de Adobe Firefly Services &#x200B;](./firefly-services.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

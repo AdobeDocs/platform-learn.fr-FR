@@ -98,7 +98,7 @@ Remplacez le type de police par une police de votre choix. Dans ce cas, le type 
 
 ![Postman](./images/ill5.png)
 
-Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points ****.
+Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points **&#x200B;**.
 
 ![Postman](./images/ill6.png)
 
@@ -503,6 +503,6 @@ Vous verrez alors l’image générée, qui ne devrait pas contenir de fleurs.
 
 Accédez à [Optimisation de votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies](./ex2.md){target="_blank"}
 
-Revenez à [ Présentation de Adobe Firefly Services ](./firefly-services.md){target="_blank"}
+Revenez à [&#x200B; Présentation de Adobe Firefly Services &#x200B;](./firefly-services.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

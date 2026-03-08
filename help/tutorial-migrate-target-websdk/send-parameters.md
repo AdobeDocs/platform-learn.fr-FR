@@ -125,7 +125,7 @@ Le tableau ci-dessous décrit comment les paramètres d’exemple seraient remap
 | `mbox3rdPartyId` | Définir dans l’objet `xdm.identityMap` | Utilisé pour synchroniser les profils Target sur les appareils et les attributs du client. L’espace de noms à utiliser pour l’ID de client doit être spécifié dans la [configuration cible du flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Utilisé pour identifier une commande unique pour le suivi des conversions dans Target. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Utilisé pour le suivi des totaux des ordres pour les objectifs de conversion et d’optimisation de Target. |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OU<br> `xdm.productListItems[0-n].SKU` | Utilisé pour le suivi des conversions de Target et les algorithmes de recommandations. Pour plus d’informations[ reportez-vous à la section ](#entity-parameters)paramètres d’entité ci-dessous. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OU<br> `xdm.productListItems[0-n].SKU` | Utilisé pour le suivi des conversions de Target et les algorithmes de recommandations. Pour plus d’informations[&#x200B; reportez-vous à la section &#x200B;](#entity-parameters)paramètres d’entité ci-dessous. |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Utilisé pour l’objectif de l’activité [notation personnalisée](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html). |
 
 {style="table-layout:auto"}

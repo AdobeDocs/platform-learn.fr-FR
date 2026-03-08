@@ -540,7 +540,7 @@ N’oubliez pas d’enregistrer vos modifications !
 
 ## Étapes suivantes
 
-Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
+Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
 
 Revenez à [Ingérer et analyser des données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 
