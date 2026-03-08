@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Revenez à votre premier nœud, sélectionnez **Initialiser les constantes** pui
 ![WF Fusion](./images/wffusion69.png)
 
 | Clé | Exemple de valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
@@ -39,7 +39,7 @@ Revenez à votre premier nœud, sélectionnez **Initialiser les constantes** pui
 
 Vous pouvez retrouver vos variables en revenant à Postman, puis en ouvrant votre **Variables d’environnement**.
 
-![&#x200B; Stockage Azure &#x200B;](./../module1.1/images/az105.png)
+![Stockage Azure](./../module1.1/images/az105.png)
 
 Copiez ces valeurs dans Workfront Fusion et ajoutez un nouvel élément pour chacune de ces 4 variables.
 
@@ -262,7 +262,7 @@ Vous devriez alors voir ceci. Vous devez ensuite définir la sortie de l’actio
 
 ![WF Fusion](./images/wffc30.png)
 
-Sélectionnez **Azure** pour **Stockage**, collez ce `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` sous **Emplacement du fichier** et sélectionnez **vnd.adobe.photoshop** sous **Type**. Cliquez pour activer **Afficher les paramètres avancés**.
+Sélectionnez **Azure** pour **Stockage**, collez cette `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` sous **Emplacement du fichier** et sélectionnez **vnd.adobe.photoshop** sous **Type**. Cliquez pour activer **Afficher les paramètres avancés**.
 
 ![WF Fusion](./images/wffc31.png)
 
@@ -287,7 +287,7 @@ Vous devriez alors voir ceci. Cliquez sur la bulle dans le module **Adobe Photos
 
 ![WF Fusion](./images/wffc33b.png)
 
-Vous pouvez maintenant constater qu’un nouveau fichier PSD a été généré et stocké dans votre compte de stockage Azure Microsoft.
+Vous pouvez maintenant constater qu’un nouveau fichier PSD a été généré et stocké dans votre compte de stockage Microsoft Azure.
 
 ![WF Fusion](./images/wffc33c.png)
 
@@ -309,7 +309,7 @@ Vous devriez alors voir ceci. Tout d’abord, sélectionnez votre connexion Adob
 
 ![WF Fusion](./images/wffc37.png)
 
-Pour le **Fichier d’entrée**, sélectionnez **Azure** pour le **Stockage de fichier d’entrée** et veillez à sélectionner la sortie de la requête précédente, **Adobe Photoshop - Appliquer les modifications de PSD**, que vous pouvez définir comme suit : ``{{XX.data[].`_links`.renditions[].href}}`` (remplacez XX par le numéro de séquence du module précédent Adobe Photoshop - Appliquer les modifications de PSD).
+Pour le **Fichier d’entrée**, sélectionnez **Azure** pour **Stockage du fichier d’entrée** et veillez à sélectionner la sortie de la requête précédente, **Adobe Photoshop - Appliquer les modifications de PSD**, que vous pouvez définir comme suit : ``{{XX.data[].`_links`.renditions[].href}}`` (remplacez XX par le numéro de séquence du module précédent Adobe Photoshop - Appliquer les modifications de PSD).
 
 Cliquez ensuite sur **+Ajouter un élément** sous **Calques** pour commencer à ajouter les calques de texte à mettre à jour.
 

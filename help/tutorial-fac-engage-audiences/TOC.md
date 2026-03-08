@@ -2,11 +2,11 @@
 user-guide-title: Interagissez avec les audiences directement à partir de votre entrepôt de données à l’aide de la composition d’audiences fédérées
 breadcrumb-title: Composition d’audiences fédérées
 user-guide-description: Guide permettant de minimiser la copie de données en capitalisant sur votre tech stack existant pour créer et enrichir les audiences à l’aide de la composition d’audiences fédérées.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 3%

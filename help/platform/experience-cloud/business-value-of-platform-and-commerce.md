@@ -5,12 +5,12 @@ solution: Experience Platform, Commerce
 feature: Integrations
 topic: Integrations
 badgeIntegration: label="Intégration" type="positive"
-role: User, Leader, Architect
+role: User, Leader, Developer
 level: Beginner
 jira: KT-6242
 thumbnail: 40376.jpg
 exl-id: fab8d1ab-87b4-4ec3-ac9e-4c8b3e3b8c75
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 1%
@@ -25,5 +25,5 @@ Cette vidéo montre comment Adobe Experience Platform peut être utilisé avec A
 >
 > Magento s’appelle désormais Adobe Commerce
 
->[!VIDEO](https://video.tv.adobe.com/v/328482?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
 

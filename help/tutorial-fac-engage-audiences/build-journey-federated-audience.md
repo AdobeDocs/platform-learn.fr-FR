@@ -3,11 +3,11 @@ title: Création d’un parcours avec une audience fédérée
 seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Création d’un parcours avec une audience fédérée
 description: Dans cet exercice, une audience fédérée est utilisée dans un parcours Journey Optimizer.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 1. Accédez au portail **Parcours** et cliquez sur le bouton **Créer un Parcours**.
 
-   ![create-a-parcours &#x200B;](assets/create-journey.png)
+   ![create-a-parcours ](assets/create-journey.png)
 
 2. Mettez à jour les propriétés du Parcours avec un nouveau nom. Dans notre exemple : **`SecurFinancial - Home Loan Offer`**.
 
@@ -36,7 +36,7 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 5. Dans la barre de recherche, recherchez l’audience. Dans notre exemple : **`SecureFinancial Customers - No Loans, Good Credit`**. Cliquez sur **Enregistrer**.
 
-   ![create-a-parcours &#x200B;](assets/select-audience.png)
+   ![create-a-parcours ](assets/select-audience.png)
 
 6. Laissez tous les paramètres par défaut dans le menu de droite, puis cliquez sur **Enregistrer**.
 
@@ -70,11 +70,11 @@ Pour poursuivre l’histoire de SecurFinancial, en particulier le cas d’utilis
 
 11. Maintenant que la personnalisation de prénom a été ajoutée, ajoutez `Hi, ` devant la variable de personnalisation . Cliquez ensuite sur **Enregistrer**.
 
-    ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
+   ![parcours-enregistrement-e-mail](assets/journey-email-save.png)
 
 12. Cliquez deux fois sur le bouton **Précédent** pour revenir à la zone de travail de parcours. Ensuite, dans le menu **Action : E-mail** à droite, cliquez sur **Enregistrer**.
 
-   ![save-final-parcours &#x200B;](assets/save-final-journey.png)
+   ![save-final-parcours ](assets/save-final-journey.png)
 
 Nous avons créé un parcours dans AJO à l’aide d’une audience fédérée et d’attributs d’enrichissement fédérés.
 

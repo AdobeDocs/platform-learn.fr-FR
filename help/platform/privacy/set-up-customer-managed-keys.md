@@ -2,16 +2,16 @@
 title: Configurer les clés gérées par le client (CMK)
 description: Gérez le chiffrement des données au repos à l’aide de vos propres clés de chiffrement.
 feature: Privacy
-role: Admin, Data Architect, Data Engineer, Developer
+role: Admin, Developer, Developer
 level: Experienced
 jira: KT-11382
 thumbnail: 3410673.jpeg
 last-substantial-update: 2024-06-28T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 
 Gérez le chiffrement des données au repos à l’aide de vos propres clés de chiffrement. Pour plus d’informations, consultez la [documentation sur les clés gérées par le client](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3413982/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

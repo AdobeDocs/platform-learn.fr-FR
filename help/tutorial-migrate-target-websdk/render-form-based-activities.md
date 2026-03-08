@@ -1,31 +1,31 @@
 ---
-title: Migration de Target depuis at.js 2.x vers le SDK Web
-description: Découvrez comment migrer une mise en oeuvre Adobe Target d’at.js 2.x vers le SDK Web Adobe Experience Platform. Les rubriques incluent un aperçu de la bibliothèque, des différences de mise en oeuvre et d’autres légendes dignes d’intérêt.
+title: Migration de Target d’at.js 2.x vers Web SDK
+description: Découvrez comment migrer une implémentation Adobe Target d’at.js 2.x vers Adobe Experience Platform Web SDK. Les rubriques incluent une présentation de la bibliothèque, des différences d’implémentation et d’autres légendes importantes.
 exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
 
 ---
 
-# Activités Render Target qui utilisent le compositeur basé sur les formulaires
+# Activités de rendu de Target utilisant le compositeur basé sur les formulaires
 
-Certaines mises en oeuvre de Target peuvent utiliser des mbox régionales (désormais appelées &quot;portées&quot;) pour diffuser du contenu à partir des activités qui utilisent le compositeur d’expérience d’après les formulaires. Si votre implémentation d’at.js Target utilise des mbox, vous devez effectuer les opérations suivantes :
+Certaines implémentations de Target peuvent utiliser des mbox régionales (désormais appelées « portées ») pour diffuser du contenu à partir d’activités qui utilisent le compositeur d’expérience d’après les formulaires. Si votre implémentation d’at.js Target utilise des mbox, procédez comme suit :
 
-* Mettez à jour toutes les références de votre implémentation at.js qui utilisent `getOffer()` ou `getOffers()` vers les méthodes SDK Web Platform équivalentes.
-* Ajoutez du code pour déclencher un événement `propositionDisplay` afin de comptabiliser une impression.
+* Mettez à jour toutes les références de votre implémentation at.js qui utilisent `getOffer()` ou `getOffers()` aux méthodes de SDK Web Platform équivalentes.
+* Ajoutez du code pour déclencher un événement `propositionDisplay` afin qu’une impression soit comptabilisée.
 
 ## Demander et appliquer du contenu à la demande
 
-Les activités créées à l’aide du compositeur basé sur les formulaires de Target et diffusées aux mbox régionales ne peuvent pas être rendues automatiquement par le SDK Web Platform. Tout comme at.js, les offres diffusées à des emplacements cibles spécifiques doivent être rendues à la demande.
+Les activités créées à l’aide du compositeur basé sur les formulaires de Target et diffusées aux mbox régionales ne peuvent pas être rendues automatiquement par Platform Web SDK. Tout comme at.js, les offres diffusées à des emplacements Target spécifiques doivent être rendues à la demande.
 
 
-+++Exemple d’at.js utilisant `getOffer()` et `applyOffer()` :
++++Exemple d’utilisation d’at.js avec `getOffer()` et `applyOffer()` :
 
-1. Exécutez `getOffer()` pour demander un emplacement.
-1. Exécutez `applyOffer()` pour effectuer le rendu de l’offre vers un sélecteur spécifié
-1. Une impression d’activité est automatiquement incrémentée au moment de la requête `getOffer()`.
+1. Exécuter `getOffer()` pour demander une offre pour un emplacement
+1. Exécutez `applyOffer()` pour rendre l’offre vers un sélecteur spécifié.
+1. Une impression d’activité est automatiquement incrémentée au moment de la demande de `getOffer()`
 
 ```JavaScript
 // Retrieve an offer for the homepage-hero location
@@ -49,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++Équivalent du SDK Web Platform à l’aide de la commande `applyPropositions` :
++++Équivalent de Platform Web SDK à l’aide de la commande `applyPropositions` : 
 
-1. Exécutez la commande `sendEvent` pour demander des offres (propositions) pour un ou plusieurs emplacements (portées).
-1. Exécutez la commande `applyPropositions` avec un objet de métadonnées qui fournit des instructions pour appliquer du contenu à la page pour chaque portée.
-1. Exécutez la commande `sendEvent` avec eventType `decisioning.propositionDisplay` pour suivre une impression
+1. Exécutez `sendEvent` commande pour demander des offres (propositions) pour un ou plusieurs emplacements (portées)
+1. Exécutez `applyPropositions` commande avec l’objet de métadonnées qui fournit des instructions sur la manière d’appliquer du contenu à la page pour chaque étendue
+1. Exécutez `sendEvent` commande avec eventType de `decisioning.propositionDisplay` pour suivre une impression
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -92,21 +92,21 @@ alloy("sendEvent", {
 
 +++
 
-Le SDK Web Platform offre un meilleur contrôle pour appliquer des activités d’après les formulaires à la page à l’aide de la commande `applyPropositions` avec un `actionType` spécifié :
+Platform Web SDK offre un meilleur contrôle pour appliquer des activités basées sur des formulaires à la page à l’aide de la commande `applyPropositions` avec un `actionType` spécifié :
 
-| `actionType` | Description | at.js `applyOffer()` | SDK Web Platform `applyPropositions` |
+| `actionType` | Description | at.js `applyOffer()` | `applyPropositions` de Platform Web SDK |
 | --- | --- | --- | --- |
-| `setHtml` | Effacer le contenu du conteneur, puis ajouter l’offre au conteneur | Oui (toujours utilisé) | Oui |
-| `replaceHtml` | Supprimer le conteneur et le remplacer par l’offre | Non | Oui |
+| `setHtml` | Effacez le contenu du conteneur, puis ajoutez l&#39;offre au conteneur | Oui (toujours utilisé) | Oui |
+| `replaceHtml` | Supprimez le conteneur et remplacez-le par l’offre . | Non | Oui |
 | `appendHtml` | Ajoute l’offre après le sélecteur spécifié | Non | Oui |
 
-Pour obtenir des exemples et des options de rendu supplémentaires, reportez-vous à la [documentation dédiée](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=fr) sur le rendu de contenu à l’aide du SDK Web Platform.
+Reportez-vous à la [documentation dédiée](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) sur le rendu du contenu à l’aide du SDK web de Platform pour obtenir des options de rendu supplémentaires et des exemples.
 
 ## Exemple d’implémentation
 
-L’exemple de page ci-dessous s’appuie sur l’implémentation décrite dans la section précédente. Il ajoute uniquement des portées supplémentaires à la commande `sendEvent`.
+L’exemple de page ci-dessous s’appuie sur l’implémentation décrite dans la section précédente, mais il ajoute des portées supplémentaires à la commande `sendEvent` .
 
-+++Exemple de SDK Web Platform avec plusieurs portées
++++Exemple Platform Web SDK avec plusieurs portées
 
 ```HTML
 <!doctype html>
@@ -197,8 +197,10 @@ L’exemple de page ci-dessous s’appuie sur l’implémentation décrite dans 
 </html>
 ```
 
-Ensuite, découvrez comment [transférer des paramètres Target à l’aide du SDK Web Platform](send-parameters.md).
++++
+
+Découvrez ensuite comment [transmettre des paramètres Target à l’aide de Platform Web SDK](send-parameters.md).
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers le SDK Web. Si vous rencontrez des obstacles lors de votre migration ou si vous pensez qu’il manque des informations essentielles dans ce guide, faites-le-nous savoir en publiant sur [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=fr#M463).
+>Nous nous engageons à vous aider à réussir la migration de Target d’at.js vers Web SDK. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

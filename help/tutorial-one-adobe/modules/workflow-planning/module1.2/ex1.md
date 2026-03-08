@@ -4,7 +4,7 @@ description: Prise en main de Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 Les principaux objets et concepts de Workfront sont les suivants :
 
 | Nom | Dernière mise à jour |
-| ---------------------- | ------------ | 
+| ---------------------- | ------------ |
 | Portefeuille | Ensemble de projets présentant des caractéristiques unificatrices. Ces projets se disputent généralement les mêmes ressources, le même budget ou le même créneau horaire. |
 | Programme | Sous-ensemble au sein d’un portefeuille, dans lequel des projets similaires peuvent être regroupés afin d’obtenir un bénéfice bien défini. |
 | Projet | Une grande quantité de travail qui doit être achevée dans un délai spécifique et qui doit utiliser un budget et un nombre de ressources spécifiques. Pour le rendre gérable, vous divisez le projet en une série de tâches. Lorsque vous terminez toutes les tâches, le projet est également terminé. |
@@ -40,7 +40,7 @@ Les principaux objets et concepts de Workfront sont les suivants :
 | Tâche | Une activité qui doit être effectuée comme une étape vers l’atteinte d’un objectif final (terminer le projet). Les tâches ne peuvent jamais exister indépendamment. Ils font toujours partie d&#39;un projet. |
 | Affectation | Utilisateur, fonction ou équipe affecté à un événement ou à une tâche. Les projets, portefeuilles ou programmes ne peuvent pas avoir d&#39;affectations. |
 | Document/Version | Tout fichier joint à un objet dans Workfront. Chaque fois qu’un même document est chargé dans le même objet, un numéro de version lui est attribué. Les utilisateurs et utilisatrices peuvent afficher et modifier plusieurs options d’une version précédente d’un document. |
-| Approbation | Un élément de travail donné, tel qu’une tâche, un document ou une feuille de temps, peut nécessiter l’approbation d’un superviseur ou d’un autre utilisateur sur l’élément de travail. Ce processus d’approbation est appelé approbation. |
+| Validation | Un élément de travail donné, tel qu’une tâche, un document ou une feuille de temps, peut nécessiter l’approbation d’un superviseur ou d’un autre utilisateur sur l’élément de travail. Ce processus d’approbation est appelé approbation. |
 
 
 Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Cliquez pour ouvrir **Workfront**.
@@ -70,7 +70,7 @@ Ouvrez la liste déroulante **Référentiel Experience Manager** et sélectionne
 Sous **Métadonnées**, configurez le mappage suivant :
 
 | Champ Workfront | Champ Experience Manager Assets |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **Document** > **Nom** | **wm:documentName** |
 | **Projet** > **Nom** | **wm:projectName** |
 | **Projet** > **Description** | **wm:projectDescription** |

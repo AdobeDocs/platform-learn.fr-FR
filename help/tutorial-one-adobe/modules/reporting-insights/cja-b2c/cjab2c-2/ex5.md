@@ -4,9 +4,9 @@ description: Ingérer et analyser des données Google Analytics dans Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 9380c621-34b0-4d14-baf6-9b6fedd63d5f
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '3114'
+source-wordcount: '3110'
 ht-degree: 2%
 
 ---
@@ -110,8 +110,8 @@ Saisissez la même valeur pour la description : `--aepUserLdap-- - GA + Loyalty 
 Avant d’effectuer toute analyse ou visualisation, nous devons créer une vue de données avec tous les champs, dimensions et mesures, ainsi que leurs paramètres d’attribution.
 
 | Champ | Convention d’affectation des noms |
-| ----------------- |-------------|  
-| Nommer la connexion | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + Vue de données de fidélité |
+| ----------------- |-------------|
+| Nommer la connexion | `--aepUserLdap-- - GA + Loyalty Data View` * vangeluw - GA + Vue de données de fidélité |
 | Description | `--aepUserLdap-- - GA + Loyalty Data View` |
 | Identifiant externe | `--aepUserLdap--GA` |
 
@@ -134,7 +134,7 @@ Ajoutez les composants ci-dessous à la vue de données. Veillez également à m
 | Mesure | commerce.checkouts.value | Passages en caisse | `commerce.checkouts.value` |
 | Mesure | commerce.productListRemovals.value | Retraits du panier | `commerce.productListRemovals.value` |
 | Mesure | commerce.productListAdds | Ajouts au panier | `commerce.productListAdds` |
-| Mesure | commerce.productViews.value | Consultations produits | `commerce.productViews.value` |
+| Mesure | commerce.productViews.value | Produits vus | `commerce.productViews.value` |
 | Mesure | commerce.purchases.value | Achats | `commerce.purchases.value` |
 | Mesure | web.webPageDetails.pageViews | Pages vues | `web.webPageDetails.pageViews` |
 | Mesure | points | Points de fidélité | `_experienceplatform.loyaltyDetails.points` |
@@ -199,15 +199,15 @@ Vous disposez maintenant d’un projet vierge :
 
 Tout d’abord, enregistrez votre projet et donnez-lui un nom. Vous pouvez utiliser la commande suivante pour enregistrer :
 
-| SE | Raccourci |
-| ----------------- |-------------| 
+| Système d’exploitation | Raccourci |
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Commande + S |
 
 Vous verrez cette fenêtre contextuelle. Veuillez utiliser cette convention de nommage :
 
 | Nom | Description |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
 Cliquez ensuite sur **Enregistrer**.
@@ -230,7 +230,7 @@ Découvrez deux exemples dans lesquels vous devez utiliser SQL, BigQuery et du t
 
 - En tant qu’analyste, je peux constater que le canal marketing social présente de faibles conversions. J’utilise l’attribution Dernière touche par défaut, mais qu’en est-il de la première touche ? Pointez sur une mesure, les paramètres de mesure s’affichent. Là, je peux sélectionner le modèle d’attribution de mon choix. Vous pouvez effectuer Attribution dans GA (et non dans data studio) en tant qu’activité autonome, mais vous ne pouvez pas avoir d’autres mesures ou dimensions non liées à l’analyse d’attribution dans la même table.
 
-Répondons à ces questions et à d’autres avec Analysis Workspace dans CJA.
+Répondons à ces questions et à d’autres grâce à Analysis Workspace dans CJA.
 
 Sélectionnez tout d’abord la période appropriée (**Aujourd’hui**) sur le côté droit du panneau. Cliquez sur **Appliquer**.
 
@@ -338,25 +338,25 @@ Nous pouvons continuer à fractionner les lignes avec des segments ou des pério
 
 Obtenir le même résultat final avec SQL, puis un outil de visualisation tiers, est un véritable défi. Surtout quand on pose des questions et qu&#39;on essaie d&#39;obtenir des réponses à la volée. Customer Journey Analytics ne présente pas ce problème et permet aux analystes de données d’interroger les données de manière flexible et en temps réel.
 
-## 1.2.5.3.2 Analyse de l’entonnoir ou des abandons
+## 1.2.5.3.2 Funnel ou analyse des abandons
 
-Les entonnoirs sont un excellent mécanisme pour comprendre les principales étapes d’un parcours client. Ces étapes peuvent également provenir d’interactions hors ligne (par exemple, depuis le centre d’appel), puis vous pouvez les combiner avec des points de contact numériques dans le même entonnoir.
+Les entonnoirs sont un excellent mécanisme pour comprendre les principales étapes d’un parcours client. Ces étapes peuvent également provenir d’interactions hors ligne (par exemple, depuis le centre d’appel), puis vous pouvez les associer à des points de contact numériques dans le même funnel.
 
 Customer Journey Analytics vous permet de le faire, et bien plus encore. Si vous vous souvenez du Module 13, nous avons pu cliquer avec le bouton droit et faire des choses comme :
 
 - Analyser la destination des utilisateurs après une étape d’abandon
-- Créer un segment à partir de n’importe quel point de l’entonnoir
+- Création d’un segment à partir de n’importe quel point du funnel
 - Afficher la tendance à n’importe quelle étape d’une visualisation de graphique linéaire
 
 
-Voyons une autre chose que vous pouvez faire : comment se porte mon entonnoir de Parcours client ce mois-ci par rapport au mois précédent ? Qu’en est-il des appareils mobiles par rapport aux ordinateurs de bureau ?
+Voyons une autre chose que vous pouvez faire : comment se porte mon Funnel de Parcours client ce mois-ci par rapport au mois précédent ? Qu’en est-il des appareils mobiles par rapport aux ordinateurs de bureau ?
 
 Vous allez créer deux panneaux ci-dessous :
 
-- Analyse de l’entonnoir (janvier)
-- Analyse de l’entonnoir (février)
+- Funnel Analysis (janvier)
+- Analyse funnel (février)
 
-Vous verrez que nous comparons un entonnoir sur différentes périodes (janvier et février) fractionnées par type d’appareil.
+Vous verrez que nous comparons un funnel sur différentes périodes (janvier et février) fractionnées par type d’appareil.
 
 Ce type d’analyse n’est pas possible dans l’interface utilisateur de Google Analytics ou est très limité. CJA ajoute donc une nouvelle fois beaucoup de valeur aux données capturées par Google Analytics.
 
@@ -374,9 +374,9 @@ Sélectionnez maintenant la visualisation **Abandons**.
 
 ![demo](./images/pro36.png)
 
-En tant qu’analyste, imaginez que vous souhaitez comprendre ce qui se passe avec votre entonnoir principal d’e-commerce : Accueil > Recherche interne > Détails du produit > Passage en caisse > Achat.
+En tant qu’analyste, imaginez que vous souhaitez comprendre ce qui se passe avec votre funnel d’e-commerce principal : Accueil > Recherche interne > Détails du produit > Passage en caisse > Achat.
 
-Commençons par ajouter de nouvelles étapes à l’entonnoir. Pour ce faire, ouvrez la dimension **Nom de la page**.
+Commençons par ajouter de nouvelles étapes au funnel. Pour ce faire, ouvrez la dimension **Nom de la page**.
 
 ![demo](./images/pro37.png)
 
@@ -429,9 +429,9 @@ Vous obtiendrez une visualisation plus avancée :
 Customer Journey Analytics vous permet de le faire, et bien plus encore. En cliquant avec le bouton droit n’importe où dans l’abandon, vous pouvez...
 
 - Analysez la direction prise par les utilisateurs à partir d’une étape d’abandon
-- Créer un segment à partir de n’importe quel point de l’entonnoir
+- Création d’un segment à partir de n’importe quel point du funnel
 - Génération de tendances pour n’importe quelle étape d’une visualisation Ligne
-- Comparez visuellement n’importe quel entonnoir à différentes périodes.
+- Comparez visuellement n’importe quel funnel à différentes périodes.
 
 Par exemple, effectuez un clic droit à n’importe quelle étape de l’abandon pour afficher certaines de ces options d’analyse.
 
@@ -540,7 +540,7 @@ N’oubliez pas d’enregistrer vos modifications !
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
+Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
 
 Revenez à [Ingérer et analyser des données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 

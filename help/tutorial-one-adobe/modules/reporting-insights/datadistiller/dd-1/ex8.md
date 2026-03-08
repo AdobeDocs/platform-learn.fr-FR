@@ -4,16 +4,16 @@ description: Query Service - API Query Service
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
 
 # 2.1.8 API Query Service
 
-## Objectif
+## Intention
 
 - Utiliser l’API Query Service pour gérer les modèles de requête et les plannings de requête
 
@@ -34,7 +34,7 @@ Non interactif signifie qu’une demande d’exécution d’une requête n’ent
 
 ## Exemple de requête
 
-Comme exemple de requête, vous utiliserez la première requête répertoriée dans [4.3 - Requêtes, requêtes, requêtes... et analyse de l’attrition &#x200B;](./ex3.md) :
+Comme exemple de requête, vous utiliserez la première requête répertoriée dans [4.3 - Requêtes, requêtes, requêtes... et analyse de l’attrition ](./ex3.md) :
 
 Combien de consultations de produits avons-nous par jour ?
 
@@ -93,9 +93,9 @@ Accédez à la section **Corps** de cette requête. Dans le **corps** de cette r
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,9 +106,9 @@ Après avoir ajouté votre **ldap** spécifique, le corps doit ressembler à cec
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -424,7 +424,7 @@ La réponse de cette requête pointe vers les fichiers du jeu de données :
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
+Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
 
 Revenez à [Query Service](./query-service.md){target="_blank"}
 

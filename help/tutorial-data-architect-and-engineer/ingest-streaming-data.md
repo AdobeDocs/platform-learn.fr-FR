@@ -3,12 +3,12 @@ title: Ingérer des données de flux
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingérer des données de flux
 description: Dans cette leçon, vous allez diffuser des données dans Experience Platform à l’aide de Web SDK.
-role: Data Engineer
+role: Developer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Dans l’interface de collecte de données, nous devons effectuer deux tâches p
 
 Avant de commencer les exercices, regardez ces deux courtes vidéos pour en savoir plus sur l’ingestion des données en flux continu et sur le SDK web :
 
->[!VIDEO](https://video.tv.adobe.com/v/31636?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37259?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Bien que ce tutoriel porte sur l’ingestion par flux à partir de sites Web avec Web SDK, vous pouvez également diffuser des données à l’aide de l’[Mobile SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview), de l’[API Edge Network Server](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/server-api/overview) et de l’[API HTTP](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/streaming/http).
+>Bien que ce tutoriel porte sur l’ingestion par flux à partir de sites Web avec Web SDK, vous pouvez également diffuser des données à l’aide de l’[Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), de l’[API Edge Network Server](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) et de l’[API HTTP](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Autorisations requises
 
@@ -263,7 +263,7 @@ Experience Platform Debugger est une extension disponible pour Chrome qui vous a
 
 Si vous n’avez jamais utilisé le débogueur auparavant (et que celui-ci est différent de l’ancien débogueur Adobe Experience Cloud), vous pouvez regarder cette vidéo de présentation de cinq minutes :
 
->[!VIDEO](https://video.tv.adobe.com/v/36025?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Ouvrir le site web Luma
 
@@ -406,7 +406,7 @@ Si vous vous souvenez, j’ai mentionné que nous utiliserions l’ECID et l’I
 Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de données :
 
 1. Dans l’interface des balises, ajoutez un élément de données nommé `CRM Id`
-1. Sélectionnez **[!UICONTROL Variable JavaScript comme]** Type d’élément de données **&#x200B;**
+1. Sélectionnez **[!UICONTROL Variable JavaScript comme]** Type d’élément de données ****
 1. Comme nom de variable **[!UICONTROL JavaScript]**, saisissez `digitalData.user.0.profile.0.attributes.username`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter un élément de données pour l’ID CRM](assets/websdk-property-dataElement-crmId.png)
@@ -416,7 +416,7 @@ Tout d’abord, nous allons stocker l’identifiant CRM dans un élément de don
 Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’associer à un type d’élément de données spécial appelé l’élément de données [!UICONTROL Identity Map] :
 
 1. Ajoutez un élément de données nommé `Identities`
-1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]**&#x200B;**&#x200B;**
+1. Sélectionnez **[!UICONTROL Adobe Experience Platform Web SDK en tant qu’extension]******
 1. Sélectionnez **[!UICONTROL Type d’élément de données]**, **[!UICONTROL Mappage d’identités]**
 1. En tant que **[!UICONTROL Espace de noms]**, saisissez `Luma CRM Id`, qui est l’[!UICONTROL espace de noms] que nous avons créé dans une leçon précédente
 
@@ -430,9 +430,9 @@ Maintenant que nous avons capturé la valeur de l’ID CRM, nous devons l’asso
 
    >[!TIP]
    >
-   > Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL &#x200B; principale].
+   > Adobe recommande d’envoyer les identités qui représentent une personne, telles que `Luma CRM Id`, comme identité [!UICONTROL  principale].
    >
-   > Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL &#x200B; principale &#x200B;].
+   > Si la carte des identités contient l’identifiant de personne (par exemple, `Luma CRM Id`), l’identifiant de personne devient l’identité [!UICONTROL principale]. Dans le cas contraire, `ECID` devient l’identité [!UICONTROL  principale ].
 
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer dans la bibliothèque]** (`Luma Platform Tutorial` doit toujours être votre bibliothèque de travail)
    ![Ajouter l’ID CRM à l’élément de données Mappage d’identités](assets/websdk-property-dataElement-identityMap.png)
@@ -481,4 +481,4 @@ Très bon travail ! C’était beaucoup d’informations sur Web SDK et Launch.
 
 Ingénieurs de données, si vous le souhaitez, vous pouvez passer à la leçon [exécuter des requêtes](run-queries.md).
 
-Architectes de données, vous pouvez passer aux [&#x200B; politiques de fusion &#x200B;](create-merge-policies.md)
+Architectes de données, vous pouvez passer aux [ politiques de fusion ](create-merge-policies.md)

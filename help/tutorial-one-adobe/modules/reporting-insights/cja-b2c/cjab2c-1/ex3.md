@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Création d’une vue de données
 kt: 5342
 doc-type: tutorial
 exl-id: 048e4f0f-4713-4249-a118-88906b3ba5c0
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1591'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Vue de données 1.1.3.1
 
-Une fois la connexion établie, vous pouvez passer à l’influence de la visualisation. Une différence entre Adobe Analytics et CJA réside dans le fait que CJA a besoin d’une Vue de données pour nettoyer et préparer les données avant la visualisation.
+Une fois la connexion établie, vous pouvez passer à l’influence de la visualisation. Une différence entre Adobe Analytics et CJA réside dans le fait que CJA a besoin d’une vue de données pour nettoyer et préparer les données avant la visualisation.
 
 Une vue de données est similaire au concept des suites de rapports virtuelles dans Adobe Analytics, où vous définissez des définitions de visite adaptées au contexte, un filtrage et également la manière dont les composants sont appelés.
 
@@ -55,12 +55,12 @@ Attribuez ensuite un nom à votre vue de données en suivant cette convention d�
 Saisissez la même valeur pour la description : `--aepUserLdap-- – Omnichannel Data View`.
 
 | Nom | Description | Identifiant externe |
-| ----------------- |-------------|-------------| 
+| ----------------- |-------------|-------------|
 | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
 ![demo](./images/1v2.png)
 
-Pour le **fuseau horaire**, sélectionnez le fuseau horaire **heure de Greenwich ; Monrovia, Casablanca [GMT]**. C&#39;est un contexte très intéressant, car certaines entreprises opèrent dans des pays et des zones géographiques différents. Attribuer le bon fuseau horaire pour chaque pays évitera les erreurs de données habituelles telles que croire qu&#39;au Pérou, par exemple, la majorité de la population achète des t-shirts à 4 heures du matin.
+Pour le **fuseau horaire**, sélectionnez le fuseau horaire **heure de Greenwich ; Monrovia, Casablanca [GMT]**. C&#39;est un contexte très intéressant, car certaines entreprises opèrent dans des pays et des zones géographiques différents. Attribuer le bon fuseau horaire pour chaque pays évitera les erreurs de données habituelles telles que croire qu&#39;au Pérou, par exemple, la majorité de la population achète des T-shirts à 4:00 du matin.
 
 ![demo](./images/ext7.png)
 
@@ -106,14 +106,14 @@ Les **paramètres de persistance** sont très importants. Le concept des evars e
 
 ![demo](./images/30v21.png)
 
-Si vous ne modifiez pas ces paramètres, CJA interprétera la dimension en tant que **Prop** (niveau d’accès). Nous pouvons également modifier la Persistance pour faire de la dimension un **eVar** (conserver la valeur dans le parcours).
+Si vous ne modifiez pas ces paramètres, CJA interprètera la dimension comme une **prop** (niveau d’accès). Nous pouvons également modifier la Persistance pour faire de la dimension un **eVar** (conserver la valeur dans le parcours).
 
-Si vous ne connaissez pas les eVars et les props, vous pouvez [en savoir plus à leur sujet dans la documentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=fr).
+Si vous ne connaissez pas les eVars et les props, vous pouvez [en savoir plus à leur sujet dans la documentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
 Laissons le Nom de page en tant que prop. Par conséquent, vous n’avez pas besoin de modifier les **paramètres de persistance**.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Nom (web.webPageDetails.name) | Nom de la page |          |
 
 Sélectionnez ensuite la dimension **phoneNumber** et déposez-la sur la zone de travail. Le nouveau nom doit être **Numéro de téléphone**.
@@ -129,7 +129,7 @@ Pour modifier la Persistance, faites défiler l’écran vers le bas dans le men
 Cochez la case pour modifier les paramètres de persistance. Sélectionnez **Le dernier** et la portée **Personne (intervalle du compte rendu des performances)** car nous nous préoccupons uniquement du dernier numéro de mobile de cette personne. Si le client ne renseigne pas le mobile lors de prochaines visites, cette valeur sera toujours renseignée.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | phoneNumber | Numéro de téléphone | Fenêtre De Compte Rendu Des Performances Des Personnes La Plus Récente |
 
 ![demo](./images/6v2.png)
@@ -141,7 +141,7 @@ Dans le menu de gauche, recherchez `web.webPageDetails.pageViews.value`. Effectu
 Remplacez le nom par **Pages vues** sous **Paramètres des composants**.
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | web.webPageDetails.pageViews.value | Pages vues |         |
 
 ![demo](./images/7v2.png)
@@ -156,7 +156,7 @@ Ensuite, vous devrez configurer de nombreuses dimensions et mesures, comme indiq
 
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres de persistance |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | brandName | Nom de la marque | La Plus Récente, Session |
 | sentiment d&#39;appel | Sentiment D’Appel |          |
 | identifiant de l&#39;appel | Type d’interaction d’appel |          |
@@ -175,9 +175,9 @@ Ensuite, vous devrez configurer de nombreuses dimensions et mesures, comme indiq
 ### MESURES
 
 | Nom du composant à rechercher | Nouveau nom | Paramètres d’attribution |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Quantité | Quantité |          |
-| commerce.order.priceTotal | Chiffre d’affaires |         |
+| commerce.order.priceTotal | Recettes |         |
 
 Votre configuration doit alors ressembler à ceci. N’oubliez pas d’**Enregistrer** votre vue de données. Cliquez donc sur **Enregistrer** maintenant.
 
@@ -201,8 +201,8 @@ Cliquez pour sélectionner la nouvelle mesure **Type d’événement**.
 Remplacez maintenant le nom et la description du composant par les valeurs suivantes :
 
 | Nom du composant | Description du composant |
-| ----------------- |-------------| 
-| Consultations produits | Consultations produits |
+| ----------------- |-------------|
+| Produits vus | Produits vus |
 
 ![demo](./images/calcmetr3.png)
 

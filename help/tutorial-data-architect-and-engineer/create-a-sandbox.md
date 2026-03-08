@@ -3,15 +3,15 @@ title: Création d’un sandbox
 seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Création d’un sandbox
 description: Dans cette leçon, vous allez créer un sandbox d’environnement de développement que vous pourrez utiliser pour le reste du tutoriel.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Les sandbox fournissent des environnements isolés où vous pouvez tester les fo
 **Architectes de données** et **Ingénieurs de données** devront créer des sandbox en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les sandbox :
->[!VIDEO](https://video.tv.adobe.com/v/3430301/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
 ## Autorisations requises
 
@@ -57,16 +57,16 @@ Créons un sandbox :
    >
    >Bien que vous puissiez utiliser n’importe quelle valeur arbitraire pour le nom et le titre de votre sandbox, il est recommandé de respecter les valeurs suggérées, car nous nous référerons à ces libellés tout au long du tutoriel. Si plusieurs personnes au sein de votre organisation suivent ce tutoriel, pensez à ajouter votre nom à la fin du titre et du nom du sandbox, par exemple luma-tutorial-ignatiusjreilly.
 
-La création des sandbox prend environ 30 secondes, période pendant laquelle un statut « [!UICONTROL Création] » s’affiche. Une fois le sandbox entièrement créé, il s’affiche sous la forme « [!UICONTROL &#x200B; Actif &#x200B;] :
+La création des sandbox prend environ 30 secondes, période pendant laquelle un statut « [!UICONTROL Création] » s’affiche. Une fois le sandbox entièrement créé, il s’affiche sous la forme « [!UICONTROL  Actif ] :
 ![Statut actif](assets/sandbox-active.png)
 
-Attendez que votre sandbox soit « [!UICONTROL &#x200B; actif &#x200B;] avant de passer à l’exercice suivant.
+Attendez que votre sandbox soit « [!UICONTROL  actif ] avant de passer à l’exercice suivant.
 
 ## Ajouter le nouveau sandbox au rôle
 
 Une fois que le sandbox est actif, vous devez l’inclure dans votre rôle pour pouvoir l’utiliser. Pour l’ajouter à votre rôle (privilèges Administrateur système ou Administrateur de produit requis) :
 
-1. Accédez à l’écran [!UICONTROL &#x200B; Autorisations &#x200B;]
+1. Accédez à l’écran [!UICONTROL  Autorisations ]
 1. Ouvrir le rôle `Luma Tutorial Platform`
 1. Vous pouvez _supprimer_ le sandbox `Prod` du rôle
 1. Ajouter le sandbox `Luma Tutorial`

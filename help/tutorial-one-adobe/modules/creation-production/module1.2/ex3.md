@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3353'
 ht-degree: 1%
@@ -372,7 +372,7 @@ Cliquez ensuite sur **+ Ajouter un élément** sous **Chaîne de requête**.
 Saisissez ces valeurs et cliquez sur **Ajouter**.
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![E/S de trame](./images/frame58.png)

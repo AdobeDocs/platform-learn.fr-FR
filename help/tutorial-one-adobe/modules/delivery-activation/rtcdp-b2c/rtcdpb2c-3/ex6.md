@@ -4,7 +4,7 @@ description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 6%
@@ -70,7 +70,7 @@ Pour ce faire, ouvrez votre application Postman, accédez à **API de création 
 >
 >Si vous ne disposez pas de cette collection Postman, revenez à l’[exercice 3 du module 2.1](../rtcdpb2c-1/ex3.md) et suivez les instructions pour configurer Postman avec les collections Postman fournies.
 
-Tu verras ça. Sous **En-têtes**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez l’**{{SANDBOX_NAME}}** de valeur.
+Tu verras ça. Sous **En-têtes**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez l’**`{{SANDBOX_NAME}}`** de valeur.
 
 ![Ingestion des données](./images/sdkpm1.png)
 
@@ -124,7 +124,7 @@ Après avoir cliqué sur **Envoyer**, votre modèle de serveur est créé et, da
 
 ## Création de la configuration de destination
 
-Dans Postman, sous **API de création de destinations**, accédez à **Configurations de destination** et cliquez pour ouvrir la requête **POST - Création d’une configuration de destination**. Tu verras ça. Sous **En-têtes**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **{{SANDBOX_NAME}}** et remplacez-la par `--aepSandboxName--`.
+Dans Postman, sous **API de création de destinations**, accédez à **Configurations de destination** et cliquez pour ouvrir la requête **POST - Création d’une configuration de destination**. Tu verras ça. Sous **En-têtes**, vous devez mettre à jour manuellement la valeur de la clé **x-sandbox-name** et la définir sur `--aepSandboxName--`. Sélectionnez la valeur **`{{SANDBOX_NAME}}`** et remplacez-la par `--aepSandboxName--`.
 
 ![Ingestion des données](./images/sdkpm7.png)
 
@@ -160,7 +160,7 @@ Vous devez maintenant remplacer l’espace réservé **{{body}}** par le code ci
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=fr",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -259,27 +259,27 @@ Votre destination est maintenant en ligne. Les nouvelles qualifications d’audi
 
 Accédez à [https://dsn.adobe.com](https://dsn.adobe.com). Après vous être connecté avec votre Adobe ID, voici ce que vous verrez. Cliquez sur le **de 3 points...** sur le projet de votre site web, puis cliquez sur **Exécuter** pour l’ouvrir.
 
-![DSN &#x200B;](./../../datacollection/dc1.1/images/web8.png)
+![DSN ](./../../datacollection/dc1.1/images/web8.png)
 
 Vous verrez ensuite votre site web de démonstration s’ouvrir. Sélectionnez l’URL et copiez-la dans le presse-papiers.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web3.png)
+![DSN ](../../../getting-started/gettingstarted/images/web3.png)
 
 Ouvrez une nouvelle fenêtre de navigateur en mode privé.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web4.png)
+![DSN ](../../../getting-started/gettingstarted/images/web4.png)
 
 Collez l’URL de votre site web de démonstration, que vous avez copiée à l’étape précédente. Il vous sera ensuite demandé de vous connecter à l’aide de votre Adobe ID.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web5.png)
+![DSN ](../../../getting-started/gettingstarted/images/web5.png)
 
 Sélectionnez votre type de compte et terminez le processus de connexion.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web6.png)
+![DSN ](../../../getting-started/gettingstarted/images/web6.png)
 
 Votre site web est alors chargé dans une fenêtre de navigateur en mode privé. Pour chaque exercice, vous devrez utiliser une nouvelle fenêtre de navigateur en mode privé pour charger l’URL de votre site web de démonstration.
 
-![DSN &#x200B;](../../../getting-started/gettingstarted/images/web7.png)
+![DSN ](../../../getting-started/gettingstarted/images/web7.png)
 
 Dans cet exemple, vous souhaitez répondre à un client spécifique qui consulte un produit spécifique.
 Sur la page d&#39;accueil de **Citi Signal**, accédez à **Téléphones et appareils**, puis cliquez sur le produit **Galaxy S24**.

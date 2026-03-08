@@ -4,7 +4,7 @@ description: Prise en main - Configuration de Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -115,7 +115,7 @@ En cas de réussite, une réponse contenant un jeton porteur, un jeton d’accè
 Vous devriez voir une réponse similaire contenant les informations suivantes :
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **porteur** |
 | access_token | **eyJhbGciOiJSUz** |
 | expires_in | **86399** |
@@ -126,7 +126,7 @@ Votre environnement Postman est maintenant configuré et fonctionne.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Applications à installer &#x200B;](./ex9.md){target="_blank"}
+Accédez à [ Applications à installer ](./ex9.md){target="_blank"}
 
 Revenir à [Prise en main](./getting-started.md){target="_blank"}
 

@@ -4,12 +4,12 @@ description: Découvrez comment utiliser le connecteur de données Audience Mana
 feature: Sources
 topic: Integrations
 badgeIntegration: label="Intégration" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: ad7ae1f2c6dc6ea943f56e74107b9aa8245b35ac
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Ingestion de données à l’aide du connecteur de données Adobe Audience Manager
 
-Dans cette vidéo d’intégration, découvrez comment utiliser le connecteur de données Audience Manager pour importer des caractéristiques et des segments d’AAM dans Platform et les combiner avec d’autres données riches. Pour plus d’informations, consultez la [documentation du connecteur source Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=fr).
+Dans cette vidéo d’intégration, découvrez comment utiliser le connecteur de données Audience Manager pour importer des caractéristiques et des segments d’AAM dans Platform et les combiner avec d’autres données riches. Pour plus d’informations, consultez la [documentation du connecteur source Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/346984/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
 À mesure que vous reconfigurez vos processus et votre personnel pour passer de Adobe Audience Manager à Real-Time Customer Data Platform (Real-Time CDP), vous pouvez utiliser le connecteur de données Audience Manager pour importer les caractéristiques et les segments d’AAM dans Platform, les combiner avec d’autres données enrichies (y compris les informations d’identification personnelles) et les envoyer aux partenaires de destination. Cette vidéo vous guide tout au long de la configuration du connecteur de données AAM pour Real-Time CDP.
 

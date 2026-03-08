@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: ce04fa00-0247-4693-ba60-efc1746b9fec
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 2.1.3 Utilisation de Query Service
 
-## Objectif
+## Intention
 
 - Rechercher et explorer les jeux de données
 - Découvrez comment traiter les objets et les attributs des modèles de données d’expérience dans vos requêtes
@@ -41,21 +41,21 @@ Le résultat est le suivant :
 tech-insiders:all=> show tables;
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset                  :
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset   
 ```
 
 Au signe deux-points, appuyez sur la barre d’espace pour afficher la page suivante du jeu de résultats ou saisissez `q` pour revenir à l’invite de commande.
 
-Chaque jeu de données dans AEP possède son tableau Query Service correspondant. Vous pouvez trouver une table de jeu de données via l’interface utilisateur des jeux de données :
+Chaque jeu de données dans AEP est associé à son tableau Query Service correspondant. Vous pouvez trouver une table de jeu de données via l’interface utilisateur des jeux de données :
 
 ![ui-dataset-tablename.png](./images/uidatasettablename.png)
 

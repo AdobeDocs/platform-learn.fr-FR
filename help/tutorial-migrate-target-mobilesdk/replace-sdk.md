@@ -2,9 +2,9 @@
 title: Remplacez SDK - Migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Offer Decisioning et Target.
 description: Découvrez comment remplacer SDK lors de la migration d’Adobe Target vers l’extension Offer Decisioning et Target Mobile.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '725'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Découvrez comment remplacer les SDK Adobe Target par les SDK Optimize dans votr
 
 ## Mettre à jour les dépendances
 
-Exemple Android
++++Exemple Android
 
 >[!BEGINTABS]
 
@@ -62,7 +62,7 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 
 >[!ENDTABS]
 
-+++
++++ 
 
 +++ Exemple iOS
 
@@ -268,8 +268,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 De nombreuses API d’extension Target ont une approche équivalente utilisant l’extension Offer Decisioning et Target décrite dans le tableau ci-dessous. Pour plus d’informations sur les [fonctions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), consultez la référence de l’API .
 
-| Extension Target | Extension Offer Decisioning and Target | Notes |
-| --- | --- | --- | 
+| Extension Target | Extension Offer Decisioning and Target | Remarques |
+| --- | --- | --- |
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | Lors de l’utilisation de l’API `getPropositions`, aucun appel à distance n’est effectué pour récupérer des portées non mises en cache dans le SDK. |
 | [displayLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [Offre -> display()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | En outre, `generateDisplayInteractionXdm` méthode Offre peut être utilisée pour générer le XDM pour l’affichage des articles. Par la suite, l’API sendEvent du SDK réseau Edge peut être utilisée pour joindre des données XDM à structure libre supplémentaires et envoyer un événement d’expérience à l’instance distante. |
@@ -281,11 +281,11 @@ De nombreuses API d’extension Target ont une approche équivalente utilisant l
 | [getThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getthirdpartyid){target=_blank} | S.O. | Utilisez l’API updateIdentities de l’extension Identity for Edge Network pour fournir la valeur de l’ID tiers. Configurez ensuite l’espace de noms d’ID tiers dans le flux de données. Pour plus d’informations, voir [documentation mobile ID tiers de Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
 | [setThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setthirdpartyid){target=_blank} | S.O. | Utilisez l’API updateIdentities de l’extension Identity for Edge Network pour fournir la valeur de l’ID tiers. Configurez ensuite l’espace de noms d’ID tiers dans le flux de données. Pour plus d’informations, voir [documentation mobile ID tiers de Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
 | [getTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | S.O. | `locationHint:result` descripteur de réponse contient les informations relatives à l’indicateur d’emplacement cible. On suppose que Target Edge sera co-implanté avec Experience Edge. <br> <br>L’extension de réseau Edge utilise l’indicateur d’emplacement EdgeNetwork pour déterminer le cluster réseau Edge auquel envoyer des requêtes. Pour partager l’indicateur d’emplacement réseau Edge sur plusieurs SDK (applications hybrides), utilisez les API `getLocationHint` et `setLocationHint` de l’extension Edge Network. Pour plus d’informations, voir [documentation de l’API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
-| [setTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | S.O. | Le handle de réponse [locationHint:result](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank} transfère les informations sur l’indicateur d’emplacement de Target. On suppose que Target Edge sera co-implanté avec Experience Edge. <br> <br>L’extension de réseau Edge utilise l’indicateur d’emplacement EdgeNetwork pour déterminer le cluster réseau Edge auquel envoyer des requêtes. Pour partager l’indicateur d’emplacement réseau Edge sur plusieurs SDK (applications hybrides), utilisez les API `getLocationHint` et `setLocationHint` de l’extension Edge Network. Pour plus d’informations, voir [documentation de l’API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
+| [setTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | S.O. | Le descripteur de réponse [locationHint:result](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank} transmet les informations sur l’indicateur d’emplacement cible. On suppose que Target Edge sera co-implanté avec Experience Edge. <br> <br>L’extension de réseau Edge utilise l’indicateur d’emplacement EdgeNetwork pour déterminer le cluster réseau Edge auquel envoyer des requêtes. Pour partager l’indicateur d’emplacement réseau Edge sur plusieurs SDK (applications hybrides), utilisez les API `getLocationHint` et `setLocationHint` de l’extension Edge Network. Pour plus d’informations, voir [documentation de l’API `getLocationHint`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
 
 
 Ensuite, découvrez comment [demander et effectuer le rendu des activités](retrieve-activities.md) sur la page.
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=fr#M625).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

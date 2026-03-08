@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 1%
@@ -138,7 +138,7 @@ Cliquez ensuite sur **+ Ajouter un élément** sous **Chaîne de requête**.
 Saisissez ces valeurs et cliquez sur **Ajouter**.
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![E/S de trame](./images/aemf21b.png)
@@ -385,7 +385,7 @@ Vous avez maintenant terminé cet exercice avec succès.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages de l’automatisation des workflows Creative avec Workfront Fusion &#x200B;](./summary.md){target="_blank"}
+Accédez à [ Résumé et avantages de l’automatisation des workflows Creative avec Workfront Fusion ](./summary.md){target="_blank"}
 
 Revenez à l’automatisation des workflows Creative [avec Workfront Fusion](./automation.md){target="_blank"}
 

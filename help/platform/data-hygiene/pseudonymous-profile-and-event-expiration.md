@@ -2,13 +2,13 @@
 title: Expirations de profils pseudonymes et d’événements d’expérience
 description: Découvrez comment configurer des paramètres d’expiration pour les profils pseudonymes et les événements dans Experience Platform et quels en sont les avantages.
 feature: Data Hygiene
-role: Admin, Data Engineer, Data Architect
+role: Admin, Developer
 level: Beginner
 jira: KT-15319
 thumbnail: 3428361.jpeg
 last-substantial-update: 2024-04-15T00:00:00Z
 exl-id: 16ecab9e-32e2-464f-a421-6575abe05fac
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 39%
@@ -22,4 +22,4 @@ Découvrez comment configurer des paramètres d’expiration pour les profils ps
 Ces paramètres permettent aux gestionnaires de données de définir des dates d’expiration pour les profils non authentifiés et les événements associés. Cela permet de garder le [!DNL Profile Service] pertinent pour vos cas d’utilisation marketing et publicitaire. Pour plus d’informations, consultez la documentation [Expiration des événements d’expérience](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/event-expirations) et [Expiration des données de profils pseudonymes](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/event-expirations).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3449854?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)

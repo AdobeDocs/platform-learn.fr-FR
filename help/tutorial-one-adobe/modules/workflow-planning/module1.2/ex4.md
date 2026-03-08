@@ -3,7 +3,8 @@ title: Prise en main de Workfront
 description: Prise en main de Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 2%
@@ -35,7 +36,7 @@ Assurez-vous que la **bascule** de ce plug-in est définie sur **Activé**. Cliq
 Une fenêtre contextuelle **Configuration de l’extension** s’affiche. Configurez les champs suivants pour utiliser ce plug-in.
 
 | Clé | Valeur |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **`IMS_ENV`** | **PROD** |
 | **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
 | **`SHOW_CUSTOM_FORMS`** | **&#39;{« previewUrl »: true, « publishUrl »: true}&#39;** |

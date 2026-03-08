@@ -3,12 +3,12 @@ title: Créer des segments
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Créer des segments
 description: Dans cette leçon, nous allons créer des segments en fonction des données de profil que nous avons ingérées dans les leçons précédentes.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 1%
@@ -25,12 +25,12 @@ Une fois que vous disposez de profils clients en temps réel, vous pouvez créer
 Les **architectes des données** devront créer des segments en dehors de ce tutoriel et aider leurs collègues dans cette tâche.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur la création de segments :
->[!VIDEO](https://video.tv.adobe.com/v/31638?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## Autorisations requises
 
-Dans la leçon [&#x200B; Configurer les autorisations &#x200B;](configure-permissions.md), vous avez configuré tous les contrôles d’accès requis pour suivre cette leçon, notamment :
+Dans la leçon [ Configurer les autorisations ](configure-permissions.md), vous avez configuré tous les contrôles d’accès requis pour suivre cette leçon, notamment :
 
 * Éléments d’autorisation **[!UICONTROL Gestion des profils]** > **[!UICONTROL Gérer les segments]**, **[!UICONTROL Afficher les segments]** et **[!UICONTROL Exporter le segment d’audience]**
 * Éléments d’autorisation **[!UICONTROL Gestion des profils]** > **[!UICONTROL Afficher les profils]** et **[!UICONTROL Gérer les profils]**

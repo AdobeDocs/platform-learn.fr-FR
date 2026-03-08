@@ -3,7 +3,7 @@ title: Rapport et analyse des données de votre application mobile avec Customer
 description: Découvrez comment signaler et analyser les interactions avec votre application mobile à l’aide de Customer Journey Analytics.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
-source-git-commit: 5a797a464322225708208298d21d6b6a2ad223b6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3281'
 ht-degree: 2%
@@ -18,7 +18,7 @@ Les données d’événement d’application mobile, que vous avez collectées e
 
 Contrairement à Adobe Analytics, Customer Journey Analytics *utilise* les données des jeux de données créés dans Experience Platform. Les données ne sont pas envoyées directement à Customer Journey Analytics à l’aide de Adobe Experience Platform Mobile SDK, mais sont envoyées aux jeux de données. Les connexions sont ensuite configurées dans Customer Journey Analytics pour sélectionner les jeux de données que vous utiliserez dans vos projets de création de rapports et d’analyse.
 
-Cette leçon du tutoriel porte sur le compte rendu des performances et l’analyse des données capturées à partir de l’application de tutoriel Luma. L’une des fonctionnalités uniques de Customer Journey Analytics consiste à combiner des données provenant de plusieurs sources (CRM, point de vente, application de fidélité, centre d’appel) et canaux (web, mobile, hors ligne) pour obtenir des informations détaillées sur les parcours clients. Cette capacité dépasse le cadre de cette leçon. Voir [Présentation de Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-overview) pour plus d’informations.
+Cette leçon du tutoriel porte sur le compte rendu des performances et l’analyse des données capturées à partir de l’application de tutoriel Luma. L’une des fonctionnalités uniques de Customer Journey Analytics consiste à combiner des données provenant de plusieurs sources (CRM, point de vente, application de fidélité, centre d’appel) et canaux (web, mobile, hors ligne) pour obtenir des informations détaillées sur les parcours clients. Cette capacité dépasse le cadre de cette leçon. Voir [Présentation de Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) pour plus d’informations.
 
 
 ## Conditions préalables
@@ -138,7 +138,7 @@ Pour créer votre vue de données :
 
         ![Vue de données CJA 2a](assets/cja-dataview-2a.png){zoomable="yes"}
 
-      - Descendez jusqu’au champ de schéma dans ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événement]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Par exemple, ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événements]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** Chevron![Folder](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)productListAdds![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)Chevron **&#x200B;**&#x200B;![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
+      - Descendez jusqu’au champ de schéma dans ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événement]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>Par exemple, ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Jeux de données d’événements]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Dossier](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** Chevron![Folder](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)productListAdds![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)Chevron **** ![ ](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
         ![Vue de données CJA 2a](assets/cja-dataview-2b.png){zoomable="yes"}
 
@@ -160,12 +160,12 @@ Pour créer votre vue de données :
 
       | Nom du composant | Jeu de données | Type de données de schéma | Chemin du schéma | Paramètres de composant |
       |---|---|---|---|---|
-      | Ignorer | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Nombre entier | _experience.decisioning.<br/>propositionEventType.dismiss | Nom du composant : `Dismiss` |
-      | Se désabonner | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Nombre entier | _experience.decisioning.<br/>propositionEventType.unsubscribe | Nom du composant : `Unsubscribe` |
-      | Déclencheur | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Nombre entier | _experience.decisioning.<br/>propositionEventType.trigger | Nom du composant : `Trigger` |
-      | Affichage | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Nombre entier | _experience.decisioning.<br/>propositionEventType.display | Nom du composant : `Display` |
-      | Envoyer | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Nombre entier | _experience.decisioning.<br/>propositionEventType.send | Nom du composant : `Send` |
-      | Interaction | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Nombre entier | _experience.decisioning.<br/>propositionEventType.interact | Nom du composant : `Interact` |
+      | Ignorer | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Entier | _experience.decisioning.<br/>propositionEventType.dismiss | Nom du composant : `Dismiss` |
+      | Se désabonner | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Entier | _experience.decisioning.<br/>propositionEventType.unsubscribe | Nom du composant : `Unsubscribe` |
+      | Déclencheur | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Entier | _experience.decisioning.<br/>propositionEventType.trigger | Nom du composant : `Trigger` |
+      | Affichage | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Entier | _experience.decisioning.<br/>propositionEventType.display | Nom du composant : `Display` |
+      | Envoyer | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Entier | _experience.decisioning.<br/>propositionEventType.send | Nom du composant : `Send` |
+      | Interaction | Jeu De Données D’Événement D’Expérience De Suivi Des Notifications Push AJO, Jeu De Données D’Événement D’Application Mobile Luma | Entier | _experience.decisioning.<br/>propositionEventType.interact | Nom du composant : `Interact` |
       | Événements d’emplacement | Jeu de données d’événement d’expérience de suivi des notifications push AJO, jeu de données d’événement d’application mobile Luma, ODE DecisionEvents - prise de décision sur les cours avec sdk mobile et web | Chaîne | Type d’événement | Nom du composant : `Location Events`<br/><br/>![Inclure/exclure](assets/cja-dataview-include-exclude.png){zoomable="yes"} |
       | Produits vus | Jeu De Données D’Événement D’Application Mobile Luma | Double | commerce.productViews.value | Nom du composant : `Product Views` |
       | Ajout De Produits Aux Listes | Jeu De Données D’Événement D’Application Mobile Luma | Double | commerce.productListAdds.value | Nom du composant : `Product Add To Lists` |
@@ -213,7 +213,7 @@ Vous avez défini votre vue de données et tout est en place pour commencer à c
 
 ## Créer un projet
 
-Les projets Workspace sont utilisés dans Customer Journey Analytics pour créer des rapports et des visualisations. Il existe de nombreuses possibilités de créer des rapports complets et des visualisations attrayantes, mais cela n’entre pas dans le cadre de ce tutoriel. Voir [Présentation de Workspace](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) et [Créer un nouveau projet](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) pour plus d’informations.
+Les projets Workspace sont utilisés dans Customer Journey Analytics pour créer des rapports et des visualisations. Il existe de nombreuses possibilités de créer des rapports complets et des visualisations attrayantes, mais cela n’entre pas dans le cadre de ce tutoriel. Voir [Présentation de Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) et [Créer un nouveau projet](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) pour plus d’informations.
 
 Dans cette section de la leçon, vous allez créer un projet qui affiche des rapports et des visualisations sur :
 
@@ -275,7 +275,7 @@ Pour créer des rapports sur les écrans affichés dans l’application :
 
 1. Sélectionnez **[!UICONTROL Tout afficher]** sous la liste **[!UICONTROL MESURES]**.
 
-1. Faites glisser et déposez le composant **[!UICONTROL Vues d’écran]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
+1. Faites glisser et déposez le composant **[!UICONTROL Vues d’écran]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
    ![Projets CJA 7](assets/cja-projects-7.png){zoomable="yes"}
 Votre tableau à structure libre affiche désormais les vues d’écran pour chaque jour de la période sélectionnée. Cependant, vous souhaitez afficher le nombre de vues d’écran pour chacun des différents écrans utilisés dans l’application.
 
@@ -305,7 +305,7 @@ Ensuite, vous allez créer un tableau à structure libre pour rendre compte de l
 
 1. Renommez **[!UICONTROL tableau à structure libre (2)]** en `App Interactions`.
 
-1. Effectuez un glisser-déposer de la mesure **[!UICONTROL Interactions d’application]** sur [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
+1. Effectuez un glisser-déposer de la mesure **[!UICONTROL Interactions d’application]** sur [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la dimension **[!UICONTROL Nom de l’interaction de l’application]** dans l’en-tête **[!UICONTROL Jour]** pour remplacer cette dimension.
 
@@ -337,7 +337,7 @@ Vous souhaitez désormais signaler, dans un panneau distinct, les événements c
 
 1. Renommez **[!UICONTROL tableau à structure libre]** en `Commerce Events`.
 
-1. Effectuez un glisser-déposer de la mesure **[!UICONTROL Vues des produits]** sur pour [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
+1. Effectuez un glisser-déposer de la mesure **[!UICONTROL Vues des produits]** sur pour [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la mesure **[!UICONTROL Ajout de produits aux listes]** à droite de la colonne **[!UICONTROL Vues des produits]** pour insérer cette colonne dans le tableau à structure libre. Assurez-vous que **[!UICONTROL + Ajouter]** (en bleu) s’affiche lors de l’insertion de la colonne.
    ![Projets CJA 15](assets/cja-projects-15.png){zoomable="yes"}
@@ -356,7 +356,7 @@ Votre rapport d’événements Commerce est terminé.
 
 #### Abandon
 
-Ensuite, vous allez créer une visualisation des abandons pour l’entonnoir de commerce qui montre le nombre d’utilisateurs qui ont consulté des produits et qui ont ajouté ces produits à leur panier, et à partir de là, le nombre d’utilisateurs qui ont enregistré ces produits pour plus tard.
+Ensuite, vous allez créer une visualisation des abandons pour Commerce funnel qui montre le nombre d’utilisateurs qui ont consulté des produits qui ont ajouté ces produits à leur panier et, à partir de là, le nombre d’utilisateurs qui ont enregistré ces produits pour plus tard.
 
 1. Sélectionnez ![Ajouter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) dans le panneau **[!UICONTROL Commerce]** et dans la fenêtre contextuelle, sélectionnez ![Abandon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (représentant la visualisation des abandons).
 
@@ -390,7 +390,7 @@ Vous souhaitez générer des rapports sur le nombre d’offres et les offres pr�
 
 1. Renommez le **[!UICONTROL tableau à structure libre]** en `Monthly Overview`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Affichage]** sur pour [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
+1. Faites glisser et déposez la mesure **[!UICONTROL Affichage]** sur pour [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la dimension **[!UICONTROL Mois]** dans la colonne **[!UICONTROL Jour]** pour remplacer la dimension.
 
@@ -411,7 +411,7 @@ Vous souhaitez également disposer d’un rapport indiquant les offres présent�
 
 1. Renommez **[!UICONTROL tableau à structure libre (2)]** en `People`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Personnes]** sur pour [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)].
+1. Faites glisser et déposez la mesure **[!UICONTROL Personnes]** sur pour [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)].
 
 1. Faites glisser et déposez la colonne **[!UICONTROL Nom de l’activité]** sur la colonne **[!UICONTROL Jour]** pour remplacer la dimension.
 
@@ -443,7 +443,7 @@ Enfin, vous souhaitez créer des rapports sur les visites de magasin.
 
 1. Renommez **[!UICONTROL tableau à structure libre]** en `Store Entries / Exits Across Cities`.
 
-1. Faites glisser et déposez la mesure **[!UICONTROL Événements d’emplacement]** sur pour [!UICONTROL _Déposez une **mesure**&#x200B;ici (ou tout autre composant_)]. Le rapport affiche désormais un aperçu quotidien de tous les événements de localisation qui se sont produits dans l’application. Rappelez-vous comment vous avez spécifiquement configuré cette dimension dans le cadre de votre [vue de données](#create-a-data-view).
+1. Faites glisser et déposez la mesure **[!UICONTROL Événements d’emplacement]** sur pour [!UICONTROL _Déposez une **mesure**ici (ou tout autre composant_)]. Le rapport affiche désormais un aperçu quotidien de tous les événements de localisation qui se sont produits dans l’application. Rappelez-vous comment vous avez spécifiquement configuré cette dimension dans le cadre de votre [vue de données](#create-a-data-view).
 
 1. Faites glisser et déposez la dimension **[!UICONTROL Ville]** dans l’en-tête de colonne **[!UICONTROL Jour]** pour remplacer la dimension. Le rapport affiche désormais les villes pour les événements de localisation.
 
@@ -468,6 +468,6 @@ Vous devriez maintenant avoir une compréhension de base de la manière de gén�
 >[!SUCCESS]
 >
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr).
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Suivant : **[Conclusion et prochaines étapes](conclusion.md)**

@@ -2,12 +2,12 @@
 title: Présentation de Query Service et de Data Distiller
 description: Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de valider et de transformer les données d’expérience client stockées dans le lac de données à l’aide de SQL. Des fonctionnalités améliorées telles que la sortie de données et la planification sont disponibles via le module complémentaire Data Distiller. Cette vidéo présente les principales fonctionnalités de pour aider les utilisateurs à comprendre comment exploiter Query Service dans diverses applications basées sur Platform.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3139
 last-substantial-update: 2025-06-23T00:00:00Z
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: c21e15b0cac5e97cf2234a951b54d5a66aff9810
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 10%
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de valider et de transformer les données d’expérience client stockées dans le lac de données à l’aide de SQL. Des fonctionnalités améliorées telles que la sortie de données et la planification sont disponibles via le module complémentaire Data Distiller. Cette vidéo présente les principales fonctionnalités de pour aider les utilisateurs à comprendre comment exploiter Query Service dans diverses applications basées sur Platform. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/33589?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Utilisation de base
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Exécuter des requêtes avec Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32943?format=jpeg&nocache=1759180596408&captions=fre_fr" alt="Exécuter des requêtes avec Query Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="Exécuter des requêtes avec Query Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="Valider des données avec Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414055?format=jpeg&nocache=1759180596397&captions=fre_fr" alt="Valider des données avec Query Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="Valider des données avec Query Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Dérivation de données avec Data Distiller" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414067?format=jpeg&nocache=1759180596403&captions=fre_fr" alt="Dérivation de données avec Data Distiller"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Dérivation de données avec Data Distiller"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="Connexion de Tableau à Query Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414042?format=jpeg&nocache=1759180596876&captions=fre_fr" alt="Connexion de Tableau à Query Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="Connexion de Tableau à Query Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -125,7 +125,7 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="psql-client-tableau.md" target="_blank" rel="referrer" title="Connexion de Tableau à Query Service">Connexion de Tableau à Query Service</a>
+                        <a href="psql-client-tableau.md" target="_blank" rel="referrer" title="Connexion de Tableau à Query Service">Connexion de Tableau au service de requête</a>
                     </p>
                     <p class="is-size-6">Découvrez comment vous connecter à Query Service à partir de diverses applications de bureau clientes qui prennent en charge le protocole PostgreSQL et comment utiliser les outils et pilotes PostgreSQL pour connecter et écrire des requêtes.</p>
                 </div>
@@ -148,9 +148,9 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="analyze-and-visualize.md" target="_blank" rel="referrer" title="Analyse et visualisation des informations omnicanal dans Tableau à l’aide de Query Service">Analyse et visualisation des informations omnicanal dans Tableau à l’aide de Query Service</a>
+                        <a href="analyze-and-visualize.md" target="_blank" rel="referrer" title="Analyse et visualisation des informations omnicanal dans Tableau à l’aide de Query Service">Analyse et visualisation des informations omnicanal dans Tableau à l’aide du service de requête</a>
                     </p>
-                    <p class="is-size-6">Découvrez comment utiliser le Query Service d’Adobe Experience Platform avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de la clientèle.</p>
+                    <p class="is-size-6">Découvrez comment utiliser le service de requête Adobe Experience Platform avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de la clientèle.</p>
                 </div>
                 <a href="analyze-and-visualize.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -163,7 +163,7 @@ Adobe Experience Platform Query Service permet aux utilisateurs d’explorer, de
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Rechargez vos données client pour offrir des expériences électrisantes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454937?format=jpeg&nocache=1759180596865&captions=fre_fr" alt="Rechargez vos données client pour offrir des expériences électrisantes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="Rechargez vos données client pour offrir des expériences électrisantes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

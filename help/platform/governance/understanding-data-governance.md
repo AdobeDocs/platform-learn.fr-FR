@@ -2,15 +2,15 @@
 title: Aperçu de la gouvernance des données
 description: Découvrez comment prendre le contrôle total de vos données, depuis le moment où elles sont collectées au niveau des sources de données jusqu’au moment où elles sont syndiquées vers des destinations en dehors de Adobe Experience Platform.
 feature: Data Governance
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 2978464d69b182b196d4e21ece46dce56dc6dcfc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 20%
 
 Découvrez comment prendre le contrôle total de vos données, depuis le moment où elles sont collectées au niveau des sources de données jusqu’au moment où elles sont syndiquées vers des destinations en dehors de Adobe Experience Platform. La gouvernance des données est un cadre facilement extensible qui est profondément ancré dans les workflows d’utilisation des données. Le cadre repose sur trois aspects clés : les libellés, les politiques et l’application. Pour plus d’informations, consultez la [documentation sur la gouvernance des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/33154?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 ## Démonstration
 
@@ -35,7 +35,7 @@ Consultez et une démonstration de bout en bout de la fonctionnalité de gouvern
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Démonstration complète de la gouvernance des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41319?format=jpeg&nocache=1740179989077&captions=fre_fr" alt="Démonstration complète de la gouvernance des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Démonstration complète de la gouvernance des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -48,7 +48,7 @@ Consultez et une démonstration de bout en bout de la fonctionnalité de gouvern
                     <p class="is-size-6">Découvrez comment Adobe Experience Platform gère les fonctionnalités de gouvernance des données et comment il permet aux marques de proposer des expériences personnalisées à leurs clients tout en offrant un contrôle complet sur les données client.</p>
                 </div>
                 <a href="introduction-to-data-governance.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -73,7 +73,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Classer les données à l’aide de libellés" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422795?format=jpeg&nocache=1740179989358&captions=fre_fr" alt="Classer les données à l’aide de libellés"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Classer les données à l’aide de libellés"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -86,7 +86,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
                     <p class="is-size-6">Découvrez comment étiqueter vos schémas et vos jeux de données.</p>
                 </div>
                 <a href="classify-data-using-labels.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -96,7 +96,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Créer des politiques d’utilisation des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37130?format=jpeg&nocache=1740179989347&captions=fre_fr" alt="Créer des politiques d’utilisation des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Créer des politiques d’utilisation des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
                     <p class="is-size-6">Découvrez comment créer et gérer des politiques d’utilisation des données.</p>
                 </div>
                 <a href="create-data-usage-policies.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -132,7 +132,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
                     <p class="is-size-6">Découvrez comment appliquer des politiques d’utilisation des données lors de l’activation d’une audience vers une destination.</p>
                 </div>
                 <a href="enforce-data-usage-policies.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -156,7 +156,7 @@ Découvrez comment Experience Platform respecte le consentement du client.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Intégrer le cadre de transparence et de consentement 2.0 du CCI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326476?format=jpeg&nocache=1740179989597&captions=fre_fr" alt="Intégrer le cadre de transparence et de consentement 2.0 du CCI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Intégrer le cadre de transparence et de consentement 2.0 du CCI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -169,7 +169,7 @@ Découvrez comment Experience Platform respecte le consentement du client.
                     <p class="is-size-6">Regardez une démonstration montrant comment Adobe Real-Time Customer Data Platform aide les marques à respecter le consentement des consommateurs lorsqu’elles se lancent dans les propriétés numériques.</p>
                 </div>
                 <a href="integrate-with-iab-transparency-and-consent-framework-2.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -179,7 +179,7 @@ Découvrez comment Experience Platform respecte le consentement du client.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Appliquer le consentement" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412099?format=jpeg&nocache=1740179989584&captions=fre_fr" alt="Appliquer le consentement"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Appliquer le consentement"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -192,7 +192,7 @@ Découvrez comment Experience Platform respecte le consentement du client.
                     <p class="is-size-6">Découvrez comment appliquer le consentement dans Adobe Experience Platform.</p>
                 </div>
                 <a href="enforce-consent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>

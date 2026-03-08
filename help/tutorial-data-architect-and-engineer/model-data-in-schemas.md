@@ -3,12 +3,12 @@ title: Données de modèle dans les schémas
 seo-title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Données de modèle dans les schémas
 description: Dans cette leçon, vous allez modéliser les données de Luma en schémas. C'est l'une des leçons les plus longues du tutoriel, alors prenez un verre d'eau et attachez vos ceintures !
-role: Data Architect
+role: Developer
 feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 7%
@@ -24,7 +24,7 @@ La normalisation et l’interopérabilité sont les concepts clés d’Adobe Ex
 
 XDM est une spécification documentée publiquement conçue pour améliorer la puissance des expériences digitales. Elle fournit des structures et des définitions communes permettant à chaque application de communiquer avec les services Platform. L’adhésion aux normes XDM permet d’intégrer toutes les données d’expérience client dans une représentation commune afin de fournir des informations de manière plus rapide et intégrée. Vous pouvez obtenir des informations précieuses à partir des actions des clients, définir des audiences de clients par le biais de segments et utiliser les attributs du client à des fins de personnalisation.
 
-XDM est le cadre de base qui permet à Adobe Experience Cloud, optimisé par Experience Platform, de transmettre le message approprié à la bonne personne, sur le bon canal et exactement au bon moment. La méthodologie sur laquelle Experience Platform repose, **à savoir le système XDM**, rend les schémas de modèles de données d’expérience opérationnels pour qu’ils soient utilisés par les services Platform.
+XDM est le cadre de base qui permet à Adobe Experience Cloud, optimisé par Experience Platform, de transmettre le message approprié à la bonne personne, sur le bon canal et exactement au bon moment. La méthodologie sur laquelle Experience Platform repose, **à savoir le système XDM**, rend les schémas de modèle de données d’expérience opérationnels pour qu’ils soient utilisés par les services Platform.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **Architectes de données** devront créer des schémas en dehors de ce tutoriel, mais **Ingénieurs de données** travailleront en étroite collaboration avec les schémas créés par l’architecte de données.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les schémas et le modèle de données d’expérience (XDM) :
->[!VIDEO](https://video.tv.adobe.com/v/38503?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Pour en apprendre davantage sur la modélisation des données dans Experience Platform, nous vous recommandons de regarder la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/fr/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible gratuitement sur Experience League !
+> Pour en apprendre davantage sur la modélisation des données dans Experience Platform, nous vous recommandons de regarder la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible gratuitement sur Experience League !
 
 ## Autorisations requises
 
@@ -86,7 +86,7 @@ Dans cet exercice, nous allons créer un schéma pour les données de fidélité
 
 Une fois le schéma créé, vous êtes redirigé vers l’éditeur de schémas dans lequel vous pouvez ajouter des champs au schéma. Vous pouvez ajouter des champs individuels directement au schéma ou utiliser des groupes de champs. Il est important de noter que tous les champs individuels sont toujours associés à une classe ou à un groupe de champs. Vous pouvez choisir parmi un large ensemble de groupes de champs standard fournis par Adobe ou créer les vôtres. Lorsque vous commencez à modéliser vos propres données dans Experience Platform, il est bon de vous familiariser avec les groupes de champs standard fournis par Adobe. Dans la mesure du possible, il est recommandé de les utiliser, car ils alimentent parfois des services en aval, tels que l’IA dédiée aux clients, l’IA dédiée à l’attribution et Adobe Analytics.
 
-Lorsque vous travaillez avec vos propres données, une étape importante consiste à déterminer laquelle de vos propres données doit être capturée dans Platform et comment elle doit être modélisée. Ce sujet volumineux est abordé plus en détail dans la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/fr/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Dans ce tutoriel, je vais simplement vous guider tout au long de l’implémentation de certains schémas prédéterminés.
+Lorsque vous travaillez avec vos propres données, une étape importante consiste à déterminer laquelle de vos propres données doit être capturée dans Platform et comment elle doit être modélisée. Ce sujet volumineux est abordé plus en détail dans la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Dans ce tutoriel, je vais simplement vous guider tout au long de l’implémentation de certains schémas prédéterminés.
 
 Pour ajouter des groupes de champs :
 
@@ -144,10 +144,8 @@ Le nouveau groupe de champs vide est ajouté à votre schéma. Les boutons **[!U
    1. **[!UICONTROL Nom d’affichage]** : `System Identifier`
    1. **[!UICONTROL Type]** : **[!UICONTROL Objet]**
    1. Dans la liste déroulante **[!UICONTROL Groupe de champs]** sélectionnez le **groupe de champs Profil d’identité Luma** que nous avons créé.
-
       ![Ajouter un nouveau groupe de champs](assets/schemas-loyalty-addSystemIdentifier.png)
    1. Sélectionnez **[!UICONTROL Appliquer]**
-
       ![Application de nouvelles propriétés de champ](assets/schemas-loyalty-applySystemIdentifier.png)
 
 Ajoutez maintenant deux champs sous l’objet `systemIdentifier` :
@@ -328,7 +326,7 @@ Nous allons maintenant créer un schéma supplémentaire pour les données du si
 | Classe | Événement d’expérience |
 | Nom du schéma | Schéma d’événements web Luma |
 | Groupe de champs | ExperienceEvent AEP Web SDK |
-| Groupe de champs | Événement d’expérience du consommateur |
+| Groupe de champs | Événement d’expérience client |
 
 Sélectionnez le groupe de champs **[!UICONTROL Événement d’expérience client]**. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans les [!UICONTROL Détails Commerce]. En effet[!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard également disponibles séparément. Le groupe de champs [!UICONTROL AEP Web SDK ExperienceEvent] contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent parfaitement.
 
@@ -354,7 +352,7 @@ Tout d’abord, nous devons créer un schéma pour le catalogue de produits de L
 1. Sélectionnez le bouton **[!UICONTROL Créer]**.
    ![Créer une classe](assets/schemas-productClass.png)
 1. La **classe de catalogue de produits Luma** que vous avez créée apparaît dans le tableau Classes ci-dessous. Assurez-vous que la classe est sélectionnée, puis sélectionnez **[!UICONTROL Suivant]**.
-   ![&#x200B; Nouvelle classe ajoutée &#x200B;](assets/schemas-productClassSelected.png)
+   ![ Nouvelle classe ajoutée ](assets/schemas-productClassSelected.png)
 1. Nommez le schéma `Luma Product Catalog Schema`.
 1. Créez un nouveau [!UICONTROL groupe de champs] appelé `Luma Product Catalog field group` avec les champs suivants :
    1. productName : nom du produit : chaîne

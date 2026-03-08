@@ -3,12 +3,12 @@ title: Application du cadre de gouvernance des données
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Application du cadre de gouvernance des données
 description: Dans cette leçon, vous allez appliquer le cadre de gouvernance des données aux données que vous avez ingérées dans votre sandbox.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 5%
@@ -24,9 +24,9 @@ Dans cette leçon, vous allez appliquer le cadre de gouvernance des données aux
 La gouvernance des données d’Adobe Experience Platform vous permet de gérer les données clients et de garantir la conformité aux réglementations, aux restrictions et aux politiques applicables à l’utilisation des données. Elle joue un rôle essentiel dans Experience Platform à différents niveaux, notamment dans le contrôle de l’utilisation des données.
 
 Avant de commencer les exercices, regardez ces courtes vidéos sur la gouvernance des données :
->[!VIDEO](https://video.tv.adobe.com/v/41319?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/33154?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required

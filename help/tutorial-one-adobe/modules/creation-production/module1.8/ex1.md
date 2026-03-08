@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
-source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 Les principaux objets et concepts de Workfront sont les suivants :
 
 | Nom | Dernière mise à jour |
-| ---------------------- | ------------ | 
+| ---------------------- | ------------ |
 | Portefeuille | Ensemble de projets présentant des caractéristiques unificatrices. Ces projets se disputent généralement les mêmes ressources, le même budget ou le même créneau horaire. |
 | Programme | Sous-ensemble au sein d’un portefeuille, dans lequel des projets similaires peuvent être regroupés afin d’obtenir un bénéfice bien défini. |
 | Projet | Une grande quantité de travail qui doit être achevée dans un délai spécifique et qui doit utiliser un budget et un nombre de ressources spécifiques. Pour le rendre gérable, vous divisez le projet en une série de tâches. Lorsque vous terminez toutes les tâches, le projet est également terminé. |

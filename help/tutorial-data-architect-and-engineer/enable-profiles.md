@@ -3,14 +3,14 @@ title: Activer les profils clients en temps réel
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Activer les profils clients en temps réel
 description: Dans cette leçon, vous apprendrez à activer vos schémas et jeux de données pour le profil client en temps réel.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 2%
 
 ---
@@ -26,14 +26,14 @@ Le profil client en temps réel offre une vue d’ensemble de chaque client qui 
 
 Aussi incroyable que cela puisse paraître, vous n’avez pas besoin d’activer *toutes vos données* pour le profil. En fait, vous devez activer uniquement les données dont vous avez besoin pour les cas d’utilisation d’activation. Activez les données que vous souhaitez utiliser pour les cas d’utilisation marketing, les intégrations de centres d’appels, etc., où vous avez besoin d’un accès rapide à un profil client robuste. Si vous téléchargez des données uniquement à des fins d’analyse, elles ne devraient probablement pas être activées pour le profil.
 
-Il existe d’importants [mécanismes de sécurisation pour les données du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr) que vous devez consulter lorsque vous décidez laquelle de vos propres données vous devez activer pour le profil.
+Il existe d’importants [mécanismes de sécurisation pour les données du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que vous devez consulter lorsque vous décidez laquelle de vos propres données vous devez activer pour le profil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **architectes des données** devront activer le profil client en temps réel en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur le profil client en temps réel :
->[!VIDEO](https://video.tv.adobe.com/v/31639?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Autorisations requises
 
@@ -80,7 +80,7 @@ Facile, non ? Répétez les étapes ci-dessus pour ces autres schémas :
 
 Il est maintenant temps d’activer le `Luma CRM Schema` avec l’API . Si vous souhaitez ignorer cet exercice et simplement l’activer dans l’interface utilisateur, allez-y.
 
-### Récupère le meta:altId du schéma
+### Récupère le méta:altId du schéma
 
 Tout d’abord, `meta:altId` la `Luma CRM Schema` :
 
@@ -90,11 +90,11 @@ Tout d’abord, `meta:altId` la `Luma CRM Schema` :
 1. Sélectionnez le bouton **Envoyer**
 1. Vous devriez obtenir une réponse 200
 1. Recherchez l’élément de `Luma CRM Schema` dans la réponse et copiez la valeur `meta:altId`
-   ![Copiez le meta:altId](assets/profile-crm-getMetaAltId.png)
+   ![Copier la méta:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### Activer le schéma
 
-Maintenant que nous disposons du meta:altId du schéma, nous pouvons l’activer pour le profil :
+Maintenant que nous disposons du méta:altId du schéma, nous pouvons l’activer pour le profil :
 
 1. Ouvrez le **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** de requête .
 1. Dans le **Params** collez votre valeur de `meta:altId` en tant que valeur de paramètre `SCHEMA_ID`
@@ -111,7 +111,7 @@ Maintenant que nous disposons du meta:altId du schéma, nous pouvons l’activer
 1. Sélectionnez le bouton **Envoyer**
 1. Vous devriez obtenir une réponse 200
 
-   ![Activez le schéma CRM pour le profil avec votre meta:altIid personnalisé utilisé comme paramètre SCHEMA_ID](assets/profile-crm-enableProfile.png)
+   ![Activez le schéma CRM pour le profil avec votre méta personnalisé:altIid utilisé comme paramètre SCHEMA_ID](assets/profile-crm-enableProfile.png)
 
 Vous devriez être en mesure de voir dans l&#39;interface utilisateur que les cinq schémas sont activés pour Profile (vous devrez peut-être Maj-Recharger pour voir que `Luma CRM Schema` est activé) :
 ![Tous les schémas activés](assets/profile-allSchemasEnabled.png)
@@ -125,7 +125,7 @@ Les jeux de données doivent également être activés pour Profile, et le proce
 1. Activez/désactivez le commutateur **[!UICONTROL Profil]**.
 1. Dans la boîte de dialogue modale de confirmation, appuyez sur le bouton **[!UICONTROL Activer]** pour confirmer
 
-   ![&#x200B; Profile Toggle](assets/profile-loyalty-enableDataset.png)
+   ![ Profile Toggle](assets/profile-loyalty-enableDataset.png)
 
 Répétez les étapes ci-dessus pour ces autres jeux de données :
 
@@ -187,7 +187,7 @@ Vous pouvez également vérifier que l’interface utilisateur affiche le jeu de
 ## Ressources supplémentaires
 
 * [Documentation sur le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
-* [&#x200B; Référence de l’API Real-Time Customer Profile &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [ Référence de l’API Real-Time Customer Profile ](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
 **Ingénieurs de données** devez continuer à lire la leçon [S’abonner aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md).

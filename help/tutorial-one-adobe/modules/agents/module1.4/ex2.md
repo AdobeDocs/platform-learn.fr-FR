@@ -3,7 +3,8 @@ title: Mise en œuvre de Brand Concierge sur votre site web
 description: Mise en œuvre de Brand Concierge sur votre site web
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 0%
@@ -170,11 +171,11 @@ Cliquez sur **Valider les modifications**.
 
 Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Cliquez sur votre **Programme** pour l’ouvrir.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs6.png)
+![ AEMCS ](./images/aemcs6.png)
 
 Cliquez ensuite sur le **de 3 points...** dans l’onglet **Environnements** et cliquez sur **Afficher les détails**.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs9.png)
+![ AEMCS ](./images/aemcs9.png)
 
 Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de votre environnement de **création**.
 
@@ -184,19 +185,19 @@ Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs10.png)
+![ AEMCS ](./images/aemcs10.png)
 
 Vous devriez alors voir votre environnement de création AEM. Accédez à **Sites**.
 
-![&#x200B; AEMCS &#x200B;](./images/block21.png)
+![ AEMCS ](./images/block21.png)
 
 Accédez à **CitiSignal**. Cliquez sur **Créer** puis sélectionnez **Page**.
 
-![&#x200B; AEMCS &#x200B;](./images/block23.png)
+![ AEMCS ](./images/block23.png)
 
 Sélectionnez **Page** et cliquez sur **Suivant**.
 
-![&#x200B; AEMCS &#x200B;](./images/block24.png)
+![ AEMCS ](./images/block24.png)
 
 Saisissez les valeurs suivantes :
 
@@ -206,33 +207,33 @@ Saisissez les valeurs suivantes :
 
 Cliquez sur **Créer**.
 
-![&#x200B; AEMCS &#x200B;](./images/block25.png)
+![ AEMCS ](./images/block25.png)
 
 Sélectionnez **Ouvrir**.
 
-![&#x200B; AEMCS &#x200B;](./images/block22.png)
+![ AEMCS ](./images/block22.png)
 
 Vous devriez alors voir ceci.
 
-![&#x200B; AEMCS &#x200B;](./images/block26.png)
+![ AEMCS ](./images/block26.png)
 
 Cliquez dans la zone vierge pour sélectionner le composant **section**. Cliquez ensuite sur l’icône plus **+** dans le menu de droite.
 
-![&#x200B; AEMCS &#x200B;](./images/block27.png)
+![ AEMCS ](./images/block27.png)
 
 Votre bloc personnalisé doit alors s’afficher dans la liste des blocs disponibles. Cliquez pour le sélectionner.
 
-![&#x200B; AEMCS &#x200B;](./images/block28.png)
+![ AEMCS ](./images/block28.png)
 
 Vous devriez alors voir un bloc vide ajouté à cette page. Ce bloc sera chargé dynamiquement à l’aide des bibliothèques JavaScript que vous ajouterez à l’étape suivante.
 
 Cliquez sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/block29.png)
+![ AEMCS ](./images/block29.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/block30.png)
+![ AEMCS ](./images/block30.png)
 
 Votre nouvelle page est maintenant publiée et peut être ajoutée à l’en-tête de navigation à l’étape suivante.
 
@@ -240,31 +241,31 @@ Votre nouvelle page est maintenant publiée et peut être ajoutée à l’en-tê
 
 Dans votre présentation AEM Sites, accédez à **CitiSignal** et cochez la case du fichier **Header/nav**. Cliquez sur **Modifier**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav0.png)
+![ AEMCS ](./images/nav0.png)
 
 Sélectionnez le champ **Texte** dans l’écran d’aperçu, puis cliquez sur le champ **Texte** sur le côté droit de l’écran pour le modifier.
 
-![&#x200B; AEMCS &#x200B;](./images/nav0a.png)
+![ AEMCS ](./images/nav0a.png)
 
 Créez une nouvelle option de menu dans le menu de navigation avec le `Brand Concierge` texte. Sélectionnez ensuite le texte **Brand Concierge** puis cliquez sur l&#39;icône **lien**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav1.png)
+![ AEMCS ](./images/nav1.png)
 
 Saisissez ceci pour le champ **Chemin ou URL** `/content/CitiSignal/brandconcierge.html` et saisissez `Brand Concierge` pour le champ **Titre**. Cliquez sur **Enregistrer**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav3.png)
+![ AEMCS ](./images/nav3.png)
 
 Tu devrais avoir ça. Cliquez sur **Terminé**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav4.png)
+![ AEMCS ](./images/nav4.png)
 
 Tu devrais avoir ça. Cliquez sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav4a.png)
+![ AEMCS ](./images/nav4a.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav5.png)
+![ AEMCS ](./images/nav5.png)
 
 Votre nouvelle page est maintenant ajoutée au menu.
 
@@ -339,7 +340,7 @@ Vous devez mettre à jour 2 champs du code ci-dessous :
 <script src="/scripts/styleconfigurations.js"></script>
 
 <script>
-		!function (n, o) {
+    !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
           []).push(o), n[o] = function () {
@@ -349,14 +350,14 @@ Vous devez mettre à jour 2 champs du code ci-dessous :
       })
     }
       (window, ["alloy"]);
-	</script>
+    </script>
 
 
 <script src="/scripts/alloy.js"></script>
 
 <script>
-	alloy("configure", {
-		defaultConsent: "in",
+    alloy("configure", {
+        defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
         edgeBasePath: "ee",
         datastreamId: "XXXXX", // replace datastreamId

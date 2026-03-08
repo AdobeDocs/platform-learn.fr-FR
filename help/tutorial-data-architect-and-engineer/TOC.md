@@ -2,11 +2,11 @@
 user-guide-title: Prise en main d’Experience Platform pour les architectes et ingénieurs de données
 breadcrumb-title: Prise en main pour les architectes et ingénieurs de données
 user-guide-description: Tutoriel pratique pour commencer la mise en œuvre de Platform. Données d’exemple et ressources fournies.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 40%

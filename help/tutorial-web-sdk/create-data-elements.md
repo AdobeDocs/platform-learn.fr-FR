@@ -4,7 +4,7 @@ description: Découvrez comment créer un objet XDM et mapper les éléments de 
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Vous comprenez ce qu’est une couche de données et avez suivi les leçons pré
 
 >[!IMPORTANT]
 >
->Les données de cette leçon proviennent de la couche de données `[!UICONTROL adobeDataLayer]` du site [Luma](https://luma.enablementadobe.com). Pour afficher la couche de données, ouvrez votre Developer Console et saisissez `[!UICONTROL adobeDataLayer]` pour afficher la couche de données complète disponible.![&#x200B; couche de données adobeDataLayer &#x200B;](assets/data-element-data-layer-new.png)
+>Les données de cette leçon proviennent de la couche de données `[!UICONTROL adobeDataLayer]` du site [Luma](https://luma.enablementadobe.com). Pour afficher la couche de données, ouvrez votre Developer Console et saisissez `[!UICONTROL adobeDataLayer]` pour afficher la couche de données complète disponible.![ couche de données adobeDataLayer ](assets/data-element-data-layer-new.png)
 
 
 ## Approches des couches de données
@@ -56,7 +56,7 @@ Il existe plusieurs façons de mapper les données de la couche de données à X
 
 ### Implémentation de XDM dans la couche de données
 
-Dans cette approche, les développeurs web implémentent un objet XDM entièrement défini comme structure de la couche de données. Il vous suffit ensuite de mapper l’intégralité de la couche de données à un objet XDM dans les balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut être idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la commande [XDM sendEvent](https://experienceleague.adobe.com/fr/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé capturant l’intégralité de la couche de données en tant qu’objet JSON de transmission au XDM. Ensuite, vous mappez le JSON de transmission au champ d’objet XDM dans l’action Envoyer l’événement.
+Dans cette approche, les développeurs web implémentent un objet XDM entièrement défini comme structure de la couche de données. Il vous suffit ensuite de mapper l’intégralité de la couche de données à un objet XDM dans les balises. Si votre implémentation n’utilise pas de gestionnaire de balises, cette approche peut être idéale, car vous pouvez envoyer des données à XDM directement à partir de votre application à l’aide de la commande [XDM sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Si vous utilisez des balises, vous pouvez créer un élément de données de code personnalisé capturant l’intégralité de la couche de données en tant qu’objet JSON de transmission au XDM. Ensuite, vous mappez le JSON de transmission au champ d’objet XDM dans l’action Envoyer l’événement.
 
 Vous trouverez ci-dessous un exemple d’utilisation de la couche de données client au format Adobe :
 
@@ -133,12 +133,12 @@ Cette approche implique de mapper des variables de couche de données individuel
 
 ### Mapper à XDM dans le flux de données
 
-Cette approche utilise la fonctionnalité intégrée à la configuration du flux de données appelée [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/data-prep) et ignore le mappage des variables de couche de données à XDM dans les balises.
+Cette approche utilise la fonctionnalité intégrée à la configuration du flux de données appelée [Préparation des données pour la collecte de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) et ignore le mappage des variables de couche de données à XDM dans les balises.
 
 #### Avantages
 
 * Mappage flexible de variables individuelles à XDM dans une interface utilisateur pointer-cliquer
-* Possibilité de [calculer de nouvelles valeurs](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/functions) ou [transformer des types de données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling) à partir d’une couche de données avant son transfert vers XDM
+* Possibilité de [calculer de nouvelles valeurs](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformer des types de données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) à partir d’une couche de données avant son transfert vers XDM
 
 #### Inconvénients
 
@@ -151,7 +151,7 @@ Cette approche utilise la fonctionnalité intégrée à la configuration du flux
 >
 > Couche de données Google
 > 
-> Si votre organisation utilise déjà Google Analytics et dispose de l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser l’extension [Google Data Layer](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/google-data-layer/overview) dans les balises. Vous pouvez ainsi déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
+> Si votre organisation utilise déjà Google Analytics et dispose de l’objet DataLayer Google traditionnel sur votre site web, vous pouvez utiliser l’extension [Google Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) dans les balises. Vous pouvez ainsi déployer la technologie Adobe plus rapidement sans avoir à demander l’assistance de votre équipe informatique. Le mappage de la couche de données Google à XDM suit les mêmes étapes que ci-dessus.
 
 
 ## Créer des éléments de données pour capturer la couche de données
@@ -262,7 +262,7 @@ Créez ensuite l’élément de données Variable pour votre objet de données :
 À la fin de ces étapes, les éléments de données suivants doivent être créés :
 
 | Éléments de données d’extension principaux | Éléments De Données De L’Extension Platform Web SDK |
------------------------------|-------------------------------
+| ----------------------------- | ------------------------------- |
 | `Ecommerce Cart Products` | `Data Variable` |
 | `Ecommerce Product Category` | `XDM Variable` |
 | `Ecommerce Product Id` | |
@@ -277,4 +277,4 @@ Une fois ces éléments de données en place, vous êtes prêt à commencer à e
 
 >[!NOTE]
 >
->Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=fr)
+>Merci d’avoir investi votre temps dans votre apprentissage de Adobe Experience Platform Web SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou avez des suggestions sur le contenu futur, veuillez les partager dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

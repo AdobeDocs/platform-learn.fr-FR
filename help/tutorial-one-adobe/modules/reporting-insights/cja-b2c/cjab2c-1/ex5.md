@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Visualisation à l’aide de Customer 
 kt: 5342
 doc-type: tutorial
 exl-id: 40498a6d-c306-47db-ae12-4cfea6983f03
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 - Présentation de l’interface utilisateur d’Analysis Workspace
 - Découvrez certaines fonctionnalités qui rendent Analysis Workspace si différent.
-- Découvrez comment effectuer des analyses dans CJA à l’aide d’Analysis Workspace
+- Découvrez comment effectuer une analyse dans CJA à l’aide d’Analysis Workspace.
 
 ## Contexte
 
@@ -79,8 +79,8 @@ Quels sont les 5 produits les plus consultés ?
 
 N’oubliez pas d’enregistrer le projet de temps en temps.
 
-| SE | Raccourci |
-| ----------------- |-------------| 
+| Système d’exploitation | Raccourci |
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Commande + S |
 
@@ -125,10 +125,10 @@ Cliquez ensuite sur **Verrouiller la sélection** pour verrouiller cette visuali
 
 Pour en savoir plus sur les visualisations à l’aide d’Analysis Workspace, cliquez ici :
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=fr)
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=fr](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=fr)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Entonnoir d’interaction du produit, de la consultation à l’achat
+## Funnel d’interaction de produit, de l’affichage à l’achat
 
 Il existe de nombreuses façons de résoudre cette question. L’une d’elles consiste à utiliser le type d’interaction de produit et à l’utiliser sur un tableau à structure libre. Vous pouvez également utiliser une **visualisation des abandons**. Utilisons le dernier exemple, car nous voulons visualiser et analyser en même temps.
 
@@ -168,7 +168,7 @@ Faites de même avec **commerce.productListAdds** et **commerce.purchases** et d
 
 ![demo](./images/props1.png)
 
-On peut faire beaucoup de choses ici. Quelques exemples : comparer au fil du temps, comparer chaque étape par appareil ou comparer par fidélité. Cependant, si vous souhaitez analyser des éléments intéressants, comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article dans leur panier, nous pouvons utiliser le meilleur outil de CJA : un clic droit.
+On peut faire beaucoup de choses ici. Quelques exemples : comparer au fil du temps, comparer chaque étape par appareil ou comparer par fidélité. Cependant, si vous souhaitez analyser des éléments intéressants, comme les raisons pour lesquelles les clients n’achètent pas après avoir ajouté un article dans leur panier, nous pouvons utiliser le meilleur outil de CJA : faites un clic droit.
 
 Cliquez avec le bouton droit sur le point de contact **commerce.productListAdds**. Cliquez ensuite sur **Répartir les abandons à ce point de contact**.
 
@@ -234,14 +234,14 @@ Comme vous pouvez le constater, nous avons exécuté une analyse omnicanale à l
 
 ## Comment les clients disposant d’un contact Callcenter positif se comportent-ils par rapport aux principaux indicateurs de performance clés ?
 
-Segmentons d’abord les données pour n’obtenir que les utilisateurs qui ont des appels **positifs**. Dans CJA, les segments sont appelés Filtres. Accédez à Filtres dans la zone des composants (sur le côté gauche) et cliquez sur **+**.
+Segmentons d’abord les données pour n’obtenir que les utilisateurs qui ont des appels **positifs**. Dans CJA, les segments sont appelés filtres. Accédez à Filtres dans la zone des composants (sur le côté gauche) et cliquez sur **+**.
 
 ![demo](./images/pro58.png)
 
 Dans le créateur de filtres, attribuez un nom au filtre
 
 | Nom | Description |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sensation d’appel - Positif | Sensation d’appel - Positif |
 
 ![demo](./images/pro47.png)
@@ -282,7 +282,7 @@ Faites de même avec **Personnes**, **Ajouter au panier** et **Achats**. Vous fi
 
 ![demo](./images/pro55.png)
 
-Grâce à la première analyse de flux, une nouvelle question est venue à l&#39;esprit. Nous avons donc décidé de créer ce tableau et de comparer certains indicateurs de performance clés à un segment pour répondre à cette question. Comme vous pouvez le constater, le délai d’obtention des informations est beaucoup plus court que si vous utilisiez SQL ou d’autres solutions de BI.
+Grâce à la première analyse de flux, une nouvelle question est venue à l&#39;esprit. Nous avons donc décidé de créer ce tableau et de comparer certains indicateurs de performance clés à un segment pour répondre à cette question. Comme vous pouvez le constater, le délai d’exécution d’insight est beaucoup plus court que si vous utilisiez SQL ou d’autres solutions de BI.
 
 ## Récapitulatif de Customer Journey Analytics et Analysis Workspace
 
@@ -291,7 +291,7 @@ Il peut s’avérer très utile d’importer des données déconnectées dans vo
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Résumé et avantages &#x200B;](./summary.md){target="_blank"}
+Accédez à [ Résumé et avantages ](./summary.md){target="_blank"}
 
 Revenir à [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

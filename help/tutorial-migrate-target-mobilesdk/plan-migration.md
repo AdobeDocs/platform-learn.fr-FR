@@ -2,9 +2,9 @@
 title: Planifiez la migration - Migrez l’implémentation d’Adobe Target dans votre application mobile vers l’extension Offer Decisioning et Target
 description: Découvrez les principales différences entre at.js et Platform Web SDK et comment planifier vos efforts de migration.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ Le processus de migration implique les étapes clés suivantes :
 > * **Optimiser SDK** implémente l’extension **Offer Decisioning et Target**
 
 
-Ensuite, passez en revue la comparaison détaillée [de l’extension Target et de l’extension Offer Decisioning et Target](detailed-comparison.md) afin de mieux comprendre les différences techniques et d’identifier les domaines nécessitant une attention particulière.
+Ensuite, passez en revue les <!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)--> détaillées afin de mieux comprendre les différences techniques et d’identifier les domaines nécessitant une attention particulière.
 
 >[!NOTE]
 >
->Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=fr#M625).
+>Nous nous engageons à vous aider à réussir votre migration mobile de Target vers l’extension Offer Decisioning et Target. Si vous rencontrez des obstacles avec votre migration ou si vous pensez qu&#39;il manque des informations essentielles dans ce guide, veuillez nous le faire savoir en postant dans [cette discussion communautaire](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).

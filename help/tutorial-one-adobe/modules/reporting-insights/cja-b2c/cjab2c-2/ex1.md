@@ -4,9 +4,9 @@ description: Ingestion et analyse des données Google Analytics dans Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---

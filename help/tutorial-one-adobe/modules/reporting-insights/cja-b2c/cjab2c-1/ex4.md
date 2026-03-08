@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Préparation des données dans Analysi
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '759'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Customer Journey Analytics ajoute cette solution aux données de Platform. Nous 
 
 Si vous n’avez encore jamais utilisé Analysis Workspace, nous vous recommandons vivement de regarder cette vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/3424559?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Création De Votre Projet
 
@@ -52,8 +52,8 @@ Tout d’abord, veillez à sélectionner la vue de données appropriée dans le 
 
 Ensuite, vous allez enregistrer votre projet et lui donner un nom. Vous pouvez utiliser la commande suivante pour enregistrer :
 
-| SE | Raccourci |
-| ----------------- |-------------| 
+| Système d’exploitation | Raccourci |
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Commande + S |
 
@@ -64,7 +64,7 @@ Cette fenêtre contextuelle s’affiche :
 Veuillez utiliser cette convention de nommage :
 
 | Nom | Description |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 Cliquez ensuite sur **Enregistrer**.
@@ -110,7 +110,7 @@ Le taux de conversion est généralement représenté en pourcentage. Modifions 
 Enfin, modifiez le nom et la description de la mesure calculée :
 
 | Titre | Description | Identifiant externe |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Taux de conversion | Taux de conversion | conversionRate |
 
 Vous aurez alors ceci. Cliquez sur **Enregistrer**.

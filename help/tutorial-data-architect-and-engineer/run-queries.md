@@ -3,12 +3,12 @@ title: Exécuter des requêtes
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Exécuter des requêtes
 description: Dans cette leçon, vous apprendrez à configurer, écrire et exécuter des requêtes pour valider les données que vous avez ingérées.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service vous aide à donner du sens à vos donn�
 **Architectes de données** et **Ingénieurs de données** devront utiliser Query Service en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Query Service :
->[!VIDEO](https://video.tv.adobe.com/v/33589?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Autorisations requises
 

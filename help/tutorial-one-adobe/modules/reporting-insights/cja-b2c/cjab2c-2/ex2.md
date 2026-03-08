@@ -4,9 +4,9 @@ description: Ingestion et analyse des données Google Analytics dans Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Sur le côté droit de l’écran, le menu **Créer un jeu de données** s’aff
 Pour l’**ID du jeu de données**, utilisez la convention de nommage ci-dessous. Pour les autres champs, veuillez conserver les paramètres par défaut.
 
 | Attribution d&#39;un nom | Exemple |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 Cliquez sur **CRÉER UN JEU DE DONNÉES**.
@@ -252,13 +252,13 @@ Sélectionnez **Tableau BigQuery** comme emplacement de sortie.
 Une nouvelle fenêtre contextuelle s’affiche, dans laquelle vos **Nom du projet** et **Nom du jeu de données** sont pré-renseignés. Le nom du jeu de données doit correspondre au jeu de données que vous avez créé au début de cet exercice, avec cette convention d’affectation de nom :
 
 | Attribution d&#39;un nom | Exemple |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 Vous devez maintenant saisir un nom de table. Veuillez utiliser cette convention de nommage :
 
 | Attribution d&#39;un nom | Exemple |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 Cliquez sur **ENREGISTRER**.

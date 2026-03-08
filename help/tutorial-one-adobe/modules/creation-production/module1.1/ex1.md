@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3787'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Remplacez le type de police par une police de votre choix. Dans ce cas, le type 
 
 ![Postman](./images/ill5.png)
 
-Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points **&#x200B;**.
+Définissez la taille de la police sur la taille de votre choix, en l’occurrence 250 points ****.
 
 ![Postman](./images/ill6.png)
 
@@ -248,7 +248,7 @@ La requête que vous utiliserez ici est une requête **asynchrone**, qui fournit
 Sélectionnez la requête nommée **POST - Firefly - T2I V3 async** dans la collection **FF - Firefly Services Tech Insiders**. Accédez à **En-têtes** et vérifiez les combinaisons de paire clé/valeur.
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-api-key` | `{{API_KEY}}` |
 | `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
 
@@ -501,8 +501,8 @@ Vous verrez alors l’image générée, qui ne devrait pas contenir de fleurs.
 
 ## Étapes suivantes
 
-Accédez à [Optimiser votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies](./ex2.md){target="_blank"}
+Accédez à [Optimisation de votre processus Firefly à l’aide de Microsoft Azure et des URL prédéfinies](./ex2.md){target="_blank"}
 
-Revenez à [&#x200B; Présentation de Adobe Firefly Services &#x200B;](./firefly-services.md){target="_blank"}
+Revenez à [ Présentation de Adobe Firefly Services ](./firefly-services.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

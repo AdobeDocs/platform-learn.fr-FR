@@ -3,7 +3,7 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 11%
@@ -18,7 +18,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## Workflow et planification
 
@@ -97,7 +97,7 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 >[!NOTE]
 >
->![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

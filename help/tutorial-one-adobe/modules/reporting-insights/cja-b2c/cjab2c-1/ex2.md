@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Connexion des jeux de données Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Comme mentionné, vous pouvez définir différents ID de personne pour chaque je
 
 Le nom du champ d’ID de personne n’a pas d’importance, à condition que la valeur des champs d’ID de personne corresponde. Supposons que nous ayons `email` dans un jeu de données et `emailAddress` dans un autre jeu de données défini comme ID de personne. Si `delaigle@adobe.com` est la même valeur pour le champ ID de personne sur les deux jeux de données, CJA pourra assembler les données.
 
-Consultez les FAQ sur CJA ici pour comprendre les nuances de la combinaison d’identités : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=fr).
+Consultez les FAQ sur CJA ici pour comprendre les nuances de la combinaison d’identités : [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Assemblage des données à l’aide de l’ID de personne
 
@@ -97,9 +97,9 @@ Accédez à chaque jeu de données pour mettre à jour l’ID de personne. Rense
 Une fois que vous avez assemblé les deux jeux de données, vous êtes prêt à continuer.
 
 | Jeu de données | ID de personne |
-| ----------------- |-------------| 
-| Système de démonstration - Jeu de données d’événement pour le site web (Global v1.1) | e-mail |
-| Système de démonstration - Jeu de données d’événement pour le centre d’appels (version globale v1.1) | e-mail |
+| ----------------- |-------------|
+| Système de démonstration - Jeu de données d’événement pour le site web (Global v1.1) | E-mail |
+| Système de démonstration - Jeu de données d’événement pour le centre d’appels (version globale v1.1) | E-mail |
 
 Vous devez également vous assurer que, pour les deux jeux de données, ces options sont activées :
 

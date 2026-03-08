@@ -1,32 +1,32 @@
 ---
-title: Création de jeux de données
+title: Créer des jeux de données
 seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: Création de jeux de données
+breadcrumb-title: Créer des jeux de données
 description: Dans cette leçon, vous allez créer des jeux de données pour recevoir vos données.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
-# Création de jeux de données
+# Créer des jeux de données
 
 <!--15min-->
 
 Dans cette leçon, vous allez créer des jeux de données pour recevoir vos données. Vous serez ravi d’apprendre qu’il s’agit de la leçon la plus courte du tutoriel !
 
-Toutes les données correctement ingérées par Adobe Experience Platform sont conservées sous forme de jeux de données dans le lac de données. Un jeu de données est une structure de stockage et de gestion pour la collecte de données, généralement sous la forme d’un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
+Toutes les données correctement ingérées par Adobe Experience Platform sont conservées sous forme de jeux de données dans le lac de données. Un jeu de données est une structure de stockage et de gestion pour une collection de données, généralement sous la forme d’un tableau, qui contient un schéma (des colonnes) et des champs (des lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
 **Architectes de données** devront créer des jeux de données en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les jeux de données :
->[!VIDEO](https://video.tv.adobe.com/v/34369?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## Autorisations requises
 

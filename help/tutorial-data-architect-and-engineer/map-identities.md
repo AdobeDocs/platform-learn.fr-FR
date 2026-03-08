@@ -3,15 +3,15 @@ title: Mapping d’identités
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Mapping d’identités
 description: Dans cette leçon, nous allons créer des espaces de noms d’identité et ajouter des champs d’identité à nos schémas.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '937'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service vous permet de mieux connaître vos c
 **Architectes de données** devront mapper les identités en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur l’identité dans Adobe Experience Platform :
->[!VIDEO](https://video.tv.adobe.com/v/3422771?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Créons l’espace de noms d’identité `Luma CRM Id` :
    ![Espace de noms d’identité](assets/identity-createUsingApi.png)
 
 Si vous revenez à l’interface utilisateur, vous devriez maintenant voir vos trois nouveaux espaces de noms personnalisés :
-![Espace de noms d’identité &#x200B;](assets/identity-newIdentities.png)
+![Espace de noms d’identité ](assets/identity-newIdentities.png)
 
 
 ## Champs d’identité des libellés dans les schémas
@@ -163,7 +163,7 @@ Plusieurs champs d’identité peuvent être ajoutés à un schéma. Les identit
 1. Sélectionnez l’espace de noms `Luma CRM Id` dans le menu déroulant **[!UICONTROL Espaces de noms d’identité]**
 1. Sélectionnez **[!UICONTROL Appliquer]** puis cliquez sur le bouton **[!UICONTROL Enregistrer]** pour enregistrer vos modifications
 
-   ![Identité Secondaire &#x200B;](assets/identity-loyalty-secondaryId.png)
+   ![Identité Secondaire ](assets/identity-loyalty-secondaryId.png)
 
 ## Compléter les relations de schéma
 
@@ -178,7 +178,7 @@ Maintenant que nos champs d’identité sont étiquetés, nous pouvons terminer 
 1. Sélectionnez **[!UICONTROL Appliquer]**
 1. Sélectionnez **[!UICONTROL Enregistrer]**
 
-   ![&#x200B; Champ de référence &#x200B;](assets/identity-offlinePurchase-relationship.png)
+   ![ Champ de référence ](assets/identity-offlinePurchase-relationship.png)
 
 Répétez ce processus pour créer une relation entre le `Luma Web Events Schema` et le `Luma Product Catalog Schema`.
 

@@ -3,11 +3,11 @@ title: Mappage d’une audience fédérée à une destination S3
 seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Mappage d’une audience fédérée à S3
 description: Dans cet exercice, nous allons mapper une audience fédérée à une destination Real-Time CDP en aval afin de prendre en charge une expérience hors ligne personnalisée.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -53,4 +53,4 @@ Vous pouvez exploiter les attributs d’audience dans votre entrepôt de donnée
 Nous avons créé une audience et l’avons activée facilement vers une destination S3. Toute autre solution peut sélectionner cette audience et l’utiliser immédiatement. L’interface conviviale permet aux équipes marketing de créer et d’activer rapidement des audiences sans déplacer les données sous-jacentes. Les clients qui adoptent cette approche ont mis en ligne leur premier cas d’utilisation depuis environ un mois.
 
 
-Maintenant, nous allons [construire un parcours &#x200B;](build-journey-federated-audience.md).
+Maintenant, nous allons [construire un parcours ](build-journey-federated-audience.md).

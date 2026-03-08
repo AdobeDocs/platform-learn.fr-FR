@@ -3,7 +3,7 @@ title: Installation des SDK mobiles Adobe Experience Platform
 description: Découvrez comment mettre en œuvre le SDK mobile Adobe Experience Platform dans une application mobile.
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 3%
@@ -140,7 +140,7 @@ Le code ci-dessus effectue les opérations suivantes :
 
 1. Enregistre les extensions requises.
 1. Configure MobileCore et d’autres extensions pour utiliser la configuration de propriété de balise.
-1. Active la journalisation du débogage. Vous trouverez plus d’informations et d’options dans la documentation de Adobe Experience Platform Mobile SDK [&#128279;](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. Active la journalisation du débogage. Vous trouverez plus d’informations et d’options dans la documentation de Adobe Experience Platform Mobile SDK [](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 1. Démarre la surveillance du cycle de vie. Voir l’étape [Cycle de vie](lifecycle-data.md) du tutoriel pour plus d’informations.
 1. Définit le consentement par défaut sur inconnu. Voir l’étape [Consentement](consent.md) du tutoriel pour plus d’informations.
 
@@ -240,7 +240,7 @@ Dans la vue **[!UICONTROL Android]**, accédez à **[!UICONTROL app]** > **[!UIC
 
    1. Enregistre les extensions requises.
    1. Configure MobileCore et d’autres extensions pour utiliser la configuration de propriété de balise.
-   1. Active la journalisation du débogage. Vous trouverez plus d’informations et d’options dans la documentation de Adobe Experience Platform Mobile SDK [&#128279;](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+   1. Active la journalisation du débogage. Vous trouverez plus d’informations et d’options dans la documentation de Adobe Experience Platform Mobile SDK [](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
    1. Démarre la surveillance du cycle de vie. Voir l’étape [Cycle de vie](lifecycle-data.md) du tutoriel pour plus d’informations.
    1. Définit le consentement par défaut sur inconnu. Voir l’étape [Consentement](consent.md) du tutoriel pour plus d’informations.
 
@@ -253,6 +253,6 @@ Veillez à mettre à jour `MobileCore.configureWith(environmentFileId)` avec le 
 >
 >Vous avez maintenant installé les packages nécessaires et mis à jour votre projet afin d’enregistrer les extensions Adobe Experience Platform Mobile SDK requises que vous allez utiliser pour la suite du tutoriel.
 >
->Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=fr)
+>Merci d’avoir consacré votre temps à découvrir Adobe Experience Platform Mobile SDK. Si vous avez des questions, souhaitez partager des commentaires généraux ou des suggestions sur le contenu futur, partagez-les dans ce [article de discussion de la communauté Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Suivant : **[Configuration d’Assurance](assurance.md)**

@@ -4,9 +4,9 @@ description: Ingérer et analyser des données Google Analytics dans Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,7 @@ Faites défiler vers le bas. Vous devez désormais mapper chaque **champ Source*
 Utilisez le tableau de mappage ci-dessous pour cet exercice.
 
 | Champ source | Champ cible |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | canal._id |
 | `timeStamp` | date et heure |
@@ -88,7 +88,7 @@ Utilisez le tableau de mappage ci-dessous pour cet exercice.
 Pour certains champs, vous devez supprimer le mappage d’origine et en créer un nouveau, par exemple un **champ calculé**.
 
 | Champ Calculé | Champ cible |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |

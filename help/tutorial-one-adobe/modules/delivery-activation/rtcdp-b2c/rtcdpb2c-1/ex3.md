@@ -4,7 +4,7 @@ description: Foundation - Profil client en temps réel - Visualiser votre propre
 kt: 5342
 doc-type: tutorial
 exl-id: dd80f379-76f2-4023-b958-6ee558e23e88
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2346'
 ht-degree: 2%
@@ -31,8 +31,8 @@ Sur le panneau Rayons X, nous pouvons voir 4 combinaisons différentes d’ident
 
 | Identité | Espace de noms |
 |:-------------:| :---------------:|
-| Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
-| Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
+| Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
+| Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
 | ID d’e-mail | woutervangeluwe+18112024-01@gmail.com |
 | ID du numéro de mobile | +32473622044+18112024-01 |
 
@@ -210,7 +210,7 @@ Au bout de quelques secondes, une réponse devrait s’afficher dans la section 
 Si votre configuration a réussi, vous devriez voir une réponse similaire contenant les informations suivantes :
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **porteur** |
 | access_token | **eyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in | **86399** |
@@ -234,7 +234,7 @@ Dans **1. Service de profil unifié** cliquez sur la première demande nommée *
 Pour cette requête, trois variables sont requises :
 
 | Clé | Valeur | Définition |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | entityId | **identifiant** | l’ID de client spécifique |
 | entityIdNS | **espace de noms** | l’espace de noms spécifique applicable à l’identifiant |
 | schema.name | **_xdm.context.profile** | schéma spécifique pour lequel vous souhaitez recevoir des informations |
@@ -242,7 +242,7 @@ Pour cette requête, trois variables sont requises :
 Ainsi, si vous souhaitez demander aux API Adobe Experience Platform de vous renvoyer toutes les informations de profil pour votre propre ECID, vous devez configurer la requête comme suit :
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **yourECID** |
 | entityIdNS | **ecid** |
 | schema.name | **_xdm.context.profile** |
@@ -398,7 +398,7 @@ Revenons à Postman et faisons semblant d’être le centre d’appel. Envoyons 
 Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour un téléphone spécifique, vous devez configurer la requête comme suit :
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **votre numéro de téléphone** |
 | entityIdNS | **téléphone** (remplacez ecid par téléphone) |
 | schema.name | **_xdm.context.profile** |
@@ -433,7 +433,7 @@ Faisons la même chose pour votre adresse e-mail en spécifiant l’espace de no
 Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour une adresse e-mail spécifique, vous devez configurer la requête comme suit :
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **youremail** |
 | entityIdNS | **e-mail** (remplacez Téléphone par e-mail) |
 | schema.name | **_xdm.context.profile** |
@@ -487,7 +487,7 @@ Dans **1. Unified Profile Service**, sélectionnez la deuxième requête nommée
 Pour cette requête, quatre variables sont requises :
 
 | Clé | Valeur | Définition |
-|:-------------:| :---------------:|  :---------------:| 
+|:-------------:| :---------------:|  :---------------:|
 | schema.name | **_xdm.context.experienceevent** | schéma spécifique pour lequel vous souhaitez recevoir des informations. Dans ce cas, nous recherchons des données qui sont mappées par rapport au schéma ExperienceEvent . |
 | relatedSchema.name | **_xdm.context.profile** | Pendant que nous recherchons des données mappées par rapport au schéma ExperienceEvent, nous devons spécifier une identité pour laquelle nous voulons recevoir ces données. Le schéma qui a accès à l’identité est le Profile-schema. Par conséquent, le relatedSchema ici est le Profile-schema. |
 | relatedEntityId | **identifiant** | l’identifiant client spécifique |
@@ -496,7 +496,7 @@ Pour cette requête, quatre variables sont requises :
 Ainsi, si vous souhaitez demander aux API de Platform de vous renvoyer toutes les informations de profil pour votre propre ecid, vous devez configurer la requête comme suit :
 
 | Clé | Valeur |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | schema.name | **_xdm.context.experienceevent** |
 | relatedSchema.name | **_xdm.context.profile** |
 | relatedEntityId | **yourECID** |

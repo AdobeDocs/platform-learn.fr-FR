@@ -4,9 +4,9 @@ description: Ingérer et analyser des données Google Analytics dans Adobe Exper
 kt: 5342
 doc-type: tutorial
 exl-id: 00695ec0-34e0-4a20-afe3-bee4016eef58
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -69,8 +69,8 @@ La page d’accueil **Plateforme d’authentification Google** s’affiche maint
 Pour le **Nom de l’application**, utilisez ce qui suit :
 
 | Attribution d&#39;un nom | Exemple |
-| ----------------- |-------------| 
-| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - Connecteur AEP BigQuery |
+| ----------------- |-------------|
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - Connecteur BigQuery AEP |
 
 Sélectionnez votre adresse e-mail pour le champ **E-mail de support utilisateur**.
 
@@ -109,8 +109,8 @@ Plusieurs nouveaux champs s’affichent. Vous devez maintenant saisir le **Nom**
 Pour le champ **Nom**, utilisez la commande suivante :
 
 | Champ | Valeur | Exemple |
-| ----------------- |-------------| -------------| 
-| Nom | ldap - Connecteur AEP BigQuery | vangeluw - Connecteur BigQuery Platform |
+| ----------------- |-------------| -------------|
+| Nom | ldap - Connecteur BigQuery AEP | vangeluw - Connecteur BigQuery Platform |
 
 ![demo](./images/ex2122.png)
 
@@ -118,7 +118,7 @@ Pour le champ **Nom**, utilisez la commande suivante :
 Cliquez sur **+ AJOUTER UN URI** sous **URI de redirection autorisés**. Ajoutez le nouvel URI ci-dessous.
 
 | Champ | Valeur |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | URI de redirection autorisés | https://developers.google.com/oauthplayground |
 
 Le champ **URI de redirection autorisés** est très important, car vous en aurez besoin ultérieurement pour obtenir le RefreshToken dont vous avez besoin pour terminer la configuration du connecteur Source BigQuery dans Adobe Experience Platform.
@@ -138,7 +138,7 @@ Copiez ces deux champs et collez-les dans un fichier texte sur votre bureau. Vou
 En résumé, pour la configuration du connecteur Source BigQuery dans Adobe Experience Platform, vous disposez déjà des valeurs suivantes :
 
 | Informations d’identification du connecteur BigQuery | Valeur |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID de projet | votre propre ID de projet (par exemple,: possible-bee-447102-h3) |
 | clientid | votreid client |
 | clientsecret | votresecret client |
@@ -177,7 +177,7 @@ Deux champs s’affichent.
 Veuillez remplir les champs suivant ce tableau :
 
 | Paramètres de l’API Playground | Vos informations d’identification d’API Google |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID client OAuth | votre propre identifiant client (dans le fichier texte sur votre bureau) ; |
 | Secret client OAuth | votre propre secret client (dans le fichier texte sur votre bureau) ; |
 
@@ -205,7 +205,7 @@ Cliquez sur **Avancé**.
 
 ![demo](./images/ex232.png)
 
-Cliquez ensuite sur **Accéder à —aepUserLdap— - Connecteur AEP BigQuery (non sécurisé)**.
+Cliquez ensuite sur **Accéder à —aepUserLdap— - Connecteur BigQuery AEP (non sécurisé)**.
 
 ![demo](./images/ex233.png)
 
@@ -234,7 +234,7 @@ Le jeton **Actualiser** s’affiche maintenant.
 Copiez le **jeton d’actualisation** et collez-le dans le fichier texte sur votre bureau avec les autres informations d’identification du connecteur Source BigQuery :
 
 | Informations d’identification du connecteur Source BigQuery | Valeur |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID de projet | votre propre ID de projet aléatoire (par exemple,: apt-Summer-273608) |
 | clientid | votreid client |
 | clientsecret | votresecret client |
@@ -269,7 +269,7 @@ Commençons par nommer la connexion :
 Veuillez utiliser cette convention de nommage :
 
 | Informations d’identification du connecteur BigQuery | Valeur | Exemple |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Nom de compte | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Connexion BigQuery |
 | Description | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Connexion BigQuery |
 
@@ -280,7 +280,7 @@ Voici ce que vous obtiendrez :
 Ensuite, renseignez les détails de l’API GCP et BigQuery **Authentification du compte** que vous avez stockés dans un fichier texte sur votre bureau :
 
 | Informations d’identification du connecteur BigQuery | Valeur |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID de projet | votre propre ID de projet aléatoire (par exemple,: possible-bee-447102-h3) |
 | clientId | … |
 | clientSecret | … |

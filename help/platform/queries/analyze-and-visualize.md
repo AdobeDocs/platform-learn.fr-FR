@@ -1,16 +1,16 @@
 ---
 title: Analyse et visualisation des informations omnicanal dans Tableau à l’aide de Query Service
-description: Découvrez comment utiliser le Query Service d’Adobe Experience Platform avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de la clientèle.
+description: Découvrez comment utiliser le service de requête Adobe Experience Platform avec des outils de visualisation de données externes à l’aide d’un exemple d’analyse de perte de la clientèle.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate
 jira: KT-10191
 thumbnail: 342115.jpeg
 exl-id: d39d4bc5-550f-4cb2-875d-2e81a6f4c2b8
-source-git-commit: f5f3dcc655fffc056fe95c33a3cd7abba24d7f3a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 28%
+ht-degree: 30%
 
 ---
 

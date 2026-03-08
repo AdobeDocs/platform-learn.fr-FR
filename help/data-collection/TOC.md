@@ -5,8 +5,8 @@ user-guide-description: Vidéos pratiques et tutoriels pour vous aider à utilis
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
-role: Developer, Data Engineer
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+role: Developer
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 32%
@@ -29,13 +29,13 @@ ht-degree: 32%
    + [Créer et publier une bibliothèque](tags/build-and-publish-a-library.md)
    + [Implémentation sur des sites web avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
    + [Implémentation sur des sites web avec des SDK de solution](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=fr){target="_blank"}
-   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + SDK Web{#web-sdk}
    + [Vue d’ensemble](web-sdk/overview.md)
    + [Démonstration](web-sdk/demo.md)
    + [Tutoriel d’implémentation (avec balises)](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [&#x200B; Tutoriel sur la migration de Target](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
-   + [&#x200B; Tutoriel sur la migration d’Analytics](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [ Tutoriel sur la migration de Target ](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [ Tutoriel sur la migration d’Analytics ](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consentement{#consent}
       + [Vue d’ensemble](web-sdk/consent/overview.md)
       + [Définir les valeurs de consentement à l’aide de la norme Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -46,9 +46,9 @@ ht-degree: 32%
    + [Vue d’ensemble](mobile-sdk/overview.md)
    + [Création de propriétés mobiles](mobile-sdk/create-mobile-properties.md)
    + [Utiliser les gestionnaires des dépendances](mobile-sdk/use-dependency-managers.md)
-   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implémentation dans les applications mobiles](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
-   + [&#x200B; Tutoriel sur la migration de Target](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
+   + [ Tutoriel sur la migration de Target ](https://experienceleague.adobe.com/fr/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + API du serveur{#server-api}
    + [Vue d’ensemble](server-api/overview.md)
    + [Principes de base des API](server-api/introduction.md)
@@ -58,7 +58,7 @@ ht-degree: 32%
    + [Création d’une propriété](event-forwarding/create-a-property.md)
    + [Configurer un flux de données](event-forwarding/set-up-a-datastream.md)
    + [Ajouter une extension](event-forwarding/add-an-extension.md)
-   + [Créer une règle](event-forwarding/create-a-rule.md)
+   + [Création d’une règle](event-forwarding/create-a-rule.md)
    + [Workflows de démarrage rapide](event-forwarding/quick-start-workflows.md)
    + [Surveillance du transfert d’événement](event-forwarding/monitor.md)
    + [Déplacer les balises côté client](event-forwarding/consider-moving-tags.md)

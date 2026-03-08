@@ -4,9 +4,9 @@ description: Foundation - AEC - Configuration de votre compte Snowflake
 kt: 5342
 doc-type: tutorial
 exl-id: 2c614917-de00-4fce-a4e0-1c2037a74740
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -67,15 +67,15 @@ Tu verras ça. Copiez la requête ci-dessous et collez-la dans Snowflake. Veille
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS (
-	PERSON_ID NUMBER(38,0) NOT NULL,
-	NAME VARCHAR(255),
-	AGE NUMBER(38,0),
-	EMAIL VARCHAR(255),
-	PHONE_NUMBER VARCHAR(20),
-	GENDER VARCHAR(10),
-	OCCUPATION VARCHAR(100),
-	ISMOBILESUB BOOLEAN,
-	primary key (PERSON_ID)
+    PERSON_ID NUMBER(38,0) NOT NULL,
+    NAME VARCHAR(255),
+    AGE NUMBER(38,0),
+    EMAIL VARCHAR(255),
+    PHONE_NUMBER VARCHAR(20),
+    GENDER VARCHAR(10),
+    OCCUPATION VARCHAR(100),
+    ISMOBILESUB BOOLEAN,
+    primary key (PERSON_ID)
 );
 ```
 
@@ -97,16 +97,16 @@ Tu verras ça. Copiez la requête ci-dessous et collez-la dans Snowflake. Veille
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS (
-	HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
-	ADDRESS VARCHAR(255),
-	CITY VARCHAR(100),
-	STATE VARCHAR(50),
-	POSTAL_CODE VARCHAR(20),
-	COUNTRY VARCHAR(100),
-	ISELIGIBLEFORFIBER BOOLEAN,
-	PRIMARY_PERSON_ID NUMBER(38,0),
-	ISFIBREENABLED BOOLEAN,
-	primary key (HOUSEHOLD_ID)
+    HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
+    ADDRESS VARCHAR(255),
+    CITY VARCHAR(100),
+    STATE VARCHAR(50),
+    POSTAL_CODE VARCHAR(20),
+    COUNTRY VARCHAR(100),
+    ISELIGIBLEFORFIBER BOOLEAN,
+    PRIMARY_PERSON_ID NUMBER(38,0),
+    ISFIBREENABLED BOOLEAN,
+    primary key (HOUSEHOLD_ID)
 );
 ```
 
@@ -128,12 +128,12 @@ Tu verras ça. Copiez la requête ci-dessous et collez-la dans Snowflake. Veille
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_USERS (
-	USER_ID NUMBER(38,0) NOT NULL,
-	PERSON_ID NUMBER(38,0),
-	HOUSEHOLD_ID NUMBER(38,0),
-	primary key (USER_ID),
-	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
-	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
+    USER_ID NUMBER(38,0) NOT NULL,
+    PERSON_ID NUMBER(38,0),
+    HOUSEHOLD_ID NUMBER(38,0),
+    primary key (USER_ID),
+    foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
+    foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
 );
 ```
 
@@ -155,11 +155,11 @@ Tu verras ça. Copiez la requête ci-dessous et collez-la dans Snowflake. Veille
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MONTHLY_DATA_USAGE (
-	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
-	USER_ID NUMBER(38,0),
-	MONTH DATE,
-	DATA_USAGE_GB NUMBER(10,2),
-	primary key (USAGE_ID)
+    USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+    USER_ID NUMBER(38,0),
+    MONTH DATE,
+    DATA_USAGE_GB NUMBER(10,2),
+    primary key (USAGE_ID)
 );
 ```
 
@@ -182,16 +182,16 @@ Tu verras ça. Copiez la requête ci-dessous et collez-la dans Snowflake. Veille
 
 ```sql
 create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MOBILE_DATA_USAGE (
-	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
-	USER_ID NUMBER(38,0),
-	DATE DATE,
-	TIME TIME(9),
-	APP_NAME VARCHAR(255),
-	DATA_USAGE_MB NUMBER(10,2),
-	NETWORK_TYPE VARCHAR(50),
-	DEVICE_TYPE VARCHAR(50),
-	COUNTRY_CODE VARCHAR(10),
-	primary key (USAGE_ID)
+    USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
+    USER_ID NUMBER(38,0),
+    DATE DATE,
+    TIME TIME(9),
+    APP_NAME VARCHAR(255),
+    DATA_USAGE_MB NUMBER(10,2),
+    NETWORK_TYPE VARCHAR(50),
+    DEVICE_TYPE VARCHAR(50),
+    COUNTRY_CODE VARCHAR(10),
+    primary key (USAGE_ID)
 );
 ```
 
@@ -546,6 +546,6 @@ Vous avez maintenant terminé la configuration dans Snowflake.
 
 Accédez à [1.3.2 Création de schémas, de modèles de données et de liens](./ex2.md){target="_blank"}
 
-Revenez à [&#x200B; Composition d’audience fédérée &#x200B;](./fac.md){target="_blank"}
+Revenez à [ Composition d’audience fédérée ](./fac.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../../overview.md){target="_blank"}
