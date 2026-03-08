@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Découvrez comment vous connecter à votre entrepôt de données et configurer cette connexion pour la composition d’audiences fédérées. Pour plus d’informations, consultez la [documentation sur la composition d’audiences fédérées](https://experienceleague.adobe.com/fr/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451558/?captions=fre_fr&learn=on&enablevpops)

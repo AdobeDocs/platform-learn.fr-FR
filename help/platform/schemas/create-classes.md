@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Cette vidéo montre comment créer des classes dans Adobe Experience Platform pour les utiliser dans des schémas de modèle de données d’expérience (XDM). Pour plus d’informations, consultez la [&#x200B; documentation sur les schémas &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413622?captions=fre_fr&learn=on&enablevpops)

@@ -19,7 +19,7 @@ ht-degree: 2%
 Découvrez comment diffuser des données en temps réel d’une source d’espace de stockage vers Platform et utiliser les données en temps réel pour l’engagement des clients.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410103?captions=fre_fr&learn=on&enablevpops)
 
 ## Ressources supplémentaires
 

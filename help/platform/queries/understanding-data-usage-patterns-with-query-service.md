@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Cette vidéo partage des conseils et des bonnes pratiques pour l’exécution de requêtes dans l’interface du requêteur, les clients PSQL, les solutions de Business Intelligence (BI) et l’API HTTP. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33587?captions=fre_fr&learn=on&enablevpops)

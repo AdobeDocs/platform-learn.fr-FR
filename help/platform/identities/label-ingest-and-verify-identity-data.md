@@ -18,4 +18,4 @@ ht-degree: 35%
 
 Découvrez comment étiqueter les champs de données comme identités, ingérer des données d’identité et vérifier les données dans le graphique privé Adobe Experience Platform Identity Service. Pour plus d’informations, consultez la [documentation sur le service d’identités](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr)
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31637?captions=fre_fr&learn=on&enablevpops)

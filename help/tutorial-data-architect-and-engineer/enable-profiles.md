@@ -33,7 +33,7 @@ Il existe d’importants [mécanismes de sécurisation pour les données du prof
 **architectes des données** devront activer le profil client en temps réel en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur le profil client en temps réel :
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31639?captions=fre_fr&learn=on&enablevpops)
 
 ## Autorisations requises
 
