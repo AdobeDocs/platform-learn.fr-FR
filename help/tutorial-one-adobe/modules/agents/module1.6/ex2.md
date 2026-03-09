@@ -211,7 +211,7 @@ Vous devriez alors voir quelque chose comme ça.
 
 ## Étapes suivantes
 
-Accédez à [ Mise à l’échelle des fragments de contenu avec le serveur ChatGPT et MCP](./ex3.md){target="_blank"}
+Accédez à [&#x200B; Mise à l’échelle des fragments de contenu avec le serveur ChatGPT et MCP](./ex3.md){target="_blank"}
 
 Revenir à [AEM et agents](./aemagents.md){target="_blank"}
 

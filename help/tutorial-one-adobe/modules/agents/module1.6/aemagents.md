@@ -51,7 +51,7 @@ Dans cet exercice, vous allez connecter votre environnement Cursor à AEM à l&#
 
 Dans cet exercice, vous allez créer, gérer et traduire des fragments de contenu à l’aide de ChatGPT et des fonctionnalités de serveur MCP personnalisées.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
