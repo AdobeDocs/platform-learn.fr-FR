@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Surveiller l’utilisation du crédit par l’IA
 
-Découvrez comment fonctionnent les crédits d’IA d’Experience Platform pour suivre et gérer votre utilisation dès le premier jour. Pour plus d’informations, consultez la documentation sur les [tâches de l’agent Adobe Experience Platform et la consommation des crédits AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption).
+Découvrez comment fonctionnent les crédits d’IA d’Experience Platform pour suivre et gérer votre utilisation dès le premier jour. Pour plus d’informations, consultez la documentation sur les [tâches de l’agent Adobe Experience Platform et la consommation des crédits AI](https://experienceleague.adobe.com/fr/docs/core-services/interface/features/ai-credit-consumption).
 
 >[!SLIDE](ai-credits)
