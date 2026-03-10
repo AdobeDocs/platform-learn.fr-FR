@@ -250,7 +250,7 @@ Cliquez sur **Nouveau flux de données**.
 
 ![Brand Concierge](./images/aep3.png)
 
-Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
@@ -286,7 +286,7 @@ Accédez à **Style de la gestion de la configuration**. Cliquez sur **Initialis
 
 ![Brand Concierge](./images/admincontrols7.png)
 
-Saisissez le **** Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
+Saisissez le **&#x200B;**&#x200B;Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
 
 ![Brand Concierge](./images/admincontrols8.png)
 
@@ -376,7 +376,7 @@ Vous devriez alors obtenir une réponse similaire.
 
 Votre instance de Brand Concierge est maintenant prête à être implémentée sur votre site web.
 
-Étape suivante : [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
+Étape suivante : [&#x200B; Implémentation de Brand Concierge sur votre site web &#x200B;](./ex2.md){target="_blank"}
 
 Revenir à [Brand Concierge](./brandconcierge.md){target="_blank"}
 
