@@ -4,9 +4,9 @@ description: Adobe Experience Manager et agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
+source-git-commit: deea7c9e7e6fa70843b3bf621d51c5502d46a431
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
@@ -51,10 +51,10 @@ Dans cet exercice, vous allez connecter votre environnement Cursor à AEM à l&#
 
 Dans cet exercice, vous allez créer, gérer et traduire des fragments de contenu à l’aide de ChatGPT et des fonctionnalités de serveur MCP personnalisées.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 
-[Revenir à tous les modules](../../../overview.md){target="_blank"} AEM
+[Revenir à tous les modules](../../../overview.md){target="_blank"}
