@@ -3,9 +3,10 @@ title: Mise à l’échelle des fragments de contenu avec le serveur ChatGPT et 
 description: Mise à l’échelle des fragments de contenu avec le serveur ChatGPT et MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '937'
 ht-degree: 2%
 
 ---
@@ -280,6 +281,34 @@ Vous devriez alors voir ceci. Votre variation de fragment a été créée avec s
 Votre nouvelle variation apparaît désormais également dans l’interface utilisateur d’AEM.
 
 ![Agent Orchestrator](./images/chatgpt17.png)
+
+Ensuite, utilisez le ChatGPT pour traduire votre fragment de contenu en davantage de variations. Saisissez l’invite suivante et cliquez sur **Envoyer**.
+
+```
+now do the same thing for the 5 top country's languages that CitiSignal does business with
+```
+
+![Agent Orchestrator](./images/chatgpt18.png)
+
+Confirmez votre choix de langue.
+
+![Agent Orchestrator](./images/chatgpt23.png)
+
+Cliquez sur **CreateFragmentVariation**.
+
+![Agent Orchestrator](./images/chatgpt22.png)
+
+Cliquez sur **UpdateFragment**.
+
+![Agent Orchestrator](./images/chatgpt24.png)
+
+Répétez ce processus pour chacune des langues que vous avez sélectionnées. Une fois cette opération terminée, vous devriez voir quelque chose comme ceci :
+
+![Agent Orchestrator](./images/chatgpt26.png)
+
+Revenez à l’interface utilisateur d’AEM et actualisez votre écran. Vous pouvez maintenant voir vos nouvelles variations dans votre fragment de contenu.
+
+![Agent Orchestrator](./images/chatgpt27.png)
 
 ## Étapes suivantes
 

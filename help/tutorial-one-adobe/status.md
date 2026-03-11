@@ -3,9 +3,9 @@ title: Statut du contenu
 description: Statut du contenu
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 11%
 
 ---
@@ -18,14 +18,14 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Prise en main &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
+| [0. Prise en main ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | Oui | - | 45 min |
 
 ## Workflow et planification
 
 | Nom | Dernière mise à jour | Travailler à 100 % | Remarques         | Investissement En Temps |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Planification Adobe Workfront](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | Oui | - | 45 min |
-| [1.2 Gestion des workflows avec Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Oui | Contenu pas encore terminé | 1h 30min |
+| [1.2 Gestion des workflows avec Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | Oui | - | 1h 30min |
 
 ## Création et production
 
@@ -37,8 +37,9 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [1.4 Adobe Express et Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | Oui | - | 45 min |
 | [1.5 Rationalisez votre workflow avec Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | Oui | - | 1h |
 | [1.6 GenStudio for Performance Marketing - Extensibilité](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | Oui | - | 1h 30min |
-| [1.7 Workflows personnalisés Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | Oui | - | - |
-| [1.8 Gestion du stockage d’entreprise](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | Oui | - | - |
+| [1.7 Workflows personnalisés Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | Oui | - | 45 min |
+| [1.8 Gestion du stockage d’entreprise](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | Oui | - | 45 min |
+| [1.9 Tableaux Firefly](./modules/creation-production/module1.9/fireflyboards.md){target="_blank"} | 11/03/2026 | Non | Contenu en développement | - |
 
 
 ## Gestion des ressources
@@ -90,14 +91,14 @@ Vous trouverez ci-dessous un aperçu du statut du contenu dans ce tutoriel.
 | [1.2 IA dédiée aux agences](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | Non | Contenu en cours de développement | À déterminer |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | Oui | - | 90 min |
 | [1.5 Analytics et agents](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Oui | - | 45 min |
-| [1.6 Adobe Experience Manager et agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | 17/02/2026 | Non | Contenu en cours de développement | À déterminer |
+| [1.6 Adobe Experience Manager et agents](./modules/agents/module1.6/aemagents.md){target="_blank"} | 11/03/2026 | Oui | - | 90 min |
 | [1.7 Outils de développement intelligents pour Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md){target="_blank"} | 17/02/2026 | Oui | - | 45 min |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+>![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
 

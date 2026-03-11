@@ -3,9 +3,10 @@ title: Prise en main d’Agent Orchestrator
 description: Prise en main d’Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 121cbb5ea8f8b713c6ebae008f7f0d9b3a79e476
+exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -441,6 +442,10 @@ Vous devriez alors voir une réponse détaillée liée à la suggestion qui a é
 ![Agent Orchestrator](./images/aoea4.png)
 
 Vous avez maintenant terminé ce Lab.
+
+## Étapes suivantes
+
+Accédez à [Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
 Revenir à [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
