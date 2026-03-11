@@ -51,7 +51,7 @@ Dans cet exercice, vous allez commencer à utiliser le créateur de workflows.
 
 Dans cet exercice, vous allez exécuter votre workflow personnalisé par programmation à l’aide de Postman et de Workfront Fusion.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
