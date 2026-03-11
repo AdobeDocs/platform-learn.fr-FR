@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,11 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 Dans cet exercice, vous allez commencer à utiliser le créateur de workflows.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[1.7.2 Exécutez votre workflow personnalisé par programmation](./ex2.md){target="_blank"}
+
+Dans cet exercice, vous allez exécuter votre workflow personnalisé par programmation à l’aide de Postman et de Workfront Fusion.
+
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

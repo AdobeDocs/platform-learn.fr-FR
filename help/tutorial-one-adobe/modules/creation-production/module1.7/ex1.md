@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: a3a78b12f8244c8288eb0fffc82ad769776eb118
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1374'
 ht-degree: 4%
 
 ---
@@ -249,8 +249,20 @@ Au bout de quelques minutes, vous devriez voir les ressources créées devenir d
 
 ![Workflows personnalisés Firefly](./images/ffcw58.png)
 
+Revenez à votre workflow. Cliquez sur **Publier**.
+
+![Workflows personnalisés Firefly](./images/ffcw59.png)
+
+Vous devriez alors voir ceci.
+
+![Workflows personnalisés Firefly](./images/ffcw60.png)
+
+Votre workflow est maintenant publié et peut être exécuté par programmation dans le cadre de l’exercice suivant.
+
 ## Étapes suivantes
 
-Revenez au [créateur de workflows](./workflowbuilder.md){target="_blank"}
+Accédez à [1.7.2 Exécuter votre workflow personnalisé par programmation](./ex2.md){target="_blank"}
+
+Revenir aux [workflows personnalisés Firefly](./workflowbuilder.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}
