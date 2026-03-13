@@ -4,9 +4,9 @@ description: Adobe Marketing Agent pour Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 5%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 5%
 
 [!BADGE Beta]
 
-+++Détails Beta
-En utilisant le Adobe Marketing Agent avec Microsoft 365 Copilot Beta, vous reconnaissez que le Beta est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
++++Détails de la version bêta
+En utilisant Adobe Marketing Agent avec Microsoft 365 Copilot Beta, Vous reconnaissez par la présente que la version Beta est fournie « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
 
 +++
 
@@ -25,7 +25,7 @@ En utilisant le Adobe Marketing Agent avec Microsoft 365 Copilot Beta, vous reco
 Pour suivre les étapes de cet atelier, comme indiqué ci-dessous, vous devez disposer des droits d’accès suivants :
 
 - Accès à Real-Time CDP, Journey Optimizer et Customer Journey Analytics
-- Accès à l’assistant d’IA dans Adobe Experience Cloud
+- Accès à l’assistant AI dans Adobe Experience Cloud
 - Accès à AEP Agent Orchestrator
 - Accès à Microsoft 365 Copilot
 
@@ -35,9 +35,9 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## 1.1.3.1 Ajouter Adobe Marketing Agent à Microsoft 365 Teams &amp; Copilot
+## 1.1.3.1 Ajouter un agent marketing Adobe à Microsoft 365 Teams &amp; Copilot
 
-Ouvrez Microsoft Teams et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci.
+Ouvrez les Microsofts Teams et connectez-vous à l’aide des détails de votre compte. Une fois connecté, vous devriez voir ceci.
 
 Cliquez sur **Applications**.
 
@@ -71,11 +71,11 @@ Adobe Marketing Agent est maintenant chargé.
 
 ![ChatGPT](./images/copilot8.png)
 
-Saisissez le `login` d’invite et cliquez sur le bouton **envoyer**.
+Entrez l&#39;invite `login` et cliquez sur le bouton **envoyer**.
 
 ![ChatGPT](./images/copilotlogin1.png)
 
-Cliquez sur **Connexion à Adobe Marketing Agent**.
+Cliquez sur **Se connecter à Adobe Marketing Agent**.
 
 ![ChatGPT](./images/copilotlogin2.png)
 
@@ -91,11 +91,11 @@ Un code similaire est alors généré. Cliquez sur **Copier** pour copier le cod
 
 ![ChatGPT](./images/copilotlogin5.png)
 
-Collez le code dans la fenêtre Adobe Marketing Agent de Copilot et cliquez sur le bouton **send**.
+Collez le code dans la fenêtre Adobe Marketing Agent dans Copilot et cliquez sur le bouton **envoyer**.
 
 ![ChatGPT](./images/copilotlogin6.png)
 
-Vous devriez alors voir quelque chose de similaire à ceci. Vous êtes maintenant connecté à Adobe Marketing Agent dans Microsoft 365 Copilot.
+Vous devriez alors voir quelque chose de similaire. Vous êtes maintenant connecté à Adobe Marketing Agent dans Microsoft 365 Copilot.
 
 ![ChatGPT](./images/copilotlogin7.png)
 
@@ -105,7 +105,7 @@ Avant d’interagir davantage avec Adobe Marketing Agent via Copilot, le context
 
 Pour cet exercice, le contexte doit être défini pour utiliser :
 
-- **Sandbox** : **Prod - Accélérer (VA7)**
+- **Sandbox** : **Prod - Accélération (VA7)**
 
   Le paramètre sandbox permet d’identifier le sandbox que l’assistant AI doit examiner lorsqu’il pose des questions.
 
@@ -135,7 +135,7 @@ change dataview
 
 ![Agent Orchestrator](./images/copilot11.png)
 
-Vous devriez alors voir quelque chose de similaire à ceci. Sélectionnez la vue de données à utiliser, puis cliquez sur **sélectionner**.
+Vous devriez alors voir quelque chose de similaire à ceci. Sélectionnez la vue de données à utiliser et cliquez sur **sélectionner**.
 
 ![Agent Orchestrator](./images/copilot12.png)
 
@@ -147,7 +147,7 @@ Vous devriez alors voir ceci. Le contexte est maintenant correctement défini af
 
 **Intention**
 
-Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile, fixe, Internet, télévision, fibre optique), en particulier pour les 60 derniers jours. Cela définit des niveaux de référence pour la saisonnalité, les effets de promotion et la variance régionale après le déploiement à New York.
+Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile, ligne fixe, Internet, télévision, fibre optique), en particulier pour les 60 derniers jours. Cela définit des niveaux de référence pour la saisonnalité, les effets de promotion et la variance régionale après le déploiement à New York.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -161,7 +161,7 @@ Vous devriez alors voir ceci :
 
 ![Agent Orchestrator](./images/copilot19.png)
 
-Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
+Entrez l&#39;**invite** suivante et cliquez sur le bouton **envoyer**.
 
 ```javascript
 Show me purchases by mainCategory = Fiber over the last 4 months broken down by week
@@ -169,7 +169,7 @@ Show me purchases by mainCategory = Fiber over the last 4 months broken down by 
 
 ![Agent Orchestrator](./images/copilot20.png)
 
-Vous devriez ensuite voir ceci, qui examine les tendances spécifiques à la fibre optique.
+Vous devriez alors voir ceci, qui approfondit les tendances spécifiques à la fibre.
 
 ![Agent Orchestrator](./images/copilot21.png)
 
@@ -211,7 +211,7 @@ Vous devriez alors voir ceci.
 
 ![Agent Orchestrator](./images/copilot26.png)
 
-## 1.1.3.5 Identifier Les Parcours Fibre Existants
+## 1.1.3.5 Identifier les parcours de fibre existants
 
 **Intention**
 
@@ -253,11 +253,11 @@ Vous devriez alors voir ceci.
 
 ![Agent Orchestrator](./images/copilot36.png)
 
-## 1.1.3.6 Validation des performances du parcours via l’analyse des abandons
+## 1.1.3.6 Validation des performances du parcours via l&#39;analyse des abandons
 
 **Intention**
 
-Vous souhaitez comprendre l’abandon des performances du parcours pour déterminer s’il existe des nœuds ou des conditions dans le parcours qui enregistrent un pourcentage élevé de profils abandonnés. Cela permet de comprendre si des ajustements supplémentaires sont nécessaires dans le parcours.
+Vous voulez comprendre les répercussions sur les performances du parcours pour savoir si des nœuds ou des conditions du parcours subissent un pourcentage élevé de pertes de profils. Cela permet de comprendre si des ajustements supplémentaires sont nécessaires dans le parcours.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -279,11 +279,11 @@ Vous devriez alors voir ceci.
 
 ![Agent Orchestrator](./images/copilot41.png)
 
-Vous avez maintenant terminé ce Lab.
+Vous avez maintenant terminé ce laboratoire.
 
 ## Étapes suivantes
 
-Accédez à [Adobe Marketing Agent pour Google Gemini](./ex4.md){target="_blank"}
+Accédez à [Adobe Marketing Agent for Google Gemini Enterprise](./ex4.md){target="_blank"}
 
 Revenir à [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 

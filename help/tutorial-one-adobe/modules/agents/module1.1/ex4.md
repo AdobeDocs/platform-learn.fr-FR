@@ -1,21 +1,22 @@
 ---
-title: Adobe Marketing Agent pour Google Gemini
-description: Adobe Marketing Agent pour Google Gemini
+title: Adobe Marketing Agent pour Google Gemini Enterprise
+description: Adobe Marketing Agent pour Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
+source-git-commit: eb8fb8c62e841115c79b3f655f604f77b7f47ea7
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '225'
 ht-degree: 21%
 
 ---
 
-# 1.1.4 Adobe Marketing Agent pour Google Gemini
+# 1.1.4 Adobe Marketing Agent pour Google Gemini Enterprise
 
 [!BADGE Beta]
 
 +++Détails Beta
-En utilisant le Adobe Marketing Agent avec Google Gemini Beta, vous reconnaissez par la présente que le Beta est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
+En utilisant le Adobe Marketing Agent avec Google Gemini Enterprise Beta, vous reconnaissez que le Beta est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
 
 +++
 

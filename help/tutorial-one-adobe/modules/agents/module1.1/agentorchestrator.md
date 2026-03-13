@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 4%
 
 ---
@@ -48,11 +48,11 @@ Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestr
 
 Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max, à l&#39;aide de Adobe Marketing Agent avec Microsoft Copilot.
 
-[1.1.4 Adobe Marketing Agent pour Google Gemini](./ex4.md){target="_blank"}
+[1.1.4 Adobe Marketing Agent pour Google Gemini Enterprise](./ex4.md){target="_blank"}
 
 Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max, à l&#39;aide de Adobe Marketing Agent avec Google Gemini.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
