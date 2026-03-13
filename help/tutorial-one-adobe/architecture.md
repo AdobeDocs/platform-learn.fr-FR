@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # One Adobe Tutorial - Architecture Overview
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## One Adobe Architecture Overview
 
@@ -22,7 +22,7 @@ In this video, you&#39;ll learn about the architecture behind the full end-to-en
 
 Download the architecture overview image below:
 
-![Insiders de la technologie ](./assets/images/architecture_all.jpg)
+![Insiders de la technologie &#x200B;](./assets/images/architecture_all.jpg)
 
 ## Agentic AI Architecture Overview
 
@@ -32,7 +32,7 @@ In this video, you&#39;ll learn about the architecture behind the Agentic AI par
 
 Download the architecture overview image below:
 
-![Insiders de la technologie ](./assets/images/architecture_agentic.jpg)
+![Insiders de la technologie &#x200B;](./assets/images/architecture_agentic.jpg)
 
 ## Content Architecture Overview
 
@@ -42,7 +42,7 @@ In this video, you&#39;ll learn about the architecture behind the GenStudio part
 
 Download the architecture overview image below:
 
-![Insiders de la technologie ](./assets/images/architecture_content.jpg)
+![Insiders de la technologie &#x200B;](./assets/images/architecture_content.jpg)
 
 ## Data Architecture Overview
 
@@ -52,7 +52,7 @@ In this video, you&#39;ll learn about the architecture behind the Adobe Experien
 
 Download the architecture overview image below:
 
-![Insiders de la technologie ](./assets/images/architecture_data.jpeg)
+![Insiders de la technologie &#x200B;](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >
