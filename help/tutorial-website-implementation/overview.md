@@ -3,9 +3,9 @@ title: Implémentation d’Experience Cloud dans les sites web à l’aide de ba
 description: Implémenter Experience Cloud dans les sites web avec des balises constitue le point de départ idéal pour les développeurs front-end ou les spécialistes du marketing technique qui souhaitent apprendre à mettre en œuvre les solutions Adobe Experience Cloud sur leur site web.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '828'
 ht-degree: 36%
 
 ---
@@ -16,9 +16,9 @@ _Implémenter Experience Cloud dans les sites web avec des balises_ est le point
 
 Chaque leçon comprend des exercices pratiques et des informations essentielles pour vous aider à mettre en œuvre Experience Cloud et à comprendre sa valeur. Les sites de démonstration vous permettent de suivre le tutoriel afin que vous puissiez apprendre les techniques sous-jacentes dans un environnement sûr. Après avoir suivi ce tutoriel, vous devriez être prêt à commencer à mettre en œuvre toutes vos solutions marketing par le biais de balises sur votre propre site web.
 
->[!INFO]
+>[!WARNING]
 >
->Ce tutoriel utilise des extensions et des bibliothèques spécifiques à une application (AppMeasurement.js pour Adobe Analytics, at.js pour Adobe Target). Si vous souhaitez implémenter Adobe Experience Platform Web SDK, reportez-vous au tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](/help/tutorial-web-sdk/overview.md).
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
 
 Après avoir terminé cette formation, vous saurez comment :
@@ -39,13 +39,6 @@ Après avoir terminé cette formation, vous saurez comment :
 
 * Publier les modifications par le biais des environnements de développement, d’évaluation et de production
 
->[!NOTE]
->
->Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été déployées dans l’interface. Vous devez en être conscient lors de l’utilisation de ce contenu :
->
-> * Platform Launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Platform Launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
-> * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
 
 >[!NOTE]
 >
@@ -76,7 +69,7 @@ Tags est également une plateforme qui permet aux fournisseurs tiers de créer d
 
 >[!WARNING]
 >
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
 Dans ces leçons, vous allez mettre en œuvre Adobe Experience Cloud dans un faux site web de vente au détail appelé Luma. Le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) possède une couche de données et des fonctionnalités riches qui vous permettront de faire une mise en œuvre réaliste. Vous allez créer votre propre propriété de balise, dans votre propre organisation Experience Cloud, et la mapper à notre site Luma hébergé à l’aide du débogueur Experience Cloud Debugger.
 
@@ -130,7 +123,7 @@ Dans ces leçons, vous allez mettre en œuvre Adobe Experience Cloud dans un f
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/fr-FR/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

@@ -3,10 +3,10 @@ title: Ajout d’Adobe Audience Manager
 description: Découvrez comment implémenter Adobe Audience Manager sur votre site web à l’aide du transfert côté serveur et des balises. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 69%
+source-wordcount: '1728'
+ht-degree: 70%
 
 ---
 
@@ -19,15 +19,8 @@ Cette leçon vous guidera tout au long des étapes nécessaires à l’activatio
 
 >[!WARNING]
 >
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
->[!NOTE]
->
->Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été déployées dans l’interface. Vous devez en être conscient lors de l’utilisation de ce contenu :
->
-> * Platform Launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Platform Launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
-> * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
 
 ## Objectifs d’apprentissage
 
@@ -49,7 +42,7 @@ Pour pouvoir suivre cette leçon, vous devez :
 
    ![Vous pouvez utiliser le débogueur pour trouver le sous-domaine Audience Manager sur votre site web](images/aam-debugger-partner.png)
 
-Si vous n’avez pas encore mis en œuvre Audience Manager, suivez ces instructions pour [obtenir votre sous-domaine Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=fr).
+Si vous n’avez pas encore mis en œuvre Audience Manager, suivez ces instructions pour [obtenir votre sous-domaine Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 ## Options de mise en œuvre
 
@@ -100,7 +93,7 @@ Il est nécessaire d’effectuer une configuration dans l’Admin Console d’Ad
 >
 >Étant donné que SSF doit être activé par suite de rapports, n’oubliez pas de répéter cette étape pour vos suites de rapports réelles lorsque vous déployez SSF sur la suite de rapports réelle de votre site.
 >
->De plus, si l’option Transfert côté serveur est grisée, vous devrez mapper la ou les suites de rapports à votre organisation Experience Cloud afin d’activer l’option. Cela est expliqué dans [la documentation](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
+>De plus, si l’option Transfert côté serveur est grisée, vous devrez mapper la ou les suites de rapports à votre organisation Experience Cloud afin d’activer l’option. Cela est expliqué dans [la documentation](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
 Une fois cette étape effectuée et si le service d’identités d’Adobe Experience Platform est activé, les données sont transférées d’Analytics à AAM. Cependant, pour terminer le processus afin que la réponse revienne correctement d’AAM à la page (et également à Analytics via la fonctionnalité Audience Analytics), vous devez également effectuer l’étape suivante dans les balises. C’est très facile.
 
@@ -122,7 +115,7 @@ C’est la seconde étape de l’activation du transfert côté serveur. Vous av
 
 1. Cochez la case pour **[!UICONTROL Partager automatiquement les données Analytics avec Audience Manager]**. Cette opération ajoute le « module » Audience Manager (code) à la mise en œuvre `AppMeasurement.js` d’Analytics.
 
-1. Ajoutez votre « Sous-domaine Audience Manager » (également appelé « Nom de partenaire », « Identifiant de partenaire » ou « Sous-domaine de partenaire »). Suivez ces instructions pour [obtenir votre sous-domaine Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=fr).
+1. Ajoutez votre « Sous-domaine Audience Manager » (également appelé « Nom de partenaire », « Identifiant de partenaire » ou « Sous-domaine de partenaire »). Suivez ces instructions pour [obtenir votre sous-domaine Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque et créer]**
 

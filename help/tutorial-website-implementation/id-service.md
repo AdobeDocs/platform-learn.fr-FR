@@ -3,31 +3,24 @@ title: Ajout de balises au service Adobe Experience Platform Identity
 description: Découvrez comment ajouter l’extension Service d’identités d’Adobe Experience Platform et utiliser l’action Définition des ID de client pour collecter les ID de client. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1924'
 ht-degree: 62%
 
 ---
 
 # Ajout du service d’identités d’Adobe Experience Platform
 
-Cette leçon vous guidera tout au long des étapes requises pour mettre en œuvre l’[extension Service d’identités d’Adobe Experience Platforme](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr) et envoyer des ID de client.
+Cette leçon vous guidera tout au long des étapes requises pour mettre en œuvre l’[extension Service d’identités d’Adobe Experience Platforme](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) et envoyer des ID de client.
 
 Le [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr) définit un identifiant visiteur commun à toutes les solutions Adobe afin d’alimenter les fonctionnalités d’Experience Cloud telles que le partage d’audience entre les solutions. Vous pouvez aussi envoyer vos propres ID de client au service pour permettre un ciblage entre appareils et des intégrations supplémentaires avec votre système de gestion de la relation client (CRM).
 
 
 >[!WARNING]
 >
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
->[!NOTE]
->
->Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été déployées dans l’interface. Vous devez en être conscient lors de l’utilisation de ce contenu :
->
-> * Platform Launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Platform Launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
-> * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
 
 ## Objectifs d’apprentissage
 
@@ -101,7 +94,7 @@ Vous avez terminé. Vous avez ajouté votre première extension ! Pour plus d�
 
 ## Envoi des ID de client
 
-Ensuite, vous enverrez un [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=fr) au service d’identités. Cela vous permet d’[intégrer votre CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) à Experience Cloud et de suivre les visiteurs sur différents appareils.
+Ensuite, vous enverrez un [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) au service d’identités. Cela vous permet d’[intégrer votre CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) à Experience Cloud et de suivre les visiteurs sur différents appareils.
 
 Dans une leçon précédente, [Ajout d’éléments de données, de règles et de bibliothèques](add-data-elements-rules.md), vous avez créé un élément de données et vous l’avez utilisé dans une règle. Maintenant, vous allez utiliser ces mêmes techniques pour envoyer un ID de client lorsque le visiteur est authentifié.
 
@@ -152,7 +145,7 @@ En connaissant l’état d’authentification de l’utilisateur, vous savez qua
    ![Ajouter un élément de données](images/idservice-addDataElement2.png)
 
 1. Nommez l’élément de données `Email (Hashed)`.
-1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript **&#x200B;**
+1. Pour le **[!UICONTROL Type d’élément de données]**, sélectionnez Variable JavaScript ****
 1. Comme nom de variable **[!UICONTROL JavaScript]**, utilisez le pointeur suivant vers une variable dans la couche de données du site Luma : `digitalData.user.0.profile.0.attributes.username`
 1. Conservez tous les autres paramètres à leurs valeurs par défaut.
 1. Cliquez sur **[!UICONTROL Enregistrer dans la bibliothèque]** pour enregistrer l’élément de données
@@ -233,7 +226,7 @@ Pour valider votre travail, vous devez vous connecter au site Luma pour confirme
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 

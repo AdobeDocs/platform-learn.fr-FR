@@ -2,9 +2,9 @@
 title: Implémentation des intégrations Experience Cloud avec les balises
 description: Découvrez comment valider les intégrations d’Audiences, d’A4T et des attributs du client dans votre mise en œuvre d’Adobe Experience Cloud. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1234'
 ht-degree: 83%
 
 ---
@@ -16,7 +16,7 @@ Dans cette leçon, vous examinerez les intégrations clés des solutions que vou
 
 >[!WARNING]
 >
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
 ## Objectifs d’apprentissage
 
@@ -33,8 +33,8 @@ Vous devez suivre les leçons précédentes de ce tutoriel avant de suivre les i
 >
 >De nombreuses exigences en matière d’autorisations utilisateur, de configurations de compte et d’étapes d’approvisionnement sont requises pour utiliser pleinement ces intégrations et dépassent la portée de ce tutoriel. Si vous n’utilisez pas déjà ces intégrations dans votre mise en œuvre actuelle d’Experience Cloud, tenez compte des points suivants :
 >
->* Examinez toutes les exigences relatives aux [intégrations des services principaux](https://experienceleague.adobe.com/fr/docs/core-services/interface/services/getting-started).
->* Examinez toutes les exigences relatives à l’[intégration Analytics for Target](https://experienceleague.adobe.com/fr/docs/target/using/integrate/a4t/before-implement).
+>* Examinez toutes les exigences relatives aux [intégrations des services principaux](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started).
+>* Examinez toutes les exigences relatives à l’[intégration Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement).
 
 ## Audiences
 
@@ -54,7 +54,7 @@ Ces étapes de validation portent sur la partie essentielle visible dans la mise
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -76,7 +76,7 @@ Ces étapes de validation portent sur la partie essentielle visible dans la mise
 
 ## Analytics for Target (A4T)
 
-L’intégration [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) vous permet d’exploiter vos données Analytics en tant que source des mesures de création de rapports dans Target.
+L’intégration [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) vous permet d’exploiter vos données Analytics en tant que source des mesures de création de rapports dans Target.
 
 Les principales exigences pour la mise en œuvre d’A4T (ce que vous avez déjà fait) sont les suivantes :
 
@@ -93,7 +93,7 @@ Le meilleur moyen de valider l’intégration A4T est de créer une activité Ta
 
 1. Ouvrez le [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [&#x200B; précédente](switch-environments.md)
+1. Assurez-vous que le débogueur mappe la propriété de balise sur *votre* environnement de développement, comme décrit dans la leçon [ précédente](switch-environments.md)
 
    ![Votre environnement de développement de balises affiché dans Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 

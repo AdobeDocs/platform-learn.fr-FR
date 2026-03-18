@@ -2,10 +2,10 @@
 title: Création d’une propriété de balise
 description: Découvrez comment vous connecter à l’interface de collecte de données et créer une propriété de balise. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 51%
+source-wordcount: '509'
+ht-degree: 53%
 
 ---
 
@@ -18,19 +18,12 @@ Une propriété est essentiellement un conteneur que vous remplissez avec des ex
 
 >[!WARNING]
 >
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
 ## Conditions préalables
 
 Pour suivre les leçons suivantes, vous devez disposer des autorisations de développement, d’approbation, de publication, de gestion des extensions et de gestion des environnements dans les balises. Si vous ne parvenez pas à effectuer l’une de ces étapes parce que vous n’avez pas accès aux options de l’interface utilisateur, contactez votre administrateur Experience Cloud pour demander l’accès à ces options. Pour plus d’informations sur les autorisations des utilisateurs de balises, consultez [la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr).
 
->[!NOTE]
->
->Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été déployées dans l’interface. Vous devez en être conscient lors de l’utilisation de ce contenu :
->
-> * Platform Launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Platform Launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
-> * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
 
 ## Objectifs d’apprentissage
 
@@ -69,7 +62,7 @@ Une propriété est essentiellement un conteneur que vous remplissez avec des ex
 1. Développez la section **[!UICONTROL Options avancées]** et cochez la case pour **[!UICONTROL Exécuter les composants de règle en séquence]**
 1. Cliquez sur le bouton **[!UICONTROL Enregistrer]**
 
-   ![Création d’une propriété &#x200B;](images/launch-newProperty.png)
+   ![Création d’une propriété ](images/launch-newProperty.png)
 
 Votre nouvelle propriété devrait s’afficher sur la page Propriétés. Notez que si vous cochez la case en regard du nom de la propriété, les options **[!UICONTROL Configurer]** ou **[!UICONTROL Supprimer]** de la propriété s’affichent au-dessus de la liste des propriétés. Cliquez sur le nom de la propriété (par exemple `Luma Tutorial`) pour ouvrir l’écran `Overview`.
 ![Clic sur le nom de la propriété pour l’ouvrir](images/launch-openProperty.png)

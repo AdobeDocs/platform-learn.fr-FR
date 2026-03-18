@@ -2,10 +2,10 @@
 title: Publication de la propriété de balise
 description: Découvrez comment publier votre propriété de balise de l’environnement de développement vers les environnements d’évaluation et de production. Cette leçon fait partie du tutoriel Implémentation d’Experience Cloud dans les sites web .
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 55%
+source-wordcount: '550'
+ht-degree: 56%
 
 ---
 
@@ -16,15 +16,8 @@ Maintenant que vous avez mis en œuvre certaines solutions clés d’Adobe Expe
 
 >[!WARNING]
 >
-> Le site web Luma utilisé dans ce tutoriel devrait être remplacé au cours de la semaine du 16 février 2026. Le travail effectué dans le cadre de ce tutoriel peut ne pas s’appliquer au nouveau site web.
+> Ce tutoriel et les exercices de son site web Luma ne sont plus conservés et reposent sur d’anciennes bibliothèques JavaScript. Pour connaître les bonnes pratiques en vigueur, suivez le tutoriel [Implémentation de Adobe Experience Cloud avec Web SDK](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-web-sdk/overview).
 
->[!NOTE]
->
->Adobe Experience Platform Launch est intégré à Adobe Experience Platform comme une suite de technologies destinées à la collecte de données. Plusieurs modifications terminologiques ont été déployées dans l’interface. Vous devez en être conscient lors de l’utilisation de ce contenu :
->
-> * Platform Launch (côté client) est désormais **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)**
-> * Platform Launch côté serveur est désormais **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=fr)**
-> * Les configurations Edge sont désormais **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=fr)**
 
 ## Objectifs d’apprentissage
 
@@ -60,7 +53,7 @@ Dans un scénario réel, l’étape suivante du processus consisterait à demand
 
 **Validation des modifications dans la bibliothèque d’évaluation**
 
-1. Dans la propriété de balise, ouvrez la page [!UICONTROL &#x200B; Environnements &#x200B;]
+1. Dans la propriété de balise, ouvrez la page [!UICONTROL  Environnements ]
 
 1. Sur la ligne [!UICONTROL Évaluation], cliquez sur l’icône Installer ![icône Installer](images/launch-installIcon.png) pour ouvrir le modal.
 
