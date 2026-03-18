@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Ajout du service d’identités d’Adobe Experience Platform
 
-Cette leçon vous guidera tout au long des étapes requises pour mettre en œuvre l’[extension Service d’identités d’Adobe Experience Platforme](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) et envoyer des ID de client.
+Cette leçon vous guidera tout au long des étapes requises pour mettre en œuvre l’[extension Service d’identités d’Adobe Experience Platforme](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr) et envoyer des ID de client.
 
 Le [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr) définit un identifiant visiteur commun à toutes les solutions Adobe afin d’alimenter les fonctionnalités d’Experience Cloud telles que le partage d’audience entre les solutions. Vous pouvez aussi envoyer vos propres ID de client au service pour permettre un ciblage entre appareils et des intégrations supplémentaires avec votre système de gestion de la relation client (CRM).
 
@@ -94,7 +94,7 @@ Vous avez terminé. Vous avez ajouté votre première extension ! Pour plus d�
 
 ## Envoi des ID de client
 
-Ensuite, vous enverrez un [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) au service d’identités. Cela vous permet d’[intégrer votre CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) à Experience Cloud et de suivre les visiteurs sur différents appareils.
+Ensuite, vous enverrez un [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=fr) au service d’identités. Cela vous permet d’[intégrer votre CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=fr) à Experience Cloud et de suivre les visiteurs sur différents appareils.
 
 Dans une leçon précédente, [Ajout d’éléments de données, de règles et de bibliothèques](add-data-elements-rules.md), vous avez créé un élément de données et vous l’avez utilisé dans une règle. Maintenant, vous allez utiliser ces mêmes techniques pour envoyer un ID de client lorsque le visiteur est authentifié.
 
