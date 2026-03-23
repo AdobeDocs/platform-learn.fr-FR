@@ -1,23 +1,23 @@
 ---
-title: Workflows personnalisés Firefly
-description: Workflows personnalisés Firefly
+title: Firefly Creative Production for Enterprise
+description: Firefly Creative Production for Enterprise
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
 
-# 1.7 Workflows personnalisés Firefly
+# 1.7 Firefly Creative Production for Enterprise
 
-Les workflows personnalisés de Firefly se concentrent principalement sur les technologues créatifs et les créateurs de solutions qui créent et configurent des workflows.
+Firefly Creative Production for Enterprise se concentre principalement sur les technologues créatifs et les créateurs de solutions qui créent et configurent des workflows.
 
-Avec les workflows personnalisés de Firefly, vous pouvez :
+Avec Firefly Creative Production for Enterprise, vous pouvez :
 
 - Créer des workflows : créez des workflows de production à plusieurs étapes à l’aide d’une interface visuelle avec une assistance manuelle ou via l’IA.
 - Exécuter les workflows : exécutez des workflows à grande échelle, y compris le traitement par lots, avec une exécution robuste qui fonctionne en dehors du navigateur.
@@ -33,7 +33,7 @@ Les principaux cas d’utilisation pris en charge sont les suivants :
 
 ## Conditions préalables
 
-- Accès aux workflows personnalisés de Firefly
+- Accès à Firefly Creative Production for Enterprise
 
 ## Vidéo
 
@@ -43,7 +43,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## Exercices
 
-[1.7.1 Prise en main des workflows personnalisés Firefly](./ex1.md){target="_blank"}
+[1.7.1 Prise en main de Firefly Creative Production for Enterprise](./ex1.md){target="_blank"}
 
 Dans cet exercice, vous allez commencer à utiliser le créateur de workflows.
 
@@ -51,10 +51,10 @@ Dans cet exercice, vous allez commencer à utiliser le créateur de workflows.
 
 Dans cet exercice, vous allez exécuter votre workflow personnalisé par programmation à l’aide de Postman et de Workfront Fusion.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
 
 Revenir à [Tous les modules](../../../overview.md){target="_blank"}
