@@ -15,7 +15,7 @@ ht-degree: 1%
 
 # 1.7.1 Prise en main de Firefly Creative Production for Enterprise
 
-Accédez à [](https://firefly.adobe.com). Cliquez sur l’icône de profil dans le coin supérieur droit et vérifiez que vous avez sélectionné l’instance appropriée, qui doit être `--aepImsOrgName--`.
+Accédez à [&#128279;](https://firefly.adobe.com). Cliquez sur l’icône de profil dans le coin supérieur droit et vérifiez que vous avez sélectionné l’instance appropriée, qui doit être `--aepImsOrgName--`.
 
 Accédez à **Production**.
 
@@ -202,7 +202,7 @@ Dans cet exercice, vous allez stocker les ressources créées dans le cadre de v
 
 Vous devez d’abord créer un dossier dans votre environnement AEM Assets CS.
 
-Pour ce faire, accédez à [](https://experience.adobe.com?lang=fr). Cliquez pour ouvrir ****.
+Pour ce faire, accédez à [&#128279;](https://experience.adobe.com?lang=fr). Cliquez pour ouvrir **&#x200B;**.
 
 ![](./images/ffcw50.png)
 
@@ -210,7 +210,7 @@ Sélectionnez votre environnement AEM Assets CS, qui doit être nommé `--aepUse
 
 ![](./images/ffcw51.png)
 
-Accédez à **** puis cliquez sur **Créer un dossier**.
+Accédez à **&#x200B;**&#x200B;puis cliquez sur **Créer un dossier**.
 
 ![](./images/ffcw52.png)
 
@@ -256,6 +256,6 @@ Votre workflow est maintenant publié et peut être exécuté par programmation 
 
 Accédez à [1.7.2 Exécuter votre workflow personnalisé par programmation](./ex2.md){target="_blank"}
 
-Revenir à [](./workflowbuilder.md){target="_blank"}
+Revenir à [&#128279;](./workflowbuilder.md){target="_blank"}
 
 Revenir à [Tous les modules](./../../../overview.md){target="_blank"}

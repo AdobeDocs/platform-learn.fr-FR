@@ -39,7 +39,7 @@ Ce laboratoire est en cours de développement.
 
 ## 1.1.4.1 l’accès à Google Gemini Enterprise
 
-Accédez à [](https://cloud.google.com/gemini-enterprise). Cliquez sur **Commencer l’essai gratuit de 30 jours**.
+Accédez à [&#128279;](https://cloud.google.com/gemini-enterprise). Cliquez sur **Commencer l’essai gratuit de 30 jours**.
 
 ![Gémeaux](./images/gemini1.png)
 
@@ -59,7 +59,7 @@ Vous devriez alors voir ceci.
 
 ![Gémeaux](./images/gemini5.png)
 
-Accédez à [](https://cloud.google.com/gemini-enterprise).
+Accédez à [&#128279;](https://cloud.google.com/gemini-enterprise).
 
 Vous devriez alors voir quelque chose comme ça. Vous devrez peut-être d’abord créer votre compte de facturation, puis le sélectionner ici par la suite.
 
@@ -83,7 +83,7 @@ Vous devriez alors voir ceci.
 
 ## 1.1.4.2 Créer votre agent personnalisé à l’aide de A2A
 
-Accédez à [](https://console.cloud.google.com/gemini-enterprise). Cliquez sur **Agents**.
+Accédez à [&#128279;](https://console.cloud.google.com/gemini-enterprise). Cliquez sur **Agents**.
 
 ![Gémeaux](./images/gemini10a.png)
 
@@ -165,7 +165,7 @@ Cliquez sur **Commencer**
 
 ![Gémeaux](./images/gemini20.png)
 
-Accédez à **Agents**. Vous devriez voir **** ici.
+Accédez à **Agents**. Vous devriez voir **&#x200B;**&#x200B;ici.
 
 ![Gémeaux](./images/gemini21.png)
 
@@ -173,7 +173,7 @@ Cliquez sur le **de 3 points...**, puis sélectionnez **Épingler**.
 
 ![Gémeaux](./images/gemini22.png)
 
-Accédez à **Nouveau chat** et saisissez le symbole **@** dans le chat. Cliquez sur ****.
+Accédez à **Nouveau chat** et saisissez le symbole **@** dans le chat. Cliquez sur **&#x200B;**.
 
 ![Gémeaux](./images/gemini23.png)
 
@@ -361,6 +361,6 @@ Vous devriez alors voir ceci.
 
 Vous avez maintenant terminé ce Lab.
 
-Revenir à [](./agentorchestrator.md){target="_blank"}
+Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
