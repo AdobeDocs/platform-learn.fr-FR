@@ -38,6 +38,6 @@ Ce laboratoire est en cours de développement.
 
 ## Étapes suivantes
 
-Revenir à [](./agentorchestrator.md){target="_blank"}
+Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
