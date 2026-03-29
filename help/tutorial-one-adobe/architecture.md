@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Tutoriel sur One Adobe - Aperçu de l’architecture
 
-![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Une Présentation De L’Architecture Adobe
 
@@ -28,4 +28,4 @@ Le script sera bientôt disponible ici.
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
