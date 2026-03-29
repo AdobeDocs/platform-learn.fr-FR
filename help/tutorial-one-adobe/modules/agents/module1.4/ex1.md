@@ -4,9 +4,9 @@ description: Prise en main de Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: fcf99e48868fd0b189291a7215a2871387ea7532
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
@@ -62,23 +62,19 @@ Lors de la configuration de Brand Concierge, vous utiliserez principalement les 
 
 Pour commencer à créer votre propre instance Brand Concierge, procédez comme suit.
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **Brand Concierge**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
 
-![Brand Concierge](./images/bc1.png)
+![](./images/bc1.png)
 
-Vous devriez alors voir ceci. Cliquez sur le menu **sélection du sandbox**.
+Vous devriez alors voir ceci. Cliquez sur le menu **sélection du sandbox**. Choisissez le sandbox qui vous a été affecté. Ce sandbox doit être nommé `techinsidersX` (remplacez X par le numéro qui vous a été attribué).
 
-![Brand Concierge](./images/bc2.png)
+![](./images/bc2.png)
 
-Choisissez le sandbox qui vous a été affecté. Ce sandbox doit être nommé `--aepUserLdap-- - bc`.
+Renseignez ensuite les variables suivantes :
 
-![Brand Concierge](./images/bc3.png)
+- **Nom de la société** : CitiSignal
 
-Cliquez sur **Commencer**.
-
-![Brand Concierge](./images/bc4.png)
-
-Pour le nom de votre instance Brand Concierge, utilisez : `--aepUserLdap-- - CitiSignal Brand Concierge`.
+- **nom du concierge** : `CitiSignal Sales Assistant`.
 
 Saisissez le texte suivant sous **Que souhaitez-vous que le concierge fasse ?**.
 
@@ -86,45 +82,19 @@ Saisissez le texte suivant sous **Que souhaitez-vous que le concierge fasse ?**.
 Brand Concierge should help customers find their best device, plan or entertainment deal. Brand Concierge should help users discover internet plans, entertainment deals,  and help find the best available packages. Brand Concierge should also answer questions about devices such as phones and watches.
 ```
 
-Cliquez sur **Créer**.
+- **Lien vers le site Web** : indiquez le lien vers le site Web que vous utilisez
 
-![Brand Concierge](./images/bc5.png)
+Cliquez sur **Continuer**.
 
-Vous devriez alors voir ceci. Cliquez sur **Commencer** pour ajouter une source de connaissances.
+![](./images/bc5.png)
 
-![Brand Concierge](./images/bc6.png)
+Vous devriez alors voir ceci. Ces informations ont été générées à l’aide de l’IA en fonction des entrées fournies sur la page précédente. Vérifiez les informations et une fois que vous en êtes satisfait, cliquez sur **Générer le concierge**.
 
-Sélectionnez **Liens de site web** puis cliquez sur **Continuer**.
+![](./images/bc6.png)
 
-![Brand Concierge](./images/bc7.png)
+Vous devriez alors voir ceci. Cliquez sur **+ Ajouter** en regard de **Avis aux consommateurs**.
 
-Vous devriez alors voir ceci. Saisissez `CitiSignal website` comme nom pour votre source de connaissances.
-
-Vous devez maintenant télécharger un fichier csv contenant les liens de votre site Web. Téléchargez [le site Web CitiSignal lie le fichier CSV](./assets/citisignal-website-links.csv) sur votre bureau.
-
-Cliquez sur **Parcourir les fichiers**.
-
-![Brand Concierge](./images/bc8.png)
-
-Ouvrez le fichier **citisignal-website-links.csv** et mettez à jour les liens pour qu’ils pointent vers votre propre site Web CitiSignal.
-
-![Brand Concierge](./images/bc8a.png)
-
-Sélectionnez le fichier **citisignal-website-links.csv** que vous venez de télécharger et de modifier. Cliquez sur **Ouvrir**.
-
-![Brand Concierge](./images/bc9.png)
-
-Votre fichier est maintenant ajouté à cette source de connaissances. Cliquez sur **Ajouter**.
-
-![Brand Concierge](./images/bc10.png)
-
-Vous devriez alors voir ceci. Cliquez sur **Ramener à la maison**.
-
-![Brand Concierge](./images/bc11.png)
-
-Vous devriez alors voir ceci. Cliquez sur **Commencer** dans la carte **Avis produit pour les consommateurs**.
-
-![Brand Concierge](./images/bc12.png)
+![](./images/bc6a.png)
 
 Vous devriez alors voir ceci. Renseignez les champs suivants à l’aide du texte ci-dessous.
 
@@ -146,91 +116,69 @@ Prioritize positioning the CitiSignal Fiber Max offering.
 Competitor pricing, competitor products
 ```
 
-Vos mises à jour sont automatiquement enregistrées. Cliquez sur la **flèche** pour revenir à l’écran précédent.
+Cliquez sur **Enregistrer**.
 
-![Brand Concierge](./images/bc13.png)
+![](./images/bc13.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Commencer** pour personnaliser l’expression de votre marque.
+Cliquez sur la **flèche** pour revenir à l’écran précédent.
 
-![Brand Concierge](./images/bc14.png)
+![](./images/bc13a.png)
 
-Vous pouvez effectuer vos propres choix sur la page **Expression de marque** et vérifier qu’une option est sélectionnée pour chaque question.
+Accédez à Source de connaissances **et cliquez sur** Créer votre source de connaissances **.**
 
-![Brand Concierge](./images/bc15.png)
+![](./images/bc7.png)
 
-Faites défiler vers le bas et sélectionnez n’importe quel paramètre pour le champ **Longueur de la réponse**.
+Sélectionnez **Liens de site web** puis cliquez sur **Continuer**.
 
-Vos mises à jour sont automatiquement enregistrées.
+![](./images/bc7a.png)
 
-![Brand Concierge](./images/bc16.png)
+Vous devriez alors voir ceci. Saisissez `CitiSignal website` comme nom pour votre source de connaissances.
 
-Faites défiler l’écran vers le haut et cliquez sur la **flèche** pour revenir à l’écran précédent.
+Vous devez maintenant télécharger un fichier csv contenant les liens de votre site Web. Téléchargez [le site Web CitiSignal lie le fichier CSV](./assets/citisignal-website-links.csv) sur votre bureau.
 
-![Brand Concierge](./images/bc17.png)
+Cliquez sur **Parcourir les fichiers**.
 
-Tu seras de retour ici. Cliquez sur **Sources de connaissances**.
+![](./images/bc8.png)
 
-![Brand Concierge](./images/bc18.png)
+Ouvrez le fichier **citisignal-website-links.csv** et mettez à jour les liens pour qu’ils pointent vers votre propre site Web CitiSignal.
 
-Cliquez sur **Créer vos sources de connaissances**.
+![](./images/bc8a.png)
 
-![Brand Concierge](./images/bc19.png)
+Sélectionnez le fichier **citisignal-website-links.csv** que vous venez de télécharger et de modifier. Cliquez sur **Ouvrir**.
+
+![](./images/bc9.png)
+
+Votre fichier est maintenant ajouté à cette source de connaissances. Cliquez sur **Ajouter**.
+
+![](./images/bc10.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Créer votre source de connaissances**.
+
+![](./images/bc11.png)
 
 Sélectionnez **Catalogue de produits** puis cliquez sur **Continuer**.
 
-![Brand Concierge](./images/bc20.png)
+![](./images/bc20.png)
 
-Vous devriez alors voir ceci. Saisissez `CitiSignal Products` comme nom pour votre source de connaissances.
+Vous devriez alors voir ceci. Saisissez `CitiSignal Products` comme nom pour votre source de connaissances. Cliquez sur **Parcourir les fichiers** puis sélectionnez **Parcourir sur votre appareil**.
 
-![Brand Concierge](./images/bc21.png)
+![](./images/bc21.png)
 
 Vous devez maintenant télécharger un fichier csv contenant les liens de votre site Web. Téléchargez le [catalogue de produits CitiSignal](./assets/CitiSignal-catalog.json.zip) sur votre bureau et décompressez-le.
 
-![Brand Concierge](./images/bc26.png)
-
-Cliquez sur **Parcourir les fichiers** puis sélectionnez **Parcourir sur votre appareil**.
-
-![Brand Concierge](./images/bc22.png)
+![](./images/bc26.png)
 
 Sélectionnez le fichier **CitiSignal-catalog.json** et cliquez sur **Ouvrir**.
 
-![Brand Concierge](./images/bc23.png)
+![](./images/bc23.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Ajouter**.
 
-![Brand Concierge](./images/bc24.png)
+![](./images/bc24.png)
 
-Tu seras de retour ici.
+Tu seras de retour ici. Le traitement prendra entre 10 et 20 minutes. Vous devrez donc revenir ici à une étape ultérieure pour vérifier si le traitement a réussi.
 
-![Brand Concierge](./images/bc25.png)
-
-Après 10 à 20 minutes, le **Statut** des deux sources de connaissances doit être **Terminé**. Cliquez sur **Accueil**.
-
-![Brand Concierge](./images/bc27.png)
-
-Vous devriez alors voir ceci. Cliquez sur **+ Connexion** sur la carte **Liens de site web**.
-
-![Brand Concierge](./images/bc28.png)
-
-Sélectionnez la source de connaissances **Site Web CitiSignal** et cliquez sur **Enregistrer**.
-
-![Brand Concierge](./images/bc29.png)
-
-Vous devriez alors voir ceci. Cliquez sur **+ Connexion** sur la vignette **Catalogue de produits**.
-
-![Brand Concierge](./images/bc30.png)
-
-Sélectionnez la source de connaissances **Produits CitiSignal** et cliquez sur **Enregistrer**.
-
-![Brand Concierge](./images/bc31.png)
-
-Vous devriez alors voir ceci. Cliquez sur **Aperçu** pour commencer à interagir avec votre Brand Concierge.
-
-![Brand Concierge](./images/bc32.png)
-
-Vous pouvez maintenant commencer à poser des questions relatives aux sources de connaissances fournies.
-
-![Brand Concierge](./images/bc33.png)
+![](./images/bc25.png)
 
 ## 1.4.1.3 les étapes d’intégration à AEP
 
@@ -238,148 +186,112 @@ Brand Concierge utilise Adobe Experience Platform pour stocker les données d’
 
 ### Train de données
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Ouvrez **Experience Platform**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
 
-![Brand Concierge](./images/aep1.png)
+![](./images/aep1.png)
 
-Assurez-vous d’avoir sélectionné la sandbox appropriée, qui doit être nommée `--aepUserLdap-- - bc`. Dans le menu de gauche, faites défiler l’écran vers le bas et sélectionnez **Flux de données**.
+Assurez-vous d’avoir sélectionné la sandbox appropriée, qui doit être nommée `techinsidersX`. Dans le menu de gauche, faites défiler l’écran vers le bas et sélectionnez **Flux de données**.
 
-![Brand Concierge](./images/aep2.png)
+![](./images/aep2.png)
 
 Cliquez sur **Nouveau flux de données**.
 
-![Brand Concierge](./images/aep3.png)
+![](./images/aep3.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
-![Brand Concierge](./images/aep4.png)
+![](./images/aep4.png)
 
 Votre flux de données est maintenant configuré. Copiez le nom du flux de données et l’identifiant du flux de données et notez-les dans un fichier texte sur votre ordinateur.
 
-![Brand Concierge](./images/aep5.png)
+![](./images/aep5.png)
 
 ### Gestion de la configuration des flux de données
 
 L’étape suivante consiste à activer l’API Brand Concierge Configuration Management pour configurer le flux de données que vous venez de créer. Cela est nécessaire pour résoudre des éléments tels que les détails de l’ID d’organisation IMS et du sandbox pendant le traitement de la demande.
 
-Accédez à **Contrôles d’administration**.
+Accédez à **Accueil** puis sélectionnez **Contrôles d’administration**.
 
-![Brand Concierge](./images/admincontrols1.png)
+![](./images/admincontrols1.png)
 
 Accédez à **Gestion de la configuration des flux de données** puis cliquez sur **Ajouter une configuration**.
 
-![Brand Concierge](./images/admincontrols2.png)
+![](./images/admincontrols2.png)
 
 Collez l’**identifiant du flux de données** du flux de données que vous avez créé précédemment. Cliquez sur **Enregistrer**.
 
-![Brand Concierge](./images/admincontrols3.png)
+![](./images/admincontrols3.png)
 
 Vous devriez alors voir quelque chose comme ça.
 
-![Brand Concierge](./images/admincontrols4.png)
+![](./images/admincontrols4.png)
 
 ## Gestion de la configuration de style 1.4.1.4
 
 Accédez à **Style de la gestion de la configuration**. Cliquez sur **Initialiser la configuration de style**.
 
-![Brand Concierge](./images/admincontrols7.png)
+![](./images/admincontrols7.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
+Saisissez le **** Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
 
-![Brand Concierge](./images/admincontrols8.png)
+![](./images/admincontrols8.png)
 
 Vous devriez alors voir ceci.
 
-![Brand Concierge](./images/admincontrols9.png)
+![](./images/admincontrols9.png)
 
 ## 1.4.1.5 le manifeste Agent Orchestrator
 
-Accédez à **Mettre à jour le manifeste**. Vous devriez alors voir ceci.
+Accédez à **Mettre à jour le manifeste**. Vous devriez alors voir ceci. Passez en revue les informations de chaque champ et apportez des modifications si nécessaire. Après avoir apporté des modifications, cliquez sur **Mettre à jour le manifeste.
 
-![Brand Concierge](./images/admincontrols5.png)
+![](./images/admincontrols5.png)
 
-Vous devez maintenant mettre à jour les champs du manifeste. Utilisez l’entrée ci-dessous pour cela.
+## 1.4.1.6 Terminer la configuration de la source de connaissances
 
-**Nom de l’agent** :
+Accédez à **Sources de connaissances**. Après 10 à 20 minutes, le **Statut** des deux sources de connaissances doit être **Terminé**. Une fois le statut **Succès** pour les deux sources de connaissances, cliquez sur **Accueil**.
 
-```
-CitiSignal Sales Assistant
-```
+![](./images/admincontrols10.png)
 
-**Introduction** :
+Vous devriez alors voir ceci. Cliquez sur **+ Connexion** sur la carte **Liens de site web**.
 
-```
-Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
-```
+![](./images/bc28.png)
 
-**Rôles et responsabilités** :
+Sélectionnez la source de connaissances **Site Web CitiSignal** et cliquez sur **Enregistrer**.
 
-```
-You are CitiSignal's AI Sales Assistant focused on:
-1. **Primary Goal**: Selling connectivity products from the knowledge base
-2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
-3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
-4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
+![](./images/bc29.png)
 
-- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
-- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
-- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
-- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
-- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
-```
+Vous devriez alors voir ceci. Cliquez sur **+ Connexion** sur la vignette **Catalogue de produits**.
 
-**Portée** :
+![](./images/bc30.png)
 
-```
-You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
+Sélectionnez la source de connaissances **Produits CitiSignal** et cliquez sur **Enregistrer**.
 
-# Your Primary Objectives:
-1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
-2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
-3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
-
-# Sales Strategy:
-- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
-- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
-- Use natural transition phrases to introduce entertainment upsells.
-- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
-- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
-
-# Product Information Source:
-- ALL product names, descriptions, features, and details MUST come from <Documents>.
-- Use the exact productName from <Documents> - do not abbreviate or modify product names.
-- Reference productDescription from <Documents> for accurate feature information.
-- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
-```
-
-Cliquez sur **Mettre à jour le manifeste**.
-
-![Brand Concierge](./images/admincontrols6.png)
-
-Cliquez sur **Accueil**.
-
-![Brand Concierge](./images/admincontrols10.png)
+![](./images/bc31.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Aperçu** pour commencer à interagir avec votre Brand Concierge.
 
-![Brand Concierge](./images/bc101.png)
+![](./images/bc32.png)
 
-Vous pouvez maintenant commencer à poser des questions relatives aux sources de connaissances fournies. Saisissez le `what products do you sell?` de la question et cliquez sur **Envoyer**.
+Vous pouvez maintenant commencer à poser des questions relatives aux sources de connaissances fournies.
 
-![Brand Concierge](./images/bc102.png)
+![](./images/bc33.png)
+
+Saisissez le `what products do you sell?` de la question et cliquez sur **envoyer**.
+
+![](./images/bc102.png)
 
 Vous devriez alors obtenir une réponse similaire.
 
-![Brand Concierge](./images/bc103.png)
+![](./images/bc103.png)
 
 Votre instance de Brand Concierge est maintenant prête à être implémentée sur votre site web.
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Implémentation de Brand Concierge sur votre site web &#x200B;](./ex2.md){target="_blank"}
+Accédez à [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
 
-Revenir à [Brand Concierge](./brandconcierge.md){target="_blank"}
+Revenir à [](./brandconcierge.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
