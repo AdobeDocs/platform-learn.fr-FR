@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,10 @@ ht-degree: 3%
 # Tutoriel technique One Adobe {#tutorial-one-adobe}
 
 + [Vue d’ensemble du tutoriel](/help/tutorial-one-adobe/overview.md)
-+ [Statut du contenu](/help/tutorial-one-adobe/status.md)
 + [Architecture](/help/tutorial-one-adobe/architecture.md)
++ [Agentic AI Labs](/help/tutorial-one-adobe/ai.md)
++ [GenStudio Labs](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP et Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + Prise en main {#gettingstarted}
    + Prise en main {#gettingstarted}
@@ -38,6 +40,7 @@ ht-degree: 3%
       + [1.1.2 Adobe Marketing Agent pour ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent pour Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.5 Adobe Marketing Agent pour Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
    + 1.2 Prise en main des agents et de l’IA {#agents2}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Prise en main de l’IA dédiée aux agences](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -264,7 +267,7 @@ ht-degree: 3%
          + [3.8.2 Création de votre campagne orchestrée](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex2.md)
 
 + Rapports et informations {#reporting}
-   + Customer Journey Analytics  {#cjab2c}
+   + Customer Journey Analytics  {#cjab2c}
       + 1.1 Customer Journey Analytics : créer un tableau de bord à l’aide d’Analysis Workspace {#cja1}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
@@ -298,3 +301,5 @@ ht-degree: 3%
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Prise en main de Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Résumé et avantages](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
++ [Statut du contenu](/help/tutorial-one-adobe/status.md)

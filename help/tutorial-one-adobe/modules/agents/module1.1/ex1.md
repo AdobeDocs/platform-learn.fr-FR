@@ -4,7 +4,7 @@ description: Prise en main d’Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -21,15 +21,15 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## 1.1.1.1 Définir le contexte dans Agent Orchestrator
 
-Accédez à [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Accédez à [](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Vérifiez que vous êtes dans l’organisation **Experience Platform International**.
 
-![Agent Orchestrator](./images/ao1.png)
+![](./images/ao1.png)
 
 Cliquez sur la fenêtre **context**.
 
-![Agent Orchestrator](./images/ao2.png)
+![](./images/ao2.png)
 
 Définissez le contexte sur :
 
@@ -47,7 +47,7 @@ Le paramètre Vue de données permet d’identifier l’assistant AI de vue de d
 
 Cliquez sur **Définir le contexte**.
 
-![Agent Orchestrator](./images/ao3.png)
+![](./images/ao3.png)
 
 ## 1.1.1.2 Commencez par les tendances d’achat globales pour ancrer le contexte et zoomer sur la fibre
 
@@ -61,11 +61,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Show me purchases by mainCategory over the last 2 months.
 ```
 
-![Agent Orchestrator](./images/ao4.png)
+![](./images/ao4.png)
 
 Vous devriez alors voir ceci :
 
-![Agent Orchestrator](./images/ao5.png)
+![](./images/ao5.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -73,11 +73,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
-![Agent Orchestrator](./images/ao6.png)
+![](./images/ao6.png)
 
 Vous devriez ensuite voir ceci, qui examine les tendances spécifiques à la fibre optique.
 
-![Agent Orchestrator](./images/ao7.png)
+![](./images/ao7.png)
 
 ## 1.1.1.3 Corréler les commandes avec les préférences de contenu
 
@@ -93,11 +93,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Which field is used to store the preferred genre?
 ```
 
-![Agent Orchestrator](./images/ao7a.png)
+![](./images/ao7a.png)
 
 Vous devriez alors voir ceci, qui indique que le champ utilisé pour le genre est **_experienceplatform.individualFeatures.preferences.preferences.preferencesGenre**.
 
-![Agent Orchestrator](./images/ao7b.png)
+![](./images/ao7b.png)
 
 Avec ces informations, vous pouvez commencer à analyser en profondeur les données d’achat.
 
@@ -107,15 +107,15 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Show me ordersYTD by preferredGenre for the last 2 months
 ```
 
-![Agent Orchestrator](./images/ao8.png)
+![](./images/ao8.png)
 
 Vous devriez alors voir ceci. Cliquez sur l’icône du bloc **Raisonnement terminé** pour comprendre ce qui se passe en coulisses dans Agent Orchestrator.
 
-![Agent Orchestrator](./images/ao9.png)
+![](./images/ao9.png)
 
 Une explication similaire devrait s’afficher.
 
-![Agent Orchestrator](./images/ao10.png)
+![](./images/ao10.png)
 
 ## 1.1.1.4 Identifier Les Parcours Fibre Existants
 
@@ -129,19 +129,19 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 What journeys exist? 
 ```
 
-![Agent Orchestrator](./images/ao12.png)
+![](./images/ao12.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Afficher plus**.
 
-![Agent Orchestrator](./images/ao13.png)
+![](./images/ao13.png)
 
 Vous devriez alors voir une liste plus grande de parcours actifs ou passés. Cliquez sur l’icône **télécharger** pour télécharger une liste de ces parcours.
 
-![Agent Orchestrator](./images/ao13a.png)
+![](./images/ao13a.png)
 
 Un fichier CSV contenant toutes les sorties de l’assistant d’IA est alors généré.
 
-![Agent Orchestrator](./images/ao13b.png)
+![](./images/ao13b.png)
 
 Cliquez pour fermer le volet de droite. Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -149,15 +149,15 @@ Cliquez pour fermer le volet de droite. Saisissez l’invite **Prompt** suivante
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![Agent Orchestrator](./images/ao14.png)
+![](./images/ao14.png)
 
 Vous devriez alors voir ceci. Cliquez sur le lien de l’un des parcours et sélectionnez **Détails du Parcours**.
 
-![Agent Orchestrator](./images/ao15.png)
+![](./images/ao15.png)
 
 Une nouvelle fenêtre s’ouvre et vous accédez immédiatement à l’aperçu des détails du Parcours.
 
-![Agent Orchestrator](./images/ao15a.png)
+![](./images/ao15a.png)
 
 ## 1.1.1.5 Vérifier quelle audience est utilisée
 
@@ -173,15 +173,15 @@ What was the initial audience in the journey named
 
 Saisissez ensuite manuellement les `+CitiSignal fib` pour activer la saisie automatique. Sélectionnez le parcours **Promotion de lancement CitiSignal - Fibre max**.
 
-![Agent Orchestrator](./images/ao16.png)
+![](./images/ao16.png)
 
 Vous devriez alors voir ceci. Cliquez sur le bouton **envoyer**.
 
-![Agent Orchestrator](./images/ao17.png)
+![](./images/ao17.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/ao18.png)
+![](./images/ao18.png)
 
 ## 1.1.1.6 Validation des performances du parcours via l’analyse des abandons
 
@@ -195,11 +195,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![Agent Orchestrator](./images/ao19.png)
+![](./images/ao19.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/ao20.png)
+![](./images/ao20.png)
 
 Faites défiler l’écran vers le bas. Vous pouvez maintenant consulter le tableau en examinant chaque nœud et ses numéros d’entrée, numéros d’abandon et taux d’abandon respectifs.
 
@@ -207,11 +207,11 @@ L’assistant d’IA vous fournit des observations et des recommandations.
 
 Cliquez sur la phrase **Voici comment j&#39;ai obtenu les résultats**.
 
-![Agent Orchestrator](./images/ao21.png)
+![](./images/ao21.png)
 
 Vous pouvez ensuite afficher les étapes suivies par l’assistant AI pour obtenir les résultats.
 
-![Agent Orchestrator](./images/ao22.png)
+![](./images/ao22.png)
 
 ## 1.1.1.7 Créer une audience
 
@@ -225,7 +225,7 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
-![Agent Orchestrator](./images/ao32.png)
+![](./images/ao32.png)
 
 Examinez le plan. Saisissez `yes` et cliquez sur **Envoyer**.
 
@@ -233,27 +233,27 @@ Examinez le plan. Saisissez `yes` et cliquez sur **Envoyer**.
 >
 >Ce plan est généré à partir d’un guide de référence dans le système. Les clients pourront éventuellement personnaliser les plans et ajouter leurs propres plans, mais pour l’instant, ils sont statiques.
 
-![Agent Orchestrator](./images/ao33.png)
+![](./images/ao33.png)
 
 Vérifiez l’expression de requête de segment. Saisissez `yes` et cliquez sur le bouton **Envoyer**.
 
-![Agent Orchestrator](./images/ao34.png)
+![](./images/ao34.png)
 
 Vérifiez l’estimation de la taille du segment. Saisissez `yes` et cliquez sur le bouton **Envoyer**.
 
-![Agent Orchestrator](./images/ao35.png)
+![](./images/ao35.png)
 
 Cliquez sur **Vérifier**.
 
-![Agent Orchestrator](./images/ao36.png)
+![](./images/ao36.png)
 
 Examinez la définition de segment. Cliquez sur **Créer**.
 
-![Agent Orchestrator](./images/ao37.png)
+![](./images/ao37.png)
 
 Votre audience a maintenant été créée.
 
-![Agent Orchestrator](./images/ao38.png)
+![](./images/ao38.png)
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
-![Agent Orchestrator](./images/ao30.png)
+![](./images/ao30.png)
 
 Vous devriez alors voir ceci. Vous souhaitez maintenant voir toutes vos audiences et à quel point elles ont changé au cours des derniers jours.
 
@@ -285,19 +285,19 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 List how much these audiences changed over the last few days.
 ```
 
-![Agent Orchestrator](./images/ao31.png)
+![](./images/ao31.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Afficher plus**.
 
-![Agent Orchestrator](./images/ao31a.png)
+![](./images/ao31a.png)
 
 Vous devriez alors voir ceci. Cliquez pour fermer le volet de droite.
 
-![Agent Orchestrator](./images/ao31b.png)
+![](./images/ao31b.png)
 
 Faites défiler l’écran vers le bas pour passer en revue les étapes effectuées par l’assistant AI.
 
-![Agent Orchestrator](./images/ao31c.png)
+![](./images/ao31c.png)
 
 Il existe déjà certaines audiences pour les « téléchargeurs lourds ». Voyons s’ils sont déjà utilisés.
 
@@ -307,11 +307,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Which of the above are used in a journey? 
 ```
 
-![Agent Orchestrator](./images/ao50.png)
+![](./images/ao50.png)
 
 Vous devriez alors voir quelque chose de similaire à ceci.
 
-![Agent Orchestrator](./images/ao51.png)
+![](./images/ao51.png)
 
 Vous devez maintenant vérifier si ce parcours est actif. Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -319,11 +319,11 @@ Vous devez maintenant vérifier si ce parcours est actif. Saisissez l’invite *
 Are these journeys active? 
 ```
 
-![Agent Orchestrator](./images/ao52.png)
+![](./images/ao52.png)
 
 Vous devriez alors voir quelque chose de similaire à ceci. Aucun de ces parcours n’est en cours d’exécution.
 
-![Agent Orchestrator](./images/ao53.png)
+![](./images/ao53.png)
 
 Pour le lancement prochain de Fibre Max, vous devez maintenant créer un nouveau parcours.
 
@@ -341,39 +341,39 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
-![Agent Orchestrator](./images/aocj1.png)
+![](./images/aocj1.png)
 
 Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Générer.
 
-![Agent Orchestrator](./images/aocj2.png)
+![](./images/aocj2.png)
 
 Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Générer.
 
-![Agent Orchestrator](./images/aocj3.png)
+![](./images/aocj3.png)
 
 Vous devriez alors voir ceci. Saisissez `The first one` et cliquez sur Envoyer.
 
-![Agent Orchestrator](./images/aocj4.png)
+![](./images/aocj4.png)
 
 Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Envoyer.
 
-![Agent Orchestrator](./images/aocj5.png)
+![](./images/aocj5.png)
 
 Examinez la réponse. Saisissez `yes` et cliquez sur Envoyer.
 
-![Agent Orchestrator](./images/aocj6.png)
+![](./images/aocj6.png)
 
 Cliquez sur **Vérifier**.
 
-![Agent Orchestrator](./images/aocj7.png)
+![](./images/aocj7.png)
 
 Mettez à jour le nom du parcours avec votre LDAP pour le rendre unique. Cliquez sur **Enregistrer**.
 
-![Agent Orchestrator](./images/aocj8.png)
+![](./images/aocj8.png)
 
 Votre parcours a été créé en mode brouillon.
 
-![Agent Orchestrator](./images/aocj9.png)
+![](./images/aocj9.png)
 
 ## Gestion des conflits de Parcours 1.1.1.10
 
@@ -383,15 +383,15 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 How can I manage journey conflicts?
 ```
 
-![Agent Orchestrator](./images/aocj80.png)
+![](./images/aocj80.png)
 
 Consultez les informations.
 
-![Agent Orchestrator](./images/aocj81.png)
+![](./images/aocj81.png)
 
 Faites défiler vers le bas et sélectionnez l’**Sources** pour vérifier que les informations proviennent d’Experience League.
 
-![Agent Orchestrator](./images/aocj82.png)
+![](./images/aocj82.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -401,19 +401,19 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 Sélectionnez ensuite manuellement le parcours **Promotion de lancement CitiSignal - Fibre max** dans la liste.
 
-![Agent Orchestrator](./images/aocj70.png)
+![](./images/aocj70.png)
 
 Vous devriez alors voir ceci. Cliquez sur **envoyer**.
 
-![Agent Orchestrator](./images/aocj70a.png)
+![](./images/aocj70a.png)
 
 Consultez les informations de conflit de parcours.
 
-![Agent Orchestrator](./images/aocj71.png)
+![](./images/aocj71.png)
 
 Faites défiler la page vers le bas pour rechercher plus de détails sur les conflits de parcours.
 
-![Agent Orchestrator](./images/aocj72.png)
+![](./images/aocj72.png)
 
 ## Expériences 1.1.1.11
 
@@ -423,11 +423,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
-![Agent Orchestrator](./images/aoea0.png)
+![](./images/aoea0.png)
 
 Vous devriez alors voir ceci :
 
-![Agent Orchestrator](./images/aoea1.png)
+![](./images/aoea1.png)
 
 Faites défiler vers le bas et cliquez sur l’une des suggestions. Cliquez sur **envoyer**.
 
@@ -435,11 +435,11 @@ Faites défiler vers le bas et cliquez sur l’une des suggestions. Cliquez sur 
 >
 >Les suggestions sont dynamiques. Vous devez donc vous attendre à voir des suggestions différentes chaque fois qu’une réponse est générée. Vos suggestions seront probablement différentes de celles affichées dans cette capture d’écran.
 
-![Agent Orchestrator](./images/aoea2.png)
+![](./images/aoea2.png)
 
 Vous devriez alors voir une réponse détaillée liée à la suggestion qui a été choisie.
 
-![Agent Orchestrator](./images/aoea4.png)
+![](./images/aoea4.png)
 
 Vous avez maintenant terminé ce Lab.
 
@@ -447,6 +447,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
-Revenir à [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

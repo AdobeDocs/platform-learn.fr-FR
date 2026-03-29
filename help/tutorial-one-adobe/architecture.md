@@ -1,59 +1,29 @@
 ---
-title: One Adobe Tutorial - Architecture Overview
-description: One Adobe Tutorial - Architecture Overview
+title: Tutoriel sur One Adobe - Aperçu de l’architecture
+description: Tutoriel sur One Adobe - Aperçu de l’architecture
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: d271e771b75cd4cbc6d526cd8c438d8858930878
+source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
 
-# One Adobe Tutorial - Architecture Overview
+# Tutoriel sur One Adobe - Aperçu de l’architecture
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## One Adobe Architecture Overview
+## Une Présentation De L’Architecture Adobe
 
-In this video, you&#39;ll learn about the architecture behind the full end-to-end One Adobe tutorial.
+Dans cette vidéo, vous découvrirez l’architecture sous-jacente au tutoriel complet sur One Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-Download the architecture overview image below:
+Téléchargez l’image de présentation de l’architecture ci-dessous :
 
-![Insiders de la technologie &#x200B;](./assets/images/architecture_all.jpg)
-
-## Agentic AI Architecture Overview
-
-In this video, you&#39;ll learn about the architecture behind the Agentic AI part of the One Adobe tutorial.
-
->[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
-
-Download the architecture overview image below:
-
-![Insiders de la technologie &#x200B;](./assets/images/architecture_agentic.jpg)
-
-## Content Architecture Overview
-
-In this video, you&#39;ll learn about the architecture behind the GenStudio part of this tutorial.
-
->[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
-
-Download the architecture overview image below:
-
-![Insiders de la technologie &#x200B;](./assets/images/architecture_content.jpg)
-
-## Data Architecture Overview
-
-In this video, you&#39;ll learn about the architecture behind the Adobe Experience Platform and Applications part of this tutorial.
-
->[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
-
-Download the architecture overview image below:
-
-![Insiders de la technologie &#x200B;](./assets/images/architecture_data.jpeg)
+![Insiders de la technologie ](./assets/images/architecture_all.jpg)
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.

@@ -1,0 +1,136 @@
+---
+title: Laboratoires techniques d’AEP et des applications
+description: Laboratoires techniques d’AEP et des applications
+doc-type: multipage-overview
+source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 1%
+
+---
+
+# Présentation - AEP Et Apps Tech Labs
+
+## Vue d’ensemble
+
+## Présentation De L’Architecture D’AEP Et Des Applications
+
+Dans cette vidéo, vous découvrirez l’architecture sous-jacente à la partie Adobe Experience Platform et applications de ce tutoriel.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
+
+Téléchargez l’image de présentation de l’architecture ci-dessous :
+
+![Insiders de la technologie ](./assets/images/architecture_data.jpeg)
+
+### Prise en main
+
+[Prise en main](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+Dans ce module de base, vous allez tout préparer pour pouvoir accéder à l’environnement de démonstration et l’utiliser.
+
+### Diffusion et activation
+
+#### Collecte de données
+
+[1.1 Foundation - Configuration de la collecte de données Adobe Experience Platform et de Web SDK](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
+
+Dans ce module fondamental, vous découvrirez la collecte de données Adobe Experience Platform et la nouvelle extension de SDK web.
+
+[1.2 Foundation - Ingestion de données](./modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
+
+Dans ce module de base, vous allez ingérer des données provenant de diverses sources dans Adobe Experience Platform
+
+[1.3 Composition De L’Audience Fédérée](./modules/delivery-activation/datacollection/dc1.3/fac.md)
+
+Dans ce module, vous apprendrez à configurer un modèle d’audiences fédérées et à générer des audiences à l’aide de données fédérées.
+
+#### Real-Time CDP B2C
+
+[2.1 Foundation - Profil client en temps réel](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
+
+Dans ce module de base, vous allez explorer le profil client en temps réel dans Adobe Experience Platform à l’aide de l’interface utilisateur et de l’API.
+
+[2.2 Services intelligents](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
+
+Dans ce module, vous apprendrez à configurer et à utiliser les services intelligents de Adobe Experience Platform.
+
+[2.3 Real-Time CDP - Créez une audience et prenez des mesures](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
+
+Dans ce module, vous allez configurer une audience et l’activer vers plusieurs destinations, notamment Google DV360, Adobe Target et AWS S3.
+
+[2.4 Real-Time CDP : hub d’événements Audience Activation vers Microsoft Azure](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
+
+Dans ce module, vous allez configurer une destination Microsoft Azure EventHub en tant que destination en temps réel pour Adobe Experience Platform Real-time CDP.
+
+[2.5 Connexions Real-Time CDP : transfert d’événement](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
+
+Dans ce module, vous allez transférer des données côté serveur vers plusieurs points d’entrée, tels que Google Cloud Platform Pub/Sub et AWS Kinesis.
+
+[2.6 Diffuser des données d’Apache Kafka vers Real-Time CDP](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
+
+Dans ce module, vous apprendrez à configurer votre propre cluster Apache Kafka et à diffuser des données dans Adobe Experience Platform.
+
+### Adobe Journey Optimizer B2C
+
+[3.1 Adobe Journey Optimizer : Orchestration](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
+
+Dans ce module, vous utiliserez Adobe Journey Optimizer pour créer un parcours basé sur un déclencheur.
+
+[3.2 Adobe Journey Optimizer : sources de données externes et actions personnalisées](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
+
+Dans ce module, vous utiliserez Adobe Journey Optimizer pour écouter le comportement des clients, en ligne et hors ligne, et y répondre de manière intelligente, contextuelle et en temps réel sur divers canaux.
+
+[3.3 Adobe Journey Optimizer : messages push et in-app](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
+
+Dans ce module, vous utiliserez Adobe Journey Optimizer pour configurer les notifications push et les messages in-app.
+
+[3.4 Adobe Journey Optimizer : Parcours basés sur un événement](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
+
+Dans ce module, vous apprendrez tout ce qu’il y a à savoir sur Journey Optimizer, qui aide les entreprises à concevoir et à proposer des expériences connectées, contextuelles et personnalisées à leurs clients.
+
+[3.5 Adobe Journey Optimizer : services de traduction](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
+
+Dans ce module, vous apprendrez à configurer et à utiliser les services de traduction dans Adobe Journey Optimizer pour localiser vos messages à l’intention de vos clients.
+
+[3.6 Adobe Journey Optimizer : gestion de contenu](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+Dans ce module, vous apprendrez à configurer et à utiliser des cartes de contenu et des landing pages dans Adobe Journey Optimizer et vous découvrirez en détail l&#39;intégration entre Adobe Journey Optimizer et GenStudio for Performance Marketing.
+
+[3.7 Adobe Journey Optimizer : prise de décision](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+Dans ce module, vous apprendrez à configurer et à utiliser des expériences de prise de décision et basées sur du code dans Adobe Journey Optimizer.
+
+[3.8 Adobe Journey Optimizer : Campagnes](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+Dans ce module, vous apprendrez à configurer et à utiliser des campagnes dans Adobe Journey Optimizer.
+
+### Rapports et informations
+
+#### Adobe Customer Journey Analytics
+
+[1.1 Customer Journey Analytics : création d’un tableau de bord à l’aide d’Analysis Workspace sur Adobe Experience Platform](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+
+Dans ce module, vous obtiendrez des informations en ligne et hors ligne en configurant un tableau de bord contenant des données omnicanales.
+
+[1.2 Customer Journey Analytics : ingestion et analyse de données Google Analytics dans Adobe Experience Platform avec le connecteur Source BigQuery](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
+
+Dans ce module, vous allez configurer votre propre instance de Google Cloud Platform, charger des données de démonstration dans Google Cloud Platform, puis utiliser le connecteur Source BigQuery pour ingérer ces données de Google Cloud Platform dans Adobe Experience Platform.
+
+#### Data Distiller
+
+[2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
+
+Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Service.
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
+
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.

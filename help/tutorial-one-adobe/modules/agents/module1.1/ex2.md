@@ -4,7 +4,7 @@ description: Adobe Marketing Agent pour ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 >- une version payante du ChatGPT Enterprise d’OpenAI
 >- en utilisant le client web ChatGPT Enterprise
 
-Accédez à [https://chatgpt.com/](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
+Accédez à [](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -78,11 +78,11 @@ Une fois la connexion établie, vous devriez voir que votre Adobe Marketing Agen
 
 Fermez cette fenêtre.
 
-![Agent Orchestrator](./images/chatgpt9.png)
+![](./images/chatgpt9.png)
 
 Vous devriez alors voir ceci. Cliquez sur l’icône **+**, accédez à **Plus** puis sélectionnez **Adobe Marketing Agent**.
 
-![Agent Orchestrator](./images/chatgpt10.png)
+![](./images/chatgpt10.png)
 
 Avant d’interagir davantage avec Adobe Marketing Agent par le biais du ChatGPT, le contexte doit être défini.
 
@@ -102,7 +102,7 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 list sandboxes
 ```
 
-![Agent Orchestrator](./images/chatgpt11.png)
+![](./images/chatgpt11.png)
 
 Une liste similaire des sandbox disponibles devrait s’afficher. Le sandbox actuel de cet exemple est défini sur **prod**.
 
@@ -112,11 +112,11 @@ Pour le remplacer par le sandbox qui doit être utilisé, saisissez l’**invite
 switch to sandbox accelerate
 ```
 
-![Agent Orchestrator](./images/chatgpt12.png)
+![](./images/chatgpt12.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Définir le contexte**.
 
-![Agent Orchestrator](./images/chatgpt13.png)
+![](./images/chatgpt13.png)
 
 Vous devriez alors voir ceci. Saisissez l’élément suivant **Invite** et cliquez sur le bouton **envoyer** pour définir la vue de données à utiliser.
 
@@ -124,7 +124,7 @@ Vous devriez alors voir ceci. Saisissez l’élément suivant **Invite** et cliq
 list dataviews
 ```
 
-![Agent Orchestrator](./images/chatgpt14.png)
+![](./images/chatgpt14.png)
 
 Vous devriez alors voir une liste similaire des vues de données disponibles.
 
@@ -134,15 +134,15 @@ Pour définir la vue de données à utiliser, saisissez l’**invite** suivante,
 switch to Accelerate 2026 B2C
 ```
 
-![Agent Orchestrator](./images/chatgpt15.png)
+![](./images/chatgpt15.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Définir le contexte**.
 
-![Agent Orchestrator](./images/chatgpt16.png)
+![](./images/chatgpt16.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/chatgpt17.png)
+![](./images/chatgpt17.png)
 
 Votre contexte est maintenant correctement défini, vous pouvez donc commencer à envoyer des invites spécifiques.
 
@@ -158,11 +158,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Show me purchases by mainCategory over the last 2 months.
 ```
 
-![Agent Orchestrator](./images/chatgpt18.png)
+![](./images/chatgpt18.png)
 
 Vous devriez alors voir ceci :
 
-![Agent Orchestrator](./images/chatgpt19.png)
+![](./images/chatgpt19.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -170,11 +170,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
-![Agent Orchestrator](./images/chatgpt20.png)
+![](./images/chatgpt20.png)
 
 Vous devriez ensuite voir ceci, qui examine les tendances spécifiques à la fibre optique.
 
-![Agent Orchestrator](./images/chatgpt21.png)
+![](./images/chatgpt21.png)
 
 ## 1.1.2.4 Corréler les commandes avec les préférences de contenu
 
@@ -190,11 +190,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Which field is used to store the preferred genre in the sandbox accelerate?
 ```
 
-![Agent Orchestrator](./images/chatgpt22.png)
+![](./images/chatgpt22.png)
 
 Vous devriez alors voir ceci, qui indique que le champ utilisé pour le genre est **_experienceplatform.individualFeatures.preferences.preferences.preferencesGenre**.
 
-![Agent Orchestrator](./images/chatgpt23.png)
+![](./images/chatgpt23.png)
 
 Avec ces informations, vous pouvez commencer à analyser en profondeur les données d’achat.
 
@@ -204,19 +204,19 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Show me ordersYTD by preferredGenre for the last 2 months
 ```
 
-![Agent Orchestrator](./images/chatgpt24.png)
+![](./images/chatgpt24.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Recherche**.
 
-![Agent Orchestrator](./images/chatgpt25.png)
+![](./images/chatgpt25.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/chatgpt26.png)
+![](./images/chatgpt26.png)
 
 Faites défiler la page vers le bas pour afficher plus d’informations.
 
-![Agent Orchestrator](./images/chatgpt27.png)
+![](./images/chatgpt27.png)
 
 ## 1.1.2.5 Identifier Les Parcours Fibre Existants
 
@@ -230,15 +230,15 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 What journeys exist? 
 ```
 
-![Agent Orchestrator](./images/chatgpt28.png)
+![](./images/chatgpt28.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Recherche**.
 
-![Agent Orchestrator](./images/chatgpt29.png)
+![](./images/chatgpt29.png)
 
 Vous devriez alors voir une liste des parcours.
 
-![Agent Orchestrator](./images/chatgpt30.png)
+![](./images/chatgpt30.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -246,19 +246,19 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Which of these journeys has 'Fiber' in its name?
 ```
 
-![Agent Orchestrator](./images/chatgpt31.png)
+![](./images/chatgpt31.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Recherche**.
 
-![Agent Orchestrator](./images/chatgpt32.png)
+![](./images/chatgpt32.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/chatgpt33.png)
+![](./images/chatgpt33.png)
 
 Faites défiler la page vers le bas pour afficher plus de détails.
 
-![Agent Orchestrator](./images/chatgpt34.png)
+![](./images/chatgpt34.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -266,11 +266,11 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
-![Agent Orchestrator](./images/chatgpt35.png)
+![](./images/chatgpt35.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/chatgpt36.png)
+![](./images/chatgpt36.png)
 
 ## 1.1.2.6 Validation des performances du parcours via l’analyse des abandons
 
@@ -284,26 +284,26 @@ Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
-![Agent Orchestrator](./images/chatgpt37.png)
+![](./images/chatgpt37.png)
 
 Vous devriez alors voir ceci.
 
-![Agent Orchestrator](./images/chatgpt38.png)
+![](./images/chatgpt38.png)
 
 Faites défiler l’écran vers le bas. Vous pouvez maintenant consulter le tableau en examinant chaque nœud et ses numéros d’entrée, numéros d’abandon et taux d’abandon respectifs.
 
-![Agent Orchestrator](./images/chatgpt39.png)
+![](./images/chatgpt39.png)
 
 Faites défiler la page vers le bas pour afficher les observations et les recommandations.
 
-![Agent Orchestrator](./images/chatgpt40.png)
+![](./images/chatgpt40.png)
 
 Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Accéder à [Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
+Accéder à [](./ex3.md){target="_blank"}
 
-Revenir à [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
