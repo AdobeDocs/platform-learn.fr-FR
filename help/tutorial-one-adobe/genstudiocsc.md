@@ -3,16 +3,16 @@ title: GenStudio Tech Labs
 description: GenStudio Tech Labs
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
 
 # Présentation - GenStudio Tech Labs
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Vue d’ensemble
 
@@ -34,9 +34,7 @@ Dans cette vidéo, vous découvrirez l’architecture sous-jacente à la partie 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
 
-Téléchargez l’image de présentation de l’architecture ci-dessous :
-
-![Insiders de la technologie &#x200B;](./assets/images/architecture_content.jpg)
+Téléchargez l’image de présentation de l’architecture [ici](./assets/images/architecture_content.jpg).
 
 ## GenStudio Tech Labs
 
@@ -122,8 +120,8 @@ Dans ce module, vous allez créer votre instance Adobe Commerce as a Cloud Servi
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.

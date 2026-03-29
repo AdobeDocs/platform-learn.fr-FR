@@ -3,10 +3,10 @@ title: Adobe Marketing Agent pour Claude
 description: Adobe Marketing Agent pour Claude
 kt: 5342
 doc-type: tutorial
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 22%
+source-wordcount: '571'
+ht-degree: 9%
 
 ---
 
@@ -36,8 +36,131 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 Ce laboratoire est en cours de développement.
 
+## 1.1.5.1 Créer une application personnalisée dans Claude.ai pour CJA
+
+>[!NOTE]
+>
+>L’utilisation de Adobe Marketing Agent dans Claude.ai requiert les éléments suivants :
+>- une version payante de Claude.ai
+
+Accédez à [](https://claude.ai/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci.
+
+![Claude.ai](./images/claude1.png)
+
+Cliquez pour ouvrir votre compte, puis sélectionnez **Paramètres**.
+
+![Claude.ai](./images/claude2.png)
+
+Accédez à **Connecteurs** puis cliquez sur **Accéder à la personnalisation**.
+
+![Claude.ai](./images/claude2a.png)
+
+Cliquez sur **+**, puis sélectionnez **Ajouter un connecteur personnalisé**.
+
+![Claude.ai](./images/claude3.png)
+
+Renseignez les champs comme suit :
+
+- **Nom** : `Adobe Marketing Agent`
+- **URL du serveur MCP** : vérifiez auprès de votre représentant Adobe
+
+Cliquez sur **Ajouter**.
+
+![Claude.ai](./images/claude4.png)
+
+Vous devriez alors voir ceci. Cliquez sur **+** pour démarrer une nouvelle conversation.
+
+![Claude.ai](./images/claude5.png)
+
+Cliquez sur l’icône **+**, accédez à **Connecteurs** et vérifiez que **Adobe Marketing Agent** est activé**.
+
+![Claude.ai](./images/claude6.png)
+
+## 1.1.5.2 Authentifier et définir le contexte
+
+Avant d’interagir davantage avec Adobe Marketing Agent via Claude.ai, vous devez vous connecter et définir le contexte.
+
+Saisissez l’invite suivante et cliquez sur **envoyer**.
+
+```
+login to Adobe Marketing Agent
+```
+
+![Claude.ai](./images/claude7.png)
+
+Sélectionnez **Toujours autoriser**.
+
+![Claude.ai](./images/claude8.png)
+
+Cliquez sur le lien pour vous connecter à l’agent marketing **.
+
+![Claude.ai](./images/claude8a.png)
+
+Cliquez sur **Ouvrir le lien**.
+
+![Claude.ai](./images/claude8b.png)
+
+Cliquez sur **Autoriser l’accès**.
+
+![Claude.ai](./images/claude8c.png)
+
+Une fois l’authentification terminée, vous devriez voir ceci. Revenez à Claude.
+
+![Claude.ai](./images/claude8d.png)
+
+Saisissez la commande suivante, puis cliquez sur **envoyer**.
+
+```javascript
+logged in
+```
+
+![Claude.ai](./images/claude8e.png)
+
+Vous êtes maintenant connecté. L’étape suivante consiste à définir le contexte. Saisissez l’invite suivante et cliquez sur **envoyer**.
+
+
+```javascript
+change context
+```
+
+![Claude.ai &amp; CJA](./images/claude9.png)
+
+Sélectionnez **Organisation**. Vous pouvez également répéter cette commande pour modifier ultérieurement le sandbox et la vue de données.
+
+![Claude.ai &amp; CJA](./images/claude10.png)
+
+Saisissez le nom de votre instance et cliquez sur **envoyer**.
+
+![Claude.ai &amp; CJA](./images/claude11.png)
+
+Sélectionnez **Toujours autoriser**.
+
+![Claude.ai &amp; CJA](./images/claude12.png)
+
+Vous devriez alors voir quelque chose comme ça.
+
+![Claude.ai &amp; CJA](./images/claude13.png)
+
+Si le sandbox n’est pas encore défini correctement, vous pouvez utiliser la commande suivante pour passer au sandbox que vous devez utiliser. Cliquez sur **envoyer**. Vous pouvez également utiliser la `change context` de commande ci-dessus, puis sélectionner **sandbox**
+
+```javascript
+change sandbox to --aepSandboxName--
+```
+
+![Claude.ai &amp; CJA](./images/claude14.png)
+
+Si la vue de données n’est pas encore définie correctement, vous pouvez utiliser la commande suivante pour passer au sandbox que vous devez utiliser (remplacez XXX dans la commande ci-dessous par le nom de votre vue de données). Cliquez sur **envoyer**. Vous pouvez également utiliser la `change context` de commande ci-dessus, puis sélectionner **vue de données**
+
+```javascript
+change dataview to XXX
+```
+
+![Claude.ai &amp; CJA](./images/claude15.png)
+
+Une fois que les **Organisation**, **Sandbox** et **Vue de données** sont correctement définis, vous pouvez commencer à poser des questions à Adobe Marketing Agent.
+
 ## Étapes suivantes
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: Adobe Marketing Agent pour Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -152,7 +152,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory over the last 4 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![](./images/copilot18.png)
@@ -164,7 +164,7 @@ Vous devriez alors voir ceci :
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 4 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
 ```
 
 ![](./images/copilot20.png)
@@ -198,7 +198,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 4 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![](./images/copilot24.png)
@@ -285,6 +285,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour Google Gemini Enterprise](./ex4.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

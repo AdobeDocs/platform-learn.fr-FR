@@ -4,7 +4,7 @@ description: Adobe Marketing Agent pour ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 5%
@@ -34,7 +34,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 >- une version payante du ChatGPT Enterprise d’OpenAI
 >- en utilisant le client web ChatGPT Enterprise
 
-Accédez à [&#128279;](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
+Accédez à [](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -155,7 +155,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory over the last 2 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![](./images/chatgpt18.png)
@@ -167,7 +167,7 @@ Vous devriez alors voir ceci :
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 2 months per week
+Show me purchases by mainCategory = Fiber over the last 7 months per week
 ```
 
 ![](./images/chatgpt20.png)
@@ -201,7 +201,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 2 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![](./images/chatgpt24.png)
@@ -302,8 +302,8 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Accéder à [&#128279;](./ex3.md){target="_blank"}
+Accéder à [](./ex3.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

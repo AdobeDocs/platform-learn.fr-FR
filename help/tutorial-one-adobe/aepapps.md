@@ -2,9 +2,9 @@
 title: Laboratoires techniques d’AEP et des applications
 description: Laboratoires techniques d’AEP et des applications
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ Dans cette vidéo, vous découvrirez l’architecture sous-jacente à la partie 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-Téléchargez l’image de présentation de l’architecture ci-dessous :
-
-![Insiders de la technologie &#x200B;](./assets/images/architecture_data.jpeg)
+Téléchargez l’image de présentation de l’architecture [ici](./assets/images/architecture_data.jpeg).
 
 ### Prise en main
 
@@ -129,8 +127,8 @@ Dans ce module, vous apprendrez à utiliser Adobe Experience Platform Query Serv
 
 Dans ce module, vous apprendrez à implémenter et utiliser Adobe Content Analytics.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.

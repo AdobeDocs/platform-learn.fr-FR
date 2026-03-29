@@ -3,16 +3,16 @@ title: Laboratoires technologiques d’IA dédiés aux agences
 description: Laboratoires technologiques d’IA dédiés aux agences
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
 # Présentation - Agentic AI Tech Labs
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Architecture de l’IA dédiée aux agences
 
@@ -20,9 +20,7 @@ Dans cette vidéo, vous découvrirez l’architecture sous-jacente à la partie 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
-Téléchargez l’image de présentation de l’architecture ci-dessous :
-
-![Insiders de la technologie &#x200B;](./assets/images/architecture_agentic.jpg)
+Téléchargez l’image de présentation de l’architecture [ici](./assets/images/architecture_agentic.jpg).
 
 ### Prise en main
 
@@ -64,8 +62,8 @@ En tant qu’analyste de données, développeur d’IA ou architecte d’applica
 
 Dans cet exercice, vous apprendrez à :
 
-- Connectez ChatGPT et/ou Claude.ai à **&#x200B;**&#x200B;et effectuez des tâches d&#39;analyse des données
-- Connectez ChatGPT et/ou Claude.ai à **&#x200B;**&#x200B;et effectuez des tâches d’analyse des données
+- Connectez ChatGPT et/ou Claude.ai à **** et effectuez des tâches d&#39;analyse des données
+- Connectez ChatGPT et/ou Claude.ai à **** et effectuez des tâches d’analyse des données
 
 [1.6 AEM et agents](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
@@ -87,8 +85,8 @@ Dans cet exercice, vous apprendrez à utiliser ces agents à l’aide de l’ass
 
 Dans ce module, vous utiliserez des outils de développement intelligents tels que Cursor pour développer une extension de votre environnement Adobe Commerce as a Cloud Service. L’objectif de cette extension est de transférer les événements de commande entrants vers un point d’entrée tiers. Le transfert d’événement dans Adobe Commerce as a Cloud Service repose sur Adobe I/O App Builder, Adobe I/O Events et Adobe I/O Runtime. La configuration de tous ces services sera assistée par Cursor.
 
-![Insiders de la technologie &#x200B;](./assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.

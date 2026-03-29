@@ -4,7 +4,7 @@ description: Prise en main d’Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## 1.1.1.1 Définir le contexte dans Agent Orchestrator
 
-Accédez à [&#128279;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Accédez à [](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Vérifiez que vous êtes dans l’organisation **Experience Platform International**.
 
@@ -58,7 +58,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory over the last 2 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![](./images/ao4.png)
@@ -70,7 +70,7 @@ Vous devriez alors voir ceci :
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 2 months per week
+Show me purchases by mainCategory = Fiber over the last 7 months per week
 ```
 
 ![](./images/ao6.png)
@@ -104,7 +104,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 2 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![](./images/ao8.png)
@@ -447,6 +447,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
