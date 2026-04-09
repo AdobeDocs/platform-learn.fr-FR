@@ -4,7 +4,7 @@ description: Mise en œuvre de Brand Concierge sur votre site web
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: f3a365b1453ee34d9649202bdb523624a469b623
+source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 1%
@@ -169,13 +169,13 @@ Cliquez sur **Valider les modifications**.
 
 ### Créer une page et lier un nouveau bloc personnalisé
 
-Accédez à [&#128279;](https://my.cloudmanager.adobe.com){target="_blank"}. Cliquez sur votre **Programme** pour l’ouvrir.
+Accédez à [](https://my.cloudmanager.adobe.com){target="_blank"}. Cliquez sur votre **Programme** pour l’ouvrir.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs6.png)
+![ AEMCS ](./images/aemcs6.png)
 
 Cliquez ensuite sur le **de 3 points...** dans l’onglet **Environnements** et cliquez sur **Afficher les détails**.
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs9.png)
+![ AEMCS ](./images/aemcs9.png)
 
 Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de votre environnement de **création**.
 
@@ -185,55 +185,55 @@ Vous verrez ensuite les détails de votre environnement. Cliquez sur l’URL de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
-![&#x200B; AEMCS &#x200B;](./images/aemcs10.png)
+![ AEMCS ](./images/aemcs10.png)
 
 Vous devriez alors voir votre environnement de création AEM. Accédez à **Sites**.
 
-![&#x200B; AEMCS &#x200B;](./images/block21.png)
+![ AEMCS ](./images/block21.png)
 
 Accédez à **CitiSignal**. Cliquez sur **Créer** puis sélectionnez **Page**.
 
-![&#x200B; AEMCS &#x200B;](./images/block23.png)
+![ AEMCS ](./images/block23.png)
 
 Sélectionnez **Page** et cliquez sur **Suivant**.
 
-![&#x200B; AEMCS &#x200B;](./images/block24.png)
+![ AEMCS ](./images/block24.png)
 
 Saisissez les valeurs suivantes :
 
-- Titre : **&#x200B;**
+- Titre : ****
 - Nom : **brandconcierge**
-- Titre De La Page : **&#x200B;**
+- Titre De La Page : ****
 
 Cliquez sur **Créer**.
 
-![&#x200B; AEMCS &#x200B;](./images/block25.png)
+![ AEMCS ](./images/block25.png)
 
 Sélectionnez **Ouvrir**.
 
-![&#x200B; AEMCS &#x200B;](./images/block22.png)
+![ AEMCS ](./images/block22.png)
 
 Vous devriez alors voir ceci.
 
-![&#x200B; AEMCS &#x200B;](./images/block26.png)
+![ AEMCS ](./images/block26.png)
 
 Cliquez dans la zone vierge pour sélectionner le composant **section**. Cliquez ensuite sur l’icône plus **+** dans le menu de droite.
 
-![&#x200B; AEMCS &#x200B;](./images/block27.png)
+![ AEMCS ](./images/block27.png)
 
 Votre bloc personnalisé doit alors s’afficher dans la liste des blocs disponibles. Cliquez pour le sélectionner.
 
-![&#x200B; AEMCS &#x200B;](./images/block28.png)
+![ AEMCS ](./images/block28.png)
 
 Vous devriez alors voir un bloc vide ajouté à cette page. Ce bloc sera chargé dynamiquement à l’aide des bibliothèques JavaScript que vous ajouterez à l’étape suivante.
 
 Cliquez sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/block29.png)
+![ AEMCS ](./images/block29.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/block30.png)
+![ AEMCS ](./images/block30.png)
 
 Votre nouvelle page est maintenant publiée et peut être ajoutée à l’en-tête de navigation à l’étape suivante.
 
@@ -241,31 +241,31 @@ Votre nouvelle page est maintenant publiée et peut être ajoutée à l’en-tê
 
 Dans votre présentation AEM Sites, accédez à **CitiSignal** et cochez la case du fichier **Header/nav**. Cliquez sur **Modifier**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav0.png)
+![ AEMCS ](./images/nav0.png)
 
 Sélectionnez le champ **Texte** dans l’écran d’aperçu, puis cliquez sur le champ **Texte** sur le côté droit de l’écran pour le modifier.
 
-![&#x200B; AEMCS &#x200B;](./images/nav0a.png)
+![ AEMCS ](./images/nav0a.png)
 
-Créez une nouvelle option de menu dans le menu de navigation avec le `Brand Concierge` texte. Sélectionnez ensuite le texte **&#x200B;**&#x200B;puis cliquez sur l&#39;icône **lien**.
+Créez une nouvelle option de menu dans le menu de navigation avec le `Brand Concierge` texte. Sélectionnez ensuite le texte **** puis cliquez sur l&#39;icône **lien**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav1.png)
+![ AEMCS ](./images/nav1.png)
 
 Saisissez ceci pour le champ **Chemin ou URL** `/content/CitiSignal/brandconcierge.html` et saisissez `Brand Concierge` pour le champ **Titre**. Cliquez sur **Enregistrer**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav3.png)
+![ AEMCS ](./images/nav3.png)
 
 Tu devrais avoir ça. Cliquez sur **Terminé**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav4.png)
+![ AEMCS ](./images/nav4.png)
 
 Tu devrais avoir ça. Cliquez sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav4a.png)
+![ AEMCS ](./images/nav4a.png)
 
 Cliquez de nouveau sur **Publier**.
 
-![&#x200B; AEMCS &#x200B;](./images/nav5.png)
+![ AEMCS ](./images/nav5.png)
 
 Votre nouvelle page est maintenant ajoutée au menu.
 
@@ -405,7 +405,7 @@ Dans cet exemple, l’URL complète devient :
 
 Cela peut prendre un certain temps avant que toutes les ressources ne s’affichent correctement, car elles doivent d’abord être publiées.
 
-Vous devriez alors voir ceci. Cliquez sur **&#x200B;**.
+Vous devriez alors voir ceci. Cliquez sur ****.
 
 ![](./images/aem13.png)
 
@@ -415,6 +415,6 @@ Vous devriez alors voir ce Brand Concierge où vous pouvez saisir votre invite.
 
 ## Étapes suivantes
 
-Revenir à [&#128279;](./brandconcierge.md){target="_blank"}
+Revenir à [](./brandconcierge.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

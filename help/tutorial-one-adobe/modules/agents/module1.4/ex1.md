@@ -4,9 +4,9 @@ description: Prise en main de Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: fcf99e48868fd0b189291a7215a2871387ea7532
+source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1115'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Lors de la configuration de Brand Concierge, vous utiliserez principalement les 
 
 Pour commencer à créer votre propre instance Brand Concierge, procédez comme suit.
 
-Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Ouvrez **&#x200B;**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
 
 ![](./images/bc1.png)
 
@@ -186,7 +186,7 @@ Brand Concierge utilise Adobe Experience Platform pour stocker les données d’
 
 ### Train de données
 
-Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Ouvrez **&#x200B;**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
 
 ![](./images/aep1.png)
 
@@ -198,7 +198,7 @@ Cliquez sur **Nouveau flux de données**.
 
 ![](./images/aep3.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
@@ -234,7 +234,7 @@ Accédez à **Style de la gestion de la configuration**. Cliquez sur **Initialis
 
 ![](./images/admincontrols7.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
+Saisissez le **** Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
 
 ![](./images/admincontrols8.png)
 
@@ -244,7 +244,95 @@ Vous devriez alors voir ceci.
 
 ## 1.4.1.5 le manifeste Agent Orchestrator
 
-Accédez à **Mettre à jour le manifeste**. Vous devriez alors voir ceci. Passez en revue les informations de chaque champ et apportez des modifications si nécessaire. Après avoir apporté des modifications, cliquez sur **Mettre à jour le manifeste.
+Accédez à **Mettre à jour le manifeste**. Vous devriez alors voir ceci. Passez en revue les informations de chaque champ et apportez des modifications si nécessaire.
+
+Ajoutez le texte suivant dans le champ **Invite de réponse aux questions multimodales**, à la fin du texte existant. Ne supprimez pas le texte qui s’y trouve, ajoutez simplement le texte ci-dessous en plus de ce qui s’y trouve déjà.
+
+```
+# Product Catalog (Fallback Reference)
+
+Use this catalog when <Documents> doesn't return relevant results:
+
+## CONNECTIVITY
+**CitiSignal Fiber Max**
+- Description: High-speed fiber internet with blazing-fast speeds, seamless streaming, ultra-responsive gaming, crystal-clear video calls. No data caps, no throttling. Future-ready for smart homes.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:cdb9e163-f9f5-4338-9d62-9807b61c082f/as/CitiSignal-Fiber-Max.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/citisignal-fiber-max/CitiSignal-Fiber-Max
+
+## ENTERTAINMENT
+**Disney Plus**
+- Description: Streaming home of Disney, Pixar, Marvel, Star Wars, National Geographic. Unlimited entertainment, new releases, original series, classic movies.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:b3bbe91a-e307-43bd-845f-1c77e7ba28df/as/Disney.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/disney/Disney
+
+**Netflix + HBO Max**
+- Description: Unlimited TV shows and movies. Watch as much as you want, whenever you want.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:883be2a0-6c42-4508-b9ac-1e3a33235081/as/Netflix-HBO-Max.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/netflix-hbo-max/Netflix-HBO-Max
+
+**YouTube Premium**
+- Description: Ad-free YouTube, YouTube Music, YouTube Kids. Watch offline, in background, on the go.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:ac2a8c66-8740-4fce-bd3a-8106db9e556f/as/YouTube-Premium.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/youtube-premium/YouTube-Premium
+
+**Apple One**
+- Description: Apple Music (100M+ songs), Apple TV+, Apple Arcade, iCloud+. Complete Apple ecosystem bundle.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:94126f30-931a-447e-9cef-f58c60dbb17c/as/Apple-One.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/apple-one/Apple-One
+
+## DEVICES
+**iPhone Air Sky Blue**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:0c4b1537-8268-4507-98e6-bbb03faa3ad1/as/iPhone-Air.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIw
+
+**iPhone Air Cloud White**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:30447a9c-c037-4df3-ae88-4127b9ec325e/as/iPhone-Air.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzI
+
+**iPhone Air Space Black**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIz
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIz
+
+**iPhone Air Light Gold**
+- Description: Slim iPhone with A19 Pro chip, 48MP camera, 6.5\" display, Apple Intelligence, all-day battery. Titanium frame, Ceramic Shield 2.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:ffa7b752-87ab-427f-a631-382fc67e7530/as/iPhone-Air.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/iphone-air/iPhone-Air?optionsUIDs=Y29uZmlndXJhYmxlLzkzLzIx
+
+**Apple Watch Ultra 3-Black**
+- Description: Rugged smartwatch with 42hr battery, satellite communication, titanium case, dual-frequency GPS, hypertension notifications.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:d33f4f49-1239-45b8-a6e6-b97f12177e06/as/Apple-Watch-Ultra-3.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/apple-watch-ultra-3/Apple-Watch-Ultra-3?optionsUIDs=Y29uZmlndXJhYmxlLzE4MS8yNA%3D%3D
+
+**Apple Watch Ultra 3-Natural**
+- Description: Rugged smartwatch with 42hr battery, satellite communication, titanium case, dual-frequency GPS, hypertension notifications.
+- Image: https://delivery-p168681-e1803036.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8f107329-66f1-43fd-b505-b1c16892379f/as/Apple-Watch-Ultra-3.webp
+- URL: https://main--citisignal-aem-accs--woutervangeluwe.aem.page/products/apple-watch-ultra-3/Apple-Watch-Ultra-3?optionsUIDs=Y29uZmlndXJhYmxlLzE4MS8yNQ%3D%3D
+
+# Sales Strategy
+
+## Primary Focus: Connectivity Products
+- When users ask about internet, connectivity, streaming, or home services, recommend **CitiSignal Fiber Max**.
+- Highlight: blazing-fast fiber speeds, seamless streaming, no data caps, no throttling, future-ready.
+
+## Entertainment Upselling Strategy
+- After discussing connectivity, PROACTIVELY suggest entertainment products.
+- Use natural transitions like:
+  - \"With speeds like these, you'll want entertainment that keeps up...\"
+  - \"Many of our customers enhance their experience with...\"
+  - \"To get the most out of your connection...\"
+- Match recommendations to user context:
+  - Families with kids → **Disney Plus**
+  - Movie/TV enthusiasts → **Netflix + HBO Max**
+  - Ad-free YouTube fans → **YouTube Premium**
+  - Apple ecosystem users → **Apple One**
+```
+
+![](./images/admincontrols5a.png)
+
+Après avoir apporté des modifications, faites défiler la page vers le haut et cliquez sur **Mettre à jour le manifeste**.
 
 ![](./images/admincontrols5.png)
 
@@ -290,8 +378,8 @@ Votre instance de Brand Concierge est maintenant prête à être implémentée s
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Implémentation de Brand Concierge sur votre site web &#x200B;](./ex2.md){target="_blank"}
+Accédez à [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
 
-Revenir à [&#128279;](./brandconcierge.md){target="_blank"}
+Revenir à [](./brandconcierge.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
