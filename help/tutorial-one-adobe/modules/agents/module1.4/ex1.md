@@ -62,7 +62,7 @@ Lors de la configuration de Brand Concierge, vous utiliserez principalement les 
 
 Pour commencer à créer votre propre instance Brand Concierge, procédez comme suit.
 
-Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
+Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Ouvrez **&#x200B;**.
 
 ![](./images/bc1.png)
 
@@ -186,7 +186,7 @@ Brand Concierge utilise Adobe Experience Platform pour stocker les données d’
 
 ### Train de données
 
-Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
+Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Ouvrez **&#x200B;**.
 
 ![](./images/aep1.png)
 
@@ -198,7 +198,7 @@ Cliquez sur **Nouveau flux de données**.
 
 ![](./images/aep3.png)
 
-Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
@@ -234,7 +234,7 @@ Accédez à **Style de la gestion de la configuration**. Cliquez sur **Initialis
 
 ![](./images/admincontrols7.png)
 
-Saisissez le **** Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
+Saisissez le **&#x200B;**&#x200B;Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
 
 ![](./images/admincontrols8.png)
 
@@ -378,8 +378,8 @@ Votre instance de Brand Concierge est maintenant prête à être implémentée s
 
 ## Étapes suivantes
 
-Accédez à [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
+Accédez à [&#x200B; Implémentation de Brand Concierge sur votre site web &#x200B;](./ex2.md){target="_blank"}
 
-Revenir à [](./brandconcierge.md){target="_blank"}
+Revenir à [&#128279;](./brandconcierge.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
