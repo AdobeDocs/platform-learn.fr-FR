@@ -93,7 +93,7 @@ ao --help
 
 ![AO](./images/aov2lab8.png)
 
-Agent Orchestrator est maintenant installé. Exécutez la commande suivante pour démarrer ****.
+Agent Orchestrator est maintenant installé. Exécutez la commande suivante pour démarrer **&#x200B;**.
 
 ```
 ao web
@@ -506,6 +506,6 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Revenir à [](./agentorchestrator.md){target="_blank"}
+Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
