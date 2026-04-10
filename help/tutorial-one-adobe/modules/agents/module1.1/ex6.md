@@ -1,21 +1,22 @@
 ---
-title: Agent Orchestrator v2
-description: Agent Orchestrator v2
+title: '---'
+description: '---'
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
+exl-id: ce845231-17d1-40ab-96f7-bd386753e625
+source-git-commit: 5f30a0e941c8260af954ee2b1b289cc8a863b5bb
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1411'
 ht-degree: 3%
 
 ---
 
-# 1.1.6 Agent Orchestrator v2
+# 1.1.6 —
 
 [!BADGE Beta]
 
 +++Détails Beta
-En utilisant le Beta d’Agent Orchestrator v2, vous reconnaissez que le Beta est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
+En utilisant le Beta d’Agent Orchestrator, vous reconnaissez que le Beta est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
 
 +++
 
@@ -25,10 +26,10 @@ Pour suivre les étapes de cet atelier, comme indiqué ci-dessous, vous devez di
 
 - Accès à Real-Time CDP, Journey Optimizer et Customer Journey Analytics
 - Accès à l’assistant d’IA dans Adobe Experience Cloud
-- Accès à AEP Agent Orchestrator v2
+- Accès à AEP Agent Orchestrator
 - Node.js 18+ doit être installé sur votre système
 
-## Configuration 1.1.6.1 d’Agent Orchestrator v2
+## Configuration 1.1.6.1 d’Agent Orchestrator
 
 ### IAM
 
@@ -42,11 +43,11 @@ Ajoutez-vous au groupe ci-dessous à l’aide de l’IAM pour accéder aux infor
 GRP-XXX
 ```
 
-### Installation d’Agent Orchestrator v2
+### Installation d’Agent Orchestrator
 
 Ouvrez une nouvelle fenêtre de terminal sur votre ordinateur.
 
-![AOV2](./images/aov2lab1.png)
+![AO](./images/aov2lab1.png)
 
 >[!NOTE]
 >
@@ -58,23 +59,23 @@ Exécutez la commande suivante.
 npm login --registry=https://XXX/ --auth-type=web
 ```
 
-![AOV2](./images/aov2lab2.png)
+![AO](./images/aov2lab2.png)
 
 Vous devriez alors voir ceci. Appuyez sur **Entrée**.
 
-![AOV2](./images/aov2lab3.png)
+![AO](./images/aov2lab3.png)
 
 Sélectionnez **SSO SAML**.
 
-![AOV2](./images/aov2lab4.png)
+![AO](./images/aov2lab4.png)
 
 Cliquez sur **Oui**.
 
-![AOV2](./images/aov2lab5.png)
+![AO](./images/aov2lab5.png)
 
 Vous devriez alors voir ceci.
 
-![AOV2](./images/aov2lab6.png)
+![AO](./images/aov2lab6.png)
 
 Exécutez la commande suivante.
 
@@ -82,7 +83,7 @@ Exécutez la commande suivante.
 npm install -g ao --no-fund --registry=https://XXX/
 ```
 
-![AOV2](./images/aov2lab7.png)
+![AO](./images/aov2lab7.png)
 
 Vous devriez alors voir ceci. Exécutez la commande suivante :
 
@@ -90,47 +91,47 @@ Vous devriez alors voir ceci. Exécutez la commande suivante :
 ao --help
 ```
 
-![AOV2](./images/aov2lab8.png)
+![AO](./images/aov2lab8.png)
 
-Agent Orchestrator v2 est maintenant installé. Exécutez la commande suivante pour démarrer **Agent Orchestrator v2**.
+Agent Orchestrator est maintenant installé. Exécutez la commande suivante pour démarrer ****.
 
 ```
 ao web
 ```
 
-Vous devriez alors voir ceci. Appuyez sur **Entrée** pour ouvrir l’interface utilisateur web d’Agent Orchestrator v2.
+Vous devriez alors voir ceci. Appuyez sur **Entrée** pour ouvrir l’interface utilisateur web d’Agent Orchestrator.
 
-![AOV2](./images/aov2lab9.png)
+![AO](./images/aov2lab9.png)
 
-## 1.1.6.2 Configurer Agent Orchestrator v2
+## 1.1.6.2 Configurer Agent Orchestrator
 
 Cliquez sur **Utiliser des LLM AO**.
 
-![AOV2](./images/aov2lab11.png)
+![AO](./images/aov2lab11.png)
 
 Cliquez sur **Connexion à la production**.
 
-![AOV2](./images/aov2lab12.png)
+![AO](./images/aov2lab12.png)
 
 Cliquez sur l’icône **calques**.
 
-![AOV2](./images/aov2lab13.png)
+![AO](./images/aov2lab13.png)
 
 Sélectionnez **Assistant AEP AI (Exécution de code - BashKit)**.
 
-![AOV2](./images/aov2lab14.png)
+![AO](./images/aov2lab14.png)
 
 Cliquez sur l’icône **profil**, puis sélectionnez **Paramètres**.
 
-![AOV2](./images/aov2lab15.png)
+![AO](./images/aov2lab15.png)
 
 Accédez à **Plugins** et cliquez sur **cja**.
 
-![AOV2](./images/aov2lab16.png)
+![AO](./images/aov2lab16.png)
 
 Cliquez sur **Installer**.
 
-![AOV2](./images/aov2lab17.png)
+![AO](./images/aov2lab17.png)
 
 ## 1.1.6.3 Définir le contexte
 
@@ -144,7 +145,7 @@ Saisissez la commande suivante, puis cliquez sur **Envoyer**.
 list dataviews
 ```
 
-![AOV2](./images/aov2lab18.png)
+![AO](./images/aov2lab18.png)
 
 Saisissez la commande suivante, puis cliquez sur **Envoyer**.
 
@@ -152,11 +153,11 @@ Saisissez la commande suivante, puis cliquez sur **Envoyer**.
 switch to dataview Accelerate 2026 B2C
 ```
 
-![AOV2](./images/aov2lab20.png)
+![AO](./images/aov2lab20.png)
 
 Vous devriez alors voir ceci.
 
-![AOV2](./images/aov2lab19.png)
+![AO](./images/aov2lab19.png)
 
 ## 1.1.6.4 Commencez par les tendances d’achat globales pour ancrer le contexte et zoomer sur la fibre
 
@@ -505,6 +506,6 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
