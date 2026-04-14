@@ -20,7 +20,7 @@ ht-degree: 28%
 
 Découvrez comment les Playbooks de cas d’utilisation peuvent aider la clientèle de Real-time Customer Data Platform et Journey Optimizer à obtenir un délai de rentabilité plus rapide. Use Case Playbooks est un catalogue de dizaines de modèles couvrant plusieurs secteurs d’activité et objectifs marketing. Les playbooks génèrent des ressources techniques telles que des audiences, des parcours et des schémas, qui peuvent ensuite être personnalisés et publiés sur d’autres sandbox. Pour plus d’informations, voir la [documentation sur les playbooks de cas d’utilisation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441817/?captions=fre_fr&learn=on&enablevpops)
 
 ## Commencer
 
@@ -38,7 +38,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Configuration d’un sandbox de playbook" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Configuration d’un sandbox de playbook"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449828/?captions=fre_fr&format=jpeg&nocache=1739379898120" alt="Configuration d’un sandbox de playbook"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
