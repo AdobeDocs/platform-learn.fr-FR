@@ -330,14 +330,14 @@ Nous allons maintenant créer un schéma supplémentaire pour les données du si
 | Groupe de champs | ExperienceEvent AEP Web SDK |
 | Groupe de champs | Événement d’expérience client |
 
-Sélectionnez le groupe de champs **[!UICONTROL Événement d’expérience client]**. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans les [!UICONTROL Détails ]. En effet[!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard également disponibles séparément. Le groupe de champs [!UICONTROL AEP Web SDK ExperienceEvent] contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent parfaitement.
+Sélectionnez le groupe de champs **[!UICONTROL Événement d’expérience client]**. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans les [!UICONTROL Détails &#x200B;]. En effet[!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard également disponibles séparément. Le groupe de champs [!UICONTROL AEP Web SDK ExperienceEvent] contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent parfaitement.
 
 Notez que nous n’avons pas ajouté le `Luma Identity ExperienceEvent field group` à ce schéma. Cela est dû au fait que le SDK web a une manière différente de collecter les identités. Si vous sélectionnez la classe **[!UICONTROL XDM ExperienceEvent]** dans la section **[!UICONTROL Composition]** de l’éditeur de schéma, vous remarquerez que l’un des champs qu’il ajoute par défaut est appelé **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] est utilisé par diverses applications Adobe pour établir une liaison à Platform. Vous découvrirez comment les identités sont envoyées à Platform via identityMap dans la leçon d’ingestion en flux continu.
 
 
 ## Créer un schéma de catalogue de produits
 
-En utilisant les groupes de champs [!UICONTROL Détails du ] et [!UICONTROL Événement d’expérience client], Luma signale certains détails des événements liés au produit via le type de données standard productListItems. Mais ils disposent également de champs de détails de produit supplémentaires qu’ils souhaitent envoyer à Platform. Au lieu de capturer tous ces champs dans leurs systèmes de point de vente et d’e-commerce, Luma préfère ingérer ces champs directement à partir de son système de catalogue de produits. Une « relation de schéma » vous permet de définir une relation entre deux schémas à des fins de classification ou de recherches. Luma utilisera une relation pour classer les détails de son produit. Nous allons commencer le processus maintenant et le terminer à la fin de la prochaine leçon.
+En utilisant les groupes de champs [!UICONTROL Détails du &#x200B;] et [!UICONTROL Événement d’expérience client], Luma signale certains détails des événements liés au produit via le type de données standard productListItems. Mais ils disposent également de champs de détails de produit supplémentaires qu’ils souhaitent envoyer à Platform. Au lieu de capturer tous ces champs dans leurs systèmes de point de vente et d’e-commerce, Luma préfère ingérer ces champs directement à partir de son système de catalogue de produits. Une « relation de schéma » vous permet de définir une relation entre deux schémas à des fins de classification ou de recherches. Luma utilisera une relation pour classer les détails de son produit. Nous allons commencer le processus maintenant et le terminer à la fin de la prochaine leçon.
 
 >[!NOTE]
 >
@@ -354,7 +354,7 @@ Tout d’abord, nous devons créer un schéma pour le catalogue de produits de L
 1. Sélectionnez le bouton **[!UICONTROL Créer]**.
    ![Créer une classe](assets/schemas-productClass.png)
 1. La **classe de catalogue de produits Luma** que vous avez créée apparaît dans le tableau Classes ci-dessous. Assurez-vous que la classe est sélectionnée, puis sélectionnez **[!UICONTROL Suivant]**.
-   ![ Nouvelle classe ajoutée ](assets/schemas-productClassSelected.png)
+   ![&#x200B; Nouvelle classe ajoutée &#x200B;](assets/schemas-productClassSelected.png)
 1. Nommez le schéma `Luma Product Catalog Schema`.
 1. Créez un nouveau [!UICONTROL groupe de champs] appelé `Luma Product Catalog field group` avec les champs suivants :
    1. productName : nom du produit : chaîne

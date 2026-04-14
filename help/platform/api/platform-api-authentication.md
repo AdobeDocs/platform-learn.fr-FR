@@ -22,15 +22,15 @@ Découvrez comment commencer à utiliser les API Adobe Experience Platform. La p
 
 [[!DNL Postman]](https://www.postman.com/) est une application tierce qui permet aux développeurs d’interagir rapidement et facilement avec les API de Adobe Experience Platform.
 
-La fonctionnalité [](https://developer.adobe.com/console/home) **Détails d’exportation pour Postman** permet d’exporter facilement les détails du compte requis pour accéder à une API Experience Platform et interagir avec elle dans un seul fichier d’environnement Postman, ce qui évite d’avoir à copier-coller des valeurs de Adobe Developer Console vers Postman.
+La fonctionnalité [&#128279;](https://developer.adobe.com/console/home) **Détails d’exportation pour Postman** permet d’exporter facilement les détails du compte requis pour accéder à une API Experience Platform et interagir avec elle dans un seul fichier d’environnement Postman, ce qui évite d’avoir à copier-coller des valeurs de Adobe Developer Console vers Postman.
 
 >[!IMPORTANT]
 >
->Pour accéder au [](https://developer.adobe.com/console/home), vous devez être soit un [administrateur système](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) soit un [développeur](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) dans le [Adobe Admin Console](https://adminconsole.adobe.com).
+>Pour accéder au [&#128279;](https://developer.adobe.com/console/home), vous devez être soit un [administrateur système](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) soit un [développeur](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) dans le [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Après avoir créé vos informations d’identification API, un administrateur système doit les associer à un rôle dans Experience Platform.
 >
->Pour obtenir des instructions détaillées, consultez le tutoriel [Ajout de développeurs et octroi d’autorisations aux informations d’identification d’API ](../admin/add-developers.md).
+>Pour obtenir des instructions détaillées, consultez le tutoriel [Ajout de développeurs et octroi d’autorisations aux informations d’identification d’API &#x200B;](../admin/add-developers.md).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
