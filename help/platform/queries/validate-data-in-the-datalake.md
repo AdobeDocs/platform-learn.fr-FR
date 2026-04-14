@@ -8,7 +8,7 @@ last-substantial-update: 2023-07-26T00:00:00Z
 jira: KT-11948
 hide: true
 exl-id: c6eb04c7-4f0d-4547-bc43-436278e1770f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 1%
@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Découvrez comment vérifier si les données ont bien été ingérées dans le lac de données à l’aide de Adobe Experience Platform Query Service. Pour consulter la documentation détaillée du produit, voir le [Guide de l’interface utilisateur de Query Editor](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3445679?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)

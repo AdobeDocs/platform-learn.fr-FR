@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 22%
@@ -18,13 +18,14 @@ ht-degree: 22%
 
 Découvrez comment prendre le contrôle total de vos données, depuis le moment où elles sont collectées au niveau des sources de données jusqu’au moment où elles sont syndiquées vers des destinations en dehors de Adobe Experience Platform. La gouvernance des données est un cadre facilement extensible qui est profondément ancré dans les workflows d’utilisation des données. Le cadre repose sur trois aspects clés : les libellés, les politiques et l’application. Pour plus d’informations, consultez la [documentation sur la gouvernance des données](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/33154?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 ## Démonstration
 
 Consultez et une démonstration de bout en bout de la fonctionnalité de gouvernance des données dans Adobe Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-data-governance.md
 -->
@@ -35,7 +36,7 @@ Consultez et une démonstration de bout en bout de la fonctionnalité de gouvern
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Démonstration complète de la gouvernance des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41319?captions=fre_fr&format=jpeg&nocache=1740179989077" alt="Démonstration complète de la gouvernance des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Démonstration complète de la gouvernance des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +61,8 @@ Consultez et une démonstration de bout en bout de la fonctionnalité de gouvern
 
 Découvrez comment les libellés, les politiques et les actions marketing se combinent pour automatiser la gouvernance des données dans Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * classify-data-using-labels.md
 * create-data-usage-policies.md{description=Learn how to create and manage data usage policies.}
@@ -73,7 +75,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Classer les données à l’aide de libellés" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422795?captions=fre_fr&format=jpeg&nocache=1740179989358" alt="Classer les données à l’aide de libellés"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Classer les données à l’aide de libellés"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +98,7 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Créer des politiques d’utilisation des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37130?captions=fre_fr&format=jpeg&nocache=1740179989347" alt="Créer des politiques d’utilisation des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Créer des politiques d’utilisation des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -144,7 +146,8 @@ Découvrez comment les libellés, les politiques et les actions marketing se com
 
 Découvrez comment Experience Platform respecte le consentement du client.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * integrate-with-iab-transparency-and-consent-framework-2.md{title=Integrate IAB's Transparency and Consent Framework 2.0}{description=See a demo of how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties.}
 * enforce-consent.md{description=Learn how to enforce consent in Adobe Experience Platform.}
@@ -156,7 +159,7 @@ Découvrez comment Experience Platform respecte le consentement du client.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Intégrer le cadre de transparence et de consentement 2.0 du CCI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326476?captions=fre_fr&format=jpeg&nocache=1740179989597" alt="Intégrer le cadre de transparence et de consentement 2.0 du CCI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Intégrer le cadre de transparence et de consentement 2.0 du CCI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +182,7 @@ Découvrez comment Experience Platform respecte le consentement du client.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Appliquer le consentement" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412099?captions=fre_fr&format=jpeg&nocache=1740179989584" alt="Appliquer le consentement"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Appliquer le consentement"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

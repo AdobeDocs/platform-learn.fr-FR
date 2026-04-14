@@ -5,10 +5,11 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Data Hygiene
 role: Developer
 level: Intermediate
-source-git-commit: 9c15708f7300672caa963c0635179dd2855e5fed
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -36,7 +37,8 @@ holistic fashion.
 
 La fonctionnalité de préparation des données vous permet d’ingérer uniquement les champs dont vous avez besoin à partir d’une source de données.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -47,7 +49,7 @@ La fonctionnalité de préparation des données vous permet d’ingérer uniquem
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Préparation des données pour l’hygiène des données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449277/?format=jpeg&nocache=1740251397387&captions=fre_fr" alt="Préparation des données pour l’hygiène des données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Préparation des données pour l’hygiène des données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +62,7 @@ La fonctionnalité de préparation des données vous permet d’ingérer uniquem
                     <p class="is-size-6">Découvrez comment prendre en charge les principes de minimisation des données avec la fonction de préparation des données d’Experience Platform. Découvrez comment ingérer uniquement les champs dont vous avez besoin et les données de hachage lors de l’ingestion.</p>
                 </div>
                 <a href="data-prep-for-data-hygiene.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -71,7 +73,8 @@ La fonctionnalité de préparation des données vous permet d’ingérer uniquem
 ## Suppression de données dans le système
 
 Il existe de nombreuses fonctionnalités pour vous aider à supprimer les données du système. Vous pouvez supprimer des jeux de données entiers à la demande ou selon un planning, faire expirer des enregistrements et des profils avec des paramètres de durée de vie, supprimer des profils individuels et respecter les demandes d’accès à des informations personnelles.
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -99,7 +102,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
                     <p class="is-size-6">Découvrez comment supprimer des jeux de données et des lots dans Adobe Experience Platform.</p>
                 </div>
                 <a href="delete-datasets-and-batches.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -109,7 +112,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Planifier des suppressions de jeux de données" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430312?format=jpeg&nocache=1740251397716&captions=fre_fr" alt="Planifier des suppressions de jeux de données"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Planifier des suppressions de jeux de données"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +125,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
                     <p class="is-size-6">Découvrez comment supprimer des jeux de données à l’aide de la fonctionnalité d’hygiène des données de Adobe Experience Platform.</p>
                 </div>
                 <a href="../data-lifecycle/expire-datasets.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -132,7 +135,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Expirations de profils pseudonymes et d’événements d’expérience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449854?format=jpeg&nocache=1740251397705&captions=fre_fr" alt="Expirations de profils pseudonymes et d’événements d’expérience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Expirations de profils pseudonymes et d’événements d’expérience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -145,7 +148,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
                     <p class="is-size-6">Découvrez comment configurer des paramètres d’expiration pour les profils pseudonymes et les événements dans Experience Platform et quels en sont les avantages.</p>
                 </div>
                 <a href="pseudonymous-profile-and-event-expiration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -168,7 +171,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
                     <p class="is-size-6">Découvrez comment supprimer des données du magasin de profils à l’aide de l’API Real-Time Customer Profile. En utilisant l’API Profile, vous pouvez supprimer des données de la banque de profils sans affecter le lac de données ou le graphique d’identité.</p>
                 </div>
                 <a href="../profiles/delete-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -191,7 +194,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
                     <p class="is-size-6">Découvrez les réglementations de confidentialité et leurs effets sur les opérations de données. Découvrez également comment Privacy Service gère ces défis.</p>
                 </div>
                 <a href="../privacy/introduction-to-privacy-services.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>
@@ -205,7 +208,8 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
 
 ## Ajustement des données dans le système
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->
@@ -216,7 +220,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443443/?format=jpeg&nocache=1740251398874&captions=fre_fr" alt="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -229,7 +233,7 @@ Il existe de nombreuses fonctionnalités pour vous aider à supprimer les donné
                     <p class="is-size-6">Découvrez comment mettre à jour un attribut spécifique d’un profil à l’aide de la fonctionnalité « upsert » de Adobe Experience Platform.</p>
                 </div>
                 <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
         </div>

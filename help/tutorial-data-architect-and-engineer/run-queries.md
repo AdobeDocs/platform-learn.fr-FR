@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -25,13 +25,14 @@ Adobe Experience Platform Query Service vous aide à donner du sens à vos donn�
 **Architectes de données** et **Ingénieurs de données** devront utiliser Query Service en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur Query Service :
->[!VIDEO](https://video.tv.adobe.com/v/33589?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Autorisations requises
 
 Dans la leçon [Configurer les autorisations](configure-permissions.md), vous allez configurer tous les contrôles d’accès requis pour suivre cette leçon.
 
-<!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
+<!-- 
+Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -72,13 +73,15 @@ Commençons par quelques requêtes simples :
    ![Enregistrement de la requête](assets/queries-loyaltySelect-save.png)
 
 
-<!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
+<!--
+SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
 
 
 SELECT _techmarketingdemos.systemIdentifier.loyaltyId, COUNT(_techmarketingdemos.systemIdentifier.loyaltyId)
 FROM luma_loyalty_dataset 
 GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
-HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
+HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;
+-->
 
 ## Exercices supplémentaires
 

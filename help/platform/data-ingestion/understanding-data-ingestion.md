@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 20%
@@ -18,11 +18,12 @@ ht-degree: 20%
 
 Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous permettent de rassembler vos données dans une seule plateforme ouverte et évolutive dans le but de gérer les profils clients en temps réel. Pour plus d’informations, consultez la [documentation sur l’ingestion des données](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/346831?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 ## Méthodes d’ingestion de données
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/overview.md
 * ../../data-collection/web-sdk/overview.md
@@ -35,7 +36,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="Présentation des sources" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33166?captions=fre_fr&format=jpeg&nocache=1740414616559" alt="Présentation des sources"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="Présentation des sources"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +59,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Présentation de Adobe Experience Platform Web SDK et Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37259?captions=fre_fr&format=jpeg&nocache=1740414616573" alt="Présentation de Adobe Experience Platform Web SDK et Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Présentation de Adobe Experience Platform Web SDK et Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +82,8 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
 
 ## Vitesses d’ingestion des données
 
-<!-- CARDS
+<!--
+CARDS
 
 * batch-ingestion-overview.md
 * understanding-streaming-ingestion.md
@@ -95,7 +97,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="Aperçu de l’ingestion des données par lots" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345661?captions=fre_fr&format=jpeg&nocache=1740414616813" alt="Aperçu de l’ingestion des données par lots"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="Aperçu de l’ingestion des données par lots"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +120,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="Présentation de l’ingestion des données en flux continu" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31636?captions=fre_fr&format=jpeg&nocache=1740414616825" alt="Présentation de l’ingestion des données en flux continu"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="Présentation de l’ingestion des données en flux continu"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +143,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Présentation de Adobe Experience Platform Web SDK et Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37259?captions=fre_fr&format=jpeg&nocache=1740414616799" alt="Présentation de Adobe Experience Platform Web SDK et Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Présentation de Adobe Experience Platform Web SDK et Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,7 +166,8 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
 
 ## Ingestion de données à partir de sources tierces courantes
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-crm.md
 * ../sources/ingest-data-from-cloud-storage.md
@@ -178,7 +181,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="Ingestion de données à l’aide des connecteurs CRM Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33160?captions=fre_fr&format=jpeg&nocache=1740414616941" alt="Ingestion de données à l’aide des connecteurs CRM Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="Ingestion de données à l’aide des connecteurs CRM Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +204,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="Ingestion de données à l’aide des connecteurs Source de Cloud Storage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33156?captions=fre_fr&format=jpeg&nocache=1740414616962" alt="Ingestion de données à l’aide des connecteurs Source de Cloud Storage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="Ingestion de données à l’aide des connecteurs Source de Cloud Storage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,7 +227,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="Diffusion de données en continu à l’aide des connecteurs Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410103?captions=fre_fr&format=jpeg&nocache=1740414616930" alt="Diffusion de données en continu à l’aide des connecteurs Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="Diffusion de données en continu à l’aide des connecteurs Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -247,7 +250,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-http-api.md" title="Ingestion de données à l’aide du point d’entrée de l’API HTTP de connexion en flux continu" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410928?captions=fre_fr&format=jpeg&nocache=1740414616952" alt="Ingestion de données à l’aide du point d’entrée de l’API HTTP de connexion en flux continu"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740414616952" alt="Ingestion de données à l’aide du point d’entrée de l’API HTTP de connexion en flux continu"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -270,7 +273,8 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
 
 ## Ingestion de données à partir de sources Adobe courantes
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-adobe-analytics.md
 * ../sources/ingest-data-from-marketo.md
@@ -284,7 +288,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Ingestion de données à l’aide du connecteur source Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430255?captions=fre_fr&format=jpeg&nocache=1740414617197" alt="Ingestion de données à l’aide du connecteur source Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Ingestion de données à l’aide du connecteur source Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +311,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Ingérer des données à partir de Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451862?captions=fre_fr&format=jpeg&nocache=1740414617186" alt="Ingérer des données à partir de Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Ingérer des données à partir de Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -330,7 +334,7 @@ Les fonctionnalités d’ingestion de données de Adobe Experience Platform vous
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-aam.md" title="Ingestion de données à l’aide du connecteur de données Adobe Audience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346984/?captions=fre_fr&format=jpeg&nocache=1740414617207" alt="Ingestion de données à l’aide du connecteur de données Adobe Audience Manager"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740414617207" alt="Ingestion de données à l’aide du connecteur de données Adobe Audience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

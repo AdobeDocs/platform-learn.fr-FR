@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 16%
@@ -18,11 +18,12 @@ ht-degree: 16%
 
 Découvrez les principales fonctionnalités de résolution d’identité dans Adobe Experience Platform : la collecte d’identités, les graphiques d’identités et les API. Découvrez comment Identity Service lie les identités déconnectées pour offrir une expérience connectée cohérente en créant un profil unifié. Pour plus d’informations, consultez la [documentation sur le service d’identités](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3422771?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 ## Configuration des identités
 
-<!-- CARDS
+<!--
+CARDS
 * label-ingest-and-verify-identity-data.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -32,7 +33,7 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Étiqueter, ingérer et vérifier des données d’identité" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31637?captions=fre_fr&format=jpeg&nocache=1740414775790" alt="Étiqueter, ingérer et vérifier des données d’identité"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Étiqueter, ingérer et vérifier des données d’identité"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -55,7 +56,8 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
 
 ## Règles de liaison des graphiques d’identités
 
-<!-- CARDS
+<!--
+CARDS
 * identity-graph-linking-rules/graph-simulation.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -65,7 +67,7 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Règles de liaison des graphiques d’identités - Simulation de graphique" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444045/?captions=fre_fr&format=jpeg&nocache=1740414776009" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Règles de liaison des graphiques d’identités - Simulation de graphique"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -88,7 +90,8 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
 
 ## Graphiques d’identités
 
-<!-- CARDS
+<!--
+CARDS
 * view-identity-graphs.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -98,7 +101,7 @@ Découvrez les principales fonctionnalités de résolution d’identité dans Ad
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="Afficher les graphiques d’identités" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345654?captions=fre_fr&format=jpeg&nocache=1740414776113" alt="Afficher les graphiques d’identités"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="Afficher les graphiques d’identités"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

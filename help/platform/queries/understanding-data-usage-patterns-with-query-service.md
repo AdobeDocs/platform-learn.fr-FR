@@ -8,7 +8,7 @@ jira: KT-3715
 thumbnail: 29811.jpg
 hide: true
 exl-id: 8d99063a-5107-4bee-a0a4-6778b56aeac0
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 1%
@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Cette vidéo partage des conseils et des bonnes pratiques pour l’exécution de requêtes dans l’interface du requêteur, les clients PSQL, les solutions de Business Intelligence (BI) et l’API HTTP. Pour plus d’informations, consultez la [documentation de Query Service](https://experienceleague.adobe.com/fr/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/33587?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)

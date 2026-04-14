@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 7%
@@ -43,22 +43,24 @@ Key terms:
 **Architectes de données** devront créer des schémas en dehors de ce tutoriel, mais **Ingénieurs de données** travailleront en étroite collaboration avec les schémas créés par l’architecte de données.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les schémas et le modèle de données d’expérience (XDM) :
->[!VIDEO](https://video.tv.adobe.com/v/38503?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Pour en apprendre davantage sur la modélisation des données dans Experience Platform, nous vous recommandons de regarder la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/fr/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible gratuitement sur Experience League !
+> Pour en apprendre davantage sur la modélisation des données dans Experience Platform, nous vous recommandons de regarder la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponible gratuitement sur Experience League !
 
 ## Autorisations requises
 
 Dans la leçon [Configurer les autorisations](configure-permissions.md), vous allez configurer tous les contrôles d’accès requis pour suivre cette leçon.
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -86,7 +88,7 @@ Dans cet exercice, nous allons créer un schéma pour les données de fidélité
 
 Une fois le schéma créé, vous êtes redirigé vers l’éditeur de schémas dans lequel vous pouvez ajouter des champs au schéma. Vous pouvez ajouter des champs individuels directement au schéma ou utiliser des groupes de champs. Il est important de noter que tous les champs individuels sont toujours associés à une classe ou à un groupe de champs. Vous pouvez choisir parmi un large ensemble de groupes de champs standard fournis par Adobe ou créer les vôtres. Lorsque vous commencez à modéliser vos propres données dans Experience Platform, il est bon de vous familiariser avec les groupes de champs standard fournis par Adobe. Dans la mesure du possible, il est recommandé de les utiliser, car ils alimentent parfois des services en aval, tels que l’IA dédiée aux clients, l’IA dédiée à l’attribution et Adobe Analytics.
 
-Lorsque vous travaillez avec vos propres données, une étape importante consiste à déterminer laquelle de vos propres données doit être capturée dans Platform et comment elle doit être modélisée. Ce sujet volumineux est abordé plus en détail dans la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/fr/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Dans ce tutoriel, je vais simplement vous guider tout au long de l’implémentation de certains schémas prédéterminés.
+Lorsque vous travaillez avec vos propres données, une étape importante consiste à déterminer laquelle de vos propres données doit être capturée dans Platform et comment elle doit être modélisée. Ce sujet volumineux est abordé plus en détail dans la playlist [Modéliser vos données d’expérience client avec XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Dans ce tutoriel, je vais simplement vous guider tout au long de l’implémentation de certains schémas prédéterminés.
 
 Pour ajouter des groupes de champs :
 
@@ -297,7 +299,7 @@ Créons maintenant un schéma basé sur la classe **[!UICONTROL Événement d’
 
 1. Créez un schéma avec la classe **[!UICONTROL Événement d’expérience]**.
 1. Nommez votre `Luma Offline Purchase Events Schema` de schéma.
-1. Ajoutez le groupe de champs standard **[!UICONTROL Détails du Commerce]** pour capturer les détails des commandes courantes. Passez quelques minutes à explorer les objets à l&#39;intérieur.
+1. Ajoutez le groupe de champs standard **[!UICONTROL Détails du]** pour capturer les détails des commandes courantes. Passez quelques minutes à explorer les objets à l&#39;intérieur.
 1. Recherchez `Luma Identity profile field group`. Il n’est pas disponible. N’oubliez pas que les groupes de champs sont liés à une classe et que, puisque nous utilisons une classe différente pour ce schéma, nous ne pouvons pas l’utiliser. Nous devons ajouter un nouveau groupe de champs pour la classe XDM ExperienceEvent contenant les champs d’identité. Notre type de données vous facilitera la tâche !
 1. Sélectionnez le bouton radio **[!UICONTROL Créer un groupe de champs]**
 1. Saisissez le **[!UICONTROL Nom d’affichage]** tel que `Luma Identity ExperienceEvent field group` et sélectionnez le bouton **[!UICONTROL Ajouter des groupes de champs]**
@@ -328,14 +330,14 @@ Nous allons maintenant créer un schéma supplémentaire pour les données du si
 | Groupe de champs | ExperienceEvent AEP Web SDK |
 | Groupe de champs | Événement d’expérience client |
 
-Sélectionnez le groupe de champs **[!UICONTROL Événement d’expérience client]**. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans les [!UICONTROL Détails Commerce]. En effet[!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard également disponibles séparément. Le groupe de champs [!UICONTROL AEP Web SDK ExperienceEvent] contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent parfaitement.
+Sélectionnez le groupe de champs **[!UICONTROL Événement d’expérience client]**. Ce groupe de champs contient les objets commerce et productListItems qui se trouvaient également dans les [!UICONTROL Détails ]. En effet[!UICONTROL Événement d’expérience client] est une combinaison de plusieurs autres groupes de champs standard également disponibles séparément. Le groupe de champs [!UICONTROL AEP Web SDK ExperienceEvent] contient également d’autres groupes de champs, y compris certains des mêmes groupes dans [!UICONTROL Événement d’expérience client]. Heureusement, ils se fondent parfaitement.
 
 Notez que nous n’avons pas ajouté le `Luma Identity ExperienceEvent field group` à ce schéma. Cela est dû au fait que le SDK web a une manière différente de collecter les identités. Si vous sélectionnez la classe **[!UICONTROL XDM ExperienceEvent]** dans la section **[!UICONTROL Composition]** de l’éditeur de schéma, vous remarquerez que l’un des champs qu’il ajoute par défaut est appelé **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] est utilisé par diverses applications Adobe pour établir une liaison à Platform. Vous découvrirez comment les identités sont envoyées à Platform via identityMap dans la leçon d’ingestion en flux continu.
 
 
 ## Créer un schéma de catalogue de produits
 
-En utilisant les groupes de champs [!UICONTROL Détails du Commerce] et [!UICONTROL Événement d’expérience client], Luma signale certains détails des événements liés au produit via le type de données standard productListItems. Mais ils disposent également de champs de détails de produit supplémentaires qu’ils souhaitent envoyer à Platform. Au lieu de capturer tous ces champs dans leurs systèmes de point de vente et d’e-commerce, Luma préfère ingérer ces champs directement à partir de son système de catalogue de produits. Une « relation de schéma » vous permet de définir une relation entre deux schémas à des fins de classification ou de recherches. Luma utilisera une relation pour classer les détails de son produit. Nous allons commencer le processus maintenant et le terminer à la fin de la prochaine leçon.
+En utilisant les groupes de champs [!UICONTROL Détails du ] et [!UICONTROL Événement d’expérience client], Luma signale certains détails des événements liés au produit via le type de données standard productListItems. Mais ils disposent également de champs de détails de produit supplémentaires qu’ils souhaitent envoyer à Platform. Au lieu de capturer tous ces champs dans leurs systèmes de point de vente et d’e-commerce, Luma préfère ingérer ces champs directement à partir de son système de catalogue de produits. Une « relation de schéma » vous permet de définir une relation entre deux schémas à des fins de classification ou de recherches. Luma utilisera une relation pour classer les détails de son produit. Nous allons commencer le processus maintenant et le terminer à la fin de la prochaine leçon.
 
 >[!NOTE]
 >
@@ -352,13 +354,13 @@ Tout d’abord, nous devons créer un schéma pour le catalogue de produits de L
 1. Sélectionnez le bouton **[!UICONTROL Créer]**.
    ![Créer une classe](assets/schemas-productClass.png)
 1. La **classe de catalogue de produits Luma** que vous avez créée apparaît dans le tableau Classes ci-dessous. Assurez-vous que la classe est sélectionnée, puis sélectionnez **[!UICONTROL Suivant]**.
-   ![&#x200B; Nouvelle classe ajoutée &#x200B;](assets/schemas-productClassSelected.png)
+   ![ Nouvelle classe ajoutée ](assets/schemas-productClassSelected.png)
 1. Nommez le schéma `Luma Product Catalog Schema`.
 1. Créez un nouveau [!UICONTROL groupe de champs] appelé `Luma Product Catalog field group` avec les champs suivants :
    1. productName : nom du produit : chaîne
    1. productCategory : Catégorie de produits : Chaîne
    1. productColor : couleur du produit : chaîne
-   1. productSku : SKU du produit : chaîne | Obligatoire
+   1. productSku : SKU du produit : chaîne | obligatoire
    1. productSize : taille du produit : chaîne
    1. productPrice : Prix du produit : Double
 1. **[!UICONTROL Enregistrer]** schéma

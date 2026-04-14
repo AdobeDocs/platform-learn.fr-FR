@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 2%
@@ -26,21 +26,22 @@ Le profil client en temps réel offre une vue d’ensemble de chaque client qui 
 
 Aussi incroyable que cela puisse paraître, vous n’avez pas besoin d’activer *toutes vos données* pour le profil. En fait, vous devez activer uniquement les données dont vous avez besoin pour les cas d’utilisation d’activation. Activez les données que vous souhaitez utiliser pour les cas d’utilisation marketing, les intégrations de centres d’appels, etc., où vous avez besoin d’un accès rapide à un profil client robuste. Si vous téléchargez des données uniquement à des fins d’analyse, elles ne devraient probablement pas être activées pour le profil.
 
-Il existe d’importants [mécanismes de sécurisation pour les données du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=fr) que vous devez consulter lorsque vous décidez laquelle de vos propres données vous devez activer pour le profil.
+Il existe d’importants [mécanismes de sécurisation pour les données du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que vous devez consulter lorsque vous décidez laquelle de vos propres données vous devez activer pour le profil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **architectes des données** devront activer le profil client en temps réel en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur le profil client en temps réel :
->[!VIDEO](https://video.tv.adobe.com/v/31639?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Autorisations requises
 
 Dans la leçon [Configurer les autorisations](configure-permissions.md), vous allez configurer tous les contrôles d’accès requis pour suivre cette leçon.
 
 
-<!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+<!--
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -125,7 +126,7 @@ Les jeux de données doivent également être activés pour Profile, et le proce
 1. Activez/désactivez le commutateur **[!UICONTROL Profil]**.
 1. Dans la boîte de dialogue modale de confirmation, appuyez sur le bouton **[!UICONTROL Activer]** pour confirmer
 
-   ![&#x200B; Profile Toggle](assets/profile-loyalty-enableDataset.png)
+   ![ Profile Toggle](assets/profile-loyalty-enableDataset.png)
 
 Répétez les étapes ci-dessus pour ces autres jeux de données :
 
@@ -187,7 +188,7 @@ Vous pouvez également vérifier que l’interface utilisateur affiche le jeu de
 ## Ressources supplémentaires
 
 * [Documentation sur le profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr)
-* [&#x200B; Référence de l’API Real-Time Customer Profile &#x200B;](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [ Référence de l’API Real-Time Customer Profile ](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
 **Ingénieurs de données** devez continuer à lire la leçon [S’abonner aux événements d’ingestion de données](subscribe-to-data-ingestion-events.md).

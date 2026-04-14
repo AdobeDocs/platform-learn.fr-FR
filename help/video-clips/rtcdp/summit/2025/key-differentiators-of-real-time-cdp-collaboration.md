@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: d71025d9-1aa0-4b84-a802-ceb7f67c6a0f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Explorez les fonctionnalités uniques d’Adobe Real-Time CDP Collaboration, notamment son interface utilisateur conviviale pour les marketeurs, son interopérabilité et sa conception centrée sur la confidentialité.
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3460543/?captions=fre_fr&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)

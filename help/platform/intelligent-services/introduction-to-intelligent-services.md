@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-4170
 thumbnail: 32654.jpg
 exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
-source-git-commit: 695093c3ddc1952b1d6ffbe7bb4f3f489264d37d
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 45%
@@ -19,13 +19,14 @@ ht-degree: 45%
 
 Une introduction de haut niveau aux services intelligents, qui permet aux analystes et aux spécialistes du marketing de tirer parti de la puissance de l’intelligence artificielle et du machine learning dans les cas d’utilisation d’expérience client sans expertise en science des données. Pour plus d’informations, consultez la [documentation des services intelligents](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/36549?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 
 ## IA dédiée aux clients
 
 Découvrez comment créer la propension des clients et les scores d’attrition qui sont ajoutés aux profils clients en temps réel pour une utilisation dans la segmentation et la personnalisation.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-customer-ai.md
 * configure-customer-ai.md
@@ -39,7 +40,7 @@ Découvrez comment créer la propension des clients et les scores d’attrition 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="Présentation de l’IA dédiée aux clients" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36471?captions=fre_fr&format=jpeg&nocache=1740250112240" alt="Présentation de l’IA dédiée aux clients"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="Présentation de l’IA dédiée aux clients"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +63,7 @@ Découvrez comment créer la propension des clients et les scores d’attrition 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="Configuration de Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36548?captions=fre_fr&format=jpeg&nocache=1740250112226" alt="Configuration de Customer AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="Configuration de Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +86,7 @@ Découvrez comment créer la propension des clients et les scores d’attrition 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="Utiliser les scores et les informations de Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36547?captions=fre_fr&format=jpeg&nocache=1740250112262" alt="Utiliser les scores et les informations de Customer AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="Utiliser les scores et les informations de Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +109,7 @@ Découvrez comment créer la propension des clients et les scores d’attrition 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="Valeur commerciale de l’IA dédiée aux clients" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328475?captions=fre_fr&format=jpeg&nocache=1740250112251" alt="Valeur commerciale de l’IA dédiée aux clients"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="Valeur commerciale de l’IA dédiée aux clients"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -133,7 +134,8 @@ Découvrez comment créer la propension des clients et les scores d’attrition 
 
 Découvrez comment utiliser des modèles pour comprendre l’impact de votre marketing.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-attribution-ai.md
 * configure-attribution-ai.md
@@ -147,7 +149,7 @@ Découvrez comment utiliser des modèles pour comprendre l’impact de votre mar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="Présentation d’Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36540?captions=fre_fr&format=jpeg&nocache=1740250113366" alt="Présentation d’Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Présentation d’Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -170,7 +172,7 @@ Découvrez comment utiliser des modèles pour comprendre l’impact de votre mar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="Configuration d’Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36546?captions=fre_fr&format=jpeg&nocache=1740250113378" alt="Configuration d’Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Configuration d’Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -193,7 +195,7 @@ Découvrez comment utiliser des modèles pour comprendre l’impact de votre mar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-attribution-ai-scores-and-insights.md" title="Utiliser les scores et les informations d’Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345100?captions=fre_fr&format=jpeg&nocache=1740250113402" alt="Utiliser les scores et les informations d’Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="Utiliser les scores et les informations d’Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +218,7 @@ Découvrez comment utiliser des modèles pour comprendre l’impact de votre mar
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="Valeur commerciale de l’IA dédiée à l’attribution" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328466?captions=fre_fr&format=jpeg&nocache=1740250113390" alt="Valeur commerciale de l’IA dédiée à l’attribution"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Valeur commerciale de l’IA dédiée à l’attribution"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

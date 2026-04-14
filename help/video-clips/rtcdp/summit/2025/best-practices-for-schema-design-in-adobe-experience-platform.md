@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 65895927-16ca-443b-897f-fc771b342d2c
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Évitez les erreurs coûteuses en matière de conception de schéma grâce à ces bonnes pratiques en matière d’extensibilité, de validation et d’alignement avec le modèle de données de Adobe Experience Platform.
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3460103/?captions=fre_fr&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)

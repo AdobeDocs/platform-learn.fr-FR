@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,13 +31,15 @@ Nous nous en tiendrons à l’interface utilisateur pour cette leçon, mais il e
 **Architectes de données** devront créer des politiques de fusion en dehors de ce tutoriel.
 
 Avant de commencer les exercices, regardez cette courte vidéo pour en savoir plus sur les politiques de fusion :
->[!VIDEO](https://video.tv.adobe.com/v/345076?captions=fre_fr&learn=on&enablevpops)
+
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Autorisations requises
 
 Dans la leçon [Configurer les autorisations](configure-permissions.md), vous allez configurer tous les contrôles d’accès requis pour suivre cette leçon.
 
-<!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
+<!--
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -74,7 +76,7 @@ Que se passe-t-il si vous n’aimez pas cette politique de fusion par défaut ? 
 1. Assurez-vous que `Luma Loyalty Dataset` est au-dessus en le faisant glisser et en le déposant au-dessus de la `Luma CRM Dataset`
 1. Sélectionnez le bouton **[!UICONTROL Enregistrer]**
    <!--do i need to explain Private Graph? Is that GA?-->
-   ![&#x200B; Politique de fusion &#x200B;](assets/mergepolicies-newPolicy.png)
+   ![ Politique de fusion ](assets/mergepolicies-newPolicy.png)
 
 ## Validation de la politique de fusion
 

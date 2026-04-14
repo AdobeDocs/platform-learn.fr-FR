@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 15%
@@ -18,11 +18,12 @@ ht-degree: 15%
 
 Cette vidéo explique comment Adobe Experience Platform assemble et met à jour des profils clients en temps réel et comment accéder à ces profils et les utiliser. Pour plus d’informations, consultez la [documentation du profil client en temps réel](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/31639?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## Architecture et fonctionnalités
 
-<!-- CARDS
+<!--
+CARDS
 * overview-diagram.md
 * create-merge-policies.md
 * union-schemas-overview.md
@@ -35,7 +36,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="Diagramme de présentation du profil client en temps réel" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36726?captions=fre_fr&format=jpeg&nocache=1740415066741" alt="Diagramme de présentation du profil client en temps réel"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="Diagramme de présentation du profil client en temps réel"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +59,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-merge-policies.md" title="Création de politiques de fusion" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345076?captions=fre_fr&format=jpeg&nocache=1740415066765" alt="Création de politiques de fusion"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330433?format=jpeg&nocache=1740415066765" alt="Création de politiques de fusion"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +82,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="Présentation des schémas d’union" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342822?captions=fre_fr&format=jpeg&nocache=1740415066755" alt="Présentation des schémas d’union"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="Présentation des schémas d’union"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +105,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="Créer un attribut calculé pour la somme des achats" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443553?captions=fre_fr&format=jpeg&nocache=1740415066775" alt="Créer un attribut calculé pour la somme des achats"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="Créer un attribut calculé pour la somme des achats"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -127,7 +128,8 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
 
 ## Ingestion et gestion des données de profil
 
-<!-- CARDS
+<!--
+CARDS
 * bring-data-into-the-real-time-customer-profile.md
 * delete-profiles.md
 * update-a-specific-attribute-with-upsert.md
@@ -139,7 +141,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="bring-data-into-the-real-time-customer-profile.md" title="Intégrer des données au profil client en temps réel" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34368?captions=fre_fr&format=jpeg&nocache=1740415067018" alt="Intégrer des données au profil client en temps réel"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="Intégrer des données au profil client en temps réel"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,7 +187,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443443/?captions=fre_fr&format=jpeg&nocache=1740415067029" alt="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="Mettre à jour des attributs de profil spécifiques à l’aide de « upsert »"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -208,7 +210,8 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
 
 ## Profils de compte
 
-<!-- CARDS
+<!--
+CARDS
 * view-account-profiles.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -218,7 +221,7 @@ Cette vidéo explique comment Adobe Experience Platform assemble et met à jour 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="Affichage des profils de compte" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446579?captions=fre_fr&format=jpeg&nocache=1740415067214" alt="Affichage des profils de compte"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="Affichage des profils de compte"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

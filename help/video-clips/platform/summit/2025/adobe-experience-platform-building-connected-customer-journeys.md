@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: d60e5d52-7545-409a-90a7-e2d80b1193a5
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Découvrez comment Adobe Experience Platform active des parcours clients connectés via des données, du contenu et l’activation cross-canal.
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3459624/?captions=fre_fr&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
