@@ -4,16 +4,16 @@ description: Prise en main d’Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '891'
+ht-degree: 15%
 
 ---
 
 # 1.5.1 Prise en main d’Adobe Commerce as a Cloud Service
 
-Accédez à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur **Commerce**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur ****.
 
 ![AEM Assets](./images/accs1.png)
 
@@ -25,7 +25,12 @@ Vous devriez alors voir ceci. Cliquez sur **+ Ajouter une instance**.
 
 Renseignez les champs comme suit :
 
-- **Nom de l’instance** : `--aepUserLdap-- - ACCS`
+- **Nom de l’instance** :
+
+```
+--aepUserLdap-- - ACCS
+```
+
 - **Environnement** : `Sandbox`
 - **Region** : `North America`
 
@@ -61,8 +66,17 @@ Cliquez sur **Créer un site web**.
 
 Renseignez les champs comme suit :
 
-- **Nom** : `CitiSignal`
-- **Code** : `citisignal`
+- **Nom** :
+
+```
+CitiSignal
+```
+
+- **Code** :
+
+```
+citisignal
+```
 
 Cliquez sur **Enregistrer le site web**.
 
@@ -74,9 +88,24 @@ Tu devrais alors être de retour ici. Cliquez sur **Créer une boutique**.
 
 Renseignez les champs comme suit :
 
-- **Site Web** : `CitiSignal`
-- **Nom** : `CitiSignal`
-- **Code** : `citisignal`
+- **Site web** :
+
+```
+CitiSignal
+```
+
+- **Nom** :
+
+```
+CitiSignal
+```
+
+- **Code** :
+
+```
+citisignal
+```
+
 - **Catégorie racine** : `Default Category`
 
 Cliquez sur **Enregistrer la boutique**.
@@ -89,9 +118,24 @@ Tu devrais alors être de retour ici. Cliquez sur **Créer une vue de magasin**.
 
 Renseignez les champs comme suit :
 
-- **Store** : `CitiSignal`
-- **Nom** : `CitiSignal`
-- **Code** : `citisignal`
+- **Store** :
+
+```
+CitiSignal
+```
+
+- **Nom** :
+
+```
+CitiSignal
+```
+
+- **Code** :
+
+```
+citisignal
+```
+
 - **Statut** : `Enabled`
 
 Cliquez sur **Enregistrer la vue de la boutique**.
@@ -126,7 +170,11 @@ Sélectionnez **Catégorie par défaut** puis cliquez sur **Ajouter une sous-cat
 
 ![AEM Assets](./images/accs18.png)
 
-Saisissez le nom `Phones`, puis cliquez sur **Enregistrer**.
+Saisissez le nom suivant, puis cliquez sur **Enregistrer**.
+
+```
+Phones
+```
 
 ![AEM Assets](./images/accs19.png)
 
@@ -134,11 +182,39 @@ Sélectionnez **Catégorie par défaut** puis cliquez de nouveau sur **Ajouter u
 
 ![AEM Assets](./images/accs20.png)
 
-Saisissez le nom `Watches`, puis cliquez sur **Enregistrer**.
+Saisissez le nom suivant, puis cliquez sur **Enregistrer**.
+
+```
+Watches
+```
 
 ![AEM Assets](./images/accs21.png)
 
-Vous devriez alors avoir 2 catégories créées.
+Sélectionnez **Catégorie par défaut** puis cliquez de nouveau sur **Ajouter une sous-catégorie**.
+
+![AEM Assets](./images/accs20a.png)
+
+Saisissez le nom suivant, puis cliquez sur **Enregistrer**.
+
+```
+Plans
+```
+
+![AEM Assets](./images/accs21a.png)
+
+Sélectionnez **Catégorie par défaut** puis cliquez de nouveau sur **Ajouter une sous-catégorie**.
+
+![AEM Assets](./images/accs20b.png)
+
+Saisissez le nom suivant, puis cliquez sur **Enregistrer**.
+
+```
+Entertainment
+```
+
+![AEM Assets](./images/accs21b.png)
+
+4 catégories doivent alors être créées.
 
 ![AEM Assets](./images/accs22.png)
 
@@ -152,10 +228,34 @@ Vous devriez alors voir ceci. Cliquez sur **Ajouter un produit**.
 
 Configurez votre produit comme suit :
 
-- **Nom du produit** : `iPhone Air`
-- **SKU** : `iPhone-Air`
-- **Prix** : `999`
-- **Quantité** : `10000`
+- **Nom du produit** :
+
+```
+iPhone Air
+```
+
+- **SKU** :
+
+>[!NOTE]
+>
+>Veuillez vous assurer que le champ SKU est identique à la valeur ci-dessous et qu’il n’y a pas d’espace dans ce champ.
+
+```
+iPhone-Air
+```
+
+- **Prix** :
+
+```
+999
+```
+
+- **Quantité** :
+
+```
+10000
+```
+
 - **Catégories** : sélectionnez `Phones`
 
 Cliquez sur **Enregistrer**.
@@ -170,19 +270,35 @@ Vous devriez alors voir ceci. Cliquez sur **Créer un attribut**.
 
 ![AEM Assets](./images/accs27.png)
 
-Définissez le **Libellé par défaut** sur `Storage`, puis cliquez sur **Ajouter une option** sous **Gérer les options**.
+Définissez le **Libellé par défaut** sur la valeur ci-dessous, puis cliquez sur **Ajouter une option** sous **Gérer les options**.
+
+```
+Storage
+```
 
 ![AEM Assets](./images/accs28.png)
 
-Configurez la première option en utilisant le nom `256GB` dans les 3 colonnes, puis cliquez de nouveau sur **Ajouter une option**.
+Configurez la première option en utilisant la valeur ci-dessous dans les 3 colonnes, puis cliquez de nouveau sur **Ajouter une option**.
+
+```
+256GB
+```
 
 ![AEM Assets](./images/accs29.png)
 
-Configurez la deuxième option en utilisant le nom `512GB` dans les 3 colonnes, puis cliquez de nouveau sur **Ajouter une option**.
+Configurez la deuxième option en utilisant la valeur ci-dessous dans les 3 colonnes, puis cliquez de nouveau sur **Ajouter une option**.
+
+```
+512GB
+```
 
 ![AEM Assets](./images/accs30.png)
 
-Configurez la troisième option en utilisant le nom `1TB` dans les 3 colonnes.
+Configurez la troisième option en utilisant la valeur ci-dessous dans les 3 colonnes.
+
+```
+1TB
+```
 
 ![AEM Assets](./images/accs31.png)
 
@@ -235,19 +351,21 @@ Vous devriez alors voir ceci. Cliquez sur **Générer des produits**.
 
 ![AEM Assets](./images/accs42.png)
 
-Définissez la **Quantité** de chaque produit à `10000`. Cliquez sur **Enregistrer**.
+Définissez la **Quantité** de chaque produit à `10000`. Assurez-vous également que la colonne **SKU** ne comporte aucun espace dans l’un des SKU.
+
+Cliquez sur **Enregistrer**.
 
 ![AEM Assets](./images/accs43.png)
+
+Cliquez sur **Confirmer**.
+
+![AEM Assets](./images/accs45.png)
 
 Faites défiler jusqu’à **Produit dans Sites web** et cochez la case **CitiSignal**.
 
 Cliquez sur **Enregistrer**.
 
 ![AEM Assets](./images/accs44.png)
-
-Cliquez sur **Confirmer**.
-
-![AEM Assets](./images/accs45.png)
 
 Vous devriez alors voir ceci. Cliquez sur **Précédent**.
 
@@ -256,6 +374,52 @@ Vous devriez alors voir ceci. Cliquez sur **Précédent**.
 Le produit **iPhone Air** et ses variantes s’affichent désormais dans le catalogue de produits.
 
 ![AEM Assets](./images/accs47.png)
+
+## 1.5.1.4 Importer Des Produits
+
+CitiSignal vend plus de produits, donc pour créer les produits restants dans le catalogue de produits, vous devez maintenant les importer.
+
+Accédez à **Système** puis à **Importer**.
+
+![AEM Assets](./images/accsimp1.png)
+
+Sélectionnez les valeurs suivantes :
+
+- **Type d’entité** : `Products`
+- **Comportement d’importation** : `Add/Update`
+- **Stratégie de validation** : `Skip error entries`
+
+Cliquez sur **Choisir un fichier**.
+
+![AEM Assets](./images/accsimp2.png)
+
+Téléchargez ce fichier sur votre ordinateur : [product_catalog_import.csv.zip](./assets/product_catalog_import.csv.zip). Extrayez le fichier sur votre bureau.
+
+![AEM Assets](./images/accsimp7.png)
+
+Sélectionnez le **`product_catalog_import.csv`** de fichier et cliquez sur **Ouvrir**.
+
+![AEM Assets](./images/accsimp3.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Vérifier les données**.
+
+![AEM Assets](./images/accsimp4.png)
+
+Vous devriez alors voir ceci. Cliquez sur **Importer**.
+
+![AEM Assets](./images/accsimp5.png)
+
+Vous devriez alors voir ceci.
+
+![AEM Assets](./images/accsimp6.png)
+
+Accédez à **Catalogue** puis à **Produits**.
+
+![AEM Assets](./images/accsimp8.png)
+
+Faites défiler la page vers le bas pour trouver les produits que vous venez d’importer.
+
+![AEM Assets](./images/accsimp9.png)
 
 Étape suivante : [Connexion d’ACCS au storefront AEM Sites CS/EDS](./ex2.md){target="_blank"}
 

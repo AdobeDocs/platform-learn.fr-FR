@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
+source-git-commit: b32d96f1d7cce7c22d56ef1783e7209796635758
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1576'
 ht-degree: 3%
 
 ---
@@ -155,7 +155,6 @@ ht-degree: 3%
       + [1.5.1 Prise en main d’Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
       + [1.5.2 Connexion d’ACCS au storefront AEM Sites CS/EDS](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex2.md)
       + [1.5.3 Connexion d’ACCS à AEM Assets CS](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex3.md)
-      + [Résumé et avantages](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Diffusion et activation {#activation}
    + Collecte de données {#dc}

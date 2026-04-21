@@ -4,9 +4,9 @@ description: Connexion d’ACCS au serveur de collecte de données AEM Assets
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,13 @@ Après avoir terminé l’exercice précédent, vous pouviez voir un produit ren
 
 ## 1.5.3.1 la configuration du pipeline de mise à jour
 
-Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. L’organisation que vous devez sélectionner est `--aepImsOrgName--`.
+Accédez à [](https://my.cloudmanager.adobe.com){target="_blank"}. L’organisation que vous devez sélectionner est `--aepImsOrgName--`.
 
-Cliquez pour ouvrir votre programme Cloud Manager, qui doit être appelé `--aepUserLdap-- - CitiSignal AEM+ACCS`.
+Cliquez pour ouvrir votre programme Cloud Manager, qui doit être nommé comme l’un des suivants :
+
+- `--aepUserLdap-- - CitiSignal AEM+ACCS`
+- Pour les sessions de l’atelier technique en personne : **Insiders techniques - AEM + ACCS XX** (remplacez XX par le numéro qui vous a été attribué).
+- Pour les sessions guidées à la demande : **Tech Insiders On Demand - AEM + ACCS XX** (remplacez XX par le numéro qui vous a été attribué)
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 
@@ -51,7 +55,7 @@ Vous devriez alors disposer d’un mot de passe. Cliquez ensuite sur l’icône 
 
 ![ACCS+AEM Assets](./images/accsaemassets5.png)
 
-Créez un nouveau répertoire à un emplacement de votre choix sur votre ordinateur et nommez-le **GitHub du pipeline AEM**.
+Créez un nouveau répertoire à un emplacement de votre choix sur votre ordinateur et nommez-le **GitHub du pipeline**.
 
 ![ACCS+AEM Assets](./images/accsaemassets6.png)
 
@@ -91,7 +95,7 @@ Vérifiez que le répertoire est vide.
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-Accédez à [https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce). Cliquez sur **&lt;> Code** puis sélectionnez **Télécharger le fichier ZIP**. Téléchargez le fichier, puis déposez-le sur votre bureau.
+Accédez à [](https://github.com/ankumalh/assets-commerce). Cliquez sur **&lt;> Code** puis sélectionnez **Télécharger le fichier ZIP**. Téléchargez le fichier, puis déposez-le sur votre bureau.
 
 ![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
@@ -107,7 +111,7 @@ Ouvrez ensuite **Microsoft Visual Studio Code** et ouvrez le dossier contenant l
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-Accédez à **Rechercher** dans le menu de gauche et recherchez `<my-app>`. Vous devez remplacer toutes les occurrences de `<my-app>` par `--aepUserLdap--citisignalaemaccs`.
+Accédez à **Rechercher** dans le menu de gauche et recherchez `<my-app>`. Vous devez remplacer toutes les occurrences de `<my-app>` par `techinsiderscitisignalaemaccs`.
 
 Cliquez sur l’icône **tout remplacer**.
 
@@ -117,19 +121,31 @@ Cliquez sur **Remplacer**.
 
 ![ACCS+AEM Assets](./images/accsaemassets20.png)
 
-Les nouveaux fichiers sont maintenant prêts à être chargés à nouveau dans le référentiel Git lié au référentiel Pipeline de votre programme. Pour ce faire, ouvrez le dossier **GitHub du pipeline AEM** et cliquez avec le bouton droit de la souris sur le dossier contenant les nouveaux fichiers. Sélectionnez **Nouveau terminal dans le dossier**.
+Les nouveaux fichiers sont maintenant prêts à être chargés à nouveau dans le référentiel Git lié au référentiel Pipeline de votre programme. Pour ce faire, ouvrez le dossier **GitHub du pipeline** et cliquez avec le bouton droit de la souris sur le dossier contenant les nouveaux fichiers. Sélectionnez **Nouveau terminal dans le dossier**.
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-Vous devriez alors voir ceci. Collez la `git add .` de commande et appuyez sur **entrée**.
+Vous devriez alors voir ceci. Collez la commande suivante et appuyez sur **entrée**.
+
+```
+git add .
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-Vous devriez alors voir ceci. Collez la `git commit -m "add assets integration"` de commande et appuyez sur **entrée**.
+Vous devriez alors voir ceci. Collez la commande suivante et appuyez sur **entrée**.
+
+```
+git commit -m "add assets integration"
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-Vous devriez alors voir ceci. Collez la `git push origin main` de commande et appuyez sur **entrée**.
+Vous devriez alors voir ceci. Collez la commande suivante et appuyez sur **entrée**.
+
+```
+git push origin main
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets24.png)
 
@@ -159,19 +175,14 @@ Faites défiler le menu vers le bas jusqu’à **SERVICES ADOBE** puis ouvrez **
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
-Renseignez les variables suivantes :
+Dans la liste déroulante de l’**environnement**, sélectionnez votre environnement.
 
-- **ID de programme AEM Assets** : vous pouvez obtenir l’ID de programme à partir de l’URL d’auteur CS AEM. Dans cet exemple, l’ID de programme est `166717`.
+Ensuite, définissez **Propriétaire de la visualisation** sur `AEM Assets` (décochez la case **utiliser la valeur du système** si nécessaire).
 
-![ACCS+AEM Assets](./images/accsaemassets50a.png)
+Ensuite, définissez **Synchronisation activée** sur `Yes` (décochez la case **Utiliser la valeur du système** si nécessaire).
 
-- **ID d’environnement AEM Assets** : vous pouvez obtenir l’ID d’environnement à partir de l’URL de création CS AEM. Dans cet exemple, l’identifiant d’environnement est `1786231`.
+Assurez-vous que ces paramètres sont définis comme suit :
 
-![ACCS+AEM Assets](./images/accsaemassets50b.png)
-
-- **Identifiant du client IMS du sélecteur de ressources** : défini sur `1`
-- **Synchronisation activée** : définissez sur `Yes`
-- **Propriétaire de la visualisation** : défini sur `AEM Assets`
 - **Règle de correspondance des ressources** : `Match by product SKU`
 - **Correspondance par nom d’attribut de SKU de produit** : `commerce:skus`
 
@@ -185,29 +196,19 @@ Vous devriez alors voir ceci.
 
 ## 1.5.3.3 Update config.json
 
-Accédez au référentiel GitHub créé lors de la configuration de votre environnement AEM Sites CS/EDS. Ce référentiel a été créé dans l’exercice [1.1.2 Configuration de votre environnement AEM CS](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"} et doit être nommé **citisignal-aem-accs**.
+Accédez au référentiel GitHub créé lors de la configuration de votre environnement AEM Sites CS/EDS.
 
-Dans le répertoire racine, faites défiler l’écran vers le bas et cliquez pour ouvrir le fichier **config.json**. Cliquez sur l’icône **modifier** pour apporter des modifications au fichier.
+Dans le répertoire racine, faites défiler l’écran vers le bas et cliquez pour ouvrir le fichier **config.json**.
 
-![ACCS+AEM Assets](./images/accsaemassets101.png)
-
-Ajoutez le fragment de code ci-dessous sous la ligne 5 `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",` :
+Vous devriez voir la ligne ci-dessous dans votre fichier **config.json** (ligne 17 dans cette image), assurez-vous qu’elle est définie sur **true**.
 
 ```json
  "commerce-assets-enabled": "true",
 ```
 
-Cliquez sur **Valider les modifications...**.
+![ACCS+AEM Assets](./images/accsaemassets101.png)
 
-![ACCS+AEM Assets](./images/accsaemassets102.png)
-
-Cliquez sur **Valider les modifications**.
-
-![ACCS+AEM Assets](./images/accsaemassets103.png)
-
-Votre modification est maintenant enregistrée et sera bientôt publiée. Cela peut prendre quelques minutes avant que la modification ne soit visible sur le storefront.
-
-![ACCS+AEM Assets](./images/accsaemassets104.png)
+Si la valeur de **commerce-assets-enabled** est définie sur **false**, mettez à jour votre fichier et définissez la valeur sur **true**. Validez ensuite vos modifications.
 
 ## 1.5.3.4 la vérification des champs Commerce dans AEM Assets CS
 
@@ -227,7 +228,7 @@ Pointez sur une ressource et cliquez sur l’icône **info**.
 
 ![ACCS+AEM Assets](./images/accsaemassets33.png)
 
-Vous devriez maintenant voir un onglet **Commerce** contenant 2 nouveaux attributs de métadonnées.
+Vous devriez maintenant voir un onglet **** contenant 2 nouveaux attributs de métadonnées.
 
 ![ACCS+AEM Assets](./images/accsaemassets34.png)
 
@@ -271,7 +272,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
@@ -296,7 +297,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets201.png)
 
@@ -322,7 +323,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets204.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets205.png)
 
@@ -347,7 +348,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets208.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **Commerce** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets209.png)
 
@@ -364,9 +365,25 @@ Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
 
 ![ACCS+AEM Assets](./images/accsaemassets210.png)
 
-Chaque image iPhone Air **&#x200B;**&#x200B;doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
+Chaque image iPhone Air **** doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
+
+Vous devez maintenant répéter ces étapes pour les produits restants, en utilisant le tableau ci-dessous. N’oubliez pas d’approuver chaque image, puis de la configurer. sous les paramètres de SKU dans l’onglet ****.
+
+| Nom du produit | Clé | Valeur | Utilisation |
+|:-------------:|:-------------:| :---------------:| :---------------:|
+| Apple Watch Ultra 3-Noir | `Apple-Watch-Ultra-3-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple Watch Ultra 3-Naturel | `Apple-Watch-Ultra-3-Natural` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Fibre CitiSignal max | `CitiSignal-Fiber-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple One | `Apple-One` | `1` | `thumbnail, image, swatch_image, small_image` |
+| YouTube Premium | `YouTube-Premium` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Disney Plus | `Disney` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Netflix + HBO Max | `Netflix-HBO-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+Toutes vos images doivent alors être approuvées.
+
+![ACCS+AEM Assets](./images/accsaemassets251.png)
 
 ## 1.5.3.5 Vérifier les images de produit sur le storefront AEM Sites CS/EDS
 
@@ -375,11 +392,6 @@ Chaque image iPhone Air **&#x200B;**&#x200B;doit désormais avoir une **pouces v
 >Le déploiement des modifications que vous avez apportées ci-dessus peut prendre jusqu’à 15 minutes. Si votre image ne s’affiche pas encore, patientez 15 minutes, puis réessayez.
 
 Pour vérifier que l&#39;intégration fonctionne, vous devez ouvrir votre site Web CitiSignal.
-
-Pour accéder à votre site web, accédez à `main--citisignal-aem-accs--XXX.aem.page` et/ou `main--citisignal-aem-accs--XXX.aem.live`, après avoir remplacé XXX par votre compte utilisateur GitHub, qui est `woutervangeluwe` dans cet exemple.
-
-Ainsi, dans cet exemple, l’URL complète devient :
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` et/ou `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`
 
 Vous devriez alors voir ceci. Accédez à **Téléphones**.
 
@@ -396,8 +408,6 @@ Vous devriez alors voir ceci. Modifiez les options de couleur et de stockage pou
 Voici un exemple de modification de la couleur en **Or clair** et de la taille de stockage en **256GB**.
 
 ![ACCS+AEM Assets](./images/accsaemassets153.png)
-
-Étape suivante : [Résumé et avantages](./summary.md){target="_blank"}
 
 Revenir à [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}
 
