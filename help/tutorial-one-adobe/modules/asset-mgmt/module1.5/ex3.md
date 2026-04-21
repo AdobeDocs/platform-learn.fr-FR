@@ -29,7 +29,7 @@ Après avoir terminé l’exercice précédent, vous pouviez voir un produit ren
 
 ## 1.5.3.1 la configuration du pipeline de mise à jour
 
-Accédez à [](https://my.cloudmanager.adobe.com){target="_blank"}. L’organisation que vous devez sélectionner est `--aepImsOrgName--`.
+Accédez à [&#128279;](https://my.cloudmanager.adobe.com){target="_blank"}. L’organisation que vous devez sélectionner est `--aepImsOrgName--`.
 
 Cliquez pour ouvrir votre programme Cloud Manager, qui doit être nommé comme l’un des suivants :
 
@@ -95,7 +95,7 @@ Vérifiez que le répertoire est vide.
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-Accédez à [](https://github.com/ankumalh/assets-commerce). Cliquez sur **&lt;> Code** puis sélectionnez **Télécharger le fichier ZIP**. Téléchargez le fichier, puis déposez-le sur votre bureau.
+Accédez à [&#128279;](https://github.com/ankumalh/assets-commerce). Cliquez sur **&lt;> Code** puis sélectionnez **Télécharger le fichier ZIP**. Téléchargez le fichier, puis déposez-le sur votre bureau.
 
 ![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
@@ -228,7 +228,7 @@ Pointez sur une ressource et cliquez sur l’icône **info**.
 
 ![ACCS+AEM Assets](./images/accsaemassets33.png)
 
-Vous devriez maintenant voir un onglet **** contenant 2 nouveaux attributs de métadonnées.
+Vous devriez maintenant voir un onglet **&#x200B;**&#x200B;contenant 2 nouveaux attributs de métadonnées.
 
 ![ACCS+AEM Assets](./images/accsaemassets34.png)
 
@@ -272,7 +272,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **&#x200B;**&#x200B;puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
@@ -297,7 +297,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **&#x200B;**&#x200B;puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets201.png)
 
@@ -323,7 +323,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets204.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **&#x200B;**&#x200B;puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets205.png)
 
@@ -348,7 +348,7 @@ Faites défiler vers le bas et définissez le champ **Statut de la révision** s
 
 ![ACCS+AEM Assets](./images/accsaemassets208.png)
 
-Faites défiler l’écran vers le haut, accédez à l’onglet **** puis cliquez sur **Ajouter** sous **SKU de produit**.
+Faites défiler l’écran vers le haut, accédez à l’onglet **&#x200B;**&#x200B;puis cliquez sur **Ajouter** sous **SKU de produit**.
 
 ![ACCS+AEM Assets](./images/accsaemassets209.png)
 
@@ -365,11 +365,11 @@ Tu devrais avoir ça. Cliquez sur **Enregistrer et fermer**.
 
 ![ACCS+AEM Assets](./images/accsaemassets210.png)
 
-Chaque image iPhone Air **** doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
+Chaque image iPhone Air **&#x200B;**&#x200B;doit désormais avoir une **pouces verts vers le haut**, indiquant que la ressource a été approuvée.
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
-Vous devez maintenant répéter ces étapes pour les produits restants, en utilisant le tableau ci-dessous. N’oubliez pas d’approuver chaque image, puis de la configurer. sous les paramètres de SKU dans l’onglet ****.
+Vous devez maintenant répéter ces étapes pour les produits restants, en utilisant le tableau ci-dessous. N’oubliez pas d’approuver chaque image, puis de la configurer. sous les paramètres de SKU dans l’onglet **&#x200B;**.
 
 | Nom du produit | Clé | Valeur | Utilisation |
 |:-------------:|:-------------:| :---------------:| :---------------:|

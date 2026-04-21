@@ -29,7 +29,7 @@ Dans cet exercice, vous allez lier le storefront AEM Sites CS/EDS au serveur pri
 
 ![ACCS+AEM Sites](./images/accsaemsites0.png)
 
-Accédez à [](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur ****.
+Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur **&#x200B;**.
 
 ![ACCS+AEM Sites](./images/accsaemsites1.png)
 
@@ -37,11 +37,11 @@ Cliquez sur l’icône **info** en regard de votre instance ACCS, qui doit être
 
 ![ACCS+AEM Sites](./images/accsaemsites2.png)
 
-Vous devriez alors voir ceci. Copiez le point d’entrée ****.
+Vous devriez alors voir ceci. Copiez le point d’entrée **&#x200B;**.
 
 ![ACCS+AEM Sites](./images/accsaemsites3.png)
 
-Accédez à [](https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator). Vous devez maintenant générer un fichier config.json qui sera utilisé pour lier votre storefront AEM Sites CS à votre serveur principal ACCS.
+Accédez à [&#128279;](https://da.live/app/adobe-commerce/storefront-tools/tools/config-generator/config-generator). Vous devez maintenant générer un fichier config.json qui sera utilisé pour lier votre storefront AEM Sites CS à votre serveur principal ACCS.
 
 Sur la page **Générateur de configuration**, collez l’URL du point d’entrée **GraphQL** que vous avez copiée.
 

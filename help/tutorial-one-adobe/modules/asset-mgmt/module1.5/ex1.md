@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # 1.5.1 Prise en main d’Adobe Commerce as a Cloud Service
 
-Accédez à [](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur ****.
+Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Assurez-vous que vous vous trouvez dans l’environnement correct, qui doit être nommé `--aepImsOrgName--`. Cliquez sur **&#x200B;**.
 
 ![AEM Assets](./images/accs1.png)
 

@@ -21,7 +21,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## 1.1.1.1 Définir le contexte dans Agent Orchestrator
 
-Accédez à [](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Accédez à [&#128279;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Assurez-vous d’être dans le `--aepImsOrgName--` d’organisation.
 
@@ -459,6 +459,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
-Revenir à [](./agentorchestrator.md){target="_blank"}
+Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
