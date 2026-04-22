@@ -4,9 +4,9 @@ description: Adobe Marketing Agent pour Google Gemini Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
+source-git-commit: 8e6a4b67dc8c1ec19d81a25a6c1a51f17255fc6e
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## 1.1.4.1 l’accès à Google Gemini Enterprise
 
-Accédez à [&#128279;](https://cloud.google.com/gemini-enterprise). Cliquez sur **Commencer l’essai gratuit de 30 jours**.
+Accédez à [](https://cloud.google.com/gemini-enterprise). Cliquez sur **Commencer l’essai gratuit de 30 jours**.
 
 ![Gémeaux](./images/gemini1.png)
 
@@ -57,7 +57,7 @@ Vous devriez alors voir ceci.
 
 ![Gémeaux](./images/gemini5.png)
 
-Accédez à [&#128279;](https://cloud.google.com/gemini-enterprise).
+Accédez à [](https://cloud.google.com/gemini-enterprise).
 
 Vous devriez alors voir quelque chose comme ça. Vous devrez peut-être d’abord créer votre compte de facturation, puis le sélectionner ici par la suite.
 
@@ -81,7 +81,7 @@ Vous devriez alors voir ceci.
 
 ## 1.1.4.2 Créer votre agent personnalisé à l’aide de A2A
 
-Accédez à [&#128279;](https://console.cloud.google.com/gemini-enterprise). Cliquez sur **Agents**.
+Accédez à [](https://console.cloud.google.com/gemini-enterprise). Cliquez sur **Agents**.
 
 ![Gémeaux](./images/gemini10a.png)
 
@@ -163,7 +163,7 @@ Cliquez sur **Commencer**
 
 ![Gémeaux](./images/gemini20.png)
 
-Accédez à **Agents**. Vous devriez voir **&#x200B;**&#x200B;ici.
+Accédez à **Agents**. Vous devriez voir **** ici.
 
 ![Gémeaux](./images/gemini21.png)
 
@@ -171,7 +171,7 @@ Cliquez sur le **de 3 points...**, puis sélectionnez **Épingler**.
 
 ![Gémeaux](./images/gemini22.png)
 
-Accédez à **Nouveau chat** et saisissez le symbole **@** dans le chat. Cliquez sur **&#x200B;**.
+Accédez à **Nouveau chat** et saisissez le symbole **@** dans le chat. Cliquez sur ****.
 
 ![Gémeaux](./images/gemini23.png)
 
@@ -197,11 +197,11 @@ Avant d’interagir davantage avec Adobe Marketing Agent via Copilot, le context
 
 Pour cet exercice, le contexte doit être défini pour utiliser :
 
-- **Sandbox** : **Prod - Accélérer (VA7)**
+- **Sandbox** : **Prod - One Adobe (VA7)**
 
   Le paramètre sandbox permet d’identifier le sandbox que l’assistant AI doit examiner lorsqu’il pose des questions.
 
-- **Vue de données** : **Accélérer le B2C 2026**
+- **Vue de données** : **AdobeOne - Vue de données client unifiée**
 
 Le paramètre de vue de données permet d’identifier la vue de données que l’assistant AI doit examiner lors de la pose de questions.
 
@@ -213,19 +213,27 @@ list sandboxes
 
 ![](./images/gemini28.png)
 
-Vous devriez alors voir quelque chose de similaire à ceci. Saisissez la `switch to sandbox accelerate` de commande et cliquez sur le bouton **Envoyer**.
+Vous devriez alors voir quelque chose de similaire à ceci. Saisissez la commande suivante et cliquez sur le bouton **Envoyer**.
+
+```
+switch to sandbox One Adobe
+```
 
 ![](./images/geminilab10.png)
 
 Vous devriez alors voir ceci. Pour modifier la vue de données, saisissez la commande suivante puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 list dataviews
 ```
 
 ![](./images/geminilab11.png)
 
-Vous devriez alors voir quelque chose de similaire à ceci. Saisissez la `switch dataview to Accelerate 2026 B2C` de commande et cliquez sur le bouton **Envoyer**.
+Vous devriez alors voir quelque chose de similaire à ceci. Saisissez la commande suivante et cliquez sur le bouton **Envoyer**.
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![](./images/geminilab12.png)
 
@@ -242,7 +250,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![](./images/geminilab18.png)
@@ -254,7 +262,7 @@ Vous devriez alors voir ceci :
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![](./images/geminilab20.png)
@@ -279,7 +287,7 @@ Which field is used to store the preferred genre
 
 ![](./images/geminilab22.png)
 
-Vous devriez alors voir ceci, qui indique que le champ utilisé pour le genre est **_experienceplatform.individualFeatures.preferences.preferences.preferencesGenre**.
+Vous devriez ensuite voir ceci, qui indique que le champ utilisé pour le genre est **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![](./images/geminilab23.png)
 
@@ -288,7 +296,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![](./images/geminilab24.png)
@@ -363,6 +371,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [1.1.5 Adobe Marketing Agent pour Claude](./ex5.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
