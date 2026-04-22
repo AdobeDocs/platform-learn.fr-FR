@@ -4,21 +4,14 @@ description: Adobe Marketing Agent pour ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 5%
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent pour ChatGPT Enterprise
-
-[!BADGE Beta]
-
-+++Détails du Beta
-En utilisant le Adobe Marketing Agent for ChatGPT Enterprise Beta, vous reconnaissez que le Beta est fourni « en l&#39;état » sans garantie d&#39;aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
-
-+++
 
 ## Vidéo
 
@@ -34,7 +27,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 >- une version payante du ChatGPT Enterprise d’OpenAI
 >- en utilisant le client web ChatGPT Enterprise
 
-Accédez à [&#128279;](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
+Accédez à [](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -57,7 +50,7 @@ Cliquez sur **Créer une application**.
 Renseignez les champs comme suit :
 
 - **Nom** : `Adobe Marketing Agent`
-- **URL du serveur MCP** : vérifiez auprès de votre représentant Adobe
+- **URL du serveur MCP** : `https://aep-ai-ama.adobe.io/mcp`
 - **Authentification** : `OAuth`
 
 Cochez la case **Je comprends et je souhaite continuer**.
@@ -88,61 +81,27 @@ Avant d’interagir davantage avec Adobe Marketing Agent par le biais du ChatGPT
 
 Pour cet exercice, le contexte doit être défini pour utiliser :
 
-- **Sandbox** : **Prod - Accélérer (VA7)**
+- **Organisation IMS** : `--aepImsOrgName--`.
+
+- **Sandbox** : **Prod - One Adobe**
 
 Le paramètre Sandbox permet d’identifier le sandbox que le GPT de conversation doit examiner lorsqu’il pose des questions.
 
-- **Vue de données** : **Accélérer le B2C 2026**
+- **Vue de données** : **AdobeOne - Vue de données client unifiée**
 
 Le paramètre Vue de données permet d’identifier la vue de données que le GPT de conversation doit examiner lors de la pose de questions.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-list sandboxes
+change context
 ```
 
 ![](./images/chatgpt11.png)
 
-Une liste similaire des sandbox disponibles devrait s’afficher. Le sandbox actuel de cet exemple est défini sur **prod**.
-
-Pour le remplacer par le sandbox qui doit être utilisé, saisissez l’**invite** suivante, puis cliquez sur le bouton **envoyer**.
-
-```javascript
-switch to sandbox accelerate
-```
+Vous devriez alors voir une fenêtre similaire, affichant la sélection actuelle de l’organisation, du sandbox et de la vue de données. Remplacez ces champs par l’organisation, le sandbox et la vue de données appropriés en fonction des informations ci-dessus.
 
 ![](./images/chatgpt12.png)
-
-Vous devriez alors voir ceci. Cliquez sur **Définir le contexte**.
-
-![](./images/chatgpt13.png)
-
-Vous devriez alors voir ceci. Saisissez l’élément suivant **Invite** et cliquez sur le bouton **envoyer** pour définir la vue de données à utiliser.
-
-```javascript
-list dataviews
-```
-
-![](./images/chatgpt14.png)
-
-Vous devriez alors voir une liste similaire des vues de données disponibles.
-
-Pour définir la vue de données à utiliser, saisissez l’**invite** suivante, puis cliquez sur le bouton **envoyer**.
-
-```javascript
-switch to Accelerate 2026 B2C
-```
-
-![](./images/chatgpt15.png)
-
-Vous devriez alors voir ceci. Cliquez sur **Définir le contexte**.
-
-![](./images/chatgpt16.png)
-
-Vous devriez alors voir ceci.
-
-![](./images/chatgpt17.png)
 
 Votre contexte est maintenant correctement défini, vous pouvez donc commencer à envoyer des invites spécifiques.
 
@@ -155,7 +114,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![](./images/chatgpt18.png)
@@ -167,7 +126,7 @@ Vous devriez alors voir ceci :
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![](./images/chatgpt20.png)
@@ -187,12 +146,12 @@ Tout d’abord, vous devez déterminer quel champ est utilisé pour stocker la p
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Which field is used to store the preferred genre in the sandbox accelerate?
+Which field is used to store the preferred genre?
 ```
 
 ![](./images/chatgpt22.png)
 
-Vous devriez alors voir ceci, qui indique que le champ utilisé pour le genre est **_experienceplatform.individualFeatures.preferences.preferences.preferencesGenre**.
+Vous devriez ensuite voir ceci, qui indique que le champ utilisé pour le genre est **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![](./images/chatgpt23.png)
 
@@ -201,22 +160,14 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by favouriteGenre for the last 2 months
 ```
 
 ![](./images/chatgpt24.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Recherche**.
-
-![](./images/chatgpt25.png)
-
 Vous devriez alors voir ceci.
 
-![](./images/chatgpt26.png)
-
-Faites défiler la page vers le bas pour afficher plus d’informations.
-
-![](./images/chatgpt27.png)
+![](./images/chatgpt25.png)
 
 ## 1.1.2.5 Identifier Les Parcours Fibre Existants
 
@@ -232,13 +183,9 @@ What journeys exist?
 
 ![](./images/chatgpt28.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Recherche**.
+Vous devriez alors voir ceci.
 
 ![](./images/chatgpt29.png)
-
-Vous devriez alors voir une liste des parcours.
-
-![](./images/chatgpt30.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -248,17 +195,9 @@ Which of these journeys has 'Fiber' in its name?
 
 ![](./images/chatgpt31.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Recherche**.
-
-![](./images/chatgpt32.png)
-
 Vous devriez alors voir ceci.
 
-![](./images/chatgpt33.png)
-
-Faites défiler la page vers le bas pour afficher plus de détails.
-
-![](./images/chatgpt34.png)
+![](./images/chatgpt32.png)
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
@@ -302,8 +241,8 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Accéder à [&#128279;](./ex3.md){target="_blank"}
+Accéder à [](./ex3.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

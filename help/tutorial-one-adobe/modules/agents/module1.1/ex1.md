@@ -4,7 +4,7 @@ description: Assistant AI et Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## 1.1.1.1 Définir le contexte dans Agent Orchestrator
 
-Accédez à [&#128279;](https://experience.adobe.com/#/ai-assistant/chat).
+Accédez à [](https://experience.adobe.com/#/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Assurez-vous d’être dans le `--aepImsOrgName--` d’organisation.
 
@@ -53,7 +53,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -65,7 +65,7 @@ Vous devriez alors voir ceci :
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -85,7 +85,7 @@ Tout d’abord, vous devez déterminer quel champ est utilisé pour stocker la p
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -99,7 +99,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me purchases by preferred genre for the last 2 months
 ```
 
@@ -121,7 +121,7 @@ Découvrez quels parcours actifs ou récemment conclus incluent « Fibre » dans
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -141,7 +141,7 @@ Un fichier CSV contenant toutes les sorties de l’assistant d’IA est alors g�
 
 Cliquez pour fermer le volet de droite. Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -153,7 +153,7 @@ Vous devriez alors voir quelque chose comme ça.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 give more details about the first one
 ```
 
@@ -175,7 +175,7 @@ Comprenez la définition de départ du parcours « CitiSignal - Promotion de lan
 
 Saisissez ce qui suit **Invite** :
 
-```javascript
+```
 Which audiences are used by the journey named
 ```
 
@@ -199,7 +199,7 @@ Vous souhaitez comprendre l’abandon des performances du parcours pour détermi
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -229,7 +229,7 @@ Sur la base des résultats et des recherches ci-dessus, il existe une corrélati
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
@@ -283,7 +283,7 @@ Localisez toute audience dont le nom comporte des « téléchargeurs volumineux 
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
@@ -297,7 +297,7 @@ Vous souhaitez maintenant voir toutes vos audiences et à quel point elles ont c
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 List how much all my audiences changed over the last few days.
 ```
 
@@ -319,7 +319,7 @@ Il existe déjà certaines audiences pour les « téléchargeurs lourds ». Voyo
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which of the above are used in a journey? 
 ```
 
@@ -331,7 +331,7 @@ Vous devriez alors voir quelque chose de similaire à ceci.
 
 Vous devez maintenant vérifier si ce parcours est actif. Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Are these journeys active? 
 ```
 
@@ -353,8 +353,8 @@ Téléchargeurs lourds ∩ SciFi Preference.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![](./images/aocj1.png)
@@ -395,7 +395,7 @@ Vous devriez alors voir ceci.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 How can I manage journey conflicts?
 ```
 
@@ -411,7 +411,7 @@ Faites défiler vers le bas et sélectionnez l’**Sources** pour vérifier que 
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
@@ -431,7 +431,7 @@ Examinez les informations relatives aux conflits de parcours potentiels.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
@@ -459,6 +459,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
