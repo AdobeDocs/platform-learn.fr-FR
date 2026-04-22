@@ -1,17 +1,17 @@
 ---
-title: Prise en main d’Agent Orchestrator
-description: Prise en main d’Agent Orchestrator
+title: Assistant AI et Agent Orchestrator
+description: Assistant AI et Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
-# 1.1.1 Prise en main d’Agent Orchestrator
+# 1.1.1 Assistant IA et Agent Orchestrator
 
 ## Vidéo
 
@@ -21,7 +21,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## 1.1.1.1 Définir le contexte dans Agent Orchestrator
 
-Accédez à [&#128279;](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Accédez à [](https://experience.adobe.com/#/ai-assistant/chat).
 
 Vous devriez alors voir ceci. Assurez-vous d’être dans le `--aepImsOrgName--` d’organisation.
 
@@ -32,10 +32,6 @@ Cliquez sur la fenêtre **context**.
 ![](./images/ao2.png)
 
 Définissez le contexte sur :
-
-- **Documentation Source** : **Journey Optimizer**
-
-Le paramètre Source de la documentation permet de donner la préférence à l’ensemble de documents Experience League à vérifier pour les questions relatives à la connaissance du produit/Experience League.
 
 - **Sandbox** : **Prod - One Adobe (VA7)**
 
@@ -104,7 +100,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![](./images/ao8.png)
@@ -131,7 +127,7 @@ What journeys exist?
 
 ![](./images/ao12.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Afficher tous les résultats**.
+Vous devriez alors voir ceci. Cliquez sur l’icône **aperçu**.
 
 ![](./images/ao13.png)
 
@@ -180,7 +176,7 @@ Comprenez la définition de départ du parcours « CitiSignal - Promotion de lan
 Saisissez ce qui suit **Invite** :
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 Saisissez ensuite manuellement les `+CitiSignal fib` pour activer la saisie automatique. Sélectionnez le parcours **Promotion de lancement CitiSignal - Fibre max**.
@@ -217,11 +213,11 @@ Faites défiler l’écran vers le bas. Vous pouvez maintenant consulter le tabl
 
 L’assistant d’IA vous fournit des observations et des recommandations.
 
-Cliquez sur la phrase **Voici comment j&#39;ai obtenu les résultats**.
+Cliquez sur la phrase **Explication**.
 
 ![](./images/ao21.png)
 
-Vous pouvez ensuite afficher les étapes suivies par l’assistant AI pour obtenir les résultats.
+Vous pouvez ensuite afficher des informations supplémentaires et un contexte.
 
 ![](./images/ao22.png)
 
@@ -247,7 +243,7 @@ Examinez le plan. Saisissez `yes` et cliquez sur **Envoyer**.
 
 ![](./images/ao33.png)
 
-Vérifiez l’expression de requête de segment. Saisissez `yes` et cliquez sur le bouton **Envoyer**.
+Consultez la **Définition de l’audience**. Saisissez `yes` et cliquez sur le bouton **Envoyer**.
 
 ![](./images/ao34.png)
 
@@ -259,17 +255,21 @@ Cliquez sur **Vérifier**.
 
 ![](./images/ao36.png)
 
-Examinez la définition de segment. Cliquez sur **Créer**.
+Examinez la **Proposition d’audience**. Cliquez sur **Créer**.
 
 ![](./images/ao37.png)
 
-Votre audience a maintenant été créée.
+Votre audience a maintenant été créée. Cliquez sur le lien pour ouvrir l’audience.
 
 ![](./images/ao38.png)
 
 >[!NOTE]
 >
 >Lors de la création d’une audience, il faudra 24 heures avant que l’audience ne soit disponible pour l’assistant d’IA à des fins d’utilisation ultérieure.
+
+Vous devriez alors voir ceci.
+
+![](./images/ao38a.png)
 
 ## 1.1.1.8 Rechercher les audiences existantes alignées sur une utilisation élevée et vérifier si elles sont en cours d’utilisation
 
@@ -289,17 +289,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![](./images/ao30.png)
 
-Vous devriez alors voir ceci. Vous souhaitez maintenant voir toutes vos audiences et à quel point elles ont changé au cours des derniers jours.
+Vous devriez alors voir ceci.
+
+![](./images/ao30a.png)
+
+Vous souhaitez maintenant voir toutes vos audiences et à quel point elles ont changé au cours des derniers jours.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![](./images/ao31.png)
 
-Vous devriez alors voir ceci. Cliquez sur **Afficher plus**.
+Vous devriez alors voir ceci. Cliquez sur **Afficher tous les résultats**.
 
 ![](./images/ao31a.png)
 
@@ -355,25 +359,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![](./images/aocj1.png)
 
-Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Générer.
+Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Envoyer.
 
 ![](./images/aocj2.png)
 
-Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Générer.
+Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Envoyer.
 
 ![](./images/aocj3.png)
 
-Vous devriez alors voir ceci. Saisissez `The first one` et cliquez sur Envoyer.
+Vous devriez alors voir ceci. Saisissez `the first one` et cliquez sur Envoyer.
 
 ![](./images/aocj4.png)
 
 Vous devriez alors voir ceci. Saisissez `yes` et cliquez sur Envoyer.
 
 ![](./images/aocj5.png)
-
-Examinez la réponse. Saisissez `yes` et cliquez sur Envoyer.
-
-![](./images/aocj6.png)
 
 Cliquez sur **Vérifier**.
 
@@ -383,9 +383,13 @@ Mettez à jour le nom du parcours avec votre LDAP pour le rendre unique. Cliquez
 
 ![](./images/aocj8.png)
 
-Votre parcours a été créé en mode brouillon.
+Votre parcours a été créé en mode brouillon. Cliquez sur votre parcours pour l’ouvrir.
 
 ![](./images/aocj9.png)
+
+Vous devriez alors voir ceci.
+
+![](./images/aocj10.png)
 
 ## Gestion des conflits de Parcours 1.1.1.10
 
@@ -419,13 +423,9 @@ Vous devriez alors voir ceci. Cliquez sur **envoyer**.
 
 ![](./images/aocj70a.png)
 
-Consultez les informations de conflit de parcours.
+Examinez les informations relatives aux conflits de parcours potentiels.
 
 ![](./images/aocj71.png)
-
-Faites défiler la page vers le bas pour rechercher plus de détails sur les conflits de parcours.
-
-![](./images/aocj72.png)
 
 ## Expériences 1.1.1.11
 
@@ -459,6 +459,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

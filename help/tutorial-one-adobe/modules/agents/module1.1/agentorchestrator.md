@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -36,9 +36,9 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 
 ## Exercices
 
-[1.1.1 Prise en main d’Agent Orchestrator](./ex1.md){target="_blank"}
+[1.1.1 Assistant IA et Agent Orchestrator](./ex1.md){target="_blank"}
 
-Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max.
+Dans cet exercice, vous allez explorer AI Assistant et Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max.
 
 [1.1.2 Adobe Marketing Agent pour ChatGPT Enterprise](./ex2.md){target="_blank"}
 
@@ -56,10 +56,10 @@ Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestr
 
 Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max, en utilisant Adobe Marketing Agent avec Claude.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}
