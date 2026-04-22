@@ -4,21 +4,14 @@ description: Adobe Marketing Agent pour Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 5%
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
-
-[!BADGE Beta]
-
-+++Détails Beta
-En utilisant le Adobe Marketing Agent avec Microsoft 365 Copilot Beta, vous reconnaissez que le Beta est fourni « en l’état », sans garantie d’aucune sorte. Adobe n’a aucune obligation de tenir à jour, corriger, mettre à jour, modifier, remplacer ou prendre en charge Beta. Il est recommandé de faire preuve de prudence et de ne pas se fier, de quelque manière que ce soit, au bon fonctionnement ou aux performances de ce Beta et/ou des éléments qui l’accompagnent. Le Beta est considéré comme des informations confidentielles d’Adobe.  Tout « commentaire » (informations relatives à la version Beta, y compris, mais sans s’y limiter, les problèmes ou défauts que vous rencontrez lors de son utilisation, les suggestions, les améliorations et les recommandations) que vous fournissez à Adobe est par la présente cédé à Adobe. Cela inclut tous les droits, titres et intérêts relatifs à ce commentaire.
-
-+++
 
 ## Conditions préalables
 
@@ -83,10 +76,6 @@ Une nouvelle fenêtre s’ouvre, vous demandant de vous connecter à l’aide de
 
 ![ChatGPT](./images/copilotlogin3.png)
 
-Une fois l’authentification réussie, vous devrez peut-être sélectionner l’instance spécifique que vous souhaitez utiliser. Si cet écran s’affiche, sélectionnez l’instance —aepImsOrgName—.
-
-![ChatGPT](./images/copilotlogin4.png)
-
 Un code similaire est alors généré. Cliquez sur **Copier** pour copier le code.
 
 ![ChatGPT](./images/copilotlogin5.png)
@@ -105,39 +94,21 @@ Avant d’interagir davantage avec Adobe Marketing Agent via Copilot, le context
 
 Pour cet exercice, le contexte doit être défini pour utiliser :
 
-- **Sandbox** : **Prod - Accélérer (VA7)**
+- **Sandbox** : **Prod - One Adobe (VA7)**
 
   Le paramètre sandbox permet d’identifier le sandbox que l’assistant AI doit examiner lorsqu’il pose des questions.
 
-- **Vue de données** : **Accélérer le B2C 2026**
+- **Vue de données** : **AdobeOne - Vue de données client unifiée**
 
   Le paramètre de vue de données permet d’identifier la vue de données que l’assistant AI doit examiner lors de la pose de questions.
 
-![](./images/copilotlogin7.png)
+Tout d’abord, redéfinissez le sandbox sur le bon, puis cliquez sur **Actualiser les vues de données**.
 
-Pour modifier le sandbox, saisissez la commande suivante, puis cliquez sur le bouton **envoyer**.
+![](./images/copilotlogin7a.png)
 
-```javascript
-change sandbox
-```
+Sélectionnez ensuite la vue de données appropriée et cliquez sur **Mettre à jour**.
 
 ![](./images/copilot9.png)
-
-Vous devriez alors voir quelque chose de similaire à ceci. Sélectionnez le sandbox à utiliser, puis cliquez sur **sélectionner**.
-
-![](./images/copilot10.png)
-
-Vous devriez alors voir ceci. Pour modifier la vue de données, saisissez la commande suivante puis cliquez sur le bouton **envoyer**.
-
-```javascript
-change dataview
-```
-
-![](./images/copilot11.png)
-
-Vous devriez alors voir quelque chose de similaire à ceci. Sélectionnez la vue de données à utiliser, puis cliquez sur **sélectionner**.
-
-![](./images/copilot12.png)
 
 Vous devriez alors voir ceci. Le contexte est maintenant correctement défini afin que vous puissiez commencer à envoyer des invites spécifiques.
 
@@ -151,8 +122,8 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
-Show me purchases by mainCategory over the last 7 months.
+```
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![](./images/copilot18.png)
@@ -163,8 +134,8 @@ Vous devriez alors voir ceci :
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
 ```
 
 ![](./images/copilot20.png)
@@ -183,13 +154,13 @@ Tout d’abord, vous devez déterminer quel champ est utilisé pour stocker la p
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which field is used to store the preferred genre
 ```
 
 ![](./images/copilot22.png)
 
-Vous devriez alors voir ceci, qui indique que le champ utilisé pour le genre est **_experienceplatform.individualFeatures.preferences.preferences.preferencesGenre**.
+Vous devriez ensuite voir ceci, qui indique que le champ utilisé pour le genre est **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![](./images/copilot23.png)
 
@@ -197,8 +168,8 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+```
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![](./images/copilot24.png)
@@ -219,7 +190,7 @@ Découvrez quels parcours actifs ou récemment conclus incluent « Fibre » dans
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -231,7 +202,7 @@ Vous devriez alors voir une liste des parcours.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -243,7 +214,7 @@ Vous devriez alors voir ceci.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -261,7 +232,7 @@ Vous souhaitez comprendre l’abandon des performances du parcours pour détermi
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -271,13 +242,9 @@ Vous devriez alors voir ceci.
 
 ![](./images/copilot38.png)
 
-Faites défiler la page vers le bas pour afficher les observations et les recommandations. Cliquez sur le **de 3 points...**, puis sélectionnez **Détails du Parcours** pour ouvrir le parcours spécifique dans Adobe Journey Optimizer.
+Faites défiler la page vers le bas pour afficher les observations et les recommandations.
 
 ![](./images/copilot40.png)
-
-Vous devriez alors voir ceci.
-
-![](./images/copilot41.png)
 
 Vous avez maintenant terminé ce Lab.
 
@@ -285,6 +252,6 @@ Vous avez maintenant terminé ce Lab.
 
 Accédez à [Adobe Marketing Agent pour Google Gemini Enterprise](./ex4.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: Adobe Marketing Agent pour ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 >- une version payante du ChatGPT Enterprise d’OpenAI
 >- en utilisant le client web ChatGPT Enterprise
 
-Accédez à [&#128279;](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
+Accédez à [](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -93,7 +93,7 @@ Le paramètre Vue de données permet d’identifier la vue de données que le GP
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 change context
 ```
 
@@ -113,7 +113,7 @@ Obtenez une impulsion de niveau supérieur sur la demande de catégorie (mobile,
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -125,7 +125,7 @@ Vous devriez alors voir ceci :
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -145,7 +145,7 @@ Tout d’abord, vous devez déterminer quel champ est utilisé pour stocker la p
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -159,7 +159,7 @@ Avec ces informations, vous pouvez commencer à analyser en profondeur les donn�
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Show me purchases by favouriteGenre for the last 2 months
 ```
 
@@ -177,7 +177,7 @@ Découvrez quels parcours actifs ou récemment conclus incluent « Fibre » dans
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -189,7 +189,7 @@ Vous devriez alors voir ceci.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -201,7 +201,7 @@ Vous devriez alors voir ceci.
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -219,7 +219,7 @@ Vous souhaitez comprendre l’abandon des performances du parcours pour détermi
 
 Saisissez l’invite **Prompt** suivante, puis cliquez sur le bouton **envoyer**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -241,8 +241,8 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Accéder à [&#128279;](./ex3.md){target="_blank"}
+Accéder à [](./ex3.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
