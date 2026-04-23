@@ -4,9 +4,9 @@ description: Prise en main de Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
+source-git-commit: a333ddbf1ed0c51dd9ae1d9a5eff3f0c569a1d1f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Lors de la configuration de Brand Concierge, vous utiliserez principalement les 
 
 Pour commencer à créer votre propre instance Brand Concierge, procédez comme suit.
 
-Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Ouvrez **&#x200B;**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
 
 ![](./images/bc1.png)
 
@@ -136,15 +136,38 @@ Vous devriez alors voir ceci. Saisissez `CitiSignal website` comme nom pour votr
 
 Vous devez maintenant télécharger un fichier csv contenant les liens de votre site Web. Téléchargez [le site Web CitiSignal lie le fichier CSV](./assets/citisignal-website-links.csv) sur votre bureau.
 
+![](./images/bc8z.png)
+
 Cliquez sur **Parcourir les fichiers**.
 
 ![](./images/bc8.png)
 
 Ouvrez le fichier **citisignal-website-links.csv** et mettez à jour les liens pour qu’ils pointent vers votre propre site Web CitiSignal.
 
+Si vous réalisez ce laboratoire technologique dans le cadre des diffusions du laboratoire technologique Tech Insiders, vous avez accès à un site web de démonstration existant basé sur un numéro attribué. Ces sites web de démonstration sont fournis avec un domaine personnalisé qui ressemble à ceci, où XX représente le nombre qui vous a été donné :
+
+**** (pour la formation en personne)
+
+or
+
+**** (pour la formation à la demande)
+
+Dans l’image ci-dessous, vous devez remplacer l’URL de base par l’URL de votre site web.
+
+Les liens vers les produits dans le fichier ci-dessous sont liés aux produits que vous avez configurés dans le cadre de l’exercice 1 dans le module .
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}.
+
 ![](./images/bc8a.png)
 
-Sélectionnez le fichier **citisignal-website-links.csv** que vous venez de télécharger et de modifier. Cliquez sur **Ouvrir**.
+Si votre numéro est **1**, votre fichier doit se présenter comme suit :
+
+![](./images/bc8b.png)
+
+Si votre numéro est **90**, votre fichier doit se présenter comme suit :
+
+![](./images/bc8c.png)
+
+Une fois le fichier mis à jour comme indiqué ci-dessus, sélectionnez-le **citisignal-website-links.csv** ensuite. Cliquez sur **Ouvrir**.
 
 ![](./images/bc9.png)
 
@@ -186,7 +209,7 @@ Brand Concierge utilise Adobe Experience Platform pour stocker les données d’
 
 ### Train de données
 
-Accédez à [&#128279;](https://experience.adobe.com/){target="_blank"}. Ouvrez **&#x200B;**.
+Accédez à [](https://experience.adobe.com/){target="_blank"}. Ouvrez ****.
 
 ![](./images/aep1.png)
 
@@ -198,7 +221,7 @@ Cliquez sur **Nouveau flux de données**.
 
 ![](./images/aep3.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **&#x200B;**&#x200B;Schéma de mappage`cja-brand-concierge-sb-XXX`.
+Saisissez le **** Nom du flux de données `--aepUserLdap-- - Brand Concierge`, puis sélectionnez le **** Schéma de mappage`cja-brand-concierge-sb-XXX`.
 
 Cliquez sur **Enregistrer**.
 
@@ -234,7 +257,7 @@ Accédez à **Style de la gestion de la configuration**. Cliquez sur **Initialis
 
 ![](./images/admincontrols7.png)
 
-Saisissez le **&#x200B;**&#x200B;Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
+Saisissez le **** Nom de marque`CitiSignal`, puis cliquez sur **Initialiser la configuration de style**.
 
 ![](./images/admincontrols8.png)
 
@@ -378,8 +401,8 @@ Votre instance de Brand Concierge est maintenant prête à être implémentée s
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Implémentation de Brand Concierge sur votre site web &#x200B;](./ex2.md){target="_blank"}
+Accédez à [ Implémentation de Brand Concierge sur votre site web ](./ex2.md){target="_blank"}
 
-Revenir à [&#128279;](./brandconcierge.md){target="_blank"}
+Revenir à [](./brandconcierge.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
