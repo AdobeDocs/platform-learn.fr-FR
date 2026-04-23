@@ -4,9 +4,9 @@ description: Adobe Marketing Agent pour ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
+source-git-commit: d732dd6abdacc0ebcfa0ab8a09a49dc4b0f2b56b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Dans cette vidéo, vous obtiendrez une explication et une démonstration de tout
 >- une version payante du ChatGPT Enterprise d’OpenAI
 >- en utilisant le client web ChatGPT Enterprise
 
-Accédez à [&#128279;](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
+Accédez à [](https://chatgpt.com/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci. Cliquez sur votre nom d’utilisateur.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -50,7 +50,7 @@ Cliquez sur **Créer une application**.
 Renseignez les champs comme suit :
 
 - **Nom** : `Adobe Marketing Agent`
-- **URL du serveur MCP** : `https://aep-ai-ama.adobe.io/mcp`
+- **URL du serveur MCP** : demandez à votre représentant Adobe
 - **Authentification** : `OAuth`
 
 Cochez la case **Je comprends et je souhaite continuer**.
@@ -241,8 +241,8 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Accéder à [&#128279;](./ex3.md){target="_blank"}
+Accéder à [](./ex3.md){target="_blank"}
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}

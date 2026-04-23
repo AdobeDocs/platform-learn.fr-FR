@@ -3,9 +3,10 @@ title: Adobe Marketing Agent pour Claude
 description: Adobe Marketing Agent pour Claude
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 9%
 
 ---
@@ -43,7 +44,7 @@ Ce laboratoire est en cours de développement.
 >L’utilisation de Adobe Marketing Agent dans Claude.ai requiert les éléments suivants :
 >- une version payante de Claude.ai
 
-Accédez à [&#128279;](https://claude.ai/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci.
+Accédez à [](https://claude.ai/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci.
 
 ![Claude.ai](./images/claude1.png)
 
@@ -62,7 +63,7 @@ Cliquez sur **+**, puis sélectionnez **Ajouter un connecteur personnalisé**.
 Renseignez les champs comme suit :
 
 - **Nom** : `Adobe Marketing Agent`
-- **URL du serveur MCP** : vérifiez auprès de votre représentant Adobe
+- **URL du serveur MCP** : demandez à votre représentant Adobe
 
 Cliquez sur **Ajouter**.
 
@@ -72,7 +73,7 @@ Vous devriez alors voir ceci. Cliquez sur **+** pour démarrer une nouvelle conv
 
 ![Claude.ai](./images/claude5.png)
 
-Cliquez sur l’icône **+**, accédez à **Connecteurs** et vérifiez que **Adobe Marketing Agent** est activé**.
+Cliquez sur l’icône **+**, accédez à **Connecteurs** et assurez-vous que **Adobe Marketing Agent** est activé.
 
 ![Claude.ai](./images/claude6.png)
 
@@ -161,6 +162,6 @@ Une fois que les **Organisation**, **Sandbox** et **Vue de données** sont corre
 
 ## Étapes suivantes
 
-Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
+Revenir à [](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
