@@ -44,7 +44,7 @@ Ce laboratoire est en cours de développement.
 >L’utilisation de Adobe Marketing Agent dans Claude.ai requiert les éléments suivants :
 >- une version payante de Claude.ai
 
-Accédez à [](https://claude.ai/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci.
+Accédez à [&#128279;](https://claude.ai/){target="_blank"} et connectez-vous à l’aide des détails de votre compte. Une fois la connexion effectuée, vous devriez voir ceci.
 
 ![Claude.ai](./images/claude1.png)
 
@@ -162,6 +162,6 @@ Une fois que les **Organisation**, **Sandbox** et **Vue de données** sont corre
 
 ## Étapes suivantes
 
-Revenir à [](./agentorchestrator.md){target="_blank"}
+Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
