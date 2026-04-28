@@ -53,7 +53,7 @@ Vous avez maintenant terminé le module Prise en main .
 
 ## Étapes suivantes
 
-Accédez à [ Utiliser votre site web AEM et votre sandbox AEP ](./ex3.md){target="_blank"}
+Accédez à [&#x200B; Utiliser votre site web AEM et votre sandbox AEP &#x200B;](./ex3.md){target="_blank"}
 
 Revenez à [Prise en main - Agentic AI](./getting-started-agentic-ai.md){target="_blank"}
 

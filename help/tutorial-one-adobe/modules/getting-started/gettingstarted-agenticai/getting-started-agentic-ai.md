@@ -36,7 +36,7 @@ Dans cet exercice, vous trouverez des instructions sur la façon d&#39;installer
 
 Dans cet exercice, vous allez configurer le site web afin de pouvoir l’utiliser pour des démonstrations et une activation.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

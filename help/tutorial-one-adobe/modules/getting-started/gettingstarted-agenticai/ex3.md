@@ -22,7 +22,7 @@ Lorsque vous avez eu accès à l’environnement d’activation, un numéro vous
 >Si vous n’avez pas encore reçu cet e-mail, vous ne pourrez pas encore exécuter les étapes ci-dessous. Vous devez attendre de recevoir l’e-mail ci-dessous avant d’accéder aux applications Adobe ci-dessous.
 
 
-![DSN ](./images/number.png)
+![DSN &#x200B;](./images/number.png)
 
 ## Votre programme AEM
 
@@ -34,25 +34,25 @@ Votre programme AEM utilise le numéro qui vous a été attribué à son nom. Le
 
 - **Insiders techniques - AEM + ACCS X** où X correspond au nombre qui vous a été attribué.
 
-![DSN ](./images/aem1.png)
+![DSN &#x200B;](./images/aem1.png)
 
 Vous pouvez accéder à votre programme AEM et le retrouver en accédant à [https://experience.adobe.com/cloud-manager/landing.html](https://experience.adobe.com/cloud-manager/landing.html). Vérifiez que l’environnement sélectionné est **`--aepImsOrgName--`**. Vous pouvez le vérifier dans le coin supérieur droit de l’écran.
 
-![DSN ](./images/aem2.png)
+![DSN &#x200B;](./images/aem2.png)
 
 ### Réactivation de votre programme AEM
 
 Le programme AEM utilisé est un programme « sandbox ». AEM sandboxes will hibernate automatically atfer not being used for a couple of hours, which means that you will need to de-hibernate those sandboxes prior to using them. To de-hibernate a program, go to [https://experience.adobe.com/cloud-manager/landing.html](https://experience.adobe.com/cloud-manager/landing.html). Click to open your program.
 
-![DSN ](./images/aem3.png)
+![DSN &#x200B;](./images/aem3.png)
 
 You should then see this. Click the 3 dots **...** and then select **De-hibernate**.
 
-![DSN ](./images/aem4.png)
+![DSN &#x200B;](./images/aem4.png)
 
 Cliquez sur **Envoyer**. De-hibernation takes 10-15 minutes.
 
-![DSN ](./images/aem5.png)
+![DSN &#x200B;](./images/aem5.png)
 
 ### GitHub repository for your AEM program
 
@@ -62,7 +62,7 @@ Each AEM program is using Edge Delivery Services to deploy your website. This me
 
 Your GitHub repository should look like this.
 
-![DSN ](./images/aem6.png)
+![DSN &#x200B;](./images/aem6.png)
 
 As part of the onboarding process before the start of your Tech Lab sessions, you will be asked to provide your GitHub username. By providing your GitHub username, you will be added as a collaborator to the GitHub repository that is attached to your website so that you can make changes to it.
 
@@ -83,7 +83,7 @@ Vous devez remplacer le X dans ces URL par le numéro qui vous a été attribué
 
 Vous devriez ensuite être en mesure de voir votre site web, qui ressemble à ceci :
 
-![DSN ](./images/aem7.png)
+![DSN &#x200B;](./images/aem7.png)
 
 ## Votre sandbox AEP
 
@@ -97,7 +97,7 @@ Accédez à [https://platform.adobe.com](https://platform.adobe.com). Dans le co
 
 Il vous suffit d’utiliser ce sandbox pour le Brand Concierge Tech Lab.
 
-![DSN ](./images/aep1.png)
+![DSN &#x200B;](./images/aep1.png)
 
 ## Étapes suivantes
 
