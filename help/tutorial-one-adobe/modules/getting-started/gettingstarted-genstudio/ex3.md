@@ -125,7 +125,7 @@ Votre environnement Postman est maintenant configuré et fonctionne.
 
 ## Étapes suivantes
 
-Accédez à [ Applications à installer ](./ex5.md){target="_blank"}
+Accédez à [&#x200B; Applications à installer &#x200B;](./ex5.md){target="_blank"}
 
 Revenez à [Prise en main - GenStudio](./getting-started-genstudio.md){target="_blank"}
 
