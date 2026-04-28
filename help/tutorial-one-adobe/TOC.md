@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
+source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [AEP et Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + Prise en main {#gettingstarted}
-   + Prise en main {#gettingstarted}
+   + Prise en main - AEP et applications {#gettingstarted}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Installation de l’extension Chrome pour la documentation Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [Utilisez le système de démonstration suivant pour configurer la propriété de votre client de collecte de données Adobe Experience Platform](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -37,6 +37,13 @@ ht-degree: 4%
       + [Installer l’extension Chrome pour la documentation Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [Applications à installer](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [Utiliser le site web](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+   + Prise en main - GenStudio {#gettingstartedgenstudio}
+      + [Vue d’ensemble](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+      + [Installation de l’extension Chrome pour la documentation Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+      + [Configuration de votre projet Adobe I/O](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+      + [Option 1 : configuration de Postman](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+      + [Option 2 : configuration de PostBuster](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+      + [Applications à installer](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + IA agentique {#agents}
    + 1.1 Agent Orchestrator {#agents1}
@@ -256,15 +263,15 @@ ht-degree: 4%
          + [3.5.1 Translations Provider](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
          + [3.5.2 Create your Campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3 Add Languages to your Email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
-      + 3.6 Adobe Journey Optimizer: Content Management  {#ajo36}
+      + 3.6 Adobe Journey Optimizer : gestion de contenu  {#ajo36}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
-         + [3.6.1 Content Cards](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
-         + [3.6.2 Landing Pages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
-         + [3.6.3 AJO and GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
-      + 3.7 Adobe Journey Optimizer: Experience Decisioning {#ajo37}
+         + [3.6.1 Cartes de contenu](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
+         + [3.6.2 Pages de destination](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
+         + [3.6.3 AJO et GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
+      + 3.7 Adobe Journey Optimizer : Experience Decisioning {#ajo37}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
          + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
-         + [3.7.2 Configure your offers and decision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
+         + [3.7.2 Configuration de vos offres et de votre décision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
          + [3.7.3 Configuration de Web SDK pour Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
       + 3.8 Adobe Journey Optimizer : Campagnes {#ajo38}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
