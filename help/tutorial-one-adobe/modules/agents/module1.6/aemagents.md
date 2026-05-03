@@ -22,7 +22,8 @@ Adobe Experience Manager comprend désormais plusieurs agents spécifiquement co
 - **Agent de développement** accélère les développeurs grâce à un dépannage assisté par IA et à l’optimisation des performances.
 
 Ensemble, ces agents font évoluer AEM bien au-delà des fonctionnalités CMS traditionnelles et vers des opérations d’expérience automatisées. Chacun de ces agents est conçu avec des humains aux commandes, assurant précision, confiance et supervision.
->[!IMPORTANT]>
+>[!IMPORTANT]
+&#x200B;>>
 Pour réaliser cet exercice, vous devez avoir accès à un environnement AEM Sites et Assets CS avec services de développement intégré (EDS) fonctionnel, et les différents agents AEM doivent être activés pour l’organisation IMS que vous utilisez.>
 Si vous ne disposez pas encore d’un tel environnement, passez à l’exercice [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Suivez les instructions qui s’affichent à cet endroit et vous aurez accès à un tel environnement.
 
@@ -54,10 +55,10 @@ Dans cet exercice, vous allez connecter votre environnement Cursor à AEM à l&#
 
 Dans cet exercice, vous allez créer, gérer et traduire des fragments de contenu à l’aide de ChatGPT et des fonctionnalités de serveur MCP personnalisées.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}

@@ -23,7 +23,7 @@ Lorsque vous avez eu accès à l’environnement d’activation, un numéro vous
 >Si vous n’avez pas encore reçu cet e-mail, vous ne pourrez pas encore exécuter les étapes ci-dessous. Vous devez attendre de recevoir l’e-mail ci-dessous avant d’accéder aux applications Adobe ci-dessous.
 
 
-![DSN ](./images/number.png)
+![DSN &#x200B;](./images/number.png)
 
 ## Votre programme AEM
 
@@ -37,35 +37,35 @@ Votre programme AEM utilise le numéro qui vous a été attribué à son nom. Le
 - **`Tech Insiders On Demand - AEM + ACCS X`** où X représente le nombre qui vous a été attribué.
 - **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, dans ce cas, vous n’avez pas de nombre, car vous utilisez votre propre programme AEM que vous avez créé vous-même.
 
-![DSN ](./images/aem1.png)
+![DSN &#x200B;](./images/aem1.png)
 
 Vous pouvez accéder à votre programme AEM et le retrouver en accédant à [https://experience.adobe.com/cloud-manager/landing.html](https://experience.adobe.com/cloud-manager/landing.html). Vérifiez que l’environnement sélectionné est **`--aepImsOrgName--`**. Vous pouvez le vérifier dans le coin supérieur droit de l’écran.
 
-![DSN ](./images/aem2.png)
+![DSN &#x200B;](./images/aem2.png)
 
 ### Réactivation de votre programme AEM
 
-Le programme AEM utilisé est un programme « sandbox ». Les sandbox d’AEM passeront automatiquement en veille après quelques heures d’inactivité, ce qui signifie que vous devrez les réactiver avant de les utiliser. Pour réactiver un programme, accédez à [](https://experience.adobe.com/cloud-manager/landing.html). Cliquez pour ouvrir votre programme.
+Le programme AEM utilisé est un programme « sandbox ». Les sandbox d’AEM passeront automatiquement en veille après quelques heures d’inactivité, ce qui signifie que vous devrez les réactiver avant de les utiliser. Pour réactiver un programme, accédez à [&#128279;](https://experience.adobe.com/cloud-manager/landing.html). Cliquez pour ouvrir votre programme.
 
-![DSN ](./images/aem3.png)
+![DSN &#x200B;](./images/aem3.png)
 
 Vous devriez alors voir ceci. Cliquez sur le **de 3 points...**, puis sélectionnez **De-hibernate** (Réactiver).
 
-![DSN ](./images/aem4.png)
+![DSN &#x200B;](./images/aem4.png)
 
 Cliquez sur **Envoyer**. La réactivation prend entre 10 et 15 minutes.
 
-![DSN ](./images/aem5.png)
+![DSN &#x200B;](./images/aem5.png)
 
 ### Référentiel GitHub pour votre programme AEM
 
 Chaque programme AEM utilise Edge Delivery Services pour déployer votre site web. Cela signifie que le code de votre site web est hébergé dans un référentiel GitHub. Le référentiel GitHub a été créé pour vous et est accessible en accédant à :
 
-****, où vous devez remplacer X par votre numéro.
+**&#x200B;**, où vous devez remplacer X par votre numéro.
 
 Votre référentiel GitHub doit se présenter comme suit :
 
-![DSN ](./images/aem6.png)
+![DSN &#x200B;](./images/aem6.png)
 
 Dans le cadre du processus d’intégration avant le début de vos sessions de Tech Lab, il vous sera demandé de fournir votre nom d’utilisateur GitHub. En fournissant votre nom d’utilisateur GitHub, vous êtes ajouté en tant que collaborateur au référentiel GitHub joint à votre site web afin de pouvoir y apporter des modifications.
 
@@ -86,7 +86,7 @@ Vous devez remplacer le X dans ces URL par le numéro qui vous a été attribué
 
 Vous devriez ensuite être en mesure de voir votre site web, qui ressemble à ceci :
 
-![DSN ](./images/aem7.png)
+![DSN &#x200B;](./images/aem7.png)
 
 ## Votre sandbox AEP
 
@@ -96,11 +96,11 @@ Vous devriez ensuite être en mesure de voir votre site web, qui ressemble à ce
 
 Pour le Brand Concierge Tech Lab, vous devez utiliser un sandbox AEP spécifique. Ce sandbox AEP s’appelle **techinsidersX** et vous devez remplacer le X par le numéro qui vous a été attribué.
 
-Accédez à [](https://platform.adobe.com). Dans le coin supérieur droit de l’écran, ouvrez la liste déroulante pour sélectionner votre sandbox.
+Accédez à [&#128279;](https://platform.adobe.com). Dans le coin supérieur droit de l’écran, ouvrez la liste déroulante pour sélectionner votre sandbox.
 
 Il vous suffit d’utiliser ce sandbox pour le Brand Concierge Tech Lab.
 
-![DSN ](./images/aep1.png)
+![DSN &#x200B;](./images/aep1.png)
 
 ## Étapes suivantes
 
