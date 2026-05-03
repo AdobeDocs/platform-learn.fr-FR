@@ -3,9 +3,10 @@ title: Prise en main - Installez l’extension Chrome pour la documentation Expe
 description: Prise en main - Installez l’extension Chrome pour la documentation Experience League.
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -23,18 +24,18 @@ Vous trouverez ci-dessous un exemple de ces valeurs. Actuellement, ces valeurs n
 | Nom | Clé | Exemple |
 |:-------------:| :---------------:| :---------------:|
 | Identifiant de l’organisation IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nom de l’organisation IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| Nom de l’organisation IMS | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | ID de client AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nom du sandbox AEP | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP | `--aepUserLdap--` | `vangeluw` |
 
 Par exemple, dans la capture d’écran ci-dessous, vous pouvez voir une référence à `aepImsOrgName`.
 
-![DSN &#x200B;](./images/mod7before.png)
+![DSN ](./images/mod7before.png)
 
 Une fois l’extension installée, le même texte est automatiquement modifié pour refléter les valeurs spécifiques à votre instance.
 
-![DSN &#x200B;](./images/mod7.png)
+![DSN ](./images/mod7.png)
 
 ## Installation de l’extension Chrome
 
@@ -42,66 +43,78 @@ Pour installer cette extension Chrome, ouvrez votre navigateur Chrome et accéde
 
 Cliquez sur **Ajouter à Chrome**.
 
-![DSN &#x200B;](./images/c2.png)
+![DSN ](./images/c2.png)
 
 Tu verras ça. Cliquez sur **Ajouter une extension**.
 
-![DSN &#x200B;](./images/c3.png)
+![DSN ](./images/c3.png)
 
 L’extension sera ensuite installée et une notification similaire s’affichera.
 
-![DSN &#x200B;](./images/c4.png)
+![DSN ](./images/c4.png)
 
 Dans le menu **extensions**, cliquez sur l’icône **puzzle** et épinglez l’extension **Platform Learn - Configuration** dans le menu d’extension.
 
-![DSN &#x200B;](./images/c6.png)
+![DSN ](./images/c6.png)
 
 ## Configuration de l’extension Chrome
 
-Accédez à [https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
+Accédez à [](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
 
-![DSN &#x200B;](./images/tuthome.png)
+![DSN ](./images/tuthome.png)
 
 Vous verrez alors cette fenêtre contextuelle. Cliquez sur l’icône **+** .
 
-![DSN &#x200B;](./images/c7.png)
+![DSN ](./images/c7.png)
 
 Saisissez les valeurs comme indiqué ci-dessous, qui sont toutes liées à votre instance Adobe Experience Platform.
 
-![DSN &#x200B;](./images/c8.png)
+![DSN ](./images/c8.png)
 
-**Votre LDAP**
+Si vous participez à l&#39;un des événements ci-dessous, veuillez utiliser les valeurs ci-dessous comme indiqué.
 
-Il s’agit du nom d’utilisateur qui sera utilisé dans le cadre du tutoriel. Dans cet exemple, le LDAP est basé sur l’adresse e-mail de cet utilisateur. L’adresse e-mail est **vangeluw@adobe.com** le protocole LDAP devient donc **vangeluw**.
+| Nom | Partenaire Tech Labs Nouvelle-Orléans | Atelier en personne pour les initiés de la technologie | Activation à la demande pour les initiés technologiques |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| Identifiant de l’organisation IMS | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| Nom de l’organisation IMS | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| ID de client AEP | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| Nom du sandbox AEP | `one-adobe` | `one-adobe` | `one-adobe` |
+| Learner Profile LDAP | `XXX` | `XXX` | `XXX` |
+
+**Votre profil d’élève LDAP**
+
+Il s’agit du nom d’utilisateur qui sera utilisé dans le cadre du tutoriel. Dans cet exemple, le LDAP est basé sur l’adresse e-mail de cet utilisateur. Si l’adresse e-mail est ****, le LDAP devient **vangeluw**.
+
+Si vous assistez à l’événement Partner Tech Labs à La Nouvelle-Orléans, suivez la même logique et utilisez la première partie de votre adresse e-mail comme LDAP.
 
 Le LDAP est utilisé pour vous assurer que la configuration que vous effectuerez sera liée à vous et n’entrera pas en conflit avec d’autres utilisateurs susceptibles d’utiliser la même instance et le même sandbox que vous utilisez.
 
 Vos valeurs doivent ressembler à celles-ci.
 Enfin, cliquez sur **Créer**.
 
-![DSN &#x200B;](./images/c8a.png)
+![DSN ](./images/c8a.png)
 
 Dans le menu de gauche de l’extension, une nouvelle icône contenant les initiales de votre environnement s’affiche. Cliquez dessus. Le mappage entre les **variables d’environnement** et les valeurs de votre instance Adobe Experience Platform s’affiche alors. Cliquez sur **Activer la configuration**.
 
-![DSN &#x200B;](./images/c9.png)
+![DSN ](./images/c9.png)
 
 Une fois la configuration activée, un point vert s’affiche en regard des initiales de votre environnement. Cela signifie que votre environnement est désormais actif.
 
-![DSN &#x200B;](./images/c10.png)
+![DSN ](./images/c10.png)
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** de cette page ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
 Vous devriez maintenant bénéficier d’une vue similaire à celle ci-dessous, où la variable d’environnement `aepSandboxName` a été remplacée par votre véritable nom de sandbox AEP, qui est dans ce cas **one-adobe**.
 
-![DSN &#x200B;](./images/mod7.png)
+![DSN ](./images/mod7.png)
 
 ## Étapes suivantes
 
-Accédez à [&#x200B; Applications à installer &#x200B;](./ex2.md){target="_blank"}
+Accédez à [ Applications à installer ](./ex2.md){target="_blank"}
 
 Revenez à [Prise en main - Agentic AI](./getting-started-agentic-ai.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Adobe Experience Manager et agents
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: deea7c9e7e6fa70843b3bf621d51c5502d46a431
+source-git-commit: 22691d40708e3b48b9365841dff0d3643e041481
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,9 @@ Adobe Experience Manager comprend désormais plusieurs agents spécifiquement co
 - **Agent de développement** accélère les développeurs grâce à un dépannage assisté par IA et à l’optimisation des performances.
 
 Ensemble, ces agents font évoluer AEM bien au-delà des fonctionnalités CMS traditionnelles et vers des opérations d’expérience automatisées. Chacun de ces agents est conçu avec des humains aux commandes, assurant précision, confiance et supervision.
+>[!IMPORTANT]>
+Pour réaliser cet exercice, vous devez avoir accès à un environnement AEM Sites et Assets CS avec services de développement intégré (EDS) fonctionnel, et les différents agents AEM doivent être activés pour l’organisation IMS que vous utilisez.>
+Si vous ne disposez pas encore d’un tel environnement, passez à l’exercice [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Suivez les instructions qui s’affichent à cet endroit et vous aurez accès à un tel environnement.
 
 ## Objectifs d’apprentissage
 
@@ -51,10 +54,10 @@ Dans cet exercice, vous allez connecter votre environnement Cursor à AEM à l&#
 
 Dans cet exercice, vous allez créer, gérer et traduire des fragments de contenu à l’aide de ChatGPT et des fonctionnalités de serveur MCP personnalisées.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **techinsiders@adobe.com**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}
