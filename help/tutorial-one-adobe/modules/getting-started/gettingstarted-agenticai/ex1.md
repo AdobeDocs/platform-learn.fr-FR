@@ -59,7 +59,7 @@ Dans le menu **extensions**, cliquez sur l’icône **puzzle** et épinglez l’
 
 ## Configuration de l’extension Chrome
 
-Accédez à [&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
+Accédez à [&#128279;](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} puis cliquez sur l’icône de l’extension pour l’ouvrir.
 
 ![DSN &#x200B;](./images/tuthome.png)
 
@@ -104,7 +104,7 @@ Une fois la configuration activée, un point vert s’affiche en regard des init
 
 ## Vérifier le contenu du tutoriel
 
-Pour tester, accédez à [cette page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
+Pour tester, accédez à [cette page](https://experienceleague.adobe.com/fr/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
 
 Vous devriez maintenant voir que toutes les **variables d’environnement** de cette page ont été remplacées par leurs valeurs vraies, en fonction de l’environnement activé dans l’extension Chrome.
 
