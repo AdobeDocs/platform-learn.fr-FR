@@ -4,9 +4,9 @@ breadcrumb-title: Tutoriel technique One Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
+source-git-commit: 11ce179c0a94113dba391790ee6a86d70a7e9241
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1496'
 ht-degree: 4%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 4%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent pour Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent pour Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 Harnais d’IA](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 Prise en main des agents et de l’IA {#agents2}
       + [Vue d’ensemble](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Prise en main de l’IA dédiée aux agences](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -241,28 +241,28 @@ ht-degree: 4%
          + [3.1.2 Création de fragments à utiliser dans votre message](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
          + [3.1.3 Création de votre parcours et de votre e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4 Mettre à jour la propriété de collecte de données et tester le Parcours](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
-      + 3.2 Adobe Journey Optimizer: External data sources and custom actions {#ajo32}
+      + 3.2 Adobe Journey Optimizer : sources de données externes et actions personnalisées {#ajo32}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
-         + [3.2.1 Define an event](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
-         + [3.2.2 Define an external data source](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex2.md)
-         + [3.2.3 Define a custom action](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex3.md)
-         + [3.2.4 Create your journey and messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
-         + [3.2.5 Trigger your journey](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
-      + 3.3 Adobe Journey Optimizer: Push and In-app Messages {#ajo33}
+         + [3.2.1 Définir un événement](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
+         + [3.2.2 Définir une source de données externe](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex2.md)
+         + [3.2.3 Définition d’une action personnalisée](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex3.md)
+         + [3.2.4 Création de parcours et de messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
+         + [3.2.5 Déclenchement du parcours](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
+      + 3.3 Adobe Journey Optimizer : messages push et in-app {#ajo33}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
-         + [3.3.1 Getting Started with push notifications](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-         + [3.3.2 Configure a journey with push messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-         + [3.3.3 Configure a campaign with in-app messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-      + 3.4 Adobe Journey Optimizer: Order Confirmation journey and Campaigns {#ajo34}
+         + [3.3.1 Prise en main des notifications push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+         + [3.3.2 Configuration d’un parcours avec des messages push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+         + [3.3.3 Configurer une campagne avec des messages in-app](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
+      + 3.4 Adobe Journey Optimizer : parcours et campagnes de confirmation de commande {#ajo34}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
-         + [3.4.1 Configure a trigger-based journey - Order Confirmation](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
-         + [3.4.2 Configure a campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
-         + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-      + 3.5 Adobe Journey Optimizer: Translation Services {#ajo35}
+         + [3.4.1 Configuration d’un parcours basé sur un déclencheur - Confirmation de commande](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
+         + [3.4.2 Configuration d’une campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
+         + [3.4.3 Appliquer une personnalisation basée sur les segments dans un e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
+      + 3.5 Adobe Journey Optimizer : services de traduction {#ajo35}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
-         + [3.5.1 Translations Provider](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
-         + [3.5.2 Create your Campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
-         + [3.5.3 Add Languages to your Email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
+         + [3.5.1 Fournisseur De Traductions](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
+         + [3.5.2 Création de votre campagne](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
+         + [3.5.3 Ajouter des langues à votre e-mail](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
       + 3.6 Adobe Journey Optimizer : gestion de contenu  {#ajo36}
          + [Vue d’ensemble](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
          + [3.6.1 Cartes de contenu](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)

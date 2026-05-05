@@ -4,10 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: beeb23f59f2191e7f48c9b0283627c8bed1ae11f
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 6%
 
 ---
 
@@ -56,10 +56,14 @@ Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestr
 
 Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestrator dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max, en utilisant Adobe Marketing Agent avec Claude.
 
-![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+[1.1.6 Harnais d’IA](./ex5.md){target="_blank"}
+
+Dans cet exercice, vous allez explorer les capacités d&#39;Agent Orchestrator à l&#39;aide du nouveau harnais d&#39;IA, dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max.
+
+![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}
