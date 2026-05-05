@@ -60,10 +60,10 @@ Dans cet exercice, vous allez explorer les fonctionnalités d&#39;Agent Orchestr
 
 Dans cet exercice, vous allez explorer les capacités d&#39;Agent Orchestrator à l&#39;aide du nouveau harnais d&#39;IA, dans le contexte de la campagne de lancement de CitiSignal pour Fibre Max.
 
-![Insiders de la technologie ](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![Insiders de la technologie &#x200B;](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à ****.
+>Si vous avez des questions, si vous souhaitez partager des commentaires généraux ou si vous avez des suggestions sur le contenu futur, veuillez contacter directement les initiés techniques, en envoyant un e-mail à **&#x200B;**.
 
 [Revenir à tous les modules](../../../overview.md){target="_blank"}

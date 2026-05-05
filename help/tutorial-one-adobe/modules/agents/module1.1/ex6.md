@@ -24,7 +24,7 @@ Pour suivre les étapes de cet atelier, comme indiqué ci-dessous, vous devez di
 
 ## 1.1.6.1 Access Agent Orchestrator
 
-Accédez à [](https://ao.adobe.io/). Connectez-vous à l’aide de votre compte Adobe. Après vous être connecté, assurez-vous d’avoir sélectionné l’instance et le sandbox appropriés en les modifiant de la manière indiquée ci-dessous.
+Accédez à [&#128279;](https://ao.adobe.io/). Connectez-vous à l’aide de votre compte Adobe. Après vous être connecté, assurez-vous d’avoir sélectionné l’instance et le sandbox appropriés en les modifiant de la manière indiquée ci-dessous.
 
 ![AO](./images/aov2lab1.png)
 
@@ -408,7 +408,7 @@ Vous avez maintenant terminé ce Lab.
 
 ## Étapes suivantes
 
-Revenir à [](./agentorchestrator.md){target="_blank"}
+Revenir à [&#128279;](./agentorchestrator.md){target="_blank"}
 
 [Revenir à tous les modules](./../../../overview.md){target="_blank"}
 
