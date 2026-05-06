@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez comment configurer des mesures dans Real-Time CDP Collaboration. Ce guide couvre les données d’événement d’intégration pour permettre la création de rapports liés aux données de campagne de l’éditeur. Une mesure précise vous permet d’analyser les performances de la campagne et d’optimiser les stratégies futures. Regardez la vidéo intégrée pour obtenir des instructions et des informations détaillées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486348/?captions=fre_fr&learn=on&enablevpops)
